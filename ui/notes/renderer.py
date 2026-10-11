@@ -4,7 +4,7 @@ import streamlit as st
 from ui.notes.theme import inject_notes_theme_css
 from ui.notes.animations import inject_animations_css
 from ui.notes.navigation import render_sticky_toc
-from ui.notes.layout import render_bottom_actions
+from ui.notes.layout import localized_section_title, render_bottom_actions, render_language_control
 from ui.notes.registry import GLOBAL_REGISTRY
 from ui.notes.components.header import render_header
 from ui.notes.components.definition import render_definition
@@ -95,16 +95,40 @@ def render_notes_engine(data: dict):
     subject = data.get("subject", "General Knowledge")
     topic = data.get("topic", "TNPSC Chapter")
 
+    canonical_metadata = data.get("metadata", {})
+    if not isinstance(canonical_metadata, dict):
+        canonical_metadata = {}
+    estimated_time = canonical_metadata.get("estimated_study_time", {})
+    if not isinstance(estimated_time, dict):
+        estimated_time = {}
+
     # Compute reading time dynamically if absent
-    reading_time = data.get("reading_time", estimate_reading_time(combined_content))
+    reading_time = (
+        data.get("reading_time")
+        or estimated_time.get("reading")
+        or estimate_reading_time(combined_content)
+    )
+
+    from ui.notes.components.header import format_hero_display_title
 
     metadata = {
         "subject": subject,
         "topic": topic,
-        "difficulty": data.get("difficulty", "Medium"),
+        "display_title": data.get("display_title") or canonical_metadata.get("display_title") or format_hero_display_title(topic, subject),
+        "difficulty": data.get("difficulty") or canonical_metadata.get("difficulty") or "Medium",
         "reading_time": reading_time,
         "completion_pct": data.get("completion_pct", 80),
     }
+
+    identity_metadata = data.get("meta", {})
+    if not isinstance(identity_metadata, dict):
+        identity_metadata = {}
+    language_scope = identity_metadata.get("repository_id") or identity_metadata.get("topic_id") or topic
+
+    section_metadata = {}
+    for section in data.get("sections", []):
+        if isinstance(section, dict) and section.get("id"):
+            section_metadata[str(section["id"])] = section
 
     # Identify available sections in JSON and map to component registry
     registered_sections = []  # List of tuples: (order, key, value, spec)
@@ -114,6 +138,15 @@ def render_notes_engine(data: dict):
     meta_skip_keys = {
         "subject",
         "topic",
+        "title",
+        "title_en",
+        "title_ta",
+        "display_title",
+        "heading",
+        "id",
+        "part_id",
+        "node_id",
+        "card_id",
         "language",
         "ui_type",
         "reading_time",
@@ -145,7 +178,7 @@ def render_notes_engine(data: dict):
                 seen_spec_orders.add(spec.order)
         else:
             # Generic topic card section (e.g. constitutional_articles, powers_and_functions, etc.)
-            generic_topic_cards.append((key, value))
+            generic_topic_cards.append((key, value, section_metadata.get(key, {})))
 
     # Sort registered sections by strict priority order (1-22)
     registered_sections.sort(key=lambda x: x[0])
@@ -153,13 +186,15 @@ def render_notes_engine(data: dict):
     # Build available sections list for Sticky Table of Contents
     toc_items = []
     for order, key, val, spec in registered_sections:
-        toc_items.append((f"sec_{key}", spec.display_title or key.replace("_", " ").title(), spec.icon))
+        t_label = localized_section_title(spec.display_title or key.replace("_", " ").title())
+        toc_items.append((f"sec_{key}", t_label, spec.icon))
 
     if generic_topic_cards:
-        toc_items.append(("sec_topic_cards", "Topic Breakdown", "📌"))
+        toc_items.append(("sec_topic_cards", localized_section_title("Topic Breakdown"), "📌"))
 
     # 1. RENDER HEADER
     render_header(metadata)
+    render_language_control(language_scope)
 
     # 5. RENDER STICKY TABLE OF CONTENTS (if multiple sections exist)
     if len(toc_items) >= 2:
@@ -169,8 +204,8 @@ def render_notes_engine(data: dict):
     for order, key, value, spec in registered_sections:
         # Check order breakpoints to insert intermediate components (e.g., Topic Cards at order 7)
         if order > 7 and generic_topic_cards:
-            for g_key, g_val in generic_topic_cards:
-                render_topic_cards(g_key, g_val)
+            for g_key, g_val, g_meta in generic_topic_cards:
+                render_topic_cards(g_key, g_val, g_meta)
             generic_topic_cards = []  # Rendered once
 
         # Execute registered component render function
@@ -181,8 +216,8 @@ def render_notes_engine(data: dict):
 
     # Render remaining generic topic cards if not rendered yet
     if generic_topic_cards:
-        for g_key, g_val in generic_topic_cards:
-            render_topic_cards(g_key, g_val)
+        for g_key, g_val, g_meta in generic_topic_cards:
+            render_topic_cards(g_key, g_val, g_meta)
 
     # 16. RENDER AI TEACHER PANEL
     render_ai_teacher(topic)

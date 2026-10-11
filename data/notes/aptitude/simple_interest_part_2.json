@@ -1,0 +1,350 @@
+{
+  "topic": "simple_interest_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Simple Interest Part 2 — TNPSC Application Models & Advanced Problems",
+  "title_ta": "தனி வட்டி பகுதி 2 — TNPSC பயன்பாட்டு மாதிரிகள் மற்றும் உயர்நிலை கணக்குகள்",
+
+  "definition": {
+    "en": "Advanced Simple Interest applications involve multi-period amount differences, rate/principal variations, ratio applications, equal-interest condition solving, split investments, and multi-stage variable rate problems.",
+    "ta": "உயர்நிலைத் தனி வட்டி பயன்பாடுகளில் இரு வேறு காலங்களின் தொகைகளுக்கான வேறுபாடு, வட்டி வீத மாற்றம், விகிதப் பயன்பாடுகள், சம வட்டி நிபந்தனைகள், தொகையைப் பிரித்து முதலீடு செய்தல் மற்றும் பல கட்ட மாறுபடும் வட்டி வீதக் கணக்குகள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1 and Group 2/2A standard & advanced question models. Mastering difference-of-amounts, rate change impact, equal interest ratio, and split investment equations guarantees full marks in Aptitude.",
+    "ta": "பகுதி 2-ல் TNPSC குரூப் 1 மற்றும் குரூப் 2/2A தேர்வுகளில் கேட்கப்படும் அதிக மதிப்பெண் அளிக்கும் உயர்நிலை மாதிரிகள் இடம்பெற்றுள்ளன. தொகை வேறுபாடு முறை, வட்டி வீத மாற்றத்தின் விளைவு, சம வட்டி விகிதம் மற்றும் பிரித்து முதலீடு செய்யும் கணக்குகளைக் கற்பதன் மூலம் முழு மதிப்பெண் பெற முடியும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Difference-of-Amounts Method (இரு தொகைகளின் வேறுபாட்டு முறை)",
+      "formula": "SI_{T_2 - T_1} = A_2 - A_1, \\quad \\text{Annual SI} = \\frac{A_2 - A_1}{T_2 - T_1}",
+      "explanation": {
+        "en": "If a sum amounts to A1 in T1 years and A2 in T2 years under Simple Interest, the difference (A2 - A1) is the interest accrued during (T2 - T1) years.",
+        "ta": "ஒரு குறிப்பிட்ட அசல் T1 ஆண்டுகளில் A1 ஆகவும், T2 ஆண்டுகளில் A2 ஆகவும் மாறினால், (A2 - A1) என்பது (T2 - T1) ஆண்டுகளுக்கான தனி வட்டியாகும்."
+      }
+    },
+    {
+      "title": "Rate Change Impact Formula (வட்டி வீத மாற்ற விளைவு சூத்திரம்)",
+      "formula": "\\Delta SI = \\frac{P \\times (R_2 - R_1) \\times T}{100} = \\frac{P \\times \\Delta R \\times T}{100}",
+      "explanation": {
+        "en": "Calculates the increase or decrease in Simple Interest when the rate changes by ΔR% without recalculating the total interest.",
+        "ta": "அசல் மாறாமல் வட்டி வீதம் ΔR% அதிகரிக்கும் போது அல்லது குறையும் போது தனி வட்டியில் ஏற்படும் மாற்றத்தைக் கண்டறியும் நேரடிச் சூத்திரம்."
+      }
+    },
+    {
+      "title": "Equal Interest Principal Ratio (சம வட்டி அசல் விகிதச் சூத்திரம்)",
+      "formula": "\\text{If } SI_1 = SI_2, \\text{ then } P_1 \\times R_1 \\times T_1 = P_2 \\times R_2 \\times T_2 \\implies P_1 : P_2 = \\frac{1}{R_1 T_1} : \\frac{1}{R_2 T_2}",
+      "explanation": {
+        "en": "When two investments yield equal Simple Interest, their principal amounts are inversely proportional to the product of their rate and time.",
+        "ta": "இரண்டு முதலீடுகள் சமமான தனி வட்டியைத் தரும் போது, அவற்றின் அசல்களின் விகிதம் (1 / R1 T1) : (1 / R2 T2) என எதிர்ப்பிகிதத்தில் அமையும்."
+      }
+    },
+    {
+      "title": "Multi-Stage Variable Rate SI Formula (பல்வேறு கட்ட வட்டி வீத சூத்திரம்)",
+      "formula": "\\text{Total SI} = \\frac{P \\times (R_1 T_1 + R_2 T_2 + R_3 T_3 + \\dots)}{100}",
+      "explanation": {
+        "en": "Calculates total Simple Interest when a single principal P is invested over multiple consecutive time periods with different rates R1, R2, R3.",
+        "ta": "ஒரே அசல் P வெவ்வேறு காலப் பகுதிகளுக்கு (T1, T2, T3) வெவ்வேறு வட்டி வீதங்களில் (R1, R2, R3) வட்டிக்கு விடப்படும் போது மொத்த தனி வட்டி காணும் சூத்திரம்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Difference-of-Amounts Method Step-by-Step (தொகை வேறுபாட்டு முறை)",
+      "points": {
+        "en": [
+          "Step 1: Calculate Interest for (T2 - T1) years = A2 - A1.",
+          "Step 2: Calculate Interest for 1 year = (A2 - A1) / (T2 - T1).",
+          "Step 3: Calculate Interest for T1 years = T1 × (Annual Interest).",
+          "Step 4: Calculate Principal P = A1 - (Interest for T1 years).",
+          "Step 5: Calculate Rate R% = (Annual Interest / P) × 100."
+        ],
+        "ta": [
+          "படி 1: (T2 - T1) ஆண்டுகளுக்கான வட்டி = A2 - A1.",
+          "படி 2: 1 ஆண்டிற்கான வட்டி = (A2 - A1) / (T2 - T1).",
+          "படி 3: T1 ஆண்டுகளுக்கான வட்டி = T1 × (1 ஆண்டின் வட்டி).",
+          "படி 4: அசல் P = A1 - (T1 ஆண்டுகளின் வட்டி).",
+          "படி 5: வட்டி வீதம் R% = (1 ஆண்டின் வட்டி / P) × 100."
+        ]
+      }
+    },
+    {
+      "title": "Split Investment & Mixture Logic (தொகையைப் பிரித்து முதலீடு செய்தல்)",
+      "points": {
+        "en": [
+          "If total sum S is divided into two parts P1 and P2 such that P1 + P2 = S:",
+          "Method 1 (Algebraic): Let P1 = x, P2 = S - x. Write SI1 + SI2 = Total Interest.",
+          "Method 2 (Equal Interest): If SI1 = SI2, use ratio P1 : P2 = (R2 T2) : (R1 T1) and divide total sum S in this ratio."
+        ],
+        "ta": [
+          "S என்ற மொத்தத் தொகையை P1 மற்றும் P2 என இரு பகுதிகளாகப் பிரித்தால் (P1 + P2 = S):",
+          "முறை 1 (இயற்கணிதம்): P1 = x, P2 = S - x என வைத்து, SI1 + SI2 = மொத்த வட்டி என்ற சமன்பாட்டைத் தீர்க்கவும்.",
+          "முறை 2 (சம வட்டி): SI1 = SI2 எனில், P1 : P2 = (R2 T2) : (R1 T1) என்ற விகிதத்தைப் பயன்படுத்தி மொத்தத் தொகை S ஐப் பிரிக்கவும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Equal Interest Ratio Shortcut",
+      "points": {
+        "en": [
+          "If P1 is lent at R1% for T1 yrs and P2 is lent at R2% for T2 yrs producing EQUAL INTEREST:",
+          "Ratio of Principals P1 : P2 = (R2 × T2) : (R1 × T1).",
+          "Directly yields ratio without assuming x or calculating individual SI."
+        ],
+        "ta": [
+          "P1 தொகையை R1% வீதத்தில் T1 ஆண்டுகளுக்கும், P2 தொகையை R2% வீதத்தில் T2 ஆண்டுகளுக்கும் வட்டிக்கு விடும்போது சமமான வட்டி கிடைத்தால்:",
+          "அசல்களின் விகிதம் P1 : P2 = (R2 × T2) : (R1 × T1).",
+          "x என எடுக்காமல் நேரடி விகிதம் கண்டறியலாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Applying Difference-of-Amounts method when Principals or Rates are different",
+      "explanation": {
+        "en": "A2 - A1 represents interest accrued over time ONLY IF the Principal (P) and Rate (R) remain strictly unchanged between the two amounts.",
+        "ta": "அசலும் வட்டி வீதமும் இரு நிலைகளிலும் மாறாமல் ஒரே மாதிரியாக இருந்தால் மட்டுமே A2 - A1 என்பது கால இடைவெளியின் தனி வட்டியாகும்."
+      },
+      "avoidance": {
+        "en": "Verify that the question explicitly specifies 'a certain sum at a certain rate of simple interest' before taking A2 - A1.",
+        "ta": "வினாவில் 'குறிப்பிட்ட அசல் குறிப்பிட்ட தனி வட்டி வீதத்தில்' எனத் தரப்பட்டுள்ளதா என்பதைச் சரிபார்க்கவும்."
+      }
+    },
+    {
+      "trap": "Confusing annual interest with multi-period total interest in multi-stage questions",
+      "explanation": {
+        "en": "In multi-stage rate questions (e.g. 6% for 2 yrs, 9% for 3 yrs, 14% for 4 yrs), simply adding rates (6+9+14=29%) without multiplying by their respective time periods leads to severe calculation errors.",
+        "ta": "பல்வேறு கட்ட கணக்குகளில் வட்டி வீதங்களை மட்டும் கூட்டுவது (6+9+14=29%) தவறாகும். ஒவ்வொரு வீதத்தையும் அதனதன் காலத்தால் பெருக்கிப் பின்னரே கூட்ட வேண்டும் (6×2 + 9×3 + 14×4 = 95%)."
+      },
+      "avoidance": {
+        "en": "Always compute total percentage equivalent = (R1×T1 + R2×T2 + R3×T3)%.",
+        "ta": "எப்போதும் மொத்த சதவீதச் சமமதிப்பு = (R1×T1 + R2×T2 + R3×T3)% எனப் பெருக்கி கூட்டவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "A sum of money amounts to ₹6,500 in 3 years and ₹7,500 in 5 years at Simple Interest. Find the principal and rate of interest.",
+      "method": "Difference-of-Amounts Method",
+      "steps": [
+        "Step 1: Amount after 5 years (A2) = ₹7,500. Amount after 3 years (A1) = ₹6,500.",
+        "Step 2: Interest for (5 - 3 = 2) years = A2 - A1 = 7,500 - 6,500 = ₹1,000.",
+        "Step 3: Annual Interest (1 year) = \\(1000 / 2 = ₹500\\).",
+        "Step 4: Interest for 3 years = \\(3 \\times 500 = ₹1,500\\).",
+        "Step 5: Principal P = A1 - SI(3 yrs) = 6,500 - 1,500 = ₹5,000.",
+        "Step 6: Rate of Interest R% = \\(\\frac{\\text{Annual SI}}{P} \\times 100 = \\frac{500}{5000} \\times 100 = 10\\%\\)."
+      ],
+      "answer": "Principal = ₹5,000, Rate of Interest = 10% per annum"
+    },
+    {
+      "id": 2,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "A certain sum of money in simple interest scheme amounts to ₹8,880 in 6 years and ₹7,920 in 4 years respectively. Find the principal and rate percent.",
+      "method": "Difference-of-Amounts Method",
+      "steps": [
+        "Step 1: Amount in 6 years = ₹8,880. Amount in 4 years = ₹7,920.",
+        "Step 2: Interest for (6 - 4 = 2) years = 8,880 - 7,920 = ₹960.",
+        "Step 3: Interest for 1 year = \\(960 / 2 = ₹480\\).",
+        "Step 4: Interest for 4 years = \\(4 \\times 480 = ₹1,920\\).",
+        "Step 5: Principal P = 7,920 - 1,920 = ₹6,000.",
+        "Step 6: Rate R% = \\(\\frac{480}{6000} \\times 100 = 8\\%\\)."
+      ],
+      "answer": "Principal = ₹6,000, Rate = 8% per annum"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If the Simple Interest on ₹20,000 exceeds the Simple Interest on ₹15,000 by ₹3,000 in 5 years, find the rate percent per annum.",
+      "method": "Difference in Principal Variation Model",
+      "steps": [
+        "Step 1: Difference in Simple Interest (SI_diff) = ₹3,000.",
+        "Step 2: Difference in Principal (P_diff) = 20,000 - 15,000 = ₹5,000.",
+        "Step 3: Time T = 5 years.",
+        "Step 4: Apply variation formula: \\(SI_{\\text{diff}} = \\frac{P_{\\text{diff}} \\times R \\times T}{100} \\implies 3000 = \\frac{5000 \\times R \\times 5}{100}\\).",
+        "Step 5: Simplify: \\(3000 = 250 \\times R \\implies R = \\frac{3000}{250} = 12\\%\\)."
+      ],
+      "answer": "12% per annum"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In what time will ₹8,000 at 3% per annum produce the same interest as ₹6,000 does in 5 years at 4% simple interest?",
+      "method": "Equal Interest Equation Method",
+      "steps": [
+        "Step 1: Calculate interest from 2nd investment: \\(SI_2 = \\frac{6000 \\times 4 \\times 5}{100} = 60 \\times 20 = ₹1,200\\).",
+        "Step 2: Equate 1st investment interest to SI2: \\(SI_1 = \\frac{8000 \\times 3 \\times T}{100} = 240 \\times T\\).",
+        "Step 3: Solve equation: \\(240 \\times T = 1200 \\implies T = \\frac{1200}{240} = 5\\) years."
+      ],
+      "answer": "5 years"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A sum of ₹10,000 is divided into two parts. One part is lent at 8% p.a. and the other at 10% p.a. If the total annual interest from both parts is ₹920, find the amount lent in each part.",
+      "method": "Split Investment Equation Method",
+      "steps": [
+        "Step 1: Let the first part be x. Then the second part = (10,000 - x).",
+        "Step 2: Write interest equation for 1 year: \\(\\frac{x \\times 8 \\times 1}{100} + \\frac{(10000 - x) \\times 10 \\times 1}{100} = 920\\).",
+        "Step 3: Multiply by 100: \\(8x + 10(10000 - x) = 92000\\).",
+        "Step 4: Expand: \\(8x + 100000 - 10x = 92000 \\implies 100000 - 2x = 92000\\).",
+        "Step 5: Solve for x: \\(2x = 8000 \\implies x = ₹4,000\\).",
+        "Step 6: Second part = 10,000 - 4,000 = ₹6,000."
+      ],
+      "answer": "Part at 8% = ₹4,000, Part at 10% = ₹6,000"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A person borrowed a sum of money at 6% p.a. for the first 2 years, 9% p.a. for the next 3 years, and 14% p.a. for the period beyond 5 years. If he pays a total simple interest of ₹11,400 at the end of 9 years, find the borrowed principal sum.",
+      "method": "Multi-Stage Variable Rate Summation",
+      "steps": [
+        "Step 1: Identify time breakups for 9 years total:",
+        "- Period 1 (First 2 yrs @ 6%): \\(R_1 T_1 = 6 \\times 2 = 12\\%\\).",
+        "- Period 2 (Next 3 yrs @ 9%): \\(R_2 T_2 = 9 \\times 3 = 27\\%\\).",
+        "- Period 3 (Remaining 9 - 5 = 4 yrs @ 14%): \\(R_3 T_3 = 14 \\times 4 = 56\\%\\).",
+        "Step 2: Calculate total interest percentage equivalent: \\(12\\% + 27\\% + 56\\% = 95\\%\\) of P.",
+        "Step 3: Write equation: \\(\\frac{95}{100} \\times P = 11400\\).",
+        "Step 4: Solve for P: \\(P = \\frac{11400 \\times 100}{95} = 120 \\times 100 = ₹12,000\\)."
+      ],
+      "answer": "₹12,000"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "A sum of money amounts to ₹2,240 in 2 years and to ₹2,600 in 5 years at Simple Interest. Find the principal sum.",
+      "options": ["A) ₹1,800", "B) ₹2,000", "C) ₹2,100", "D) ₹2,200"],
+      "correct_option": "B) ₹2,000",
+      "explanation": "Interest for 3 yrs = 2600 - 2240 = ₹360. Annual SI = ₹120. SI for 2 yrs = ₹240. P = 2240 - 240 = ₹2,000."
+    },
+    {
+      "id": 2,
+      "question": "If the rate of Simple Interest increases by 3%, the annual interest on a sum of ₹4,000 for 2 years increases by how much?",
+      "options": ["A) ₹120", "B) ₹180", "C) ₹240", "D) ₹300"],
+      "correct_option": "C) ₹240",
+      "explanation": "ΔSI = (P × ΔR × T) / 100 = (4000 × 3 × 2) / 100 = ₹240."
+    },
+    {
+      "id": 3,
+      "question": "The ratio of Simple Interest on two sums for 3 years at 5% p.a. is 2 : 3. If the first sum is ₹4,000, find the second sum.",
+      "options": ["A) ₹5,000", "B) ₹6,000", "C) ₹7,000", "D) ₹8,000"],
+      "correct_option": "B) ₹6,000",
+      "explanation": "Since R and T are equal, SI1 : SI2 = P1 : P2 = 2 : 3 => 4000 / P2 = 2 / 3 => P2 = ₹6,000."
+    },
+    {
+      "id": 4,
+      "question": "A sum of ₹9,000 is split into two parts lent at 5% for 2 years and 10% for 3 years such that interest from both parts is equal. Find the smaller part.",
+      "options": ["A) ₹2,250", "B) ₹3,000", "C) ₹4,500", "D) ₹6,750"],
+      "correct_option": "A) ₹2,250",
+      "explanation": "P1 × (5×2) = P2 × (10×3) => 10 P1 = 30 P2 => P1 : P2 = 3 : 1. Smaller part P2 = (1/4) × 9000 = ₹2,250."
+    },
+    {
+      "id": 5,
+      "question": "₹15,000 is lent in two parts at 10% and 12% p.a. Simple Interest. If the total interest received after 2 years is ₹3,360, find the amount lent at 12%.",
+      "options": ["A) ₹6,000", "B) ₹7,500", "C) ₹9,000", "D) ₹10,000"],
+      "correct_option": "C) ₹9,000",
+      "explanation": "Annual SI = 3360/2 = 1680. 0.10x + 0.12(15000 - x) = 1680 => 1800 - 0.02x = 1680 => 0.02x = 120 => x = 6000 (at 10%). Part at 12% = 15000 - 6000 = ₹9,000."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Difference of Amounts Rule",
+      "back": "SI for (T2 - T1) years = A2 - A1 (When P and R are constant)"
+    },
+    {
+      "front": "Rate Change SI Impact",
+      "back": "ΔSI = (P × ΔR × T) / 100"
+    },
+    {
+      "front": "Equal Interest Principal Ratio",
+      "back": "If SI1 = SI2 ⇒ P1 : P2 = (R2 × T2) : (R1 × T1)"
+    },
+    {
+      "front": "Split Investment Equation",
+      "back": "Let P1 = x, P2 = S - x ⇒ SI1 + SI2 = Total SI"
+    },
+    {
+      "front": "Multi-Stage Variable Rate SI",
+      "back": "Total SI = P × (R1 T1 + R2 T2 + R3 T3 + ...) / 100"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Simple Interest Part 2 — TNPSC Applications Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Simple Interest Part 2",
+        "children": ["amount_diff", "rate_change", "equal_interest", "split_invest", "multistage_si"]
+      },
+      {
+        "id": "amount_diff",
+        "label": "Difference-of-Amounts Method",
+        "children": ["diff_step1", "diff_step2"]
+      },
+      {
+        "id": "diff_step1",
+        "label": "SI for (T2-T1) yrs = A2 - A1",
+        "children": []
+      },
+      {
+        "id": "diff_step2",
+        "label": "Find Annual SI ⇒ Find P ⇒ Find R%",
+        "children": []
+      },
+      {
+        "id": "rate_change",
+        "label": "Rate & Principal Variation",
+        "children": ["delta_si"]
+      },
+      {
+        "id": "delta_si",
+        "label": "ΔSI = (P × ΔR × T) / 100",
+        "children": []
+      },
+      {
+        "id": "equal_interest",
+        "label": "Equal Interest Models",
+        "children": ["eq_ratio"]
+      },
+      {
+        "id": "eq_ratio",
+        "label": "P1:P2 = (R2 T2) : (R1 T1)",
+        "children": []
+      },
+      {
+        "id": "split_invest",
+        "label": "Split Investment Models",
+        "children": ["split_eq"]
+      },
+      {
+        "id": "split_eq",
+        "label": "x & (S-x) ⇒ SI1 + SI2 = Total SI",
+        "children": []
+      },
+      {
+        "id": "multistage_si",
+        "label": "Multi-Stage Variable Rates",
+        "children": ["stage_sum"]
+      },
+      {
+        "id": "stage_sum",
+        "label": "Total SI = P × Σ(Ri Ti) / 100",
+        "children": []
+      }
+    ]
+  }
+}

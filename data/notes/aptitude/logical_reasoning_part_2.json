@@ -1,0 +1,290 @@
+{
+  "topic": "logical_reasoning_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Logical Reasoning Part 2 — Blood Relations, Direction Sense & Ranking",
+  "title_ta": "தர்க்கத் திறன் பகுதி 2 — இரத்த உறவுகள், திசையறிவு மற்றும் தரவரிசை",
+
+  "definition": {
+    "en": "Part 2 covers family blood relation trees, spatial orientation and displacement (direction sense), and linear position ranking equations.",
+    "ta": "பகுதி 2-ல் குடும்ப இரத்த உறவுக் குடும்ப மரம், திசையறிவு மற்றும் இடப்பெயர்ச்சித் தொலைவு, மற்றும் வரிசைத் தரவரிசைக் கணக்கீடுகள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1, Group 2/2A, and Group 4 questions. Topics such as pointing-to-photo blood relations, multi-turn direction sense (Pythagoras distance), and position interchanging in a row are guaranteed exam questions.",
+    "ta": "பகுதி 2-ல் TNPSC தேர்வுகளில் நிச்சயம் கேட்கப்படும் புகைப்பட சுட்டுதல் உறவுமுறை, பல திருப்ப திசையறிவு (பிதாகரஸ் தொலைவு) மற்றும் வரிசை இடமாற்றத் தரவரிசைக் கணக்குகள் அடங்கியுள்ளன."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Blood Relation Representation (இரத்த உறவுமுறை மரபுச் சின்னங்கள்)",
+      "formula": "\\text{Male} = (+), \\quad \\text{Female} = (-), \\quad \\text{Siblings} = (-), \\quad \\text{Couples} = (\\leftrightarrow), \\quad \\text{Generation} = (\\downarrow)",
+      "explanation": {
+        "en": "Standard family tree notation. Never infer gender from name alone!",
+        "ta": "குடும்ப மரக் குறியீட்டு முறை. பெயரைக் கொண்டு மட்டும் ஒருவரின் பாலினத்தை ஒருபோதும் தீர்மானிக்கக் கூடாது!"
+      }
+    },
+    {
+      "title": "Direction & Distance Pythagoras Formula (திசை & பிதாகரஸ் சூத்திரம்)",
+      "formula": "\\text{Shortest Distance } d = \\sqrt{x^2 + y^2}",
+      "explanation": {
+        "en": "Where x = net East-West displacement, y = net North-South displacement.",
+        "ta": "x = கிழக்கு-மேற்கு நிகர இடப்பெயர்ச்சி, y = வடக்கு-தெற்கு நிகர இடப்பெயர்ச்சி."
+      }
+    },
+    {
+      "title": "Ranking & Position Formulas (தரவரிசை சூத்திரங்கள்)",
+      "formula": "\\text{Total Persons } N = \\text{Top} + \\text{Bottom} - 1 = \\text{Left} + \\text{Right} - 1 \\\\ \\text{Position Swap Total: } N = \\text{New Pos}_A + \\text{Old Pos}_B - 1",
+      "explanation": {
+        "en": "Subtract 1 because the person is counted twice when adding positions from both ends.",
+        "ta": "இரு முனைகளிலிருந்தும் ஒருவரே இருமுறை எண்ணப்படுவதால் 1-ஐக் கழிக்க வேண்டும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Direction Cardinal Compass (திசைகாட்டி நிலைகள்)",
+      "points": {
+        "en": [
+          "Main Directions: North (Top), South (Bottom), East (Right), West (Left).",
+          "Sub-directions: North-East (NE), North-West (NW), South-East (SE), South-West (SW).",
+          "Facing North: Turning Right = East, Turning Left = West.",
+          "Facing South: Turning Right = West, Turning Left = East."
+        ],
+        "ta": [
+          "முதன்மை திசைகள்: வடக்கு (மேலே), தெற்கு (கீழே), கிழக்கு (வலது), மேற்கு (இடது).",
+          "துணை திசைகள்: வடகிழக்கு (NE), வடமேற்கு (NW), தென்கிழக்கு (SE), தென்மேற்கு (SW).",
+          "வடக்கு நோக்குகையில்: வலப்புறம் = கிழக்கு, இடப்புறம் = மேற்கு.",
+          "தெற்கு நோக்குகையில்: வலப்புறம் = மேற்கு, இடப்புறம் = கிழக்கு."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Position Interchange Total Shortcut",
+      "points": {
+        "en": [
+          "When A and B swap positions: Total students N = (A's NEW position + B's OLD position) - 1.",
+          "Avoids drawing full row diagrams."
+        ],
+        "ta": [
+          "A மற்றும் B இடங்களை மாற்றி அமைக்கும் போது: மொத்த மாணவர்கள் N = (A-ன் புதிய இடம் + B-ன் பழைய இடம்) - 1."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Assuming gender based on names in Blood Relations",
+      "explanation": {
+        "en": "Assuming 'A' is male because A is B's parent without explicit gender info leads to incorrect option choice.",
+        "ta": "பாலினம் தராத நிலையில் பெயரைக் கொண்டு மட்டும் ஒருவர் ஆண்/பெண் என முடிவு செய்வது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Unless explicitly stated (e.g. 'A is father', 'B is sister'), treat gender as undetermined.",
+        "ta": "'A தந்தை' அல்லது 'B சகோதரி' எனத் தராதவரை பாலினத்தை உறுதிப்படுத்தக் கூடாது."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Pointing to a photograph of a man, Ramu said, 'His mother is the only daughter of my mother.' How is the man related to Ramu?",
+      "method": "Family Tree Decoding",
+      "steps": [
+        "Step 1: Break down statement from the end: 'My mother' = Ramu's mother.",
+        "Step 2: 'Only daughter of my mother' = Ramu's sister.",
+        "Step 3: 'His mother is Ramu's sister' \\(\\implies\\) The man is Ramu's sister's son.",
+        "Step 4: Ramu is the man's maternal uncle, so the man is Ramu's Nephew."
+      ],
+      "answer": "Nephew"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "A person walks 3 km North, then turns Right and walks 4 km. How far is he from the starting point?",
+      "method": "Pythagoras Distance Method",
+      "steps": [
+        "Step 1: North movement y = 3 km, East movement x = 4 km.",
+        "Step 2: Starting point to final position forms a right triangle.",
+        "Step 3: Distance \\(d = \\sqrt{x^2 + y^2} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5\\) km."
+      ],
+      "answer": "5 km"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Raju starts walking towards South. After walking 20 m he turns towards North and walks 8 m. Then he turns East and walks 5 m. How far and in which direction is he from his starting point?",
+      "method": "Displacement Coordinate Method",
+      "steps": [
+        "Step 1: Net South-North displacement = 20m South - 8m North = 12m South.",
+        "Step 2: Net East displacement = 5m East.",
+        "Step 3: Shortest Distance \\(d = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13\\) m.",
+        "Step 4: Direction from origin = South-East."
+      ],
+      "answer": "13 m, South-East"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In a class of 45 students, Kavi's rank is 15th from the top. What is her rank from the bottom?",
+      "method": "Ranking Formula",
+      "steps": [
+        "Step 1: Given Total N = 45, Top rank = 15.",
+        "Step 2: Apply formula: \\(N = \\text{Top} + \\text{Bottom} - 1\\).",
+        "Step 3: \\(45 = 15 + \\text{Bottom} - 1 \\implies 45 = 14 + \\text{Bottom}\\).",
+        "Step 4: \\(\\text{Bottom} = 45 - 14 = 31\\)st."
+      ],
+      "answer": "31st"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In a row of students, A is 10th from the left and B is 15th from the right. When they interchange positions, A becomes 22nd from the left. Find the total number of students in the row.",
+      "method": "Position Swap Shortcut",
+      "steps": [
+        "Step 1: A's NEW position from left = 22nd.",
+        "Step 2: This new position is B's OLD position, which is 15th from the right.",
+        "Step 3: Total students \\(N = (\\text{A's NEW} + \\text{B's OLD}) - 1 = (22 + 15) - 1 = 37 - 1 = 36\\)."
+      ],
+      "answer": "36 students"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A is the father of B, but B is not his son. C is the wife of A. How is B related to C?",
+      "method": "Gender Deductive Logic",
+      "steps": [
+        "Step 1: 'A is father of B' \\(\\implies\\) B is A's child.",
+        "Step 2: 'B is NOT his son' \\(\\implies\\) B MUST be A's Daughter.",
+        "Step 3: 'C is wife of A' \\(\\implies\\) C is the Mother of B.",
+        "Step 4: Therefore, B is the Daughter of C."
+      ],
+      "answer": "Daughter"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Pointing to a man, a woman said 'His father is the only son of my father.' How is the woman related to the man?",
+      "options": ["A) Mother", "B) Aunt", "C) Sister", "D) Daughter"],
+      "correct_option": "B) Aunt",
+      "explanation": "Only son of my father = Woman's brother. Man's father is her brother ⇒ Woman is his Father's sister = Aunt."
+    },
+    {
+      "id": 2,
+      "question": "A man walks 6 km West, turns Right and walks 8 km. How far is he from his starting point?",
+      "options": ["A) 10 km", "B) 14 km", "C) 12 km", "D) 8 km"],
+      "correct_option": "A) 10 km",
+      "explanation": "Distance = √(6^2 + 8^2) = √(36 + 64) = √100 = 10 km."
+    },
+    {
+      "id": 3,
+      "question": "In a class of 35 students, Priya is 8th from the top. What is her rank from the bottom?",
+      "options": ["A) 26th", "B) 27th", "C) 28th", "D) 29th"],
+      "correct_option": "C) 28th",
+      "explanation": "Bottom = Total - Top + 1 = 35 - 8 + 1 = 28th."
+    },
+    {
+      "id": 4,
+      "question": "A person facing East turns 90° clockwise, then 180° counter-clockwise. Which direction is he facing now?",
+      "options": ["A) East", "B) West", "C) North", "D) South"],
+      "correct_option": "C) North",
+      "explanation": "East (0°) + 90° CW = South (90°). South (90°) - 180° CCW = North (270° / -90°)."
+    },
+    {
+      "id": 5,
+      "question": "In a row, A is 12th from left and B is 18th from right. Interchanging positions makes A 20th from left. Find total students.",
+      "options": ["A) 36", "B) 37", "C) 38", "D) 39"],
+      "correct_option": "B) 37",
+      "explanation": "Total = (A's NEW + B's OLD) - 1 = (20 + 18) - 1 = 37."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Blood Relation Golden Rule",
+      "back": "Never assume gender from a name alone! Look for 'father/mother/sister'."
+    },
+    {
+      "front": "Pythagoras Distance Rule",
+      "back": "Shortest Distance d = √(Net North-South² + Net East-West²)"
+    },
+    {
+      "front": "Total Persons Ranking Formula",
+      "back": "Total N = Top + Bottom - 1"
+    },
+    {
+      "front": "Position Interchange Formula",
+      "back": "Total N = (A's NEW Position + B's OLD Position) - 1"
+    },
+    {
+      "front": "Compass Turn Rule",
+      "back": "Clockwise (CW) = Right turn | Counter-clockwise (CCW) = Left turn"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Logical Reasoning Part 2 — Relations, Direction & Ranking Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Logical Reasoning Part 2",
+        "children": ["blood_rel", "direction_sense", "ranking_sec"]
+      },
+      {
+        "id": "blood_rel",
+        "label": "Blood Relations",
+        "children": ["tree_rule", "gender_rule"]
+      },
+      {
+        "id": "tree_rule",
+        "label": "Family Tree: Symbol Notation (+/-)",
+        "children": []
+      },
+      {
+        "id": "gender_rule",
+        "label": "Do not infer gender from names!",
+        "children": []
+      },
+      {
+        "id": "direction_sense",
+        "label": "Direction Sense",
+        "children": ["compass_sub", "pythagoras_dist"]
+      },
+      {
+        "id": "compass_sub",
+        "label": "Compass: N, S, E, W & Sub-directions",
+        "children": []
+      },
+      {
+        "id": "pythagoras_dist",
+        "label": "Distance d = √(x² + y²)",
+        "children": []
+      },
+      {
+        "id": "ranking_sec",
+        "label": "Ranking & Positions",
+        "children": ["total_formula", "swap_formula"]
+      },
+      {
+        "id": "total_formula",
+        "label": "Total N = Top + Bottom - 1",
+        "children": []
+      },
+      {
+        "id": "swap_formula",
+        "label": "Swap Total = New Pos A + Old Pos B - 1",
+        "children": []
+      }
+    ]
+  }
+}

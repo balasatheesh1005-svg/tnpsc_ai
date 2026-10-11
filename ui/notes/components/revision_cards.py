@@ -1,6 +1,6 @@
 import re
 import streamlit as st
-from ui.notes.layout import section_anchor
+from ui.notes.layout import get_notes_language_mode, localized_section_title, section_anchor
 
 
 def validate_flashcards(cards_data) -> bool:
@@ -40,6 +40,18 @@ def _extract_str(val, default=""):
     return str(val)
 
 
+def _localized_card_text(english_value, tamil_value, mode: str, default="") -> str:
+    english_text = _extract_str(english_value)
+    tamil_text = _extract_str(tamil_value)
+    if mode == "English":
+        return english_text or tamil_text or default
+    if mode == "தமிழ்":
+        return tamil_text or english_text or default
+    if english_text and tamil_text:
+        return f"{english_text}\n\n(தமிழ்: {tamil_text})"
+    return english_text or tamil_text or default
+
+
 def _normalize_cards(cards_data) -> list:
     """
     Normalizes any input payload into a standardized list of dict cards:
@@ -48,6 +60,8 @@ def _normalize_cards(cards_data) -> list:
     """
     if not cards_data:
         return []
+
+    language_mode = get_notes_language_mode()
 
     # Case 1: Dict payload
     if isinstance(cards_data, dict):
@@ -78,9 +92,7 @@ def _normalize_cards(cards_data) -> list:
                         parts_ta = ta_txt.split(":", 1)
                         ta_txt = parts_ta[1].strip()
 
-                    back_txt = en_txt
-                    if ta_txt:
-                        back_txt += f"\n\n(தமிழ்: {ta_txt})"
+                    back_txt = _localized_card_text(en_txt, ta_txt, language_mode, "Details")
 
                     card_list.append({
                         "id": f"card_{i + 1}",
@@ -111,27 +123,30 @@ def _normalize_cards(cards_data) -> list:
                 or item.get("front")
                 or item.get("flashcard_front")
                 or item.get("question")
+                or item.get("title_en")
+                or item.get("title")
                 or item.get("fact_en")
                 or item.get("concept")
             )
-            front_ta = item.get("front_ta") or item.get("fact_ta")
+            front_ta = (
+                item.get("front_ta")
+                or item.get("title_ta")
+                or item.get("fact_ta")
+            )
 
-            if front_en and front_ta:
-                front = f"{_extract_str(front_en)}\n\n(தமிழ்: {_extract_str(front_ta)})"
-            elif front_en:
-                front = _extract_str(front_en)
-            elif front_ta:
-                front = _extract_str(front_ta)
-            elif title:
-                front = title
-            else:
-                front = f"Flashcard #{idx + 1}"
+            front = _localized_card_text(
+                front_en,
+                front_ta,
+                language_mode,
+                title or f"Flashcard #{idx + 1}",
+            )
 
             # Back extraction
             back_en = (
                 item.get("back_en")
                 or item.get("back")
                 or item.get("flashcard_back")
+                or item.get("points_en")
                 or item.get("one_line_revision")
                 or item.get("content_en")
                 or item.get("answer")
@@ -141,16 +156,18 @@ def _normalize_cards(cards_data) -> list:
                 or item.get("explanation")
                 or item.get("description")
             )
-            back_ta = item.get("back_ta") or item.get("content_ta")
+            back_ta = (
+                item.get("back_ta")
+                or item.get("points_ta")
+                or item.get("content_ta")
+            )
 
-            if back_en and back_ta:
-                back = f"{_extract_str(back_en)}\n\n(தமிழ்: {_extract_str(back_ta)})"
-            elif back_en:
-                back = _extract_str(back_en)
-            elif back_ta:
-                back = _extract_str(back_ta)
-            else:
-                back = front if front != f"Flashcard #{idx + 1}" else "No additional details available for this card."
+            back = _localized_card_text(
+                back_en,
+                back_ta,
+                language_mode,
+                front if front != f"Flashcard #{idx + 1}" else "No additional details available for this card.",
+            )
         else:
             front = f"Flashcard #{idx + 1}"
             back = _extract_str(item, "Details")
@@ -183,11 +200,13 @@ def render_revision_cards(cards_data):
 
     # Determine stable topic / deck identifier
     topic_id = (
-        st.session_state.get("selected_topic_id")
+        st.session_state.get("notes_content_scope")
+        or st.session_state.get("selected_topic_id")
         or st.session_state.get("topic_id")
         or "default_deck"
     )
-    clean_topic_id = re.sub(r"[^a-zA-Z0-9_]", "_", str(topic_id))
+    language_mode = get_notes_language_mode()
+    clean_topic_id = re.sub(r"[^a-zA-Z0-9_]", "_", f"{topic_id}_{language_mode}")
 
     deck_key = f"fc_deck_{clean_topic_id}"
     index_key = f"fc_index_{clean_topic_id}"
@@ -228,7 +247,7 @@ def render_revision_cards(cards_data):
 
     section_anchor("sec_revision_cards")
     st.markdown('<div class="nova-card animate-fade-in" style="background-color: #FAFAF9; border-left: 5px solid #0284C7; margin-bottom: 2rem;">', unsafe_allow_html=True)
-    st.markdown("### 🎴 **Interactive Flashcards / Revision Deck**")
+    st.markdown(f"### 🎴 **{localized_section_title('Interactive Flashcards / Revision Deck')}**")
 
     # Render Completion State if deck finished
     if st.session_state[completed_key]:

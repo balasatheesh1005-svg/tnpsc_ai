@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "topic_id": "tna_health_system_in_tamil_nadu_part_3",
+    "repository_id": "tna_health_system_in_tamil_nadu",
+    "display_title": "Health Systems in Tamil Nadu — Part 3: Health Outcomes & Challenges",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "tn_administration",
+    "chapter": "Health Systems & Public Health Infrastructure in TN",
+    "language": "bilingual"
+  },
+  "metadata": {
+    "version": "1.0",
+    "status": "validated",
+    "review_status": "peer_reviewed",
+    "difficulty": "advanced",
+    "estimated_study_time": "45 mins"
+  },
+  "keywords": [
+    "TN Health Outcomes",
+    "IMR SRS 13",
+    "MMR SRS 54",
+    "NFHS 5 Institutional Delivery",
+    "NCD Epidemiological Transition"
+  ],
+  "learning_outcomes": [
+    "Evaluate Tamil Nadu's health benchmark outcomes: IMR (13), MMR (54), and Institutional Delivery (99%+).",
+    "Enforce strict statistical distinction between SRS annual IMR and multi-year MMR estimates.",
+    "Analyze the epidemiological transition toward Non-Communicable Diseases (NCDs) and health financing challenges."
+  ],
+  "subject": "tn_administration",
+  "topic": "Health Systems in Tamil Nadu — Part 3: Health Outcomes & Challenges",
+  "language": "bilingual",
+  "ui_type": "standard_note",
+  "sections": [
+    "Empirical Health Benchmarks: IMR, MMR & Life Expectancy Trends",
+    "Statistical Rules: SRS Annual IMR vs Multi-Year MMR Benchmark Definitions",
+    "Institutional Deliveries & Maternal Care Success (NFHS-5 Data)",
+    "The NCD Epidemiological Transition: Diabetes, Hypertension & Cancer Burden",
+    "Public-Private Healthcare Balance & Out-of-Pocket Expenditure Reduction"
+  ],
+  "content": {
+    "definition": {
+      "en": "Health Outcomes in Tamil Nadu reflect developed-nation health indicators — characterized by low IMR (13 per SRS 2020), low MMR (54 per SRS 2018-20), and 99%+ institutional deliveries — while managing an aging population and an NCD epidemiological transition.",
+      "ta": "தமிழ்நாட்டின் சுகாதார வெளிப்பாடுகள் வளர்ந்த நாடுகளின் சுகாதாரக் குறியீடுகளைப் பிரதிபலிக்கின்றன — குறைந்த IMR (13 - SRS 2020), குறைந்த MMR (54 - SRS 2018-20) மற்றும் 99%+ மருத்துவமனை பிரசவங்கள் — இவை முதியோர் மக்கள் தொகை மற்றும் NCD சுகாதார மாற்றத்தைக் கையாளுவதில் சிறந்து விளங்குகின்றன."
+    },
+    "comparison_tables": [
+      {
+        "id": "table_tn_health_outcomes_benchmarks",
+        "title_en": "Tamil Nadu Health Indicators vs All-India Benchmarks",
+        "title_ta": "தமிழ்நாடு சுகாதாரக் குறியீடுகள் vs அகில இந்தியக் குறிப்பீடுகள்",
+        "headers_en": [
+          "Health Outcome Indicator",
+          "Tamil Nadu Empirical Value",
+          "All-India Benchmark Context",
+          "Official Source & Specific Benchmark Period"
+        ],
+        "headers_ta": [
+          "சுகாதார விளைவுக் குறியீடு",
+          "தமிழ்நாடு உண்மையான மதிப்பு",
+          "அகில இந்திய குறிப்பீட்டுச் சூழல்",
+          "அதிகாரப்பூர்வ ஆதாரம் & குறிப்பிட்ட காலம்"
+        ],
+        "rows_en": [
+          [
+            "Infant Mortality Rate (IMR)",
+            "13 per 1,000 live births",
+            "28 per 1,000 live births",
+            "Sample Registration System (SRS) Bulletin 2020 (Annual Estimate)"
+          ],
+          [
+            "Maternal Mortality Ratio (MMR)",
+            "54 per 1,00,000 live births",
+            "97 per 1,00,000 live births",
+            "SRS Special Bulletin on Maternal Mortality 2018-20 (3-Year Period Estimate)"
+          ],
+          [
+            "Institutional Deliveries",
+            "99.2% of total births",
+            "88.6% National Average",
+            "National Family Health Survey (NFHS-5) 2019-21"
+          ],
+          [
+            "Under-5 Mortality Rate (U5MR)",
+            "13 per 1,000 live births",
+            "32 per 1,000 live births",
+            "SRS Statistical Report 2020"
+          ],
+          [
+            "Life Expectancy at Birth",
+            "~72.4 Years (Male: 70.2, Female: 74.7)",
+            "69.7 Years National Average",
+            "SRS Abridged Life Tables 2014-18"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "குழந்தை இறப்பு விகிதம் (IMR)",
+            "1,000 பிறப்புகளுக்கு 13",
+            "1,000 பிறப்புகளுக்கு 28",
+            "மாதிரி பதிவு முறை (SRS) அறிக்கை 2020 (ஆண்டு மதிப்பீடு)"
+          ],
+          [
+            "தாய்மார்கள் இறப்பு விகிதம் (MMR)",
+            "1,00,000 பிறப்புகளுக்கு 54",
+            "1,00,000 பிறப்புகளுக்கு 97",
+            "SRS தாய் இறப்பு சிறப்பு அறிக்கை 2018-20 (3 ஆண்டு கால மதிப்பீடு)"
+          ],
+          [
+            "மருத்துவமனை பிரசவங்கள் (Institutional)",
+            "மொத்த பிறப்புகளில் 99.2%",
+            "தேசிய சராசரி 88.6%",
+            "தேசிய குடும்ப சுகாதார ஆய்வு (NFHS-5) 2019-21"
+          ],
+          [
+            "5 வயதிற்குட்பட்டோர் இறப்பு விகிதம் (U5MR)",
+            "1,000 பிறப்புகளுக்கு 13",
+            "1,000 பிறப்புகளுக்கு 32",
+            "SRS புள்ளியியல் அறிக்கை 2020"
+          ],
+          [
+            "பிறப்பில் வாழ்நாள் எதிர்பார்ப்பு",
+            "~72.4 ஆண்டுகள் (ஆண்: 70.2, பெண்: 74.7)",
+            "தேசிய சராசரி 69.7 ஆண்டுகள்",
+            "SRS வாழ்நாள் அட்டவணைகள் 2014-18"
+          ]
+        ]
+      },
+      {
+        "id": "table_srs_imr_vs_mmr_statistical_rules",
+        "title_en": "Statistical Distinction: Annual IMR Rate vs Multi-Year MMR Ratio",
+        "title_ta": "புள்ளியியல் வேறுபாடு: ஆண்டுக் குழந்தை இறப்பு விகிதம் vs பன்னாண்டு தாய் இறப்பு வீதம்",
+        "headers_en": [
+          "Statistical Metric Parameter",
+          "Infant Mortality Rate (IMR)",
+          "Maternal Mortality Ratio (MMR)"
+        ],
+        "headers_ta": [
+          "புள்ளியியல் அளவீட்டு அளவுரு",
+          "குழந்தை இறப்பு விகிதம் (IMR)",
+          "தாய்மார்கள் இறப்பு விகிதம் (MMR)"
+        ],
+        "rows_en": [
+          [
+            "Statistical Unit Definition",
+            "Rate per 1,000 live births",
+            "Ratio per 1,00,000 live births"
+          ],
+          [
+            "Benchmark Reporting Frequency",
+            "Annual single-year estimates released by SRS",
+            "3-Year pooled multi-year estimates released by SRS (e.g., 2018-20)"
+          ],
+          [
+            "TN Benchmark Value",
+            "13 per 1,000 (SRS 2020)",
+            "54 per 1,00,000 (SRS 2018-20)"
+          ],
+          [
+            "Exam Attribution Rule",
+            "Never mix single-year IMR with 3-year MMR as belonging to the same survey year",
+            "Must state SRS 2020 for IMR and SRS 2018-20 for MMR explicitly"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "புள்ளியியல் அலகு வரையறை",
+            "1,000 நேரடிப் பிறப்புகளுக்கு விகிதம்",
+            "1,00,000 நேரடிப் பிறப்புகளுக்கு வீதம்"
+          ],
+          [
+            "குறிப்பீட்டு அறிக்கை அதிர்வெண்",
+            "SRS ஆல் வெளியிடப்படும் ஆண்டுக் ஒற்றை ஆண்டு மதிப்பீடுகள்",
+            "SRS ஆல் வெளியிடப்படும் 3-ஆண்டுத் திரட்டப்பட்ட மதிப்பீடுகள் (எ.கா. 2018-20)"
+          ],
+          [
+            "TN குறிப்பீட்டு மதிப்பு",
+            "1,000க்கு 13 (SRS 2020)",
+            "1,00,000க்கு 54 (SRS 2018-20)"
+          ],
+          [
+            "தேர்வு விதி",
+            "ஒற்றை ஆண்டு IMR ஐ 3 ஆண்டு MMR உடன் ஒரே ஆண்டுக் கணக்கெடுப்பாகக் கலக்கக் கூடாது",
+            "IMR க்கு SRS 2020 என்றும் MMR க்கு SRS 2018-20 என்றும் தெளிவாகக் குறிப்பிட வேண்டும்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "node_en": "TN Health Outcomes & Challenges",
+        "node_ta": "TN சுகாதார விளைவுகள் & சவால்கள்",
+        "children": [
+          {
+            "node_en": "Benchmark Indicators",
+            "node_ta": "குறிப்பீட்டுக் குறியீடுகள்",
+            "children": [
+              {
+                "node_en": "IMR: 13 per 1000 (SRS 2020)",
+                "node_ta": "IMR: 1,000க்கு 13 (SRS 2020)"
+              },
+              {
+                "node_en": "MMR: 54 per 1 Lakh (SRS 2018-20)",
+                "node_ta": "MMR: 1,00,000க்கு 54 (SRS 2018-20)"
+              },
+              {
+                "node_en": "Institutional Deliveries: 99.2% (NFHS-5)",
+                "node_ta": "மருத்துவமனை பிரசவங்கள்: 99.2% (NFHS-5)"
+              }
+            ]
+          },
+          {
+            "node_en": "Emerging Health Challenge",
+            "node_ta": "உருவாகும் சுகாதாரச் சவால்",
+            "children": [
+              {
+                "node_en": "NCD Shift: Diabetes, Hypertension & Geriatric Care",
+                "node_ta": "NCD மாற்றம்: நீரிழிவு, ரத்த அழுத்தம் & முதியோர் சிகிச்சை"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "trap_id": "t8p3_trap1",
+        "title_en": "IMR Denominator vs MMR Denominator Trap",
+        "title_ta": "IMR பகுதி vs MMR பகுதி அளவீட்டு ஏமாற்று",
+        "points": {
+          "en": [
+            "TRAP: Confusing the denominator units of Infant Mortality Rate (IMR) and Maternal Mortality Ratio (MMR).",
+            "CORRECT FACT: IMR is expressed per 1,000 live births (13 in TN SRS 2020); MMR is expressed per 100,000 live births (54 in TN SRS 2018-20). Mixing these units is a critical error in TNPSC."
+          ],
+          "ta": [
+            "ஏமாற்று: குழந்தை இறப்பு விகிதம் (IMR) மற்றும் தாய் இறப்பு வீதத்தின் (MMR) பகுதிகளைக் குழப்புவது.",
+            "சரியான உண்மை: IMR 1,000 பிறப்புகளுக்குக் கணக்கிடப்படுகிறது (13); MMR 1,00,000 பிறப்புகளுக்குக் கணக்கிடப்படுகிறது (54). இந்த அலகுகளைக் குழப்புவது பிழையாகும்."
+          ]
+        }
+      },
+      {
+        "trap_id": "t8p3_trap2",
+        "title_en": "SRS Survey Period Attribution Trap",
+        "title_ta": "SRS கணக்கெடுப்புக் காலக் குறிப்பிடுதல் ஏமாற்று",
+        "points": {
+          "en": [
+            "TRAP: Attributing MMR figures to a single calendar year.",
+            "CORRECT FACT: SRS releases MMR statistics as a 3-year pooled estimate (e.g., 2018-20) to maintain statistical stability due to smaller sample sizes of maternal deaths."
+          ],
+          "ta": [
+            "ஏமாற்று: MMR புள்ளிவிவரங்களை ஒற்றை ஆண்டுக் கணக்கெடுப்பாகக் குறிப்பிடுவது.",
+            "சரியான உண்மை: தாய் இறப்புகள் குறைவாக இருப்பதால் புள்ளியியல் நிலைத்தன்மைக்கு SRS 3 ஆண்டுத் திரட்டப்பட்ட மதிப்பீடாகவே (எ.கா. 2018-20) MMR ஐ வெளியிடுகிறது."
+          ]
+        }
+      },
+      {
+        "trap_id": "t8p3_trap3",
+        "title_en": "NFHS-5 Institutional Delivery Target Trap",
+        "title_ta": "NFHS-5 மருத்துவமனை பிரசவ இலக்கு ஏமாற்று",
+        "points": {
+          "en": [
+            "TRAP: Assuming home deliveries remain widespread in rural Tamil Nadu.",
+            "CORRECT FACT: Tamil Nadu achieved near-universal institutional deliveries at 99.2% as per NFHS-5 (2019-21), virtually eliminating home delivery risks across all districts."
+          ],
+          "ta": [
+            "ஏமாற்று: கிராமப்புற தமிழ்நாட்டில் வீட்டுப் பிரசவங்கள் இன்னும் பரவலாக உள்ளன எனக் கருதுவது.",
+            "சரியான உண்மை: NFHS-5 (2019-21) இன் படி தமிழ்நாடு 99.2% அளவிற்கு மருத்துவமனை பிரசவங்களை அடைந்து ஆபத்தான வீட்டுப் பிரசவங்களை முற்றிலுமாக ஒழித்துள்ளது."
+          ]
+        }
+      },
+      {
+        "trap_id": "t8p3_trap4",
+        "title_en": "Epidemiological NCD Shift Challenge Trap",
+        "title_ta": "தொற்றுநோய் NCD மாற்றச் சவால் ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Viewing infectious communicable diseases as the primary cause of mortality in modern TN.",
+            "CORRECT FACT: Tamil Nadu has undergone an epidemiological transition where Non-Communicable Diseases (NCDs like cardiovascular diseases, diabetes, and cancers) account for over 65% of the disease burden."
+          ],
+          "ta": [
+            "ஏமாற்று: நவீன தமிழ்நாட்டின் முதன்மை மரணத்திற்குக் தொற்றுநோய்களே காரணம் என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாடு தொற்றுநோய் மாற்றத்தை அடைந்துள்ளது; இதில் தொற்றா நோய்களே (NCDs - ரத்த அழுத்தம், நீரிழிவு, புற்றுநோய்) நோய் சுமையில் 65%க்கும் மேல் வகிக்கின்றன."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Tamil Nadu's Infant Mortality Rate (IMR) dropped to 13 per 1,000 live births (SRS Bulletin 2020).",
+        "Tamil Nadu's Maternal Mortality Ratio (MMR) reached 54 per 1,00,000 live births (SRS Special Bulletin 2018-20).",
+        "Institutional Delivery Rate in TN stands at 99.2% according to NFHS-5 (2019-21).",
+        "Life Expectancy at Birth in TN reached ~72.4 years (SRS Abridged Life Tables 2014-18).",
+        "Non-Communicable Diseases (NCDs) account for over 65% of the total disease burden in Tamil Nadu."
+      ],
+      "ta": [
+        "SRS அறிக்கை 2020 இன் படி தமிழ்நாட்டின் குழந்தை இறப்பு விகிதம் (IMR) 1,000 பிறப்புகளுக்கு 13 ஆகக் குறைந்துள்ளது.",
+        "SRS சிறப்பு அறிக்கை 2018-20 இன் படி தமிழ்நாட்டின் தாய்மார்கள் இறப்பு வீதம் (MMR) 1,00,000 பிறப்புகளுக்கு 54 ஆக உள்ளது.",
+        "NFHS-5 (2019-21) இன் படி தமிழ்நாட்டின் மருத்துவமனை பிரசவ விகிதம் 99.2% ஆக உள்ளது.",
+        "SRS 2014-18 இன் படி தமிழ்நாட்டின் பிறப்பில் வாழ்நாள் எதிர்பார்ப்பு ~72.4 ஆண்டுகளாகும்.",
+        "தமிழ்நாட்டின் மொத்த நோய் சுமையில் 65% க்கும் அதிகமானவை தொற்றா நோய்கள் (NCDs) ஆகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Tamil Nadu outperforms all-India benchmarks in child health (IMR 13), maternal safety (MMR 54), and institutional births (99.2%).",
+        "IMR is expressed per 1,000 live births annually; MMR is expressed per 100,000 live births over 3-year SRS periods.",
+        "Makkalai Thedi Maruthuvam directly targets the state's growing 65%+ Non-Communicable Disease (NCD) burden.",
+        "Sustaining high health outcomes requires strengthening geriatric care and reducing private out-of-pocket health expenditure."
+      ],
+      "ta": [
+        "தமிழ்நாடு குழந்தை சுகாதாரம் (IMR 13), தாய் சேய் பாதுகாப்பு (MMR 54) மற்றும் மருத்துவமனை பிரசவங்களில் (99.2%) இந்தியாவில் சிறந்து விளங்குகிறது.",
+        "IMR 1,000 பிறப்புகளுக்கு ஆண்டாகவும்; MMR 1,00,000 பிறப்புகளுக்கு 3-ஆண்டுத் திரட்டப்பட்ட SRS அறிக்கையாகவும் வெளியிடப்படுகிறது.",
+        "மக்களைத் தேடி மருத்துவம் திட்டம் மாநிலத்தின் 65%+ தொற்றா நோய் (NCD) சுமையை நேரடியாகக் கையாள்கிறது.",
+        "உயர் சுகாதார சாதனைகளைத் தக்கவைக்க முதியோர் சிகிச்சையைப் பலப்படுத்துவதும் சொந்த மருத்துவச் செலவைக் குறைப்பதும் அவசியமாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "front_en": "What is Tamil Nadu's Infant Mortality Rate (IMR) as per SRS Bulletin 2020?",
+        "front_ta": "SRS அறிக்கை 2020 இன் படி தமிழ்நாட்டின் குழந்தை இறப்பு விகிதம் (IMR) என்ன?",
+        "back_en": "13 per 1,000 live births.",
+        "back_ta": "1,000 பிறப்புகளுக்கு 13."
+      },
+      {
+        "front_en": "What is Tamil Nadu's Maternal Mortality Ratio (MMR) as per SRS Special Bulletin 2018-20?",
+        "front_ta": "SRS சிறப்பு அறிக்கை 2018-20 இன் படி தமிழ்நாட்டின் தாய்மார்கள் இறப்பு வீதம் (MMR) என்ன?",
+        "back_en": "54 per 1,00,000 live births.",
+        "back_ta": "1,00,000 பிறப்புகளுக்கு 54."
+      },
+      {
+        "front_en": "What is the Institutional Delivery Rate in Tamil Nadu according to NFHS-5 (2019-21)?",
+        "front_ta": "NFHS-5 (2019-21) இன் படி தமிழ்நாட்டின் மருத்துவமனை பிரசவ விகிதம் என்ன?",
+        "back_en": "99.2% of total births.",
+        "back_ta": "மொத்த பிறப்புகளில் 99.2%."
+      },
+      {
+        "front_en": "What is the mathematical denominator difference between IMR and MMR?",
+        "front_ta": "IMR மற்றும் MMR இடையேயான கணிதப் பகுதி அளவீட்டு வேறுபாடு என்ன?",
+        "back_en": "IMR is per 1,000 live births; MMR is per 100,000 live births.",
+        "back_ta": "IMR 1,000 பிறப்புகளுக்கு; MMR 1,00,000 பிறப்புகளுக்கு."
+      },
+      {
+        "front_en": "Why are SRS MMR statistics published as 3-year pooled estimates?",
+        "front_ta": "SRS MMR புள்ளிவிவரங்கள் 3-ஆண்டுத் திரட்டப்பட்ட மதிப்பீடுகளாக ஏன் வெளியிடப்படுகின்றன?",
+        "back_en": "To maintain statistical stability due to smaller sample sizes of maternal deaths.",
+        "back_ta": "தாய் இறப்புகள் குறைவாக இருப்பதால் புள்ளியியல் நிலைத்தன்மையைப் பராமரிக்க."
+      },
+      {
+        "front_en": "What percentage of Tamil Nadu's total disease burden is comprised of NCDs?",
+        "front_ta": "தமிழ்நாட்டின் மொத்த நோய் சுமையில் தொற்றா நோய்களின் (NCDs) சதவீதம் என்ன?",
+        "back_en": "Over 65% of the total disease burden.",
+        "back_ta": "மொத்த நோய் சுமையில் 65% க்கும் மேல்."
+      },
+      {
+        "front_en": "What is the Life Expectancy at Birth in Tamil Nadu according to SRS 2014-18?",
+        "front_ta": "SRS 2014-18 இன் படி தமிழ்நாட்டின் பிறப்பில் வாழ்நாள் எதிர்பார்ப்பு என்ன?",
+        "back_en": "~72.4 Years (Male: 70.2, Female: 74.7).",
+        "back_ta": "~72.4 ஆண்டுகள் (ஆண்: 70.2, பெண்: 74.7)."
+      },
+      {
+        "front_en": "How does high institutional delivery impact Maternal Mortality in TN?",
+        "front_ta": "உயர் மருத்துவமனை பிரசவ விகிதம் தமிழ்நாட்டின் தாய்மார்கள் இறப்பில் என்ன தாக்கத்தை ஏற்படுத்துகிறது?",
+        "back_en": "Drastically reduces emergency obstetric complications and lowers MMR to 54.",
+        "back_ta": "அவசர மகப்பேறு சிக்கல்களைக் கடுமையாகக் குறைத்து MMR ஐ 54 ஆகக் குறைக்கிறது."
+      }
+    ]
+  }
+}

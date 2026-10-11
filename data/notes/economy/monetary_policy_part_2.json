@@ -1,0 +1,844 @@
+{
+  "meta": {
+    "topic_id": "economy_monetary_policy_part_2",
+    "repository_id": "economy_monetary_policy",
+    "display_title": "Monetary Policy – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Monetary Policy",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Monetary Policy Committee",
+    "Repo Rate",
+    "Standing Deposit Facility",
+    "Marginal Standing Facility",
+    "CRR Section 42",
+    "SLR Section 24",
+    "Flexible Inflation Targeting"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the operational mechanics of the LAF corridor (Repo, SDF, MSF).",
+        "Comprehend the institutional design of the 6-member Monetary Policy Committee."
+      ],
+      "ta": [
+        "LAF வழித்தடத்தின் (ரெப்போ, SDF, MSF) செயல்பாட்டு வழிமுறைகளைப் புரிந்து கொள்ளுதல்.",
+        "6 உறுப்பினர்கள் கொண்ட பணவியல் கொள்கைக் குழுவின் நிறுவன வடிவமைப்பை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize Section 42(1) for CRR and Section 24 of BR Act for SLR.",
+        "Recall the 4% ± 2% CPI inflation target and the 3-quarter failure rule."
+      ],
+      "ta": [
+        "CRR-க்கான பிரிவு 42(1) மற்றும் SLR-க்கான வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 24-ஐ நினைவில் நிறுத்துதல்.",
+        "4% ± 2% CPI பணவீக்க இலக்கு மற்றும் 3-காலாண்டு தோல்வி விதியை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the revolutionary shift from Reverse Repo to the non-collateralized Standing Deposit Facility.",
+        "Compare quantitative vs qualitative instruments of credit control."
+      ],
+      "ta": [
+        "ரிவர்ஸ் ரெப்போவிலிருந்து பிணையமற்ற SDF-க்கான புரட்சிகர மாற்றத்தை ஆய்வு செய்தல்.",
+        "அளவாக்க மற்றும் பண்பறி கடன் கட்டுப்பாட்டுக் கருவிகளை ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply statutory voting rules to determine MPC decision outcomes during ties.",
+        "Identify exam traps regarding CRR interest earnings and legal reserve acts."
+      ],
+      "ta": [
+        "சமநிலை வாக்குகளின் போது MPC முடிவுகளைத் தீர்மானிக்க சட்டப்பூர்வ விதிகளைப் பயன்படுத்துதல்.",
+        "CRR வட்டி வருமானம் மற்றும் சட்டங்கள் குறித்த தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Monetary Policy – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_quantitative_tools",
+      "title_en": "Quantitative (General) Instruments of Credit Control",
+      "title_ta": "கடன் கட்டுப்பாட்டின் அளவாக்க (பொதுவான) கருவிகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_qualitative_tools",
+      "title_en": "Qualitative (Selective) Instruments of Credit Control",
+      "title_ta": "கடன் கட்டுப்பாட்டின் பண்பறி (தேர்ந்தெடுக்கப்பட்ட) கருவிகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_mpc_fit_framework",
+      "title_en": "Monetary Policy Committee (MPC) & Inflation Targeting",
+      "title_ta": "பணவியல் கொள்கைக் குழு (MPC) & பணவீக்க இலக்குக் கட்டமைப்பு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The operational mechanism of Monetary Policy relies on direct and indirect policy tools—comprising reserve ratios (CRR, SLR), the Liquidity Adjustment Facility corridor (Repo, SDF, MSF, Bank Rate), Open Market Operations, and selective credit controls—steered by the statutory 6-member Monetary Policy Committee under Flexible Inflation Targeting.",
+      "ta": "பணவியல் கொள்கையின் செயல்பாட்டு வழிமுறை என்பது இருப்பு விகிதங்கள் (CRR, SLR), பணப்புழக்க சரிசெய்தல் வசதி வழித்தடம் (ரெப்போ, SDF, MSF, வங்கி விகிதம்), திறந்த சந்தை நடவடிக்கைகள் (OMO) மற்றும் தேர்ந்தெடுக்கப்பட்ட கடன் கட்டுப்பாடுகள் ஆகிய நேரடி மற்றும் மறைமுகக் கொள்கைக் கருவிகளை உள்ளடக்கியது; இது நெகிழ்வான பணவீக்க இலக்கின் கீழ் 6 உறுப்பினர்களைக் கொண்ட சட்டப்பூர்வ பணவியல் கொள்கைக் குழுவால் (MPC) இயக்கப்படுகிறது."
+    },
+    "introduction": {
+      "en": "To transmit monetary policy to the broader economy, the RBI controls the quantum and cost of liquidity across commercial banks. The primary signaling tool is the Policy Repo Rate, anchored within a symmetric or asymmetric corridor bounded by the Standing Deposit Facility (floor) and the Marginal Standing Facility (ceiling). Following the Urjit Patel Committee recommendations (2014), the 2016 statutory framework replaced discretion with the institutional governance of the Monetary Policy Committee (MPC) mandated to target headline CPI inflation at 4% with a ±2% tolerance band.",
+      "ta": "பணவியல் கொள்கையை ஒட்டுமொத்த பொருளாதாரத்திற்கும் கடத்துவதற்காக, ரிசர்வ் வங்கி வணிக வங்கிகளின் பணப்புழக்க அளவு மற்றும் செலவைக் கட்டுப்படுத்துகிறது. கொள்கை ரெப்போ விகிதமானது (Repo Rate) முதன்மை சமிக்ஞைக் கருவியாக செயல்படுகிறது; இது நிலைக் கடனீட்டு வசதி (SDF - தரைமட்டம்) மற்றும் விளிம்புநிலை நிலைக் கடன் வசதி (MSF - கூரை) ஆகியவற்றுக்கு இடையேயான வழித்தடத்தில் இயங்குகிறது. உர்ஜித் படேல் குழுவின் (2014) பரிந்துரைகளைத் தொடர்ந்து, 2016 சட்டப்பூர்வ கட்டமைப்பு தனிநபர் விருப்புரிமையை மாற்றி, தலைப்பு நுகர்வோர் பணவீக்கத்தை (CPI) 4% (±2% சகிப்புத்தன்மை வரம்பு) இலக்காகக் கொண்ட பணவியல் கொள்கைக் குழுவின் (MPC) நிறுவன ஆளுகையை நிறுவியது."
+    },
+    "sec_quantitative_tools": [
+      {
+        "title": "Cash Reserve Ratio (CRR) - Section 42(1) RBI Act",
+        "title_ta": "ரொக்க இருப்பு விகிதம் (CRR) - பிரிவு 42(1) ரிசர்வ் வங்கிச் சட்டம்",
+        "points": {
+          "en": [
+            "Definition: The mandatory percentage of a commercial bank's Net Demand and Time Liabilities (NDTL) that must be maintained as liquid cash balances with the RBI.",
+            "No Floor / Ceiling: The RBI Amendment Act 2006 removed the statutory floor (3%) and ceiling (20%), granting full flexibility to the RBI.",
+            "No Interest: The RBI pays zero interest to commercial banks on their mandatory CRR deposits.",
+            "Mechanism: Hiking CRR impounds liquidity and contracts credit creation; cutting CRR injects primary liquidity into the banking system."
+          ],
+          "ta": [
+            "வரையறை: வணிக வங்கிகள் தங்களது நிகர கேட்பு மற்றும் காலப் பொறுப்புகளில் (NDTL) ஒரு குறிப்பிட்ட சதவீதத்தை ரொக்கமாக ரிசர்வ் வங்கியிடம் வைத்திருக்க வேண்டிய கட்டாய விகிதம்.",
+            "வரம்புகள் நீக்கம்: 2006 ரிசர்வ் வங்கி திருத்தச் சட்டம் முந்தைய குறைந்தபட்ச (3%) மற்றும் அதிகபட்ச (20%) வரம்புகளை நீக்கி, ரிசர்வ் வங்கிக்கு முழு நெகிழ்வுத்தன்மையை வழங்கியது.",
+            "வட்டி இல்லை: வங்கிகள் வைத்துள்ள CRR இருப்புக்கு ரிசர்வ் வங்கி எந்த வட்டியும் வழங்குவதில்லை.",
+            "செயல்முறை: CRR-ஐ உயர்த்தினால் வங்கிப் பணப்புழக்கம் முடக்கப்பட்டு கடன் சுருங்கும்; CRR-ஐக் குறைத்தால் வங்கிகளில் பணப்புழக்கம் அதிகரித்து கடன் பெருகும்."
+          ]
+        }
+      },
+      {
+        "title": "Statutory Liquidity Ratio (SLR) - Section 24 BR Act, 1949",
+        "title_ta": "சட்டப்பூர்வ பணப்புழக்க விகிதம் (SLR) - பிரிவு 24 வங்கி ஒழுங்குமுறைச் சட்டம், 1949",
+        "points": {
+          "en": [
+            "Definition: The percentage of NDTL that banks must maintain within themselves in approved unencumbered liquid assets: Cash, Gold, or approved Government Securities (G-Secs / T-Bills).",
+            "Statutory Ceiling: Section 24 of the Banking Regulation Act, 1949 permits a ceiling up to 40% (floor of 25% was abolished in 2007).",
+            "Earning Assets: Unlike CRR, banks earn interest on government securities held under SLR.",
+            "Purpose: Ensures banking solvency, creates a captive domestic market for government sovereign borrowing, and prevents over-lending."
+          ],
+          "ta": [
+            "வரையறை: வங்கிகள் தங்களது NDTL-ல் ஒரு குறிப்பிட்ட சதவீதத்தை தங்களிடமே அங்கீகரிக்கப்பட்ட நீர்மைச் சொத்துக்களாக வைத்திருக்க வேண்டும்: ரொக்கம், தங்கம் அல்லது மத்திய/மாநில அரசுப் பத்திரங்கள்.",
+            "சட்டப்பூர்வ வரம்பு: வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 24 அதிகபட்சமாக 40% வரை அனுமதிக்கிறது (குறைந்தபட்ச 25% வரம்பு 2007-ல் நீக்கப்பட்டது).",
+            "வருமானம் தரும் சொத்து: CRR போலன்றி, SLR-ன் கீழ் வைக்கப்படும் அரசுப் பத்திரங்களுக்கு வங்கிகளுக்கு வட்டி வருமானம் கிடைக்கிறது.",
+            "நோக்கம்: வங்கிகளின் திவால்நிலையைத் தடுத்தல், அரசின் கடன் பத்திரங்களுக்கு உறுதியான உள்நாட்டுச் சந்தையை உருவாக்குதல் மற்றும் அதீத கடன் வழங்குவதைக் கட்டுப்படுத்துதல்."
+          ]
+        }
+      },
+      {
+        "title": "Liquidity Adjustment Facility (LAF) Corridor",
+        "title_ta": "பணப்புழக்க சரிசெய்தல் வசதி (LAF) வழித்தடம்",
+        "points": {
+          "en": [
+            "Policy Repo Rate: The benchmark interest rate at which the RBI lends short-term money to commercial banks against the collateral of approved government securities (repurchase agreement).",
+            "Standing Deposit Facility (SDF): Introduced in April 2022 under Section 17(7) of the RBI Act; absorbs overnight liquidity from commercial banks without providing any government securities as collateral. Placed 25 bps below the Repo Rate.",
+            "Marginal Standing Facility (MSF): Introduced in May 2011; penal borrowing window allowing commercial banks to borrow overnight funds up to a specified percentage of NDTL by dipping into their SLR portfolio. Placed 25 bps above the Repo Rate.",
+            "Bank Rate (Section 49 RBI Act): Standard rate at which RBI buys or rediscounts bills of exchange; acts as a penal rate aligned automatically with MSF."
+          ],
+          "ta": [
+            "கொள்கை ரெப்போ விகிதம் (Repo Rate): அரசுப் பத்திரங்களை பிணையமாகப் பெற்றுக்கொண்டு வணிக வங்கிகளுக்கு ரிசர்வ் வங்கி குறுகிய காலக் கடன் வழங்கும் முதன்மை வட்டி விகிதம்.",
+            "நிலைக் கடனீட்டு வசதி (SDF): ஏப்ரல் 2022-ல் ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17(7)-ன் கீழ் அறிமுகப்படுத்தப்பட்டது; எந்தவொரு அரசுப் பத்திர பிணையமும் வழங்காமல் வங்கிகளிடமிருந்து உபரிப் பணத்தை உறிஞ்சுகிறது. ரெப்போ விகிதத்தை விட 25 அடிப்படை புள்ளிகள் குறைவாக இருக்கும்.",
+            "விளிம்புநிலை நிலைக் கடன் வசதி (MSF): மே 2011-ல் அறிமுகப்படுத்தப்பட்டது; அவசர காலங்களில் வங்கிகள் தங்களது SLR ஒதுக்கீட்டிலிருந்து அரசுப் பத்திரங்களைப் பயன்படுத்தி கூடுதல் அவசரக் கடன் பெறும் வழி. ரெப்போ விகிதத்தை விட 25 அடிப்படை புள்ளிகள் அதிகமாக இருக்கும்.",
+            "வங்கி விகிதம் (Bank Rate): மாற்றுச் சீட்டுகளை மறுதள்ளுபடி செய்ய ரிசர்வ் வங்கி விதிக்கும் விகிதம்; இது தண்டனை விகிதமாகச் செயல்பட்டு MSF விகிதத்துடன் இணைக்கப்பட்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Open Market Operations (OMOs) & Operation Twist",
+        "title_ta": "திறந்த சந்தை நடவடிக்கைகள் (OMO) & ஆபரேஷன் ட்விஸ்ட்",
+        "points": {
+          "en": [
+            "Open Market Operations (OMOs): Outright purchase and sale of Government Securities in the secondary market by the RBI. Outright purchase injects durable liquidity; outright sale absorbs durable liquidity.",
+            "Operation Twist: Simultaneous sale of short-term government bonds and purchase of long-term government bonds. Flattens the yield curve, lowering long-term interest rates to stimulate corporate investment without altering the total money supply."
+          ],
+          "ta": [
+            "திறந்த சந்தை நடவடிக்கைகள் (OMO): இரண்டாம் நிலைச் சந்தையில் அரசுப் பத்திரங்களை ரிசர்வ் வங்கி நேரடியாக வாங்குவது மற்றும் விற்பது. பத்திரங்களை வாங்கினால் சந்தையில் பணம் பாயும்; விற்றால் சந்தையிலிருந்து பணப்புழக்கம் உறிஞ்சப்படும்.",
+            "ஆபரேஷன் ட்விஸ்ட் (Operation Twist): குறுகிய கால அரசுப் பத்திரங்களை ஒரே நேரத்தில் விற்று, அதே அளவிற்கு நீண்ட கால அரசுப் பத்திரங்களை வாங்குவது. இது பணப்புழக்கத்தை மாற்றாமல் நீண்ட கால வட்டி விகிதங்களைக் குறைத்து தொழில் முதலீட்டைத் தூண்டுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_qualitative_tools": [
+      {
+        "title": "Margin Requirements (Loan-to-Value - LTV Ratio)",
+        "title_ta": "விளிம்புத் தொகை தேவைகள் (LTV விகிதம்)",
+        "points": {
+          "en": [
+            "Definition: The difference between the market value of the collateral pledged and the actual loan sanctioned by the bank.",
+            "Function: Raising margin requirements discourages speculative borrowing in specific overheated sectors (e.g., gold loans, stock market margin lending, real estate)."
+          ],
+          "ta": [
+            "வரையறை: அடமானம் வைக்கப்படும் சொத்தின் சந்தை மதிப்புக்கும் வங்கி வழங்கும் உண்மையான கடன் தொகைக்கும் இடையே உள்ள வித்தியாசம்.",
+            "செயல்பாடு: விளிம்புத் தேவையை உயர்த்துவது ஊக வணிகத் துறைகளில் (தங்கக் கடன், பங்குச் சந்தை, ரியல் எஸ்டேட்) அதீத கடன் பெறுவதைத் தடுக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Moral Suasion, Credit Rationing and Direct Action",
+        "title_ta": "நன்னெறி தூண்டல், கடன் பங்கீடு மற்றும் நேரடி நடவடிக்கை",
+        "points": {
+          "en": [
+            "Moral Suasion: Informal advice, moral appeals, periodic governor conferences, and guidelines issued by RBI urging banks to align lending with national priorities.",
+            "Credit Rationing: Fixation of credit quotas and maximum borrowing limits for specific sectors or business houses to prevent monopolization of loanable funds.",
+            "Direct Action: Penalties, restrictions on opening new branches, or freezing lending activities imposed under the Banking Regulation Act, 1949 for non-compliant banks (e.g., Prompt Corrective Action - PCA framework)."
+          ],
+          "ta": [
+            "நன்னெறி தூண்டல் (Moral Suasion): தேசிய முன்னுரிமைகளுக்கு ஏற்ப கடன் வழங்குமாறு வங்கிகளுக்கு ரிசர்வ் வங்கி விடுக்கும் முறையான ஆலோசனைகள், அறிவுறுத்தல்கள் மற்றும் கோரிக்கைகள்.",
+            "கடன் பங்கீடு (Credit Rationing): குறிப்பிட்ட துறைகள் அல்லது நிறுவனங்கள் பெறும் கடன்களுக்கு உச்சவரம்பு நிர்ணயித்து, நிதி ஏகபோகமாவதைத் தடுத்தல்.",
+            "நேரடி நடவடிக்கை (Direct Action): விதிமுறைகளை மீறும் வங்கிகள் மீது உரிமம் ரத்து, கிளை விரிவாக்கத் தடை போன்ற தண்டனைகளை விதித்தல் (எ.கா: உடனடி சீர்திருத்த நடவடிக்கை - PCA கட்டமைப்பு)."
+          ]
+        }
+      }
+    ],
+    "sec_mpc_fit_framework": [
+      {
+        "title": "MPC Composition and Operational Rules (Section 45ZB)",
+        "title_ta": "MPC அமைப்பு மற்றும் செயல்பாட்டு விதிகள் (பிரிவு 45ZB)",
+        "points": {
+          "en": [
+            "Six Members: 3 members from RBI (Governor as ex-officio Chairperson, Deputy Governor in charge of monetary policy, and one RBI officer) + 3 External Members appointed by the Central Government on the recommendation of a Cabinet Secretary-led Search Committee.",
+            "Tenure of External Members: 4 years; not eligible for re-appointment.",
+            "Voting & Quorum: Each member has one vote. In case of a tie, the Governor has a second or casting vote (Section 45ZB(3)). Quorum is four members.",
+            "Meetings: Mandated to meet at least four times a year; customarily meets bi-monthly (six times a year)."
+          ],
+          "ta": [
+            "ஆறு உறுப்பினர்கள்: ரிசர்வ் வங்கியிலிருந்து 3 பேர் (ஆளுநர் அலுவல் வழி தலைவர், பணவியல் பொறுப்பு துணை ஆளுநர், ஒரு ரிசர்வ் வங்கி அதிகாரி) + மத்திய அரசால் நியமிக்கப்படும் 3 வெளி உறுப்பினர்கள்.",
+            "வெளி உறுப்பினர்களின் பதவிக்காலம்: 4 ஆண்டுகள்; மீண்டும் நியமிக்கப்பட தகுதியற்றவர்கள்.",
+            "வாக்களிப்பு & கோரம்: ஒவ்வொரு உறுப்பினருக்கும் ஒரு வாக்கு. சமநிலை ஏற்பட்டால் ஆளுநருக்கு இரண்டாவது அல்லது முடிவெடுக்கும் வாக்கு (Casting Vote) உண்டு. குறைந்தபட்ச கோரம் 4 உறுப்பினர்கள்.",
+            "கூட்டங்கள்: ஆண்டிற்கு குறைந்தது 4 முறையாவது கூட வேண்டும்; வழக்கமாக இரு மாதங்களுக்கு ஒருமுறை (ஆண்டிற்கு 6 முறை) கூடுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Flexible Inflation Targeting (FIT) Architecture",
+        "title_ta": "நெகிழ்வான பணவீக்க இலக்கு (FIT) கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Target Metric: Headline Consumer Price Index - Combined (CPI-C) inflation.",
+            "Target Rate: 4.0% with a tolerance band of ±2% (i.e., Lower limit = 2.0%, Upper limit = 6.0%).",
+            "Statutory Definition of Failure: Inflation staying outside the 2% to 6% band for three consecutive quarters.",
+            "Consequence of Failure: The RBI must submit a formal explanatory report to the Central Government stating: (a) reasons for failure, (b) proposed remedial actions, and (c) an estimated time-frame to return to the target."
+          ],
+          "ta": [
+            "இலக்கு அளவீடு: தலைப்பு நுகர்வோர் விலைக் குறியீடு - ஒருங்கிணைந்தது (CPI-Combined).",
+            "இலக்கு விகிதம்: 4.0% மற்றும் ±2% சகிப்புத்தன்மை வரம்பு (அதாவது குறைந்தபட்சம் 2.0%, அதிகபட்சம் 6.0%).",
+            "தோல்விக்கான சட்டப்பூர்வ வரையறை: தொடர்ச்சியாக மூன்று காலாண்டுகளுக்கு பணவீக்கம் 2% முதல் 6% வரம்பிற்கு வெளியே நீடித்தால் தோல்வியாகக் கருதப்படும்.",
+            "தோல்வியின் விளைவு: ரிசர்வ் வங்கி மத்திய அரசுக்கு அதிகாரப்பூர்வ அறிக்கை சமர்ப்பிக்க வேண்டும்: (அ) தோல்விக்கான காரணங்கள், (ஆ) முன்மொழியப்பட்ட தீர்வுகள், மற்றும் (இ) இலக்கை அடைய தேவையான உத்தேச காலம்."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_crr_vs_slr",
+        "title_en": "Table 1: Reserve Ratio Comparison: Cash Reserve Ratio (CRR) vs Statutory Liquidity Ratio (SLR)",
+        "title_ta": "அட்டவணை 1: இருப்பு விகித ஒப்பீடு: ரொக்க இருப்பு விகிதம் (CRR) vs சட்டப்பூர்வ பணப்புழக்க விகிதம் (SLR)",
+        "headers_en": [
+          "Parameter",
+          "Cash Reserve Ratio (CRR)",
+          "Statutory Liquidity Ratio (SLR)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "ரொக்க இருப்பு விகிதம் (CRR)",
+          "சட்டப்பூர்வ பணப்புழக்க விகிதம் (SLR)"
+        ],
+        "rows_en": [
+          [
+            "Governing Statute",
+            "Section 42(1) of Reserve Bank of India Act, 1934",
+            "Section 24 of Banking Regulation Act, 1949"
+          ],
+          [
+            "Custody of Assets",
+            "Deposited physically/digitally with the RBI",
+            "Maintained within the bank's own vaults / depository"
+          ],
+          [
+            "Form of Assets",
+            "Exclusively pure cash balances",
+            "Unencumbered approved G-Secs, Treasury Bills, Cash, Gold"
+          ],
+          [
+            "Interest Earned",
+            "Zero interest paid by RBI",
+            "Banks earn regular coupon interest on G-Secs held"
+          ],
+          [
+            "Statutory Limits",
+            "No statutory floor or ceiling (2006 amendment)",
+            "Statutory ceiling up to 40% (floor of 25% abolished in 2007)"
+          ],
+          [
+            "Primary Purpose",
+            "Liquidity management and direct control of money supply",
+            "Ensuring bank solvency and funding government borrowing"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிர்வகிக்கும் சட்டம்",
+            "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 42(1)",
+            "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 24"
+          ],
+          [
+            "சொத்துக்களின் பாதுகாப்பு",
+            "ரிசர்வ் வங்கியிடம் நேரடியாக வைக்கப்படுகிறது",
+            "வங்கியின் சொந்த பெட்டகங்கள் / கணக்கில் பராமரிக்கப்படுகிறது"
+          ],
+          [
+            "சொத்துக்களின் வடிவம்",
+            "முழுமையாக ரொக்கப் பணம் மட்டுமே",
+            "அரசுப் பத்திரங்கள், கருவூலப் பத்திரங்கள், தங்கம், ரொக்கம்"
+          ],
+          [
+            "கிடைக்கும் வட்டி",
+            "ரிசர்வ் வங்கி எந்த வட்டியும் வழங்குவதில்லை",
+            "அரசுப் பத்திரங்களுக்கு வங்கிகளுக்கு வழக்கமான வட்டி கிடைக்கும்"
+          ],
+          [
+            "சட்டப்பூர்வ வரம்புகள்",
+            "குறைந்தபட்ச அல்லது அதிகபட்ச வரம்புகள் இல்லை (2006 திருத்தம்)",
+            "அதிகபட்ச வரம்பு 40% வரை (குறைந்தபட்ச 25% வரம்பு 2007-ல் நீக்கம்)"
+          ],
+          [
+            "முதன்மை நோக்கம்",
+            "பணப்புழக்க மேலாண்மை மற்றும் பண விநியோக நேரடிக் கட்டுப்பாடு",
+            "வங்கி திவால் தடுத்தல் மற்றும் அரசு கடன் பத்திரங்களுக்கு நிதி அளித்தல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_repo_vs_reverse_repo_vs_sdf",
+        "title_en": "Table 2: LAF Instruments Matrix: Repo vs Reverse Repo vs Standing Deposit Facility (SDF)",
+        "title_ta": "அட்டவணை 2: LAF கருவிகள் ஒப்பீடு: ரெப்போ vs ரிவர்ஸ் ரெப்போ vs நிலைக் கடனீட்டு வசதி (SDF)",
+        "headers_en": [
+          "Dimension",
+          "Repo Rate (ரெப்போ)",
+          "Reverse Repo Rate (ரிவர்ஸ் ரெப்போ)",
+          "Standing Deposit Facility - SDF"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "ரெப்போ விகிதம்",
+          "ரிவர்ஸ் ரெப்போ விகிதம்",
+          "நிலைக் கடனீட்டு வசதி (SDF)"
+        ],
+        "rows_en": [
+          [
+            "Direction of Liquidity",
+            "RBI injects liquidity to commercial banks",
+            "RBI absorbs liquidity from commercial banks",
+            "RBI absorbs excess liquidity from banks"
+          ],
+          [
+            "Collateral Requirement",
+            "Government securities pledged as collateral by banks",
+            "RBI pledges G-Secs as collateral to banks",
+            "Zero collateral; non-collateralized absorption"
+          ],
+          [
+            "Corridor Position",
+            "Central anchor benchmark policy rate",
+            "Historically the floor; now largely dormant",
+            "The operational floor of the LAF (Repo minus 25 bps)"
+          ],
+          [
+            "Statutory Basis",
+            "Section 17 of RBI Act, 1934",
+            "Section 17 of RBI Act, 1934",
+            "Section 17(7) introduced in 2018; operationalized April 2022"
+          ],
+          [
+            "Primary Benefit",
+            "Regulates borrowing cost for commercial banks",
+            "Provides safe parking return for bank liquidity",
+            "Enables RBI to absorb infinite liquidity without exhausting G-Secs"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பணப்புழக்கத்தின் திசை",
+            "ரிசர்வ் வங்கி வணிக வங்கிகளுக்கு கடன் வழங்கி பணத்தை செலுத்துகிறது",
+            "ரிசர்வ் வங்கி வங்கிகளிடமிருந்து உபரி பணத்தை உறிஞ்சுகிறது",
+            "ரிசர்வ் வங்கி வங்கிகளிடமிருந்து உபரி பணத்தை உறிஞ்சுகிறது"
+          ],
+          [
+            "பிணையத் தேவை",
+            "வங்கிகள் அரசுப் பத்திரங்களை பிணையமாக வைக்க வேண்டும்",
+            "ரிசர்வ் வங்கி அரசுப் பத்திரங்களை வங்கிகளுக்கு பிணையமாகத் தரும்",
+            "பிணையம் ஏதுமில்லை; பிணையமற்ற பண உறிஞ்சுதல்"
+          ],
+          [
+            "வழித்தட நிலை",
+            "மைய நங்கூரக் கொள்கை வட்டி விகிதம்",
+            "வரலாற்று ரீதியாக தரைமட்டம்; தற்போது பயன்பாட்டில் இல்லை",
+            "LAF வழித்தடத்தின் செயல்பாட்டு தரைமட்டம் (ரெப்போ - 25 bps)"
+          ],
+          [
+            "சட்டப்பூர்வ அடிப்படை",
+            "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17",
+            "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17",
+            "2018-ல் சேர்க்கப்பட்ட பிரிவு 17(7); ஏப்ரல் 2022 முதல் செயல்பாடு"
+          ],
+          [
+            "முதன்மைப் பலன்",
+            "வங்கிகளுக்கான கடன் செலவை ஒழுங்குபடுத்துகிறது",
+            "வங்கி உபரிப் பணத்திற்கு பாதுகாப்பான வருவாயைத் தருகிறது",
+            "தனது பத்திரங்களை இழக்காமல் வரம்பற்ற பணத்தை உறிஞ்ச உதவுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_msf_vs_bank_rate",
+        "title_en": "Table 3: Penal Facilities: Marginal Standing Facility (MSF) vs Bank Rate",
+        "title_ta": "அட்டவணை 3: அவசர கால கடன் வசதிகள்: விளிம்புநிலை நிலைக் கடன் (MSF) vs வங்கி விகிதம் (Bank Rate)",
+        "headers_en": [
+          "Feature",
+          "Marginal Standing Facility (MSF)",
+          "Bank Rate (வங்கி விகிதம்)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "விளிம்புநிலை நிலைக் கடன் வசதி (MSF)",
+          "வங்கி விகிதம் (Bank Rate)"
+        ],
+        "rows_en": [
+          [
+            "Primary Function",
+            "Overnight emergency liquidity borrowing window for scheduled banks",
+            "Long-term rediscounting of bills of exchange and sovereign loans"
+          ],
+          [
+            "Collateral Source",
+            "Banks can dip into their statutory SLR quota up to an allowed limit",
+            "No SLR dip; traditionally based on commercial bills/securities"
+          ],
+          [
+            "Introduction Year",
+            "Introduced in May 2011 to cushion extreme overnight liquidity shocks",
+            "Existed since the inception of the RBI Act in 1934 (Section 49)"
+          ],
+          [
+            "Operational Corridor Role",
+            "Serves as the formal operational ceiling of the LAF (Repo plus 25 bps)",
+            "Automatically aligned with the MSF rate; acts as administrative penalty rate"
+          ],
+          [
+            "Current Application",
+            "Actively used daily by commercial banks for overnight liquidity mismatches",
+            "Used purely to calculate statutory penal interest on CRR/SLR defaults"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை செயல்பாடு",
+            "அட்டவணை வங்கிகளுக்கான ஒரே இரவிற்கான அவசர பணப்புழக்க கடன் சாளரம்",
+            "வணிக மாற்றுச் சீட்டுகளை நீண்ட காலத்திற்கு மறுதள்ளுபடி செய்யும் விகிதம்"
+          ],
+          [
+            "பிணைய ஆதாரம்",
+            "வங்கிகள் தங்களது சட்டப்பூர்வ SLR ஒதுக்கீட்டிலிருந்து பத்திரங்களைப் பயன்படுத்தலாம்",
+            "SLR-ல் கைவைக்க முடியாது; பாரம்பரியமாக வணிக மாற்றுச் சீட்டுகள் சார்ந்தது"
+          ],
+          [
+            "அறிமுக ஆண்டு",
+            "மே 2011-ல் பணப்புழக்க அதிர்ச்சிகளைத் தணிக்க அறிமுகப்படுத்தப்பட்டது",
+            "1934 ரிசர்வ் வங்கிச் சட்டம் தொடங்கியதிலிருந்தே உள்ளது (பிரிவு 49)"
+          ],
+          [
+            "வழித்தடப் பங்கு",
+            "LAF வழித்தடத்தின் அதிகாரப்பூர்வ கூரையாகச் செயல்படுகிறது (ரெப்போ + 25 bps)",
+            "MSF விகிதத்துடன் தானாகவே இணைக்கப்பட்டு நிர்வாக தண்டனை விகிதமாக செயல்படுகிறது"
+          ],
+          [
+            "தற்போதைய பயன்பாடு",
+            "வங்கிகளால் தினசரி பணப்புழக்கத் தேவைகளுக்கு தீவிரமாகப் பயன்படுத்தப்படுகிறது",
+            "CRR/SLR விதிமீறல்களுக்கான சட்டப்பூர்வ அபராத வட்டியைக் கணக்கிட மட்டுமே பயன்படுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_quantitative_vs_qualitative_tools",
+        "title_en": "Table 4: Comprehensive Comparison: Quantitative Tools vs Qualitative Tools",
+        "title_ta": "அட்டவணை 4: முழுமையான ஒப்பீடு: அளவாக்கக் கருவிகள் vs பண்பறி கருவிகள்",
+        "headers_en": [
+          "Parameter",
+          "Quantitative / General Tools (அளவாக்கக் கருவிகள்)",
+          "Qualitative / Selective Tools (பண்பறி கருவிகள்)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "அளவாக்கக் கருவிகள் (Quantitative)",
+          "பண்பறி கருவிகள் (Qualitative)"
+        ],
+        "rows_en": [
+          [
+            "Focus of Regulation",
+            "Regulates the total volume and aggregate cost of money across the entire economy",
+            "Directs credit allocation to specific sectors and restricts unproductive uses"
+          ],
+          [
+            "Impact on Sectors",
+            "Non-discriminatory; impacts all sectors and commercial banks uniformly",
+            "Selective; discriminates between priority sectors and speculative activities"
+          ],
+          [
+            "Primary Instruments",
+            "Repo Rate, SDF, MSF, Bank Rate, CRR, SLR, Open Market Operations",
+            "Margin requirements (LTV), Credit Rationing, Moral Suasion, Direct Action"
+          ],
+          [
+            "Target Variable",
+            "Aggregate demand, overall money supply, benchmark inflation index",
+            "Sectoral asset prices, speculative real estate bubbles, priority credit shares"
+          ],
+          [
+            "Exam Core Summary",
+            "Controls the total volume and aggregate cost of money supply",
+            "Directs the specific distribution and sectoral allocation of credit"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஒழுங்குமுறை கவனம்",
+            "முழுப் பொருளாதாரத்திலும் உள்ள மொத்த பண அளவு மற்றும் கடன் செலவை ஒழுங்குபடுத்துகிறது",
+            "குறிப்பிட்ட துறைகளுக்கு கடனை வழிநடத்துகிறது மற்றும் ஊக வணிக பயன்பாடுகளைத் தடுக்கிறது"
+          ],
+          [
+            "துறைகள் மீதான தாக்கம்",
+            "பாகுபாடற்றது; அனைத்து துறைகளையும் வணிக வங்கிகளையும் ஒரே மாதிரியாக பாதிக்கிறது",
+            "தேர்ந்தெடுக்கப்பட்டது; முன்னுரிமை துறைகளுக்கும் ஊக நடவடிக்கைகளுக்கும் இடையே வேறுபாடு காட்டுகிறது"
+          ],
+          [
+            "முதன்மை கருவிகள்",
+            "ரெப்போ விகிதம், SDF, MSF, வங்கி விகிதம், CRR, SLR, திறந்த சந்தை நடவடிக்கைகள் (OMO)",
+            "விளிம்புத் தொகை தேவைகள் (LTV), கடன் பங்கீடு, நன்னெறி தூண்டல், நேரடி நடவடிக்கை"
+          ],
+          [
+            "இலக்கு மாறி",
+            "ஒட்டுமொத்த தேவை, மொத்தப் பண விநியோகம், தேசிய பணவீக்கக் குறியீடு",
+            "துறைசார் சொத்து விலைகள், ரியல் எஸ்டேட் குமிழ்கள், முன்னுரிமைக் கடன் ஒதுக்கீடு"
+          ],
+          [
+            "தேர்வு முக்கியக் குறிப்பு",
+            "பணத்தின் மொத்த அளவு மற்றும் செலவைக் கட்டுப்படுத்துகிறது",
+            "கடன் செல்லும் துறைசார் பகிர்வு மற்றும் பயன்பாட்டை வழிநடத்துகிறது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Monetary Policy Structure & Tools (Part 2)",
+        "short_label": "Tools & MPC",
+        "children": [
+          {
+            "title": "Quantitative Instruments",
+            "short_label": "Quantitative",
+            "children": [
+              {
+                "title": "Reserve Ratios: CRR (Sec 42) & SLR (Sec 24)",
+                "short_label": "CRR & SLR"
+              },
+              {
+                "title": "LAF Corridor: SDF (Floor) < Repo < MSF (Ceiling)",
+                "short_label": "LAF Corridor"
+              },
+              {
+                "title": "Open Market Operations & Operation Twist",
+                "short_label": "OMOs"
+              }
+            ]
+          },
+          {
+            "title": "Qualitative Instruments",
+            "short_label": "Qualitative",
+            "children": [
+              {
+                "title": "Margin Requirements (LTV Ratios)",
+                "short_label": "Margins"
+              },
+              {
+                "title": "Moral Suasion & Credit Rationing",
+                "short_label": "Suasion"
+              },
+              {
+                "title": "Direct Action & PCA Framework",
+                "short_label": "Direct Action"
+              }
+            ]
+          },
+          {
+            "title": "Monetary Policy Committee (MPC)",
+            "short_label": "MPC Structure",
+            "children": [
+              {
+                "title": "Composition: 6 Members (3 RBI + 3 External)",
+                "short_label": "6 Members"
+              },
+              {
+                "title": "Target: 4% CPI (±2% Band)",
+                "short_label": "4% ± 2%"
+              },
+              {
+                "title": "Failure: 3 Consecutive Quarters Breach",
+                "short_label": "Failure Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "CRR vs SLR Governing Act Trap (CRR vs SLR சட்டப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that both CRR and SLR are governed under the Reserve Bank of India Act, 1934.",
+            "CORRECT FACT: CRR is governed under Section 42(1) of the RBI Act, 1934; SLR is governed under Section 24 of the Banking Regulation Act, 1949.",
+            "WHY CANDIDATES FAIL: Candidates assume all central banking reserve ratios derive from the same parent statute."
+          ],
+          "ta": [
+            "பொறி: CRR மற்றும் SLR ஆகிய இரண்டுமே ரிசர்வ் வங்கிச் சட்டம் 1934-ன் கீழ் நிர்வகிக்கப்படுகின்றன என்று நினைப்பது.",
+            "சரியான உண்மை: CRR ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 42(1)-ன் கீழ் வருகிறது; ஆனால் SLR வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 24-ன் கீழ் வருகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து இருப்பு விகிதங்களும் ஒரே சட்டத்திலிருந்து தான் வருகின்றன என்று தவறாக பொதுமைப்படுத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "SDF Collateral Trap (SDF பிணையப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that under the Standing Deposit Facility (SDF), the RBI provides government securities as collateral to commercial banks.",
+            "CORRECT FACT: SDF is explicitly a non-collateralized liquidity absorption window; the RBI provides NO government securities to commercial banks.",
+            "WHY CANDIDATES FAIL: Under the older Reverse Repo facility, collateral was mandatory; candidates fail to note the revolutionary change in SDF."
+          ],
+          "ta": [
+            "பொறி: நிலைக் கடனீட்டு வசதியின் (SDF) கீழ் ரிசர்வ் வங்கி வணிக வங்கிகளுக்கு அரசுப் பத்திரங்களை பிணையமாக வழங்குகிறது என நினைப்பது.",
+            "சரியான உண்மை: SDF என்பது முற்றிலும் பிணையமற்ற (Non-collateralized) பண உறிஞ்சுதல் கருவியாகும்; ரிசர்வ் வங்கி வங்கிகளுக்கு எந்த அரசுப் பத்திரங்களையும் தருவதில்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய ரிவர்ஸ் ரெப்போ முறையில் பிணையம் கட்டாயமாக இருந்ததால், SDF-லும் பிணையம் இருக்கும் என்று தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "MPC Quorum and Casting Vote Trap (MPC கோரம் மற்றும் முடிவெடுக்கும் வாக்கு)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that the MPC quorum requires all six members, and the Governor always exercises two votes.",
+            "CORRECT FACT: The quorum for the MPC meeting is four members; each member has one vote, and the Governor exercises a casting vote ONLY in the event of an equality of votes (tie).",
+            "WHY CANDIDATES FAIL: Candidates confuse the Governor's ordinary vote with the conditional casting vote."
+          ],
+          "ta": [
+            "பொறி: MPC கூட்டத்திற்கு ஆறு உறுப்பினர்களும் கட்டாயம் இருக்க வேண்டும் என்றும் ஆளுநருக்கு எப்போதும் இரண்டு வாக்குகள் உண்டு என்றும் நினைப்பது.",
+            "சரியான உண்மை: கூட்டத்திற்கான குறைந்தபட்ச கோரம் 4 உறுப்பினர்கள் மட்டுமே; ஆளுநருக்கு சமநிலை ஏற்படும் போது மட்டுமே இரண்டாவது முடிவெடுக்கும் வாக்கு (Casting Vote) உண்டு.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஆளுநரின் வழக்கமான வாக்கை சமநிலையின் போது மட்டுமே பயன்படும் முடிவெடுக்கும் வாங்குடன் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Inflation Targeting Failure Period Trap (பணவீக்க இலக்கு தோல்வி காலம்)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that monetary policy failure occurs if inflation breaches the 2-6% band for two consecutive months.",
+            "CORRECT FACT: Under Section 45ZN of the RBI Act, failure is defined as average inflation breaching the tolerance band for three consecutive quarters (9 months).",
+            "WHY CANDIDATES FAIL: Candidates confuse monthly inflation release spikes with the quarterly statutory definition of policy failure."
+          ],
+          "ta": [
+            "பொறி: இரண்டு தொடர்ச்சியான மாதங்களுக்கு பணவீக்கம் 2-6% வரம்பை மீறினால் பணவியல் கொள்கை தோல்வியடைந்ததாகக் கருதப்படும் என நினைப்பது.",
+            "சரியான உண்மை: ரிசர்வ் வங்கிச் சட்டம் பிரிவு 45ZN-ன் கீழ், சராசரி பணவீக்கம் தொடர்ந்து மூன்று காலாண்டுகளுக்கு (9 மாதங்கள்) சகிப்புத்தன்மை வரம்பை மீறினால் மட்டுமே தோல்வியாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மாதாந்திர பணவீக்க உயர்வை சட்டப்பூர்வ காலாண்டு தோல்வி வரையறையுடன் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "CRR Statutory Floor and Ceiling Trap (CRR குறைந்தபட்ச வரம்புப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the RBI cannot reduce CRR below 3% by law.",
+            "CORRECT FACT: The RBI Amendment Act, 2006 completely abolished the statutory floor (3%) and ceiling (20%) for CRR, giving RBI unfettered discretion.",
+            "WHY CANDIDATES FAIL: Older books and outdated study guides continue to cite the pre-2006 statutory 3% to 20% limits."
+          ],
+          "ta": [
+            "பொறி: சட்டப்படி CRR விகிதத்தை ரிசர்வ் வங்கியால் 3%-க்குக் கீழே குறைக்க முடியாது என்று கருதுவது.",
+            "சரியான உண்மை: 2006-ஆம் ஆண்டின் ரிசர்வ் வங்கி திருத்தச் சட்டம் CRR-ன் குறைந்தபட்ச (3%) மற்றும் அதிகபட்ச (20%) வரம்புகளை முற்றிலுமாக நீக்கிவிட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2006-க்கு முந்தைய பழைய 3% முதல் 20% வரம்புகளை பழைய புத்தகங்களிலிருந்து படித்து நினைவில் வைத்திருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Interest on CRR Deposits Trap (CRR இருப்புக்கு வட்டிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that commercial banks earn savings bank interest rates on their CRR balances kept with the RBI.",
+            "CORRECT FACT: Commercial banks receive zero interest from the RBI on their mandatory CRR deposits.",
+            "WHY CANDIDATES FAIL: Candidates assume that large cash balances held with the central bank must naturally earn some yield."
+          ],
+          "ta": [
+            "பொறி: ரிசர்வ் வங்கியிடம் வைக்கப்படும் CRR இருப்புத் தொகைக்கு வணிக வங்கிகளுக்கு சேமிப்புக் கணக்கு வட்டி கிடைக்கிறது என நினைப்பது.",
+            "சரியான உண்மை: கட்டாய CRR இருப்புத் தொகைக்கு ரிசர்வ் வங்கி வணிக வங்கிகளுக்கு ஒரு பைசா கூட வட்டி வழங்குவதில்லை (பூஜ்ஜிய வட்டி).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய வங்கியிடம் இவ்வளவு பெரிய தொகை இருக்கும் போது அதற்கு வட்டி கிடைக்கும் என்று தவறாக யூகிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The Monetary Policy Committee (MPC) was constituted under Section 45ZB of the amended Reserve Bank of India Act, 1934.",
+        "The MPC consists of six members: three from the RBI and three external experts appointed by the Central Government.",
+        "External members of the MPC hold office for a non-renewable period of four years.",
+        "The RBI Governor acts as the ex-officio Chairperson of the MPC and exercises a casting vote in the event of a tie.",
+        "The Flexible Inflation Targeting (FIT) target is 4.0% headline CPI-Combined inflation, with a tolerance band of ±2% (2% to 6%).",
+        "A failure of the FIT framework occurs if average inflation remains outside the 2% to 6% band for three consecutive quarters.",
+        "In November 2022, the RBI was required to submit an explanatory report to the Government for the first time after CPI inflation breached the 6% ceiling for three consecutive quarters.",
+        "The Cash Reserve Ratio (CRR) is governed by Section 42(1) of the RBI Act, 1934, and banks earn zero interest on it.",
+        "The Statutory Liquidity Ratio (SLR) is governed by Section 24 of the Banking Regulation Act, 1949, with a maximum legal ceiling of 40%.",
+        "The Standing Deposit Facility (SDF) was operationalized in April 2022 as the new non-collateralized floor of the LAF corridor.",
+        "The Marginal Standing Facility (MSF) was introduced in May 2011 to provide overnight penal liquidity against SLR securities.",
+        "The Urjit Patel Committee report of January 2014 recommended shifting India's monetary policy anchor from Wholesale Price Index (WPI) to headline Consumer Price Index (CPI)."
+      ],
+      "ta": [
+        "பணவியல் கொள்கைக் குழு (MPC) திருத்தப்பட்ட ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 45ZB-ன் கீழ் அமைக்கப்பட்டது.",
+        "MPC ஆறு உறுப்பினர்களைக் கொண்டது: மூன்று பேர் ரிசர்வ் வங்கியிலிருந்தும், மூன்று வெளி நிபுணர்கள் மத்திய அரசாலும் நியமிக்கப்படுகின்றனர்.",
+        "MPC-ன் வெளி உறுப்பினர்கள் மீண்டும் புதுப்பிக்க முடியாத நான்கு ஆண்டு காலத்திற்கு பதவி வகிக்கின்றனர்.",
+        "ரிசர்வ் வங்கி ஆளுநர் MPC-ன் அலுவல் வழி தலைவராக செயல்படுகிறார் மற்றும் சமநிலை ஏற்படும் போது முடிவெடுக்கும் வாக்கை செலுத்துகிறார்.",
+        "நெகிழ்வான பணவீக்க இலக்கு (FIT) என்பது 4.0% தலைப்பு CPI-ஒருங்கிணைந்த பணவீக்கம் மற்றும் ±2% சகிப்புத்தன்மை வரம்பாகும் (2% முதல் 6% வரை).",
+        "தொடர்ச்சியாக மூன்று காலாண்டுகளுக்கு பணவீக்கம் 2% முதல் 6% வரம்பிற்கு வெளியே நீடித்தால் FIT கட்டமைப்பு தோல்வியடைந்ததாகக் கருதப்படும்.",
+        "நவம்பர் 2022-ல், CPI பணவீக்கம் தொடர்ந்து மூன்று காலாண்டுகளுக்கு 6% உச்சவரம்பை மீறியதைத் தொடர்ந்து, ரிசர்வ் வங்கி முதன்முறையாக அரசுக்கு விளக்க அறிக்கை சமர்ப்பித்தது.",
+        "ரொக்க இருப்பு விகிதம் (CRR) ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 42(1)-ன் கீழ் நிர்வகிக்கப்படுகிறது, இதற்கு வங்கிகளுக்கு வட்டி கிடைக்காது.",
+        "சட்டப்பூர்வ பணப்புழக்க விகிதம் (SLR) வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 24-ன் கீழ் அதிகபட்சமாக 40% வரம்புடன் நிர்வகிக்கப்படுகிறது.",
+        "நிலைக் கடனீட்டு வசதி (SDF) ஏப்ரல் 2022-ல் LAF வழித்தடத்தின் புதிய பிணையமற்ற தரைமட்டக் கருவியாக செயல்படுத்தப்பட்டது.",
+        "SLR பத்திரங்களைப் பயன்படுத்தி அவசரக்கால கடன் பெற மே 2011-ல் விளிம்புநிலை நிலைக் கடன் வசதி (MSF) அறிமுகப்படுத்தப்பட்டது.",
+        "ஜனவரி 2014-ன் உர்ஜித் படேல் குழு அறிக்கை, இந்தியாவின் பணவீக்க நங்கூரத்தை மொத்த விலைக் குறியீட்டிலிருந்து (WPI) நுகர்வோர் விலைக் குறியீட்டிற்கு (CPI) மாற்றப் பரிந்துரைத்தது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Cash Reserve Ratio (CRR): Section 42(1) RBI Act; liquid cash kept with RBI; 0% interest; no statutory floor or ceiling.",
+        "Statutory Liquidity Ratio (SLR): Section 24 Banking Regulation Act, 1949; liquid assets (G-Secs, cash, gold) kept within bank; ceiling 40%.",
+        "Policy Repo Rate: Central policy interest rate at which RBI lends short-term funds against G-Sec collateral.",
+        "Standing Deposit Facility (SDF): Operational floor of LAF corridor (Repo minus 25 bps); non-collateralized overnight absorption.",
+        "Marginal Standing Facility (MSF): Operational ceiling of LAF corridor (Repo plus 25 bps); overnight borrowing by dipping into SLR.",
+        "Bank Rate: Penal rate under Section 49 RBI Act; aligned automatically with MSF.",
+        "Monetary Policy Committee (MPC): Section 45ZB; 6 members (3 RBI, 3 External); quorum 4; Governor has casting vote.",
+        "Flexible Inflation Targeting: 4% headline CPI with a ±2% tolerance band (2% to 6%).",
+        "Policy Failure Definition: Average inflation staying outside the 2-6% band for three consecutive quarters.",
+        "Urjit Patel Committee (2014): Pioneer of inflation targeting and adoption of headline CPI in India."
+      ],
+      "ta": [
+        "ரொக்க இருப்பு விகிதம் (CRR): ரிசர்வ் வங்கிச் சட்டம் பிரிவு 42(1); ரிசர்வ் வங்கியிடம் ரொக்கமாக வைக்கப்படும் இருப்பு; வட்டி இல்லை; வரம்புகள் இல்லை.",
+        "சட்டப்பூர்வ பணப்புழக்க விகிதம் (SLR): வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 24; வங்கியிடம் வைக்கப்படும் அரசுப் பத்திரங்கள்/ரொக்கம்; அதிகபட்ச வரம்பு 40%.",
+        "கொள்கை ரெப்போ விகிதம்: அரசுப் பத்திர பிணையத்தின் பேரில் ரிசர்வ் வங்கி வங்கிகளுக்கு குறுகிய கால கடன் வழங்கும் முதன்மை விகிதம்.",
+        "நிலைக் கடனீட்டு வசதி (SDF): LAF வழித்தடத்தின் தரைமட்டம் (ரெப்போ - 25 bps); பிணையமற்ற பண உறிஞ்சுதல் கருவி.",
+        "விளிம்புநிலை நிலைக் கடன் வசதி (MSF): LAF வழித்தடத்தின் கூரை (ரெப்போ + 25 bps); SLR-லிருந்து அவசரக் கடன் பெறும் வழி.",
+        "வங்கி விகிதம் (Bank Rate): பிரிவு 49-ன் கீழான தண்டனை விகிதம்; MSF-உடன் தானாகவே இணைக்கப்பட்டுள்ளது.",
+        "பணவியல் கொள்கைக் குழு (MPC): பிரிவு 45ZB; 6 உறுப்பினர்கள் (3 RBI, 3 வெளி நிபுணர்கள்); கோரம் 4; ஆளுநருக்கு சமநிலை வாக்கு உண்டு.",
+        "நெகிழ்வான பணவீக்க இலக்கு: 4% தலைப்பு CPI மற்றும் ±2% சகிப்புத்தன்மை வரம்பு (2% முதல் 6% வரை).",
+        "கொள்கை தோல்வி வரையறை: சராசரி பணவீக்கம் தொடர்ந்து மூன்று காலாண்டுகளுக்கு 2-6% வரம்பிற்கு வெளியே நீடித்தால்.",
+        "உர்ஜித் படேல் குழு (2014): இந்தியாவில் பணவீக்க இலக்கு மற்றும் CPI அளவீட்டைப் பரிந்துரைத்த முன்னோடிக் குழு."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_mp_201",
+        "front_en": "Under which section of the RBI Act, 1934 is the Cash Reserve Ratio (CRR) mandated?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் எந்தப் பிரிவின் கீழ் ரொக்க இருப்பு விகிதம் (CRR) கட்டாயமாக்கப்பட்டுள்ளது?",
+        "back_en": "Section 42(1) of the Reserve Bank of India Act, 1934.",
+        "back_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 42(1)."
+      },
+      {
+        "id": "rc_mp_202",
+        "front_en": "Which statute and section governs the Statutory Liquidity Ratio (SLR)?",
+        "front_ta": "சட்டப்பூர்வ பணப்புழக்க விகிதத்தை (SLR) நிர்வகிக்கும் சட்டம் மற்றும் பிரிவு எது?",
+        "back_en": "Section 24 of the Banking Regulation Act, 1949.",
+        "back_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 24."
+      },
+      {
+        "id": "rc_mp_203",
+        "front_en": "What is the key difference between the Standing Deposit Facility (SDF) and Reverse Repo?",
+        "front_ta": "நிலைக் கடனீட்டு வசதிக்கும் (SDF) ரிவர்ஸ் ரெப்போவுக்கும் இடையே உள்ள முக்கிய வேறுபாடு என்ன?",
+        "back_en": "SDF requires zero government securities collateral from the RBI, whereas Reverse Repo requires collateral.",
+        "back_ta": "SDF-க்கு ரிசர்வ் வங்கி அரசுப் பத்திரங்களை பிணையமாக வழங்க வேண்டியதில்லை; ரிவர்ஸ் ரெப்போவிற்கு பிணையம் கட்டாயம்."
+      },
+      {
+        "id": "rc_mp_204",
+        "front_en": "How many total members constitute the Monetary Policy Committee (MPC)?",
+        "front_ta": "பணவியல் கொள்கைக் குழுவில் (MPC) உள்ள மொத்த உறுப்பினர்களின் எண்ணிக்கை எத்தனை?",
+        "back_en": "Six members (three from RBI and three external experts appointed by Central Government).",
+        "back_ta": "ஆறு உறுப்பினர்கள் (3 பேர் ரிசர்வ் வங்கி, 3 பேர் மத்திய அரசால் நியமிக்கப்படும் வெளி நிபுணர்கள்)."
+      },
+      {
+        "id": "rc_mp_205",
+        "front_en": "What is the numerical inflation target and tolerance band in India under the FIT framework?",
+        "front_ta": "FIT கட்டமைப்பின் கீழ் இந்தியாவில் பணவீக்க இலக்கு மற்றும் சகிப்புத்தன்மை வரம்பு என்ன?",
+        "back_en": "4.0% headline CPI inflation with a tolerance band of ±2% (2.0% to 6.0%).",
+        "back_ta": "4.0% தலைப்பு CPI பணவீக்கம் மற்றும் ±2% சகிப்புத்தன்மை வரம்பு (2.0% முதல் 6.0% வரை)."
+      },
+      {
+        "id": "rc_mp_206",
+        "front_en": "What constitutes a statutory failure of the monetary policy inflation target?",
+        "front_ta": "பணவியல் கொள்கை பணவீக்க இலக்கின் சட்டப்பூர்வ தோல்வி என்பது எதனைக் குறிக்கும்?",
+        "back_en": "Average inflation remaining outside the 2% to 6% tolerance band for three consecutive quarters.",
+        "back_ta": "சராசரி பணவீக்கம் தொடர்ந்து மூன்று காலாண்டுகளுக்கு 2% முதல் 6% வரம்பிற்கு வெளியே நீடிப்பது."
+      },
+      {
+        "id": "rc_mp_207",
+        "front_en": "What is the tenure of external members appointed to the Monetary Policy Committee?",
+        "front_ta": "பணவியல் கொள்கைக் குழுவிற்கு நியமிக்கப்படும் வெளி உறுப்பினர்களின் பதவிக்காலம் என்ன?",
+        "back_en": "Four years (not eligible for reappointment).",
+        "back_ta": "நான்கு ஆண்டுகள் (மீண்டும் நியமிக்கப்பட தகுதியற்றவர்கள்)."
+      },
+      {
+        "id": "rc_mp_208",
+        "front_en": "What is the minimum quorum required to conduct a meeting of the Monetary Policy Committee?",
+        "front_ta": "பணவியல் கொள்கைக் குழுவின் கூட்டத்தை நடத்துவதற்கு தேவையான குறைந்தபட்ச கோரம் என்ன?",
+        "back_en": "Four members.",
+        "back_ta": "நான்கு உறுப்பினர்கள்."
+      },
+      {
+        "id": "rc_mp_209",
+        "front_en": "When does the RBI Governor exercise a casting vote in the MPC?",
+        "front_ta": "MPC-ல் ரிசர்வ் வங்கி ஆளுநர் எப்போது முடிவெடுக்கும் வாக்கை (Casting Vote) பயன்படுத்துகிறார்?",
+        "back_en": "Only in the event of an equality of votes (tie) among members present and voting.",
+        "back_ta": "உறுப்பினர்களிடையே வாக்குகள் சமநிலையில் (Tie) முடியும் போது மட்டுமே."
+      },
+      {
+        "id": "rc_mp_210",
+        "front_en": "Which committee recommended shifting India's monetary policy anchor to headline CPI?",
+        "front_ta": "இந்தியாவின் பணவியல் கொள்கை நங்கூரத்தை தலைப்பு CPI-க்கு மாற்ற பரிந்துரைத்த குழு எது?",
+        "back_en": "Urjit Patel Committee (2014).",
+        "back_ta": "உர்ஜித் படேல் குழு (2014)."
+      },
+      {
+        "id": "rc_mp_211",
+        "front_en": "What rate acts as the operational ceiling of the Liquidity Adjustment Facility (LAF) corridor?",
+        "front_ta": "LAF வழித்தடத்தின் செயல்பாட்டு கூரையாக விளங்கும் விகிதம் எது?",
+        "back_en": "Marginal Standing Facility (MSF) rate (set at Repo Rate + 25 bps).",
+        "back_ta": "விளிம்புநிலை நிலைக் கடன் வசதி (MSF) விகிதம் (ரெப்போ + 25 அடிப்படை புள்ளிகள்)."
+      },
+      {
+        "id": "rc_mp_212",
+        "front_en": "What was the purpose of the RBI's 'Operation Twist'?",
+        "front_ta": "ரிசர்வ் வங்கியின் 'ஆபரேஷன் ட்விஸ்ட்' திட்டத்தின் நோக்கம் என்ன?",
+        "back_en": "Simultaneously selling short-term bonds and buying long-term bonds to lower long-term borrowing yields.",
+        "back_ta": "குறுகிய கால பத்திரங்களை விற்று நீண்ட கால பத்திரங்களை வாங்குவதன் மூலம் நீண்ட கால வட்டி விகிதங்களைக் குறைப்பது."
+      }
+    ]
+  }
+}

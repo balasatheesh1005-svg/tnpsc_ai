@@ -1,0 +1,4052 @@
+[
+  {
+    "id": "SIMP_001",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: 12 + 8 × 5 - 10",
+      "en": "Find the value: 12 + 8 × 5 - 10"
+    },
+    "question_ta": "மதிப்பு காண்க: 12 + 8 × 5 - 10",
+    "question_en": "Find the value: 12 + 8 × 5 - 10",
+    "options": [
+      "38",
+      "42",
+      "90",
+      "50"
+    ],
+    "options_ta": [
+      "38",
+      "42",
+      "90",
+      "50"
+    ],
+    "options_en": [
+      "38",
+      "42",
+      "90",
+      "50"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "BODMAS விதியின்படி முதலில் பெருக்கல் செய்ய வேண்டும்: 8 × 5 = 40. பிறகு கூட்டல்: 12 + 40 = 52. பிறகு கழித்தல்: 52 - 10 = 42.",
+      "en": "According to BODMAS rule, multiply first: 8 × 5 = 40. Then add: 12 + 40 = 52. Then subtract: 52 - 10 = 42."
+    },
+    "explanation_ta": "BODMAS விதியின்படி முதலில் பெருக்கல் செய்ய வேண்டும்: 8 × 5 = 40. பிறகு கூட்டல்: 12 + 40 = 52. பிறகு கழித்தல்: 52 - 10 = 42.",
+    "explanation_en": "According to BODMAS rule, multiply first: 8 × 5 = 40. Then add: 12 + 40 = 52. Then subtract: 52 - 10 = 42.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 12 + 40 - 10 = 42.",
+        "en": "Correct. 12 + 40 - 10 = 42."
+      },
+      "C": {
+        "ta": "தவறு. (12+8) × (5-10) என அடைப்புக்குறி இல்லாமல் செய்யக்கூடாது.",
+        "en": "Incorrect grouping."
+      },
+      "D": {
+        "ta": "தவறு. கூட்டலை முன்னதாக தவறாகச் செய்து கழித்தது.",
+        "en": "Incorrect order."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "BODMAS விதியை நினைவில் கொள்க: Brackets, Orders, Division, Multiplication, Addition, Subtraction.",
+      "en": "Remember BODMAS rule: Brackets, Orders, Division, Multiplication, Addition, Subtraction."
+    },
+    "revision_fact": {
+      "ta": "8 × 5 = 40; 12 + 40 = 52; 52 - 10 = 42",
+      "en": "8 × 5 = 40; 12 + 40 = 52; 52 - 10 = 42"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_002",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: 144 ÷ 12 + 18",
+      "en": "Find the value: 144 ÷ 12 + 18"
+    },
+    "question_ta": "மதிப்பு காண்க: 144 ÷ 12 + 18",
+    "question_en": "Find the value: 144 ÷ 12 + 18",
+    "options": [
+      "30",
+      "12",
+      "24",
+      "36"
+    ],
+    "options_ta": [
+      "30",
+      "12",
+      "24",
+      "36"
+    ],
+    "options_en": [
+      "30",
+      "12",
+      "24",
+      "36"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "BODMAS விதியின்படி முதலில் வகுத்தல் செய்ய வேண்டும்: 144 ÷ 12 = 12. பிறகு 12 + 18 = 30.",
+      "en": "According to BODMAS, divide first: 144 ÷ 12 = 12. Then 12 + 18 = 30."
+    },
+    "explanation_ta": "BODMAS விதியின்படி முதலில் வகுத்தல் செய்ய வேண்டும்: 144 ÷ 12 = 12. பிறகு 12 + 18 = 30.",
+    "explanation_en": "According to BODMAS, divide first: 144 ÷ 12 = 12. Then 12 + 18 = 30.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 12 + 18 = 30.",
+        "en": "Correct. 12 + 18 = 30."
+      },
+      "B": {
+        "ta": "தவறு. 18 கூட்டப்படவில்லை.",
+        "en": "Forgot to add 18."
+      },
+      "C": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 144 ÷ (12+18) எனக் கணக்கிடப்பட்டது.",
+        "en": "Incorrect parenthesis evaluation."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வகுத்தல் பெருக்கலுக்கு முன் வரும்.",
+      "en": "Division comes before addition."
+    },
+    "revision_fact": {
+      "ta": "144 ÷ 12 = 12; 12 + 18 = 30",
+      "en": "144 ÷ 12 = 12; 12 + 18 = 30"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_003",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: (25 - 5) × (12 + 8) ÷ 10",
+      "en": "Simplify: (25 - 5) × (12 + 8) ÷ 10"
+    },
+    "question_ta": "சுருக்குக: (25 - 5) × (12 + 8) ÷ 10",
+    "question_en": "Simplify: (25 - 5) × (12 + 8) ÷ 10",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "options_ta": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "options_en": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "அடைப்புக்குறிகளை முதலில் சுருக்குக: (25 - 5) = 20, (12 + 8) = 20. இப்போது 20 × 20 ÷ 10 = 400 ÷ 10 = 40.",
+      "en": "Simplify brackets first: (25 - 5) = 20, (12 + 8) = 20. Now 20 × 20 ÷ 10 = 400 ÷ 10 = 40."
+    },
+    "explanation_ta": "அடைப்புக்குறிகளை முதலில் சுருக்குக: (25 - 5) = 20, (12 + 8) = 20. இப்போது 20 × 20 ÷ 10 = 400 ÷ 10 = 40.",
+    "explanation_en": "Simplify brackets first: (25 - 5) = 20, (12 + 8) = 20. Now 20 × 20 ÷ 10 = 400 ÷ 10 = 40.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. பெருக்கலில் பிழை.",
+        "en": "Multiplication error."
+      },
+      "C": {
+        "ta": "சரி. 20 × 20 ÷ 10 = 40.",
+        "en": "Correct. 20 × 20 ÷ 10 = 40."
+      },
+      "D": {
+        "ta": "தவறு. தவறான வகுத்தல்.",
+        "en": "Incorrect division."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடைப்புக்குறிகளுக்குள் உள்ளவற்றை முதலில் சுருக்க வேண்டும்.",
+      "en": "Evaluate terms inside brackets first."
+    },
+    "revision_fact": {
+      "ta": "20 × 20 ÷ 10 = 40",
+      "en": "20 × 20 ÷ 10 = 40"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_004",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: 15.5 + 4.25 - 6.75",
+      "en": "Find the value: 15.5 + 4.25 - 6.75"
+    },
+    "question_ta": "மதிப்பு காண்க: 15.5 + 4.25 - 6.75",
+    "question_en": "Find the value: 15.5 + 4.25 - 6.75",
+    "options": [
+      "12.5",
+      "13.0",
+      "13.5",
+      "14.0"
+    ],
+    "options_ta": [
+      "12.5",
+      "13.0",
+      "13.5",
+      "14.0"
+    ],
+    "options_en": [
+      "12.5",
+      "13.0",
+      "13.5",
+      "14.0"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "கூட்டல்: 15.50 + 4.25 = 19.75. கழித்தல்: 19.75 - 6.75 = 13.00.",
+      "en": "Add: 15.50 + 4.25 = 19.75. Subtract: 19.75 - 6.75 = 13.00."
+    },
+    "explanation_ta": "கூட்டல்: 15.50 + 4.25 = 19.75. கழித்தல்: 19.75 - 6.75 = 13.00.",
+    "explanation_en": "Add: 15.50 + 4.25 = 19.75. Subtract: 19.75 - 6.75 = 13.00.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கழித்தலில் பிழை.",
+        "en": "Subtraction error."
+      },
+      "B": {
+        "ta": "சரி. 19.75 - 6.75 = 13.0.",
+        "en": "Correct. 19.75 - 6.75 = 13.0."
+      },
+      "C": {
+        "ta": "தவறு. கூட்டலில் பிழை.",
+        "en": "Addition error."
+      },
+      "D": {
+        "ta": "தவறு. தவறான தசமக் கணக்கீடு.",
+        "en": "Decimal point shift error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "தசம எண்களைக் கூட்டும் போது தசமப் புள்ளிகளை நேராக வரிசைப்படுத்த வேண்டும்.",
+      "en": "Align decimal points when adding or subtracting."
+    },
+    "revision_fact": {
+      "ta": "19.75 - 6.75 = 13.0",
+      "en": "19.75 - 6.75 = 13.0"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_005",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: 3/4 + 5/8",
+      "en": "Simplify: 3/4 + 5/8"
+    },
+    "question_ta": "சுருக்குக: 3/4 + 5/8",
+    "question_en": "Simplify: 3/4 + 5/8",
+    "options": [
+      "7/8",
+      "1 3/8",
+      "1 1/4",
+      "1 1/8"
+    ],
+    "options_ta": [
+      "7/8",
+      "1 3/8",
+      "1 1/4",
+      "1 1/8"
+    ],
+    "options_en": [
+      "7/8",
+      "1 3/8",
+      "1 1/4",
+      "1 1/8"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "பகுதிகளின் மீ.சி.ம (LCM of 4, 8) = 8. (3×2)/8 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8.",
+      "en": "LCM of denominators (4, 8) = 8. (3×2)/8 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8."
+    },
+    "explanation_ta": "பகுதிகளின் மீ.சி.ம (LCM of 4, 8) = 8. (3×2)/8 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8.",
+    "explanation_en": "LCM of denominators (4, 8) = 8. (3×2)/8 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. பகுதிகளைக் கூட்டக்கூடாது.",
+        "en": "Added denominators directly."
+      },
+      "B": {
+        "ta": "சரி. 11/8 = 1 3/8.",
+        "en": "Correct. 11/8 = 1 3/8."
+      },
+      "C": {
+        "ta": "தவறு. 10/8 எனக் தவறாகக் கணக்கிடப்பட்டது.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 9/8 எனக் தவறாகக் கணக்கிடப்பட்டது.",
+        "en": "Incorrect numerator sum."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னங்களைக் கூட்டும் போது பகுதிகளின் மீ.சி.ம காண வேண்டும்.",
+      "en": "Find LCM of denominators before adding fractions."
+    },
+    "revision_fact": {
+      "ta": "3/4 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8",
+      "en": "3/4 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_006",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: √64 + √36",
+      "en": "Find the value: √64 + √36"
+    },
+    "question_ta": "மதிப்பு காண்க: √64 + √36",
+    "question_en": "Find the value: √64 + √36",
+    "options": [
+      "14",
+      "48",
+      "100",
+      "10"
+    ],
+    "options_ta": [
+      "14",
+      "48",
+      "100",
+      "10"
+    ],
+    "options_en": [
+      "14",
+      "48",
+      "100",
+      "10"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "√64 = 8, √36 = 6. எனவே, 8 + 6 = 14.",
+      "en": "√64 = 8, √36 = 6. Therefore, 8 + 6 = 14."
+    },
+    "explanation_ta": "√64 = 8, √36 = 6. எனவே, 8 + 6 = 14.",
+    "explanation_en": "√64 = 8, √36 = 6. Therefore, 8 + 6 = 14.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 8 + 6 = 14.",
+        "en": "Correct. 8 + 6 = 14."
+      },
+      "B": {
+        "ta": "தவறு. 8 × 6 எனக் பெருக்கியது.",
+        "en": "Multiplied instead of adding."
+      },
+      "C": {
+        "ta": "தவறு. √(64+36) = √100 என தவறாகச் சேர்க்கப்பட்டது (வர்க்கமூலத்தைக் கூட்டாமல் எண்களைக் கூட்டியது).",
+        "en": "Incorrectly took √(64+36)."
+      },
+      "D": {
+        "ta": "தவறு. √100 = 10 எனக் கருதியது.",
+        "en": "Evaluated √100 instead."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(a+b) ≠ √a + √b என்பதை நினைவில் கொள்க.",
+      "en": "Remember √(a+b) ≠ √a + √b."
+    },
+    "revision_fact": {
+      "ta": "√64 = 8, √36 = 6; 8 + 6 = 14",
+      "en": "√64 = 8, √36 = 6; 8 + 6 = 14"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_007",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: ∛125 + ∛27",
+      "en": "Find the value: ∛125 + ∛27"
+    },
+    "question_ta": "மதிப்பு காண்க: ∛125 + ∛27",
+    "question_en": "Find the value: ∛125 + ∛27",
+    "options": [
+      "15",
+      "152",
+      "8",
+      "6"
+    ],
+    "options_ta": [
+      "15",
+      "152",
+      "8",
+      "6"
+    ],
+    "options_en": [
+      "15",
+      "152",
+      "8",
+      "6"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "125-ன் கனமூலம் ∛125 = 5. 27-ன் கனமூலம் ∛27 = 3. எனவே 5 + 3 = 8.",
+      "en": "Cube root of 125 = 5. Cube root of 27 = 3. So 5 + 3 = 8."
+    },
+    "explanation_ta": "125-ன் கனமூலம் ∛125 = 5. 27-ன் கனமூலம் ∛27 = 3. எனவே 5 + 3 = 8.",
+    "explanation_en": "Cube root of 125 = 5. Cube root of 27 = 3. So 5 + 3 = 8.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 5 × 3 எனக் பெருக்கியது.",
+        "en": "Multiplied cube roots."
+      },
+      "B": {
+        "ta": "தவறு. 125 + 27 = 152 என மூலங்களுக்குள் கூட்டியது.",
+        "en": "Added numbers before taking root."
+      },
+      "C": {
+        "ta": "சரி. 5 + 3 = 8.",
+        "en": "Correct. 5 + 3 = 8."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "∛125 = 5 (5×5×5=125), ∛27 = 3 (3×3×3=27).",
+      "en": "∛125 = 5, ∛27 = 3."
+    },
+    "revision_fact": {
+      "ta": "5 + 3 = 8",
+      "en": "5 + 3 = 8"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_008",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: 2⁴ + 3³",
+      "en": "Simplify: 2⁴ + 3³"
+    },
+    "question_ta": "சுருக்குக: 2⁴ + 3³",
+    "question_en": "Simplify: 2⁴ + 3³",
+    "options": [
+      "25",
+      "17",
+      "43",
+      "35"
+    ],
+    "options_ta": [
+      "25",
+      "17",
+      "43",
+      "35"
+    ],
+    "options_en": [
+      "25",
+      "17",
+      "43",
+      "35"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "2⁴ = 2 × 2 × 2 × 2 = 16. 3³ = 3 × 3 × 3 = 27. எனவே, 16 + 27 = 43.",
+      "en": "2⁴ = 16. 3³ = 27. Therefore, 16 + 27 = 43."
+    },
+    "explanation_ta": "2⁴ = 2 × 2 × 2 × 2 = 16. 3³ = 3 × 3 × 3 = 27. எனவே, 16 + 27 = 43.",
+    "explanation_en": "2⁴ = 16. 3³ = 27. Therefore, 16 + 27 = 43.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 16 + 9 = 25 என தவறாகக் கணக்கிடப்பட்டது.",
+        "en": "Miscalculated 3³ as 9."
+      },
+      "B": {
+        "ta": "தவறு. அடுக்கையும் அடிமானத்தையும் பெருக்கியது (2×4 + 3×3 = 8+9=17).",
+        "en": "Multiplied base and exponent directly."
+      },
+      "C": {
+        "ta": "சரி. 16 + 27 = 43.",
+        "en": "Correct. 16 + 27 = 43."
+      },
+      "D": {
+        "ta": "தவறு. 8 + 27 = 35 என Miscalculated 2⁴ as 8.",
+        "en": "Miscalculated 2⁴ as 8."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "aⁿ என்பது a-வை n முறை பெருக்குவதாகும்.",
+      "en": "aⁿ means multiplying a by itself n times."
+    },
+    "revision_fact": {
+      "ta": "16 + 27 = 43",
+      "en": "16 + 27 = 43"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_009",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "x + 45 = 120 எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If x + 45 = 120, what is the value of x?"
+    },
+    "question_ta": "x + 45 = 120 எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If x + 45 = 120, what is the value of x?",
+    "options": [
+      "85",
+      "75",
+      "65",
+      "165"
+    ],
+    "options_ta": [
+      "85",
+      "75",
+      "65",
+      "165"
+    ],
+    "options_en": [
+      "85",
+      "75",
+      "65",
+      "165"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "x + 45 = 120 ⟹ x = 120 - 45 = 75.",
+      "en": "x + 45 = 120 ⟹ x = 120 - 45 = 75."
+    },
+    "explanation_ta": "x + 45 = 120 ⟹ x = 120 - 45 = 75.",
+    "explanation_en": "x + 45 = 120 ⟹ x = 120 - 45 = 75.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 120 - 45 = 75.",
+        "en": "Correct. 120 - 45 = 75."
+      },
+      "C": {
+        "ta": "தவறு. கழித்தலில் பிழை.",
+        "en": "Subtraction error."
+      },
+      "D": {
+        "ta": "தவறு. 120 + 45 என கூட்டப்பட்டது.",
+        "en": "Added 45 instead of subtracting."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சமன்பாட்டின் ஒரு பக்கத்தில் உள்ள கூட்டல் குறி மறுபக்கம் செல்லும் போது கழித்தலாக மாறும்.",
+      "en": "Positive term shifts across '=' as negative."
+    },
+    "revision_fact": {
+      "ta": "x = 120 - 45 = 75",
+      "en": "x = 120 - 45 = 75"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_010",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "240-ல் 25% எவ்வளவு?",
+      "en": "What is 25% of 240?"
+    },
+    "question_ta": "240-ல் 25% எவ்வளவு?",
+    "question_en": "What is 25% of 240?",
+    "options": [
+      "50",
+      "80",
+      "48",
+      "60"
+    ],
+    "options_ta": [
+      "50",
+      "80",
+      "48",
+      "60"
+    ],
+    "options_en": [
+      "50",
+      "80",
+      "48",
+      "60"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "25% = 25/100 = 1/4. எனவே 240 × 1/4 = 60.",
+      "en": "25% = 25/100 = 1/4. So 240 × 1/4 = 60."
+    },
+    "explanation_ta": "25% = 25/100 = 1/4. எனவே 240 × 1/4 = 60.",
+    "explanation_en": "25% = 25/100 = 1/4. So 240 × 1/4 = 60.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 240 ÷ 3 = 80.",
+        "en": "Calculated 33.33% instead."
+      },
+      "C": {
+        "ta": "தவறு. 240 ÷ 5 = 48 (20% கணக்கிடப்பட்டது).",
+        "en": "Calculated 20% instead."
+      },
+      "D": {
+        "ta": "சரி. 240 ÷ 4 = 60.",
+        "en": "Correct. 240 ÷ 4 = 60."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "25% என்பது ஒரு எண்ணின் நான்கில் ஒரு பங்காகும் (1/4).",
+      "en": "25% is simply one-fourth (1/4) of the number."
+    },
+    "revision_fact": {
+      "ta": "240 × 1/4 = 60",
+      "en": "240 × 1/4 = 60"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_011",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: (2/3) × (9/4)",
+      "en": "Simplify: (2/3) × (9/4)"
+    },
+    "question_ta": "சுருக்குக: (2/3) × (9/4)",
+    "question_en": "Simplify: (2/3) × (9/4)",
+    "options": [
+      "18/7",
+      "3/4",
+      "3/2",
+      "6/7"
+    ],
+    "options_ta": [
+      "18/7",
+      "3/4",
+      "3/2",
+      "6/7"
+    ],
+    "options_en": [
+      "18/7",
+      "3/4",
+      "3/2",
+      "6/7"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "(2 × 9) / (3 × 4) = 18 / 12 = 3/2 = 1.5.",
+      "en": "(2 × 9) / (3 × 4) = 18 / 12 = 3/2 = 1.5."
+    },
+    "explanation_ta": "(2 × 9) / (3 × 4) = 18 / 12 = 3/2 = 1.5.",
+    "explanation_en": "(2 × 9) / (3 × 4) = 18 / 12 = 3/2 = 1.5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. பகுதிகளைப் பெருக்கி 3+4=7 என தவறாக எழுதியது.",
+        "en": "Incorrect denominator."
+      },
+      "B": {
+        "ta": "தவறு. 9/12 = 3/4 என தவறாகக் குறுக்கு நீக்கம் செய்யப்பட்டது.",
+        "en": "Miscalculated cancellation."
+      },
+      "C": {
+        "ta": "சரி. 18/12 = 3/2.",
+        "en": "Correct. 18/12 = 3/2."
+      },
+      "D": {
+        "ta": "தவறு. பகுதியையும் தொகுதியையும் கூட்டியது.",
+        "en": "Added numerator and denominator."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னங்களைப் பெருக்கும் போது தொகுதியையும் தொகுதியையும், பகுதியையும் பகுதியையும் பெருக்க வேண்டும்.",
+      "en": "Multiply numerator by numerator and denominator by denominator."
+    },
+    "revision_fact": {
+      "ta": "18/12 = 3/2",
+      "en": "18/12 = 3/2"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_012",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "கலப்புப் பின்னம் 3 2/5-ஐ தகாப் பின்னமாக மாற்றுக.",
+      "en": "Convert the mixed fraction 3 2/5 into an improper fraction."
+    },
+    "question_ta": "கலப்புப் பின்னம் 3 2/5-ஐ தகாப் பின்னமாக மாற்றுக.",
+    "question_en": "Convert the mixed fraction 3 2/5 into an improper fraction.",
+    "options": [
+      "15/5",
+      "6/5",
+      "17/5",
+      "11/5"
+    ],
+    "options_ta": [
+      "15/5",
+      "6/5",
+      "17/5",
+      "11/5"
+    ],
+    "options_en": [
+      "15/5",
+      "6/5",
+      "17/5",
+      "11/5"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "3 2/5 = (3 × 5 + 2) / 5 = (15 + 2) / 5 = 17/5.",
+      "en": "3 2/5 = (3 × 5 + 2) / 5 = (15 + 2) / 5 = 17/5."
+    },
+    "explanation_ta": "3 2/5 = (3 × 5 + 2) / 5 = (15 + 2) / 5 = 17/5.",
+    "explanation_en": "3 2/5 = (3 × 5 + 2) / 5 = (15 + 2) / 5 = 17/5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (3×5)/5 = 15/5 எனக் கூட்டுத் தொகையை மறந்தது.",
+        "en": "Forgot to add numerator."
+      },
+      "B": {
+        "ta": "தவறு. (3×2)/5 = 6/5 என பெருக்கப்பட்டது.",
+        "en": "Multiplied whole number with numerator."
+      },
+      "C": {
+        "ta": "சரி. (3×5 + 2)/5 = 17/5.",
+        "en": "Correct. (3×5 + 2)/5 = 17/5."
+      },
+      "D": {
+        "ta": "தவறு. (3+2 × 3)/5 எனக் தவறாகக் கணக்கிடப்பட்டது.",
+        "en": "Miscalculated."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கலப்புப் பின்னம் = (முழு எண் × பகுதி + தொகுதி) / பகுதி.",
+      "en": "Mixed fraction = (Whole × Denominator + Numerator) / Denominator."
+    },
+    "revision_fact": {
+      "ta": "(3 × 5 + 2)/5 = 17/5",
+      "en": "(3 × 5 + 2)/5 = 17/5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_013",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "a = 5 மற்றும் b = 3 எனில், a² - b²-ன் மதிப்பு என்ன?",
+      "en": "If a = 5 and b = 3, what is the value of a² - b²?"
+    },
+    "question_ta": "a = 5 மற்றும் b = 3 எனில், a² - b²-ன் மதிப்பு என்ன?",
+    "question_en": "If a = 5 and b = 3, what is the value of a² - b²?",
+    "options": [
+      "64",
+      "8",
+      "16",
+      "4"
+    ],
+    "options_ta": [
+      "64",
+      "8",
+      "16",
+      "4"
+    ],
+    "options_en": [
+      "64",
+      "8",
+      "16",
+      "4"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "a² - b² = (a+b)(a-b) = (5+3)(5-3) = 8 × 2 = 16. அல்லது 5² - 3² = 25 - 9 = 16.",
+      "en": "a² - b² = (5+3)(5-3) = 8 × 2 = 16. Or 25 - 9 = 16."
+    },
+    "explanation_ta": "a² - b² = (a+b)(a-b) = (5+3)(5-3) = 8 × 2 = 16. அல்லது 5² - 3² = 25 - 9 = 16.",
+    "explanation_en": "a² - b² = (5+3)(5-3) = 8 × 2 = 16. Or 25 - 9 = 16.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (a+b)² = (5+3)² = 64 எனக் கணக்கிடப்பட்டது.",
+        "en": "Calculated (a+b)² instead."
+      },
+      "B": {
+        "ta": "தவறு. (a+b) = 8 எனக் கணக்கிடப்பட்டது.",
+        "en": "Calculated a+b only."
+      },
+      "C": {
+        "ta": "சரி. 25 - 9 = 16.",
+        "en": "Correct. 25 - 9 = 16."
+      },
+      "D": {
+        "ta": "தவறு. (a-b)² = (5-3)² = 4 எனக் கணக்கிடப்பட்டது.",
+        "en": "Calculated (a-b)² instead."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a² - b² = (a + b)(a - b) முற்றொருமையை நினைவில் கொள்க.",
+      "en": "Use identity a² - b² = (a + b)(a - b)."
+    },
+    "revision_fact": {
+      "ta": "25 - 9 = 16",
+      "en": "25 - 9 = 16"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_014",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "3x - 7 = 14 எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If 3x - 7 = 14, what is the value of x?"
+    },
+    "question_ta": "3x - 7 = 14 எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If 3x - 7 = 14, what is the value of x?",
+    "options": [
+      "5",
+      "21",
+      "7",
+      "3"
+    ],
+    "options_ta": [
+      "5",
+      "21",
+      "7",
+      "3"
+    ],
+    "options_en": [
+      "5",
+      "21",
+      "7",
+      "3"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "3x - 7 = 14 ⟹ 3x = 14 + 7 = 21 ⟹ x = 21 / 3 = 7.",
+      "en": "3x - 7 = 14 ⟹ 3x = 14 + 7 = 21 ⟹ x = 21 / 3 = 7."
+    },
+    "explanation_ta": "3x - 7 = 14 ⟹ 3x = 14 + 7 = 21 ⟹ x = 21 / 3 = 7.",
+    "explanation_en": "3x - 7 = 14 ⟹ 3x = 14 + 7 = 21 ⟹ x = 21 / 3 = 7.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 3x-ன் மதிப்பு 21, x-ன் மதிப்பு அன்று.",
+        "en": "21 is value of 3x, not x."
+      },
+      "C": {
+        "ta": "சரி. 3x = 21 ⟹ x = 7.",
+        "en": "Correct. 3x = 21 ⟹ x = 7."
+      },
+      "D": {
+        "ta": "தவறு. (14 - 7) / 3 = 7/3 தவறான கழித்தல்.",
+        "en": "Incorrect sign flip."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மாறியை ஒரு பக்கத்தில் தனிமைப்படுத்த சமன்பாட்டின் விதிகளைப் பின்பற்றவும்.",
+      "en": "Isolate x step by step."
+    },
+    "revision_fact": {
+      "ta": "3x = 21 ⟹ x = 7",
+      "en": "3x = 21 ⟹ x = 7"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_015",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: 50 - [20 + {15 - (5 + 3)}]",
+      "en": "Simplify: 50 - [20 + {15 - (5 + 3)}]"
+    },
+    "question_ta": "சுருக்குக: 50 - [20 + {15 - (5 + 3)}]",
+    "question_en": "Simplify: 50 - [20 + {15 - (5 + 3)}]",
+    "options": [
+      "27",
+      "18",
+      "32",
+      "23"
+    ],
+    "options_ta": [
+      "27",
+      "18",
+      "32",
+      "23"
+    ],
+    "options_en": [
+      "27",
+      "18",
+      "32",
+      "23"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1. உள் அடைப்புக்குறி: (5 + 3) = 8.\n2. கன அடைப்புக்குறி: {15 - 8} = 7.\n3. சதுர அடைப்புக்குறி: [20 + 7] = 27.\n4. இறுதி கழித்தல்: 50 - 27 = 23.",
+      "en": "1. Inner bracket: (5 + 3) = 8.\n2. Curly bracket: {15 - 8} = 7.\n3. Square bracket: [20 + 7] = 27.\n4. Final subtraction: 50 - 27 = 23."
+    },
+    "explanation_ta": "1. உள் அடைப்புக்குறி: (5 + 3) = 8.\n2. கன அடைப்புக்குறி: {15 - 8} = 7.\n3. சதுர அடைப்புக்குறி: [20 + 7] = 27.\n4. இறுதி கழித்தல்: 50 - 27 = 23.",
+    "explanation_en": "1. Inner bracket: (5 + 3) = 8.\n2. Curly bracket: {15 - 8} = 7.\n3. Square bracket: [20 + 7] = 27.\n4. Final subtraction: 50 - 27 = 23.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. [20 + 7] = 27-ஐ 50-ல் இருந்து கழிக்காமல் அதை விடையாகத் தேர்ந்தெடுத்தது.",
+        "en": "Selected bracket value 27 directly."
+      },
+      "B": {
+        "ta": "தவறு. {15 - 8} = 7-ல் பிழை.",
+        "en": "Error in bracket subtraction."
+      },
+      "C": {
+        "ta": "தவறு. 50 - 18 = 32 தவறான கணக்கீடு.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 50 - 27 = 23.",
+        "en": "Correct. 50 - 27 = 23."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "உள் அடைப்புக்குறியில் தொடங்கி வெளியே வர வேண்டும்: () ⟹ {} ⟹ [].",
+      "en": "Work from innermost bracket outwards."
+    },
+    "revision_fact": {
+      "ta": "50 - [20 + 7] = 23",
+      "en": "50 - [20 + 7] = 23"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_016",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "சுருக்குக: 1800 ÷ [10 × {12 - (6 + 2)}]",
+      "en": "Simplify: 1800 ÷ [10 × {12 - (6 + 2)}]"
+    },
+    "question_ta": "சுருக்குக: 1800 ÷ [10 × {12 - (6 + 2)}]",
+    "question_en": "Simplify: 1800 ÷ [10 × {12 - (6 + 2)}]",
+    "options": [
+      "45",
+      "15",
+      "60",
+      "30"
+    ],
+    "options_ta": [
+      "45",
+      "15",
+      "60",
+      "30"
+    ],
+    "options_en": [
+      "45",
+      "15",
+      "60",
+      "30"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "(6 + 2) = 8; {12 - 8} = 4; [10 × 4] = 40; 1800 ÷ 40 = 45.",
+      "en": "(6 + 2) = 8; {12 - 8} = 4; [10 × 4] = 40; 1800 ÷ 40 = 45."
+    },
+    "explanation_ta": "(6 + 2) = 8; {12 - 8} = 4; [10 × 4] = 40; 1800 ÷ 40 = 45.",
+    "explanation_en": "(6 + 2) = 8; {12 - 8} = 4; [10 × 4] = 40; 1800 ÷ 40 = 45.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 1800 ÷ 40 = 45.",
+        "en": "Correct. 1800 ÷ 40 = 45."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 1800 ÷ 30 = 60 என தவறான வகுத்தல்.",
+        "en": "Incorrect division."
+      },
+      "D": {
+        "ta": "தவறு. 1800 ÷ 60 = 30 என தவறான பெருக்கல்.",
+        "en": "Miscalculated denominator."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "BODMAS விதியின்படி அடைப்புக்குறிகளை வரிசையாக சுருக்குக.",
+      "en": "Evaluate brackets in order."
+    },
+    "revision_fact": {
+      "ta": "1800 ÷ 40 = 45",
+      "en": "1800 ÷ 40 = 45"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_017",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "சுருக்குக: 1/2 + 1/3 ÷ 2/3 × 3/4",
+      "en": "Simplify: 1/2 + 1/3 ÷ 2/3 × 3/4"
+    },
+    "question_ta": "சுருக்குக: 1/2 + 1/3 ÷ 2/3 × 3/4",
+    "question_en": "Simplify: 1/2 + 1/3 ÷ 2/3 × 3/4",
+    "options": [
+      "7/8",
+      "3/4",
+      "1",
+      "5/8"
+    ],
+    "options_ta": [
+      "7/8",
+      "3/4",
+      "1",
+      "5/8"
+    ],
+    "options_en": [
+      "7/8",
+      "3/4",
+      "1",
+      "5/8"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "BODMAS படி:\n1. 1/3 ÷ 2/3 = 1/3 × 3/2 = 1/2.\n2. 1/2 × 3/4 = 3/8.\n3. 1/2 + 3/8 = 4/8 + 3/8 = 7/8.",
+      "en": "BODMAS order:\n1. 1/3 ÷ 2/3 = 1/2.\n2. 1/2 × 3/4 = 3/8.\n3. 1/2 + 3/8 = 7/8."
+    },
+    "explanation_ta": "BODMAS படி:\n1. 1/3 ÷ 2/3 = 1/3 × 3/2 = 1/2.\n2. 1/2 × 3/4 = 3/8.\n3. 1/2 + 3/8 = 4/8 + 3/8 = 7/8.",
+    "explanation_en": "BODMAS order:\n1. 1/3 ÷ 2/3 = 1/2.\n2. 1/2 × 3/4 = 3/8.\n3. 1/2 + 3/8 = 7/8.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 1/2 + 3/8 = 7/8.",
+        "en": "Correct. 1/2 + 3/8 = 7/8."
+      },
+      "B": {
+        "ta": "தவறு. கூட்டலை முன்கூட்டியே செய்தது.",
+        "en": "Added before multiplying."
+      },
+      "C": {
+        "ta": "தவறு. 8/8 = 1 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 1/4 + 3/8 = 5/8 என முதல் பின்னத்தை தவறாக எழுதியது.",
+        "en": "First fraction miscalculated."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வகுத்தலை முதலில் பெருக்கலாக மாற்றி தலைகீழாகப் பெருக்க வேண்டும்.",
+      "en": "Division of fractions is multiplication by reciprocal."
+    },
+    "revision_fact": {
+      "ta": "1/2 + 3/8 = 7/8",
+      "en": "1/2 + 3/8 = 7/8"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_018",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: 0.4 × 0.2 + 0.36 ÷ 0.06",
+      "en": "Find the value: 0.4 × 0.2 + 0.36 ÷ 0.06"
+    },
+    "question_ta": "மதிப்பு காண்க: 0.4 × 0.2 + 0.36 ÷ 0.06",
+    "question_en": "Find the value: 0.4 × 0.2 + 0.36 ÷ 0.06",
+    "options": [
+      "6.08",
+      "68.0",
+      "6.8",
+      "0.68"
+    ],
+    "options_ta": [
+      "6.08",
+      "68.0",
+      "6.8",
+      "0.68"
+    ],
+    "options_en": [
+      "6.08",
+      "68.0",
+      "6.8",
+      "0.68"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "1. 0.4 × 0.2 = 0.08.\n2. 0.36 ÷ 0.06 = 36 ÷ 6 = 6.\n3. 0.08 + 6 = 6.08.",
+      "en": "1. 0.4 × 0.2 = 0.08.\n2. 0.36 ÷ 0.06 = 6.\n3. 0.08 + 6 = 6.08."
+    },
+    "explanation_ta": "1. 0.4 × 0.2 = 0.08.\n2. 0.36 ÷ 0.06 = 36 ÷ 6 = 6.\n3. 0.08 + 6 = 6.08.",
+    "explanation_en": "1. 0.4 × 0.2 = 0.08.\n2. 0.36 ÷ 0.06 = 6.\n3. 0.08 + 6 = 6.08.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 0.08 + 6 = 6.08.",
+        "en": "Correct. 0.08 + 6 = 6.08."
+      },
+      "B": {
+        "ta": "தவறு. 60.8 என தவறான தசம இடம்.",
+        "en": "Decimal point shift error."
+      },
+      "C": {
+        "ta": "தவறு. 0.4 × 0.2 = 0.8 என தசமப் புள்ளியில் தவறு செய்தது.",
+        "en": "Shifted decimal in 0.4 × 0.2."
+      },
+      "D": {
+        "ta": "தவறு. 0.08 + 0.6 = 0.68 என 0.36 ÷ 0.06-ஐ 0.6 என தவறாக எழுதியது.",
+        "en": "Miscalculated 0.36 ÷ 0.06."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "0.4 × 0.2 = 0.08 (இரண்டு தசம இடங்கள் வர வேண்டும்).",
+      "en": "0.4 × 0.2 = 0.08 (requires two decimal places)."
+    },
+    "revision_fact": {
+      "ta": "0.08 + 6 = 6.08",
+      "en": "0.08 + 6 = 6.08"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_019",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "சுருக்குக: √(21 + √(11 + √25))",
+      "en": "Simplify: √(21 + √(11 + √25))"
+    },
+    "question_ta": "சுருக்குக: √(21 + √(11 + √25))",
+    "question_en": "Simplify: √(21 + √(11 + √25))",
+    "options": [
+      "25",
+      "6",
+      "4",
+      "5"
+    ],
+    "options_ta": [
+      "25",
+      "6",
+      "4",
+      "5"
+    ],
+    "options_en": [
+      "25",
+      "6",
+      "4",
+      "5"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1. √25 = 5.\n2. √(11 + 5) = √16 = 4.\n3. √(21 + 4) = √25 = 5.",
+      "en": "1. √25 = 5.\n2. √(11 + 5) = √16 = 4.\n3. √(21 + 4) = √25 = 5."
+    },
+    "explanation_ta": "1. √25 = 5.\n2. √(11 + 5) = √16 = 4.\n3. √(21 + 4) = √25 = 5.",
+    "explanation_en": "1. √25 = 5.\n2. √(11 + 5) = √16 = 4.\n3. √(21 + 4) = √25 = 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 25 வர்க்கமூலத்திற்கு முன் உள்ள மதிப்பு.",
+        "en": "Value before taking root."
+      },
+      "B": {
+        "ta": "தவறு. √(21 + 15) = √36 = 6 தவறான கூட்டல்.",
+        "en": "Addition error inside root."
+      },
+      "C": {
+        "ta": "தவறு. √16 = 4 என கடைசி வர்க்கமூலத்தை எடுக்க மறந்துவிட்டது.",
+        "en": "Stopped at √16 = 4."
+      },
+      "D": {
+        "ta": "சரி. √(21 + 4) = √25 = 5.",
+        "en": "Correct. √(21 + 4) = √25 = 5."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "உள் வர்க்கமூலத்தில் இருந்து வெளியில் வர வேண்டும்.",
+      "en": "Evaluate from innermost square root outwards."
+    },
+    "revision_fact": {
+      "ta": "√25=5 ⟹ √(11+5)=4 ⟹ √(21+4)=5",
+      "en": "√25=5 ⟹ √(11+5)=4 ⟹ √(21+4)=5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_020",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "x / 18 = 50 / x எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If x / 18 = 50 / x, what is the value of x?"
+    },
+    "question_ta": "x / 18 = 50 / x எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If x / 18 = 50 / x, what is the value of x?",
+    "options": [
+      "25",
+      "30",
+      "900",
+      "15"
+    ],
+    "options_ta": [
+      "25",
+      "30",
+      "900",
+      "15"
+    ],
+    "options_en": [
+      "25",
+      "30",
+      "900",
+      "15"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "குறுக்குப் பெருக்கு: x × x = 18 × 50 ⟹ x² = 900 ⟹ x = √900 = 30.",
+      "en": "Cross multiply: x × x = 18 × 50 ⟹ x² = 900 ⟹ x = √900 = 30."
+    },
+    "explanation_ta": "குறுக்குப் பெருக்கு: x × x = 18 × 50 ⟹ x² = 900 ⟹ x = √900 = 30.",
+    "explanation_en": "Cross multiply: x × x = 18 × 50 ⟹ x² = 900 ⟹ x = √900 = 30.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. x² = 900 ⟹ x = 30.",
+        "en": "Correct. x² = 900 ⟹ x = 30."
+      },
+      "C": {
+        "ta": "தவறு. x²-ன் மதிப்பு 900, x-ன் மதிப்பு அன்று.",
+        "en": "900 is x², not x."
+      },
+      "D": {
+        "ta": "தவறு. 900 ÷ 60 = 15 தவறான வகுத்தல்.",
+        "en": "Incorrect root calculation."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x² = a × b எனில் x = √(a × b).",
+      "en": "If x² = a × b then x = √(a × b)."
+    },
+    "revision_fact": {
+      "ta": "x² = 900 ⟹ x = 30",
+      "en": "x² = 900 ⟹ x = 30"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_021",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: (987² - 13²) / (987 - 13)",
+      "en": "Find the value of: (987² - 13²) / (987 - 13)"
+    },
+    "question_ta": "மதிப்பு காண்க: (987² - 13²) / (987 - 13)",
+    "question_en": "Find the value of: (987² - 13²) / (987 - 13)",
+    "options": [
+      "974",
+      "987",
+      "1013",
+      "1000"
+    ],
+    "options_ta": [
+      "974",
+      "987",
+      "1013",
+      "1000"
+    ],
+    "options_en": [
+      "974",
+      "987",
+      "1013",
+      "1000"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "a² - b² = (a+b)(a-b) முற்றொருமையைப் பயன்படுத்த:\n(a² - b²) / (a - b) = (a + b).\nஇங்கு a = 987, b = 13. எனவே 987 + 13 = 1000.",
+      "en": "Using identity a² - b² = (a+b)(a-b):\n(a² - b²) / (a - b) = (a + b).\nHere a = 987, b = 13. So 987 + 13 = 1000."
+    },
+    "explanation_ta": "a² - b² = (a+b)(a-b) முற்றொருமையைப் பயன்படுத்த:\n(a² - b²) / (a - b) = (a + b).\nஇங்கு a = 987, b = 13. எனவே 987 + 13 = 1000.",
+    "explanation_en": "Using identity a² - b² = (a+b)(a-b):\n(a² - b²) / (a - b) = (a + b).\nHere a = 987, b = 13. So 987 + 13 = 1000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 987 - 13 = 974 பகுதியின் மதிப்பு.",
+        "en": "Evaluated denominator only."
+      },
+      "B": {
+        "ta": "தவறு. a-ன் மதிப்பு எழுதப்பட்டது.",
+        "en": "Took 'a' value directly."
+      },
+      "C": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 987 + 13 = 1000.",
+        "en": "Correct. 987 + 13 = 1000."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(a² - b²) / (a - b) = a + b என்பதால் நேரடியாக கூட்டவும்.",
+      "en": "(a² - b²) / (a - b) simplifies directly to a + b."
+    },
+    "revision_fact": {
+      "ta": "987 + 13 = 1000",
+      "en": "987 + 13 = 1000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_022",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: [(854 + 276)² - (854 - 276)²] / (854 × 276)",
+      "en": "Simplify: [(854 + 276)² - (854 - 276)²] / (854 × 276)"
+    },
+    "question_ta": "சுருக்குக: [(854 + 276)² - (854 - 276)²] / (854 × 276)",
+    "question_en": "Simplify: [(854 + 276)² - (854 - 276)²] / (854 × 276)",
+    "options": [
+      "1130",
+      "578",
+      "4",
+      "2"
+    ],
+    "options_ta": [
+      "1130",
+      "578",
+      "4",
+      "2"
+    ],
+    "options_en": [
+      "1130",
+      "578",
+      "4",
+      "2"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "முற்றொருமை: (a+b)² - (a-b)² = 4ab.\nஎனவே [(a+b)² - (a-b)²] / (ab) = 4ab / ab = 4.",
+      "en": "Identity: (a+b)² - (a-b)² = 4ab.\nTherefore [(a+b)² - (a-b)²] / (ab) = 4ab / ab = 4."
+    },
+    "explanation_ta": "முற்றொருமை: (a+b)² - (a-b)² = 4ab.\nஎனவே [(a+b)² - (a-b)²] / (ab) = 4ab / ab = 4.",
+    "explanation_en": "Identity: (a+b)² - (a-b)² = 4ab.\nTherefore [(a+b)² - (a-b)²] / (ab) = 4ab / ab = 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 854 + 276 = 1130 எனக் கூட்டல் மதிப்பு எழுதுதல்.",
+        "en": "Wrote sum of numbers."
+      },
+      "B": {
+        "ta": "தவறு. 854 - 276 = 578 கழித்தல் மதிப்பு எழுதுதல்.",
+        "en": "Wrote difference of numbers."
+      },
+      "C": {
+        "ta": "சரி. சூத்திரத்தின்படி மாறிலி மதிப்பு 4.",
+        "en": "Correct. Constant value 4 by identity."
+      },
+      "D": {
+        "ta": "தவறு. (a+b)² + (a-b)² = 2(a²+b²) உடன் குழப்பிக் கொண்டது.",
+        "en": "Confused with (a+b)² + (a-b)² = 2(a²+b²)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "[(a+b)² - (a-b)²] / ab = 4 என்பது எண்களைச் சாராத மாறிலியாகும்.",
+      "en": "[(a+b)² - (a-b)²] / ab is always equal to 4."
+    },
+    "revision_fact": {
+      "ta": "4ab / ab = 4",
+      "en": "4ab / ab = 4"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_023",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: (785³ + 215³) / (785² - 785 × 215 + 215²)",
+      "en": "Find the value: (785³ + 215³) / (785² - 785 × 215 + 215²)"
+    },
+    "question_ta": "மதிப்பு காண்க: (785³ + 215³) / (785² - 785 × 215 + 215²)",
+    "question_en": "Find the value: (785³ + 215³) / (785² - 785 × 215 + 215²)",
+    "options": [
+      "1000",
+      "570",
+      "215",
+      "785"
+    ],
+    "options_ta": [
+      "1000",
+      "570",
+      "215",
+      "785"
+    ],
+    "options_en": [
+      "1000",
+      "570",
+      "215",
+      "785"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "a³ + b³ = (a + b)(a² - ab + b²) முற்றொருமையைப் பயன்படுத்த:\n(a³ + b³) / (a² - ab + b²) = a + b.\nஇங்கு a = 785, b = 215. எனவே 785 + 215 = 1000.",
+      "en": "Using a³ + b³ = (a + b)(a² - ab + b²):\n(a³ + b³) / (a² - ab + b²) = a + b.\nHere a = 785, b = 215. So 785 + 215 = 1000."
+    },
+    "explanation_ta": "a³ + b³ = (a + b)(a² - ab + b²) முற்றொருமையைப் பயன்படுத்த:\n(a³ + b³) / (a² - ab + b²) = a + b.\nஇங்கு a = 785, b = 215. எனவே 785 + 215 = 1000.",
+    "explanation_en": "Using a³ + b³ = (a + b)(a² - ab + b²):\n(a³ + b³) / (a² - ab + b²) = a + b.\nHere a = 785, b = 215. So 785 + 215 = 1000.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 785 + 215 = 1000.",
+        "en": "Correct. 785 + 215 = 1000."
+      },
+      "B": {
+        "ta": "தவறு. 785 - 215 = 570 என கழித்தது.",
+        "en": "Subtracted numbers instead."
+      },
+      "C": {
+        "ta": "தவறு. இரண்டாவது எண் 215.",
+        "en": "Second number alone."
+      },
+      "D": {
+        "ta": "தவறு. முதலாவது எண் 785.",
+        "en": "First number alone."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(a³ + b³) / (a² - ab + b²) = a + b.",
+      "en": "(a³ + b³) / (a² - ab + b²) = a + b."
+    },
+    "revision_fact": {
+      "ta": "785 + 215 = 1000",
+      "en": "785 + 215 = 1000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_024",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: (643³ - 143³) / (643² + 643 × 143 + 143²)",
+      "en": "Find the value: (643³ - 143³) / (643² + 643 × 143 + 143²)"
+    },
+    "question_ta": "மதிப்பு காண்க: (643³ - 143³) / (643² + 643 × 143 + 143²)",
+    "question_en": "Find the value: (643³ - 143³) / (643² + 643 × 143 + 143²)",
+    "options": [
+      "643",
+      "500",
+      "786",
+      "143"
+    ],
+    "options_ta": [
+      "643",
+      "500",
+      "786",
+      "143"
+    ],
+    "options_en": [
+      "643",
+      "500",
+      "786",
+      "143"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "a³ - b³ = (a - b)(a² + ab + b²) முற்றொருமையைப் பயன்படுத்த:\n(a³ - b³) / (a² + ab + b²) = a - b.\nஇங்கு a = 643, b = 143. எனவே 643 - 143 = 500.",
+      "en": "Using a³ - b³ = (a - b)(a² + ab + b²):\n(a³ - b³) / (a² + ab + b²) = a - b.\nHere a = 643, b = 143. So 643 - 143 = 500."
+    },
+    "explanation_ta": "a³ - b³ = (a - b)(a² + ab + b²) முற்றொருமையைப் பயன்படுத்த:\n(a³ - b³) / (a² + ab + b²) = a - b.\nஇங்கு a = 643, b = 143. எனவே 643 - 143 = 500.",
+    "explanation_en": "Using a³ - b³ = (a - b)(a² + ab + b²):\n(a³ - b³) / (a² + ab + b²) = a - b.\nHere a = 643, b = 143. So 643 - 143 = 500.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. முதலாவது எண் 643.",
+        "en": "First number alone."
+      },
+      "B": {
+        "ta": "சரி. 643 - 143 = 500.",
+        "en": "Correct. 643 - 143 = 500."
+      },
+      "C": {
+        "ta": "தவறு. 643 + 143 = 786 என கூட்டியது.",
+        "en": "Added numbers instead."
+      },
+      "D": {
+        "ta": "தவறு. இரண்டாவது எண் 143.",
+        "en": "Second number alone."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(a³ - b³) / (a² + ab + b²) = a - b.",
+      "en": "(a³ - b³) / (a² + ab + b²) = a - b."
+    },
+    "revision_fact": {
+      "ta": "643 - 143 = 500",
+      "en": "643 - 143 = 500"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_025",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "தொடர் பின்னத்தின் மதிப்பு காண்க: 1 + 1 / (1 + 1 / (1 + 1/2))",
+      "en": "Find the value of continued fraction: 1 + 1 / (1 + 1 / (1 + 1/2))"
+    },
+    "question_ta": "தொடர் பின்னத்தின் மதிப்பு காண்க: 1 + 1 / (1 + 1 / (1 + 1/2))",
+    "question_en": "Find the value of continued fraction: 1 + 1 / (1 + 1 / (1 + 1/2))",
+    "options": [
+      "5/8",
+      "8/5",
+      "7/5",
+      "5/3"
+    ],
+    "options_ta": [
+      "5/8",
+      "8/5",
+      "7/5",
+      "5/3"
+    ],
+    "options_en": [
+      "5/8",
+      "8/5",
+      "7/5",
+      "5/3"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "1. அடிப் பகுதி: 1 + 1/2 = 3/2.\n2. 1 / (3/2) = 2/3.\n3. அடுத்த பகுதி: 1 + 2/3 = 5/3.\n4. 1 / (5/3) = 3/5.\n5. இறுதி மதிப்பு: 1 + 3/5 = 8/5.",
+      "en": "1. Bottom term: 1 + 1/2 = 3/2.\n2. 1 / (3/2) = 2/3.\n3. Next term: 1 + 2/3 = 5/3.\n4. 1 / (5/3) = 3/5.\n5. Final value: 1 + 3/5 = 8/5."
+    },
+    "explanation_ta": "1. அடிப் பகுதி: 1 + 1/2 = 3/2.\n2. 1 / (3/2) = 2/3.\n3. அடுத்த பகுதி: 1 + 2/3 = 5/3.\n4. 1 / (5/3) = 3/5.\n5. இறுதி மதிப்பு: 1 + 3/5 = 8/5.",
+    "explanation_en": "1. Bottom term: 1 + 1/2 = 3/2.\n2. 1 / (3/2) = 2/3.\n3. Next term: 1 + 2/3 = 5/3.\n4. 1 / (5/3) = 3/5.\n5. Final value: 1 + 3/5 = 8/5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 5/8 தலைகீழ் மதிப்பு.",
+        "en": "Reciprocal value 5/8."
+      },
+      "B": {
+        "ta": "சரி. 1 + 3/5 = 8/5.",
+        "en": "Correct. 1 + 3/5 = 8/5."
+      },
+      "C": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. இடைப்பட்ட பகுதி 5/3-ஐ தேர்வது.",
+        "en": "Selected intermediate value 5/3."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "தொடர் பின்னங்களை கீழிருந்து மேல் நோக்கி சுருக்க வேண்டும்.",
+      "en": "Evaluate continued fractions from bottom to top."
+    },
+    "revision_fact": {
+      "ta": "1 + 3/5 = 8/5",
+      "en": "1 + 3/5 = 8/5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_026",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "5(x - 3) = 3(x + 5) எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If 5(x - 3) = 3(x + 5), what is the value of x?"
+    },
+    "question_ta": "5(x - 3) = 3(x + 5) எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If 5(x - 3) = 3(x + 5), what is the value of x?",
+    "options": [
+      "10",
+      "30",
+      "15",
+      "20"
+    ],
+    "options_ta": [
+      "10",
+      "30",
+      "15",
+      "20"
+    ],
+    "options_en": [
+      "10",
+      "30",
+      "15",
+      "20"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "5x - 15 = 3x + 15 ⟹ 5x - 3x = 15 + 15 ⟹ 2x = 30 ⟹ x = 15.",
+      "en": "5x - 15 = 3x + 15 ⟹ 5x - 3x = 15 + 15 ⟹ 2x = 30 ⟹ x = 15."
+    },
+    "explanation_ta": "5x - 15 = 3x + 15 ⟹ 5x - 3x = 15 + 15 ⟹ 2x = 30 ⟹ x = 15.",
+    "explanation_en": "5x - 15 = 3x + 15 ⟹ 5x - 3x = 15 + 15 ⟹ 2x = 30 ⟹ x = 15.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 2x = 20 ⟹ x = 10 குறியில் பிழை.",
+        "en": "Sign error."
+      },
+      "B": {
+        "ta": "தவறு. 2x-ன் மதிப்பு 30.",
+        "en": "Selected 2x value instead of x."
+      },
+      "C": {
+        "ta": "சரி. 2x = 30 ⟹ x = 15.",
+        "en": "Correct. 2x = 30 ⟹ x = 15."
+      },
+      "D": {
+        "ta": "தவறு. 2x = 40 ⟹ x = 20.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடைப்புக்குறிகளைப் பெருக்கி, மாறிலிகளை ஒரு பக்கத்திலும் மாறிலிகளை மறுபக்கத்திலும் கொண்டு வரவும்.",
+      "en": "Expand brackets and group like terms."
+    },
+    "revision_fact": {
+      "ta": "2x = 30 ⟹ x = 15",
+      "en": "2x = 30 ⟹ x = 15"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_027",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: (2ⁿ⁺⁴ - 2 × 2ⁿ) / (2 × 2ⁿ⁺³)",
+      "en": "Simplify: (2ⁿ⁺⁴ - 2 × 2ⁿ) / (2 × 2ⁿ⁺³)"
+    },
+    "question_ta": "சுருக்குக: (2ⁿ⁺⁴ - 2 × 2ⁿ) / (2 × 2ⁿ⁺³)",
+    "question_en": "Simplify: (2ⁿ⁺⁴ - 2 × 2ⁿ) / (2 × 2ⁿ⁺³)",
+    "options": [
+      "3/4",
+      "1",
+      "7/8",
+      "1/2"
+    ],
+    "options_ta": [
+      "3/4",
+      "1",
+      "7/8",
+      "1/2"
+    ],
+    "options_en": [
+      "3/4",
+      "1",
+      "7/8",
+      "1/2"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொகுதி: 2ⁿ (2⁴ - 2) = 2ⁿ (16 - 2) = 14 × 2ⁿ.\nபகுதி: 2 × 2ⁿ⁺³ = 2 × 8 × 2ⁿ = 16 × 2ⁿ.\nமதிப்பு: (14 × 2ⁿ) / (16 × 2ⁿ) = 14/16 = 7/8.",
+      "en": "Numerator: 2ⁿ (2⁴ - 2) = 14 × 2ⁿ.\nDenominator: 2 × 2ⁿ⁺³ = 16 × 2ⁿ.\nValue: 14/16 = 7/8."
+    },
+    "explanation_ta": "தொகுதி: 2ⁿ (2⁴ - 2) = 2ⁿ (16 - 2) = 14 × 2ⁿ.\nபகுதி: 2 × 2ⁿ⁺³ = 2 × 8 × 2ⁿ = 16 × 2ⁿ.\nமதிப்பு: (14 × 2ⁿ) / (16 × 2ⁿ) = 14/16 = 7/8.",
+    "explanation_en": "Numerator: 2ⁿ (2⁴ - 2) = 14 × 2ⁿ.\nDenominator: 2 × 2ⁿ⁺³ = 16 × 2ⁿ.\nValue: 14/16 = 7/8.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 12/16 = 3/4.",
+        "en": "Miscalculated numerator."
+      },
+      "B": {
+        "ta": "தவறு. 16/16 = 1 தவறான கழித்தல்.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 14/16 = 7/8.",
+        "en": "Correct. 14/16 = 7/8."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடுக்கு விதிகளைப் பயன்படுத்தி பொதுவான உறுப்பான 2ⁿ-ஐ வெளியே எடுக்கவும்.",
+      "en": "Factor out 2ⁿ using exponent rules."
+    },
+    "revision_fact": {
+      "ta": "14/16 = 7/8",
+      "en": "14/16 = 7/8"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_028",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "280-ல் 45% + 450-ல் 28%-ன் மதிப்பு என்ன?",
+      "en": "What is the value of 45% of 280 + 28% of 450?"
+    },
+    "question_ta": "280-ல் 45% + 450-ல் 28%-ன் மதிப்பு என்ன?",
+    "question_en": "What is the value of 45% of 280 + 28% of 450?",
+    "options": [
+      "252",
+      "260",
+      "275",
+      "240"
+    ],
+    "options_ta": [
+      "252",
+      "260",
+      "275",
+      "240"
+    ],
+    "options_en": [
+      "252",
+      "260",
+      "275",
+      "240"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "x% of y = y% of x என்பதை அறியவும்.\n45% of 280 = (45/100) × 280 = 126.\n28% of 450 = (28/100) × 450 = 126.\nகூட்டுத்தொகை = 126 + 126 = 252.",
+      "en": "Note that x% of y = y% of x.\n45% of 280 = 126.\n28% of 450 = 126.\nSum = 126 + 126 = 252."
+    },
+    "explanation_ta": "x% of y = y% of x என்பதை அறியவும்.\n45% of 280 = (45/100) × 280 = 126.\n28% of 450 = (28/100) × 450 = 126.\nகூட்டுத்தொகை = 126 + 126 = 252.",
+    "explanation_en": "Note that x% of y = y% of x.\n45% of 280 = 126.\n28% of 450 = 126.\nSum = 126 + 126 = 252.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 126 + 126 = 252.",
+        "en": "Correct. 126 + 126 = 252."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 126 + 149 = 275 தவறான கூட்டல்.",
+        "en": "Addition error."
+      },
+      "D": {
+        "ta": "தவறு. 120 + 120 = 240 தோராயக் கணக்கீடு.",
+        "en": "Approximation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a% of b = b% of a என்ற பண்பு கணக்கீட்டை எளிமையாக்கும்.",
+      "en": "a% of b is always equal to b% of a."
+    },
+    "revision_fact": {
+      "ta": "126 + 126 = 252",
+      "en": "126 + 126 = 252"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_029",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: √0.0009 + √0.09",
+      "en": "Find the value of: √0.0009 + √0.09"
+    },
+    "question_ta": "மதிப்பு காண்க: √0.0009 + √0.09",
+    "question_en": "Find the value of: √0.0009 + √0.09",
+    "options": [
+      "0.33",
+      "0.303",
+      "0.033",
+      "3.3"
+    ],
+    "options_ta": [
+      "0.33",
+      "0.303",
+      "0.033",
+      "3.3"
+    ],
+    "options_en": [
+      "0.33",
+      "0.303",
+      "0.033",
+      "3.3"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "√0.0009 = 0.03 (ஏனெனில் 0.03 × 0.03 = 0.0009).\n√0.09 = 0.3 (ஏனெனில் 0.3 × 0.3 = 0.09).\n0.03 + 0.30 = 0.33.",
+      "en": "√0.0009 = 0.03.\n√0.09 = 0.3.\n0.03 + 0.30 = 0.33."
+    },
+    "explanation_ta": "√0.0009 = 0.03 (ஏனெனில் 0.03 × 0.03 = 0.0009).\n√0.09 = 0.3 (ஏனெனில் 0.3 × 0.3 = 0.09).\n0.03 + 0.30 = 0.33.",
+    "explanation_en": "√0.0009 = 0.03.\n√0.09 = 0.3.\n0.03 + 0.30 = 0.33.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 0.03 + 0.3 = 0.33.",
+        "en": "Correct. 0.03 + 0.3 = 0.33."
+      },
+      "B": {
+        "ta": "தவறு. தவறான கூட்டல்.",
+        "en": "Addition error."
+      },
+      "C": {
+        "ta": "தவறு. 0.003 + 0.03 = 0.033 தசமப் புள்ளி பிழை.",
+        "en": "Decimal shift error."
+      },
+      "D": {
+        "ta": "தவறு. 0.3 + 3 = 3.3.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வர்க்கமூலத்தின் போது தசம இடங்கள் பாதியாகக் குறையும் (4 இடங்கள் ⟹ 2 இடங்கள், 2 இடங்கள் ⟹ 1 இடம்).",
+      "en": "Square root halves the number of decimal places."
+    },
+    "revision_fact": {
+      "ta": "0.03 + 0.3 = 0.33",
+      "en": "0.03 + 0.3 = 0.33"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_030",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "x = 3 + 2√2 எனில், x + 1/x-ன் மதிப்பு என்ன?",
+      "en": "If x = 3 + 2√2, what is the value of x + 1/x?"
+    },
+    "question_ta": "x = 3 + 2√2 எனில், x + 1/x-ன் மதிப்பு என்ன?",
+    "question_en": "If x = 3 + 2√2, what is the value of x + 1/x?",
+    "options": [
+      "6",
+      "2√2",
+      "4√2",
+      "3"
+    ],
+    "options_ta": [
+      "6",
+      "2√2",
+      "4√2",
+      "3"
+    ],
+    "options_en": [
+      "6",
+      "2√2",
+      "4√2",
+      "3"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "1/x = 1 / (3 + 2√2) = (3 - 2√2) / [(3 + 2√2)(3 - 2√2)] = (3 - 2√2) / (9 - 8) = 3 - 2√2.\nx + 1/x = (3 + 2√2) + (3 - 2√2) = 6.",
+      "en": "1/x = 3 - 2√2.\nx + 1/x = (3 + 2√2) + (3 - 2√2) = 6."
+    },
+    "explanation_ta": "1/x = 1 / (3 + 2√2) = (3 - 2√2) / [(3 + 2√2)(3 - 2√2)] = (3 - 2√2) / (9 - 8) = 3 - 2√2.\nx + 1/x = (3 + 2√2) + (3 - 2√2) = 6.",
+    "explanation_en": "1/x = 3 - 2√2.\nx + 1/x = (3 + 2√2) + (3 - 2√2) = 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 3 + 3 = 6.",
+        "en": "Correct. 3 + 3 = 6."
+      },
+      "B": {
+        "ta": "தவறு. முரண் பகுதி 2√2 எனக் கருதப்பட்டது.",
+        "en": "Took irrational part only."
+      },
+      "C": {
+        "ta": "தவறு. x - 1/x = 4√2 எனக் கணக்கிடப்பட்டது.",
+        "en": "Calculated x - 1/x instead."
+      },
+      "D": {
+        "ta": "தவறு. மெய் பகுதி மட்டும் 3 எனக் கருதப்பட்டது.",
+        "en": "Took rational part 3 only."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a = 3 + 2√2 மற்றும் 3² - (2√2)² = 9 - 8 = 1 எனில் 1/a = 3 - 2√2 ஆகும்.",
+      "en": "If a² - b² = 1, then reciprocal is conjugate."
+    },
+    "revision_fact": {
+      "ta": "3 + 2√2 + 3 - 2√2 = 6",
+      "en": "3 + 2√2 + 3 - 2√2 = 6"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_031",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "48 ÷ 12 ? 4 = 16 என்ற சமன்பாட்டில் '?' குறியீட்டிற்குப் பதிலாக வரவேண்டிய கணிதக் குறியீடு எது?",
+      "en": "Which mathematical symbol should replace '?' in 48 ÷ 12 ? 4 = 16?"
+    },
+    "question_ta": "48 ÷ 12 ? 4 = 16 என்ற சமன்பாட்டில் '?' குறியீட்டிற்குப் பதிலாக வரவேண்டிய கணிதக் குறியீடு எது?",
+    "question_en": "Which mathematical symbol should replace '?' in 48 ÷ 12 ? 4 = 16?",
+    "options": [
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
+    "options_ta": [
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
+    "options_en": [
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "48 ÷ 12 = 4. இப்போது 4 ? 4 = 16. 4 × 4 = 16. எனவே விடை '×' (பெருக்கல்).",
+      "en": "48 ÷ 12 = 4. Now 4 ? 4 = 16. 4 × 4 = 16. Thus symbol is '×'."
+    },
+    "explanation_ta": "48 ÷ 12 = 4. இப்போது 4 ? 4 = 16. 4 × 4 = 16. எனவே விடை '×' (பெருக்கல்).",
+    "explanation_en": "48 ÷ 12 = 4. Now 4 ? 4 = 16. 4 × 4 = 16. Thus symbol is '×'.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4 + 4 = 8 ≠ 16.",
+        "en": "4 + 4 = 8 ≠ 16."
+      },
+      "B": {
+        "ta": "தவறு. 4 - 4 = 0 ≠ 16.",
+        "en": "4 - 4 = 0 ≠ 16."
+      },
+      "C": {
+        "ta": "சரி. 4 × 4 = 16.",
+        "en": "Correct. 4 × 4 = 16."
+      },
+      "D": {
+        "ta": "தவறு. 4 ÷ 4 = 1 ≠ 16.",
+        "en": "4 ÷ 4 = 1 ≠ 16."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முதலில் வகுத்தலைச் செய்து விடையைப் பிரதியிட்டு சோதிக்கவும்.",
+      "en": "Evaluate known operations first, then substitute options."
+    },
+    "revision_fact": {
+      "ta": "4 × 4 = 16",
+      "en": "4 × 4 = 16"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_032",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: 0.333... + 0.666...",
+      "en": "Simplify: 0.333... + 0.666..."
+    },
+    "question_ta": "சுருக்குக: 0.333... + 0.666...",
+    "question_en": "Simplify: 0.333... + 0.666...",
+    "options": [
+      "0.9",
+      "0.99",
+      "1.1",
+      "1"
+    ],
+    "options_ta": [
+      "0.9",
+      "0.99",
+      "1.1",
+      "1"
+    ],
+    "options_en": [
+      "0.9",
+      "0.99",
+      "1.1",
+      "1"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "0.333... = 1/3. 0.666... = 2/3. 1/3 + 2/3 = 3/3 = 1.",
+      "en": "0.333... = 1/3. 0.666... = 2/3. 1/3 + 2/3 = 3/3 = 1."
+    },
+    "explanation_ta": "0.333... = 1/3. 0.666... = 2/3. 1/3 + 2/3 = 3/3 = 1.",
+    "explanation_en": "0.333... = 1/3. 0.666... = 2/3. 1/3 + 2/3 = 3/3 = 1.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. தோராயமாக 0.9 என எழுதியது.",
+        "en": "Truncation error."
+      },
+      "B": {
+        "ta": "தவறு. 0.999... = 1 என்பதை அறியாமல் 0.99 எனக் குறித்தது.",
+        "en": "Selected 0.99 approximation."
+      },
+      "C": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 1/3 + 2/3 = 1.",
+        "en": "Correct. 1/3 + 2/3 = 1."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சுழல் தசமங்களை பின்னங்களாக மாற்றி சுருக்குவது துல்லியமானது.",
+      "en": "Convert recurring decimals to fractions for exact result."
+    },
+    "revision_fact": {
+      "ta": "1/3 + 2/3 = 1",
+      "en": "1/3 + 2/3 = 1"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_033",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "0.181818... என்ற சுழல் தசம எண்ணின் எளிய பின்னம் எது?",
+      "en": "What is the simple fraction form of recurring decimal 0.181818...?"
+    },
+    "question_ta": "0.181818... என்ற சுழல் தசம எண்ணின் எளிய பின்னம் எது?",
+    "question_en": "What is the simple fraction form of recurring decimal 0.181818...?",
+    "options": [
+      "2/11",
+      "9/50",
+      "1/6",
+      "18/90"
+    ],
+    "options_ta": [
+      "2/11",
+      "9/50",
+      "1/6",
+      "18/90"
+    ],
+    "options_en": [
+      "2/11",
+      "9/50",
+      "1/6",
+      "18/90"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "x = 0.1818... ⟹ 100x = 18.1818... ⟹ 99x = 18 ⟹ x = 18/99 = 2/11.",
+      "en": "x = 0.1818... ⟹ 100x = 18.1818... ⟹ 99x = 18 ⟹ x = 18/99 = 2/11."
+    },
+    "explanation_ta": "x = 0.1818... ⟹ 100x = 18.1818... ⟹ 99x = 18 ⟹ x = 18/99 = 2/11.",
+    "explanation_en": "x = 0.1818... ⟹ 100x = 18.1818... ⟹ 99x = 18 ⟹ x = 18/99 = 2/11.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 18/99 = 2/11.",
+        "en": "Correct. 18/99 = 2/11."
+      },
+      "B": {
+        "ta": "தவறு. 18/100-ன் எளிய வடிவம் 9/50.",
+        "en": "Simplified non-recurring fraction."
+      },
+      "C": {
+        "ta": "தவறு. 1/6 = 0.1666... தவறான பின்னம்.",
+        "en": "Fraction 1/6 is 0.1666..."
+      },
+      "D": {
+        "ta": "தவறு. 18/90 = 1/5 = 0.20 தவறான பின்னம்.",
+        "en": "Incorrect. 18/90 = 1/5 = 0.20."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரண்டு எண்கள் சுழலும் போது பகுதியில 99 வரும்.",
+      "en": "Two recurring digits lead to denominator 99."
+    },
+    "revision_fact": {
+      "ta": "18/99 = 2/11",
+      "en": "18/99 = 2/11"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_034",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "a/3 = b/4 = c/7 எனில், (a + b + c) / c-ன் மதிப்பு என்ன?",
+      "en": "If a/3 = b/4 = c/7, what is the value of (a + b + c) / c?"
+    },
+    "question_ta": "a/3 = b/4 = c/7 எனில், (a + b + c) / c-ன் மதிப்பு என்ன?",
+    "question_en": "If a/3 = b/4 = c/7, what is the value of (a + b + c) / c?",
+    "options": [
+      "14",
+      "1/2",
+      "2",
+      "7"
+    ],
+    "options_ta": [
+      "14",
+      "1/2",
+      "2",
+      "7"
+    ],
+    "options_en": [
+      "14",
+      "1/2",
+      "2",
+      "7"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "a/3 = b/4 = c/7 = k எனில், a = 3k, b = 4k, c = 7k.\n(a + b + c) / c = (3k + 4k + 7k) / 7k = 14k / 7k = 2.",
+      "en": "Let a/3 = b/4 = c/7 = k ⟹ a = 3k, b = 4k, c = 7k.\n(a + b + c) / c = (3k + 4k + 7k) / 7k = 14k / 7k = 2."
+    },
+    "explanation_ta": "a/3 = b/4 = c/7 = k எனில், a = 3k, b = 4k, c = 7k.\n(a + b + c) / c = (3k + 4k + 7k) / 7k = 14k / 7k = 2.",
+    "explanation_en": "Let a/3 = b/4 = c/7 = k ⟹ a = 3k, b = 4k, c = 7k.\n(a + b + c) / c = (3k + 4k + 7k) / 7k = 14k / 7k = 2.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (a+b+c) = 14 மட்டும் எழுதியது.",
+        "en": "Took numerator sum only."
+      },
+      "B": {
+        "ta": "தவறு. c / (a+b+c) = 7/14 = 1/2 தலைகீழாகக் கணக்கிடப்பட்டது.",
+        "en": "Calculated reciprocal."
+      },
+      "C": {
+        "ta": "சரி. 14 / 7 = 2.",
+        "en": "Correct. 14 / 7 = 2."
+      },
+      "D": {
+        "ta": "தவறு. c-ன் பகுதி மதிப்பு 7.",
+        "en": "Took denominator of c."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "விகிதச் சமன்பாடுகளில் மாறிலிகளை நேரடியாகப் பிரதியிடலாம்.",
+      "en": "Substitute denominator values directly into homogenous expression."
+    },
+    "revision_fact": {
+      "ta": "(3 + 4 + 7) / 7 = 2",
+      "en": "(3 + 4 + 7) / 7 = 2"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_035",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: (27)^(2/3) × (16)^(-1/4)",
+      "en": "Simplify: (27)^(2/3) × (16)^(-1/4)"
+    },
+    "question_ta": "சுருக்குக: (27)^(2/3) × (16)^(-1/4)",
+    "question_en": "Simplify: (27)^(2/3) × (16)^(-1/4)",
+    "options": [
+      "9",
+      "1.5",
+      "4.5",
+      "4.0"
+    ],
+    "options_ta": [
+      "9",
+      "1.5",
+      "4.5",
+      "4.0"
+    ],
+    "options_en": [
+      "9",
+      "1.5",
+      "4.5",
+      "4.0"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "1. (27)^(2/3) = (3³)^(2/3) = 3² = 9.\n2. (16)^(-1/4) = (2⁴)^(-1/4) = 2⁻¹ = 1/2 = 0.5.\n3. 9 × 0.5 = 4.5 (அல்லது 9/2).",
+      "en": "1. (27)^(2/3) = 3² = 9.\n2. (16)^(-1/4) = 2⁻¹ = 0.5.\n3. 9 × 0.5 = 4.5."
+    },
+    "explanation_ta": "1. (27)^(2/3) = (3³)^(2/3) = 3² = 9.\n2. (16)^(-1/4) = (2⁴)^(-1/4) = 2⁻¹ = 1/2 = 0.5.\n3. 9 × 0.5 = 4.5 (அல்லது 9/2).",
+    "explanation_en": "1. (27)^(2/3) = 3² = 9.\n2. (16)^(-1/4) = 2⁻¹ = 0.5.\n3. 9 × 0.5 = 4.5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 9 × 1 = 9 இரண்டாவது உறுப்பை 1 எனக் தவறாகக் கொண்டது.",
+        "en": "Miscalculated second exponent term."
+      },
+      "B": {
+        "ta": "தவறு. 3 × 0.5 = 1.5 முதல் உறுப்பை 3 எனக் தவறாகக் கொண்டது.",
+        "en": "Miscalculated first term."
+      },
+      "C": {
+        "ta": "சரி. 9 × 0.5 = 4.5.",
+        "en": "Correct. 9 × 0.5 = 4.5."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(aᵐ)ⁿ = aᵐⁿ மற்றும் a⁻ⁿ = 1/aⁿ என்ற அடுக்கு விதிகளைப் பயன்படுத்தவும்.",
+      "en": "Use exponent laws (aᵐ)ⁿ = aᵐⁿ and a⁻ⁿ = 1/aⁿ."
+    },
+    "revision_fact": {
+      "ta": "9 × 1/2 = 4.5",
+      "en": "9 × 1/2 = 4.5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_036",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "முதல் 20 இயல் எண்களின் கூடுதல் யாது? (1 + 2 + 3 + ... + 20)",
+      "en": "What is the sum of the first 20 natural numbers? (1 + 2 + 3 + ... + 20)"
+    },
+    "question_ta": "முதல் 20 இயல் எண்களின் கூடுதல் யாது? (1 + 2 + 3 + ... + 20)",
+    "question_en": "What is the sum of the first 20 natural numbers? (1 + 2 + 3 + ... + 20)",
+    "options": [
+      "200",
+      "220",
+      "210",
+      "400"
+    ],
+    "options_ta": [
+      "200",
+      "220",
+      "210",
+      "400"
+    ],
+    "options_en": [
+      "200",
+      "220",
+      "210",
+      "400"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "முதல் n இயல் எண்களின் கூடுதல் n(n+1)/2.\nn = 20 ⟹ (20 × 21) / 2 = 10 × 21 = 210.",
+      "en": "Sum of first n natural numbers = n(n+1)/2.\nFor n = 20 ⟹ (20 × 21) / 2 = 210."
+    },
+    "explanation_ta": "முதல் n இயல் எண்களின் கூடுதல் n(n+1)/2.\nn = 20 ⟹ (20 × 21) / 2 = 10 × 21 = 210.",
+    "explanation_en": "Sum of first n natural numbers = n(n+1)/2.\nFor n = 20 ⟹ (20 × 21) / 2 = 210.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 20 × 10 = 200.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 20 × 11 = 220.",
+        "en": "Incorrect formula application."
+      },
+      "C": {
+        "ta": "சரி. (20 × 21) / 2 = 210.",
+        "en": "Correct. (20 × 21) / 2 = 210."
+      },
+      "D": {
+        "ta": "தவறு. 20² = 400 (முதல் 20 ஒற்றை எண்களின் கூடுதல்).",
+        "en": "Calculated sum of odd numbers."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n இயல் எண்களின் கூடுதல் = n(n+1)/2.",
+      "en": "Sum of first n natural numbers = n(n+1)/2."
+    },
+    "revision_fact": {
+      "ta": "10 × 21 = 210",
+      "en": "10 × 21 = 210"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_037",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "முதல் 10 இயல் எண்களின் வர்க்கங்களின் கூடுதல் யாது? (1² + 2² + ... + 10²)",
+      "en": "What is the sum of squares of first 10 natural numbers? (1² + 2² + ... + 10²)"
+    },
+    "question_ta": "முதல் 10 இயல் எண்களின் வர்க்கங்களின் கூடுதல் யாது? (1² + 2² + ... + 10²)",
+    "question_en": "What is the sum of squares of first 10 natural numbers? (1² + 2² + ... + 10²)",
+    "options": [
+      "100",
+      "385",
+      "330",
+      "3025"
+    ],
+    "options_ta": [
+      "100",
+      "385",
+      "330",
+      "3025"
+    ],
+    "options_en": [
+      "100",
+      "385",
+      "330",
+      "3025"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "வர்க்கங்களின் கூடுதல் S = n(n+1)(2n+1) / 6.\nn = 10 ⟹ (10 × 11 × 21) / 6 = (110 × 21) / 6 = 2310 / 6 = 385.",
+      "en": "Sum of squares = n(n+1)(2n+1) / 6.\nFor n = 10 ⟹ (10 × 11 × 21) / 6 = 385."
+    },
+    "explanation_ta": "வர்க்கங்களின் கூடுதல் S = n(n+1)(2n+1) / 6.\nn = 10 ⟹ (10 × 11 × 21) / 6 = (110 × 21) / 6 = 2310 / 6 = 385.",
+    "explanation_en": "Sum of squares = n(n+1)(2n+1) / 6.\nFor n = 10 ⟹ (10 × 11 × 21) / 6 = 385.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10² = 100.",
+        "en": "Took n² directly."
+      },
+      "B": {
+        "ta": "சரி. (10 × 11 × 21) / 6 = 385.",
+        "en": "Correct. (10 × 11 × 21) / 6 = 385."
+      },
+      "C": {
+        "ta": "தவறு. (10 × 11 × 18)/6 = 330.",
+        "en": "Miscalculated 2n+1 as 18."
+      },
+      "D": {
+        "ta": "தவறு. 55² = 3025 (கனங்களின் கூடுதல்).",
+        "en": "Calculated sum of cubes instead."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வர்க்கங்களின் கூடுதல் சூத்திரம் = n(n+1)(2n+1) / 6.",
+      "en": "Sum of squares formula = n(n+1)(2n+1) / 6."
+    },
+    "revision_fact": {
+      "ta": "(10 × 11 × 21)/6 = 385",
+      "en": "(10 × 11 × 21)/6 = 385"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_038",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "முதல் 10 இயல் எண்களின் கனங்களின் கூடுதல் யாது? (1³ + 2³ + ... + 10³)",
+      "en": "What is the sum of cubes of first 10 natural numbers? (1³ + 2³ + ... + 10³)"
+    },
+    "question_ta": "முதல் 10 இயல் எண்களின் கனங்களின் கூடுதல் யாது? (1³ + 2³ + ... + 10³)",
+    "question_en": "What is the sum of cubes of first 10 natural numbers? (1³ + 2³ + ... + 10³)",
+    "options": [
+      "1000",
+      "385",
+      "3000",
+      "3025"
+    ],
+    "options_ta": [
+      "1000",
+      "385",
+      "3000",
+      "3025"
+    ],
+    "options_en": [
+      "1000",
+      "385",
+      "3000",
+      "3025"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "கனங்களின் கூடுதல் S = [n(n+1)/2]².\nn = 10 ⟹ [(10 × 11)/2]² = 55² = 3025.",
+      "en": "Sum of cubes = [n(n+1)/2]².\nFor n = 10 ⟹ 55² = 3025."
+    },
+    "explanation_ta": "கனங்களின் கூடுதல் S = [n(n+1)/2]².\nn = 10 ⟹ [(10 × 11)/2]² = 55² = 3025.",
+    "explanation_en": "Sum of cubes = [n(n+1)/2]².\nFor n = 10 ⟹ 55² = 3025.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10³ = 1000.",
+        "en": "Took n³ directly."
+      },
+      "B": {
+        "ta": "தவறு. 385 வர்க்கங்களின் கூடுதல்.",
+        "en": "Sum of squares value."
+      },
+      "C": {
+        "ta": "தவறு. தோராயமான 3000.",
+        "en": "Approximation error."
+      },
+      "D": {
+        "ta": "சரி. 55² = 3025.",
+        "en": "Correct. 55² = 3025."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கனங்களின் கூடுதல் = (இயல் எண்களின் கூடுதல்)².",
+      "en": "Sum of cubes is the square of the sum of natural numbers."
+    },
+    "revision_fact": {
+      "ta": "55² = 3025",
+      "en": "55² = 3025"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_039",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "(x + 1) / (x - 1) = 5/3 எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If (x + 1) / (x - 1) = 5/3, what is the value of x?"
+    },
+    "question_ta": "(x + 1) / (x - 1) = 5/3 எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If (x + 1) / (x - 1) = 5/3, what is the value of x?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "options_ta": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "options_en": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "குறுக்குப் பெருக்கு: 3(x + 1) = 5(x - 1) ⟹ 3x + 3 = 5x - 5 ⟹ 5x - 3x = 3 + 5 ⟹ 2x = 8 ⟹ x = 4.",
+      "en": "Cross multiply: 3(x + 1) = 5(x - 1) ⟹ 3x + 3 = 5x - 5 ⟹ 2x = 8 ⟹ x = 4."
+    },
+    "explanation_ta": "குறுக்குப் பெருக்கு: 3(x + 1) = 5(x - 1) ⟹ 3x + 3 = 5x - 5 ⟹ 5x - 3x = 3 + 5 ⟹ 2x = 8 ⟹ x = 4.",
+    "explanation_en": "Cross multiply: 3(x + 1) = 5(x - 1) ⟹ 3x + 3 = 5x - 5 ⟹ 2x = 8 ⟹ x = 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 2x = 8 ⟹ x = 4.",
+        "en": "Correct. 2x = 8 ⟹ x = 4."
+      },
+      "B": {
+        "ta": "தவறு. 2x = 6 ⟹ x = 3 குறியில் பிழை.",
+        "en": "Sign error."
+      },
+      "C": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. தொகுதியின் வலதுபக்க மதிப்பு 5.",
+        "en": "Took numerator value."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "குறுக்குப் பெருக்கல் செய்து எளிய நேரியல் சமன்பாடாக மாற்றுக.",
+      "en": "Cross multiply to form a linear equation."
+    },
+    "revision_fact": {
+      "ta": "2x = 8 ⟹ x = 4",
+      "en": "2x = 8 ⟹ x = 4"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_040",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒருவர் தனது வருமானத்தில் 1/3 பகுதியை வாடகைக்கும், 1/4 பகுதியை உணவிற்கும் செலவிடுகிறார். மீதம் ₹5,000 சேமித்தால், அவரது மொத்த வருமானம் என்ன?",
+      "en": "A person spends 1/3 of income on rent and 1/4 on food. If ₹5,000 is left, what is the total income?"
+    },
+    "question_ta": "ஒருவர் தனது வருமானத்தில் 1/3 பகுதியை வாடகைக்கும், 1/4 பகுதியை உணவிற்கும் செலவிடுகிறார். மீதம் ₹5,000 சேமித்தால், அவரது மொத்த வருமானம் என்ன?",
+    "question_en": "A person spends 1/3 of income on rent and 1/4 on food. If ₹5,000 is left, what is the total income?",
+    "options": [
+      "₹12,000",
+      "₹15,000",
+      "₹10,000",
+      "₹14,000"
+    ],
+    "options_ta": [
+      "₹12,000",
+      "₹15,000",
+      "₹10,000",
+      "₹14,000"
+    ],
+    "options_en": [
+      "₹12,000",
+      "₹15,000",
+      "₹10,000",
+      "₹14,000"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "மொத்த செலவுப் பங்கு = 1/3 + 1/4 = (4 + 3) / 12 = 7/12.\nமீதமுள்ள பங்கு = 1 - 7/12 = 5/12.\n5/12 பங்கு = ₹5,000 ⟹ 1 பங்கு = 5000 × 12 / 5 = ₹12,000.",
+      "en": "Total spent fraction = 1/3 + 1/4 = 7/12.\nRemaining fraction = 1 - 7/12 = 5/12.\nIf 5/12 = ₹5,000 ⟹ Total income = 5000 × 12 / 5 = ₹12,000."
+    },
+    "explanation_ta": "மொத்த செலவுப் பங்கு = 1/3 + 1/4 = (4 + 3) / 12 = 7/12.\nமீதமுள்ள பங்கு = 1 - 7/12 = 5/12.\n5/12 பங்கு = ₹5,000 ⟹ 1 பங்கு = 5000 × 12 / 5 = ₹12,000.",
+    "explanation_en": "Total spent fraction = 1/3 + 1/4 = 7/12.\nRemaining fraction = 1 - 7/12 = 5/12.\nIf 5/12 = ₹5,000 ⟹ Total income = 5000 × 12 / 5 = ₹12,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 5000 × 12 / 5 = 12000.",
+        "en": "Correct. 5000 × 12 / 5 = 12000."
+      },
+      "B": {
+        "ta": "தவறு. 5000 × 3 = 15000.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5000 × 2 = 10000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீதமுள்ள பின்னத்தைக் கண்டறிந்து மொத்தத் தொகையைக் கணக்கிடவும்.",
+      "en": "Find remaining fraction and solve for total."
+    },
+    "revision_fact": {
+      "ta": "5/12 = 5000 ⟹ Total = 12000",
+      "en": "5/12 = 5000 ⟹ Total = 12000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_041",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "சுருக்குக: √(12 + √(12 + √(12 + ... ∞)))",
+      "en": "Simplify: √(12 + √(12 + √(12 + ... ∞)))"
+    },
+    "question_ta": "சுருக்குக: √(12 + √(12 + √(12 + ... ∞)))",
+    "question_en": "Simplify: √(12 + √(12 + √(12 + ... ∞)))",
+    "options": [
+      "4",
+      "6",
+      "12",
+      "3"
+    ],
+    "options_ta": [
+      "4",
+      "6",
+      "12",
+      "3"
+    ],
+    "options_en": [
+      "4",
+      "6",
+      "12",
+      "3"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "x = √(12 + x) எனக் கொள்க. இருபுறமும் வர்க்கப்படுத்த: x² = 12 + x ⟹ x² - x - 12 = 0.\n(x - 4)(x + 3) = 0 ⟹ x = 4 (நேர்மறை மதிப்பு).",
+      "en": "Let x = √(12 + x) ⟹ x² = 12 + x ⟹ x² - x - 12 = 0.\n(x - 4)(x + 3) = 0 ⟹ x = 4."
+    },
+    "explanation_ta": "x = √(12 + x) எனக் கொள்க. இருபுறமும் வர்க்கப்படுத்த: x² = 12 + x ⟹ x² - x - 12 = 0.\n(x - 4)(x + 3) = 0 ⟹ x = 4 (நேர்மறை மதிப்பு).",
+    "explanation_en": "Let x = √(12 + x) ⟹ x² = 12 + x ⟹ x² - x - 12 = 0.\n(x - 4)(x + 3) = 0 ⟹ x = 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 12-ன் தொடர் காரணி (4 × 3), கூட்டல் குறியிருப்பதால் பெரிய காரணி 4.",
+        "en": "Correct. Factors of 12 are 4 and 3. For '+', take larger factor 4."
+      },
+      "B": {
+        "ta": "தவறு. 12/2 = 6 தவறான கணக்கீடு.",
+        "en": "Miscalculated 12/2."
+      },
+      "C": {
+        "ta": "தவறு. மூலத்தினுள் உள்ள எண் 12.",
+        "en": "Selected number inside root directly."
+      },
+      "D": {
+        "ta": "தவறு. 3 என்பது கழித்தல் (-) குறி வந்திருந்தால் விடையாகும்.",
+        "en": "3 is answer if sign is negative."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(n + √(n + ...)) வடிவத்திற்கு n-ஐ அடுத்தடுத்த இரு காரணிகளாகப் பிரிக்கவும் [a(a+1)]. கூட்டல் குறிக்கு பெரிய காரணி (a+1) விடையாகும்.",
+      "en": "For √(n + √(n + ...)), split n into a(a+1). The answer for '+' is (a+1)."
+    },
+    "revision_fact": {
+      "ta": "12 = 4 × 3 ⟹ x = 4",
+      "en": "12 = 4 × 3 ⟹ x = 4"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_042",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "சுருக்குக: √(7 √(7 √(7 ... ∞)))",
+      "en": "Simplify: √(7 √(7 √(7 ... ∞)))"
+    },
+    "question_ta": "சுருக்குக: √(7 √(7 √(7 ... ∞)))",
+    "question_en": "Simplify: √(7 √(7 √(7 ... ∞)))",
+    "options": [
+      "1",
+      "√7",
+      "7",
+      "49"
+    ],
+    "options_ta": [
+      "1",
+      "√7",
+      "7",
+      "49"
+    ],
+    "options_en": [
+      "1",
+      "√7",
+      "7",
+      "49"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "x = √(7x) ⟹ x² = 7x ⟹ x = 7.",
+      "en": "Let x = √(7x) ⟹ x² = 7x ⟹ x = 7."
+    },
+    "explanation_ta": "x = √(7x) ⟹ x² = 7x ⟹ x = 7.",
+    "explanation_en": "Let x = √(7x) ⟹ x² = 7x ⟹ x = 7.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1 தவறான மதிப்பு.",
+        "en": "Incorrect answer."
+      },
+      "B": {
+        "ta": "தவறு. √7 தவறான வர்க்கமூலம்.",
+        "en": "Selected √7."
+      },
+      "C": {
+        "ta": "சரி. бескоந முடிவிலி பெருக்கலில் மூலத்தினுள் உள்ள எண்ணே விடையாகும் (x = 7).",
+        "en": "Correct. Infinite product root yields the number itself (7)."
+      },
+      "D": {
+        "ta": "தவறு. 7² = 49.",
+        "en": "Squared value 49."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(a √(a √(a ... ∞))) = a.",
+      "en": "√(a √(a √(a ... ∞))) = a."
+    },
+    "revision_fact": {
+      "ta": "x² = 7x ⟹ x = 7",
+      "en": "x² = 7x ⟹ x = 7"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_043",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x + 1/x = 5 எனில், x² + 1/x²-ன் மதிப்பு என்ன?",
+      "en": "If x + 1/x = 5, what is the value of x² + 1/x²?"
+    },
+    "question_ta": "x + 1/x = 5 எனில், x² + 1/x²-ன் மதிப்பு என்ன?",
+    "question_en": "If x + 1/x = 5, what is the value of x² + 1/x²?",
+    "options": [
+      "21",
+      "23",
+      "27",
+      "25"
+    ],
+    "options_ta": [
+      "21",
+      "23",
+      "27",
+      "25"
+    ],
+    "options_en": [
+      "21",
+      "25",
+      "27",
+      "23"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இருபுறமும் வர்க்கப்படுத்த: (x + 1/x)² = 5² ⟹ x² + 2 + 1/x² = 25 ⟹ x² + 1/x² = 25 - 2 = 23.",
+      "en": "Square both sides: (x + 1/x)² = 5² ⟹ x² + 2 + 1/x² = 25 ⟹ x² + 1/x² = 25 - 2 = 23."
+    },
+    "explanation_ta": "இருபுறமும் வர்க்கப்படுத்த: (x + 1/x)² = 5² ⟹ x² + 2 + 1/x² = 25 ⟹ x² + 1/x² = 25 - 2 = 23.",
+    "explanation_en": "Square both sides: (x + 1/x)² = 5² ⟹ x² + 2 + 1/x² = 25 ⟹ x² + 1/x² = 25 - 2 = 23.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 25 - 4 = 21.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 5² = 25.",
+        "en": "5² = 25."
+      },
+      "C": {
+        "ta": "தவறு. 25 + 2 = 27 தவறான கூட்டல்.",
+        "en": "Added 2 instead of subtracting."
+      },
+      "D": {
+        "ta": "சரி. 25 - 2 = 23.",
+        "en": "Correct. 25 - 2 = 23."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x + 1/x = k எனில் x² + 1/x² = k² - 2.",
+      "en": "If x + 1/x = k then x² + 1/x² = k² - 2."
+    },
+    "revision_fact": {
+      "ta": "5² - 2 = 23",
+      "en": "5² - 2 = 23"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_044",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x + 1/x = 4 எனில், x³ + 1/x³-ன் மதிப்பு என்ன?",
+      "en": "If x + 1/x = 4, what is the value of x³ + 1/x³?"
+    },
+    "question_ta": "x + 1/x = 4 எனில், x³ + 1/x³-ன் மதிப்பு என்ன?",
+    "question_en": "If x + 1/x = 4, what is the value of x³ + 1/x³?",
+    "options": [
+      "60",
+      "64",
+      "48",
+      "52"
+    ],
+    "options_ta": [
+      "60",
+      "64",
+      "48",
+      "52"
+    ],
+    "options_en": [
+      "60",
+      "64",
+      "48",
+      "52"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "(x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x) ⟹ 4³ = x³ + 1/x³ + 3(4) ⟹ 64 = x³ + 1/x³ + 12 ⟹ x³ + 1/x³ = 64 - 12 = 52.",
+      "en": "(x + 1/x)³ = 4³ ⟹ x³ + 1/x³ + 3(4) = 64 ⟹ x³ + 1/x³ = 64 - 12 = 52."
+    },
+    "explanation_ta": "(x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x) ⟹ 4³ = x³ + 1/x³ + 3(4) ⟹ 64 = x³ + 1/x³ + 12 ⟹ x³ + 1/x³ = 64 - 12 = 52.",
+    "explanation_en": "(x + 1/x)³ = 4³ ⟹ x³ + 1/x³ + 3(4) = 64 ⟹ x³ + 1/x³ = 64 - 12 = 52.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 64 - 4 = 60.",
+        "en": "Subtracted k only."
+      },
+      "B": {
+        "ta": "தவறு. 4³ = 64 நேரிடையாகக் கொள்ளக் கூடாது.",
+        "en": "4³ = 64 directly without subtracting 3k."
+      },
+      "C": {
+        "ta": "தவறு. 64 - 16 = 48.",
+        "en": "Subtracted 4k instead of 3k."
+      },
+      "D": {
+        "ta": "சரி. 64 - 12 = 52.",
+        "en": "Correct. 64 - 12 = 52."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x + 1/x = k எனில் x³ + 1/x³ = k³ - 3k.",
+      "en": "If x + 1/x = k then x³ + 1/x³ = k³ - 3k."
+    },
+    "revision_fact": {
+      "ta": "4³ - 3(4) = 64 - 12 = 52",
+      "en": "4³ - 3(4) = 64 - 12 = 52"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_045",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "2ˣ⁻¹ + 2ˣ⁺¹ = 320 எனில், x-ன் மதிப்பு என்ன?",
+      "en": "If 2ˣ⁻¹ + 2ˣ⁺¹ = 320, what is the value of x?"
+    },
+    "question_ta": "2ˣ⁻¹ + 2ˣ⁺¹ = 320 எனில், x-ன் மதிப்பு என்ன?",
+    "question_en": "If 2ˣ⁻¹ + 2ˣ⁺¹ = 320, what is the value of x?",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "options_ta": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "options_en": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "2ˣ⁻¹ (1 + 2²) = 320 ⟹ 2ˣ⁻¹ × 5 = 320 ⟹ 2ˣ⁻¹ = 64 = 2⁶ ⟹ x - 1 = 6 ⟹ x = 7.",
+      "en": "2ˣ⁻¹ (1 + 4) = 320 ⟹ 2ˣ⁻¹ × 5 = 320 ⟹ 2ˣ⁻¹ = 64 = 2⁶ ⟹ x = 7."
+    },
+    "explanation_ta": "2ˣ⁻¹ (1 + 2²) = 320 ⟹ 2ˣ⁻¹ × 5 = 320 ⟹ 2ˣ⁻¹ = 64 = 2⁶ ⟹ x - 1 = 6 ⟹ x = 7.",
+    "explanation_en": "2ˣ⁻¹ (1 + 4) = 320 ⟹ 2ˣ⁻¹ × 5 = 320 ⟹ 2ˣ⁻¹ = 64 = 2⁶ ⟹ x = 7.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. x - 1 = 6 ⟹ x = 7.",
+        "en": "Correct. x - 1 = 6 ⟹ x = 7."
+      },
+      "B": {
+        "ta": "தவறு. x - 1 = 6 எனில் x = 6 என தவறாகக் கொண்டது.",
+        "en": "Took x = 6 instead of x - 1 = 6."
+      },
+      "C": {
+        "ta": "தவறு. 2⁷⁺¹ = 256 தவறான கணக்கீடு.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 2⁵ = 32.",
+        "en": "Miscalculated power."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொது காரணியான 2ˣ⁻¹-ஐ வெளியே எடுத்து சமன்பாட்டைச் சுருக்குக.",
+      "en": "Factor out 2ˣ⁻¹ and solve exponential equation."
+    },
+    "revision_fact": {
+      "ta": "2ˣ⁻¹ = 64 = 2⁶ ⟹ x = 7",
+      "en": "2ˣ⁻¹ = 64 = 2⁶ ⟹ x = 7"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_046",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "சுருக்குக: 25 - 1/2 [5 + 4 - {3 - (2 - 1)}]",
+      "en": "Simplify: 25 - 1/2 [5 + 4 - {3 - (2 - 1)}]"
+    },
+    "question_ta": "சுருக்குக: 25 - 1/2 [5 + 4 - {3 - (2 - 1)}]",
+    "question_en": "Simplify: 25 - 1/2 [5 + 4 - {3 - (2 - 1)}]",
+    "options": [
+      "23.5",
+      "22.5",
+      "20.5",
+      "21.5"
+    ],
+    "options_ta": [
+      "23.5",
+      "22.5",
+      "20.5",
+      "21.5"
+    ],
+    "options_en": [
+      "23.5",
+      "22.5",
+      "20.5",
+      "21.5"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1. (2 - 1) = 1.\n2. {3 - 1} = 2.\n3. [5 + 4 - 2] = [7].\n4. 1/2 × 7 = 3.5.\n5. 25 - 3.5 = 21.5.",
+      "en": "1. (2 - 1) = 1.\n2. {3 - 1} = 2.\n3. [5 + 4 - 2] = 7.\n4. 1/2 × 7 = 3.5.\n5. 25 - 3.5 = 21.5."
+    },
+    "explanation_ta": "1. (2 - 1) = 1.\n2. {3 - 1} = 2.\n3. [5 + 4 - 2] = [7].\n4. 1/2 × 7 = 3.5.\n5. 25 - 3.5 = 21.5.",
+    "explanation_en": "1. (2 - 1) = 1.\n2. {3 - 1} = 2.\n3. [5 + 4 - 2] = 7.\n4. 1/2 × 7 = 3.5.\n5. 25 - 3.5 = 21.5.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 25 - 1.5 = 23.5.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 25 - 2.5 = 22.5.",
+        "en": "Miscalculated bracket value as 5."
+      },
+      "C": {
+        "ta": "தவறு. 25 - 4.5 = 20.5.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 25 - 3.5 = 21.5.",
+        "en": "Correct. 25 - 3.5 = 21.5."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "உள் வரிசை அடைப்புக்குறிகளை கவனமாக சுருக்கி, இறுதியில் 1/2-ஆல் பெருக்க வேண்டும்.",
+      "en": "Follow BODMAS strictly from inner bar/brackets to outer."
+    },
+    "revision_fact": {
+      "ta": "25 - 3.5 = 21.5",
+      "en": "25 - 3.5 = 21.5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_047",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "2x + 3y = 13 மற்றும் 5x - y = 7 எனில், x + y-ன் மதிப்பு என்ன?",
+      "en": "If 2x + 3y = 13 and 5x - y = 7, what is the value of x + y?"
+    },
+    "question_ta": "2x + 3y = 13 மற்றும் 5x - y = 7 எனில், x + y-ன் மதிப்பு என்ன?",
+    "question_en": "If 2x + 3y = 13 and 5x - y = 7, what is the value of x + y?",
+    "options": [
+      "5",
+      "7",
+      "2",
+      "3"
+    ],
+    "options_ta": [
+      "5",
+      "7",
+      "2",
+      "3"
+    ],
+    "options_en": [
+      "5",
+      "7",
+      "2",
+      "3"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "இரண்டாவது சமன்பாட்டை 3-ஆல் பெருக்க: 15x - 3y = 21.\nகூட்டவும்: (2x + 3y) + (15x - 3y) = 13 + 21 ⟹ 17x = 34 ⟹ x = 2.\ny = 5x - 7 = 5(2) - 7 = 3.\nx + y = 2 + 3 = 5.",
+      "en": "Multiply 2nd eq by 3: 15x - 3y = 21.\nAdd: 17x = 34 ⟹ x = 2.\ny = 5(2) - 7 = 3.\nx + y = 2 + 3 = 5."
+    },
+    "explanation_ta": "இரண்டாவது சமன்பாட்டை 3-ஆல் பெருக்க: 15x - 3y = 21.\nகூட்டவும்: (2x + 3y) + (15x - 3y) = 13 + 21 ⟹ 17x = 34 ⟹ x = 2.\ny = 5x - 7 = 5(2) - 7 = 3.\nx + y = 2 + 3 = 5.",
+    "explanation_en": "Multiply 2nd eq by 3: 15x - 3y = 21.\nAdd: 17x = 34 ⟹ x = 2.\ny = 5(2) - 7 = 3.\nx + y = 2 + 3 = 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. x = 2, y = 3 ⟹ 2 + 3 = 5.",
+        "en": "Correct. x = 2, y = 3 ⟹ 2 + 3 = 5."
+      },
+      "B": {
+        "ta": "தவறு. 13 - 7 = 6 ⟹ 7 தவறான விடை.",
+        "en": "Incorrect combination."
+      },
+      "C": {
+        "ta": "தவறு. x-ன் மதிப்பு 2 மட்டும் எழுதப்பட்டது.",
+        "en": "Value of x only."
+      },
+      "D": {
+        "ta": "தவறு. y-ன் மதிப்பு 3 மட்டும் எழுதப்பட்டது.",
+        "en": "Value of y only."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நேரியல் சமன்பாட்டு அமைப்பை நீக்கல் முறையில் தீர்த்து x, y காண்க.",
+      "en": "Solve system of linear equations using elimination method."
+    },
+    "revision_fact": {
+      "ta": "x=2, y=3 ⟹ x+y=5",
+      "en": "x=2, y=3 ⟹ x+y=5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_048",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "1/(1×2) + 1/(2×3) + 1/(3×4) + ... + 1/(9×10)-ன் மதிப்பு என்ன?",
+      "en": "What is the value of 1/(1×2) + 1/(2×3) + 1/(3×4) + ... + 1/(9×10)?"
+    },
+    "question_ta": "1/(1×2) + 1/(2×3) + 1/(3×4) + ... + 1/(9×10)-ன் மதிப்பு என்ன?",
+    "question_en": "What is the value of 1/(1×2) + 1/(2×3) + 1/(3×4) + ... + 1/(9×10)?",
+    "options": [
+      "1",
+      "9/11",
+      "1/10",
+      "9/10"
+    ],
+    "options_ta": [
+      "1",
+      "9/11",
+      "1/10",
+      "9/10"
+    ],
+    "options_en": [
+      "1",
+      "9/11",
+      "1/10",
+      "9/10"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1/(n(n+1)) = 1/n - 1/(n+1) என்பதால்:\n(1 - 1/2) + (1/2 - 1/3) + ... + (1/9 - 1/10) = 1 - 1/10 = 9/10 = 0.9.",
+      "en": "Using 1/(n(n+1)) = 1/n - 1/(n+1):\n(1 - 1/2) + (1/2 - 1/3) + ... + (1/9 - 1/10) = 1 - 1/10 = 9/10."
+    },
+    "explanation_ta": "1/(n(n+1)) = 1/n - 1/(n+1) என்பதால்:\n(1 - 1/2) + (1/2 - 1/3) + ... + (1/9 - 1/10) = 1 - 1/10 = 9/10 = 0.9.",
+    "explanation_en": "Using 1/(n(n+1)) = 1/n - 1/(n+1):\n(1 - 1/2) + (1/2 - 1/3) + ... + (1/9 - 1/10) = 1 - 1/10 = 9/10.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10/10 = 1 தோராய மதிப்பு.",
+        "en": "Approximation error."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 1/10 கடைசி உறுப்பு மட்டும் எழுதப்பட்டது.",
+        "en": "Subtracted last term only."
+      },
+      "D": {
+        "ta": "சரி. 1 - 1/10 = 9/10.",
+        "en": "Correct. 1 - 1/10 = 9/10."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "தொலைநோக்கித் தொடரில் (Telescoping series) இடைப்பட்ட உறுப்புகள் அனைத்தும் நீங்கிவிடும்.",
+      "en": "Telescoping series cancels out intermediate terms."
+    },
+    "revision_fact": {
+      "ta": "1 - 1/10 = 9/10",
+      "en": "1 - 1/10 = 9/10"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_049",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Comparison",
+    "question": {
+      "ta": "A = √3 + √5 மற்றும் B = √2 + √6 எனில், கீழ்க்கண்டவற்றுள் எது சரியானது?",
+      "en": "If A = √3 + √5 and B = √2 + √6, which of the following is correct?"
+    },
+    "question_ta": "A = √3 + √5 மற்றும் B = √2 + √6 எனில், கீழ்க்கண்டவற்றுள் எது சரியானது?",
+    "question_en": "If A = √3 + √5 and B = √2 + √6, which of the following is correct?",
+    "options": [
+      "A < B",
+      "A = B",
+      "A > B",
+      "A = 2B"
+    ],
+    "options_ta": [
+      "A < B",
+      "A = B",
+      "A > B",
+      "A = 2B"
+    ],
+    "options_en": [
+      "A < B",
+      "A = B",
+      "A > B",
+      "A = 2B"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "இரு பக்கமும் வர்க்கப்படுத்துக:\nA² = 3 + 5 + 2√15 = 8 + 2√15.\nB² = 2 + 6 + 2√12 = 8 + 2√12.\n√15 > √12 என்பதால், A² > B² ⟹ A > B.",
+      "en": "Square both terms:\nA² = 3 + 5 + 2√15 = 8 + 2√15.\nB² = 2 + 6 + 2√12 = 8 + 2√12.\nSince √15 > √12, A² > B² ⟹ A > B."
+    },
+    "explanation_ta": "இரு பக்கமும் வர்க்கப்படுத்துக:\nA² = 3 + 5 + 2√15 = 8 + 2√15.\nB² = 2 + 6 + 2√12 = 8 + 2√12.\n√15 > √12 என்பதால், A² > B² ⟹ A > B.",
+    "explanation_en": "Square both terms:\nA² = 3 + 5 + 2√15 = 8 + 2√15.\nB² = 2 + 6 + 2√12 = 8 + 2√12.\nSince √15 > √12, A² > B² ⟹ A > B.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. √12 > √15 என்ற தவறான ஒப்பீடு.",
+        "en": "Incorrect comparison √12 > √15."
+      },
+      "B": {
+        "ta": "தவறு. 3+5 = 2+6 = 8 என்பதால் சமம் எனக் கருதுவது (முரண் பகுதியைப் புறக்கணித்தல்).",
+        "en": "Ignored radical product term."
+      },
+      "C": {
+        "ta": "சரி. 8 + 2√15 > 8 + 2√12 ⟹ A > B.",
+        "en": "Correct. 8 + 2√15 > 8 + 2√12 ⟹ A > B."
+      },
+      "D": {
+        "ta": "தவறு. A = 2B தவறான தொடர்பு.",
+        "en": "Incorrect relation."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முரண் எண்களை ஒப்பிடும் போது அவற்றை வர்க்கப்படுத்தி ஒப்பிடுவது எளிதானது.",
+      "en": "Square both expressions to compare surds."
+    },
+    "revision_fact": {
+      "ta": "A² = 8 + 2√15; B² = 8 + 2√12 ⟹ A > B",
+      "en": "A² = 8 + 2√15; B² = 8 + 2√12 ⟹ A > B"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  },
+  {
+    "id": "SIMP_050",
+    "subject": "aptitude",
+    "topic": "aptitude_simplification",
+    "topic_id": "aptitude_simplification",
+    "difficulty": "Hard",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "மதிப்பு காண்க: [(0.05)² + (0.41)² + (0.073)²] / [(0.005)² + (0.041)² + (0.0073)²]",
+      "en": "Find the value of: [(0.05)² + (0.41)² + (0.073)²] / [(0.005)² + (0.041)² + (0.0073)²]"
+    },
+    "question_ta": "மதிப்பு காண்க: [(0.05)² + (0.41)² + (0.073)²] / [(0.005)² + (0.041)² + (0.0073)²]",
+    "question_en": "Find the value of: [(0.05)² + (0.41)² + (0.073)²] / [(0.005)² + (0.041)² + (0.0073)²]",
+    "options": [
+      "1000",
+      "0.1",
+      "10",
+      "100"
+    ],
+    "options_ta": [
+      "1000",
+      "0.1",
+      "10",
+      "100"
+    ],
+    "options_en": [
+      "1000",
+      "0.1",
+      "10",
+      "100"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொகுதியில் உள்ள ஒவ்வொரு எண்ணும் பகுதியில் உள்ள எண்ணைப் போல் 10 மடங்கு (0.05 = 10 × 0.005).\nஎனவே வர்க்கத்தில்: (10 × 0.005)² = 100 × (0.005)².\nதொகுதி = 100 × (பகுதி).\nஎனவே விடை 100.",
+      "en": "Each term in numerator is 10 times denominator term.\nIn squared form: (10x)² = 100x².\nNumerator = 100 × Denominator.\nHence value = 100."
+    },
+    "explanation_ta": "தொகுதியில் உள்ள ஒவ்வொரு எண்ணும் பகுதியில் உள்ள எண்ணைப் போல் 10 மடங்கு (0.05 = 10 × 0.005).\nஎனவே வர்க்கத்தில்: (10 × 0.005)² = 100 × (0.005)².\nதொகுதி = 100 × (பகுதி).\nஎனவே விடை 100.",
+    "explanation_en": "Each term in numerator is 10 times denominator term.\nIn squared form: (10x)² = 100x².\nNumerator = 100 × Denominator.\nHence value = 100.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10³ = 1000 தவறான பெருக்கல்.",
+        "en": "Took 10³ instead of 10²."
+      },
+      "B": {
+        "ta": "தவறு. பகுதியையும் தொகுதியையும் தலைகீழாகக் கொண்டது.",
+        "en": "Reciprocal value."
+      },
+      "C": {
+        "ta": "தவறு. வர்க்கப்படுத்தாமல் 10 எனக் குறிப்பிட்டது.",
+        "en": "Forgot to square 10 to 100."
+      },
+      "D": {
+        "ta": "சரி. 10² = 100.",
+        "en": "Correct. 10² = 100."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அமைப்பில் உள்ள 10x தொடர்பைப் பயன்படுத்தி வர்க்க காரணியான 10² = 100-ஐ வெளியே எடுக்கவும்.",
+      "en": "Factor out 10² from numerator terms."
+    },
+    "revision_fact": {
+      "ta": "100 × Denominator / Denominator = 100",
+      "en": "100 × Denominator / Denominator = 100"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Simplification",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Simplification",
+    "tags": [
+      "aptitude",
+      "aptitude_simplification",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_simplification"
+  }
+]

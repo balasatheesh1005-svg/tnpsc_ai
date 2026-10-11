@@ -1,0 +1,745 @@
+{
+  "meta": {
+    "topic_id": "economy_health_part_3",
+    "repository_id": "economy_health",
+    "display_title": "Health – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Health",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "exam_mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Universal Health Coverage UHC Cube",
+    "Srinath Reddy HLEG Report 2011",
+    "Ayushman Bharat Digital Mission ABDM",
+    "14 Digit ABHA ID Number",
+    "Mission Indradhanush 12 Diseases",
+    "National TB Elimination Programme NTEP 2025",
+    "Nikshay Poshan Yojana 500 Rupees DBT",
+    "Directorate of Public Health DPH 1922",
+    "TNMSC 1994 Generic Drug Procurement",
+    "Makkalai Thedi Maruthuvam Doorstep NCD",
+    "Innuyir Kaappom NK48 First 48 Hours 1 Lakh",
+    "Muthulakshmi Reddy Maternity Benefit 18000"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Examine the three dimensions of the WHO Universal Health Coverage (UHC) cube and the Srinath Reddy HLEG recommendations.",
+        "Understand how digital health missions (ABDM 14-digit ABHA) and immunization campaigns (Mission Indradhanush) operate."
+      ],
+      "ta": [
+        "WHO-ன் அனைவருக்கும் உலகளாவிய சுகாதார (UHC) கனசதுரத்தின் 3 பரிமாணங்களையும் ஸ்ரீநாத் ரெட்டி குழு அறிக்கையையும் புரிந்து கொள்ளுதல்.",
+        "டிஜிட்டல் சுகாதார இயக்கங்களும் (14 இலக்க ABHA) மிஷன் இந்திரதனுஷ் தடுப்பூசித் திட்டமும் எவ்வாறு செயல்படுகின்றன என்பதை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Recall that India's national TB elimination target is 2025 (5 years ahead of UN SDG 2030) and Nikshay Poshan provides ₹500/month.",
+        "Memorize Tamil Nadu's pioneer health institutions: DPH founded in 1922, TNMSC in 1994, MTM in 2021, and NK-48 in 2021."
+      ],
+      "ta": [
+        "இந்தியாவின் காசநோய் ஒழிப்பு இலக்கு 2025 என்பதையும், நிக்ஷய் போஷன் மாதம் ₹500 வழங்குகிறது என்பதையும் நினைவில் நிறுத்துதல்.",
+        "தமிழ்நாட்டின் முன்னோடி அமைப்புகளை நினைவுகூருதல்: DPH (1922), TNMSC (1994), மக்களைத் தேடி மருத்துவம் (2021), NK-48 (2021)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how TNMSC's centralized generic INN procurement model drastically reduces public pharmaceutical expenditures while preventing stockouts.",
+        "Appraise the lifesaving impact of Tamil Nadu's Innuyir Kaappom (NK-48) in providing universal cashless trauma care during the golden hour."
+      ],
+      "ta": [
+        "TNMSC-ன் மையப்படுத்தப்பட்ட ஜெனரிக் மருந்து கொள்முதல் மாதிரி எவ்வாறு மருந்து செலவைக் குறைத்து தட்டுப்பாட்டைத் தடுக்கிறது என ஆய்வு செய்தல்.",
+        "பொன்னான மணித்துளிகளில் சாலை விபத்து உயிர்களைக் காப்பாற்றுவதில் தமிழ்நாட்டின் இன்னுயிர் காப்போம் (NK-48) திட்டத்தின் தாக்கத்தை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge of digital health identifiers, national disease elimination deadlines, and Tamil Nadu health schemes to preliminary and mains exams."
+      ],
+      "ta": [
+        "டிஜிட்டல் சுகாதார அடையாளங்கள், தேசிய நோய் ஒழிப்பு இலக்குகள் மற்றும் தமிழக சுகாதாரத் திட்டங்கள் குறித்த வினாக்களுக்கு துல்லியமாக விடையளித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Health – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_universal_health_coverage_cube",
+      "title_en": "Universal Health Coverage (UHC) & Srinath Reddy Committee (2011)",
+      "title_ta": "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) & ஸ்ரீநாத் ரெட்டி குழு (2011)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_digital_health_missions",
+      "title_en": "Digital Health & Disease Elimination: ABDM, Mission Indradhanush & NTEP",
+      "title_ta": "டிஜிட்டல் சுகாதாரம் & நோய் ஒழிப்பு: ABDM, மிஷன் இந்திரதனுஷ் & NTEP",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_public_health_pioneer",
+      "title_en": "The Tamil Nadu Public Health Model: TNMSC & Groundbreaking Schemes",
+      "title_ta": "தமிழ்நாடு பொதுச் சுகாதார மாதிரி: TNMSC & முன்னோடி நலத்திட்டங்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Universal Health Coverage (UHC) and contemporary healthcare models represent systemic strategies to ensure all individuals receive quality promotive, preventive, curative, and rehabilitative health services without suffering catastrophic financial hardship, exemplified nationally via digital health missions (ABDM) and vertically integrated state public health frameworks like the Tamil Nadu Model.",
+      "ta": "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) மற்றும் சமகால சுகாதார மாதிரிகள் என்பது அனைத்து மக்களுக்கும் எவ்வித நிதிச் சுமையோ வறுமையோ இன்றி தரமான தடுப்பு, விழிப்புணர்வு, சிகிச்சை மற்றும் மறுவாழ்வு சேவைகள் கிடைப்பதை உறுதி செய்வதாகும்; இது தேசிய அளவில் ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) மூலமாகவும், மாநில அளவில் தமிழ்நாட்டின் தனித்துவமான முன்னோடி பொதுச் சுகாதார மாதிரி மூலமாகவும் செயல்படுத்தப்படுகிறது."
+    },
+    "introduction": {
+      "en": "The global paradigm of healthcare delivery has decisively shifted towards Universal Health Coverage (UHC), defined by the World Health Organization and institutionalized through United Nations Sustainable Development Goal 3.8. In India, the High-Level Expert Group on UHC chaired by Dr. K. Srinath Reddy (2011) established the foundational framework of public entitlement without user charges. To operationalize UHC, India has deployed transformative national missions: Mission Indradhanush guaranteeing immunization against 12 vaccine-preventable diseases, the Ayushman Bharat Digital Mission (ABDM) constructing a unified 14-digit ABHA digital backbone, the National TB Elimination Programme (NTEP) targeting elimination by 2025, and Pradhan Mantri Bhartiya Janaushadhi Pariyojana providing low-cost generic medicines. Concurrently, the State of Tamil Nadu stands as an undisputed national and international beacon of public health excellence. With an unbroken century of dedicated public health administration (Directorate of Public Health founded in 1922), Tamil Nadu pioneered the Tamil Nadu Medical Services Corporation (TNMSC, 1994)—the gold standard for computerized generic drug procurement—alongside transformative doorstep healthcare under Makkalai Thedi Maruthuvam and emergency trauma protection under Innuyir Kaappom (NK-48). Mastering these systemic interventions, digital tools, and the Tamil Nadu Model is vital for TNPSC Group 1 examination mastery.",
+      "ta": "சுகாதார விநியோகத்தின் உலகளாவிய பார்வை 'அனைவருக்கும் உலகளாவிய சுகாதாரம்' (UHC) என்ற இலக்கை நோக்கி உறுதியாக மாறியுள்ளது; இது ஐக்கிய நாடுகளின் நீடித்த வளர்ச்சி இலக்கு 3.8-ல் பொறிக்கப்பட்டுள்ளது. இந்தியாவில் டாக்டர் கே. ஸ்ரீநாத் ரெட்டி தலைமையிலான உயர்நிலைக் குழு (2011) கட்டணமில்லாத அரசு சுகாதார உரிமைக்கான அடித்தளத்தை அமைத்தது. இதனைச் செயல்படுத்த மத்திய அரசு பல முன்னணி இயக்கங்களை முன்னெடுத்துள்ளது: 12 நோய்களுக்கு எதிரான மிஷன் இந்திரதனுஷ் தடுப்பூசித் திட்டம், 14 இலக்க ABHA எண்ணை வழங்கும் ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM), 2025-க்குள் காசநோயை ஒழிக்கும் தேசிய திட்டம் (NTEP) மற்றும் மலிவு விலை மக்கள் மருந்தகங்கள் (PMBJP). அதே நேரத்தில், தமிழ்நாடு பொதுச் சுகாதாரத்தில் தேசிய அளவிலும் சர்வதேச அளவிலும் ஒரு முன்னோடி மாநிலமாகத் திகழ்கிறது. 1922-ல் நிறுவப்பட்ட பொதுச் சுகாதாரத் துறை மூலம் 100 ஆண்டுகால பாரம்பரியத்தைக் கொண்டுள்ள தமிழ்நாடு, 1994-ல் தமிழ்நாடு மருத்துவ சேவைக் கழகம் (TNMSC) மூலம் கணினிமயமாக்கப்பட்ட பொது மருந்து கொள்முதல் முறையை உலகிற்கே கற்றுத் தந்தது. மேலும் 'மக்களைத் தேடி மருத்துவம்' மற்றும் விபத்து அவசர சிகிச்சைக்கான 'இன்னுயிர் காப்போம் - நம்மைக் காக்கும் 48' போன்ற திட்டங்கள் தமிழ்நாட்டின் சுகாதாரத்தை உச்சத்திற்கு கொண்டு சென்றுள்ளன. இவற்றை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_universal_health_coverage_cube": [
+      {
+        "term_en": "The WHO UHC Cube Architecture",
+        "term_ta": "WHO உலகளாவிய சுகாதார கனசதுரக் கட்டமைப்பு",
+        "details_en": "Universal Health Coverage implies that all people obtain the health services they need without suffering financial hardship. Modeled as a three-dimensional cube: (1) Breadth of Coverage (Who is covered?): Expanding coverage from formal workers to the entire 100% population; (2) Depth of Services (Which services are covered?): Moving from basic emergency packages to comprehensive primary, secondary, and tertiary care; (3) Height of Financial Protection (What proportion of costs is pooled?): Eliminating direct out-of-pocket payments via tax funding and social pooling.",
+        "details_ta": "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) என்பது மக்கள் தங்களுக்குத் தேவையான மருத்துவ சேவைகளைப் பெறும்போது எவ்வித நிதி நெருக்கடிக்கும் ஆளாகாமல் இருப்பதாகும். இது 3 பரிமாண கனசதுரமாக விளக்கப்படுகிறது: (1) பரப்பளவு (யாரெல்லாம் பாதுகாக்கப்படுகிறார்கள்?): குறிப்பிட்ட சிலரைத் தாண்டி நாட்டின் 100% மக்களுக்கும் விரிவுபடுத்துவது; (2) சேவைகளின் ஆழம் (என்னென்ன சிகிச்சைகள் தரப்படுகின்றன?): வெறும் முதலுதவியைத் தாண்டி முழுமையான முதன்மை, இரண்டாம் மற்றும் மூன்றாம் நிலை சிகிச்சைகள்; (3) நிதிப் பாதுகாப்பின் உயரம் (செலவில் எவ்வளவு அரசு ஏற்கிறது?): சொந்த பாக்கெட்டிலிருந்து பணம் தருவதைத் தடுத்து அரசு வரி மற்றும் காப்பீடு மூலம் 100% பாதுகாப்பது."
+      },
+      {
+        "term_en": "High-Level Expert Group (HLEG) on UHC (2011)",
+        "term_ta": "UHC உயர்நிலைக் குழு (HLEG, 2011 - ஸ்ரீநாத் ரெட்டி)",
+        "details_en": "Constituted by the Planning Commission under the chairmanship of Dr. K. Srinath Reddy, submitting its landmark report in November 2011. Key recommendations: (1) Guaranteed universal entitlement to comprehensive healthcare for every citizen funded predominantly through GENERAL TAXATION (not fragmented commercial insurance); (2) Prohibition of all user fees in public healthcare facilities; (3) Free provision of essential generic medicines and diagnostic tests; (4) Strengthening the public health cadre and increasing public spending to at least 2.5% of GDP.",
+        "details_ta": "திட்டக் குழுவால் டாக்டர் கே. ஸ்ரீநாத் ரெட்டி தலைமையில் அமைக்கப்பட்டு நவம்பர் 2011-ல் அறிக்கை சமர்ப்பிக்கப்பட்டது. முக்கிய பரிந்துரைகள்: (1) தனியார் காப்பீட்டு முறைகளைத் தவிர்த்து, அரசின் 'பொது வரி வருவாய்' மூலம் நாட்டின் அனைத்து குடிமக்களுக்கும் உலகளாவிய இலவச சுகாதார உரிமையை உத்தரவாதம் செய்வது; (2) அரசு மருத்துவமனைகளில் அனைத்து வகையான பயனர் கட்டணங்களையும் முற்றிலுமாகத் தடை செய்வது; (3) அத்தியாவசிய பொது மருந்துகள் மற்றும் பரிசோதனைகளை 100% இலவசமாக வழங்குவது; (4) அரசு சுகாதாரச் செலவை GDP-யில் குறைந்தது 2.5% ஆக உயர்த்துவது."
+      }
+    ],
+    "sec_digital_health_missions": [
+      {
+        "term_en": "Ayushman Bharat Digital Mission (ABDM, September 2021)",
+        "term_ta": "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM, செப்டம்பர் 2021)",
+        "details_en": "Launched on September 27, 2021, by the National Health Authority (NHA). ABDM builds a digital health interoperability backbone across India. Core building blocks: (1) ABHA Number (Ayushman Bharat Health Account): a unique 14-DIGIT IDENTIFIER that links individual personal health records (PHR) across hospitals and labs nationwide; (2) ABHA App / PHR: digital storage of health records under citizen consent; (3) Healthcare Professionals Registry (HPR): verified database of modern and traditional doctors; (4) Health Facility Registry (HFR): database of all public and private hospitals and labs.",
+        "details_ta": "தேசிய சுகாதார ஆணையத்தால் (NHA) செப்டம்பர் 27, 2021 அன்று தொடங்கப்பட்டது. இந்தியாவின் சுகாதாரத் துறையை ஒருங்கிணைக்கும் டிஜிட்டல் கட்டமைப்பாகும். முக்கிய கூறுகள்: (1) ABHA எண்: நாட்டின் எந்த மருத்துவமனைக்கும் சென்றாலும் மருத்துவ ஆவணங்களை இணைக்கும் தனித்துவமான '14 இலக்க அடையாள எண்'; (2) ABHA செயலி: குடிமக்களின் அனுமதியுடன் மருத்துவப் பதிவேடுகளை டிஜிட்டல் முறையில் சேமிப்பது; (3) சுகாதார வல்லுநர்கள் பதிவேடு (HPR): மருத்துவர்களின் சரிபார்க்கப்பட்ட தகவல் தளம்; (4) சுகாதார மையங்கள் பதிவேடு (HFR): அனைத்து அரசு, தனியார் மருத்துவமனைகள் மற்றும் ஆய்வகங்களின் தகவல் தளம்."
+      },
+      {
+        "term_en": "Mission Indradhanush & Intensified Mission Indradhanush (IMI)",
+        "term_ta": "மிஷன் இந்திரதனுஷ் & தீவிர மிஷன் இந்திரதனுஷ் (IMI)",
+        "details_en": "Launched on Good Governance Day (December 25, 2014) to achieve full immunization coverage (>90%) for all children under 2 years of age and pregnant women left uncovered by routine immunization. Protects against 12 VACCINE-PREVENTABLE DISEASES: Diphtheria, Pertussis (Whooping Cough), Tetanus, Polio, Measles, Rubella, severe form of Childhood Tuberculosis, Hepatitis B, Meningitis and Pneumonia caused by Haemophilus influenzae type B (Hib), Rotavirus diarrhea, Pneumococcal conjugate, and Japanese Encephalitis (in endemic districts).",
+        "details_ta": "வழக்கமான தடுப்பூசி போடாமல் விடுபட்ட 2 வயதுக்குட்பட்ட குழந்தைகள் மற்றும் கர்ப்பிணிப் பெண்களுக்கு 90%-க்கும் அதிகமான முழு தடுப்பூசி பாதுகாப்பை வழங்க டிசம்பர் 25, 2014 அன்று தொடங்கப்பட்டது. '12 வகையான நோய்களுக்கு எதிரான' தடுப்பூசிகளை வழங்குகிறது: தொண்டை அடைப்பான் (Diphtheria), கக்குவான் இருமல் (Pertussis), தனுர்வாதம் (Tetanus), போலியோ, தட்டம்மை (Measles), ரூபெல்லா, காசநோய் (TB), ஹெபடைடிஸ் பி, நிமோனியா/மூளைக்காய்ச்சல் (Hib), ரோட்டாவைரஸ் வயிற்றுப்போக்கு, நிமோகோகல் மற்றும் ஜப்பானிய மூளைக்காய்ச்சல்."
+      },
+      {
+        "term_en": "National Tuberculosis Elimination Programme (NTEP) & Nikshay Poshan",
+        "term_ta": "தேசிய காசநோய் ஒழிப்புத் திட்டம் (NTEP) & நிக்ஷய் போஷன் திட்டம்",
+        "details_en": "Rebranded from RNTCP in 2020, NTEP adopts the ambitious national target of ELIMINATING TUBERCULOSIS BY 2025—FIVE YEARS AHEAD of the global UN Sustainable Development Goal (SDG 3.3 target of 2030). Key interventions: (1) Nikshay Poshan Yojana: provides a DIRECT BENEFIT TRANSFER (DBT) of ₹500 PER MONTH directly into the bank accounts of all notified TB patients throughout their treatment duration for nutritional support; (2) Ni-kshay 2.0 portal for community participation (Ni-kshay Mitras providing food baskets).",
+        "details_ta": "2020-ல் பெயர் மாற்றப்பட்ட இத்திட்டம், ஐ.நா-வின் உலகளாவிய SDG 2030 இலக்கிற்கு '5 ஆண்டுகளுக்கு முன்பாகவே, அதாவது 2025-க்குள்ளேயே இந்தியாவில் காசநோயை முற்றிலும் ஒழிப்பதை' இலக்காகக் கொண்டுள்ளது. முக்கிய நடவடிக்கைகள்: (1) நிக்ஷய் போஷன் திட்டம் (Nikshay Poshan Yojana): சிகிச்சை பெறும் அனைத்து காசநோயாளிகளுக்கும் ஊட்டச்சத்து ஆதரவிற்காக மாதம் '₹500 நேரடி பணப் பரிமாற்றம்' (DBT) வங்கிக் கணக்கில் வழங்கப்படுகிறது; (2) நிக்ஷய் மித்ராக்கள் மூலம் சமுதாய உணவுப் பெட்டகங்கள் வழங்கும் மக்கள் பங்களிப்பு இயக்கம்."
+      }
+    ],
+    "sec_tamil_nadu_public_health_pioneer": [
+      {
+        "term_en": "Centenary of Directorate of Public Health (DPH, 1922)",
+        "term_ta": "பொதுச் சுகாதாரத் துறையின் நூற்றாண்டுப் பாரம்பரியம் (DPH, 1922)",
+        "details_en": "Tamil Nadu is the ONLY state in India possessing a dedicated, standalone Directorate of Public Health and Preventive Medicine (DPH) established in 1922 under the Madras Public Health Act, 1939 (the first comprehensive public health statute in Asia). It maintains a separate cadre of public health officers (Deputy Directors of Health Services) completely independent of curative clinical hospitals.",
+        "details_ta": "1939-ஆம் ஆண்டின் மெட்ராஸ் பொதுச் சுகாதாரச் சட்டத்தின் கீழ் (ஆசியாவின் முதல் விரிவான சுகாதாரச் சட்டம்), 1922-லேயே 'பொதுச் சுகாதாரம் மற்றும் நோய் தடுப்பு மருத்துவத்திற்கான' (DPH) தனித்துவமான தன்னாட்சித் துறையை உருவாக்கிய இந்தியாவின் ஒரே மாநிலம் தமிழ்நாடு ஆகும். சிகிச்சை அளிக்கும் மருத்துவமனைகளைத் தாண்டி, நோய் தடுப்பிற்கென தனித்துவமான பொதுச் சுகாதார அதிகாரிகள் (DDHS) கொண்ட கட்டமைப்பைக் கொண்டுள்ளது."
+      },
+      {
+        "term_en": "Tamil Nadu Medical Services Corporation (TNMSC, 1994)",
+        "term_ta": "தமிழ்நாடு மருத்துவ சேவைக் கழகம் (TNMSC, 1994)",
+        "details_en": "Established in 1994, TNMSC revolutionized pharmaceutical procurement in India by introducing: (1) Centralized, competitive open electronic tendering for GENERIC MEDICINES; (2) Dual-testing quality assurance (testing in accredited independent laboratories before distribution); (3) Pass-through warehouse inventory tracking with automated barcodes; (4) Strict blacklisting of substandard pharmaceutical manufacturers. Replicated across dozens of Indian states (Rajasthan, Kerala, Andhra) and commended by the World Bank as an international gold standard.",
+        "details_ta": "1994-ல் தொடங்கப்பட்ட TNMSC இந்தியாவில் மருந்து கொள்முதலில் பெரும் புரட்சியை ஏற்படுத்தியது: (1) பொதுவான 'ஜெனரிக் மருந்துகளுக்கான' மையப்படுத்தப்பட்ட வெளிப்படையான டெண்டர் முறை; (2) தரக் கட்டுப்பாடு (மருந்துகளை விநியோகிக்கும் முன் தன்னாட்சி ஆய்வகங்களில் இரட்டைப் பரிசோதனை); (3) பார்கோடு மூலம் தானியங்கி சேமிப்பு கிடங்கு கண்காணிப்பு; (4) தரமற்ற மருந்து தயாரிப்பு நிறுவனங்களுக்கு நிரந்தர தடை. உலக வங்கியால் போற்றப்பட்ட இம்முறை ராஜஸ்தான், கேரளா உள்ளிட்ட பல்வேறு மாநிலங்களால் வெற்றிகரமாகப் பின்பற்றப்பட்டது."
+      },
+      {
+        "term_en": "Makkalai Thedi Maruthuvam (MTM, August 2021)",
+        "term_ta": "மக்களைத் தேடி மருத்துவம் (MTM, ஆகஸ்ட் 2021)",
+        "details_en": "Launched on August 5, 2021, Makkalai Thedi Maruthuvam is India's largest community-based chronic disease delivery initiative. Women Health Volunteers (WHVs) visit households directly to screen individuals aged 45+ for Hypertension and Diabetes, deliver free monthly maintenance drug boxes at the doorstep, provide home-based peritoneal dialysis supplies, and deliver palliative care to bedridden patients, eliminating outpatient travel costs.",
+        "details_ta": "ஆகஸ்ட் 5, 2021 அன்று தொடங்கப்பட்ட இந்தியாவின் மிகப்பெரிய வீடு தேடிச் செல்லும் நாள்பட்ட நோய் சிகிச்சைத் திட்டமாகும். பெண் சுகாதார தன்னார்வலர்கள் (WHVs) நேரடியாக வீடுகளுக்குச் சென்று 45 வயதுக்கு மேற்பட்டவர்களுக்கு உயர் இரத்த அழுத்தம் மற்றும் நீரிழிவு பரிசோதனை செய்து, மாதாந்திர மருந்துப் பெட்டகங்களை வீட்டு வாசலிலேயே வழங்குகின்றனர்; மேலும் முதியோர்களுக்கான இயன்முறை சிகிச்சை மற்றும் சிறுநீரக நோயாளிகளுக்கான பெரிட்டோனியல் டயாலிசிஸ் பைகளையும் வீடுகளுக்கே கொண்டு சேர்க்கின்றனர்."
+      },
+      {
+        "term_en": "Innuyir Kaappom - Nammai Kaakkum 48 (NK-48, December 2021)",
+        "term_ta": "இன்னுயிர் காப்போம் - நம்மைக் காக்கும் 48 (NK-48, டிசம்பர் 2021)",
+        "details_en": "Launched on December 18, 2021, to eliminate road accident fatalities during the 'Golden Hour'. Guarantees 100% CASHLESS EMERGENCY MEDICAL CARE FOR THE FIRST 48 HOURS up to ₹1,00,000 per victim across 81 designated life-saving packages in over 680 empanelled government and private hospitals. Uniquely, it applies to ANY INDIVIDUAL injured on Tamil Nadu roads regardless of state of origin, domicile, or nationality.",
+        "details_ta": "சாலை விபத்துக்களில் 'பொன்னான மணித்துளிகளில்' (Golden Hour) உயிர்களைக் காப்பாற்ற டிசம்பர் 18, 2021 அன்று தொடங்கப்பட்டது. தமிழ்நாட்டின் எல்லைக்குள் விபத்தில் சிக்கும் எந்தவொரு நபருக்கும் (மாநிலம், நாடு பாகுபாடின்றி) முதல் 48 மணி நேரத்திற்குத் தேவைப்படும் அவசர சிகிச்சைகளை 'நபர் ஒருவருக்கு ₹1 லட்சம் வரை 100% கட்டணமில்லாமல்' 680-க்கும் மேற்பட்ட அரசு மற்றும் தனியார் மருத்துவமனைகளில் இலவசமாக வழங்குகிறது."
+      },
+      {
+        "term_en": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme (MRMBS)",
+        "term_ta": "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம் (MRMBS)",
+        "details_en": "Provides total financial assistance of ₹18,000 to poor pregnant women (including ₹14,000 cash in 5 installments conditional on ANC registration, institutional delivery, and child immunization, PLUS two Amma Maternity Nutrition Kits valued at ₹4,000 containing Iron tonic, nutritional powder, ghee, and maternity essentials).",
+        "details_ta": "ஏழை கர்ப்பிணிப் பெண்களுக்கு மொத்தம் '₹18,000 மதிப்பிலான உதவி' வழங்கப்படுகிறது (5 தவணைகளில் ₹14,000 நேரடி ரொக்கப் பணம் + இரும்புச்சத்து டானிக், சத்து மாவு, நெய், பிரசவ பொருட்கள் அடங்கிய தலா ₹2,000 மதிப்பிலான 2 அம்மா மகப்பேறு ஊட்டச்சத்து பெட்டகங்கள்)."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_uhc_vs_private_insurance",
+        "title_en": "Universal Health Coverage (UHC) vs Commercial Private Health Insurance",
+        "title_ta": "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) vs தனியார் மருத்துவக் காப்பீடு ஒப்பீடு",
+        "headers_en": [
+          "Feature Dimension",
+          "Universal Health Coverage (UHC)",
+          "Commercial Private Health Insurance"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC)",
+          "தனியார் மருத்துவக் காப்பீடு"
+        ],
+        "rows_en": [
+          [
+            "Underlying Philosophy",
+            "Health as a Fundamental Human Right and public entitlement",
+            "Health care as a commercial commodity sold for profit"
+          ],
+          [
+            "Population Inclusion",
+            "Universal (100% of citizens covered regardless of ability to pay)",
+            "Exclusionary (covers only those who can afford high premiums)"
+          ],
+          [
+            "Pre-Existing Conditions",
+            "Full coverage of all pre-existing chronic conditions immediately",
+            "Strict exclusion clauses, waiting periods (3-4 years), or policy rejection"
+          ],
+          [
+            "Funding Mechanism",
+            "Predominantly public general taxation and statutory social pooling",
+            "Individual actuarially determined risk-rated premium payments"
+          ],
+          [
+            "Primary Focus",
+            "Balanced promotive, preventive, and primary outpatient care",
+            "Tertiary, hospital-centric, high-margin curative inpatient claims"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடிப்படை தத்துவம்",
+            "சுகாதாரம் என்பது ஒரு அடிப்படை மனித உரிமை மற்றும் அரசின் பொறுப்பு",
+            "சுகாதாரம் என்பது லாபத்திற்காக விற்கப்படும் ஒரு வணிகப் பொருள்"
+          ],
+          [
+            "மக்கள் தொகை வரம்பு",
+            "அனைவருக்கும் பொதுவானது (பணம் செலுத்தும் திறனின்றி 100% மக்களுக்கும்)",
+            "பிரித்தாளும் தன்மை (பிரீமியம் செலுத்தக்கூடிய வசதி படைத்தவர்களுக்கு மட்டுமே)"
+          ],
+          [
+            "ஏற்கனவே உள்ள நோய்கள்",
+            "ஏற்கனவே உள்ள அனைத்து நாள்பட்ட நோய்களுக்கும் உடனடி முழுமையான சிகிச்சை",
+            "கடுமையான விலக்கு விதிகளும், 3-4 ஆண்டுகள் காத்திருப்பு அல்லது நிராகரிப்பு"
+          ],
+          [
+            "நிதி ஆதாரம்",
+            "அரசின் பொது வரி வருவாய் மற்றும் சமூகப் பாதுகாப்பு நிதி",
+            "தனிநபர்கள் செலுத்தும் அதிகப்படியான காப்பீட்டு பிரீமியம் கட்டணங்கள்"
+          ],
+          [
+            "முதன்மை நோக்கம்",
+            "நோய் தடுப்பு, விழிப்புணர்வு மற்றும் ஆரம்ப சுகாதாரத்தை வலுப்படுத்துதல்",
+            "மருத்துவமனைகளில் உள்நோயாளி சிகிச்சைகளுக்கான பெரிய பில்கள் மட்டுமே"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mission_indradhanush_vs_uip",
+        "title_en": "Universal Immunization Programme (UIP) vs Mission Indradhanush (MI)",
+        "title_ta": "உலகளாவிய தடுப்பூசித் திட்டம் (UIP) vs மிஷன் இந்திரதனுஷ் (MI) ஒப்பீடு",
+        "headers_en": [
+          "Attribute",
+          "Universal Immunization Programme (UIP)",
+          "Mission Indradhanush (MI)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "உலகளாவிய தடுப்பூசித் திட்டம் (UIP)",
+          "மிஷன் இந்திரதனுஷ் (MI)"
+        ],
+        "rows_en": [
+          [
+            "Historical Origin",
+            "Launched in 1985 by expanding the Expanded Programme on Immunization (1978)",
+            "Launched on December 25, 2014, as a targeted catch-up mission"
+          ],
+          [
+            "Operational Strategy",
+            "Routine, continuous delivery through village health days and Sub-Centres",
+            "Intensive, campaign-mode catch-up rounds targeting dropouts and zero-dose pockets"
+          ],
+          [
+            "Target Demographic",
+            "All newborn infants and pregnant women in routine schedules",
+            "Children <2 years and pregnant women who MISSED or dropped out of routine UIP"
+          ],
+          [
+            "Target Coverage Goal",
+            "Gradual universal expansion (stagnated around ~65% in 2014)",
+            "Accelerated surge to exceed 90% full immunization coverage across India"
+          ],
+          [
+            "Geographic Focus",
+            "Standardized all-India baseline across all primary health centers",
+            "Prioritized high-risk, migrant, tribal, and low-coverage urban slum clusters"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரலாற்றுத் தொடக்கம்",
+            "1978 தடுப்பூசி திட்டத்தை விரிவுபடுத்தி 1985-ல் தொடங்கப்பட்டது",
+            "விடுபட்டவர்களைக் கண்டறிய டிசம்பர் 25, 2014 அன்று தொடங்கப்பட்டது"
+          ],
+          [
+            "செயல்பாட்டு உத்தி",
+            "கிராம சுகாதார நாட்கள் மற்றும் துணை நிலையங்கள் மூலம் வழக்கமான சேவை",
+            "தீவிர முகாம்கள் மூலம் விடுபட்ட குழந்தைகளுக்கு தேடிச்சென்று போடும் முறை"
+          ],
+          [
+            "இலக்கு மக்கள்",
+            "பிறக்கும் அனைத்து குழந்தைகள் மற்றும் கர்ப்பிணிப் பெண்கள்",
+            "வழக்கமான UIP திட்டத்தில் தடுப்பூசி போட விடுபட்ட 2 வயதுக்குட்பட்ட குழந்தைகள்"
+          ],
+          [
+            "இலக்கு அளவு",
+            "படிப்படியான விரிவாக்கம் (2014 வரை ~65%-ல் தேங்கியிருந்தது)",
+            "தேசிய அளவில் 90%-க்கும் அதிகமான முழு தடுப்பூசி பாதுகாப்பை அடைவது"
+          ],
+          [
+            "புவியியல் கவனம்",
+            "நாடு முழுவதும் உள்ள அனைத்து ஆரம்ப சுகாதார நிலையங்களிலும் பொதுவானது",
+            "அதிக ஆபத்து நிறைந்த, புலம்பெயர் தொழிலாளர் மற்றும் சேரிப் பகுதிகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_tnmsc_vs_traditional_procurement",
+        "title_en": "Tamil Nadu Medical Services Corporation (TNMSC) vs Traditional Drug Procurement",
+        "title_ta": "தமிழ்நாடு மருத்துவ சேவைக் கழகம் (TNMSC) vs பாரம்பரிய மருந்து கொள்முதல் ஒப்பீடு",
+        "headers_en": [
+          "Procurement Dimension",
+          "TNMSC Model (Pioneered 1994)",
+          "Traditional State Health Procurement"
+        ],
+        "headers_ta": [
+          "கொள்முதல் பரிமாணம்",
+          "TNMSC மாதிரி (1994 முதல்)",
+          "பாரம்பரிய அரசு மருந்து கொள்முதல் முறை"
+        ],
+        "rows_en": [
+          [
+            "Bidding Process",
+            "Centralized, open electronic bidding strictly for INN Generic Names",
+            "Fragmented local tendering often specifying commercial brand names"
+          ],
+          [
+            "Quality Assurance",
+            "Mandatory dual-testing in empanelled NABL-accredited independent labs",
+            "Random or zero pre-distribution chemical laboratory testing"
+          ],
+          [
+            "Inventory Visibility",
+            "Automated real-time computerized barcodes and pass-through district warehouses",
+            "Manual paper ledgers; severe stockouts and expiry wastage"
+          ],
+          [
+            "Cost Efficiency",
+            "Achieves massive bulk economies of scale; cuts drug costs by 50-70%",
+            "Inflated drug procurement prices with heavy middleman markups"
+          ],
+          [
+            "Blacklisting Power",
+            "Strict automated debarment and blacklisting of failing manufacturers",
+            "Weak penal enforcement; politically connected suppliers supply spurious drugs"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "டெண்டர் முறை",
+            "பொதுவான 'ஜெனரிக் பெயர்களுக்கு' மட்டுமே மையப்படுத்தப்பட்ட வெளிப்படையான இ-டெண்டர்",
+            "குறிப்பிட்ட பிராண்ட் பெயர்களுடன் உள்ளூர் அளவில் துண்டுதுண்டான கொள்முதல்"
+          ],
+          [
+            "தரப் பரிசோதனை",
+            "மருந்துகளை விநியோகிக்கும் முன் தன்னாட்சி NABL ஆய்வகங்களில் கட்டாய இரட்டைப் பரிசோதனை",
+            "விநியோகத்திற்கு முன் முறையான வேதியியல் ஆய்வக சோதனைகள் இன்மை"
+          ],
+          [
+            "கிடங்கு கண்காணிப்பு",
+            "பார்கோடு மூலம் மாவட்டக் கிடங்குகளில் நிகழ்நேர கணினிமய சரக்குக் கண்காணிப்பு",
+            "காகித பதிவேடுகள்; அடிக்கடி மருந்து தட்டுப்பாடு மற்றும் காலாவதி விரயம்"
+          ],
+          [
+            "செலவுச் சிக்கனம்",
+            "மொத்தக் கொள்முதல் மூலம் மருந்துகளின் விலையை 50-70% வரை குறைக்கிறது",
+            "இடைத்தரகர்கள் மற்றும் அதிக பிராண்ட் விலைகளால் அரசுக்கு நிதி இழப்பு"
+          ],
+          [
+            "தடை செய்யும் அதிகாரம்",
+            "தரமற்ற மருந்துகளைத் தயாரிக்கும் நிறுவனங்களுக்கு உடனடி நிரந்தரத் தடை",
+            "பலவீனமான தண்டனை முறைகள்; போலி மருந்துகள் விநியோகிக்கப்படும் அபாயம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mtm_vs_nk48",
+        "title_en": "Makkalai Thedi Maruthuvam (MTM) vs Innuyir Kaappom - NK48",
+        "title_ta": "மக்களைத் தேடி மருத்துவம் (MTM) vs இன்னுயிர் காப்போம் (NK-48) ஒப்பீடு",
+        "headers_en": [
+          "Scheme Attribute",
+          "Makkalai Thedi Maruthuvam (MTM, 2021)",
+          "Innuyir Kaappom - Nammai Kaakkum 48 (NK-48, 2021)"
+        ],
+        "headers_ta": [
+          "திட்டத்தின் அம்சம்",
+          "மக்களைத் தேடி மருத்துவம் (MTM, 2021)",
+          "இன்னுயிர் காப்போம் - நம்மைக் காக்கும் 48 (NK-48, 2021)"
+        ],
+        "rows_en": [
+          [
+            "Primary Medical Locus",
+            "Chronic Non-Communicable Diseases (NCDs: Hypertension, Diabetes)",
+            "Acute traumatic road traffic accidents (Golden Hour emergency care)"
+          ],
+          [
+            "Point of Service Delivery",
+            "Directly at the CITIZEN'S DOORSTEP by Women Health Volunteers (WHVs)",
+            "Empanelled government and private hospital emergency trauma centers"
+          ],
+          [
+            "Financial Entitlement",
+            "Free monthly drug kits, home peritoneal dialysis, and palliative care",
+            "100% cashless treatment up to ₹1,00,000 for the first 48 hours"
+          ],
+          [
+            "Target Beneficiaries",
+            "Individuals aged 45+ and bedridden patients in Tamil Nadu",
+            "ANY PERSON injured on Tamil Nadu roads (regardless of domicile/nationality)"
+          ],
+          [
+            "Core Strategic Impact",
+            "Prevents catastrophic secondary organ complications (strokes, kidney failure)",
+            "Prevents road crash mortality during the critical first 48 hours"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை மருத்துவப் பிரிவு",
+            "நாள்பட்ட தொற்றா நோய்கள் (NCDs: உயர் இரத்த அழுத்தம், நீரிழிவு)",
+            "திடீர் சாலை விபத்துக்கள் (பொன்னான மணித்துளி அவசர சிகிச்சை)"
+          ],
+          [
+            "சேவை வழங்கப்படும் இடம்",
+            "பெண் சுகாதார தன்னார்வலர்கள் மூலம் 'மக்களின் வீட்டு வாசலிலேயே'",
+            "அங்கீகரிக்கப்பட்ட அரசு மற்றும் தனியார் மருத்துவமனை அவசர சிகிச்சைப் பிரிவுகள்"
+          ],
+          [
+            "நிதி உதவி அளவு",
+            "இலவச மாதாந்திர மருந்துப் பெட்டகம், டயாலிசிஸ் பைகள், இயன்முறை சிகிச்சை",
+            "முதல் 48 மணி நேரத்திற்கு நபர் ஒருவருக்கு ₹1,00,000 வரை பணமில்லா சிகிச்சை"
+          ],
+          [
+            "பயனாளிகள்",
+            "தமிழ்நாட்டில் உள்ள 45 வயதுக்கு மேற்பட்டவர்கள் மற்றும் முதியவர்கள்",
+            "தமிழ்நாட்டு எல்லைக்குள் விபத்துக்குள்ளாகும் எவரும் (மாநிலம்/நாடு பாகுபாடின்றி)"
+          ],
+          [
+            "முக்கிய தாக்கம்",
+            "பக்கவாதம், சிறுநீரக செயலிழப்பு போன்ற ஆபத்தான நோய்களை முன்கூட்டியே தடுத்தல்",
+            "விபத்து நிகழ்ந்த முதல் 48 மணி நேரத்தில் விலைமதிப்பற்ற உயிர்களைக் காப்பாற்றுதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Health Part 3: UHC, Digital Health & Tamil Nadu Model",
+        "short_label": "UHC & TN Model",
+        "children": [
+          {
+            "title": "Universal Health Coverage (UHC)",
+            "short_label": "UHC Framework",
+            "children": [
+              {
+                "title": "WHO UHC Cube (Population, Services, Financial Protection)",
+                "short_label": "UHC Cube"
+              },
+              {
+                "title": "HLEG Report 2011 (Dr. K. Srinath Reddy: Tax-funded, Zero User Fees)",
+                "short_label": "Srinath Reddy"
+              }
+            ]
+          },
+          {
+            "title": "National Flagship Health Missions",
+            "short_label": "National Missions",
+            "children": [
+              {
+                "title": "Mission Indradhanush (12 Vaccine-Preventable Diseases, >90%)",
+                "short_label": "Indradhanush"
+              },
+              {
+                "title": "ABDM (14-digit ABHA ID, Health Facility Registry, HPR)",
+                "short_label": "ABDM Digital"
+              },
+              {
+                "title": "NTEP (TB Elimination by 2025; Nikshay ₹500/month DBT)",
+                "short_label": "TB Elimination"
+              },
+              {
+                "title": "PMBJP (Pradhan Mantri Janaushadhi: Low-cost generic drugs)",
+                "short_label": "Janaushadhi"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu Public Health Pioneer Model",
+            "short_label": "Tamil Nadu Model",
+            "children": [
+              {
+                "title": "Directorate of Public Health (DPH 1922; 100 Years)",
+                "short_label": "DPH 1922"
+              },
+              {
+                "title": "TNMSC (1994: Computerized Generic Drug Procurement)",
+                "short_label": "TNMSC 1994"
+              },
+              {
+                "title": "Makkalai Thedi Maruthuvam (2021: Doorstep NCD care)",
+                "short_label": "MTM Doorstep"
+              },
+              {
+                "title": "Innuyir Kaappom NK-48 (2021: Cashless ₹1 Lakh First 48h)",
+                "short_label": "NK-48 Trauma"
+              },
+              {
+                "title": "Muthulakshmi Reddy Scheme (MRMBS: ₹18,000 + Nutrition Kits)",
+                "short_label": "MRMBS Scheme"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "TB Elimination Target Year Trap: India 2025 vs UN SDG 2030",
+        "points": {
+          "en": [
+            "TRAP: Quoting 2030 as India's national target year for eliminating tuberculosis under NTEP.",
+            "CORRECT FACT: Under the National Tuberculosis Elimination Programme (NTEP), India has committed to eliminating Tuberculosis by 2025—FIVE YEARS AHEAD of the United Nations Sustainable Development Goal (SDG 3.3) target of 2030.",
+            "WHY CANDIDATES FAIL: Conflating the global UN SDG deadline (2030) with India's accelerated national target (2025)."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவில் காசநோயை ஒழிப்பதற்கான தேசிய இலக்கு ஆண்டு 2030 எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: தேசிய காசநோய் ஒழிப்புத் திட்டத்தின் (NTEP) கீழ் இந்தியா காசநோயை '2025-க்குள்' ஒழிக்க இலக்கு நிர்ணயித்துள்ளது; இது ஐக்கிய நாடுகளின் உலகளாவிய SDG இலக்கை (2030) விட '5 ஆண்டுகள் முந்தையதாகும்'!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஐ.நா-வின் சர்வதேச இலக்கு ஆண்டான 2030-ஐ, இந்தியாவின் தேசிய இலக்கான 2025-உடன் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "ABHA Number Digit Count Trap: 14 Digits, NOT 12 or 16",
+        "points": {
+          "en": [
+            "TRAP: Believing the Ayushman Bharat Health Account (ABHA) number has 12 digits like Aadhaar.",
+            "CORRECT FACT: An ABHA ID number consists of exactly 14 DIGITS (formatted as XX-XXXX-XXXX-XXXX). While it can be seeded and authenticated using a 12-digit Aadhaar card, the ABHA number itself is 14 digits long.",
+            "WHY CANDIDATES FAIL: Assuming all Indian digital identity numbers share the 12-digit format of Aadhaar."
+          ],
+          "ta": [
+            "பொறி: ஆயுஷ்மான் பாரத் சுகாதார கணக்கு (ABHA) எண் ஆதார் போன்றே 12 இலக்கங்களைக் கொண்டது என நினைப்பது.",
+            "சரியான உண்மை: ABHA அடையாள எண் என்பது '14 இலக்கங்களைக்' (14 Digits) கொண்ட தனித்துவமான எண்ணாகும்! இது 12 இலக்க ஆதார் அட்டை மூலம் உருவாக்கப்பட்டாலும், இதன் தனித்துவ எண் 14 இலக்கங்களைக் கொண்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இந்தியாவில் உள்ள அனைத்து டிஜிட்டல் அடையாள எண்களும் ஆதார் போன்றே 12 இலக்கங்களாக இருக்கும் என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Innuyir Kaappom (NK-48) Universal Domicile Trap: Covers ANYONE, NOT Just TN Domiciles",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Innuyir Kaappom (NK-48) applies only to residents and ration card holders of Tamil Nadu.",
+            "CORRECT FACT: The scheme guarantees cashless emergency care up to ₹1 lakh for the first 48 hours to ANY INDIVIDUAL who suffers a road accident within the territorial boundaries of Tamil Nadu, INCLUDING tourists, migrant workers, other Indian state citizens, and even foreign nationals.",
+            "WHY CANDIDATES FAIL: Assuming state welfare schemes are strictly restricted to local state domicile certificate holders."
+          ],
+          "ta": [
+            "பொறி: இன்னுயிர் காப்போம் (NK-48) திட்டம் தமிழ்நாட்டின் குடும்ப அட்டை வைத்திருப்பவர்களுக்கு மட்டுமே பொருந்தும் என நினைப்பது.",
+            "சரியான உண்மை: இத்திட்டம் தமிழ்நாட்டின் சாலை எல்லைக்குள் விபத்தில் சிக்கும் 'எந்தவொரு மனிதருக்கும்' பொருந்தும்! இதில் வெளி மாநிலத்தவர், சுற்றுலாப் பயணிகள், புலம்பெயர் தொழிலாளர்கள் மற்றும் வெளிநாட்டு குடிமக்களுக்கும் கூட முதல் 48 மணி நேரத்திற்கு ₹1 லட்சம் வரை இலவச சிகிச்சை உறுதி செய்யப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மாநில அரசின் திட்டங்கள் உள்ளூர் மக்களுக்கு மட்டுமே பயனளிக்கும் என்ற பொதுவான தவறான எண்ணம்."
+          ]
+        }
+      },
+      {
+        "title": "TNMSC Generic Procurement Trap: Procures by INN Generic Name, NOT Brand Names",
+        "points": {
+          "en": [
+            "TRAP: Assuming TNMSC purchases commercial branded medicines from pharmaceutical companies.",
+            "CORRECT FACT: TNMSC strictly floats open electronic tenders for INTERNATIONAL NON-PROPRIETARY NAMES (INN / Generic chemical names), completely forbidding brand names. This eliminates massive advertising margins, allowing Tamil Nadu to supply 100% free generic medicines across all government hospitals.",
+            "WHY CANDIDATES FAIL: Failing to understand how generic bulk procurement cuts drug budgets by over 60%."
+          ],
+          "ta": [
+            "பொறி: TNMSC நிறுவனம் மருந்து கம்பெனிகளிடமிருந்து பிராண்டட் வணிக மருந்துகளை வாங்குகிறது என நினைப்பது.",
+            "சரியான உண்மை: TNMSC நிறுவனம் முற்றிலும் சர்வதேச 'ஜெனரிக் வேதியியல் பெயர்களில்' (INN Generic Names) மட்டுமே வெளிப்படையான டெண்டர்களைக் கோருகிறது; பிராண்ட் பெயர்களைப் பயன்படுத்த முற்றிலும் தடை விதிக்கப்பட்டுள்ளது. இது விளம்பரக் கட்டணங்களை ஒழித்து 60%-க்கும் அதிகமான செலவை மிச்சப்படுத்துகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அரசு மருத்துவமனைகளில் வழங்கப்படும் இலவச மருந்துகள் ஜெனரிக் மருந்துகள் என்பதை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Nikshay Poshan Yojana Amount Trap: ₹500/Month, NOT ₹1,000",
+        "points": {
+          "en": [
+            "TRAP: Quoting ₹1,000 per month as the nutritional DBT support under Nikshay Poshan Yojana.",
+            "CORRECT FACT: Nikshay Poshan Yojana provides a Direct Benefit Transfer of EXACTLY ₹500 PER MONTH to each notified TB patient for the duration of their anti-tubercular treatment.",
+            "WHY CANDIDATES FAIL: Conflating Nikshay Poshan's ₹500 with ₹1,000 DBT schemes like Pudhumai Penn or Magalir Urimai Thogai."
+          ],
+          "ta": [
+            "பொறி: நிக்ஷய் போஷன் திட்டத்தின் கீழ் காசநோயாளிகளுக்கு மாதம் ₹1,000 வழங்கப்படுகிறது எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: நிக்ஷய் போஷன் திட்டத்தின் கீழ் காசநோயாளிகளுக்கு அவர்களின் சிகிச்சை காலம் முழுவதும் ஊட்டச்சத்து ஆதரவிற்காக மாதம் '₹500 மட்டுமே' (Direct Benefit Transfer) வழங்கப்படுகிறது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: புதுமைப் பெண் போன்ற பிற திட்டங்களின் மாதம் ₹1,000 உதவித்தொகையுடன் நிக்ஷய் திட்டத்தின் ₹500 தொகையை குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Mission Indradhanush Disease Count Trap: 12 Diseases, NOT 7",
+        "points": {
+          "en": [
+            "TRAP: Believing Mission Indradhanush covers only 7 diseases because the word 'Indradhanush' means rainbow (7 colors).",
+            "CORRECT FACT: While originally launched in 2014 to cover 7 basic vaccines, Mission Indradhanush has expanded to protect against TWELVE (12) VACCINE-PREVENTABLE DISEASES nationally and sub-nationally (including Rubella, Rotavirus, Pneumococcal Conjugate, and Japanese Encephalitis).",
+            "WHY CANDIDATES FAIL: Taking the literal poetic meaning of 'Indradhanush' (rainbow = 7) and assuming the scheme remains capped at 7 diseases."
+          ],
+          "ta": [
+            "பொறி: 'இந்திரதனுஷ்' என்றால் வானவில்லின் 7 நிறங்கள் என்பதால் இத்திட்டம் 7 நோய்களுக்கு மட்டுமே தடுப்பூசி தருகிறது என நினைப்பது.",
+            "சரியான உண்மை: 2014-ல் தொடங்கப்பட்ட போது 7 நோய்களாக இருந்தபோதிலும், தற்போது மிஷன் இந்திரதனுஷ் '12 வகையான நோய்களுக்கு எதிரான' தடுப்பூசிகளை முழுமையாக வழங்குகிறது (ரோட்டாவைரஸ், நிமோகோகல், ரூபெல்லா, ஜப்பானிய மூளைக்காய்ச்சல் உள்ளிட்டவை சேர்க்கப்பட்டன).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'இந்திரதனுஷ்' என்ற பெயரின் அர்த்தத்தை (வானவில் = 7) அப்படியே எடுத்துக்கொண்டு 7 நோய்கள் என தவறாக விடையளிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The High-Level Expert Group (HLEG) on Universal Health Coverage was chaired by Dr. K. Srinath Reddy in 2011.",
+        "HLEG recommended a tax-funded universal entitlement to healthcare with zero user fees in public facilities.",
+        "Ayushman Bharat Digital Mission (ABDM) was launched on September 27, 2021, creating a 14-digit ABHA ID.",
+        "Mission Indradhanush was launched on December 25, 2014, protecting against 12 vaccine-preventable diseases.",
+        "India's National Tuberculosis Elimination Programme (NTEP) targets eliminating TB by 2025 (5 years ahead of SDG 2030).",
+        "Nikshay Poshan Yojana provides a direct benefit transfer of ₹500 per month for TB patients' nutritional support.",
+        "Tamil Nadu's Directorate of Public Health and Preventive Medicine (DPH) was established over a century ago in 1922.",
+        "The Madras Public Health Act of 1939 was the first comprehensive public health statute enacted in Asia.",
+        "Tamil Nadu Medical Services Corporation (TNMSC) was established in 1994, pioneering centralized generic drug procurement.",
+        "Makkalai Thedi Maruthuvam was launched on August 5, 2021, delivering doorstep screening and maintenance drugs for NCDs.",
+        "Innuyir Kaappom - NK48 provides 100% cashless emergency trauma treatment up to ₹1 lakh for the first 48 hours.",
+        "Dr. Muthulakshmi Reddy Maternity Benefit Scheme provides ₹18,000 total assistance including Amma Maternity Nutrition Kits."
+      ],
+      "ta": [
+        "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) குறித்த உயர்நிலைக் குழு 2011-ல் டாக்டர் கே. ஸ்ரீநாத் ரெட்டி தலைமையில் அமைக்கப்பட்டது.",
+        "ஸ்ரீநாத் ரெட்டி குழு அரசு மருத்துவமனைகளில் பயனர் கட்டணங்கள் இன்றி வரிப்பணத்தில் இயங்கும் இலவச சுகாதாரத்தை பரிந்துரைத்தது.",
+        "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) செப்டம்பர் 27, 2021 அன்று தொடங்கப்பட்டு 14 இலக்க ABHA எண்ணை உருவாக்கியது.",
+        "மிஷன் இந்திரதனுஷ் டிசம்பர் 25, 2014 அன்று தொடங்கப்பட்டு 12 வகையான நோய்களுக்கு எதிரான தடுப்பூசியை வழங்குகிறது.",
+        "இந்தியாவின் தேசிய காசநோய் ஒழிப்புத் திட்டம் (NTEP) 2025-க்குள் காசநோயை ஒழிக்க இலக்கு நிர்ணயித்துள்ளது (SDG இலக்கை விட 5 ஆண்டுகள் முன்).",
+        "நிக்ஷய் போஷன் திட்டம் காசநோயாளிகளின் ஊட்டச்சத்து ஆதரவிற்காக மாதம் ₹500 நேரடி பண உதவி வழங்குகிறது.",
+        "தமிழ்நாட்டின் பொதுச் சுகாதாரம் மற்றும் நோய் தடுப்பு மருத்துவத் துறை (DPH) ஒரு நூற்றாண்டுக்கு முன்பே 1922-ல் நிறுவப்பட்டது.",
+        "1939-ஆம் ஆண்டின் மெட்ராஸ் பொதுச் சுகாதாரச் சட்டம் ஆசியாவிலேயே இயற்றப்பட்ட முதல் விரிவான பொதுச் சுகாதாரச் சட்டமாகும்.",
+        "தமிழ்நாடு மருத்துவ சேவைக் கழகம் (TNMSC) 1994-ல் தொடங்கப்பட்டு கணினிமயமாக்கப்பட்ட ஜெனரிக் மருந்து கொள்முதலில் புரட்சி செய்தது.",
+        "மக்களைத் தேடி மருத்துவம் ஆகஸ்ட் 5, 2021 அன்று தொடங்கப்பட்டு வீடு தேடிச் சென்று தொற்றா நோய்களுக்கான மருந்துகளை வழங்குகிறது.",
+        "இன்னுயிர் காப்போம் (NK-48) சாலை விபத்துக்களில் முதல் 48 மணி நேரத்திற்கு நபர் ஒருவருக்கு ₹1 லட்சம் வரை இலவச சிகிச்சை அளிக்கிறது.",
+        "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம் அம்மா ஊட்டச்சத்து பெட்டகம் உட்பட மொத்தம் ₹18,000 உதவி வழங்குகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Universal Health Coverage Cube: Breadth (Who), Depth (Services), and Financial Protection (Pooling without out-of-pocket).",
+        "Srinath Reddy HLEG Report (2011): Advocated universal tax-funded healthcare with zero user charges in public facilities.",
+        "ABDM (2021): Digital health backbone featuring a 14-digit ABHA ID, Personal Health Records, and verified registries (HPR, HFR).",
+        "Mission Indradhanush (2014): Protects against 12 vaccine-preventable diseases; targets >90% full immunization coverage.",
+        "NTEP: National TB Elimination target is 2025 (5 years ahead of UN SDG 2030); Nikshay Poshan provides ₹500/month DBT.",
+        "Tamil Nadu DPH (1922): Asia's first comprehensive public health statute (Madras Public Health Act, 1939).",
+        "TNMSC (1994): Global benchmark for centralized, computerized, open-tender INN generic drug procurement with dual-testing.",
+        "Makkalai Thedi Maruthuvam (2021): Women Health Volunteers deliver doorstep screening and drugs for hypertension and diabetes.",
+        "Innuyir Kaappom NK-48 (2021): First 48 hours cashless emergency trauma care up to ₹1 lakh for ANY road crash victim in TN.",
+        "Dr. Muthulakshmi Reddy Scheme: ₹18,000 total benefit (₹14,000 cash in 5 installments + ₹4,000 Amma Nutrition Kits)."
+      ],
+      "ta": [
+        "UHC கனசதுரம்: பரப்பளவு (மக்கள்), ஆழம் (சேவைகள்), உயரம் (நிதிப் பாதுகாப்பு - சொந்த செலவின்றி அரசு ஏற்பது).",
+        "ஸ்ரீநாத் ரெட்டி குழு அறிக்கை (2011): அரசு மருத்துவமனைகளில் கட்டணமில்லாமல் வரிப்பணத்தில் இயங்கும் இலவச சுகாதாரப் பரிந்துரை.",
+        "ABDM (2021): 14 இலக்க ABHA அடையாள எண், டிஜிட்டல் பதிவேடுகள் மற்றும் மருத்துவ தகவல் தளங்களை உள்ளடக்கியது.",
+        "மிஷன் இந்திரதனுஷ் (2014): 12 வகையான நோய்களுக்கு எதிரான தடுப்பூசி; 90%-க்கும் அதிகமான முழு தடுப்பூசி இலக்கு.",
+        "NTEP: காசநோய் ஒழிப்பு தேசிய இலக்கு 2025 (SDG 2030-ஐ விட 5 ஆண்டுகள் முன்); நிக்ஷய் போஷன் மூலம் மாதம் ₹500 DBT உதவி.",
+        "தமிழ்நாடு DPH (1922): ஆசியாவின் முதல் பொதுச் சுகாதாரச் சட்டம் (மெட்ராஸ் பொதுச் சுகாதாரச் சட்டம், 1939).",
+        "TNMSC (1994): ஜெனரிக் மருந்துகளை வெளிப்படையான இ-டெண்டர் மற்றும் இரட்டை ஆய்வகப் பரிசோதனை மூலம் கொள்முதல் செய்யும் உலக மாதிரி.",
+        "மக்களைத் தேடி மருத்துவம் (2021): பெண் சுகாதார தன்னார்வலர்கள் வீடு தேடிச் சென்று உயர் இரத்த அழுத்தம், சர்க்கரை நோய்க்கு மருந்து தருவது.",
+        "இன்னுயிர் காப்போம் NK-48 (2021): தமிழ்நாட்டில் விபத்தில் சிக்கும் எவருக்கும் முதல் 48 மணி நேரத்திற்கு ₹1 லட்சம் வரை இலவச சிகிச்சை.",
+        "முத்துலட்சுமி ரெட்டி திட்டம்: மொத்தம் ₹18,000 உதவி (₹14,000 ரொக்கப் பணம் + ₹4,000 அம்மா ஊட்டச்சத்து பெட்டகங்கள்)."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_hlth_301",
+        "front_en": "Who chaired the High-Level Expert Group on Universal Health Coverage (UHC) constituted by the Planning Commission in 2011?",
+        "front_ta": "2011-ல் திட்டக் குழுவால் அமைக்கப்பட்ட அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) குறித்த உயர்நிலைக் குழுவின் தலைவர் யார்?",
+        "back_en": "Dr. K. Srinath Reddy (President, Public Health Foundation of India).",
+        "back_ta": "டாக்டர் கே. ஸ்ரீநாத் ரெட்டி (இந்திய பொதுச் சுகாதார அறக்கட்டளையின் தலைவர்)."
+      },
+      {
+        "id": "rc_hlth_302",
+        "front_en": "How many digits comprise an Ayushman Bharat Health Account (ABHA) ID number?",
+        "front_ta": "ஆயுஷ்மான் பாரத் சுகாதார கணக்கு (ABHA) அடையாள எண் எத்தனை இலக்கங்களைக் கொண்டது?",
+        "back_en": "Exactly 14 digits (formatted as XX-XXXX-XXXX-XXXX).",
+        "back_ta": "சரியாக 14 இலக்கங்கள் (14 Digits)."
+      },
+      {
+        "id": "rc_hlth_303",
+        "front_en": "Against how many vaccine-preventable diseases does Mission Indradhanush provide protection?",
+        "front_ta": "மிஷன் இந்திரதனுஷ் திட்டம் எத்தனை வகையான நோய்களுக்கு எதிரான தடுப்பூசிப் பாதுகாப்பை வழங்குகிறது?",
+        "back_en": "12 vaccine-preventable diseases.",
+        "back_ta": "12 வகையான நோய்களுக்கு எதிரான தடுப்பூசிகள்."
+      },
+      {
+        "id": "rc_hlth_304",
+        "front_en": "What is India's national target year for eliminating Tuberculosis under the National Tuberculosis Elimination Programme (NTEP)?",
+        "front_ta": "தேசிய காசநோய் ஒழிப்புத் திட்டத்தின் (NTEP) கீழ் இந்தியாவில் காசநோயை ஒழிப்பதற்கான தேசிய இலக்கு ஆண்டு எது?",
+        "back_en": "By 2025 (five years ahead of the UN SDG 3.3 target of 2030).",
+        "back_ta": "2025-ஆம் ஆண்டிற்குள் (ஐக்கிய நாடுகளின் SDG 2030 இலக்கை விட 5 ஆண்டுகள் முன்னதாக)."
+      },
+      {
+        "id": "rc_hlth_305",
+        "front_en": "What is the monthly direct benefit transfer (DBT) provided to TB patients under the Nikshay Poshan Yojana?",
+        "front_ta": "நிக்ஷய் போஷன் திட்டத்தின் கீழ் காசநோயாளிகளுக்கு வழங்கப்படும் மாதாந்திர நேரடி உதவித்தொகை (DBT) என்ன?",
+        "back_en": "₹500 per month for the entire duration of treatment.",
+        "back_ta": "சிகிச்சை காலம் முழுவதும் மாதம் ₹500."
+      },
+      {
+        "id": "rc_hlth_306",
+        "front_en": "In which year was the Tamil Nadu Medical Services Corporation (TNMSC) established?",
+        "front_ta": "தமிழ்நாடு மருத்துவ சேவைக் கழகம் (TNMSC) எந்த ஆண்டில் நிறுவப்பட்டது?",
+        "back_en": "In 1994, pioneering centralized computerized generic drug procurement.",
+        "back_ta": "1994-ல், மையப்படுத்தப்பட்ட கணினிமயமாக்கப்பட்ட ஜெனரிக் மருந்து கொள்முதலில் முன்னோடியாகத் தொடங்கியது."
+      },
+      {
+        "id": "rc_hlth_307",
+        "front_en": "What is the core operational feature of Tamil Nadu's 'Makkalai Thedi Maruthuvam' scheme launched in August 2021?",
+        "front_ta": "ஆகஸ்ட் 2021-ல் தொடங்கப்பட்ட தமிழ்நாட்டின் 'மக்களைத் தேடி மருத்துவம்' திட்டத்தின் முதன்மைச் செயல்பாடு என்ன?",
+        "back_en": "Doorstep screening and free home delivery of maintenance drug boxes for Hypertension and Diabetes by Women Health Volunteers.",
+        "back_ta": "பெண் சுகாதார தன்னார்வலர்கள் மூலம் வீடு தேடிச் சென்று உயர் இரத்த அழுத்தம், நீரிழிவு பரிசோதனை செய்து மருந்துப் பெட்டகங்களை வழங்குவது."
+      },
+      {
+        "id": "rc_hlth_308",
+        "front_en": "What is the financial coverage and duration limit under Tamil Nadu's 'Innuyir Kaappom - Nammai Kaakkum 48' scheme?",
+        "front_ta": "தமிழ்நாட்டின் 'இன்னுயிர் காப்போம் - நம்மைக் காக்கும் 48' திட்டத்தின் நிதி உதவி மற்றும் கால வரம்பு என்ன?",
+        "back_en": "100% cashless emergency treatment up to ₹1,00,000 per victim for the first 48 hours following a road traffic accident.",
+        "back_ta": "சாலை விபத்து நிகழ்ந்த முதல் 48 மணி நேரத்திற்கு நபர் ஒருவருக்கு ₹1,00,000 வரை 100% கட்டணமில்லா அவசர சிகிச்சை."
+      },
+      {
+        "id": "rc_hlth_309",
+        "front_en": "Does Innuyir Kaappom (NK-48) require the road accident victim to be a domicile or resident of Tamil Nadu?",
+        "front_ta": "இன்னுயிர் காப்போம் (NK-48) திட்டத்தில் பயன்பெற விபத்தில் சிக்குபவர் தமிழ்நாட்டைச் சேர்ந்தவராக இருக்க வேண்டுமா?",
+        "back_en": "No, it covers ANY individual injured on Tamil Nadu roads, including other state residents, migrant laborers, and foreign nationals.",
+        "back_ta": "இல்லை, தமிழ்நாட்டு எல்லைக்குள் விபத்தில் சிக்கும் எவருக்கும் (வெளி மாநிலத்தவர், வெளிநாட்டவர் உட்பட) பொருந்தும்."
+      },
+      {
+        "id": "rc_hlth_310",
+        "front_en": "What is the total financial package provided under the Dr. Muthulakshmi Reddy Maternity Benefit Scheme in Tamil Nadu?",
+        "front_ta": "தமிழ்நாட்டின் டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டத்தின் கீழ் வழங்கப்படும் மொத்த உதவித் தொகை என்ன?",
+        "back_en": "₹18,000 total benefit (₹14,000 cash in 5 installments plus two Amma Maternity Nutrition Kits valued at ₹4,000).",
+        "back_ta": "மொத்தம் ₹18,000 (5 தவணைகளில் ₹14,000 ரொக்கம் + ₹4,000 மதிப்பிலான 2 அம்மா மகப்பேறு ஊட்டச்சத்து பெட்டகங்கள்)."
+      }
+    ]
+  }
+}

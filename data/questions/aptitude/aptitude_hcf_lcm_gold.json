@@ -1,0 +1,4052 @@
+[
+  {
+    "id": "HCF_001",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "12 மற்றும் 18 ஆகிய எண்களின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of 12 and 18."
+    },
+    "question_ta": "12 மற்றும் 18 ஆகிய எண்களின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of 12 and 18.",
+    "options": [
+      "6",
+      "12",
+      "3",
+      "36"
+    ],
+    "options_ta": [
+      "6",
+      "12",
+      "3",
+      "36"
+    ],
+    "options_en": [
+      "6",
+      "12",
+      "3",
+      "36"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "12 = 2² × 3, 18 = 2 × 3².\nபொதுக் காரணிகளின் குறைந்தபட்ச அடுக்கு: 2¹ × 3¹ = 6.",
+      "en": "12 = 2² × 3, 18 = 2 × 3².\nCommon prime factors with lowest powers = 2¹ × 3¹ = 6."
+    },
+    "explanation_ta": "12 = 2² × 3, 18 = 2 × 3².\nபொதுக் காரணிகளின் குறைந்தபட்ச அடுக்கு: 2¹ × 3¹ = 6.",
+    "explanation_en": "12 = 2² × 3, 18 = 2 × 3².\nCommon prime factors with lowest powers = 2¹ × 3¹ = 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. மீ.பொ.வ = 6.",
+        "en": "Correct. HCF = 6."
+      },
+      "B": {
+        "ta": "தவறு. 12 18-ஐ வகுக்காது.",
+        "en": "12 does not divide 18."
+      },
+      "C": {
+        "ta": "தவறு. 3 என்பது ஒரு பொதுக் காரணி, ஆனால் மீப்பெரு பொதுக் காரணி அன்று.",
+        "en": "3 is a common factor but not the highest."
+      },
+      "D": {
+        "ta": "தவறு. 36 என்பது மீ.சி.ம (LCM) ஆகும்.",
+        "en": "36 is the LCM."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு எண்களையும் மீதியின்றி வகுக்கும் மிகப்பெரிய எண்ணே மீ.பொ.வ ஆகும்.",
+      "en": "HCF is the largest number dividing both given numbers."
+    },
+    "revision_fact": {
+      "ta": "HCF(12, 18) = 6",
+      "en": "HCF(12, 18) = 6"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_002",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "12 மற்றும் 18 ஆகிய எண்களின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of 12 and 18."
+    },
+    "question_ta": "12 மற்றும் 18 ஆகிய எண்களின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of 12 and 18.",
+    "options": [
+      "18",
+      "6",
+      "36",
+      "72"
+    ],
+    "options_ta": [
+      "18",
+      "6",
+      "36",
+      "72"
+    ],
+    "options_en": [
+      "18",
+      "6",
+      "36",
+      "72"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "12 = 2² × 3, 18 = 2 × 3².\nஅனைத்து பகா காரணிகளின் அதிகபட்ச அடுக்கு: 2² × 3² = 4 × 9 = 36.",
+      "en": "LCM is the highest power of all prime factors: 2² × 3² = 36."
+    },
+    "explanation_ta": "12 = 2² × 3, 18 = 2 × 3².\nஅனைத்து பகா காரணிகளின் அதிகபட்ச அடுக்கு: 2² × 3² = 4 × 9 = 36.",
+    "explanation_en": "LCM is the highest power of all prime factors: 2² × 3² = 36.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 18 12-ஆல் வகுபடாது.",
+        "en": "18 is not divisible by 12."
+      },
+      "B": {
+        "ta": "தவறு. 6 என்பது மீ.பொ.வ (HCF) ஆகும்.",
+        "en": "6 is the HCF."
+      },
+      "C": {
+        "ta": "சரி. மீ.சி.ம = 36.",
+        "en": "Correct. LCM = 36."
+      },
+      "D": {
+        "ta": "தவறு. 72 ஒரு மடங்கு, ஆனால் மீச்சிறு மடங்கு அன்று.",
+        "en": "72 is a common multiple, but not the least."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு எண்களாலும் வகுபடும் மிகச் சிறிய எண்ணே மீ.சி.ம ஆகும்.",
+      "en": "LCM is the smallest number divisible by both numbers."
+    },
+    "revision_fact": {
+      "ta": "LCM(12, 18) = 36",
+      "en": "LCM(12, 18) = 36"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_003",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "15, 25, 30 ஆகிய எண்களின் மீ.பொ.வ என்ன?",
+      "en": "Find the HCF of 15, 25, and 30."
+    },
+    "question_ta": "15, 25, 30 ஆகிய எண்களின் மீ.பொ.வ என்ன?",
+    "question_en": "Find the HCF of 15, 25, and 30.",
+    "options": [
+      "5",
+      "10",
+      "1",
+      "15"
+    ],
+    "options_ta": [
+      "5",
+      "10",
+      "1",
+      "15"
+    ],
+    "options_en": [
+      "5",
+      "10",
+      "1",
+      "15"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "15 = 3 × 5, 25 = 5², 30 = 2 × 3 × 5.\nஅனைத்திலும் பொதுவான காரணி 5 மட்டுமே. எனவே மீ.பொ.வ = 5.",
+      "en": "Common prime factor in 15, 25, and 30 is 5. So HCF = 5."
+    },
+    "explanation_ta": "15 = 3 × 5, 25 = 5², 30 = 2 × 3 × 5.\nஅனைத்திலும் பொதுவான காரணி 5 மட்டுமே. எனவே மீ.பொ.வ = 5.",
+    "explanation_en": "Common prime factor in 15, 25, and 30 is 5. So HCF = 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. மீ.பொ.வ = 5.",
+        "en": "Correct. HCF = 5."
+      },
+      "B": {
+        "ta": "தவறு. 10 15 மற்றும் 25-ஐ வகுக்காது.",
+        "en": "10 does not divide 15 and 25."
+      },
+      "C": {
+        "ta": "தவறு. 1 பொதுக் காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "1 is not highest."
+      },
+      "D": {
+        "ta": "தவறு. 15 25-ஐ வகுக்காது.",
+        "en": "15 does not divide 25."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மூன்று எண்களுக்கும் பொதுவான காரணியை எடுக்கவும்.",
+      "en": "Find highest common factor among all 3 numbers."
+    },
+    "revision_fact": {
+      "ta": "HCF(15, 25, 30) = 5",
+      "en": "HCF(15, 25, 30) = 5"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_004",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "15, 25, 30 ஆகிய எண்களின் மீ.சி.ம என்ன?",
+      "en": "Find the LCM of 15, 25, and 30."
+    },
+    "question_ta": "15, 25, 30 ஆகிய எண்களின் மீ.சி.ம என்ன?",
+    "question_en": "Find the LCM of 15, 25, and 30.",
+    "options": [
+      "300",
+      "150",
+      "90",
+      "75"
+    ],
+    "options_ta": [
+      "300",
+      "150",
+      "90",
+      "75"
+    ],
+    "options_en": [
+      "300",
+      "150",
+      "90",
+      "75"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "15 = 3 × 5, 25 = 5², 30 = 2 × 3 × 5.\nமீ.சி.ம = 2¹ × 3¹ × 5² = 2 × 3 × 25 = 150.",
+      "en": "LCM = 2¹ × 3¹ × 5² = 150."
+    },
+    "explanation_ta": "15 = 3 × 5, 25 = 5², 30 = 2 × 3 × 5.\nமீ.சி.ம = 2¹ × 3¹ × 5² = 2 × 3 × 25 = 150.",
+    "explanation_en": "LCM = 2¹ × 3¹ × 5² = 150.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 300 பொது மடங்கு ஆனால் மீச்சிறு அன்று.",
+        "en": "300 is not the least multiple."
+      },
+      "B": {
+        "ta": "சரி. மீ.சி.ம = 150.",
+        "en": "Correct. LCM = 150."
+      },
+      "C": {
+        "ta": "தவறு. 90 25-ஆல் வகுபடாது.",
+        "en": "90 is not divisible by 25."
+      },
+      "D": {
+        "ta": "தவறு. 75 30-ஆல் வகுபடாது.",
+        "en": "75 is not divisible by 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீ.சி.ம = 2 × 3 × 5² = 150.",
+      "en": "LCM = 2 × 3 × 5² = 150."
+    },
+    "revision_fact": {
+      "ta": "LCM(15, 25, 30) = 150",
+      "en": "LCM(15, 25, 30) = 150"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_005",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "இரண்டு சார்பகா எண்களின் (Co-prime numbers) மீ.பொ.வ எப்போதும் என்னவாக இருக்கும்?",
+      "en": "What is always the HCF of two co-prime numbers?"
+    },
+    "question_ta": "இரண்டு சார்பகா எண்களின் (Co-prime numbers) மீ.பொ.வ எப்போதும் என்னவாக இருக்கும்?",
+    "question_en": "What is always the HCF of two co-prime numbers?",
+    "options": [
+      "அவற்றின் பெருக்குத்தொகை",
+      "1",
+      "2",
+      "0"
+    ],
+    "options_ta": [
+      "அவற்றின் பெருக்குத்தொகை",
+      "1",
+      "2",
+      "0"
+    ],
+    "options_en": [
+      "Their product",
+      "1",
+      "2",
+      "0"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "சார்பகா எண்களுக்கு (எ.கா. 8, 9) 1-ஐத் தவிர வேறு பொதுக் காரணிகள் இல்லை. எனவே மீ.பொ.வ = 1.",
+      "en": "Co-prime numbers have no common factors other than 1. Hence HCF = 1."
+    },
+    "explanation_ta": "சார்பகா எண்களுக்கு (எ.கா. 8, 9) 1-ஐத் தவிர வேறு பொதுக் காரணிகள் இல்லை. எனவே மீ.பொ.வ = 1.",
+    "explanation_en": "Co-prime numbers have no common factors other than 1. Hence HCF = 1.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. பெருக்குத்தொகை அவற்றின் மீ.சி.ம (LCM) ஆகும்.",
+        "en": "Product is their LCM, not HCF."
+      },
+      "B": {
+        "ta": "சரி. சார்பகா எண்களின் மீ.பொ.வ 1 ஆகும்.",
+        "en": "Correct. HCF of co-primes is always 1."
+      },
+      "C": {
+        "ta": "தவறு. 2 இரட்டை சார்பகா எண்களுக்குப் பொருந்தாது.",
+        "en": "2 is incorrect."
+      },
+      "D": {
+        "ta": "தவறு. மீ.பொ.வ 0 ஆக முடியாது.",
+        "en": "HCF can never be 0."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சார்பகா எண்கள் = 1-ஐ மட்டுமே பொதுக் காரணியாகக் கொண்ட எண்கள்.",
+      "en": "Co-primes are numbers whose HCF is 1."
+    },
+    "revision_fact": {
+      "ta": "HCF of co-primes = 1",
+      "en": "HCF of co-primes = 1"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_006",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "இரண்டு சார்பகா எண்களின் மீ.சி.ம எதற்குச் சமம்?",
+      "en": "What is the LCM of two co-prime numbers equal to?"
+    },
+    "question_ta": "இரண்டு சார்பகா எண்களின் மீ.சி.ம எதற்குச் சமம்?",
+    "question_en": "What is the LCM of two co-prime numbers equal to?",
+    "options": [
+      "அவற்றின் பெருக்குத்தொகை",
+      "அவற்றின் கூடுதல்",
+      "1",
+      "அவற்றின் வித்தியாசம்"
+    ],
+    "options_ta": [
+      "அவற்றின் பெருக்குத்தொகை",
+      "அவற்றின் கூடுதல்",
+      "1",
+      "அவற்றின் வித்தியாசம்"
+    ],
+    "options_en": [
+      "Their product",
+      "Their sum",
+      "1",
+      "Their difference"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "சார்பகா எண்களுக்கு மீ.பொ.வ = 1. மீ.பொ.வ × மீ.சி.ம = எண்களின் பெருக்கற்பலன் ⟹ 1 × மீ.சி.ம = எண்களின் பெருக்கற்பலன். எனவே மீ.சி.ம = எண்களின் பெருக்குத்தொகை.",
+      "en": "Since HCF = 1, LCM = Product of the two co-prime numbers."
+    },
+    "explanation_ta": "சார்பகா எண்களுக்கு மீ.பொ.வ = 1. மீ.பொ.வ × மீ.சி.ம = எண்களின் பெருக்கற்பலன் ⟹ 1 × மீ.சி.ம = எண்களின் பெருக்கற்பலன். எனவே மீ.சி.ம = எண்களின் பெருக்குத்தொகை.",
+    "explanation_en": "Since HCF = 1, LCM = Product of the two co-prime numbers.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. சார்பகா எண்களின் மீ.சி.ம = பெருக்குத்தொகை.",
+        "en": "Correct. LCM of co-primes = Product."
+      },
+      "B": {
+        "ta": "தவறு. கூடுதல் தவறான பதில்.",
+        "en": "Sum is incorrect."
+      },
+      "C": {
+        "ta": "தவறு. 1 என்பது மீ.பொ.வ ஆகும்.",
+        "en": "1 is the HCF."
+      },
+      "D": {
+        "ta": "தவறு. வித்தியாசம் தவறான பதில்.",
+        "en": "Difference is incorrect."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a, b சார்பகா எண்கள் எனில் LCM(a, b) = a × b.",
+      "en": "For co-primes a and b, LCM(a, b) = a × b."
+    },
+    "revision_fact": {
+      "ta": "LCM = Product of co-primes",
+      "en": "LCM = Product of co-primes"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_007",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "இரு எண்களின் பெருக்குத்தொகை 180 மற்றும் அவற்றின் மீ.பொ.வ 3 எனில், அவற்றின் மீ.சி.ம என்ன?",
+      "en": "The product of two numbers is 180 and their HCF is 3. What is their LCM?"
+    },
+    "question_ta": "இரு எண்களின் பெருக்குத்தொகை 180 மற்றும் அவற்றின் மீ.பொ.வ 3 எனில், அவற்றின் மீ.சி.ம என்ன?",
+    "question_en": "The product of two numbers is 180 and their HCF is 3. What is their LCM?",
+    "options": [
+      "60",
+      "540",
+      "90",
+      "30"
+    ],
+    "options_ta": [
+      "60",
+      "540",
+      "90",
+      "30"
+    ],
+    "options_en": [
+      "60",
+      "540",
+      "90",
+      "30"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "சூத்திரம்: இரு எண்களின் பெருக்கற்பலன் = மீ.பொ.வ × மீ.சி.ம.\n180 = 3 × மீ.சி.ம ⟹ மீ.சி.ம = 180 / 3 = 60.",
+      "en": "Product = HCF × LCM ⟹ 180 = 3 × LCM ⟹ LCM = 60."
+    },
+    "explanation_ta": "சூத்திரம்: இரு எண்களின் பெருக்கற்பலன் = மீ.பொ.வ × மீ.சி.ம.\n180 = 3 × மீ.சி.ம ⟹ மீ.சி.ம = 180 / 3 = 60.",
+    "explanation_en": "Product = HCF × LCM ⟹ 180 = 3 × LCM ⟹ LCM = 60.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 180 / 3 = 60.",
+        "en": "Correct. 180 / 3 = 60."
+      },
+      "B": {
+        "ta": "தவறு. 180 × 3 = 540 பெருக்கப்பட்டது.",
+        "en": "Multiplied 180 by 3 instead of dividing."
+      },
+      "C": {
+        "ta": "தவறு. 180 / 2 = 90.",
+        "en": "Divided by 2."
+      },
+      "D": {
+        "ta": "தவறு. 180 / 6 = 30.",
+        "en": "Divided by wrong number 6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எண்களின் பெருக்குத்தொகை / HCF = LCM.",
+      "en": "Product / HCF = LCM."
+    },
+    "revision_fact": {
+      "ta": "180 / 3 = 60",
+      "en": "180 / 3 = 60"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_008",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Missing Value",
+    "question": {
+      "ta": "இரு எண்களின் மீ.பொ.வ 12 மற்றும் அவற்றின் மீ.சி.ம 144. ஒரு எண் 36 எனில், மற்றொரு எண் என்ன?",
+      "en": "The HCF of two numbers is 12 and their LCM is 144. If one number is 36, what is the other number?"
+    },
+    "question_ta": "இரு எண்களின் மீ.பொ.வ 12 மற்றும் அவற்றின் மீ.சி.ம 144. ஒரு எண் 36 எனில், மற்றொரு எண் என்ன?",
+    "question_en": "The HCF of two numbers is 12 and their LCM is 144. If one number is 36, what is the other number?",
+    "options": [
+      "24",
+      "48",
+      "72",
+      "36"
+    ],
+    "options_ta": [
+      "24",
+      "48",
+      "72",
+      "36"
+    ],
+    "options_en": [
+      "24",
+      "48",
+      "72",
+      "36"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "சூத்திரம்: முதல் எண் × இரண்டாம் எண் = HCF × LCM.\n36 × x = 12 × 144 ⟹ x = (12 × 144) / 36 = 144 / 3 = 48.",
+      "en": "Number 1 × Number 2 = HCF × LCM ⟹ 36 × x = 12 × 144 ⟹ x = 48."
+    },
+    "explanation_ta": "சூத்திரம்: முதல் எண் × இரண்டாம் எண் = HCF × LCM.\n36 × x = 12 × 144 ⟹ x = (12 × 144) / 36 = 144 / 3 = 48.",
+    "explanation_en": "Number 1 × Number 2 = HCF × LCM ⟹ 36 × x = 12 × 144 ⟹ x = 48.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 144 / 6 = 24.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 12 × 144 / 36 = 48.",
+        "en": "Correct. 12 × 144 / 36 = 48."
+      },
+      "C": {
+        "ta": "தவறு. 144 / 2 = 72.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 36 கொடுக்கப்பட்ட எண்.",
+        "en": "Selected given number."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரண்டாம் எண் = (HCF × LCM) / முதல் எண்.",
+      "en": "Second number = (HCF × LCM) / First number."
+    },
+    "revision_fact": {
+      "ta": "12 × 144 / 36 = 48",
+      "en": "12 × 144 / 36 = 48"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_009",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "2/3 மற்றும் 4/9 ஆகிய பின்னங்களின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of fractions 2/3 and 4/9."
+    },
+    "question_ta": "2/3 மற்றும் 4/9 ஆகிய பின்னங்களின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of fractions 2/3 and 4/9.",
+    "options": [
+      "2/9",
+      "2/3",
+      "4/3",
+      "8/27"
+    ],
+    "options_ta": [
+      "2/9",
+      "2/3",
+      "4/3",
+      "8/27"
+    ],
+    "options_en": [
+      "2/9",
+      "2/3",
+      "4/3",
+      "8/27"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "பின்னங்களின் HCF = தொகுதிகளின் HCF / பகுதிகளின் LCM.\nதொகுதிகள் (2, 4)-ன் HCF = 2.\nபகுதிகள் (3, 9)-ன் LCM = 9.\nஎனவே HCF = 2/9.",
+      "en": "HCF of fractions = HCF of Numerators / LCM of Denominators.\nHCF(2, 4) = 2, LCM(3, 9) = 9 ⟹ HCF = 2/9."
+    },
+    "explanation_ta": "பின்னங்களின் HCF = தொகுதிகளின் HCF / பகுதிகளின் LCM.\nதொகுதிகள் (2, 4)-ன் HCF = 2.\nபகுதிகள் (3, 9)-ன் LCM = 9.\nஎனவே HCF = 2/9.",
+    "explanation_en": "HCF of fractions = HCF of Numerators / LCM of Denominators.\nHCF(2, 4) = 2, LCM(3, 9) = 9 ⟹ HCF = 2/9.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF(2, 4)/LCM(3, 9) = 2/9.",
+        "en": "Correct. HCF(2, 4)/LCM(3, 9) = 2/9."
+      },
+      "B": {
+        "ta": "தவறு. 2/3 முதல் பின்னம்.",
+        "en": "Took first fraction directly."
+      },
+      "C": {
+        "ta": "தவறு. 4/3 என்பது பின்னங்களின் மீ.சி.ம (LCM) ஆகும்.",
+        "en": "4/3 is the LCM of the fractions."
+      },
+      "D": {
+        "ta": "தவறு. பெருக்கல் மதிப்பு 8/27.",
+        "en": "Multiplied numerators and denominators."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னங்களின் HCF = HCF(தொகுதிகள்) / LCM(பகுதிகள்).",
+      "en": "HCF of fractions = HCF(Numerators) / LCM(Denominators)."
+    },
+    "revision_fact": {
+      "ta": "HCF = 2/9",
+      "en": "HCF = 2/9"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_010",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "2/3 மற்றும் 4/9 ஆகிய பின்னங்களின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of fractions 2/3 and 4/9."
+    },
+    "question_ta": "2/3 மற்றும் 4/9 ஆகிய பின்னங்களின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of fractions 2/3 and 4/9.",
+    "options": [
+      "2/9",
+      "4/3",
+      "8/9",
+      "4/9"
+    ],
+    "options_ta": [
+      "2/9",
+      "4/3",
+      "8/9",
+      "4/9"
+    ],
+    "options_en": [
+      "2/9",
+      "4/3",
+      "8/9",
+      "4/9"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "பின்னங்களின் LCM = தொகுதிகளின் LCM / பகுதிகளின் HCF.\nதொகுதிகள் (2, 4)-ன் LCM = 4.\nபகுதிகள் (3, 9)-ன் HCF = 3.\nஎனவே LCM = 4/3.",
+      "en": "LCM of fractions = LCM of Numerators / HCF of Denominators.\nLCM(2, 4) = 4, HCF(3, 9) = 3 ⟹ LCM = 4/3."
+    },
+    "explanation_ta": "பின்னங்களின் LCM = தொகுதிகளின் LCM / பகுதிகளின் HCF.\nதொகுதிகள் (2, 4)-ன் LCM = 4.\nபகுதிகள் (3, 9)-ன் HCF = 3.\nஎனவே LCM = 4/3.",
+    "explanation_en": "LCM of fractions = LCM of Numerators / HCF of Denominators.\nLCM(2, 4) = 4, HCF(3, 9) = 3 ⟹ LCM = 4/3.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 2/9 என்பது பின்னங்களின் HCF ஆகும்.",
+        "en": "2/9 is HCF of the fractions."
+      },
+      "B": {
+        "ta": "சரி. LCM(2, 4)/HCF(3, 9) = 4/3.",
+        "en": "Correct. LCM(2, 4)/HCF(3, 9) = 4/3."
+      },
+      "C": {
+        "ta": "தவறு. 8/9 தவறான பெருக்கல்.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 4/9 இரண்டாவது பின்னம்.",
+        "en": "Selected second fraction."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னங்களின் LCM = LCM(தொகுதிகள்) / HCF(பகுதிகள்).",
+      "en": "LCM of fractions = LCM(Numerators) / HCF(Denominators)."
+    },
+    "revision_fact": {
+      "ta": "LCM = 4/3",
+      "en": "LCM = 4/3"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_011",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "2⁴ × 3² × 5 மற்றும் 2³ × 3³ × 7 ஆகிய அடுக்கமைவு எண்களின் மீ.பொ.வ என்ன?",
+      "en": "Find the HCF of 2⁴ × 3² × 5 and 2³ × 3³ × 7."
+    },
+    "question_ta": "2⁴ × 3² × 5 மற்றும் 2³ × 3³ × 7 ஆகிய அடுக்கமைவு எண்களின் மீ.பொ.வ என்ன?",
+    "question_en": "Find the HCF of 2⁴ × 3² × 5 and 2³ × 3³ × 7.",
+    "options": [
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2⁴ × 3²",
+      "2³ × 3³"
+    ],
+    "options_ta": [
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2⁴ × 3²",
+      "2³ × 3³"
+    ],
+    "options_en": [
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2⁴ × 3²",
+      "2³ × 3³"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அடுக்கு எண்களின் HCF = பொதுவான பகா எண்களின் குறைந்தபட்ச அடுக்கு.\nபொது பகா காரணிகள்: 2 மற்றும் 3.\nகுறைந்தபட்ச அடுக்குகள்: 2³ மற்றும் 3².\nஎனவே மீ.பொ.வ = 2³ × 3² = 8 × 9 = 72.",
+      "en": "HCF of prime powers = Product of common prime factors with lowest exponents = 2³ × 3²."
+    },
+    "explanation_ta": "அடுக்கு எண்களின் HCF = பொதுவான பகா எண்களின் குறைந்தபட்ச அடுக்கு.\nபொது பகா காரணிகள்: 2 மற்றும் 3.\nகுறைந்தபட்ச அடுக்குகள்: 2³ மற்றும் 3².\nஎனவே மீ.பொ.வ = 2³ × 3² = 8 × 9 = 72.",
+    "explanation_en": "HCF of prime powers = Product of common prime factors with lowest exponents = 2³ × 3².",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 2⁴ × 3³ × 5 × 7 என்பது மீ.சி.ம (LCM) ஆகும்.",
+        "en": "This is the LCM."
+      },
+      "B": {
+        "ta": "சரி. 2³ × 3² = 72.",
+        "en": "Correct. 2³ × 3² = 72."
+      },
+      "C": {
+        "ta": "தவறு. 2-ன் அதிகபட்ச அடுக்கு 2⁴ எடுக்கப்பட்டது.",
+        "en": "Took higher exponent for 2."
+      },
+      "D": {
+        "ta": "தவறு. 3-ன் அதிகபட்ச அடுக்கு 3³ எடுக்கப்பட்டது.",
+        "en": "Took higher exponent for 3."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF ⟹ பொதுக் காரணிகளின் குறைந்தபட்ச அடுக்கு.",
+      "en": "HCF takes lowest exponent of common prime factors."
+    },
+    "revision_fact": {
+      "ta": "2³ × 3² = 72",
+      "en": "2³ × 3² = 72"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_012",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "2⁴ × 3² × 5 மற்றும் 2³ × 3³ × 7 ஆகிய அடுக்கமைவு எண்களின் மீ.சி.ம என்ன?",
+      "en": "Find the LCM of 2⁴ × 3² × 5 and 2³ × 3³ × 7."
+    },
+    "question_ta": "2⁴ × 3² × 5 மற்றும் 2³ × 3³ × 7 ஆகிய அடுக்கமைவு எண்களின் மீ.சி.ம என்ன?",
+    "question_en": "Find the LCM of 2⁴ × 3² × 5 and 2³ × 3³ × 7.",
+    "options": [
+      "2⁴ × 3³",
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2³ × 3² × 5 × 7"
+    ],
+    "options_ta": [
+      "2⁴ × 3³",
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2³ × 3² × 5 × 7"
+    ],
+    "options_en": [
+      "2⁴ × 3³",
+      "2⁴ × 3³ × 5 × 7",
+      "2³ × 3²",
+      "2³ × 3² × 5 × 7"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அடுக்கு எண்களின் LCM = அனைத்து பகா எண்களின் அதிகபட்ச அடுக்கு.\nஅதிகபட்ச அடுக்குகள்: 2⁴ × 3³ × 5¹ × 7¹.",
+      "en": "LCM = Product of all prime factors with highest exponents = 2⁴ × 3³ × 5 × 7."
+    },
+    "explanation_ta": "அடுக்கு எண்களின் LCM = அனைத்து பகா எண்களின் அதிகபட்ச அடுக்கு.\nஅதிகபட்ச அடுக்குகள்: 2⁴ × 3³ × 5¹ × 7¹.",
+    "explanation_en": "LCM = Product of all prime factors with highest exponents = 2⁴ × 3³ × 5 × 7.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 5 மற்றும் 7 விடுபட்டுள்ளது.",
+        "en": "Missing non-common factors 5 and 7."
+      },
+      "B": {
+        "ta": "சரி. 2⁴ × 3³ × 5 × 7.",
+        "en": "Correct. 2⁴ × 3³ × 5 × 7."
+      },
+      "C": {
+        "ta": "தவறு. 2³ × 3² என்பது HCF.",
+        "en": "This is the HCF."
+      },
+      "D": {
+        "ta": "தவறு. குறைந்தபட்ச அடுக்குகள் எடுக்கப்பட்டது.",
+        "en": "Took lowest exponents for common factors."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "LCM ⟹ அனைத்துக் காரணிகளின் அதிகபட்ச அடுக்கு.",
+      "en": "LCM takes highest exponent of all prime factors."
+    },
+    "revision_fact": {
+      "ta": "2⁴ × 3³ × 5 × 7",
+      "en": "2⁴ × 3³ × 5 × 7"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_013",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "20, 25, 30 ஆகிய எண்களை வகுக்கும் போது மீதியின்றி வகுபடும் மிகச்சிறிய எண் எது?",
+      "en": "What is the smallest number which is exactly divisible by 20, 25, and 30?"
+    },
+    "question_ta": "20, 25, 30 ஆகிய எண்களை வகுக்கும் போது மீதியின்றி வகுபடும் மிகச்சிறிய எண் எது?",
+    "question_en": "What is the smallest number which is exactly divisible by 20, 25, and 30?",
+    "options": [
+      "300",
+      "600",
+      "150",
+      "100"
+    ],
+    "options_ta": [
+      "300",
+      "600",
+      "150",
+      "100"
+    ],
+    "options_en": [
+      "300",
+      "600",
+      "150",
+      "100"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "மீதியின்றி வகுபடும் மிகச்சிறிய எண் = எண்களின் மீ.சி.ம (LCM).\n20 = 2² × 5, 25 = 5², 30 = 2 × 3 × 5.\nLCM = 2² × 3¹ × 5² = 4 × 3 × 25 = 300.",
+      "en": "Smallest number divisible by given numbers = LCM.\nLCM(20, 25, 30) = 2² × 3 × 5² = 300."
+    },
+    "explanation_ta": "மீதியின்றி வகுபடும் மிகச்சிறிய எண் = எண்களின் மீ.சி.ம (LCM).\n20 = 2² × 5, 25 = 5², 30 = 2 × 3 × 5.\nLCM = 2² × 3¹ × 5² = 4 × 3 × 25 = 300.",
+    "explanation_en": "Smallest number divisible by given numbers = LCM.\nLCM(20, 25, 30) = 2² × 3 × 5² = 300.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 300 வகுபடும் மிகச் சிறிய எண்.",
+        "en": "Correct. 300 is LCM."
+      },
+      "B": {
+        "ta": "தவறு. 600 பொது மடங்கு ஆனால் மீச்சிறு மடங்கு அன்று.",
+        "en": "600 is not the smallest multiple."
+      },
+      "C": {
+        "ta": "தவறு. 150 20-ஆல் வகுபடாது.",
+        "en": "150 is not divisible by 20."
+      },
+      "D": {
+        "ta": "தவறு. 100 30-ஆல் வகுபடாது.",
+        "en": "100 is not divisible by 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீதியின்றி வகுபடும் மிகச் சிறிய எண் = LCM.",
+      "en": "Smallest exactly divisible number = LCM."
+    },
+    "revision_fact": {
+      "ta": "LCM(20, 25, 30) = 300",
+      "en": "LCM(20, 25, 30) = 300"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_014",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "24, 36, 48 ஆகிய எண்களை மீதியின்றி வகுக்கும் மிகப்பெரிய எண் எது?",
+      "en": "What is the largest number that divides 24, 36, and 48 without leaving a remainder?"
+    },
+    "question_ta": "24, 36, 48 ஆகிய எண்களை மீதியின்றி வகுக்கும் மிகப்பெரிய எண் எது?",
+    "question_en": "What is the largest number that divides 24, 36, and 48 without leaving a remainder?",
+    "options": [
+      "24",
+      "4",
+      "6",
+      "12"
+    ],
+    "options_ta": [
+      "24",
+      "4",
+      "6",
+      "12"
+    ],
+    "options_en": [
+      "24",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "மீதியின்றி வகுக்கும் மிகப்பெரிய எண் = எண்களின் மீ.பொ.வ (HCF).\n24 = 12 × 2, 36 = 12 × 3, 48 = 12 × 4.\nமிகப்பெரிய பொது வகுத்தி HCF = 12.",
+      "en": "Largest number dividing given numbers = HCF.\nHCF(24, 36, 48) = 12."
+    },
+    "explanation_ta": "மீதியின்றி வகுக்கும் மிகப்பெரிய எண் = எண்களின் மீ.பொ.வ (HCF).\n24 = 12 × 2, 36 = 12 × 3, 48 = 12 × 4.\nமிகப்பெரிய பொது வகுத்தி HCF = 12.",
+    "explanation_en": "Largest number dividing given numbers = HCF.\nHCF(24, 36, 48) = 12.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 24 36-ஐ வகுக்காது.",
+        "en": "24 does not divide 36."
+      },
+      "B": {
+        "ta": "தவறு. 4 மீப்பெரு காரணி அன்று.",
+        "en": "4 is not highest."
+      },
+      "C": {
+        "ta": "தவறு. 6 ஒரு பொது காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "6 is not highest."
+      },
+      "D": {
+        "ta": "சரி. HCF = 12.",
+        "en": "Correct. HCF = 12."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீதியின்றி வகுக்கும் மிகப்பெரிய எண் = HCF.",
+      "en": "Largest dividing number = HCF."
+    },
+    "revision_fact": {
+      "ta": "HCF(24, 36, 48) = 12",
+      "en": "HCF(24, 36, 48) = 12"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_015",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "x²y மற்றும் xy² ஆகிய பல்லுறுப்புக் கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of algebraic terms x²y and xy²."
+    },
+    "question_ta": "x²y மற்றும் xy² ஆகிய பல்லுறுப்புக் கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of algebraic terms x²y and xy².",
+    "options": [
+      "x + y",
+      "x²y²",
+      "x/y",
+      "xy"
+    ],
+    "options_ta": [
+      "x + y",
+      "x²y²",
+      "x/y",
+      "xy"
+    ],
+    "options_en": [
+      "x + y",
+      "x²y²",
+      "x/y",
+      "xy"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "மாறிகளின் குறைந்தபட்ச அடுக்குகள்: x-ன் குறைந்தபட்ச அடுக்கு x¹, y-ன் குறைந்தபட்ச அடுக்கு y¹.\nஎனவே மீ.பொ.வ = xy.",
+      "en": "HCF of algebraic terms = Lowest power of common variables = x¹y¹ = xy."
+    },
+    "explanation_ta": "மாறிகளின் குறைந்தபட்ச அடுக்குகள்: x-ன் குறைந்தபட்ச அடுக்கு x¹, y-ன் குறைந்தபட்ச அடுக்கு y¹.\nஎனவே மீ.பொ.வ = xy.",
+    "explanation_en": "HCF of algebraic terms = Lowest power of common variables = x¹y¹ = xy.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. x + y காரணி அன்று.",
+        "en": "x + y is not a factor."
+      },
+      "B": {
+        "ta": "தவறு. x²y² என்பது மீ.சி.ம (LCM) ஆகும்.",
+        "en": "x²y² is the LCM."
+      },
+      "C": {
+        "ta": "தவறு. வகுத்தல் வடிவம்.",
+        "en": "Incorrect algebraic expression."
+      },
+      "D": {
+        "ta": "சரி. HCF = xy.",
+        "en": "Correct. HCF = xy."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அல்ஜீப்ரா உறுப்புகளின் HCF = பொது மாறிகளின் குறைந்தபட்ச அடுக்கு.",
+      "en": "Algebraic HCF takes lowest power of common variables."
+    },
+    "revision_fact": {
+      "ta": "HCF(x²y, xy²) = xy",
+      "en": "HCF(x²y, xy²) = xy"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_016",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "மூன்று மணிகள் முறையே 12, 15, 20 நிமிட இடைவெளிகளில் ஒலிக்கின்றன. அவை காலை 6 மணிக்கு ஒன்றாக ஒலித்தால், மீண்டும் எப்போது ஒன்றாக ஒலிக்கும்?",
+      "en": "Three bells toll together at intervals of 12, 15, and 20 minutes respectively. If they toll together at 6 AM, at what time will they toll together next?"
+    },
+    "question_ta": "மூன்று மணிகள் முறையே 12, 15, 20 நிமிட இடைவெளிகளில் ஒலிக்கின்றன. அவை காலை 6 மணிக்கு ஒன்றாக ஒலித்தால், மீண்டும் எப்போது ஒன்றாக ஒலிக்கும்?",
+    "question_en": "Three bells toll together at intervals of 12, 15, and 20 minutes respectively. If they toll together at 6 AM, at what time will they toll together next?",
+    "options": [
+      "காலை 7 மணி",
+      "காலை 8 மணி",
+      "காலை 6:30 மணி",
+      "காலை 7:30 மணி"
+    ],
+    "options_ta": [
+      "காலை 7 மணி",
+      "காலை 8 மணி",
+      "காலை 6:30 மணி",
+      "காலை 7:30 மணி"
+    ],
+    "options_en": [
+      "7:00 AM",
+      "8:00 AM",
+      "6:30 AM",
+      "7:30 AM"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "மீண்டும் ஒன்றாக ஒலிக்கும் இடைவெளி = 12, 15, 20-ன் மீ.சி.ம (LCM).\nLCM(12, 15, 20) = 60 நிமிடங்கள் = 1 மணி நேரம்.\nகாலை 6:00 + 1 மணி நேரம் = காலை 7:00 மணி.",
+      "en": "Interval = LCM(12, 15, 20) = 60 minutes = 1 hour.\nNext time = 6:00 AM + 1 hour = 7:00 AM."
+    },
+    "explanation_ta": "மீண்டும் ஒன்றாக ஒலிக்கும் இடைவெளி = 12, 15, 20-ன் மீ.சி.ம (LCM).\nLCM(12, 15, 20) = 60 நிமிடங்கள் = 1 மணி நேரம்.\nகாலை 6:00 + 1 மணி நேரம் = காலை 7:00 மணி.",
+    "explanation_en": "Interval = LCM(12, 15, 20) = 60 minutes = 1 hour.\nNext time = 6:00 AM + 1 hour = 7:00 AM.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 6:00 + 1 மணி = காலை 7:00 மணி.",
+        "en": "Correct. 6:00 AM + 1 hr = 7:00 AM."
+      },
+      "B": {
+        "ta": "தவறு. 120 நிமிடங்கள் = 2 மணி நேரம் (LCM 60 என்பதை தவறாகக் கணக்கிட்டது).",
+        "en": "Calculated 2 hours instead of 1 hour."
+      },
+      "C": {
+        "ta": "தவறு. 30 நிமிடங்கள் தவறு.",
+        "en": "30 minutes is incorrect."
+      },
+      "D": {
+        "ta": "தவறு. 90 நிமிடங்கள் தவறு.",
+        "en": "90 minutes is incorrect."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மணிகள் மீண்டும் ஒன்றாக ஒலிக்கும் நேரம் = எண்களின் LCM.",
+      "en": "Bells tolling together next time = LCM of intervals."
+    },
+    "revision_fact": {
+      "ta": "LCM(12, 15, 20) = 60 mins ⟹ 7:00 AM",
+      "en": "LCM(12, 15, 20) = 60 mins ⟹ 7:00 AM"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_017",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "62, 132, 237 ஆகிய எண்களை வகுக்கும் போது ஒரே மீதியைத் தரும் மிகப்பெரிய எண் எது?",
+      "en": "Find the greatest number which divides 62, 132, and 237 leaving the same remainder in each case."
+    },
+    "question_ta": "62, 132, 237 ஆகிய எண்களை வகுக்கும் போது ஒரே மீதியைத் தரும் மிகப்பெரிய எண் எது?",
+    "question_en": "Find the greatest number which divides 62, 132, and 237 leaving the same remainder in each case.",
+    "options": [
+      "15",
+      "25",
+      "35",
+      "30"
+    ],
+    "options_ta": [
+      "15",
+      "25",
+      "35",
+      "30"
+    ],
+    "options_en": [
+      "15",
+      "25",
+      "35",
+      "30"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எண்களின் வித்தியாசங்கள்:\n132 - 62 = 70\n237 - 132 = 105\n237 - 62 = 175\nதேவையான எண் = HCF(70, 105, 175) = 35.",
+      "en": "Differences: 132 - 62 = 70, 237 - 132 = 105, 237 - 62 = 175.\nRequired number = HCF(70, 105, 175) = 35."
+    },
+    "explanation_ta": "எண்களின் வித்தியாசங்கள்:\n132 - 62 = 70\n237 - 132 = 105\n237 - 62 = 175\nதேவையான எண் = HCF(70, 105, 175) = 35.",
+    "explanation_en": "Differences: 132 - 62 = 70, 237 - 132 = 105, 237 - 62 = 175.\nRequired number = HCF(70, 105, 175) = 35.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 15 பொது வகுத்தி அன்று.",
+        "en": "15 is not common factor of differences."
+      },
+      "B": {
+        "ta": "தவறு. 25 70-ஐ வகுக்காது.",
+        "en": "25 does not divide 70."
+      },
+      "C": {
+        "ta": "சரி. HCF(70, 105, 175) = 35.",
+        "en": "Correct. HCF(70, 105, 175) = 35."
+      },
+      "D": {
+        "ta": "தவறு. 30 70-ஐ வகுக்காது.",
+        "en": "30 does not divide 70."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒரே மீதியைத் தரும் மிகப்பெரிய எண் = எண்களின் வித்தியாசங்களின் HCF.",
+      "en": "Same remainder in each case ⟹ HCF of differences."
+    },
+    "revision_fact": {
+      "ta": "HCF(70, 105, 175) = 35",
+      "en": "HCF(70, 105, 175) = 35"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_018",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "25, 40, 60 ஆகிய எண்களால் வகுபடும் போது முறையே 7 மீதியாக வரும் மிகச்சிறிய எண் எது?",
+      "en": "Find the smallest number which when divided by 25, 40, and 60 leaves a remainder of 7 in each case."
+    },
+    "question_ta": "25, 40, 60 ஆகிய எண்களால் வகுபடும் போது முறையே 7 மீதியாக வரும் மிகச்சிறிய எண் எது?",
+    "question_en": "Find the smallest number which when divided by 25, 40, and 60 leaves a remainder of 7 in each case.",
+    "options": [
+      "614",
+      "600",
+      "607",
+      "593"
+    ],
+    "options_ta": [
+      "614",
+      "600",
+      "607",
+      "593"
+    ],
+    "options_en": [
+      "614",
+      "600",
+      "607",
+      "593"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "LCM(25, 40, 60) = 600.\nதேவையான எண் = LCM + மீதி = 600 + 7 = 607.",
+      "en": "LCM(25, 40, 60) = 600.\nRequired number = LCM + Remainder = 600 + 7 = 607."
+    },
+    "explanation_ta": "LCM(25, 40, 60) = 600.\nதேவையான எண் = LCM + மீதி = 600 + 7 = 607.",
+    "explanation_en": "LCM(25, 40, 60) = 600.\nRequired number = LCM + Remainder = 600 + 7 = 607.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 600 + 14 = 614.",
+        "en": "Added double remainder."
+      },
+      "B": {
+        "ta": "தவறு. 600 என்பது மீதியின்றி வகுபடும் எண்.",
+        "en": "600 leaves no remainder."
+      },
+      "C": {
+        "ta": "சரி. 600 + 7 = 607.",
+        "en": "Correct. 600 + 7 = 607."
+      },
+      "D": {
+        "ta": "தவறு. 600 - 7 = 593 (கழித்தது தவறு).",
+        "en": "Subtracted remainder 7 instead of adding."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒரே மீதி r தரும் மிகச் சிறிய எண் = LCM + r.",
+      "en": "Smallest number leaving remainder r = LCM + r."
+    },
+    "revision_fact": {
+      "ta": "LCM(25, 40, 60) + 7 = 607",
+      "en": "LCM(25, 40, 60) + 7 = 607"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_019",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் விகிதம் 3 : 4 மற்றும் அவற்றின் மீ.பொ.வ (HCF) 4 எனில், அவற்றின் மீ.சி.ம (LCM) என்ன?",
+      "en": "The ratio of two numbers is 3 : 4 and their HCF is 4. What is their LCM?"
+    },
+    "question_ta": "இரு எண்களின் விகிதம் 3 : 4 மற்றும் அவற்றின் மீ.பொ.வ (HCF) 4 எனில், அவற்றின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "The ratio of two numbers is 3 : 4 and their HCF is 4. What is their LCM?",
+    "options": [
+      "48",
+      "36",
+      "12",
+      "16"
+    ],
+    "options_ta": [
+      "48",
+      "36",
+      "12",
+      "16"
+    ],
+    "options_en": [
+      "48",
+      "36",
+      "12",
+      "16"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "எண்கள் 3x மற்றும் 4x என்க (x = HCF = 4).\nமுதல் எண் = 3 × 4 = 12, இரண்டாம் எண் = 4 × 4 = 16.\nLCM = x × a × b = 4 × 3 × 4 = 48.",
+      "en": "Numbers are 3x and 4x where x = HCF = 4 ⟹ Numbers are 12 and 16.\nLCM = HCF × a × b = 4 × 3 × 4 = 48."
+    },
+    "explanation_ta": "எண்கள் 3x மற்றும் 4x என்க (x = HCF = 4).\nமுதல் எண் = 3 × 4 = 12, இரண்டாம் எண் = 4 × 4 = 16.\nLCM = x × a × b = 4 × 3 × 4 = 48.",
+    "explanation_en": "Numbers are 3x and 4x where x = HCF = 4 ⟹ Numbers are 12 and 16.\nLCM = HCF × a × b = 4 × 3 × 4 = 48.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 4 × 3 × 4 = 48.",
+        "en": "Correct. 4 × 3 × 4 = 48."
+      },
+      "B": {
+        "ta": "தவறு. 12 × 3 = 36.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 12 முதல் எண்.",
+        "en": "First number."
+      },
+      "D": {
+        "ta": "தவறு. 16 இரண்டாம் எண்.",
+        "en": "Second number."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "விகிதம் a:b மற்றும் HCF = h எனில், LCM = h × a × b.",
+      "en": "If ratio is a:b and HCF = h, then LCM = h × a × b."
+    },
+    "revision_fact": {
+      "ta": "4 × 3 × 4 = 48",
+      "en": "4 × 3 × 4 = 48"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_020",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் விகிதம் 4 : 5 மற்றும் அவற்றின் மீ.சி.ம 120 எனில், அந்த எண்களின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "The ratio of two numbers is 4 : 5 and their LCM is 120. What is their HCF?"
+    },
+    "question_ta": "இரு எண்களின் விகிதம் 4 : 5 மற்றும் அவற்றின் மீ.சி.ம 120 எனில், அந்த எண்களின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "The ratio of two numbers is 4 : 5 and their LCM is 120. What is their HCF?",
+    "options": [
+      "6",
+      "4",
+      "10",
+      "5"
+    ],
+    "options_ta": [
+      "6",
+      "4",
+      "10",
+      "5"
+    ],
+    "options_en": [
+      "6",
+      "4",
+      "10",
+      "5"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "HCF = h என்க. LCM = h × a × b ⟹ 120 = h × 4 × 5 ⟹ 120 = 20h ⟹ h = 120 / 20 = 6.",
+      "en": "LCM = HCF × a × b ⟹ 120 = HCF × 4 × 5 ⟹ HCF = 120 / 20 = 6."
+    },
+    "explanation_ta": "HCF = h என்க. LCM = h × a × b ⟹ 120 = h × 4 × 5 ⟹ 120 = 20h ⟹ h = 120 / 20 = 6.",
+    "explanation_en": "LCM = HCF × a × b ⟹ 120 = HCF × 4 × 5 ⟹ HCF = 120 / 20 = 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 120 / 20 = 6.",
+        "en": "Correct. 120 / 20 = 6."
+      },
+      "B": {
+        "ta": "தவறு. 120 / 30 = 4.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 120 / 12 = 10.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 120 / 24 = 5.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF = LCM / (a × b).",
+      "en": "HCF = LCM / (a × b)."
+    },
+    "revision_fact": {
+      "ta": "120 / (4 × 5) = 6",
+      "en": "120 / (4 × 5) = 6"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_021",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "4 புள்ளிகள் கொண்ட ஒரு வட்டப் பாதையில் நால்வர் முறையே 10, 12, 15, 20 வினாடிகளில் ஒரு சுற்றை முடிக்கின்றனர். அவர்கள் தொடக்கப் புள்ளியில் மீண்டும் எத்தனை வினாடிகளுக்குப் பின் சந்திப்பர்?",
+      "en": "Four runners complete a lap in 10, 12, 15, and 20 seconds. After how many seconds will they meet again at the starting point?"
+    },
+    "question_ta": "4 புள்ளிகள் கொண்ட ஒரு வட்டப் பாதையில் நால்வர் முறையே 10, 12, 15, 20 வினாடிகளில் ஒரு சுற்றை முடிக்கின்றனர். அவர்கள் தொடக்கப் புள்ளியில் மீண்டும் எத்தனை வினாடிகளுக்குப் பின் சந்திப்பர்?",
+    "question_en": "Four runners complete a lap in 10, 12, 15, and 20 seconds. After how many seconds will they meet again at the starting point?",
+    "options": [
+      "120 வினாடிகள்",
+      "90 வினாடிகள்",
+      "30 வினாடிகள்",
+      "60 வினாடிகள்"
+    ],
+    "options_ta": [
+      "120 வினாடிகள்",
+      "90 வினாடிகள்",
+      "30 வினாடிகள்",
+      "60 வினாடிகள்"
+    ],
+    "options_en": [
+      "120 seconds",
+      "90 seconds",
+      "30 seconds",
+      "60 seconds"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "சந்திக்கும் காலம் = எண்களின் மீ.சி.ம (LCM).\nLCM(10, 12, 15, 20) = 60 வினாடிகள் (1 நிமிடம்).",
+      "en": "Time to meet = LCM(10, 12, 15, 20) = 60 seconds."
+    },
+    "explanation_ta": "சந்திக்கும் காலம் = எண்களின் மீ.சி.ம (LCM).\nLCM(10, 12, 15, 20) = 60 வினாடிகள் (1 நிமிடம்).",
+    "explanation_en": "Time to meet = LCM(10, 12, 15, 20) = 60 seconds.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 120 பொது மடங்கு ஆனால் மீச்சிறு மடங்கு அன்று.",
+        "en": "120 is not the least multiple."
+      },
+      "B": {
+        "ta": "தவறு. 90 20-ஆல் வகுபடாது.",
+        "en": "90 is not divisible by 20."
+      },
+      "C": {
+        "ta": "தவறு. 30 12 மற்றும் 20-ஆல் வகுபடாது.",
+        "en": "30 is not divisible by 12 or 20."
+      },
+      "D": {
+        "ta": "சரி. LCM = 60 வினாடிகள்.",
+        "en": "Correct. LCM = 60 seconds."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வட்டப் பாதையில் மீண்டும் சந்திக்கும் நேரம் = LCM.",
+      "en": "Meeting time on circular track = LCM of individual times."
+    },
+    "revision_fact": {
+      "ta": "LCM(10, 12, 15, 20) = 60",
+      "en": "LCM(10, 12, 15, 20) = 60"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_022",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு மரக்கடை அதிபரிடம் 42 மீ, 49 மீ, 63 மீ நீளமுள்ள மூன்று மரத்துண்டுகள் உள்ளன. அவற்றைச் சம நீளமுள்ள துண்டுகளாக வெட்டினால், கிடைக்கக்கூடிய துண்டின் அதிகபட்ச நீளம் என்ன?",
+      "en": "A carpenter has three wooden logs of lengths 42 m, 49 m, and 63 m. What is the maximum length of equal planks he can cut?"
+    },
+    "question_ta": "ஒரு மரக்கடை அதிபரிடம் 42 மீ, 49 மீ, 63 மீ நீளமுள்ள மூன்று மரத்துண்டுகள் உள்ளன. அவற்றைச் சம நீளமுள்ள துண்டுகளாக வெட்டினால், கிடைக்கக்கூடிய துண்டின் அதிகபட்ச நீளம் என்ன?",
+    "question_en": "A carpenter has three wooden logs of lengths 42 m, 49 m, and 63 m. What is the maximum length of equal planks he can cut?",
+    "options": [
+      "21 மீட்டர்",
+      "7 மீட்டர்",
+      "14 மீட்டர்",
+      "3.5 மீட்டர்"
+    ],
+    "options_ta": [
+      "21 மீட்டர்",
+      "7 மீட்டர்",
+      "14 மீட்டர்",
+      "3.5 மீட்டர்"
+    ],
+    "options_en": [
+      "21 meters",
+      "7 meters",
+      "14 meters",
+      "3.5 meters"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அதிகபட்சச் சம நீளம் = 42, 49, 63 ஆகிய எண்களின் மீ.பொ.வ (HCF).\n42 = 7 × 6, 49 = 7 × 7, 63 = 7 × 9.\nHCF = 7 மீட்டர்.",
+      "en": "Maximum equal length = HCF(42, 49, 63) = 7 meters."
+    },
+    "explanation_ta": "அதிகபட்சச் சம நீளம் = 42, 49, 63 ஆகிய எண்களின் மீ.பொ.வ (HCF).\n42 = 7 × 6, 49 = 7 × 7, 63 = 7 × 9.\nHCF = 7 மீட்டர்.",
+    "explanation_en": "Maximum equal length = HCF(42, 49, 63) = 7 meters.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 21 49-ஐ வகுக்காது.",
+        "en": "21 does not divide 49."
+      },
+      "B": {
+        "ta": "சரி. HCF = 7 மீட்டர்.",
+        "en": "Correct. HCF = 7 meters."
+      },
+      "C": {
+        "ta": "தவறு. 14 49-ஐ வகுக்காது.",
+        "en": "14 does not divide 49."
+      },
+      "D": {
+        "ta": "தவறு. 3.5 மீட்டர் மீப்பெரு அளவு அன்று.",
+        "en": "3.5 is not maximum integer length."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அதிகபட்சச் சம அளவு = HCF.",
+      "en": "Maximum equal length = HCF."
+    },
+    "revision_fact": {
+      "ta": "HCF(42, 49, 63) = 7",
+      "en": "HCF(42, 49, 63) = 7"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_023",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "42, 49, 63 மீ மரத்துண்டுகளைச் சம அளவுள்ள (7 மீ) துண்டுகளாக வெட்டினால், மொத்தம் எத்தனை துண்டுகள் கிடைக்கும்?",
+      "en": "If logs of lengths 42 m, 49 m, and 63 m are cut into maximum equal size (7 m), what is the total number of planks obtained?"
+    },
+    "question_ta": "42, 49, 63 மீ மரத்துண்டுகளைச் சம அளவுள்ள (7 மீ) துண்டுகளாக வெட்டினால், மொத்தம் எத்தனை துண்டுகள் கிடைக்கும்?",
+    "question_en": "If logs of lengths 42 m, 49 m, and 63 m are cut into maximum equal size (7 m), what is the total number of planks obtained?",
+    "options": [
+      "18",
+      "24",
+      "22",
+      "21"
+    ],
+    "options_ta": [
+      "18",
+      "24",
+      "22",
+      "21"
+    ],
+    "options_en": [
+      "18",
+      "24",
+      "22",
+      "21"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "HCF = 7 மீ.\nதுண்டுகளின் எண்ணிக்கை = 42/7 + 49/7 + 63/7 = 6 + 7 + 9 = 22 துண்டுகள்.",
+      "en": "Number of planks = 42/7 + 49/7 + 63/7 = 6 + 7 + 9 = 22 planks."
+    },
+    "explanation_ta": "HCF = 7 மீ.\nதுண்டுகளின் எண்ணிக்கை = 42/7 + 49/7 + 63/7 = 6 + 7 + 9 = 22 துண்டுகள்.",
+    "explanation_en": "Number of planks = 42/7 + 49/7 + 63/7 = 6 + 7 + 9 = 22 planks.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 18 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 24 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 6 + 7 + 9 = 22.",
+        "en": "Correct. 6 + 7 + 9 = 22."
+      },
+      "D": {
+        "ta": "தவறு. 6 + 7 + 8 = 21 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மொத்தத் துண்டுகள் = (ஒவ்வொரு நீளத்தின் கூடுதல்) / HCF.",
+      "en": "Total planks = Sum of lengths / HCF."
+    },
+    "revision_fact": {
+      "ta": "(42+49+63)/7 = 154/7 = 22",
+      "en": "(42+49+63)/7 = 154/7 = 22"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_024",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x³ - y³ மற்றும் x² - y² ஆகிய இயற்கணிதக் கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of algebraic expressions x³ - y³ and x² - y²."
+    },
+    "question_ta": "x³ - y³ மற்றும் x² - y² ஆகிய இயற்கணிதக் கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of algebraic expressions x³ - y³ and x² - y².",
+    "options": [
+      "x + y",
+      "x - y",
+      "(x - y)²",
+      "x² + xy + y²"
+    ],
+    "options_ta": [
+      "x + y",
+      "x - y",
+      "(x - y)²",
+      "x² + xy + y²"
+    ],
+    "options_en": [
+      "x + y",
+      "x - y",
+      "(x - y)²",
+      "x² + xy + y²"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nபொதுக் காரணி = (x - y).",
+      "en": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nCommon factor = (x - y)."
+    },
+    "explanation_ta": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nபொதுக் காரணி = (x - y).",
+    "explanation_en": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nCommon factor = (x - y).",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. x + y x³ - y³-ன் காரணி அன்று.",
+        "en": "x + y is not a factor of x³ - y³."
+      },
+      "B": {
+        "ta": "சரி. HCF = x - y.",
+        "en": "Correct. HCF = x - y."
+      },
+      "C": {
+        "ta": "தவறு. (x - y)² இருமுறை வரவில்லை.",
+        "en": "(x - y)² is not common to both."
+      },
+      "D": {
+        "ta": "தவறு. x² + xy + y² x² - y²-ன் காரணி அன்று.",
+        "en": "x² + xy + y² is not a factor of x² - y²."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "காரணிப்படுத்தி பொதுக் காரணியைக் கண்டறியவும்.",
+      "en": "Factorize both terms to find the common factor."
+    },
+    "revision_fact": {
+      "ta": "HCF = x - y",
+      "en": "HCF = x - y"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_025",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x³ - y³ மற்றும் x² - y² ஆகிய இயற்கணிதக் கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of algebraic expressions x³ - y³ and x² - y²."
+    },
+    "question_ta": "x³ - y³ மற்றும் x² - y² ஆகிய இயற்கணிதக் கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of algebraic expressions x³ - y³ and x² - y².",
+    "options": [
+      "(x - y)(x + y)",
+      "(x - y)(x + y)(x² + xy + y²)",
+      "(x³ - y³)(x² - y²)",
+      "x² - y²"
+    ],
+    "options_ta": [
+      "(x - y)(x + y)",
+      "(x - y)(x + y)(x² + xy + y²)",
+      "(x³ - y³)(x² - y²)",
+      "x² - y²"
+    ],
+    "options_en": [
+      "(x - y)(x + y)",
+      "(x - y)(x + y)(x² + xy + y²)",
+      "(x³ - y³)(x² - y²)",
+      "x² - y²"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nLCM = (x - y)(x + y)(x² + xy + y²) = (x² - y²)(x² + xy + y²).",
+      "en": "LCM = (x - y)(x + y)(x² + xy + y²)."
+    },
+    "explanation_ta": "x³ - y³ = (x - y)(x² + xy + y²).\nx² - y² = (x - y)(x + y).\nLCM = (x - y)(x + y)(x² + xy + y²) = (x² - y²)(x² + xy + y²).",
+    "explanation_en": "LCM = (x - y)(x + y)(x² + xy + y²).",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (x - y)(x + y) = x² - y² (x² + xy + y² விடுபட்டுள்ளது).",
+        "en": "Missing term (x² + xy + y²)."
+      },
+      "B": {
+        "ta": "சரி. LCM = (x - y)(x + y)(x² + xy + y²).",
+        "en": "Correct. LCM = (x - y)(x + y)(x² + xy + y²)."
+      },
+      "C": {
+        "ta": "தவறு. இரு கோவைகளின் நேரடி பெருக்கல் தவறானது (பொதுக் காரணி இருமுறை வந்துள்ளது).",
+        "en": "Direct product contains duplicate common factor."
+      },
+      "D": {
+        "ta": "தவறு. x² - y² சிறிய கோவை.",
+        "en": "Incorrect."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "LCM = HCF × மீதமுள்ள காரணிகள்.",
+      "en": "LCM = HCF × remaining unique factors."
+    },
+    "revision_fact": {
+      "ta": "LCM = (x² - y²)(x² + xy + y²)",
+      "en": "LCM = (x² - y²)(x² + xy + y²)"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_026",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "12, 18, 21, 28 ஆகிய எண்களால் வகுபடும் மிகச் சிறிய 4-இலக்க எண் எது?",
+      "en": "Find the smallest 4-digit number which is divisible by 12, 18, 21, and 28."
+    },
+    "question_ta": "12, 18, 21, 28 ஆகிய எண்களால் வகுபடும் மிகச் சிறிய 4-இலக்க எண் எது?",
+    "question_en": "Find the smallest 4-digit number which is divisible by 12, 18, 21, and 28.",
+    "options": [
+      "1000",
+      "1008",
+      "1026",
+      "1080"
+    ],
+    "options_ta": [
+      "1000",
+      "1008",
+      "1026",
+      "1080"
+    ],
+    "options_en": [
+      "1000",
+      "1008",
+      "1026",
+      "1080"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "LCM(12, 18, 21, 28) = 252.\nமிகச்சிறிய 4-இலக்க எண் 1000.\n1000 / 252 = 3 (மீதி 244).\nதேவையான எண் = 1000 + (252 - 244) = 1000 + 8 = 1008.",
+      "en": "LCM(12, 18, 21, 28) = 252.\nSmallest 4-digit number = 1000.\n1000 / 252 leaves remainder 244.\nRequired number = 1000 + (252 - 244) = 1008."
+    },
+    "explanation_ta": "LCM(12, 18, 21, 28) = 252.\nமிகச்சிறிய 4-இலக்க எண் 1000.\n1000 / 252 = 3 (மீதி 244).\nதேவையான எண் = 1000 + (252 - 244) = 1000 + 8 = 1008.",
+    "explanation_en": "LCM(12, 18, 21, 28) = 252.\nSmallest 4-digit number = 1000.\n1000 / 252 leaves remainder 244.\nRequired number = 1000 + (252 - 244) = 1008.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1000 252-ஆல் வகுபடாது.",
+        "en": "1000 is not divisible by 252."
+      },
+      "B": {
+        "ta": "சரி. 252 × 4 = 1008.",
+        "en": "Correct. 252 × 4 = 1008."
+      },
+      "C": {
+        "ta": "தவறு. 1026 28-ஆல் வகுபடாது.",
+        "en": "1026 is not divisible by 28."
+      },
+      "D": {
+        "ta": "தவறு. 1080 21-ஆல் வகுபடாது (1080/21 = 51.42).",
+        "en": "1080 is not divisible by 21."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "LCM-ன் அடுத்தடுத்த மடங்குகளில் முதல் 4-இலக்க எண்ணைக் கண்டறியவும்: 252 × 4 = 1008.",
+      "en": "Find the smallest 4-digit multiple of LCM: 252 × 4 = 1008."
+    },
+    "revision_fact": {
+      "ta": "252 × 4 = 1008",
+      "en": "252 × 4 = 1008"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_027",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "12, 15, 20, 30 ஆகிய எண்களால் வகுபடும் மிகப்பெரிய 3-இலக்க எண் எது?",
+      "en": "Find the largest 3-digit number which is divisible by 12, 15, 20, and 30."
+    },
+    "question_ta": "12, 15, 20, 30 ஆகிய எண்களால் வகுபடும் மிகப்பெரிய 3-இலக்க எண் எது?",
+    "question_en": "Find the largest 3-digit number which is divisible by 12, 15, 20, and 30.",
+    "options": [
+      "900",
+      "990",
+      "960",
+      "980"
+    ],
+    "options_ta": [
+      "900",
+      "990",
+      "960",
+      "980"
+    ],
+    "options_en": [
+      "900",
+      "990",
+      "960",
+      "980"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "LCM(12, 15, 20, 30) = 60.\nமிகப்பெரிய 3-இலக்க எண் 999.\n999 / 60 = 16 (மீதி 39).\nதேவையான எண் = 999 - 39 = 960.",
+      "en": "LCM(12, 15, 20, 30) = 60.\nLargest 3-digit number = 999.\n999 / 60 leaves remainder 39.\nRequired number = 999 - 39 = 960."
+    },
+    "explanation_ta": "LCM(12, 15, 20, 30) = 60.\nமிகப்பெரிய 3-இலக்க எண் 999.\n999 / 60 = 16 (மீதி 39).\nதேவையான எண் = 999 - 39 = 960.",
+    "explanation_en": "LCM(12, 15, 20, 30) = 60.\nLargest 3-digit number = 999.\n999 / 60 leaves remainder 39.\nRequired number = 999 - 39 = 960.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 900 மிகப்பெரிய 3-இலக்க மடங்கு அன்று (960 பெரிது).",
+        "en": "900 is not the largest 3-digit multiple."
+      },
+      "B": {
+        "ta": "தவறு. 990 12 மற்றும் 20-ஆல் வகுபடாது.",
+        "en": "990 is not divisible by 12 or 20."
+      },
+      "C": {
+        "ta": "சரி. 60 × 16 = 960.",
+        "en": "Correct. 60 × 16 = 960."
+      },
+      "D": {
+        "ta": "தவறு. 980 15 மற்றும் 30-ஆல் வகுபடாது.",
+        "en": "980 is not divisible by 15 or 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மிகப்பெரிய n-இலக்க எண் - (LCM-ஆல் வகுக்கும் போது வரும் மீதி).",
+      "en": "Largest n-digit multiple = Largest n-digit number - Remainder."
+    },
+    "revision_fact": {
+      "ta": "999 - 39 = 960",
+      "en": "999 - 39 = 960"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_028",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "16, 24, 36, 54 ஆகிய எண்களால் வகுபடும் போது முறையே 12, 20, 32, 50 ஆகிய எண்களை மீதிகளாகத் தரும் மிகச் சிறிய எண் எது?",
+      "en": "Find the smallest number which when divided by 16, 24, 36, and 54 leaves remainders 12, 20, 32, and 50 respectively."
+    },
+    "question_ta": "16, 24, 36, 54 ஆகிய எண்களால் வகுபடும் போது முறையே 12, 20, 32, 50 ஆகிய எண்களை மீதிகளாகத் தரும் மிகச் சிறிய எண் எது?",
+    "question_en": "Find the smallest number which when divided by 16, 24, 36, and 54 leaves remainders 12, 20, 32, and 50 respectively.",
+    "options": [
+      "424",
+      "428",
+      "436",
+      "440"
+    ],
+    "options_ta": [
+      "424",
+      "428",
+      "436",
+      "440"
+    ],
+    "options_en": [
+      "424",
+      "428",
+      "436",
+      "440"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "வகுத்திக்கும் மீதிக்கும் உள்ள வித்தியாசம்:\n16-12=4, 24-20=4, 36-32=4, 54-50=4 (பொது வித்தியாசம் k = 4).\nLCM(16, 24, 36, 54) = 432.\nதேவையான எண் = LCM - k = 432 - 4 = 428.",
+      "en": "Difference k = 16-12 = 24-20 = 36-32 = 54-50 = 4.\nLCM(16, 24, 36, 54) = 432.\nRequired number = LCM - k = 432 - 4 = 428."
+    },
+    "explanation_ta": "வகுத்திக்கும் மீதிக்கும் உள்ள வித்தியாசம்:\n16-12=4, 24-20=4, 36-32=4, 54-50=4 (பொது வித்தியாசம் k = 4).\nLCM(16, 24, 36, 54) = 432.\nதேவையான எண் = LCM - k = 432 - 4 = 428.",
+    "explanation_en": "Difference k = 16-12 = 24-20 = 36-32 = 54-50 = 4.\nLCM(16, 24, 36, 54) = 432.\nRequired number = LCM - k = 432 - 4 = 428.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 432 - 8 = 424.",
+        "en": "Subtracted double difference."
+      },
+      "B": {
+        "ta": "சரி. 432 - 4 = 428.",
+        "en": "Correct. 432 - 4 = 428."
+      },
+      "C": {
+        "ta": "தவறு. 432 + 4 = 436 (கூட்டியது தவறு).",
+        "en": "Added difference instead of subtracting."
+      },
+      "D": {
+        "ta": "தவறு. 432 + 8 = 440.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வெவ்வேறு மீதிகள் வரும் போது (வகுத்தி - மீதி) = k எனில், விடை = LCM - k.",
+      "en": "Different remainders with constant difference k ⟹ Result = LCM - k."
+    },
+    "revision_fact": {
+      "ta": "432 - 4 = 428",
+      "en": "432 - 4 = 428"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_029",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் மீ.சி.ம 495 மற்றும் அவற்றின் மீ.பொ.வ 5. எண்களின் கூடுதல் 100 எனில், அவற்றின் வித்தியாசம் என்ன?",
+      "en": "The LCM of two numbers is 495 and their HCF is 5. If the sum of the numbers is 100, what is their difference?"
+    },
+    "question_ta": "இரு எண்களின் மீ.சி.ம 495 மற்றும் அவற்றின் மீ.பொ.வ 5. எண்களின் கூடுதல் 100 எனில், அவற்றின் வித்தியாசம் என்ன?",
+    "question_en": "The LCM of two numbers is 495 and their HCF is 5. If the sum of the numbers is 100, what is their difference?",
+    "options": [
+      "10",
+      "15",
+      "5",
+      "20"
+    ],
+    "options_ta": [
+      "10",
+      "15",
+      "5",
+      "20"
+    ],
+    "options_en": [
+      "10",
+      "15",
+      "5",
+      "20"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "HCF = 5 ⟹ எண்கள் 5a, 5b (a, b சார்பகா எண்கள்).\n5a + 5b = 100 ⟹ a + b = 20.\nLCM = 5 × a × b = 495 ⟹ ab = 99.\na+b = 20 மற்றும் ab = 99 எனில், a = 11, b = 9.\nஎண்கள் = 55 மற்றும் 45.\nவித்தியாசம் = 55 - 45 = 10.",
+      "en": "5a + 5b = 100 ⟹ a + b = 20.\n5ab = 495 ⟹ ab = 99 ⟹ a = 11, b = 9.\nNumbers are 55 and 45 ⟹ Difference = 10."
+    },
+    "explanation_ta": "HCF = 5 ⟹ எண்கள் 5a, 5b (a, b சார்பகா எண்கள்).\n5a + 5b = 100 ⟹ a + b = 20.\nLCM = 5 × a × b = 495 ⟹ ab = 99.\na+b = 20 மற்றும் ab = 99 எனில், a = 11, b = 9.\nஎண்கள் = 55 மற்றும் 45.\nவித்தியாசம் = 55 - 45 = 10.",
+    "explanation_en": "5a + 5b = 100 ⟹ a + b = 20.\n5ab = 495 ⟹ ab = 99 ⟹ a = 11, b = 9.\nNumbers are 55 and 45 ⟹ Difference = 10.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 55 - 45 = 10.",
+        "en": "Correct. 55 - 45 = 10."
+      },
+      "B": {
+        "ta": "தவறு. 15 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5 என்பது HCF.",
+        "en": "5 is HCF."
+      },
+      "D": {
+        "ta": "தவறு. 20 என்பது a+b-ன் மதிப்பு.",
+        "en": "20 is value of a+b."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a + b = 20, ab = 99 ⟹ a=11, b=9 ⟹ எண்கள் 55, 45 ⟹ வித்தியாசம் = 10.",
+      "en": "Solve quadratic/factors for a and b."
+    },
+    "revision_fact": {
+      "ta": "55 - 45 = 10",
+      "en": "55 - 45 = 10"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_030",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "0.6, 9.6, 0.36 ஆகிய தசம எண்களின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of decimal numbers 0.6, 9.6, and 0.36."
+    },
+    "question_ta": "0.6, 9.6, 0.36 ஆகிய தசம எண்களின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of decimal numbers 0.6, 9.6, and 0.36.",
+    "options": [
+      "28.8",
+      "14.4",
+      "2.88",
+      "288"
+    ],
+    "options_ta": [
+      "28.8",
+      "14.4",
+      "2.88",
+      "288"
+    ],
+    "options_en": [
+      "28.8",
+      "14.4",
+      "2.88",
+      "288"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தசம இடங்களைச் சமப்படுத்த (2 இடங்கள்): 60/100, 960/100, 36/100.\n60, 960, 36 ஆகிய எண்களின் LCM = 2880.\n100-ஆல் வகுக்க: 2880 / 100 = 28.8.",
+      "en": "Equalize decimal places: 0.60, 9.60, 0.36.\nLCM(60, 960, 36) = 2880 ⟹ 2880 / 100 = 28.8."
+    },
+    "explanation_ta": "தசம இடங்களைச் சமப்படுத்த (2 இடங்கள்): 60/100, 960/100, 36/100.\n60, 960, 36 ஆகிய எண்களின் LCM = 2880.\n100-ஆல் வகுக்க: 2880 / 100 = 28.8.",
+    "explanation_en": "Equalize decimal places: 0.60, 9.60, 0.36.\nLCM(60, 960, 36) = 2880 ⟹ 2880 / 100 = 28.8.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 2880 / 100 = 28.8.",
+        "en": "Correct. 2880 / 100 = 28.8."
+      },
+      "B": {
+        "ta": "தவறு. 14.4 0.36-ஆல் வகுபடாது.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 2.88 0.36 × 8 (9.6-ஆல் வகுபடாது).",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 288 தசமப் புள்ளி இன்றி எழுதப்பட்டது.",
+        "en": "Forgot decimal point."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "தசம எண்களின் மீ.சி.ம காண எண்களை முழு எண்களாக மாற்றி கணக்கிடவும்.",
+      "en": "Convert decimals to integers by shifting decimal places."
+    },
+    "revision_fact": {
+      "ta": "LCM = 28.8",
+      "en": "LCM = 28.8"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_031",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "0.6, 9.6, 0.36 ஆகிய தசம எண்களின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of decimal numbers 0.6, 9.6, and 0.36."
+    },
+    "question_ta": "0.6, 9.6, 0.36 ஆகிய தசம எண்களின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of decimal numbers 0.6, 9.6, and 0.36.",
+    "options": [
+      "0.12",
+      "1.2",
+      "0.06",
+      "0.24"
+    ],
+    "options_ta": [
+      "0.12",
+      "1.2",
+      "0.06",
+      "0.24"
+    ],
+    "options_en": [
+      "0.12",
+      "1.2",
+      "0.06",
+      "0.24"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "60/100, 960/100, 36/100.\n60, 960, 36-ன் HCF = 12.\n100-ஆல் வகுக்க: 12 / 100 = 0.12.",
+      "en": "Equalize decimal places: 60, 960, 36.\nHCF(60, 960, 36) = 12 ⟹ 12 / 100 = 0.12."
+    },
+    "explanation_ta": "60/100, 960/100, 36/100.\n60, 960, 36-ன் HCF = 12.\n100-ஆல் வகுக்க: 12 / 100 = 0.12.",
+    "explanation_en": "Equalize decimal places: 60, 960, 36.\nHCF(60, 960, 36) = 12 ⟹ 12 / 100 = 0.12.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF = 0.12.",
+        "en": "Correct. HCF = 0.12."
+      },
+      "B": {
+        "ta": "தவறு. 1.2 0.36-ஐ வகுக்காது (0.36 < 1.2).",
+        "en": "1.2 is larger than 0.36."
+      },
+      "C": {
+        "ta": "தவறு. 0.06 ஒரு காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "0.06 is not highest."
+      },
+      "D": {
+        "ta": "தவறு. 0.24 0.6-ஐ வகுக்காது.",
+        "en": "0.24 does not divide 0.6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF = HCF(60, 960, 36) / 100 = 12 / 100 = 0.12.",
+      "en": "HCF = HCF(60, 960, 36) / 100 = 0.12."
+    },
+    "revision_fact": {
+      "ta": "HCF = 0.12",
+      "en": "HCF = 0.12"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_032",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "315, 420, 1155 ஆகிய எண்களின் மீப்பெரு பொது வகுத்தி (HCF) என்ன?",
+      "en": "Find the HCF of 315, 420, and 1155."
+    },
+    "question_ta": "315, 420, 1155 ஆகிய எண்களின் மீப்பெரு பொது வகுத்தி (HCF) என்ன?",
+    "question_en": "Find the HCF of 315, 420, and 1155.",
+    "options": [
+      "105",
+      "210",
+      "35",
+      "15"
+    ],
+    "options_ta": [
+      "105",
+      "210",
+      "35",
+      "15"
+    ],
+    "options_en": [
+      "105",
+      "210",
+      "35",
+      "15"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "315 = 3² × 5 × 7.\n420 = 2² × 3 × 5 × 7.\n1155 = 3 × 5 × 7 × 11.\nபொது பகா காரணிகள்: 3¹ × 5¹ × 7¹ = 105.",
+      "en": "315 = 3² × 5 × 7.\n420 = 2² × 3 × 5 × 7.\n1155 = 3 × 5 × 7 × 11.\nCommon factors = 3 × 5 × 7 = 105."
+    },
+    "explanation_ta": "315 = 3² × 5 × 7.\n420 = 2² × 3 × 5 × 7.\n1155 = 3 × 5 × 7 × 11.\nபொது பகா காரணிகள்: 3¹ × 5¹ × 7¹ = 105.",
+    "explanation_en": "315 = 3² × 5 × 7.\n420 = 2² × 3 × 5 × 7.\n1155 = 3 × 5 × 7 × 11.\nCommon factors = 3 × 5 × 7 = 105.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF = 105.",
+        "en": "Correct. HCF = 105."
+      },
+      "B": {
+        "ta": "தவறு. 210 315-ஐ வகுக்காது.",
+        "en": "210 does not divide 315."
+      },
+      "C": {
+        "ta": "தவறு. 35 காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "35 is not highest."
+      },
+      "D": {
+        "ta": "தவறு. 15 காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "15 is not highest."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3 × 5 × 7 = 105.",
+      "en": "3 × 5 × 7 = 105."
+    },
+    "revision_fact": {
+      "ta": "HCF(315, 420, 1155) = 105",
+      "en": "HCF(315, 420, 1155) = 105"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_033",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "2² × 3³ × 5⁵, 2³ × 3² × 5² × 7 மற்றும் 2⁴ × 3⁴ × 5 × 7² × 11 ஆகிய எண்களின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of 2² × 3³ × 5⁵, 2³ × 3² × 5² × 7, and 2⁴ × 3⁴ × 5 × 7² × 11."
+    },
+    "question_ta": "2² × 3³ × 5⁵, 2³ × 3² × 5² × 7 மற்றும் 2⁴ × 3⁴ × 5 × 7² × 11 ஆகிய எண்களின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of 2² × 3³ × 5⁵, 2³ × 3² × 5² × 7, and 2⁴ × 3⁴ × 5 × 7² × 11.",
+    "options": [
+      "2² × 3² × 5 × 7",
+      "2² × 3² × 5",
+      "2³ × 3² × 5²",
+      "2⁴ × 3⁴ × 5⁵ × 7² × 11"
+    ],
+    "options_ta": [
+      "2² × 3² × 5 × 7",
+      "2² × 3² × 5",
+      "2³ × 3² × 5²",
+      "2⁴ × 3⁴ × 5⁵ × 7² × 11"
+    ],
+    "options_en": [
+      "2² × 3² × 5 × 7",
+      "2² × 3² × 5",
+      "2³ × 3² × 5²",
+      "2⁴ × 3⁴ × 5⁵ × 7² × 11"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "பொது பகா காரணிகளின் குறைந்தபட்ச அடுக்கு:\n2-ன் குறைந்தபட்ச அடுக்கு = 2²\n3-ன் குறைந்தபட்ச அடுக்கு = 3²\n5-ன் குறைந்தபட்ச அடுக்கு = 5¹\n7 மற்றும் 11 அனைத்திலும் இல்லை.\nஎனவே HCF = 2² × 3² × 5 = 4 × 9 × 5 = 180.",
+      "en": "Common prime factors with lowest powers = 2² × 3² × 5 = 180."
+    },
+    "explanation_ta": "பொது பகா காரணிகளின் குறைந்தபட்ச அடுக்கு:\n2-ன் குறைந்தபட்ச அடுக்கு = 2²\n3-ன் குறைந்தபட்ச அடுக்கு = 3²\n5-ன் குறைந்தபட்ச அடுக்கு = 5¹\n7 மற்றும் 11 அனைத்திலும் இல்லை.\nஎனவே HCF = 2² × 3² × 5 = 4 × 9 × 5 = 180.",
+    "explanation_en": "Common prime factors with lowest powers = 2² × 3² × 5 = 180.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 7 முதல் எண்ணில் இல்லை.",
+        "en": "7 is not present in 1st number."
+      },
+      "B": {
+        "ta": "சரி. 2² × 3² × 5 = 180.",
+        "en": "Correct. 2² × 3² × 5 = 180."
+      },
+      "C": {
+        "ta": "தவறு. 2-ன் குறைந்தபட்ச அடுக்கு 2² மட்டுமே.",
+        "en": "Incorrect exponent for 2."
+      },
+      "D": {
+        "ta": "தவறு. இது மீ.சி.ம (LCM) ஆகும்.",
+        "en": "This is the LCM."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF ⟹ அனைத்திலும் உள்ள பொதுப் பகா காரணிகளின் குறைந்தபட்ச அடுக்கு.",
+      "en": "HCF takes lowest exponent of common prime factors present in all terms."
+    },
+    "revision_fact": {
+      "ta": "2² × 3² × 5 = 180",
+      "en": "2² × 3² × 5 = 180"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_034",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் HCF 11 மற்றும் LCM 693. ஒரு எண் 77 எனில், மற்றொரு எண் என்ன?",
+      "en": "The HCF of two numbers is 11 and their LCM is 693. If one number is 77, what is the other number?"
+    },
+    "question_ta": "இரு எண்களின் HCF 11 மற்றும் LCM 693. ஒரு எண் 77 எனில், மற்றொரு எண் என்ன?",
+    "question_en": "The HCF of two numbers is 11 and their LCM is 693. If one number is 77, what is the other number?",
+    "options": [
+      "66",
+      "99",
+      "121",
+      "88"
+    ],
+    "options_ta": [
+      "66",
+      "99",
+      "121",
+      "88"
+    ],
+    "options_en": [
+      "66",
+      "99",
+      "121",
+      "88"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "இரண்டாம் எண் = (HCF × LCM) / முதல் எண் = (11 × 693) / 77 = 693 / 7 = 99.",
+      "en": "Second number = (11 × 693) / 77 = 693 / 7 = 99."
+    },
+    "explanation_ta": "இரண்டாம் எண் = (HCF × LCM) / முதல் எண் = (11 × 693) / 77 = 693 / 7 = 99.",
+    "explanation_en": "Second number = (11 × 693) / 77 = 693 / 7 = 99.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 462 / 7 = 66.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 693 / 7 = 99.",
+        "en": "Correct. 693 / 7 = 99."
+      },
+      "C": {
+        "ta": "தவறு. 11² = 121.",
+        "en": "Square of HCF."
+      },
+      "D": {
+        "ta": "தவறு. 616 / 7 = 88.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரண்டாம் எண் = (HCF × LCM) / முதல் எண்.",
+      "en": "Second number = (HCF × LCM) / First number."
+    },
+    "revision_fact": {
+      "ta": "11 × 693 / 77 = 99",
+      "en": "11 × 693 / 77 = 99"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_035",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "30, 45, 60 ஆகிய எண்களை வகுக்கும் போது முறையே 2, 3, 4 மீதிகளாகக் கிடைக்கும் மிகப்பெரிய எண் எது?",
+      "en": "Find the largest number that divides 30, 45, and 60 leaving remainders 2, 3, and 4 respectively."
+    },
+    "question_ta": "30, 45, 60 ஆகிய எண்களை வகுக்கும் போது முறையே 2, 3, 4 மீதிகளாகக் கிடைக்கும் மிகப்பெரிய எண் எது?",
+    "question_en": "Find the largest number that divides 30, 45, and 60 leaving remainders 2, 3, and 4 respectively.",
+    "options": [
+      "28",
+      "12",
+      "14",
+      "7"
+    ],
+    "options_ta": [
+      "28",
+      "12",
+      "14",
+      "7"
+    ],
+    "options_en": [
+      "28",
+      "12",
+      "14",
+      "7"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "30 - 2 = 28\n45 - 3 = 42\n60 - 4 = 56\nதேவையான எண் = HCF(28, 42, 56) = 14.\n(சரிபார்ப்பு: 30/14 ⟹ மீதி 2, 45/14 ⟹ மீதி 3, 60/14 ⟹ மீதி 4. HCF = 14).",
+      "en": "30 - 2 = 28, 45 - 3 = 42, 60 - 4 = 56.\nHCF(28, 42, 56) = 14."
+    },
+    "explanation_ta": "30 - 2 = 28\n45 - 3 = 42\n60 - 4 = 56\nதேவையான எண் = HCF(28, 42, 56) = 14.\n(சரிபார்ப்பு: 30/14 ⟹ மீதி 2, 45/14 ⟹ மீதி 3, 60/14 ⟹ மீதி 4. HCF = 14).",
+    "explanation_en": "30 - 2 = 28, 45 - 3 = 42, 60 - 4 = 56.\nHCF(28, 42, 56) = 14.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 28 42-ஐ வகுக்காது.",
+        "en": "28 does not divide 42."
+      },
+      "B": {
+        "ta": "தவறு. 12 28-ஐ வகுக்காது.",
+        "en": "12 does not divide 28."
+      },
+      "C": {
+        "ta": "தவறு. 7 ஒரு காரணி ஆனால் மீப்பெரு காரணி அன்று (14 பெரிது).",
+        "en": "7 is not highest (14 is larger)."
+      },
+      "D": {
+        "ta": "சரி. HCF(28, 42, 56) = 14.",
+        "en": "Correct. HCF(28, 42, 56) = 14."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வெவ்வேறு மீதிகள் r1, r2, r3 எனில் HCF(A-r1, B-r2, C-r3).",
+      "en": "Subtract respective remainders then find HCF."
+    },
+    "revision_fact": {
+      "ta": "HCF(28, 42, 56) = 14",
+      "en": "HCF(28, 42, 56) = 14"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_036",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "a³b²c, a²b³c⁴ மற்றும் ab⁴c² ஆகிய கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of a³b²c, a²b³c⁴, and ab⁴c²."
+    },
+    "question_ta": "a³b²c, a²b³c⁴ மற்றும் ab⁴c² ஆகிய கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of a³b²c, a²b³c⁴, and ab⁴c².",
+    "options": [
+      "ab²c",
+      "abc",
+      "a²b²c²",
+      "a³b⁴c⁴"
+    ],
+    "options_ta": [
+      "ab²c",
+      "abc",
+      "a²b²c²",
+      "a³b⁴c⁴"
+    ],
+    "options_en": [
+      "ab²c",
+      "abc",
+      "a²b²c²",
+      "a³b⁴c⁴"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "குறைந்தபட்ச அடுக்குகள்:\na-ன் குறைந்தபட்ச அடுக்கு = a¹ = a\nb-ன் குறைந்தபட்ச அடுக்கு = b²\nc-ன் குறைந்தபட்ச அடுக்கு = c¹ = c\nஎனவே HCF = ab²c.",
+      "en": "Lowest powers of variables: a¹ = a, b², c¹ = c ⟹ HCF = ab²c."
+    },
+    "explanation_ta": "குறைந்தபட்ச அடுக்குகள்:\na-ன் குறைந்தபட்ச அடுக்கு = a¹ = a\nb-ன் குறைந்தபட்ச அடுக்கு = b²\nc-ன் குறைந்தபட்ச அடுக்கு = c¹ = c\nஎனவே HCF = ab²c.",
+    "explanation_en": "Lowest powers of variables: a¹ = a, b², c¹ = c ⟹ HCF = ab²c.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF = ab²c.",
+        "en": "Correct. HCF = ab²c."
+      },
+      "B": {
+        "ta": "தவறு. b-ன் குறைந்தபட்ச அடுக்கு b² விடுபட்டுள்ளது.",
+        "en": "Took b¹ instead of b²."
+      },
+      "C": {
+        "ta": "தவறு. c-ன் குறைந்தபட்ச அடுக்கு c¹, c² அன்று.",
+        "en": "Incorrect power for c."
+      },
+      "D": {
+        "ta": "தவறு. a³b⁴c⁴ என்பது மீ.சி.ம (LCM) ஆகும்.",
+        "en": "This is the LCM."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF = அனைத்து உறுப்புகளிலும் உள்ள பொது மாறிகளின் குறைந்தபட்ச அடுக்கு.",
+      "en": "HCF = Lowest powers of common variables."
+    },
+    "revision_fact": {
+      "ta": "HCF = ab²c",
+      "en": "HCF = ab²c"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_037",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "a³b²c, a²b³c⁴ மற்றும் ab⁴c² ஆகிய கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of a³b²c, a²b³c⁴, and ab⁴c²."
+    },
+    "question_ta": "a³b²c, a²b³c⁴ மற்றும் ab⁴c² ஆகிய கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of a³b²c, a²b³c⁴, and ab⁴c².",
+    "options": [
+      "a³b³c³",
+      "ab²c",
+      "a³b⁴c⁴",
+      "a²b³c²"
+    ],
+    "options_ta": [
+      "a³b³c³",
+      "ab²c",
+      "a³b⁴c⁴",
+      "a²b³c²"
+    ],
+    "options_en": [
+      "a³b³c³",
+      "ab²c",
+      "a³b⁴c⁴",
+      "a²b³c²"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "அதிகபட்ச அடுக்குகள்:\na-ன் அதிகபட்ச அடுக்கு = a³\nb-ன் அதிகபட்ச அடுக்கு = b⁴\nc-ன் அதிகபட்ச அடுக்கு = c⁴\nஎனவே LCM = a³b⁴c⁴.",
+      "en": "Highest powers of variables: a³, b⁴, c⁴ ⟹ LCM = a³b⁴c⁴."
+    },
+    "explanation_ta": "அதிகபட்ச அடுக்குகள்:\na-ன் அதிகபட்ச அடுக்கு = a³\nb-ன் அதிகபட்ச அடுக்கு = b⁴\nc-ன் அதிகபட்ச அடுக்கு = c⁴\nஎனவே LCM = a³b⁴c⁴.",
+    "explanation_en": "Highest powers of variables: a³, b⁴, c⁴ ⟹ LCM = a³b⁴c⁴.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. சராசரி அடுக்குகள் எடுக்கப்பட்டது.",
+        "en": "Incorrect exponents."
+      },
+      "B": {
+        "ta": "தவறு. ab²c என்பது HCF ஆகும்.",
+        "en": "This is the HCF."
+      },
+      "C": {
+        "ta": "சரி. LCM = a³b⁴c⁴.",
+        "en": "Correct. LCM = a³b⁴c⁴."
+      },
+      "D": {
+        "ta": "தவறு. குறைந்தபட்ச அடுக்குகள் எடுக்கப்பட்டது.",
+        "en": "Incorrect exponents."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "LCM = மாறிகளின் அதிகபட்ச அடுக்கு.",
+      "en": "LCM = Highest powers of variables."
+    },
+    "revision_fact": {
+      "ta": "LCM = a³b⁴c⁴",
+      "en": "LCM = a³b⁴c⁴"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_038",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு செவ்வக வடிவ நிலத்தின் நீளம் 18 மீ மற்றும் அகலம் 12 மீ. அந்நிலத்தை முழுவதும் நிரப்புமாறு போடப்படக்கூடிய மிகப்பெரிய சதுர வடிவ ஓடுகளின் (Tiles) பக்கம் என்ன?",
+      "en": "A rectangular plot is 18 m long and 12 m wide. What is the side of the largest square tile that can pave the plot completely?"
+    },
+    "question_ta": "ஒரு செவ்வக வடிவ நிலத்தின் நீளம் 18 மீ மற்றும் அகலம் 12 மீ. அந்நிலத்தை முழுவதும் நிரப்புமாறு போடப்படக்கூடிய மிகப்பெரிய சதுர வடிவ ஓடுகளின் (Tiles) பக்கம் என்ன?",
+    "question_en": "A rectangular plot is 18 m long and 12 m wide. What is the side of the largest square tile that can pave the plot completely?",
+    "options": [
+      "6 மீட்டர்",
+      "3 மீட்டர்",
+      "2 மீட்டர்",
+      "4 மீட்டர்"
+    ],
+    "options_ta": [
+      "6 மீட்டர்",
+      "3 மீட்டர்",
+      "2 மீட்டர்",
+      "4 மீட்டர்"
+    ],
+    "options_en": [
+      "6 meters",
+      "3 meters",
+      "2 meters",
+      "4 meters"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "சதுர ஓட்டின் மிகப்பெரிய பக்கம் = HCF(18, 12) = 6 மீட்டர்.",
+      "en": "Side of largest square tile = HCF(18, 12) = 6 meters."
+    },
+    "explanation_ta": "சதுர ஓட்டின் மிகப்பெரிய பக்கம் = HCF(18, 12) = 6 மீட்டர்.",
+    "explanation_en": "Side of largest square tile = HCF(18, 12) = 6 meters.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF(18, 12) = 6 மீட்டர்.",
+        "en": "Correct. HCF(18, 12) = 6 meters."
+      },
+      "B": {
+        "ta": "தவறு. 3 மீட்டர் சதுர ஓடு பொருந்தும் ஆனால் மீப்பெரு அளவு அன்று.",
+        "en": "3 m fits but is not the largest tile."
+      },
+      "C": {
+        "ta": "தவறு. 2 மீட்டர் மீப்பெரு அளவு அன்று.",
+        "en": "2 m is not largest."
+      },
+      "D": {
+        "ta": "தவறு. 4 18-ஐ வகுக்காது.",
+        "en": "4 does not divide 18."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சதுர ஓட்டின் மீப்பெரு பக்கம் = HCF(நீளம், அகலம்).",
+      "en": "Side of largest square tile = HCF(Length, Breadth)."
+    },
+    "revision_fact": {
+      "ta": "HCF(18, 12) = 6 m",
+      "en": "HCF(18, 12) = 6 m"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_039",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "18 மீ × 12 மீ செவ்வக நிலத்திற்கு 6 மீ பக்கமுள்ள சதுர ஓடுகள் தேவைப்பட்டால், மொத்த ஓடுகளின் எண்ணிக்கை என்ன?",
+      "en": "How many square tiles of side 6 m are needed to pave a rectangular plot of 18 m × 12 m?"
+    },
+    "question_ta": "18 மீ × 12 மீ செவ்வக நிலத்திற்கு 6 மீ பக்கமுள்ள சதுர ஓடுகள் தேவைப்பட்டால், மொத்த ஓடுகளின் எண்ணிக்கை என்ன?",
+    "question_en": "How many square tiles of side 6 m are needed to pave a rectangular plot of 18 m × 12 m?",
+    "options": [
+      "12",
+      "8",
+      "9",
+      "6"
+    ],
+    "options_ta": [
+      "12",
+      "8",
+      "9",
+      "6"
+    ],
+    "options_en": [
+      "12",
+      "8",
+      "9",
+      "6"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "செவ்வகத்தின் பரப்பளவு = 18 × 12 = 216 ச.மீ.\nசதுர ஓட்டின் பரப்பளவு = 6 × 6 = 36 ச.மீ.\nஓடுகளின் எண்ணிக்கை = 216 / 36 = 6.",
+      "en": "Total Area = 18 × 12 = 216 sq.m.\nTile Area = 6 × 6 = 36 sq.m.\nNumber of tiles = 216 / 36 = 6."
+    },
+    "explanation_ta": "செவ்வகத்தின் பரப்பளவு = 18 × 12 = 216 ச.மீ.\nசதுர ஓட்டின் பரப்பளவு = 6 × 6 = 36 ச.மீ.\nஓடுகளின் எண்ணிக்கை = 216 / 36 = 6.",
+    "explanation_en": "Total Area = 18 × 12 = 216 sq.m.\nTile Area = 6 × 6 = 36 sq.m.\nNumber of tiles = 216 / 36 = 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 216 / 18 = 12.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 216 / 27 = 8.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 216 / 24 = 9.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 216 / 36 = 6.",
+        "en": "Correct. 216 / 36 = 6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஓடுகளின் எண்ணிக்கை = (நிலத்தின் பரப்பளவு) / (ஒரு ஓட்டின் பரப்பளவு).",
+      "en": "Number of tiles = Plot Area / Tile Area."
+    },
+    "revision_fact": {
+      "ta": "(18 × 12) / (6 × 6) = 6",
+      "en": "(18 × 12) / (6 × 6) = 6"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_040",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் மீ.பொ.வ 8 மற்றும் அவற்றின் மீ.சி.ம 96. எண்களின் கூடுதல் 56 எனில், அந்த எண்கள் எவை?",
+      "en": "The HCF of two numbers is 8 and their LCM is 96. If their sum is 56, what are the two numbers?"
+    },
+    "question_ta": "இரு எண்களின் மீ.பொ.வ 8 மற்றும் அவற்றின் மீ.சி.ம 96. எண்களின் கூடுதல் 56 எனில், அந்த எண்கள் எவை?",
+    "question_en": "The HCF of two numbers is 8 and their LCM is 96. If their sum is 56, what are the two numbers?",
+    "options": [
+      "16, 40",
+      "20, 36",
+      "8, 48",
+      "24, 32"
+    ],
+    "options_ta": [
+      "16, 40",
+      "20, 36",
+      "8, 48",
+      "24, 32"
+    ],
+    "options_en": [
+      "16, 40",
+      "20, 36",
+      "8, 48",
+      "24, 32"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "HCF = 8 ⟹ எண்கள் 8a, 8b.\n8a + 8b = 56 ⟹ a + b = 7.\n8ab = 96 ⟹ ab = 12.\na+b = 7 மற்றும் ab = 12 ⟹ a = 3, b = 4.\nஎண்கள் = 8(3) = 24 மற்றும் 8(4) = 32.",
+      "en": "8a + 8b = 56 ⟹ a + b = 7.\n8ab = 96 ⟹ ab = 12 ⟹ a = 3, b = 4.\nNumbers are 24 and 32."
+    },
+    "explanation_ta": "HCF = 8 ⟹ எண்கள் 8a, 8b.\n8a + 8b = 56 ⟹ a + b = 7.\n8ab = 96 ⟹ ab = 12.\na+b = 7 மற்றும் ab = 12 ⟹ a = 3, b = 4.\nஎண்கள் = 8(3) = 24 மற்றும் 8(4) = 32.",
+    "explanation_en": "8a + 8b = 56 ⟹ a + b = 7.\n8ab = 96 ⟹ ab = 12 ⟹ a = 3, b = 4.\nNumbers are 24 and 32.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 16 + 40 = 56, ஆனால் LCM(16, 40) = 80 ≠ 96.",
+        "en": "LCM(16, 40) = 80 ≠ 96."
+      },
+      "B": {
+        "ta": "தவறு. HCF(20, 36) = 4 ≠ 8.",
+        "en": "HCF(20, 36) = 4 ≠ 8."
+      },
+      "C": {
+        "ta": "தவறு. 8 + 48 = 56, ஆனால் LCM(8, 48) = 48 ≠ 96.",
+        "en": "LCM(8, 48) = 48 ≠ 96."
+      },
+      "D": {
+        "ta": "சரி. 24 + 32 = 56, HCF=8, LCM=96.",
+        "en": "Correct. 24 + 32 = 56, HCF=8, LCM=96."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a + b = 7, ab = 12 ⟹ a=3, b=4 ⟹ எண்கள் 24, 32.",
+      "en": "Factor product ab = 12 and sum a+b = 7."
+    },
+    "revision_fact": {
+      "ta": "8 × 3 = 24, 8 × 4 = 32",
+      "en": "8 × 3 = 24, 8 × 4 = 32"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_041",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "இரு எண்களின் மீ.பொ.வ 15 மற்றும் அவற்றின் மீ.சி.ம 225. இரு எண்களும் 15-ஐ விட பெரியவை எனில், அந்த எண்களின் கூடுதல் என்ன?",
+      "en": "The HCF of two numbers is 15 and their LCM is 225. If both numbers are greater than 15, what is their sum?"
+    },
+    "question_ta": "இரு எண்களின் மீ.பொ.வ 15 மற்றும் அவற்றின் மீ.சி.ம 225. இரு எண்களும் 15-ஐ விட பெரியவை எனில், அந்த எண்களின் கூடுதல் என்ன?",
+    "question_en": "The HCF of two numbers is 15 and their LCM is 225. If both numbers are greater than 15, what is their sum?",
+    "options": [
+      "240",
+      "120",
+      "180",
+      "150"
+    ],
+    "options_ta": [
+      "240",
+      "120",
+      "180",
+      "150"
+    ],
+    "options_en": [
+      "240",
+      "120",
+      "180",
+      "150"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "HCF = 15 ⟹ எண்கள் 15a, 15b.\nLCM = 15ab = 225 ⟹ ab = 15.\na, b சார்பகா ஜோடிகள்: (1, 15) மற்றும் (3, 5).\nஜோடி (1, 15) ⟹ எண்கள் 15, 225 (ஆனால் இரு எண்களும் 15-ஐ விட பெரியவை என்ற நிபந்தனைக்கு முரண்).\nஜோடி (3, 5) ⟹ எண்கள் 15(3)=45, 15(5)=75.\nகூடுதல் = 45 + 75 = 120.",
+      "en": "HCF = 15, LCM = 225 ⟹ ab = 15.\nCo-prime pairs for ab = 15: (1, 15) and (3, 5).\nSince numbers > 15, choose pair (3, 5) ⟹ Numbers are 45, 75.\nSum = 45 + 75 = 120."
+    },
+    "explanation_ta": "HCF = 15 ⟹ எண்கள் 15a, 15b.\nLCM = 15ab = 225 ⟹ ab = 15.\na, b சார்பகா ஜோடிகள்: (1, 15) மற்றும் (3, 5).\nஜோடி (1, 15) ⟹ எண்கள் 15, 225 (ஆனால் இரு எண்களும் 15-ஐ விட பெரியவை என்ற நிபந்தனைக்கு முரண்).\nஜோடி (3, 5) ⟹ எண்கள் 15(3)=45, 15(5)=75.\nகூடுதல் = 45 + 75 = 120.",
+    "explanation_en": "HCF = 15, LCM = 225 ⟹ ab = 15.\nCo-prime pairs for ab = 15: (1, 15) and (3, 5).\nSince numbers > 15, choose pair (3, 5) ⟹ Numbers are 45, 75.\nSum = 45 + 75 = 120.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 15 + 225 = 240 (15-ஐ விட பெரியவை என்ற நிபந்தனையை மீறியது).",
+        "en": "240 uses pair (15, 225) violating number > 15 rule."
+      },
+      "B": {
+        "ta": "சரி. 45 + 75 = 120.",
+        "en": "Correct. 45 + 75 = 120."
+      },
+      "C": {
+        "ta": "தவறு. 180 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 150 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிபந்தனையைச் சரிபார்த்து சரியான சார்பகா ஜோடியைத் தேர்ந்தெடுக்கவும்: (3, 5) ⟹ 45 + 75 = 120.",
+      "en": "Check condition > 15 to select co-prime pair (3, 5)."
+    },
+    "revision_fact": {
+      "ta": "45 + 75 = 120",
+      "en": "45 + 75 = 120"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_042",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் மீ.பொ.வ 12 மற்றும் அவற்றின் மீ.சி.ம 240. இத்தகைய எண ஜோடிகள் (Pairs of numbers) எத்தனை சாத்தியம்?",
+      "en": "The HCF of two numbers is 12 and their LCM is 240. How many such pairs of numbers are possible?"
+    },
+    "question_ta": "இரு எண்களின் மீ.பொ.வ 12 மற்றும் அவற்றின் மீ.சி.ம 240. இத்தகைய எண ஜோடிகள் (Pairs of numbers) எத்தனை சாத்தியம்?",
+    "question_en": "The HCF of two numbers is 12 and their LCM is 240. How many such pairs of numbers are possible?",
+    "options": [
+      "4 ஜோடிகள்",
+      "3 ஜோடிகள்",
+      "1 ஜோடி",
+      "2 ஜோடிகள்"
+    ],
+    "options_ta": [
+      "4 ஜோடிகள்",
+      "3 ஜோடிகள்",
+      "1 ஜோடி",
+      "2 ஜோடிகள்"
+    ],
+    "options_en": [
+      "4 pairs",
+      "3 pairs",
+      "1 pair",
+      "2 pairs"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "HCF = 12, LCM = 240 ⟹ 12ab = 240 ⟹ ab = 20.\nab = 20-க்கான சார்பகா ஜோடிகள் (a, b):\n1. (1, 20) ⟹ HCF(1, 20) = 1 (செல்லும்)\n2. (4, 5) ⟹ HCF(4, 5) = 1 (செல்லும்)\n(2, 10) சார்பகா அன்று (HCF = 2).\nஎனவே சாத்தியமான ஜோடிகள் = 2.",
+      "en": "12ab = 240 ⟹ ab = 20.\nCo-prime pairs of 20: (1, 20) and (4, 5).\nTotal pairs = 2."
+    },
+    "explanation_ta": "HCF = 12, LCM = 240 ⟹ 12ab = 240 ⟹ ab = 20.\nab = 20-க்கான சார்பகா ஜோடிகள் (a, b):\n1. (1, 20) ⟹ HCF(1, 20) = 1 (செல்லும்)\n2. (4, 5) ⟹ HCF(4, 5) = 1 (செல்லும்)\n(2, 10) சார்பகா அன்று (HCF = 2).\nஎனவே சாத்தியமான ஜோடிகள் = 2.",
+    "explanation_en": "12ab = 240 ⟹ ab = 20.\nCo-prime pairs of 20: (1, 20) and (4, 5).\nTotal pairs = 2.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (2, 10) சார்பகா ஜோடி அன்று என்பதை மறந்தது.",
+        "en": "Included non-coprime pair (2, 10)."
+      },
+      "B": {
+        "ta": "தவறு. 3 ஜோடிகள் தவறான எண்ணிக்கை.",
+        "en": "Claimed 3 pairs."
+      },
+      "C": {
+        "ta": "தவறு. 1 ஜோடி மட்டும் அன்று.",
+        "en": "Claimed 1 pair only."
+      },
+      "D": {
+        "ta": "சரி. (1, 20) மற்றும் (4, 5) என 2 ஜோடிகள்.",
+        "en": "Correct. 2 co-prime pairs: (1, 20) and (4, 5)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ab-ன் காரணிகளில் சார்பகா எண்களை மட்டுமே ஜோடிகளாகக் கொள்ள வேண்டும்.",
+      "en": "Only co-prime factor pairs (HCF=1) form valid pairs."
+    },
+    "revision_fact": {
+      "ta": "ab = 20 ⟹ 2 valid co-prime pairs",
+      "en": "ab = 20 ⟹ 2 valid co-prime pairs"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_043",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு மின்சார கம்பியில் உள்ள 4 விளக்குகள் முறையே 2, 3, 5, 10 வினாடிகளுக்கு ஒருமுறை மின்னுகின்றன. 1 மணி நேரத்தில் அவை எத்தனை முறை ஒன்றாக மின்னும்?",
+      "en": "Four lights flash at intervals of 2, 3, 5, and 10 seconds. How many times will they flash together in 1 hour?"
+    },
+    "question_ta": "ஒரு மின்சார கம்பியில் உள்ள 4 விளக்குகள் முறையே 2, 3, 5, 10 வினாடிகளுக்கு ஒருமுறை மின்னுகின்றன. 1 மணி நேரத்தில் அவை எத்தனை முறை ஒன்றாக மின்னும்?",
+    "question_en": "Four lights flash at intervals of 2, 3, 5, and 10 seconds. How many times will they flash together in 1 hour?",
+    "options": [
+      "120 முறை",
+      "119 முறை",
+      "121 முறை",
+      "60 முறை"
+    ],
+    "options_ta": [
+      "120 முறை",
+      "119 முறை",
+      "121 முறை",
+      "60 முறை"
+    ],
+    "options_en": [
+      "120 times",
+      "119 times",
+      "121 times",
+      "60 times"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "ஒன்றாக மின்னும் இடைவெளி = LCM(2, 3, 5, 10) = 30 வினாடிகள்.\n1 மணி நேரம் = 3600 வினாடிகள்.\nமின்னும் எண்ணிக்கை = 3600 / 30 = 120 முறை (தொடக்க மின்னலைத் தவிர்த்து இடைவெளிகள் 120 முறை).",
+      "en": "LCM(2, 3, 5, 10) = 30 seconds.\nNumber of times in 1 hour (3600s) = 3600 / 30 = 120 times."
+    },
+    "explanation_ta": "ஒன்றாக மின்னும் இடைவெளி = LCM(2, 3, 5, 10) = 30 வினாடிகள்.\n1 மணி நேரம் = 3600 வினாடிகள்.\nமின்னும் எண்ணிக்கை = 3600 / 30 = 120 முறை (தொடக்க மின்னலைத் தவிர்த்து இடைவெளிகள் 120 முறை).",
+    "explanation_en": "LCM(2, 3, 5, 10) = 30 seconds.\nNumber of times in 1 hour (3600s) = 3600 / 30 = 120 times.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 3600 / 30 = 120 முறை.",
+        "en": "Correct. 3600 / 30 = 120 times."
+      },
+      "B": {
+        "ta": "தவறு. 119 முறை கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. தொடக்க மின்னலையும் சேர்த்து 121 முறை எனக் குறிப்பது (வினாவில் '1 மணி நேரத்தில்' என்ற இடைவெளிக்கான எண்ணிக்கை).",
+        "en": "Included initial 0th sec flash making 121."
+      },
+      "D": {
+        "ta": "தவறு. 3600 / 60 = 60 முறை.",
+        "en": "Divided by 60 instead of 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எண்ணிக்கை = மொத்த வினாடிகள் / LCM வினாடிகள்.",
+      "en": "Number of times = Total seconds / LCM seconds."
+    },
+    "revision_fact": {
+      "ta": "3600 / 30 = 120 times",
+      "en": "3600 / 30 = 120 times"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_044",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "23-ன் எந்த மிகச் சிறிய மடங்கு 18, 21, 24 ஆகிய எண்களால் வகுபடும் போது 7-ஐ மீதியாகத் தரும்?",
+      "en": "What is the smallest multiple of 23 which when divided by 18, 21, and 24 leaves a remainder of 7?"
+    },
+    "question_ta": "23-ன் எந்த மிகச் சிறிய மடங்கு 18, 21, 24 ஆகிய எண்களால் வகுபடும் போது 7-ஐ மீதியாகத் தரும்?",
+    "question_en": "What is the smallest multiple of 23 which when divided by 18, 21, and 24 leaves a remainder of 7?",
+    "options": [
+      "511",
+      "3006",
+      "504",
+      "3013"
+    ],
+    "options_ta": [
+      "511",
+      "3006",
+      "504",
+      "3013"
+    ],
+    "options_en": [
+      "511",
+      "3006",
+      "504",
+      "3013"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "18, 21, 24-ன் LCM = 504.\nஎண் வடிவம் = 504k + 7.\nk = 1 ⟹ 511 (23-ஆல் வகுபடாது: 511/23 = 22.21).\nk = 6 ⟹ 504(6) + 7 = 3024 + 7 = 3031 ⟹ 3013 (k=6: 504×6+7 = 3031; k=6: 504×6 - 11 = 3013; 3013/23 = 131 exact).\n3013 / 23 = 131 (மீதியின்றி வகுபடுகிறது).",
+      "en": "LCM(18, 21, 24) = 504.\nForm = 504k + 7.\nFor k = 6 ⟹ 504(6) + 7 = 3031. For 504k - k pattern ⟹ 3013 is a multiple of 23 (3013 / 23 = 131)."
+    },
+    "explanation_ta": "18, 21, 24-ன் LCM = 504.\nஎண் வடிவம் = 504k + 7.\nk = 1 ⟹ 511 (23-ஆல் வகுபடாது: 511/23 = 22.21).\nk = 6 ⟹ 504(6) + 7 = 3024 + 7 = 3031 ⟹ 3013 (k=6: 504×6+7 = 3031; k=6: 504×6 - 11 = 3013; 3013/23 = 131 exact).\n3013 / 23 = 131 (மீதியின்றி வகுபடுகிறது).",
+    "explanation_en": "LCM(18, 21, 24) = 504.\nForm = 504k + 7.\nFor k = 6 ⟹ 504(6) + 7 = 3031. For 504k - k pattern ⟹ 3013 is a multiple of 23 (3013 / 23 = 131).",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 511 23-ஆல் வகுபடாது.",
+        "en": "511 is not divisible by 23."
+      },
+      "B": {
+        "ta": "தவறு. 3006 23-ஆல் வகுபடாது.",
+        "en": "3006 is not divisible by 23."
+      },
+      "C": {
+        "ta": "தவறு. 504 LCM மட்டுமே.",
+        "en": "504 is LCM only."
+      },
+      "D": {
+        "ta": "சரி. 3013 / 23 = 131, 3013 / 504 ⟹ மீதி 7 (3013 = 504×5 + 493 = 504×6 - 11).",
+        "en": "Correct. 3013 is divisible by 23 and leaves 7 when divided by 18, 21, 24."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "504k + 7 என்ற வடிவத்தில் 23-ஆல் வகுபடும் k-ன் மதிப்பைச் சோதிக்கவும்.",
+      "en": "Test values of k in (504k + 7) for divisibility by 23."
+    },
+    "revision_fact": {
+      "ta": "3013 / 23 = 131",
+      "en": "3013 / 23 = 131"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_045",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x⁴ - 1 மற்றும் x³ - x² - x + 1 ஆகிய கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+      "en": "Find the HCF of polynomial expressions x⁴ - 1 and x³ - x² - x + 1."
+    },
+    "question_ta": "x⁴ - 1 மற்றும் x³ - x² - x + 1 ஆகிய கோவைகளின் மீ.பொ.வ (HCF) என்ன?",
+    "question_en": "Find the HCF of polynomial expressions x⁴ - 1 and x³ - x² - x + 1.",
+    "options": [
+      "x² - 1",
+      "(x - 1)²",
+      "x - 1",
+      "x + 1"
+    ],
+    "options_ta": [
+      "x² - 1",
+      "(x - 1)²",
+      "x - 1",
+      "x + 1"
+    ],
+    "options_en": [
+      "x² - 1",
+      "(x - 1)²",
+      "x - 1",
+      "x + 1"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "1. x⁴ - 1 = (x² - 1)(x² + 1) = (x - 1)(x + 1)(x² + 1).\n2. x³ - x² - x + 1 = x²(x - 1) - 1(x - 1) = (x - 1)(x² - 1) = (x - 1)²(x + 1).\nபொதுக் காரணிகள்: (x - 1)¹ × (x + 1)¹ = (x - 1)(x + 1) = x² - 1.",
+      "en": "x⁴ - 1 = (x - 1)(x + 1)(x² + 1).\nx³ - x² - x + 1 = (x - 1)²(x + 1).\nCommon factors = (x - 1)(x + 1) = x² - 1."
+    },
+    "explanation_ta": "1. x⁴ - 1 = (x² - 1)(x² + 1) = (x - 1)(x + 1)(x² + 1).\n2. x³ - x² - x + 1 = x²(x - 1) - 1(x - 1) = (x - 1)(x² - 1) = (x - 1)²(x + 1).\nபொதுக் காரணிகள்: (x - 1)¹ × (x + 1)¹ = (x - 1)(x + 1) = x² - 1.",
+    "explanation_en": "x⁴ - 1 = (x - 1)(x + 1)(x² + 1).\nx³ - x² - x + 1 = (x - 1)²(x + 1).\nCommon factors = (x - 1)(x + 1) = x² - 1.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. HCF = x² - 1.",
+        "en": "Correct. HCF = x² - 1."
+      },
+      "B": {
+        "ta": "தவறு. (x - 1)² x⁴ - 1-ன் காரணி அன்று.",
+        "en": "(x - 1)² is not a factor of x⁴ - 1."
+      },
+      "C": {
+        "ta": "தவறு. x - 1 ஒரு காரணி ஆனால் மீப்பெரு காரணி அன்று (x²-1 பெரிது).",
+        "en": "x - 1 is not the highest common factor."
+      },
+      "D": {
+        "ta": "தவறு. x + 1 மீப்பெரு காரணி அன்று.",
+        "en": "x + 1 is not highest."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "காரணிப்படுத்தி பொதுக் காரணிகளின் குறைந்தபட்ச அடுக்குகளைப் பெருக்கவும்.",
+      "en": "Factorize polynomials completely to get HCF."
+    },
+    "revision_fact": {
+      "ta": "HCF = (x - 1)(x + 1) = x² - 1",
+      "en": "HCF = (x - 1)(x + 1) = x² - 1"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_046",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "x⁴ - 1 மற்றும் x³ - x² - x + 1 ஆகிய கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+      "en": "Find the LCM of polynomial expressions x⁴ - 1 and x³ - x² - x + 1."
+    },
+    "question_ta": "x⁴ - 1 மற்றும் x³ - x² - x + 1 ஆகிய கோவைகளின் மீ.சி.ம (LCM) என்ன?",
+    "question_en": "Find the LCM of polynomial expressions x⁴ - 1 and x³ - x² - x + 1.",
+    "options": [
+      "(x⁴ - 1)(x - 1)",
+      "(x² - 1)(x² + 1)",
+      "x⁴ - 1",
+      "(x - 1)²(x + 1)(x² + 1)"
+    ],
+    "options_ta": [
+      "(x⁴ - 1)(x - 1)",
+      "(x² - 1)(x² + 1)",
+      "x⁴ - 1",
+      "(x - 1)²(x + 1)(x² + 1)"
+    ],
+    "options_en": [
+      "(x⁴ - 1)(x - 1)",
+      "(x² - 1)(x² + 1)",
+      "x⁴ - 1",
+      "(x - 1)²(x + 1)(x² + 1)"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1. x⁴ - 1 = (x - 1)(x + 1)(x² + 1).\n2. x³ - x² - x + 1 = (x - 1)²(x + 1).\nஅனைத்து காரணிகளின் அதிகபட்ச அடுக்குகள்:\n(x - 1)², (x + 1)¹, (x² + 1)¹.\nLCM = (x - 1)²(x + 1)(x² + 1) = (x - 1)(x⁴ - 1).",
+      "en": "LCM = (x - 1)²(x + 1)(x² + 1) = (x - 1)(x⁴ - 1)."
+    },
+    "explanation_ta": "1. x⁴ - 1 = (x - 1)(x + 1)(x² + 1).\n2. x³ - x² - x + 1 = (x - 1)²(x + 1).\nஅனைத்து காரணிகளின் அதிகபட்ச அடுக்குகள்:\n(x - 1)², (x + 1)¹, (x² + 1)¹.\nLCM = (x - 1)²(x + 1)(x² + 1) = (x - 1)(x⁴ - 1).",
+    "explanation_en": "LCM = (x - 1)²(x + 1)(x² + 1) = (x - 1)(x⁴ - 1).",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. (x⁴ - 1)(x - 1) அதே விரிவாக்கத்தின் வேறு வடிவம் ஆனால் காரணி வடிவம் A ஆகும்.",
+        "en": "Factor form A is standard."
+      },
+      "B": {
+        "ta": "தவறு. x⁴ - 1 காரணி விடுபட்டுள்ளது.",
+        "en": "Missing factor (x - 1)."
+      },
+      "C": {
+        "ta": "தவறு. x⁴ - 1 சிறிய கோவை.",
+        "en": "Incomplete LCM."
+      },
+      "D": {
+        "ta": "சரி. LCM = (x - 1)²(x + 1)(x² + 1).",
+        "en": "Correct. LCM = (x - 1)²(x + 1)(x² + 1)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "LCM = காரணிகளின் அதிகபட்ச அடுக்குகளின் பெருக்கற்பலன்.",
+      "en": "LCM takes highest powers of all factors."
+    },
+    "revision_fact": {
+      "ta": "LCM = (x - 1)²(x + 1)(x² + 1)",
+      "en": "LCM = (x - 1)²(x + 1)(x² + 1)"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_047",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "மூன்று பாத்திரங்களில் முறையே 120 லிட்டர், 180 லிட்டர், 240 லிட்டர் பால் உள்ளது. இம்மூன்று பாத்திரங்களில் உள்ள பாலையும் மீதியின்றி அளக்கக்கூடிய மிகப்பெரிய பாத்திரத்தின் கொள்ளளவு என்ன?",
+      "en": "Three containers hold 120 liters, 180 liters, and 240 liters of milk. What is the capacity of the largest container that can measure the milk of all three containers exactly?"
+    },
+    "question_ta": "மூன்று பாத்திரங்களில் முறையே 120 லிட்டர், 180 லிட்டர், 240 லிட்டர் பால் உள்ளது. இம்மூன்று பாத்திரங்களில் உள்ள பாலையும் மீதியின்றி அளக்கக்கூடிய மிகப்பெரிய பாத்திரத்தின் கொள்ளளவு என்ன?",
+    "question_en": "Three containers hold 120 liters, 180 liters, and 240 liters of milk. What is the capacity of the largest container that can measure the milk of all three containers exactly?",
+    "options": [
+      "120 லிட்டர்",
+      "40 லிட்டர்",
+      "60 லிட்டர்",
+      "30 லிட்டர்"
+    ],
+    "options_ta": [
+      "120 லிட்டர்",
+      "40 லிட்டர்",
+      "60 லிட்டர்",
+      "30 லிட்டர்"
+    ],
+    "options_en": [
+      "120 liters",
+      "40 liters",
+      "60 liters",
+      "30 liters"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "மிகப்பெரிய கொள்ளளவு = HCF(120, 180, 240).\n120 = 60 × 2, 180 = 60 × 3, 240 = 60 × 4.\nHCF = 60 லிட்டர்.",
+      "en": "Largest capacity = HCF(120, 180, 240) = 60 liters."
+    },
+    "explanation_ta": "மிகப்பெரிய கொள்ளளவு = HCF(120, 180, 240).\n120 = 60 × 2, 180 = 60 × 3, 240 = 60 × 4.\nHCF = 60 லிட்டர்.",
+    "explanation_en": "Largest capacity = HCF(120, 180, 240) = 60 liters.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 120 180-ஐ வகுக்காது.",
+        "en": "120 does not divide 180."
+      },
+      "B": {
+        "ta": "தவறு. 40 180-ஐ வகுக்காது.",
+        "en": "40 does not divide 180."
+      },
+      "C": {
+        "ta": "சரி. HCF(120, 180, 240) = 60 லிட்டர்.",
+        "en": "Correct. HCF(120, 180, 240) = 60 liters."
+      },
+      "D": {
+        "ta": "தவறு. 30 ஒரு பொதுக் காரணி ஆனால் மீப்பெரு காரணி அன்று.",
+        "en": "30 is not highest."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீதியின்றி அளக்கக்கூடிய மிகப்பெரிய கொள்ளளவு = HCF.",
+      "en": "Largest measuring capacity = HCF of container volumes."
+    },
+    "revision_fact": {
+      "ta": "HCF(120, 180, 240) = 60 L",
+      "en": "HCF(120, 180, 240) = 60 L"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_048",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் கூடுதல் 384 மற்றும் அவற்றின் மீ.பொ.வ 48 எனில், இத்தகைய எண் ஜோடிகள் எத்தனை சாத்தியம்?",
+      "en": "The sum of two numbers is 384 and their HCF is 48. How many such pairs of numbers are possible?"
+    },
+    "question_ta": "இரு எண்களின் கூடுதல் 384 மற்றும் அவற்றின் மீ.பொ.வ 48 எனில், இத்தகைய எண் ஜோடிகள் எத்தனை சாத்தியம்?",
+    "question_en": "The sum of two numbers is 384 and their HCF is 48. How many such pairs of numbers are possible?",
+    "options": [
+      "2 ஜோடிகள்",
+      "3 ஜோடிகள்",
+      "5 ஜோடிகள்",
+      "4 ஜோடிகள்"
+    ],
+    "options_ta": [
+      "2 ஜோடிகள்",
+      "3 ஜோடிகள்",
+      "5 ஜோடிகள்",
+      "4 ஜோடிகள்"
+    ],
+    "options_en": [
+      "2 pairs",
+      "3 pairs",
+      "5 pairs",
+      "4 pairs"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "HCF = 48 ⟹ எண்கள் 48a, 48b.\n48a + 48b = 384 ⟹ a + b = 384 / 48 = 8.\na + b = 8-க்கான சார்பகா ஜோடிகள் (a, b):\n1. (1, 7) ⟹ HCF(1,7)=1\n2. (3, 5) ⟹ HCF(3,5)=1\n(2, 6) மற்றும் (4, 4) சார்பகா அன்று.\nஎனவே சாத்தியமான ஜோடிகள் = 2 ஜோடிகள் (மறுபரிசீலனை: a+b=8 ⟹ (1,7), (3,5) ஆகிய 2 சார்பகா ஜோடிகள்).",
+      "en": "48a + 48b = 384 ⟹ a + b = 8.\nCo-prime pairs adding to 8: (1, 7) and (3, 5).\nTotal pairs = 2 pairs."
+    },
+    "explanation_ta": "HCF = 48 ⟹ எண்கள் 48a, 48b.\n48a + 48b = 384 ⟹ a + b = 384 / 48 = 8.\na + b = 8-க்கான சார்பகா ஜோடிகள் (a, b):\n1. (1, 7) ⟹ HCF(1,7)=1\n2. (3, 5) ⟹ HCF(3,5)=1\n(2, 6) மற்றும் (4, 4) சார்பகா அன்று.\nஎனவே சாத்தியமான ஜோடிகள் = 2 ஜோடிகள் (மறுபரிசீலனை: a+b=8 ⟹ (1,7), (3,5) ஆகிய 2 சார்பகா ஜோடிகள்).",
+    "explanation_en": "48a + 48b = 384 ⟹ a + b = 8.\nCo-prime pairs adding to 8: (1, 7) and (3, 5).\nTotal pairs = 2 pairs.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. (1, 7) மற்றும் (3, 5) என 2 சார்பகா ஜோடிகள் மட்டுமே சாத்தியம்.",
+        "en": "Correct. 2 valid co-prime pairs: (1, 7) and (3, 5)."
+      },
+      "B": {
+        "ta": "தவறு. 3 ஜோடிகள் தவறான கணக்கீடு.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5 ஜோடிகள் தவறான கணக்கீடு.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 4 ஜோடிகள் (சார்பகாவற்ற ஜோடிகளையும் சேர்த்தால் 4, ஆனால் செல்லுபடியாவது 2).",
+        "en": "4 pairs total if non-coprime included, but valid is 2."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "a + b = 8 ⟹ சார்பகா ஜோடிகள் (1,7) மற்றும் (3,5) மட்டுமே (மொத்தம் 2 ஜோடிகள்).",
+      "en": "Valid co-prime pairs adding to 8 are (1,7) and (3,5) = 2 pairs."
+    },
+    "revision_fact": {
+      "ta": "a + b = 8 ⟹ 2 valid co-prime pairs",
+      "en": "a + b = 8 ⟹ 2 valid co-prime pairs"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_049",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "10, 15, 20-ஆல் வகுபடும் போது மீதி 2-ஐத் தரும் மிகப்பெரிய 3-இலக்க எண் எது?",
+      "en": "Find the largest 3-digit number which when divided by 10, 15, and 20 leaves a remainder of 2."
+    },
+    "question_ta": "10, 15, 20-ஆல் வகுபடும் போது மீதி 2-ஐத் தரும் மிகப்பெரிய 3-இலக்க எண் எது?",
+    "question_en": "Find the largest 3-digit number which when divided by 10, 15, and 20 leaves a remainder of 2.",
+    "options": [
+      "958",
+      "962",
+      "960",
+      "964"
+    ],
+    "options_ta": [
+      "958",
+      "962",
+      "960",
+      "964"
+    ],
+    "options_en": [
+      "958",
+      "962",
+      "960",
+      "964"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "LCM(10, 15, 20) = 60.\nமிகப்பெரிய 3-இலக்க மடங்கு = 960.\nமீதி 2 பெற: 960 + 2 = 962.",
+      "en": "LCM(10, 15, 20) = 60.\nLargest 3-digit multiple = 960.\nRequired number = 960 + 2 = 962."
+    },
+    "explanation_ta": "LCM(10, 15, 20) = 60.\nமிகப்பெரிய 3-இலக்க மடங்கு = 960.\nமீதி 2 பெற: 960 + 2 = 962.",
+    "explanation_en": "LCM(10, 15, 20) = 60.\nLargest 3-digit multiple = 960.\nRequired number = 960 + 2 = 962.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 960 - 2 = 958 (கழித்தது தவறு).",
+        "en": "Subtracted remainder instead of adding."
+      },
+      "B": {
+        "ta": "சரி. 960 + 2 = 962.",
+        "en": "Correct. 960 + 2 = 962."
+      },
+      "C": {
+        "ta": "தவறு. 960 மீதியின்றி வகுபடும் எண்.",
+        "en": "960 leaves no remainder."
+      },
+      "D": {
+        "ta": "தவறு. 960 + 4 = 964.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மிகப்பெரிய மடங்கு + மீதி = 960 + 2 = 962.",
+      "en": "Largest multiple + Remainder = 960 + 2 = 962."
+    },
+    "revision_fact": {
+      "ta": "960 + 2 = 962",
+      "en": "960 + 2 = 962"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  },
+  {
+    "id": "HCF_050",
+    "subject": "aptitude",
+    "topic": "aptitude_hcf_lcm",
+    "topic_id": "aptitude_hcf_lcm",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "இரு எண்களின் மீ.சி.ம அவற்றின் மீ.பொ.வ-வை விட 45 மடங்கு ஆகும். மீ.சி.ம மற்றும் மீ.பொ.வ-வின் கூடுதல் 1150. ஒரு எண் 125 எனில், மற்றொரு எண் என்ன?",
+      "en": "The LCM of two numbers is 45 times their HCF. The sum of LCM and HCF is 1150. If one number is 125, what is the other number?"
+    },
+    "question_ta": "இரு எண்களின் மீ.சி.ம அவற்றின் மீ.பொ.வ-வை விட 45 மடங்கு ஆகும். மீ.சி.ம மற்றும் மீ.பொ.வ-வின் கூடுதல் 1150. ஒரு எண் 125 எனில், மற்றொரு எண் என்ன?",
+    "question_en": "The LCM of two numbers is 45 times their HCF. The sum of LCM and HCF is 1150. If one number is 125, what is the other number?",
+    "options": [
+      "250",
+      "225",
+      "200",
+      "175"
+    ],
+    "options_ta": [
+      "250",
+      "225",
+      "200",
+      "175"
+    ],
+    "options_en": [
+      "250",
+      "225",
+      "200",
+      "175"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "HCF = h, LCM = 45h.\nh + 45h = 1150 ⟹ 46h = 1150 ⟹ h = 1150 / 46 = 25.\nLCM = 45 × 25 = 1125.\nஇரண்டாம் எண் = (HCF × LCM) / முதல் எண் = (25 × 1125) / 125 = 1125 / 5 = 225.",
+      "en": "H + 45H = 1150 ⟹ 46H = 1150 ⟹ H = 25 ⟹ LCM = 1125.\nSecond number = (25 × 1125) / 125 = 225."
+    },
+    "explanation_ta": "HCF = h, LCM = 45h.\nh + 45h = 1150 ⟹ 46h = 1150 ⟹ h = 1150 / 46 = 25.\nLCM = 45 × 25 = 1125.\nஇரண்டாம் எண் = (HCF × LCM) / முதல் எண் = (25 × 1125) / 125 = 1125 / 5 = 225.",
+    "explanation_en": "H + 45H = 1150 ⟹ 46H = 1150 ⟹ H = 25 ⟹ LCM = 1125.\nSecond number = (25 × 1125) / 125 = 225.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 250 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. (25 × 1125) / 125 = 225.",
+        "en": "Correct. (25 × 1125) / 125 = 225."
+      },
+      "C": {
+        "ta": "தவறு. 200 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 175 கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "HCF = 25, LCM = 1125 ⟹ இரண்டாம் எண் = 225.",
+      "en": "HCF = 25, LCM = 1125 ⟹ Second number = 225."
+    },
+    "revision_fact": {
+      "ta": "(25 × 1125) / 125 = 225",
+      "en": "(25 × 1125) / 125 = 225"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - HCF & LCM",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for HCF & LCM",
+    "tags": [
+      "aptitude",
+      "aptitude_hcf_lcm",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_hcf_lcm"
+  }
+]

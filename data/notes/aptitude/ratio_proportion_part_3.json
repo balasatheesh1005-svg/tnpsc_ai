@@ -1,0 +1,322 @@
+{
+  "topic": "ratio_proportion_part_3",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Ratio & Proportion Part 3 — Advanced TNPSC Applications & Master Revision",
+  "title_ta": "விகிதம் மற்றும் விகிதாச்சாரம் பகுதி 3 — TNPSC பயன்பாட்டு மாதிரிகள் மற்றும் மீள்பார்வை",
+
+  "definition": {
+    "en": "Part 3 covers advanced TNPSC application models including ratio transformations after addition/subtraction, mixture replacement ratios, income-expenditure savings models, ratio comparisons, and master revision.",
+    "ta": "பகுதி 3-ல் எண்களைக் கூட்டுதல்/கழித்தலால் ஏற்படும் மாறிய விகிதங்கள், கலவை மாற்றங்கள், வருமானம்-செலவு-சேமிப்பு மாதிரிகள், விகித ஒப்பீடு மற்றும் முழுமையான மீள்பார்வை குறிப்புகள் இடம்பெற்றுள்ளன."
+  },
+
+  "exam_importance": {
+    "en": "Changed ratio transformation questions, mixture replacement problems, and income-expenditure ratios are guaranteed high-weightage questions in TNPSC Group 1, Group 2/2A, and Group 4 exams.",
+    "ta": "மாறிய விகிதங்கள், கலவை வினாக்கள் மற்றும் வருமானம்-செலவு விகித வினாக்கள் TNPSC குரூப் 1, குரூப் 2 மற்றும் குரூப் 4 தேர்வுகளில் அதிக மதிப்பெண்களைப் பெற்றுத் தரும் முதன்மை வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Changed Ratio Transformation Formula (மாறிய விகித சமன்பாட்டுச் சூத்திரம்)",
+      "formula": "\\frac{a k \\pm p}{b k \\pm q} = \\frac{m}{n} \\implies n(a k \\pm p) = m(b k \\pm q)",
+      "explanation": {
+        "en": "Let original quantities be ak and bk. After adding/subtracting p and q, equate new ratio to m/n and solve for multiplier k.",
+        "ta": "ஆரம்ப எண்களை ak, bk என்க. p, q ஐ கூட்டவோ கழிக்கவோ செய்த பின் m/n எனச் சமன்பாடு அமைத்து k-ன் மதிப்பைக் கண்டறிதல்."
+      }
+    },
+    {
+      "title": "Mixture Ratio Addition Formula (கலவையில் பொருள் சேர்க்கும் சூத்திரம்)",
+      "formula": "\\text{If initial ratio of } M:W \\text{ is } a:b \\text{ in total volume } V, \\text{ Milk } = \\frac{a}{a+b}V, \\text{ Water } = \\frac{b}{a+b}V",
+      "explanation": {
+        "en": "Calculate absolute quantities of milk and water first. When water is added, milk remains constant while water becomes (Water + x).",
+        "ta": "முதலில் பால் மற்றும் தண்ணீரின் தனித்தனி அளவுகளைக் கணக்கிடவும். தண்ணீர் சேர்க்கப்படும் போது பாலின் அளவு மாறாது; தண்ணீரின் அளவு (தண்ணீர் + x) ஆகும்."
+      }
+    },
+    {
+      "title": "Income, Expenditure & Savings Relation (வருமானம், செலவு மற்றும் சேமிப்பு)",
+      "formula": "\\text{Income} = \\text{Expenditure} + \\text{Savings} \\implies \\text{Expenditure} = \\text{Income} - \\text{Savings}",
+      "explanation": {
+        "en": "When incomes are in ratio a:b and expenditures in c:d, express expenditures as (Income - Savings) to solve for multiplier k.",
+        "ta": "வருமானங்கள் a:b மற்றும் செலவுகள் c:d என்ற விகிதத்தில் இருந்தால், (வருமானம் - சேமிப்பு) = செலவு என சமன்பாடு அமைக்கவும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Comparing Ratios Method (விகிதங்களை ஒப்பிடும் முறைகள்)",
+      "points": {
+        "en": [
+          "Method 1: Convert ratios into decimals (e.g. 7:13 = 7/13 = 0.538). The smallest decimal represents the smallest ratio.",
+          "Method 2: Convert fractions to common denominators using LCM, then compare numerators.",
+          "Method 3: Cross multiplication (a/b vs c/d -> compare a×d with b×c)."
+        ],
+        "ta": [
+          "முறை 1: விகிதங்களை தசம எண்களாக மாற்றுதல் (எ.கா. 7:13 = 7/13 = 0.538). சிறிய தசமம் சிறிய விகிதத்தைக் குறிக்கும்.",
+          "முறை 2: மீ.சி.ம பயன்படுத்தி பகுதிகளின் அளவை சமப்படுத்தி பகுதிகளை ஒப்பிடுதல்.",
+          "முறை 3: குறுக்குப் பெருக்கல் முறை (a/b மற்றும் c/d -> a×d மற்றும் b×c ஐ ஒப்பிடுதல்)."
+        ]
+      }
+    },
+    {
+      "title": "Mixture Replacement Preconditions (கலவை வினாக்களின் முக்கியப் பண்பு)",
+      "points": {
+        "en": [
+          "When ONLY water is added to a milk-water mixture, the quantity of MILK remains unchanged.",
+          "Equate the milk quantity before and after addition to find the added quantity of water instantly.",
+          "Always verify if the added component is water, milk, or a whole mixture."
+        ],
+        "ta": [
+          "பால்காரர் தண்ணீரை மட்டுமே சேர்க்கும் போது, பாலின் அளவு தொடக்கத்திலும் இறுதியிலும் மாறாமல் நிலையாக இருக்கும்.",
+          "தண்ணீர் சேர்க்கப்படுவதற்கு முன்பும் பின்பும் உள்ள பாலின் அளவை சமப்படுத்தினால் சேர்க்கப்பட்ட தண்ணீரை நொடியில் கண்டறியலாம்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Equal Subtraction Changed Ratio Shortcut",
+      "points": {
+        "en": [
+          "When same number x is subtracted from both terms of ratio a:b to get c:d:",
+          "Check difference between terms (b - a) and (d - c).",
+          "Equalize difference by cross multiplying ratio terms to find multiplier k in a single step."
+        ],
+        "ta": [
+          "இரு உறுப்புகளிலும் ஒரே எண் கழிக்கப்பட்டு விகிதம் மாறும் போது, விகித உறுப்புகளின் வித்தியாசங்களை சமப்படுத்தி k-ன் மதிப்பை எளிதில் பெறலாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Subtracting Ratio Terms Directly",
+      "explanation": {
+        "en": "Subtracting expenditure ratio directly from income ratio (e.g. Income 5:4 minus Expenditure 3:2 = Savings 2:2) works ONLY when savings amounts AND ratio differences are identical.",
+        "ta": "வருமான விகிதத்தில் இருந்து செலவு விகிதத்தை நேரடியாகக் கழிப்பது சேமிப்பு தொகையும் விகித வித்தியாசமும் சமமாக இருக்கும் போது மட்டுமே பொருந்தும்."
+      },
+      "avoidance": {
+        "en": "Use the universal algebraic method: (5k - Savings) / (4k - Savings) = 3/2 to stay 100% safe.",
+        "ta": "எப்போதும் (5k - சேமிப்பு) / (4k - சேமிப்பு) = 3/2 என்ற இயற்கணித முறையைப் பயன்படுத்தி விடையை உறுதி செய்க."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Which of the following is the smallest ratio? (Options: A) 7 : 13, B) 17 : 25, C) 7 : 15, D) 15 : 23)",
+      "method": "Decimal Conversion Comparison Method",
+      "steps": [
+        "Step 1: Convert each ratio into decimal form:",
+        "7 : 13 = 7 / 13 = 0.538",
+        "17 : 25 = 17 / 25 = 0.680",
+        "7 : 15 = 7 / 15 = 0.466",
+        "15 : 23 = 15 / 23 = 0.652",
+        "Step 2: Compare decimal values: 0.466 < 0.538 < 0.652 < 0.680.",
+        "Step 3: Smallest decimal value corresponds to 7 : 15."
+      ],
+      "answer": "C) 7 : 15"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Monthly incomes of A and B are in the ratio 5 : 4, and their monthly expenditures are in the ratio 3 : 2. If each saves ₹800 per month, find the monthly income of A.",
+      "method": "Income - Savings = Expenditure Model",
+      "steps": [
+        "Step 1: Let monthly incomes be 5k and 4k.",
+        "Step 2: Monthly savings for each = ₹800.",
+        "Step 3: Expenditures are (5k - 800) and (4k - 800).",
+        "Step 4: Ratio of expenditures: \\(\\frac{5k - 800}{4k - 800} = \\frac{3}{2}\\).",
+        "Step 5: Cross multiply: \\(2(5k - 800) = 3(4k - 800) \\implies 10k - 1600 = 12k - 2400\\).",
+        "Step 6: Solve for k: \\(2k = 800 \\implies k = 400\\).",
+        "Step 7: A's monthly income = 5 × 400 = ₹2,000."
+      ],
+      "answer": "₹2,000"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, then they are in the ratio 12 : 23. Find the second number.",
+      "method": "Changed Ratio Subtraction Equation",
+      "steps": [
+        "Step 1: Let the two numbers be 3k and 5k.",
+        "Step 2: Subtract 9 from each: (3k - 9) and (5k - 9).",
+        "Step 3: Set up equation: \\(\\frac{3k - 9}{5k - 9} = \\frac{12}{23}\\).",
+        "Step 4: Cross multiply: \\(23(3k - 9) = 12(5k - 9)\\).",
+        "Step 5: Expand: \\(69k - 207 = 60k - 108\\).",
+        "Step 6: Simplify: \\(9k = 99 \\implies k = 11\\).",
+        "Step 7: Second number = 5k = 5 × 11 = 55."
+      ],
+      "answer": "55"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In a mixture of 60 liters, the ratio of milk and water is 2 : 1. If this ratio is to be 1 : 2, then what is the quantity of water to be further added?",
+      "method": "Mixture Addition (Constant Milk Component)",
+      "steps": [
+        "Step 1: Calculate initial quantities in 60 L (ratio 2 : 1, total 3 parts):",
+        "Milk = \\(\\frac{2}{3} \\times 60 = 40\\) liters.",
+        "Water = \\(\\frac{1}{3} \\times 60 = 20\\) liters.",
+        "Step 2: Let added water be x liters. Milk remains 40 L, Water becomes (20 + x) L.",
+        "Step 3: Equate new ratio to 1 : 2: \\(\\frac{40}{20 + x} = \\frac{1}{2}\\).",
+        "Step 4: Cross multiply: \\(80 = 20 + x \\implies x = 60\\) liters."
+      ],
+      "answer": "60 liters"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The ratio of boys to girls in a school was 5 : 3. When 50 new boys joined and 50 girls left, the ratio became 2 : 1. Find the original total number of students.",
+      "method": "Multi-Stage Ratio Change Equation",
+      "steps": [
+        "Step 1: Let original number of boys be 5k and girls be 3k.",
+        "Original total students = 5k + 3k = 8k.",
+        "Step 2: New number of boys = 5k + 50.",
+        "Step 3: New number of girls = 3k - 50.",
+        "Step 4: Set up equation: \\(\\frac{5k + 50}{3k - 50} = \\frac{2}{1}\\).",
+        "Step 5: Cross multiply: \\(5k + 50 = 2(3k - 50) \\implies 5k + 50 = 6k - 100\\).",
+        "Step 6: Solve for k: \\(k = 150\\).",
+        "Step 7: Original total students = 8 × 150 = 1,200."
+      ],
+      "answer": "1,200"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A sum of money is divided among A, B, C such that A's share : B's share = 3 : 4 and B's share : C's share = 2 : 5. If the difference between C's share and A's share is ₹2,100, find the total amount.",
+      "method": "Unified Combined Ratio & Difference Model",
+      "steps": [
+        "Step 1: Combine ratios A:B = 3:4 and B:C = 2:5.",
+        "Multiply B:C by 2 \\(\\implies B:C = 4:10\\).",
+        "Combined ratio A : B : C = 3 : 4 : 10.",
+        "Step 2: Let shares be 3k, 4k, 10k. Total sum = 17k.",
+        "Step 3: Difference between C and A = 10k - 3k = 7k = ₹2,100 \\(\\implies k = 300\\).",
+        "Step 4: Total amount = 17 × 300 = ₹5,100."
+      ],
+      "answer": "₹5,100"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Two numbers are in the ratio 5 : 7. If 6 is added to each number, the ratio becomes 3 : 4. Find the numbers.",
+      "options": ["A) 15 and 21", "B) 20 and 28", "C) 30 and 42", "D) 25 and 35"],
+      "correct_option": "C) 30 and 42",
+      "explanation": "(5k + 6)/(7k + 6) = 3/4 => 20k + 24 = 21k + 18 => k = 6. Numbers = 5(6)=30 and 7(6)=42."
+    },
+    {
+      "id": 2,
+      "question": "In a mixture of 45 liters, the ratio of liquid A and liquid B is 4 : 1. How much liquid B must be added to make the ratio 3 : 2?",
+      "options": ["A) 12 liters", "B) 15 liters", "C) 18 liters", "D) 20 liters"],
+      "correct_option": "B) 15 liters",
+      "explanation": "Liquid A = (4/5)×45 = 36 L. Liquid B = 9 L. 36 / (9 + x) = 3/2 => 72 = 27 + 3x => 3x = 45 => x = 15 L."
+    },
+    {
+      "id": 3,
+      "question": "Monthly incomes of X and Y are in ratio 4 : 3 and expenditures in 3 : 2. If each saves ₹600, find X's income.",
+      "options": ["A) ₹1,800", "B) ₹2,400", "C) ₹3,000", "D) ₹2,000"],
+      "correct_option": "B) ₹2,400",
+      "explanation": "(4k - 600)/(3k - 600) = 3/2 => 8k - 1200 = 9k - 1800 => k = 600. X's income = 4(600) = ₹2,400."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following ratios is the largest?",
+      "options": ["A) 5 : 8", "B) 7 : 10", "C) 13 : 20", "D) 3 : 5"],
+      "correct_option": "B) 7 : 10",
+      "explanation": "5/8 = 0.625, 7/10 = 0.700, 13/20 = 0.650, 3/5 = 0.600. 7:10 (0.700) is the largest."
+    },
+    {
+      "id": 5,
+      "question": "The ratio of ages of two persons is 4 : 7 and one is 18 years older than the other. Find the sum of their ages.",
+      "options": ["A) 55 years", "B) 66 years", "C) 77 years", "D) 88 years"],
+      "correct_option": "B) 66 years",
+      "explanation": "Difference = 7k - 4k = 3k = 18 => k = 6. Sum = 11k = 11 × 6 = 66 years."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Ratio Comparison Method",
+      "back": "Convert ratios to decimals. The largest decimal represents the largest ratio."
+    },
+    {
+      "front": "Changed Ratio General Formula",
+      "back": "(a k ± p) / (b k ± q) = m / n. Cross multiply to find k."
+    },
+    {
+      "front": "Income - Expenditure - Savings Model",
+      "back": "Income = Expenditure + Savings => (Income - Savings) / (Income - Savings) = Exp Ratio."
+    },
+    {
+      "front": "Mixture Water Addition Principle",
+      "back": "Quantity of Milk remains CONSTANT before and after adding water."
+    },
+    {
+      "front": "A:B and B:C Difference Model",
+      "back": "Combine to A:B:C first, then equate difference (C - A) to given amount."
+    }
+  ],
+
+  "mind_map": {
+    "title": "Ratio Part 3 — Advanced Applications & Master Revision Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Advanced Ratio Applications",
+        "children": ["changed_ratios", "mixture_models", "income_exp"]
+      },
+      {
+        "id": "changed_ratios",
+        "label": "Changed Ratio Transformations",
+        "children": ["add_sub_equation", "diff_equalization"]
+      },
+      {
+        "id": "add_sub_equation",
+        "label": "(ak ± p) / (bk ± q) = m/n",
+        "children": []
+      },
+      {
+        "id": "diff_equalization",
+        "label": "Solve for multiplier k",
+        "children": []
+      },
+      {
+        "id": "mixture_models",
+        "label": "Mixture Replacement",
+        "children": ["constant_milk", "added_water"]
+      },
+      {
+        "id": "constant_milk",
+        "label": "Milk Volume Remains Constant",
+        "children": []
+      },
+      {
+        "id": "added_water",
+        "label": "Milk / (Water + x) = New Ratio",
+        "children": []
+      },
+      {
+        "id": "income_exp",
+        "label": "Income & Expenditure Ratios",
+        "children": ["inc_minus_sav", "diff_share_model"]
+      },
+      {
+        "id": "inc_minus_sav",
+        "label": "(Inc - Savings) = Expenditure",
+        "children": []
+      },
+      {
+        "id": "diff_share_model",
+        "label": "Share Difference = (C - A)k = Amount",
+        "children": []
+      }
+    ]
+  }
+}

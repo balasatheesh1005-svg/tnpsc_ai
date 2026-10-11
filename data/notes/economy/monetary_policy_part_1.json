@@ -1,0 +1,820 @@
+{
+  "meta": {
+    "topic_id": "economy_monetary_policy_part_1",
+    "repository_id": "economy_monetary_policy",
+    "display_title": "Monetary Policy – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Monetary Policy",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundation",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Monetary Policy",
+    "Reserve Money M0",
+    "Narrow Money M1",
+    "Broad Money M3",
+    "Money Multiplier",
+    "Section 45ZA",
+    "Y.V. Reddy Committee"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the constitutional and statutory mandate of Monetary Policy.",
+        "Comprehend the differences between monetary aggregates (M0, M1, M2, M3, M4)."
+      ],
+      "ta": [
+        "பணவியல் கொள்கையின் அரசியலமைப்பு மற்றும் சட்டப்பூர்வ ஆணையைப் புரிந்து கொள்ளுதல்.",
+        "பணவியல் தொகுப்புகளுக்கு (M0, M1, M2, M3, M4) இடையிலான வேறுபாடுகளை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the formulas for M0, M1, M3, and the Money Multiplier.",
+        "Recall the enactment year of the RBI Act (1934) and commencement date (April 1, 1935)."
+      ],
+      "ta": [
+        "M0, M1, M3 மற்றும் பணப் பெருக்கிக்கான சூத்திரங்களை நினைவில் நிறுத்துதல்.",
+        "ரிசர்வ் வங்கிச் சட்டம் (1934) மற்றும் செயல்பாட்டுத் தொடக்கத் தேதியை (ஏப்ரல் 1, 1935) நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the liquidity hierarchy from M1 to M4.",
+        "Examine the role of Reserve Money as the foundational credit base."
+      ],
+      "ta": [
+        "M1 முதல் M4 வரையிலான பணப்புழக்க வரிசையை ஆய்வு செய்தல்.",
+        "அடிப்படை கடன் தளமாக இருப்புப் பணத்தின் பங்கை பகுப்பாய்வு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply the money multiplier formula to calculate bank credit expansion.",
+        "Identify TNPSC exam traps regarding postal deposit inclusions in M2 vs M4."
+      ],
+      "ta": [
+        "வங்கி கடன் பெருக்கத்தைக் கணக்கிட பணப் பெருக்கி சூத்திரத்தைப் பயன்படுத்துதல்.",
+        "M2 vs M4-ல் அஞ்சலக வைப்பு சேர்க்கை குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Monetary Policy – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_core_objectives",
+      "title_en": "Strategic Objectives of Monetary Policy",
+      "title_ta": "பணவியல் கொள்கையின் முக்கிய உத்திசார் நோக்கங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_money_supply_aggregates",
+      "title_en": "Measures of Money Supply in India (Monetary Aggregates)",
+      "title_ta": "இந்தியாவில் பணப்புழக்க அளவீடுகள் (பணவியல் தொகுப்புகள்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_statutory_framework",
+      "title_en": "Constitutional & Statutory Basis: RBI Act, 1934",
+      "title_ta": "அரசியலமைப்பு & சட்டப்பூர்வ அடிப்படை: ரிசர்வ் வங்கிச் சட்டம், 1934",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Monetary Policy is the macroeconomic regulatory policy formulated by the central bank (Reserve Bank of India) to control money supply, availability of credit, and cost of borrowing (interest rates) to attain price stability and sustain economic growth.",
+      "ta": "பணவியல் கொள்கை (Monetary Policy) என்பது விலை நிலைத்தன்மையை அடைவதற்கும் பொருளாதார வளர்ச்சியை நிலைநிறுத்துவதற்கும், பணப்புழக்கம், கடன் கிடைக்கும் தன்மை மற்றும் கடன் பெறுவதற்கான செலவை (வட்டி விகிதங்கள்) ஒழுங்குபடுத்த மத்திய வங்கியால் (இந்திய ரிசர்வ் வங்கி) வகுக்கப்படும் பேரியல் பொருளாதாரக் கொள்கையாகும்."
+    },
+    "introduction": {
+      "en": "Monetary policy serves as the core financial steering mechanism of a modern economy. In India, it transitioned from an earlier multiple-indicator approach to a legally anchored Flexible Inflation Targeting (FIT) regime in 2016. Governed by the Reserve Bank of India Act, 1934, monetary policy controls liquidity across the banking sector to influence aggregate consumer demand, savings behavior, foreign exchange dynamics, and capital investment.",
+      "ta": "பணவியல் கொள்கையானது நவீன பொருளாதாரத்தின் முதன்மை நிதி வழிநடத்தும் அமைப்பாக செயல்படுகிறது. இந்தியாவில், இது முந்தைய பல-குறிகாட்டி அணுகுமுறையிலிருந்து 2016-ல் சட்டப்பூர்வ நெகிழ்வான பணவீக்க இலக்கு (Flexible Inflation Targeting - FIT) முறைக்கு மாறியது. ரிசர்வ் வங்கிச் சட்டம் 1934-ன் கீழ் நிர்வகிக்கப்படும் இப்பணவியல் கொள்கை, வங்கித் துறையின் பணப்புழக்கத்தைக் கட்டுப்படுத்தி ஒட்டுமொத்த நுகர்வோர் தேவை, சேமிப்பு நடத்தை, அந்நியச் செலாவணி மற்றும் மூலதன முதலீட்டை வழிநடத்துகிறது."
+    },
+    "sec_core_objectives": [
+      {
+        "title": "Price Stability (Primary Statutory Mandate)",
+        "title_ta": "விலை நிலைத்தன்மை (முதன்மை சட்டப்பூர்வ ஆணை)",
+        "points": {
+          "en": [
+            "Under the amended Section 45ZA of the RBI Act, 1934, price stability is the primary objective of monetary policy.",
+            "Anchors inflation expectations among businesses and households, preventing the erosion of purchasing power, especially for vulnerable fixed-income populations."
+          ],
+          "ta": [
+            "திருத்தப்பட்ட ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 45ZA-ன் கீழ், விலை நிலைத்தன்மையைப் பேணுவதே பணவியல் கொள்கையின் முதன்மை நோக்கமாகும்.",
+            "தொழில்முனைவோர் மற்றும் குடும்பங்களிடையே பணவீக்க எதிர்பார்ப்புகளை நிலைநிறுத்தி, நலிவடைந்த மற்றும் நிலையான வருமானம் ஈட்டும் மக்களின் வாங்கும் சக்தி அரிப்பதைத் தடுக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Sustainable Economic Growth",
+        "title_ta": "நிலையான பொருளாதார வளர்ச்சி",
+        "points": {
+          "en": [
+            "Ensures adequate and affordable credit flow to productive sectors of the economy (agriculture, industry, services, MSMEs).",
+            "Maintains interest rates at levels that encourage domestic corporate borrowing and productive capital investments without igniting asset price bubbles."
+          ],
+          "ta": [
+            "பொருளாதாரத்தின் உற்பத்தித் துறைகளுக்கு (விவசாயம், தொழில், சேவைகள், MSME) போதுமான மற்றும் மலிவான கடன் கிடைப்பதை உறுதி செய்கிறது.",
+            "சொத்துக் குமிழ்களை உருவாக்காமல், உள்நாட்டு நிறுவனங்களின் கடன் வாங்குதலையும் மூலதன முதலீடுகளையும் ஊக்குவிக்கும் அளவில் வட்டி விகிதங்களைப் பராமரிக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Exchange Rate and Financial Stability",
+        "title_ta": "செலாவணி விகிதம் மற்றும் நிதி ஸ்திரத்தன்மை",
+        "points": {
+          "en": [
+            "Prevents excessive and disorderly volatility in the external value of the Indian Rupee against major global currencies (USD, EUR).",
+            "Supervises interbank liquidity to prevent systemic payment defaults, bank runs, and contagion in the sovereign debt and corporate bond markets."
+          ],
+          "ta": [
+            "முக்கிய சர்வதேச நாணயங்களுக்கு (USD, EUR) எதிராக இந்திய ரூபாயின் மதிப்பில் ஏற்படும் அதீத மற்றும் கட்டுப்பாடற்ற ஏற்ற இறக்கங்களைத் தடுக்கிறது.",
+            "வங்கி அமைப்பில் தொடர் நிதித் தோல்விகள், வங்கி அச்ச பீதி மற்றும் நிதிச் சந்தைகளில் நச்சுத்தன்மை பரவுவதைத் தடுக்க வங்கிகளுக்கு இடையேயான பணப்புழக்கத்தை மேற்பார்வையிடுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_money_supply_aggregates": [
+      {
+        "title": "Reserve Money (M0 / High-Powered Money)",
+        "title_ta": "இருப்புப் பணம் (M0 / உயர்-ஆற்றல் பணம்)",
+        "points": {
+          "en": [
+            "Formula: M0 = Currency in Circulation + Bankers' Deposits with the RBI + 'Other' Deposits with the RBI.",
+            "Significance: Represents the total sovereign monetary liability of the Reserve Bank of India; acts as the primary monetary base upon which the commercial banking system creates credit."
+          ],
+          "ta": [
+            "சூத்திரம்: M0 = புழக்கத்தில் உள்ள நாணயம் + ரிசர்வ் வங்கியிடம் உள்ள வங்கிகளின் வைப்புத்தொகை + ரிசர்வ் வங்கியிடம் உள்ள 'பிற' வைப்புகள்.",
+            "முக்கியத்துவம்: இது இந்திய ரிசர்வ் வங்கியின் மொத்த பணவியல் பொறுப்பைக் குறிக்கிறது; வணிக வங்கிகள் கடன் உருவாக்க அடிப்படையாக விளங்கும் முதன்மை அடித்தளமாகும்."
+          ]
+        }
+      },
+      {
+        "title": "Narrow Money (M1 and M2)",
+        "title_ta": "குறுகிய பணம் (M1 மற்றும் M2)",
+        "points": {
+          "en": [
+            "M1 Formula: M1 = Currency with the Public + Demand Deposits with the Banking System (Savings & Current a/cs) + 'Other' Deposits with RBI.",
+            "M1 Characteristics: Highly liquid transactional money; directly spendable for immediate purchases without conversion delays.",
+            "M2 Formula: M2 = M1 + Post Office Savings Bank Deposits."
+          ],
+          "ta": [
+            "M1 சூத்திரம்: M1 = பொதுமக்களிடம் உள்ள ரொக்க நாணயம் + வங்கிகளில் உள்ள கேட்பு வைப்புகள் (சேமிப்பு & நடப்புக் கணக்குகள்) + ரிசர்வ் வங்கியிடம் உள்ள 'பிற' வைப்புகள்.",
+            "M1 பண்புகள்: அதிக பணப்புழக்கத்தன்மை (Liquidity) கொண்ட உடனடி பரிவர்த்தனைப் பணம்; காலதாமதமின்றி உடனடியாக செலவிடக்கூடியது.",
+            "M2 சூத்திரம்: M2 = M1 + அஞ்சலக சேமிப்பு வங்கி வைப்புகள்."
+          ]
+        }
+      },
+      {
+        "title": "Broad Money (M3 and M4)",
+        "title_ta": "பரந்த பணம் (M3 மற்றும் M4)",
+        "points": {
+          "en": [
+            "M3 Formula: M3 = M1 + Time Deposits with the Banking System (Fixed Deposits - FDs & Recurring Deposits - RDs).",
+            "Significance of M3: Most comprehensive and widely utilized measure of broad money supply in India; reflects total liquid resources in the formal financial economy.",
+            "M4 Formula: M4 = M3 + Total Post Office Deposits (excluding National Savings Certificates - NSC).",
+            "Money Multiplier ($m$): The ratio of Broad Money (M3) to Reserve Money (M0), representing credit expansion: $m = \\frac{M3}{M0}$."
+          ],
+          "ta": [
+            "M3 சூத்திரம்: M3 = M1 + வங்கி அமைப்பில் உள்ள கால வைப்புகள் (நிலை வைப்பு - FD & தொடர் வைப்பு - RD).",
+            "M3 முக்கியத்துவம்: இந்தியாவில் மிக பரவலாகப் பயன்படுத்தப்படும் முதன்மையான பரந்த பண அளவீடு; பொருளாதாரத்தில் உள்ள மொத்த நிதி வளங்களைக் காட்டுகிறது.",
+            "M4 சூத்திரம்: M4 = M3 + அனைத்து அஞ்சலக வைப்புத் தொகைகள் (தேசிய சேமிப்புப் பத்திரங்கள் - NSC நீங்கலாக).",
+            "பணப் பெருக்கி (Money Multiplier - $m$): இருப்புப் பணத்திற்கு (M0) பரந்த பணத்திற்குமான (M3) விகிதம்: $m = \\frac{M3}{M0}$."
+          ]
+        }
+      }
+    ],
+    "sec_statutory_framework": [
+      {
+        "title": "Preamble Mandate of the RBI Act",
+        "title_ta": "ரிசர்வ் வங்கிச் சட்டத்தின் முகப்புரை ஆணை",
+        "points": {
+          "en": [
+            "Mandates the Reserve Bank to regulate the issue of Bank notes and the keeping of reserves with a view to securing monetary stability in India.",
+            "Empowers the central bank to operate the currency and credit system of the country to its advantage."
+          ],
+          "ta": [
+            "இந்தியாவில் பணவியல் ஸ்திரத்தன்மையை உறுதி செய்வதற்காக ரூபாய் நோட்டுகள் வழங்குவதை ஒழுங்குபடுத்தவும், நிதி இருப்புகளைப் பராமரிக்கவும் ரிசர்வ் வங்கிக்கு ஆணையிடுகிறது.",
+            "நாட்டின் நாணயம் மற்றும் கடன் அமைப்பை நாட்டின் நன்மைக்கு ஏற்ப இயக்கும் அதிகாரத்தை மத்திய வங்கிக்கு வழங்குகிறது."
+          ]
+        }
+      },
+      {
+        "title": "2016 Legislative Amendment (Monetary Policy Framework)",
+        "title_ta": "2016 சட்டத் திருத்தம் (பணவியல் கொள்கை கட்டமைப்பு)",
+        "points": {
+          "en": [
+            "The Finance Act, 2016 amended the Reserve Bank of India Act, 1934, inserting Chapter III-F (Sections 45Z to 45ZO).",
+            "Replaced the sole discretion of the RBI Governor with a statutory, six-member collegial body called the Monetary Policy Committee (MPC).",
+            "Formally introduced the statutory Flexible Inflation Targeting (FIT) framework into Indian law."
+          ],
+          "ta": [
+            "2016-ஆம் ஆண்டின் நிதிச் சட்டம் ரிசர்வ் வங்கிச் சட்டம் 1934-ல் திருத்தம் செய்து, அத்தியாயம் III-F (பிரிவுகள் 45Z முதல் 45ZO வரை) சேர்த்தது.",
+            "ரிசர்வ் வங்கி ஆளுநரின் தனிப்பட்ட விருப்புரிமை அதிகாரத்திற்குப் பதிலாக, சட்டப்பூர்வ 6 உறுப்பினர்களைக் கொண்ட பணவியல் கொள்கைக் குழுவை (MPC) அமைத்தது.",
+            "இந்திய சட்டத்தில் சட்டப்பூர்வ நெகிழ்வான பணவீக்க இலக்கு (FIT) கட்டமைப்பை முறையாக அறிமுகப்படுத்தியது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_monetary_aggregates_comparison",
+        "title_en": "Table 1: Classification Matrix of Money Supply Aggregates (M0, M1, M2, M3, M4)",
+        "title_ta": "அட்டவணை 1: பணப்புழக்க அளவீடுகளின் வகைப்பாடு ஒப்பீடு (M0, M1, M2, M3, M4)",
+        "headers_en": [
+          "Aggregate",
+          "Popular Nomenclature",
+          "Components Included",
+          "Degree of Liquidity"
+        ],
+        "headers_ta": [
+          "தொகுப்பு",
+          "பிரபலமான பெயர்",
+          "உள்ளடக்கிய கூறுகள்",
+          "பணப்புழக்கத்தன்மை நிலை"
+        ],
+        "rows_en": [
+          [
+            "M0",
+            "Reserve Money / High-Powered Money / Monetary Base",
+            "Currency in Circulation + Bankers' Deposits with RBI + Other Deposits with RBI",
+            "Foundational monetary base (creates banking liquidity)"
+          ],
+          [
+            "M1",
+            "Narrow Money (குறுகிய பணம்)",
+            "Currency with Public + Demand Deposits with Banks + Other Deposits with RBI",
+            "Highest liquidity (instantly spendable transaction money)"
+          ],
+          [
+            "M2",
+            "Extended Narrow Money",
+            "M1 + Post Office Savings Bank Deposits",
+            "Very high liquidity, but post office withdrawals are slower"
+          ],
+          [
+            "M3",
+            "Broad Money (பரந்த பணம்)",
+            "M1 + Time Deposits with Commercial Banks (Fixed & Recurring Deposits)",
+            "Moderate liquidity; primary operational indicator of national money supply"
+          ],
+          [
+            "M4",
+            "Comprehensive Broad Money",
+            "M3 + Total Post Office Deposits (excluding National Savings Certificates - NSC)",
+            "Lowest liquidity; covers entire institutional postal deposit base"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "M0",
+            "இருப்புப் பணம் / உயர்-ஆற்றல் பணம் / பணவியல் தளம்",
+            "புழக்கத்தில் உள்ள நாணயம் + ரிசர்வ் வங்கியிடம் வங்கிகளின் வைப்புகள் + பிற வைப்புகள்",
+            "அடிப்படை பணவியல் தளம் (வங்கி பணப்புழக்கத்தை உருவாக்குகிறது)"
+          ],
+          [
+            "M1",
+            "குறுகிய பணம் (Narrow Money)",
+            "பொதுமக்களிடம் உள்ள ரொக்கம் + வங்கிகளில் கேட்பு வைப்புகள் + ரிசர்வ் வங்கியில் பிற வைப்புகள்",
+            "மிக உயர்ந்த பணப்புழக்கம் (உடனடியாக செலவிடக்கூடிய பரிவர்த்தனைப் பணம்)"
+          ],
+          [
+            "M2",
+            "நீட்டிக்கப்பட்ட குறுகிய பணம்",
+            "M1 + அஞ்சலக சேமிப்பு வங்கி வைப்புகள்",
+            "மிக அதிக பணப்புழக்கம், ஆனால் வங்கி அளவுக்கு வேகமானதல்ல"
+          ],
+          [
+            "M3",
+            "பரந்த பணம் (Broad Money)",
+            "M1 + வணிக வங்கிகளின் கால வைப்புகள் (நிலையான வைப்பு & தொடர் வைப்பு)",
+            "மிதமான பணப்புழக்கம்; நாட்டின் முதன்மையான அதிகாரப்பூர்வ பண அளவீடு"
+          ],
+          [
+            "M4",
+            "முழுமையான பரந்த பணம்",
+            "M3 + அனைத்து அஞ்சலக வைப்புத் தொகைகள் (தேசிய சேமிப்புப் பத்திரம் - NSC நீங்கலாக)",
+            "குறைந்த பணப்புழக்கம்; முழுமையான அஞ்சலக சேமிப்பு அமைப்பையும் உள்ளடக்கியது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_demand_vs_time_deposits",
+        "title_en": "Table 2: Banking Liabilities: Demand Deposits vs Time Deposits",
+        "title_ta": "அட்டவணை 2: வங்கிப் பொறுப்புகள்: கேட்பு வைப்புகள் vs கால வைப்புகள்",
+        "headers_en": [
+          "Dimension",
+          "Demand Deposits (கேட்பு வைப்புகள்)",
+          "Time / Term Deposits (கால வைப்புகள்)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "கேட்பு வைப்புகள்",
+          "கால வைப்புகள்"
+        ],
+        "rows_en": [
+          [
+            "Withdrawal Condition",
+            "Payable on demand anytime via cheque, debit card, UPI, ATM",
+            "Payable only upon maturity; penalty imposed on premature withdrawal"
+          ],
+          [
+            "Prominent Account Types",
+            "Current Accounts (0% interest) and Savings Accounts (low interest)",
+            "Fixed Deposits (FDs) and Recurring Deposits (RDs)"
+          ],
+          [
+            "Interest Rate Profile",
+            "Zero to very low interest rate paid by banks",
+            "Higher interest rate paid, compensating for the lock-in tenure"
+          ],
+          [
+            "Monetary Aggregate Position",
+            "Forms an integral part of Narrow Money (M1) and Broad Money (M3)",
+            "Forms a component strictly of Broad Money (M3); excluded from M1"
+          ],
+          [
+            "Bank Liquidity Risk",
+            "High liquidity risk for banks; requires liquid reserves (CRR/SLR)",
+            "Stable liability base; enables banks to sanction medium and long-term loans"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பணம் எடுக்கும் நிபந்தனை",
+            "காசோலை, டெபிட் கார்டு, UPI, ATM மூலம் கோரியவுடன் உடனடியாக எடுக்கலாம்",
+            "முதிர்வு காலத்தில் மட்டுமே எடுக்க முடியும்; முன்கூட்டியே எடுத்தால் அபராதம் உண்டு"
+          ],
+          [
+            "முக்கிய கணக்கு வகைகள்",
+            "நடப்புக் கணக்குகள் (வட்டி இல்லை) மற்றும் சேமிப்புக் கணக்குகள் (குறைந்த வட்டி)",
+            "நிலையான வைப்புகள் (FD) மற்றும் தொடர் வைப்புகள் (RD)"
+          ],
+          [
+            "வட்டி விகித விவரம்",
+            "பூஜ்ஜியம் முதல் மிகக் குறைந்த வட்டி மட்டுமே வங்கிகளால் வழங்கப்படும்",
+            "முதலீட்டு காலத்திற்கு ஏற்ப கணிசமான அதிக வட்டி விகிதம் வழங்கப்படும்"
+          ],
+          [
+            "பண அளவீட்டு நிலை",
+            "குறுகிய பணம் (M1) மற்றும் பரந்த பணம் (M3) இரண்டிலும் இடம்பெறுகிறது",
+            "பரந்த பணத்தில் (M3) மட்டுமே சேர்க்கப்படும்; M1-ல் இடம்பெறாது"
+          ],
+          [
+            "வங்கி பணப்புழக்க இடர்",
+            "வங்கிகளுக்கு அதிக பணப்புழக்க இடர்; அதிக பாதுகாப்பு இருப்புகள் தேவை",
+            "நிலையான பொறுப்பு தளம்; வங்கிகள் நீண்ட கால கடன்கள் வழங்க உதவுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_currency_in_circulation_vs_public",
+        "title_en": "Table 3: Technical Distinction: Currency in Circulation vs Currency with the Public",
+        "title_ta": "அட்டவணை 3: தொழில்நுட்ப வேறுபாடு: புழக்கத்தில் உள்ள நாணயம் vs பொதுமக்களிடம் உள்ள நாணயம்",
+        "headers_en": [
+          "Feature",
+          "Currency in Circulation (CIC)",
+          "Currency with the Public (CWP)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "புழக்கத்தில் உள்ள நாணயம் (CIC)",
+          "பொதுமக்களிடம் உள்ள நாணயம் (CWP)"
+        ],
+        "rows_en": [
+          [
+            "Exact Definition",
+            "Total physical banknotes and coins outside the vaults of the RBI",
+            "Currency in Circulation minus cash physically held in commercial bank vaults"
+          ],
+          [
+            "Mathematical Equation",
+            "CIC = Notes in Circulation + Circulation of Rupee Coins + Small Coins",
+            "CWP = Currency in Circulation - Cash in Hand with Commercial Banks"
+          ],
+          [
+            "Monetary Aggregate Role",
+            "Constitutes the core component of Reserve Money (M0)",
+            "Constitutes the core component of Narrow Money (M1) and Broad Money (M3)"
+          ],
+          [
+            "Economic Ownership",
+            "Held collectively by citizens, businesses, and commercial bank branch vaults",
+            "Held purely by the non-bank public (households, traders, corporations)"
+          ],
+          [
+            "Magnitude Comparison",
+            "Always larger than Currency with the Public (includes bank cash in hand)",
+            "Always smaller than Currency in Circulation (excludes bank cash in hand)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "துல்லியமான வரையறை",
+            "ரிசர்வ் வங்கியின் கருவூலத்திற்கு வெளியே உள்ள மொத்த ரூபாய் நோட்டுகள் மற்றும் நாணயங்கள்",
+            "புழக்கத்தில் உள்ள நாணயத்திலிருந்து வணிக வங்கிகளின் பெட்டகங்களில் உள்ள பணத்தைக் கழித்தது"
+          ],
+          [
+            "கணித சமன்பாடு",
+            "CIC = புழக்கத்தில் உள்ள நோட்டுகள் + புழக்கத்தில் உள்ள ரூபாய் மற்றும் சிறிய நாணயங்கள்",
+            "CWP = புழக்கத்தில் உள்ள நாணயம் - வணிக வங்கிகளிடம் கையிருப்பில் உள்ள ரொக்கம்"
+          ],
+          [
+            "பண அளவீட்டுப் பங்கு",
+            "இருப்புப் பணத்தின் (M0) முதன்மைக் கூறாக அமைகிறது",
+            "குறுகிய பணம் (M1) மற்றும் பரந்த பணத்தின் (M3) முதன்மைக் கூறாக அமைகிறது"
+          ],
+          [
+            "பொருளாதார உரிமை",
+            "பொதுமக்கள், வணிக நிறுவனங்கள் மற்றும் வணிக வங்கிகளின் கஜானாக்களில் உள்ளது",
+            "வங்கி சாரா பொதுமக்கள் (குடும்பங்கள், வணிகர்கள்) மட்டுமே கையில் வைத்திருப்பது"
+          ],
+          [
+            "அளவு ஒப்பீடு",
+            "பொதுமக்களிடம் உள்ள பணத்தை விட எப்போதும் பெரியது (வங்கி பணத்தையும் உள்ளடக்கியது)",
+            "புழக்கத்தில் உள்ள பணத்தை விட எப்போதும் சிறியது (வங்கி பணத்தை விலக்கியது)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_monetary_policy_vs_credit_policy",
+        "title_en": "Table 4: Conceptual Distinction: Monetary Policy vs Credit Policy",
+        "title_ta": "அட்டவணை 4: கருத்து வேறுபாடு: பணவியல் கொள்கை vs கடன் கொள்கை",
+        "headers_en": [
+          "Dimension",
+          "Monetary Policy (பணவியல் கொள்கை)",
+          "Credit Policy (கடன் கொள்கை)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பணவியல் கொள்கை",
+          "கடன் கொள்கை"
+        ],
+        "rows_en": [
+          [
+            "Core Objective",
+            "Regulating aggregate money supply and systemic price stability (inflation)",
+            "Directing credit flows to specific priority sectors and managing bank risks"
+          ],
+          [
+            "Primary Instruments",
+            "Policy Repo Rate, SDF, MSF, Bank Rate, CRR, SLR, OMOs",
+            "Priority Sector Lending (PSL) norms, Loan-to-Value (LTV) limits, margin rules"
+          ],
+          [
+            "Decision-Making Body",
+            "Monetary Policy Committee (MPC) statutorily under Section 45ZB",
+            "Department of Banking Regulation & Department of Supervision, RBI"
+          ],
+          [
+            "Scope of Impact",
+            "Macroeconomic and economy-wide (aggregate demand and cost of funds)",
+            "Microeconomic and sectoral (agriculture, exports, MSMEs, housing, auto loans)"
+          ],
+          [
+            "Meeting Frequency",
+            "Mandatorily bi-monthly (at least 4 statutory meetings per year)",
+            "Continuous regulatory evolution via RBI notifications and master directions"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "ஒட்டுமொத்த பணப்புழக்கம் மற்றும் விலை நிலைத்தன்மையை (பணவீக்கம்) ஒழுங்குபடுத்துதல்",
+            "குறிப்பிட்ட முன்னுரிமை துறைகளுக்கு கடன் செல்வதை வழிநடத்துதல் மற்றும் இடர் மேலாண்மை"
+          ],
+          [
+            "முதன்மை கருவிகள்",
+            "கொள்கை ரெப்போ விகிதம், SDF, MSF, வங்கி விகிதம், CRR, SLR, OMO",
+            "முன்னுரிமைத் துறை கடன் (PSL) விதிகள், LTV வரம்புகள், விளிம்புத் தொகை விதிகள்"
+          ],
+          [
+            "முடிவெடுக்கும் அமைப்பு",
+            "பிரிவு 45ZB-ன் கீழ் சட்டப்பூர்வமாக அமைக்கப்பட்ட பணவியல் கொள்கைக் குழு (MPC)",
+            "வங்கி ஒழுங்குமுறை மற்றும் மேற்பார்வைத் துறைகள், இந்திய ரிசர்வ் வங்கி"
+          ],
+          [
+            "தாக்கத்தின் பரப்பளவு",
+            "பேரியல் பொருளாதாரம் சார்ந்தது (ஒட்டுமொத்த தேவை மற்றும் மூலதனச் செலவு)",
+            "நுண்ணியல் பொருளாதாரம் மற்றும் துறை சார்ந்தது (விவசாயம், ஏற்றுமதி, MSME, வீட்டுக்கடன்)"
+          ],
+          [
+            "கூட்டங்களின் இடைவெளி",
+            "கட்டாயமாக இரண்டு மாதங்களுக்கு ஒருமுறை (ஆண்டிற்கு குறைந்தது 4 முறையாவது)",
+            "ரிசர்வ் வங்கியின் சுற்றறிக்கைகள் மற்றும் வழிகாட்டுதல்கள் மூலம் தொடர்ச்சியானது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Monetary Policy Foundation (Part 1)",
+        "short_label": "Monetary Foundations",
+        "children": [
+          {
+            "title": "Core Mandate",
+            "short_label": "Mandate",
+            "children": [
+              {
+                "title": "Section 45ZA: Price Stability Mandate",
+                "short_label": "Price Stability"
+              },
+              {
+                "title": "Growth Support & Financial Stability",
+                "short_label": "Growth & Stability"
+              },
+              {
+                "title": "Exchange Rate Orderliness",
+                "short_label": "FX Stability"
+              }
+            ]
+          },
+          {
+            "title": "Money Supply Aggregates",
+            "short_label": "Aggregates",
+            "children": [
+              {
+                "title": "M0: Reserve / High-Powered Money",
+                "short_label": "M0 Base"
+              },
+              {
+                "title": "M1: Narrow Transactional Money",
+                "short_label": "M1 Narrow"
+              },
+              {
+                "title": "M3: Broad Money (M1 + Time Deposits)",
+                "short_label": "M3 Broad"
+              },
+              {
+                "title": "Money Multiplier (m = M3 / M0)",
+                "short_label": "Multiplier"
+              }
+            ]
+          },
+          {
+            "title": "Statutory Evolution",
+            "short_label": "Statute",
+            "children": [
+              {
+                "title": "RBI Act 1934: Original Currency Mandate",
+                "short_label": "RBI Act 1934"
+              },
+              {
+                "title": "Finance Act 2016: MPC Chapter III-F",
+                "short_label": "MPC Reform"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "M1 vs M3 Component Trap (M1 vs M3 கூறுகளின் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Fixed Deposits (Time Deposits) are included in Narrow Money (M1).",
+            "CORRECT FACT: Time Deposits are strictly excluded from M1 and are only included in Broad Money (M3). M1 includes only Demand Deposits (savings and current accounts).",
+            "WHY CANDIDATES FAIL: Candidates confuse general bank deposits with transaction demand deposits."
+          ],
+          "ta": [
+            "பொறி: நிலையான வைப்புத் தொகைகளும் (Fixed Deposits) குறுகிய பணத்தில் (M1) சேர்க்கப்பட்டுள்ளன என்று தேர்வர்கள் கருதுவது.",
+            "சரியான உண்மை: நிலையான வைப்புகள் (கால வைப்புகள்) M1-ல் சேர்க்கப்படாது; அவை பரந்த பணத்தில் (M3) மட்டுமே சேர்க்கப்படும். M1-ல் கேட்பு வைப்புகள் மட்டுமே இடம்பெறும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து வங்கி சேமிப்புகளையும் ஒன்றாகக் கருதி கேட்பு வைப்புகளுக்கும் கால வைப்புகளுக்குமான வேறுபாட்டை மறப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Currency in Circulation vs Currency with Public Trap (புழக்கத்தில் உள்ள நாணயம் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that 'Currency in Circulation' and 'Currency with the Public' are identical terms.",
+            "CORRECT FACT: Currency in Circulation includes physical cash lying in commercial bank vaults, whereas Currency with the Public excludes cash held in bank vaults.",
+            "WHY CANDIDATES FAIL: Both terms sound synonymous in non-technical reading, but differ by commercial bank vault cash."
+          ],
+          "ta": [
+            "பொறி: 'புழக்கத்தில் உள்ள நாணயம்' மற்றும் 'பொதுமக்களிடம் உள்ள நாணயம்' இரண்டும் ஒரே அளவீடு என நினைப்பது.",
+            "சரியான உண்மை: புழக்கத்தில் உள்ள நாணயத்தில் வங்கிகளின் கஜானாக்களில் உள்ள ரொக்கமும் அடங்கும்; ஆனால் பொதுமக்களிடம் உள்ள பணத்தில் வங்கி ரொக்கம் கழிக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தொழில்நுட்பமற்ற பொதுப் பார்வையில் இரண்டும் ஒன்றாகத் தோன்றுவதால் தவறிழைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Reserve Money Creator Trap (இருப்புப் பணம் உருவாக்குபவர் யார்?)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that commercial banks create Reserve Money (M0).",
+            "CORRECT FACT: Only the Reserve Bank of India (the sovereign monetary authority) creates Reserve Money (M0). Commercial banks create secondary deposit credit via the money multiplier.",
+            "WHY CANDIDATES FAIL: Candidates confuse primary central bank money creation with secondary commercial bank credit expansion."
+          ],
+          "ta": [
+            "பொறி: இருப்புப் பணத்தை (M0) வணிக வங்கிகள் உருவாக்குகின்றன என தவறாக விடையளிப்பது.",
+            "சரியான உண்மை: இருப்புப் பணத்தை (M0) மத்திய வங்கியான ரிசர்வ் வங்கி மட்டுமே உருவாக்குகிறது. வணிக வங்கிகள் கடன் பெருக்கி மூலம் இரண்டாம் நிலை கடன் வைப்புகளை உருவாக்குகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ரிசர்வ் வங்கியின் முதன்மைப் பண உருவாக்கத்திற்கும் வணிக வங்கிகளின் கடன் உருவாக்கத்திற்கும் உள்ள வித்தியாசத்தை அறியாமை."
+          ]
+        }
+      },
+      {
+        "title": "National Savings Certificates (NSC) in M4 Trap (M4-ல் தேசிய சேமிப்புப் பத்திரம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that M4 includes all post office deposits without any exceptions.",
+            "CORRECT FACT: M4 includes total post office deposits but explicitly EXCLUDES National Savings Certificates (NSC).",
+            "WHY CANDIDATES FAIL: Exam questions specifically test this statutory exclusion clause to trap inattentive students."
+          ],
+          "ta": [
+            "பொறி: M4-ல் அனைத்து அஞ்சலக சேமிப்புகளும் எந்த விதிவிலக்கும் இன்றி சேர்க்கப்படுகின்றன என நினைப்பது.",
+            "சரியான உண்மை: M4 அஞ்சலக சேமிப்புகளை உள்ளடக்கியிருந்தாலும், தேசிய சேமிப்புப் பத்திரங்களை (NSC) கண்டிப்பாக விலக்குகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தேர்வு வினாக்களில் கேட்கப்படும் இந்த குறிப்பிட்ட விதிவிலக்கு நிபந்தனையை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Primary Objective under Section 45ZA Trap (பிரிவு 45ZA-ன் முதன்மை நோக்கம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that maximizing GDP growth is the primary statutory objective of monetary policy under the RBI Act.",
+            "CORRECT FACT: Under Section 45ZA, the primary objective is explicitly 'Price Stability', while growth is pursued 'keeping in mind the objective of growth'.",
+            "WHY CANDIDATES FAIL: Popular political discourse emphasizes GDP growth over inflation, leading students to mark growth as primary."
+          ],
+          "ta": [
+            "பொறி: ரிசர்வ் வங்கிச் சட்டத்தின் கீழ் பொருளாதார வளர்ச்சியை அதிகரிப்பதே பணவியல் கொள்கையின் முதன்மை சட்டப்பூர்வ நோக்கம் என நினைப்பது.",
+            "சரியான உண்மை: பிரிவு 45ZA-ன் கீழ் 'விலை நிலைத்தன்மையை' (Price Stability) பேணுதலே முதன்மை நோக்கம்; வளர்ச்சி என்பது இரண்டாவது நிலையிலேயே குறிப்பிடப்பட்டுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொது உரையாடல்களில் GDP வளர்ச்சிக்கு அதிக முக்கியத்துவம் தரப்படுவதால் அதை முதன்மை என தவறாகத் தேர்ந்தெடுப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Money Multiplier Formula Inversion Trap (பணப் பெருக்கி சூத்திர தலைகீழ் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Calculating the Money Multiplier as Reserve Money divided by Broad Money (M0 / M3).",
+            "CORRECT FACT: Money Multiplier $m = \\frac{M3}{M0}$ (Broad Money divided by Reserve Money), which is always greater than 1.",
+            "WHY CANDIDATES FAIL: Candidates invert the fraction, resulting in a value less than 1, violating economic logic."
+          ],
+          "ta": [
+            "பொறி: பணப் பெருக்கியை இருப்புப் பணத்தை பரந்த பணத்தால் வகுத்து (M0 / M3) கணக்கிடுவது.",
+            "சரியான உண்மை: பணப் பெருக்கி $m = \\frac{M3}{M0}$ (பரந்த பணத்தை இருப்புப் பணத்தால் வகுப்பது); இதன் மதிப்பு எப்போதும் 1-ஐ விட அதிகமாகவே இருக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சூத்திரத்தை தலைகீழாக மாற்றி 1-க்கு குறைவான மதிப்பைத் தரும் தவறான கணித விடையைத் தேர்ந்தெடுப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The Reserve Bank of India Act was enacted in 1934, and the RBI commenced operations on April 1, 1935.",
+        "Chapter III-F was inserted into the RBI Act, 1934 through the Finance Act, 2016, providing statutory backing to Monetary Policy.",
+        "Section 45ZA of the RBI Act mandates the Central Government to determine the inflation target in terms of Consumer Price Index (CPI) once every 5 years in consultation with RBI.",
+        "Reserve Money (M0) is also known as 'High-Powered Money' or the 'Monetary Base'.",
+        "M1 is termed 'Narrow Money' because it consists solely of highly liquid cash and demand deposits readily available for transactions.",
+        "M3 is termed 'Broad Money' and serves as the primary benchmark indicator of national money supply used by the RBI.",
+        "The Money Multiplier in India typically fluctuates between 5.0 and 5.8, reflecting credit creation by commercial banks.",
+        "The Working Group on Money Supply: Analytics and Methodology of Compilation (chaired by Dr. Y.V. Reddy in 1998) introduced new monetary aggregates (NM1, NM2, NM3) and liquidity aggregates (L1, L2, L3).",
+        "Currency with the Public equals Currency in Circulation minus Cash in Hand with Commercial Banks.",
+        "Post office savings deposits are excluded from M1 and included in M2 and M4.",
+        "National Savings Certificates (NSC) are strictly excluded from all monetary aggregates, including M4.",
+        "Prior to the 2016 MPC framework, monetary policy decisions were made solely at the discretion of the RBI Governor assisted by a non-statutory Technical Advisory Committee."
+      ],
+      "ta": [
+        "இந்திய ரிசர்வ் வங்கிச் சட்டம் 1934-ல் இயற்றப்பட்டு, ரிசர்வ் வங்கி ஏப்ரல் 1, 1935 அன்று தனது பணிகளைத் தொடங்கியது.",
+        "2016-ஆம் ஆண்டின் நிதிச் சட்டம் மூலம் ரிசர்வ் வங்கிச் சட்டம் 1934-ல் அத்தியாயம் III-F சேர்க்கப்பட்டு, பணவியல் கொள்கைக்கு சட்டப்பூர்வ அந்தஸ்து வழங்கப்பட்டது.",
+        "பிரிவு 45ZA-ன் கீழ் மத்திய அரசு ரிசர்வ் வங்கியுடன் கலந்தாலோசித்து நுகர்வோர் விலைக் குறியீட்டின் (CPI) அடிப்படையில் 5 ஆண்டுகளுக்கு ஒருமுறை பணவீக்க இலக்கை நிர்ணயிக்க வேண்டும்.",
+        "இருப்புப் பணம் (M0) 'உயர்-ஆற்றல் பணம்' (High-Powered Money) அல்லது 'பணவியல் தளம்' என்றும் அழைக்கப்படுகிறது.",
+        "M1 உடனடி பரிவர்த்தனைகளுக்கு பயன்படும் ரொக்கம் மற்றும் கேட்பு வைப்புகளை மட்டுமே கொண்டிருப்பதால் 'குறுகிய பணம்' (Narrow Money) எனப்படுகிறது.",
+        "M3 'பரந்த பணம்' (Broad Money) என அழைக்கப்படுகிறது, மேலும் இது ரிசர்வ் வங்கியால் பயன்படுத்தப்படும் நாட்டின் முதன்மை பண அளவீடாகும்.",
+        "இந்தியாவில் பணப் பெருக்கியின் மதிப்பு பொதுவாக 5.0 முதல் 5.8 வரை இருக்கும்; இது வணிக வங்கிகளின் கடன் பெருக்கத்தைக் காட்டுகிறது.",
+        "1998-ல் டாக்டர் ஒய்.வி. ரெட்டி தலைமையிலான குழு புதிய பணவியல் தொகுப்புகள் (NM1, NM2, NM3) மற்றும் பணப்புழக்கத் தொகுப்புகளை (L1, L2, L3) அறிமுகப்படுத்தியது.",
+        "பொதுமக்களிடம் உள்ள நாணயம் என்பது புழக்கத்தில் உள்ள நாணயத்திலிருந்து வங்கிகளின் கையிருப்பில் உள்ள பணத்தைக் கழித்த தொகையாகும்.",
+        "அஞ்சலக சேமிப்பு வைப்புகள் M1-ல் சேர்க்கப்படாமல் M2 மற்றும் M4-ல் சேர்க்கப்படுகின்றன.",
+        "தேசிய சேமிப்புப் பத்திரங்கள் (NSC) M4 உட்பட எந்தவொரு பணவியல் தொகுப்பிலும் சேர்க்கப்படுவதில்லை.",
+        "2016 MPC கட்டமைப்புக்கு முன்பு, பணவியல் கொள்கை முடிவுகள் சட்டப்பூர்வமற்ற ஆலோசனைக் குழுவின் உதவியுடன் ரிசர்வ் வங்கி ஆளுநரின் தனிப்பட்ட முடிவாகவே எடுக்கப்பட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Monetary Policy: Central bank policy regulating money supply, credit availability, and interest rates to secure price stability and growth.",
+        "Primary Mandate: Price Stability under Section 45ZA of the RBI Act, 1934.",
+        "Reserve Money (M0): High-powered money = Currency in Circulation + Bankers' Deposits with RBI + Other Deposits with RBI.",
+        "Narrow Money (M1): Currency with Public + Demand Deposits with Banks + Other Deposits with RBI.",
+        "Extended Narrow Money (M2): M1 + Post Office Savings Bank Deposits.",
+        "Broad Money (M3): M1 + Time Deposits with Banks (primary policy gauge of liquidity).",
+        "M4 Aggregate: M3 + Total Post Office Deposits (excluding National Savings Certificates - NSC).",
+        "Money Multiplier ($m$): Broad Money divided by Reserve Money ($m = M3 / M0$).",
+        "2016 Legislative Shift: Finance Act 2016 replaced Governor's sole veto with the 6-member statutory MPC.",
+        "Y.V. Reddy Committee (1998): Standardized modern compilation methodology for monetary and liquidity aggregates."
+      ],
+      "ta": [
+        "பணவியல் கொள்கை: விலை நிலைத்தன்மை மற்றும் வளர்ச்சியை உறுதிசெய்ய பணப்புழக்கம், கடன் மற்றும் வட்டி விகிதங்களை ஒழுங்குபடுத்தும் ரிசர்வ் வங்கியின் கொள்கை.",
+        "முதன்மை ஆணை: ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 45ZA-ன் கீழ் விலை நிலைத்தன்மையைப் பேணுதல்.",
+        "இருப்புப் பணம் (M0): உயர் ஆற்றல் பணம் = புழக்கத்தில் உள்ள நாணயம் + வங்கிகளின் ரிசர்வ் வங்கி வைப்புகள் + பிற வைப்புகள்.",
+        "குறுகிய பணம் (M1): பொதுமக்களிடம் உள்ள ரொக்கம் + வங்கிகளில் கேட்பு வைப்புகள் + ரிசர்வ் வங்கியில் உள்ள பிற வைப்புகள்.",
+        "நீட்டிக்கப்பட்ட குறுகிய பணம் (M2): M1 + அஞ்சலக சேமிப்பு வங்கி வைப்புகள்.",
+        "பரந்த பணம் (M3): M1 + வங்கிகளின் கால வைப்புகள் (நாட்டின் முதன்மை பணப்புழக்க அளவீடு).",
+        "M4 தொகுப்பு: M3 + அனைத்து அஞ்சலக வைப்புகள் (தேசிய சேமிப்புப் பத்திரம் - NSC நீங்கலாக).",
+        "பணப் பெருக்கி ($m$): பரந்த பணத்தை இருப்புப் பணத்தால் வகுப்பது ($m = M3 / M0$).",
+        "2016 சட்ட மாற்றம்: 2016 நிதிச் சட்டம் ஆளுநரின் தனி அதிகாரத்தை மாற்றி 6 உறுப்பினர்கள் கொண்ட சட்டப்பூர்வ MPC-யை உருவாக்கியது.",
+        "ஒய்.வி. ரெட்டி குழு (1998): பணவியல் மற்றும் பணப்புழக்கத் தொகுப்புகளின் நவீன கணக்கீட்டு முறையை தரப்படுத்தியது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_mp_101",
+        "front_en": "What is the primary statutory objective of Monetary Policy under Section 45ZA of the RBI Act?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 45ZA-ன் கீழ் பணவியல் கொள்கையின் முதன்மை சட்டப்பூர்வ நோக்கம் என்ன?",
+        "back_en": "Price Stability (while keeping in mind the objective of economic growth).",
+        "back_ta": "விலை நிலைத்தன்மை (பொருளாதார வளர்ச்சி நோக்கத்தையும் மனதில் கொண்டு)."
+      },
+      {
+        "id": "rc_mp_102",
+        "front_en": "What is the economic term used for Reserve Money (M0)?",
+        "front_ta": "இருப்புப் பணத்திற்கு (M0) வழங்கப்படும் மற்றொரு பொருளாதாரப் பெயர் என்ன?",
+        "back_en": "High-Powered Money or Monetary Base.",
+        "back_ta": "உயர்-ஆற்றல் பணம் (High-Powered Money) அல்லது பணவியல் தளம்."
+      },
+      {
+        "id": "rc_mp_103",
+        "front_en": "What is the exact formula for Narrow Money (M1)?",
+        "front_ta": "குறுகிய பணத்திற்கான (M1) துல்லியமான சூத்திரம் என்ன?",
+        "back_en": "M1 = Currency with the Public + Demand Deposits with Banks + Other Deposits with RBI.",
+        "back_ta": "M1 = பொதுமக்களிடம் உள்ள நாணயம் + வங்கிகளில் கேட்பு வைப்புகள் + ரிசர்வ் வங்கியில் உள்ள பிற வைப்புகள்."
+      },
+      {
+        "id": "rc_mp_104",
+        "front_en": "Which monetary aggregate represents Broad Money in India?",
+        "front_ta": "இந்தியாவில் பரந்த பணத்தைக் (Broad Money) குறிக்கும் பணவியல் தொகுப்பு எது?",
+        "back_en": "M3 (M1 + Time Deposits with the Banking System).",
+        "back_ta": "M3 (M1 + வங்கி அமைப்பில் உள்ள கால வைப்புகள்)."
+      },
+      {
+        "id": "rc_mp_105",
+        "front_en": "How is the Money Multiplier ($m$) calculated?",
+        "front_ta": "பணப் பெருக்கி ($m$) எவ்வாறு கணக்கிடப்படுகிறது?",
+        "back_en": "m = Broad Money (M3) / Reserve Money (M0).",
+        "back_ta": "m = பரந்த பணம் (M3) / இருப்புப் பணம் (M0)."
+      },
+      {
+        "id": "rc_mp_106",
+        "front_en": "Which postal saving instrument is explicitly excluded from M4?",
+        "front_ta": "M4 தொகுப்பிலிருந்து வெளிப்படையாக விலக்கப்பட்ட அஞ்சலக சேமிப்பு எது?",
+        "back_en": "National Savings Certificates (NSC).",
+        "back_ta": "தேசிய சேமிப்புப் பத்திரங்கள் (NSC)."
+      },
+      {
+        "id": "rc_mp_107",
+        "front_en": "Which amendment act inserted Chapter III-F into the RBI Act establishing the MPC?",
+        "front_ta": "MPC-யை நிறுவி ரிசர்வ் வங்கிச் சட்டத்தில் அத்தியாயம் III-F-ஐ சேர்த்த திருத்தச் சட்டம் எது?",
+        "back_en": "The Finance Act, 2016.",
+        "back_ta": "2016-ஆம் ஆண்டின் நிதிச் சட்டம்."
+      },
+      {
+        "id": "rc_mp_108",
+        "front_en": "Who headed the 1998 Working Group on Money Supply Analytics and Compilation?",
+        "front_ta": "1998-ல் பணப்புழக்க பகுப்பாய்வு மற்றும் தொகுப்பு தொடர்பான பணிக் குழுவின் தலைவர் யார்?",
+        "back_en": "Dr. Y.V. Reddy.",
+        "back_ta": "டாக்டர் ஒய்.வி. ரெட்டி."
+      },
+      {
+        "id": "rc_mp_109",
+        "front_en": "What is the difference between Currency in Circulation and Currency with the Public?",
+        "front_ta": "புழக்கத்தில் உள்ள நாணயம் மற்றும் பொதுமக்களிடம் உள்ள நாணயத்திற்கு இடையே உள்ள வேறுபாடு என்ன?",
+        "back_en": "Currency in Circulation includes cash held in bank vaults; Currency with the Public excludes bank cash.",
+        "back_ta": "புழக்கத்தில் உள்ள நாணயத்தில் வங்கி பெட்டக பணமும் அடங்கும்; பொதுமக்களிடம் உள்ள பணத்தில் வங்கி ரொக்கம் கழிக்கப்படுகிறது."
+      },
+      {
+        "id": "rc_mp_110",
+        "front_en": "How frequently is the inflation target revised under Section 45ZA of the RBI Act?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 45ZA-ன் கீழ் பணவீக்க இலக்கு எத்தனை ஆண்டுகளுக்கு ஒருமுறை மாற்றியமைக்கப்படுகிறது?",
+        "back_en": "Once every five years by the Central Government in consultation with the RBI.",
+        "back_ta": "மத்திய அரசால் ரிசர்வ் வங்கியுடன் கலந்தாலோசித்து 5 ஆண்டுகளுக்கு ஒருமுறை."
+      },
+      {
+        "id": "rc_mp_111",
+        "front_en": "Why are Time Deposits excluded from M1?",
+        "front_ta": "கால வைப்புகள் ஏன் M1-லிருந்து விலக்கப்பட்டுள்ளன?",
+        "back_en": "Because they have a fixed lock-in tenure and cannot be immediately drawn upon on demand for daily transactions.",
+        "back_ta": "அவை குறிப்பிட்ட காலத்திற்கு முடக்கப்படுவதால் தினசரி பரிவர்த்தனைகளுக்கு உடனடியாக எடுக்க முடியாது என்பதால்."
+      },
+      {
+        "id": "rc_mp_112",
+        "front_en": "On what date did the Reserve Bank of India commence operations?",
+        "front_ta": "இந்திய ரிசர்வ் வங்கி தனது அதிகாரப்பூர்வ செயல்பாடுகளை எந்த நாளில் தொடங்கியது?",
+        "back_en": "April 1, 1935 (under the RBI Act, 1934).",
+        "back_ta": "ஏப்ரல் 1, 1935 (ரிசர்வ் வங்கிச் சட்டம் 1934-ன் கீழ்)."
+      }
+    ]
+  }
+}

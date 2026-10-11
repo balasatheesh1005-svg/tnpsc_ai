@@ -1,0 +1,767 @@
+{
+  "meta": {
+    "topic_id": "economy_population_part_3",
+    "repository_id": "economy_population",
+    "display_title": "Population – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Population",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "exam_mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Demographic Dividend David Bloom",
+    "Median Age 28.5 Years",
+    "Dividend Window 2005 to 2055",
+    "Demographic Disaster Youth Unrest",
+    "North South Demographic Divide",
+    "84th Amendment Act 2001 Freeze",
+    "15th Finance Commission 2011 Population",
+    "Demographic Performance 12.5 Percent",
+    "Silver Tsunami Population Ageing",
+    "Tamil Nadu TFR 2.1 in 1993",
+    "Tamil Nadu NFHS-5 TFR 1.4",
+    "MMR 54 IMR 13 Institutional Deliveries"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Examine the economic mechanisms of the demographic dividend window (2005-2055) and the conditions required to avoid a demographic disaster.",
+        "Understand the federal tensions arising from North-South demographic divergence in parliamentary delimitation and fiscal devolution."
+      ],
+      "ta": [
+        "மக்கள் தொகை நன்மை சாளரத்தின் (2005-2055) பொருளாதார வழிமுறைகளையும், மக்கள் தொகை பேரழிவைத் தவிர்ப்பதற்கான நிபந்தனைகளையும் புரிந்து கொள்ளுதல்.",
+        "மக்களவைத் தொகுதி மறுவரையறை மற்றும் நிதிப் பகிர்வில் வடக்கு-தெற்கு மக்கள் தொகை வேறுபாட்டால் ஏற்படும் கூட்டாட்சி விவாதங்களை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the constitutional amendments: 42nd CAA (1976 freeze) and 84th CAA (extended freeze to post-2026).",
+        "Recall Tamil Nadu's demographic milestones: replacement TFR reached in 1993, NFHS-5 TFR = 1.4, MMR = 54, and IMR = 13."
+      ],
+      "ta": [
+        "அரசியலமைப்புத் திருத்தங்களை நினைவில் நிறுத்துதல்: 42-வது திருத்தம் (1976 முடக்கம்) மற்றும் 84-வது திருத்தம் (2026 வரை நீட்டிப்பு).",
+        "தமிழ்நாட்டின் சாதனைகளை நினைவுகூருதல்: 1993-ல் TFR 2.1 அடைந்தது, NFHS-5 TFR = 1.4, MMR = 54, IMR = 13."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how the 15th Finance Commission balanced equity and efficiency by pairing 2011 population (15%) with demographic performance (12.5%).",
+        "Appraise the non-coercive social drivers behind the Tamil Nadu demographic transition model compared to other models."
+      ],
+      "ta": [
+        "15-வது நிதி ஆணையம் எவ்வாறு 2011 மக்கள் தொகை (15%) மற்றும் மக்கள் தொகை செயல்பாடு (12.5%) ஆகியவற்றை இணைத்து சமநிலையை ஏற்படுத்தியது என ஆய்வு செய்தல்.",
+        "கட்டாயமில்லாத சமூக சீர்திருத்தங்கள் மூலம் சாதிக்கப்பட்ட தமிழக மக்கள் தொகை மாற்ற மாதிரியை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to answer analytical preliminary and mains questions regarding federalism, demographic ageing, and the Tamil Nadu model."
+      ],
+      "ta": [
+        "கூட்டாட்சி, முதியோர் பெருக்கம் மற்றும் தமிழக மாதிரி தொடர்பான சிக்கலான TNPSC வினாக்களுக்கு துல்லியமாக விடையளித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Population – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_demographic_dividend_dynamics",
+      "title_en": "Demographic Dividend: Mechanism, Window & Requisite Enablers",
+      "title_ta": "மக்கள் தொகை நன்மை (Demographic Dividend): வழிமுறை, கால அளவு & வளர்ச்சித் தேவைகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_regional_divergence_federalism",
+      "title_en": "Regional Divergence: North-South Gap & Federal Tensions",
+      "title_ta": "பிராந்திய வேறுபாடுகள்: வடக்கு-தெற்கு இடைவெளி & கூட்டாட்சி விவாதங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_population_ageing_silver_tsunami",
+      "title_en": "Population Ageing: The 'Silver Tsunami' & Care Economy",
+      "title_ta": "முதியோர் மக்கள் தொகை பெருக்கம்: 'வெள்ளி சுனாமி' & பராமரிப்புப் பொருளாதாரம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_demographic_model",
+      "title_en": "The Tamil Nadu Demographic Transition Model",
+      "title_ta": "தமிழ்நாட்டின் முன்னோடி மக்கள் தொகை மாற்ற மாதிரி",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Contemporary demographic dynamics in India encompass the dual challenges of capitalizing on the closing Demographic Dividend window, managing regional demographic divergence between northern and southern states, addressing emergent population ageing (the 'Silver Tsunami'), and analyzing the pioneering Tamil Nadu Demographic Transition Model.",
+      "ta": "இந்தியாவில் சமகால மக்கள் தொகை இயக்கவியல் என்பது மக்கள் தொகை நன்மை (Demographic Dividend) காலத்தை முழுமையாகப் பயன்படுத்துதல், வடக்கு மற்றும் தெற்கு மாநிலங்களுக்கு இடையே உள்ள மக்கள் தொகை வேறுபாடுகளை நிர்வகித்தல், உருவெடுத்து வரும் முதியோர் அதிகரிப்பை (Silver Tsunami) கையாளுதல் மற்றும் தமிழ்நாட்டின் முன்னோடி மக்கள் தொகை மாற்ற மாதிரியை ஆராய்தல் ஆகியவற்றை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "The contemporary demographic landscape of India presents a profound structural dichotomy. On one hand, India is traversing a historic 'Demographic Dividend' window (2005–2055) characterized by a bulging working-age population (median age ~28.5 years) and a low dependency ratio. However, this national aggregate conceals a sharp regional divergence between Northern states (e.g., UP, Bihar) that are still experiencing high fertility and young populations, and Southern states (Tamil Nadu, Kerala) that completed their demographic transitions decades ago. This divergence has triggered major fiscal and political friction—specifically regarding the 84th Constitutional Amendment freezing parliamentary delimitation till 2026 and the 15th Finance Commission's use of 2011 population data for horizontal devolution. Simultaneously, pioneering states like Tamil Nadu face the impending 'Silver Tsunami'—rapid population ageing requiring geriatric healthcare and universal pensions. Tamil Nadu's historic achievement of below-replacement fertility (TFR ~1.4 to 1.6) via social mobilization, female literacy, and noon meal schemes without coercion serves as an empirical global case study. Mastering these federal dynamics, constitutional provisions, and the Tamil Nadu model is crucial for TNPSC Group 1 candidates.",
+      "ta": "இந்தியாவின் சமகால மக்கள் தொகை சூழல் ஒரு ஆழமான கட்டமைப்பு முரண்பாட்டைக் கொண்டுள்ளது. ஒருபுறம், இந்தியா உழைக்கும் வயதுடைய இளைஞர்கள் அதிகம் கொண்ட (சராசரி வயது ~28.5) குறைந்த சார்பு விகிதம் கொண்ட வரலாற்றுச் சிறப்புமிக்க 'மக்கள் தொகை நன்மைக்' காலத்தில் (2005–2055) பயணிக்கிறது. ஆனால் இந்த தேசிய புள்ளிவிவரத்திற்குள் ஒரு பெரும் பிராந்தியப் பிளவு மறைந்துள்ளது: அதிக கருவுறுதலும் இளம் மக்கள் தொகையும் கொண்ட வட மாநிலங்களுக்கும் (உத்தரப் பிரதேசம், பீகார்), பல தசாப்தங்களுக்கு முன்பே மக்கள் தொகையைக் கட்டுப்படுத்திய தென் மாநிலங்களுக்கும் (தமிழ்நாடு, கேரளா) இடையே பெரும் இடைவெளி உள்ளது. இது மக்களவைத் தொகுதி மறுவரையறையை 2026 வரை முடக்கிய 84-வது அரசியலமைப்புத் திருத்தம் மற்றும் 15-வது நிதி ஆணையம் வரிப் பகிர்வுக்கு 2011 மக்கள் தொகையைப் பயன்படுத்தியது போன்றவற்றால் அரசியல் மற்றும் நிதி சார்ந்த விவாதங்களை உருவாக்கியுள்ளது. அதே நேரத்தில், தமிழ்நாடு போன்ற முன்னோடி மாநிலங்கள் முதியோர்களின் எண்ணிக்கை வேகமாக அதிகரிக்கும் 'வெள்ளி சுனாமி' (Silver Tsunami) சவாலை எதிர்கொள்கின்றன. கட்டாயமின்றி சமூக விழிப்புணர்வு, பெண்கள் கல்வி மற்றும் சத்துணவுத் திட்டங்கள் மூலம் தமிழ்நாடு மாற்று நிலைக்கும் கீழ் கருவுறுதலை (TFR ~1.4-1.6) சாதித்த விதம் உலகளாவிய முன்மாதிரியாகத் திகழ்கிறது. இந்த கூட்டாட்சி விவகாரங்கள் மற்றும் தமிழக மாதிரியை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_demographic_dividend_dynamics": [
+      {
+        "term_en": "Definition & Economic Mechanics (David Bloom)",
+        "term_ta": "வரையறை & பொருளாதார வழிமுறை (டேவிட் ப்ளூம்)",
+        "details_en": "Coined by demographer David Bloom, the Demographic Dividend is the accelerated economic growth potential that results when a nation's dependency ratio declines—specifically when the working-age population (15–59 years) grows significantly larger than the non-working dependent population (children <15 and seniors 60+). Mechanics: (1) Increased Labor Supply: more productive hands per household; (2) Surge in Household Savings: fewer dependents per worker channel income into bank deposits; (3) Human Capital Deepening: smaller family sizes allow higher per-child expenditure on health and education.",
+        "details_ta": "மக்கள் தொகையியல் நிபுணர் டேவிட் ப்ளூம் உருவாக்கிய இக்கருத்து, நாட்டின் சார்பு விகிதம் குறையும் போது ஏற்படும் வேகமான பொருளாதார வளர்ச்சி வாய்ப்பைக் குறிக்கிறது—குறிப்பாக சார்புடையவர்களை விட (குழந்தைகள் மற்றும் முதியவர்கள்) உழைக்கும் வயதுடைய மக்கள் (15–59 வயது) கணிசமாக அதிகமாக இருக்கும் நிலை. செயல்பாட்டு வழிகள்: (1) உழைப்பு விநியோகம் அதிகரிப்பு: குடும்பத்தில் வருமானம் ஈட்டும் நபர்கள் பெருகுவது; (2) குடும்ப சேமிப்பு உயர்வு: சார்ந்திருப்போர் குறைவதால் வங்கிகளில் சேமிப்பு பெருகுவது; (3) மனித மூலதன மேம்பாடு: குறைந்த குழந்தைகள் இருப்பதால் கல்வி மற்றும் ஆரோக்கியத்தில் அதிக முதலீடு செய்ய முடிவது."
+      },
+      {
+        "term_en": "India's Demographic Sweet Spot (2005–2055)",
+        "term_ta": "இந்தியாவின் பொற்கால சாளரம் (2005–2055)",
+        "details_en": "India entered its demographic dividend window around 2005-06 when its median age was ~24 years. Currently, India's median age is ~28.5 years (compared to 38 in the US and China, and 49 in Japan). The window is projected to peak around 2040 and close around 2055 as population ageing sets in. This 50-year window occurs ONLY ONCE in a nation's demographic history.",
+        "details_ta": "இந்தியா சுமார் 2005-06-ல் இந்த நன்மைக் காலத்தில் நுழைந்தது (அப்போது சராசரி வயது ~24 ஆண்டுகள்). தற்போது இந்தியாவின் சராசரி வயது ~28.5 ஆண்டுகள் (அமெரிக்கா மற்றும் சீனாவில் 38, ஜப்பானில் 49). இது 2040-ல் உச்சமடைந்து 2055-ல் முடிவடையும். இந்த 50 ஆண்டு கால பொற்கால வாய்ப்பு ஒரு நாட்டின் வரலாற்றில் 'ஒரே ஒரு முறை மட்டுமே' நிகழும்!"
+      },
+      {
+        "term_en": "The Risk of Demographic Disaster",
+        "term_ta": "மக்கள் தொகை பேரழிவு அபாயம் (Demographic Disaster)",
+        "details_en": "If the state fails to provide quality education, health, skills, and formal jobs, a bulging youth population transforms into a Demographic Disaster—fueling massive educated youth unemployment, social alienation, and political instability.",
+        "details_ta": "அரசு தரமான கல்வி, சுகாதாரம், தொழிற்துறை திறன் மற்றும் முறையான வேலைவாய்ப்புகளை உருவாக்கத் தவறினால், அதிகப்படியான இளைஞர் கூட்டம் வேலையின்மை விரக்தியாகவும், குற்றங்களாகவும், சமூக அமைதியின்மையாகவும் மாறி 'மக்கள் தொகை பேரழிவாக' முடியும்."
+      }
+    ],
+    "sec_regional_divergence_federalism": [
+      {
+        "term_en": "The Great North-South Demographic Divergence",
+        "term_ta": "வடக்கு-தெற்கு மக்கள் தொகை பிளவு",
+        "details_en": "India is divided into two distinct demographic regimes: (1) Southern and Western States (Tamil Nadu, Kerala, Karnataka, Andhra, Maharashtra) completed their demographic transitions early, with TFR well below replacement (1.4 to 1.7), experiencing rapid population ageing and labor shortages; (2) Northern and Eastern States (Bihar: TFR 3.0, UP: TFR 2.4, Jharkhand, MP) where transitions are delayed, populations are young, and fertility remains above replacement.",
+        "details_ta": "இந்தியா இரண்டு வெவ்வேறு மக்கள் தொகை நிலைகளாகப் பிரிந்துள்ளது: (1) தென் மற்றும் மேற்கு மாநிலங்கள் (தமிழ்நாடு, கேரளா, கர்நாடகா போன்றவை) பல ஆண்டுகளுக்கு முன்பே மக்கள் தொகையைக் கட்டுப்படுத்தி, மாற்று நிலைக்குக் கீழ் கருவுறுதலைக் கொண்டு (TFR 1.4 முதல் 1.7), முதியோர் அதிகரிப்பையும் தொழிலாளர் பற்றாக்குறையையும் எதிர்கொள்கின்றன; (2) வட மற்றும் கிழக்கு மாநிலங்கள் (பீகார்: TFR 3.0, உ.பி: TFR 2.4) தாமதமான மாற்றத்தைக் கொண்டு, அதிக கருவுறுதலுடனும் இளம் தொழிலாளர்களுடனும் உள்ளன."
+      },
+      {
+        "term_en": "Parliamentary Delimitation & 84th Constitutional Amendment",
+        "term_ta": "மக்களவைத் தொகுதி மறுவரையறை & 84-வது அரசியலமைப்புத் திருத்தம்",
+        "details_en": "Under Article 82, parliamentary seats are readjusted after each census. To ensure states succeeding in family planning (the South) were not penalized with reduced political representation relative to high-fertility states (the North), the 42nd Amendment (1976) froze the 1971 population benchmark until 2001. The 84th Constitutional Amendment Act, 2001 extended this freeze until the FIRST CENSUS AFTER 2026. A post-2026 delimitation based on raw population would severely erode southern representation in the Lok Sabha.",
+        "details_ta": "அரசியலமைப்பு உறுப்பு 82-ன் படி கணக்கெடுப்பு முடிந்தவுடன் மக்களவைத் தொகுதிகள் மறுவரையறை செய்யப்பட வேண்டும். ஆனால் குடும்பக் கட்டுப்பாட்டை வெற்றிகரமாகச் செயல்படுத்திய தென் மாநிலங்கள் நாடாளுமன்றத்தில் தங்களின் பிரதிநிதித்துவத்தை இழந்துவிடக் கூடாது என்பதற்காக, 42-வது திருத்தம் (1976) 1971 மக்கள் தொகை அடிப்படையை 2001 வரை முடக்கியது. 84-வது அரசியலமைப்புத் திருத்தம் (2001) இந்த முடக்கத்தை '2026-க்குப் பிறகு எடுக்கப்படும் முதல் கணக்கெடுப்பு வரை' நீட்டித்தது. 2026-க்குப் பின் மக்கள் தொகை அடிப்படையில் தொகுதிகள் பிரிக்கப்பட்டால் தென் மாநிலங்களின் அரசியல் அதிகாரம் கடுமையாகக் குறையும் அபாயம் உள்ளது."
+      },
+      {
+        "term_en": "15th Finance Commission Population Criteria Shift",
+        "term_ta": "15-வது நிதி ஆணைய மக்கள் தொகை அளவுகோல் மாற்றம்",
+        "details_en": "While the 14th Finance Commission used both 1971 (17.5%) and 2011 (10%) populations for tax devolution, the 15th Finance Commission exclusively utilized the 2011 Census population (giving it a massive 15% weight), penalizing low-fertility southern states. To mitigate this injustice, the 15th FC introduced a 'Demographic Performance' criterion with 12.5% weight, rewarding states with lower TFR.",
+        "details_ta": "14-வது நிதி ஆணையம் மாநிலங்களுக்கு வரிப் பகிர்வு செய்ய 1971 மற்றும் 2011 மக்கள் தொகையைப் பயன்படுத்திய நிலையில், 15-வது நிதி ஆணையம் 1971 கணக்கெடுப்பை முழுமையாகக் கைவிட்டு '2011 மக்கள் தொகைக்கு 15% எடையை' அளித்தது. இதனால் மக்கள் தொகையைக் குறைத்த தென் மாநிலங்களுக்கு நிதி இழப்பு ஏற்பட்டது. இதனை ஈடுசெய்ய குறைந்த TFR கொண்ட மாநிலங்களுக்கு 12.5% எடையுடன் 'மக்கள் தொகை செயல்பாடு' (Demographic Performance) என்ற புதிய அளவுகோலை 15-வது நிதி ஆணையம் அறிமுகப்படுத்தியது."
+      }
+    ],
+    "sec_population_ageing_silver_tsunami": [
+      {
+        "term_en": "United Nations Demographic Ageing Thresholds",
+        "term_ta": "ஐக்கிய நாடுகள் சபையின் முதியோர் நிலை வரம்புகள்",
+        "details_en": "The UN categorizes population ageing based on the proportion of population aged 60 years and above: (1) Ageing Society: elderly (60+) constitutes 7% to 14% of the population; (2) Aged Society: elderly constitutes 14% to 20% of the population; (3) Hyper-Aged (Super-Aged) Society: elderly exceeds 20% (e.g., Japan, Italy). India as a whole is an 'Ageing Society' (~10.5% elderly in 2022), but Kerala (~16.5%) and Tamil Nadu (~13.6%) are rapidly transitioning into 'Aged Societies'.",
+        "details_ta": "ஐக்கிய நாடுகள் சபை 60 வயது மற்றும் அதற்கு மேற்பட்ட முதியோர்களின் மக்கள் தொகை பங்கின் அடிப்படையில் வகைப்படுத்துகிறது: (1) முதியோர் சமூகம் (Ageing Society): 60+ வயதுடையவர்கள் 7% முதல் 14% வரை இருப்பது; (2) முதிர்ந்த சமூகம் (Aged Society): 60+ வயதுடையவர்கள் 14% முதல் 20% வரை இருப்பது; (3) உச்சபட்ச முதியோர் சமூகம் (Super-Aged Society): முதியோர்கள் 20%-க்கு மேல் இருப்பது (ஜப்பான், இத்தாலி). இந்தியா ஒட்டுமொத்தமாக 'முதியோர் சமூகமாக' உள்ளது (~10.5%), ஆனால் கேரளா (~16.5%) மற்றும் தமிழ்நாடு (~13.6%) வேகமாக 'முதிர்ந்த சமூகமாக' (Aged Society) மாறி வருகின்றன."
+      },
+      {
+        "term_en": "Economic Consequences of Population Ageing",
+        "term_ta": "முதியோர் அதிகரிப்பால் ஏற்படும் பொருளாதார விளைவுகள்",
+        "details_en": "Key macroeconomic pressures: (1) Rising Old-Age Dependency Ratio; (2) Fiscal strain on pension budgets and healthcare financing; (3) Shortage of agricultural and industrial manual labor; (4) The phenomenon of 'Getting Old Before Getting Rich'—unlike Western nations that grew wealthy before their populations aged, India is ageing at relatively low per-capita income levels.",
+        "details_ta": "முக்கிய பேரியல் பொருளாதார நெருக்கடிகள்: (1) முதியோர் சார்பு விகிதம் உயருதல்; (2) ஓய்வூதியங்கள் மற்றும் மருத்துவச் செலவுகளால் அரசின் நிதிச்சுமை அதிகரிப்பது; (3) விவசாயம் மற்றும் தொழிற்சாலைகளில் உழைப்பாளர் பற்றாக்குறை; (4) 'பணக்காரராவதற்கு முன்பே முதியவராகும்' நிலை—மேற்கத்திய நாடுகள் செல்வத்தைப் பெருக்கிய பிறகே முதியோர் நிலையை அடைந்தன, ஆனால் இந்தியா குறைந்த தனிநபர் வருமான நிலையிலேயே முதியோர் நிலையை எதிர்கொள்கிறது."
+      }
+    ],
+    "sec_tamil_nadu_demographic_model": [
+      {
+        "term_en": "Historical Achievement of Replacement TFR in 1993",
+        "term_ta": "1993-லேயே மாற்று நிலை TFR-ஐ எட்டிய வரலாற்றுச் சாதனை",
+        "details_en": "Tamil Nadu achieved replacement-level fertility (TFR = 2.1) as early as 1993, approximately THREE DECADES AHEAD of the national average (India reached 2.0 only in 2019-21). In NFHS-5 (2019-21), Tamil Nadu's TFR stood at an ultra-low 1.4 (on par with Nordic European nations).",
+        "details_ta": "தமிழ்நாடு 1993-லேயே மாற்று நிலை கருவுறுதலை (TFR = 2.1) எட்டி சாதனை படைத்தது; இது தேசிய சராசரியை விட சுமார் '30 ஆண்டுகள் முந்தையதாகும்' (இந்தியா 2019-21-ல் தான் எட்டியது). அண்மைய NFHS-5 கணக்கெடுப்பில் தமிழ்நாட்டின் TFR 1.4 என்ற மிகக் குறைந்த ஐரோப்பிய அளவிற்குச் சரிந்துள்ளது."
+      },
+      {
+        "term_en": "Social Determinants of the Tamil Nadu Success",
+        "term_ta": "தமிழ்நாட்டின் வெற்றிக்கான சமூகக் காரணிகள்",
+        "details_en": "Unlike authoritarian Chinese coercive policies, Tamil Nadu achieved demographic transition through democratic human development: (1) Dravidian Social Reform Movement: promoting rationalism, female equality, and self-respect marriages (Periyar E.V. Ramasamy advocated birth control for women's liberation in the 1930s); (2) Mid-Day Meal Scheme (Kamarajar, MGR): incentivized female schooling, raising female literacy and delaying marriage age; (3) Universal Rural Healthcare Infrastructure: 24x7 Primary Health Centres (PHCs) achieved >99.9% institutional deliveries; (4) Modern Entitlements: Pudhumai Penn and Magalir Urimai Thogai.",
+        "details_ta": "சீனாவின் கட்டாய முறைகளைப் போலன்றி, தமிழ்நாடு சமூக வளர்ச்சி மூலம் இதனைச் சாதித்தது: (1) திராவிட சுயமரியாதை இயக்கம்: பெண்ணுரிமை, பகுத்தறிவு மற்றும் சுயமரியாதைத் திருமணங்களை வளர்த்தது (1930-களிலேயே பெரியார் பெண்களின் விடுதலைக்காகக் குடும்பக் கட்டுப்பாட்டை வலியுறுத்தினார்); (2) சத்துணவுத் திட்டம் (காமராஜர், எம்.ஜி.ஆர்): பெண் குழந்தைகளின் பள்ளி சேர்க்கையை உயர்த்தி, திருமண வயதை உயர்த்தியது; (3) ஆரம்ப சுகாதார நிலையங்கள் (PHCs) மூலம் 99.9%-க்கும் அதிகமான மருத்துவமனை பிரசவங்கள்; (4) புதுமைப் பெண் மற்றும் மகளிர் உரிமைத் தொகை போன்ற நவீன நலத்திட்டங்கள்."
+      },
+      {
+        "term_en": "Emerging Tamil Nadu Challenges: Geriatric Care & Migrant Labor",
+        "term_ta": "தமிழ்நாட்டின் புதிய சவால்கள்: முதியோர் நலம் & புலம்பெயர் தொழிலாளர்கள்",
+        "details_en": "With an elderly population exceeding 13.6% and lowest fertility, Tamil Nadu faces twin emerging dynamics: (1) Demand for specialized Geriatric Healthcare and elder social security; (2) In-migration of hundreds of thousands of migrant workers from high-fertility northern states (Bihar, Jharkhand, Odisha, Bengal) to power Tamil Nadu's construction, manufacturing, and hospitality sectors.",
+        "details_ta": "13.6%-க்கும் அதிகமான முதியோர்களுடன் தமிழ்நாடு இரண்டு புதிய சவால்களை எதிர்கொள்கிறது: (1) முதியோர் நலம், மருத்துவக் கட்டமைப்பு மற்றும் சமூகப் பாதுகாப்பு ஓய்வூதியங்களுக்கான தேவை; (2) உழைப்பாளர் பற்றாக்குறையை ஈடுசெய்ய பீகார், ஒடிசா, மேற்கு வங்கம் போன்ற வட மாநிலங்களிலிருந்து கட்டுமான மற்றும் ஆலை பணிகளுக்காக லட்சக்கணக்கான புலம்பெயர் தொழிலாளர்கள் தமிழ்நாட்டிற்கு வருவது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_demographic_dividend_vs_disaster",
+        "title_en": "Demographic Dividend vs Demographic Disaster Dynamics",
+        "title_ta": "மக்கள் தொகை நன்மை vs மக்கள் தொகை பேரழிவு இயக்கவியல் ஒப்பீடு",
+        "headers_en": [
+          "Analytical Aspect",
+          "Demographic Dividend Regime",
+          "Demographic Disaster Regime"
+        ],
+        "headers_ta": [
+          "பகுப்பாய்வு அம்சம்",
+          "மக்கள் தொகை நன்மை நிலை",
+          "மக்கள் தொகை பேரழிவு நிலை"
+        ],
+        "rows_en": [
+          [
+            "Human Capital Base",
+            "High-quality education, healthcare, nutrition, and market skills",
+            "Low literacy, high school dropouts, malnutrition, and skill deficit"
+          ],
+          [
+            "Job Creation Environment",
+            "High employment elasticity; labor-absorbing formal industrial expansion",
+            "Jobless growth, informal gig work, educated youth queuing for jobs"
+          ],
+          [
+            "Macroeconomic Outcome",
+            "Rapid GDP growth, surge in domestic savings, high per capita income",
+            "Stagnant per capita income, fiscal drain on relief, social instability"
+          ],
+          [
+            "Youth Behavior",
+            "Productive entrepreneurial innovation and high labor productivity",
+            "Radicalization, political unrest, rising criminality, and despair"
+          ],
+          [
+            "Global Precedent",
+            "East Asian Tigers (South Korea, Taiwan, Singapore 1965-1990)",
+            "Certain resource-cursed economies in the Middle East and parts of Africa"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மனித மூலதன அடிப்படை",
+            "தரமான கல்வி, சுகாதாரம், ஊட்டச்சத்து மற்றும் சந்தைத் தேவைகளுக்கான திறன்",
+            "குறைந்த கல்வி, பள்ளியிடை நிற்றல், ஊட்டச்சத்துக் குறைபாடு, திறனின்மை"
+          ],
+          [
+            "வேலை உருவாக்கும் சூழல்",
+            "அதிக வேலைவாய்ப்பு நெகிழ்ச்சி; தொழிலாளர்களை ஈர்க்கும் ஆலை வளர்ச்சி",
+            "வேலைவாய்ப்பற்ற வளர்ச்சி, முறைசாரா பணிகள், வேலைக்காகக் காத்திருக்கும் இளைஞர்கள்"
+          ],
+          [
+            "பேரியல் பொருளாதார முடிவு",
+            "வேகமான GDP வளர்ச்சி, உள்நாட்டு சேமிப்பு பெருக்கம், தனிநபர் வருமான உயர்வு",
+            "தேக்கமடைந்த தனிநபர் வருமானம், நிவாரணங்களுக்கான நிதி இழப்பு, குழப்பம்"
+          ],
+          [
+            "இளைஞர்களின் நடத்தை",
+            "தொழில்முனைவு, புதிய கண்டுபிடிப்புகள், அதிக உழைப்பு உற்பத்தித்திறன்",
+            "விரக்தி, தீவிரவாதம், குற்றங்கள் அதிகரிப்பு மற்றும் அரசியல் அமைதியின்மை"
+          ],
+          [
+            "சர்வதேச முன்னுதாரணம்",
+            "கிழக்காசிய நாடுகள் (தென் கொரியா, தைவான், சிங்கப்பூர் 1965-1990)",
+            "ஆப்பிரிக்கா மற்றும் மத்திய கிழக்கின் சில பின்தங்கிய நாடுகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_north_vs_south_demographics",
+        "title_en": "Northern States vs Southern States Demographic Profile",
+        "title_ta": "வட மாநிலங்கள் vs தென் மாநிலங்கள் மக்கள் தொகைக் கட்டமைப்பு ஒப்பீடு",
+        "headers_en": [
+          "Demographic Metric",
+          "Southern States (Tamil Nadu, Kerala)",
+          "Northern States (Bihar, Uttar Pradesh)"
+        ],
+        "headers_ta": [
+          "மக்கள் தொகைக் குறிகாட்டி",
+          "தென் மாநிலங்கள் (தமிழ்நாடு, கேரளா)",
+          "வட மாநிலங்கள் (பீகார், உத்தரப் பிரதேசம்)"
+        ],
+        "rows_en": [
+          [
+            "Total Fertility Rate (TFR)",
+            "Ultra-low: 1.4 to 1.7 (well below replacement level)",
+            "High: 2.4 to 3.0 (above replacement level)"
+          ],
+          [
+            "Demographic Stage",
+            "Transition completed; entering Stage 4 / Ageing",
+            "In middle of Stage 2 to early Stage 3; young median age"
+          ],
+          [
+            "Elderly Population (60+)",
+            "High and rising: ~13% to 17% of state population",
+            "Low: ~7% to 9% of state population"
+          ],
+          [
+            "Labor Market Dynamic",
+            "Severe domestic unskilled labor shortage; relies on migrants",
+            "Massive labor surplus; net out-migration of labor across India"
+          ],
+          [
+            "Federal Grievance",
+            "Risks losing parliamentary seats in post-2026 delimitation",
+            "Gains political representation based on raw population weight"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்தக் கருவுறுதல் விகிதம் (TFR)",
+            "மிகக் குறைவு: 1.4 முதல் 1.7 வரை (மாற்று வரம்பிற்கு மிகக் கீழ்)",
+            "அதிகம்: 2.4 முதல் 3.0 வரை (மாற்று வரம்பிற்கு மேல்)"
+          ],
+          [
+            "மக்கள் தொகை கட்டம்",
+            "மாற்றம் முடிந்தது; கட்டம் 4-க்குள் நுழைகிறது / முதியோர் பெருக்கம்",
+            "கட்டம் 2-ன் முடிவு அல்லது 3-ன் தொடக்கம்; இளம் மக்கள் தொகை"
+          ],
+          [
+            "முதியோர் மக்கள் தொகை (60+)",
+            "அதிகம்: மக்கள் தொகையில் ~13% முதல் 17% வரை",
+            "குறைவு: மக்கள் தொகையில் ~7% முதல் 9% வரை"
+          ],
+          [
+            "தொழிலாளர் சந்தைப் போக்கு",
+            "உள்ளூர் கூலித் தொழிலாளர் பற்றாக்குறை; பிற மாநிலத்தவரை நம்பியுள்ளது",
+            "அதிக உபரி தொழிலாளர்கள்; பிற மாநிலங்களுக்கு புலம்பெயர்தல்"
+          ],
+          [
+            "கூட்டாட்சி கவலைகள்",
+            "2026 மறுவரையறையில் நாடாளுமன்ற இடங்களை இழக்கும் அபாயம்",
+            "அதிக மக்கள் தொகையால் கூடுதல் நாடாளுமன்ற இடங்களைப் பெறும் நிலை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_tamil_nadu_vs_india_demographics",
+        "title_en": "Tamil Nadu vs All-India Demographic Indicators Comparison",
+        "title_ta": "தமிழ்நாடு vs அகில இந்திய மக்கள் தொகைக் குறிகாட்டிகள் ஒப்பீடு",
+        "headers_en": [
+          "Demographic Indicator",
+          "Tamil Nadu Benchmark",
+          "All-India Average Benchmark"
+        ],
+        "headers_ta": [
+          "மக்கள் தொகைக் குறிகாட்டி",
+          "தமிழ்நாடு அளவீடு",
+          "அகில இந்திய சராசரி அளவீடு"
+        ],
+        "rows_en": [
+          [
+            "Total Fertility Rate (NFHS-5)",
+            "1.4 children per woman (European Nordic level)",
+            "2.0 children per woman"
+          ],
+          [
+            "Infant Mortality Rate (SRS)",
+            "~13 deaths per 1,000 live births",
+            "~28 deaths per 1,000 live births"
+          ],
+          [
+            "Maternal Mortality Ratio (SRS)",
+            "~54 deaths per 100,000 live births (SDG target achieved)",
+            "~97 deaths per 100,000 live births"
+          ],
+          [
+            "Institutional Deliveries",
+            "99.9% (virtually 100% in hospital settings)",
+            "88.6%"
+          ],
+          [
+            "Overall Sex Ratio (Census 2011)",
+            "996 females per 1,000 males",
+            "943 females per 1,000 males"
+          ],
+          [
+            "Elderly Population Share (60+)",
+            "~13.6% (rapidly ageing)",
+            "~10.5%"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்தக் கருவுறுதல் விகிதம் (NFHS-5)",
+            "1.4 குழந்தைகள் (ஐரோப்பிய நார்டிக் நாடுகளின் அளவு)",
+            "2.0 குழந்தைகள்"
+          ],
+          [
+            "குழந்தை இறப்பு விகிதம் (IMR)",
+            "1,000 பிறப்புகளுக்கு ~13 இறப்புகள்",
+            "1,000 பிறப்புகளுக்கு ~28 இறப்புகள்"
+          ],
+          [
+            "தாய் இறப்பு விகிதம் (MMR)",
+            "1,00,000 பிறப்புகளுக்கு ~54 இறப்புகள் (SDG இலக்கை எட்டியது)",
+            "1,00,000 பிறப்புகளுக்கு ~97 இறப்புகள்"
+          ],
+          [
+            "மருத்துவமனை பிரசவங்கள்",
+            "99.9% (முழுமையாக மருத்துவமனையிலேயே நடப்பது)",
+            "88.6%"
+          ],
+          [
+            "பாலின விகிதம் (2011 கணக்கெடுப்பு)",
+            "1,000 ஆண்களுக்கு 996 பெண்கள்",
+            "1,000 ஆண்களுக்கு 943 பெண்கள்"
+          ],
+          [
+            "முதியோர் மக்கள் தொகை பங்கு (60+)",
+            "~13.6% (வேகமாக அதிகரிக்கும் முதியோர்)",
+            "~10.5%"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_delimitation_amendments",
+        "title_en": "Constitutional Delimitation Freezes: 42nd vs 84th vs 87th Amendments",
+        "title_ta": "மக்களவைத் தொகுதி மறுவரையறை முடக்கங்கள்: 42-வது vs 84-வது vs 87-வது திருத்தங்கள்",
+        "headers_en": [
+          "Constitutional Amendment",
+          "Year Enacted",
+          "Population Benchmark Frozen",
+          "Expiration / Extension Mandate"
+        ],
+        "headers_ta": [
+          "அரசியலமைப்புத் திருத்தம்",
+          "இயற்றப்பட்ட ஆண்டு",
+          "முடக்கப்பட்ட மக்கள் தொகை அடிப்படை",
+          "காலாவதி / நீட்டிப்பு ஆணை"
+        ],
+        "rows_en": [
+          [
+            "42nd Amendment Act",
+            "1976",
+            "Frozen at 1971 Census population figures",
+            "Frozen until the first census conducted after the year 2000 (i.e., 2001)"
+          ],
+          [
+            "84th Amendment Act",
+            "2001",
+            "Extended the freeze on total Lok Sabha seats at 1971 level",
+            "Frozen until the first census conducted AFTER THE YEAR 2026"
+          ],
+          [
+            "87th Amendment Act",
+            "2003",
+            "Allowed internal constituency boundary adjustments within states",
+            "Mandated using 2001 Census for internal seat adjustments without changing state totals"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "42-வது அரசியலமைப்புத் திருத்தம்",
+            "1976",
+            "1971 மக்கள் தொகைக் கணக்கெடுப்பு அளவில் முடக்கப்பட்டது",
+            "2000-ஆம் ஆண்டிற்குப் பின் எடுக்கப்படும் முதல் கணக்கெடுப்பு வரை (2001 வரை)"
+          ],
+          [
+            "84-வது அரசியலமைப்புத் திருத்தம்",
+            "2001",
+            "மக்களவை மொத்த இடங்களின் முடக்கத்தை 1971 அளவிலேயே நீட்டித்தது",
+            "2026-ஆம் ஆண்டிற்குப் பின் எடுக்கப்படும் முதல் கணக்கெடுப்பு வரை முடக்கம்"
+          ],
+          [
+            "87-வது அரசியலமைப்புத் திருத்தம்",
+            "2003",
+            "மாநிலங்களுக்குள் தொகுதிகளின் எல்லைகளை மட்டும் மாற்ற அனுமதித்தது",
+            "மாநிலத்தின் மொத்த இடங்களை மாற்றாமல், 2001 கணக்கெடுப்பின்படி எல்லைகள் மாற்றம்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Population Part 3: Demographic Dividend, Federalism & Tamil Nadu Model",
+        "short_label": "Dividend & TN Model",
+        "children": [
+          {
+            "title": "Demographic Dividend Mechanics",
+            "short_label": "Dividend",
+            "children": [
+              {
+                "title": "Window 2005–2055 (Peak 2040; Median Age 28.5)",
+                "short_label": "Window"
+              },
+              {
+                "title": "Labor Supply, Savings Surge, Human Capital",
+                "short_label": "Mechanics"
+              },
+              {
+                "title": "Risk of Demographic Disaster (Youth unrest)",
+                "short_label": "Disaster Risk"
+              }
+            ]
+          },
+          {
+            "title": "Regional Divergence & Federalism",
+            "short_label": "Federal Tensions",
+            "children": [
+              {
+                "title": "North (High TFR 2.4-3.0) vs South (Low TFR 1.4-1.7)",
+                "short_label": "North-South Gap"
+              },
+              {
+                "title": "Delimitation Freeze (84th CAA 2001: Frozen till 2026)",
+                "short_label": "Delimitation"
+              },
+              {
+                "title": "15th FC (2011 Population 15% + Demographic Performance 12.5%)",
+                "short_label": "15th FC"
+              }
+            ]
+          },
+          {
+            "title": "Population Ageing: Silver Tsunami",
+            "short_label": "Ageing",
+            "children": [
+              {
+                "title": "UN Definitions (Ageing >7%, Aged >14%, Super-Aged >20%)",
+                "short_label": "UN Standards"
+              },
+              {
+                "title": "Getting Old Before Getting Rich Paradox",
+                "short_label": "Old Before Rich"
+              },
+              {
+                "title": "Kerala (~16.5%) & Tamil Nadu (~13.6%) Aged Societies",
+                "short_label": "Southern Ageing"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu Transition Model",
+            "short_label": "Tamil Nadu Model",
+            "children": [
+              {
+                "title": "TFR 2.1 in 1993 (3 decades ahead of India)",
+                "short_label": "1993 Milestone"
+              },
+              {
+                "title": "Dravidian Social Reform + Mid-Day Meals + PHCs",
+                "short_label": "Social Drivers"
+              },
+              {
+                "title": "Geriatric Healthcare + Migrant Labor Inflow",
+                "short_label": "Modern Challenges"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Delimitation Freeze Amendment Trap: 84th Amendment (2001), NOT 42nd Alone",
+        "points": {
+          "en": [
+            "TRAP: Believing that the current freeze on Lok Sabha seats until 2026 was enacted solely by the 42nd Amendment of 1976.",
+            "CORRECT FACT: The 42nd Amendment (1976) froze delimitation only until the year 2000. It was the 84TH CONSTITUTIONAL AMENDMENT ACT, 2001 that extended the freeze on total Lok Sabha seats until the first census conducted AFTER THE YEAR 2026.",
+            "WHY CANDIDATES FAIL: Forgetting the pivotal role of the 84th Amendment in extending the demographic protection of southern states."
+          ],
+          "ta": [
+            "பொறி: 2026 வரை மக்களவைத் தொகுதிகளை முடக்கியது 42-வது அரசியலமைப்புத் திருத்தம் மட்டுமே என நினைப்பது.",
+            "சரியான உண்மை: 42-வது திருத்தம் (1976) 2000-ஆம் ஆண்டு வரை மட்டுமே முடக்கியது! '84-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2001' தான் மக்களவையின் மொத்த இடங்களை '2026-க்குப் பிறகு எடுக்கப்படும் முதல் கணக்கெடுப்பு வரை' நீட்டித்து முடக்கியது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 42-வது திருத்தத்தை மட்டுமே நினைவில் வைத்துக்கொண்டு 84-வது திருத்தத்தின் பங்கைக் கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Tamil Nadu Replacement TFR Achievement Year Trap: 1993, NOT Recent",
+        "points": {
+          "en": [
+            "TRAP: Assuming Tamil Nadu reached replacement level fertility (TFR 2.1) recently around 2010 or 2020.",
+            "CORRECT FACT: Tamil Nadu achieved replacement level fertility (TFR = 2.1) as early as 1993, nearly THIRTY YEARS before the all-India average (which achieved TFR 2.0 only in NFHS-5, 2019-21).",
+            "WHY CANDIDATES FAIL: Underestimating the historical headstart of Tamil Nadu's social and health infrastructure."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாடு மாற்று நிலை கருவுறுதலை (TFR 2.1) அண்மையில் 2010 அல்லது 2020-ல் தான் எட்டியது என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாடு மாற்று நிலை கருவுறுதலை (TFR = 2.1) '1993-லேயே' சாதித்துவிட்டது; இது அகில இந்திய சராசரியை விட சுமார் 30 ஆண்டுகள் முந்தைய வரலாற்றுச் சாதனையாகும் (இந்தியா 2019-21-ல் தான் எட்டியது).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தமிழ்நாட்டின் சமூக மற்றும் பொதுச் சுகாதார முன்னோடி வரலாற்றைக் குறைத்து மதிப்பிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "UN Demographic Ageing Threshold Trap: Aged Society is 14%, NOT 7%",
+        "points": {
+          "en": [
+            "TRAP: Labeling a society with 8% elderly population as an 'Aged Society'.",
+            "CORRECT FACT: Under United Nations definitions: an 'Ageing Society' has 7% to 14% elderly (60+); an 'Aged Society' has 14% to 20% elderly; a 'Super-Aged Society' has over 20% elderly. Tamil Nadu (~13.6%) is on the verge of becoming an 'Aged Society', while Kerala (~16.5%) has already crossed the threshold.",
+            "WHY CANDIDATES FAIL: Conflating the introductory 'Ageing' threshold (7%) with the formal 'Aged' threshold (14%)."
+          ],
+          "ta": [
+            "பொறி: 8% முதியோர்களைக் கொண்ட ஒரு சமூகத்தை 'முதிர்ந்த சமூகம்' (Aged Society) எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: ஐக்கிய நாடுகள் சபையின் வரையறைப்படி: 60 வயதுக்கு மேற்பட்ட முதியோர்கள் 7% முதல் 14% வரை இருந்தால் அது 'முதியோர் சமூகம்' (Ageing Society); 14% முதல் 20% வரை இருந்தால் மட்டுமே அது 'முதிர்ந்த சமூகம்' (Aged Society); 20%-க்கு மேல் இருந்தால் 'உச்சபட்ச முதியோர் சமூகம்' (Super-Aged Society).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 7% என்ற தொடக்க வரம்பையும், 14% என்ற முழுமையான வரம்பையும் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "15th Finance Commission Demographic Performance Weight Trap: 12.5%, NOT 15%",
+        "points": {
+          "en": [
+            "TRAP: Mixing up the weights given to '2011 Population' and 'Demographic Performance' by the 15th Finance Commission.",
+            "CORRECT FACT: The 15th Finance Commission allocated a 15% WEIGHT to the 2011 Population, and introduced a 12.5% WEIGHT to Demographic Performance (rewarding lower fertility states like Tamil Nadu and Kerala).",
+            "WHY CANDIDATES FAIL: Interchanging the 15% population weight and 12.5% demographic performance weight."
+          ],
+          "ta": [
+            "பொறி: 15-வது நிதி ஆணையம் '2011 மக்கள் தொகைக்கும்' மற்றும் 'மக்கள் தொகை செயல்பாட்டிற்கும்' அளித்த எடைகளை மாற்றிப் புரிந்து கொள்வது.",
+            "சரியான உண்மை: 15-வது நிதி ஆணையம் 2011 மக்கள் தொகைக்கு '15% எடையையும்', கருவுறுதலைக் கட்டுப்படுத்திய மாநிலங்களைப் பாராட்டும் மக்கள் தொகை செயல்பாட்டிற்கு '12.5% எடையையும்' வழங்கியது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 15% மற்றும் 12.5% என்ற இரு எண்களைத் தேர்வில் மாற்றிப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Demographic Dividend Duration Trap: 50-Year Window, NOT Forever",
+        "points": {
+          "en": [
+            "TRAP: Assuming that India will permanently enjoy a young demographic profile.",
+            "CORRECT FACT: The Demographic Dividend is a strictly TIME-BOUND TRANSITORY WINDOW spanning approximately 50 years (2005 to 2055 in India). Beyond 2055, fertility declines will cause the elderly population to surge, shutting the window and transitioning India into an aged society.",
+            "WHY CANDIDATES FAIL: Treating demographic trends as static permanent advantages rather than dynamic finite lifecycles."
+          ],
+          "ta": [
+            "பொறி: இந்தியா எப்போதும் இளம் மக்கள் தொகையைக் கொண்ட நாடாகவே நீடிக்கும் என நினைப்பது.",
+            "சரியான உண்மை: மக்கள் தொகை நன்மை என்பது சுமார் 50 ஆண்டுகள் மட்டுமே (2005 முதல் 2055 வரை) நீடிக்கக்கூடிய 'வரம்பிற்குட்பட்ட தற்காலிக வாய்ப்பாகும்'! 2055-க்குப் பிறகு குறைந்த பிறப்பு விகிதங்களால் முதியோர்களின் எண்ணிக்கை அதிகரித்து, இந்த சாளரம் மூடப்பட்டுவிடும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மக்கள் தொகை இயக்கவியலை தற்காலிகமானது என உணராமல் நிரந்தரமானது என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "NFHS-5 All-India TFR Status Trap: Already Below Replacement (2.0)",
+        "points": {
+          "en": [
+            "TRAP: Believing that India's national fertility is still hovering far above the replacement level at 2.4 or 2.6.",
+            "CORRECT FACT: According to the official National Family Health Survey (NFHS-5, 2019-21), India's national Total Fertility Rate (TFR) has ALREADY DROPPED TO 2.0, officially falling below the biological replacement rate of 2.1.",
+            "WHY CANDIDATES FAIL: Relying on outdated data from Census 2011 or NFHS-4 (2015-16 where TFR was 2.2)."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவின் தேசிய கருவுறுதல் விகிதம் இன்றும் மாற்று நிலைக்கு மேலே 2.4 அல்லது 2.6 என இருப்பதாக நினைப்பது.",
+            "சரியான உண்மை: அதிகாரப்பூர்வ தேசிய குடும்ப நலக் கணக்கெடுப்பின்படி (NFHS-5, 2019-21), இந்தியாவின் தேசிய மொத்தக் கருவுறுதல் விகிதம் (TFR) '2.0 ஆகக் குறைந்துவிட்டது'; அதாவது மாற்று நிலை வரம்பான 2.1-ஐ விடக் குறைந்துவிட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2011 கணக்கெடுப்பு அல்லது NFHS-4-ன் பழைய புள்ளிவிவரங்களை (2.2) வைத்து விடையளிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "David Bloom conceptualized the Demographic Dividend as the economic growth potential from a falling dependency ratio.",
+        "India's demographic dividend window opened around 2005-06, will peak around 2040, and close around 2055.",
+        "India's median population age is ~28.5 years, compared to 38 in the US and China, and 49 in Japan.",
+        "The 42nd Constitutional Amendment Act 1976 froze parliamentary seats at the 1971 census level until 2000.",
+        "The 84th Constitutional Amendment Act 2001 extended the freeze on Lok Sabha seats until the first census after 2026.",
+        "The 15th Finance Commission allocated a 15% weight to 2011 population and a 12.5% weight to Demographic Performance.",
+        "The United Nations defines an 'Aged Society' as one where population aged 60+ exceeds 14%.",
+        "Tamil Nadu achieved replacement-level fertility (TFR = 2.1) in 1993, approximately three decades ahead of the national average.",
+        "NFHS-5 (2019-21) recorded Tamil Nadu's TFR at 1.4, matching European Nordic low-fertility levels.",
+        "Tamil Nadu's Maternal Mortality Ratio (MMR) stands at ~54 per 100,000 live births, beating the SDG target of 70.",
+        "Tamil Nadu's Infant Mortality Rate (IMR) stands at ~13 per 1,000 live births, compared to the national average of ~28.",
+        "Institutional deliveries in Tamil Nadu exceed 99.9%, virtually eliminating unattended home childbirth."
+      ],
+      "ta": [
+        "சார்பு விகிதம் குறைவதால் ஏற்படும் வேகமான பொருளாதார வளர்ச்சியை டேவிட் ப்ளூம் 'மக்கள் தொகை நன்மை' என விளக்கினார்.",
+        "இந்தியாவின் மக்கள் தொகை நன்மைக் காலம் 2005-06-ல் தொடங்கி, 2040-ல் உச்சமடைந்து, 2055-ல் முடிவடையும்.",
+        "இந்தியாவின் சராசரி வயது ~28.5 ஆண்டுகள்; அமெரிக்கா மற்றும் சீனாவில் 38, ஜப்பானில் 49.",
+        "42-வது அரசியலமைப்புத் திருத்தம் (1976) நாடாளுமன்ற இடங்களை 1971 மக்கள் தொகை அளவில் 2000 வரை முடக்கியது.",
+        "84-வது அரசியலமைப்புத் திருத்தம் (2001) மக்களவை தொகுதி முடக்கத்தை 2026-க்குப் பிந்தைய முதல் கணக்கெடுப்பு வரை நீட்டித்தது.",
+        "15-வது நிதி ஆணையம் 2011 மக்கள் தொகைக்கு 15% எடையையும், மக்கள் தொகை செயல்பாட்டிற்கு 12.5% எடையையும் வழங்கியது.",
+        "ஐக்கிய நாடுகள் சபை 60+ வயதுடையவர்கள் 14%-க்கு மேல் இருப்பதை 'முதிர்ந்த சமூகம்' (Aged Society) என வரையறுக்கிறது.",
+        "தமிழ்நாடு 1993-லேயே மாற்று நிலை கருவுறுதலை (TFR = 2.1) எட்டியது; இது தேசிய சராசரியை விட 30 ஆண்டுகள் முந்தையது.",
+        "NFHS-5-ல் தமிழ்நாட்டின் TFR 1.4 ஆகப் பதிவானது; இது ஐரோப்பிய நார்டிக் நாடுகளின் அளவிற்கு சமமானது.",
+        "தமிழ்நாட்டின் தாய் இறப்பு விகிதம் (MMR) 1,00,000 பிறப்புகளுக்கு ~54 ஆக உள்ளது (SDG இலக்கான 70-ஐ விடச் சிறந்தது).",
+        "தமிழ்நாட்டின் குழந்தை இறப்பு விகிதம் (IMR) 1,000 பிறப்புகளுக்கு ~13 ஆகும் (தேசிய சராசரி ~28).",
+        "தமிழ்நாட்டில் மருத்துவமனை பிரசவங்கள் 99.9%-க்கும் அதிகமாக உள்ளது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Demographic Dividend (2005-2055): Window of low dependency ratio where labor supply and domestic savings surge.",
+        "Median age of India is ~28.5 years; dividend window peaks in 2040 and closes by 2055 (occurs once in history).",
+        "Demographic Disaster: Failure to skill youth transforms demographic bulge into unemployment and social unrest.",
+        "North-South Divide: South has completed transition (TFR 1.4-1.7); North remains young with higher fertility (TFR 2.4-3.0).",
+        "84th Constitutional Amendment (2001) froze Lok Sabha seat delimitation at 1971 level until post-2026 census.",
+        "15th Finance Commission used 2011 population (15% weight) and introduced Demographic Performance (12.5% weight).",
+        "UN Ageing: Ageing Society (60+ > 7%), Aged Society (60+ > 14%), Super-Aged (60+ > 20%); Kerala and TN crossing 14%.",
+        "Tamil Nadu Model: Achieved replacement TFR (2.1) in 1993 through Dravidian social reforms, noon meals, and 24x7 PHCs.",
+        "Tamil Nadu NFHS-5: TFR = 1.4; IMR = 13; MMR = 54 (SDG target beat); Institutional deliveries = 99.9%.",
+        "Tamil Nadu's new challenges: Geriatric elder care (Silver Tsunami) and absorbing northern migrant labor in industries."
+      ],
+      "ta": [
+        "மக்கள் தொகை நன்மை (2005-2055): குறைந்த சார்பு விகிதம் மூலம் உழைப்பு மற்றும் சேமிப்பு அதிகரிக்கும் காலம்.",
+        "இந்தியாவின் சராசரி வயது ~28.5 ஆண்டுகள்; இந்த வாய்ப்பு 2040-ல் உச்சமடைந்து 2055-ல் முடிவடையும்.",
+        "மக்கள் தொகை பேரழிவு: இளைஞர்களுக்கு திறன் மற்றும் வேலை தராவிட்டால் அது அமைதியின்மையாக மாறும் அபாயம்.",
+        "வடக்கு-தெற்கு பிளவு: தெற்கு மாநிலங்கள் மாற்றத்தை முடித்துவிட்டன (TFR 1.4-1.7); வடக்கு மாநிலங்கள் இளமையாக உள்ளன (TFR 2.4-3.0).",
+        "84-வது அரசியலமைப்புத் திருத்தம் (2001) மக்களவைத் தொகுதி எண்ணிக்கையை 2026-க்குப் பிந்தைய கணக்கெடுப்பு வரை முடக்கியது.",
+        "15-வது நிதி ஆணையம் 2011 மக்கள் தொகைக்கு 15% எடையும், மக்கள் தொகை செயல்பாட்டிற்கு 12.5% எடையும் அளித்தது.",
+        "UN அளவீடு: முதியோர் சமூகம் (>7%), முதிர்ந்த சமூகம் (>14%), உச்சபட்ச முதியோர் (>20%); கேரளா, தமிழ்நாடு 14%-ஐ எட்டுகின்றன.",
+        "தமிழக மாதிரி: திராவிட சமூக சீர்திருத்தம், சத்துணவு மற்றும் PHC மருத்துவமனைகள் மூலம் 1993-லேயே TFR 2.1 எட்டப்பட்டது.",
+        "தமிழக NFHS-5: TFR = 1.4; IMR = 13; MMR = 54 (SDG இலக்கு வெற்றி); மருத்துவமனை பிரசவங்கள் = 99.9%.",
+        "தமிழக புதிய சவால்கள்: முதியோர் நலப் பாதுகாப்பு (வெள்ளி சுனாமி) மற்றும் தொழில்துறைக்கு வட மாநில தொழிலாளர்கள் வருகை."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pop_301",
+        "front_en": "Who coined the economic concept of the 'Demographic Dividend'?",
+        "front_ta": "'மக்கள் தொகை நன்மை' (Demographic Dividend) என்ற பொருளாதாரக் கருத்தை உருவாக்கியவர் யார்?",
+        "back_en": "David E. Bloom (Harvard demographer and economist).",
+        "back_ta": "டேவிட் ஈ. ப்ளூம் (ஹார்வர்ட் பல்கலைக்கழக மக்கள் தொகையியலாளர்)."
+      },
+      {
+        "id": "rc_pop_302",
+        "front_en": "What is India's current median population age compared to China and the United States?",
+        "front_ta": "சீனா மற்றும் அமெரிக்காவுடன் ஒப்பிடுகையில் இந்தியாவின் தற்போதைய சராசரி வயது என்ன?",
+        "back_en": "India is ~28.5 years, compared to ~38 years in both the US and China.",
+        "back_ta": "இந்தியா ~28.5 ஆண்டுகள்; அமெரிக்கா மற்றும் சீனாவில் ~38 ஆண்டுகள்."
+      },
+      {
+        "id": "rc_pop_303",
+        "front_en": "Which Constitutional Amendment Act extended the freeze on Lok Sabha seat delimitation until post-2026?",
+        "front_ta": "மக்களவைத் தொகுதி மறுவரையறை முடக்கத்தை 2026-க்குப் பிந்தைய கணக்கெடுப்பு வரை நீட்டித்த அரசியலமைப்புத் திருத்தம் எது?",
+        "back_en": "The 84th Constitutional Amendment Act, 2001.",
+        "back_ta": "84-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2001."
+      },
+      {
+        "id": "rc_pop_304",
+        "front_en": "What weight did the 15th Finance Commission assign to 'Demographic Performance' to reward low-fertility states?",
+        "front_ta": "கருவுறுதலைக் கட்டுப்படுத்திய மாநிலங்களைப் பாராட்டும் 'மக்கள் தொகை செயல்பாட்டிற்கு' 15-வது நிதி ஆணையம் அளித்த எடை என்ன?",
+        "back_en": "12.5% weight (alongside 15% weight for 2011 Census population).",
+        "back_ta": "12.5% எடை (2011 மக்கள் தொகைக்கான 15% எடையுடன் சேர்த்து)."
+      },
+      {
+        "id": "rc_pop_305",
+        "front_en": "According to the United Nations, what percentage of elderly population (60+) classifies a society as an 'Aged Society'?",
+        "front_ta": "ஐக்கிய நாடுகள் சபையின் கூற்றுப்படி, எத்தனை சதவீத முதியோர்களைக் (60+) கொண்ட சமூகம் 'முதிர்ந்த சமூகம்' (Aged Society) என அழைக்கப்படுகிறது?",
+        "back_en": "14% to 20% of the total population.",
+        "back_ta": "மொத்த மக்கள் தொகையில் 14% முதல் 20% வரை."
+      },
+      {
+        "id": "rc_pop_306",
+        "front_en": "In which year did Tamil Nadu achieve the demographic replacement-level fertility (TFR = 2.1)?",
+        "front_ta": "தமிழ்நாடு எந்த ஆண்டில் மாற்று நிலை கருவுறுதலை (TFR = 2.1) எட்டியது?",
+        "back_en": "In 1993 (approximately 30 years ahead of India's national average).",
+        "back_ta": "1993-ல் (அகில இந்திய சராசரியை விட சுமார் 30 ஆண்டுகள் முன்னதாக)."
+      },
+      {
+        "id": "rc_pop_307",
+        "front_en": "What was Tamil Nadu's Total Fertility Rate (TFR) recorded in the latest NFHS-5 survey?",
+        "front_ta": "அண்மைக்கால NFHS-5 கணக்கெடுப்பில் பதிவான தமிழ்நாட்டின் மொத்தக் கருவுறுதல் விகிதம் (TFR) என்ன?",
+        "back_en": "1.4 children per woman (on par with Nordic European nations).",
+        "back_ta": "பெண் ஒருவருக்கு 1.4 குழந்தைகள் (நார்டிக் ஐரோப்பிய நாடுகளின் அளவுக்கு சமமானது)."
+      },
+      {
+        "id": "rc_pop_308",
+        "front_en": "What is Tamil Nadu's Maternal Mortality Ratio (MMR) compared to the United Nations Sustainable Development Goal (SDG) target?",
+        "front_ta": "ஐக்கிய நாடுகளின் நீடித்த வளர்ச்சி இலக்குடன் (SDG) ஒப்பிடுகையில் தமிழ்நாட்டின் தாய் இறப்பு விகிதம் (MMR) என்ன?",
+        "back_en": "Tamil Nadu stands at ~54 per 100,000 live births, successfully surpassing the SDG target of 70.",
+        "back_ta": "தமிழ்நாடு ~54 ஆக உள்ளது; இது ஐ.நா-வின் SDG இலக்கான 70-ஐ விட மிகச் சிறப்பான சாதனையாகும்."
+      },
+      {
+        "id": "rc_pop_309",
+        "front_en": "What social welfare scheme pioneered by Kamarajar and expanded by MGR structurally delayed female marriage age in Tamil Nadu?",
+        "front_ta": "காமராஜரால் தொடங்கப்பட்டு எம்.ஜி.ஆரால் விரிவாக்கப்பட்ட எந்தத் திட்டம் தமிழ்நாட்டில் பெண்களின் திருமண வயதை உயர்த்தியது?",
+        "back_en": "The Mid-Day Meal (Noon Meal) Scheme in government primary schools.",
+        "back_ta": "அரசுப் பள்ளிகளில் நடைமுறைப்படுத்தப்பட்ட மதிய உணவு (சத்துணவு) திட்டம்."
+      },
+      {
+        "id": "rc_pop_310",
+        "front_en": "What percentage of childbirths in Tamil Nadu are institutional deliveries in hospital settings?",
+        "front_ta": "தமிழ்நாட்டில் நிகழும் பிரசவங்களில் எத்தனை சதவீதம் மருத்துவமனை பிரசவங்களாக உள்ளன?",
+        "back_en": "Over 99.9% of all deliveries are institutional.",
+        "back_ta": "99.9%-க்கும் அதிகமான பிரசவங்கள் மருத்துவமனையிலேயே நிகழ்கின்றன."
+      }
+    ]
+  }
+}

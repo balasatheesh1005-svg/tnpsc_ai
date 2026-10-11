@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "topic_id": "economy_nabard_part_1",
+    "repository_id": "economy_nabard",
+    "display_title": "NABARD – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "NABARD",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundation",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "NABARD Act 1981",
+    "B Sivaraman Committee",
+    "CRAFICARD",
+    "Apex Development Financial Institution",
+    "Agricultural Credit Department",
+    "ARDC Merger",
+    "100% Government of India Ownership",
+    "Section 35(6) BR Act"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the historical backdrop and institutional gaps that necessitated creating NABARD in 1982.",
+        "Comprehend the landmark recommendations of the B. Sivaraman Committee (CRAFICARD 1979)."
+      ],
+      "ta": [
+        "1982-இல் நபார்டை உருவாக்கத் தூண்டிய வரலாற்றுப் பின்னணி மற்றும் நிறுவன இடைவெளிகளைப் புரிந்து கொள்ளுதல்.",
+        "பி. சிவராமன் குழுவின் (CRAFICARD 1979) வரலாற்றுச் சிறப்புமிக்க பரிந்துரைகளை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key dates: Established July 12, 1982, dedicated November 5, 1982.",
+        "Recall the capital evolution from 50:50 RBI-GoI to 100% Government of India ownership."
+      ],
+      "ta": [
+        "முக்கிய தேதிகளை நினைவில் நிறுத்துதல்: நிறுவப்பட்டது ஜூலை 12, 1982, அர்ப்பணிக்கப்பட்டது நவம்பர் 5, 1982.",
+        "50:50 RBI-மத்திய அரசு பங்கிலிருந்து 100% மத்திய அரசுடைமையாக மாறிய மூலதனப் பரிணாமத்தை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the operational distinction between an apex refinancing DFI and retail commercial banks.",
+        "Examine why RBI divested its equity stake in NABARD under Narasimham II principles."
+      ],
+      "ta": [
+        "உச்ச மறுநிதி DFI மற்றும் சில்லறை வணிக வங்கிகளுக்கு இடையேயான செயல்பாட்டு வேறுபாட்டை ஆய்வு செய்தல்.",
+        "நரசிம்மம் II பரிந்துரைகளின்படி ரிசர்வ் வங்கி தனது நபார்டு பங்குகளை ஏன் விலக்கிக் கொண்டது என்பதை ஆராய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to identify TNPSC traps regarding direct farmer lending and headquarters location.",
+        "Distinguish between supervisory inspection powers under BR Act Sec 35(6) and licensing powers."
+      ],
+      "ta": [
+        "நேரடி விவசாயக் கடன் மற்றும் தலைமையக இடம் குறித்த TNPSC தேர்வுப் பொறிகளைக் கண்டறிய அறிவைப் பயன்படுத்துதல்.",
+        "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 35(6) ஆய்வுக் கடன் அதிகாரத்திற்கும் உரிம அதிகாரத்திற்கும் உள்ள வேறுபாட்டைப் பிரித்தறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "NABARD – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_genesis_and_sivaraman",
+      "title_en": "Historical Genesis & The B. Sivaraman Committee (1979)",
+      "title_ta": "வரலாற்றுத் தோற்றம் மற்றும் பி. சிவராமன் குழு (1979)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_statutory_framework",
+      "title_en": "Statutory Mandate: NABARD Act 1981 (Act 61 of 1981)",
+      "title_ta": "சட்டப்பூர்வ ஆணை: நபார்டு சட்டம் 1981 (சட்டம் 61 / 1981)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_capital_evolution",
+      "title_en": "Capital Structure & Ownership Evolution (100% GoI)",
+      "title_ta": "மூலதனக் கட்டமைப்பு மற்றும் உரிமைப் பரிணாமம் (100% மத்திய அரசு)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_governance_and_objectives",
+      "title_en": "Governance Architecture & Foundational Objectives",
+      "title_ta": "நிர்வாகக் கட்டமைப்பு மற்றும் அடிப்படை நோக்கங்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "NABARD (National Bank for Agriculture and Rural Development) is India's apex statutory Development Financial Institution (DFI), established under Act 61 of 1981, mandated to facilitate credit flow, provide refinance, build rural infrastructure, and foster sustainable agriculture and rural prosperity.",
+      "ta": "நபார்டு (தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி) என்பது 1981-ஆம் ஆண்டின் 61-வது சட்டத்தின் கீழ் நிறுவப்பட்ட இந்தியாவின் உச்ச சட்டப்பூர்வ வளர்ச்சி நிதி நிறுவனம் (DFI) ஆகும். இது கடன் ஓட்டத்தை எளிதாக்குதல், மறுநிதி வழங்குதல், ஊரகக் கட்டமைப்பை உருவாக்குதல் மற்றும் நிலையான வேளாண்மை மற்றும் ஊரக செழிப்பை ஊக்குவிக்கும் அதிகாரப்பூர்வ ஆணை பெற்றுள்ளது."
+    },
+    "introduction": {
+      "en": "Prior to 1982, rural and agricultural credit was fragmented between the Reserve Bank of India's Agricultural Credit Department (ACD) and Rural Planning and Credit Cell (RPCC), alongside the Agricultural Refinance and Development Corporation (ARDC). Recognizing the necessity of an undivided, dedicated institutional focus, the Government of India and RBI appointed the CRAFICARD committee under B. Sivaraman in 1979. Acting on its recommendations, Parliament enacted the NABARD Act 1981, establishing NABARD on July 12, 1982, later dedicated to the nation by Prime Minister Indira Gandhi on November 5, 1982. From an initial 50:50 joint venture between RBI and GoI, NABARD has evolved into a 100% Government of India-owned apex development bank.",
+      "ta": "1982-க்கு முன்னர், ஊரக மற்றும் விவசாயக் கடன் நிர்வாகமானது ரிசர்வ் வங்கியின் வேளாண் கடன் துறை (ACD) மற்றும் ஊரகத் திட்டமிடல் மற்றும் கடன் பிரிவு (RPCC) மற்றும் வேளாண் மறுநிதி மற்றும் வளர்ச்சிக் கழகம் (ARDC) ஆகியவற்றிடையே சிதறுண்டு காணப்பட்டது. ஊரகக் கடனுக்குத் தனித்துவமான ஒருங்கிணைந்த நிறுவனக் கவனம் தேவை என்பதை உணர்ந்து, 1979-இல் பி. சிவராமன் தலைமையில் CRAFICARD குழு அமைக்கப்பட்டது. இக்குழுவின் பரிந்துரைகளை ஏற்று, நாடாளுமன்றம் 1981-ஆம் ஆண்டின் 61-வது சட்டத்தை இயற்றி, ஜூலை 12, 1982 அன்று நபார்டை நிறுவியது. இது நவம்பர் 5, 1982 அன்று பிரதமர் இந்திரா காந்தியால் நாட்டுக்கு அர்ப்பணிக்கப்பட்டது. ரிசர்வ் வங்கி மற்றும் மத்திய அரசின் சமமான 50:50 கூட்டுப் பங்களிப்பில் தொடங்கிய நபார்டு, இன்று 100% மத்திய அரசின் முழு உரிமை பெற்ற உச்ச வளர்ச்சி வங்கியாகப் பரிணமித்துள்ளது."
+    },
+    "sec_genesis_and_sivaraman": [
+      {
+        "title": "Institutional Antecedents Before 1982",
+        "title_ta": "1982-க்கு முந்தைய நிறுவனப் பின்னணி",
+        "points": {
+          "en": [
+            "RBI discharged its statutory rural credit obligations under Section 54 of the RBI Act 1934 through the Agricultural Credit Department (ACD).",
+            "In 1963, Parliament enacted the Agricultural Refinance Corporation Act, later renamed Agricultural Refinance and Development Corporation (ARDC) in 1975, to provide long-term investment refinance.",
+            "The bifurcated mechanism—RBI handling short-term cooperative credit while ARDC handled term investment credit—created operational overlaps, coordination bottlenecks, and institutional friction.",
+            "A unified, autonomous national apex bank dedicated exclusively to agriculture and rural crafts was urgently required."
+          ],
+          "ta": [
+            "ரிசர்வ் வங்கி தனது 1934-ஆம் ஆண்டு சட்டத்தின் பிரிவு 54-இன் கீழ் வேளாண் கடன் துறையை (ACD) ஏற்படுத்தி ஊரகக் கடன் பணிகளை மேற்கொண்டது.",
+            "1963-இல் நாடாளுமன்றம் வேளாண் மறுநிதிக் கழகச் சட்டத்தை இயற்றியது; இது நீண்டகால முதலீட்டுக் கடன்களுக்கு மறுநிதி வழங்க 1975-இல் வேளாண் மறுநிதி மற்றும் வளர்ச்சிக் கழகம் (ARDC) என மறுபெயரிடப்பட்டது.",
+            "குறுகிய காலப் பயிர்க்கடன்களை ரிசர்வ் வங்கியும், நீண்டகால முதலீட்டுக் கடன்களை ARDC-யும் கையாண்ட இரட்டை முறை நிர்வாகக் குழப்பங்களையும் ஒருங்கிணைப்புச் சிக்கல்களையும் ஏற்படுத்தியது.",
+            "வேளாண்மை மற்றும் ஊரகத் தொழில்களுக்கு மட்டுமே அர்ப்பணிக்கப்பட்ட ஒரு தன்னாட்சி பெற்ற ஒற்றை தேசிய உச்ச வங்கி உருவாவது தவிர்க்க முடியாததானது."
+          ]
+        }
+      },
+      {
+        "title": "CRAFICARD & B. Sivaraman Committee (1979)",
+        "title_ta": "CRAFICARD மற்றும் பி. சிவராமன் குழு (1979)",
+        "points": {
+          "en": [
+            "Appointed on March 30, 1979 by RBI at the instance of Government of India, CRAFICARD was chaired by Shri B. Sivaraman, former Planning Commission member.",
+            "CRAFICARD stands for 'Committee to Review Arrangements For Institutional Credit for Agriculture and Rural Development'.",
+            "The committee submitted its interim report in November 1979 and final report in 1981, unanimously recommending an autonomous apex national bank for agriculture and rural development.",
+            "It recommended merging three existing bodies into NABARD: RBI's ACD, RBI's RPCC, and the entire ARDC."
+          ],
+          "ta": [
+            "இந்திய அரசின் வழிகாட்டுதலின்படி ரிசர்வ் வங்கியால் மார்ச் 30, 1979 அன்று அமைக்கப்பட்ட CRAFICARD குழுவின் தலைவராகத் திட்டக் குழுவின் முன்னாள் உறுப்பினர் திரு. பி. சிவராமன் நியமிக்கப்பட்டார்.",
+            "CRAFICARD என்பதன் விரிவாக்கம்: 'வேளாண்மை மற்றும் ஊரக வளர்ச்சிக்கான நிறுவனக் கடன் ஏற்பாடுகளை மறுஆய்வு செய்யும் குழு' (Committee to Review Arrangements For Institutional Credit for Agriculture and Rural Development).",
+            "இக்குழு நவம்பர் 1979-இல் இடைக்கால அறிக்கையையும், 1981-இல் இறுதி அறிக்கையையும் சமர்ப்பித்து, ஊரக வளர்ச்சிக்கென ஒரு தேசிய உச்ச வங்கியை அமைக்க ஒருமனதாகப் பரிந்துரைத்தது.",
+            "ரிசர்வ் வங்கியின் வேளாண் கடன் துறை (ACD), ஊரகத் திட்டமிடல் பிரிவு (RPCC) மற்றும் ARDC கழகம் ஆகிய மூன்றையும் இணைத்து நபார்டை உருவாக்கப் பரிந்துரைத்தது."
+          ]
+        }
+      }
+    ],
+    "sec_statutory_framework": [
+      {
+        "title": "Statutory Enactment & Commencement",
+        "title_ta": "சட்டப்பூர்வ நிறைவேற்றம் மற்றும் தொடக்கம்",
+        "points": {
+          "en": [
+            "Parliament enacted the National Bank for Agriculture and Rural Development Act, 1981 (Act No. 61 of 1981), receiving Presidential assent on December 30, 1981.",
+            "NABARD officially commenced operations on July 12, 1982, replacing the ARDC and RBI's specialized agricultural cells.",
+            "On November 5, 1982, Prime Minister Smt. Indira Gandhi formally dedicated NABARD to the service of the nation.",
+            "NABARD is a statutory corporation, deriving its powers directly from an Act of Parliament rather than executive decree."
+          ],
+          "ta": [
+            "நாடாளுமன்றம் தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கிச் சட்டம் 1981-ஐ (சட்டம் எண் 61 / 1981) நிறைவேற்றியது; இதற்கு டிசம்பர் 30, 1981 அன்று குடியரசுத் தலைவரின் ஒப்புதல் கிடைத்தது.",
+            "ARDC மற்றும் ரிசர்வ் வங்கியின் வேளாண் பிரிவுகளுக்கு மாற்றாக நபார்டு ஜூலை 12, 1982 அன்று தனது அதிகாரப்பூர்வ செயல்பாடுகளைத் தொடங்கியது.",
+            "நவம்பர் 5, 1982 அன்று அப்போதைய பிரதமர் திருமதி. இந்திரா காந்தி நபார்டை நாட்டுக்கு முறைப்படி அர்ப்பணித்தார்.",
+            "நபார்டு ஒரு சட்டப்பூர்வ அமைப்பாகும் (Statutory Corporation); இது தனது அதிகாரங்களை நாடாளுமன்றச் சட்டத்திலிருந்து நேரடியாகப் பெறுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Core Legal Provisions of NABARD Act",
+        "title_ta": "நபார்டு சட்டத்தின் முக்கிய சட்டப் பிரிவுகள்",
+        "points": {
+          "en": [
+            "Section 21: Empowers NABARD to provide short-term refinance to state cooperative banks, RRBs, and financial entities for agricultural operations.",
+            "Section 25: Authorizes medium-term and long-term refinance for agricultural investments, rural industries, and artisanal enterprises.",
+            "Section 38: Confers powers of supervision, on-site inspection, and performance evaluation over Regional Rural Banks and Rural Cooperative Banks."
+          ],
+          "ta": [
+            "பிரிவு 21: மாநிலக் கூட்டுறவு வங்கிகள், RRB-கள் மற்றும் நிதி நிறுவனங்களுக்கு வேளாண் பணிகளுக்காக குறுகிய கால மறுநிதி வழங்க நபார்டுக்கு அதிகாரம் அளிக்கிறது.",
+            "பிரிவு 25: வேளாண் முதலீடுகள், ஊரகத் தொழில்கள் மற்றும் கைவினைத் தொழில்களுக்கு நடுத்தர மற்றும் நீண்டகால மறுநிதி வழங்க அங்கீகரிக்கிறது.",
+            "பிரிவு 38: மண்டல ஊரக வங்கிகள் (RRBs) மற்றும் ஊரகக் கூட்டுறவு வங்கிகளை மேற்பார்வையிடவும், நேரில் ஆய்வு செய்யவும் நபார்டுக்கு அதிகாரம் வழங்குகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_capital_evolution": [
+      {
+        "title": "Initial 50:50 Equity Model (1982)",
+        "title_ta": "தொடக்க கால 50:50 கூட்டுப் பங்கு மாதிரி (1982)",
+        "points": {
+          "en": [
+            "NABARD started operations in 1982 with an initial paid-up capital of ₹100 crore, subscribed equally (50:50) by the Reserve Bank of India (₹50 crore) and Government of India (₹50 crore).",
+            "The initial authorized share capital was capped at ₹500 crore.",
+            "The dual ownership represented a direct collaborative partnership between the nation's monetary sovereign and the central executive."
+          ],
+          "ta": [
+            "1982-இல் நபார்டு ₹100 கோடி ஆரம்ப மூலதனத்துடன் தொடங்கப்பட்டது; இதில் ரிசர்வ் வங்கி (₹50 கோடி) மற்றும் மத்திய அரசு (₹50 கோடி) சரிசமமாக (50:50) பங்களித்தன.",
+            "ஆரம்ப அங்கீகரிக்கப்பட்ட மூலதன வரம்பு ₹500 கோடியாக நிர்ணயிக்கப்பட்டது.",
+            "இந்த இரட்டை உரிமை முறை நாட்டின் மத்திய வங்கிக்கும் மத்திய அரசுக்கும் இடையிலான கூட்டுப் பங்களிப்பைப் பிரதிபலித்தது."
+          ]
+        }
+      },
+      {
+        "title": "Transition to 100% Government of India Ownership (2018)",
+        "title_ta": "100% மத்திய அரசுடைமையாக மாறிய பரிணாமம் (2018)",
+        "points": {
+          "en": [
+            "Narasimham Committee II (1998) recommended that RBI divest its ownership in commercial banks and DFIs to resolve regulatory conflict of interest.",
+            "In October 2010, GoI acquired RBI's majority stake, leaving RBI with just 1% shareholding.",
+            "Under the NABARD (Amendment) Act 2018, GoI purchased the remaining 1% stake from RBI, making NABARD 100% wholly owned by the Government of India.",
+            "The 2018 Amendment Act also escalated the authorized capital from ₹5,000 crore to ₹30,000 crore."
+          ],
+          "ta": [
+            "ஒழுங்குமுறை முரண்பாடுகளைத் தவிர்க்க ரிசர்வ் வங்கி தான் ஒழுங்குபடுத்தும் நிதி நிறுவனங்களில் பங்கு வைத்திருப்பதைத் தவிர்க்க வேண்டும் என நரசிம்மம் குழு II (1998) பரிந்துரைத்தது.",
+            "அக்டோபர் 2010-இல் மத்திய அரசு ரிசர்வ் வங்கியின் பெரும்பான்மைப் பங்குகளை வாங்கியது; ரிசர்வ் வங்கியிடம் 1% மட்டுமே எஞ்சியது.",
+            "2018-ஆம் ஆண்டின் நபார்டு திருத்தச் சட்டத்தின்படி, எஞ்சிய 1% பங்கையும் மத்திய அரசு வாங்கி, நபார்டை 100% மத்திய அரசின் முழு உரிமை பெற்ற நிறுவனமாக மாற்றியது.",
+            "2018 திருத்தச் சட்டம் நபார்டின் அங்கீகரிக்கப்பட்ட மூலதனத்தை ₹5,000 கோடியிலிருந்து ₹30,000 கோடியாக உயர்த்தியது."
+          ]
+        }
+      }
+    ],
+    "sec_governance_and_objectives": [
+      {
+        "title": "Board of Directors & Leadership",
+        "title_ta": "இயக்குநர் குழு மற்றும் தலைமைத்துவம்",
+        "points": {
+          "en": [
+            "The Board of Directors is appointed by the Government of India in consultation with the Reserve Bank of India.",
+            "The executive leadership is vested in the Chairman, appointed by the Central Government.",
+            "The board includes representatives from the Union Ministries of Agriculture, Rural Development, and Finance, alongside State Governments, RBI, and rural credit specialists.",
+            "The corporate headquarters is situated in Mumbai, Maharashtra (Bandra-Kurla Complex), supported by 31 Regional Offices across India."
+          ],
+          "ta": [
+            "இயக்குநர் குழுவானது ரிசர்வ் வங்கியுடன் கலந்தாலோசித்து மத்திய அரசால் நியமிக்கப்படுகிறது.",
+            "தலைமை நிர்வாகப் பொறுப்பு மத்திய அரசால் நியமிக்கப்படும் தலைவரிடம் (Chairman) உள்ளது.",
+            "இக்குழுவில் மத்திய வேளாண்மை, ஊரக வளர்ச்சி மற்றும் நிதி அமைச்சகப் பிரதிநிதிகள், மாநில அரசுகள், ரிசர்வ் வங்கி மற்றும் ஊரகக் கடன் நிபுணர்கள் இடம்பெறுகின்றனர்.",
+            "நபார்டின் தலைமை அலுவலகம் மகாராஷ்டிர மாநிலம் மும்பையில் (பாந்த்ரா-குர்லா வளாகம்) அமைந்துள்ளது; நாடு முழுவதும் 31 மண்டல அலுவலகங்கள் இயங்குகின்றன."
+          ]
+        }
+      },
+      {
+        "title": "Three Core Foundational Pillars",
+        "title_ta": "நபார்டின் முப்பெரும் அடிப்படைத் தூண்கள்",
+        "points": {
+          "en": [
+            "Credit Dispensation: Providing refinance to grassroot credit institutions for agricultural production and long-term capital assets.",
+            "Developmental & Promotional: Fostering institution building, rural innovations, microfinance, and natural resource conservation.",
+            "Supervisory: Ensuring the financial solvency, regulatory compliance, and operational discipline of RRBs and Rural Cooperative Banks."
+          ],
+          "ta": [
+            "கடன் வழங்குதல்: வேளாண் உற்பத்தி மற்றும் நீண்டகால மூலதனச் சொத்துக்களை உருவாக்கக் கீழ்மட்ட கடன் நிறுவனங்களுக்கு மறுநிதி அளித்தல்.",
+            "மேம்பாடு மற்றும் ஊக்குவிப்பு: நிறுவனத் திறன் மேம்பாடு, ஊரகப் புதுமைகள், நுண்கடன் மற்றும் இயற்கை வளப் பாதுகாப்பை வளர்த்தெடுத்தல்.",
+            "கண்காணிப்பு: மண்டல ஊரக வங்கிகள் மற்றும் ஊரகக் கூட்டுறவு வங்கிகளின் நிதி நிலைத்தன்மை மற்றும் ஒழுங்குமுறை விதிகளுக்கு இணங்குவதை உறுதி செய்தல்."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_nabard_vs_commercial_bank_p1",
+        "title_en": "Table 1: Institutional Comparison: NABARD vs Commercial Banks",
+        "title_ta": "அட்டவணை 1: நிறுவன ஒப்பீடு: நபார்டு vs வணிக வங்கிகள்",
+        "headers_en": [
+          "Parameter",
+          "NABARD",
+          "Commercial Banks (SBI, PNB, Canara)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "நபார்டு",
+          "வணிக வங்கிகள் (SBI, PNB, கனரா)"
+        ],
+        "rows_en": [
+          [
+            "Institutional Nature",
+            "Apex Development Financial Institution (DFI)",
+            "Retail and Commercial Banking Entity"
+          ],
+          [
+            "Direct Public Deposits",
+            "Strictly prohibited from accepting public deposits",
+            "Mobilizes CASA demand and term deposits directly"
+          ],
+          [
+            "Direct Lending to Farmers",
+            "Does not lend directly to individual farmers",
+            "Disburses direct retail and crop loans to farmers"
+          ],
+          [
+            "Operational Mechanism",
+            "Refinance and infrastructure funds to institutions",
+            "Direct credit disbursement and financial services"
+          ],
+          [
+            "Governing Statute",
+            "NABARD Act, 1981 (Act 61 of 1981)",
+            "Banking Regulation Act, 1949 & respective Acts"
+          ],
+          [
+            "Regulatory Oversight",
+            "Inspects RRBs and Rural Cooperative Banks",
+            "Subject to inspection by RBI and NABARD"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிறுவனத் தன்மை",
+            "உச்ச வளர்ச்சி நிதி நிறுவனம் (DFI)",
+            "சில்லறை மற்றும் வணிக வங்கி அமைப்பு"
+          ],
+          [
+            "பொதுமக்கள் நேரடி வைப்பு",
+            "பொதுமக்களிடமிருந்து வைப்புகளைப் பெற சட்டப்பூர்வ தடையுள்ளது",
+            "CASA கேட்பு மற்றும் கால வைப்புகளை நேரடியாகப் பெறுகிறது"
+          ],
+          [
+            "விவசாயிகளுக்கு நேரடிக் கடன்",
+            "தனிநபர் விவசாயிகளுக்கு நேரடியாக கடன் வழங்குவதில்லை",
+            "விவசாயிகளுக்கு பயிர்க்கடன் மற்றும் முதலீட்டுக் கடன்களை நேரடியாக வழங்குகிறது"
+          ],
+          [
+            "செயல்பாட்டு முறை",
+            "நிறுவனங்களுக்கு மறுநிதி மற்றும் உள்கட்டமைப்பு நிதி அளித்தல்",
+            "நேரடி கடன் விநியோகம் மற்றும் சில்லறை வங்கி சேவைகள்"
+          ],
+          [
+            "ஆளும் சட்டம்",
+            "நபார்டு சட்டம், 1981 (சட்டம் 61 / 1981)",
+            "வங்கி ஒழுங்குமுறைச் சட்டம், 1949 மற்றும் தொடர்புடைய சட்டங்கள்"
+          ],
+          [
+            "கண்காணிப்புப் பணி",
+            "RRB-கள் மற்றும் ஊரகக் கூட்டுறவு வங்கிகளை ஆய்வு செய்கிறது",
+            "ரிசர்வ் வங்கி மற்றும் நபார்டின் ஆய்வுக்கு உட்பட்டவை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ardc_vs_nabard_p1",
+        "title_en": "Table 2: Historical Transition: Predecessor ARDC vs Successor NABARD",
+        "title_ta": "அட்டவணை 2: வரலாற்று மாற்றம்: முன்னைய ARDC vs தற்போதைய நபார்டு",
+        "headers_en": [
+          "Dimension",
+          "Agricultural Refinance & Dev Corp (ARDC)",
+          "NABARD (1982-Present)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "வேளாண் மறுநிதி மற்றும் வளர்ச்சிக் கழகம் (ARDC)",
+          "நபார்டு (1982-தற்போது)"
+        ],
+        "rows_en": [
+          [
+            "Tenure Horizon",
+            "1963/1975 to July 1982",
+            "July 12, 1982 to Present"
+          ],
+          [
+            "Scope of Refinance",
+            "Confined almost exclusively to term investment loans",
+            "Integrates Short-term, Medium-term, and Long-term credit"
+          ],
+          [
+            "Supervisory Authority",
+            "No statutory inspection authority over rural banks",
+            "Statutory inspection mandate under BR Act Section 35(6)"
+          ],
+          [
+            "Infrastructure Mandate",
+            "No dedicated rural public infrastructure fund",
+            "Administers massive sovereign funds like RIDF and LTIF"
+          ],
+          [
+            "Institutional Status",
+            "Refinancing corporation attached to RBI",
+            "Independent apex statutory development bank"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கால எல்லை",
+            "1963/1975 முதல் ஜூலை 1982 வரை",
+            "ஜூலை 12, 1982 முதல் தற்போது வரை"
+          ],
+          [
+            "மறுநிதி வரம்பு",
+            "கிட்டத்தட்ட நீண்டகால முதலீட்டுக் கடன்களுக்கு மட்டுமே",
+            "குறுகிய, நடுத்தர மற்றும் நீண்டகாலக் கடன்களை ஒருங்கிணைக்கிறது"
+          ],
+          [
+            "ஆய்வு அதிகாரம்",
+            "ஊரக வங்கிகள் மீது சட்டப்பூர்வ ஆய்வு அதிகாரம் இல்லை",
+            "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 35(6)-இன் கீழ் ஆய்வு அதிகாரம்"
+          ],
+          [
+            "உள்கட்டமைப்பு ஆணை",
+            "பிரத்யேக ஊரகப் பொது உள்கட்டமைப்பு நிதி இல்லை",
+            "RIDF மற்றும் LTIF போன்ற பிரம்மாண்ட நிதிகளை நிர்வகிக்கிறது"
+          ],
+          [
+            "நிறுவன அந்தஸ்து",
+            "ரிசர்வ் வங்கியுடன் இணைக்கப்பட்ட ஒரு மறுநிதிக் கழகம்",
+            "தனித்த தன்னாட்சி பெற்ற உச்ச சட்டப்பூர்வ வளர்ச்சி வங்கி"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ownership_evolution_p1",
+        "title_en": "Table 3: Chronological Evolution of NABARD Shareholding and Capital",
+        "title_ta": "அட்டவணை 3: நபார்டின் பங்குரிமை மற்றும் மூலதனப் பரிணாம காலவரிசை",
+        "headers_en": [
+          "Phase & Milestone",
+          "Year / Period",
+          "RBI Equity Stake",
+          "GoI Equity Stake",
+          "Authorised Capital"
+        ],
+        "headers_ta": [
+          "கட்டம் & மைல்கல்",
+          "ஆண்டு / காலம்",
+          "ரிசர்வ் வங்கிப் பங்கு",
+          "மத்திய அரசுப் பங்கு",
+          "அங்கீகரிக்கப்பட்ட மூலதனம்"
+        ],
+        "rows_en": [
+          [
+            "Inception Phase",
+            "1982 - 2010",
+            "50% (₹50 crore)",
+            "50% (₹50 crore)",
+            "₹500 Crore"
+          ],
+          [
+            "First Divestment",
+            "2010 - 2017",
+            "1% (₹20 crore)",
+            "99% (₹4,980 crore)",
+            "₹5,000 Crore"
+          ],
+          [
+            "Complete Takeover",
+            "2018 - Present",
+            "0% (Fully exited)",
+            "100% (Wholly owned)",
+            "₹30,000 Crore"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிறுவப்பட்ட கட்டம்",
+            "1982 - 2010",
+            "50% (₹50 கோடி)",
+            "50% (₹50 கோடி)",
+            "₹500 கோடி"
+          ],
+          [
+            "முதல் பங்கு விலக்கல்",
+            "2010 - 2017",
+            "1% (₹20 கோடி)",
+            "99% (₹4,980 கோடி)",
+            "₹5,000 கோடி"
+          ],
+          [
+            "முழு அரசுடைமை",
+            "2018 - தற்போது",
+            "0% (முழுமையாக விலகியது)",
+            "100% (முழு உரிமை)",
+            "₹30,000 கோடி"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_three_pillars_p1",
+        "title_en": "Table 4: Foundational Functional Matrix of NABARD",
+        "title_ta": "அட்டவணை 4: நபார்டின் முப்பெரும் செயல்பாட்டுக் கட்டமைப்பு",
+        "headers_en": [
+          "Pillar",
+          "Core Objective",
+          "Primary Operational Tools"
+        ],
+        "headers_ta": [
+          "தூண்",
+          "முதன்மை நோக்கம்",
+          "முக்கிய செயல்பாட்டுக் கருவிகள்"
+        ],
+        "rows_en": [
+          [
+            "Credit Refinance",
+            "Augment loanable funds of rural financial institutions",
+            "ST-SAO crop loan refinance, Long-term investment refinance"
+          ],
+          [
+            "Developmental Promotion",
+            "Build rural capacity, ecological conservation, microfinance",
+            "SHG-Bank Linkage, Watershed Development, PRODUCE Fund"
+          ],
+          [
+            "Statutory Supervision",
+            "Ensure financial health and compliance of rural banks",
+            "Section 35(6) BR Act Inspections of RRBs and StCBs/DCCBs"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கடன் மறுநிதி",
+            "ஊரக நிதி நிறுவனங்களின் கடன் வழங்கும் நிதியிருப்பைப் பெருக்குதல்",
+            "ST-SAO பயிர்க்கடன் மறுநிதி, நீண்டகால முதலீட்டு மறுநிதி"
+          ],
+          [
+            "வளர்ச்சி ஊக்குவிப்பு",
+            "ஊரகத் திறன் மேம்பாடு, சூழலியல் பாதுகாப்பு, நுண்கடன்",
+            "சுயஉதவிக் குழு வங்கி இணைப்பு, நீர்ப்பிடிப்பு மேம்பாடு, PRODUCE நிதி"
+          ],
+          [
+            "சட்டப்பூர்வ ஆய்வு",
+            "ஊரக வங்கிகளின் நிதி ஆரோக்கியம் மற்றும் ஒழுங்குமுறை இணக்கத்தை உறுதி செய்தல்",
+            "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 35(6)-இன் கீழ் RRB, கூட்டுறவு வங்கி ஆய்வுகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "NABARD Part 1: Foundations & Evolution",
+        "short_label": "NABARD Foundations",
+        "children": [
+          {
+            "title": "Genesis & Committee",
+            "short_label": "Genesis",
+            "children": [
+              {
+                "title": "Pre-1982: RBI ACD & ARDC",
+                "short_label": "Pre-1982 Bodies"
+              },
+              {
+                "title": "B. Sivaraman Committee (CRAFICARD 1979)",
+                "short_label": "Sivaraman CRAFICARD"
+              },
+              {
+                "title": "Act 61 of 1981 (Commenced July 12, 1982)",
+                "short_label": "July 12, 1982"
+              }
+            ]
+          },
+          {
+            "title": "Capital & Ownership",
+            "short_label": "Ownership",
+            "children": [
+              {
+                "title": "1982: 50:50 RBI & GoI (₹100 Cr)",
+                "short_label": "50:50 Ratio"
+              },
+              {
+                "title": "Narasimham II Recommendation",
+                "short_label": "Narasimham II"
+              },
+              {
+                "title": "2018: 100% GoI Owned (₹30,000 Cr Auth)",
+                "short_label": "100% GoI"
+              }
+            ]
+          },
+          {
+            "title": "Apex Mandate & Governance",
+            "short_label": "Mandate",
+            "children": [
+              {
+                "title": "Refinance Only (No Direct Public Lending)",
+                "short_label": "Refinance Only"
+              },
+              {
+                "title": "Section 35(6) BR Act Inspections",
+                "short_label": "Sec 35(6) Inspections"
+              },
+              {
+                "title": "Headquarters: Mumbai",
+                "short_label": "Mumbai HQ"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Direct Lending to Farmers Trap (விவசாயிகளுக்கு நேரடிக் கடன் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Candidates assume that since NABARD is an agricultural bank, individual farmers can walk into a NABARD branch and get a loan.",
+            "CORRECT FACT: NABARD does NOT disburse direct retail loans to individual farmers or citizens. It is strictly an APEX REFINANCE institution. Farmers borrow from PACS, DCCBs, RRBs, or Commercial Banks, which in turn receive refinance from NABARD.",
+            "WHY CANDIDATES FAIL: The word 'Bank' in its name leads candidates to assume retail banking operations."
+          ],
+          "ta": [
+            "பொறி: நபார்டு என்பது விவசாய வங்கி என்பதால், விவசாயிகள் நபார்டு கிளைக்குச் சென்று நேரடியாக கடன் பெறலாம் என நினைப்பது.",
+            "சரியான உண்மை: நபார்டு தனிநபர் விவசாயிகளுக்கோ அல்லது பொதுமக்களுக்கோ நேரடியாக சில்லறைக் கடன்களை வழங்குவதில்லை! இது ஒரு உச்ச 'மறுநிதி' (Refinance) நிறுவனம் மட்டுமே. விவசாயிகள் PACS, DCCB, RRB அல்லது வணிக வங்கிகளிடமிருந்தே கடன் பெறுகின்றனர்; அவற்றுக்கு நபார்டு மறுநிதி அளிக்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பெயரில் 'வங்கி' என்று இருப்பதால் சில்லறை வணிக வங்கி என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Establishment Date vs Dedication Date Trap (நிறுவப்பட்ட நாள் vs அர்ப்பணிக்கப்பட்ட நாள்)",
+        "points": {
+          "en": [
+            "TRAP: Confusing the legal commencement date with the formal dedication ceremony date.",
+            "CORRECT FACT: NABARD was legally established on July 12, 1982 by Act 61 of 1981. It was formally dedicated to the nation by Prime Minister Indira Gandhi on November 5, 1982. Its official Foundation Day is July 12.",
+            "WHY CANDIDATES FAIL: Both July 12 and November 5 appear in TNPSC multiple-choice options."
+          ],
+          "ta": [
+            "பொறி: நபார்டு சட்டம் அமலுக்கு வந்து நிறுவப்பட்ட தேதியையும், பிரதமரால் நாட்டுக்கு அர்ப்பணிக்கப்பட்ட தேதியையும் குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: நபார்டு முறைப்படி நிறுவப்பட்ட நாள் ஜூலை 12, 1982 ஆகும் (சட்டம் 61 / 1981). ஆனால் பிரதமர் இந்திரா காந்தியால் நாட்டுக்கு அர்ப்பணிக்கப்பட்ட நாள் நவம்பர் 5, 1982. நபார்டின் அதிகாரப்பூர்வ நிறுவன நாள் ஜூலை 12 மட்டுமே!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: TNPSC கொள்குறி வினாக்களில் ஜூலை 12 மற்றும் நவம்பர் 5 ஆகிய இரண்டு தேதிகளும் கொடுக்கப்படுவதால் ஏற்படும் குழப்பம்."
+          ]
+        }
+      },
+      {
+        "title": "Founding Committee Name Trap (பரிந்துரைத்த குழு பெயர் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Attributing the recommendation for establishing NABARD to the Narasimham Committee.",
+            "CORRECT FACT: NABARD was recommended by the B. Sivaraman Committee (CRAFICARD, 1979). The Narasimham Committee (1975) recommended Regional Rural Banks (RRBs), and Narasimham Committee II (1998) recommended RBI divesting stake from NABARD.",
+            "WHY CANDIDATES FAIL: Both are landmark financial committees frequently tested in TNPSC exams."
+          ],
+          "ta": [
+            "பொறி: நபார்டை உருவாக்கப் பரிந்துரைத்தது நரசிம்மம் குழு என்று தவறாகக் குறிப்பது.",
+            "சரியான உண்மை: நபார்டு அமையப் பரிந்துரைத்த குழு பி. சிவராமன் குழு (CRAFICARD 1979) ஆகும். நரசிம்மம் குழு (1975) மண்டல ஊரக வங்கிகளை (RRB) அமைக்கப் பரிந்துரைத்தது. நரசிம்மம் குழு II (1998) ரிசர்வ் வங்கி தனது பங்குகளை நபார்டிலிருந்து விலக்கிக் கொள்ளப் பரிந்துரைத்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டுமே இந்திய வங்கி மற்றும் ஊரக நிதி தொடர்பான புகழ்பெற்ற குழுக்கள் என்பதால் ஏற்படும் குழப்பம்."
+          ]
+        }
+      },
+      {
+        "title": "Current Ownership Shareholding Trap (தற்போதைய உரிமை பங்கு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that NABARD is still a 50:50 joint venture between RBI and the Central Government.",
+            "CORRECT FACT: Currently, NABARD is 100% owned by the Government of India. RBI sold its entire remaining stake to GoI in 2018 following the NABARD (Amendment) Act 2018.",
+            "WHY CANDIDATES FAIL: Many outdated textbooks and guides still cite the historical 50:50 ownership ratio."
+          ],
+          "ta": [
+            "பொறி: நபார்டு இப்போதும் ரிசர்வ் வங்கி மற்றும் மத்திய அரசின் 50:50 கூட்டு நிறுவனம் என்று நினைப்பது.",
+            "சரியான உண்மை: தற்போது நபார்டு 100% மத்திய அரசின் முழுமையான உரிமையின் கீழ் இயங்குகிறது. 2018-ஆம் ஆண்டின் திருத்தச் சட்டத்திற்குப் பிறகு, ரிசர்வ் வங்கி தனது எஞ்சிய பங்குகள் அனைத்தையும் மத்திய அரசுக்கு விற்றுவிட்டு முழுமையாக வெளியேறிவிட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய பாடப்புத்தகங்கள் மற்றும் வழிகாட்டிகளில் 50:50 என்ற வரலாற்றுத் தகவல் இன்னும் மாற்றப்படாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Headquarters Location Trap (தலைமையக இருப்பிடப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming NABARD headquarters is in New Delhi because it is an agricultural institution under the Central Government.",
+            "CORRECT FACT: The headquarters of NABARD is situated in Mumbai, Maharashtra (Bandra-Kurla Complex).",
+            "WHY CANDIDATES FAIL: Candidates intuitively associate agriculture and rural ministries with New Delhi and mistakenly mark Delhi."
+          ],
+          "ta": [
+            "பொறி: நபார்டு ஊரக வளர்ச்சி சார்ந்த அமைப்பு என்பதால் அதன் தலைமையகம் புது தில்லியில் இருப்பதாகக் கருதுவது.",
+            "சரியான உண்மை: நபார்டின் தலைமையகம் மகாராஷ்டிர மாநிலம் மும்பையில் (பாந்த்ரா-குர்லா வளாகம்) அமைந்துள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய வேளாண் அமைச்சகம் தில்லியில் உள்ளதால், நபார்டும் தில்லியில் இருக்கும் என்று தவறாக அனுமானிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Supervisory Authority vs Cancellation Power Trap (ஆய்வு அதிகாரம் vs ரத்து அதிகாரம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing NABARD has independent statutory powers to cancel the banking license of an RRB or cooperative bank.",
+            "CORRECT FACT: NABARD inspects RRBs and State/District Cooperative Banks under Section 35(6) of the Banking Regulation Act, 1949, on behalf of RBI, but it can only RECOMMEND regulatory action. The sole authority to issue or cancel a banking license rests with the Reserve Bank of India.",
+            "WHY CANDIDATES FAIL: NABARD conducts the actual field audit, leading candidates to mistake inspection power for regulatory cancellation authority."
+          ],
+          "ta": [
+            "பொறி: விதிமீறும் RRB அல்லது கூட்டுறவு வங்கியின் உரிமத்தை ரத்து செய்யும் தனி அதிகாரம் நபார்டுக்கு உண்டு என நம்புவது.",
+            "சரியான உண்மை: வங்கி ஒழுங்குமுறைச் சட்டம் 1949-இன் பிரிவு 35(6)-இன் கீழ் நபார்டு ஆய்வு செய்து பரிந்துரைகளை மட்டுமே வழங்க முடியும். வங்கியின் உரிமத்தை ரத்து செய்யும் இறுதி அதிகாரம் ரிசர்வ் வங்கிக்கு மட்டுமே உண்டு!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கள ஆய்வை நபார்டு நடத்துவதால், சட்டப்பூர்வ தண்டனை அதிகாரமும் நபார்டிடமே இருப்பதாகத் தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "NABARD was established on July 12, 1982 by Act 61 of 1981.",
+        "The committee that recommended establishing NABARD was CRAFICARD, chaired by Shri B. Sivaraman in 1979.",
+        "NABARD merged and took over RBI's Agricultural Credit Department (ACD), Rural Planning & Credit Cell (RPCC), and the ARDC.",
+        "NABARD started operations with ₹100 crore paid-up capital contributed equally (50:50) by RBI and GoI.",
+        "Since 2018, NABARD is 100% owned by the Government of India after RBI divested its remaining shares.",
+        "The authorized capital of NABARD stands at ₹30,000 crore under the NABARD (Amendment) Act 2018.",
+        "The headquarters of NABARD is situated in Mumbai, Maharashtra.",
+        "Prime Minister Indira Gandhi dedicated NABARD to the service of the nation on November 5, 1982.",
+        "NABARD is strictly an apex refinance and development institution; it does not accept public deposits or lend directly to individuals.",
+        "The Chairman of NABARD is appointed by the Central Government.",
+        "NABARD inspects RRBs and State/District Cooperative Banks under Section 35(6) of the Banking Regulation Act, 1949.",
+        "The Narasimham Committee II (1998) recommended that RBI divest its shareholding in NABARD to avoid regulatory conflict of interest."
+      ],
+      "ta": [
+        "நபார்டு ஜூலை 12, 1982 அன்று நாடாளுமன்றச் சட்டத்தின் மூலம் (சட்டம் 61 / 1981) நிறுவப்பட்டது.",
+        "நபார்டு உருவாக்கப் பரிந்துரைத்த குழு 1979-இல் திரு. பி. சிவராமன் தலைமையிலான CRAFICARD குழுவாகும்.",
+        "நபார்டு ரிசர்வ் வங்கியின் ACD, RPCC மற்றும் ARDC கழகத்தின் செயல்பாடுகளைத் தன்வசம் எடுத்துக் கொண்டது.",
+        "1982-இல் நபார்டின் ஆரம்ப மூலதனம் ₹100 கோடி; இது ரிசர்வ் வங்கி மற்றும் மத்திய அரசால் சமமாக (50:50) பகிரப்பட்டது.",
+        "2018 முதல், ரிசர்வ் வங்கி தனது பங்குகளை முழுமையாக விலக்கிக் கொண்டதை அடுத்து, நபார்டு 100% மத்திய அரசிற்குச் சொந்தமானது.",
+        "2018 திருத்தச் சட்டத்தின்படி நபார்டின் அங்கீகரிக்கப்பட்ட மூலதனம் ₹30,000 கோடியாக உயர்த்தப்பட்டுள்ளது.",
+        "நபார்டின் தலைமையகம் மகாராஷ்டிர மாநிலம் மும்பையில் அமைந்துள்ளது.",
+        "பிரதமர் இந்திரா காந்தி நவம்பர் 5, 1982 அன்று நபார்டை நாட்டுக்கு அர்ப்பணித்தார்.",
+        "நபார்டு ஒரு உச்ச மறுநிதி மற்றும் வளர்ச்சி வங்கி; இது பொதுமக்களிடமிருந்து நேரடியாக வைப்புகளைப் பெறுவதோ கடன்கள் தருவதோ இல்லை.",
+        "நபார்டின் தலைமை நிர்வாகப் பொறுப்பை மத்திய அரசால் நியமிக்கப்படும் தலைவர் (Chairman) வகிக்கிறார்.",
+        "வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(6)-இன் கீழ், நபார்டு RRB-கள் மற்றும் கூட்டுறவு வங்கிகளை ஆய்வு செய்கிறது.",
+        "ஒழுங்குமுறை முரண்பாடுகளைத் தவிர்க்க ரிசர்வ் வங்கி தனது நபார்டு பங்குகளை மாற்ற வேண்டும் என நரசிம்மம் குழு II (1998) பரிந்துரைத்தது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "NABARD Acronym: National Bank for Agriculture and Rural Development.",
+        "Statutory Act: Act 61 of 1981 (Assented Dec 1981, Commenced July 12, 1982).",
+        "Founding Committee: B. Sivaraman Committee (CRAFICARD, 1979).",
+        "Institutions Absorbed: ACD of RBI + RPCC of RBI + ARDC.",
+        "Initial Capital: ₹100 crore (50:50 RBI & GoI in 1982).",
+        "Current Ownership: 100% Government of India (RBI fully exited in 2018).",
+        "Authorized Capital: ₹30,000 crore (NABARD Amendment Act 2018).",
+        "Operational Role: Apex Refinance and institution building; NO direct public lending.",
+        "Headquarters: Mumbai, Maharashtra.",
+        "Supervision Mandate: Section 35(6) of Banking Regulation Act 1949 over RRBs and Rural Cooperatives."
+      ],
+      "ta": [
+        "நபார்டு விரிவாக்கம்: தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி (National Bank for Agriculture and Rural Development).",
+        "சட்டப்பூர்வ ஆணை: சட்டம் 61 / 1981 (டிசம்பர் 1981-இல் ஒப்புதல், ஜூலை 12, 1982-இல் தொடங்கியது).",
+        "உருவாக்கிய குழு: பி. சிவராமன் குழு (CRAFICARD, 1979).",
+        "இணைக்கப்பட்ட அமைப்புகள்: ரிசர்வ் வங்கியின் ACD + RPCC + ARDC.",
+        "தொடக்க மூலதனம்: ₹100 கோடி (1982-இல் 50:50 RBI மற்றும் மத்திய அரசு).",
+        "தற்போதைய உரிமை: 100% மத்திய அரசு (2018-இல் ரிசர்வ் வங்கி முழுமையாக விலகியது).",
+        "அங்கீகரிக்கப்பட்ட மூலதனம்: ₹30,000 கோடி (2018 திருத்தச் சட்டம்).",
+        "செயல்பாட்டுப் பணி: உச்ச மறுநிதி மற்றும் நிறுவன மேம்பாடு; பொதுமக்களுக்கு நேரடிக் கடன் இல்லை.",
+        "தலைமையகம்: மும்பை, மகாராஷ்டிரா.",
+        "ஆய்வு ஆணை: வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(6)-இன் கீழ் RRB மற்றும் கூட்டுறவு வங்கி ஆய்வுகள்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_nab_101",
+        "front_en": "What does the acronym NABARD expand to?",
+        "front_ta": "நபார்டு (NABARD) என்பதன் விரிவாக்கம் என்ன?",
+        "back_en": "National Bank for Agriculture and Rural Development (தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி).",
+        "back_ta": "National Bank for Agriculture and Rural Development (தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி)."
+      },
+      {
+        "id": "rc_nab_102",
+        "front_en": "On what exact date was NABARD established?",
+        "front_ta": "நபார்டு எந்த நாளில் முறைப்படி நிறுவப்பட்டது?",
+        "back_en": "July 12, 1982 under Act 61 of 1981.",
+        "back_ta": "ஜூலை 12, 1982 அன்று 1981-ஆம் ஆண்டின் 61-வது சட்டத்தின் கீழ் நிறுவப்பட்டது."
+      },
+      {
+        "id": "rc_nab_103",
+        "front_en": "Which landmark committee recommended the creation of NABARD?",
+        "front_ta": "நபார்டை உருவாக்கப் பரிந்துரைத்த வரலாற்றுச் சிறப்புமிக்க குழு எது?",
+        "back_en": "CRAFICARD headed by Shri B. Sivaraman (1979).",
+        "back_ta": "1979-இல் திரு. பி. சிவராமன் தலைமையில் அமைக்கப்பட்ட CRAFICARD குழு."
+      },
+      {
+        "id": "rc_nab_104",
+        "front_en": "Which three pre-existing entities were merged to establish NABARD?",
+        "front_ta": "நபார்டை உருவாக்க இணைக்கப்பட்ட மூன்று முந்தைய அமைப்புகள் எவை?",
+        "back_en": "RBI's Agricultural Credit Department (ACD), Rural Planning and Credit Cell (RPCC), and Agricultural Refinance and Development Corporation (ARDC).",
+        "back_ta": "ரிசர்வ் வங்கியின் வேளாண் கடன் துறை (ACD), ஊரகத் திட்டமிடல் மற்றும் கடன் பிரிவு (RPCC) மற்றும் ARDC கழகம்."
+      },
+      {
+        "id": "rc_nab_105",
+        "front_en": "Who owns NABARD today and what is the shareholding percentage?",
+        "front_ta": "இன்று நபார்டின் உரிமையாளர் யார் மற்றும் பங்கின் சதவீதம் என்ன?",
+        "back_en": "100% owned by the Government of India. RBI completely exited in 2018.",
+        "back_ta": "100% மத்திய அரசுக்கு மட்டுமே சொந்தமானது. ரிசர்வ் வங்கி 2018-இல் முழுமையாக விலகியது."
+      },
+      {
+        "id": "rc_nab_106",
+        "front_en": "Can an individual farmer get a loan directly from a NABARD office?",
+        "front_ta": "ஒரு தனிநபர் விவசாயி நபார்டு அலுவலகத்திலிருந்து நேரடியாக கடன் பெற முடியுமா?",
+        "back_en": "No. NABARD is strictly an apex refinance institution; it does not engage in direct retail lending to individuals.",
+        "back_ta": "முடியாது. நபார்டு ஒரு உச்ச மறுநிதி நிறுவனம் மட்டுமே; தனிநபர்களுக்கு நேரடியாக சில்லறைக் கடன் வழங்குவதில்லை."
+      },
+      {
+        "id": "rc_nab_107",
+        "front_en": "Where is the head office of NABARD situated?",
+        "front_ta": "நபார்டின் தலைமை அலுவலகம் எங்கு அமைந்துள்ளது?",
+        "back_en": "Mumbai, Maharashtra (Bandra-Kurla Complex).",
+        "back_ta": "மும்பை, மகாராஷ்டிரா (பாந்த்ரா-குர்லா வளாகம்)."
+      },
+      {
+        "id": "rc_nab_108",
+        "front_en": "Under which statutory section does NABARD inspect RRBs and Cooperative Banks?",
+        "front_ta": "எந்தச் சட்டப் பிரிவின் கீழ் நபார்டு RRB-கள் மற்றும் கூட்டுறவு வங்கிகளை ஆய்வு செய்கிறது?",
+        "back_en": "Section 35(6) of the Banking Regulation Act, 1949 on behalf of the Reserve Bank of India.",
+        "back_ta": "ரிசர்வ் வங்கியின் சார்பாக, வங்கி ஒழுங்குமுறைச் சட்டம் 1949-இன் பிரிவு 35(6)-இன் கீழ் ஆய்வு செய்கிறது."
+      },
+      {
+        "id": "rc_nab_109",
+        "front_en": "What is the authorized capital limit of NABARD as per the 2018 Amendment Act?",
+        "front_ta": "2018 திருத்தச் சட்டத்தின்படி நபார்டின் அங்கீகரிக்கப்பட்ட மூலதன வரம்பு என்ன?",
+        "back_en": "₹30,000 crore (enhanced from ₹5,000 crore).",
+        "back_ta": "₹30,000 கோடி (₹5,000 கோடியிலிருந்து உயர்த்தப்பட்டது)."
+      },
+      {
+        "id": "rc_nab_110",
+        "front_en": "When and by whom was NABARD dedicated to the nation?",
+        "front_ta": "நபார்டு யாரால் எப்போது நாட்டுக்கு அர்ப்பணிக்கப்பட்டது?",
+        "back_en": "On November 5, 1982 by Prime Minister Smt. Indira Gandhi.",
+        "back_ta": "நவம்பர் 5, 1982 அன்று அப்போதைய பிரதமர் திருமதி இந்திரா காந்தியால் அர்ப்பணிக்கப்பட்டது."
+      }
+    ]
+  }
+}

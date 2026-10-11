@@ -1,7 +1,7 @@
 from typing import Callable, Dict, List, Optional, Tuple
 
 from ui.notes.components.header import render_header
-from ui.notes.components.definition import render_definition
+from ui.notes.components.definition import render_definition, render_formula_sheet
 from ui.notes.components.objectives import render_objectives
 from ui.notes.components.introduction import render_introduction
 from ui.notes.components.timeline import render_timeline
@@ -59,6 +59,8 @@ class ComponentRegistry:
         self.register(ComponentSpec(4, ["introduction", "overview", "origin_and_extent", "discovery"], render_introduction, icon="📖", display_title="Introduction"))
         # 6. Timeline
         self.register(ComponentSpec(6, ["timeline", "chronology"], render_timeline, icon="⏳", display_title="Timeline"))
+        # 7. Formula Sheet
+        self.register(ComponentSpec(7, ["formula_sheet", "formulas", "formula_list", "important_formulas"], render_formula_sheet, icon="📐", display_title="Formula Sheet"))
         # 8. Comparison
         self.register(ComponentSpec(8, ["comparison", "comparison_tables", "comparison_table", "comparison_sg_ag", "tables"], render_comparison, icon="⚖️", display_title="Comparison"))
         # 9. Fact Box

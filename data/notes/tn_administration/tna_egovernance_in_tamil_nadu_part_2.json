@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "topic_id": "tna_egovernance_in_tamil_nadu_part_2",
+    "repository_id": "tna_egovernance_in_tamil_nadu",
+    "display_title": "e-Governance in TN — Part 2: Major Digital Services",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "tn_administration",
+    "chapter": "e-Governance & Digital Administration in Tamil Nadu",
+    "language": "bilingual"
+  },
+  "metadata": {
+    "version": "1.0",
+    "status": "validated",
+    "review_status": "peer_reviewed",
+    "difficulty": "advanced",
+    "estimated_study_time": "45 mins"
+  },
+  "keywords": [
+    "Tamil Nilam",
+    "e-Office TN",
+    "Uzhavan App",
+    "Nambikkai Inaiyam",
+    "Mudhalvarin Mugavari"
+  ],
+  "learning_outcomes": [
+    "Examine key digital portals (Tamil Nilam, e-Office, Uzhavan).",
+    "Understand Nambikkai Inaiyam blockchain backbone.",
+    "Analyze grievance platforms (CM Helpline 1100)."
+  ],
+  "subject": "tn_administration",
+  "topic": "e-Governance in TN — Part 2: Major Digital Services",
+  "language": "bilingual",
+  "ui_type": "standard_note",
+  "sections": [
+    "Tamil Nilam Land Records System",
+    "e-Office Paperless Secretariat Workflow",
+    "Uzhavan Agri Extension Mobile App",
+    "Nambikkai Inaiyam State Blockchain Backbone",
+    "Mudhalvarin Mugavari & Integrated Grievance Portal"
+  ],
+  "content": {
+    "definition": {
+      "en": "Major Tamil Nadu Digital Services covers verified state portal architectures—including e-Sevai, Tamil Nilam, e-Office, Uzhavan App, and Nambikkai Inaiyam blockchain—that digitize citizen certificates, land records, agricultural extensions, and file workflows.",
+      "ta": "தமிழ்நாட்டின் முக்கிய டிஜிட்டல் சேவைகள் என்பது சான்றிதழ்கள், நிலப் பதிவேடுகள், வேளாண் சேவைகள் மற்றும் கோப்புப் பணிகளை டிஜிட்டல் மயமாக்கும் இ-சேவை, தமிழ் நிலம், இ-ஆஃபீஸ், உழவன் செயலி மற்றும் நம்பிக்கை இணையம் போன்ற சரிபார்க்கப்பட்ட அமைப்புகளை உள்ளடக்கியது."
+    },
+    "comparison_tables": [
+      {
+        "id": "table_tn_digital_portals_services",
+        "title_en": "Key Digital Service Portals",
+        "title_ta": "முக்கிய டிஜிட்டல் சேவை இணையதளங்கள்",
+        "headers_en": [
+          "Digital Portal",
+          "Managing Department",
+          "Primary Purpose",
+          "Citizen / Admin Benefit"
+        ],
+        "headers_ta": [
+          "டிஜிட்டல் தளம்",
+          "நிர்வகிக்கும் துறை",
+          "முதன்மை நோக்கம்",
+          "குடிமக்கள் / நிர்வாகப் பயன்"
+        ],
+        "rows_en": [
+          [
+            "Tamil Nilam",
+            "Revenue Dept / TNeGA",
+            "Online land record management (Patta, Chitta, Adangal)",
+            "Online Patta transfer; download verified ownership extracts"
+          ],
+          [
+            "e-Office System",
+            "TNeGA / P&AR Dept",
+            "Paperless digital file movement across Secretariat & Collectorates",
+            "Eliminates physical file loss; tracks file pending status in real-time"
+          ],
+          [
+            "Uzhavan Mobile App",
+            "Agriculture & Farmers Welfare Dept",
+            "Mobile agricultural extension service for farmers",
+            "Real-time info on seeds, machine rental, crop insurance & prices"
+          ],
+          [
+            "Nambikkai Inaiyam",
+            "TNeGA",
+            "State Blockchain Infrastructure for tamper-proof verification",
+            "Issues verifiable digital certificates preventing forgery (Pilot to backbone)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தமிழ் நிலம்",
+            "வருவாய்த்துறை / TNeGA",
+            "நிலப் பதிவேடுகள் மேலாண்மை (பட்டா, சிட்டா, அடங்கல்)",
+            "ஆன்லைன் பட்டா மாறுதல்; உரிமையாளர் நகல் பதிவிறக்கம்"
+          ],
+          [
+            "இ-ஆஃபீஸ் தளம்",
+            "TNeGA / பணியாளர் துறை",
+            "செயலகம் மற்றும் ஆட்சியரகங்களில் காகிதமற்ற கோப்பு நகர்வு",
+            "கோப்புகள் தொலைவதைத் தடுத்தல்; நிகழ்நேரக் கோப்பு கண்காணிப்பு"
+          ],
+          [
+            "உழவன் செயலி",
+            "வேளாண்மை - உழவர் நலத்துறை",
+            "விவசாயிகளுக்கான மொபைல் வேளாண் சேவை விரிவாக்கம்",
+            "விதை இருப்பு, இயந்திர வாடகை, பயிர் காப்பீடு & சந்தை விலை தகவல்"
+          ],
+          [
+            "நம்பிக்கை இணையம்",
+            "TNeGA",
+            "போலி சான்றிதழ்களைத் தடுக்கும் மாநில பிளாக்செயின் தளம்",
+            "சரிபார்க்கக்கூடிய டிஜிட்டல் சான்றிதழ்கள் வழங்கல்"
+          ]
+        ]
+      },
+      {
+        "id": "table_tn_grievance_certificate_platforms",
+        "title_en": "Grievance & Certificate Platforms",
+        "title_ta": "குறைகேட்டல் & சான்றிதழ் தளங்கள்",
+        "headers_en": [
+          "Platform Name",
+          "Access Point",
+          "Target Function",
+          "Accountability Mechanism"
+        ],
+        "headers_ta": [
+          "தளத்தின் பெயர்",
+          "அணுகல் மையம்",
+          "இலக்குச் செயல்பாடு",
+          "பொறுப்புக்கூறல் முறை"
+        ],
+        "rows_en": [
+          [
+            "Mudhalvarin Mugavari (CM Helpline)",
+            "Toll-free 1100 / Web Portal",
+            "Unified citizen grievance redressal platform",
+            "Time-bound resolution assigned to officers with SMS tracking"
+          ],
+          [
+            "e-District Portal",
+            "e-Sevai Portal / Revenue Dept",
+            "Processing statutory certificates (Community, Income, Nativity)",
+            "SLA deadlines mandated for Tahsildar approval"
+          ],
+          [
+            "e-Procurement Portal",
+            "Finance Department / TNTPO",
+            "Transparent publication & electronic bidding for tenders",
+            "Ensures open bidding, preventing manual cartelization"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதல்வரின் முகவரி (CM உதவி மையம்)",
+            "இலவச எண் 1100 / இணையதளம்",
+            "ஒருங்கிணைக்கப்பட்ட பொதுக் குறைகேட்டல் தளம்",
+            "அதிகாரிகளுக்கு அனுப்பப்பட்டு காலவரையறை தீர்வு & SMS அறிவிப்பு"
+          ],
+          [
+            "இ-டிஸ்ட்ரிக்ட் தளம்",
+            "இ-சேவை / வருவாய்த்துறை",
+            "அதிகாரப்பூர்வ சான்றிதழ்கள் செயல்முறை (சாதி, வருமானம், இருப்பிடம்)",
+            "தாசில்தார் ஒப்புதலுக்குக் காலக்கெடுக் கட்டுப்பாடு (SLA)"
+          ],
+          [
+            "இ-டெண்டர் கொள்முதல் தளம்",
+            "நிதித் துறை / TNTPO",
+            "அரசு டெண்டர்களின் ஆன்லைன் வெளியீடு & ஏலம் எடுத்தல்",
+            "கூட்டுச் சதியைத் தடுத்து வெளிப்படையான வர்த்தகப் போட்டி"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "node_en": "TN Key Digital Services",
+        "node_ta": "தமிழ்நாடு முக்கிய டிஜிட்டல் சேவைகள்",
+        "children": [
+          {
+            "node_en": "Core Portals",
+            "node_ta": "முதன்மை இணையதளங்கள்",
+            "children": [
+              {
+                "node_en": "Tamil Nilam (Land Records)",
+                "node_ta": "தமிழ் நிலம் (நிலப் பதிவேடுகள்)"
+              },
+              {
+                "node_en": "e-Office (Paperless Files)",
+                "node_ta": "இ-ஆஃபீஸ் (காகிதமற்ற கோப்புகள்)"
+              },
+              {
+                "node_en": "Uzhavan App (Agritech)",
+                "node_ta": "உழவன் செயலி (வேளாண் சேவை)"
+              }
+            ]
+          },
+          {
+            "node_en": "Grievance & Security",
+            "node_ta": "குறைகேட்டல் & பாதுகாப்பு",
+            "children": [
+              {
+                "node_en": "CM Helpline 1100",
+                "node_ta": "CM உதவி மையம் 1100"
+              },
+              {
+                "node_en": "Nambikkai Inaiyam (Blockchain)",
+                "node_ta": "நம்பிக்கை இணையம் (பிளாக்செயின்)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Tamil Nilam is the landmark land records management system of the Revenue Department used for online Patta transfers and Chitta extracts.",
+        "Uzhavan Mobile App was launched in 2018 by the Agriculture Department, integrating 12+ farmer services in Tamil.",
+        "Nambikkai Inaiyam is Tamil Nadu's state enterprise blockchain backbone managed by TNeGA for secure certificate issuance.",
+        "Mudhalvarin Mugavari integrates CM Special Cell and CM Helpline 1100 for unified time-bound grievance redressal.",
+        "STAR 2.0 is the digital property registration portal of the Registration Department (IGR) for web-based deed submission."
+      ],
+      "ta": [
+        "தமிழ் நிலம் என்பது ஆன்லைன் பட்டா மாறுதல் மற்றும் சிட்டா நகல்களை வழங்கும் வருவாய்த்துறையின் நிலப் பதிவேடுகள் அமைப்பாகும்.",
+        "உழவன் செயலி 2018 இல் வேளாண்மைத் துறையால் 12+ விவசாயச் சேவைகளைத் தமிழில் வழங்கத் தொடங்கப்பட்டது.",
+        "நம்பிக்கை இணையம் என்பது போலி சான்றிதழ்களைத் தடுக்க TNeGA அமைத்த மாநில பிளாக்செயின் உள்கட்டமைப்பாகும்.",
+        "முதல்வரின் முகவரி திட்டம் 1100 உதவி மையத்தையும் CM தனிப்பிரிவையும் இணைத்து ஒருங்கிணைந்த குறைகேட்டல் சேவையை அளிக்கிறது.",
+        "STAR 2.0 என்பது சொத்துப் பத்திரப் பதிவு மற்றும் வழிகாட்டி மதிப்புகளை ஆன்லைனில் சரிபார்க்கும் பதிவுத்துறை தளமாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Tamil Nilam handles Patta mutation; STAR 2.0 handles property registration.",
+        "Uzhavan App (2018) provides real-time agritech extension services to farmers.",
+        "Nambikkai Inaiyam provides state blockchain security for educational and statutory certificates.",
+        "Mudhalvarin Mugavari (1100) provides unified tracked grievance resolution across departments."
+      ],
+      "ta": [
+        "தமிழ் நிலம் பட்டா மாறுதலைக் கையாளுவதாகும்; STAR 2.0 பத்திரப் பதிவைக் கையாளுவதாகும்.",
+        "உழவன் செயலி (2018) விவசாயிகளுக்கு நிகழ்நேர வேளாண் தகவல்களை அளிக்கிறது.",
+        "நம்பிக்கை இணையம் அரசுச் சான்றிதழ்களுக்கு பிளாக்செயின் பாதுகாப்பை வழங்குகிறது.",
+        "முதல்வரின் முகவரி (1100) அரசுத்துறை சார்ந்த மனுக்களுக்குக் காலவரையறைத் தீர்வளிக்கிறது."
+      ]
+    },
+    "tnpsc_traps": [
+      {
+        "trap_id": "trap_tamil_nilam_scope",
+        "title_en": "Tamil Nilam Portal Management & Scope",
+        "title_ta": "தமிழ் நிலம் தளத்தின் வரம்பு",
+        "points": {
+          "en": [
+            "TRAP: Confusing Tamil Nilam with commercial registration portals or assuming it only handles urban building approvals.",
+            "CORRECT FACT: Tamil Nilam is the landmark land records management system of the Revenue Department used for rural and urban Patta modifications and Chitta extracts."
+          ],
+          "ta": [
+            "ஏமாற்று: தமிழ் நிலம் இணையதளத்தை வணிகப் பத்திரப் பதிவுத் தளத்துடன் குழப்புவது.",
+            "சரியான உண்மை: தமிழ் நிலம் என்பது வருவாய்த்துறையின் நிலப் பதிவேடுகள் மேலாண்மை அமைப்பாகும்; இது சிட்டா மற்றும் பட்டா மாறுதல்களைக் கையாளுவதாகும்."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_nambikkai_inaiyam_nature",
+        "title_en": "Nambikkai Inaiyam Blockchain Status",
+        "title_ta": "நம்பிக்கை இணையம் பிளாக்செயின் தன்மை",
+        "points": {
+          "en": [
+            "TRAP: Describing Nambikkai Inaiyam as a cryptocurrency or commercial trading platform.",
+            "CORRECT FACT: Nambikkai Inaiyam is Tamil Nadu's official State Blockchain Infrastructure managed by TNeGA for secure, tamper-proof issuance of certificates."
+          ],
+          "ta": [
+            "ஏமாற்று: நம்பிக்கை இணையத்தை ஒரு கிரிப்டோகரன்சி அல்லது வணிக வர்த்தகத் தளம் என தவறாக விவரிப்பது.",
+            "சரியான உண்மை: நம்பிக்கை இணையம் என்பது அரசு சான்றிதழ்களைப் போலியாக உருவாக்க முடியாதவாறு வழங்க TNeGA-வால் நிர்வகிக்கப்படும் மாநில பிளாக்செயின் உள்கட்டமைப்பாகும்."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_uzhavan_app_dept",
+        "title_en": "Uzhavan App Operating Department",
+        "title_ta": "உழவன் செயலியை இயக்கும் துறை",
+        "points": {
+          "en": [
+            "TRAP: Attributing Uzhavan App to the Commercial Taxes Department or private startups.",
+            "CORRECT FACT: Uzhavan App was launched by the Agriculture & Farmers Welfare Department of Tamil Nadu in 2018 to provide direct digital extension services to farmers."
+          ],
+          "ta": [
+            "ஏமாற்று: உழவன் செயலியைத் தனியார் வேளாண் சேவை நிறுவனங்கள் அல்லது வணிக வரித்துறை உருவாக்கியது என நினைப்பது.",
+            "சரியான உண்மை: உழவன் செயலி 2018 இல் தமிழ்நாடு வேளாண்மை - உழவர் நலத் துறையால் விவசாயிகளுக்குச் சேவை வழங்கத் தொடங்கப்பட்டது."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_cm_helpline_number",
+        "title_en": "Unified CM Helpline Number in TN",
+        "title_ta": "ஒருங்கிணைக்கப்பட்ட முதலமைச்சர் உதவி மையம் எண்",
+        "points": {
+          "en": [
+            "TRAP: Confusing the CM Helpline shortcode with emergency police (100) or medical (108) numbers.",
+            "CORRECT FACT: The unified CM Helpline and Public Grievance Redressal toll-free shortcode in Tamil Nadu is 1100 (integrated under Mudhalvarin Mugavari)."
+          ],
+          "ta": [
+            "ஏமாற்று: முதலமைச்சர் உதவி மைய எண்ணை மருத்துவ அவசர எண் (108) அல்லது காவல் உதவி எண்ணுடன் (100) குழப்புவது.",
+            "சரியான உண்மை: தமிழ்நாட்டின் ஒருங்கிணைக்கப்பட்ட முதலமைச்சர் உதவி மையம் மற்றும் பொதுக் குறைகேட்டல் இலவசத் தொலைபேசி எண் 1100 ஆகும்."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "front_en": "Land Records System of Revenue Dept",
+        "front_ta": "வருவாய்த்துறையின் நிலப் பதிவேடு அமைப்பு",
+        "back_en": "Tamil Nilam (Online Patta transfer & Chitta extract download).",
+        "back_ta": "தமிழ் நிலம் (ஆன்லைன் பட்டா மாறுதல் & சிட்டா பதிவிறக்கம்)."
+      },
+      {
+        "front_en": "Uzhavan Mobile App Launch Year",
+        "front_ta": "உழவன் செயலி அறிமுகப்படுத்தப்பட்ட ஆண்டு",
+        "back_en": "2018 by Agriculture & Farmers Welfare Department.",
+        "back_ta": "2018 ஆம் ஆண்டில் வேளாண்மை - உழவர் நலத் துறையால்."
+      },
+      {
+        "front_en": "State Blockchain Infrastructure Name",
+        "front_ta": "மாநில பிளாக்செயின் உள்கட்டமைப்பின் பெயர்",
+        "back_en": "Nambikkai Inaiyam (managed by TNeGA).",
+        "back_ta": "நம்பிக்கை இணையம் (TNeGA முகமையால் நிர்வகிக்கப்படுகிறது)."
+      },
+      {
+        "front_en": "Unified CM Helpline Toll-Free Shortcode",
+        "front_ta": "முதலமைச்சர் உதவி மைய இலவச தொலைபேசி எண்",
+        "back_en": "1100 (Integrated under Mudhalvarin Mugavari).",
+        "back_ta": "1100 (முதல்வரின் முகவரி திட்டத்தின் கீழ் ஒருங்கிணைக்கப்பட்டது)."
+      },
+      {
+        "front_en": "Property Registration Portal Name",
+        "front_ta": "சொத்துப் பத்திரப் பதிவு இணையதளத்தின் பெயர்",
+        "back_en": "STAR 2.0 (Registration Department - IGR).",
+        "back_ta": "STAR 2.0 (பதிவுத் துறை - IGR)."
+      },
+      {
+        "front_en": "Paperless Secretariat Workflow System",
+        "front_ta": "செயலகத்தின் காகிதமற்ற கோப்பு முறை தளம்",
+        "back_en": "e-Office System (Implemented across Collectorates & Secretariat).",
+        "back_ta": "இ-ஆஃபீஸ் தளம் (ஆட்சியரகங்கள் மற்றும் செயலகத்தில் அமலாக்கம்)."
+      },
+      {
+        "front_en": "Number of Services in Uzhavan App",
+        "front_ta": "உழவன் செயலியில் உள்ள சேவைகளின் எண்ணிக்கை",
+        "back_en": "12+ integrated agricultural extension services in Tamil.",
+        "back_ta": "தமிழில் வழங்கப்பட்ட 12+ ஒருங்கிணைக்கப்பட்ட வேளாண் சேவைகள்."
+      },
+      {
+        "front_en": "Statutory Certificate Issuance Portal",
+        "front_ta": "அரசு சான்றிதழ்கள் வழங்கும் இணையதளம்",
+        "back_en": "e-District Portal (accessed via e-Sevai / online citizen login).",
+        "back_ta": "இ-டிஸ்ட்ரிக்ட் தளம் (இ-சேவை / ஆன்லைன் குடிமகன் உள்நுழைவு)."
+      }
+    ]
+  }
+}

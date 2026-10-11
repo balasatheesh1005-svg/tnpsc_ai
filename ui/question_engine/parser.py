@@ -9,6 +9,8 @@ class OptionItem:
     id: str  # "A", "B", "C", "D"
     en: str
     ta: str = ""
+    image: Optional[str] = None
+    image_alt: Optional[str] = None
 
     def get_display_text(self, lang_mode: str = "BOTH") -> str:
         en_text = self.en.strip()
@@ -57,6 +59,10 @@ class NormalizedQuestion:
     estimated_time_sec: int = 60
     pyq_similarity: str = "Standard"
     tags: List[str] = field(default_factory=list)
+    question_image: Optional[str] = None
+    question_image_alt: Optional[str] = None
+    option_images: Optional[Dict[str, Optional[str]]] = None
+    option_images_alt: Optional[Dict[str, Optional[str]]] = None
     raw: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -101,8 +107,37 @@ class UniversalQuestionAdapter:
         else:
             question_ta = UniversalQuestionAdapter._extract_string(row, ["question_ta", "stem_ta"], "")
 
+        # Extract Image Metadata (Optional)
+        q_img = row.get("question_image")
+        question_image = str(q_img).strip() if isinstance(q_img, str) and str(q_img).strip() else None
+
+        q_img_alt = row.get("question_image_alt")
+        question_image_alt = str(q_img_alt).strip() if isinstance(q_img_alt, str) and str(q_img_alt).strip() else None
+
+        raw_opt_imgs = row.get("option_images")
+        option_images = None
+        if isinstance(raw_opt_imgs, dict):
+            option_images = {}
+            for k in ["A", "B", "C", "D"]:
+                val = raw_opt_imgs.get(k)
+                if isinstance(val, str) and val.strip():
+                    option_images[k] = val.strip()
+                else:
+                    option_images[k] = None
+
+        raw_opt_imgs_alt = row.get("option_images_alt")
+        option_images_alt = None
+        if isinstance(raw_opt_imgs_alt, dict):
+            option_images_alt = {}
+            for k in ["A", "B", "C", "D"]:
+                val = raw_opt_imgs_alt.get(k)
+                if isinstance(val, str) and val.strip():
+                    option_images_alt[k] = val.strip()
+                else:
+                    option_images_alt[k] = None
+
         # Options Normalization
-        options_list = UniversalQuestionAdapter._normalize_options(row)
+        options_list = UniversalQuestionAdapter._normalize_options(row, option_images, option_images_alt)
 
         # Correct Answer Normalization
         correct_ans = UniversalQuestionAdapter._extract_correct_answer(row)
@@ -154,6 +189,10 @@ class UniversalQuestionAdapter:
             estimated_time_sec=est_time,
             pyq_similarity=pyq_sim,
             tags=tags,
+            question_image=question_image,
+            question_image_alt=question_image_alt,
+            option_images=option_images,
+            option_images_alt=option_images_alt,
             raw=row,
         )
 
@@ -166,9 +205,15 @@ class UniversalQuestionAdapter:
         return default
 
     @staticmethod
-    def _normalize_options(row: dict) -> List[OptionItem]:
+    def _normalize_options(
+        row: dict,
+        option_images: Optional[Dict[str, Optional[str]]] = None,
+        option_images_alt: Optional[Dict[str, Optional[str]]] = None,
+    ) -> List[OptionItem]:
         keys = ["A", "B", "C", "D"]
         result = []
+        opt_imgs = option_images or {}
+        opt_alts = option_images_alt or {}
 
         # Case 1: options is a list of dicts [{"id": "A", "en": "...", "ta": "..."}]
         raw_options = row.get("options")
@@ -179,9 +224,13 @@ class UniversalQuestionAdapter:
                     opt_id = str(item.get("id") or opt_key).upper()
                     o_en = str(item.get("en") or item.get("text") or item.get("english") or "")
                     o_ta = str(item.get("ta") or item.get("tamil") or "")
-                    result.append(OptionItem(id=opt_id, en=o_en, ta=o_ta))
+                    img = opt_imgs.get(opt_id)
+                    alt = opt_alts.get(opt_id)
+                    result.append(OptionItem(id=opt_id, en=o_en, ta=o_ta, image=img, image_alt=alt))
                 elif isinstance(item, str):
-                    result.append(OptionItem(id=opt_key, en=item, ta=""))
+                    img = opt_imgs.get(opt_key)
+                    alt = opt_alts.get(opt_key)
+                    result.append(OptionItem(id=opt_key, en=item, ta="", image=img, image_alt=alt))
             return result
 
         # Case 2: options is a dict {"A": "Text", "B": "Text"} or {"A": {"en": "..", "ta": ".."}}
@@ -189,12 +238,14 @@ class UniversalQuestionAdapter:
             for k in keys:
                 if k in raw_options:
                     val = raw_options[k]
+                    img = opt_imgs.get(k)
+                    alt = opt_alts.get(k)
                     if isinstance(val, dict):
                         o_en = str(val.get("en") or val.get("english") or "")
                         o_ta = str(val.get("ta") or val.get("tamil") or "")
-                        result.append(OptionItem(id=k, en=o_en, ta=o_ta))
+                        result.append(OptionItem(id=k, en=o_en, ta=o_ta, image=img, image_alt=alt))
                     else:
-                        result.append(OptionItem(id=k, en=str(val), ta=""))
+                        result.append(OptionItem(id=k, en=str(val), ta="", image=img, image_alt=alt))
             if result:
                 return result
 
@@ -207,7 +258,9 @@ class UniversalQuestionAdapter:
                 t_val = ""
                 if isinstance(opts_ta, list) and idx < len(opts_ta):
                     t_val = str(opts_ta[idx])
-                result.append(OptionItem(id=opt_key, en=str(val), ta=t_val))
+                img = opt_imgs.get(opt_key)
+                alt = opt_alts.get(opt_key)
+                result.append(OptionItem(id=opt_key, en=str(val), ta=t_val, image=img, image_alt=alt))
             return result
 
         return result

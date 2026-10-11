@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "topic_id": "economy_industrial_growth_part_3",
+    "repository_id": "economy_industrial_growth",
+    "display_title": "Industrial Growth – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Industrial Growth",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "exam_mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Index of Industrial Production IIP",
+    "Base Year 2011-12 NSO",
+    "Eight Core Industries 40.27%",
+    "Petroleum Refinery Highest 28%",
+    "Fertilizers Lowest 2.63%",
+    "Maharatna Criteria Profit 5000 Cr",
+    "Navratna Miniratna Autonomy",
+    "Special Economic Zones Act 2005",
+    "PM Gati Shakti Master Plan",
+    "National Logistics Policy 2022",
+    "Dedicated Freight Corridors DFC"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the composition, methodology, and base year (2011-12) of the Index of Industrial Production (IIP).",
+        "Understand the strategic significance and individual weight distribution of the Eight Core Industries."
+      ],
+      "ta": [
+        "தொழில்துறை உற்பத்தி குறியீட்டின் (IIP) அமைப்பு, கணக்கீட்டு முறை மற்றும் அடிப்படை ஆண்டை (2011-12) ஆழமாக அறிதல்.",
+        "எட்டு முக்கிய அடிப்படைத் தொழில்களின் உத்திசார் முக்கியத்துவம் மற்றும் தனிநபர் எடைப் பகிர்வைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the decreasing order of Eight Core weights (Refinery 28.04% down to Fertilizers 2.63%).",
+        "Recall Maharatna financial benchmarks: Net profit ₹5,000 Cr, Net worth ₹15,000 Cr, Turnover ₹25,000 Cr."
+      ],
+      "ta": [
+        "எட்டு அடிப்படைத் தொழில்களின் இறங்குவரிசை எடைகளை நினைவில் நிறுத்துதல் (சுத்திகரிப்பு 28.04% முதல் உரம் 2.63% வரை).",
+        "மகாரத்னா நிதி வரம்புகளை நினைவுகூருதல்: நிகர லாபம் ₹5,000 கோடி, நிகர மதிப்பு ₹15,000 கோடி, விற்றுமுதல் ₹25,000 கோடி."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the economic impact of logistics costs (~13-14% of GDP) on Indian manufacturing competitiveness.",
+        "Differentiate between Special Economic Zones (SEZs) and National Investment and Manufacturing Zones (NIMZs)."
+      ],
+      "ta": [
+        "இந்திய உற்பத்திப் போட்டித்திறன் மீது தளவாடச் செலவுகள் (ஜிடிபியில் 13-14%) ஏற்படுத்தும் தாக்கத்தை ஆய்வு செய்தல்.",
+        "சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) மற்றும் தேசிய உற்பத்தி மண்டலங்களை (NIMZ) வேறுபடுத்தி அறிதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid TNPSC traps regarding Core weights, Maharatna profit cutoffs, and SEZ enactment dates."
+      ],
+      "ta": [
+        "அடிப்படைத் தொழில் எடைகள், மகாரத்னா லாப வரம்புகள் மற்றும் SEZ சட்ட தேதிகள் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Industrial Growth – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_iip_and_eight_core",
+      "title_en": "Index of Industrial Production (IIP) & The Eight Core Industries",
+      "title_ta": "தொழில்துறை உற்பத்தி குறியீடு (IIP) மற்றும் எட்டு முக்கிய அடிப்படைத் தொழில்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_maharatna_navratna_cpse",
+      "title_en": "CPSE Autonomy Framework: Maharatna, Navratna & Miniratna",
+      "title_ta": "மத்திய பொதுத்துறை நிறுவன தன்னாட்சி: மகாரத்னா, நவரத்னா மற்றும் மினிரத்னா",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_infrastructure_and_logistics",
+      "title_en": "Infrastructure Bottlenecks, PM Gati Shakti & Industrial Clusters",
+      "title_ta": "உள்கட்டமைப்புத் தடைகள், பிஎம் கதி சக்தி மற்றும் தொழிற்தொகுப்புகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Advanced industrial economics and policy mastery encompass monitoring industrial activity through the Index of Industrial Production (IIP) and its Eight Core Industries, resolving logistics and infrastructure bottlenecks via PM Gati Shakti and SEZs, evaluating CPSE performance through Maharatna/Navratna tiers, addressing regional disparities, and mitigating environmental externalities.",
+      "ta": "மேம்பட்ட தொழில்துறை பொருளாதாரம் என்பது தொழில்துறை உற்பத்தி குறியீடு (IIP) மற்றும் அதன் எட்டு முக்கிய அடிப்படைத் தொழில்கள் மூலம் தொழில்துறை இயக்கத்தைக் கண்காணிப்பது, பிஎம் கதி சக்தி மற்றும் சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) மூலம் உள்கட்டமைப்பு மற்றும் போக்குவரத்துத் தடைகளைக் களைவது, மகாரத்னா/நவரத்னா தகுதிகள் மூலம் பொதுத்துறை நிறுவனங்களின் செயல்திறனை மதிப்பீடு செய்வது மற்றும் பிராந்திய ஏற்றத்தாழ்வுகளைச் சரிசெய்வதை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "Mastering Indian industrial growth for TNPSC Group 1 requires command over critical quantitative indicators and structural dynamics. The premier barometer of monthly industrial activity is the Index of Industrial Production (IIP), compiled by the National Statistics Office (NSO) with base year 2011-12. Crucially, the Eight Core Industries (Refinery Products, Electricity, Steel, Coal, Crude Oil, Natural Gas, Cement, Fertilizers) constitute a massive 40.27% weighting within the IIP. Concurrently, Indian manufacturing competitiveness has historically been throttled by high logistics costs (~13-14% of GDP compared to ~8% in developed economies), prompting massive supply-chain interventions including the PM Gati Shakti National Master Plan, the National Logistics Policy (2022), and Dedicated Freight Corridors (DFCs). In the corporate sphere, Central Public Sector Enterprises (CPSEs) are incentivized via financial autonomy tiers—Maharatna, Navratna, and Miniratna—while Special Economic Zones (SEZs under SEZ Act 2005) and National Investment and Manufacturing Zones (NIMZs) serve as export hubs.",
+      "ta": "டிஎன்பிஎஸ்சி குரூப் 1 தேர்வில் தொழில்துறை வளர்ச்சியை முழுமையாகப் புரிந்துகொள்ள முக்கிய குறியீடுகளையும் கட்டமைப்பு மாற்றங்களையும் ஆழமாகக் கற்பது அவசியமாகும். தொழில்துறை இயக்கத்தை மாதாந்திர அடிப்படையில் அளவிடும் முதன்மைக் குறியீடு 'தொழில்துறை உற்பத்தி குறியீடு' (IIP) ஆகும்; இது 2011-12 அடிப்படை ஆண்டைக் கொண்டு தேசிய புள்ளியியல் அலுவலகத்தால் (NSO) வெளியிடப்படுகிறது. குறிப்பாக, எட்டு முக்கிய அடிப்படைத் தொழில்கள் (எண்ணெய் சுத்திகரிப்பு, மின்சாரம், எஃகு, நிலக்கரி, கச்சா எண்ணெய், இயற்கை எரிவாயு, சிமெண்ட், உரங்கள்) IIP குறியீட்டில் 40.27% என்ற மிகப்பெரிய எடையைக் கொண்டுள்ளன. அதே நேரத்தில், இந்தியாவின் உற்பத்திப் போட்டித்தன்மையை அதிக போக்குவரத்துச் செலவுகள் (வளர்ந்த நாடுகளில் 8% ஆக இருக்க, இந்தியாவில் ஜிடிபியில் 13-14%) தடுத்து வந்தன. இதைச் சரிசெய்ய பிஎம் கதி சக்தி திட்டம், தேசிய தளவாடக் கொள்கை (2022) மற்றும் பிரத்யேக சரக்கு ரயில் தாழ்வாரங்கள் (DFC) தொடங்கப்பட்டுள்ளன. மேலும், பொதுத்துறை நிறுவனங்களுக்கு நிதி தன்னாட்சி வழங்க மகாரத்னா, நவரத்னா, மினிரத்னா தகுதிகளும், ஏற்றுமதியை பெருக்க சிறப்புப் பொருளாதார மண்டலங்களும் (SEZ) அமைக்கப்பட்டுள்ளன."
+    },
+    "sec_iip_and_eight_core": [
+      {
+        "title": "Index of Industrial Production (IIP) Architecture",
+        "title_ta": "தொழில்துறை உற்பத்தி குறியீட்டின் (IIP) கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Compiling Agency: Released monthly by the National Statistical Office (NSO), Ministry of Statistics and Programme Implementation (MOSPI).",
+            "Current Base Year: 2011-12 (revised from 2004-05 in May 2017 to capture contemporary manufacturing dynamics).",
+            "Sectoral Classification & Weights: Mining (14.37%), Manufacturing (77.63%), and Electricity (7.99%). Manufacturing holds the lion's share.",
+            "Use-Based Classification: Primary Goods (34.05%), Capital Goods (8.22%), Intermediate Goods (17.22%), Infrastructure/Construction Goods (12.34%), Consumer Durables (12.84%), and Consumer Non-Durables (15.33%)."
+          ],
+          "ta": [
+            "வெளியிடும் முகமை: புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் (MOSPI) தேசிய புள்ளியியல் அலுவலகத்தால் (NSO) மாதந்தோறும் வெளியிடப்படுகிறது.",
+            "தற்போதைய அடிப்படை ஆண்டு: 2011-12 (மே 2017-ல் 2004-05-லிருந்து மாற்றியமைக்கப்பட்டது).",
+            "துறைசார் வகைப்பாடும் எடைகளும்: சுரங்கம் (14.37%), உற்பத்தி (77.63%) மற்றும் மின்சாரம் (7.99%). உற்பத்தித் துறையே இதில் மிகப்பெரிய பங்கு வகிக்கிறது.",
+            "பயன்பாட்டு வகைப்பாடு: முதன்மைப் பொருட்கள் (34.05%), மூலதனப் பொருட்கள் (8.22%), இடைநிலைப் பொருட்கள் (17.22%), உள்கட்டமைப்பு/கட்டுமானப் பொருட்கள் (12.34%), நீடித்த நுகர்வுப் பொருட்கள் (12.84%), நீடிக்காத நுகர்வுப் பொருட்கள் (15.33%)."
+          ]
+        }
+      },
+      {
+        "title": "The Eight Core Industries (40.27% of IIP)",
+        "title_ta": "எட்டு முக்கிய அடிப்படைத் தொழில்கள் (IIP-ல் 40.27% எடை)",
+        "points": {
+          "en": [
+            "Combined Weight: Account for exactly 40.27% of the total weight of items included in the IIP, serving as the leading bellwether of economic vitality.",
+            "Strict Weightage Hierarchy (Decreasing Order): (1) Refinery Products (28.04%), (2) Electricity (19.85%), (3) Steel (17.92%), (4) Coal (10.33%), (5) Crude Oil (8.98%), (6) Natural Gas (6.88%), (7) Cement (5.37%), and (8) Fertilizers (2.63%).",
+            "Memory Acronym: 'RESC_CC_NF' (Refinery, Electricity, Steel, Coal, Crude Oil, Natural Gas, Cement, Fertilizers).",
+            "Highest vs Lowest: Petroleum Refinery Products has the HIGHEST weight (28.04% of Core, ~11.29% of total IIP); Fertilizers has the LOWEST weight (2.63% of Core)."
+          ],
+          "ta": [
+            "கூட்டு எடை: IIP குறியீட்டில் உள்ள மொத்த பொருட்களின் எடையில் சரியாக 40.27% பங்கைக் கொண்டு பொருளாதார வலிமையைக் காட்டும் முதன்மைக் கண்ணாடியாக இயங்குகிறது.",
+            "எடை வரிசை (இறங்கு வரிசை): (1) எண்ணெய் சுத்திகரிப்புப் பொருட்கள் (28.04%), (2) மின்சாரம் (19.85%), (3) எஃகு (17.92%), (4) நிலக்கரி (10.33%), (5) கச்சா எண்ணெய் (8.98%), (6) இயற்கை எரிவாயு (6.88%), (7) சிமெண்ட் (5.37%), மற்றும் (8) உரங்கள் (2.63%).",
+            "நினைவுச் சுருக்கம்: 'RESC_CC_NF' (சுத்திகரிப்பு, மின்சாரம், எஃகு, நிலக்கரி, கச்சா எண்ணெய், இயற்கை எரிவாயு, சிமெண்ட், உரம்).",
+            "அதிகபட்சம் vs குறைந்தபட்சம்: பெட்ரோலிய சுத்திகரிப்புப் பொருட்கள் மிக அதிக எடையையும் (28.04%), உரங்கள் மிகக் குறைந்த எடையையும் (2.63%) கொண்டுள்ளன."
+          ]
+        }
+      }
+    ],
+    "sec_maharatna_navratna_cpse": [
+      {
+        "title": "Objective and Genesis of Ratna Status",
+        "title_ta": "ரத்னா தகுதியின் நோக்கமும் தோற்றமும்",
+        "points": {
+          "en": [
+            "Genesis: Introduced in 1997 (Navratna & Miniratna) and 2009-10 (Maharatna) by the Department of Public Enterprises (DPE) to delegate managerial and financial autonomy to commercially viable CPSEs.",
+            "Strategic Purpose: Enable profit-making state enterprises to compete globally, form joint ventures, raise foreign capital, and take rapid investment decisions without routine bureaucratic ministry sanctions."
+          ],
+          "ta": [
+            "தோற்றம்: பொதுத்துறை நிறுவனங்கள் துறை (DPE) மூலம் 1997-ல் (நவரத்னா, மினிரத்னா) மற்றும் 2009-10-ல் (மகாரத்னா) லாபத்தில் இயங்கும் பொதுத்துறை நிறுவனங்களுக்கு நிதி தன்னாட்சி வழங்க தொடங்கப்பட்டது.",
+            "உத்திசார் நோக்கம்: அமைச்சகங்களின் அன்றாட அனுமதியின்றி உலக அளவில் போட்டியிடவும், கூட்டு நிறுவனங்களை உருவாக்கவும், வெளிநாட்டு மூலதனம் திரட்டவும் பொதுத்துறை நிறுவனங்களுக்கு அதிகாரம் அளிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Maharatna Criteria & Investment Freedom",
+        "title_ta": "மகாரத்னா தகுதி அளவுகோலும் முதலீட்டு அதிகாரமும்",
+        "points": {
+          "en": [
+            "Prerequisites: Must already hold NAVRATNA status; listed on Indian stock exchange with minimum prescribed public shareholding.",
+            "Three-Year Financial Thresholds: (1) Average annual net profit > ₹5,000 crore; (2) Average annual Net Worth > ₹15,000 crore; (3) Average annual Turnover > ₹25,000 crore during the last 3 consecutive years.",
+            "Global Presence: Must have significant international operations and global footprint.",
+            "Financial Autonomy Power: Maharatna boards can decide investments up to ₹5,000 crore (or 15% of net worth) in a single project without prior government approval."
+          ],
+          "ta": [
+            "முன்நிபந்தனைகள்: ஏற்கனவே 'நவரத்னா' தகுதி பெற்றிருக்க வேண்டும்; பங்குச் சந்தையில் பட்டியலிடப்பட்டிருக்க வேண்டும்.",
+            "மூன்றாண்டு நிதி அளவுகோல்கள்: கடந்த 3 தொடர்ச்சியான ஆண்டுகளில் (1) சராசரி ஆண்டு நிகர லாபம் > ₹5,000 கோடி; (2) சராசரி ஆண்டு நிகர மதிப்பு > ₹15,000 கோடி; (3) சராசரி ஆண்டு விற்றுமுதல் > ₹25,000 கோடி.",
+            "சர்வதேச இருப்பு: குறிப்பிடத்தக்க சர்வதேச செயல்பாடுகளையும் உலகளாவிய வர்த்தகத்தையும் கொண்டிருக்க வேண்டும்.",
+            "முதலீட்டு அதிகாரம்: ஒரு திட்டத்திற்கு அரசின் முன் அனுமதியின்றி ₹5,000 கோடி வரை (அல்லது நிகர மதிப்பில் 15%) முதலீடு செய்ய மகாரத்னா நிர்வாகக் குழுவிற்கு முழு அதிகாரம் உண்டு."
+          ]
+        }
+      }
+    ],
+    "sec_infrastructure_and_logistics": [
+      {
+        "title": "Logistics Bottlenecks and National Logistics Policy (NLP)",
+        "title_ta": "தளவாடத் தடைகளும் தேசிய தளவாடக் கொள்கையும் (NLP)",
+        "points": {
+          "en": [
+            "High Logistics Cost Burden: Logistics cost in India has historically hovered around 13-14% of GDP, severely eroding export competitiveness compared to global benchmarks (~8%).",
+            "Modal Skewness: Over 65% of freight moves via road transport (expensive and carbon-intensive), while energy-efficient rail freight accounts for only ~27%.",
+            "National Logistics Policy 2022: Targets reducing logistics costs to single digits (< 10% of GDP), elevating India into the top 25 of the World Bank Logistics Performance Index (LPI).",
+            "Unified Logistics Interface Platform (ULIP): Digital integration of 30+ logistics systems across 7 ministries to enable single-window real-time cargo tracking."
+          ],
+          "ta": [
+            "அதிக போக்குவரத்துச் செலவு: இந்தியாவில் போக்குவரத்து மற்றும் சரக்கு கையாளுதல் செலவு ஜிடிபியில் 13-14% ஆக உள்ளது; இது உலகளாவிய 8% சராசரியை விட அதிகம் என்பதால் ஏற்றுமதிப் போட்டித்திறனைப் பாதிக்கிறது.",
+            "போக்குவரத்து முறை ஏற்றத்தாழ்வு: 65%-க்கும் அதிகமான சரக்குகள் சாலை வழியாகவே (அதிக செலவு மற்றும் காற்று மாசுபாடு) கொண்டு செல்லப்படுகின்றன; குறைந்த செலவுடைய ரயில் சரக்கு போக்குவரத்து 27% மட்டுமே.",
+            "தேசிய தளவாடக் கொள்கை 2022: தளவாடச் செலவை ஒற்றை இலக்கமாக (< 10%) குறைப்பது மற்றும் உலக வங்கியின் LPI குறியீட்டில் முதல் 25 இடங்களுக்குள் இந்தியாவைக் கொண்டுவருவதை இலக்காகக் கொண்டுள்ளது.",
+            "ULIP டிஜிட்டல் தளம்: 7 அமைச்சகங்களின் 30-க்கும் மேற்பட்ட அமைப்புகளை ஒருங்கிணைத்து ஒரே தளத்தில் நிகழ்நேர சரக்கு கண்காணிப்பை உறுதி செய்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "PM Gati Shakti & Special Economic Zones (SEZs)",
+        "title_ta": "பிஎம் கதி சக்தி மற்றும் சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ)",
+        "points": {
+          "en": [
+            "PM Gati Shakti National Master Plan: Launched in October 2021 as a GIS-based digital platform bringing 16 ministries together for synchronized multi-modal connectivity infrastructure (highways, railways, ports, airports).",
+            "Dedicated Freight Corridors (DFCs): Western DFC (Dadri to JNPT Mumbai) and Eastern DFC (Ludhiana to Dankuni) designed for freight train speeds up to 100 km/h, decongesting passenger tracks.",
+            "Special Economic Zones (SEZ Act, 2005): Duty-free enclaves treated as foreign territory for trade and tariffs, offering single-window clearance, 100% tax holidays on export profits, and world-class utilities.",
+            "DESH Bill (Development of Enterprise and Service Hubs): Proposed overhaul of SEZ framework to make enclaves compliant with WTO subsidy rules and accessible to domestic tariff area (DTA) sales."
+          ],
+          "ta": [
+            "பிஎம் கதி சக்தி திட்டம்: அக்டோபர் 2021-ல் தொடங்கப்பட்ட GIS வரைபட அடிப்படையிலான டிஜிட்டல் தளம்; 16 அமைச்சகங்களை ஒருங்கிணைத்து சாலை, ரயில்வே, துறைமுகம், விமான நிலையங்களை தடையின்றி இணைக்கிறது.",
+            "பிரத்யேக சரக்கு ரயில் தாழ்வாரங்கள் (DFC): மேற்கு DFC (தாத்ரி முதல் JNPT மும்பை வரை) மற்றும் கிழக்கு DFC (லூதியானா முதல் டன்குனி வரை); மணிக்கு 100 கி.மீ வேகத்தில் சரக்கு ரயில்களை இயக்க வழிவகுக்கிறது.",
+            "சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ சட்டம் 2005): ஏற்றுமதிக்கான வெளிநாட்டுப் பிராந்தியமாக கருதப்படும் சுங்க வரி இல்லாத மண்டலங்கள்; ஒற்றைச் சாளர அனுமதி மற்றும் வரிச் சலுகைகளை வழங்குகின்றன.",
+            "தேஷ் மசோதா (DESH Bill): SEZ மண்டலங்களை WTO விதிகளுக்கு ஏற்ப மாற்றி, உள்நாட்டு சந்தை விற்பனைக்கும் அனுமதிக்கும் வகையில் SEZ சட்டத்தை மாற்றியமைக்கும் வரைவு மசோதா."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_eight_core_weights",
+        "title_en": "Weights and Rankings of the Eight Core Industries in IIP (Base: 2011-12)",
+        "title_ta": "IIP-ல் எட்டு முக்கிய அடிப்படைத் தொழில்களின் எடைகளும் தரவரிசைகளும் (அடிப்படை: 2011-12)",
+        "headers_en": [
+          "Rank",
+          "Core Industry Sector",
+          "Weight in Eight Core (%)",
+          "Weight in Total IIP (%)",
+          "Significance"
+        ],
+        "headers_ta": [
+          "வரிசை",
+          "அடிப்படைத் தொழில் துறை",
+          "எட்டு தொழில்களில் எடை (%)",
+          "மொத்த IIP-ல் எடை (%)",
+          "முக்கியத்துவம்"
+        ],
+        "rows_en": [
+          [
+            "1",
+            "Petroleum Refinery Products",
+            "28.04%",
+            "11.29%",
+            "Highest weight; drives transportation and petrochemical fuels"
+          ],
+          [
+            "2",
+            "Electricity Generation",
+            "19.85%",
+            "7.99%",
+            "Direct barometer of national industrial capacity utilization"
+          ],
+          [
+            "3",
+            "Steel Production (Finished)",
+            "17.92%",
+            "7.22%",
+            "Core physical input for construction, auto, and machinery"
+          ],
+          [
+            "4",
+            "Coal Production",
+            "10.33%",
+            "4.16%",
+            "Thermal energy source feeding electricity generation"
+          ],
+          [
+            "5",
+            "Crude Oil Extraction",
+            "8.98%",
+            "3.62%",
+            "Primary hydrocarbon feedstock for refineries"
+          ],
+          [
+            "6",
+            "Natural Gas Production",
+            "6.88%",
+            "2.77%",
+            "Clean fuel and primary raw material for urea fertilizer"
+          ],
+          [
+            "7",
+            "Cement Production",
+            "5.37%",
+            "2.16%",
+            "Direct physical indicator of real estate and highway construction"
+          ],
+          [
+            "8",
+            "Fertilizers Production",
+            "2.63%",
+            "1.06%",
+            "Lowest weight; vital agricultural chemical input"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "1",
+            "பெட்ரோலிய சுத்திகரிப்புப் பொருட்கள்",
+            "28.04%",
+            "11.29%",
+            "மிக அதிக எடை; போக்குவரத்து மற்றும் எரிபொருளை இயக்குகிறது"
+          ],
+          [
+            "2",
+            "மின்சார உற்பத்தி",
+            "19.85%",
+            "7.99%",
+            "தேசிய தொழில்துறை இயக்கத்தைக் காட்டும் நேரடிக் கண்ணாடி"
+          ],
+          [
+            "3",
+            "எஃகு உற்பத்தி (முடிவடைந்தது)",
+            "17.92%",
+            "7.22%",
+            "கட்டுமானம், ஆட்டோமொபைல் மற்றும் இயந்திரங்களின் அடிப்படை உள்ளீடு"
+          ],
+          [
+            "4",
+            "நிலக்கரி உற்பத்தி",
+            "10.33%",
+            "4.16%",
+            "மின் உற்பத்திக்கான அனல்மின் நிலையங்களின் முக்கிய எரிபொருள்"
+          ],
+          [
+            "5",
+            "கச்சா எண்ணெய் உற்பத்தி",
+            "8.98%",
+            "3.62%",
+            "எண்ணெய் சுத்திகரிப்பு ஆலைகளுக்கான முதன்மை மூலப்பொருள்"
+          ],
+          [
+            "6",
+            "இயற்கை எரிவாயு உற்பத்தி",
+            "6.88%",
+            "2.77%",
+            "சுற்றுச்சூழல் எரிபொருள் மற்றும் யூரியா உரத்திற்கான மூலப்பொருள்"
+          ],
+          [
+            "7",
+            "சிமெண்ட் உற்பத்தி",
+            "5.37%",
+            "2.16%",
+            "ரியல் எஸ்டேட் மற்றும் நெடுஞ்சாலை கட்டுமானத்தின் நேரடிக் குறியீடு"
+          ],
+          [
+            "8",
+            "ரசாயன உரங்கள் உற்பத்தி",
+            "2.63%",
+            "1.06%",
+            "மிகக் குறைந்த எடை; விவசாயத்திற்கு இன்றியமையாத ரசாயன உள்ளீடு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_cpse_ratna_comparison",
+        "title_en": "Comparison Matrix: Maharatna vs Navratna vs Miniratna Status",
+        "title_ta": "ஒப்பீட்டு அட்டவணை: மகாரத்னா vs நவரத்னா vs மினிரத்னா தகுதிகள்",
+        "headers_en": [
+          "Evaluation Parameter",
+          "Maharatna Status",
+          "Navratna Status",
+          "Miniratna Category-I"
+        ],
+        "headers_ta": [
+          "மதிப்பீட்டு அளவுகோல்",
+          "மகாரத்னா தகுதி",
+          "நவரத்னா தகுதி",
+          "மினிரத்னா பிரிவு-I"
+        ],
+        "rows_en": [
+          [
+            "Inception Year",
+            "2009-2010",
+            "1997",
+            "1997"
+          ],
+          [
+            "3-Yr Net Profit Benchmark",
+            "Average annual net profit > ₹5,000 Crore",
+            "Composite score ≥ 60 out of 100 on 6 parameters",
+            "Continuous profit in last 3 years with pre-tax profit ≥ ₹30 Cr in at least one year"
+          ],
+          [
+            "3-Yr Net Worth Benchmark",
+            "Average annual net worth > ₹15,000 Crore",
+            "Derived from composite financial strength",
+            "Positive net worth throughout last 3 years"
+          ],
+          [
+            "3-Yr Turnover Benchmark",
+            "Average annual turnover > ₹25,000 Crore",
+            "Derived from composite performance",
+            "Not explicitly fixed at large scale"
+          ],
+          [
+            "Financial Autonomy Ceiling",
+            "Up to ₹5,000 Crore (or 15% of net worth) per project",
+            "Up to ₹1,000 Crore (or 15% of net worth) per project",
+            "Up to ₹500 Crore (or equal to net worth) per project"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொடங்கப்பட்ட ஆண்டு",
+            "2009-2010",
+            "1997",
+            "1997"
+          ],
+          [
+            "3 ஆண்டு நிகர லாப வரம்பு",
+            "சராசரி ஆண்டு நிகர லாபம் > ₹5,000 கோடி",
+            "6 அளவுகோல்களில் 100-க்கு குறைந்தது 60 மதிப்பெண்",
+            "கடந்த 3 ஆண்டுகளில் தொடர் லாபம்; ஒரு ஆண்டிலாவது வரிக்கு முந்தைய லாபம் ≥ ₹30 கோடி"
+          ],
+          [
+            "3 ஆண்டு நிகர மதிப்பு வரம்பு",
+            "சராசரி ஆண்டு நிகர மதிப்பு > ₹15,000 கோடி",
+            "கூட்டு நிதி வலிமையின் அடிப்படையில் கணக்கீடு",
+            "கடந்த 3 ஆண்டுகளிலும் நேர்மறையான நிகர மதிப்பு"
+          ],
+          [
+            "3 ஆண்டு விற்றுமுதல் வரம்பு",
+            "சராசரி ஆண்டு விற்றுமுதல் > ₹25,000 கோடி",
+            "செயல்திறன் அடிப்படையில் கணக்கீடு",
+            "பெரிய அளவில் பிரத்யேக வரம்பு நிர்ணயிக்கப்படவில்லை"
+          ],
+          [
+            "நிதி முதலீட்டு அதிகாரம்",
+            "திட்டத்திற்கு ₹5,000 கோடி வரை (அல்லது நிகர மதிப்பில் 15%)",
+            "திட்டத்திற்கு ₹1,000 கோடி வரை (அல்லது நிகர மதிப்பில் 15%)",
+            "திட்டத்திற்கு ₹500 கோடி வரை (அல்லது நிகர மதிப்புக்கு சமமாக)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_iip_sectoral_breakup",
+        "title_en": "Sectoral and Use-Based Weight Distribution of IIP (Base: 2011-12)",
+        "title_ta": "IIP குறியீட்டின் துறைசார் மற்றும் பயன்பாட்டு எடைப் பகிர்வு (அடிப்படை: 2011-12)",
+        "headers_en": [
+          "Classification Mode",
+          "Component Category",
+          "Item Weight (%)",
+          "Role in Industrial Monitoring"
+        ],
+        "headers_ta": [
+          "வகைப்பாட்டு முறை",
+          "கூறு பிரிவு",
+          "பொருளின் எடை (%)",
+          "தொழில்துறை கண்காணிப்பில் பங்கு"
+        ],
+        "rows_en": [
+          [
+            "Sectoral",
+            "Manufacturing",
+            "77.63%",
+            "Largest sectoral weight; tracks factory shopfloor outputs"
+          ],
+          [
+            "Sectoral",
+            "Mining & Quarrying",
+            "14.37%",
+            "Measures raw mineral extraction and fuel mining"
+          ],
+          [
+            "Sectoral",
+            "Electricity",
+            "7.99%",
+            "Measures thermal, hydro, and nuclear power generation"
+          ],
+          [
+            "Use-Based",
+            "Primary Goods",
+            "34.05%",
+            "Fuels, ores, electricity; feeds secondary conversion"
+          ],
+          [
+            "Use-Based",
+            "Capital Goods",
+            "8.22%",
+            "Leading indicator of new private corporate investment cycles"
+          ],
+          [
+            "Use-Based",
+            "Consumer Goods (Durables + Non-Durables)",
+            "28.17%",
+            "Direct indicator of aggregate household consumption demand"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "துறைசார்",
+            "உற்பத்தித் துறை (Manufacturing)",
+            "77.63%",
+            "மிகப்பெரிய துறைசார் எடை; ஆலை உற்பத்தியைக் கண்காணிக்கிறது"
+          ],
+          [
+            "துறைசார்",
+            "சுரங்கத் துறை (Mining)",
+            "14.37%",
+            "கனிம வெட்டி எடுப்பு மற்றும் நிலக்கரி உற்பத்தியை அளவிடுகிறது"
+          ],
+          [
+            "துறைசார்",
+            "மின்சாரத் துறை (Electricity)",
+            "7.99%",
+            "அனல், புனல் மற்றும் அணுமின் உற்பத்தியைக் கண்காணிக்கிறது"
+          ],
+          [
+            "பயன்பாட்டு முறை",
+            "முதன்மைப் பொருட்கள்",
+            "34.05%",
+            "எரிபொருட்கள், தாதுக்கள்; அடுத்தகட்ட உற்பத்திக்கு உள்ளீடு"
+          ],
+          [
+            "பயன்பாட்டு முறை",
+            "மூலதனப் பொருட்கள்",
+            "8.22%",
+            "தனியார் நிறுவனங்களின் புதிய முதலீட்டு சுழற்சியைக் காட்டும் குறியீடு"
+          ],
+          [
+            "பயன்பாட்டு முறை",
+            "நுகர்வுப் பொருட்கள் (நீடித்த + நீடிக்காத)",
+            "28.17%",
+            "மக்களின் ஒட்டுமொத்த குடும்ப நுகர்வுத் தேவையை அளவிடுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_sez_vs_nimz",
+        "title_en": "Special Economic Zones (SEZs) vs National Investment & Manufacturing Zones (NIMZs)",
+        "title_ta": "சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) vs தேசிய முதலீடு மற்றும் உற்பத்தி மண்டலங்கள் (NIMZ)",
+        "headers_en": [
+          "Feature",
+          "Special Economic Zones (SEZs)",
+          "National Investment & Manufacturing Zones (NIMZs)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ)",
+          "தேசிய முதலீடு மற்றும் உற்பத்தி மண்டலங்கள் (NIMZ)"
+        ],
+        "rows_en": [
+          [
+            "Governing Statute",
+            "Special Economic Zones Act, 2005",
+            "National Manufacturing Policy (NMP), 2011"
+          ],
+          [
+            "Minimum Land Area",
+            "Varies: 50 ha (multi-product) to 10 ha (IT/Services)",
+            "Massive mega-zones: Minimum 5,000 hectares (50 sq km)"
+          ],
+          [
+            "Primary Focus",
+            "Primarily export orientation and foreign exchange generation",
+            "Integrated greenfield industrial townships with social infrastructure"
+          ],
+          [
+            "Tax Regime",
+            "Income tax exemptions on export profits (sunset clause now applies)",
+            "Fiscal incentives, simplified labor/environmental compliance, capital subsidies"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிர்வகிக்கும் சட்டம்",
+            "சிறப்புப் பொருளாதார மண்டலங்கள் சட்டம், 2005",
+            "தேசிய உற்பத்தி கொள்கை (NMP), 2011"
+          ],
+          [
+            "குறைந்தபட்ச நிலப்பரப்பு",
+            "மாறுபடும்: 50 ஹெக்டேர் (பல்வகை) முதல் 10 ஹெக்டேர் வரை (IT)",
+            "மிகப்பெரிய மெகா மண்டலங்கள்: குறைந்தபட்சம் 5,000 ஹெக்டேர் (50 ச.கி.மீ)"
+          ],
+          [
+            "முதன்மைக் கவனம்",
+            "முக்கியமாக ஏற்றுமதி நோக்கம் மற்றும் அன்னியச் செலாவணி ஈட்டுதல்",
+            "குடியிருப்பு மற்றும் உள்கட்டமைப்புடன் கூடிய பசுமை தொழிற்துறை நகரங்கள்"
+          ],
+          [
+            "வரி முறை",
+            "ஏற்றுமதி லாபத்திற்கு வருமான வரி விலக்குகள் (தற்போது காலாவதியாகிறது)",
+            "மூலதன மானியங்கள், எளிமைப்படுத்தப்பட்ட சுற்றுச்சூழல் மற்றும் தொழிலாளர் விதிகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Industrial Growth Part 3: Metrics, Autonomy & Global Competitiveness",
+        "short_label": "Metrics & Mastery",
+        "children": [
+          {
+            "title": "Industrial Barometers",
+            "short_label": "Barometers",
+            "children": [
+              {
+                "title": "IIP (Base 2011-12, NSO, MOSPI)",
+                "short_label": "IIP 2011-12"
+              },
+              {
+                "title": "Eight Core Industries (40.27% Weight in IIP)",
+                "short_label": "8 Core (40.27%)"
+              },
+              {
+                "title": "Refinery Highest (28.04%) vs Fertilizers Lowest (2.63%)",
+                "short_label": "Core Hierarchy"
+              }
+            ]
+          },
+          {
+            "title": "Public Sector Autonomy",
+            "short_label": "PSU Autonomy",
+            "children": [
+              {
+                "title": "Maharatna Criteria (Profit > ₹5k Cr, Net Worth > ₹15k Cr, Turnover > ₹25k Cr)",
+                "short_label": "Maharatna Criteria"
+              },
+              {
+                "title": "Maharatna Freedom: Invest up to ₹5,000 Cr per project",
+                "short_label": "Maharatna Power"
+              },
+              {
+                "title": "Navratna & Miniratna Tier Architecture",
+                "short_label": "Navratna Tiers"
+              }
+            ]
+          },
+          {
+            "title": "Logistics & Export Zones",
+            "short_label": "Logistics & SEZ",
+            "children": [
+              {
+                "title": "Logistics Burden (~13-14% of GDP) & NLP 2022",
+                "short_label": "Logistics Policy"
+              },
+              {
+                "title": "PM Gati Shakti (16 Ministries GIS Multi-modal)",
+                "short_label": "PM Gati Shakti"
+              },
+              {
+                "title": "SEZ Act 2005 & NIMZs (5,000 Hectares Greenfield)",
+                "short_label": "SEZ & NIMZ"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Eight Core Industries Weight Trap: Refinery is Highest, NOT Steel or Electricity",
+        "points": {
+          "en": [
+            "TRAP: Assuming Electricity or Steel has the highest weight in the Eight Core Industries index because of their ubiquity.",
+            "CORRECT FACT: Petroleum Refinery Products has the HIGHEST weight (28.04%), followed by Electricity (19.85%) and Steel (17.92%). Fertilizers has the lowest weight (2.63%).",
+            "WHY CANDIDATES FAIL: Candidates associate heavy visible infrastructure with higher statistical weight, overlooking the immense economic value of fuel refining."
+          ],
+          "ta": [
+            "பொறி: எங்கும் பரவியுள்ளதால் எஃகு அல்லது மின்சாரமே எட்டு அடிப்படைத் தொழில்களில் அதிக எடை கொண்டது என நினைப்பது.",
+            "சரியான உண்மை: பெட்ரோலிய சுத்திகரிப்புப் பொருட்களே (28.04%) மிக அதிக எடையைக் கொண்டுள்ளன; மின்சாரம் (19.85%) இரண்டாவதாகவும், எஃகு (17.92%) மூன்றாவதாகவும் உள்ளன. உரங்கள் மிகக் குறைந்த எடையைக் (2.63%) கொண்டுள்ளன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கண்ணில் தெரியும் கட்டுமானங்களை மட்டும் நினைத்து, எரிபொருள் சுத்திகரிப்பின் மிகப்பெரிய பொருளாதார மதிப்பை மறந்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "IIP Base Year Trap: 2011-12, NOT 2004-05",
+        "points": {
+          "en": [
+            "TRAP: Selecting 2004-05 or 1993-94 as the current base year for the Index of Industrial Production.",
+            "CORRECT FACT: The current base year for IIP is 2011-12 (notified in May 2017).",
+            "WHY CANDIDATES FAIL: Relying on outdated TNPSC preliminary question keys and older editions of static general studies manuals."
+          ],
+          "ta": [
+            "பொறி: தொழில்துறை உற்பத்தி குறியீட்டின் (IIP) தற்போதைய அடிப்படை ஆண்டு 2004-05 என தவறாகத் தேர்வு செய்வது.",
+            "சரியான உண்மை: IIP குறியீட்டின் தற்போதைய அதிகாரப்பூர்வ அடிப்படை ஆண்டு 2011-12 ஆகும் (இது மே 2017-ல் திருத்தப்பட்டது).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய வினாத்தாள்கள் மற்றும் முந்தைய பதிப்பு புத்தகங்களை படித்துவிட்டு புதுப்பிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Maharatna Criteria Trap: Net Profit > ₹5,000 Cr, NOT Turnover",
+        "points": {
+          "en": [
+            "TRAP: Mixing up the three quantitative thresholds for Maharatna status: confusing net profit with turnover or net worth.",
+            "CORRECT FACT: The three distinct average annual thresholds over 3 consecutive years are: (1) Net Profit > ₹5,000 Crore; (2) Net Worth > ₹15,000 Crore; and (3) Turnover > ₹25,000 Crore.",
+            "WHY CANDIDATES FAIL: The three numbers (5,000, 15,000, 25,000) are switched in multiple-choice trap options."
+          ],
+          "ta": [
+            "பொறி: மகாரத்னா தகுதிக்கான மூன்று நிதி அளவுகோல்களை ஒன்றோடொன்று மாற்றி நினைப்பது (லாபத்தை விற்றுமுதலுடன் குழப்புவது).",
+            "சரியான உண்மை: கடந்த 3 ஆண்டுகளுக்கான சராசரி அளவுகோல்கள்: (1) நிகர லாபம் > ₹5,000 கோடி; (2) நிகர மதிப்பு > ₹15,000 கோடி; (3) விற்றுமுதல் > ₹25,000 கோடி.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 5000, 15000, 25000 ஆகிய மூன்று எண்களையும் அவற்றின் நிதித் தலைப்புகளையும் தேர்வில் மாற்றி அமைக்கும் போது குழம்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Eight Core Combined Weight Trap: 40.27%, NOT Over 50%",
+        "points": {
+          "en": [
+            "TRAP: Assuming that the Eight Core Industries constitute more than half (> 50%) of the total IIP index.",
+            "CORRECT FACT: The Eight Core Industries account for EXACTLY 40.27% of the total weight in the Index of Industrial Production.",
+            "WHY CANDIDATES FAIL: The term 'Core' leads candidates to overestimate their statistical proportion, assuming they represent a majority."
+          ],
+          "ta": [
+            "பொறி: எட்டு அடிப்படைத் தொழில்கள் IIP குறியீட்டில் பாதியை விட அதிகமாக (> 50%) உள்ளன என நினைப்பது.",
+            "சரியான உண்மை: எட்டு முக்கிய அடிப்படைத் தொழில்களின் கூட்டு எடை IIP குறியீட்டில் சரியாக 40.27% மட்டுமே ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'அடிப்படைத் தொழில்கள்' என்ற பெயர் இருப்பதால், அவை பாதிக்கும் மேல் இருக்கும் என மிகையாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "SEZ Act vs Implementation Year Trap: Act 2005, Rollout 2006",
+        "points": {
+          "en": [
+            "TRAP: Marking 2000 as the year of the SEZ Act.",
+            "CORRECT FACT: The SEZ Policy was first introduced in April 2000, but the PARLIAMENTARY ENACTMENT—the Special Economic Zones Act—was passed in 2005, coming into legal force in February 2006.",
+            "WHY CANDIDATES FAIL: Confusing the initial executive EXIM policy announcement (2000) with the statutory enactment of the SEZ Act (2005)."
+          ],
+          "ta": [
+            "பொறி: சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) சட்டம் இயற்றப்பட்ட ஆண்டு 2000 என தவறாகக் குறிப்பிடுவது.",
+            "சரியான உண்மை: SEZ கொள்கை ஏப்ரல் 2000-ல் நிர்வாக ரீதியாக அறிவிக்கப்பட்டது; ஆனால் நாடாளுமன்றத்தால் 'SEZ சட்டம்' நிறைவேற்றப்பட்டது 2005-ல் ஆகும் (இது பிப்ரவரி 2006-ல் அமலுக்கு வந்தது).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கொள்கை அறிவிப்பு ஆண்டுக்கும் (2000) சட்டம் இயற்றப்பட்ட ஆண்டுக்கும் (2005) உள்ள வேறுபாட்டைக் கவனிக்காமை."
+          ]
+        }
+      },
+      {
+        "title": "PM Gati Shakti Scheme Nature Trap: Coordination Platform, NOT A Construction Agency",
+        "points": {
+          "en": [
+            "TRAP: Viewing PM Gati Shakti as a standalone construction agency or a single physical rail/road construction project.",
+            "CORRECT FACT: PM Gati Shakti is a GIS-based digital multi-modal coordination platform that synchronizes infrastructure planning across 16 Central Ministries to eliminate departmental silos and avoid wasteful re-digging.",
+            "WHY CANDIDATES FAIL: Conflating a digital governance and planning architecture with physical project execution."
+          ],
+          "ta": [
+            "பொறி: பிஎம் கதி சக்தி என்பதை ஒரு தனிப்பட்ட கட்டுமான நிறுவனம் அல்லது ஒற்றை சாலை/ரயில் கட்டுமானத் திட்டம் என நினைப்பது.",
+            "சரியான உண்மை: பிஎம் கதி சக்தி என்பது 16 மத்திய அமைச்சகங்களின் உள்கட்டமைப்புத் திட்டங்களை ஒருங்கிணைக்கும் GIS வரைபட அடிப்படையிலான 'டிஜிட்டல் ஒருங்கிணைப்புத் தளம்' ஆகும்; இது திட்ட தாமதங்களையும் நிதி விரயத்தையும் தவிர்க்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: டிஜிட்டல் திட்டமிடல் தளத்தையும் இயற்பியல் கட்டுமானப் பணிகளையும் ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "IIP is compiled and published monthly by the National Statistical Office (NSO) under MOSPI.",
+        "The current base year for the Index of Industrial Production is 2011-12.",
+        "Manufacturing carries the highest sectoral weight in IIP at 77.63%.",
+        "The Eight Core Industries account for 40.27% of the total weight in IIP.",
+        "Petroleum Refinery Products has the highest weight in Eight Core Industries at 28.04%.",
+        "Fertilizers has the lowest weight in Eight Core Industries at 2.63%.",
+        "Maharatna status was instituted in 2009-10 to grant higher autonomy to mega CPSEs.",
+        "Maharatna threshold requires average annual net profit > ₹5,000 Cr over 3 years.",
+        "Maharatna boards can sanction investments up to ₹5,000 crore without government clearance.",
+        "Special Economic Zones Act was enacted in 2005 and became operational in February 2006.",
+        "PM Gati Shakti National Master Plan was launched in October 2021 integrating 16 ministries.",
+        "National Logistics Policy 2022 aims to reduce logistics costs to single digits of GDP."
+      ],
+      "ta": [
+        "IIP குறியீடு MOSPI அமைச்சகத்தின் கீழான தேசிய புள்ளியியல் அலுவலகத்தால் (NSO) மாதந்தோறும் வெளியிடப்படுகிறது.",
+        "தொழில்துறை உற்பத்தி குறியீட்டின் தற்போதைய அடிப்படை ஆண்டு 2011-12 ஆகும்.",
+        "IIP-ல் உற்பத்தித் துறை (Manufacturing) 77.63% என்ற மிக உயர்ந்த துறைசார் எடையைக் கொண்டுள்ளது.",
+        "எட்டு முக்கிய அடிப்படைத் தொழில்கள் IIP குறியீட்டில் 40.27% கூட்டு எடையைக் கொண்டுள்ளன.",
+        "எட்டு அடிப்படைத் தொழில்களில் பெட்ரோலிய சுத்திகரிப்புப் பொருட்கள் 28.04% என்ற அதிகபட்ச எடையைக் கொண்டுள்ளது.",
+        "எட்டு அடிப்படைத் தொழில்களில் உரங்கள் 2.63% என்ற மிகக் குறைந்த எடையைக் கொண்டுள்ளது.",
+        "பொதுத்துறை நிறுவனங்களுக்கு அதிக தன்னாட்சி வழங்க 2009-10-ல் மகாரத்னா தகுதி உருவாக்கப்பட்டது.",
+        "மகாரத்னா தகுதிக்கு 3 ஆண்டு சராசரி நிகர லாபம் > ₹5,000 கோடியாக இருக்க வேண்டும்.",
+        "மகாரத்னா நிறுவனங்கள் ஒரு திட்டத்திற்கு ₹5,000 கோடி வரை அரசின் அனுமதியின்றி முதலீடு செய்யலாம்.",
+        "சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) சட்டம் 2005-ல் இயற்றப்பட்டு பிப்ரவரி 2006-ல் அமலுக்கு வந்தது.",
+        "16 அமைச்சகங்களை ஒருங்கிணைத்து பிஎம் கதி சக்தி திட்டம் அக்டோபர் 2021-ல் தொடங்கப்பட்டது.",
+        "தேசிய தளவாடக் கொள்கை 2022 போக்குவரத்துச் செலவை ஜிடிபியில் ஒற்றை இலக்கமாகக் குறைக்க இலக்கு வைத்துள்ளது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "IIP is published monthly by NSO (MOSPI) with base year 2011-12.",
+        "Sectoral Weights in IIP: Manufacturing 77.63%, Mining 14.37%, Electricity 7.99%.",
+        "Eight Core Industries constitute 40.27% weight in total IIP.",
+        "Core ranking: Refinery (28.04%) > Electricity (19.85%) > Steel (17.92%) > Coal (10.33%).",
+        "Core lowest weights: Crude Oil (8.98%) > Natural Gas (6.88%) > Cement (5.37%) > Fertilizers (2.63%).",
+        "Maharatna Criteria: Navratna status + 3-yr avg Net Profit > ₹5k Cr, Net Worth > ₹15k Cr, Turnover > ₹25k Cr.",
+        "Maharatna Power: Autonomy to invest up to ₹5,000 crore (or 15% of net worth) per project.",
+        "Logistics costs in India hover around 13-14% of GDP; NLP 2022 targets reducing it to <10%.",
+        "PM Gati Shakti (Oct 2021) synchronizes infrastructure across 16 ministries on a GIS digital platform.",
+        "SEZ Act 2005 established duty-free deemed foreign territories for export-led industrialization."
+      ],
+      "ta": [
+        "IIP குறியீடு 2011-12 அடிப்படை ஆண்டைக் கொண்டு NSO அமைப்பால் மாதந்தோறும் வெளியிடப்படுகிறது.",
+        "IIP துறைசார் எடைகள்: உற்பத்தி 77.63%, சுரங்கம் 14.37%, மின்சாரம் 7.99%.",
+        "எட்டு முக்கிய அடிப்படைத் தொழில்கள் மொத்த IIP-ல் 40.27% எடையைக் கொண்டுள்ளன.",
+        "அடிப்படைத் தொழில் வரிசை: சுத்திகரிப்பு (28.04%) > மின்சாரம் (19.85%) > எஃகு (17.92%) > நிலக்கரி (10.33%).",
+        "குறைந்த எடைகள்: கச்சா எண்ணெய் (8.98%) > இயற்கை எரிவாயு (6.88%) > சிமெண்ட் (5.37%) > உரம் (2.63%).",
+        "மகாரத்னா தகுதி: நவரத்னா தகுதி + 3 ஆண்டு நிகர லாபம் > ₹5k கோடி, நிகர மதிப்பு > ₹15k கோடி, விற்றுமுதல் > ₹25k கோடி.",
+        "மகாரத்னா அதிகாரம்: திட்டத்திற்கு ₹5,000 கோடி வரை (அல்லது நிகர மதிப்பில் 15%) சுயமாக முதலீடு செய்யும் உரிமை.",
+        "இந்தியாவில் தளவாடச் செலவு ஜிடிபியில் 13-14% ஆக உள்ளது; NLP 2022 அதை <10% ஆகக் குறைக்க இலக்கு வைத்துள்ளது.",
+        "பிஎம் கதி சக்தி (அக் 2021) 16 அமைச்சகங்களின் உள்கட்டமைப்பை GIS டிஜிட்டல் வரைபடத்தில் ஒருங்கிணைக்கிறது.",
+        "SEZ சட்டம் 2005 ஏற்றுமதியை ஊக்குவிக்க சுங்க வரியற்ற வெளிநாட்டுப் பிராந்திய அந்தஸ்தை வழங்கியது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_ind_301",
+        "front_en": "Which government office compiles and releases the Index of Industrial Production (IIP)?",
+        "front_ta": "தொழில்துறை உற்பத்தி குறியீட்டை (IIP) தொகுத்து வெளியிடும் அரசு அலுவலகம் எது?",
+        "back_en": "National Statistical Office (NSO), Ministry of Statistics and Programme Implementation (MOSPI).",
+        "back_ta": "புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் (MOSPI) தேசிய புள்ளியியல் அலுவலகம் (NSO)."
+      },
+      {
+        "id": "rc_ind_302",
+        "front_en": "What is the current base year for the Index of Industrial Production (IIP)?",
+        "front_ta": "தொழில்துறை உற்பத்தி குறியீட்டின் (IIP) தற்போதைய அடிப்படை ஆண்டு என்ன?",
+        "back_en": "Base Year 2011-12 (notified in May 2017).",
+        "back_ta": "அடிப்படை ஆண்டு 2011-12 (மே 2017-ல் அறிவிக்கப்பட்டது)."
+      },
+      {
+        "id": "rc_ind_303",
+        "front_en": "What is the combined weight of the Eight Core Industries in the IIP index?",
+        "front_ta": "IIP குறியீட்டில் எட்டு முக்கிய அடிப்படைத் தொழில்களின் கூட்டு எடை என்ன?",
+        "back_en": "40.27% of the total IIP weight.",
+        "back_ta": "மொத்த IIP எடையில் 40.27% ஆகும்."
+      },
+      {
+        "id": "rc_ind_304",
+        "front_en": "Which industry holds the HIGHEST weight among the Eight Core Industries?",
+        "front_ta": "எட்டு அடிப்படைத் தொழில்களில் மிக அதிக எடையைக் கொண்டுள்ள தொழில் எது?",
+        "back_en": "Petroleum Refinery Products (28.04% of Core; ~11.29% of total IIP).",
+        "back_ta": "பெட்ரோலிய சுத்திகரிப்புப் பொருட்கள் (அடிப்படைத் தொழில்களில் 28.04%; மொத்த IIP-ல் ~11.29%)."
+      },
+      {
+        "id": "rc_ind_305",
+        "front_en": "Which industry holds the LOWEST weight among the Eight Core Industries?",
+        "front_ta": "எட்டு அடிப்படைத் தொழில்களில் மிகக் குறைந்த எடையைக் கொண்டுள்ள தொழில் எது?",
+        "back_en": "Fertilizers Production (2.63% of Core; ~1.06% of total IIP).",
+        "back_ta": "ரசாயன உரங்கள் உற்பத்தி (அடிப்படைத் தொழில்களில் 2.63%; மொத்த IIP-ல் ~1.06%)."
+      },
+      {
+        "id": "rc_ind_306",
+        "front_en": "What are the three financial thresholds for conferring Maharatna status on a CPSE?",
+        "front_ta": "பொதுத்துறை நிறுவனத்திற்கு மகாரத்னா தகுதி வழங்குவதற்கான மூன்று நிதி வரம்புகள் யாவை?",
+        "back_en": "Over 3 years average: Net Profit > ₹5,000 Cr, Net Worth > ₹15,000 Cr, and Turnover > ₹25,000 Cr.",
+        "back_ta": "3 ஆண்டு சராசரி: நிகர லாபம் > ₹5,000 கோடி, நிகர மதிப்பு > ₹15,000 கோடி, விற்றுமுதல் > ₹25,000 கோடி."
+      },
+      {
+        "id": "rc_ind_307",
+        "front_en": "What is the financial autonomy limit for investment by a Maharatna CPSE board without government sanction?",
+        "front_ta": "அரசின் அனுமதியின்றி மகாரத்னா நிர்வாகக் குழு முதலீடு செய்ய அனுமதிக்கப்பட்ட நிதி வரம்பு என்ன?",
+        "back_en": "Up to ₹5,000 crore (or 15% of the company's net worth) in a single project.",
+        "back_ta": "ஒரு திட்டத்திற்கு ₹5,000 கோடி வரை (அல்லது நிறுவனத்தின் நிகர மதிப்பில் 15%)."
+      },
+      {
+        "id": "rc_ind_308",
+        "front_en": "In what year was the Special Economic Zones (SEZ) Act enacted by Parliament?",
+        "front_ta": "நாடாளுமன்றத்தால் சிறப்புப் பொருளாதார மண்டலங்கள் (SEZ) சட்டம் எந்த ஆண்டு இயற்றப்பட்டது?",
+        "back_en": "2005 (SEZ Rules notified and came into force in February 2006).",
+        "back_ta": "2005 (SEZ விதிகள் அறிவிக்கப்பட்டு பிப்ரவரி 2006-ல் அமலுக்கு வந்தது)."
+      },
+      {
+        "id": "rc_ind_309",
+        "front_en": "What is the core objective of the PM Gati Shakti National Master Plan?",
+        "front_ta": "பிஎம் கதி சக்தி தேசிய பெருந்திட்டத்தின் முதன்மை நோக்கம் என்ன?",
+        "back_en": "A GIS-based digital platform synchronizing multi-modal connectivity infrastructure across 16 Central Ministries.",
+        "back_ta": "16 மத்திய அமைச்சகங்களின் உள்கட்டமைப்புத் திட்டங்களை ஒருங்கிணைக்கும் GIS டிஜிட்டல் பலமுறை இணைப்புத் தளம்."
+      },
+      {
+        "id": "rc_ind_310",
+        "front_en": "What is the primary target of the National Logistics Policy (NLP) 2022?",
+        "front_ta": "தேசிய தளவாடக் கொள்கை (NLP) 2022-ன் முதன்மை இலக்கு என்ன?",
+        "back_en": "To reduce India's logistics cost from 13-14% to single digits (<10% of GDP) and reach the top 25 in LPI.",
+        "back_ta": "தளவாடச் செலவை 13-14%-லிருந்து ஒற்றை இலக்கமாக (<10%) குறைப்பது மற்றும் LPI குறியீட்டில் முதல் 25 இடங்களை அடைவது."
+      }
+    ]
+  }
+}

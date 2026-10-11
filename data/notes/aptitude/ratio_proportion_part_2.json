@@ -1,0 +1,347 @@
+{
+  "topic": "ratio_proportion_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Ratio & Proportion Part 2 — Proportion, Direct & Inverse Variation",
+  "title_ta": "விகிதாச்சாரம் பகுதி 2 — விகிதாச்சாரம், நேர்விகிதம் மற்றும் எதிர்விகிதம்",
+
+  "definition": {
+    "en": "Proportion is the equality of two ratios: a : b = c : d (or a/b = c/d). Direct variation means two quantities increase or decrease together in a constant ratio. Inverse variation means as one quantity increases, the other decreases such that their product is constant.",
+    "ta": "விகிதாச்சாரம் என்பது இரு விகிதங்களின் சமத்தன்மையாகும்: a : b = c : d. நேர்விகிதம் என்பது ஒரு அளவு அதிகரிக்கும் போது மற்றொன்றும் அதே விகிதத்தில் அதிகரிப்பதாகும். எதிர்விகிதம் என்பது ஒரு அளவு அதிகரிக்கும் போது மற்றொன்று குறைந்து, அவற்றின் பெருக்கற்பலன் மாறிலியாக இருப்பதாகும்."
+  },
+
+  "exam_importance": {
+    "en": "Proportion, Mean/Third/Fourth proportional, Direct variation, Inverse variation, and Chain Rule are core TNPSC exam models tested across Group 1, Group 2/2A, and Group 4 papers.",
+    "ta": "விகிதாச்சாரம், மூன்றாம்/நான்காம் விகிதாச்சாரம், நேர்விகிதம், எதிர்விகிதம் மற்றும் கூட்டு நேர்-எதிர்விகிதச் சங்கிலி விதிகள் ஆகியவை TNPSC தேர்வுகளில் அடிக்கடி கேட்கப்படும் முதன்மை வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Proportion Rule (விகிதாச்சார விதி)",
+      "formula": "a : b :: c : d \\implies a \\times d = b \\times c",
+      "explanation": {
+        "en": "Product of Extremes (a × d) = Product of Means (b × c).",
+        "ta": "கோடி உறுப்புகளின் பெருக்கற்பலன் (a × d) = நடு உறுப்புகளின் பெருக்கற்பலன் (b × c)."
+      }
+    },
+    {
+      "title": "Proportional Terms (விகிதாச்சார உறுப்புகள்)",
+      "formula": "\\text{Mean Proportional: } b = \\sqrt{a \\times c}, \\quad \\text{Third Proportional: } c = \\frac{b^2}{a}, \\quad \\text{Fourth Proportional: } d = \\frac{b \\times c}{a}",
+      "explanation": {
+        "en": "Mean proportional between a and c is √(ac). Third proportional to a and b is b²/a. Fourth proportional to a, b, c is (b × c)/a.",
+        "ta": "a மற்றும் c-ன் இரண்டாம் (இடை) விகிதாச்சாரம் = √(ac). a மற்றும் b-ன் மூன்றாம் விகிதாச்சாரம் = b²/a. a, b, c-ன் நான்காம் விகிதாச்சாரம் = (b × c)/a."
+      }
+    },
+    {
+      "title": "Direct & Inverse Proportion Rules (நேர் மற்றும் எதிர்விகித விதிகள்)",
+      "formula": "\\text{Direct: } \\frac{x_1}{y_1} = \\frac{x_2}{y_2} \\quad (x \\uparrow \\implies y \\uparrow), \\qquad \\text{Inverse: } x_1 \\times y_1 = x_2 \\times y_2 \\quad (x \\uparrow \\implies y \\downarrow)",
+      "explanation": {
+        "en": "Direct proportion ratio is constant. Inverse proportion product is constant under fixed work/distance conditions.",
+        "ta": "நேர்விகிதத்தில் வகுத்தல் மாறிலி. எதிர்விகிதத்தில் (வேலை/தொலைவு நிலையாக இருக்கும்போது) பெருக்கற்பலன் மாறிலி."
+      }
+    },
+    {
+      "title": "Combined Chain Rule (கூட்டு நேர்-எதிர்விகிதச் சங்கிலி விதி)",
+      "formula": "\\frac{M_1 \\times D_1 \\times H_1}{W_1} = \\frac{M_2 \\times D_2 \\times H_2}{W_2}",
+      "explanation": {
+        "en": "M = Men, D = Days, H = Hours per day, W = Work done.",
+        "ta": "M = ஆள்கள், D = நாட்கள், H = மணி நேரம், W = செய்த வேலை."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Identifying Direct vs Inverse Proportion (நேர் - எதிர்விகித பகுப்பாய்வு)",
+      "points": {
+        "en": [
+          "Ask: If I increase the first quantity, does the second quantity INCREASE or DECREASE under fixed conditions?",
+          "DIRECT PROPORTION: More items -> More cost | More distance -> More time (fixed speed) | More work -> More wages.",
+          "INVERSE PROPORTION: More workers -> Fewer days (fixed work) | More speed -> Less time (fixed distance)."
+        ],
+        "ta": [
+          "கேள்வி: முதல் அளவை அதிகரிக்கும் போது, மற்ற அளவு அதிகரிக்குமா அல்லது குறையுமா?",
+          "நேர்விகிதம்: அதிக பொருட்கள் -> அதிக விலை | அதிக தொலைவு -> அதிக நேரம் | அதிக வேலை -> அதிக கூலி.",
+          "எதிர்விகிதம்: அதிக ஆள்கள் -> குறைந்த நாட்கள் (நிலையான வேலை) | அதிக வேகம் -> குறைந்த நேரம் (நிலையான தொலைவு)."
+        ]
+      }
+    },
+    {
+      "title": "Conditions for Inverse Proportion (எதிர்விகிதக் கட்டுப்பாடுகள்)",
+      "points": {
+        "en": [
+          "Inverse proportion formula x1 × y1 = x2 × y2 holds ONLY when the underlying product (Work or Distance) is fixed.",
+          "If work changes, use the Combined Chain Rule formula (M1 × D1) / W1 = (M2 × D2) / W2.",
+          "Never apply simple cross-multiplication to inverse variation problems."
+        ],
+        "ta": [
+          "x1 × y1 = x2 × y2 என்ற எதிர்விகிதச் சூத்திரம் வேலை அல்லது தொலைவு நிலையாக இருக்கும் போது மட்டுமே பொருந்தும்.",
+          "வேலை அளவு மாறினால், (M1 × D1) / W1 = (M2 × D2) / W2 என்ற சங்கிலி விதியைப் பயன்படுத்த வேண்டும்.",
+          "எதிர்விகித வினாக்களுக்கு நேர் குறுக்குப் பெருக்கலை செய்யக் கூடாது."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Chain Rule Arrow Method Shortcut",
+      "points": {
+        "en": [
+          "Write quantities in columns: Men | Days | Hours.",
+          "For direct relation with unknown x, place arrow downwards.",
+          "For inverse relation with unknown x, place arrow upwards.",
+          "x = Known Value × (Ratio of parameters based on arrow direction)."
+        ],
+        "ta": [
+          "அளவுகளை நிரல்களாக எழுதவும்: ஆள்கள் | நாட்கள் | மணி நேரம்.",
+          "நேர்விகிதத்திற்கு பின்னத்தை தலைகீழாகவும், எதிர்விகிதத்திற்கு பின்னத்தை அப்படியேவும் பெருக்கி விடை காணலாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Confusing Third Proportional with Mean Proportional",
+      "explanation": {
+        "en": "For numbers 4 and 16, Mean Proportional is √(4 × 16) = 8, but Third Proportional is 16²/4 = 64.",
+        "ta": "4 மற்றும் 16-க்கு இடை விகிதாச்சாரம் √(4 × 16) = 8, ஆனால் மூன்றாம் விகிதாச்சாரம் 16²/4 = 64. இரண்டையும் குழப்பக் கூடாது."
+      },
+      "avoidance": {
+        "en": "Remember: Mean proportional is middle term b = √(ac); Third proportional is c = b²/a.",
+        "ta": "இடை விகிதாச்சாரம் b = √(ac); மூன்றாம் விகிதாச்சாரம் c = b²/a என்பதை தெளிவாக நினைவில் கொள்க."
+      }
+    },
+    {
+      "trap": "Applying Direct Cross-Multiplication to Worker-Day Problems",
+      "explanation": {
+        "en": "If 10 men take 20 days, writing 10/20 = 20/x => x = 40 days for 20 men is WRONG (More men should take FEWER days!).",
+        "ta": "10 ஆள்கள் 20 நாட்கள் எனில், 20 ஆள்கள் 40 நாட்கள் ஆகும் என்று நேர்விகிதப் பெருக்கல் செய்வது தவறு (ஆள்கள் கூடினால் நாட்கள் குறைய வேண்டும்)."
+      },
+      "avoidance": {
+        "en": "Apply inverse product rule: 10 × 20 = 20 × x => x = 10 days.",
+        "ta": "எதிர்விகிதப் பெருக்கற்பலன் விதியைப் பயன்படுத்தவும்: 10 × 20 = 20 × x => x = 10 நாட்கள்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the fourth proportional to 4, 9, and 12.",
+      "method": "Product of Extremes = Product of Means",
+      "steps": [
+        "Step 1: Let the fourth proportional be x.",
+        "Step 2: Write proportion: 4 : 9 :: 12 : x.",
+        "Step 3: Apply rule: Extremes Product = Means Product \\(\\implies 4 \\times x = 9 \\times 12\\).",
+        "Step 4: Solve for x: \\(4x = 108 \\implies x = \\frac{108}{4} = 27\\)."
+      ],
+      "answer": "27"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "What is the third proportional to 0.34 and 0.50?",
+      "method": "Third Proportional Formula (c = b²/a)",
+      "steps": [
+        "Step 1: Given a = 0.34 and b = 0.50. Let third proportional be c.",
+        "Step 2: Formula: \\(c = \\frac{b^2}{a} = \\frac{(0.50)^2}{0.34}\\).",
+        "Step 3: Calculate numerator: \\(0.50 \\times 0.50 = 0.25\\).",
+        "Step 4: Fraction: \\(c = \\frac{0.25}{0.34} = \\frac{25}{34}\\) or approx 0.735."
+      ],
+      "answer": "\\(\\frac{25}{34}\\) or 0.735"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If 15 pens cost ₹225, find the cost of 24 pens.",
+      "method": "Direct Proportion Ratio Method",
+      "steps": [
+        "Step 1: Identify variation: More pens -> More cost (Direct Proportion).",
+        "Step 2: Formula: \\(\\frac{x_1}{y_1} = \\frac{x_2}{y_2} \\implies \\frac{15}{225} = \\frac{24}{x}\\).",
+        "Step 3: Cross multiply: \\(15 \\times x = 225 \\times 24\\).",
+        "Step 4: Solve for x: \\(x = \\frac{225 \\times 24}{15} = 15 \\times 24 = ₹360\\)."
+      ],
+      "answer": "₹360"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If 20 workers can construct a boundary wall in 15 days, how many workers are needed to finish the same work in 10 days?",
+      "method": "Inverse Proportion Product Rule (Fixed Work)",
+      "steps": [
+        "Step 1: Identify variation: Fewer days needed -> More workers required (Inverse Proportion).",
+        "Step 2: Fixed total work = \\(x_1 \\times y_1 = 20 \\times 15 = 300\\) worker-days.",
+        "Step 3: Formula: \\(x_2 \\times y_2 = 300 \\implies W \\times 10 = 300\\).",
+        "Step 4: Solve for W: \\(W = \\frac{300}{10} = 30\\) workers."
+      ],
+      "answer": "30 workers"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Find the mean proportional between 0.08 and 0.18.",
+      "method": "Mean Proportional Formula b = √(a × c)",
+      "steps": [
+        "Step 1: Given a = 0.08 and c = 0.18.",
+        "Step 2: Formula: \\(b = \\sqrt{a \\times c} = \\sqrt{0.08 \\times 0.18}\\).",
+        "Step 3: Multiply inside square root: \\(0.08 \\times 0.18 = 0.0144\\).",
+        "Step 4: Take square root: \\(\\sqrt{0.0144} = 0.12\\)."
+      ],
+      "answer": "0.12"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "If 12 men working 8 hours a day can build a wall in 10 days, how many days will 15 men working 6 hours a day take to build the same wall?",
+      "method": "Combined Chain Rule Formula",
+      "steps": [
+        "Step 1: Identify parameters: M₁ = 12, H₁ = 8, D₁ = 10, W₁ = 1.",
+        "Step 2: Parameters for second case: M₂ = 15, H₂ = 6, D₂ = ?, W₂ = 1.",
+        "Step 3: Formula: \\(\\frac{M_1 \\times D_1 \\times H_1}{W_1} = \\frac{M_2 \\times D_2 \\times H_2}{W_2}\\).",
+        "Step 4: Substitute values: \\(12 \\times 10 \\times 8 = 15 \\times D_2 \\times 6\\).",
+        "Step 5: Simplify: \\(960 = 90 D_2 \\implies D_2 = \\frac{960}{90} = \\frac{32}{3} = 10\\frac{2}{3}\\) days."
+      ],
+      "answer": "\\(10\\frac{2}{3}\\) days"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the mean proportional between 9 and 25.",
+      "options": ["A) 12", "B) 15", "C) 17", "D) 20"],
+      "correct_option": "B) 15",
+      "explanation": "Mean proportional = √(9 × 25) = √225 = 15."
+    },
+    {
+      "id": 2,
+      "question": "What is the third proportional to 12 and 18?",
+      "options": ["A) 24", "B) 27", "C) 30", "D) 36"],
+      "correct_option": "B) 27",
+      "explanation": "Third proportional c = b²/a = 18²/12 = 324/12 = 27."
+    },
+    {
+      "id": 3,
+      "question": "If 12 men can reap a field in 20 days, in how many days can 15 men reap the same field?",
+      "options": ["A) 14 days", "B) 15 days", "C) 16 days", "D) 18 days"],
+      "correct_option": "C) 16 days",
+      "explanation": "Inverse proportion: 12 × 20 = 15 × D => D = 240/15 = 16 days."
+    },
+    {
+      "id": 4,
+      "question": "A car covers 180 km in 3 hours. How much distance will it cover in 5 hours at the same speed?",
+      "options": ["A) 250 km", "B) 280 km", "C) 300 km", "D) 320 km"],
+      "correct_option": "C) 300 km",
+      "explanation": "Direct proportion: 180/3 = x/5 => 60 = x/5 => x = 300 km."
+    },
+    {
+      "id": 5,
+      "question": "If 8 men working 6 hours a day can complete a job in 15 days, how many hours a day must 10 men work to complete it in 12 days?",
+      "options": ["A) 5 hours", "B) 6 hours", "C) 7 hours", "D) 8 hours"],
+      "correct_option": "B) 6 hours",
+      "explanation": "Chain rule: 8 × 15 × 6 = 10 × 12 × H => 720 = 120 H => H = 6 hours."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Proportion Rule",
+      "back": "Product of Extremes (a × d) = Product of Means (b × c)."
+    },
+    {
+      "front": "Mean Proportional Formula",
+      "back": "b = √(a × c)."
+    },
+    {
+      "front": "Third Proportional Formula",
+      "back": "c = b² / a."
+    },
+    {
+      "front": "Fourth Proportional Formula",
+      "back": "d = (b × c) / a."
+    },
+    {
+      "front": "Direct Proportion Condition",
+      "back": "x1 / y1 = x2 / y2 (Ratio is constant)."
+    },
+    {
+      "front": "Inverse Proportion Condition",
+      "back": "x1 × y1 = x2 × y2 (Product is constant)."
+    }
+  ],
+
+  "mind_map": {
+    "title": "Ratio Part 2 — Proportion & Variation Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Proportion & Variation",
+        "children": ["prop_terms", "direct_var", "inverse_var", "chain_rule"]
+      },
+      {
+        "id": "prop_terms",
+        "label": "Proportional Terms",
+        "children": ["mean_prop", "third_prop", "fourth_prop"]
+      },
+      {
+        "id": "mean_prop",
+        "label": "Mean Prop = √(a × c)",
+        "children": []
+      },
+      {
+        "id": "third_prop",
+        "label": "Third Prop = b² / a",
+        "children": []
+      },
+      {
+        "id": "fourth_prop",
+        "label": "Fourth Prop = (b × c) / a",
+        "children": []
+      },
+      {
+        "id": "direct_var",
+        "label": "Direct Variation (x1/y1 = x2/y2)",
+        "children": ["cost_qty", "dist_time"]
+      },
+      {
+        "id": "cost_qty",
+        "label": "More Items → More Cost",
+        "children": []
+      },
+      {
+        "id": "dist_time",
+        "label": "More Distance → More Time",
+        "children": []
+      },
+      {
+        "id": "inverse_var",
+        "label": "Inverse Variation (x1 × y1 = x2 × y2)",
+        "children": ["men_days", "speed_time"]
+      },
+      {
+        "id": "men_days",
+        "label": "More Workers → Fewer Days",
+        "children": []
+      },
+      {
+        "id": "speed_time",
+        "label": "More Speed → Less Time",
+        "children": []
+      },
+      {
+        "id": "chain_rule",
+        "label": "Combined Chain Rule",
+        "children": ["m1d1h1_w1", "m2d2h2_w2"]
+      },
+      {
+        "id": "m1d1h1_w1",
+        "label": "(M1 × D1 × H1)/W1 = (M2 × D2 × H2)/W2",
+        "children": []
+      }
+    ]
+  }
+}

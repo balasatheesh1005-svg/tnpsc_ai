@@ -1,0 +1,763 @@
+{
+  "meta": {
+    "topic_id": "economy_mgnrega_part_2",
+    "repository_id": "economy_mgnrega",
+    "display_title": "MGNREGA – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "MGNREGA",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "intermediate",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Section 22 Financing Matrix",
+    "Unskilled Wage 100 Percent Centre",
+    "Material Cost 75 25 Ratio",
+    "District 60 40 Wage Material Ratio",
+    "Gram Panchayat 50 Percent Execution",
+    "Gram Sabha Shelf of Projects",
+    "Section 17 Social Audit Six Months",
+    "Tamil Nadu Social Audit Society TNSAS",
+    "NMMS Mobile App Attendance",
+    "NeFMS Direct Benefit Transfer",
+    "Aadhaar Based Payment System ABPS",
+    "GeoMGNREGA ISRO Bhuvan GIS"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the federal cost-sharing formula: 100% central unskilled wage and 75:25 material sharing.",
+        "Examine why the 60:40 wage-material ratio is statutorily enforced at the district aggregate level."
+      ],
+      "ta": [
+        "மத்திய-மாநில நிதிப் பகிர்வு சமன்பாட்டைப் புரிந்துகொள்ளுதல்: 100% கூலி மத்திய நிதி மற்றும் 75:25 தளவாடப் பகிர்வு.",
+        "60:40 கூலி-தளவாட விகிதம் ஏன் மாவட்ட அளவில் ஒட்டுமொத்தமாகப் பராமரிக்கப்படுகிறது என்பதை ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key operational norms: GP executes ≥50% works, Social Audit every 6 months under Section 17.",
+        "Recall digital tools: NMMS (twice-daily attendance), NeFMS (wage transfer), GeoMGNREGA (ISRO Bhuvan)."
+      ],
+      "ta": [
+        "முக்கிய நிர்வாக விதிகளை நினைவில் நிறுத்துதல்: ஊராட்சி ≥50% பணிகள், பிரிவு 17 சமூகத் தணிக்கை 6 மாதங்களுக்கு ஒருமுறை.",
+        "டிஜிட்டல் கருவிகளை நினைவுகூருதல்: NMMS செயலி, NeFMS நிதி பரிமாற்றம், GeoMGNREGA (இஸ்ரோ புவன்)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how Section 17 social audits transform passive beneficiaries into active democratic auditors.",
+        "Appraise the advantages and operational frictions of transition to ABPS and NMMS digital monitoring."
+      ],
+      "ta": [
+        "பிரிவு 17 சமூகத் தணிக்கை தொழிலாளர்களை எவ்வாறு ஜனநாயக தணிக்கையாளர்களாக மாற்றுகிறது என ஆய்வு செய்தல்.",
+        "ABPS மற்றும் NMMS டிஜிட்டல் கண்காணிப்புக்கு மாறியதன் நன்மைகள் மற்றும் நடைமுறைச் சிக்கல்களை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps regarding 60:40 district levels, GP execution quotas, and social audit frequency."
+      ],
+      "ta": [
+        "60:40 மாவட்ட அளவு, ஊராட்சியின் 50% பணி வரம்பு மற்றும் சமூகத் தணிக்கை கால இடைவெளி தொடர்பான தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "MGNREGA – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_federal_financing_architecture",
+      "title_en": "Federal Financing Matrix & The 60:40 District Expenditure Ratio",
+      "title_ta": "மத்திய-மாநில நிதிப் பகிர்வு & மாவட்ட அளவிலான 60:40 கூலி-தளவாட விகிதம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_decentralized_governance_panchayats",
+      "title_en": "Decentralized Governance: Gram Panchayat Execution & Gram Sabha Shelf",
+      "title_ta": "அதிகாரப் பகிர்வு ஆளுகை: கிராம ஊராட்சியின் செயல்பாடு & திட்டப் பட்டியல்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_social_audit_architecture",
+      "title_en": "Social Audit Architecture: Section 17 & Citizen Accountability",
+      "title_ta": "சமூகத் தணிக்கை கட்டமைப்பு: பிரிவு 17 & மக்கள் தணிக்கை நெறிமுறைகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_technological_governance_ecosystem",
+      "title_en": "Digital Governance: NREGAsoft, NMMS, ABPS & GeoMGNREGA",
+      "title_ta": "டிஜிட்டல் ஆளுகை: NREGAsoft, NMMS, ABPS & GeoMGNREGA தொழில்நுட்பங்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The financing, decentralized governance, and technological monitoring ecosystem of MGNREGA constitutes the operational backbone ensuring transparent wage delivery, governed by a statutory Centre-State cost-sharing formula (100% Central funding for unskilled wages, 75:25 for materials), the statutory 60:40 wage-to-material district ratio, decentralized execution led by Gram Panchayats (minimum 50% works), mandatory social audits under Section 17, and digital governance tools including NeFMS, NMMS, ABPS, and GeoMGNREGA.",
+      "ta": "MGNREGA திட்டத்தின் நிதிப் பகிர்வு, அதிகாரப் பகிர்வு ஆளுகை மற்றும் தொழில்நுட்பக் கண்காணிப்பு என்பது ஊழலற்ற வெளிப்படையான கூலி வழங்கலை உறுதி செய்யும் நிர்வாக முதுகெலும்பாகும்; இது மத்திய-மாநில நிதிப் பகிர்வு சமன்பாடு (திறனற்ற கூலிக்கு 100% மத்திய நிதி; தளவாடப் பொருட்களுக்கு 75:25), மாவட்ட அளவிலான 60:40 கூலி-தளவாட விகிதம், கிராம ஊராட்சிகளின் முதன்மைச் செயல்பாடு (குறைந்தது 50% பணிகள்), பிரிவு 17-ன் கீழான கட்டாய சமூகத் தணிக்கை மற்றும் NeFMS, NMMS, ABPS, GeoMGNREGA போன்ற டிஜிட்டல் ஆளுகை கருவிகளால் வழிநடத்தப்படுகிறது."
+    },
+    "introduction": {
+      "en": "The institutional sustainability of MGNREGA relies on a sophisticated federal financing matrix and an uncompromising multi-tiered accountability architecture. Financial liability is divided: the Central Government bears 100% of unskilled wages and 75% of material and skilled labor costs, while State Governments fund 25% of material costs and 100% of the unemployment allowance. To prevent fiscal diversion toward capital-heavy contracts, the Act enforces the strict '60:40 Rule', mandating that at least 60% of total expenditure at the district level must be devoted to wages. In governance, the Gram Panchayat is the designated principal executing agency, required to execute at least 50% of all works by value, while the Gram Sabha exercises citizen sovereignty through mandatory biannual Social Audits under Section 17. Over the last decade, MGNREGA has undergone a radical digital transformation: paper muster rolls have been superseded by the National Mobile Monitoring System (NMMS) capturing real-time geo-tagged attendance, wage leakages have been combated via the National Electronic Fund Management System (NeFMS) and Aadhaar-Based Payment System (ABPS), and physical asset tracking has been integrated with ISRO's Bhuvan satellite platform under GeoMGNREGA. This part examines the financial architecture, decentralized administration, social audits, and technological systems of MGNREGA.",
+      "ta": "MGNREGA திட்டத்தின் நிறுவன நிலைத்தன்மை என்பது ஒரு நுட்பமான கூட்டாட்சி நிதிப் பகிர்வு மற்றும் பல அடுக்கு பொறுப்புக்கூறல் கட்டமைப்பைச் சார்ந்துள்ளது. நிதிப் பொறுப்பில்: திறனற்ற தொழிலாளர்களின் கூலியை 100% மத்திய அரசும், தளவாடப் பொருட்களுக்கான செலவில் 75% மத்திய அரசும் 25% மாநில அரசும் ஏற்கின்றன; மேலும் வேலையின்மை படியை 100% மாநில அரசே ஏற்கிறது. பெருநிறுவன ஒப்பந்தங்களுக்கு நிதி செல்வதைத் தடுக்க, மாவட்ட அளவில் மொத்த செலவில் குறைந்தபட்சம் 60% கூலிக்காகவும், அதிகபட்சம் 40% தளவாடப் பொருட்களுக்காகவும் மட்டுமே இருக்க வேண்டும் என்ற '60:40 விதி' கண்டிப்புடன் செயல்படுத்தப்படுகிறது. ஆளுகையில், கிராம ஊராட்சிகள் முதன்மை அமைப்பாக விளங்கி குறைந்தபட்சம் 50% பணிகளை நேரடியாகச் செயல்படுத்துகின்றன; கிராம சபை பிரிவு 17-ன் கீழ் ஆறு மாதங்களுக்கு ஒருமுறை கட்டாய 'சமூகத் தணிக்கை' (Social Audit) நடத்துகிறது. கடந்த பத்தாண்டுகளில், இத்திட்டம் பெரும் டிஜிட்டல் மாற்றத்தைக் கண்டுள்ளது: காகித வருகைப் பதிவேடுகளுக்குப் பதிலாக NMMS செயலி மூலம் இருவேளை புவிசார் குறியீட்டு வருகை பதிவு, NeFMS மற்றும் ஆதார் அடிப்படையிலான கட்டண முறை (ABPS) மூலம் நேரடி வங்கிக் கணக்கு வரவு, மற்றும் இஸ்ரோவின் புவன் செயற்கைக்கோள் மூலம் GeoMGNREGA சொத்து கண்காணிப்பு ஆகியவை நடைமுறைப்படுத்தப்பட்டுள்ளன. இப்பகுதி நிதிப் பகிர்வு, அதிகாரப் பகிர்வு மற்றும் டிஜிட்டல் கண்காணிப்பு முறைகளை விரிவாக ஆராய்கிறது."
+    },
+    "sec_federal_financing_architecture": [
+      {
+        "term_en": "Centre-State Cost-Sharing Equation",
+        "term_ta": "மத்திய-மாநில செலவுப் பகிர்வு சமன்பாடு",
+        "details_en": "Under Section 22, the Central Government pays: (1) 100% of unskilled manual wages; (2) 75% of material costs (including skilled and semi-skilled labor); and (3) 6% administrative costs for Central/State coordination. The State Government pays: (1) 25% of material and skilled labor costs; (2) 100% of the Unemployment Allowance (Section 7); and (3) administrative costs of the State Employment Guarantee Council.",
+        "details_ta": "பிரிவு 22-ன் படி மத்திய அரசு: (1) திறனற்ற கூலிச் செலவில் 100%; (2) தளவாடப் பொருட்கள் மற்றும் பகுதி திறன் தொழிலாளர் ஊதியத்தில் 75%; (3) நிர்வாகச் செலவில் 6% ஏற்கிறது. மாநில அரசு: (1) தளவாடப் பொருட்கள் செலவில் 25%; (2) பிரிவு 7-ன் கீழான வேலையின்மை படியில் 100%; (3) மாநில வேலை உறுதி மன்றத்தின் நிர்வாகச் செலவுகளை ஏற்கிறது."
+      },
+      {
+        "term_en": "The 60:40 District Wage-to-Material Mandate",
+        "term_ta": "மாவட்ட அளவிலான 60:40 கூலி-பொருட்செலவு விதி",
+        "details_en": "The Act strictly mandates that the ratio of wage costs to material costs must be maintained at 60:40 across all works at the DISTRICT LEVEL in a financial year. Individual works (such as an Anganwadi building or check dam) can have higher material proportions, but the aggregate district portfolio must never allow material expenditure to exceed 40%, ensuring labor intensity.",
+        "details_ta": "ஒரு நிதியாண்டில் 'மாவட்ட அளவில்' மேற்கொள்ளப்படும் அனைத்துப் பணிகளின் ஒட்டுமொத்த செலவில் கூலி மற்றும் தளவாடப் பொருட்களின் விகிதம் 60:40 என்ற அளவில் பராமரிக்கப்பட வேண்டும். தனிப்பட்ட பணிகள் (அங்கன்வாடி கட்டிடம் போன்றவை) கூடுதல் தளவாடச் செலவைக் கொண்டிருக்கலாம்; ஆனால் மாவட்டத்தின் ஒட்டுமொத்த கணக்கில் தளவாடச் செலவு 40%-ஐ தாண்டக்கூடாது."
+      }
+    ],
+    "sec_decentralized_governance_panchayats": [
+      {
+        "term_en": "Gram Panchayat as Principal Executing Authority (≥50%)",
+        "term_ta": "முதன்மைச் செயல்படுத்தும் அமைப்பாக கிராம ஊராட்சி (≥50%)",
+        "details_en": "Section 16 designates the Gram Panchayat as the principal agency for planning and implementing schemes. Crucially, the Act mandates that at least 50% of the total works in terms of cost in a Gram Panchayat area must be executed directly by the Gram Panchayat itself, preserving grassroots democratic ownership.",
+        "details_ta": "பிரிவு 16 கிராம ஊராட்சியை பணிகளைத் திட்டமிட்டு செயல்படுத்தும் முதன்மை அமைப்பாக அறிவிக்கிறது. முக்கியமாக, ஒரு ஊராட்சிப் பகுதியில் மேற்கொள்ளப்படும் பணிகளில் மதிப்பீட்டு அளவில் குறைந்தபட்சம் 50% பணிகள் 'கிராம ஊராட்சியாலேயே நேரடியாகச்' செயல்படுத்தப்பட வேண்டும் என்பது சட்டப்பூர்வ விதியாகும்."
+      },
+      {
+        "term_en": "Gram Sabha Role & Shelf of Projects",
+        "term_ta": "கிராம சபையின் பங்கு & திட்டங்களின் பட்டியல் (Shelf of Projects)",
+        "details_en": "The Gram Sabha recommends the annual 'Shelf of Projects' based on local developmental priorities (soil conservation, water harvesting, farm ponds). Neither block development officers nor district collectors can alter or impose projects without Gram Sabha approval, ensuring decentralized bottom-up planning.",
+        "details_ta": "கிராம சபை உள்ளூர் தேவைகளுக்கு ஏற்ப (மண் வளம், நீர்வளப் பாதுகாப்பு, பண்ணைக் குட்டைகள்) ஆண்டு திட்டங்களின் பட்டியலை (Shelf of Projects) தீர்மானித்து பரிந்துரைக்கிறது. கிராம சபை பரிந்துரைக்காத எந்தவொரு பணியையும் அதிகாரிகள் தன்னிச்சையாக புகுத்த முடியாது."
+      }
+    ],
+    "sec_social_audit_architecture": [
+      {
+        "term_en": "Statutory Social Audit Mandate (Section 17)",
+        "term_ta": "பிரிவு 17-ன் கீழான கட்டாய சமூகத் தணிக்கை",
+        "details_en": "Section 17 makes Social Audit by the Gram Sabha legally mandatory for all works executed under the Act at least ONCE EVERY SIX MONTHS. Unlike traditional financial audits conducted post-facto by accountants, a Social Audit is a participatory democratic process where muster rolls, bills, vouchers, and worksite measurements are read aloud and scrutinized in the open Gram Sabha assembly.",
+        "details_ta": "பிரிவு 17-ன் படி, ஊராட்சியில் செய்யப்பட்ட அனைத்துப் பணிகளையும் 'ஆறு மாதங்களுக்கு ஒருமுறை' கிராம சபையால் சமூகத் தணிக்கை (Social Audit) செய்யப்படுவது சட்டப்பூர்வமாக கட்டாயமாகும். வழக்கமான கணக்குத் தணிக்கை போலன்றி, இதில் வருகைப் பதிவேடுகள், பில்கள், அளவீடுகள் ஆகியவை கிராம சபை மக்கள் முன்னிலையில் பகிரங்கமாக வாசிக்கப்பட்டு சரிபார்க்கப்படுகின்றன."
+      },
+      {
+        "term_en": "Institutional Social Audit Societies (SAUs)",
+        "term_ta": "சுயாதீன சமூகத் தணிக்கை சங்கங்கள் (SAU)",
+        "details_en": "Following the pioneering model of Andhra Pradesh (SSAAT), the Ministry mandated independent Social Audit Units (SAUs) across all states. In Tamil Nadu, the Tamil Nadu Social Audit Society (TNSAS) operates independently of implementing bureaucracies, training village youth and resource persons to verify worksites, detect muster roll inflation, and recover misappropriated wages.",
+        "details_ta": "ஆந்திரப் பிரதேசத்தின் முன்னோடி மாதிரியைத் தொடர்ந்து, அனைத்து மாநிலங்களிலும் சுயாதீன சமூகத் தணிக்கை பிரிவுகள் (SAUs) அமைக்கப்பட்டன. தமிழ்நாட்டில், 'தமிழ்நாடு சமூகத் தணிக்கை சங்கம்' (TNSAS) செயல்பட்டு, கிராமப்புற இளைஞர்களுக்குப் பயிற்சி அளித்து, போலி வருகைப் பதிவுகள் மற்றும் ஊழல்களைக் கண்டறிந்து நிதியை மீட்டெடுக்கிறது."
+      }
+    ],
+    "sec_technological_governance_ecosystem": [
+      {
+        "term_en": "NMMS & Real-Time Geo-Tagged Attendance",
+        "term_ta": "NMMS செயலி & நிகழ்நேர புவிசார் வருகைப் பதிவு",
+        "details_en": "The National Mobile Monitoring System (NMMS) app was made mandatory from January 2023 for all worksites. Worksite Mates must capture two time-stamped, geo-tagged photographs of workers each working day (morning entry and afternoon check), uploading them in real-time to eliminate 'ghost workers' and paper muster roll inflation.",
+        "details_ta": "2023 ஜனவரி முதல் அனைத்து பணித்தளங்களிலும் NMMS (National Mobile Monitoring System) மொபைல் செயலி பயன்பாடு கட்டாயமாக்கப்பட்டது. பணித்தள மேற்பார்வையாளர்கள் (Mates) தொழிலாளர்களின் புகைப்படங்களை புவிசார் குறியீடு மற்றும் நேர முத்திரையுடன் இருவேளை (காலை மற்றும் பிற்பகல்) பதிவேற்றம் செய்து போலி வருகைகளைத் தடுக்கின்றனர்."
+      },
+      {
+        "term_en": "NeFMS, ABPS & GeoMGNREGA Satellite Asset Tracking",
+        "term_ta": "NeFMS, ABPS & GeoMGNREGA செயற்கைக்கோள் சொத்துக் கண்காணிப்பு",
+        "details_en": "Wage payments are disbursed through the National Electronic Fund Management System (NeFMS) directly to worker accounts. Under the Aadhaar-Based Payment System (ABPS), wage transfers are routed through the Aadhaar Payment Bridge. Concurrently, GeoMGNREGA, developed with ISRO's Bhuvan portal, mandates GIS geo-tagging of every created asset across three stages: before commencement, during progress, and on completion.",
+        "details_ta": "கூலித் தொகையானது NeFMS மூலம் நேரடியாக தொழிலாளர்களின் வங்கிக் கணக்குகளுக்கு மாற்றப்படுகிறது. ஆதார் அடிப்படையிலான கட்டண முறை (ABPS) மூலம் இடைத்தரகர்கள் இன்றி பணம் சென்றடைகிறது. மேலும், இஸ்ரோவின் புவன் தளத்துடன் இணைக்கப்பட்ட GeoMGNREGA மூலம், உருவாக்கப்பட்ட ஒவ்வொரு சொத்தும் மூன்று நிலைகளில் (பணிக்கு முன், பணியின் போது, பணி முடிந்த பின்) செயற்கைக்கோள் மூலம் புவிசார் குறியீடு செய்யப்படுகிறது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_centre_vs_state_mgnrega_financing",
+        "title_en": "Centre vs State Financing Responsibility Matrix in MGNREGA",
+        "title_ta": "MGNREGA நிதிப் பகிர்வு: மத்திய அரசு vs மாநில அரசு ஒப்பீடு",
+        "headers_en": [
+          "Expenditure Component",
+          "Central Government Share",
+          "State Government Share",
+          "Statutory Rule"
+        ],
+        "headers_ta": [
+          "செலவினப் பிரிவு",
+          "மத்திய அரசு பங்கு",
+          "மாநில அரசு பங்கு",
+          "சட்டப்பூர்வ விதி"
+        ],
+        "rows_en": [
+          [
+            "Unskilled Manual Wages",
+            "100% funded directly via NeFMS/DBT",
+            "0% (Zero state financial liability)",
+            "Section 22(1)(a)"
+          ],
+          [
+            "Material Costs & Skilled Wages",
+            "75% of total material and skilled labor expenditure",
+            "25% of total material and skilled labor expenditure",
+            "Section 22(1)(b) & Section 22(2)"
+          ],
+          [
+            "Unemployment Allowance",
+            "0% (Explicitly barred from paying)",
+            "100% funded entirely from State budget",
+            "Section 7 & Section 22(2)"
+          ],
+          [
+            "Administrative Expenses",
+            "Up to 6% of total central fund allocation",
+            "Administrative expenses of State Employment Council",
+            "Central Scheme Guidelines"
+          ],
+          [
+            "Delay Compensation",
+            "Liable if delay is at central disbursement level",
+            "Liable if delay is at state muster verification level",
+            "Schedule II Clause 29"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "திறனற்ற தொழிலாளர் கூலி",
+            "100% மத்திய அரசு நேரடியாக NeFMS மூலம் வழங்குகிறது",
+            "0% (மாநில அரசுக்கு எந்தக் கூலிச் சுமையும் இல்லை)",
+            "பிரிவு 22(1)(a)"
+          ],
+          [
+            "தளவாடப் பொருட்கள் & திறனுள்ள உழைப்பு",
+            "மொத்த தளவாடச் செலவில் 75% மத்திய அரசு ஏற்கிறது",
+            "மொத்த தளவாடச் செலவில் 25% மாநில அரசு ஏற்கிறது",
+            "பிரிவு 22(1)(b) & பிரிவு 22(2)"
+          ],
+          [
+            "வேலையின்மை படி",
+            "0% (மத்திய அரசு இதற்கான நிதியை வழங்காது)",
+            "100% மாநில அரசே தனது சொந்த நிதியிலிருந்து தர வேண்டும்",
+            "பிரிவு 7 & பிரிவு 22(2)"
+          ],
+          [
+            "நிர்வாகச் செலவுகள்",
+            "மத்திய நிதி ஒதுக்கீட்டில் 6% வரை நிர்வாகச் செலவுக்கு அனுமதி",
+            "மாநில வேலை உறுதி மன்றத்தின் நிர்வாகச் செலவை ஏற்க வேண்டும்",
+            "திட்ட வழிகாட்டு நெறிமுறைகள்"
+          ],
+          [
+            "கூலி தாமத இழப்பீடு",
+            "மத்திய அளவில் நிதி விடுவிக்க தாமதமானால் மத்திய பொறுப்பு",
+            "மாநில அளவில் வருகை சரிபார்ப்பில் தாமதமானால் மாநில பொறுப்பு",
+            "அட்டவணை II பிரிவு 29"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_social_audit_vs_cag_audit",
+        "title_en": "Social Audit (Section 17) vs Traditional Financial Audit (CAG)",
+        "title_ta": "சமூகத் தணிக்கை (பிரிவு 17) vs பாரம்பரிய நிதித் தணிக்கை (CAG) ஒப்பீடு",
+        "headers_en": [
+          "Audit Parameter",
+          "Social Audit (Gram Sabha / Section 17)",
+          "Traditional Financial Audit (CAG / Statutory)"
+        ],
+        "headers_ta": [
+          "தணிக்கை அளவுரு",
+          "சமூகத் தணிக்கை (கிராம சபை / பிரிவு 17)",
+          "பாரம்பரிய நிதித் தணிக்கை (CAG / தணிக்கையாளர்)"
+        ],
+        "rows_en": [
+          [
+            "Auditing Entity",
+            "Gram Sabha citizens facilitated by independent Social Audit Units",
+            "Professional government auditors and Chartered Accountants"
+          ],
+          [
+            "Audit Methodology",
+            "Open public assembly where muster rolls and bills are read aloud",
+            "Post-facto verification of account books, vouchers, and balance sheets"
+          ],
+          [
+            "Verification Target",
+            "Physical worksite inspection, worker testimony, ghost muster check",
+            "Financial regularity, compliance with budget sanctions and procurement rules"
+          ],
+          [
+            "Frequency",
+            "Mandatory at least once every six months in every Gram Panchayat",
+            "Conducted annually or on sample basis per state audit cycles"
+          ],
+          [
+            "Citizen Empowerment",
+            "Directly empowers wage workers to confront corrupt officials",
+            "Top-down institutional reports submitted to Legislature/Parliament"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தணிக்கை செய்யும் அமைப்பு",
+            "சுயாதீன சமூகத் தணிக்கை பிரிவின் உதவியுடன் கிராம சபை மக்கள்",
+            "அரசு தணிக்கையாளர்கள் (CAG) மற்றும் பட்டயக் கணக்காளர்கள்"
+          ],
+          [
+            "தணிக்கை முறை",
+            "கிராம சபை கூட்டத்தில் வருகைப் பதிவேடுகள், பில்கள் பகிரங்கமாக வாசிக்கப்படுதல்",
+            "கணக்குப் புத்தகங்கள், ரசீதுகள் மற்றும் நிதிக் கோப்புகளை ஆய்வு செய்தல்"
+          ],
+          [
+            "சரிபார்க்கும் இலக்கு",
+            "நேரடி கள ஆய்வு, தொழிலாளர்களின் சாட்சியம், போலி பெயர்களைக் கண்டறிதல்",
+            "நிதி ஒழுங்குமுறை, அரசு விதிகளைப் பின்பற்றுதல், கொள்முதல் விதிகள்"
+          ],
+          [
+            "நடைபெறும் இடைவெளி",
+            "ஒவ்வொரு கிராம ஊராட்சியிலும் 'ஆறு மாதங்களுக்கு ஒருமுறை' கட்டாயம்",
+            "ஆண்டுக்கு ஒருமுறை அல்லது மாதிரி அடிப்படையில் நடத்தப்படுவது"
+          ],
+          [
+            "மக்கள் அதிகாரம்",
+            "தொழிலாளர்கள் அதிகாரிகளிடம் நேரடியாக விளக்கம் கேட்கும் மக்கள் அதிகாரம்",
+            "சட்டமன்றம் அல்லது நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படும் உத்தியோகபூர்வ அறிக்கை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_paper_muster_vs_nmms_digital",
+        "title_en": "Paper Muster Rolls vs National Mobile Monitoring System (NMMS)",
+        "title_ta": "காகித வருகைப் பதிவேடு vs NMMS டிஜிட்டல் வருகைப் பதிவு ஒப்பீடு",
+        "headers_en": [
+          "Operational Dimension",
+          "Historical Paper Muster Rolls",
+          "National Mobile Monitoring System (NMMS)"
+        ],
+        "headers_ta": [
+          "செயல்பாட்டுப் பரிமாணம்",
+          "பாரம்பரிய காகித வருகைப் பதிவேடு",
+          "தேசிய மொபைல் கண்காணிப்பு முறை (NMMS)"
+        ],
+        "rows_en": [
+          [
+            "Attendance Capture",
+            "Manual ink markings by worksite mates on printed stationary",
+            "Digital mobile capture with real-time geo-coordinates and timestamps"
+          ],
+          [
+            "Daily Verification Frequency",
+            "Single daily signing or ticking on muster roll paper",
+            "Twice-daily photographic upload (morning entry & afternoon check)"
+          ],
+          [
+            "Vulnerability to Ghost Workers",
+            "High risk of post-facto signature forging and inflated names",
+            "Eliminates ghost workers by demanding physical presence in group photos"
+          ],
+          [
+            "Data Synchronization",
+            "Weeks of administrative delay before data entered into block computer",
+            "Immediate real-time synchronization with Central NREGAsoft servers"
+          ],
+          [
+            "Current Operational Status",
+            "Completely phased out for regular wage attendance recording",
+            "Statutorily mandatory for all MGNREGA worksites from January 2023"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வருகைப் பதிவு முறை",
+            "காகிதப் படிவங்களில் பணி மேற்பார்வையாளரால் பேனாவால் குறிக்கப்படுவது",
+            "நிகழ்நேர புவிசார் குறியீடு மற்றும் நேர முத்திரையுடன் கூடிய மொபைல் பதிவு"
+          ],
+          [
+            "தினசரி பதிவு இடைவெளி",
+            "நாளுக்கு ஒருமுறை காகிதத்தில் கையொப்பம் அல்லது கைரேகை இடுவது",
+            "தினமும் இருமுறை குழு புகைப்படங்களை பதிவேற்றம் செய்தல் (காலை மற்றும் மதியம்)"
+          ],
+          [
+            "போலி பெயர்கள் ஆபத்து",
+            "பணி முடிந்தபின் கையொப்பமிட்டு போலி பெயர்களில் ஊழல் செய்ய அதிக வாய்ப்பு",
+            "நேரடி புகைப்படங்கள் கட்டாயம் என்பதால் போலி பணியாளர்கள் முற்றிலும் ஒழிப்பு"
+          ],
+          [
+            "சர்வர் ஒருங்கிணைப்பு",
+            "வட்டார அலுவலகத்திற்கு காகிதங்கள் சென்று கணினியில் பதிவேற்ற வாரக்கணக்கில் தாமதம்",
+            "நிகழ்நேரத்தில் நேரடியாக மத்திய NREGAsoft சர்வரில் பதிவேற்றம்"
+          ],
+          [
+            "தற்போதைய சட்ட நிலை",
+            "வருகைப் பதிவிற்கு காகிதப் பயன்பாடு முற்றிலும் கைவிடப்பட்டுவிட்டது",
+            "2023 ஜனவரி முதல் அனைத்து பணித்தளங்களிலும் சட்டப்பூர்வமாக கட்டாயமாக்கப்பட்டுள்ளது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_bank_account_vs_abps_payment",
+        "title_en": "Standard Bank Account Transfer vs Aadhaar-Based Payment System (ABPS)",
+        "title_ta": "வழக்கமான வங்கி பரிமாற்றம் vs ஆதார் அடிப்படையிலான கட்டண முறை (ABPS)",
+        "headers_en": [
+          "Payment Channel",
+          "Standard Electronic Fund Transfer (NEFT/eFMS)",
+          "Aadhaar-Based Payment System (ABPS)"
+        ],
+        "headers_ta": [
+          "பரிமாற்ற முறை",
+          "வழக்கமான மின்னணு பரிமாற்றம் (NEFT / eFMS)",
+          "ஆதார் அடிப்படையிலான கட்டண முறை (ABPS)"
+        ],
+        "rows_en": [
+          [
+            "Routing Identifier",
+            "Worker's Bank Account Number and Bank IFSC Code",
+            "Worker's 12-digit Aadhaar Number mapped to NPCI mapper"
+          ],
+          [
+            "Risk of Rejection",
+            "High rejection risk if IFSC changes due to bank mergers",
+            "Eliminates IFSC dependency; automatically routes to latest seeded account"
+          ],
+          [
+            "Implementation Mandate",
+            "Standard channel utilized during early DBT rollout",
+            "Made mandatory by Ministry of Rural Development for all MGNREGA wages"
+          ],
+          [
+            "Operational Friction",
+            "Zero dependency on Aadhaar biometric database synchronization",
+            "Challenges arise if worker's Aadhaar name spelling mismatches bank records"
+          ],
+          [
+            "Anti-Intermediation Power",
+            "Requires physical bank visit or business correspondent (BC)",
+            "Facilitates micro-ATM and AePS interoperable doorstep cash withdrawal"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கணக்கு வழித்தட அடையாளம்",
+            "தொழிலாளியின் வங்கிக் கணக்கு எண் மற்றும் வங்கியின் IFSC குறியீடு",
+            "NPCI சர்வரில் இணைக்கப்பட்டுள்ள தொழிலாளியின் 12 இலக்க ஆதார் எண்"
+          ],
+          [
+            "பரிவர்த்தனை தோல்வி ஆபத்து",
+            "வங்கி இணைப்புகளால் IFSC மாறினால் பணப்பரிவர்த்தனை தோல்வியடையும்",
+            "IFSC சார்ந்திருக்கவில்லை; ஆதாருடன் இணைக்கப்பட்ட சமீபத்திய கணக்கிற்குச் செல்லும்"
+          ],
+          [
+            "அரசின் கட்டாய உத்தரவு",
+            "DBT திட்டத்தின் தொடக்க காலத்தில் பயன்படுத்தப்பட்ட முறை",
+            "ஊரக வளர்ச்சி அமைச்சகத்தால் அனைத்து தொழிலாளர்களுக்கும் கட்டாயமாக்கப்பட்டுள்ளது"
+          ],
+          [
+            "நடைமுறைச் சிக்கல்கள்",
+            "ஆதார் புள்ளிவிவரங்களுடன் பொருந்த வேண்டிய அவசியமில்லை",
+            "ஆதார் அட்டை மற்றும் வங்கிக் கணக்கில் பெயர் எழுத்துப் பிழை இருந்தால் சிக்கல்"
+          ],
+          [
+            "இடைத்தரகர் ஒழிப்பு",
+            "வங்கி கிளைக்கு நேரில் சென்று பணம் எடுக்க வேண்டிய நிலை",
+            "மைக்ரோ ஏடிஎம் (Micro-ATM) மூலம் கிராமத்திலேயே கைரேகை வைத்து பணம் எடுக்கும் வசதி"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "MGNREGA Part 2: Financing, Social Audit & Technological Monitoring",
+        "short_label": "Financing & Tech",
+        "children": [
+          {
+            "title": "Financing Matrix",
+            "short_label": "Financing",
+            "children": [
+              {
+                "title": "Unskilled Wages: 100% Central Government (NeFMS)",
+                "short_label": "100% Wage"
+              },
+              {
+                "title": "Materials & Skilled: 75% Centre : 25% State",
+                "short_label": "75:25 Material"
+              },
+              {
+                "title": "District 60:40 Wage-to-Material Mandate",
+                "short_label": "60:40 Ratio"
+              }
+            ]
+          },
+          {
+            "title": "Decentralized Governance",
+            "short_label": "Governance",
+            "children": [
+              {
+                "title": "Gram Panchayat executes ≥50% works in value",
+                "short_label": "GP Role"
+              },
+              {
+                "title": "Gram Sabha approves annual Shelf of Projects",
+                "short_label": "Gram Sabha"
+              },
+              {
+                "title": "Bottom-up decentralized participatory planning",
+                "short_label": "Bottom-up Planning"
+              }
+            ]
+          },
+          {
+            "title": "Social Audit Architecture",
+            "short_label": "Social Audit",
+            "children": [
+              {
+                "title": "Section 17: Mandatory once every six months",
+                "short_label": "Sec 17 Audit"
+              },
+              {
+                "title": "Open public assembly reading musters & vouchers",
+                "short_label": "Open Assembly"
+              },
+              {
+                "title": "Independent Social Audit Units (TNSAS in Tamil Nadu)",
+                "short_label": "TNSAS"
+              }
+            ]
+          },
+          {
+            "title": "Technological Ecosystem",
+            "short_label": "Technology",
+            "children": [
+              {
+                "title": "NMMS: Real-time geo-tagged photographic attendance",
+                "short_label": "NMMS App"
+              },
+              {
+                "title": "ABPS: Aadhaar Payment Bridge via NPCI mapper",
+                "short_label": "ABPS System"
+              },
+              {
+                "title": "GeoMGNREGA: ISRO Bhuvan GIS tracking in 3 stages",
+                "short_label": "GeoMGNREGA"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "60:40 Expenditure Ratio Level Trap: DISTRICT Level, NOT Individual Work",
+        "points": {
+          "en": [
+            "TRAP: Assuming that every single individual work in MGNREGA must have precisely a 60:40 wage-material ratio.",
+            "CORRECT FACT: The 60:40 wage-to-material ratio is statutorily enforced at the DISTRICT LEVEL across all works in a financial year. An individual work (e.g., a check dam) can have 30:70, provided labor-heavy works balance it out.",
+            "WHY CANDIDATES FAIL: Misapplying aggregate macro-level ratios to micro individual construction worksites."
+          ],
+          "ta": [
+            "பொறி: MGNREGA-ல் செய்யப்படும் ஒவ்வொரு தனிப்பட்ட பணியிலும் கூலி மற்றும் பொருட்கள் 60:40 என்ற விகிதத்திலேயே இருக்க வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: 60:40 கூலி-தளவாட விகிதம் என்பது ஒரு நிதியாண்டில் 'மாவட்ட அளவில்' ஒட்டுமொத்த பணிகளுக்கும் மட்டுமே பார்க்கப்படுகிறது. ஒரு குறிப்பிட்ட பணியில் தளவாடச் செலவு அதிகமாக இருந்தாலும், மாவட்டத்தின் மொத்த செலவு 60:40-க்குள் இருக்க வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மாவட்ட அளவிலான விதியை ஒவ்வொரு தனிப் பணிக்கும் தவறாகப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Gram Panchayat Minimum Execution Quota Trap: Minimum 50%, NOT 100%",
+        "points": {
+          "en": [
+            "TRAP: Believing that 100% of all MGNREGA works must be executed solely by the Gram Panchayat.",
+            "CORRECT FACT: The statutory mandate requires that AT LEAST 50% of the works in terms of cost must be executed directly by the Gram Panchayat. The remaining works can be executed by intermediate/district panchayats or line departments.",
+            "WHY CANDIDATES FAIL: Overestimating the Gram Panchayat monopoly while missing the legal floor of 50%."
+          ],
+          "ta": [
+            "பொறி: அனைத்து MGNREGA பணிகளையும் (100%) கிராம ஊராட்சியே மட்டுமே செயல்படுத்த வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: சட்டப்பூர்வ விதிப்படி, மதிப்பீட்டு அளவில் 'குறைந்தபட்சம் 50% பணிகள்' கிராம ஊராட்சியால் நேரடியாகச் செயல்படுத்தப்பட வேண்டும். மீதமுள்ள பணிகளை ஒன்றிய/மாவட்ட ஊராட்சிகள் அல்லது அரசுத் துறைகள் செய்யலாம்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 50% குறைந்தபட்ச வரம்பை விடுத்து 100% என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Social Audit Frequency Trap: At Least Once Every SIX MONTHS, NOT Annually",
+        "points": {
+          "en": [
+            "TRAP: Selecting 'Once a year' as the statutory frequency for Social Audits under Section 17 of MGNREGA.",
+            "CORRECT FACT: Section 17 explicitly mandates that the Gram Sabha must conduct a Social Audit of all works AT LEAST ONCE EVERY SIX MONTHS (twice a year).",
+            "WHY CANDIDATES FAIL: Assuming social audits follow standard annual governmental financial audit cycles."
+          ],
+          "ta": [
+            "பொறி: பிரிவு 17-ன் கீழான சமூகத் தணிக்கை 'ஆண்டுக்கு ஒருமுறை' நடத்தப்பட வேண்டும் என விடையளிப்பது.",
+            "சரியான உண்மை: சட்டத்தின் பிரிவு 17-ன் படி கிராம சபையானது 'குறைந்தது ஆறு மாதங்களுக்கு ஒருமுறை' (ஆண்டுக்கு இருமுறை) அனைத்துப் பணிகளுக்கும் சமூகத் தணிக்கை நடத்துவது கட்டாயமாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அரசு நிதித் தணிக்கை போல சமூகத் தணிக்கையும் ஆண்டுக்கு ஒருமுறைதான் நடக்கும் என நினைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Minimum Wage Determination Trap: Central Notification Indexed to CPI-AL, NOT State Minimum Wage",
+        "points": {
+          "en": [
+            "TRAP: Assuming MGNREGA wages are governed directly by the respective State Minimum Wages Acts.",
+            "CORRECT FACT: MGNREGA wages are notified independently by the Central Government under Section 6(1) of the Act, indexed annually to the Consumer Price Index for Agricultural Laborers (CPI-AL). The Supreme Court has affirmed this independent statutory power.",
+            "WHY CANDIDATES FAIL: Conflating state agricultural minimum wages with central MGNREGA wage notifications."
+          ],
+          "ta": [
+            "பொறி: MGNREGA கூலித் தொகையானது அந்தந்த மாநில குறைந்தபட்ச ஊதியச் சட்டத்தின்படி தீர்மானிக்கப்படுகிறது என எண்ணுவது.",
+            "சரியான உண்மை: MGNREGA கூலியை சட்டத்தின் பிரிவு 6(1)-ன் கீழ் 'மத்திய அரசே' பிரத்யேகமாக அறிவிக்கிறது; இது விவசாயத் தொழிலாளர்களுக்கான நுகர்வோர் விலைக் குறியீட்டுடன் (CPI-AL) ஆண்டுதோறும் இணைக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மாநில அரசின் குறைந்தபட்ச ஊதிய விதியுடன் மத்திய அரசின் அறிவிப்பை குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "GeoMGNREGA Tracking Stages Trap: Three Distinct Stages (Before, During, After)",
+        "points": {
+          "en": [
+            "TRAP: Believing that GIS geo-tagging under GeoMGNREGA is conducted only once upon the final completion of the asset.",
+            "CORRECT FACT: GeoMGNREGA mandates geo-tagging at THREE DISTINCT STAGES: Stage 1 (Before commencement of work), Stage 2 (During progress of work), and Stage 3 (Upon complete asset construction).",
+            "WHY CANDIDATES FAIL: Overlooking the multi-stage visual verification protocol designed to prevent fake claims."
+          ],
+          "ta": [
+            "பொறி: GeoMGNREGA-ல் பணி முழுமையாக முடிந்த பிறகு ஒரே ஒரு முறை மட்டுமே புவிசார் குறியீடு செய்யப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: GeoMGNREGA-ல் சொத்துக்கள் 'மூன்று வெவ்வேறு நிலைகளில்' புவிசார் குறியீடு செய்யப்படுகின்றன: நிலை 1 (பணி தொடங்குவதற்கு முன்), நிலை 2 (பணி நடக்கும் போது), நிலை 3 (பணி முழுமையாக முடிந்த பின்).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: போலி கணக்குகளைத் தடுக்க அரசு உருவாக்கியுள்ள மூன்று அடுக்கு புகைப்பட சரிபார்ப்பை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "NMMS Attendance Capture Frequency Trap: TWICE Daily, NOT Once Daily",
+        "points": {
+          "en": [
+            "TRAP: Assuming that the NMMS mobile app captures worker attendance only once in the morning.",
+            "CORRECT FACT: The NMMS protocol strictly mandates capturing worker attendance and group photographs TWICE DAILY: first in the morning (between 6 AM and 11 AM) and second in the afternoon (after 2 PM).",
+            "WHY CANDIDATES FAIL: Assuming attendance capture is a single-entry procedure like standard school roll calls."
+          ],
+          "ta": [
+            "பொறி: NMMS மொபைல் செயலியில் காலையில் ஒருமுறை மட்டுமே வருகைப் பதிவு செய்யப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: NMMS வழிகாட்டுதலின்படி, தொழிலாளர்களின் வருகை மற்றும் புகைப்படங்கள் 'தினமும் இருமுறை' (காலையில் ஒருமுறை மற்றும் மதியம் 2 மணிக்கு மேல் ஒருமுறை) பதிவேற்றம் செய்யப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வழக்கமான ஒருமுறை வருகைப் பதிவு போல இதுவும் செயல்படுகிறது என தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Under Section 22, the Central Government funds 100% of unskilled manual wages and 75% of material costs.",
+        "State Governments fund 25% of material costs and 100% of the Unemployment Allowance under Section 7.",
+        "The ratio of wage costs to material costs must be strictly maintained at 60:40 at the district level.",
+        "Section 16 designates the Gram Panchayat as the principal agency, requiring it to execute at least 50% of works in terms of cost.",
+        "The Gram Sabha recommends the annual 'Shelf of Projects' based on local developmental priorities.",
+        "Section 17 makes Social Audit by the Gram Sabha legally mandatory at least once every six months.",
+        "Andhra Pradesh was the first state in India to institutionalize an independent Society for Social Audit, Accountability and Transparency (SSAAT).",
+        "The Tamil Nadu Social Audit Society (TNSAS) conducts independent grassroots social audits across all village panchayats in the state.",
+        "The National Mobile Monitoring System (NMMS) app mandates twice-daily geo-tagged photographic attendance at all worksites.",
+        "MGNREGA wages are credited through the National Electronic Fund Management System (NeFMS) directly into worker bank accounts.",
+        "The Aadhaar-Based Payment System (ABPS) routes wages through the National Payments Corporation of India (NPCI) mapper.",
+        "GeoMGNREGA utilizes ISRO's Bhuvan satellite platform to geo-tag assets across three stages: before, during, and after work."
+      ],
+      "ta": [
+        "பிரிவு 22-ன் கீழ், திறனற்ற கூலிச் செலவில் 100% மற்றும் தளவாடச் செலவில் 75%-ஐ மத்திய அரசு முழுமையாக வழங்குகிறது.",
+        "தளவாடச் செலவில் 25% மற்றும் வேலையின்மை படியில் 100%-ஐ மாநில அரசு தனது சொந்த நிதியிலிருந்து ஏற்க வேண்டும்.",
+        "மாவட்ட அளவில் கூலி மற்றும் தளவாடப் பொருட்களின் விகிதம் கண்டிப்பாக 60:40 என்ற அளவில் பராமரிக்கப்பட வேண்டும்.",
+        "பிரிவு 16 கிராம ஊராட்சியை முதன்மை அமைப்பாக அறிவித்து, மதிப்பீட்டில் குறைந்தபட்சம் 50% பணிகளை நேரடியாகச் செய்ய ஆணையிடுகிறது.",
+        "உள்ளூர் தேவைகளின் அடிப்படையில் ஆண்டு திட்டப் பட்டியலை (Shelf of Projects) கிராம சபை தீர்மானித்து பரிந்துரைக்கிறது.",
+        "சட்டத்தின் பிரிவு 17-ன் படி, ஆறு மாதங்களுக்கு ஒருமுறை கிராம சபையால் சமூகத் தணிக்கை செய்யப்படுவது கட்டாயமாகும்.",
+        "சுயாதீன சமூகத் தணிக்கை அமைப்பை (SSAAT) இந்தியாவில் முதன்முதலில் நிறுவிய மாநிலம் ஆந்திரப் பிரதேசம் ஆகும்.",
+        "தமிழ்நாடு சமூகத் தணிக்கை சங்கம் (TNSAS) மாநிலத்தின் அனைத்து கிராம ஊராட்சிகளிலும் சுயாதீன மக்கள் தணிக்கையை நடத்துகிறது.",
+        "NMMS செயலி அனைத்து பணித்தளங்களிலும் புவிசார் குறியீட்டுடன் தினமும் இருவேளை புகைப்பட வருகைப் பதிவை கட்டாயமாக்குகிறது.",
+        "கூலித் தொகையானது NeFMS மூலம் மத்திய அரசிடமிருந்து நேரடியாக தொழிலாளர்களின் வங்கிக் கணக்குகளில் வரவு வைக்கப்படுகிறது.",
+        "ஆதார் அடிப்படையிலான கட்டண முறை (ABPS) மூலம் NPCI மேப்பர் வழியாக ஊதியப் பரிவர்த்தனைகள் மேற்கொள்ளப்படுகின்றன.",
+        "GeoMGNREGA இஸ்ரோவின் புவன் செயற்கைக்கோள் மூலம் மூன்று நிலைகளில் (முன், நிகழ்வில், பின்) சொத்துக்களை புவிசார் குறியீடு செய்கிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Financing: 100% Central funding for unskilled wages; 75:25 Centre-State sharing for material costs.",
+        "State Governments fund 100% of Unemployment Allowance; up to 6% central funds for administrative expenses.",
+        "Statutory 60:40 wage-to-material ratio enforced strictly at the District level in a financial year.",
+        "Gram Panchayat is principal executing authority; must execute at least 50% of works in terms of cost.",
+        "Gram Sabha approves annual Shelf of Projects; higher officials cannot impose unapproved works.",
+        "Section 17 Social Audit mandatory at least once every six months in every Gram Panchayat.",
+        "Tamil Nadu Social Audit Society (TNSAS) conducts independent citizen-led audits.",
+        "NMMS mobile app mandates twice-daily time-stamped geo-tagged photographic attendance from Jan 2023.",
+        "NeFMS and ABPS ensure Direct Benefit Transfer (DBT) directly into workers' Aadhaar-seeded accounts.",
+        "GeoMGNREGA (with ISRO Bhuvan) tags all created assets across three stages: before, during, and after completion."
+      ],
+      "ta": [
+        "நிதிப் பகிர்வு: திறனற்ற கூலிக்கு 100% மத்திய நிதி; தளவாடப் பொருட்கள் செலவுக்கு 75:25 மத்திய-மாநில பகிர்வு.",
+        "மாநில அரசு 100% வேலையின்மை படியை ஏற்கிறது; நிர்வாகச் செலவுக்கு மத்திய நிதியில் 6% வரை பயன்படுத்தலாம்.",
+        "மாவட்ட அளவில் நிதியாண்டில் கூலி மற்றும் பொருட்களின் விகிதம் 60:40 ஆக பராமரிக்கப்படுவது கட்டாயம்.",
+        "கிராம ஊராட்சி முதன்மை அமைப்பாக விளங்கி, குறைந்தபட்சம் 50% பணிகளை நேரடியாகச் செய்ய வேண்டும்.",
+        "கிராம சபை ஆண்டு திட்டப் பட்டியலை அங்கீகரிக்கிறது; அதிகாரிகள் தன்னிச்சையாக திட்டங்களை மாற்ற முடியாது.",
+        "பிரிவு 17-ன் கீழான சமூகத் தணிக்கை ஆறு மாதங்களுக்கு ஒருமுறை கிராம சபையால் நடத்தப்பட வேண்டும்.",
+        "தமிழ்நாடு சமூகத் தணிக்கை சங்கம் (TNSAS) சுதந்திரமான மக்கள் தணிக்கையை களத்தில் நடத்துகிறது.",
+        "NMMS செயலி 2023 ஜனவரி முதல் தினமும் இருவேளை புவிசார் புகைப்பட வருகைப் பதிவை கட்டாயமாக்கியுள்ளது.",
+        "NeFMS மற்றும் ABPS மூலம் இடைத்தரகர்கள் இன்றி கூலித் தொகை நேரடியாக தொழிலாளர் கணக்கிற்குச் செல்கிறது.",
+        "GeoMGNREGA (இஸ்ரோ புவன்) சொத்துக்களை பணிக்கு முன், பணியின் போது, பணி முடிந்த பின் என 3 நிலைகளில் குறியீடு செய்கிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_mgnrega_201",
+        "front_en": "What is the cost-sharing formula between Centre and States for material and skilled labor in MGNREGA?",
+        "front_ta": "MGNREGA-ல் தளவாடப் பொருட்கள் மற்றும் திறனுள்ள தொழிலாளர்களுக்கான மத்திய-மாநில செலவுப் பகிர்வு என்ன?",
+        "back_en": "75% funded by the Central Government and 25% funded by the State Government.",
+        "back_ta": "75% மத்திய அரசு மற்றும் 25% மாநில அரசு."
+      },
+      {
+        "id": "rc_mgnrega_202",
+        "front_en": "What is the statutory wage-to-material expenditure ratio mandated under MGNREGA and at what level is it enforced?",
+        "front_ta": "MGNREGA சட்டத்தின் கீழ் கூலி மற்றும் தளவாடப் பொருட்களுக்கான செலவு விகிதம் என்ன, அது எந்த அளவில் பராமரிக்கப்பட வேண்டும்?",
+        "back_en": "60:40 wage-to-material ratio enforced strictly at the DISTRICT LEVEL across a financial year.",
+        "back_ta": "மாவட்ட அளவில் நிதியாண்டில் 60:40 (கூலி : பொருட்கள்) என்ற விகிதத்தில் பராமரிக்கப்பட வேண்டும்."
+      },
+      {
+        "id": "rc_mgnrega_203",
+        "front_en": "What is the minimum percentage of works in terms of cost that must be executed directly by the Gram Panchayat?",
+        "front_ta": "மதிப்பீட்டு அளவில் குறைந்தபட்சம் எத்தனை சதவீத பணிகள் கிராம ஊராட்சியால் நேரடியாகச் செயல்படுத்தப்பட வேண்டும்?",
+        "back_en": "At least 50% of the total works in terms of cost under Section 16.",
+        "back_ta": "பிரிவு 16-ன் படி மதிப்பீட்டு அளவில் குறைந்தபட்சம் 50% பணிகள்."
+      },
+      {
+        "id": "rc_mgnrega_204",
+        "front_en": "How often is a Social Audit statutorily mandated to be conducted by the Gram Sabha under Section 17?",
+        "front_ta": "பிரிவு 17-ன் படி கிராம சபையால் சமூகத் தணிக்கை எத்தனை காலத்திற்கு ஒருமுறை நடத்தப்பட வேண்டும்?",
+        "back_en": "At least once every six months (twice in a year).",
+        "back_ta": "குறைந்தது ஆறு மாதங்களுக்கு ஒருமுறை (ஆண்டிற்கு இருமுறை)."
+      },
+      {
+        "id": "rc_mgnrega_205",
+        "front_en": "What is the full form of NMMS and what is its operational function in MGNREGA?",
+        "front_ta": "NMMS என்பதன் விரிவாக்கம் என்ன, MGNREGA-ல் அதன் பணி என்ன?",
+        "back_en": "National Mobile Monitoring System; captures twice-daily time-stamped geo-tagged photographic attendance of workers.",
+        "back_ta": "National Mobile Monitoring System; தொழிலாளர்களின் புவிசார் புகைப்பட வருகைப் பதிவை தினமும் இருவேளை பதிவு செய்யும் செயலி."
+      },
+      {
+        "id": "rc_mgnrega_206",
+        "front_en": "Which space organization's satellite portal is integrated with GeoMGNREGA for GIS asset tracking?",
+        "front_ta": "GeoMGNREGA திட்டத்தில் சொத்துக்களைக் கண்காணிக்க எந்த விண்வெளி அமைப்பின் செயற்கைக்கோள் தளம் பயன்படுத்தப்படுகிறது?",
+        "back_en": "ISRO's Bhuvan satellite geo-portal.",
+        "back_ta": "இஸ்ரோவின் (ISRO) புவன் (Bhuvan) செயற்கைக்கோள் தளம்."
+      },
+      {
+        "id": "rc_mgnrega_207",
+        "front_en": "At which three distinct stages are MGNREGA assets geo-tagged under GeoMGNREGA?",
+        "front_ta": "GeoMGNREGA-ன் கீழ் சொத்துக்கள் எந்த மூன்று நிலைகளில் புவிசார் குறியீடு செய்யப்படுகின்றன?",
+        "back_en": "Stage 1 (Before commencement), Stage 2 (During progress), and Stage 3 (Upon completion).",
+        "back_ta": "நிலை 1 (பணி தொடங்கும் முன்), நிலை 2 (பணி நடக்கும் போது), நிலை 3 (பணி முடிந்த பின்)."
+      },
+      {
+        "id": "rc_mgnrega_208",
+        "front_en": "What is the full form of NeFMS in MGNREGA wage administration?",
+        "front_ta": "MGNREGA ஊதிய நிர்வாகத்தில் NeFMS என்பதன் விரிவாக்கம் என்ன?",
+        "back_en": "National Electronic Fund Management System.",
+        "back_ta": "National Electronic Fund Management System (தேசிய மின்னணு நிதி மேலாண்மை முறை)."
+      },
+      {
+        "id": "rc_mgnrega_209",
+        "front_en": "Which Indian state pioneered the independent institutional Social Audit Unit (SSAAT)?",
+        "front_ta": "சுயாதீன சமூகத் தணிக்கை அமைப்பை (SSAAT) இந்தியாவில் முதன்முதலில் அமைத்த மாநிலம் எது?",
+        "back_en": "Andhra Pradesh.",
+        "back_ta": "ஆந்திரப் பிரதேசம்."
+      },
+      {
+        "id": "rc_mgnrega_210",
+        "front_en": "Who prepares and approves the annual Shelf of Projects under MGNREGA?",
+        "front_ta": "MGNREGA-ல் ஆண்டு திட்டப் பட்டியலை (Shelf of Projects) தயாரித்து ஒப்புதல் அளிப்பது யார்?",
+        "back_en": "The Gram Sabha in its open meeting based on local developmental needs.",
+        "back_ta": "உள்ளூர் தேவைகளின் அடிப்படையில் கிராம சபை தனது பொதுக் கூட்டத்தில் தயாரித்து ஒப்புதல் அளிக்கிறது."
+      }
+    ]
+  }
+}

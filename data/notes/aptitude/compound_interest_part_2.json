@@ -1,0 +1,286 @@
+{
+  "topic": "compound_interest_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Compound Interest Part 2 — SI vs CI Differences, Finding Rate/Time & Advanced Models",
+  "title_ta": "கூட்டு வட்டி பகுதி 2 — SI vs CI வேறுபாடு, வட்டி வீதம்/காலம் கண்டறிதல் மற்றும் உயர்நிலை மாதிரிகள்",
+
+  "definition": {
+    "en": "Advanced Compound Interest applications focus on the mathematical difference between Simple Interest and Compound Interest, finding unknown rates or time periods, and multi-stage compounding equations.",
+    "ta": "உயர்நிலை கூட்டு வட்டி பயன்பாடுகளில் தனி வட்டி மற்றும் கூட்டு வட்டிக்கு இடையிலான வேறுபாடு, தெரியாத வட்டி வீதம் அல்லது காலத்தைக் கண்டறிதல் மற்றும் பல கட்ட கூட்டு வட்டி சமன்பாடுகள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers the single most tested Compound Interest question category in TNPSC: the difference between CI and SI for 2 years and 3 years. Mastering CI - SI difference formulas guarantees top marks in Group 1, Group 2/2A, and Group 4.",
+    "ta": "பகுதி 2-ல் TNPSC தேர்வுகளில் மிக அதிகமாகக் கேட்கப்படும் 2 ஆண்டுகள் மற்றும் 3 ஆண்டுகளுக்கான கூட்டு வட்டி - தனி வட்டி வேறுபாட்டுச் சூத்திரங்கள் மற்றும் தெரியாத அசல்/வட்டி வீதம் கண்டறியும் முறைகள் இடம்பெற்றுள்ளன."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "CI - SI Difference for 2 Years (2 ஆண்டுகளுக்கான CI - SI வேறுபாட்டுச் சூத்திரம்)",
+      "formula": "CI - SI = P \\left(\\frac{R}{100}\\right)^2 \\implies P = (CI - SI) \\left(\\frac{100}{R}\\right)^2",
+      "explanation": {
+        "en": "Calculates the difference between Compound Interest and Simple Interest for 2 years at annual rate R%.",
+        "ta": "2 ஆண்டுகளுக்கு R% வட்டி வீதத்தில் கூட்டு வட்டிக்கும் தனி வட்டிக்கும் இடையிலான வேறுபாட்டைக் கண்டறியும் சூத்திரம்."
+      }
+    },
+    {
+      "title": "CI - SI Difference for 3 Years (3 ஆண்டுகளுக்கான CI - SI வேறுபாட்டுச் சூத்திரம்)",
+      "formula": "CI - SI = P \\left(\\frac{R}{100}\\right)^2 \\left(3 + \\frac{R}{100}\\right) = P \\left(\\frac{R}{100}\\right)^2 \\left(\\frac{300 + R}{100}\\right)",
+      "explanation": {
+        "en": "Calculates the difference between Compound Interest and Simple Interest for 3 years at annual rate R%.",
+        "ta": "3 ஆண்டுகளுக்கு R% வட்டி வீதத்தில் கூட்டு வட்டிக்கும் தனி வட்டிக்கும் இடையிலான வேறுபாட்டைக் கண்டறியும் சூத்திரம்."
+      }
+    },
+    {
+      "title": "Finding Unknown Rate / Time in CI (காலம் மற்றும் வட்டி வீதம் கண்டறிதல்)",
+      "formula": "\\frac{A}{P} = \\left(1 + \\frac{R}{100}\\right)^n",
+      "explanation": {
+        "en": "Equate the ratio (A/P) to a power of (1 + R/100) to find missing time n or rate R.",
+        "ta": "தொகை மற்றும் அசலின் விகிதத்தை (A/P) வைத்து விடுபட்ட காலம் n அல்லது வட்டி வீதம் R%-ஐக் கண்டறிதல்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Derivation of 2-Year CI - SI Difference (2-ஆண்டு வேறுபாட்டின் அடிப்படை நிறுவல்)",
+      "points": {
+        "en": [
+          "For 2 years, Simple Interest = 2 × (P × R / 100).",
+          "For 2 years, Compound Interest = P(1 + R/100)² - P = P(2R/100 + R²/10000).",
+          "Difference CI - SI = P(R²/10000) = P(R/100)².",
+          "The difference is simply the interest calculated on the 1st year's interest!"
+        ],
+        "ta": [
+          "2 ஆண்டுகளுக்குத் தனி வட்டி = 2 × (P × R / 100).",
+          "2 ஆண்டுகளுக்குக் கூட்டு வட்டி = P(1 + R/100)² - P = P(2R/100 + R²/10000).",
+          "வேறுபாடு CI - SI = P(R²/10000) = P(R/100)².",
+          "இந்த வேறுபாடு என்பது முதல் ஆண்டின் வட்டி மீது கிடைத்த வட்டியாகும்!"
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "2-Year Difference Direct Ratio Shortcut",
+      "points": {
+        "en": [
+          "If 2-year Difference D is given and Rate R% is known: P = D × (100/R) × (100/R).",
+          "If Difference D and Principal P are given: R = 100 × √(D/P)."
+        ],
+        "ta": [
+          "2-ஆண்டு வேறுபாடு D மற்றும் வட்டி வீதம் R கொடுக்கப்பட்டால்: அசல் P = D × (100/R) × (100/R).",
+          "வேறுபாடு D மற்றும் அசல் P கொடுக்கப்பட்டால்: வட்டி வீதம் R = 100 × √(D/P)."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Applying 2-year difference formula P(R/100)² to 3-year questions",
+      "explanation": {
+        "en": "For 3 years, CI - SI is NOT P(R/100)². The extra factor (3 + R/100) MUST be included!",
+        "ta": "3 ஆண்டுகளுக்கான வினாவிற்கு 2-ஆண்டு சூத்திரத்தைப் பயன்படுத்துவது தவறாகும். (3 + R/100) என்ற கூடுதல் காரணியைக் கண்டிப்பாகச் சேர்க்க வேண்டும்."
+      },
+      "avoidance": {
+        "en": "Always check time n: 2 years → P(R/100)²; 3 years → P(R/100)² × (300+R)/100.",
+        "ta": "காலத்தை கவனிக்கவும்: 2 ஆண்டுகள் → P(R/100)²; 3 ஆண்டுகள் → P(R/100)² × (300+R)/100."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The difference between simple and compound interest on a certain sum of money for 2 years at 2% per annum is ₹4. Find the sum of money.",
+      "method": "2-Year CI-SI Difference Formula",
+      "steps": [
+        "Step 1: Given Difference D = ₹4, Rate R = 2%, Time n = 2 years.",
+        "Step 2: Apply formula: \\(CI - SI = P \\left(\\frac{R}{100}\\right)^2 \\implies 4 = P \\left(\\frac{2}{100}\\right)^2\\).",
+        "Step 3: Simplify: \\(4 = P \\times \\frac{4}{10000} \\implies P = \\frac{4 \\times 10000}{4} = ₹10,000\\)."
+      ],
+      "answer": "₹10,000"
+    },
+    {
+      "id": 2,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The difference between compound interest and simple interest accrued on an amount of ₹18,000 in two years is ₹405. Find the rate of interest per annum.",
+      "method": "Rate Derivation from 2-Year Difference",
+      "steps": [
+        "Step 1: Given P = ₹18,000, Difference D = ₹405, n = 2 years.",
+        "Step 2: Apply formula: \\(405 = 18000 \\left(\\frac{R}{100}\\right)^2 \\implies \\left(\\frac{R}{100}\\right)^2 = \\frac{405}{18000}\\).",
+        "Step 3: Simplify ratio: \\(\\left(\\frac{R}{100}\\right)^2 = \\frac{9}{400} = 0.0225\\).",
+        "Step 4: Take square root: \\(\\frac{R}{100} = \\frac{3}{20} = 0.15 \\implies R = 15\\%\\)."
+      ],
+      "answer": "15% per annum"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The difference between compound interest and simple interest on a certain sum at 8% per annum for 2 years is ₹240. Find the sum.",
+      "method": "2-Year CI-SI Difference Formula",
+      "steps": [
+        "Step 1: Given D = ₹240, R = 8%, n = 2 years.",
+        "Step 2: Apply formula: \\(240 = P \\left(\\frac{8}{100}\\right)^2 = P \\times \\frac{64}{10000}\\).",
+        "Step 3: Solve for P: \\(P = \\frac{240 \\times 10000}{64} = \\frac{15 \\times 10000}{4} = 15 \\times 2500 = ₹37,500\\)."
+      ],
+      "answer": "₹37,500"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In how much time will a sum of ₹1,600 amount to ₹1,852.20 at 5% per annum compound interest?",
+      "method": "Ratio Power Equating Method",
+      "steps": [
+        "Step 1: Given P = ₹1,600, A = ₹1,852.20, R = 5%.",
+        "Step 2: Write ratio equation: \\(\\frac{A}{P} = \\left(1 + \\frac{5}{100}\\right)^n \\implies \\frac{1852.20}{1600} = (1.05)^n\\).",
+        "Step 3: Simplify ratio: \\(\\frac{18522}{16000} = \\frac{9261}{8000} = (1.05)^n\\).",
+        "Step 4: Recognize powers: \\(\\frac{9261}{8000} = \\left(\\frac{21}{20}\\right)^3 = (1.05)^3 \\implies n = 3\\) years."
+      ],
+      "answer": "3 years"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The difference between compound interest and simple interest on a certain sum for 3 years at 10% per annum is ₹155. Find the sum.",
+      "method": "3-Year CI-SI Difference Formula",
+      "steps": [
+        "Step 1: Given Difference D = ₹155, R = 10%, n = 3 years.",
+        "Step 2: Apply 3-year formula: \\(CI - SI = P \\left(\\frac{R}{100}\\right)^2 \\left(3 + \\frac{R}{100}\\right)\\).",
+        "Step 3: Substitute values: \\(155 = P \\left(\\frac{10}{100}\\right)^2 \\left(3 + \\frac{10}{100}\\right) = P \\times \\frac{1}{100} \\times \\frac{31}{10}\\).",
+        "Step 4: Simplify: \\(155 = P \\times \\frac{31}{1000} \\implies P = \\frac{155 \\times 1000}{31} = 5 \\times 1000 = ₹5,000\\)."
+      ],
+      "answer": "₹5,000"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A sum of money becomes 2.25 times itself in 2 years at compound interest compounded annually. Find the rate of interest per annum.",
+      "method": "Multiple Growth Rate Equating Method",
+      "steps": [
+        "Step 1: Given \\(A = 2.25 P \\implies \\frac{A}{P} = 2.25\\), n = 2 years.",
+        "Step 2: Write equation: \\(\\left(1 + \\frac{R}{100}\\right)^2 = 2.25\\).",
+        "Step 3: Take square root: \\(1 + \\frac{R}{100} = \\sqrt{2.25} = 1.5\\).",
+        "Step 4: Solve for R: \\(\\frac{R}{100} = 1.5 - 1 = 0.5 \\implies R = 50\\%\\)."
+      ],
+      "answer": "50% per annum"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the difference between Simple Interest and Compound Interest on ₹5,000 at 10% per annum for 2 years.",
+      "options": ["A) ₹25", "B) ₹50", "C) ₹75", "D) ₹100"],
+      "correct_option": "B) ₹50",
+      "explanation": "Difference = P (R/100)^2 = 5000 × (10/100)^2 = 5000 × 0.01 = ₹50."
+    },
+    {
+      "id": 2,
+      "question": "The difference between CI and SI on a sum for 2 years at 5% p.a. is ₹25. Find the sum.",
+      "options": ["A) ₹8,000", "B) ₹10,000", "C) ₹12,000", "D) ₹15,000"],
+      "correct_option": "B) ₹10,000",
+      "explanation": "P = D × (100/R)^2 = 25 × (100/5)^2 = 25 × 400 = ₹10,000."
+    },
+    {
+      "id": 3,
+      "question": "In how many years will ₹10,000 amount to ₹12,100 at 10% per annum compound interest?",
+      "options": ["A) 1 year", "B) 2 years", "C) 3 years", "D) 4 years"],
+      "correct_option": "B) 2 years",
+      "explanation": "12100 / 10000 = 1.21 = (1.10)^2 => n = 2 years."
+    },
+    {
+      "id": 4,
+      "question": "A sum of money becomes 4 times itself in 2 years at compound interest. Find the rate of interest per annum.",
+      "options": ["A) 50%", "B) 75%", "C) 100%", "D) 200%"],
+      "correct_option": "C) 100%",
+      "explanation": "(1 + R/100)^2 = 4 => 1 + R/100 = 2 => R = 100%."
+    },
+    {
+      "id": 5,
+      "question": "Find the difference between CI and SI on ₹10,000 for 3 years at 10% per annum.",
+      "options": ["A) ₹155", "B) ₹310", "C) ₹450", "D) ₹620"],
+      "correct_option": "B) ₹310",
+      "explanation": "Diff = P(R/100)^2 × (3 + R/100) = 10000 × (1/100) × 3.1 = ₹310."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "2-Year CI - SI Difference",
+      "back": "CI - SI = P (R/100)^2 | P = D (100/R)^2"
+    },
+    {
+      "front": "3-Year CI - SI Difference",
+      "back": "CI - SI = P (R/100)^2 × (3 + R/100)"
+    },
+    {
+      "front": "Finding Time n in CI",
+      "back": "A / P = (1 + R/100)^n ⇒ Match base powers"
+    },
+    {
+      "front": "Finding Rate R from D & P (2 yrs)",
+      "back": "R = 100 × √(Difference / Principal)"
+    },
+    {
+      "front": "Doubling/Multiples in CI",
+      "back": "(1 + R/100)^n = Multiplier k ⇒ Solve for R or n"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Compound Interest Part 2 — Differences & Advanced Models Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Compound Interest Part 2",
+        "children": ["ci_si_diff", "find_rate_time", "multi_growth"]
+      },
+      {
+        "id": "ci_si_diff",
+        "label": "CI - SI Difference",
+        "children": ["diff_2yr", "diff_3yr"]
+      },
+      {
+        "id": "diff_2yr",
+        "label": "2-Yr Diff: D = P(R/100)^2",
+        "children": []
+      },
+      {
+        "id": "diff_3yr",
+        "label": "3-Yr Diff: D = P(R/100)^2 (3 + R/100)",
+        "children": []
+      },
+      {
+        "id": "find_rate_time",
+        "label": "Finding Rate / Time",
+        "children": ["time_power", "rate_root"]
+      },
+      {
+        "id": "time_power",
+        "label": "Time n: A/P = (1+R/100)^n",
+        "children": []
+      },
+      {
+        "id": "rate_root",
+        "label": "Rate R: R = 100 × √(D/P) for 2 yrs",
+        "children": []
+      },
+      {
+        "id": "multi_growth",
+        "label": "Multiple Growth Models",
+        "children": ["k_times"]
+      },
+      {
+        "id": "k_times",
+        "label": "k-times: (1+R/100)^n = k",
+        "children": []
+      }
+    ]
+  }
+}

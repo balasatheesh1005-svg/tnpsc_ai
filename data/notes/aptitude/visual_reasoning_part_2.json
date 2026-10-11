@@ -1,0 +1,221 @@
+{
+  "topic": "visual_reasoning_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Visual Reasoning Part 2 — Mirror Images, Water Images, Paper Folding & Figure Series",
+  "title_ta": "காட்சித் தர்க்கம் பகுதி 2 — கண்ணாடிப் பிம்பம், நீர்ப் பிம்பம், தாள் மடித்தல் & வடிவத் தொடர்கள்",
+
+  "definition": {
+    "en": "Visual transformation reasoning evaluates lateral reflection (mirror image), vertical reflection (water image), symmetrical unfolding (paper cutting), and pattern progression (figure series).",
+    "ta": "காட்சி மாற்றத் தர்க்கம் என்பது பக்கவாட்டுப் பிரதிபலிப்பு (கண்ணாடிப் பிம்பம்), செங்குத்துப் பிரதிபலிப்பு (நீர்ப் பிம்பம்), சமச்சீர் விரித்தல் (தாள் வெட்டுதல்) மற்றும் அமைப்புகளின் தொடர்ச்சியைக் குறிக்கிறது."
+  },
+
+  "exam_importance": {
+    "en": "Mirror image and water image problems of clock times, capital letters, numbers, and geometric combinations are mandatory topics in TNPSC Group 1, Group 2/2A, and Group 4 exams.",
+    "ta": "கடிகார நேரம், ஆங்கில பெரிய எழுத்துகள், எண்கள் மற்றும் வடிவியல் அமைப்புகளின் கண்ணாடி மற்றும் நீர்ப் பிம்பங்கள் TNPSC தேர்வுகளில் கட்டாய வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 1: Mirror Image Lateral Inversion (கண்ணாடிப் பிம்ப பக்கவாட்டு மாற்றம்)",
+      "formula": "\\text{Left Side} \\iff \\text{Right Side}, \\quad \\text{Top \\& Bottom remain UNCHANGED}",
+      "explanation": {
+        "en": "In a vertical mirror image, left and right swap positions. The top and bottom remain strictly unchanged.",
+        "ta": "செங்குத்துக் கண்ணாடியில் இடப்பக்கமும் வலப்பக்கமும் இடம் மாறுகின்றன. மேல் மற்றும் கீழ்ப் பகுதிகள் மாற்றமடைவதில்லை."
+      }
+    },
+    {
+      "title": "Rule 2: Water Image Vertical Inversion (நீர்ப் பிம்ப செங்குத்து மாற்றம்)",
+      "formula": "\\text{Top Side} \\iff \\text{Bottom Side}, \\quad \\text{Left \\& Right remain UNCHANGED}",
+      "explanation": {
+        "en": "In a horizontal water surface reflection, top and bottom swap positions. Left and right remain strictly unchanged.",
+        "ta": "கிடைமட்ட நீர்மேற்பரப்புப் பிரதிபலிப்பில் மேல் மற்றும் கீழ்ப் பகுதிகள் இடம் மாறுகின்றன. இடது மற்றும் வலது பகுதிகள் மாற்றமடைவதில்லை."
+      }
+    },
+    {
+      "title": "Rule 3: Mirror Image Clock Time Formula (கடிகாரக் கண்ணாடி நேரச் சூத்திரம்)",
+      "formula": "\\text{Mirror Time} = 11:60 - \\text{Actual Time} \\quad (\\text{or } 23:60 - \\text{Actual Time for 24-hr format})",
+      "explanation": {
+        "en": "Subtract the given actual clock time from 11 hours 60 minutes to instantly obtain the exact mirror reflection time.",
+        "ta": "கொடுக்கப்பட்ட உண்மையான கடிகார நேரத்தை 11 மணி 60 நிமிடங்களிலிருந்து கழித்தால் துல்லியமான கண்ணாடி நேரம் கிடைக்கும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Alphabet & Number Inversion Rules (எழுத்துகள் மற்றும் எண்களின் பிம்ப விதிகள்)",
+      "points": {
+        "en": [
+          "Mirror Invariance: 11 capital letters remain UNCHANGED in a vertical mirror: A, H, I, M, O, T, U, V, W, X, Y.",
+          "Water Invariance: 9 capital letters remain UNCHANGED in a water reflection: C, D, E, H, I, K, O, X, B (symmetric B).",
+          "Word Mirror Order: The mirror image of a word reverses the character order AND reflects each individual letter! Example: 'TNPSC' -> C-R-S-P-N (each reflected).",
+          "Paper Folding & Unfolding: Folding along a dashed line is equivalent to taking a mirror image across that fold line axis."
+        ],
+        "ta": [
+          "கண்ணாடி மாற்றமில்லா எழுத்துகள்: 11 பெரிய எழுத்துகள் கண்ணாடியில் மாறாமல் இருக்கும்: A, H, I, M, O, T, U, V, W, X, Y.",
+          "நீர் மாற்றமில்லா எழுத்துகள்: 9 பெரிய எழுத்துகள் நீர்ப்பிம்பத்தில் மாறாமல் இருக்கும்: C, D, E, H, I, K, O, X, B.",
+          "வார்த்தையின் கண்ணாடிப் பிம்பம்: வார்த்தையின் எழுத்து வரிசை தலைகீழாவதோடு, ஒவ்வொரு எழுத்தும் பக்கவாட்டில் மாறும்! உதாரணம்: 'TNPSC' -> C, S, P, N, T (ஒவ்வொன்றும் மாற வேண்டும்).",
+          "தாள் மடித்தல் & விரித்தல்: புள்ளி வைக்கப்பட்ட கோட்டின் வழியே தாளை மடிப்பது அக்கோட்டை அச்சுப் புள்ளியாகக் கொண்டு கண்ணாடிப் பிம்பம் எடுப்பதற்குச் சமம்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Clock Mirror Time Shortcut",
+      "explanation": {
+        "en": "If a clock reads 4:25, its mirror image time is 11:60 - 4:25 = 7:35!\nIf clock reads 8:15:40, mirror time is 11:59:60 - 8:15:40 = 3:44:20!",
+        "ta": "கடிகார நேரம் 4:25 எனில், அதன் கண்ணாடி நேரம் 11:60 - 4:25 = 7:35!\nகடிகார நேரம் 8:15:40 எனில், கண்ணாடி நேரம் 11:59:60 - 8:15:40 = 3:44:20!"
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Clock Mirror Image Calculation",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "If a wall clock shows the time as 3:40 when viewed directly, what time will it display in a plane mirror placed vertically opposite to it?",
+        "ta": "ஒரு சுவர்க் கடிகாரத்தில் நேரடியாகப் பார்க்கும்போது நேரம் 3:40 எனக் காட்டுகிறது. அதற்கெதிராகச் செங்குத்தாக வைக்கப்பட்டுள்ள கண்ணாடியில் தெரியும் நேரம் என்ன?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Use the Mirror Time Formula: Mirror Time = 11:60 - Actual Time.",
+        "Step 2: Hours = 11 - 3 = 8.",
+        "Step 3: Minutes = 60 - 40 = 20.",
+        "Mirror Time = 8:20."
+      ],
+      "final_answer": "8:20",
+      "tnpsc_trap": {
+        "en": "Do not subtract from 12:00 directly without converting 1 hour into 60 minutes.",
+        "ta": "12:00-லிருந்து கழிக்கும் போது 1 மணியை 60 நிமிடங்களாக மாற்ற மறந்து விடக் கூடாது."
+      }
+    },
+    {
+      "model_name": "Model 2: Word Mirror Reflection Identification",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "Which of the following represents the correct mirror image of the word 'REASONING' when a vertical mirror is placed on its right?",
+        "ta": "'REASONING' என்ற வார்த்தையின் வலப்புறம் செங்குத்துக் கண்ணாடி வைக்கப்பட்டால் அதன் சரியான கண்ணாடிப் பிம்பம் எது?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Reversing word order gives letter sequence starting from the last letter G -> N -> I -> N -> O -> S -> A -> E -> R.",
+        "Step 2: Perform lateral reflection for each individual character.",
+        "G becomes ⅁, N becomes ᴎ, S becomes Ƨ, E becomes Ǝ, R becomes ᴚ.",
+        "A, I, O remain symmetrical.",
+        "Step 3: Match the reversed sequence with individual character reflections."
+      ],
+      "final_answer": "G(reflected) N(reflected) I N(reflected) O S(reflected) A E(reflected) R(reflected)",
+      "tnpsc_trap": {
+        "en": "A common mistake is reversing the letter order but leaving individual letter shapes unreflected!",
+        "ta": "எழுத்துகளின் வரிசையை மட்டும் மாற்றி விட்டு, தனிப்பட்ட எழுத்துகளின் வடிவத்தை மாற்றாமல் விடுவது பொதுவான தவறாகும்!"
+      }
+    },
+    {
+      "model_name": "Model 3: Water Reflection of Numbers",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "Find the water image of the number sequence '4 8 3 9 7'.",
+        "ta": "'4 8 3 9 7' என்ற எண் தொடரின் சரியான நீர்ப்பிம்பத்தைக் காண்க."
+      },
+      "step_by_step_solution": [
+        "Step 1: Water reflection keeps character order from left to right UNCHANGED: 4 -> 8 -> 3 -> 9 -> 7.",
+        "Step 2: Perform vertical top-to-bottom inversion for each number:",
+        "4 flips vertically (top crossbar goes to bottom).",
+        "8 remains symmetric vertically (small loop top, larger loop bottom inverts).",
+        "3 top and bottom curves invert.",
+        "9 flips vertically into a shape resembling 6.",
+        "7 horizontal top bar goes to bottom."
+      ],
+      "final_answer": "Vertically flipped sequence [4 8 3 9 7] from left to right",
+      "tnpsc_trap": {
+        "en": "Do NOT reverse the left-to-right sequence of characters in a water reflection! Word order stays left-to-right.",
+        "ta": "நீர்ப்பிம்பத்தில் இடமிருந்து வலமான எழுத்து/எண் வரிசையைத் திருப்பிப் போடக் கூடாது! வரிசை மாறாது."
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "vis_p2_q1",
+      "question_en": "A clock shows 9:15. What is its mirror image time?",
+      "question_ta": "கடிகார நேரம் 9:15 எனில், அதன் கண்ணாடிப் பிம்ப நேரம் என்ன?",
+      "options": ["2:45", "3:45", "2:15", "3:15"],
+      "answer": "2:45",
+      "explanation_en": "Mirror Time = 11:60 - 9:15 = 2:45.",
+      "explanation_ta": "கண்ணாடி நேரம் = 11:60 - 9:15 = 2:45."
+    },
+    {
+      "id": "vis_p2_q2",
+      "question_en": "Which of the following capital English letters remains unchanged in BOTH vertical mirror image AND horizontal water image?",
+      "question_ta": "கீழ்கண்ட ஆங்கில பெரிய எழுத்துகளில் எது செங்குத்துக் கண்ணாடிப் பிம்பம் மற்றும் கிடைமட்ட நீர்ப்பிம்பம் இரண்டிலும் மாறாமல் இருக்கும்?",
+      "options": ["A", "H", "M", "W"],
+      "answer": "H",
+      "explanation_en": "Letters H, I, O, X are symmetric across both vertical and horizontal mirror axes.",
+      "explanation_ta": "H, I, O, X ஆகிய எழுத்துகள் செங்குத்து மற்றும் கிடைமட்ட அச்சுகள் இரண்டிலும் சமச்சீரானவை."
+    },
+    {
+      "id": "vis_p2_q3",
+      "question_en": "If a square paper is folded in half vertically from right to left, and a triangular hole ▲ is punched at the center pointing UP, what will appear when unfolded?",
+      "question_ta": "ஒரு சதுரத் தாளை வலமிருந்து இடமாகச் செங்குத்தாக பாதியாக மடித்து, நடுவில் மேல்நோக்கிய முக்கோணத் துளை ▲ போட்டால், தாளை விரிக்கும் போது என்ன காணப்படும்?",
+      "options": [
+        "Two triangles pointing UP",
+        "One pointing UP and one pointing DOWN",
+        "Two triangles pointing DOWN",
+        "Single triangle pointing UP"
+      ],
+      "answer": "Two triangles pointing UP",
+      "explanation_en": "Unfolding right-to-left is a vertical mirror reflection (left-right reflection). Vertical mirror image of an UP-pointing triangle ▲ still points UP. So two ▲ triangles appear side-by-side.",
+      "explanation_ta": "வலமிருந்து இடமாக விரிப்பது செங்குத்துக் கண்ணாடிப் பிரதிபலிப்பு. மேல்நோக்கிய முக்கோணம் ▲ கண்ணாடியிலும் மேல்நோக்கியே இருக்கும். எனவே பக்கவாட்டில் இரண்டு ▲ முக்கோணங்கள் தோன்றும்."
+    },
+    {
+      "id": "vis_p2_q4",
+      "question_en": "A clock shows 6:00. What is its water image time?",
+      "question_ta": "கடிகார நேரம் 6:00 எனில், அதன் நீர்ப்பிம்ப நேரம் என்ன?",
+      "options": ["12:00", "12:30", "6:00", "6:30"],
+      "answer": "12:30",
+      "explanation_en": "At 6:00, minute hand points to 12 (UP) and hour hand points to 6 (DOWN). Water reflection flips 12 -> 6 and 6 -> 12. So hands point to 6 and 12, indicating 12:30.",
+      "explanation_ta": "6:00 மணிக்கு நிமிட முள் 12 (மேலே) மணி முள் 6 (கீழே) இருக்கும். நீர்ப்பிம்பத்தில் 12 -> 6 ஆகவும், 6 -> 12 ஆகவும் மாறும். எனவே 12:30 மணியைக் காட்டும்."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_mirror_water",
+      "title_en": "Mirror & Water Rules",
+      "title_ta": "கண்ணாடி & நீர் பிம்ப விதிகள்",
+      "points_en": [
+        "Mirror Image: Left ↔ Right flips; Top/Bottom unchanged.",
+        "Water Image: Top ↔ Bottom flips; Left/Right unchanged.",
+        "Clock Mirror Time = 11:60 - Actual Time.",
+        "H, I, O, X are invariant under both reflections."
+      ],
+      "points_ta": [
+        "கண்ணாடிப் பிம்பம்: இடது ↔ வலது மாறும்; மேல்/கீழ் மாறாது.",
+        "நீர்ப்பிம்பம்: மேல் ↔ கீழ் மாறும்; இடது/வலது மாறாது.",
+        "கடிகாரக் கண்ணாடி நேரம் = 11:60 - உண்மையான நேரம்.",
+        "H, I, O, X ஆகிய எழுத்துகள் இரண்டு பிம்பங்களிலும் மாறாதவை."
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Visual Reasoning Part 2",
+    "structure": [
+      {
+        "node": "Visual Transformations",
+        "subnodes": [
+          "Mirror Image (Lateral Inversion)",
+          "Water Image (Vertical Inversion)",
+          "Clock Reflection Shortcut (11:60)",
+          "Paper Folding & Unfolding Rules"
+        ]
+      }
+    ]
+  }
+}

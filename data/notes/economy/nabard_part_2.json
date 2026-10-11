@@ -1,0 +1,822 @@
+{
+  "meta": {
+    "topic_id": "economy_nabard_part_2",
+    "repository_id": "economy_nabard",
+    "display_title": "NABARD – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "NABARD",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Rural Credit Architecture",
+    "Short-Term Refinance",
+    "ST-SAO",
+    "Rural Infrastructure Development Fund RIDF",
+    "PSL Shortfall",
+    "Long Term Irrigation Fund LTIF",
+    "Micro Irrigation Fund MIF",
+    "Section 35(6) BR Act",
+    "PACS DCCB StCB Hierarchy"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the three-tier short-term and two-tier long-term cooperative credit structures.",
+        "Comprehend the refinance operational windows: ST-SAO vs long-term investment credit."
+      ],
+      "ta": [
+        "மூன்று அடுக்கு குறுகிய கால மற்றும் இரண்டு அடுக்கு நீண்டகாலக் கூட்டுறவுக் கடன் கட்டமைப்புகளைப் புரிந்து கொள்ளுதல்.",
+        "மறுநிதி சாளரங்களை அறிதல்: ST-SAO பயிர்க்கடன் vs நீண்டகால முதலீட்டுக் கடன்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the launch year (1995-96) and initial corpus (₹2,000 crore) of RIDF.",
+        "Recall that RIDF is funded by commercial banks' Priority Sector Lending (PSL) shortfalls."
+      ],
+      "ta": [
+        "RIDF தொடங்கப்பட்ட ஆண்டு (1995-96) மற்றும் ஆரம்ப மூலதனத்தை (₹2,000 கோடி) நினைவில் நிறுத்துதல்.",
+        "வணிக வங்கிகளின் முன்னுரிமைத் துறை கடன் (PSL) பற்றாக்குறையிலிருந்தே RIDF நிதி வருகிறது என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why RIDF credit is sanctioned only to State Governments and not individuals.",
+        "Compare NABARD's supervisory inspection powers with RBI's penal and licensing authority."
+      ],
+      "ta": [
+        "RIDF கடன் ஏன் மாநில அரசுகளுக்கு மட்டுமே வழங்கப்படுகிறது, தனிநபர்களுக்கு வழங்கப்படுவதில்லை என்பதை ஆய்வு செய்தல்.",
+        "நபார்டின் ஆய்வு அதிகாரத்தை ரிசர்வ் வங்கியின் தண்டனை மற்றும் உரிம அதிகாரத்துடன் ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to detect exam traps concerning RIDF borrower eligibility and capital sources.",
+        "Evaluate the role of specialized funds like LTIF and MIF in accelerating rural capital formation."
+      ],
+      "ta": [
+        "RIDF கடனாளிகள் மற்றும் மூலதன ஆதாரம் குறித்த தேர்வுப் பொறிகளைக் கண்டறிய அறிவைப் பயன்படுத்துதல்.",
+        "ஊரக மூலதன உருவாக்கத்தில் LTIF மற்றும் MIF போன்ற பிரத்யேக நிதிகளின் பங்கை மதிப்பீடு செய்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "NABARD – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_credit_delivery_architecture",
+      "title_en": "Rural Cooperative Credit Delivery Architecture",
+      "title_ta": "ஊரகக் கூட்டுறவுக் கடன் விநியோகக் கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_refinance_mechanisms",
+      "title_en": "Refinance Windows & Subvention Mechanisms",
+      "title_ta": "மறுநிதி சாளரங்கள் மற்றும் வட்டி மானிய வழிமுறைகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ridf_framework",
+      "title_en": "Rural Infrastructure Development Fund (RIDF - 1995)",
+      "title_ta": "ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதி (RIDF - 1995)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_specialized_funds",
+      "title_en": "Specialized Sovereign & Climate Funds",
+      "title_ta": "பிரத்யேக இறையாண்மை மற்றும் பருவநிலை நிதிகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "NABARD's operational structure constitutes an integrated rural credit and capital infrastructure framework that channels refinance through Regional Rural Banks (RRBs) and Cooperative Credit Institutions, complemented by sovereign funds such as RIDF that finance rural public infrastructure.",
+      "ta": "நபார்டின் செயல்பாட்டுக் கட்டமைப்பு என்பது ஒரு ஒருங்கிணைந்த ஊரகக் கடன் மற்றும் மூலதன உள்கட்டமைப்பு அமைப்பாகும். இது மண்டல ஊரக வங்கிகள் (RRB) மற்றும் கூட்டுறவுக் கடன் நிறுவனங்கள் வழியாக மறுநிதியைச் செலுத்துகிறது; அத்துடன் RIDF போன்ற இறையாண்மை நிதிகள் மூலம் ஊரகப் பொது உள்கட்டமைப்புக்கு நிதி வழங்குகிறது."
+    },
+    "introduction": {
+      "en": "Operating as the apex of rural finance, NABARD functions not by dispensing retail credit at street counters, but by augmenting the loanable resources of grassroots financial institutions. It provides Short-Term (ST) refinance for seasonal agricultural operations (crop loans), Medium-Term (MT) refinance for allied agrarian activities, and Long-Term (LT) refinance for capital investments such as tractors and irrigation. Concurrently, through the Rural Infrastructure Development Fund (RIDF), created in 1995-96 from commercial banks' priority sector lending shortfalls, NABARD finances State Governments to construct rural roads, bridges, irrigation dams, and social assets. Dedicated funds such as the Long Term Irrigation Fund (LTIF) and Micro Irrigation Fund (MIF) further amplify its infrastructural impact.",
+      "ta": "ஊரக நிதியியலின் உச்சத்தில் இயங்கும் நபார்டு, பொதுமக்களுக்கு நேரடியாக சில்லறைக் கடன்களை வழங்குவதில்லை; மாறாக களமட்ட நிதி நிறுவனங்களின் கடன் வழங்கும் வளங்களை மறுநிதி மூலம் பெருக்குகிறது. இது பருவக்கால வேளாண் பணிகளுக்குக் (பயிர்க்கடன்) குறுகிய கால (ST) மறுநிதியையும், சார்புப் பணிகளுக்கு நடுத்தர கால (MT) மறுநிதியையும், டிராக்டர்கள் மற்றும் பாசனம் போன்ற மூலதன முதலீடுகளுக்கு நீண்டகால (LT) மறுநிதியையும் வழங்குகிறது. அதே நேரத்தில், வணிக வங்கிகளின் முன்னுரிமைத் துறை கடன் பற்றாக்குறையிலிருந்து 1995-96-இல் அமைக்கப்பட்ட ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதி (RIDF) மூலம், கிராமப்புற சாலைகள், பாலங்கள், பாசன அணைகள் மற்றும் சமூகச் சொத்துக்களைக் கட்ட மாநில அரசுகளுக்கு நபார்டு நிதி வழங்குகிறது. நீண்டகால நீர்ப்பாசன நிதி (LTIF) மற்றும் நுண் பாசன நிதி (MIF) போன்ற பிரத்யேக நிதிகள் இதன் உள்கட்டமைப்புத் தாக்கத்தை மேலும் அதிகரிக்கின்றன."
+    },
+    "sec_credit_delivery_architecture": [
+      {
+        "title": "Three-Tier Short-Term Cooperative Credit Structure",
+        "title_ta": "மூன்று அடுக்கு குறுகிய காலக் கூட்டுறவுக் கடன் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Village Level: Primary Agricultural Credit Societies (PACS) deliver short-term crop loans directly to farmer-members.",
+            "District Level: District Central Cooperative Banks (DCCBs) intermediate funds and provide administrative leadership to affiliated PACS.",
+            "State Apex Level: State Cooperative Banks (StCBs) act as the state apex, mobilizing resources and channeling refinance from NABARD downwards.",
+            "NABARD disburses Short-Term Seasonal Agricultural Operations (ST-SAO) refinance through this federated cooperative pyramid."
+          ],
+          "ta": [
+            "கிராம அளவு: தொடக்க வேளாண்மை கூட்டுறவுக் கடன் சங்கங்கள் (PACS) விவசாய உறுப்பினர்களுக்கு நேரடியாகக் குறுகிய காலப் பயிர்க்கடன்களை வழங்குகின்றன.",
+            "மாவட்ட அளவு: மாவட்ட மத்திய கூட்டுறவு வங்கிகள் (DCCB) நிதியை வழிநடத்தி, தங்களோடு இணைக்கப்பட்ட PACS-களுக்கு நிர்வாகத் தலைமை தாங்குகின்றன.",
+            "மாநில உச்ச அளவு: மாநிலக் கூட்டுறவு வங்கிகள் (StCB) மாநில அளவில் உச்ச அமைப்பாகச் செயல்பட்டு, நபார்டிடமிருந்து மறுநிதியைப் பெற்று கீழ்நோக்கி செலுத்துகின்றன.",
+            "இந்த மூன்று அடுக்குக் கூட்டமைப்புக் கூம்பு வழியாகவே பருவக்கால வேளாண் பணிகளுக்கான (ST-SAO) மறுநிதியை நபார்டு வழங்குகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Two-Tier Long-Term Cooperative Credit Structure",
+        "title_ta": "இரண்டு அடுக்கு நீண்டகாலக் கூட்டுறவுக் கடன் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Field/Taluka Level: Primary Cooperative Agriculture and Rural Development Banks (PCARDBs) disburse long-term investment credit.",
+            "State Level: State Cooperative Agriculture and Rural Development Banks (SCARDBs) function as the state-level apex financing body.",
+            "Focus: Financing land improvement, heavy farm machinery, tube-wells, horticulture, and rural godowns for periods extending from 3 to 15-20 years.",
+            "NABARD provides long-term refinance against loans sanctioned by these institutions."
+          ],
+          "ta": [
+            "வட்டார அளவு: முதன்மை கூட்டுறவு வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கிகள் (PCARDB) நீண்டகால முதலீட்டுக் கடன்களை வழங்குகின்றன.",
+            "மாநில அளவு: மாநில கூட்டுறவு வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி (SCARDB) மாநில அளவிலான உச்ச அமைப்பாக இயங்குகிறது.",
+            "கவனக்குவிப்பு: நில மேம்பாடு, கனரகப் பண்ணை இயந்திரங்கள், ஆழ்துளைக் கிணறுகள், தோட்டக்கலை மற்றும் ஊரகக் கிடங்குகளுக்கு 3 முதல் 15-20 ஆண்டுகள் வரை கடன் வழங்குதல்.",
+            "இந்நிறுவனங்கள் வழங்கும் நீண்டகாலக் கடன்களுக்கு நபார்டு மறுநிதி வசதியை அளிக்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_refinance_mechanisms": [
+      {
+        "title": "Short-Term Refinance (ST-SAO) & Interest Subvention",
+        "title_ta": "குறுகிய கால மறுநிதி (ST-SAO) மற்றும் வட்டி மானியம்",
+        "points": {
+          "en": [
+            "Provided for Seasonal Agricultural Operations (SAO) for durations up to 18 months, supporting Kisan Credit Card (KCC) crop disbursements.",
+            "Under the Modified Interest Subvention Scheme (MISS), the Central Government provides interest subvention to NABARD and lending institutions.",
+            "Ensures farmers prompt in repayment access short-term crop loans up to ₹3 lakh at an effective interest rate of just 4% per annum.",
+            "Eligible institutions include State Cooperative Banks, DCCBs, Regional Rural Banks, and Scheduled Commercial Banks."
+          ],
+          "ta": [
+            "18 மாதங்கள் வரையிலான பருவக்கால வேளாண் பணிகளுக்காக (SAO) வழங்கப்படுகிறது; இது கிசான் கடன் அட்டை (KCC) பயிர்க்கடன்களை வழங்க வங்கிகளுக்கு உதவுகிறது.",
+            "மாற்றியமைக்கப்பட்ட வட்டி மானியத் திட்டத்தின் (MISS) கீழ், மத்திய அரசு நபார்டுக்கும் வங்கிகளுக்கும் வட்டி மானியத்தை வழங்குகிறது.",
+            "இதன் மூலம், உரிய காலத்தில் கடனைத் திருப்பிச் செலுத்தும் விவசாயிகள் ₹3 லட்சம் வரையிலான குறுகிய காலப் பயிர்க்கடன்களை ஆண்டுக்கு வெறும் 4% நிகர வட்டியில் பெற முடிகிறது.",
+            "மாநிலக் கூட்டுறவு வங்கிகள், DCCB-கள், மண்டல ஊரக வங்கிகள் மற்றும் வணிக வங்கிகள் இம்மறுநிதியைப் பெறத் தகுதியுடையவை."
+          ]
+        }
+      },
+      {
+        "title": "Long-Term Refinance for Capital Formation",
+        "title_ta": "மூலதன உருவாக்கத்திற்கான நீண்டகால மறுநிதி",
+        "points": {
+          "en": [
+            "Sanctioned for periods ranging from 3 to 15 years to promote private capital formation in agriculture.",
+            "Covers farm mechanization (tractors, harvesters), minor irrigation, dairy development, poultry, fisheries, and agro-processing units.",
+            "Available to Commercial Banks, RRBs, Cooperative Banks, Small Finance Banks, and NBFC-MFIs."
+          ],
+          "ta": [
+            "வேளாண்மையில் தனியார் மூலதன உருவாக்கத்தை ஊக்குவிக்க 3 முதல் 15 ஆண்டுகள் வரை வழங்கப்படுகிறது.",
+            "பண்ணை இயந்திரமயமாக்கல் (டிராக்டர்கள், அறுவடை இயந்திரங்கள்), சிறுபாசனம், பால்பண்ணை, கோழிப்பண்ணை, மீன்வளம் மற்றும் வேளாண் பதப்படுத்தும் பிரிவுகளை உள்ளடக்கியது.",
+            "வணிக வங்கிகள், RRB-கள், கூட்டுறவு வங்கிகள், சிறு நிதி வங்கிகள் மற்றும் NBFC-MFI-களுக்குக் கிடைக்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_ridf_framework": [
+      {
+        "title": "Genesis & Capital Source of RIDF",
+        "title_ta": "RIDF-ன் தோற்றம் மற்றும் மூலதன ஆதாரம்",
+        "points": {
+          "en": [
+            "Instituted in Union Budget 1995-96 with an initial corpus of ₹2,000 crore, administered and maintained exclusively by NABARD.",
+            "Capital Source: Scheduled Commercial Banks that fail to achieve their statutory Priority Sector Lending (PSL) targets (40% overall or 18% agriculture sub-target) are mandated by RBI to deposit the shortfall into RIDF.",
+            "Borrowers: Sanctioned EXCLUSIVELY to State Governments, Panchayati Raj Institutions, and State-Owned Corporations for public rural infrastructure (never to individuals).",
+            "Cost of Credit: Concessional interest rate linked to the Bank Rate (typically Bank Rate minus margin)."
+          ],
+          "ta": [
+            "1995-96 மத்திய பட்ஜெட்டில் ₹2,000 கோடி ஆரம்ப நிதியுடன் தொடங்கப்பட்டது; இது நபார்டால் மட்டுமே பிரத்யேகமாகப் பராமரிக்கப்பட்டு நிர்வகிக்கப்படுகிறது.",
+            "மூலதன ஆதாரம்: முன்னுரிமைத் துறை கடன் (PSL) இலக்குகளை (மொத்த 40% அல்லது வேளாண் 18% துணை இலக்கு) அடையத் தவறும் வணிக வங்கிகள், அக்குறைபாட்டுத் தொகையை RIDF-இல் வைப்புத்தொகையாகச் செலுத்த ரிசர்வ் வங்கி கட்டாயமாக்குகிறது.",
+            "கடனாளிகள்: பொது ஊரக உள்கட்டமைப்பை உருவாக்க மாநில அரசுகள், பஞ்சாயத்து அமைப்புகள் மற்றும் அரசு நிறுவனங்களுக்கு மட்டுமே வழங்கப்படுகிறது (தனிநபர்களுக்கு ஒருபோதும் வழங்கப்படுவதில்லை).",
+            "கடன் செலவு: வங்கி விகிதத்துடன் இணைக்கப்பட்ட சலுகை வட்டி விகிதம் (வழக்கமாக வங்கி விகிதத்திற்குக் கீழ்)."
+          ]
+        }
+      },
+      {
+        "title": "Eligible Sectors Under RIDF",
+        "title_ta": "RIDF-ன் கீழ் தகுதியான துறைகள்",
+        "points": {
+          "en": [
+            "Agriculture and Related Sector: Minor/medium irrigation projects, soil conservation, flood control, check dams, and animal husbandry infrastructure.",
+            "Social Sector: Drinking water supply, primary health centres, village schools, and rural sanitation.",
+            "Rural Connectivity: Construction and strengthening of rural roads and rural bridges to connect hinterlands to mandis."
+          ],
+          "ta": [
+            "வேளாண்மை மற்றும் தொடர்புடைய துறை: சிறு/நடுத்தரப் பாசனத் திட்டங்கள், மண் பாதுகாப்பு, வெள்ளக் கட்டுப்பாடு, தடுப்பணைகள் மற்றும் கால்நடை பராமரிப்பு உள்கட்டமைப்பு.",
+            "சமூகத் துறை: குடிநீர் வழங்கல், ஆரம்ப சுகாதார நிலையங்கள், கிராமப் பள்ளிகள் மற்றும் ஊரகத் துப்புரவு.",
+            "ஊரக இணைப்பு: கிராமப்புறங்களை உழவர் சந்தைகளுடன் இணைக்கும் கிராமப்புற சாலைகள் மற்றும் கிராமப்புறப் பாலங்களைக் கட்டுதல்."
+          ]
+        }
+      }
+    ],
+    "sec_specialized_funds": [
+      {
+        "title": "LTIF, MIF, and WIF",
+        "title_ta": "LTIF, MIF மற்றும் WIF நிதிகள்",
+        "points": {
+          "en": [
+            "Long Term Irrigation Fund (LTIF): Created in 2016-17 with an initial corpus of ₹20,000 crore to fast-track 99 prioritized major and medium irrigation projects under PMKSY-AIBP.",
+            "Micro Irrigation Fund (MIF): Set up in 2018-19 with a corpus of ₹5,000 crore to assist States in expanding micro-irrigation (drip and sprinkler systems) under Per Drop More Crop.",
+            "Warehouse Infrastructure Fund (WIF): Instituted with a ₹5,000 crore corpus to finance modern scientific storage infrastructure, cold chains, and silos to minimize post-harvest agricultural losses."
+          ],
+          "ta": [
+            "நீண்டகால நீர்ப்பாசன நிதி (LTIF): PMKSY-AIBP திட்டத்தின் கீழ் 99 முன்னுரிமைப் பெரிய மற்றும் நடுத்தரப் பாசனத் திட்டங்களை முடிக்க 2016-17-இல் ₹20,000 கோடி ஆரம்ப நிதியுடன் உருவாக்கப்பட்டது.",
+            "நுண் பாசன நிதி (MIF): 'சொட்டு நீர் மூலம் அதிகப் பயிர்' திட்டத்தின் கீழ் நுண்பாசனப் பரப்பை (சொட்டு நீர் & தெளிப்பு நீர்) விரிவாக்க மாநிலங்களுக்கு உதவ 2018-19-இல் ₹5,000 கோடி நிதியுடன் அமைக்கப்பட்டது.",
+            "கிடங்கு உள்கட்டமைப்பு நிதி (WIF): அறுவடைக்குப் பிந்தைய இழப்புகளைக் குறைக்க நவீன அறிவியல் சேமிப்புக் கிடங்குகள், குளிர்பதனச் சங்கிலிகள் மற்றும் சேமிப்புக் கலன்களை அமைக்க ₹5,000 கோடி நிதியுடன் தொடங்கப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Climate Change Adaptation Mandate",
+        "title_ta": "பருவநிலை மாற்றத் தழுவல் ஆணை",
+        "points": {
+          "en": [
+            "NABARD is accredited as the National Implementing Entity (NIE) for the UN Green Climate Fund (GCF) and the Adaptation Fund under UNFCCC.",
+            "It manages the National Adaptation Fund for Climate Change (NAFCC) to finance climate resilience projects in agriculture and water management across vulnerable states."
+          ],
+          "ta": [
+            "ஐக்கிய நாடுகளின் பசுமை காலநிலை நிதி (GCF) மற்றும் UNFCCC-ன் கீழான தழுவல் நிதி (Adaptation Fund) ஆகியவற்றின் தேசிய செயலாக்க அமைப்பாக (NIE) நபார்டு அங்கீகரிக்கப்பட்டுள்ளது.",
+            "பாதிக்கப்படக்கூடிய மாநிலங்களில் வேளாண்மை மற்றும் நீர் மேலாண்மையில் பருவநிலைத் தாங்குதிறன் திட்டங்களைச் செயல்படுத்த தேசிய பருவநிலை மாற்றத் தழுவல் நிதியை (NAFCC) நிர்வகிக்கிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_st_vs_lt_cooperative_credit_p2",
+        "title_en": "Table 1: Structural Hierarchy: Short-Term vs Long-Term Rural Cooperatives",
+        "title_ta": "அட்டவணை 1: கட்டமைப்பு அடுக்கு: குறுகிய கால vs நீண்டகால ஊரகக் கூட்டுறவு அமைப்புகள்",
+        "headers_en": [
+          "Feature",
+          "Short-Term Cooperative Structure",
+          "Long-Term Cooperative Structure"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "குறுகிய காலக் கூட்டுறவுக் கட்டமைப்பு",
+          "நீண்டகாலக் கூட்டுறவுக் கட்டமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "Structural Hierarchy",
+            "Three-Tier Structure (StCB -> DCCB -> PACS)",
+            "Two-Tier / Unitary (SCARDB -> PCARDB / Branches)"
+          ],
+          [
+            "Grassroots Unit",
+            "Primary Agricultural Credit Society (PACS)",
+            "Primary Cooperative Agriculture & Rural Dev Bank (PCARDB)"
+          ],
+          [
+            "Tenure Horizon",
+            "Short to Medium-Term (Up to 12-18 months)",
+            "Long-Term (3 to 15-20 years)"
+          ],
+          [
+            "Credit Objective",
+            "Seasonal crop inputs (seeds, fertilizers, fuel, wages)",
+            "Capital asset creation (tractors, tube-wells, land leveling)"
+          ],
+          [
+            "Collateral Standard",
+            "Hypothecation of standing crop and personal surety",
+            "Mortgage of agricultural land and immovable assets"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடுக்கு முறை",
+            "மூன்று அடுக்கு முறை (StCB -> DCCB -> PACS)",
+            "இரண்டு அடுக்கு முறை (SCARDB -> PCARDB / கிளைகள்)"
+          ],
+          [
+            "அடித்தள அலகு",
+            "தொடக்க வேளாண்மை கூட்டுறவுக் கடன் சங்கம் (PACS)",
+            "முதன்மை கூட்டுறவு வேளாண் மற்றும் ஊரக வளர்ச்சி வங்கி (PCARDB)"
+          ],
+          [
+            "கடன் காலம்",
+            "குறுகிய / நடுத்தர காலம் (12-18 மாதங்கள் வரை)",
+            "நீண்ட காலம் (3 முதல் 15-20 ஆண்டுகள் வரை)"
+          ],
+          [
+            "கடனின் நோக்கம்",
+            "பருவக்கால இடுபொருட்கள் (விதைகள், உரங்கள், கூலி)",
+            "மூலதனச் சொத்துக்கள் (டிராக்டர்கள், ஆழ்துளைக் கிணறு, நில மேம்பாடு)"
+          ],
+          [
+            "பிணை நிபந்தனை",
+            "வளரும் பயிர் அடைமானம் மற்றும் தனிநபர் ஜாமீன்",
+            "விவசாய நில அடமானம் மற்றும் அசையா சொத்துக்கள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ridf_vs_commercial_loans_p2",
+        "title_en": "Table 2: Institutional Contrast: RIDF vs Commercial Market Borrowings",
+        "title_ta": "அட்டவணை 2: நிறுவன வேறுபாடு: RIDF vs வணிகச் சந்தைக் கடன்கள்",
+        "headers_en": [
+          "Dimension",
+          "Rural Infrastructure Development Fund (RIDF)",
+          "Commercial Market Loans"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதி (RIDF)",
+          "வணிகச் சந்தைக் கடன்கள்"
+        ],
+        "rows_en": [
+          [
+            "Eligible Borrowers",
+            "Exclusively State Governments and State Corporations",
+            "Private firms, individuals, PSUs, and Governments"
+          ],
+          [
+            "Interest Rate",
+            "Concessional (Bank Rate minus margin; below market)",
+            "Commercial market-determined floating/fixed rates"
+          ],
+          [
+            "Capital Origin",
+            "Commercial banks' Priority Sector Lending (PSL) shortfall",
+            "Depositor liabilities, CASA, and wholesale bond issues"
+          ],
+          [
+            "Primary Purpose",
+            "Public rural infrastructure (roads, bridges, check dams)",
+            "Commercial viability, industrial and retail credit"
+          ],
+          [
+            "Administering Body",
+            "NABARD exclusively",
+            "Individual Commercial Banks"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தகுதியான கடனாளிகள்",
+            "மாநில அரசுகள் மற்றும் அரசு நிறுவனங்கள் மட்டுமே",
+            "தனியார் நிறுவனங்கள், தனிநபர்கள், பொதுத்துறை நிறுவனங்கள்"
+          ],
+          [
+            "வட்டி விகிதம்",
+            "சலுகை வட்டி (வங்கி விகிதத்திற்குக் கீழ்; சந்தையை விடக் குறைவு)",
+            "சந்தை அடிப்படையில் தீர்மானிக்கப்படும் வணிக வட்டி விகிதங்கள்"
+          ],
+          [
+            "மூலதன ஆதாரம்",
+            "வணிக வங்கிகளின் முன்னுரிமைத் துறை (PSL) பற்றாக்குறை வைப்பு",
+            "பொதுமக்கள் வைப்புகள், CASA மற்றும் கடன் பத்திரங்கள்"
+          ],
+          [
+            "முதன்மை நோக்கம்",
+            "பொது ஊரகக் கட்டமைப்பு (சாலைகள், பாலங்கள், தடுப்பணைகள்)",
+            "வணிக லாபம், தொழில் மற்றும் சில்லறைக் கடன்கள்"
+          ],
+          [
+            "நிர்வாக அமைப்பு",
+            "நபார்டு மட்டுமே",
+            "தனிப்பட்ட வணிக வங்கிகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_specialized_funds_matrix_p2",
+        "title_en": "Table 3: Dedicated Sovereign Funds Administered by NABARD",
+        "title_ta": "அட்டவணை 3: நபார்டு நிர்வகிக்கும் பிரத்யேக இறையாண்மை நிதிகள்",
+        "headers_en": [
+          "Fund Name",
+          "Launch Year",
+          "Initial Corpus",
+          "Specific Target & Focus"
+        ],
+        "headers_ta": [
+          "நிதியின் பெயர்",
+          "தொடங்கப்பட்ட ஆண்டு",
+          "தொடக்க நிதி",
+          "குறிப்பிட்ட இலக்கு & நோக்கம்"
+        ],
+        "rows_en": [
+          [
+            "RIDF",
+            "1995-96",
+            "₹2,000 Crore",
+            "Financing state rural roads, bridges, and check dams from PSL shortfall"
+          ],
+          [
+            "LTIF (Irrigation)",
+            "2016-17",
+            "₹20,000 Crore",
+            "Expediting 99 prioritized major/medium irrigation projects under PMKSY"
+          ],
+          [
+            "MIF (Micro Irrigation)",
+            "2018-19",
+            "₹5,000 Crore",
+            "Expanding drip and sprinkler coverage under Per Drop More Crop"
+          ],
+          [
+            "WIF (Warehouse)",
+            "2013-14",
+            "₹5,000 Crore",
+            "Constructing scientific grain silos, cold storages, and warehouses"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "RIDF (ஊரகக் கட்டமைப்பு)",
+            "1995-96",
+            "₹2,000 கோடி",
+            "PSL பற்றாக்குறையைக் கொண்டு ஊரகச் சாலைகள், பாலங்கள் அமைத்தல்"
+          ],
+          [
+            "LTIF (நீர்ப்பாசன நிதி)",
+            "2016-17",
+            "₹20,000 கோடி",
+            "PMKSY-இன் கீழ் 99 முன்னுரிமைப் பாசனத் திட்டங்களை விரைந்து முடித்தல்"
+          ],
+          [
+            "MIF (நுண்பாசன நிதி)",
+            "2018-19",
+            "₹5,000 கோடி",
+            "சொட்டு நீர் மற்றும் தெளிப்பு நீர்ப் பாசனப் பரப்பை விரிவுபடுத்துதல்"
+          ],
+          [
+            "WIF (கிடங்கு நிதி)",
+            "2013-14",
+            "₹5,000 கோடி",
+            "விஞ்ஞான தானியக் கிடங்குகள், குளிர்பதனச் சங்கிலிகளை உருவாக்குதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_supervisory_roles_p2",
+        "title_en": "Table 4: Supervisory Delineation: NABARD vs Reserve Bank of India",
+        "title_ta": "அட்டவணை 4: ஆய்வுக் கட்டமைப்பு வேறுபாடு: நபார்டு vs இந்திய ரிசர்வ் வங்கி",
+        "headers_en": [
+          "Parameter",
+          "NABARD Supervision",
+          "RBI Supervision"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "நபார்டு கண்காணிப்பு",
+          "ரிசர்வ் வங்கி கண்காணிப்பு"
+        ],
+        "rows_en": [
+          [
+            "Entities Covered",
+            "RRBs, State Cooperative Banks, and District Central Cooperative Banks",
+            "Commercial Banks, Urban Cooperative Banks, NBFCs, All-India DFIs"
+          ],
+          [
+            "Statutory Authority",
+            "Section 35(6) of Banking Regulation Act, 1949",
+            "Section 35(1) of Banking Regulation Act, 1949"
+          ],
+          [
+            "Nature of Findings",
+            "Submits inspection reports and recommendations to RBI",
+            "Direct enforcement, monetary penalties, and administrative directives"
+          ],
+          [
+            "Licensing Authority",
+            "Recommends issuance or cancellation of banking license to RBI",
+            "Sovereign statutory power to issue or cancel bank licenses"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உட்பட்ட நிறுவனங்கள்",
+            "RRB-கள், மாநிலக் கூட்டுறவு வங்கிகள் மற்றும் மாவட்ட மத்திய கூட்டுறவு வங்கிகள்",
+            "வணிக வங்கிகள், நகர்ப்புறக் கூட்டுறவு வங்கிகள், NBFC-கள், அகில இந்திய DFI-கள்"
+          ],
+          [
+            "சட்டப்பூர்வ அதிகாரம்",
+            "வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(6)",
+            "வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(1)"
+          ],
+          [
+            "அறிக்கையின் தன்மை",
+            "ஆய்வு அறிக்கைகள் மற்றும் பரிந்துரைகளை ரிசர்வ் வங்கியிடம் சமர்ப்பிக்கிறது",
+            "நேரடி ஒழுங்குமுறை, அபராதங்கள் மற்றும் நிர்வாக உத்தரவுகள்"
+          ],
+          [
+            "உரிமம் ரத்து அதிகாரம்",
+            "வங்கி உரிமத்தை வழங்க அல்லது ரத்து செய்ய ரிசர்வ் வங்கிக்குப் பரிந்துரைக்கிறது",
+            "வங்கி உரிமத்தை வழங்கவும் ரத்து செய்யவும் இறையாண்மை சட்ட அதிகாரம் கொண்டது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "NABARD Part 2: Structure & Operations",
+        "short_label": "NABARD Operations",
+        "children": [
+          {
+            "title": "Cooperative Architecture",
+            "short_label": "Cooperatives",
+            "children": [
+              {
+                "title": "Short-Term: StCB -> DCCB -> PACS",
+                "short_label": "3-Tier Short-Term"
+              },
+              {
+                "title": "Long-Term: SCARDB -> PCARDB",
+                "short_label": "2-Tier Long-Term"
+              },
+              {
+                "title": "RRB Refinance Window",
+                "short_label": "RRB Channel"
+              }
+            ]
+          },
+          {
+            "title": "Refinance Mechanisms",
+            "short_label": "Refinance",
+            "children": [
+              {
+                "title": "ST-SAO Crop Loans (KCC)",
+                "short_label": "ST-SAO Window"
+              },
+              {
+                "title": "Interest Subvention (4% Net)",
+                "short_label": "4% Subvention"
+              },
+              {
+                "title": "Long-Term Refinance (3-15 Yrs)",
+                "short_label": "LT Investment"
+              }
+            ]
+          },
+          {
+            "title": "Infrastructure Funds",
+            "short_label": "Funds",
+            "children": [
+              {
+                "title": "RIDF (1995-96, PSL Shortfall)",
+                "short_label": "RIDF 1995"
+              },
+              {
+                "title": "LTIF (PMKSY 99 Projects)",
+                "short_label": "LTIF Irrigation"
+              },
+              {
+                "title": "MIF (₹5,000 Cr Micro Irrigation)",
+                "short_label": "MIF 2018"
+              }
+            ]
+          },
+          {
+            "title": "Supervision & Climate",
+            "short_label": "Supervision",
+            "children": [
+              {
+                "title": "Section 35(6) BR Act Inspections",
+                "short_label": "Sec 35(6)"
+              },
+              {
+                "title": "Green Climate Fund (GCF) NIE",
+                "short_label": "GCF NIE"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Who Borrows from RIDF Trap (RIDF-ல் யார் கடன் பெற முடியும் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Candidates assume that since RIDF is named 'Rural Infrastructure Development Fund', rural farmers or private entrepreneurs can take loans from it.",
+            "CORRECT FACT: Individuals cannot borrow from RIDF! RIDF loans are sanctioned EXCLUSIVELY to State Governments, Panchayati Raj Institutions, and state-owned corporations for public capital projects like check dams and bridges.",
+            "WHY CANDIDATES FAIL: The word 'rural' leads candidates to conflate it with individual rural micro-enterprises."
+          ],
+          "ta": [
+            "பொறி: RIDF என்பது 'ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதி' என்பதால் கிராமப்புற விவசாயிகளும் தொழில்முனைவோரும் இதிலிருந்து கடன் பெறலாம் என நினைப்பது.",
+            "சரியான உண்மை: தனிநபர்கள் RIDF-இலிருந்து கடன் பெறவே முடியாது! தடுப்பணைகள், கிராமப்புறப் பாலங்கள் போன்ற பொதுச் சொத்துக்களை உருவாக்க மாநில அரசுகளுக்கும் அரசு கழகங்களுக்கும் மட்டுமே RIDF-இலிருந்து கடன் வழங்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'ஊரகம்' என்ற சொல்லால் தனிநபர் விவசாயக் கடனுடன் தேர்வர்கள் தவறாகப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "RIDF Capital Origin Trap (RIDF மூலதன ஆதாரம் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that RIDF is financed through direct budgetary tax grants from the Union Finance Ministry.",
+            "CORRECT FACT: RIDF is NOT financed by taxpayer budgetary grants. It is funded by deposits from domestic Scheduled Commercial Banks that fail to achieve their statutory Priority Sector Lending (PSL) targets.",
+            "WHY CANDIDATES FAIL: It was announced in the Union Budget speech of 1995-96, leading candidates to mistake it for a budgetary allocation scheme."
+          ],
+          "ta": [
+            "பொறி: RIDF நிதி என்பது மத்திய நிதி அமைச்சகத்தின் நேரடி பட்ஜெட் வரி மானியங்களால் உருவாக்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: RIDF வரிப்பண பட்ஜெட் மானியங்களால் இயங்குவதில்லை! முன்னுரிமைத் துறை கடன் (PSL) இலக்குகளை எட்டத் தவறும் வணிக வங்கிகள் செலுத்தும் பற்றாக்குறை வைப்புத்தொகையிலிருந்தே இந்நிதி திரட்டப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1995-96 மத்திய பட்ஜெட் உரையில் அறிவிக்கப்பட்டதால், இது ஒரு நேரடி பட்ஜெட் திட்டம் எனத் தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "PACS Legal Regulation Trap (PACS சட்டப்பூர்வ ஒழுங்குமுறை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Primary Agricultural Credit Societies (PACS) are governed directly under the Banking Regulation Act like commercial banks.",
+            "CORRECT FACT: PACS do not fall under the Banking Regulation Act, 1949 and are NOT licensed banks. They are cooperative societies registered under respective State Cooperative Societies Acts and supervised through DCCBs/StCBs.",
+            "WHY CANDIDATES FAIL: PACS disburse the bulk of ground-level crop credit, so candidates assume they are full-fledged scheduled banks."
+          ],
+          "ta": [
+            "பொறி: தொடக்க வேளாண்மை கூட்டுறவுக் கடன் சங்கங்கள் (PACS) வணிக வங்கிகளைப் போல வங்கி ஒழுங்குமுறைச் சட்டத்தின் கீழ் வருகின்றன என நினைப்பது.",
+            "சரியான உண்மை: PACS வங்கிகள் அல்ல; அவை வங்கி ஒழுங்குமுறைச் சட்டம் 1949-இன் கீழ் வராது! அவை அந்தந்த மாநிலக் கூட்டுறவு சங்கங்கள் சட்டத்தின் கீழ் பதிவு செய்யப்பட்ட சங்கங்கள் ஆகும். அவை DCCB/StCB வழியாகவே நிதியைப் பெறுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கிராம மட்டத்தில் பெரும்பான்மைப் பயிர்க்கடன்களை PACS வழங்குவதால், அவையும் முழுமையான வங்கிகள் என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Cooperative Tiers Count Trap (கூட்டுறவு அடுக்குகள் எண்ணிக்கை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Confusing the tiers of the short-term cooperative credit structure with the long-term cooperative structure.",
+            "CORRECT FACT: Short-term structure is THREE-TIER in most states (StCB at state level, DCCB at district level, PACS at village level). Long-term structure is TWO-TIER (SCARDB at state level, PCARDB at taluka/district level).",
+            "WHY CANDIDATES FAIL: Both handle rural agricultural credit, causing candidates to mix up the tier counts."
+          ],
+          "ta": [
+            "பொறி: குறுகிய காலக் கூட்டுறவுக் கடன் கட்டமைப்பின் அடுக்குகளையும் நீண்டகாலக் கட்டமைப்பின் அடுக்குகளையும் ஒன்றெனக் குழப்புவது.",
+            "சரியான உண்மை: குறுகிய காலக் கட்டமைப்பு பெரும்பாலான மாநிலங்களில் மூன்று அடுக்கு கொண்டது (மாநிலத்தில் StCB, மாவட்டத்தில் DCCB, கிராமத்தில் PACS). ஆனால் நீண்டகாலக் கட்டமைப்பு இரண்டு அடுக்கு கொண்டது (மாநிலத்தில் SCARDB, வட்டார அளவில் PCARDB).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டுமே கூட்டுறவு விவசாயக் கடன்களைக் கையாள்வதால் அடுக்குகளின் எண்ணிக்கையில் ஏற்படும் குழப்பம்."
+          ]
+        }
+      },
+      {
+        "title": "LTIF Scheme Mapping Trap (LTIF திட்டப் பொருத்தப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming Long Term Irrigation Fund (LTIF) funds rural village ponds under MGNREGA or small watershed projects.",
+            "CORRECT FACT: LTIF was explicitly set up in 2016-17 to finance 99 prioritized major and medium irrigation projects under the Accelerated Irrigation Benefits Programme (AIBP) of Pradhan Mantri Krishi Sinchayee Yojana (PMKSY).",
+            "WHY CANDIDATES FAIL: MGNREGA also constructs water-harvesting structures, leading candidates to misidentify the fund's target scheme."
+          ],
+          "ta": [
+            "பொறி: நீண்டகால நீர்ப்பாசன நிதி (LTIF) என்பது MGNREGA அல்லது சிறு நீர்ப்பிடிப்புப் பணிகளுக்கு நிதி அளிக்கிறது என நினைப்பது.",
+            "சரியான உண்மை: LTIF என்பது பிரதான் மந்திரி கிரிஷி சிஞ்சாயி யோஜனா (PMKSY-AIBP) திட்டத்தின் கீழ் உள்ள 99 முன்னுரிமைப் பெரிய மற்றும் நடுத்தரப் பாசனத் திட்டங்களை முடிக்க 2016-17-இல் பிரத்யேகமாக உருவாக்கப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: MGNREGA திட்டத்திலும் நீர்நிலைகள் தூர்வாரப்படுவதால், திட்டங்களின் நோக்கத்தைத் தவறாகப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "BR Act Inspection Section Trap (வங்கி ஒழுங்குமுறைச் சட்டம் ஆய்வுப் பிரிவு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Quoting Section 35(1) instead of Section 35(6) for NABARD's inspection authority.",
+            "CORRECT FACT: Section 35(1) governs RBI's primary inspection powers over commercial banks; Section 35(6) specifically empowers NABARD to inspect RRBs, State Cooperative Banks, and DCCBs on behalf of RBI.",
+            "WHY CANDIDATES FAIL: Failing to distinguish the specific sub-section governing NABARD's delegated inspection mandate."
+          ],
+          "ta": [
+            "பொறி: நபார்டின் ஆய்வு அதிகாரத்திற்கு பிரிவு 35(6)-க்கு பதிலாக பிரிவு 35(1) எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: பிரிவு 35(1) என்பது வணிக வங்கிகள் மீதான ரிசர்வ் வங்கியின் நேரடி ஆய்வு அதிகாரத்தைக் குறிக்கிறது; பிரிவு 35(6) என்பது ரிசர்வ் வங்கியின் சார்பாக RRB மற்றும் கூட்டுறவு வங்கிகளை ஆய்வு செய்ய நபார்டுக்கு அளிக்கப்பட்ட பிரத்யேக அதிகாரமாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நபார்டின் ஆய்வு ஆணைக்கான குறிப்பிட்ட உட்பிரிவை நினைவில் கொள்ளத் தவறுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The short-term rural cooperative credit structure has three tiers: StCB at state, DCCB at district, and PACS at village level.",
+        "The Rural Infrastructure Development Fund (RIDF) was established in 1995-96 with an initial corpus of ₹2,000 crore.",
+        "RIDF is maintained exclusively by NABARD and financed from Priority Sector Lending (PSL) shortfalls of commercial banks.",
+        "Loans from RIDF are sanctioned only to State Governments and state-owned entities, never to individuals.",
+        "The Long Term Irrigation Fund (LTIF) was created in 2016-17 with an initial corpus of ₹20,000 crore under PMKSY.",
+        "The Micro Irrigation Fund (MIF) was launched in 2018-19 with a corpus of ₹5,000 crore under Per Drop More Crop.",
+        "NABARD inspects RRBs and Rural Cooperative Banks under Section 35(6) of the Banking Regulation Act, 1949.",
+        "Short-Term Refinance for Seasonal Agricultural Operations (ST-SAO) supports crop loans under the Kisan Credit Card scheme.",
+        "NABARD is accredited as a National Implementing Entity (NIE) by the UN Green Climate Fund (GCF).",
+        "Long-Term refinance from NABARD covers farm mechanization, cold storage, dairy, and minor irrigation for 3 to 15 years.",
+        "Primary Agricultural Credit Societies (PACS) are governed by State Cooperative Societies Acts, not the BR Act 1949.",
+        "The Warehouse Infrastructure Fund (WIF) was instituted with a ₹5,000 crore corpus to fund agricultural warehousing and silos."
+      ],
+      "ta": [
+        "குறுகிய கால ஊரகக் கூட்டுறவுக் கடன் கட்டமைப்பு மூன்று அடுக்குகளைக் கொண்டது: மாநில அளவில் StCB, மாவட்ட அளவில் DCCB, கிராம அளவில் PACS.",
+        "ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதி (RIDF) 1995-96-இல் ₹2,000 கோடி ஆரம்ப நிதியுடன் நிறுவப்பட்டது.",
+        "RIDF நபார்டால் மட்டுமே பராமரிக்கப்படுகிறது; வணிக வங்கிகளின் முன்னுரிமைத் துறை கடன் (PSL) பற்றாக்குறையிலிருந்து இதற்கு நிதி வருகிறது.",
+        "RIDF கடன்கள் மாநில அரசுகளுக்கும் அரசு நிறுவனங்களுக்கும் மட்டுமே வழங்கப்படுகின்றன, தனிநபர்களுக்கு அல்ல.",
+        "நீண்டகால நீர்ப்பாசன நிதி (LTIF) 2016-17-இல் PMKSY திட்டத்தின் கீழ் ₹20,000 கோடி ஆரம்ப நிதியுடன் உருவாக்கப்பட்டது.",
+        "நுண் பாசன நிதி (MIF) 2018-19-இல் 'சொட்டு நீர் மூலம் அதிகப் பயிர்' திட்டத்தின் கீழ் ₹5,000 கோடி நிதியுடன் தொடங்கப்பட்டது.",
+        "நபார்டு வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(6)-இன் கீழ் RRB-கள் மற்றும் ஊரகக் கூட்டுறவு வங்கிகளை ஆய்வு செய்கிறது.",
+        "பருவக்கால வேளாண் பணிகளுக்கான (SAO) குறுகிய கால மறுநிதி, கிசான் கடன் அட்டைத் திட்டத்தின் கீழ் பயிர்க்கடன்களை ஆதரிக்கிறது.",
+        "ஐக்கிய நாடுகளின் பசுமை காலநிலை நிதியத்தால் (GCF) நபார்டு ஒரு தேசிய செயலாக்க அமைப்பாக (NIE) அங்கீகரிக்கப்பட்டுள்ளது.",
+        "நபார்டின் நீண்டகால மறுநிதி பண்ணை இயந்திரமயமாக்கல், குளிர்பதனக் கிடங்குகள் மற்றும் பால்பண்ணைக்கு 3 முதல் 15 ஆண்டுகள் வரை வழங்கப்படுகிறது.",
+        "தொடக்க வேளாண்மை கூட்டுறவுக் கடன் சங்கங்கள் (PACS) மாநிலக் கூட்டுறவுச் சட்டங்களால் ஆளப்படுகின்றன, BR சட்டம் 1949-ஆல் அல்ல.",
+        "வேளாண் கிடங்குகள் மற்றும் சேமிப்புக் கலன்களை அமைக்க ₹5,000 கோடி நிதியுடன் கிடங்கு உள்கட்டமைப்பு நிதி (WIF) தொடங்கப்பட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Short-term Cooperative Tiers: 3 (PACS -> DCCB -> StCB).",
+        "Long-term Cooperative Tiers: 2 (PCARDB -> SCARDB).",
+        "RIDF Launch Year: 1995-96 (Initial corpus ₹2,000 crore).",
+        "RIDF Funding Source: Commercial Bank Priority Sector Lending (PSL) shortfalls.",
+        "RIDF Beneficiaries: State Governments & State Entities (NOT individuals).",
+        "LTIF Focus: 99 prioritized major/medium irrigation projects under PMKSY (2016-17).",
+        "MIF Corpus: ₹5,000 crore for micro-irrigation (Per Drop More Crop).",
+        "Inspection Mandate: Section 35(6) of Banking Regulation Act 1949.",
+        "Climate Role: National Implementing Entity for Green Climate Fund (GCF).",
+        "Crop Loan Refinance: Provided through ST-SAO window for KCC borrowers."
+      ],
+      "ta": [
+        "குறுகிய காலக் கூட்டுறவு அடுக்குகள்: 3 (PACS -> DCCB -> StCB).",
+        "நீண்டகாலக் கூட்டுறவு அடுக்குகள்: 2 (PCARDB -> SCARDB).",
+        "RIDF தொடங்கப்பட்ட ஆண்டு: 1995-96 (தொடக்க நிதி ₹2,000 கோடி).",
+        "RIDF நிதி ஆதாரம்: வணிக வங்கிகளின் முன்னுரிமைத் துறை கடன் (PSL) பற்றாக்குறை.",
+        "RIDF பயனாளிகள்: மாநில அரசுகள் மற்றும் அரசு அமைப்புகள் (தனிநபர்கள் அல்ல).",
+        "LTIF நோக்கம்: PMKSY திட்டத்தின் கீழ் 99 முன்னுரிமைப் பாசனத் திட்டங்கள் (2016-17).",
+        "MIF நிதி: நுண்பாசனத்திற்கான ₹5,000 கோடி (சொட்டு நீர் மூலம் அதிகப் பயிர்).",
+        "ஆய்வு ஆணை: வங்கி ஒழுங்குமுறைச் சட்டம் 1949 பிரிவு 35(6).",
+        "காலநிலை பணி: பசுமை காலநிலை நிதிக்கான (GCF) தேசிய செயலாக்க அமைப்பு.",
+        "பயிர்க்கடன் மறுநிதி: KCC பயனாளிகளுக்கு ST-SAO சாளரம் மூலம் வழங்கப்படுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_nab_201",
+        "front_en": "What is the grassroots-level institution in the short-term rural cooperative credit structure?",
+        "front_ta": "குறுகிய கால ஊரகக் கூட்டுறவுக் கடன் கட்டமைப்பில் அடித்தள மட்ட நிறுவனம் எது?",
+        "back_en": "Primary Agricultural Credit Society (PACS) operating at the village level.",
+        "back_ta": "கிராம அளவில் செயல்படும் தொடக்க வேளாண்மை கூட்டுறவுக் கடன் சங்கம் (PACS)."
+      },
+      {
+        "id": "rc_nab_202",
+        "front_en": "In which Union Budget was RIDF set up and with what initial corpus?",
+        "front_ta": "எந்த மத்திய பட்ஜெட்டில் RIDF எந்த ஆரம்ப நிதியுடன் தொடங்கப்பட்டது?",
+        "back_en": "Union Budget 1995-96 with an initial corpus of ₹2,000 crore.",
+        "back_ta": "1995-96 மத்திய பட்ஜெட்டில் ₹2,000 கோடி ஆரம்ப நிதியுடன் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_nab_203",
+        "front_en": "Where does the capital in RIDF originate from?",
+        "front_ta": "RIDF நிதிக்கான பணம் எங்கிருந்து திரட்டப்படுகிறது?",
+        "back_en": "From deposits made by domestic Scheduled Commercial Banks failing to meet their Priority Sector Lending (PSL) targets.",
+        "back_ta": "முன்னுரிமைத் துறை கடன் (PSL) இலக்குகளை அடையத் தவறும் வணிக வங்கிகள் செலுத்தும் வைப்புத்தொகையிலிருந்து."
+      },
+      {
+        "id": "rc_nab_204",
+        "front_en": "Can private companies or individual farmers borrow directly from RIDF?",
+        "front_ta": "தனியார் நிறுவனங்களோ அல்லது விவசாயிகளோ RIDF-இலிருந்து நேரடியாக கடன் பெற முடியுமா?",
+        "back_en": "No. Only State Governments, Panchayati Raj Institutions, and State Corporations can borrow from RIDF for public projects.",
+        "back_ta": "முடியாது. மாநில அரசுகள், பஞ்சாயத்து அமைப்புகள் மற்றும் அரசு நிறுவனங்கள் மட்டுமே பொதுத் திட்டங்களுக்காகக் கடன் பெற முடியும்."
+      },
+      {
+        "id": "rc_nab_205",
+        "front_en": "What was the specific objective of creating the Long Term Irrigation Fund (LTIF) in 2016-17?",
+        "front_ta": "2016-17-இல் நீண்டகால நீர்ப்பாசன நிதியை (LTIF) உருவாக்கியதன் குறிப்பிட்ட நோக்கம் என்ன?",
+        "back_en": "To expedite and complete 99 prioritized major/medium irrigation projects under PMKSY (initial corpus ₹20,000 cr).",
+        "back_ta": "PMKSY திட்டத்தின் கீழ் 99 முன்னுரிமைப் பெரிய/நடுத்தர பாசனத் திட்டங்களை விரைந்து முடிக்க (ஆரம்ப நிதி ₹20,000 கோடி)."
+      },
+      {
+        "id": "rc_nab_206",
+        "front_en": "What is the corpus and aim of the Micro Irrigation Fund (MIF)?",
+        "front_ta": "நுண் பாசன நிதியின் (MIF) மூலதனம் மற்றும் நோக்கம் என்ன?",
+        "back_en": "Corpus of ₹5,000 crore to expand drip and sprinkler irrigation coverage under the 'Per Drop More Crop' initiative.",
+        "back_ta": "₹5,000 கோடி நிதி; 'சொட்டு நீர் மூலம் அதிகப் பயிர்' திட்டத்தின் கீழ் நுண்பாசனப் பரப்பை விரிவுபடுத்துதல்."
+      },
+      {
+        "id": "rc_nab_207",
+        "front_en": "Under which provision of law does NABARD inspect RRBs and Cooperative Banks?",
+        "front_ta": "எந்தச் சட்டப்பிரிவின் கீழ் நபார்டு RRB-கள் மற்றும் கூட்டுறவு வங்கிகளை ஆய்வு செய்கிறது?",
+        "back_en": "Section 35(6) of the Banking Regulation Act, 1949.",
+        "back_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-இன் பிரிவு 35(6)."
+      },
+      {
+        "id": "rc_nab_208",
+        "front_en": "What international accreditation does NABARD hold under the UNFCCC?",
+        "front_ta": "UNFCCC-இன் கீழ் நபார்டு பெற்றுள்ள சர்வதேச அங்கீகாரம் என்ன?",
+        "back_en": "National Implementing Entity (NIE) for the Green Climate Fund (GCF) and Adaptation Fund.",
+        "back_ta": "பசுமை காலநிலை நிதி (GCF) மற்றும் தழுவல் நிதிக்கான தேசிய செயலாக்க அமைப்பு (NIE)."
+      },
+      {
+        "id": "rc_nab_209",
+        "front_en": "What does ST-SAO stand for in NABARD's refinance terminology?",
+        "front_ta": "நபார்டின் மறுநிதிச் சொல்லாடலில் ST-SAO என்பது எதைக் குறிக்கிறது?",
+        "back_en": "Short-Term credit for Seasonal Agricultural Operations (crop loans up to 18 months).",
+        "back_ta": "பருவக்கால வேளாண் பணிகளுக்கான குறுகிய காலக் கடன் (Short-Term Seasonal Agricultural Operations - 18 மாதங்கள் வரையிலான பயிர்க்கடன்)."
+      },
+      {
+        "id": "rc_nab_210",
+        "front_en": "What is the state-level apex body in the long-term cooperative credit structure?",
+        "front_ta": "நீண்டகாலக் கூட்டுறவுக் கடன் கட்டமைப்பில் மாநில அளவிலான உச்ச அமைப்பு எது?",
+        "back_en": "State Cooperative Agriculture and Rural Development Bank (SCARDB).",
+        "back_ta": "மாநில கூட்டுறவு வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி (SCARDB)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "topic_id": "economy_monetary_policy_part_3",
+    "repository_id": "economy_monetary_policy",
+    "display_title": "Monetary Policy – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Monetary Policy",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Monetary Transmission",
+    "External Benchmark Lending Rate",
+    "EBLR Mandate",
+    "MCLR Evolution",
+    "Impossible Trinity",
+    "LTRO TLTRO",
+    "G-SAP"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the four transmission channels of monetary policy and structural banking bottlenecks.",
+        "Comprehend the macroeconomic trade-offs in the Impossible Trinity."
+      ],
+      "ta": [
+        "பணவியல் கொள்கையின் நான்கு பரவல் வழிகள் மற்றும் வங்கி கட்டமைப்புத் தடைகளைப் புரிந்து கொள்ளுதல்.",
+        "சாத்தியமற்ற மும்முனைச் சிக்கலில் உள்ள பேரியல் பொருளாதார வர்த்தகங்களை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the October 1, 2019 EBLR mandate date and allowed benchmarks.",
+        "Recall the chronological lending rate evolution: BPLR -> Base Rate -> MCLR -> EBLR."
+      ],
+      "ta": [
+        "அக்டோபர் 1, 2019 EBLR கட்டாயத் தேதி மற்றும் அனுமதிக்கப்பட்ட அளவுகோல்களை நினைவில் நிறுத்துதல்.",
+        "வங்கி வட்டி முறை காலவரிசையை நினைவுகூருதல்: BPLR -> Base Rate -> MCLR -> EBLR."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why EBLR achieved faster transmission than the internal MCLR system.",
+        "Examine the role of unconventional instruments (LTRO, TLTRO, G-SAP) in post-pandemic market stabilization."
+      ],
+      "ta": [
+        "உள்நாட்டு MCLR முறையை விட EBLR எவ்வாறு வேகமான வட்டிப் பரவலை ஏற்படுத்தியது என பகுப்பாய்வு செய்தல்.",
+        "பேரிடருக்குப் பிந்தைய சந்தை நிலைப்படுத்தலில் வழக்கத்திற்கு மாறான கருவிகளின் (LTRO, TLTRO, G-SAP) பங்கை ஆய்வு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply the Impossible Trinity framework to diagnose international capital control choices.",
+        "Identify high-yield TNPSC traps regarding monetary stances and operational rate resets."
+      ],
+      "ta": [
+        "சர்வதேச மூலதனக் கட்டுப்பாட்டுத் தேர்வுகளைக் கண்டறிய சாத்தியமற்ற மும்முனை கட்டமைப்பைப் பயன்படுத்துதல்.",
+        "பணவியல் நிலைகள் மற்றும் வட்டி மறுசீரமைப்பு குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Monetary Policy – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_monetary_stances",
+      "title_en": "Monetary Policy Stances and Signaling",
+      "title_ta": "பணவியல் கொள்கை நிலைகள் மற்றும் வழிகாட்டல்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_transmission_and_eblr",
+      "title_en": "Monetary Transmission and Lending Rate Evolution",
+      "title_ta": "பணவியல் பரவல் மற்றும் கடன் வட்டி விகித பரிணாமம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_unconventional_and_trilemma",
+      "title_en": "Unconventional Measures & The Macroeconomic Trilemma",
+      "title_ta": "வழக்கத்திற்கு மாறான நடவடிக்கைகள் & பேரியல் பொருளாதார மும்முனைச் சிக்கல்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Advanced Monetary Economics examines monetary policy stances (accommodative, neutral, calibrated tightening), monetary transmission mechanisms and lags, the evolution of benchmark lending rates (from Base Rate to MCLR to EBLR), unconventional measures (LTRO, TLTRO, G-SAP), and the macroeconomic Trilemma.",
+      "ta": "மேம்பட்ட பணவியல் பொருளியல் என்பது பணவியல் கொள்கை நிலைகள் (இணக்கமான, நடுநிலையான, அளவீட்டு இறுக்கம்), பணவியல் பரவல் வழிமுறைகள் மற்றும் தாமதங்கள், கடன் வட்டி விகித முறை பரிணாமம் (அடிப்படை விகிதம், MCLR, EBLR), வழக்கத்திற்கு மாறான நடவடிக்கைகள் (LTRO, TLTRO, G-SAP) மற்றும் பேரியல் பொருளாதார மும்முனைச் சிக்கலை (Trilemma) ஆராய்கிறது."
+    },
+    "introduction": {
+      "en": "Monetary policy decisions do not impact real macroeconomic variables instantly; they operate through transmission channels subject to structural impediments. In India, historical rigidity in commercial bank lending rates prompted systemic reforms, culminating in the mandatory External Benchmark Lending Rate (EBLR) regime in October 2019. Master Group 1 candidates must master how unconventional liquidity interventions stabilized markets post-pandemic, how the Mundell-Fleming 'Impossible Trinity' governs capital controls, and how monetary and fiscal policies coordinate to manage inflation and fiscal deficits.",
+      "ta": "பணவியல் கொள்கை முடிவுகள் உடனடியாக பொருளாதாரத்தில் தாக்கத்தை ஏற்படுத்துவதில்லை; அவை கட்டமைப்புத் தடைகளுக்கு உட்பட்ட பல்வேறு பரவல் வழிகள் மூலம் செயல்படுகின்றன. இந்தியாவில் வங்கிகளின் வட்டி விகிதங்களில் நிலவிய தயக்கம் காரணமாக, அக்டோபர் 2019-ல் வெளிப்புற அளவுகோல் கடன் விகிதம் (EBLR) கட்டாயமாக்கப்பட்டது. குரூப் 1 தேர்வர்கள் கோவிட்டுக்குப் பிந்தைய வழக்கத்திற்கு மாறான பணப்புழக்க நடவடிக்கைகள் எவ்வாறு சந்தையை மீட்டன, முண்டெல்-பிளெமிங் 'சாத்தியமற்ற மும்முனை' (Impossible Trinity) மூலதனக் கட்டுப்பாடுகளை எவ்வாறு தீர்மானிக்கிறது மற்றும் பணவியல்-நிதிக் கொள்கை ஒருங்கிணைப்பு எவ்வாறு செயல்படுகிறது என்பதை ஆழமாக அறிய வேண்டும்."
+    },
+    "sec_monetary_stances": [
+      {
+        "title": "Accommodative (Dovish) Stance",
+        "title_ta": "இணக்கமான (Dovish) கொள்கை நிலை",
+        "points": {
+          "en": [
+            "Adopted during economic slowdowns, recessions, or deflationary conditions.",
+            "Signals readiness to cut the policy repo rate or inject liquidity; implies interest rate hikes are off the table.",
+            "Aims to spur private investment, reduce debt servicing costs, and expand aggregate consumer demand."
+          ],
+          "ta": [
+            "பொருளாதார மந்தநிலை அல்லது பணவாட்டத்தின் போது செயல்படுத்தப்படுகிறது.",
+            "ரெப்போ விகிதத்தைக் குறைக்க அல்லது பணப்புழக்கத்தை அதிகரிக்க தயார்நிலையைக் குறிக்கும்; வட்டி விகித உயர்வு இருக்காது என்பதை உணர்த்தும்.",
+            "தனியார் முதலீட்டைத் தூண்டுதல், கடன் செலவைக் குறைத்தல் மற்றும் நுகர்வோர் தேவையை அதிகரிப்பதை நோக்கமாகக் கொண்டது."
+          ]
+        }
+      },
+      {
+        "title": "Calibrated Tightening (Hawkish) Stance",
+        "title_ta": "அளவீட்டு இறுக்கம் (Hawkish) கொள்கை நிலை",
+        "points": {
+          "en": [
+            "Adopted when headline inflation persistently threatens the upper tolerance band (6%) due to demand overheating or imported commodity shocks.",
+            "Signals that interest rate cuts are ruled out; future rate moves can only be upward (rate hikes) or status quo.",
+            "Aims to cool down aggregate demand, curb speculative asset bubbles, and defend currency depreciation."
+          ],
+          "ta": [
+            "தேவை அதிகரிப்பு அல்லது சர்வதேச கச்சா எண்ணெய் விலையேற்றத்தால் பணவீக்கம் 6% உச்சவரம்பை அச்சுறுத்தும் போது கடைப்பிடிக்கப்படுகிறது.",
+            "வட்டி விகிதக் குறைப்புக்கு வாய்ப்பில்லை என்பதை அறிவிக்கும்; அடுத்த கட்ட நகர்வு வட்டி உயர்வாகவோ அல்லது தற்போதைய நிலையாகவோ மட்டுமே இருக்கும்.",
+            "ஒட்டுமொத்த தேவையைக் கட்டுப்படுத்துதல், சொத்துக் குமிழ்களைத் தணித்தல் மற்றும் ரூபாய் மதிப்பு வீழ்ச்சியைத் தடுப்பதை நோக்கமாகக் கொண்டது."
+          ]
+        }
+      },
+      {
+        "title": "Neutral and Withdrawal of Accommodation Stances",
+        "title_ta": "நடுநிலை மற்றும் இணக்கத்தைத் திரும்பப் பெறுதல் நிலைகள்",
+        "points": {
+          "en": [
+            "Neutral Stance: The central bank can move policy interest rates in either direction (cut or hike) depending upon emerging macroeconomic data.",
+            "Withdrawal of Accommodation: An active transition stance signaling gradual normalization of ultra-loose liquidity and calibrated rate increases to align inflation with the 4% target."
+          ],
+          "ta": [
+            "நடுநிலைக் கொள்கை: வரும் பொருளாதாரத் தரவுகளுக்கு ஏற்ப வட்டி விகிதங்களை இரு திசைகளிலும் (உயர்வு அல்லது குறைவு) மாற்றும் முழு சுதந்திரத்தை மத்திய வங்கி வைத்திருப்பது.",
+            "இணக்கத்தைத் திரும்பப் பெறுதல் (Withdrawal of Accommodation): அதீத பணப்புழக்கத்தை படிப்படியாகக் குறைத்து, பணவீக்கத்தை 4% இலக்கிற்கு கொண்டுவர வட்டி விகிதங்களை உயர்த்தும் இடைக்கால நிலை."
+          ]
+        }
+      }
+    ],
+    "sec_transmission_and_eblr": [
+      {
+        "title": "The Four Monetary Transmission Channels",
+        "title_ta": "நான்கு பணவியல் பரவல் வழிகள்",
+        "points": {
+          "en": [
+            "Interest Rate Channel: Repo cuts lower bank deposit and lending rates, reducing borrowing costs and stimulating business investment.",
+            "Credit / Bank Lending Channel: Liquidity injections expand loanable reserves, increasing the supply of commercial bank credit.",
+            "Asset Price Channel: Lower interest rates boost equity and real estate valuations, increasing household wealth and consumption.",
+            "Exchange Rate Channel: Lower domestic interest rates cause capital outflows, depreciating the Rupee and enhancing net export competitiveness."
+          ],
+          "ta": [
+            "வட்டி விகித வழி: ரெப்போ குறைப்பு வங்கிகளின் கடன் வட்டிகளைக் குறைத்து, தொழில் முதலீடுகளைத் தூண்டுகிறது.",
+            "வங்கி கடன் வழி: பணப்புழக்க அதிகரிப்பு வங்கிகளின் கடன் வழங்கும் திறனை விரிவுபடுத்துகிறது.",
+            "சொத்து விலை வழி: குறைந்த வட்டி விகிதங்கள் பங்குச் சந்தை மற்றும் ரியல் எஸ்டேட் மதிப்பை உயர்த்தி நுகர்வை ஊக்குவிக்கின்றன.",
+            "செலாவணி மாற்று வழி: உள்நாட்டு வட்டி குறைவு மூலதன வெளியேற்றத்தை ஏற்படுத்தி ரூபாயின் மதிப்பைக் குறைத்து ஏற்றுமதியை ஊக்குவிக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Evolution: Prime Lending Rate to EBLR (1994-2019)",
+        "title_ta": "பரிணாமம்: முதன்மைக் கடன் விகிதம் முதல் EBLR வரை (1994-2019)",
+        "points": {
+          "en": [
+            "Benchmark Prime Lending Rate (BPLR - 2003): Fully non-transparent; banks routinely lent to prime corporates below BPLR while overcharging retail borrowers.",
+            "Base Rate System (2010): Introduced cost-of-funds benchmark; banks could not lend below Base Rate, but transmission remained sluggish.",
+            "Marginal Cost of Funds-based Lending Rate (MCLR - 2016): Linked loan rates to the marginal cost of raising new deposits; transmission remained delayed due to annual reset clauses.",
+            "External Benchmark Lending Rate (EBLR - Mandated Oct 1, 2019): All new floating-rate retail and MSME loans must be pegged to an external market benchmark (RBI Repo Rate, 91-day T-Bill, or 182-day T-Bill). Resulted in immediate, 100% transparent transmission of policy repo rate cuts to borrowers."
+          ],
+          "ta": [
+            "BPLR (2003): வெளிப்படைத்தன்மையற்ற முறை; பெருநிறுவனங்களுக்கு குறைந்த வட்டியில் கடன் வழங்கி தனிநபர் நுகர்வோருக்கு அதிக வட்டி வசூலித்தன.",
+            "அடிப்படை விகிதம் (Base Rate - 2010): நிதிச் செலவு அளவுகோல்; இதற்கு கீழ் கடன் வழங்க முடியாது என்றாலும் வட்டி மாற்றங்கள் மக்களிடம் மெதுவாகவே சென்றடைந்தன.",
+            "MCLR (2016): புதிய வைப்புத்தொகைகளின் விளிம்புநிலை நிதிச் செலவுடன் இணைக்கப்பட்டது; ஆனால் ஆண்டுக்கொருமுறை வட்டி மாற்றும் விதியால் தாமதம் ஏற்பட்டது.",
+            "வெளிப்புற அளவுகோல் கடன் விகிதம் (EBLR - அக்டோபர் 1, 2019): அனைத்து புதிய சில்லறை மற்றும் MSME கடன்களும் வெளிப்புற சந்தை அளவுகோலுடன் (ரெப்போ, 91-நாள் அல்லது 182-நாள் கருவூலப் பத்திரம்) கட்டாயமாக இணைக்கப்பட வேண்டும். இது உடனடி மற்றும் 100% வெளிப்படையான வட்டி பரவலை ஏற்படுத்தியது."
+          ]
+        }
+      }
+    ],
+    "sec_unconventional_and_trilemma": [
+      {
+        "title": "Unconventional Liquidity Interventions",
+        "title_ta": "வழக்கத்திற்கு மாறான பணப்புழக்க நடவடிக்கைகள்",
+        "points": {
+          "en": [
+            "Long-Term Repo Operations (LTRO): 1-year and 3-year term repos at the prevailing policy repo rate to ensure durable long-term liquidity for banks.",
+            "Targeted Long-Term Repo Operations (TLTRO): Funds borrowed by banks had to be mandatorily deployed in corporate bonds, commercial paper, and debentures of stressed sectors.",
+            "G-Sec Acquisition Programme (G-SAP): Explicit commitment by the RBI to purchase pre-announced quantities of government bonds to anchor sovereign yields and calm bond market volatility."
+          ],
+          "ta": [
+            "நீண்ட கால ரெப்போ நடவடிக்கைகள் (LTRO): வங்கிகளுக்கு நீண்ட கால பணப்புழக்கத்தை உறுதிசெய்ய 1 ஆண்டு மற்றும் 3 ஆண்டு காலத்திற்கு ரெப்போ வட்டியில் கடன் வழங்குதல்.",
+            "இலக்கு வைக்கப்பட்ட நீண்ட கால ரெப்போ (TLTRO): வங்கிகள் பெறும் நிதியை குறிப்பிட்ட பாதிக்கப்பட்ட துறைகளின் கார்ப்பரேட் பத்திரங்கள் மற்றும் வணிகத் தாள்களில் கட்டாயமாக முதலீடு செய்தல்.",
+            "அரசுப் பத்திரங்கள் கையகப்படுத்தல் திட்டம் (G-SAP): பத்திர சந்தை ஏற்ற இறக்கங்களைத் தணிக்க முன்கூட்டியே அறிவிக்கப்பட்ட தொகையில் அரசுப் பத்திரங்களை வாங்குவதற்கான ரிசர்வ் வங்கியின் வெளிப்படையான உறுதிப்பாடு."
+          ]
+        }
+      },
+      {
+        "title": "The Impossible Trinity (Mundell-Fleming Trilemma)",
+        "title_ta": "சாத்தியமற்ற மும்முனைச் சிக்கல் (Mundell-Fleming Trilemma)",
+        "points": {
+          "en": [
+            "Core Theorem: An open economy cannot simultaneously maintain all three of the following policy goals: (1) Fixed foreign exchange rate, (2) Free cross-border capital flow, and (3) Independent domestic monetary policy.",
+            "India's Choice: India maintains an independent monetary policy and allows managed capital mobility, meaning it must accept a flexible/managed floating exchange rate."
+          ],
+          "ta": [
+            "முதன்மை கோட்பாடு: ஒரு திறந்த பொருளாதாரத்தால் பின்வரும் மூன்று கொள்கை இலக்குகளையும் ஒரே நேரத்தில் ஒருசேர அடைய முடியாது: (1) நிலையான அந்நியச் செலாவணி மாற்று விகிதம், (2) தடையற்ற சர்வதேச மூலதனப் புழக்கம், மற்றும் (3) தன்னாட்சி பெற்ற உள்நாட்டுப் பணவியல் கொள்கை.",
+            "இந்தியாவின் தேர்வு: இந்தியா தன்னாட்சி பெற்ற பணவியல் கொள்கையைத் தேர்ந்தெடுத்து மூலதனத்தை ஒழுங்குபடுத்துகிறது; இதனால் மிதக்கும் நெகிழ்வான செலாவணி மாற்று விகிதத்தை ஏற்கிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_lending_rate_regimes_evolution",
+        "title_en": "Table 1: Evolution of Bank Lending Benchmark Regimes in India (2003-Present)",
+        "title_ta": "அட்டவணை 1: இந்தியாவில் வங்கி கடன் வட்டி முறை பரிணாம ஒப்பீடு (2003 முதல்)",
+        "headers_en": [
+          "Feature",
+          "Base Rate (2010-2016)",
+          "MCLR (2016-2019)",
+          "EBLR (2019-Present)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "அடிப்படை விகிதம் (Base Rate)",
+          "MCLR (விளிம்புநிலை நிதிச் செலவு)",
+          "EBLR (வெளிப்புற அளவுகோல் விகிதம்)"
+        ],
+        "rows_en": [
+          [
+            "Benchmarking Base",
+            "Average cost of funds of the bank",
+            "Marginal cost of raising incremental deposits",
+            "External market benchmark (RBI Repo Rate or T-Bills)"
+          ],
+          [
+            "Transmission Speed",
+            "Very slow and rigid; banks protected profit margins",
+            "Moderate; reset clauses delayed cuts by 6-12 months",
+            "Immediate; 100% transmission occurs within 30 days"
+          ],
+          [
+            "Discretion of Bank",
+            "High internal discretion in computing average costs",
+            "Moderate discretion in computing spread and operating costs",
+            "Zero discretion on the benchmark; bank controls only credit spread"
+          ],
+          [
+            "Mandatory Coverage",
+            "Applicable to all commercial bank loans",
+            "Applicable to all floating-rate loans sanctioned after April 2016",
+            "Mandatory for all floating-rate Retail, Personal, and MSME loans"
+          ],
+          [
+            "Transparency Standard",
+            "Completely opaque black-box computation",
+            "Partially transparent formula-based internal calculation",
+            "100% transparent; publicly verifiable external market rate"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அளவுகோல் அடிப்படை",
+            "வங்கியின் சராசரி நிதி திரட்டும் செலவு",
+            "புதிய கூடுதல் வைப்புகளைத் திரட்டுவதற்கான விளிம்புநிலைச் செலவு",
+            "வெளிப்புற சந்தை அளவுகோல் (ரிசர்வ் வங்கி ரெப்போ அல்லது கருவூலப் பத்திரம்)"
+          ],
+          [
+            "பரவல் வேகம்",
+            "மிக மெதுவானது; வங்கிகள் தங்களது லாப வரம்பைப் பாதுகாத்தன",
+            "மிதமானது; ஆண்டு ரீசெட் விதியால் 6-12 மாதங்கள் தாமதமானது",
+            "உடனடியானது; 30 நாட்களுக்குள் 100% பலன் நுகர்வோருக்கு செல்கிறது"
+          ],
+          [
+            "வங்கியின் விருப்புரிமை",
+            "சராசரி செலவைக் கணக்கிடுவதில் அதிக உள்நாட்டு விருப்புரிமை",
+            "செலவு மற்றும் விளிம்பைக் கணக்கிடுவதில் மிதமான விருப்புரிமை",
+            "அளவுகோலில் பூஜ்ஜிய விருப்புரிமை; கடன் இடர் பரவலை மட்டுமே வங்கி தீர்மானிக்கும்"
+          ],
+          [
+            "கட்டாய வரம்பு",
+            "அனைத்து வணிக வங்கிக் கடன்களுக்கும் பொருந்தும்",
+            "ஏப்ரல் 2016-க்குப் பின் வழங்கப்பட்ட அனைத்து மிதக்கும் வட்டிக் கடன்கள்",
+            "அனைத்து மிதக்கும் வட்டி சில்லறை, தனிநபர் மற்றும் MSME கடன்களுக்கு கட்டாயம்"
+          ],
+          [
+            "வெளிப்படைத்தன்மை",
+            "முற்றிலும் ஒளிவுமறைவான கணக்கீட்டு முறை",
+            "ஓரளவு வெளிப்படையான சூத்திரம் சார்ந்த உள்நாட்டுக் கணக்கீடு",
+            "100% வெளிப்படையானது; பொதுமக்கள் சரிபார்க்கக்கூடிய வெளிச்சந்தை விகிதம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_monetary_policy_stances",
+        "title_en": "Table 2: Strategic Matrix of Monetary Policy Stances",
+        "title_ta": "அட்டவணை 2: பணவியல் கொள்கை நிலைகளின் உத்திசார் ஒப்பீடு",
+        "headers_en": [
+          "Stance Type",
+          "Economic Context",
+          "Repo Rate Trajectory",
+          "Primary Objective",
+          "Liquidity Environment"
+        ],
+        "headers_ta": [
+          "கொள்கை நிலை",
+          "பொருளாதார சூழல்",
+          "ரெப்போ விகித நகர்வு",
+          "முதன்மை நோக்கம்",
+          "பணப்புழக்க சூழல்"
+        ],
+        "rows_en": [
+          [
+            "Accommodative (Dovish)",
+            "Growth slowdown, deflation, output gap negative",
+            "Rate cut or pause; no rate hike possible",
+            "Revive investment demand and lower cost of capital",
+            "Surplus liquidity injected and maintained"
+          ],
+          [
+            "Neutral",
+            "Inflation and growth evenly balanced",
+            "Rate can be hiked or cut based on data",
+            "Data-dependent flexibility without forward bias",
+            "Liquidity maintained in neutral equilibrium"
+          ],
+          [
+            "Calibrated Tightening (Hawkish)",
+            "Inflation persistently high, economy overheating",
+            "Rate hike or pause; no rate cut possible",
+            "Anchor inflation expectations and curb demand",
+            "Liquidity systematically absorbed and tightened"
+          ],
+          [
+            "Withdrawal of Accommodation",
+            "Transitioning from pandemic stimulus to normalcy",
+            "Gradual and continuous rate hikes",
+            "Anchor inflation to 4% while exiting ultra-loose policy",
+            "Orderly draining of pandemic excess liquidity"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "இணக்கமான நிலை (Accommodative)",
+            "வளர்ச்சி சுணக்கம், பணவாட்டம், உற்பத்தி இடைவெளி",
+            "வட்டி குறைப்பு அல்லது நிறுத்தம்; உயர்வு இருக்காது",
+            "முதலீட்டு தேவையைத் தூண்டுதல் மற்றும் கடன் செலவைக் குறைத்தல்",
+            "உபரி பணப்புழக்கம் உருவாக்கப்பட்டு பராமரிக்கப்படுகிறது"
+          ],
+          [
+            "நடுநிலை (Neutral)",
+            "பணவீக்கமும் வளர்ச்சியும் சமநிலையில் இருப்பது",
+            "தரவுகளின் அடிப்படையில் வட்டி உயர்த்தப்படலாம் அல்லது குறைக்கப்படலாம்",
+            "முன்கூட்டியே திசையைத் தீர்மானிக்காமல் நெகிழ்வுத்தன்மையுடன் செயல்படுதல்",
+            "பணப்புழக்கம் சமநிலையில் பராமரிக்கப்படுகிறது"
+          ],
+          [
+            "அளவீட்டு இறுக்கம் (Calibrated Tightening)",
+            "பணவீக்கம் தொடர்ச்சியாக உயர்தல், அதீத தேவை",
+            "வட்டி உயர்வு அல்லது நிறுத்தம்; குறைப்புக்கு வாய்ப்பில்லை",
+            "பணவீக்க எதிர்பார்ப்புகளைக் கட்டுப்படுத்துதல் மற்றும் தேவையைத் தணித்தல்",
+            "பணப்புழக்கம் முறையாக உறிஞ்சப்பட்டு இறுக்கப்படுகிறது"
+          ],
+          [
+            "இணக்கத்தைத் திரும்பப் பெறுதல்",
+            "பேரிடர் ஊக்கத்தொகையிலிருந்து இயல்பு நிலைக்கு மாறுதல்",
+            "படிப்படியான தொடர்ச்சியான வட்டி உயர்வுகள்",
+            "அதி-தளர்வுக் கொள்கையிலிருந்து வெளியேறி பணவீக்கத்தை 4%-ல் நிலைநிறுத்துதல்",
+            "பேரிடர் கால உபரி பணப்புழக்கத்தை சீராக அகற்றுதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_unconventional_monetary_tools",
+        "title_en": "Table 3: Unconventional Monetary Policy Tools in India",
+        "title_ta": "அட்டவணை 3: இந்தியாவில் வழக்கத்திற்கு மாறான பணவியல் கொள்கைக் கருவிகள்",
+        "headers_en": [
+          "Tool Name",
+          "Launch Period",
+          "Operational Mechanism",
+          "Targeted Sector / Outcome"
+        ],
+        "headers_ta": [
+          "கருவியின் பெயர்",
+          "தொடங்கப்பட்ட காலம்",
+          "செயல்பாட்டு வழிமுறை",
+          "இலக்குத் துறை / விளைவு"
+        ],
+        "rows_en": [
+          [
+            "LTRO (Long-Term Repo Operations)",
+            "February 2020",
+            "1-year and 3-year term repos at prevailing repo rate",
+            "Ensured durable liquidity to commercial banks at low repo cost"
+          ],
+          [
+            "TLTRO (Targeted LTRO)",
+            "March 2020 (COVID-19)",
+            "Term repos conditional upon investing in corporate debt",
+            "Prevented freeze in commercial paper and corporate bond markets"
+          ],
+          [
+            "G-SAP (G-Sec Acquisition Programme)",
+            "April 2021",
+            "Committed upfront calendar to purchase specific volume of G-Secs",
+            "Stabilized bond yields and anchored sovereign borrowing costs"
+          ],
+          [
+            "Special Liquidity Facility (SLF)",
+            "Periodic crises",
+            "Direct refinancing windows to NABARD, SIDBI, NHB, EXIM Bank",
+            "Provided direct credit lifelines to rural, MSME, and housing sectors"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "LTRO (நீண்ட கால ரெப்போ)",
+            "பிப்ரவரி 2020",
+            "நடப்பு ரெப்போ வட்டியில் 1 மற்றும் 3 ஆண்டு காலக் கடன்கள்",
+            "குறைந்த வட்டி செலவில் வங்கிகளுக்கு நீண்ட கால பணப்புழக்கத்தை உறுதிசெய்தது"
+          ],
+          [
+            "TLTRO (இலக்கு நீண்ட கால ரெப்போ)",
+            "மார்ச் 2020 (கோவிட் காலம்)",
+            "கார்ப்பரேட் கடன் பத்திரங்களில் முதலீடு செய்யும் நிபந்தனையுடன் கூடிய கடன்",
+            "வணிகத் தாள்கள் மற்றும் கார்ப்பரேட் பத்திரச் சந்தை முடங்குவதைத் தடுத்தது"
+          ],
+          [
+            "G-SAP (அரசுப் பத்திரங்கள் வாங்கும் திட்டம்)",
+            "ஏப்ரல் 2021",
+            "குறிப்பிட்ட தொகையில் அரசுப் பத்திரங்களை வாங்குவதற்கான கால அட்டவணை",
+            "அரசுப் பத்திர ஈவுத்தொகையை நிலைநிறுத்தி கடன் செலவைக் கட்டுப்படுத்தியது"
+          ],
+          [
+            "சிறப்பு பணப்புழக்க வசதி (SLF)",
+            "நெருக்கடி காலங்கள்",
+            "நபார்டு, சிட்பி, NHB, எக்சிம் வங்கிக்கு நேரடி மறுநிதியளிப்பு",
+            "கிராமப்புற, MSME மற்றும் வீட்டுக் கடன் துறைகளுக்கு நேரடி நிதி ஆதரவை வழங்கியது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_impossible_trinity_trilemma",
+        "title_en": "Table 4: The Mundell-Fleming Impossible Trinity (Trilemma) Matrix",
+        "title_ta": "அட்டவணை 4: முண்டெல்-பிளெமிங் சாத்தியமற்ற மும்முனைச் சிக்கல் ஒப்பீடு",
+        "headers_en": [
+          "Policy Combination",
+          "Goal 1: Fixed Exchange Rate",
+          "Goal 2: Free Capital Flow",
+          "Goal 3: Sovereign Monetary Autonomy",
+          "Global Real-World Example"
+        ],
+        "headers_ta": [
+          "கொள்கை சேர்க்கை",
+          "இலக்கு 1: நிலையான மாற்று விகிதம்",
+          "இலக்கு 2: தடையற்ற மூலதனப் புழக்கம்",
+          "இலக்கு 3: தன்னாட்சி பெற்ற பணவியல் கொள்கை",
+          "உலகளாவிய உண்மை உதாரணம்"
+        ],
+        "rows_en": [
+          [
+            "Option A (Hard Peg / Currency Board)",
+            "YES (Maintained strictly)",
+            "YES (Full mobility allowed)",
+            "NO (Domestic interest rates dictated entirely by anchor currency)",
+            "Hong Kong / Eurozone member states"
+          ],
+          [
+            "Option B (Closed Capital Account)",
+            "YES (Fixed by central bank)",
+            "NO (Strict capital controls restrict money flow)",
+            "YES (Domestic interest rates set freely for inflation)",
+            "China (historically) / Bretton Woods era"
+          ],
+          [
+            "Option C (Floating Rate / Managed Float)",
+            "NO (Exchange rate floats based on market forces)",
+            "YES (Capital inflows/outflows permitted)",
+            "YES (Monetary Policy Committee independently sets Repo Rate)",
+            "India / United States / Japan / United Kingdom"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "விருப்பம் A (நாணய வாரியம் / நிலையான செலாவணி)",
+            "ஆம் (கண்டிப்பாகப் பராமரிக்கப்படுகிறது)",
+            "ஆம் (முழு மூலதனப் புழக்கம் அனுமதிக்கப்படுகிறது)",
+            "இல்லை (வட்டி விகிதங்கள் முழுமையாக வெளிநாட்டு நாணயத்தால் தீர்மானிக்கப்படும்)",
+            "ஹாங்காங் / யூரோ மண்டல நாடுகள்"
+          ],
+          [
+            "விருப்பம் B (மூடப்பட்ட மூலதனக் கணக்கு)",
+            "ஆம் (மத்திய வங்கியால் நிர்ணயிக்கப்படுகிறது)",
+            "இல்லை (மூலதன வெளியேற்றத்திற்கு கடுமையான கட்டுப்பாடுகள்)",
+            "ஆம் (உள்நாட்டு பணவீக்கத்திற்கு ஏற்ப வட்டி நிர்ணயிக்கப்படும்)",
+            "சீனா (வரலாற்று ரீதியாக) / பிரெட்டன் வூட்ஸ் காலம்"
+          ],
+          [
+            "விருப்பம் C (மிதக்கும் மாற்று விகிதம்)",
+            "இல்லை (சந்தை விதிகளுக்கு ஏற்ப மாற்று விகிதம் மிதக்கும்)",
+            "ஆம் (மூலதன வரத்து/வெளியேற்றம் அனுமதிக்கப்படுகிறது)",
+            "ஆம் (பணவியல் கொள்கைக் குழு தன்னிச்சையாக ரெப்போ விகிதத்தை நிர்ணயிக்கும்)",
+            "இந்தியா / அமெரிக்கா / ஜப்பான் / பிரிட்டன்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Monetary Policy Mastery (Part 3)",
+        "short_label": "Policy Mastery",
+        "children": [
+          {
+            "title": "Policy Stances",
+            "short_label": "Stances",
+            "children": [
+              {
+                "title": "Accommodative (Rate Cuts Allowed)",
+                "short_label": "Accommodative"
+              },
+              {
+                "title": "Calibrated Tightening (Hikes Only)",
+                "short_label": "Hawkish"
+              },
+              {
+                "title": "Neutral (Two-Way Data Dependent)",
+                "short_label": "Neutral"
+              }
+            ]
+          },
+          {
+            "title": "Transmission Evolution",
+            "short_label": "Transmission",
+            "children": [
+              {
+                "title": "Base Rate (2010) to MCLR (2016)",
+                "short_label": "Base to MCLR"
+              },
+              {
+                "title": "EBLR Mandate (October 1, 2019)",
+                "short_label": "EBLR Reform"
+              },
+              {
+                "title": "4 Channels: Rate, Credit, Asset, FX",
+                "short_label": "4 Channels"
+              }
+            ]
+          },
+          {
+            "title": "Unconventional Tools & Trilemma",
+            "short_label": "Macro Limits",
+            "children": [
+              {
+                "title": "LTRO, TLTRO, G-SAP Market Stabilizers",
+                "short_label": "LTRO / G-SAP"
+              },
+              {
+                "title": "The Impossible Trinity Trilemma",
+                "short_label": "Trilemma"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "EBLR Mandatory Date and Sector Trap (EBLR கட்டாய தேதி மற்றும் துறை)",
+        "points": {
+          "en": [
+            "TRAP: Believing that EBLR was introduced in 2016 with MCLR, and that it applies to large corporate loans.",
+            "CORRECT FACT: EBLR was mandated on October 1, 2019, and applies strictly to floating-rate personal, retail, and MSME loans.",
+            "WHY CANDIDATES FAIL: Candidates confuse the 2016 MCLR rollout with the 2019 EBLR mandate."
+          ],
+          "ta": [
+            "பொறி: EBLR முறை 2016-ல் MCLR-உடன் அறிமுகப்படுத்தப்பட்டது என்றும், இது பெருநிறுவனக் கடன்களுக்கும் பொருந்தும் என்றும் நினைப்பது.",
+            "சரியான உண்மை: EBLR அக்டோபர் 1, 2019 அன்று கட்டாயமாக்கப்பட்டது, மேலும் இது சில்லறை, தனிநபர் மற்றும் MSME கடன்களுக்கு மட்டுமே பொருந்தும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2016 MCLR முறையையும் 2019 EBLR சீர்திருத்தத்தையும் ஒன்றாகக் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Accommodative vs Neutral Stance Distinction Trap (இணக்கமான vs நடுநிலைக் கொள்கை வேறுபாடு)",
+        "points": {
+          "en": [
+            "TRAP: Assuming an accommodative stance means the RBI is cutting interest rates at every meeting.",
+            "CORRECT FACT: An accommodative stance guarantees that interest rates will NOT be increased, but rates may remain paused if inflation conditions dictate.",
+            "WHY CANDIDATES FAIL: Candidates equate an accommodative stance with continuous rate cuts rather than an absence of rate hikes."
+          ],
+          "ta": [
+            "பொறி: இணக்கமான கொள்கை நிலை (Accommodative stance) என்றால் ஒவ்வொரு கூட்டத்திலும் ரிசர்வ் வங்கி வட்டியைக் குறைத்துக் கொண்டே இருக்கும் என நினைப்பது.",
+            "சரியான உண்மை: இணக்கமான நிலை என்பது வட்டி விகிதங்கள் கண்டிப்பாக உயர்த்தப்படாது என்பதை மட்டுமே உறுதி செய்கிறது; சூழலுக்கு ஏற்ப வட்டி குறைக்கப்படலாம் அல்லது மாற்றமின்றியும் வைக்கப்படலாம்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இணக்கமான நிலையை தொடர் வட்டி குறைப்பு என தவறாகப் புரிந்துகொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Impossible Trinity Component Trap (சாத்தியமற்ற மும்முனைக் கூறுகள்)",
+        "points": {
+          "en": [
+            "TRAP: Thinking the Impossible Trinity involves fiscal deficit, current account deficit, and inflation.",
+            "CORRECT FACT: The Impossible Trinity (Mundell-Fleming Trilemma) consists strictly of: (1) Fixed Exchange Rate, (2) Free Capital Mobility, and (3) Independent Monetary Policy.",
+            "WHY CANDIDATES FAIL: Candidates mix up the 'Twin Deficit' macroeconomic concept with the Mundell-Fleming 'Trilemma'."
+          ],
+          "ta": [
+            "பொறி: சாத்தியமற்ற மும்முனை என்பது நிதிப் பற்றாக்குறை, நடப்புக் கணக்கு பற்றாக்குறை மற்றும் பணவீக்கம் ஆகியவற்றை உள்ளடக்கியது என நினைப்பது.",
+            "சரியான உண்மை: சாத்தியமற்ற மும்முனை (Trilemma) என்பது: (1) நிலையான செலாவணி மாற்று விகிதம், (2) தடையற்ற மூலதனப் புழக்கம், மற்றும் (3) தன்னாட்சி பணவியல் கொள்கை ஆகியவற்றை மட்டுமே குறிக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'இரட்டைப் பற்றாக்குறை' கருத்தையும் முண்டெல்-பிளெமிங் 'மும்முனை' கோட்பாட்டையும் ஒன்றாகக் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "External Benchmarks Allowed under EBLR Trap (EBLR அனுமதிக்கப்பட்ட அளவுகோல்கள்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that banks can choose an international benchmark like US Federal Funds rate or SOFR for Indian rupee retail loans.",
+            "CORRECT FACT: Under RBI norms, banks can choose only from approved domestic benchmarks: (a) RBI Policy Repo Rate, (b) 91-day T-Bill yield, or (c) 182-day T-Bill yield.",
+            "WHY CANDIDATES FAIL: Candidates mistakenly believe any published financial market index can serve as an external benchmark."
+          ],
+          "ta": [
+            "பொறி: இந்திய ரூபாய் சில்லறைக் கடன்களுக்கு அமெரிக்க ஃபெடரல் வங்கி விகிதம் போன்ற சர்வதேச அளவுகோல்களை வங்கிகள் தேர்வு செய்யலாம் என நினைப்பது.",
+            "சரியான உண்மை: ரிசர்வ் வங்கி அனுமதித்த உள்நாட்டு அளவுகோல்களை மட்டுமே தேர்வு செய்ய முடியும்: (அ) ரிசர்வ் வங்கி ரெப்போ விகிதம், (ஆ) 91-நாள் கருவூலப் பத்திர ஈவுத்தொகை, அல்லது (இ) 182-நாள் கருவூலப் பத்திர ஈவுத்தொகை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: எந்தவொரு சர்வதேச நிதிச் சந்தை குறியீட்டையும் பயன்படுத்தலாம் என்று தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "G-SAP Nature Trap (G-SAP திட்டத்தின் தன்மை)",
+        "points": {
+          "en": [
+            "TRAP: Believing that G-SAP is an ongoing statutory window that runs permanently every financial year.",
+            "CORRECT FACT: G-SAP was a temporary unconventional crisis tool launched in April 2021 during the COVID-19 pandemic and discontinued once market conditions normalized.",
+            "WHY CANDIDATES FAIL: Candidates treat emergency unconventional tools as permanent fixtures of the central bank's liquidity framework."
+          ],
+          "ta": [
+            "பொறி: G-SAP திட்டம் என்பது ஒவ்வொரு நிதி ஆண்டிலும் நிரந்தரமாக இயங்கும் ஒரு சட்டப்பூர்வ சாளரம் என நினைப்பது.",
+            "சரியான உண்மை: G-SAP என்பது கோவிட்-19 பேரிடர் காலத்தில் ஏப்ரல் 2021-ல் தொடங்கப்பட்டு, சந்தை இயல்பு நிலைக்குத் திரும்பியவுடன் நிறுத்தப்பட்ட தற்காலிக வழக்கத்திற்கு மாறான கருவியாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அவசரகால வழக்கத்திற்கு மாறான கருவிகளை நிரந்தரக் கொள்கைக் கருவிகளாக தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Operation Twist Money Supply Trap (ஆபரேஷன் ட்விஸ்ட் பணப்புழக்கப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Operation Twist permanently increases the total money supply in the economy.",
+            "CORRECT FACT: Operation Twist is liquidity-neutral: the RBI sells short-term bonds and buys an equal value of long-term bonds, changing only the maturity profile and yield curve, not total money supply.",
+            "WHY CANDIDATES FAIL: Candidates see the word 'bond purchase' and assume money was injected without noticing the equal simultaneous bond sale."
+          ],
+          "ta": [
+            "பொறி: ஆபரேஷன் ட்விஸ்ட் பொருளாதாரத்தில் உள்ள மொத்தப் பணப்புழக்கத்தை நிரந்தரமாக அதிகரிக்கிறது என நினைப்பது.",
+            "சரியான உண்மை: ஆபரேஷன் ட்விஸ்ட் பணப்புழக்கத்தில் நடுநிலையானது: ரிசர்வ் வங்கி குறுகிய கால பத்திரங்களை விற்று சமமதிப்பிலான நீண்ட கால பத்திரங்களை வாங்குவதால் முதிர்வு காலமும் வட்டி விகிதமும் மட்டுமே மாறும்; மொத்தப் பண அளவு மாறாது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பத்திரங்கள் வாங்கப்பட்டதை மட்டும் கவனித்து, அதே சமயம் சம அளவில் விற்கப்பட்டதை கவனிக்கத் தவறுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "External Benchmark Lending Rate (EBLR) became mandatory for all scheduled commercial banks on October 1, 2019.",
+        "Under EBLR, banks must reset lending interest rates at least once every three months.",
+        "Banks are permitted to adopt only approved benchmarks: RBI Policy Repo Rate, Government of India 91-day Treasury Bill yield, or 182-day Treasury Bill yield.",
+        "Banks are not permitted to alter their lending spread over the external benchmark for three years unless the borrower's credit risk profile deteriorates.",
+        "The Marginal Cost of Funds-based Lending Rate (MCLR) replaced the Base Rate system on April 1, 2016.",
+        "The Base Rate system was introduced on July 1, 2010, replacing the Benchmark Prime Lending Rate (BPLR).",
+        "The Mundell-Fleming 'Impossible Trinity' dictates that an economy cannot simultaneously have a fixed exchange rate, free capital movement, and monetary policy independence.",
+        "Long-Term Repo Operations (LTRO) were conducted by the RBI in February 2020 at the policy repo rate for tenures of one to three years.",
+        "Targeted Long-Term Repo Operations (TLTRO) mandated banks to deploy borrowed funds into corporate bonds and commercial paper of specific stressed industries.",
+        "The Government Securities Acquisition Programme (G-SAP) was launched in April 2021 with a committed purchase target of ₹1 lakh crore in Q1 FY22.",
+        "The interest rate channel is considered the most potent monetary policy transmission channel in modern economies.",
+        "Structural impediments to monetary transmission in India include high small savings interest rates, delayed reset clauses, and high non-performing assets (NPAs)."
+      ],
+      "ta": [
+        "அனைத்து வணிக வங்கிகளுக்கும் வெளிப்புற அளவுகோல் கடன் விகிதம் (EBLR) அக்டோபர் 1, 2019 முதல் கட்டாயமாக்கப்பட்டது.",
+        "EBLR முறையின் கீழ், வங்கிகள் குறைந்தபட்சம் மூன்று மாதங்களுக்கு ஒருமுறையாவது கடன் வட்டி விகிதங்களை மாற்றி அமைக்க வேண்டும்.",
+        "ரிசர்வ் வங்கி ரெப்போ விகிதம், 91-நாள் கருவூலப் பத்திர ஈவுத்தொகை அல்லது 182-நாள் கருவூலப் பத்திர ஈவுத்தொகையை மட்டுமே வங்கிகள் அளவுகோலாகப் பயன்படுத்தலாம்.",
+        "கடன் பெறுபவரின் கடன் இடர் சுயவிவரம் மோசமடையாத வரை, வெளிப்புற அளவுகோலின் மீதான தனது கடன் பரவலை (Spread) மூன்று ஆண்டுகளுக்கு வங்கிகள் மாற்ற முடியாது.",
+        "விளிம்புநிலை நிதிச் செலவு அடிப்படையிலான கடன் விகிதம் (MCLR) ஏப்ரல் 1, 2016 அன்று அடிப்படை விகித முறைக்கு பதிலாக வந்தது.",
+        "அடிப்படை விகித முறை (Base Rate) ஜூலை 1, 2010 அன்று BPLR முறைக்கு மாற்றாக அறிமுகப்படுத்தப்பட்டது.",
+        "முண்டெல்-பிளெமிங் 'சாத்தியமற்ற மும்முனை' என்பது ஒரு பொருளாதாரத்தால் நிலையான மாற்று விகிதம், தடையற்ற மூலதனப் புழக்கம் மற்றும் தன்னாட்சி பணவியல் கொள்கை ஆகிய மூன்றையும் ஒரே நேரத்தில் வைத்திருக்க முடியாது என்பதைக் காட்டுகிறது.",
+        "நீண்ட கால ரெப்போ நடவடிக்கைகள் (LTRO) பிப்ரவரி 2020-ல் 1 முதல் 3 ஆண்டு காலத்திற்கு ரெப்போ வட்டி விகிதத்தில் ரிசர்வ் வங்கியால் நடத்தப்பட்டது.",
+        "TLTRO திட்டத்தின் கீழ் கடன் பெற்ற வங்கிகள் அந்நிதியை குறிப்பிட்ட பாதிக்கப்பட்ட துறைகளின் கார்ப்பரேட் பத்திரங்களில் கட்டாயமாக முதலீடு செய்ய பணிக்கப்பட்டது.",
+        "அரசுப் பத்திரங்கள் கையகப்படுத்தல் திட்டம் (G-SAP) ஏப்ரல் 2021-ல் முதல் காலாண்டில் ₹1 லட்சம் கோடி பத்திரங்களை வாங்கும் இலக்குடன் தொடங்கப்பட்டது.",
+        "நவீன பொருளாதாரங்களில் வட்டி விகிதப் பரவல் வழியே மிகவும் சக்திவாய்ந்த பணவியல் கொள்கை பரவல் வழியாகக் கருதப்படுகிறது.",
+        "அரசு சிறுசேமிப்புத் திட்டங்களின் அதிக வட்டி, தாமதமான மறுசீரமைப்பு விதிகள் மற்றும் வாராக் கடன்கள் (NPAs) ஆகியவை இந்தியாவில் வட்டி விகித பரவலுக்கு முக்கிய தடைகளாக உள்ளன."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Accommodative Stance: Signals readiness to cut repo rate or keep it steady; rules out rate hikes.",
+        "Calibrated Tightening: Signals potential rate hikes or pauses; strictly rules out rate cuts.",
+        "Neutral Stance: Allows complete two-way flexibility to raise or cut rates based on emerging macroeconomic data.",
+        "External Benchmark Lending Rate (EBLR): Mandated on Oct 1, 2019 for floating-rate personal/retail and MSME loans.",
+        "Permitted EBLR Benchmarks: RBI Repo Rate, 91-day T-Bill yield, or 182-day T-Bill yield.",
+        "Lending Benchmark Evolution: BPLR (2003) -> Base Rate (2010) -> MCLR (2016) -> EBLR (2019).",
+        "Four Transmission Channels: Interest rate channel, credit channel, asset price channel, and exchange rate channel.",
+        "LTRO & TLTRO: Unconventional multi-year term repo injections at policy repo rate to anchor banking liquidity.",
+        "G-SAP: RBI's committed open-market bond buying programme introduced in 2021 to anchor sovereign bond yields.",
+        "Impossible Trinity: Theorem proving that fixed FX, free capital mobility, and autonomous monetary policy cannot coexist."
+      ],
+      "ta": [
+        "இணக்கமான நிலை: வட்டியைக் குறைக்க அல்லது மாற்றாமல் வைத்திருக்க தயார்நிலையைக் குறிக்கும்; வட்டி உயர்வு இருக்காது.",
+        "அளவீட்டு இறுக்கம்: வட்டி உயர்வுக்கு வாய்ப்புண்டு என்பதை உணர்த்தும்; வட்டி குறைப்புக்கு வாய்ப்பே இல்லை.",
+        "நடுநிலை: தரவுகளுக்கு ஏற்ப வட்டி விகிதங்களை உயர்த்தவோ குறைக்கவோ முழு சுதந்திரம் கொண்டது.",
+        "வெளிப்புற அளவுகோல் விகிதம் (EBLR): அக்டோபர் 1, 2019 அன்று சில்லறை மற்றும் MSME மிதக்கும் வட்டிக் கடன்களுக்கு கட்டாயமாக்கப்பட்டது.",
+        "அனுமதிக்கப்பட்ட EBLR அளவுகோல்கள்: ரிசர்வ் வங்கி ரெப்போ, 91-நாள் கருவூலப் பத்திரம் அல்லது 182-நாள் கருவூலப் பத்திரம்.",
+        "கடன் வட்டி முறை பரிணாமம்: BPLR (2003) -> Base Rate (2010) -> MCLR (2016) -> EBLR (2019).",
+        "நான்கு பரவல் வழிகள்: வட்டி விகித வழி, வங்கி கடன் வழி, சொத்து விலை வழி மற்றும் செலாவணி மாற்று வழி.",
+        "LTRO & TLTRO: நீண்ட காலத்திற்கு ரெப்போ வட்டியில் பணப்புழக்கத்தை உறுதிசெய்த வழக்கத்திற்கு மாறான நடவடிக்கைகள்.",
+        "G-SAP: அரசு பத்திர ஈவுத்தொகையை நிலைநிறுத்த 2021-ல் ரிசர்வ் வங்கி அறிமுகப்படுத்திய முன்கூட்டியே அறிவிக்கப்பட்ட பத்திர வாங்குதல் திட்டம்.",
+        "சாத்தியமற்ற மும்முனை: நிலையான செலாவணி, தடையற்ற மூலதனம் மற்றும் தன்னாட்சி பணவியல் கொள்கை ஆகிய மூன்றும் ஒரே நேரத்தில் சாத்தியமில்லை என்ற கோட்பாடு."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_mp_301",
+        "front_en": "On what date was the External Benchmark Lending Rate (EBLR) mandated by the RBI?",
+        "front_ta": "ரிசர்வ் வங்கியால் வெளிப்புற அளவுகோல் கடன் விகிதம் (EBLR) எந்தத் தேதியில் கட்டாயமாக்கப்பட்டது?",
+        "back_en": "October 1, 2019.",
+        "back_ta": "அக்டோபர் 1, 2019."
+      },
+      {
+        "id": "rc_mp_302",
+        "front_en": "Which loan categories are mandatorily linked to external benchmarks under EBLR?",
+        "front_ta": "EBLR-ன் கீழ் வெளிப்புற அளவுகோல்களுடன் கட்டாயமாக இணைக்கப்பட்டுள்ள கடன் பிரிவுகள் எவை?",
+        "back_en": "All new floating-rate retail loans (housing, auto, personal) and loans to MSMEs.",
+        "back_ta": "அனைத்து புதிய மிதக்கும் வட்டி சில்லறைக் கடன்கள் (வீடு, வாகனம், தனிநபர்) மற்றும் MSME கடன்கள்."
+      },
+      {
+        "id": "rc_mp_303",
+        "front_en": "Name the three approved external benchmarks banks can choose under the EBLR system.",
+        "front_ta": "EBLR அமைப்பின் கீழ் வங்கிகள் தேர்ந்தெடுக்கக்கூடிய மூன்று அங்கீகரிக்கப்பட்ட வெளிப்புற அளவுகோல்கள் யாவை?",
+        "back_en": "RBI Policy Repo Rate, 91-day Treasury Bill yield, or 182-day Treasury Bill yield.",
+        "back_ta": "ரிசர்வ் வங்கி ரெப்போ விகிதம், 91-நாள் கருவூலப் பத்திர ஈவுத்தொகை, அல்லது 182-நாள் கருவூலப் பத்திர ஈவுத்தொகை."
+      },
+      {
+        "id": "rc_mp_304",
+        "front_en": "How often must banks reset the lending interest rates on loans linked to an external benchmark?",
+        "front_ta": "வெளிப்புற அளவுகோலுடன் இணைக்கப்பட்ட கடன்களுக்கான வட்டி விகிதங்களை வங்கிகள் எத்தனை நாட்களுக்கு ஒருமுறை மாற்றி அமைக்க வேண்டும்?",
+        "back_en": "At least once every three months.",
+        "back_ta": "குறைந்தபட்சம் மூன்று மாதங்களுக்கு ஒருமுறை."
+      },
+      {
+        "id": "rc_mp_305",
+        "front_en": "What does an 'Accommodative' monetary policy stance indicate regarding future interest rate hikes?",
+        "front_ta": "'இணக்கமான' (Accommodative) பணவியல் கொள்கை நிலை எதிர்கால வட்டி உயர்வைப் பற்றி என்ன உணர்த்துகிறது?",
+        "back_en": "It indicates that interest rate hikes are completely ruled out.",
+        "back_ta": "வட்டி விகித உயர்வுக்கான வாய்ப்பு முற்றிலுமாக இல்லை என்பதை உணர்த்துகிறது."
+      },
+      {
+        "id": "rc_mp_306",
+        "front_en": "In what year was the Marginal Cost of Funds-based Lending Rate (MCLR) introduced?",
+        "front_ta": "விளிம்புநிலை நிதிச் செலவு அடிப்படையிலான கடன் விகிதம் (MCLR) எந்த ஆண்டில் அறிமுகப்படுத்தப்பட்டது?",
+        "back_en": "April 1, 2016 (replacing the Base Rate system).",
+        "back_ta": "ஏப்ரல் 1, 2016 (அடிப்படை விகித முறைக்கு பதிலாக)."
+      },
+      {
+        "id": "rc_mp_307",
+        "front_en": "What are the three mutually exclusive goals of the Mundell-Fleming 'Impossible Trinity'?",
+        "front_ta": "முண்டெல்-பிளெமிங் 'சாத்தியமற்ற மும்முனையின்' (Impossible Trinity) மூன்று பரஸ்பர பிரத்தியேக இலக்குகள் யாவை?",
+        "back_en": "(1) Fixed exchange rate, (2) Free cross-border capital mobility, and (3) Autonomous monetary policy.",
+        "back_ta": "(1) நிலையான செலாவணி மாற்று விகிதம், (2) தடையற்ற மூலதனப் புழக்கம், மற்றும் (3) தன்னாட்சி பெற்ற பணவியல் கொள்கை."
+      },
+      {
+        "id": "rc_mp_308",
+        "front_en": "What was the primary difference between LTRO and regular Repo auctions?",
+        "front_ta": "LTRO மற்றும் வழக்கமான ரெப்போ ஏலங்களுக்கு இடையே உள்ள முதன்மை வேறுபாடு என்ன?",
+        "back_en": "Regular repo provides overnight/short-term liquidity; LTRO provided 1-year and 3-year term funding at the policy repo rate.",
+        "back_ta": "வழக்கமான ரெப்போ குறுகிய கால பணப்புழக்கத்தைத் தருகிறது; LTRO 1 மற்றும் 3 ஆண்டு காலத்திற்கு ரெப்போ வட்டியில் நிதி வழங்கியது."
+      },
+      {
+        "id": "rc_mp_309",
+        "front_en": "What was the mandate of Targeted Long-Term Repo Operations (TLTRO)?",
+        "front_ta": "இலக்கு நீண்ட கால ரெப்போ நடவடிக்கைகளின் (TLTRO) கட்டாய ஆணை என்ன?",
+        "back_en": "Banks were required to invest the borrowed funds specifically in corporate bonds, commercial paper, and debentures of stressed sectors.",
+        "back_ta": "வங்கிகள் பெற்ற நிதியை பாதிக்கப்பட்ட துறைகளின் கார்ப்பரேட் பத்திரங்கள் மற்றும் வணிகத் தாள்களில் மட்டுமே முதலீடு செய்ய வேண்டும்."
+      },
+      {
+        "id": "rc_mp_310",
+        "front_en": "What was the primary objective of the Government Securities Acquisition Programme (G-SAP) launched in 2021?",
+        "front_ta": "2021-ல் தொடங்கப்பட்ட அரசுப் பத்திரங்கள் கையகப்படுத்தல் திட்டத்தின் (G-SAP) முதன்மை நோக்கம் என்ன?",
+        "back_en": "To provide an upfront committed purchase of G-Secs to anchor sovereign bond yields and calm market volatility.",
+        "back_ta": "அரசுப் பத்திரங்களை வெளிப்படையாக வாங்கி பத்திர ஈவுத்தொகையை நிலைநிறுத்தி சந்தை ஏற்ற இறக்கங்களைத் தணிப்பது."
+      },
+      {
+        "id": "rc_mp_311",
+        "front_en": "Which transmission channel operates through changes in equity and real estate valuations?",
+        "front_ta": "பங்குச் சந்தை மற்றும் ரியல் எஸ்டேட் மதிப்பீடுகளில் ஏற்படும் மாற்றங்கள் மூலம் செயல்படும் பரவல் வழி எது?",
+        "back_en": "The Asset Price Channel.",
+        "back_ta": "சொத்து விலை வழி (Asset Price Channel)."
+      },
+      {
+        "id": "rc_mp_312",
+        "front_en": "What monetary stance allows the central bank complete data-dependent flexibility to hike or cut rates?",
+        "front_ta": "பொருளாதாரத் தரவுகளுக்கு ஏற்ப வட்டி விகிதங்களை உயர்த்தவோ குறைக்கவோ முழு சுதந்திரம் வழங்கும் பணவியல் நிலை எது?",
+        "back_en": "Neutral Stance.",
+        "back_ta": "நடுநிலைக் கொள்கை நிலை (Neutral Stance)."
+      }
+    ]
+  }
+}

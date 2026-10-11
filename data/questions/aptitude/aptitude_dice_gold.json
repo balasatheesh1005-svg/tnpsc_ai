@@ -1,0 +1,3647 @@
+[
+  {
+    "id": "DICE_001",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு நிலையான (Standard) பகடையில் (எதிரெதிர் பக்கங்களின் கூடுதல் எப்போதும் 7 ஆகும்), 3-க்கு எதிரே உள்ள எண் எது?",
+      "en": "In a standard single numbered die (where the sum of numbers on opposite faces is always 7), which number is opposite to 3?"
+    },
+    "question_ta": "ஒரு நிலையான (Standard) பகடையில் (எதிரெதிர் பக்கங்களின் கூடுதல் எப்போதும் 7 ஆகும்), 3-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "In a standard single numbered die (where the sum of numbers on opposite faces is always 7), which number is opposite to 3?",
+    "options": [
+      "4",
+      "2",
+      "6",
+      "5"
+    ],
+    "options_ta": [
+      "4",
+      "2",
+      "6",
+      "5"
+    ],
+    "options_en": [
+      "4",
+      "2",
+      "6",
+      "5"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே, 3-க்கு எதிரே உள்ள பக்கம் 7 - 3 = 4 ஆகும்.",
+      "en": "In a standard die, the sum of opposite faces is 7. Therefore, the face opposite to 3 is 7 - 3 = 4."
+    },
+    "explanation_ta": "நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே, 3-க்கு எதிரே உள்ள பக்கம் 7 - 3 = 4 ஆகும்.",
+    "explanation_en": "In a standard die, the sum of opposite faces is 7. Therefore, the face opposite to 3 is 7 - 3 = 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே, 3-க்கு எதிரே உள்ள பக்கம் 7 - 3 = 4 ஆகும்.",
+        "en": "Correct. In a standard die, the sum of opposite faces is 7. Therefore, the face opposite to 3 is 7 - 3 = 4."
+      },
+      "B": {
+        "ta": "7 - 3 = 4, 2 இல்லை.",
+        "en": "7 - 3 = 4, 2 இல்லை."
+      },
+      "C": {
+        "ta": "7 - 3 = 4, 6 இல்லை.",
+        "en": "7 - 3 = 4, 6 இல்லை."
+      },
+      "D": {
+        "ta": "7 - 3 = 4, 5 இல்லை.",
+        "en": "7 - 3 = 4, 5 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் எப்போதும் 7 (1+6, 2+5, 3+4).",
+      "en": "In a standard die, opposite faces always add up to 7 (1+6, 2+5, 3+4)."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடை விதி: எதிரெதிர் பக்கங்களின் கூடுதல் = 7.",
+      "en": "Standard dice rule: Opposite sum = 7."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_002",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு நிலையான பகடையில், 2 புள்ளிகள் கொண்ட பக்கத்திற்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "In a standard die, what face is opposite to the face with 2 dots?"
+    },
+    "question_ta": "ஒரு நிலையான பகடையில், 2 புள்ளிகள் கொண்ட பக்கத்திற்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "In a standard die, what face is opposite to the face with 2 dots?",
+    "options": [
+      "1",
+      "5",
+      "3",
+      "6"
+    ],
+    "options_ta": [
+      "1",
+      "5",
+      "3",
+      "6"
+    ],
+    "options_en": [
+      "1",
+      "5",
+      "3",
+      "6"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "எதிரெதிர் பக்கங்களின் கூடுதல் 7. 2-ன் எதிர்ப்பக்கம் 7 - 2 = 5 ஆகும்.",
+      "en": "Opposite faces sum to 7. Opposite of 2 is 7 - 2 = 5."
+    },
+    "explanation_ta": "எதிரெதிர் பக்கங்களின் கூடுதல் 7. 2-ன் எதிர்ப்பக்கம் 7 - 2 = 5 ஆகும்.",
+    "explanation_en": "Opposite faces sum to 7. Opposite of 2 is 7 - 2 = 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "7 - 2 = 5.",
+        "en": "7 - 2 = 5."
+      },
+      "B": {
+        "ta": "சரி. எதிரெதிர் பக்கங்களின் கூடுதல் 7. 2-ன் எதிர்ப்பக்கம் 7 - 2 = 5 ஆகும்.",
+        "en": "Correct. Opposite faces sum to 7. Opposite of 2 is 7 - 2 = 5."
+      },
+      "C": {
+        "ta": "7 - 2 = 5.",
+        "en": "7 - 2 = 5."
+      },
+      "D": {
+        "ta": "7 - 2 = 5.",
+        "en": "7 - 2 = 5."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான பகடையில் 2-ன் எதிர்ப்பக்கம் 5.",
+      "en": "Opposite of 2 is 5 in standard dice."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடை விதி: 2 + 5 = 7.",
+      "en": "Standard dice rule: 2 + 5 = 7."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_003",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் இரண்டு நிலைகள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (மேல்: 1, முன்: 2, வலது: 3)\nநிலை 2: (மேல்: 1, முன்: 4, வலது: 5)\n1-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Two positions of a single die are shown:\nPosition 1: (Top: 1, Front: 2, Right: 3)\nPosition 2: (Top: 1, Front: 4, Right: 5)\nWhich number is opposite to 1?"
+    },
+    "question_ta": "ஒரு பகடையின் இரண்டு நிலைகள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (மேல்: 1, முன்: 2, வலது: 3)\nநிலை 2: (மேல்: 1, முன்: 4, வலது: 5)\n1-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Two positions of a single die are shown:\nPosition 1: (Top: 1, Front: 2, Right: 3)\nPosition 2: (Top: 1, Front: 4, Right: 5)\nWhich number is opposite to 1?",
+    "options": [
+      "2",
+      "6",
+      "5",
+      "3"
+    ],
+    "options_ta": [
+      "2",
+      "6",
+      "5",
+      "3"
+    ],
+    "options_en": [
+      "2",
+      "6",
+      "5",
+      "3"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "பொதுவான பக்கம் 1. 1-க்கு அருகில் உள்ள எண்கள் 2, 3, 4, மற்றும் 5. எனவே, 1-க்கு எதிரே வரக்கூடிய ஒரே எண் 6 ஆகும்.",
+      "en": "The common face is 1. The numbers adjacent to 1 are 2, 3, 4, and 5. The only remaining number that can be opposite to 1 is 6."
+    },
+    "explanation_ta": "பொதுவான பக்கம் 1. 1-க்கு அருகில் உள்ள எண்கள் 2, 3, 4, மற்றும் 5. எனவே, 1-க்கு எதிரே வரக்கூடிய ஒரே எண் 6 ஆகும்.",
+    "explanation_en": "The common face is 1. The numbers adjacent to 1 are 2, 3, 4, and 5. The only remaining number that can be opposite to 1 is 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "2 என்பது நிலை 1-இல் 1-க்கு அருகில் உள்ளது.",
+        "en": "2 என்பது நிலை 1-இல் 1-க்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "சரி. பொதுவான பக்கம் 1. 1-க்கு அருகில் உள்ள எண்கள் 2, 3, 4, மற்றும் 5. எனவே, 1-க்கு எதிரே வரக்கூடிய ஒரே எண் 6 ஆகும்.",
+        "en": "Correct. The common face is 1. The numbers adjacent to 1 are 2, 3, 4, and 5. The only remaining number that can be opposite to 1 is 6."
+      },
+      "C": {
+        "ta": "5 என்பது நிலை 2-இல் 1-க்கு அருகில் உள்ளது.",
+        "en": "5 என்பது நிலை 2-இல் 1-க்கு அருகில் உள்ளது."
+      },
+      "D": {
+        "ta": "3 என்பது நிலை 1-இல் 1-க்கு அருகில் உள்ளது.",
+        "en": "3 என்பது நிலை 1-இல் 1-க்கு அருகில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொதுவான பக்கத்திற்கு எதிரே உள்ள எண் இரு நிலைகளிலும் காணப்படாத எண் ஆகும்.",
+      "en": "The face opposite to a common face is the number not visible in either position."
+    },
+    "revision_fact": {
+      "ta": "ஒரு பொதுவான பக்க விதி: காணப்படாத பக்கம் பொதுவான பக்கத்திற்கு எதிரானது.",
+      "en": "One common face rule: non-visible face is opposite to the common face."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_004",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Two Common Faces",
+    "question": {
+      "ta": "ஒரு பகடையின் இரண்டு நிலைகள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (2, 3, 5)\nநிலை 2: (2, 3, 6)\n5-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Two positions of a die are shown:\nPosition 1: (2, 3, 5)\nPosition 2: (2, 3, 6)\nWhich number is opposite to 5?"
+    },
+    "question_ta": "ஒரு பகடையின் இரண்டு நிலைகள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (2, 3, 5)\nநிலை 2: (2, 3, 6)\n5-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Two positions of a die are shown:\nPosition 1: (2, 3, 5)\nPosition 2: (2, 3, 6)\nWhich number is opposite to 5?",
+    "options": [
+      "நிர்ணயிக்க முடியாது",
+      "4",
+      "1",
+      "6"
+    ],
+    "options_ta": [
+      "நிர்ணயிக்க முடியாது",
+      "4",
+      "1",
+      "6"
+    ],
+    "options_en": [
+      "Cannot be determined",
+      "4",
+      "1",
+      "6"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இரண்டு பக்கங்கள் பொதுவானவை என்றால் (2 மற்றும் 3), மீதமுள்ள இரு பக்கங்களும் ஒன்றுக்கொன்று எதிரானவை. எனவே 5-க்கு எதிரே 6 உள்ளது.",
+      "en": "When two faces are common (2 and 3), the remaining faces in both positions are opposite to each other. Hence, 5 is opposite to 6."
+    },
+    "explanation_ta": "இரண்டு பக்கங்கள் பொதுவானவை என்றால் (2 மற்றும் 3), மீதமுள்ள இரு பக்கங்களும் ஒன்றுக்கொன்று எதிரானவை. எனவே 5-க்கு எதிரே 6 உள்ளது.",
+    "explanation_en": "When two faces are common (2 and 3), the remaining faces in both positions are opposite to each other. Hence, 5 is opposite to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "நிர்ணயிக்க முடியாது என்பது தவறான விடை.",
+        "en": "6 எனத் தெளிவாகக் கண்டறியலாம்."
+      },
+      "B": {
+        "ta": "5-க்கு எதிரே 6 உள்ளது.",
+        "en": "5-க்கு எதிரே 6 உள்ளது."
+      },
+      "C": {
+        "ta": "இரு பொது பக்க விதியின்படி 5-ன் நேரடி எதிர்ப்பக்கம் 6.",
+        "en": "இரு பொது பக்க விதியின்படி 5-ன் நேரடி எதிர்ப்பக்கம் 6."
+      },
+      "D": {
+        "ta": "சரி. இரண்டு பக்கங்கள் பொதுவானவை என்றால் (2 மற்றும் 3), மீதமுள்ள இரு பக்கங்களும் ஒன்றுக்கொன்று எதிரானவை. எனவே 5-க்கு எதிரே 6 உள்ளது.",
+        "en": "Correct. When two faces are common (2 and 3), the remaining faces in both positions are opposite to each other. Hence, 5 is opposite to 6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரண்டு பொதுவான பக்கங்கள் விதி: மூன்றாவது மாறுபட்ட பக்கங்கள் ஒன்றுக்கொன்று எதிரானவை.",
+      "en": "Two common faces rule: the third uncommon faces are opposite each other."
+    },
+    "revision_fact": {
+      "ta": "இரு பொது பக்கங்கள் மூன்றாவது பக்க ஜோடியின் எதிர்ப்பக்கத்தை நிர்ணயிக்கின்றன.",
+      "en": "Two common faces determine the opposite pair of the third faces."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_005",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "1 முதல் 6 வரையிலான எண்கள் கொண்ட பகடையின் இரு நிலைகள்:\nநிலை 1: 6-லிருந்து கடிகார சுற்றில் (6 -> 2 -> 3)\nநிலை 2: 6-லிருந்து கடிகார சுற்றில் (6 -> 4 -> 5)\n2-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Two positions of a die with faces 1 to 6 are given:\nPosition 1: 6, 2, 3 (clockwise from 6: 6 -> 2 -> 3)\nPosition 2: 6, 4, 5 (clockwise from 6: 6 -> 4 -> 5)\nWhich number is opposite to 2?"
+    },
+    "question_ta": "1 முதல் 6 வரையிலான எண்கள் கொண்ட பகடையின் இரு நிலைகள்:\nநிலை 1: 6-லிருந்து கடிகார சுற்றில் (6 -> 2 -> 3)\nநிலை 2: 6-லிருந்து கடிகார சுற்றில் (6 -> 4 -> 5)\n2-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Two positions of a die with faces 1 to 6 are given:\nPosition 1: 6, 2, 3 (clockwise from 6: 6 -> 2 -> 3)\nPosition 2: 6, 4, 5 (clockwise from 6: 6 -> 4 -> 5)\nWhich number is opposite to 2?",
+    "options": [
+      "5",
+      "3",
+      "1",
+      "4"
+    ],
+    "options_ta": [
+      "5",
+      "3",
+      "1",
+      "4"
+    ],
+    "options_en": [
+      "5",
+      "3",
+      "1",
+      "4"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "பொதுவான பக்கம் 6-லிருந்து கடிகார சுற்றில்:\nநிலை 1: 6 -> 2 -> 3\nநிலை 2: 6 -> 4 -> 5\nவரிசைப்படி: 2-க்கு எதிரான எண் 4, 3-க்கு எதிரான எண் 5. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+      "en": "Starting clockwise from common face 6:\nPosition 1: 6 -> 2 -> 3\nPosition 2: 6 -> 4 -> 5\nMatching elements in order: 2 corresponds to 4, and 3 corresponds to 5. So, 2 is opposite to 4."
+    },
+    "explanation_ta": "பொதுவான பக்கம் 6-லிருந்து கடிகார சுற்றில்:\nநிலை 1: 6 -> 2 -> 3\nநிலை 2: 6 -> 4 -> 5\nவரிசைப்படி: 2-க்கு எதிரான எண் 4, 3-க்கு எதிரான எண் 5. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+    "explanation_en": "Starting clockwise from common face 6:\nPosition 1: 6 -> 2 -> 3\nPosition 2: 6 -> 4 -> 5\nMatching elements in order: 2 corresponds to 4, and 3 corresponds to 5. So, 2 is opposite to 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 என்பது 3-க்கு எதிரானது.",
+        "en": "5 என்பது 3-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "3 என்பது 5-க்கு எதிரானது.",
+        "en": "3 என்பது 5-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "1 என்பது 6-க்கு எதிரானது.",
+        "en": "1 என்பது 6-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "சரி. பொதுவான பக்கம் 6-லிருந்து கடிகார சுற்றில்:\nநிலை 1: 6 -> 2 -> 3\nநிலை 2: 6 -> 4 -> 5\nவரிசைப்படி: 2-க்கு எதிரான எண் 4, 3-க்கு எதிரான எண் 5. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+        "en": "Correct. Starting clockwise from common face 6:\nPosition 1: 6 -> 2 -> 3\nPosition 2: 6 -> 4 -> 5\nMatching elements in order: 2 corresponds to 4, and 3 corresponds to 5. So, 2 is opposite to 4."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எதிர்ப்பக்க ஜோடிகளைக் கண்டறிய இரு நிலைகளிலும் பொதுவான பக்கத்திலிருந்து கடிகார சுற்றில் எழுதவும்.",
+      "en": "Write numbers clockwise starting from the common face in both positions to find opposite pairs."
+    },
+    "revision_fact": {
+      "ta": "பொதுப்பக்க கடிகார சுற்று விதி சரியான எதிர்ப்பக்க ஜோடிகளைத் தரும்.",
+      "en": "Clockwise rule from common face yields exact opposite pairs."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_006",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "ஒரு பகடையின் ஆறு பக்கங்களில் A, B, C, D, E, F ஆகிய எழுத்துகள் உள்ளன. இரு நிலைகள்:\nநிலை 1: (A, B, C)\nநிலை 2: (A, D, E)\nA-க்கு எதிரே உள்ள எழுத்து எது?",
+      "en": "A die has letters A, B, C, D, E, F on its six faces. Two positions are shown:\nPosition 1: (A, B, C)\nPosition 2: (A, D, E)\nWhich letter is opposite to A?"
+    },
+    "question_ta": "ஒரு பகடையின் ஆறு பக்கங்களில் A, B, C, D, E, F ஆகிய எழுத்துகள் உள்ளன. இரு நிலைகள்:\nநிலை 1: (A, B, C)\nநிலை 2: (A, D, E)\nA-க்கு எதிரே உள்ள எழுத்து எது?",
+    "question_en": "A die has letters A, B, C, D, E, F on its six faces. Two positions are shown:\nPosition 1: (A, B, C)\nPosition 2: (A, D, E)\nWhich letter is opposite to A?",
+    "options": [
+      "E",
+      "D",
+      "B",
+      "F"
+    ],
+    "options_ta": [
+      "E",
+      "D",
+      "B",
+      "F"
+    ],
+    "options_en": [
+      "E",
+      "D",
+      "B",
+      "F"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "A என்ற எழுத்து B, C, D, E ஆகியவற்றுக்கு அருகில் உள்ளது. எனவே மீதமுள்ள F என்ற எழுத்து A-க்கு எதிரே இருக்கும்.",
+      "en": "A is adjacent to B, C, D, and E. The remaining letter F must be opposite to A."
+    },
+    "explanation_ta": "A என்ற எழுத்து B, C, D, E ஆகியவற்றுக்கு அருகில் உள்ளது. எனவே மீதமுள்ள F என்ற எழுத்து A-க்கு எதிரே இருக்கும்.",
+    "explanation_en": "A is adjacent to B, C, D, and E. The remaining letter F must be opposite to A.",
+    "why_not_others": {
+      "A": {
+        "ta": "E என்பது நிலை 2-இல் A-க்கு அருகில் உள்ளது.",
+        "en": "E என்பது நிலை 2-இல் A-க்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "D என்பது நிலை 2-இல் A-க்கு அருகில் உள்ளது.",
+        "en": "D என்பது நிலை 2-இல் A-க்கு அருகில் உள்ளது."
+      },
+      "C": {
+        "ta": "B என்பது நிலை 1-இல் A-க்கு அருகில் உள்ளது.",
+        "en": "B என்பது நிலை 1-இல் A-க்கு அருகில் உள்ளது."
+      },
+      "D": {
+        "ta": "சரி. A என்ற எழுத்து B, C, D, E ஆகியவற்றுக்கு அருகில் உள்ளது. எனவே மீதமுள்ள F என்ற எழுத்து A-க்கு எதிரே இருக்கும்.",
+        "en": "Correct. A is adjacent to B, C, D, and E. The remaining letter F must be opposite to A."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடுத்துள்ள எழுத்துகள் எதிரெதிராக இருக்க முடியாது.",
+      "en": "Adjacent letters cannot be opposite."
+    },
+    "revision_fact": {
+      "ta": "பொதுவான எழுத்தின் எதிர்ப்பக்கம் காணப்படாத எழுத்து ஆகும்.",
+      "en": "Common letter opposite is the non-visible letter."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_007",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "ஒரு பகடையில் 6 குறியீடுகள் உள்ளன: @, #, $, %, &, *.\nநிலை 1: (@ -> # -> $)\nநிலை 2: (@ -> % -> &)\n#-க்கு எதிரே உள்ள குறியீடு எது?",
+      "en": "A die has six symbols: @, #, $, %, &, *. Two positions are shown:\nPosition 1: (@, #, $)\nPosition 2: (@, %, &)\nClockwise sequence from @ in Pos 1 is (@ -> # -> $), in Pos 2 is (@ -> % -> &). Which symbol is opposite to #?"
+    },
+    "question_ta": "ஒரு பகடையில் 6 குறியீடுகள் உள்ளன: @, #, $, %, &, *.\nநிலை 1: (@ -> # -> $)\nநிலை 2: (@ -> % -> &)\n#-க்கு எதிரே உள்ள குறியீடு எது?",
+    "question_en": "A die has six symbols: @, #, $, %, &, *. Two positions are shown:\nPosition 1: (@, #, $)\nPosition 2: (@, %, &)\nClockwise sequence from @ in Pos 1 is (@ -> # -> $), in Pos 2 is (@ -> % -> &). Which symbol is opposite to #?",
+    "options": [
+      "&",
+      "$",
+      "*",
+      "%"
+    ],
+    "options_ta": [
+      "&",
+      "$",
+      "*",
+      "%"
+    ],
+    "options_en": [
+      "&",
+      "$",
+      "*",
+      "%"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "@ இலிருந்து கடிகார சுற்று:\nநிலை 1: @ -> # -> $\nநிலை 2: @ -> % -> &\nமுதல் இடம்: #-க்கு எதிரே % உள்ளது.",
+      "en": "Clockwise order from @:\nPosition 1: @ -> # -> $\nPosition 2: @ -> % -> &\nFirst positions after @ match: # is opposite to %."
+    },
+    "explanation_ta": "@ இலிருந்து கடிகார சுற்று:\nநிலை 1: @ -> # -> $\nநிலை 2: @ -> % -> &\nமுதல் இடம்: #-க்கு எதிரே % உள்ளது.",
+    "explanation_en": "Clockwise order from @:\nPosition 1: @ -> # -> $\nPosition 2: @ -> % -> &\nFirst positions after @ match: # is opposite to %.",
+    "why_not_others": {
+      "A": {
+        "ta": "& என்பது $-க்கு எதிரானது.",
+        "en": "& என்பது $-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "$ என்பது &-க்கு எதிரானது.",
+        "en": "$ என்பது &-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "* என்பது @-க்கு எதிரானது.",
+        "en": "* என்பது @-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "சரி. @ இலிருந்து கடிகார சுற்று:\nநிலை 1: @ -> # -> $\nநிலை 2: @ -> % -> &\nமுதல் இடம்: #-க்கு எதிரே % உள்ளது.",
+        "en": "Correct. Clockwise order from @:\nPosition 1: @ -> # -> $\nPosition 2: @ -> % -> &\nFirst positions after @ match: # is opposite to %."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொதுக் குறியீட்டிலிருந்து அதே ஒப்பீட்டு கடிகார நிலையில் உள்ள உறுப்புகளைப் பொருத்தவும்.",
+      "en": "Match elements at the same relative clockwise position from the common symbol."
+    },
+    "revision_fact": {
+      "ta": "குறியீட்டு பகடைகளும் எண் பகடைகளின் அதே கடிகார சுழற்சி விதிகளைப் பின்பற்றுகின்றன.",
+      "en": "Symbol dice follow the same clockwise rotation rules as numbered dice."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_008",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "ஒரு கனசதுரத்தின் 6 பக்கங்கள் சிகப்பு, நீலம், பச்சை, மஞ்சள், வெள்ளை, கருப்பு வண்ணங்களில் பூசப்பட்டுள்ளன.\nநிலை 1: சிகப்பு, நீலம், பச்சை\nநிலை 2: சிகப்பு, மஞ்சள், வெள்ளை\nசிகப்பு வண்ணத்திற்கு எதிரே உள்ள வண்ணம் எது?",
+      "en": "Six faces of a cube are painted Red, Blue, Green, Yellow, White, and Black. Two positions are shown:\nPosition 1: Red, Blue, Green\nPosition 2: Red, Yellow, White\nWhich color is opposite to Red?"
+    },
+    "question_ta": "ஒரு கனசதுரத்தின் 6 பக்கங்கள் சிகப்பு, நீலம், பச்சை, மஞ்சள், வெள்ளை, கருப்பு வண்ணங்களில் பூசப்பட்டுள்ளன.\nநிலை 1: சிகப்பு, நீலம், பச்சை\nநிலை 2: சிகப்பு, மஞ்சள், வெள்ளை\nசிகப்பு வண்ணத்திற்கு எதிரே உள்ள வண்ணம் எது?",
+    "question_en": "Six faces of a cube are painted Red, Blue, Green, Yellow, White, and Black. Two positions are shown:\nPosition 1: Red, Blue, Green\nPosition 2: Red, Yellow, White\nWhich color is opposite to Red?",
+    "options": [
+      "பச்சை",
+      "கருப்பு",
+      "நீலம்",
+      "மஞ்சள்"
+    ],
+    "options_ta": [
+      "பச்சை",
+      "கருப்பு",
+      "நீலம்",
+      "மஞ்சள்"
+    ],
+    "options_en": [
+      "Green",
+      "Black",
+      "Blue",
+      "Yellow"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "சிகப்பு நிறம் நீலம், பச்சை, மஞ்சள், மற்றும் வெள்ளை ஆகிய நிறங்களுக்கு அருகில் உள்ளது. எனவே சிகப்பிற்கு எதிரே கருப்பு வண்ணம் இருக்கும்.",
+      "en": "Red is adjacent to Blue, Green, Yellow, and White. Therefore, the face opposite to Red must be Black."
+    },
+    "explanation_ta": "சிகப்பு நிறம் நீலம், பச்சை, மஞ்சள், மற்றும் வெள்ளை ஆகிய நிறங்களுக்கு அருகில் உள்ளது. எனவே சிகப்பிற்கு எதிரே கருப்பு வண்ணம் இருக்கும்.",
+    "explanation_en": "Red is adjacent to Blue, Green, Yellow, and White. Therefore, the face opposite to Red must be Black.",
+    "why_not_others": {
+      "A": {
+        "ta": "பச்சை என்பது தவறான விடை.",
+        "en": "பச்சை நிலை 1-இல் சிகப்பிற்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "சரி. சிகப்பு நிறம் நீலம், பச்சை, மஞ்சள், மற்றும் வெள்ளை ஆகிய நிறங்களுக்கு அருகில் உள்ளது. எனவே சிகப்பிற்கு எதிரே கருப்பு வண்ணம் இருக்கும்.",
+        "en": "Correct. Red is adjacent to Blue, Green, Yellow, and White. Therefore, the face opposite to Red must be Black."
+      },
+      "C": {
+        "ta": "நீலம் என்பது தவறான விடை.",
+        "en": "நீலம் நிலை 1-இல் சிகப்பிற்கு அருகில் உள்ளது."
+      },
+      "D": {
+        "ta": "மஞ்சள் என்பது தவறான விடை.",
+        "en": "மஞ்சள் நிலை 2-இல் சிகப்பிற்கு அருகில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொதுவான நிறத்திற்கு எதிர்ப்பக்கம் என்பது காண்பிக்கப்படாத நிறமாகும்.",
+      "en": "The face opposite to the common face is the unshown color."
+    },
+    "revision_fact": {
+      "ta": "காணப்படாத வண்ணம் பொது வண்ணத்திற்கு எதிரானது.",
+      "en": "Unseen color is opposite to the common color."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_009",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு பகடையின் தோற்றத்தில் 3, 4, 2 ஆகிய எண்கள் காணப்படுகின்றன. இது நிலையான பகடையா (Standard) அல்லது சாதாரண பகடையா (Ordinary)?",
+      "en": "A single die position shows faces 3, 4, and 2. Is this die a standard die or an ordinary die?"
+    },
+    "question_ta": "ஒரு பகடையின் தோற்றத்தில் 3, 4, 2 ஆகிய எண்கள் காணப்படுகின்றன. இது நிலையான பகடையா (Standard) அல்லது சாதாரண பகடையா (Ordinary)?",
+    "question_en": "A single die position shows faces 3, 4, and 2. Is this die a standard die or an ordinary die?",
+    "options": [
+      "இரண்டும்",
+      "சாதாரண பகடை",
+      "நிலையான பகடை",
+      "நிர்ணயிக்க முடியாது"
+    ],
+    "options_ta": [
+      "இரண்டும்",
+      "சாதாரண பகடை",
+      "நிலையான பகடை",
+      "நிர்ணயிக்க முடியாது"
+    ],
+    "options_en": [
+      "Both",
+      "Ordinary Die",
+      "Standard Die",
+      "Cannot be determined"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அடுத்துள்ள பக்கங்கள் 3 மற்றும் 4-ன் கூடுதல் 7 (3 + 4 = 7). நிலையான பகடையில் அடுத்துள்ள பக்கங்களின் கூடுதல் 7 ஆக இருக்க முடியாது. எனவே இது சாதாரண பகடை ஆகும்.",
+      "en": "Adjacent faces 3 and 4 add up to 7 (3 + 4 = 7). In a standard die, adjacent faces can NEVER sum to 7 because opposite faces sum to 7. Hence, this is an ordinary die."
+    },
+    "explanation_ta": "அடுத்துள்ள பக்கங்கள் 3 மற்றும் 4-ன் கூடுதல் 7 (3 + 4 = 7). நிலையான பகடையில் அடுத்துள்ள பக்கங்களின் கூடுதல் 7 ஆக இருக்க முடியாது. எனவே இது சாதாரண பகடை ஆகும்.",
+    "explanation_en": "Adjacent faces 3 and 4 add up to 7 (3 + 4 = 7). In a standard die, adjacent faces can NEVER sum to 7 because opposite faces sum to 7. Hence, this is an ordinary die.",
+    "why_not_others": {
+      "A": {
+        "ta": "இரண்டும் என்பது தவறான விடை.",
+        "en": "ஒரு பகடை ஒரே நேரத்தில் இரண்டும் ஆக முடியாது."
+      },
+      "B": {
+        "ta": "சரி. அடுத்துள்ள பக்கங்கள் 3 மற்றும் 4-ன் கூடுதல் 7 (3 + 4 = 7). நிலையான பகடையில் அடுத்துள்ள பக்கங்களின் கூடுதல் 7 ஆக இருக்க முடியாது. எனவே இது சாதாரண பகடை ஆகும்.",
+        "en": "Correct. Adjacent faces 3 and 4 add up to 7 (3 + 4 = 7). In a standard die, adjacent faces can NEVER sum to 7 because opposite faces sum to 7. Hence, this is an ordinary die."
+      },
+      "C": {
+        "ta": "நிலையான பகடை என்பது தவறான விடை.",
+        "en": "3 + 4 = 7 அடுத்துள்ள பக்கங்களில் வருவது நிலையான பகடை விதியை மீறுகிறது."
+      },
+      "D": {
+        "ta": "நிர்ணயிக்க முடியாது என்பது தவறான விடை.",
+        "en": "அடுத்துள்ள பக்க கூடுதல் 7 என்பதால் இது நிச்சயமாக சாதாரண பகடை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "காணக்கூடிய இரு அடுத்துள்ள பக்கங்களின் கூடுதல் 7 என்றால், அது சாதாரண பகடை ஆகும்.",
+      "en": "If any two adjacent visible faces sum to 7, it is an Ordinary Die."
+    },
+    "revision_fact": {
+      "ta": "சாதாரண பகடை: காணப்படும் பக்கங்களின் கூடுதல் 7.",
+      "en": "Ordinary die: Adjacent sum = 7 on visible faces."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_010",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறக்கப்பட்ட பகடையின் அமைப்பில் செங்குத்தாக 4 சதுரங்கள் [1, 2, 3, 4] வரிசையாக உள்ளன. ஒரு நேர்க்கோட்டு அமைப்பில் மாற்றுப் பக்கங்கள் (alternate faces) எதிரெதிராக அமையும். 1-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "An open net of a die consists of a vertical strip of four squares [1, 2, 3, 4] from top to bottom. In an open strip of squares in line, alternate faces are opposite. Which face is opposite to 1?"
+    },
+    "question_ta": "ஒரு திறக்கப்பட்ட பகடையின் அமைப்பில் செங்குத்தாக 4 சதுரங்கள் [1, 2, 3, 4] வரிசையாக உள்ளன. ஒரு நேர்க்கோட்டு அமைப்பில் மாற்றுப் பக்கங்கள் (alternate faces) எதிரெதிராக அமையும். 1-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "An open net of a die consists of a vertical strip of four squares [1, 2, 3, 4] from top to bottom. In an open strip of squares in line, alternate faces are opposite. Which face is opposite to 1?",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "options_ta": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "options_en": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "திறந்த அமைப்பில் ஒரே வரிசையில் உள்ள சதுரங்களில், ஒன்று விட்ட பக்கங்கள் (alternate faces) எதிரெதிரானவை. 1-க்கு அடுத்து 2-ஐ விட்டு 3 வரும். எனவே 1-ன் எதிர்ப்பக்கம் 3.",
+      "en": "In a straight line of squares in an open net, alternate faces are opposite to each other. 1 is alternate to 3 (skipping 2). Thus, 1 is opposite to 3."
+    },
+    "explanation_ta": "திறந்த அமைப்பில் ஒரே வரிசையில் உள்ள சதுரங்களில், ஒன்று விட்ட பக்கங்கள் (alternate faces) எதிரெதிரானவை. 1-க்கு அடுத்து 2-ஐ விட்டு 3 வரும். எனவே 1-ன் எதிர்ப்பக்கம் 3.",
+    "explanation_en": "In a straight line of squares in an open net, alternate faces are opposite to each other. 1 is alternate to 3 (skipping 2). Thus, 1 is opposite to 3.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 என்பது வரிசையில் இல்லை.",
+        "en": "5 என்பது வரிசையில் இல்லை."
+      },
+      "B": {
+        "ta": "4 என்பது 2-ன் எதிர்ப்பக்கம்.",
+        "en": "4 என்பது 2-ன் எதிர்ப்பக்கம்."
+      },
+      "C": {
+        "ta": "சரி. திறந்த அமைப்பில் ஒரே வரிசையில் உள்ள சதுரங்களில், ஒன்று விட்ட பக்கங்கள் (alternate faces) எதிரெதிரானவை. 1-க்கு அடுத்து 2-ஐ விட்டு 3 வரும். எனவே 1-ன் எதிர்ப்பக்கம் 3.",
+        "en": "Correct. In a straight line of squares in an open net, alternate faces are opposite to each other. 1 is alternate to 3 (skipping 2). Thus, 1 is opposite to 3."
+      },
+      "D": {
+        "ta": "2 என்பது 1-க்கு அடுத்துள்ள பக்கம்.",
+        "en": "2 என்பது 1-க்கு அடுத்துள்ள பக்கம்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நேர்க்கோட்டு திறந்த அமைப்பில், ஒன்றுவிட்ட பக்கங்கள் (1 & 3, 2 & 4) எப்போதும் எதிரெதிரானவை.",
+      "en": "In a straight line net of squares, alternate faces (1 and 3, 2 and 4) are always opposite."
+    },
+    "revision_fact": {
+      "ta": "திறந்த பகடைகளில் ஒன்றுவிட்ட சதுர விதி.",
+      "en": "Alternate square rule in open dice nets."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_011",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Two Common Faces",
+    "question": {
+      "ta": "ஒரு எழுத்துப் பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (P, Q, R)\nநிலை 2: (P, Q, S)\nR-க்கு எதிரே உள்ள எழுத்து எது?",
+      "en": "Two positions of a letter die show:\nPosition 1: (P, Q, R)\nPosition 2: (P, Q, S)\nWhich letter is opposite to R?"
+    },
+    "question_ta": "ஒரு எழுத்துப் பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (P, Q, R)\nநிலை 2: (P, Q, S)\nR-க்கு எதிரே உள்ள எழுத்து எது?",
+    "question_en": "Two positions of a letter die show:\nPosition 1: (P, Q, R)\nPosition 2: (P, Q, S)\nWhich letter is opposite to R?",
+    "options": [
+      "P",
+      "Q",
+      "T",
+      "S"
+    ],
+    "options_ta": [
+      "P",
+      "Q",
+      "T",
+      "S"
+    ],
+    "options_en": [
+      "P",
+      "Q",
+      "T",
+      "S"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இரு தோற்றங்களிலும் P மற்றும் Q பொதுவானவை. எனவே மீதமுள்ள R மற்றும் S ஒன்றுக்கொன்று எதிரானவை.",
+      "en": "P and Q are common in both positions. By the two common faces rule, the remaining uncommon faces are opposite to each other. So R is opposite to S."
+    },
+    "explanation_ta": "இரு தோற்றங்களிலும் P மற்றும் Q பொதுவானவை. எனவே மீதமுள்ள R மற்றும் S ஒன்றுக்கொன்று எதிரானவை.",
+    "explanation_en": "P and Q are common in both positions. By the two common faces rule, the remaining uncommon faces are opposite to each other. So R is opposite to S.",
+    "why_not_others": {
+      "A": {
+        "ta": "P இரு தோற்றங்களிலும் பொதுவானது.",
+        "en": "P இரு தோற்றங்களிலும் பொதுவானது."
+      },
+      "B": {
+        "ta": "Q இரு தோற்றங்களிலும் பொதுவானது.",
+        "en": "Q இரு தோற்றங்களிலும் பொதுவானது."
+      },
+      "C": {
+        "ta": "S நேரடி எதிர்ப்பக்கம்.",
+        "en": "S நேரடி எதிர்ப்பக்கம்."
+      },
+      "D": {
+        "ta": "சரி. இரு தோற்றங்களிலும் P மற்றும் Q பொதுவானவை. எனவே மீதமுள்ள R மற்றும் S ஒன்றுக்கொன்று எதிரானவை.",
+        "en": "Correct. P and Q are common in both positions. By the two common faces rule, the remaining uncommon faces are opposite to each other. So R is opposite to S."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எதிர்ப்பக்கத்தைக் கண்டறிய இரு பொதுவான பக்கங்களை நீக்கவும்.",
+      "en": "Cancel out the two common faces to find the opposite pair."
+    },
+    "revision_fact": {
+      "ta": "இரு பொதுப் பக்க விதி எழுத்துகளுக்கும் பொருந்தும்.",
+      "en": "Two common faces rule applies to letters as well."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_012",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு பகடை நிலையான பகடை எனில், 6 உள்ள பக்கத்திற்கு எதிரே உள்ள எண் எது?",
+      "en": "If a die is standard, which number lies opposite to the face with 6?"
+    },
+    "question_ta": "ஒரு பகடை நிலையான பகடை எனில், 6 உள்ள பக்கத்திற்கு எதிரே உள்ள எண் எது?",
+    "question_en": "If a die is standard, which number lies opposite to the face with 6?",
+    "options": [
+      "3",
+      "5",
+      "2",
+      "1"
+    ],
+    "options_ta": [
+      "3",
+      "5",
+      "2",
+      "1"
+    ],
+    "options_en": [
+      "3",
+      "5",
+      "2",
+      "1"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "நிலையான பகடை விதி: எதிரெதிர் பக்கங்களின் கூடுதல் = 7. 6-ன் எதிர்ப்பக்கம் = 7 - 6 = 1.",
+      "en": "Standard die rule: sum of opposite faces = 7. Opposite of 6 = 7 - 6 = 1."
+    },
+    "explanation_ta": "நிலையான பகடை விதி: எதிரெதிர் பக்கங்களின் கூடுதல் = 7. 6-ன் எதிர்ப்பக்கம் = 7 - 6 = 1.",
+    "explanation_en": "Standard die rule: sum of opposite faces = 7. Opposite of 6 = 7 - 6 = 1.",
+    "why_not_others": {
+      "A": {
+        "ta": "7 - 6 = 1.",
+        "en": "7 - 6 = 1."
+      },
+      "B": {
+        "ta": "7 - 6 = 1.",
+        "en": "7 - 6 = 1."
+      },
+      "C": {
+        "ta": "7 - 6 = 1.",
+        "en": "7 - 6 = 1."
+      },
+      "D": {
+        "ta": "சரி. நிலையான பகடை விதி: எதிரெதிர் பக்கங்களின் கூடுதல் = 7. 6-ன் எதிர்ப்பக்கம் = 7 - 6 = 1.",
+        "en": "Correct. Standard die rule: sum of opposite faces = 7. Opposite of 6 = 7 - 6 = 1."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான பகடையில் 6-க்கு எதிர்ப்பக்கம் 1.",
+      "en": "6 is opposite to 1 in standard dice."
+    },
+    "revision_fact": {
+      "ta": "6 + 1 = 7.",
+      "en": "6 + 1 = 7."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_013",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் நிலை 1: (1, 3, 4). நிலை 2: (1, 5, 6). 1-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Position 1 of a die shows (1, 3, 4). Position 2 shows (1, 5, 6). Which number is opposite to 1?"
+    },
+    "question_ta": "ஒரு பகடையின் நிலை 1: (1, 3, 4). நிலை 2: (1, 5, 6). 1-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Position 1 of a die shows (1, 3, 4). Position 2 shows (1, 5, 6). Which number is opposite to 1?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "options_ta": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "options_en": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "1 என்ற எண் 3, 4, 5, 6 ஆகிய எண்களுக்கு அருகில் உள்ளது. எனவே 1-க்கு எதிரே உள்ள எண் 2 ஆகும்.",
+      "en": "1 is adjacent to 3, 4, 5, and 6. The only unshown number on a 1-6 die is 2. Thus, 1 is opposite to 2."
+    },
+    "explanation_ta": "1 என்ற எண் 3, 4, 5, 6 ஆகிய எண்களுக்கு அருகில் உள்ளது. எனவே 1-க்கு எதிரே உள்ள எண் 2 ஆகும்.",
+    "explanation_en": "1 is adjacent to 3, 4, 5, and 6. The only unshown number on a 1-6 die is 2. Thus, 1 is opposite to 2.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 என்பது 1-க்கு அருகில் உள்ளது.",
+        "en": "4 என்பது 1-க்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "3 என்பது 1-க்கு அருகில் உள்ளது.",
+        "en": "3 என்பது 1-க்கு அருகில் உள்ளது."
+      },
+      "C": {
+        "ta": "சரி. 1 என்ற எண் 3, 4, 5, 6 ஆகிய எண்களுக்கு அருகில் உள்ளது. எனவே 1-க்கு எதிரே உள்ள எண் 2 ஆகும்.",
+        "en": "Correct. 1 is adjacent to 3, 4, 5, and 6. The only unshown number on a 1-6 die is 2. Thus, 1 is opposite to 2."
+      },
+      "D": {
+        "ta": "5 என்பது 1-க்கு அருகில் உள்ளது.",
+        "en": "5 என்பது 1-க்கு அருகில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு தோற்றங்களிலும் மறக்கப்பட்ட எண் பொதுவான பக்கத்தின் எதிர்ப்பக்கமாகும்.",
+      "en": "The hidden number in both views of a common-face pair is the opposite face."
+    },
+    "revision_fact": {
+      "ta": "மறைக்கப்பட்ட எண் பொதுவான எண்ணிற்கு எதிரானது.",
+      "en": "Hidden number is opposite to common number."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_014",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "செங்குத்து வரிசையில் [A, B, C, D] என்ற சதுரங்கள் கொண்ட ஒரு திறந்த பகடையில், B-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "In an open net with a vertical strip of letter faces [A, B, C, D], which face is opposite to B?"
+    },
+    "question_ta": "செங்குத்து வரிசையில் [A, B, C, D] என்ற சதுரங்கள் கொண்ட ஒரு திறந்த பகடையில், B-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "In an open net with a vertical strip of letter faces [A, B, C, D], which face is opposite to B?",
+    "options": [
+      "C",
+      "நிர்ணயிக்க முடியாது",
+      "D",
+      "A"
+    ],
+    "options_ta": [
+      "C",
+      "நிர்ணயிக்க முடியாது",
+      "D",
+      "A"
+    ],
+    "options_en": [
+      "C",
+      "Cannot be determined",
+      "D",
+      "A"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "4 சதுரங்கள் கொண்ட நேர்வரிசையில் ஒன்றுவிட்ட சதுரங்கள் எதிரெதிரானவை. B-க்கு அடுத்து C-ஐ விட்டு D வரும். எனவே B-ன் எதிர்ப்பக்கம் D.",
+      "en": "In a straight line strip of 4 squares, alternate squares are opposite. B is alternate to D (skipping C). So B is opposite to D."
+    },
+    "explanation_ta": "4 சதுரங்கள் கொண்ட நேர்வரிசையில் ஒன்றுவிட்ட சதுரங்கள் எதிரெதிரானவை. B-க்கு அடுத்து C-ஐ விட்டு D வரும். எனவே B-ன் எதிர்ப்பக்கம் D.",
+    "explanation_en": "In a straight line strip of 4 squares, alternate squares are opposite. B is alternate to D (skipping C). So B is opposite to D.",
+    "why_not_others": {
+      "A": {
+        "ta": "C என்பது B-க்கு அடுத்துள்ள பக்கம்.",
+        "en": "C என்பது B-க்கு அடுத்துள்ள பக்கம்."
+      },
+      "B": {
+        "ta": "நிர்ணயிக்க முடியாது என்பது தவறான விடை.",
+        "en": "D எனத் தெளிவாக அறியலாம்."
+      },
+      "C": {
+        "ta": "சரி. 4 சதுரங்கள் கொண்ட நேர்வரிசையில் ஒன்றுவிட்ட சதுரங்கள் எதிரெதிரானவை. B-க்கு அடுத்து C-ஐ விட்டு D வரும். எனவே B-ன் எதிர்ப்பக்கம் D.",
+        "en": "Correct. In a straight line strip of 4 squares, alternate squares are opposite. B is alternate to D (skipping C). So B is opposite to D."
+      },
+      "D": {
+        "ta": "A என்பது B-க்கு அடுத்துள்ள பக்கம்.",
+        "en": "A என்பது B-க்கு அடுத்துள்ள பக்கம்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வரிசையிலுள்ள ஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை: A-C மற்றும் B-D.",
+      "en": "Alternate positions in a row/column of 4 squares are opposite: A-C and B-D."
+    },
+    "revision_fact": {
+      "ta": "B மற்றும் D ஆகியவை 4-சதுர வரிசையில் எதிர்ப்பக்க ஜோடியை அமைக்கின்றன.",
+      "en": "B and D form an alternate opposite pair in a 4-strip net."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_015",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Easy",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "பின்வருவனவற்றில் எது நிலையான பகடையின் (Standard Die) செல்லுபடியாகும் தோற்றத்தைக் குறிக்கிறது?\nவிருப்பம் A: (1, 6, 3)\nவிருப்பம் B: (2, 5, 4)\nவிருப்பம் C: (3, 4, 1)\nவிருப்பம் D: (1, 2, 3)",
+      "en": "Which of the following given visible face sets represents a valid view of a Standard Die?\nOption A: (1, 6, 3)\nOption B: (2, 5, 4)\nOption C: (3, 4, 1)\nOption D: (1, 2, 3)"
+    },
+    "question_ta": "பின்வருவனவற்றில் எது நிலையான பகடையின் (Standard Die) செல்லுபடியாகும் தோற்றத்தைக் குறிக்கிறது?\nவிருப்பம் A: (1, 6, 3)\nவிருப்பம் B: (2, 5, 4)\nவிருப்பம் C: (3, 4, 1)\nவிருப்பம் D: (1, 2, 3)",
+    "question_en": "Which of the following given visible face sets represents a valid view of a Standard Die?\nOption A: (1, 6, 3)\nOption B: (2, 5, 4)\nOption C: (3, 4, 1)\nOption D: (1, 2, 3)",
+    "options": [
+      "(2, 5, 4)",
+      "(1, 2, 3)",
+      "(3, 4, 1)",
+      "(1, 6, 3)"
+    ],
+    "options_ta": [
+      "(2, 5, 4)",
+      "(1, 2, 3)",
+      "(3, 4, 1)",
+      "(1, 6, 3)"
+    ],
+    "options_en": [
+      "(2, 5, 4)",
+      "(1, 2, 3)",
+      "(3, 4, 1)",
+      "(1, 6, 3)"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே 1+6, 2+5, 3+4 ஒரே நேரத்தில் அருகருகே தெரியக்கூடாது.\nA-இல் 1+6=7 (தவறு), B-இல் 2+5=7 (தவறு), C-இல் 3+4=7 (தவறு).\nD-இல் (1,2,3) எந்த இரு பக்கங்களின் கூடுதலும் 7 இல்லை. எனவே (1, 2, 3) சரியான தோற்றமாகும்.",
+      "en": "In a standard die, opposite pairs (1+6=7, 2+5=7, 3+4=7) can NEVER be visible simultaneously on adjacent faces.\nIn A: 1+6=7 (invalid)\nIn B: 2+5=7 (invalid)\nIn C: 3+4=7 (invalid)\nIn D: (1,2,3) has no adjacent pair adding up to 7 (1+2=3, 2+3=5, 1+3=4). Thus, (1, 2, 3) is a valid view of a standard die."
+    },
+    "explanation_ta": "நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே 1+6, 2+5, 3+4 ஒரே நேரத்தில் அருகருகே தெரியக்கூடாது.\nA-இல் 1+6=7 (தவறு), B-இல் 2+5=7 (தவறு), C-இல் 3+4=7 (தவறு).\nD-இல் (1,2,3) எந்த இரு பக்கங்களின் கூடுதலும் 7 இல்லை. எனவே (1, 2, 3) சரியான தோற்றமாகும்.",
+    "explanation_en": "In a standard die, opposite pairs (1+6=7, 2+5=7, 3+4=7) can NEVER be visible simultaneously on adjacent faces.\nIn A: 1+6=7 (invalid)\nIn B: 2+5=7 (invalid)\nIn C: 3+4=7 (invalid)\nIn D: (1,2,3) has no adjacent pair adding up to 7 (1+2=3, 2+3=5, 1+3=4). Thus, (1, 2, 3) is a valid view of a standard die.",
+    "why_not_others": {
+      "A": {
+        "ta": "2+5=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது.",
+        "en": "2+5=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது."
+      },
+      "B": {
+        "ta": "சரி. நிலையான பகடையில் எதிரெதிர் பக்கங்களின் கூடுதல் 7. எனவே 1+6, 2+5, 3+4 ஒரே நேரத்தில் அருகருகே தெரியக்கூடாது.\nA-இல் 1+6=7 (தவறு), B-இல் 2+5=7 (தவறு), C-இல் 3+4=7 (தவறு).\nD-இல் (1,2,3) எந்த இரு பக்கங்களின் கூடுதலும் 7 இல்லை. எனவே (1, 2, 3) சரியான தோற்றமாகும்.",
+        "en": "Correct. In a standard die, opposite pairs (1+6=7, 2+5=7, 3+4=7) can NEVER be visible simultaneously on adjacent faces.\nIn A: 1+6=7 (invalid)\nIn B: 2+5=7 (invalid)\nIn C: 3+4=7 (invalid)\nIn D: (1,2,3) has no adjacent pair adding up to 7 (1+2=3, 2+3=5, 1+3=4). Thus, (1, 2, 3) is a valid view of a standard die."
+      },
+      "C": {
+        "ta": "3+4=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது.",
+        "en": "3+4=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது."
+      },
+      "D": {
+        "ta": "1+6=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது.",
+        "en": "1+6=7 அடுத்துள்ள பக்கங்களில் தோன்றுவது நிலையான பகடை விதியை மீறுகிறது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான பகடையில் காணப்படும் எந்த இரு எண்களின் கூடுதலும் 7 ஆக இருக்கக்கூடாது.",
+      "en": "In a standard die view, no two visible numbers can sum to 7."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடையின் தோற்றத்தில் அடுத்துள்ள எண்களின் கூடுதல் 7 இருக்காது.",
+      "en": "No adjacent sum equals 7 in standard die views."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_016",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் மூன்று தோற்றங்கள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nநிலை 3: (6, 2, 3)\n4-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Three positions of a die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nPosition 3: (6, 2, 3)\nWhich number is opposite to 4?"
+    },
+    "question_ta": "ஒரு பகடையின் மூன்று தோற்றங்கள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nநிலை 3: (6, 2, 3)\n4-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Three positions of a die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nPosition 3: (6, 2, 3)\nWhich number is opposite to 4?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "options_ta": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "options_en": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 4, 5)-இல் பொதுவான பக்கம் 1.\n1-லிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 3 -> 2\nநிலை 2: 1 -> 4 -> 5\nஎனவே 3-க்கு எதிரே 4 உள்ளது. 2-க்கு எதிரே 5 உள்ளது. 1-க்கு எதிரே 6 உள்ளது.",
+      "en": "From Position 1 (1, 2, 3) and Position 2 (1, 4, 5), common face is 1.\nClockwise from 1:\nPos 1: 1 -> 3 -> 2\nPos 2: 1 -> 4 -> 5\nMatching pairs: 3 is opposite 4, 2 is opposite 5, 1 is opposite 6. Thus 4 is opposite to 3."
+    },
+    "explanation_ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 4, 5)-இல் பொதுவான பக்கம் 1.\n1-லிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 3 -> 2\nநிலை 2: 1 -> 4 -> 5\nஎனவே 3-க்கு எதிரே 4 உள்ளது. 2-க்கு எதிரே 5 உள்ளது. 1-க்கு எதிரே 6 உள்ளது.",
+    "explanation_en": "From Position 1 (1, 2, 3) and Position 2 (1, 4, 5), common face is 1.\nClockwise from 1:\nPos 1: 1 -> 3 -> 2\nPos 2: 1 -> 4 -> 5\nMatching pairs: 3 is opposite 4, 2 is opposite 5, 1 is opposite 6. Thus 4 is opposite to 3.",
+    "why_not_others": {
+      "A": {
+        "ta": "1 என்பது 6-க்கு எதிரானது.",
+        "en": "1 என்பது 6-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "2 என்பது 5-க்கு எதிரானது.",
+        "en": "2 என்பது 5-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "சரி. நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 4, 5)-இல் பொதுவான பக்கம் 1.\n1-லிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 3 -> 2\nநிலை 2: 1 -> 4 -> 5\nஎனவே 3-க்கு எதிரே 4 உள்ளது. 2-க்கு எதிரே 5 உள்ளது. 1-க்கு எதிரே 6 உள்ளது.",
+        "en": "Correct. From Position 1 (1, 2, 3) and Position 2 (1, 4, 5), common face is 1.\nClockwise from 1:\nPos 1: 1 -> 3 -> 2\nPos 2: 1 -> 4 -> 5\nMatching pairs: 3 is opposite 4, 2 is opposite 5, 1 is opposite 6. Thus 4 is opposite to 3."
+      },
+      "D": {
+        "ta": "6 என்பது 1-க்கு எதிரானது.",
+        "en": "6 என்பது 1-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொதுவான பக்கத்திலிருந்து கடிகார சுற்றை கவனமாகப் பின்தொடரவும்.",
+      "en": "Always trace clockwise from the common face carefully to get exact opposite matches."
+    },
+    "revision_fact": {
+      "ta": "3 தோற்றங்கள் கொண்ட சீரான பகடை சரிபார்ப்பு.",
+      "en": "3 views consistent cube verification."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_017",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் 4 தோற்றங்கள்:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 3, 6)\nநிலை 3: (4, 2, 5)\nநிலை 4: (4, 5, 6)\n2-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Four positions of a single die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 3, 6)\nPosition 3: (4, 2, 5)\nPosition 4: (4, 5, 6)\nWhich number is opposite to 2?"
+    },
+    "question_ta": "ஒரு பகடையின் 4 தோற்றங்கள்:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 3, 6)\nநிலை 3: (4, 2, 5)\nநிலை 4: (4, 5, 6)\n2-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Four positions of a single die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 3, 6)\nPosition 3: (4, 2, 5)\nPosition 4: (4, 5, 6)\nWhich number is opposite to 2?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "options_ta": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "options_en": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 3, 6)-ஐ ஒப்பிடுகையில்:\n1 மற்றும் 3 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை.",
+      "en": "Comparing Position 1 (1, 2, 3) and Position 2 (1, 3, 6):\nTwo faces 1 and 3 are common in both positions. Therefore, the remaining unshared faces must be opposite to each other. Hence, 2 is opposite to 6."
+    },
+    "explanation_ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 3, 6)-ஐ ஒப்பிடுகையில்:\n1 மற்றும் 3 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை.",
+    "explanation_en": "Comparing Position 1 (1, 2, 3) and Position 2 (1, 3, 6):\nTwo faces 1 and 3 are common in both positions. Therefore, the remaining unshared faces must be opposite to each other. Hence, 2 is opposite to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "1 என்பது 4-க்கு எதிரானது.",
+        "en": "1 என்பது 4-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "3 என்பது 5-க்கு எதிரானது.",
+        "en": "3 என்பது 5-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "5 என்பது 3-க்கு எதிரானது.",
+        "en": "5 என்பது 3-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "சரி. நிலை 1 (1, 2, 3) மற்றும் நிலை 2 (1, 3, 6)-ஐ ஒப்பிடுகையில்:\n1 மற்றும் 3 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை.",
+        "en": "Correct. Comparing Position 1 (1, 2, 3) and Position 2 (1, 3, 6):\nTwo faces 1 and 3 are common in both positions. Therefore, the remaining unshared faces must be opposite to each other. Hence, 2 is opposite to 6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு பொதுவான பக்கங்கள் கொண்ட தோற்றங்களைக் கண்டறிந்தால் எதிர்ப்பக்கத்தை உடனடியாகக் கண்டுபிடிக்கலாம்.",
+      "en": "Look for two positions with two common faces to immediately identify an opposite pair."
+    },
+    "revision_fact": {
+      "ta": "4 தோற்றங்கள் கொண்ட பகடை விடை கண்டறிதல்.",
+      "en": "4 views dice deduction using two-common-face rule."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_018",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு பகடையின் திறந்த அமைப்பு பின்வருமாறு அமையப்பெற்றுள்ளது:\nமையச் செங்குத்து வரிசையில் மேலிருந்து கீழாக 1, 3, 5, 6 ஆகிய சதுரங்கள் உள்ளன.\n3-ன் இடதுபுறம் 2-ம், வலதுபுறம் 4-ம் இணைக்கப்பட்டுள்ளன.\nஇதை கனசதுரமாக மடிக்கும் போது, 3-க்கு எதிரே அமையும் பக்கம் எது?",
+      "en": "An open net of a cube has the following structure:\nA central vertical column has four faces from top to bottom: 1, 3, 5, 6.\nFace 2 is attached to the left of 3, and Face 4 is attached to the right of 3.\nWhen folded into a cube, which face is opposite to 3?"
+    },
+    "question_ta": "ஒரு பகடையின் திறந்த அமைப்பு பின்வருமாறு அமையப்பெற்றுள்ளது:\nமையச் செங்குத்து வரிசையில் மேலிருந்து கீழாக 1, 3, 5, 6 ஆகிய சதுரங்கள் உள்ளன.\n3-ன் இடதுபுறம் 2-ம், வலதுபுறம் 4-ம் இணைக்கப்பட்டுள்ளன.\nஇதை கனசதுரமாக மடிக்கும் போது, 3-க்கு எதிரே அமையும் பக்கம் எது?",
+    "question_en": "An open net of a cube has the following structure:\nA central vertical column has four faces from top to bottom: 1, 3, 5, 6.\nFace 2 is attached to the left of 3, and Face 4 is attached to the right of 3.\nWhen folded into a cube, which face is opposite to 3?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_ta": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_en": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "மையச் செங்குத்து வரிசையில் [1, 3, 5, 6]:\nஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை:\n1-ன் எதிர்ப்பக்கம் 5 (3-ஐ விட்டு).\n3-ன் எதிர்ப்பக்கம் 6 (5-ஐ விட்டு).\nஇரு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும் (2 எதிர்ப்பக்கம் 4).\nஎனவே, 3-க்கு எதிரே உள்ள பக்கம் 6 ஆகும்.",
+      "en": "In the central vertical column [1, 3, 5, 6]:\nAlternate faces are opposite:\n1 is opposite to 5 (skipping 3).\n3 is opposite to 6 (skipping 5).\nThe side wings 2 and 4 fold up to be opposite each other (2 opposite 4).\nTherefore, 3 is opposite to 6."
+    },
+    "explanation_ta": "மையச் செங்குத்து வரிசையில் [1, 3, 5, 6]:\nஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை:\n1-ன் எதிர்ப்பக்கம் 5 (3-ஐ விட்டு).\n3-ன் எதிர்ப்பக்கம் 6 (5-ஐ விட்டு).\nஇரு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும் (2 எதிர்ப்பக்கம் 4).\nஎனவே, 3-க்கு எதிரே உள்ள பக்கம் 6 ஆகும்.",
+    "explanation_en": "In the central vertical column [1, 3, 5, 6]:\nAlternate faces are opposite:\n1 is opposite to 5 (skipping 3).\n3 is opposite to 6 (skipping 5).\nThe side wings 2 and 4 fold up to be opposite each other (2 opposite 4).\nTherefore, 3 is opposite to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 என்பது 1-க்கு எதிரானது.",
+        "en": "5 என்பது 1-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "4 என்பது 2-க்கு எதிரானது.",
+        "en": "4 என்பது 2-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "சரி. மையச் செங்குத்து வரிசையில் [1, 3, 5, 6]:\nஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை:\n1-ன் எதிர்ப்பக்கம் 5 (3-ஐ விட்டு).\n3-ன் எதிர்ப்பக்கம் 6 (5-ஐ விட்டு).\nஇரு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும் (2 எதிர்ப்பக்கம் 4).\nஎனவே, 3-க்கு எதிரே உள்ள பக்கம் 6 ஆகும்.",
+        "en": "Correct. In the central vertical column [1, 3, 5, 6]:\nAlternate faces are opposite:\n1 is opposite to 5 (skipping 3).\n3 is opposite to 6 (skipping 5).\nThe side wings 2 and 4 fold up to be opposite each other (2 opposite 4).\nTherefore, 3 is opposite to 6."
+      },
+      "D": {
+        "ta": "1 என்பது 5-க்கு எதிரானது.",
+        "en": "1 என்பது 5-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "4-சதுர செங்குத்து வரிசை கொண்ட அமைப்பில், வரிசையின் ஒன்றுவிட்ட சதுரங்களும், இரு பக்க இறக்கைகளும் எதிரெதிராக அமையும்.",
+      "en": "In a 4-face column net with side wings, alternate faces in the column are opposite, and the side wings are opposite to each other."
+    },
+    "revision_fact": {
+      "ta": "T-வடிவ திறந்த பகடை மடிப்பு விதிகள்.",
+      "en": "Cross/T-net folding rules: central alternate pairs and side wing pair."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_019",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறந்த பகடை அமைப்பை மடிக்கும்போது பின்வரும் எதிர்ப்பக்க ஜோடிகள் கிடைக்கின்றன:\n- 1-ன் எதிர்ப்பக்கம் 4\n- 2-ன் எதிர்ப்பக்கம் 5\n- 3-ன் எதிர்ப்பக்கம் 6\nபின்வரும் எந்த பகடைத் தோற்றத்தை இந்த அமைப்பிலிருந்து உருவாக்க முடியாது?",
+      "en": "An open dice net yields the following opposite pairs when folded:\n- 1 is opposite to 4\n- 2 is opposite to 5\n- 3 is opposite to 6\nWhich of the following cube views CANNOT be formed from this net?"
+    },
+    "question_ta": "ஒரு திறந்த பகடை அமைப்பை மடிக்கும்போது பின்வரும் எதிர்ப்பக்க ஜோடிகள் கிடைக்கின்றன:\n- 1-ன் எதிர்ப்பக்கம் 4\n- 2-ன் எதிர்ப்பக்கம் 5\n- 3-ன் எதிர்ப்பக்கம் 6\nபின்வரும் எந்த பகடைத் தோற்றத்தை இந்த அமைப்பிலிருந்து உருவாக்க முடியாது?",
+    "question_en": "An open dice net yields the following opposite pairs when folded:\n- 1 is opposite to 4\n- 2 is opposite to 5\n- 3 is opposite to 6\nWhich of the following cube views CANNOT be formed from this net?",
+    "options": [
+      "(4, 5, 6)",
+      "(2, 3, 4)",
+      "(1, 2, 3)",
+      "(1, 4, 2)"
+    ],
+    "options_ta": [
+      "(4, 5, 6)",
+      "(2, 3, 4)",
+      "(1, 2, 3)",
+      "(1, 4, 2)"
+    ],
+    "options_en": [
+      "(4, 5, 6)",
+      "(2, 3, 4)",
+      "(1, 2, 3)",
+      "(1, 4, 2)"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "எதிரெதிர் பக்கங்கள் ஒருபோதும் பகடையில் அருகருகே தோன்ற முடியாது. (1, 4, 2) தோற்றத்தில், 1 மற்றும் 4 அருகருகே உள்ளன. ஆனால் அமைப்பில் அவை எதிரெதிரானவை. எனவே (1, 4, 2) உருவாக்க முடியாது.",
+      "en": "Opposite faces can NEVER appear together on adjacent visible faces of a cube. In (1, 4, 2), faces 1 and 4 appear together, but they are opposite to each other in the net. Therefore, (1, 4, 2) CANNOT be formed."
+    },
+    "explanation_ta": "எதிரெதிர் பக்கங்கள் ஒருபோதும் பகடையில் அருகருகே தோன்ற முடியாது. (1, 4, 2) தோற்றத்தில், 1 மற்றும் 4 அருகருகே உள்ளன. ஆனால் அமைப்பில் அவை எதிரெதிரானவை. எனவே (1, 4, 2) உருவாக்க முடியாது.",
+    "explanation_en": "Opposite faces can NEVER appear together on adjacent visible faces of a cube. In (1, 4, 2), faces 1 and 4 appear together, but they are opposite to each other in the net. Therefore, (1, 4, 2) CANNOT be formed.",
+    "why_not_others": {
+      "A": {
+        "ta": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்.",
+        "en": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்."
+      },
+      "B": {
+        "ta": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்.",
+        "en": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்."
+      },
+      "C": {
+        "ta": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்.",
+        "en": "எந்த எதிர்ப்பக்க ஜோடியும் இல்லை, சரியான தோற்றம்."
+      },
+      "D": {
+        "ta": "சரி. எதிரெதிர் பக்கங்கள் ஒருபோதும் பகடையில் அருகருகே தோன்ற முடியாது. (1, 4, 2) தோற்றத்தில், 1 மற்றும் 4 அருகருகே உள்ளன. ஆனால் அமைப்பில் அவை எதிரெதிரானவை. எனவே (1, 4, 2) உருவாக்க முடியாது.",
+        "en": "Correct. Opposite faces can NEVER appear together on adjacent visible faces of a cube. In (1, 4, 2), faces 1 and 4 appear together, but they are opposite to each other in the net. Therefore, (1, 4, 2) CANNOT be formed."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எதிரெதிர் பக்க ஜோடி ஒரே தோற்றத்தில் தோன்றினால் அது தவறான பகடைத் தோற்றமாகும்.",
+      "en": "A cube view is invalid if it shows any pair of opposite faces simultaneously."
+    },
+    "revision_fact": {
+      "ta": "திறந்த அமைப்பிலிருந்து பகடை உருவாக்கத்திற்கான எதிர்ப்பக்க விதி.",
+      "en": "Opposite faces rule for open-net to cube conversion."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_020",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "வண்ணங்கள் பூசப்பட்ட ஒரு கனசதுரத்தின் மூன்று தோற்றங்கள்:\nநிலை 1: (சிகப்பு, மஞ்சள், பச்சை)\nநிலை 2: (சிகப்பு, நீலம், ஆரஞ்சு)\nநிலை 3: (வெள்ளை, மஞ்சள், ஆரஞ்சு)\nபச்சை நிறத்திற்கு எதிரே உள்ள வண்ணம் எது?",
+      "en": "Three positions of a colored cube are shown:\nPosition 1: (Red, Yellow, Green)\nPosition 2: (Red, Blue, Orange)\nPosition 3: (White, Yellow, Orange)\nWhich color is opposite to Green?"
+    },
+    "question_ta": "வண்ணங்கள் பூசப்பட்ட ஒரு கனசதுரத்தின் மூன்று தோற்றங்கள்:\nநிலை 1: (சிகப்பு, மஞ்சள், பச்சை)\nநிலை 2: (சிகப்பு, நீலம், ஆரஞ்சு)\nநிலை 3: (வெள்ளை, மஞ்சள், ஆரஞ்சு)\nபச்சை நிறத்திற்கு எதிரே உள்ள வண்ணம் எது?",
+    "question_en": "Three positions of a colored cube are shown:\nPosition 1: (Red, Yellow, Green)\nPosition 2: (Red, Blue, Orange)\nPosition 3: (White, Yellow, Orange)\nWhich color is opposite to Green?",
+    "options": [
+      "ஆரஞ்சு",
+      "மஞ்சள்",
+      "நீலம்",
+      "வெள்ளை"
+    ],
+    "options_ta": [
+      "ஆரஞ்சு",
+      "மஞ்சள்",
+      "நீலம்",
+      "வெள்ளை"
+    ],
+    "options_en": [
+      "Orange",
+      "Yellow",
+      "Blue",
+      "White"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "நிலை 1 மற்றும் நிலை 2-ஐ ஒப்பிடுகையில் (சிகப்பு பொதுவான பக்கம்):\nசிகப்பிலிருந்து கடிகார சுற்று:\nநிலை 1: சிகப்பு -> மஞ்சள் -> பச்சை\nநிலை 2: சிகப்பு -> நீலம் -> ஆரஞ்சு\nஇணை ஜோடிகள்:\nமஞ்சள் - நீலம்\nபச்சை - ஆரஞ்சு\nசிகப்பு - வெள்ளை\nஎனவே, பச்சைக்கு எதிரே ஆரஞ்சு வண்ணம் உள்ளது.",
+      "en": "Comparing Position 1 and Position 2 (Red is the common face):\nTracing clockwise from Red:\nPos 1: Red -> Yellow -> Green\nPos 2: Red -> Blue -> Orange\nMatching pairs:\nYellow is opposite to Blue.\nGreen is opposite to Orange.\nRed is opposite to White.\nTherefore, Green is opposite to Orange."
+    },
+    "explanation_ta": "நிலை 1 மற்றும் நிலை 2-ஐ ஒப்பிடுகையில் (சிகப்பு பொதுவான பக்கம்):\nசிகப்பிலிருந்து கடிகார சுற்று:\nநிலை 1: சிகப்பு -> மஞ்சள் -> பச்சை\nநிலை 2: சிகப்பு -> நீலம் -> ஆரஞ்சு\nஇணை ஜோடிகள்:\nமஞ்சள் - நீலம்\nபச்சை - ஆரஞ்சு\nசிகப்பு - வெள்ளை\nஎனவே, பச்சைக்கு எதிரே ஆரஞ்சு வண்ணம் உள்ளது.",
+    "explanation_en": "Comparing Position 1 and Position 2 (Red is the common face):\nTracing clockwise from Red:\nPos 1: Red -> Yellow -> Green\nPos 2: Red -> Blue -> Orange\nMatching pairs:\nYellow is opposite to Blue.\nGreen is opposite to Orange.\nRed is opposite to White.\nTherefore, Green is opposite to Orange.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. நிலை 1 மற்றும் நிலை 2-ஐ ஒப்பிடுகையில் (சிகப்பு பொதுவான பக்கம்):\nசிகப்பிலிருந்து கடிகார சுற்று:\nநிலை 1: சிகப்பு -> மஞ்சள் -> பச்சை\nநிலை 2: சிகப்பு -> நீலம் -> ஆரஞ்சு\nஇணை ஜோடிகள்:\nமஞ்சள் - நீலம்\nபச்சை - ஆரஞ்சு\nசிகப்பு - வெள்ளை\nஎனவே, பச்சைக்கு எதிரே ஆரஞ்சு வண்ணம் உள்ளது.",
+        "en": "Correct. Comparing Position 1 and Position 2 (Red is the common face):\nTracing clockwise from Red:\nPos 1: Red -> Yellow -> Green\nPos 2: Red -> Blue -> Orange\nMatching pairs:\nYellow is opposite to Blue.\nGreen is opposite to Orange.\nRed is opposite to White.\nTherefore, Green is opposite to Orange."
+      },
+      "B": {
+        "ta": "மஞ்சள் என்பது தவறான விடை.",
+        "en": "மஞ்சள் நீலத்திற்கு எதிரானது."
+      },
+      "C": {
+        "ta": "நீலம் என்பது தவறான விடை.",
+        "en": "நீலம் மஞ்சளுக்கு எதிரானது."
+      },
+      "D": {
+        "ta": "வெள்ளை என்பது தவறான விடை.",
+        "en": "வெள்ளை சிகப்பிற்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொதுவான நிறத்திலிருந்து கடிகார சுழற்சி முறை நிறப் பகடைகளுக்கும் பொருந்தும்.",
+      "en": "Clockwise mapping from the common face works identically for colors."
+    },
+    "revision_fact": {
+      "ta": "3 தோற்றங்கள் கொண்ட வண்ணப் பகடை சரியான விடை கண்டறிதல்.",
+      "en": "Color cube 3-view consistent deduction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_021",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் நான்கு தோற்றங்கள்:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nநிலை 3: (6, 2, 5)\nநிலை 4: (6, 4, 3)\n3-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Four positions of a die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nPosition 3: (6, 2, 5)\nPosition 4: (6, 4, 3)\nWhich number is opposite to 3?"
+    },
+    "question_ta": "ஒரு பகடையின் நான்கு தோற்றங்கள்:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nநிலை 3: (6, 2, 5)\nநிலை 4: (6, 4, 3)\n3-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Four positions of a die are shown:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nPosition 3: (6, 2, 5)\nPosition 4: (6, 4, 3)\nWhich number is opposite to 3?",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "6"
+    ],
+    "options_ta": [
+      "4",
+      "2",
+      "5",
+      "6"
+    ],
+    "options_en": [
+      "4",
+      "2",
+      "5",
+      "6"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 4 (6, 4, 3)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் 3.\n3-லிருந்து கடிகார சுற்று:\nநிலை 1: 3 -> 1 -> 2\nநிலை 4: 3 -> 4 -> 6\nஇணை ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4.\n2-ன் எதிர்ப்பக்கம் 6.\nஎனவே 3-க்கு எதிரே உள்ள மீதமுள்ள எண் 5 ஆகும்.",
+      "en": "Comparing Position 1 (1, 2, 3) and Position 4 (6, 4, 3):\nCommon face is 3.\nClockwise from 3:\nPos 1: 3 -> 1 -> 2\nPos 4: 3 -> 4 -> 6\nMatching pairs:\n1 is opposite to 4.\n2 is opposite to 6.\nThus, the remaining face opposite to 3 is 5."
+    },
+    "explanation_ta": "நிலை 1 (1, 2, 3) மற்றும் நிலை 4 (6, 4, 3)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் 3.\n3-லிருந்து கடிகார சுற்று:\nநிலை 1: 3 -> 1 -> 2\nநிலை 4: 3 -> 4 -> 6\nஇணை ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4.\n2-ன் எதிர்ப்பக்கம் 6.\nஎனவே 3-க்கு எதிரே உள்ள மீதமுள்ள எண் 5 ஆகும்.",
+    "explanation_en": "Comparing Position 1 (1, 2, 3) and Position 4 (6, 4, 3):\nCommon face is 3.\nClockwise from 3:\nPos 1: 3 -> 1 -> 2\nPos 4: 3 -> 4 -> 6\nMatching pairs:\n1 is opposite to 4.\n2 is opposite to 6.\nThus, the remaining face opposite to 3 is 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 என்பது 1-க்கு எதிரானது.",
+        "en": "4 என்பது 1-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "2 என்பது 6-க்கு எதிரானது.",
+        "en": "2 என்பது 6-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "சரி. நிலை 1 (1, 2, 3) மற்றும் நிலை 4 (6, 4, 3)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் 3.\n3-லிருந்து கடிகார சுற்று:\nநிலை 1: 3 -> 1 -> 2\nநிலை 4: 3 -> 4 -> 6\nஇணை ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4.\n2-ன் எதிர்ப்பக்கம் 6.\nஎனவே 3-க்கு எதிரே உள்ள மீதமுள்ள எண் 5 ஆகும்.",
+        "en": "Correct. Comparing Position 1 (1, 2, 3) and Position 4 (6, 4, 3):\nCommon face is 3.\nClockwise from 3:\nPos 1: 3 -> 1 -> 2\nPos 4: 3 -> 4 -> 6\nMatching pairs:\n1 is opposite to 4.\n2 is opposite to 6.\nThus, the remaining face opposite to 3 is 5."
+      },
+      "D": {
+        "ta": "6 என்பது 2-க்கு எதிரானது.",
+        "en": "6 என்பது 2-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒரு பொதுப் பக்கம் மட்டும் கொண்ட இரு நிலைகளைத் தேர்ந்தெடுத்து முழு பகடையையும் தீர்க்கலாம்.",
+      "en": "Pick any two positions sharing exactly one common face to solve the complete die."
+    },
+    "revision_fact": {
+      "ta": "4 தோற்றங்களில் பகடையின் தனித்துவமான தீர்வை சரிபார்த்தல்.",
+      "en": "Unique solution verification across 4 consistent dice views."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_022",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஆறு சதுரங்கள் கொண்ட படிக்கட்டு வடிவ திறந்த அமைப்பைக் கருதுக:\nவரிசை 1: [1, 2]\nவரிசை 2:    [3, 4] (2-க்கு கீழே 3)\nவரிசை 3:       [5, 6] (4-க்கு கீழே 5)\nஇந்த அமைப்பில், 2-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "Consider a stepped open net of six squares:\nRow 1: [1, 2]\nRow 2:    [3, 4] (3 is below 2)\nRow 3:       [5, 6] (5 is below 4)\nIn this standard stepped net, which face is opposite to 2?"
+    },
+    "question_ta": "ஆறு சதுரங்கள் கொண்ட படிக்கட்டு வடிவ திறந்த அமைப்பைக் கருதுக:\nவரிசை 1: [1, 2]\nவரிசை 2:    [3, 4] (2-க்கு கீழே 3)\nவரிசை 3:       [5, 6] (4-க்கு கீழே 5)\nஇந்த அமைப்பில், 2-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "Consider a stepped open net of six squares:\nRow 1: [1, 2]\nRow 2:    [3, 4] (3 is below 2)\nRow 3:       [5, 6] (5 is below 4)\nIn this standard stepped net, which face is opposite to 2?",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "1"
+    ],
+    "options_ta": [
+      "5",
+      "4",
+      "3",
+      "1"
+    ],
+    "options_en": [
+      "5",
+      "4",
+      "3",
+      "1"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "படிக்கட்டு வடிவ 2x3 அமைப்பில் [1,2], [3,4], [5,6]:\nஎதிர்ப்பக்க ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4\n3-ன் எதிர்ப்பக்கம் 6\n2-ன் எதிர்ப்பக்கம் 5.\nஎனவே, 2-க்கு எதிரே உள்ள பக்கம் 5 ஆகும்.",
+      "en": "In a 2x3 stepped net [1,2], [3,4], [5,6]:\nHorizontal/vertical step jumps yield opposites:\n1 is opposite 4\n3 is opposite 6\n2 is opposite 5.\nTherefore, 2 is opposite to 5."
+    },
+    "explanation_ta": "படிக்கட்டு வடிவ 2x3 அமைப்பில் [1,2], [3,4], [5,6]:\nஎதிர்ப்பக்க ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4\n3-ன் எதிர்ப்பக்கம் 6\n2-ன் எதிர்ப்பக்கம் 5.\nஎனவே, 2-க்கு எதிரே உள்ள பக்கம் 5 ஆகும்.",
+    "explanation_en": "In a 2x3 stepped net [1,2], [3,4], [5,6]:\nHorizontal/vertical step jumps yield opposites:\n1 is opposite 4\n3 is opposite 6\n2 is opposite 5.\nTherefore, 2 is opposite to 5.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. படிக்கட்டு வடிவ 2x3 அமைப்பில் [1,2], [3,4], [5,6]:\nஎதிர்ப்பக்க ஜோடிகள்:\n1-ன் எதிர்ப்பக்கம் 4\n3-ன் எதிர்ப்பக்கம் 6\n2-ன் எதிர்ப்பக்கம் 5.\nஎனவே, 2-க்கு எதிரே உள்ள பக்கம் 5 ஆகும்.",
+        "en": "Correct. In a 2x3 stepped net [1,2], [3,4], [5,6]:\nHorizontal/vertical step jumps yield opposites:\n1 is opposite 4\n3 is opposite 6\n2 is opposite 5.\nTherefore, 2 is opposite to 5."
+      },
+      "B": {
+        "ta": "4 என்பது 1-க்கு எதிரானது.",
+        "en": "4 என்பது 1-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "3 என்பது 6-க்கு எதிரானது.",
+        "en": "3 என்பது 6-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "1 என்பது 4-க்கு எதிரானது.",
+        "en": "1 என்பது 4-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "படிக்கட்டு அமைப்பில் எதிர்ப்பக்கங்கள் (1,4), (3,6), (2,5) ஆகும்.",
+      "en": "In a stepped net [1,2], [3,4], [5,6], opposite pairs are (1,4), (3,6), (2,5)."
+    },
+    "revision_fact": {
+      "ta": "படிக்கட்டு திறந்த பகடை மடிப்பு விதி.",
+      "en": "Stepped net folding rule."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_023",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "புள்ளிகள் கொண்ட பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (1 புள்ளி, 2 புள்ளிகள், 3 புள்ளிகள்)\nநிலை 2: (1 புள்ளி, 4 புள்ளிகள், 5 புள்ளிகள்)\nநிலை 3: (6 புள்ளிகள், 2 புள்ளிகள், 3 புள்ளிகள்)\n3 புள்ளிகள் கொண்ட பக்கத்திற்கு எதிரே எத்தனை புள்ளிகள் இருக்கும்?",
+      "en": "Three positions of a dot-patterned die are shown:\nPosition 1: (1 dot, 2 dots, 3 dots)\nPosition 2: (1 dot, 4 dots, 5 dots)\nPosition 3: (6 dots, 2 dots, 3 dots)\nHow many dots are on the face opposite to 3 dots?"
+    },
+    "question_ta": "புள்ளிகள் கொண்ட பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (1 புள்ளி, 2 புள்ளிகள், 3 புள்ளிகள்)\nநிலை 2: (1 புள்ளி, 4 புள்ளிகள், 5 புள்ளிகள்)\nநிலை 3: (6 புள்ளிகள், 2 புள்ளிகள், 3 புள்ளிகள்)\n3 புள்ளிகள் கொண்ட பக்கத்திற்கு எதிரே எத்தனை புள்ளிகள் இருக்கும்?",
+    "question_en": "Three positions of a dot-patterned die are shown:\nPosition 1: (1 dot, 2 dots, 3 dots)\nPosition 2: (1 dot, 4 dots, 5 dots)\nPosition 3: (6 dots, 2 dots, 3 dots)\nHow many dots are on the face opposite to 3 dots?",
+    "options": [
+      "6 புள்ளிகள்",
+      "4 புள்ளிகள்",
+      "5 புள்ளிகள்",
+      "2 புள்ளிகள்"
+    ],
+    "options_ta": [
+      "6 புள்ளிகள்",
+      "4 புள்ளிகள்",
+      "5 புள்ளிகள்",
+      "2 புள்ளிகள்"
+    ],
+    "options_en": [
+      "6 dots",
+      "4 dots",
+      "5 dots",
+      "2 dots"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "நிலை 1 மற்றும் நிலை 2-லிருந்து, 1 புள்ளி பொதுவான பக்கம்.\n1 புள்ளியிலிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 2 -> 3\nநிலை 2: 1 -> 4 -> 5\nஇணை ஜோடிகள்:\n2 புள்ளிகளுக்கு எதிரே 4 புள்ளிகள்\n3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள்\n1 புள்ளிக்கு எதிரே 6 புள்ளிகள்.\nஎனவே, 3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள் உள்ளன.",
+      "en": "From Position 1 and Position 2, 1 dot is the common face.\nClockwise from 1 dot:\nPos 1: 1 -> 2 -> 3\nPos 2: 1 -> 4 -> 5\nMatching elements:\n2 dots opposite 4 dots\n3 dots opposite 5 dots\n1 dot opposite 6 dots.\nHence, 3 dots is opposite to 5 dots."
+    },
+    "explanation_ta": "நிலை 1 மற்றும் நிலை 2-லிருந்து, 1 புள்ளி பொதுவான பக்கம்.\n1 புள்ளியிலிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 2 -> 3\nநிலை 2: 1 -> 4 -> 5\nஇணை ஜோடிகள்:\n2 புள்ளிகளுக்கு எதிரே 4 புள்ளிகள்\n3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள்\n1 புள்ளிக்கு எதிரே 6 புள்ளிகள்.\nஎனவே, 3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள் உள்ளன.",
+    "explanation_en": "From Position 1 and Position 2, 1 dot is the common face.\nClockwise from 1 dot:\nPos 1: 1 -> 2 -> 3\nPos 2: 1 -> 4 -> 5\nMatching elements:\n2 dots opposite 4 dots\n3 dots opposite 5 dots\n1 dot opposite 6 dots.\nHence, 3 dots is opposite to 5 dots.",
+    "why_not_others": {
+      "A": {
+        "ta": "6 புள்ளிகள் என்பது தவறான விடை.",
+        "en": "6 புள்ளிகளுக்கு எதிரே 1 புள்ளி உள்ளது."
+      },
+      "B": {
+        "ta": "4 புள்ளிகள் என்பது தவறான விடை.",
+        "en": "4 புள்ளிகளுக்கு எதிரே 2 புள்ளிகள் உள்ளன."
+      },
+      "C": {
+        "ta": "சரி. நிலை 1 மற்றும் நிலை 2-லிருந்து, 1 புள்ளி பொதுவான பக்கம்.\n1 புள்ளியிலிருந்து கடிகார சுற்று:\nநிலை 1: 1 -> 2 -> 3\nநிலை 2: 1 -> 4 -> 5\nஇணை ஜோடிகள்:\n2 புள்ளிகளுக்கு எதிரே 4 புள்ளிகள்\n3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள்\n1 புள்ளிக்கு எதிரே 6 புள்ளிகள்.\nஎனவே, 3 புள்ளிகளுக்கு எதிரே 5 புள்ளிகள் உள்ளன.",
+        "en": "Correct. From Position 1 and Position 2, 1 dot is the common face.\nClockwise from 1 dot:\nPos 1: 1 -> 2 -> 3\nPos 2: 1 -> 4 -> 5\nMatching elements:\n2 dots opposite 4 dots\n3 dots opposite 5 dots\n1 dot opposite 6 dots.\nHence, 3 dots is opposite to 5 dots."
+      },
+      "D": {
+        "ta": "2 புள்ளிகள் என்பது தவறான விடை.",
+        "en": "2 புள்ளிகளுக்கு எதிரே 4 புள்ளிகள் உள்ளன."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "புள்ளி பகடைகளும் எண் பகடைகளின் அதே விதிகளைப் பின்பற்றுகின்றன.",
+      "en": "Dot dice follow identical rules to numbered dice."
+    },
+    "revision_fact": {
+      "ta": "புள்ளி பகடை தோற்றங்களின் விடை கண்டறிதல்.",
+      "en": "Dot dice 3-view deduction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_024",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "A, B, C, D, E, F ஆகிய எழுத்துகள் கொண்ட கனசதுரத்தின் 3 தோற்றங்கள்:\nநிலை 1: (A, B, C)\nநிலை 2: (A, D, E)\nநிலை 3: (F, B, D)\nC-க்கு எதிரே உள்ள எழுத்து எது?",
+      "en": "Three positions of a letter cube with faces A, B, C, D, E, F are shown:\nPosition 1: (A, B, C)\nPosition 2: (A, D, E)\nPosition 3: (F, B, D)\nWhich letter is opposite to C?"
+    },
+    "question_ta": "A, B, C, D, E, F ஆகிய எழுத்துகள் கொண்ட கனசதுரத்தின் 3 தோற்றங்கள்:\nநிலை 1: (A, B, C)\nநிலை 2: (A, D, E)\nநிலை 3: (F, B, D)\nC-க்கு எதிரே உள்ள எழுத்து எது?",
+    "question_en": "Three positions of a letter cube with faces A, B, C, D, E, F are shown:\nPosition 1: (A, B, C)\nPosition 2: (A, D, E)\nPosition 3: (F, B, D)\nWhich letter is opposite to C?",
+    "options": [
+      "B",
+      "D",
+      "E",
+      "F"
+    ],
+    "options_ta": [
+      "B",
+      "D",
+      "E",
+      "F"
+    ],
+    "options_en": [
+      "B",
+      "D",
+      "E",
+      "F"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "நிலை 1 (A, B, C) மற்றும் நிலை 2 (A, D, E)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் = A.\nA-லிருந்து கடிகார சுற்று:\nநிலை 1: A -> B -> C\nநிலை 2: A -> E -> D\nஇணை ஜோடிகள்:\nB - E\nC - D\nA - F\nஎனவே, C-க்கு எதிரே D உள்ளது.",
+      "en": "Comparing Position 1 (A, B, C) and Position 2 (A, D, E):\nCommon face = A.\nClockwise from A:\nPos 1: A -> B -> C\nPos 2: A -> E -> D\nMatching pairs:\nB is opposite to E.\nC is opposite to D.\nA is opposite to F.\nTherefore, C is opposite to D."
+    },
+    "explanation_ta": "நிலை 1 (A, B, C) மற்றும் நிலை 2 (A, D, E)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் = A.\nA-லிருந்து கடிகார சுற்று:\nநிலை 1: A -> B -> C\nநிலை 2: A -> E -> D\nஇணை ஜோடிகள்:\nB - E\nC - D\nA - F\nஎனவே, C-க்கு எதிரே D உள்ளது.",
+    "explanation_en": "Comparing Position 1 (A, B, C) and Position 2 (A, D, E):\nCommon face = A.\nClockwise from A:\nPos 1: A -> B -> C\nPos 2: A -> E -> D\nMatching pairs:\nB is opposite to E.\nC is opposite to D.\nA is opposite to F.\nTherefore, C is opposite to D.",
+    "why_not_others": {
+      "A": {
+        "ta": "B என்பது E-க்கு எதிரானது.",
+        "en": "B என்பது E-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "சரி. நிலை 1 (A, B, C) மற்றும் நிலை 2 (A, D, E)-ஐ ஒப்பிடுகையில்:\nபொதுவான பக்கம் = A.\nA-லிருந்து கடிகார சுற்று:\nநிலை 1: A -> B -> C\nநிலை 2: A -> E -> D\nஇணை ஜோடிகள்:\nB - E\nC - D\nA - F\nஎனவே, C-க்கு எதிரே D உள்ளது.",
+        "en": "Correct. Comparing Position 1 (A, B, C) and Position 2 (A, D, E):\nCommon face = A.\nClockwise from A:\nPos 1: A -> B -> C\nPos 2: A -> E -> D\nMatching pairs:\nB is opposite to E.\nC is opposite to D.\nA is opposite to F.\nTherefore, C is opposite to D."
+      },
+      "C": {
+        "ta": "E என்பது B-க்கு எதிரானது.",
+        "en": "E என்பது B-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "F என்பது A-க்கு எதிரானது.",
+        "en": "F என்பது A-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பொது எழுத்து கடிகார சுழற்சி எதிர்ப்பக்க ஜோடிகளைத் தரும்.",
+      "en": "Common face clockwise alignment yields letter opposites."
+    },
+    "revision_fact": {
+      "ta": "எழுத்துப் பகடை தோற்றங்களின் சீரான தன்மை.",
+      "en": "Letter cube 3-view consistency."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_025",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "+, -, *, /, =, # ஆகிய குறியீடுகள் கொண்ட பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (+, -, *)\nநிலை 2: (+, /, =)\nநிலை 3: (#, -, /)\n*-க்கு எதிரே உள்ள குறியீடு எது?",
+      "en": "Three positions of a symbol die with faces +, -, *, /, =, # are shown:\nPosition 1: (+, -, *)\nPosition 2: (+, /, =)\nPosition 3: (#, -, /)\nWhich symbol is opposite to *?"
+    },
+    "question_ta": "+, -, *, /, =, # ஆகிய குறியீடுகள் கொண்ட பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (+, -, *)\nநிலை 2: (+, /, =)\nநிலை 3: (#, -, /)\n*-க்கு எதிரே உள்ள குறியீடு எது?",
+    "question_en": "Three positions of a symbol die with faces +, -, *, /, =, # are shown:\nPosition 1: (+, -, *)\nPosition 2: (+, /, =)\nPosition 3: (#, -, /)\nWhich symbol is opposite to *?",
+    "options": [
+      "-",
+      "=",
+      "#",
+      "/"
+    ],
+    "options_ta": [
+      "-",
+      "=",
+      "#",
+      "/"
+    ],
+    "options_en": [
+      "-",
+      "=",
+      "#",
+      "/"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "நிலை 1 (+, -, *) மற்றும் நிலை 2 (+, /, =)-ஐ ஒப்பிடுகையில்:\nபொதுவான குறியீடு = +\n+-லிருந்து கடிகார சுற்று:\nநிலை 1: + -> - -> *\nநிலை 2: + -> / -> =\nஇணை ஜோடிகள்:\n- மற்றும் /\n* மற்றும் =\n+ மற்றும் #.\nஎனவே, *-க்கு எதிரே = உள்ளது.",
+      "en": "Comparing Pos 1 (+, -, *) and Pos 2 (+, /, =):\nCommon symbol = +\nClockwise from +:\nPos 1: + -> - -> *\nPos 2: + -> / -> =\nMatching pairs:\n- is opposite to /\n* is opposite to =\n+ is opposite to #.\nTherefore, * is opposite to =."
+    },
+    "explanation_ta": "நிலை 1 (+, -, *) மற்றும் நிலை 2 (+, /, =)-ஐ ஒப்பிடுகையில்:\nபொதுவான குறியீடு = +\n+-லிருந்து கடிகார சுற்று:\nநிலை 1: + -> - -> *\nநிலை 2: + -> / -> =\nஇணை ஜோடிகள்:\n- மற்றும் /\n* மற்றும் =\n+ மற்றும் #.\nஎனவே, *-க்கு எதிரே = உள்ளது.",
+    "explanation_en": "Comparing Pos 1 (+, -, *) and Pos 2 (+, /, =):\nCommon symbol = +\nClockwise from +:\nPos 1: + -> - -> *\nPos 2: + -> / -> =\nMatching pairs:\n- is opposite to /\n* is opposite to =\n+ is opposite to #.\nTherefore, * is opposite to =.",
+    "why_not_others": {
+      "A": {
+        "ta": "- என்பது /-க்கு எதிரானது.",
+        "en": "- என்பது /-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "சரி. நிலை 1 (+, -, *) மற்றும் நிலை 2 (+, /, =)-ஐ ஒப்பிடுகையில்:\nபொதுவான குறியீடு = +\n+-லிருந்து கடிகார சுற்று:\nநிலை 1: + -> - -> *\nநிலை 2: + -> / -> =\nஇணை ஜோடிகள்:\n- மற்றும் /\n* மற்றும் =\n+ மற்றும் #.\nஎனவே, *-க்கு எதிரே = உள்ளது.",
+        "en": "Correct. Comparing Pos 1 (+, -, *) and Pos 2 (+, /, =):\nCommon symbol = +\nClockwise from +:\nPos 1: + -> - -> *\nPos 2: + -> / -> =\nMatching pairs:\n- is opposite to /\n* is opposite to =\n+ is opposite to #.\nTherefore, * is opposite to =."
+      },
+      "C": {
+        "ta": "# என்பது +-க்கு எதிரானது.",
+        "en": "# என்பது +-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "/ என்பது --க்கு எதிரானது.",
+        "en": "/ என்பது --க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "குறியீட்டு பகடைகளும் அதே சுழற்சி கொள்கைகளைப் பின்பற்றுகின்றன.",
+      "en": "Symbol dice follow exact same rotation principles."
+    },
+    "revision_fact": {
+      "ta": "குறியீட்டு பகடை எதிர்ப்பக்க ஜோடி கணக்கீடு.",
+      "en": "Symbol cube opposite pair derivation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_026",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறந்த பகடை அமைப்பில் செங்குத்து வரிசையில் [1, 2, 3, 4] சதுரங்களும், 2-ன் இடதுபுறம் 5-ம், வலதுபுறம் 6-ம் உள்ளன. 2-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "An open net consists of a vertical column of four faces [1, 2, 3, 4] with face 5 on the left of 2 and face 6 on the right of 2. Which face is opposite to 2?"
+    },
+    "question_ta": "ஒரு திறந்த பகடை அமைப்பில் செங்குத்து வரிசையில் [1, 2, 3, 4] சதுரங்களும், 2-ன் இடதுபுறம் 5-ம், வலதுபுறம் 6-ம் உள்ளன. 2-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "An open net consists of a vertical column of four faces [1, 2, 3, 4] with face 5 on the left of 2 and face 6 on the right of 2. Which face is opposite to 2?",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "6"
+    ],
+    "options_ta": [
+      "4",
+      "3",
+      "1",
+      "6"
+    ],
+    "options_en": [
+      "4",
+      "3",
+      "1",
+      "6"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "செங்குத்து வரிசை [1, 2, 3, 4]-இல் ஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை: 1-ன் எதிர்ப்பக்கம் 3, 2-ன் எதிர்ப்பக்கம் 4. பக்கவாட்டு இறக்கைகள் 5 மற்றும் 6 எதிரெதிரானவை. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+      "en": "In the vertical column [1, 2, 3, 4], alternate faces are opposite: 1 is opposite 3, and 2 is opposite 4. The side wings 5 and 6 are opposite to each other. Therefore, 2 is opposite to 4."
+    },
+    "explanation_ta": "செங்குத்து வரிசை [1, 2, 3, 4]-இல் ஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை: 1-ன் எதிர்ப்பக்கம் 3, 2-ன் எதிர்ப்பக்கம் 4. பக்கவாட்டு இறக்கைகள் 5 மற்றும் 6 எதிரெதிரானவை. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+    "explanation_en": "In the vertical column [1, 2, 3, 4], alternate faces are opposite: 1 is opposite 3, and 2 is opposite 4. The side wings 5 and 6 are opposite to each other. Therefore, 2 is opposite to 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. செங்குத்து வரிசை [1, 2, 3, 4]-இல் ஒன்றுவிட்ட பக்கங்கள் எதிரெதிரானவை: 1-ன் எதிர்ப்பக்கம் 3, 2-ன் எதிர்ப்பக்கம் 4. பக்கவாட்டு இறக்கைகள் 5 மற்றும் 6 எதிரெதிரானவை. எனவே 2-க்கு எதிரே 4 உள்ளது.",
+        "en": "Correct. In the vertical column [1, 2, 3, 4], alternate faces are opposite: 1 is opposite 3, and 2 is opposite 4. The side wings 5 and 6 are opposite to each other. Therefore, 2 is opposite to 4."
+      },
+      "B": {
+        "ta": "3 என்பது 1-க்கு எதிரானது.",
+        "en": "3 என்பது 1-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "1 என்பது 3-க்கு எதிரானது.",
+        "en": "1 என்பது 3-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "6 என்பது 5-க்கு எதிரானது.",
+        "en": "6 என்பது 5-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "2-ஆம் சதுரத்தில் இறக்கைகள் கொண்ட 4-வரிசை அமைப்பில், 2-ன் எதிர்ப்பக்கம் 4 ஆகும்.",
+      "en": "In a 4-strip with wings at face 2, 2 is opposite 4."
+    },
+    "revision_fact": {
+      "ta": "சிலுவை வடிவ பகடையின் 2-ஆம் பக்க விதி.",
+      "en": "Cross net alternate rule for face 2."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_027",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "எந்தவொரு 6 பக்கங்கள் கொண்ட கனசதுரத்திலும் (பகடை), ஒரு குறிப்பிட்ட பக்கத்திற்கு அருகில் உள்ள பக்கங்களின் எண்ணிக்கை எத்தனை?",
+      "en": "In any standard 6-faced cube (die), how many faces are adjacent to any single given face?"
+    },
+    "question_ta": "எந்தவொரு 6 பக்கங்கள் கொண்ட கனசதுரத்திலும் (பகடை), ஒரு குறிப்பிட்ட பக்கத்திற்கு அருகில் உள்ள பக்கங்களின் எண்ணிக்கை எத்தனை?",
+    "question_en": "In any standard 6-faced cube (die), how many faces are adjacent to any single given face?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "options_ta": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "options_en": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "ஒரு கனசதுரத்திற்கு 6 பக்கங்கள் உள்ளன. ஏதேனும் ஒரு குறிப்பிட்ட பக்கத்திற்கு சரியாக 1 பக்கம் எதிர்ப்பக்கமாகவும், மீதமுள்ள 4 பக்கங்கள் அருகில் உள்ள பக்கங்களாகவும் (adjacent faces) இருக்கும்.",
+      "en": "A cube has 6 faces. For any given face, exactly 1 face is opposite to it, and the remaining 4 faces are adjacent to it."
+    },
+    "explanation_ta": "ஒரு கனசதுரத்திற்கு 6 பக்கங்கள் உள்ளன. ஏதேனும் ஒரு குறிப்பிட்ட பக்கத்திற்கு சரியாக 1 பக்கம் எதிர்ப்பக்கமாகவும், மீதமுள்ள 4 பக்கங்கள் அருகில் உள்ள பக்கங்களாகவும் (adjacent faces) இருக்கும்.",
+    "explanation_en": "A cube has 6 faces. For any given face, exactly 1 face is opposite to it, and the remaining 4 faces are adjacent to it.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 அடுத்துள்ள பக்கங்கள் உள்ளன.",
+        "en": "4 அடுத்துள்ள பக்கங்கள் உள்ளன."
+      },
+      "B": {
+        "ta": "சரி. ஒரு கனசதுரத்திற்கு 6 பக்கங்கள் உள்ளன. ஏதேனும் ஒரு குறிப்பிட்ட பக்கத்திற்கு சரியாக 1 பக்கம் எதிர்ப்பக்கமாகவும், மீதமுள்ள 4 பக்கங்கள் அருகில் உள்ள பக்கங்களாகவும் (adjacent faces) இருக்கும்.",
+        "en": "Correct. A cube has 6 faces. For any given face, exactly 1 face is opposite to it, and the remaining 4 faces are adjacent to it."
+      },
+      "C": {
+        "ta": "4 அடுத்துள்ள பக்கங்கள் உள்ளன.",
+        "en": "4 அடுத்துள்ள பக்கங்கள் உள்ளன."
+      },
+      "D": {
+        "ta": "மொத்தம் 6 பக்கங்களில் 1 எதிர்ப்பக்கம் + 4 அடுத்துள்ள பக்கங்கள்.",
+        "en": "மொத்தம் 6 பக்கங்களில் 1 எதிர்ப்பக்கம் + 4 அடுத்துள்ள பக்கங்கள்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கனசதுரத்தின் ஒவ்வொரு பக்கத்திற்கும் 1 எதிர்ப்பக்கமும் 4 அடுத்துள்ள பக்கங்களும் உண்டு.",
+      "en": "Every face of a cube has 1 opposite face and 4 adjacent faces."
+    },
+    "revision_fact": {
+      "ta": "முப்பரிமாண கனசதுரத்தின் வடிவியல் பண்பு: 1 எதிர்ப்பக்கம், 4 அடுத்துள்ள பக்கங்கள்.",
+      "en": "Geometric property of a 3D cube: 1 opposite, 4 adjacent."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_028",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு பகடையின் இரு தோற்றங்கள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nஅதே பகடையின் செல்லுபடியாகும் மூன்றாவது தோற்றம் எது?",
+      "en": "Two positions of a die are given:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nWhich of the following represents a valid third view of the SAME die?"
+    },
+    "question_ta": "ஒரு பகடையின் இரு தோற்றங்கள் கொடுக்கப்பட்டுள்ளன:\nநிலை 1: (1, 2, 3)\nநிலை 2: (1, 4, 5)\nஅதே பகடையின் செல்லுபடியாகும் மூன்றாவது தோற்றம் எது?",
+    "question_en": "Two positions of a die are given:\nPosition 1: (1, 2, 3)\nPosition 2: (1, 4, 5)\nWhich of the following represents a valid third view of the SAME die?",
+    "options": [
+      "(1, 2, 5)",
+      "(1, 6, 2)",
+      "(2, 4, 3)",
+      "(3, 5, 1)"
+    ],
+    "options_ta": [
+      "(1, 2, 5)",
+      "(1, 6, 2)",
+      "(2, 4, 3)",
+      "(3, 5, 1)"
+    ],
+    "options_en": [
+      "(1, 2, 5)",
+      "(1, 6, 2)",
+      "(2, 4, 3)",
+      "(3, 5, 1)"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "நிலை 1 & 2 இலிருந்து எதிர்ப்பக்கங்கள்: 1-6, 2-4, 3-5.\nஎதிர்ப்பக்கங்கள் ஒரே தோற்றத்தில் தோன்றக்கூடாது.\nA: (1,6) எதிரெதிர் -> தவறானது.\nB: (2,4) எதிரெதிர் -> தவறானது.\nC: (3,5) எதிரெதிர் -> தவறானது.\nD: (1, 2, 5) எந்த எதிர்ப்பக்கமும் இல்லை -> சரியானது!",
+      "en": "From Pos 1 and Pos 2, common face 1 gives opposites: 1 opp 6, 2 opp 4, 3 opp 5.\nA cube view is valid ONLY IF no opposite pair appears together.\nA: (1,6) opposite -> invalid.\nB: (2,4) opposite -> invalid.\nC: (3,5) opposite -> invalid.\nD: (1, 2, 5) contains no opposite pairs -> VALID!"
+    },
+    "explanation_ta": "நிலை 1 & 2 இலிருந்து எதிர்ப்பக்கங்கள்: 1-6, 2-4, 3-5.\nஎதிர்ப்பக்கங்கள் ஒரே தோற்றத்தில் தோன்றக்கூடாது.\nA: (1,6) எதிரெதிர் -> தவறானது.\nB: (2,4) எதிரெதிர் -> தவறானது.\nC: (3,5) எதிரெதிர் -> தவறானது.\nD: (1, 2, 5) எந்த எதிர்ப்பக்கமும் இல்லை -> சரியானது!",
+    "explanation_en": "From Pos 1 and Pos 2, common face 1 gives opposites: 1 opp 6, 2 opp 4, 3 opp 5.\nA cube view is valid ONLY IF no opposite pair appears together.\nA: (1,6) opposite -> invalid.\nB: (2,4) opposite -> invalid.\nC: (3,5) opposite -> invalid.\nD: (1, 2, 5) contains no opposite pairs -> VALID!",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. நிலை 1 & 2 இலிருந்து எதிர்ப்பக்கங்கள்: 1-6, 2-4, 3-5.\nஎதிர்ப்பக்கங்கள் ஒரே தோற்றத்தில் தோன்றக்கூடாது.\nA: (1,6) எதிரெதிர் -> தவறானது.\nB: (2,4) எதிரெதிர் -> தவறானது.\nC: (3,5) எதிரெதிர் -> தவறானது.\nD: (1, 2, 5) எந்த எதிர்ப்பக்கமும் இல்லை -> சரியானது!",
+        "en": "Correct. From Pos 1 and Pos 2, common face 1 gives opposites: 1 opp 6, 2 opp 4, 3 opp 5.\nA cube view is valid ONLY IF no opposite pair appears together.\nA: (1,6) opposite -> invalid.\nB: (2,4) opposite -> invalid.\nC: (3,5) opposite -> invalid.\nD: (1, 2, 5) contains no opposite pairs -> VALID!"
+      },
+      "B": {
+        "ta": "1 மற்றும் 6 எதிரெதிர் பக்கங்கள்.",
+        "en": "1 மற்றும் 6 எதிரெதிர் பக்கங்கள்."
+      },
+      "C": {
+        "ta": "2 மற்றும் 4 எதிரெதிர் பக்கங்கள்.",
+        "en": "2 மற்றும் 4 எதிரெதிர் பக்கங்கள்."
+      },
+      "D": {
+        "ta": "3 மற்றும் 5 எதிரெதிர் பக்கங்கள்.",
+        "en": "3 மற்றும் 5 எதிரெதிர் பக்கங்கள்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எதிர்ப்பக்க ஜோடிகள் ஒன்றாகத் தோன்றும் விருப்பங்களை நீக்கவும்.",
+      "en": "Rule out options where any opposite pair appears together."
+    },
+    "revision_fact": {
+      "ta": "எதிர்ப்பக்கங்கள் அடுத்து வராத தத்துவ அடிப்படையில் சரியான தோற்றத்தை தேர்வு செய்தல்.",
+      "en": "Valid view selection based on non-adjacency of opposite faces."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_029",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "1-க்கு எதிரே 6, 2-க்கு எதிரே 5, 3-க்கு எதிரே 4 உள்ள ஒரு பகடையில், 6-க்கு அருகில் இல்லாத எண் எது?",
+      "en": "In a die where 1 is opposite to 6, 2 is opposite to 5, and 3 is opposite to 4, which number is NOT adjacent to 6?"
+    },
+    "question_ta": "1-க்கு எதிரே 6, 2-க்கு எதிரே 5, 3-க்கு எதிரே 4 உள்ள ஒரு பகடையில், 6-க்கு அருகில் இல்லாத எண் எது?",
+    "question_en": "In a die where 1 is opposite to 6, 2 is opposite to 5, and 3 is opposite to 4, which number is NOT adjacent to 6?",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "1"
+    ],
+    "options_ta": [
+      "3",
+      "2",
+      "5",
+      "1"
+    ],
+    "options_en": [
+      "3",
+      "2",
+      "5",
+      "1"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "6-க்கு எதிரே உள்ள பக்கம் 1. எதிர்ப்பக்கம் ஒருபோதும் அடுத்துள்ள பக்கமாக இருக்க முடியாது. எனவே 1 என்பது 6-க்கு அருகில் இல்லாத எண் ஆகும்.",
+      "en": "The face opposite to 6 is 1. An opposite face can NEVER be adjacent. Therefore, 1 is NOT adjacent to 6."
+    },
+    "explanation_ta": "6-க்கு எதிரே உள்ள பக்கம் 1. எதிர்ப்பக்கம் ஒருபோதும் அடுத்துள்ள பக்கமாக இருக்க முடியாது. எனவே 1 என்பது 6-க்கு அருகில் இல்லாத எண் ஆகும்.",
+    "explanation_en": "The face opposite to 6 is 1. An opposite face can NEVER be adjacent. Therefore, 1 is NOT adjacent to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "3 என்பது 6-க்கு அருகில் உள்ள பக்கம்.",
+        "en": "3 என்பது 6-க்கு அருகில் உள்ள பக்கம்."
+      },
+      "B": {
+        "ta": "2 என்பது 6-க்கு அருகில் உள்ள பக்கம்.",
+        "en": "2 என்பது 6-க்கு அருகில் உள்ள பக்கம்."
+      },
+      "C": {
+        "ta": "5 என்பது 6-க்கு அருகில் உள்ள பக்கம்.",
+        "en": "5 என்பது 6-க்கு அருகில் உள்ள பக்கம்."
+      },
+      "D": {
+        "ta": "சரி. 6-க்கு எதிரே உள்ள பக்கம் 1. எதிர்ப்பக்கம் ஒருபோதும் அடுத்துள்ள பக்கமாக இருக்க முடியாது. எனவே 1 என்பது 6-க்கு அருகில் இல்லாத எண் ஆகும்.",
+        "en": "Correct. The face opposite to 6 is 1. An opposite face can NEVER be adjacent. Therefore, 1 is NOT adjacent to 6."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒரு குறிப்பிட்ட பக்கத்திற்கு அருகில் இல்லாத ஒரே பக்கம் அதன் எதிர்ப்பக்கமே ஆகும்.",
+      "en": "The opposite face is the only face that is NOT adjacent to a given face."
+    },
+    "revision_fact": {
+      "ta": "எதிர்ப்பக்கம் ஒருபோதும் அடுத்துள்ள பக்கமாக அமையாது.",
+      "en": "Opposite face is strictly non-adjacent."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_030",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறந்த பகடையில் செங்குத்து வரிசையில் [1, 2, 3, 4] சதுரங்களும், 3-ன் இடதுபுறம் 5-ம், வலதுபுறம் 6-ம் உள்ளன. 5-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "An open net has vertical strip [1, 2, 3, 4] with face 5 to the left of 3 and face 6 to the right of 3. Which face is opposite to 5?"
+    },
+    "question_ta": "ஒரு திறந்த பகடையில் செங்குத்து வரிசையில் [1, 2, 3, 4] சதுரங்களும், 3-ன் இடதுபுறம் 5-ம், வலதுபுறம் 6-ம் உள்ளன. 5-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "An open net has vertical strip [1, 2, 3, 4] with face 5 to the left of 3 and face 6 to the right of 3. Which face is opposite to 5?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_ta": [
+      "2",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_en": [
+      "2",
+      "4",
+      "6",
+      "1"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஒரே சதுரத்தில் (3) இடது மற்றும் வலதுபுறம் இணைக்கப்பட்டுள்ள இறக்கைகள் 5 மற்றும் 6 மடிக்கும் போது ஒன்றையொன்று நோக்கும். எனவே 5-ன் எதிர்ப்பக்கம் 6.",
+      "en": "The left wing 5 and right wing 6 attached to the same square (3) fold up to face each other. Thus 5 is opposite to 6."
+    },
+    "explanation_ta": "ஒரே சதுரத்தில் (3) இடது மற்றும் வலதுபுறம் இணைக்கப்பட்டுள்ள இறக்கைகள் 5 மற்றும் 6 மடிக்கும் போது ஒன்றையொன்று நோக்கும். எனவே 5-ன் எதிர்ப்பக்கம் 6.",
+    "explanation_en": "The left wing 5 and right wing 6 attached to the same square (3) fold up to face each other. Thus 5 is opposite to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "2 என்பது 4-க்கு எதிரானது.",
+        "en": "2 என்பது 4-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "4 என்பது 2-க்கு எதிரானது.",
+        "en": "4 என்பது 2-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "சரி. ஒரே சதுரத்தில் (3) இடது மற்றும் வலதுபுறம் இணைக்கப்பட்டுள்ள இறக்கைகள் 5 மற்றும் 6 மடிக்கும் போது ஒன்றையொன்று நோக்கும். எனவே 5-ன் எதிர்ப்பக்கம் 6.",
+        "en": "Correct. The left wing 5 and right wing 6 attached to the same square (3) fold up to face each other. Thus 5 is opposite to 6."
+      },
+      "D": {
+        "ta": "1 என்பது 3-க்கு எதிரானது.",
+        "en": "1 என்பது 3-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒரே சதுரத்தின் இருபுறமும் உள்ள இறக்கைகள் மடிக்கும்போது எதிர்ப்பக்க ஜோடியாகும்.",
+      "en": "Wings attached on opposite sides of the same column box fold into an opposite pair."
+    },
+    "revision_fact": {
+      "ta": "ஒரே பெட்டியில் இணைக்கப்பட்ட இரு இறக்கைகள் எதிரெதிர் பக்கங்களாகும்.",
+      "en": "Side wings attached to same box form opposite pair."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_031",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "E, F, G, H, I, J ஆகிய எழுத்துகள் கொண்ட பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (E, F, G)\nநிலை 2: (E, H, I)\nE-க்கு எதிரே உள்ள எழுத்து எது?",
+      "en": "Two views of a die with letters E, F, G, H, I, J are shown:\nPosition 1: (E, F, G)\nPosition 2: (E, H, I)\nWhich letter is opposite to E?"
+    },
+    "question_ta": "E, F, G, H, I, J ஆகிய எழுத்துகள் கொண்ட பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (E, F, G)\nநிலை 2: (E, H, I)\nE-க்கு எதிரே உள்ள எழுத்து எது?",
+    "question_en": "Two views of a die with letters E, F, G, H, I, J are shown:\nPosition 1: (E, F, G)\nPosition 2: (E, H, I)\nWhich letter is opposite to E?",
+    "options": [
+      "F",
+      "G",
+      "H",
+      "J"
+    ],
+    "options_ta": [
+      "F",
+      "G",
+      "H",
+      "J"
+    ],
+    "options_en": [
+      "F",
+      "G",
+      "H",
+      "J"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "E என்ற எழுத்து F, G, H, I ஆகியவற்றுக்கு அருகில் உள்ளது. கொடுக்கப்பட்ட 6 எழுத்துகளில் காணப்படாத ஒரே எழுத்து J. எனவே E-க்கு எதிரே J உள்ளது.",
+      "en": "E is adjacent to F, G, H, and I. The only unshown letter among the six faces is J. Thus, E is opposite to J."
+    },
+    "explanation_ta": "E என்ற எழுத்து F, G, H, I ஆகியவற்றுக்கு அருகில் உள்ளது. கொடுக்கப்பட்ட 6 எழுத்துகளில் காணப்படாத ஒரே எழுத்து J. எனவே E-க்கு எதிரே J உள்ளது.",
+    "explanation_en": "E is adjacent to F, G, H, and I. The only unshown letter among the six faces is J. Thus, E is opposite to J.",
+    "why_not_others": {
+      "A": {
+        "ta": "F நிலை 1-இல் E-க்கு அருகில் உள்ளது.",
+        "en": "F நிலை 1-இல் E-க்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "G நிலை 1-இல் E-க்கு அருகில் உள்ளது.",
+        "en": "G நிலை 1-இல் E-க்கு அருகில் உள்ளது."
+      },
+      "C": {
+        "ta": "H நிலை 2-இல் E-க்கு அருகில் உள்ளது.",
+        "en": "H நிலை 2-இல் E-க்கு அருகில் உள்ளது."
+      },
+      "D": {
+        "ta": "சரி. E என்ற எழுத்து F, G, H, I ஆகியவற்றுக்கு அருகில் உள்ளது. கொடுக்கப்பட்ட 6 எழுத்துகளில் காணப்படாத ஒரே எழுத்து J. எனவே E-க்கு எதிரே J உள்ளது.",
+        "en": "Correct. E is adjacent to F, G, H, and I. The only unshown letter among the six faces is J. Thus, E is opposite to J."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "6 எழுத்துகளில் காணப்படாத பக்கம் பொதுவான எழுத்தின் எதிர்ப்பக்கமாகும்.",
+      "en": "The hidden face among 6 defined faces is opposite to the common face."
+    },
+    "revision_fact": {
+      "ta": "பொது எழுத்து அடிப்படையிலான எதிர்ப்பக்கக் கணிப்பு.",
+      "en": "Common face letter deduction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_032",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Two Common Faces",
+    "question": {
+      "ta": "1-6 எண்கள் கொண்ட பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (1, 4, 6)\nநிலை 2: (1, 4, 3)\n6-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Two positions of a standard 1-6 numbered die show:\nPosition 1: (1, 4, 6)\nPosition 2: (1, 4, 3)\nWhich number is opposite to 6?"
+    },
+    "question_ta": "1-6 எண்கள் கொண்ட பகடையின் இரு தோற்றங்கள்:\nநிலை 1: (1, 4, 6)\nநிலை 2: (1, 4, 3)\n6-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Two positions of a standard 1-6 numbered die show:\nPosition 1: (1, 4, 6)\nPosition 2: (1, 4, 3)\nWhich number is opposite to 6?",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "options_ta": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "options_en": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இரு தோற்றங்களிலும் 1 மற்றும் 4 பொதுவானவை. இரு பொதுப் பக்க விதியின்படி, மீதமுள்ள பக்கங்கள் (6 மற்றும் 3) ஒன்றுக்கொன்று எதிரானவை. எனவே 6-க்கு எதிரே 3 உள்ளது.",
+      "en": "Faces 1 and 4 are common to both positions. By the two common faces rule, the remaining faces (6 and 3) must be opposite to each other. Hence, 6 is opposite to 3."
+    },
+    "explanation_ta": "இரு தோற்றங்களிலும் 1 மற்றும் 4 பொதுவானவை. இரு பொதுப் பக்க விதியின்படி, மீதமுள்ள பக்கங்கள் (6 மற்றும் 3) ஒன்றுக்கொன்று எதிரானவை. எனவே 6-க்கு எதிரே 3 உள்ளது.",
+    "explanation_en": "Faces 1 and 4 are common to both positions. By the two common faces rule, the remaining faces (6 and 3) must be opposite to each other. Hence, 6 is opposite to 3.",
+    "why_not_others": {
+      "A": {
+        "ta": "3 நேரடியாக 6-க்கு எதிரானது.",
+        "en": "3 நேரடியாக 6-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "4 பொதுவான பக்கங்களில் ஒன்று.",
+        "en": "4 பொதுவான பக்கங்களில் ஒன்று."
+      },
+      "C": {
+        "ta": "3 நேரடியாக 6-க்கு எதிரானது.",
+        "en": "3 நேரடியாக 6-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "சரி. இரு தோற்றங்களிலும் 1 மற்றும் 4 பொதுவானவை. இரு பொதுப் பக்க விதியின்படி, மீதமுள்ள பக்கங்கள் (6 மற்றும் 3) ஒன்றுக்கொன்று எதிரானவை. எனவே 6-க்கு எதிரே 3 உள்ளது.",
+        "en": "Correct. Faces 1 and 4 are common to both positions. By the two common faces rule, the remaining faces (6 and 3) must be opposite to each other. Hence, 6 is opposite to 3."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு பொதுப் பக்க விதி மீதமுள்ள 3-வது பக்கங்களை உடனடியாக ஜோடியாக்கும்.",
+      "en": "Two common faces rule instantly pairs the remaining third faces."
+    },
+    "revision_fact": {
+      "ta": "இரு பொதுப் பக்க நீக்கல் கொள்கை.",
+      "en": "Two common faces cancellation principle."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_033",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Two Common Faces",
+    "question": {
+      "ta": "ஒரு பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (2, 3, 5)\nநிலை 2: (2, 4, 1)\nநிலை 3: (6, 3, 5)\n2-க்கு எதிரே உள்ள எண் எது?",
+      "en": "Three positions of a die are shown:\nPosition 1: (2, 3, 5)\nPosition 2: (2, 4, 1)\nPosition 3: (6, 3, 5)\nWhich number is opposite to 2?"
+    },
+    "question_ta": "ஒரு பகடையின் 3 தோற்றங்கள்:\nநிலை 1: (2, 3, 5)\nநிலை 2: (2, 4, 1)\nநிலை 3: (6, 3, 5)\n2-க்கு எதிரே உள்ள எண் எது?",
+    "question_en": "Three positions of a die are shown:\nPosition 1: (2, 3, 5)\nPosition 2: (2, 4, 1)\nPosition 3: (6, 3, 5)\nWhich number is opposite to 2?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_ta": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "options_en": [
+      "5",
+      "4",
+      "6",
+      "1"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "நிலை 1 (2, 3, 5) மற்றும் நிலை 3 (6, 3, 5)-ஐ ஒப்பிடுகையில்:\n3 மற்றும் 5 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை. 2-க்கு எதிரே 6 உள்ளது.",
+      "en": "Comparing Position 1 (2, 3, 5) and Position 3 (6, 3, 5):\nFaces 3 and 5 are common in both positions. Therefore, the remaining unshared faces 2 and 6 are opposite to each other. So 2 is opposite to 6."
+    },
+    "explanation_ta": "நிலை 1 (2, 3, 5) மற்றும் நிலை 3 (6, 3, 5)-ஐ ஒப்பிடுகையில்:\n3 மற்றும் 5 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை. 2-க்கு எதிரே 6 உள்ளது.",
+    "explanation_en": "Comparing Position 1 (2, 3, 5) and Position 3 (6, 3, 5):\nFaces 3 and 5 are common in both positions. Therefore, the remaining unshared faces 2 and 6 are opposite to each other. So 2 is opposite to 6.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 நிலை 1-இல் 2-க்கு அருகில் உள்ளது.",
+        "en": "5 நிலை 1-இல் 2-க்கு அருகில் உள்ளது."
+      },
+      "B": {
+        "ta": "4 என்பது 3 அல்லது 5-க்கு எதிரானது.",
+        "en": "4 என்பது 3 அல்லது 5-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "சரி. நிலை 1 (2, 3, 5) மற்றும் நிலை 3 (6, 3, 5)-ஐ ஒப்பிடுகையில்:\n3 மற்றும் 5 ஆகிய இரு பக்கங்களும் பொதுவானவை. எனவே மீதமுள்ள 2 மற்றும் 6 ஒன்றுக்கொன்று எதிரானவை. 2-க்கு எதிரே 6 உள்ளது.",
+        "en": "Correct. Comparing Position 1 (2, 3, 5) and Position 3 (6, 3, 5):\nFaces 3 and 5 are common in both positions. Therefore, the remaining unshared faces 2 and 6 are opposite to each other. So 2 is opposite to 6."
+      },
+      "D": {
+        "ta": "1 என்பது 3 அல்லது 5-க்கு எதிரானது.",
+        "en": "1 என்பது 3 அல்லது 5-க்கு எதிரானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு பொதுப் பக்கங்களைக் கொண்ட தோற்றங்களை ஒப்பிட்டு எதிர்ப்பக்கத்தை நேரடி முறையில் கண்டறியவும்.",
+      "en": "Compare positions sharing two common faces to directly identify opposites."
+    },
+    "revision_fact": {
+      "ta": "பல தோற்றங்களில் இரு பொதுப் பக்க அடிப்படையிலான விடை கணிப்பு.",
+      "en": "Multi-view two common faces deduction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_034",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறந்த பகடையின் வடிவமைப்பு:\n- முதல் வரிசை: பக்கம் 1\n- நடு வரிசை: பக்கங்கள் 2, 3, 4 (இடமிருந்து வலமாக)\n- பக்கம் 3-க்கு கீழே: பக்கம் 5\n- பக்கம் 5-க்கு கீழே: பக்கம் 6\n4-க்கு எதிரே உள்ள பக்கம் எது?",
+      "en": "An open net layout is described as follows:\n- Top row: Face 1\n- Middle row: Faces 2, 3, 4 (left to right)\n- Below face 3: Face 5\n- Below face 5: Face 6\nWhich face is opposite to 4?"
+    },
+    "question_ta": "ஒரு திறந்த பகடையின் வடிவமைப்பு:\n- முதல் வரிசை: பக்கம் 1\n- நடு வரிசை: பக்கங்கள் 2, 3, 4 (இடமிருந்து வலமாக)\n- பக்கம் 3-க்கு கீழே: பக்கம் 5\n- பக்கம் 5-க்கு கீழே: பக்கம் 6\n4-க்கு எதிரே உள்ள பக்கம் எது?",
+    "question_en": "An open net layout is described as follows:\n- Top row: Face 1\n- Middle row: Faces 2, 3, 4 (left to right)\n- Below face 3: Face 5\n- Below face 5: Face 6\nWhich face is opposite to 4?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "2"
+    ],
+    "options_ta": [
+      "1",
+      "3",
+      "5",
+      "2"
+    ],
+    "options_en": [
+      "1",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "செங்குத்து வரிசை 1, 3, 5, 6-இல் 1-ன் எதிர்ப்பக்கம் 5, 3-ன் எதிர்ப்பக்கம் 6. கிடைமட்ட பக்கவாட்டு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும். எனவே 4-க்கு எதிரே 2 உள்ளது.",
+      "en": "The vertical line of faces consists of 1, 3, 5, 6. Here 1 is opposite 5, and 3 is opposite 6. The horizontal wing faces 2 and 4 fold up to be opposite each other. Thus, 4 is opposite to 2."
+    },
+    "explanation_ta": "செங்குத்து வரிசை 1, 3, 5, 6-இல் 1-ன் எதிர்ப்பக்கம் 5, 3-ன் எதிர்ப்பக்கம் 6. கிடைமட்ட பக்கவாட்டு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும். எனவே 4-க்கு எதிரே 2 உள்ளது.",
+    "explanation_en": "The vertical line of faces consists of 1, 3, 5, 6. Here 1 is opposite 5, and 3 is opposite 6. The horizontal wing faces 2 and 4 fold up to be opposite each other. Thus, 4 is opposite to 2.",
+    "why_not_others": {
+      "A": {
+        "ta": "1 என்பது 5-க்கு எதிரானது.",
+        "en": "1 என்பது 5-க்கு எதிரானது."
+      },
+      "B": {
+        "ta": "3 என்பது 6-க்கு எதிரானது.",
+        "en": "3 என்பது 6-க்கு எதிரானது."
+      },
+      "C": {
+        "ta": "5 என்பது 1-க்கு எதிரானது.",
+        "en": "5 என்பது 1-க்கு எதிரானது."
+      },
+      "D": {
+        "ta": "சரி. செங்குத்து வரிசை 1, 3, 5, 6-இல் 1-ன் எதிர்ப்பக்கம் 5, 3-ன் எதிர்ப்பக்கம் 6. கிடைமட்ட பக்கவாட்டு இறக்கைகள் 2 மற்றும் 4 எதிரெதிராக அமையும். எனவே 4-க்கு எதிரே 2 உள்ளது.",
+        "en": "Correct. The vertical line of faces consists of 1, 3, 5, 6. Here 1 is opposite 5, and 3 is opposite 6. The horizontal wing faces 2 and 4 fold up to be opposite each other. Thus, 4 is opposite to 2."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மத்திய செங்குத்து வரிசையின் கிடைமட்ட இறக்கைகள் எப்போதும் எதிரெதிரானவை.",
+      "en": "Horizontal wings attached to a central 4-face column are always opposite to each other."
+    },
+    "revision_fact": {
+      "ta": "T-வடிவ அமைப்பில் கிடைமட்ட இறக்கைகள் விதி.",
+      "en": "T-net horizontal wings opposite rule."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_035",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Medium",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு நிலையான பகடையில் காணப்படும் மூன்று பக்கங்களில் 1, 3, மற்றும் 5 ஆகிய எண்கள் உள்ளன. அவற்றிற்கு எதிரே உள்ள மூன்று பக்கங்களிலுள்ள எண்களின் கூடுதல் என்ன?",
+      "en": "Three visible faces of a standard die show numbers 1, 3, and 5. What is the sum of the numbers on the three faces opposite to them?"
+    },
+    "question_ta": "ஒரு நிலையான பகடையில் காணப்படும் மூன்று பக்கங்களில் 1, 3, மற்றும் 5 ஆகிய எண்கள் உள்ளன. அவற்றிற்கு எதிரே உள்ள மூன்று பக்கங்களிலுள்ள எண்களின் கூடுதல் என்ன?",
+    "question_en": "Three visible faces of a standard die show numbers 1, 3, and 5. What is the sum of the numbers on the three faces opposite to them?",
+    "options": [
+      "15",
+      "12",
+      "9",
+      "18"
+    ],
+    "options_ta": [
+      "15",
+      "12",
+      "9",
+      "18"
+    ],
+    "options_en": [
+      "15",
+      "12",
+      "9",
+      "18"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "நிலையான பகடையில்:\n1-ன் எதிர்ப்பக்கம் = 6\n3-ன் எதிர்ப்பக்கம் = 4\n5-ன் எதிர்ப்பக்கம் = 2\nஎதிர்ப்பக்கங்களின் கூடுதல் = 6 + 4 + 2 = 12.",
+      "en": "In a standard die:\nOpposite of 1 = 6\nOpposite of 3 = 4\nOpposite of 5 = 2\nSum of opposite faces = 6 + 4 + 2 = 12."
+    },
+    "explanation_ta": "நிலையான பகடையில்:\n1-ன் எதிர்ப்பக்கம் = 6\n3-ன் எதிர்ப்பக்கம் = 4\n5-ன் எதிர்ப்பக்கம் = 2\nஎதிர்ப்பக்கங்களின் கூடுதல் = 6 + 4 + 2 = 12.",
+    "explanation_en": "In a standard die:\nOpposite of 1 = 6\nOpposite of 3 = 4\nOpposite of 5 = 2\nSum of opposite faces = 6 + 4 + 2 = 12.",
+    "why_not_others": {
+      "A": {
+        "ta": "6 + 4 + 2 = 12, 15 இல்லை.",
+        "en": "6 + 4 + 2 = 12, 15 இல்லை."
+      },
+      "B": {
+        "ta": "சரி. நிலையான பகடையில்:\n1-ன் எதிர்ப்பக்கம் = 6\n3-ன் எதிர்ப்பக்கம் = 4\n5-ன் எதிர்ப்பக்கம் = 2\nஎதிர்ப்பக்கங்களின் கூடுதல் = 6 + 4 + 2 = 12.",
+        "en": "Correct. In a standard die:\nOpposite of 1 = 6\nOpposite of 3 = 4\nOpposite of 5 = 2\nSum of opposite faces = 6 + 4 + 2 = 12."
+      },
+      "C": {
+        "ta": "6 + 4 + 2 = 12, 9 இல்லை.",
+        "en": "6 + 4 + 2 = 12, 9 இல்லை."
+      },
+      "D": {
+        "ta": "6 பக்கங்களின் மொத்த கூடுதல் 21.",
+        "en": "6 பக்கங்களின் மொத்த கூடுதல் 21."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(1, 3, 5)-ன் எதிர்ப்பக்கங்கள் (6, 4, 2). கூடுதல் = 6 + 4 + 2 = 12.",
+      "en": "Opposite of (1, 3, 5) are (6, 4, 2). Sum = 6 + 4 + 2 = 12."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடையில் மூவகை எதிர்ப்பக்க கூடுதல் கணக்கீடு.",
+      "en": "Standard dice opposite triplet sum calculation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_036",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "One Common Face",
+    "question": {
+      "ta": "ஒரு சீரான கனசதுரத்தின் பக்கங்கள் 1-6. எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 1: மேல் = 1, முன் = 2, வலது = 3.\nநிலை 2: மேல் = 1, முன் = 4, வலது = 5.\nநிலை 3: மேல் = 6, முன் = 2, வலது = ?\nநிலை 3-ன் வலது பக்கத்தில் வர வேண்டிய விடுபட்ட எண் எது?",
+      "en": "A single consistent cube has faces 1 to 6 with opposite pairs (1,6), (2,5), and (3,4).\nPosition 1 shows: Top = 1, Front = 2, Right = 3.\nPosition 2 shows: Top = 1, Front = 4, Right = 5.\nPosition 3 shows: Top = 6, Front = 2, Right = ?\nWhat is the missing number on the Right face of Position 3?"
+    },
+    "question_ta": "ஒரு சீரான கனசதுரத்தின் பக்கங்கள் 1-6. எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 1: மேல் = 1, முன் = 2, வலது = 3.\nநிலை 2: மேல் = 1, முன் = 4, வலது = 5.\nநிலை 3: மேல் = 6, முன் = 2, வலது = ?\nநிலை 3-ன் வலது பக்கத்தில் வர வேண்டிய விடுபட்ட எண் எது?",
+    "question_en": "A single consistent cube has faces 1 to 6 with opposite pairs (1,6), (2,5), and (3,4).\nPosition 1 shows: Top = 1, Front = 2, Right = 3.\nPosition 2 shows: Top = 1, Front = 4, Right = 5.\nPosition 3 shows: Top = 6, Front = 2, Right = ?\nWhat is the missing number on the Right face of Position 3?",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "3"
+    ],
+    "options_ta": [
+      "1",
+      "5",
+      "4",
+      "3"
+    ],
+    "options_en": [
+      "1",
+      "5",
+      "4",
+      "3"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "முப்பரிமாண சுழற்சி பகுப்பாய்வு:\nஎதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 3-இல், மேல் = 6, முன் = 2. வலது பக்கம் 3 அல்லது 4 ஆக இருக்க வேண்டும்.\n1-ஐ மேலே வைத்து பார்க்கும் போது சுழற்சி: 2 (முன்) -> 3 (வலது) -> 5 (பின்) -> 4 (இடது).\n6-ஐ மேலே வைக்கும் போது (பகடையைத் தலைகீழாக திருப்புகையில்) வலது-இடது சுழற்சி திசை மாறுகிறது.\nஎனவே 6 மேலே மற்றும் 2 முன்னே இருக்கும்போது, வலது பக்கம் 4 வரும்.\nஎனவே விடுபட்ட எண் 4 ஆகும்.",
+      "en": "Let's analyze 3D orientation:\nOpposite pairs are (1,6), (2,5), (3,4).\nIn Pos 3, Top = 6 and Front = 2. The Right face must be one of the remaining faces (3 or 4).\nLooking from top face 1 (Pos 1): clockwise order of sides is 2 (Front) -> 3 (Right) -> 5 (Back) -> 4 (Left).\nWhen the cube is flipped so that 6 becomes Top, the view from top reverses clockwise direction.\nWith 6 at Top and 2 at Front, looking from above 6: the face to the Right of 2 is 4 (since 3 is to the left of 2 when viewed from bottom 6).\nThus, the missing face on the Right is 4."
+    },
+    "explanation_ta": "முப்பரிமாண சுழற்சி பகுப்பாய்வு:\nஎதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 3-இல், மேல் = 6, முன் = 2. வலது பக்கம் 3 அல்லது 4 ஆக இருக்க வேண்டும்.\n1-ஐ மேலே வைத்து பார்க்கும் போது சுழற்சி: 2 (முன்) -> 3 (வலது) -> 5 (பின்) -> 4 (இடது).\n6-ஐ மேலே வைக்கும் போது (பகடையைத் தலைகீழாக திருப்புகையில்) வலது-இடது சுழற்சி திசை மாறுகிறது.\nஎனவே 6 மேலே மற்றும் 2 முன்னே இருக்கும்போது, வலது பக்கம் 4 வரும்.\nஎனவே விடுபட்ட எண் 4 ஆகும்.",
+    "explanation_en": "Let's analyze 3D orientation:\nOpposite pairs are (1,6), (2,5), (3,4).\nIn Pos 3, Top = 6 and Front = 2. The Right face must be one of the remaining faces (3 or 4).\nLooking from top face 1 (Pos 1): clockwise order of sides is 2 (Front) -> 3 (Right) -> 5 (Back) -> 4 (Left).\nWhen the cube is flipped so that 6 becomes Top, the view from top reverses clockwise direction.\nWith 6 at Top and 2 at Front, looking from above 6: the face to the Right of 2 is 4 (since 3 is to the left of 2 when viewed from bottom 6).\nThus, the missing face on the Right is 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "1 என்பது கீழே (6-க்கு எதிரே) உள்ளது.",
+        "en": "1 என்பது கீழே (6-க்கு எதிரே) உள்ளது."
+      },
+      "B": {
+        "ta": "5 என்பது பின்புறத்தில் உள்ளது.",
+        "en": "5 என்பது பின்புறத்தில் உள்ளது."
+      },
+      "C": {
+        "ta": "சரி. முப்பரிமாண சுழற்சி பகுப்பாய்வு:\nஎதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 3-இல், மேல் = 6, முன் = 2. வலது பக்கம் 3 அல்லது 4 ஆக இருக்க வேண்டும்.\n1-ஐ மேலே வைத்து பார்க்கும் போது சுழற்சி: 2 (முன்) -> 3 (வலது) -> 5 (பின்) -> 4 (இடது).\n6-ஐ மேலே வைக்கும் போது (பகடையைத் தலைகீழாக திருப்புகையில்) வலது-இடது சுழற்சி திசை மாறுகிறது.\nஎனவே 6 மேலே மற்றும் 2 முன்னே இருக்கும்போது, வலது பக்கம் 4 வரும்.\nஎனவே விடுபட்ட எண் 4 ஆகும்.",
+        "en": "Correct. Let's analyze 3D orientation:\nOpposite pairs are (1,6), (2,5), (3,4).\nIn Pos 3, Top = 6 and Front = 2. The Right face must be one of the remaining faces (3 or 4).\nLooking from top face 1 (Pos 1): clockwise order of sides is 2 (Front) -> 3 (Right) -> 5 (Back) -> 4 (Left).\nWhen the cube is flipped so that 6 becomes Top, the view from top reverses clockwise direction.\nWith 6 at Top and 2 at Front, looking from above 6: the face to the Right of 2 is 4 (since 3 is to the left of 2 when viewed from bottom 6).\nThus, the missing face on the Right is 4."
+      },
+      "D": {
+        "ta": "3 என்பது இந்த நிலையில் இடது பக்கத்தில் உள்ளது.",
+        "en": "3 என்பது இந்த நிலையில் இடது பக்கத்தில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பகடையைத் தலைகீழாக மாற்றி எதிர்ப்பக்கத்தை மேலே வைக்கும்போது பக்கவாட்டு வலது-இடது வரிசை தலைகீழாகும்.",
+      "en": "Flipping a cube to its opposite top face reverses the left-right order of the side faces."
+    },
+    "revision_fact": {
+      "ta": "விடுபட்ட பக்கத்தைக் கண்டறிவதற்கான 3D சுழற்சி கணக்கீடு.",
+      "en": "Hard 3D orientation reconstruction with missing face determination."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_037",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "2x3 சதுரங்கள் கொண்ட ஒரு திறந்த பகடை அமைப்பு:\nவரிசை 1: [A, B]\nவரிசை 2: [C, D]\nவரிசை 3: [E, F]\nஇதை மடித்து பகடையாக மாற்றும்போது, குறுக்கு மூலைவிட்ட சதுரங்கள் எதிரெதிர் பக்கங்களாக அமைகின்றன (A-D, B-E, C-F). B-க்கு எதிரே உள்ள எழுத்து எது?",
+      "en": "An open net consists of a 2x3 grid of squares:\nRow 1: [A, B]\nRow 2: [C, D]\nRow 3: [E, F]\nWhen folded into a cube, the diagonal pairs fold into opposite faces (A-D, B-E, C-F). Which letter is opposite to B?"
+    },
+    "question_ta": "2x3 சதுரங்கள் கொண்ட ஒரு திறந்த பகடை அமைப்பு:\nவரிசை 1: [A, B]\nவரிசை 2: [C, D]\nவரிசை 3: [E, F]\nஇதை மடித்து பகடையாக மாற்றும்போது, குறுக்கு மூலைவிட்ட சதுரங்கள் எதிரெதிர் பக்கங்களாக அமைகின்றன (A-D, B-E, C-F). B-க்கு எதிரே உள்ள எழுத்து எது?",
+    "question_en": "An open net consists of a 2x3 grid of squares:\nRow 1: [A, B]\nRow 2: [C, D]\nRow 3: [E, F]\nWhen folded into a cube, the diagonal pairs fold into opposite faces (A-D, B-E, C-F). Which letter is opposite to B?",
+    "options": [
+      "A",
+      "E",
+      "D",
+      "C"
+    ],
+    "options_ta": [
+      "A",
+      "E",
+      "D",
+      "C"
+    ],
+    "options_en": [
+      "A",
+      "E",
+      "D",
+      "C"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "2x3 அமைப்பில் [A,B], [C,D], [E,F]:\nமடிக்கும் போது குறுக்கு மூலைவிட்ட எதிர்ப்பக்க ஜோடிகள்:\n- A-ன் எதிர்ப்பக்கம் D\n- B-ன் எதிர்ப்பக்கம் E\n- C-ன் எதிர்ப்பக்கம் F.\nஎனவே, B-க்கு எதிரே E உள்ளது.",
+      "en": "In a 2x3 grid net [A,B], [C,D], [E,F]:\nThe opposite pairs formed by folding are diagonal cross pairs:\n- A is opposite to D\n- B is opposite to E\n- C is opposite to F.\nTherefore, B is opposite to E."
+    },
+    "explanation_ta": "2x3 அமைப்பில் [A,B], [C,D], [E,F]:\nமடிக்கும் போது குறுக்கு மூலைவிட்ட எதிர்ப்பக்க ஜோடிகள்:\n- A-ன் எதிர்ப்பக்கம் D\n- B-ன் எதிர்ப்பக்கம் E\n- C-ன் எதிர்ப்பக்கம் F.\nஎனவே, B-க்கு எதிரே E உள்ளது.",
+    "explanation_en": "In a 2x3 grid net [A,B], [C,D], [E,F]:\nThe opposite pairs formed by folding are diagonal cross pairs:\n- A is opposite to D\n- B is opposite to E\n- C is opposite to F.\nTherefore, B is opposite to E.",
+    "why_not_others": {
+      "A": {
+        "ta": "A என்பது B-க்கு அடுத்துள்ள பக்கம்.",
+        "en": "A என்பது B-க்கு அடுத்துள்ள பக்கம்."
+      },
+      "B": {
+        "ta": "சரி. 2x3 அமைப்பில் [A,B], [C,D], [E,F]:\nமடிக்கும் போது குறுக்கு மூலைவிட்ட எதிர்ப்பக்க ஜோடிகள்:\n- A-ன் எதிர்ப்பக்கம் D\n- B-ன் எதிர்ப்பக்கம் E\n- C-ன் எதிர்ப்பக்கம் F.\nஎனவே, B-க்கு எதிரே E உள்ளது.",
+        "en": "Correct. In a 2x3 grid net [A,B], [C,D], [E,F]:\nThe opposite pairs formed by folding are diagonal cross pairs:\n- A is opposite to D\n- B is opposite to E\n- C is opposite to F.\nTherefore, B is opposite to E."
+      },
+      "C": {
+        "ta": "D என்பது A-ன் எதிர்ப்பக்கம்.",
+        "en": "D என்பது A-ன் எதிர்ப்பக்கம்."
+      },
+      "D": {
+        "ta": "C என்பது B-க்கு அடுத்துள்ள பக்கம்.",
+        "en": "C என்பது B-க்கு அடுத்துள்ள பக்கம்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "2x3 கட்டமைப்பில் குறுக்கு மூலைவிட்ட சதுரங்கள் எதிரெதிர் பக்கங்களை அமைக்கும்.",
+      "en": "In a 2x3 grid net, opposite faces are formed by diagonal offset squares."
+    },
+    "revision_fact": {
+      "ta": "2x3 கட்டமைப்பு திறந்த பகடை மூலைவிட்ட விதி.",
+      "en": "2x3 grid net folding diagonal rule."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_038",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "ஒரு பகடையில் 6 குறியீடுகள் உள்ளன: நட்சத்திரம், வட்டம், முக்கோணம், சதுரம், சாய்வுசதுரம், சிலுவை.\nநிலை 1: மேல் = நட்சத்திரம், முன் = வட்டம், வலது = முக்கோணம்\nநிலை 2: மேல் = நட்சத்திரம், முன் = சதுரம், வலது = சாய்வுசதுரம்\nநிலை 3: மேல் = சிலுவை, முன் = வட்டம், வலது = ?\nநிலை 3-ன் வலது பக்கத்தில் தோன்றும் குறியீடு எது?",
+      "en": "A cube has six symbols: Star, Circle, Triangle, Square, Diamond, Cross.\nPos 1: Top = Star, Front = Circle, Right = Triangle\nPos 2: Top = Star, Front = Square, Right = Diamond\nPos 3: Top = Cross, Front = Circle, Right = ?\nWhich symbol appears on the Right face in Position 3?"
+    },
+    "question_ta": "ஒரு பகடையில் 6 குறியீடுகள் உள்ளன: நட்சத்திரம், வட்டம், முக்கோணம், சதுரம், சாய்வுசதுரம், சிலுவை.\nநிலை 1: மேல் = நட்சத்திரம், முன் = வட்டம், வலது = முக்கோணம்\nநிலை 2: மேல் = நட்சத்திரம், முன் = சதுரம், வலது = சாய்வுசதுரம்\nநிலை 3: மேல் = சிலுவை, முன் = வட்டம், வலது = ?\nநிலை 3-ன் வலது பக்கத்தில் தோன்றும் குறியீடு எது?",
+    "question_en": "A cube has six symbols: Star, Circle, Triangle, Square, Diamond, Cross.\nPos 1: Top = Star, Front = Circle, Right = Triangle\nPos 2: Top = Star, Front = Square, Right = Diamond\nPos 3: Top = Cross, Front = Circle, Right = ?\nWhich symbol appears on the Right face in Position 3?",
+    "options": [
+      "சாய்வுசதுரம்",
+      "முக்கோணம்",
+      "சதுரம்",
+      "சிலுவை"
+    ],
+    "options_ta": [
+      "சாய்வுசதுரம்",
+      "முக்கோணம்",
+      "சதுரம்",
+      "சிலுவை"
+    ],
+    "options_en": [
+      "Diamond",
+      "Triangle",
+      "Square",
+      "Cross"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "நிலை 1 & 2-லிருந்து (நட்சத்திரம் பொதுப்பக்கம்):\nவட்டத்தின் எதிர்ப்பக்கம் சதுரம்.\nமுக்கோணத்தின் எதிர்ப்பக்கம் சாய்வுசதுரம்.\nநட்சத்திரத்தின் எதிர்ப்பக்கம் சிலுவை.\nநிலை 3-இல் மேல் = சிலுவை (நட்சத்திரத்தின் எதிர்ப்பக்கம்), முன் = வட்டம்.\nநட்சத்திரம் மேலே இருந்தபோது சுழற்சி: வட்டம் -> முக்கோணம் -> சதுரம் -> சாய்வுசதுரம்.\nசிலுவை மேலே வரும்போது சுழற்சி திசை தலைகீழாகிறது:\nவட்டம் (முன்) -> சாய்வுசதுரம் (வலது) -> சதுரம் (பின்) -> முக்கோணம் (இடது).\nஎனவே, வலது பக்கத்தில் சாய்வுசதுரம் (Diamond) தோன்றும்.",
+      "en": "From Pos 1 and Pos 2 (Star common):\nCircle is opposite Square.\nTriangle is opposite Diamond.\nStar is opposite Cross.\nIn Pos 3, Top is Cross (opposite to Star) and Front is Circle.\nWhen Star was Top, clockwise order from Circle was: Circle -> Triangle -> Square -> Diamond.\nWhen Cross is Top (flipping the cube), clockwise order reverses:\nCircle (Front) -> Diamond (Right) -> Square (Back) -> Triangle (Left).\nHence, with Cross at Top and Circle at Front, the Right face is Diamond."
+    },
+    "explanation_ta": "நிலை 1 & 2-லிருந்து (நட்சத்திரம் பொதுப்பக்கம்):\nவட்டத்தின் எதிர்ப்பக்கம் சதுரம்.\nமுக்கோணத்தின் எதிர்ப்பக்கம் சாய்வுசதுரம்.\nநட்சத்திரத்தின் எதிர்ப்பக்கம் சிலுவை.\nநிலை 3-இல் மேல் = சிலுவை (நட்சத்திரத்தின் எதிர்ப்பக்கம்), முன் = வட்டம்.\nநட்சத்திரம் மேலே இருந்தபோது சுழற்சி: வட்டம் -> முக்கோணம் -> சதுரம் -> சாய்வுசதுரம்.\nசிலுவை மேலே வரும்போது சுழற்சி திசை தலைகீழாகிறது:\nவட்டம் (முன்) -> சாய்வுசதுரம் (வலது) -> சதுரம் (பின்) -> முக்கோணம் (இடது).\nஎனவே, வலது பக்கத்தில் சாய்வுசதுரம் (Diamond) தோன்றும்.",
+    "explanation_en": "From Pos 1 and Pos 2 (Star common):\nCircle is opposite Square.\nTriangle is opposite Diamond.\nStar is opposite Cross.\nIn Pos 3, Top is Cross (opposite to Star) and Front is Circle.\nWhen Star was Top, clockwise order from Circle was: Circle -> Triangle -> Square -> Diamond.\nWhen Cross is Top (flipping the cube), clockwise order reverses:\nCircle (Front) -> Diamond (Right) -> Square (Back) -> Triangle (Left).\nHence, with Cross at Top and Circle at Front, the Right face is Diamond.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. நிலை 1 & 2-லிருந்து (நட்சத்திரம் பொதுப்பக்கம்):\nவட்டத்தின் எதிர்ப்பக்கம் சதுரம்.\nமுக்கோணத்தின் எதிர்ப்பக்கம் சாய்வுசதுரம்.\nநட்சத்திரத்தின் எதிர்ப்பக்கம் சிலுவை.\nநிலை 3-இல் மேல் = சிலுவை (நட்சத்திரத்தின் எதிர்ப்பக்கம்), முன் = வட்டம்.\nநட்சத்திரம் மேலே இருந்தபோது சுழற்சி: வட்டம் -> முக்கோணம் -> சதுரம் -> சாய்வுசதுரம்.\nசிலுவை மேலே வரும்போது சுழற்சி திசை தலைகீழாகிறது:\nவட்டம் (முன்) -> சாய்வுசதுரம் (வலது) -> சதுரம் (பின்) -> முக்கோணம் (இடது).\nஎனவே, வலது பக்கத்தில் சாய்வுசதுரம் (Diamond) தோன்றும்.",
+        "en": "Correct. From Pos 1 and Pos 2 (Star common):\nCircle is opposite Square.\nTriangle is opposite Diamond.\nStar is opposite Cross.\nIn Pos 3, Top is Cross (opposite to Star) and Front is Circle.\nWhen Star was Top, clockwise order from Circle was: Circle -> Triangle -> Square -> Diamond.\nWhen Cross is Top (flipping the cube), clockwise order reverses:\nCircle (Front) -> Diamond (Right) -> Square (Back) -> Triangle (Left).\nHence, with Cross at Top and Circle at Front, the Right face is Diamond."
+      },
+      "B": {
+        "ta": "முக்கோணம் என்பது தவறான விடை.",
+        "en": "முக்கோணம் இந்த அமைப்பில் இடது பக்கத்தில் தோன்றும்."
+      },
+      "C": {
+        "ta": "சதுரம் என்பது தவறான விடை.",
+        "en": "சதுரம் பின்புறத்தில் தோன்றும்."
+      },
+      "D": {
+        "ta": "சிலுவை என்பது தவறான விடை.",
+        "en": "சிலுவை மேல் பக்கத்தில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மேல்-கீழ் துருவங்களை மாற்றும்போது சுற்றியுள்ள 4 பக்கங்களின் கடிகார சுற்று திசை தலைகீழாகும்.",
+      "en": "Reversing top-bottom polarity inverts the clockwise order of the surrounding 4 faces."
+    },
+    "revision_fact": {
+      "ta": "குறியீட்டு பகடை 3D சுழற்சி விடுபட்ட குறியீடு கணிப்பு.",
+      "en": "Symbol cube 3D orientation missing face derivation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_039",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு திறந்த பகடையை மடிக்கும்போது எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4) கிடைக்கின்றன.\nநான்கு முன்மொழியப்பட்ட தோற்றங்கள்:\nI: (1, 2, 3)\nII: (1, 5, 4)\nIII: (6, 2, 4)\nIV: (1, 6, 3)\nஇந்த நான்கில் எத்தனை தோற்றங்கள் தர்க்கரீதியாக செல்லுபடியாகும் தோற்றங்கள்?",
+      "en": "An open net folds into a cube with opposite pairs (1,6), (2,5), and (3,4).\nFour proposed cube views are given:\nI: (1, 2, 3)\nII: (1, 5, 4)\nIII: (6, 2, 4)\nIV: (1, 6, 3)\nHow many of these four views are logically valid views of the folded cube?"
+    },
+    "question_ta": "ஒரு திறந்த பகடையை மடிக்கும்போது எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4) கிடைக்கின்றன.\nநான்கு முன்மொழியப்பட்ட தோற்றங்கள்:\nI: (1, 2, 3)\nII: (1, 5, 4)\nIII: (6, 2, 4)\nIV: (1, 6, 3)\nஇந்த நான்கில் எத்தனை தோற்றங்கள் தர்க்கரீதியாக செல்லுபடியாகும் தோற்றங்கள்?",
+    "question_en": "An open net folds into a cube with opposite pairs (1,6), (2,5), and (3,4).\nFour proposed cube views are given:\nI: (1, 2, 3)\nII: (1, 5, 4)\nIII: (6, 2, 4)\nIV: (1, 6, 3)\nHow many of these four views are logically valid views of the folded cube?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "options_ta": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "options_en": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எதிர்ப்பக்க ஜோடிகள் ஒன்றாக தோன்றாவிட்டால் மட்டுமே தோற்றம் செல்லுபடியாகும்.\nI: (1, 2, 3) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nII: (1, 5, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIII: (6, 2, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIV: (1, 6, 3) -> 1 மற்றும் 6 எதிரெதிர் பக்கங்கள் एकत्र வந்துள்ளன. தவறானது.\nஎனவே, சரியாக 3 தோற்றங்கள் (I, II, III) செல்லுபடியாகும்.",
+      "en": "A view is valid if and only if no opposite pair appears together on visible adjacent faces.\nI: (1, 2, 3) -> No opposite pairs. Valid.\nII: (1, 5, 4) -> No opposite pairs (1 opp 6, 5 opp 2, 4 opp 3). Valid.\nIII: (6, 2, 4) -> No opposite pairs (6 opp 1, 2 opp 5, 4 opp 3). Valid.\nIV: (1, 6, 3) -> Contains opposite pair 1 and 6. INVALID.\nTherefore, exactly 3 views (I, II, III) are valid."
+    },
+    "explanation_ta": "எதிர்ப்பக்க ஜோடிகள் ஒன்றாக தோன்றாவிட்டால் மட்டுமே தோற்றம் செல்லுபடியாகும்.\nI: (1, 2, 3) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nII: (1, 5, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIII: (6, 2, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIV: (1, 6, 3) -> 1 மற்றும் 6 எதிரெதிர் பக்கங்கள் एकत्र வந்துள்ளன. தவறானது.\nஎனவே, சரியாக 3 தோற்றங்கள் (I, II, III) செல்லுபடியாகும்.",
+    "explanation_en": "A view is valid if and only if no opposite pair appears together on visible adjacent faces.\nI: (1, 2, 3) -> No opposite pairs. Valid.\nII: (1, 5, 4) -> No opposite pairs (1 opp 6, 5 opp 2, 4 opp 3). Valid.\nIII: (6, 2, 4) -> No opposite pairs (6 opp 1, 2 opp 5, 4 opp 3). Valid.\nIV: (1, 6, 3) -> Contains opposite pair 1 and 6. INVALID.\nTherefore, exactly 3 views (I, II, III) are valid.",
+    "why_not_others": {
+      "A": {
+        "ta": "3 தோற்றங்கள் செல்லுபடியாகும்.",
+        "en": "3 தோற்றங்கள் செல்லுபடியாகும்."
+      },
+      "B": {
+        "ta": "3 தோற்றங்கள் செல்லுபடியாகும்.",
+        "en": "3 தோற்றங்கள் செல்லுபடியாகும்."
+      },
+      "C": {
+        "ta": "சரி. எதிர்ப்பக்க ஜோடிகள் ஒன்றாக தோன்றாவிட்டால் மட்டுமே தோற்றம் செல்லுபடியாகும்.\nI: (1, 2, 3) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nII: (1, 5, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIII: (6, 2, 4) -> எதிர்ப்பக்கங்கள் இல்லை. சரியானது.\nIV: (1, 6, 3) -> 1 மற்றும் 6 எதிரெதிர் பக்கங்கள் एकत्र வந்துள்ளன. தவறானது.\nஎனவே, சரியாக 3 தோற்றங்கள் (I, II, III) செல்லுபடியாகும்.",
+        "en": "Correct. A view is valid if and only if no opposite pair appears together on visible adjacent faces.\nI: (1, 2, 3) -> No opposite pairs. Valid.\nII: (1, 5, 4) -> No opposite pairs (1 opp 6, 5 opp 2, 4 opp 3). Valid.\nIII: (6, 2, 4) -> No opposite pairs (6 opp 1, 2 opp 5, 4 opp 3). Valid.\nIV: (1, 6, 3) -> Contains opposite pair 1 and 6. INVALID.\nTherefore, exactly 3 views (I, II, III) are valid."
+      },
+      "D": {
+        "ta": "1 மற்றும் 6 எதிரெதிரானவை என்பதால் தோற்றம் IV தவறானது.",
+        "en": "1 மற்றும் 6 எதிரெதிரானவை என்பதால் தோற்றம் IV தவறானது."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அனைத்து எதிர்ப்பக்க ஜோடிகளுக்கும் எதிராக ஒவ்வொரு தோற்றத்தையும் முறையே சரிபார்க்கவும்.",
+      "en": "Systematically check each proposed view against all known opposite pairs."
+    },
+    "revision_fact": {
+      "ta": "பல தோற்றங்கள் கொண்ட திறந்த பகடை செல்லுபடி தணிக்கை.",
+      "en": "Multi-view open net validity audit."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_040",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "இரண்டு நிலையான பகடைகள் ஒரே நேரத்தில் உருட்டப்படுகின்றன. அவற்றின் மேல் பக்கங்களில் காணப்படும் எண்களின் கூடுதல் 8. எந்தவொரு பகடையிலும் 4 என்ற எண் வரவில்லை எனில், சாத்தியமான (பகடை 1, பகடை 2) ஜோடிகளின் எண்ணிக்கை எத்தனை?",
+      "en": "Two standard dice are thrown simultaneously. The sum of the numbers appearing on their top faces is 8. If neither die shows the number 4, how many ordered pairs of top face outcomes (Die 1, Die 2) are possible?"
+    },
+    "question_ta": "இரண்டு நிலையான பகடைகள் ஒரே நேரத்தில் உருட்டப்படுகின்றன. அவற்றின் மேல் பக்கங்களில் காணப்படும் எண்களின் கூடுதல் 8. எந்தவொரு பகடையிலும் 4 என்ற எண் வரவில்லை எனில், சாத்தியமான (பகடை 1, பகடை 2) ஜோடிகளின் எண்ணிக்கை எத்தனை?",
+    "question_en": "Two standard dice are thrown simultaneously. The sum of the numbers appearing on their top faces is 8. If neither die shows the number 4, how many ordered pairs of top face outcomes (Die 1, Die 2) are possible?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "options_ta": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "options_en": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "கூடுதல் 8 தரும் அனைத்து (பகடை 1, பகடை 2) வரிசை ஜோடிகள்:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> மொத்தம் 5 ஜோடிகள்.\nஎந்த பகடையிலும் 4 வரக்கூடாது என்பதால், (4, 4) நீக்கப்படுகிறது.\nமீதமுள்ள சரியான வரிசை ஜோடிகள்: (2, 6), (3, 5), (5, 3), (6, 2).\nமொத்த சாத்தியக்கூறுகள் = 4.",
+      "en": "All ordered pairs (Die 1, Die 2) that sum to 8 are:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> 5 total pairs.\nSince neither die shows 4, we remove (4, 4).\nRemaining valid ordered pairs: (2, 6), (3, 5), (5, 3), (6, 2).\nTotal valid outcomes = 4."
+    },
+    "explanation_ta": "கூடுதல் 8 தரும் அனைத்து (பகடை 1, பகடை 2) வரிசை ஜோடிகள்:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> மொத்தம் 5 ஜோடிகள்.\nஎந்த பகடையிலும் 4 வரக்கூடாது என்பதால், (4, 4) நீக்கப்படுகிறது.\nமீதமுள்ள சரியான வரிசை ஜோடிகள்: (2, 6), (3, 5), (5, 3), (6, 2).\nமொத்த சாத்தியக்கூறுகள் = 4.",
+    "explanation_en": "All ordered pairs (Die 1, Die 2) that sum to 8 are:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> 5 total pairs.\nSince neither die shows 4, we remove (4, 4).\nRemaining valid ordered pairs: (2, 6), (3, 5), (5, 3), (6, 2).\nTotal valid outcomes = 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 நீங்கலாக மொத்த வரிசை ஜோடிகள் 4.",
+        "en": "4 நீங்கலாக மொத்த வரிசை ஜோடிகள் 4."
+      },
+      "B": {
+        "ta": "சரி. கூடுதல் 8 தரும் அனைத்து (பகடை 1, பகடை 2) வரிசை ஜோடிகள்:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> மொத்தம் 5 ஜோடிகள்.\nஎந்த பகடையிலும் 4 வரக்கூடாது என்பதால், (4, 4) நீக்கப்படுகிறது.\nமீதமுள்ள சரியான வரிசை ஜோடிகள்: (2, 6), (3, 5), (5, 3), (6, 2).\nமொத்த சாத்தியக்கூறுகள் = 4.",
+        "en": "Correct. All ordered pairs (Die 1, Die 2) that sum to 8 are:\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2) -> 5 total pairs.\nSince neither die shows 4, we remove (4, 4).\nRemaining valid ordered pairs: (2, 6), (3, 5), (5, 3), (6, 2).\nTotal valid outcomes = 4."
+      },
+      "C": {
+        "ta": "5 என்பதில் நிபந்தனையை மீறும் (4,4) அடங்கும்.",
+        "en": "5 என்பதில் நிபந்தனையை மீறும் (4,4) அடங்கும்."
+      },
+      "D": {
+        "ta": "வரிசையற்ற ஜோடிகள் 2: {2,6} மற்றும் {3,5}, ஆனால் வரிசை ஜோடிகள் 4.",
+        "en": "வரிசையற்ற ஜோடிகள் 2: {2,6} மற்றும் {3,5}, ஆனால் வரிசை ஜோடிகள் 4."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு வெவ்வேறு பகடைகளின் வரிசை ஜோடிகளில், a != b எனில் (a,b) மற்றும் (b,a) இரு தனித்தனி முடிவுகளாகக் கருதப்படும்.",
+      "en": "For ordered outcomes of two distinct dice, (a,b) and (b,a) count as two distinct outcomes when a != b."
+    },
+    "revision_fact": {
+      "ta": "பக்கக் கட்டுப்பாட்டுடன் இரு பகடைகளின் கூடுதல் கணக்கீடு.",
+      "en": "Two dice sum deduction with face restriction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_041",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு நிலையான பகடை முதலில் மேல் பக்கம் 1 மற்றும் முன்பக்கம் 2 இருக்குமாறு வைக்கப்பட்டுள்ளது (வலது 3, இடது 4, பின் 5, கீழ் 6).\nமுதலில், அது முன்னோக்கி (முன்பக்கம் நோக்கி) 90 டிகிரி உருட்டப்படுகிறது.\nபின்னர், அது வலதுபுறமாக 90 டிகிரி உருட்டப்படுகிறது.\nதற்போது மேல் பக்கத்தில் உள்ள எண் எது?",
+      "en": "A standard die is initially placed with face 1 on top and face 2 facing front (Right is 3, Left is 4, Back is 5, Bottom is 6).\nFirst, it is rolled 90 degrees forward (towards the front).\nThen, it is rolled 90 degrees to the right.\nWhich number is now on the top face?"
+    },
+    "question_ta": "ஒரு நிலையான பகடை முதலில் மேல் பக்கம் 1 மற்றும் முன்பக்கம் 2 இருக்குமாறு வைக்கப்பட்டுள்ளது (வலது 3, இடது 4, பின் 5, கீழ் 6).\nமுதலில், அது முன்னோக்கி (முன்பக்கம் நோக்கி) 90 டிகிரி உருட்டப்படுகிறது.\nபின்னர், அது வலதுபுறமாக 90 டிகிரி உருட்டப்படுகிறது.\nதற்போது மேல் பக்கத்தில் உள்ள எண் எது?",
+    "question_en": "A standard die is initially placed with face 1 on top and face 2 facing front (Right is 3, Left is 4, Back is 5, Bottom is 6).\nFirst, it is rolled 90 degrees forward (towards the front).\nThen, it is rolled 90 degrees to the right.\nWhich number is now on the top face?",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "options_ta": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "options_en": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஆரம்ப நிலை: மேல்=1, முன்=2, வலது=3, இடது=4, பின்=5, கீழ்=6.\n1. முன்னோக்கி 90° உருட்டல்:\n   - பின் (5) மேலே வருகிறது.\n   - மேல் (1) முன்னே செல்கிறது.\n   - முன் (2) கீழே செல்கிறது.\n   - கீழ் (6) பின்னே செல்கிறது.\n   - இடது (4), வலது (3) மாற்றம் இல்லை.\n   தற்போதைய நிலை: மேல்=5, முன்=1, வலது=3, இடது=4.\n2. வலதுபுறமாக 90° உருட்டல்:\n   - இடது (4) மேலே வருகிறது.\n   - மேல் (5) வலதுபுறம் செல்கிறது.\n   தற்போது மேல் பக்கம் = 4.\nஎனவே, இறுதியாக மேல் பக்கத்தில் உள்ள எண் 4 ஆகும்.",
+      "en": "Initial state: Top=1, Front=2, Right=3, Left=4, Back=5, Bottom=6.\n1. Roll 90° forward:\n   - Back (5) moves to Top.\n   - Top (1) moves to Front.\n   - Front (2) moves to Bottom.\n   - Bottom (6) moves to Back.\n   - Left (4) and Right (3) stay same.\n   Now: Top=5, Front=1, Right=3, Left=4, Back=6, Bottom=2.\n2. Roll 90° to the right:\n   - Left (4) moves to Top.\n   - Top (5) moves to Right.\n   - Right (3) moves to Bottom.\n   - Bottom (2) moves to Left.\n   Now: Top=4.\nTherefore, the final top face is 4."
+    },
+    "explanation_ta": "ஆரம்ப நிலை: மேல்=1, முன்=2, வலது=3, இடது=4, பின்=5, கீழ்=6.\n1. முன்னோக்கி 90° உருட்டல்:\n   - பின் (5) மேலே வருகிறது.\n   - மேல் (1) முன்னே செல்கிறது.\n   - முன் (2) கீழே செல்கிறது.\n   - கீழ் (6) பின்னே செல்கிறது.\n   - இடது (4), வலது (3) மாற்றம் இல்லை.\n   தற்போதைய நிலை: மேல்=5, முன்=1, வலது=3, இடது=4.\n2. வலதுபுறமாக 90° உருட்டல்:\n   - இடது (4) மேலே வருகிறது.\n   - மேல் (5) வலதுபுறம் செல்கிறது.\n   தற்போது மேல் பக்கம் = 4.\nஎனவே, இறுதியாக மேல் பக்கத்தில் உள்ள எண் 4 ஆகும்.",
+    "explanation_en": "Initial state: Top=1, Front=2, Right=3, Left=4, Back=5, Bottom=6.\n1. Roll 90° forward:\n   - Back (5) moves to Top.\n   - Top (1) moves to Front.\n   - Front (2) moves to Bottom.\n   - Bottom (6) moves to Back.\n   - Left (4) and Right (3) stay same.\n   Now: Top=5, Front=1, Right=3, Left=4, Back=6, Bottom=2.\n2. Roll 90° to the right:\n   - Left (4) moves to Top.\n   - Top (5) moves to Right.\n   - Right (3) moves to Bottom.\n   - Bottom (2) moves to Left.\n   Now: Top=4.\nTherefore, the final top face is 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சுழற்சிக்கு பின் 3 கீழ் பக்கத்தில் இருக்கும்.",
+        "en": "சுழற்சிக்கு பின் 3 கீழ் பக்கத்தில் இருக்கும்."
+      },
+      "B": {
+        "ta": "முதல் சுழற்சிக்கு பின் 5 மேலே இருந்தது, ஆனால் 2வது சுழற்சியில் வலதுபுறம் நகர்ந்துவிட்டது.",
+        "en": "முதல் சுழற்சிக்கு பின் 5 மேலே இருந்தது, ஆனால் 2வது சுழற்சியில் வலதுபுறம் நகர்ந்துவிட்டது."
+      },
+      "C": {
+        "ta": "சரி. ஆரம்ப நிலை: மேல்=1, முன்=2, வலது=3, இடது=4, பின்=5, கீழ்=6.\n1. முன்னோக்கி 90° உருட்டல்:\n   - பின் (5) மேலே வருகிறது.\n   - மேல் (1) முன்னே செல்கிறது.\n   - முன் (2) கீழே செல்கிறது.\n   - கீழ் (6) பின்னே செல்கிறது.\n   - இடது (4), வலது (3) மாற்றம் இல்லை.\n   தற்போதைய நிலை: மேல்=5, முன்=1, வலது=3, இடது=4.\n2. வலதுபுறமாக 90° உருட்டல்:\n   - இடது (4) மேலே வருகிறது.\n   - மேல் (5) வலதுபுறம் செல்கிறது.\n   தற்போது மேல் பக்கம் = 4.\nஎனவே, இறுதியாக மேல் பக்கத்தில் உள்ள எண் 4 ஆகும்.",
+        "en": "Correct. Initial state: Top=1, Front=2, Right=3, Left=4, Back=5, Bottom=6.\n1. Roll 90° forward:\n   - Back (5) moves to Top.\n   - Top (1) moves to Front.\n   - Front (2) moves to Bottom.\n   - Bottom (6) moves to Back.\n   - Left (4) and Right (3) stay same.\n   Now: Top=5, Front=1, Right=3, Left=4, Back=6, Bottom=2.\n2. Roll 90° to the right:\n   - Left (4) moves to Top.\n   - Top (5) moves to Right.\n   - Right (3) moves to Bottom.\n   - Bottom (2) moves to Left.\n   Now: Top=4.\nTherefore, the final top face is 4."
+      },
+      "D": {
+        "ta": "சுழற்சிக்கு பின் 2 இடது பக்கத்தில் இருக்கும்.",
+        "en": "சுழற்சிக்கு பின் 2 இடது பக்கத்தில் இருக்கும்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வெளிப்பக்க சுழற்சிகளின் போது அனைத்து 6 பக்கங்களின் இயக்கத்தையும் படிப் படியாக பின்தொடரவும்.",
+      "en": "Track the movement of all 6 faces step-by-step during spatial rotations."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடையின் 3D வெளிப்பக்க சுழற்சி.",
+      "en": "3D spatial rotation of standard cube."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_042",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Open Dice Nets",
+    "question": {
+      "ta": "ஒரு நிலையான பகடையின் திறந்த அமைப்பில் செங்குத்து வரிசையில் மேலிருந்து கீழாக [X, 2, Y, 5] சதுரங்களும், 2-ன் இடதுபுறம் Z-ம், வலதுபுறம் W-ம் இணைக்கப்பட்டுள்ளன.\nஇது நிலையான பகடையாக மடிக்கப்படுவதால், எதிர்ப்பக்கங்களின் கூடுதல் 7.\nX = 1 மற்றும் Z = 3 எனில், Y + W-ன் மதிப்பு என்ன?",
+      "en": "An open net of a standard die has a vertical strip of four faces [X, 2, Y, 5] from top to bottom, with face Z attached to the left of 2 and face W attached to the right of 2.\nSince it folds into a standard die, opposite faces sum to 7.\nIf X = 1 and Z = 3, what is the value of Y + W?"
+    },
+    "question_ta": "ஒரு நிலையான பகடையின் திறந்த அமைப்பில் செங்குத்து வரிசையில் மேலிருந்து கீழாக [X, 2, Y, 5] சதுரங்களும், 2-ன் இடதுபுறம் Z-ம், வலதுபுறம் W-ம் இணைக்கப்பட்டுள்ளன.\nஇது நிலையான பகடையாக மடிக்கப்படுவதால், எதிர்ப்பக்கங்களின் கூடுதல் 7.\nX = 1 மற்றும் Z = 3 எனில், Y + W-ன் மதிப்பு என்ன?",
+    "question_en": "An open net of a standard die has a vertical strip of four faces [X, 2, Y, 5] from top to bottom, with face Z attached to the left of 2 and face W attached to the right of 2.\nSince it folds into a standard die, opposite faces sum to 7.\nIf X = 1 and Z = 3, what is the value of Y + W?",
+    "options": [
+      "11",
+      "10",
+      "7",
+      "9"
+    ],
+    "options_ta": [
+      "11",
+      "10",
+      "7",
+      "9"
+    ],
+    "options_en": [
+      "11",
+      "10",
+      "7",
+      "9"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "திறந்த அமைப்பில் [X, 2, Y, 5]:\n- X-ன் எதிர்ப்பக்கம் Y\n- 2-ன் எதிர்ப்பக்கம் 5 (2 + 5 = 7)\n- Z-ன் எதிர்ப்பக்கம் W.\nநிலையான பகடை என்பதால் எதிர்ப்பக்க கூடுதல் = 7:\n- X + Y = 7 => X = 1 எனில், Y = 7 - 1 = 6.\n- Z + W = 7 => Z = 3 எனில், W = 7 - 3 = 4.\nஎனவே, Y + W = 6 + 4 = 10.",
+      "en": "In the open net [X, 2, Y, 5]:\n- X is opposite to Y\n- 2 is opposite to 5 (2 + 5 = 7)\n- Z is opposite to W.\nSince it is a standard die, opposite sums = 7:\n- X + Y = 7 => If X = 1, then Y = 7 - 1 = 6.\n- Z + W = 7 => If Z = 3, then W = 7 - 3 = 4.\nTherefore, Y + W = 6 + 4 = 10."
+    },
+    "explanation_ta": "திறந்த அமைப்பில் [X, 2, Y, 5]:\n- X-ன் எதிர்ப்பக்கம் Y\n- 2-ன் எதிர்ப்பக்கம் 5 (2 + 5 = 7)\n- Z-ன் எதிர்ப்பக்கம் W.\nநிலையான பகடை என்பதால் எதிர்ப்பக்க கூடுதல் = 7:\n- X + Y = 7 => X = 1 எனில், Y = 7 - 1 = 6.\n- Z + W = 7 => Z = 3 எனில், W = 7 - 3 = 4.\nஎனவே, Y + W = 6 + 4 = 10.",
+    "explanation_en": "In the open net [X, 2, Y, 5]:\n- X is opposite to Y\n- 2 is opposite to 5 (2 + 5 = 7)\n- Z is opposite to W.\nSince it is a standard die, opposite sums = 7:\n- X + Y = 7 => If X = 1, then Y = 7 - 1 = 6.\n- Z + W = 7 => If Z = 3, then W = 7 - 3 = 4.\nTherefore, Y + W = 6 + 4 = 10.",
+    "why_not_others": {
+      "A": {
+        "ta": "Y + W = 6 + 4 = 10.",
+        "en": "Y + W = 6 + 4 = 10."
+      },
+      "B": {
+        "ta": "சரி. திறந்த அமைப்பில் [X, 2, Y, 5]:\n- X-ன் எதிர்ப்பக்கம் Y\n- 2-ன் எதிர்ப்பக்கம் 5 (2 + 5 = 7)\n- Z-ன் எதிர்ப்பக்கம் W.\nநிலையான பகடை என்பதால் எதிர்ப்பக்க கூடுதல் = 7:\n- X + Y = 7 => X = 1 எனில், Y = 7 - 1 = 6.\n- Z + W = 7 => Z = 3 எனில், W = 7 - 3 = 4.\nஎனவே, Y + W = 6 + 4 = 10.",
+        "en": "Correct. In the open net [X, 2, Y, 5]:\n- X is opposite to Y\n- 2 is opposite to 5 (2 + 5 = 7)\n- Z is opposite to W.\nSince it is a standard die, opposite sums = 7:\n- X + Y = 7 => If X = 1, then Y = 7 - 1 = 6.\n- Z + W = 7 => If Z = 3, then W = 7 - 3 = 4.\nTherefore, Y + W = 6 + 4 = 10."
+      },
+      "C": {
+        "ta": "தனித்தனி எதிர்ப்பக்க கூடுதல் 7, ஆனால் Y + W = 6 + 4 = 10.",
+        "en": "தனித்தனி எதிர்ப்பக்க கூடுதல் 7, ஆனால் Y + W = 6 + 4 = 10."
+      },
+      "D": {
+        "ta": "Y + W = 6 + 4 = 10.",
+        "en": "Y + W = 6 + 4 = 10."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "திறந்த பகடை எதிர்ப்பக்க ஜோடிகளை 7 கூடுதல் விதியுடன் சேர்த்துப் பயன்படுத்தவும்.",
+      "en": "Use open net opposite pairs combined with the standard die sum-of-7 property."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடை கட்டுப்பாடுகளுடன் கூடிய திறந்த பகடை மாறி கணக்கீடு.",
+      "en": "Algebraic open net variable evaluation with standard die constraints."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_043",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Symbol / Color / Letter Dice",
+    "question": {
+      "ta": "ஒரு கனசதுரத்தின் 6 வண்ணங்கள்: சிகப்பு, நீலம், மஞ்சள், பச்சை, வெள்ளை, ஆரஞ்சு.\nநிலை 1: மேல் = சிகப்பு, முன் = நீலம், வலது = மஞ்சள்\nநிலை 2: மேல் = சிகப்பு, முன் = பச்சை, வலது = வெள்ளை\nநிலை 3: மேல் = ஆரஞ்சு, முன் = வெள்ளை, வலது = பச்சை\nநிலை 4: முன் = மஞ்சள், வலது = நீலம், மேல் = ?\nநிலை 4-ன் மேல் பக்கத்தில் உள்ள வண்ணம் எது?",
+      "en": "A cube has six colored faces: Red, Blue, Yellow, Green, White, Orange.\nPos 1: Top = Red, Front = Blue, Right = Yellow\nPos 2: Top = Red, Front = Green, Right = White\nPos 3: Top = Orange, Front = White, Right = Green\nPos 4: Front = Yellow, Right = Blue, Top = ?\nWhich color is on the Top face in Position 4?"
+    },
+    "question_ta": "ஒரு கனசதுரத்தின் 6 வண்ணங்கள்: சிகப்பு, நீலம், மஞ்சள், பச்சை, வெள்ளை, ஆரஞ்சு.\nநிலை 1: மேல் = சிகப்பு, முன் = நீலம், வலது = மஞ்சள்\nநிலை 2: மேல் = சிகப்பு, முன் = பச்சை, வலது = வெள்ளை\nநிலை 3: மேல் = ஆரஞ்சு, முன் = வெள்ளை, வலது = பச்சை\nநிலை 4: முன் = மஞ்சள், வலது = நீலம், மேல் = ?\nநிலை 4-ன் மேல் பக்கத்தில் உள்ள வண்ணம் எது?",
+    "question_en": "A cube has six colored faces: Red, Blue, Yellow, Green, White, Orange.\nPos 1: Top = Red, Front = Blue, Right = Yellow\nPos 2: Top = Red, Front = Green, Right = White\nPos 3: Top = Orange, Front = White, Right = Green\nPos 4: Front = Yellow, Right = Blue, Top = ?\nWhich color is on the Top face in Position 4?",
+    "options": [
+      "வெள்ளை",
+      "பச்சை",
+      "ஆரஞ்சு",
+      "சிகப்பு"
+    ],
+    "options_ta": [
+      "வெள்ளை",
+      "பச்சை",
+      "ஆரஞ்சு",
+      "சிகப்பு"
+    ],
+    "options_en": [
+      "White",
+      "Green",
+      "Orange",
+      "Red"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "நிலை 1, 2, 3-லிருந்து பெறப்பட்ட எதிர்ப்பக்கங்கள்:\n- மஞ்சள் - பச்சை\n- நீலம் - வெள்ளை\n- சிகப்பு - ஆரஞ்சு.\nநிலை 4-இல்: முன் = மஞ்சள், வலது = நீலம். மேல் பக்கம் சிகப்பு அல்லது ஆரஞ்சாக இருக்க வேண்டும்.\nநிலை 1-இல், சிகப்பு மேலே இருக்கும் போது, கடிகார சுற்று நீலத்திலிருந்து மஞ்சளுக்குச் செல்கிறது.\nநிலை 4-இல், மஞ்சளிலிருந்து நீலத்திற்குச் செல்வது ஆரஞ்சு (கீழ் பக்கம்) மேலே இருக்கும் போது சாத்தியமாகும்.\nஎனவே, மேல் பக்கத்தில் ஆரஞ்சு வண்ணம் இருக்கும்.",
+      "en": "Opposites derived from Pos 1, 2, 3:\n- Yellow is opposite to Green\n- Blue is opposite to White\n- Red is opposite to Orange.\nIn Pos 4: Front = Yellow, Right = Blue. The Top face must be either Red or Orange.\nIn Pos 1, with Top = Red, going clockwise around Red moves from Blue to Yellow.\nIn Pos 4, moving from Yellow to Blue is counter-clockwise relative to Red, which corresponds to clockwise movement when viewed from Orange (the bottom face).\nTherefore, when Front = Yellow and Right = Blue, the Top face is Orange."
+    },
+    "explanation_ta": "நிலை 1, 2, 3-லிருந்து பெறப்பட்ட எதிர்ப்பக்கங்கள்:\n- மஞ்சள் - பச்சை\n- நீலம் - வெள்ளை\n- சிகப்பு - ஆரஞ்சு.\nநிலை 4-இல்: முன் = மஞ்சள், வலது = நீலம். மேல் பக்கம் சிகப்பு அல்லது ஆரஞ்சாக இருக்க வேண்டும்.\nநிலை 1-இல், சிகப்பு மேலே இருக்கும் போது, கடிகார சுற்று நீலத்திலிருந்து மஞ்சளுக்குச் செல்கிறது.\nநிலை 4-இல், மஞ்சளிலிருந்து நீலத்திற்குச் செல்வது ஆரஞ்சு (கீழ் பக்கம்) மேலே இருக்கும் போது சாத்தியமாகும்.\nஎனவே, மேல் பக்கத்தில் ஆரஞ்சு வண்ணம் இருக்கும்.",
+    "explanation_en": "Opposites derived from Pos 1, 2, 3:\n- Yellow is opposite to Green\n- Blue is opposite to White\n- Red is opposite to Orange.\nIn Pos 4: Front = Yellow, Right = Blue. The Top face must be either Red or Orange.\nIn Pos 1, with Top = Red, going clockwise around Red moves from Blue to Yellow.\nIn Pos 4, moving from Yellow to Blue is counter-clockwise relative to Red, which corresponds to clockwise movement when viewed from Orange (the bottom face).\nTherefore, when Front = Yellow and Right = Blue, the Top face is Orange.",
+    "why_not_others": {
+      "A": {
+        "ta": "வெள்ளை என்பது தவறான விடை.",
+        "en": "வெள்ளை நீலத்தின் (வலது) எதிர்ப்பக்கம் என்பதால் மேலே இருக்க முடியாது."
+      },
+      "B": {
+        "ta": "பச்சை என்பது தவறான விடை.",
+        "en": "பச்சை மஞ்சளின் (முன்பக்கம்) எதிர்ப்பக்கம் என்பதால் மேலே இருக்க முடியாது."
+      },
+      "C": {
+        "ta": "சரி. நிலை 1, 2, 3-லிருந்து பெறப்பட்ட எதிர்ப்பக்கங்கள்:\n- மஞ்சள் - பச்சை\n- நீலம் - வெள்ளை\n- சிகப்பு - ஆரஞ்சு.\nநிலை 4-இல்: முன் = மஞ்சள், வலது = நீலம். மேல் பக்கம் சிகப்பு அல்லது ஆரஞ்சாக இருக்க வேண்டும்.\nநிலை 1-இல், சிகப்பு மேலே இருக்கும் போது, கடிகார சுற்று நீலத்திலிருந்து மஞ்சளுக்குச் செல்கிறது.\nநிலை 4-இல், மஞ்சளிலிருந்து நீலத்திற்குச் செல்வது ஆரஞ்சு (கீழ் பக்கம்) மேலே இருக்கும் போது சாத்தியமாகும்.\nஎனவே, மேல் பக்கத்தில் ஆரஞ்சு வண்ணம் இருக்கும்.",
+        "en": "Correct. Opposites derived from Pos 1, 2, 3:\n- Yellow is opposite to Green\n- Blue is opposite to White\n- Red is opposite to Orange.\nIn Pos 4: Front = Yellow, Right = Blue. The Top face must be either Red or Orange.\nIn Pos 1, with Top = Red, going clockwise around Red moves from Blue to Yellow.\nIn Pos 4, moving from Yellow to Blue is counter-clockwise relative to Red, which corresponds to clockwise movement when viewed from Orange (the bottom face).\nTherefore, when Front = Yellow and Right = Blue, the Top face is Orange."
+      },
+      "D": {
+        "ta": "சிகப்பு என்பது தவறான விடை.",
+        "en": "சிகப்பு மேலே இருந்தால், முன்=மஞ்சள் என்பதால் வலது=பச்சை என்று வந்திருக்கும்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மீதமுள்ள இரு எதிர்ப்பக்கங்களில் சரியானதைத் தேர்ந்தெடுக்க கடிகார சுற்று திசையைச் சரிபார்க்கவும்.",
+      "en": "Verify the relative chirality (clockwise vs counterclockwise) of adjacent faces to pick between the two opposite remaining candidates."
+    },
+    "revision_fact": {
+      "ta": "வண்ணப் பகடை 4-தோற்ற சுழற்சி திசை பகுப்பாய்வு.",
+      "en": "Color cube 4-view chiral orientation analysis."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_044",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு நிலையான பகடையின் திறந்த அமைப்பில் பக்கம் 3-க்கு எதிரே பக்கம் 6-ம், பக்கம் 1-க்கு எதிரே பக்கம் 5-ம், பக்கம் 2-க்கு எதிரே பக்கம் 4-ம் அமைகின்றன.\nபக்கம் 3-இல் 3 புள்ளிகள் இருந்தால், பக்கம் 3-க்கு அருகில் உள்ள நான்கு பக்கங்களிலுள்ள புள்ளிகளின் மொத்த கூடுதல் என்ன?",
+      "en": "An open net of a standard die folds such that Face 3 is opposite to Face 6, Face 1 is opposite to Face 5, and Face 2 is opposite to Face 4.\nIf Face 3 has 3 dots, what is the sum of the dots on all four faces ADJACENT to Face 3?"
+    },
+    "question_ta": "ஒரு நிலையான பகடையின் திறந்த அமைப்பில் பக்கம் 3-க்கு எதிரே பக்கம் 6-ம், பக்கம் 1-க்கு எதிரே பக்கம் 5-ம், பக்கம் 2-க்கு எதிரே பக்கம் 4-ம் அமைகின்றன.\nபக்கம் 3-இல் 3 புள்ளிகள் இருந்தால், பக்கம் 3-க்கு அருகில் உள்ள நான்கு பக்கங்களிலுள்ள புள்ளிகளின் மொத்த கூடுதல் என்ன?",
+    "question_en": "An open net of a standard die folds such that Face 3 is opposite to Face 6, Face 1 is opposite to Face 5, and Face 2 is opposite to Face 4.\nIf Face 3 has 3 dots, what is the sum of the dots on all four faces ADJACENT to Face 3?",
+    "options": [
+      "17",
+      "14",
+      "21",
+      "18"
+    ],
+    "options_ta": [
+      "17",
+      "14",
+      "21",
+      "18"
+    ],
+    "options_en": [
+      "17",
+      "14",
+      "21",
+      "18"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "நிலையான பகடையின் 6 பக்கங்களின் மொத்த கூடுதல் = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nபக்கம் 3-இல் 3 புள்ளிகள் உள்ளன.\nஅதன் எதிர்ப்பக்கத்தில் (பக்கம் 6) 7 - 3 = 4 புள்ளிகள் உள்ளன.\nமீதமுள்ள 4 பக்கங்களும் பக்கம் 3-க்கு அருகில் உள்ள பக்கங்கள்.\n4 அடுத்துள்ள பக்கங்களின் கூடுதல் = மொத்த கூடுதல் - (பக்கம் 3 + எதிர்ப்பக்கம் 6)\nகூடுதல் = 21 - (3 + 4) = 21 - 7 = 14.",
+      "en": "Total sum of numbers on all 6 faces of a standard die = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nFace 3 has 3 dots.\nIts opposite face (Face 6) has 7 - 3 = 4 dots.\nThe remaining 4 faces are all adjacent to Face 3.\nSum of 4 adjacent faces = Total sum - (Face 3 + Opposite Face 6)\nSum = 21 - (3 + 4) = 21 - 7 = 14."
+    },
+    "explanation_ta": "நிலையான பகடையின் 6 பக்கங்களின் மொத்த கூடுதல் = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nபக்கம் 3-இல் 3 புள்ளிகள் உள்ளன.\nஅதன் எதிர்ப்பக்கத்தில் (பக்கம் 6) 7 - 3 = 4 புள்ளிகள் உள்ளன.\nமீதமுள்ள 4 பக்கங்களும் பக்கம் 3-க்கு அருகில் உள்ள பக்கங்கள்.\n4 அடுத்துள்ள பக்கங்களின் கூடுதல் = மொத்த கூடுதல் - (பக்கம் 3 + எதிர்ப்பக்கம் 6)\nகூடுதல் = 21 - (3 + 4) = 21 - 7 = 14.",
+    "explanation_en": "Total sum of numbers on all 6 faces of a standard die = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nFace 3 has 3 dots.\nIts opposite face (Face 6) has 7 - 3 = 4 dots.\nThe remaining 4 faces are all adjacent to Face 3.\nSum of 4 adjacent faces = Total sum - (Face 3 + Opposite Face 6)\nSum = 21 - (3 + 4) = 21 - 7 = 14.",
+    "why_not_others": {
+      "A": {
+        "ta": "21 - 4 = 17, ஆனால் 3-ஆம் பக்கத்தையும் கழிக்க வேண்டும்.",
+        "en": "21 - 4 = 17, ஆனால் 3-ஆம் பக்கத்தையும் கழிக்க வேண்டும்."
+      },
+      "B": {
+        "ta": "சரி. நிலையான பகடையின் 6 பக்கங்களின் மொத்த கூடுதல் = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nபக்கம் 3-இல் 3 புள்ளிகள் உள்ளன.\nஅதன் எதிர்ப்பக்கத்தில் (பக்கம் 6) 7 - 3 = 4 புள்ளிகள் உள்ளன.\nமீதமுள்ள 4 பக்கங்களும் பக்கம் 3-க்கு அருகில் உள்ள பக்கங்கள்.\n4 அடுத்துள்ள பக்கங்களின் கூடுதல் = மொத்த கூடுதல் - (பக்கம் 3 + எதிர்ப்பக்கம் 6)\nகூடுதல் = 21 - (3 + 4) = 21 - 7 = 14.",
+        "en": "Correct. Total sum of numbers on all 6 faces of a standard die = 1 + 2 + 3 + 4 + 5 + 6 = 21.\nFace 3 has 3 dots.\nIts opposite face (Face 6) has 7 - 3 = 4 dots.\nThe remaining 4 faces are all adjacent to Face 3.\nSum of 4 adjacent faces = Total sum - (Face 3 + Opposite Face 6)\nSum = 21 - (3 + 4) = 21 - 7 = 14."
+      },
+      "C": {
+        "ta": "21 என்பது அனைத்து 6 பக்கங்களின் கூடுதல்.",
+        "en": "21 என்பது அனைத்து 6 பக்கங்களின் கூடுதல்."
+      },
+      "D": {
+        "ta": "21 - 3 = 18, ஆனால் எதிர்ப்பக்கமான 4-ஐயும் கழிக்க வேண்டும்.",
+        "en": "21 - 3 = 18, ஆனால் எதிர்ப்பக்கமான 4-ஐயும் கழிக்க வேண்டும்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "4 அடுத்துள்ள பக்கங்களின் கூடுதல் = பகடையின் மொத்த கூடுதல் (21) - (பக்கம் + எதிர்ப்பக்கம்) = 21 - 7 = 14.",
+      "en": "Sum of 4 adjacent faces = Total sum of die (21) - (Face + Opposite Face) = 21 - 7 = 14."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடையில் எந்தப் பக்கத்தின் 4 அடுத்துள்ள பக்கங்களின் கூடுதலும் எப்போதும் 14 ஆகும்.",
+      "en": "Sum of 4 adjacent faces on a standard die is invariant at 14."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  },
+  {
+    "id": "DICE_045",
+    "subject": "aptitude",
+    "topic": "aptitude_dice",
+    "topic_id": "aptitude_dice",
+    "difficulty": "Hard",
+    "question_type": "Standard vs Ordinary Dice",
+    "question": {
+      "ta": "ஒரு பகடையின் இரு தோற்றங்களைக் கருதுக:\nநிலை 1: (1, 2, 4)\nநிலை 2: (3, 5, 6)\nநிலை 1 மற்றும் நிலை 2 ஆகியவை ஒரே ஒரு நிலையான பகடையின் (Standard Die) இணக்கமான தோற்றங்களா?",
+      "en": "Consider two positions of a die:\nPosition 1: (1, 2, 4)\nPosition 2: (3, 5, 6)\nAre Position 1 and Position 2 compatible views of a single Standard Die?"
+    },
+    "question_ta": "ஒரு பகடையின் இரு தோற்றங்களைக் கருதுக:\nநிலை 1: (1, 2, 4)\nநிலை 2: (3, 5, 6)\nநிலை 1 மற்றும் நிலை 2 ஆகியவை ஒரே ஒரு நிலையான பகடையின் (Standard Die) இணக்கமான தோற்றங்களா?",
+    "question_en": "Consider two positions of a die:\nPosition 1: (1, 2, 4)\nPosition 2: (3, 5, 6)\nAre Position 1 and Position 2 compatible views of a single Standard Die?",
+    "options": [
+      "நிர்ணயிக்க முடியாது",
+      "இல்லை, ஏனெனில் 3, 5, 6 செல்லுபடியாகும் தோற்றத்தை உருவாக்க முடியாது",
+      "இல்லை, ஏனெனில் 1, 2, 4 ஒரு சாதாரண பகடையின் தோற்றம்",
+      "ஆம், அவை ஒரே நிலையான பகடையின் எதிரெதிர் மூலை தோற்றங்கள்"
+    ],
+    "options_ta": [
+      "நிர்ணயிக்க முடியாது",
+      "இல்லை, ஏனெனில் 3, 5, 6 செல்லுபடியாகும் தோற்றத்தை உருவாக்க முடியாது",
+      "இல்லை, ஏனெனில் 1, 2, 4 ஒரு சாதாரண பகடையின் தோற்றம்",
+      "ஆம், அவை ஒரே நிலையான பகடையின் எதிரெதிர் மூலை தோற்றங்கள்"
+    ],
+    "options_en": [
+      "Cannot be determined",
+      "No, because 3, 5, 6 cannot form a valid view",
+      "No, because 1, 2, 4 is an ordinary die view",
+      "Yes, they represent opposite corner views of the same standard die"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "நிலையான பகடையில் எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 1 (1, 2, 4)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (1+2=3, 2+4=6, 1+4=5). எனவே இது சரியான மூலைத் தோற்றம்.\n(1, 2, 4)-ன் நேரடி எதிர்ப்பக்கங்கள் (6, 5, 3).\nநிலை 2 (3, 5, 6)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (3+5=8, 5+6=11, 3+6=9).\nஎனவே, இவ்விரு தோற்றங்களும் ஒரே நிலையான பகடையின் எதிரெதிர் மூலைத் தோற்றங்களாகும்.",
+      "en": "In a standard die, opposite pairs are (1,6), (2,5), (3,4).\nIn Position 1 (1, 2, 4):\nNo pair sums to 7 (1+2=3, 2+4=6, 1+4=5). Thus, (1, 2, 4) is a valid corner view.\nThe exact opposite faces of (1, 2, 4) are (6, 5, 3).\nIn Position 2 (3, 5, 6):\nNo pair sums to 7 (3+5=8, 5+6=11, 3+6=9). Thus, (3, 5, 6) is the exact opposite corner view of (1, 2, 4).\nTherefore, both views are 100% compatible with the SAME standard die."
+    },
+    "explanation_ta": "நிலையான பகடையில் எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 1 (1, 2, 4)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (1+2=3, 2+4=6, 1+4=5). எனவே இது சரியான மூலைத் தோற்றம்.\n(1, 2, 4)-ன் நேரடி எதிர்ப்பக்கங்கள் (6, 5, 3).\nநிலை 2 (3, 5, 6)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (3+5=8, 5+6=11, 3+6=9).\nஎனவே, இவ்விரு தோற்றங்களும் ஒரே நிலையான பகடையின் எதிரெதிர் மூலைத் தோற்றங்களாகும்.",
+    "explanation_en": "In a standard die, opposite pairs are (1,6), (2,5), (3,4).\nIn Position 1 (1, 2, 4):\nNo pair sums to 7 (1+2=3, 2+4=6, 1+4=5). Thus, (1, 2, 4) is a valid corner view.\nThe exact opposite faces of (1, 2, 4) are (6, 5, 3).\nIn Position 2 (3, 5, 6):\nNo pair sums to 7 (3+5=8, 5+6=11, 3+6=9). Thus, (3, 5, 6) is the exact opposite corner view of (1, 2, 4).\nTherefore, both views are 100% compatible with the SAME standard die.",
+    "why_not_others": {
+      "A": {
+        "ta": "நிர்ணயிக்க முடியாது என்பது தவறான விடை.",
+        "en": "இணக்கமானது எனத் தெளிவாக உறுதிப்படுத்தப்பட்டுள்ளது."
+      },
+      "B": {
+        "ta": "இல்லை, ஏனெனில் 3, 5, 6 செல்லுபடியாகும் தோற்றத்தை உருவாக்க முடியாது என்பது தவறான விடை.",
+        "en": "3, 5, 6-இல் எந்த அடுத்துள்ள கூடுதலும் 7 இல்லை, எனவே இது சரியான தோற்றம்."
+      },
+      "C": {
+        "ta": "இல்லை, ஏனெனில் 1, 2, 4 ஒரு சாதாரண பகடையின் தோற்றம் என்பது தவறான விடை.",
+        "en": "1, 2, 4-இல் எந்த அடுத்துள்ள கூடுதலும் 7 இல்லை, எனவே இது நிலையான பகடை தோற்றம்."
+      },
+      "D": {
+        "ta": "சரி. நிலையான பகடையில் எதிர்ப்பக்க ஜோடிகள் (1,6), (2,5), (3,4).\nநிலை 1 (1, 2, 4)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (1+2=3, 2+4=6, 1+4=5). எனவே இது சரியான மூலைத் தோற்றம்.\n(1, 2, 4)-ன் நேரடி எதிர்ப்பக்கங்கள் (6, 5, 3).\nநிலை 2 (3, 5, 6)-இல் எந்த இரு எண்களின் கூடுதலும் 7 இல்லை (3+5=8, 5+6=11, 3+6=9).\nஎனவே, இவ்விரு தோற்றங்களும் ஒரே நிலையான பகடையின் எதிரெதிர் மூலைத் தோற்றங்களாகும்.",
+        "en": "Correct. In a standard die, opposite pairs are (1,6), (2,5), (3,4).\nIn Position 1 (1, 2, 4):\nNo pair sums to 7 (1+2=3, 2+4=6, 1+4=5). Thus, (1, 2, 4) is a valid corner view.\nThe exact opposite faces of (1, 2, 4) are (6, 5, 3).\nIn Position 2 (3, 5, 6):\nNo pair sums to 7 (3+5=8, 5+6=11, 3+6=9). Thus, (3, 5, 6) is the exact opposite corner view of (1, 2, 4).\nTherefore, both views are 100% compatible with the SAME standard die."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "செல்லுபடியாகும் நிலையான பகடை தோற்றம் (a,b,c)-ன் எதிரெதிர் மூலைத் தோற்றம் (7-a, 7-b, 7-c) ஆகும்.",
+      "en": "The opposite corner triplet of any valid standard view (a,b,c) is (7-a, 7-b, 7-c), which is also a valid view."
+    },
+    "revision_fact": {
+      "ta": "நிலையான பகடைகளின் எதிரெதிர் மூலைத் தோற்ற நிலைத்தன்மை.",
+      "en": "Opposite corner triplet invariance of standard dice."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Dice",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Dice",
+    "tags": [
+      "aptitude",
+      "aptitude_dice",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_dice"
+  }
+]

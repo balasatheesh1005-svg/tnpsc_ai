@@ -1,0 +1,817 @@
+{
+  "meta": {
+    "topic_id": "economy_agriculture_part_2",
+    "repository_id": "economy_agriculture",
+    "display_title": "Agriculture – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Agriculture",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Green Revolution",
+    "MS Swaminathan",
+    "Norman Borlaug",
+    "HYV Seeds",
+    "CACP",
+    "MSP",
+    "A2 plus FL vs C2",
+    "Kisan Credit Card KCC",
+    "Priority Sector Lending 18%",
+    "e-NAM",
+    "PMFBY",
+    "Operation Flood"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Evaluate the technological drivers, successes, and ecological consequences of the Green Revolution.",
+        "Understand the operational mechanisms of MSP, CACP recommendations, and the A2+FL vs C2 controversy."
+      ],
+      "ta": [
+        "பசுமைப் புரட்சியின் தொழில்நுட்ப உந்துதல்கள், வெற்றிகள் மற்றும் சுற்றுச்சூழல் தாக்கங்களை மதிப்பீடு செய்தல்.",
+        "MSP, CACP பரிந்துரைகள் மற்றும் A2+FL vs C2 விலை கணக்கீட்டு முறைகளைத் தெளிவாகப் புரிந்துகொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key milestones: CACP 1965, KCC 1998, Operation Flood 1970, PMFBY 2016, e-NAM 2016.",
+        "Recall the exact premium percentages under PMFBY: Kharif 2%, Rabi 1.5%, Commercial 5%."
+      ],
+      "ta": [
+        "முக்கிய ஆண்டுகளை நினைவில் நிறுத்துதல்: CACP 1965, KCC 1998, ஆபரேஷன் பிளட் 1970, PMFBY 2016, e-NAM 2016.",
+        "PMFBY பிரீமியம் சதவீதங்களை நினைவுகூருதல்: கரீஃப் 2%, ரபி 1.5%, வணிகப் பயிர் 5%."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze institutional credit mechanisms including PSL norms, KCC facilities, and PMFBY insurance.",
+        "Appraise agricultural marketing reforms from local APMC mandis to the digital e-NAM portal."
+      ],
+      "ta": [
+        "முன்னுரிமைத் துறை கடன் (PSL), கிசான் கடன் அட்டை (KCC) மற்றும் PMFBY காப்பீட்டு அமைப்புகளை ஆய்வு செய்தல்.",
+        "APMC மண்டிகள் முதல் மின்னணு e-NAM வரையிலான சந்தை சீர்திருத்தங்களை விரிவாக மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps concerning CACP vs CCEA authorities, MSP crop counts, and allied revolutions."
+      ],
+      "ta": [
+        "CACP vs CCEA அதிகாரங்கள், MSP பயிர் எண்ணிக்கை மற்றும் பிற வேளாண் புரட்சிகள் குறித்த தேர்வுகளின் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Agriculture – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_green_revolution",
+      "title_en": "The Green Revolution: Genesis, Technology & Impact",
+      "title_ta": "பசுமைப் புரட்சி: தோற்றம், தொழில்நுட்பம் மற்றும் தாக்கம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_msp_and_cacp",
+      "title_en": "Minimum Support Price (MSP) & CACP Framework",
+      "title_ta": "குறைந்தபட்ச ஆதரவு விலை (MSP) மற்றும் CACP கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_agricultural_credit",
+      "title_en": "Agricultural Credit Architecture: Institutional Delivery & KCC",
+      "title_ta": "வேளாண் கடன் கட்டமைப்பு: நிறுவன விநியோகம் மற்றும் KCC",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_agricultural_markets_and_allied",
+      "title_en": "Agricultural Marketing (APMC & e-NAM) & Allied Revolutions",
+      "title_ta": "வேளாண் சந்தைப்படுத்தல் (APMC & e-NAM) மற்றும் சார்புப் புரட்சிகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The institutional and technological structure of Indian agriculture comprises the input-delivery architecture (irrigation, HYV seeds, fertilizers, farm mechanization), institutional credit frameworks (KCC, priority sector lending), price support mechanisms (MSP recommended by CACP), market interfaces (APMCs, e-NAM), and allied agrarian sectors (dairy, poultry, fisheries).",
+      "ta": "இந்திய வேளாண்மையின் நிறுவன மற்றும் தொழில்நுட்ப கட்டமைப்பு என்பது உள்ளீட்டு விநியோக உள்கட்டமைப்பு (நீர்ப்பாசனம், வீரிய ரக விதைகள், உரங்கள், இயந்திரமயமாக்கல்), நிறுவன கடன் அமைப்புகள் (KCC, முன்னுரிமைத் துறை கடன்), விலை ஆதரவு வழிமுறைகள் (CACP பரிந்துரைக்கும் MSP), சந்தை கட்டமைப்புகள் (APMC, e-NAM) மற்றும் சார்புத் துறைகளை (பால்பண்ணை, கோழிப்பண்ணை, மீன்வளம்) உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "To overcome the chronic food deficits and 'ship-to-mouth' dependence on US PL-480 imports during the 1960s, India embarked on the historic Green Revolution. Spearheaded by Dr. M.S. Swaminathan and Nobel laureate Norman Borlaug, the introduction of High-Yielding Variety (HYV) dwarf wheat and IR-8 rice transformed India into a self-sufficient food producer. Following this technological transformation, India established institutional mechanisms to safeguard farmers: the Minimum Support Price (MSP) system governed by the Commission for Agricultural Costs and Prices (CACP), the Food Corporation of India (FCI) for procurement and buffer stock management, Priority Sector Lending (PSL) requirements for commercial banks, the Kisan Credit Card (KCC) scheme, Agricultural Produce Market Committees (APMCs), the electronic National Agriculture Market (e-NAM), and multi-hued allied agricultural revolutions (White, Blue, Yellow, Silver).",
+      "ta": "1960-களில் நிலவிய கடுமையான உணவுப் பற்றாக்குறை மற்றும் அமெரிக்காவின் PL-480 இறக்குமதியைச் சார்ந்திருந்த 'கப்பலில் இருந்து வாய்க்கு' என்ற நிலையை மாற்ற இந்தியா வரலாற்றுச் சிறப்புமிக்க பசுமைப் புரட்சியைத் தொடங்கியது. டாக்டர் எம்.எஸ். சுவாமிநாதன் மற்றும் நோபல் பரிசு பெற்ற நார்மன் போர்லாக் ஆகியோரால் வழிநடத்தப்பட்ட உயர் விளைச்சல் ரக (HYV) குள்ளக் கோதுமை மற்றும் IR-8 நெல் அறிமுகம் இந்தியாவை உணவுத் தன்னிறைவு நாடாக மாற்றியது. இந்த தொழில்நுட்ப மாற்றத்தைத் தொடர்ந்து விவசாயிகளைப் பாதுகாக்க நிறுவன கட்டமைப்புகள் உருவாக்கப்பட்டன: வேளாண் செலவுகள் மற்றும் விலைகளுக்கான ஆணையம் (CACP) நிர்ணயிக்கும் குறைந்தபட்ச ஆதரவு விலை (MSP), கொள்முதல் மற்றும் சேமிப்பிற்கான இந்திய உணவுக் கழகம் (FCI), வங்கிகளுக்கான முன்னுரிமைத் துறை கடன் (PSL), கிசான் கடன் அட்டை (KCC), ஒழுங்குமுறை விற்பனைக் கூடங்கள் (APMC), மின்னணு தேசிய வேளாண் சந்தை (e-NAM) மற்றும் பல்வேறு வண்ணப் புரட்சிகள் (வெண்மை, நீலம், மஞ்சள், வெள்ளி) நிலைநிறுத்தப்பட்டன."
+    },
+    "sec_green_revolution": [
+      {
+        "title": "Historical Context & Scientific Vanguard",
+        "title_ta": "வரலாற்றுப் பின்னணியும் அறிவியல் தலைமையும்",
+        "points": {
+          "en": [
+            "Severe Food Crises of the 1960s: Consecutive severe droughts (1965-66) created catastrophic famines, forcing humiliating reliance on US PL-480 food aid.",
+            "Scientific Architects: Dr. Norman Borlaug developed semi-dwarf, disease-resistant, non-lodging Mexican wheat varieties at CIMMYT; Dr. M.S. Swaminathan adapted them to Indian agro-climatic conditions.",
+            "Initial Rollout (Mid-1960s): Commenced in Punjab, Haryana, and Western Uttar Pradesh with Lerma Rojo and Sonora 64 wheat varieties, followed by IR-8 rice ('Miracle Rice').",
+            "The Technical Package: Green Revolution was not just seeds; it was a package technology requiring HYV seeds, assured canal/tubewell irrigation, synthetic chemical fertilizers (NPK), and chemical pesticides."
+          ],
+          "ta": [
+            "1960-களின் கடுமையான உணவு நெருக்கடி: அடுத்தடுத்த தொடர் வறட்சிகள் (1965-66) பெரும் பஞ்சத்தை ஏற்படுத்தி, அமெரிக்காவின் PL-480 உணவு உதவியை நம்பியிருக்க வேண்டிய கட்டாயத்தை உருவாக்கியது.",
+            "அறிவியல் தலைவர்கள்: டாக்டர் நார்மன் போர்லாக் CIMMYT நிறுவனத்தில் குள்ள ரக, சாய்ந்துவிடாத மெக்சிகன் கோதுமையை உருவாக்கினார்; டாக்டர் எம்.எஸ். சுவாமிநாதன் அவற்றை இந்திய காலநிலைக்கு ஏற்ப தகவமைத்தார்.",
+            "ஆரம்ப கட்ட அறிமுகம் (1960-களின் நடுப்பகுதி): லெர்மா ரோஜோ, சோனோரா 64 கோதுமை ரகங்களுடன் பஞ்சாப், ஹரியானா, மேற்கு உத்தரப் பிரதேசத்தில் தொடங்கி, பின்னர் IR-8 'அதிசய நெல்' ரகத்திற்கு விரிவுபடுத்தப்பட்டது.",
+            "தொழில்நுட்பத் தொகுப்பு (Package Technology): பசுமைப் புரட்சி என்பது வெறும் விதை மட்டுமல்ல; அது HYV விதைகள், உறுதியான நீர்ப்பாசனம், ரசாயன உரங்கள் (NPK) மற்றும் பூச்சிக்கொல்லிகள் இணைந்த ஒரு கூட்டுத் தொழில்நுட்பமாகும்."
+          ]
+        }
+      },
+      {
+        "title": "Gains and Structural Pitfalls",
+        "title_ta": "வெற்றிகளும் கட்டமைப்புப் பலவீனங்களும்",
+        "points": {
+          "en": [
+            "Phenomenal Production Surge: Foodgrain production skyrocketed, eliminating famines, enabling buffer stock building, and establishing national food sovereignty.",
+            "Regional Disparity: Disproportionately benefited north-western irrigated tracts (Punjab, Haryana, Western UP), leaving rainfed and eastern regions underdeveloped.",
+            "Inter-Crop Imbalance: Skewed cropping toward Wheat and Rice, causing serious neglect of nutritious millets, pulses, and oilseeds.",
+            "Ecological Degradation: Over-exploitation of groundwater via tubewells, soil salinity from excessive flood irrigation, and chemical contamination of food webs."
+          ],
+          "ta": [
+            "பிரமிக்கத்தக்க உற்பத்திப் பெருக்கம்: உணவு தானிய உற்பத்தி மளமளவென உயர்ந்து, பஞ்சங்களை ஒழித்து, தானிய இருப்பு வைக்க வழிவகுத்து, உணவு இறையாண்மையை நிலைநாட்டியது.",
+            "பிராந்திய ஏற்றத்தாழ்வு: நீர்ப்பாசன வசதி கொண்ட வடமேற்குப் பகுதிகளுக்கு (பஞ்சாப், ஹரியானா, மேற்கு உ.பி.) மட்டுமே அதிக பலனளித்து, மானாவாரி மற்றும் கிழக்கு மாநிலங்கள் பின்தங்கின.",
+            "பயிர் ஏற்றத்தாழ்வு: கோதுமை மற்றும் நெல்லுக்கு மட்டுமே அதீத முக்கியத்துவம் அளிக்கப்பட்டு, சத்துமிக்க சிறுதானியங்கள், பருப்பு வகைகள் மற்றும் எண்ணெய் வித்துக்கள் புறக்கணிக்கப்பட்டன.",
+            "சுற்றுச்சூழல் சீரழிவு: ஆழ்குழாய் கிணறுகளால் நிலத்தடி நீர் அதீதமாக உறிஞ்சப்படுதல், அதிக நீர்ப்பாசனத்தால் மண் உவர்ப்பாதல் மற்றும் உணவுச் சங்கிலியில் ரசாயன நச்சுத்தன்மை கலத்தல்."
+          ]
+        }
+      }
+    ],
+    "sec_msp_and_cacp": [
+      {
+        "title": "Architecture and Institutional Mandate",
+        "title_ta": "கட்டமைப்பும் நிறுவனப் பொறுப்பும்",
+        "points": {
+          "en": [
+            "Definition of MSP: The minimum guaranteed price announced by the Government of India prior to the sowing season to protect farmers against distress sales during post-harvest gluts.",
+            "CACP Role: The Commission for Agricultural Costs and Prices (CACP, founded 1965 as Agricultural Prices Commission) recommends MSP levels for 22 mandated agricultural crops plus Fair and Remunerative Price (FRP) for Sugarcane.",
+            "Cabinet Committee on Economic Affairs (CCEA): The final decision on MSP pricing is taken by the CCEA chaired by the Prime Minister.",
+            "Mandated Crops Breakdown: 14 Kharif crops, 6 Rabi crops, and 2 commercial crops (Jute and Copra), along with FRP for Sugarcane."
+          ],
+          "ta": [
+            "MSP வரைவிலக்கணம்: அறுவடைக்குப் பிந்தைய வரத்து மிகுதியால் சந்தை விலை சரிந்து விவசாயிகள் நட்டமடைவதைத் தடுக்க, விதைப்புப் பருவத்திற்கு முன்பே இந்திய அரசால் அறிவிக்கப்படும் குறைந்தபட்ச உத்தரவாத விலை.",
+            "CACP-இன் பங்கு: வேளாண் செலவுகள் மற்றும் விலைகளுக்கான ஆணையம் (CACP, 1965-ல் தொடங்கப்பட்டது) 22 கட்டாயப் பயிர்களுக்கான MSP மற்றும் கரும்புக்கான நியாயமான மற்றும் ஆதாய விலையை (FRP) அரசுக்குப் பரிந்துரைக்கிறது.",
+            "பொருளாதார விவகாரங்களுக்கான அமைச்சரவைக் குழு (CCEA): பிரதமர் தலைமையிலான CCEA குழுவே MSP விலையை இறுதி செய்து ஒப்புதல் அளிக்கிறது.",
+            "கட்டாயப் பயிர்கள் விவரம்: 14 கரீஃப் பயிர்கள், 6 ரபி பயிர்கள் மற்றும் 2 வணிகப் பயிர்கள் (சணல், கொப்பரை), அத்துடன் கரும்புக்கான FRP."
+          ]
+        }
+      },
+      {
+        "title": "Cost Concepts Used in MSP Calculation",
+        "title_ta": "MSP கணக்கீட்டில் பயன்படுத்தப்படும் செலவுக் கோட்பாடுகள்",
+        "points": {
+          "en": [
+            "A2 Cost: Direct out-of-pocket expenses incurred by the farmer on seeds, chemical fertilizers, pesticides, hired labor, fuel, and irrigation.",
+            "A2 + FL Cost: Actual out-of-pocket costs (A2) PLUS the imputed economic value of unpaid Family Labor (FL).",
+            "C2 Cost (Comprehensive Cost): Highly comprehensive metric including A2 + FL PLUS the imputed rental value of owned land and interest on owned fixed capital assets.",
+            "Swaminathan Committee Recommendation (2006): Advocated fixing MSP at a minimum of 50% profit over Comprehensive Cost (C2 + 50%). Current government policy guarantees MSP at 50% over A2+FL."
+          ],
+          "ta": [
+            "A2 செலவு: விதைகள், உரங்கள், பூச்சிக்கொல்லிகள், கூலித் தொழிலாளர்கள், எரிபொருள் மற்றும் நீர்ப்பாசனம் ஆகியவற்றிற்காக விவசாயி செய்யும் நேரடி செலவுகள்.",
+            "A2 + FL செலவு: நேரடி செலவுகளுடன் (A2) விவசாய குடும்ப உறுப்பினர்களின் ஊதியமில்லா சொந்த உழைப்பின் (Family Labor) மதிப்பையும் சேர்த்துக் கணக்கிடுவது.",
+            "C2 செலவு (விரிவான செலவு): A2 + FL செலவுகளுடன், சொந்த நிலத்திற்கான குத்தகை மதிப்பு மற்றும் சொந்த நிலையான மூலதனத்திற்கான வட்டி ஆகியவற்றையும் உள்ளடக்கிய விரிவான கணக்கீடு.",
+            "சுவாமிநாதன் குழுப் பரிந்துரை (2006): குறைந்தபட்ச ஆதரவு விலையை (MSP) விரிவான உற்பத்திச் செலவை விட 50% கூடுதலாக (C2 + 50%) நிர்ணயிக்கப் பரிந்துரைத்தது. தற்போதைய அரசு A2+FL செலவில் 50% லாபத்தை உத்தரவாதம் செய்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_agricultural_credit": [
+      {
+        "title": "Priority Sector Lending & Institutional Sources",
+        "title_ta": "முன்னுரிமைத் துறை கடன் மற்றும் நிறுவன ஆதாரங்கள்",
+        "points": {
+          "en": [
+            "Multi-Agency Approach: Rural credit is channeled through Commercial Banks, Regional Rural Banks (RRBs), and Co-operative Credit Societies (PACS, DCCBs, StCBs).",
+            "NABARD Apex Role: Established in 1982 to provide refinance, institutional supervision, and rural infrastructure financing (RIDF).",
+            "Priority Sector Lending (PSL) Mandate: RBI mandates that Domestic Scheduled Commercial Banks must allocate 18% of Adjusted Net Bank Credit (ANBC) specifically to Agriculture (with sub-targets for small & marginal farmers).",
+            "Interest Subvention Scheme: Provides short-term crop loans up to ₹3 lakh at a concessional interest rate of 7%, with an additional 3% subvention for prompt repayment (effective rate 4%)."
+          ],
+          "ta": [
+            "பல்முக முகமை அணுகுமுறை: கிராமப்புறக் கடன் வணிக வங்கிகள், மண்டல ஊரக வங்கிகள் (RRB) மற்றும் தொடக்க கூட்டுறவு கடன் சங்கங்கள் (PACS) மூலம் வழங்கப்படுகிறது.",
+            "நபார்டு (NABARD) தலைமைப் பங்கு: மறுநிதி உதவி, நிறுவனக் கண்காணிப்பு மற்றும் ஊரக உள்கட்டமைப்பு நிதி (RIDF) வழங்குவதற்காக 1982-ல் நிறுவப்பட்டது.",
+            "முன்னுரிமைத் துறை கடன் (PSL) ஆணை: வர்த்தக வங்கிகள் தங்களின் மொத்தக் கடனில் (ANBC) 18%-ஐ வேளாண்மைக்கு கட்டாயமாக ஒதுக்க வேண்டும் என ரிசர்வ் வங்கி உத்தரவிட்டுள்ளது (இதில் சிறு-குறு விவசாயிகளுக்கான துணை இலக்குகளும் உண்டு).",
+            "வட்டி மானியத் திட்டம்: ₹3 லட்சம் வரையிலான குறுகிய கால பயிர்க்கடன்களுக்கு 7% சலுகை வட்டியில் கடன் வழங்கப்படுகிறது; கடனை உரிய காலத்தில் திருப்பிச் செலுத்துவோருக்கு கூடுதலாக 3% வட்டி தள்ளுபடி அளிக்கப்பட்டு, நிகர வட்டி 4% ஆகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Kisan Credit Card (KCC) Scheme (1998)",
+        "title_ta": "கிசான் கடன் அட்டை (KCC) திட்டம் (1998)",
+        "points": {
+          "en": [
+            "Genesis & Model: Formulated in 1998 by NABARD on the recommendations of the R.V. Gupta Committee to ensure timely, hassle-free credit to farmers.",
+            "Revolving Cash Credit: Functions as a flexible credit card enabling farmers to withdraw funds for cultivation expenses, post-harvest needs, and household consumption.",
+            "Expansion of Scope: Extended to allied sectors including Animal Husbandry, Dairy, and Fisheries farmers in 2018-19.",
+            "Crop Insurance Linkage: Eligible KCC crop loans automatically interface with the Pradhan Mantri Fasal Bima Yojana (PMFBY)."
+          ],
+          "ta": [
+            "தோற்றம்: விவசாயிகளுக்கு தடையற்ற கடன் கிடைப்பதை உறுதி செய்ய, ஆர்.வி. குப்தா குழுவின் பரிந்துரையின் பேரில் நபார்டு வங்கியால் 1998-ல் உருவாக்கப்பட்டது.",
+            "சுழலும் பணக் கடன் (Revolving Cash Credit): விவசாயிகள் பயிர் சாகுபடி செலவுகள், அறுவடைக்குப் பிந்தைய தேவைகள் மற்றும் குடும்ப நுகர்வுக்காக தேவைக்கேற்ப பணத்தை எடுத்துக்கொள்ளும் வசதி.",
+            "திட்ட விரிவாக்கம்: 2018-19-ல் இத்திட்டம் கால்நடை வளர்ப்பு, பால்பண்ணை மற்றும் மீன்வளத்துறை விவசாயிகளுக்கும் விரிவுபடுத்தப்பட்டது.",
+            "பயிர் காப்பீட்டு இணைப்பு: தகுதியுடைய KCC பயிர்க்கடன் கணக்குகள் தானாகவே பிரதமரின் பயிர் காப்பீட்டுத் திட்டத்துடன் (PMFBY) இணைக்கப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "sec_agricultural_markets_and_allied": [
+      {
+        "title": "APMC Acts and the e-NAM Digital Revolution",
+        "title_ta": "APMC சட்டங்களும் e-NAM மின்னணு புரட்சியும்",
+        "points": {
+          "en": [
+            "APMC Framework: State-legislated Agricultural Produce Market Committees designated regulated yards (mandis) to protect farmers from exploitative middlemen.",
+            "APMC Deficiencies: Monopolistic practices, cartelization of licensed commission agents (arhtiyas), high mandi cess, and physical fragmentation of markets.",
+            "e-NAM (Electronic National Agriculture Market): Pan-India electronic trading portal launched in April 2016 to network existing APMC mandis into a unified common national market.",
+            "e-NAM Benefits: Transparent electronic bidding, quality assaying laboratories, online payments, and eliminating physical middlemen."
+          ],
+          "ta": [
+            "APMC கட்டமைப்பு: இடைத்தரகர்களின் சுரண்டலில் இருந்து விவசாயிகளைப் பாதுகாக்க மாநில அரசுகளால் இயற்றப்பட்ட சட்டங்களின் கீழ் ஒழுங்குமுறை விற்பனைக் கூடங்கள் (மண்டிகள்) அமைக்கப்பட்டன.",
+            "APMC குறைபாடுகள்: தரகர்களின் ஏகபோக ஆதிக்கம், உரிமம் பெற்ற வியாபாரிகளின் கூட்டு சிண்டிகேட், அதிக மண்டி வரிகள் மற்றும் சந்தை சிதைவு.",
+            "e-NAM (தேசிய மின்னணு வேளாண் சந்தை): தற்போதுள்ள APMC மண்டிகளை இணைத்து நாடு தழுவிய ஒற்றை பொது சந்தையை உருவாக்க ஏப்ரல் 2016-ல் தொடங்கப்பட்ட இணையதள வர்த்தக தளம்.",
+            "e-NAM நன்மைகள்: வெளிப்படையான மின்னணு ஏல முறை, தரப் பரிசோதனை ஆய்வகங்கள், ஆன்லைன் நேரடி பணப் பரிவர்த்தனை மற்றும் இடைத்தரகர்கள் நீக்கம்."
+          ]
+        }
+      },
+      {
+        "title": "Allied Agricultural Revolutions",
+        "title_ta": "வேளாண் சார்ந்த வண்ணப் புரட்சிகள்",
+        "points": {
+          "en": [
+            "White Revolution (Operation Flood): Initiated in 1970 under Dr. Verghese Kurien (NDDB); built the Anand pattern milk cooperative model (Amul), making India the world's largest milk producer.",
+            "Blue Revolution (Neer Kranti): Exponential expansion of inland and marine aquaculture; bolstered by Pradhan Mantri Matsya Sampada Yojana (PMMSY).",
+            "Yellow Revolution: Initiated under Sam Pitroda to boost domestic oilseed production (Mustard, Groundnut, Soybean) via the Technology Mission on Oilseeds (1986).",
+            "Golden Revolution: Rapid transformation in horticulture and honey production between 1991 and 2003 under Nirpakh Tutej."
+          ],
+          "ta": [
+            "வெண்மைப் புரட்சி (Operation Flood): டாக்டர் வர்கீஸ் குரியன் (NDDB) தலைமையில் 1970-ல் தொடங்கப்பட்டது; ஆனந்த் கூட்டுறவு பால் மாதிரியை (அமுல்) உருவாக்கி, இந்தியாவை உலகின் மிகப்பெரிய பால் உற்பத்தியாளராக்கியது.",
+            "நீலப் புரட்சி: நன்னீர் மற்றும் கடல்சார் மீன்வள உற்பத்தியைப் பெருக்கியது; தற்போது பிரதமரின் மৎস্য சம்பதா திட்டம் (PMMSY) மூலம் ஊக்குவிக்கப்படுகிறது.",
+            "மஞ்சள் புரட்சி: எண்ணெய் வித்துக்கள் தொழில்நுட்ப இயக்கம் (1986) மூலம் சாம் பிட்ரோடா தலைமையில் கடுகு, நிலக்கடலை உற்பத்தியை அதிகரித்தது.",
+            "பொன் புரட்சி (Golden Revolution): 1991-2003 காலகட்டத்தில் நிர்பக் துதேஜ் தலைமையில் தோட்டக்கலை மற்றும் தேன் உற்பத்தியில் ஏற்பட்ட மகத்தான வளர்ச்சி."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_msp_cost_concepts",
+        "title_en": "Cost Formulations for MSP: A2, A2+FL and C2",
+        "title_ta": "குறைந்தபட்ச ஆதரவு விலைக்கான செலவுக் கோட்பாடுகள்: A2, A2+FL மற்றும் C2",
+        "headers_en": [
+          "Cost Formula",
+          "Components Included",
+          "Policy Status",
+          "Farmer Realization"
+        ],
+        "headers_ta": [
+          "செலவு சூத்திரம்",
+          "உள்ளடக்கிய கூறுகள்",
+          "அரசின் கொள்கை நிலை",
+          "விவசாயியின் வருவாய் நிலை"
+        ],
+        "rows_en": [
+          [
+            "A2 Cost",
+            "Direct cash expenses: seeds, fertilizers, pesticides, fuel, hired labor",
+            "Baseline input calculation",
+            "Covers only cash out-of-pocket expenses"
+          ],
+          [
+            "A2 + FL Cost",
+            "A2 Costs PLUS imputed monetary value of unpaid family labor",
+            "Official Government Formula (MSP = A2+FL + 50%)",
+            "Ensures remuneration for family toil but excludes land rent"
+          ],
+          [
+            "C2 Cost",
+            "A2 + FL PLUS rental value of owned land and interest on capital",
+            "Swaminathan Committee Demand (C2 + 50%)",
+            "Highest economic protection covering all fixed and variable costs"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "A2 செலவு",
+            "நேரடி பணச் செலவுகள்: விதைகள், உரங்கள், பூச்சிக்கொல்லிகள், எரிபொருள், கூலி",
+            "அடிப்படை உள்ளீட்டுக் கணக்கீடு",
+            "கையிலிருந்து செலவழித்த பணத்தை மட்டுமே ஈடுசெய்கிறது"
+          ],
+          [
+            "A2 + FL செலவு",
+            "A2 செலவுகளுடன் குடும்ப உறுப்பினர்களின் ஊதியமில்லா உழைப்பின் மதிப்பும் சேர்க்கப்படுகிறது",
+            "அரசின் தற்போதைய அதிகாரப்பூர்வ சூத்திரம் (MSP = A2+FL + 50%)",
+            "குடும்ப உழைப்பிற்கு ஊதியம் தருகிறது, ஆனால் நில வாடகையை சேர்க்காது"
+          ],
+          [
+            "C2 செலவு",
+            "A2 + FL செலவுகளுடன் சொந்த நிலத்தின் வாடகை மதிப்பு மற்றும் மூலதன வட்டி சேர்க்கப்படுகிறது",
+            "சுவாமிநாதன் குழுவின் பரிந்துரை (C2 + 50%)",
+            "அனைத்து நிலையான மற்றும் மாறுபடும் செலவுகளையும் ஈடுசெய்யும் முழுமையான பாதுகாப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_allied_revolutions_matrix",
+        "title_en": "Major Agricultural Revolutions in India",
+        "title_ta": "இந்தியாவின் முக்கிய வேளாண் புரட்சிகள்",
+        "headers_en": [
+          "Revolution Name",
+          "Commodity Sector",
+          "Pioneering Architect / Era",
+          "Key Transformation"
+        ],
+        "headers_ta": [
+          "புரட்சியின் பெயர்",
+          "பொருள் துறை",
+          "முன்னோடித் தலைவர் / காலம்",
+          "முக்கிய உருமாற்றம்"
+        ],
+        "rows_en": [
+          [
+            "Green Revolution",
+            "Wheat & Rice (Foodgrains)",
+            "Dr. M.S. Swaminathan / Norman Borlaug (1960s)",
+            "Self-sufficiency in foodgrains; HYV seeds & irrigation"
+          ],
+          [
+            "White Revolution",
+            "Milk & Dairy (Operation Flood)",
+            "Dr. Verghese Kurien (1970)",
+            "National milk grid, Amul cooperative dairy model"
+          ],
+          [
+            "Blue Revolution",
+            "Fisheries & Marine Aquaculture",
+            "Dr. Hiralal Chaudhuri & Dr. Arun Krishnan",
+            "Exponential rise in inland fish and shrimp cultivation"
+          ],
+          [
+            "Yellow Revolution",
+            "Oilseeds (Mustard, Groundnut)",
+            "Sam Pitroda (1986)",
+            "Technology Mission on Oilseeds to reduce import dependence"
+          ],
+          [
+            "Golden Revolution",
+            "Horticulture & Honey",
+            "Nirpakh Tutej (1991-2003)",
+            "India became top global fruit and vegetable producer"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பசுமைப் புரட்சி",
+            "கோதுமை & நெல் (உணவு தானியங்கள்)",
+            "டாக்டர் எம்.எஸ். சுவாமிநாதன் / நார்மன் போர்லாக் (1960s)",
+            "உணவு தன்னிறைவு; வீரிய ரக விதைகள் மற்றும் பாசனம்"
+          ],
+          [
+            "வெண்மைப் புரட்சி",
+            "பால் & பால்பண்ணை (ஆபரேஷன் பிளட்)",
+            "டாக்டர் வர்கீஸ் குரியன் (1970)",
+            "தேசிய பால் கட்டமைப்பு, அமுல் கூட்டுறவு மாதிரி"
+          ],
+          [
+            "நீலப் புரட்சி",
+            "மீன்வளம் & கடல்சார் வளர்ப்பு",
+            "டாக்டர் ஹீரலால் சவுத்ரி & டாக்டர் அருண் கிருஷ்ணன்",
+            "நன்னீர் மீன் மற்றும் இறால் வளர்ப்பில் அசுர வளர்ச்சி"
+          ],
+          [
+            "மஞ்சள் புரட்சி",
+            "எண்ணெய் வித்துக்கள் (கடுகு, நிலக்கடலை)",
+            "சாம் பிட்ரோடா (1986)",
+            "எண்ணெய் வித்துக்கள் இறக்குமதியைக் குறைக்க சிறப்பு திட்டம்"
+          ],
+          [
+            "பொன் புரட்சி",
+            "தோட்டக்கலை & தேன் உற்பத்தி",
+            "நிர்பக் துதேஜ் (1991-2003)",
+            "பழங்கள் மற்றும் காய்கறிகள் உற்பத்தியில் சர்வதேச முன்னிலை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_apmc_vs_enam",
+        "title_en": "Traditional APMC Mandis vs Electronic National Agriculture Market (e-NAM)",
+        "title_ta": "பாரம்பரிய APMC மண்டிகள் vs மின்னணு தேசிய வேளாண் சந்தை (e-NAM)",
+        "headers_en": [
+          "Dimension",
+          "Traditional APMC Mandi",
+          "e-NAM Portal"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பாரம்பரிய APMC மண்டி",
+          "e-NAM இணையதளம்"
+        ],
+        "rows_en": [
+          [
+            "Geographical Scope",
+            "Physical localized market yard restricted to a district/taluk",
+            "Pan-India unified electronic trading network"
+          ],
+          [
+            "Price Discovery",
+            "Open outcry or physical bargaining dominated by local cartels",
+            "Transparent pan-India online electronic bidding"
+          ],
+          [
+            "Middlemen / Commission",
+            "Heavy dependence on local commission agents (Arhtiyas)",
+            "Direct transaction between buyer and seller; disintermediation"
+          ],
+          [
+            "Quality Assessment",
+            "Visual and subjective inspection by local buyers",
+            "Standardized scientific assaying laboratories at the mandi"
+          ],
+          [
+            "Payment Gateway",
+            "Physical cash or delayed trader settlement",
+            "Direct Benefit Transfer / electronic clearing to farmer bank accounts"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "புவியியல் எல்லை",
+            "ஒரு வட்டம் அல்லது மாவட்டத்திற்கு உட்பட்ட உள்ளூர் சந்தை",
+            "நாடு தழுவிய ஒருங்கிணைந்த மின்னணு வர்த்தக வலைப்பின்னல்"
+          ],
+          [
+            "விலை நிர்ணயம்",
+            "உள்ளூர் வியாபாரிகளின் கையேடு அல்லது திறந்தவெளி கூச்சல் முறை",
+            "வெளிப்படையான ஆன்லைன் மின்னணு ஏல முறை"
+          ],
+          [
+            "இடைத்தரகர் ஆதிக்கம்",
+            "மண்டி கமிஷன் ஏஜெண்டுகளின் (ஆர்தியாக்கள்) ஆதிக்கம்",
+            "வாங்குபவர்-விற்பவர் நேரடி தொடர்பு; இடைத்தரகர்கள் நீக்கம்"
+          ],
+          [
+            "தரப் பரிசோதனை",
+            "பார்வை மூலம் மட்டுமே செய்யப்படும் அகநிலை மதிப்பீடு",
+            "மண்டிகளில் அமைக்கப்பட்டுள்ள அறிவியல் பூர்வ தர பரிசோதனை கூடங்கள்"
+          ],
+          [
+            "பணம் செலுத்துதல்",
+            "ரொக்கப் பணம் அல்லது காலதாமதமான வியாபாரிகளின் பட்டுவாடா",
+            "விவசாயிகளின் வங்கிக் கணக்கிற்கு நேரடியாக ஆன்லைன் மூலம் பணப்பரிமாற்றம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pmfby_premium_rates",
+        "title_en": "Pradhan Mantri Fasal Bima Yojana (PMFBY) Premium Structure",
+        "title_ta": "பிரதமரின் பயிர் காப்பீட்டுத் திட்ட (PMFBY) பிரீமியம் கட்டமைப்பு",
+        "headers_en": [
+          "Crop Category",
+          "Maximum Premium Payable by Farmer (%)",
+          "Balance Premium Subsidy Share",
+          "Coverage Scope"
+        ],
+        "headers_ta": [
+          "பயிர் பிரிவு",
+          "விவசாயி செலுத்த வேண்டிய அதிகபட்ச பிரீமியம் (%)",
+          "மீதமுள்ள மானியப் பகிர்வு",
+          "பாதுகாப்பு வரம்பு"
+        ],
+        "rows_en": [
+          [
+            "Kharif Food & Oilseed Crops",
+            "2.0% of Sum Insured",
+            "Shared 50:50 between Centre and State",
+            "Prevented sowing, localized risks, post-harvest losses"
+          ],
+          [
+            "Rabi Food & Oilseed Crops",
+            "1.5% of Sum Insured",
+            "Shared 50:50 between Centre and State",
+            "Frost, drought, unseasonal rain, pests"
+          ],
+          [
+            "Commercial & Horticultural Crops",
+            "5.0% of Sum Insured",
+            "Shared 50:50 between Centre and State",
+            "Perishable and cash crop yield losses"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கரீஃப் உணவு & எண்ணெய் வித்துக்கள்",
+            "காப்பீட்டுத் தொகையில் 2.0%",
+            "மத்திய மற்றும் மாநில அரசுகளுக்கு இடையே 50:50 பகிர்வு",
+            "விதைப்புத் தடை, உள்ளூர் பேரிடர்கள், அறுவடைக்குப் பிந்தைய இழப்பு"
+          ],
+          [
+            "ரபி உணவு & எண்ணெய் வித்துக்கள்",
+            "காப்பீட்டுத் தொகையில் 1.5%",
+            "மத்திய மற்றும் மாநில அரசுகளுக்கு இடையே 50:50 பகிர்வு",
+            "பனிப்பொழிவு, வறட்சி, பருவம் தவறிய மழை, பூச்சித் தாக்குதல்"
+          ],
+          [
+            "வணிக & தோட்டக்கலைப் பயிர்கள்",
+            "காப்பீட்டுத் தொகையில் 5.0%",
+            "மத்திய மற்றும் மாநில அரசுகளுக்கு இடையே 50:50 பகிர்வு",
+            "அழுகும் பொருட்கள் மற்றும் பணப்பயிர் மகசூல் இழப்புகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Agriculture Part 2: Structure, Technology & Institutions",
+        "short_label": "Structure & Tech",
+        "children": [
+          {
+            "title": "Green Revolution Package",
+            "short_label": "Green Revolution",
+            "children": [
+              {
+                "title": "HYV Dwarf Seeds (Swaminathan & Borlaug)",
+                "short_label": "HYV Seeds"
+              },
+              {
+                "title": "Irrigation, Synthetic NPK, Chemical Pesticides",
+                "short_label": "Package Inputs"
+              },
+              {
+                "title": "Regional Imbalance & Ecological Fallouts",
+                "short_label": "Imbalances"
+              }
+            ]
+          },
+          {
+            "title": "Price Support & Markets",
+            "short_label": "MSP & Markets",
+            "children": [
+              {
+                "title": "MSP (CACP Recommends, CCEA Approves)",
+                "short_label": "MSP & CACP"
+              },
+              {
+                "title": "Cost Metrics: A2, A2+FL (Current 50%), C2 (Swaminathan)",
+                "short_label": "Cost Formulas"
+              },
+              {
+                "title": "Regulated Mandis (APMC) & Digital e-NAM (SFAC)",
+                "short_label": "APMC vs e-NAM"
+              }
+            ]
+          },
+          {
+            "title": "Institutional Credit & Allied Revolutions",
+            "short_label": "Credit & Revolutions",
+            "children": [
+              {
+                "title": "PSL 18% Agriculture Target & KCC (1998)",
+                "short_label": "PSL & KCC"
+              },
+              {
+                "title": "PMFBY (Kharif 2%, Rabi 1.5%, Comm 5%)",
+                "short_label": "PMFBY Insurance"
+              },
+              {
+                "title": "Operation Flood (Kurien) & Blue/Yellow Revolutions",
+                "short_label": "Allied Sectors"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "MSP Fixing Authority Trap: CACP Recommends, CCEA Decides",
+        "points": {
+          "en": [
+            "TRAP: Marking CACP as the final approving and announcing authority for Minimum Support Prices.",
+            "CORRECT FACT: The Commission for Agricultural Costs and Prices (CACP) only RECOMMENDS the MSP. The final decision and statutory announcement are made by the Cabinet Committee on Economic Affairs (CCEA), chaired by the Prime Minister.",
+            "WHY CANDIDATES FAIL: Media reports frequently cite CACP reports when discussing MSP, creating the misimpression that CACP has statutory executive powers."
+          ],
+          "ta": [
+            "பொறி: குறைந்தபட்ச ஆதரவு விலையை (MSP) இறுதி செய்து அறிவிக்கும் அதிகாரம் CACP-க்கே உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: வேளாண் செலவுகள் மற்றும் விலைகளுக்கான ஆணையம் (CACP) ஆதரவு விலையைப் 'பரிந்துரைக்க மட்டுமே' செய்கிறது. இறுதி முடிவை எடுத்து அறிவிப்பது பிரதமர் தலைமையிலான பொருளாதார விவகாரங்களுக்கான அமைச்சரவைக் குழு (CCEA) ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஊடகங்கள் CACP அறிக்கையை முன்னிறுத்துவதால், அதுவே முடிவெடுக்கும் அதிகாரம் கொண்ட அமைப்பு என தவறாக எண்ணப்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Number of MSP Crops Trap: 22 Mandated Crops + Sugarcane FRP",
+        "points": {
+          "en": [
+            "TRAP: Stating that MSP is legally fixed for 23 or 24 crops identically under the same pricing mechanism.",
+            "CORRECT FACT: MSP is formally announced for 22 mandated crops (14 Kharif, 6 Rabi, 2 commercial). For Sugarcane, the government does not fix MSP; it fixes Fair and Remunerative Price (FRP) under the Sugarcane (Control) Order, 1966.",
+            "WHY CANDIDATES FAIL: Total crop count is often casually cited as '23 crops', glossing over the fundamental legal distinction between MSP and FRP."
+          ],
+          "ta": [
+            "பொறி: அனைத்து 23 அல்லது 24 பயிர்களுக்கும் ஒரே வழிமுறையின் கீழ் MSP நிர்ணயிக்கப்படுவதாக நினைப்பது.",
+            "சரியான உண்மை: MSP என்பது 22 பயிர்களுக்கு (14 கரீஃப், 6 ரபி, 2 வணிகப் பயிர்கள்) மட்டுமே அறிவிக்கப்படுகிறது. கரும்புக்கு MSP கிடையாது; அதற்கு கரும்பு கட்டுப்பாட்டு உத்தரவு 1966-ன் கீழ் 'நியாயமான மற்றும் ஆதாய விலை' (FRP) நிர்ணயிக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மொத்தமாக 23 பயிர்கள் என்று பொதுவாகக் கூறப்படுவதால், MSP மற்றும் FRP-க்கு இடையேயான சட்டப்பூர்வ வேறுபாடு மறைந்துவிடுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Swaminathan Formula Trap: C2+50% vs Current Policy A2+FL+50%",
+        "points": {
+          "en": [
+            "TRAP: Believing that the Union Government has implemented the National Commission on Farmers (Swaminathan Committee) C2+50% formula.",
+            "CORRECT FACT: The Government has implemented 50% profit over 'A2+FL' (paid out costs + family labor), NOT over 'C2' (Comprehensive cost which includes land rent and capital interest). Farmer organizations demand C2+50%.",
+            "WHY CANDIDATES FAIL: Budget announcements tout '1.5 times the cost of production' without specifying which cost baseline (A2+FL vs C2) is utilized."
+          ],
+          "ta": [
+            "பொறி: மத்திய அரசு எம்.எஸ். சுவாமிநாதன் குழு பரிந்துரைத்த C2+50% சூத்திரத்தை முழுமையாக நடைமுறைப்படுத்திவிட்டது என்று நம்புவது.",
+            "சரியான உண்மை: அரசு நடைமுறைப்படுத்தியுள்ளது 'A2+FL' (நேரடி செலவு + குடும்ப உழைப்பு) மீதான 50% லாபமே ஆகும். நில வாடகை மற்றும் மூலதன வட்டி உள்ளடக்கிய 'C2' செலவு மீதான 50% அல்ல. விவசாயிகள் C2+50%-ஐ கோருகின்றனர்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'உற்பத்திச் செலவை விட 1.5 மடங்கு' என்று பொதுவாக அறிவிக்கப்படுவதால், எந்த செலவு முறை (A2+FL அல்லது C2) என்பது குறித்த தெளிவின்மை ஏற்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "KCC Allied Sectors Expansion Trap: Not Restricted to Crop Farmers",
+        "points": {
+          "en": [
+            "TRAP: Assuming Kisan Credit Cards (KCC) can only be issued for agricultural crop cultivation.",
+            "CORRECT FACT: In the 2018-19 Budget, the Government extended the Kisan Credit Card facility to Animal Husbandry, Dairy farmers, and Fisheries / Aquaculture cultivators for their working capital needs.",
+            "WHY CANDIDATES FAIL: For two decades (1998 to 2018), KCC was exclusively linked to crop loans and land records, cementing a legacy misconception."
+          ],
+          "ta": [
+            "பொறி: கிசான் கடன் அட்டை (KCC) பயிர் சாகுபடி செய்யும் விவசாயிகளுக்கு மட்டுமே வழங்கப்படும் என நினைப்பது.",
+            "சரியான உண்மை: 2018-19 மத்திய பட்ஜெட்டில், KCC கடன் அட்டை திட்டம் கால்நடை வளர்ப்பு, பால்பண்ணை மற்றும் மீன்வளர்ப்பு விவசாயிகளின் நடைமுறை மூலதனத் தேவைகளுக்கும் அதிகாரப்பூர்வமாக விரிவுபடுத்தப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1998 முதல் 2018 வரை இருபது ஆண்டுகளாக பயிர்க்கடன்களுக்கு மட்டுமே வழங்கப்பட்டதால் இந்த பழைய எண்ணம் தொடர்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "PMFBY Premium Trap: Uniform Rates for Farmers Across States",
+        "points": {
+          "en": [
+            "TRAP: Assuming farmers pay differing actuarial risk rates depending on regional cyclone or drought vulnerability.",
+            "CORRECT FACT: Farmers pay a uniform, legally capped token premium: 2% for Kharif, 1.5% for Rabi, and 5% for Annual Commercial/Horticultural crops. The entire balance actuarial premium is subsidized equally by the Centre and States.",
+            "WHY CANDIDATES FAIL: Actuarial market premiums fluctuate widely, but the farmer's liability is strictly capped by national statute."
+          ],
+          "ta": [
+            "பொறி: புயல் அல்லது வறட்சி பாதிப்புக்கு ஏற்ப வெவ்வேறு மாநிலங்களில் விவசாயிகள் வெவ்வேறு பிரீமியம் செலுத்த வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: விவசாயிகள் செலுத்தும் பிரீமியம் நாடு முழுவதும் ஒரே மாதிரியாக நிர்ணயிக்கப்பட்டுள்ளது: கரீஃபுக்கு 2%, ரபிக்கு 1.5%, வணிகப் பயிர்களுக்கு 5%. மீதமுள்ள முழு காப்பீட்டுத் தொகையையும் மத்திய-மாநில அரசுகளே மானியமாக ஏற்கின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சந்தை பிரீமியம் மாறினாலும், விவசாயியின் பங்கு சட்டப்பூர்வமாக உச்சவரம்பிடப்பட்டு பாதுகாக்கப்பட்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Operation Flood Architect Trap: Kurien vs Swaminathan",
+        "points": {
+          "en": [
+            "TRAP: Attributing Operation Flood (White Revolution) to Dr. M.S. Swaminathan.",
+            "CORRECT FACT: Dr. M.S. Swaminathan was the father of the Green Revolution in India. Dr. Verghese Kurien is the architect of Operation Flood (White Revolution) and founder of NDDB.",
+            "WHY CANDIDATES FAIL: Both are iconic agrarian visionaries who operated in overlapping decades of Indian post-independence modernization."
+          ],
+          "ta": [
+            "பொறி: பால் உற்பத்தியை பெருக்கிய ஆபரேஷன் பிளட் (வெண்மைப் புரட்சி) திட்டத்தை டாக்டர் எம்.எஸ். சுவாமிநாதனுடன் தொடர்புபடுத்துவது.",
+            "சரியான உண்மை: இந்திய பசுமைப் புரட்சியின் தந்தை டாக்டர் எம்.எஸ். சுவாமிநாதன் ஆவார். ஆபரேஷன் பிளட் (வெண்மைப் புரட்சி) மற்றும் NDDB-ன் நிறுவனர் டாக்டர் வர்கீஸ் குரியன் ஆவார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இருவருமே சுதந்திரத்திற்குப் பிந்தைய விவசாய நவீனமயமாக்கலின் முன்னோடிகளாக விளங்கியதால் பெயர்கள் குழப்பப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "CACP was established in 1965 as the Agricultural Prices Commission.",
+        "The Kisan Credit Card (KCC) scheme was introduced in August 1998.",
+        "Commercial banks must direct 18% of ANBC to agriculture under RBI PSL norms.",
+        "Pradhan Mantri Fasal Bima Yojana was launched in 2016 replacing NAIS and MNAIS.",
+        "e-NAM electronic trading platform was launched on April 14, 2016.",
+        "Operation Flood was rolled out in 1970 by the National Dairy Development Board.",
+        "Norman Borlaug was awarded the Nobel Peace Prize in 1970 for the Green Revolution.",
+        "The National Commission on Farmers chaired by Dr. M.S. Swaminathan reported in 2006.",
+        "Short-term crop credit up to ₹3 lakh is effectively available at 4% upon prompt repayment.",
+        "FRP for sugarcane is determined under the Sugarcane (Control) Order, 1966.",
+        "IR-8 semi-dwarf rice developed by IRRI in the Philippines powered the rice revolution.",
+        "Small Farmers Agribusiness Consortium (SFAC) is the lead implementing agency for e-NAM."
+      ],
+      "ta": [
+        "CACP 1965-ல் வேளாண் விலைகள் ஆணையமாக நிறுவப்பட்டது.",
+        "கிசான் கடன் அட்டை (KCC) திட்டம் ஆகஸ்ட் 1998-ல் அறிமுகப்படுத்தப்பட்டது.",
+        "வங்கிகள் தங்களின் மொத்தக் கடனில் 18%-ஐ வேளாண்மைக்கு ஒதுக்க வேண்டும் என RBI ஆணையிட்டுள்ளது.",
+        "பிரதமரின் பயிர் காப்பீட்டுத் திட்டம் (PMFBY) 2016-ல் தொடங்கப்பட்டது.",
+        "e-NAM மின்னணு வர்த்தக தளம் ஏப்ரல் 14, 2016 அன்று தொடங்கப்பட்டது.",
+        "ஆபரேஷன் பிளட் திட்டம் 1970-ல் தேசிய பால்வள மேம்பாட்டு வாரியத்தால் தொடங்கப்பட்டது.",
+        "பசுமைப் புரட்சிக்காக நார்மன் போர்லாக்கிற்கு 1970-ல் அமைதிக்கான நோபல் பரிசு வழங்கப்பட்டது.",
+        "டாக்டர் எம்.எஸ். சுவாமிநாதன் தலைமையிலான தேசிய விவசாயிகள் ஆணையம் 2006-ல் அறிக்கை சமர்ப்பித்தது.",
+        "உரிய காலத்தில் திருப்பிச் செலுத்தும் போது ₹3 லட்சம் வரையிலான பயிர்க்கடன் 4% வட்டியில் கிடைக்கிறது.",
+        "கரும்புக்கான நியாயமான மற்றும் ஆதாய விலை (FRP) 1966-ன் கரும்பு கட்டுப்பாட்டு உத்தரவின் கீழ் நிர்ணயிக்கப்படுகிறது.",
+        "பிலிப்பைன்ஸ் IRRI உருவாக்கிய IR-8 குள்ள ரக நெல், நெல் புரட்சிக்கு வித்திட்டது.",
+        "சிறு விவசாயிகள் வேளாண் வணிக கூட்டமைப்பு (SFAC) e-NAM திட்டத்தின் முதன்மை செயலாக்க முகமையாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Green Revolution package: HYV dwarf seeds + synthetic fertilizers + chemical pesticides + tube-well irrigation.",
+        "CACP recommends MSP; Cabinet Committee on Economic Affairs (CCEA) accords final executive approval.",
+        "MSP covers 22 mandated agricultural crops; Sugarcane is covered separately by FRP.",
+        "Current MSP policy benchmarks 50% margin over A2+FL cost formula.",
+        "KCC scheme was drafted in 1998 by NABARD based on the R.V. Gupta Committee recommendations.",
+        "RBI mandates an 18% Priority Sector Lending allocation towards agriculture for commercial banks.",
+        "PMFBY sets farmer premiums at 2% for Kharif, 1.5% for Rabi, and 5% for commercial/horticultural crops.",
+        "e-NAM integrates physical APMC mandis into a common online bidding portal operated by SFAC.",
+        "Operation Flood (1970) founded by Dr. Verghese Kurien made India the world's top milk producer.",
+        "Yellow Revolution boosted domestic oilseed production via Sam Pitroda's Technology Mission (1986)."
+      ],
+      "ta": [
+        "பசுமைப் புரட்சி தொகுப்பு: HYV குள்ள ரக விதைகள் + ரசாயன உரங்கள் + பூச்சிக்கொல்லிகள் + ஆழ்குழாய் பாசனம்.",
+        "CACP ஆதரவு விலையைப் பரிந்துரைக்கிறது; பொருளாதார விவகாரங்களுக்கான அமைச்சரவைக் குழு (CCEA) இறுதி ஒப்புதல் அளிக்கிறது.",
+        "MSP 22 கட்டாயப் பயிர்களை உள்ளடக்கியது; கரும்பு தனித்துவமாக FRP மூலம் நிர்வகிக்கப்படுகிறது.",
+        "தற்போதைய MSP கொள்கை A2+FL செலவு சூத்திரத்தின் மீது 50% லாபத்தை அடிப்படையாகக் கொண்டது.",
+        "ஆர்.வி. குப்தா குழுவின் பரிந்துரைப்படி 1998-ல் நபார்டு வங்கியால் KCC திட்டம் உருவாக்கப்பட்டது.",
+        "வர்த்தக வங்கிகள் தங்களின் முன்னுரிமைத் துறை கடனில் 18%-ஐ வேளாண்மைக்கு ஒதுக்க வேண்டும்.",
+        "PMFBY பிரீமியம்: கரீஃபுக்கு 2%, ரபிக்கு 1.5%, வணிக/தோட்டக்கலைப் பயிர்களுக்கு 5%.",
+        "e-NAM என்பது APMC மண்டிகளை இணைத்து SFAC நடத்தும் ஒருமித்த ஆன்லைன் ஏல தளமாகும்.",
+        "டாக்டர் வர்கீஸ் குரியன் தொடங்கிய ஆபரேஷன் பிளட் (1970) இந்தியாவை உலகின் முதன்மை பால் உற்பத்தியாளராக்கியது.",
+        "மஞ்சள் புரட்சி சாம் பிட்ரோடாவின் தொழில்நுட்ப இயக்கம் (1986) மூலம் எண்ணெய் வித்துக்கள் உற்பத்தியைப் பெருக்கியது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_agri_201",
+        "front_en": "Who is regarded as the Father of the Green Revolution in India?",
+        "front_ta": "இந்திய பசுமைப் புரட்சியின் தந்தை என்று அழைக்கப்படுபவர் யார்?",
+        "back_en": "Dr. M.S. Swaminathan (adapted Norman Borlaug's Mexican dwarf wheat to Indian conditions).",
+        "back_ta": "டாக்டர் எம்.எஸ். சுவாமிநாதன் (நார்மன் போர்லாக்கின் மெக்சிகன் குள்ள கோதுமையை இந்திய சூழலுக்கு மாற்றியமைத்தவர்)."
+      },
+      {
+        "id": "rc_agri_202",
+        "front_en": "Which body recommends Minimum Support Prices (MSP) and which body approves it?",
+        "front_ta": "குறைந்தபட்ச ஆதரவு விலையை (MSP) பரிந்துரைக்கும் மற்றும் ஒப்புதல் அளிக்கும் அமைப்புகள் யாவை?",
+        "back_en": "CACP recommends MSP; Cabinet Committee on Economic Affairs (CCEA) approves it.",
+        "back_ta": "CACP பரிந்துரைக்கிறது; பிரதமர் தலைமையிலான CCEA குழு ஒப்புதல் அளிக்கிறது."
+      },
+      {
+        "id": "rc_agri_203",
+        "front_en": "How many agricultural crops are covered under official MSP announcement?",
+        "front_ta": "அதிகாரப்பூர்வ MSP அறிவிப்பின் கீழ் எத்தனை பயிர்கள் வருகின்றன?",
+        "back_en": "22 mandated crops (14 Kharif, 6 Rabi, 2 commercial) plus FRP for Sugarcane.",
+        "back_ta": "22 கட்டாயப் பயிர்கள் (14 கரீஃப், 6 ரபி, 2 வணிகம்) மற்றும் கரும்புக்கான FRP."
+      },
+      {
+        "id": "rc_agri_204",
+        "front_en": "What does the 'A2+FL' cost concept include in MSP formulation?",
+        "front_ta": "MSP கணக்கீட்டில் 'A2+FL' செலவு எவற்றை உள்ளடக்கியது?",
+        "back_en": "Direct out-of-pocket expenses (A2) plus the imputed economic value of unpaid Family Labor (FL).",
+        "back_ta": "நேரடி ரொக்கச் செலவுகள் (A2) மற்றும் ஊதியமில்லா குடும்ப உழைப்பின் பொருளாதார மதிப்பு (FL)."
+      },
+      {
+        "id": "rc_agri_205",
+        "front_en": "What is the Swaminathan Committee recommendation regarding MSP profit margin?",
+        "front_ta": "MSP லாப வரம்பு குறித்து சுவாமிநாதன் குழுவின் பரிந்துரை என்ன?",
+        "back_en": "MSP should be fixed at at least 50% above the Comprehensive Cost of production (C2 + 50%).",
+        "back_ta": "குறைந்தபட்ச ஆதரவு விலை விரிவான உற்பத்திச் செலவை விட குறைந்தது 50% கூடுதலாக (C2 + 50%) இருக்க வேண்டும்."
+      },
+      {
+        "id": "rc_agri_206",
+        "front_en": "When was the Kisan Credit Card (KCC) scheme launched and on whose committee recommendation?",
+        "front_ta": "கிசான் கடன் அட்டை (KCC) எப்போது மற்றும் எந்தக் குழுவின் பரிந்துரையின் பேரில் தொடங்கப்பட்டது?",
+        "back_en": "Launched in 1998 based on the R.V. Gupta Committee recommendations.",
+        "back_ta": "ஆர்.வி. குப்தா குழுவின் பரிந்துரையின் பேரில் 1998-ல் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_agri_207",
+        "front_en": "What are the farmer premium rates under Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+        "front_ta": "பிரதமரின் பயிர் காப்பீட்டுத் திட்டத்தில் (PMFBY) விவசாயி செலுத்தும் பிரீமியம் எவ்வளவு?",
+        "back_en": "2% for Kharif, 1.5% for Rabi, and 5% for annual commercial/horticultural crops.",
+        "back_ta": "கரீஃபுக்கு 2%, ரபிக்கு 1.5%, ஆண்டு வணிக/தோட்டக்கலைப் பயிர்களுக்கு 5%."
+      },
+      {
+        "id": "rc_agri_208",
+        "front_en": "What is the primary objective of the e-NAM platform?",
+        "front_ta": "e-NAM தளத்தின் முதன்மை நோக்கம் என்ன?",
+        "back_en": "To electronically integrate physical APMC mandis into a transparent, single pan-India agricultural market.",
+        "back_ta": "APMC மண்டிகளை மின்னணு முறையில் இணைத்து வெளிப்படையான, அகில இந்திய ஒற்றை வேளாண் சந்தையை உருவாக்குவது."
+      },
+      {
+        "id": "rc_agri_209",
+        "front_en": "Who pioneered the White Revolution (Operation Flood) in India?",
+        "front_ta": "இந்தியாவில் வெண்மைப் புரட்சியை (ஆபரேஷன் பிளட்) முன்னெடுத்தவர் யார்?",
+        "back_en": "Dr. Verghese Kurien (founder of NDDB and architect of Amul cooperative model).",
+        "back_ta": "டாக்டர் வர்கீஸ் குரியன் (NDDB நிறுவனர் மற்றும் அமுல் கூட்டுறவு மாதிரியின் சிற்பி)."
+      },
+      {
+        "id": "rc_agri_210",
+        "front_en": "What is the RBI priority sector lending target for agriculture by commercial banks?",
+        "front_ta": "வணிக வங்கிகள் வேளாண்மைக்கு வழங்க வேண்டிய RBI முன்னுரிமைத் துறை கடன் இலக்கு என்ன?",
+        "back_en": "18% of Adjusted Net Bank Credit (ANBC).",
+        "back_ta": "மொத்த கடன் தொகையில் (ANBC) 18% ஆகும்."
+      }
+    ]
+  }
+}

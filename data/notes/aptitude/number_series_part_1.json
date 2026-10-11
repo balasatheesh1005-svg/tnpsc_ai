@@ -1,0 +1,228 @@
+{
+  "topic": "number_series_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Number Series Part 1 — Arithmetic Differences, Squares, Cubes, Primes & Alternating Series",
+  "title_ta": "எண் தொடர் பகுதி 1 — கூட்டு வேறுபாடுகள், வர்க்கங்கள், கனங்கள், பகா எண்கள் & மாற்றுத் தொடர்கள்",
+
+  "definition": {
+    "en": "Number series reasoning evaluates pattern recognition in numerical sequences governed by arithmetic differences, geometric multipliers, powers (squares and cubes), prime numbers, and dual alternating sub-sequences.",
+    "ta": "எண் தொடர் தர்க்கம் என்பது கூட்டு வேறுபாடுகள், பெருக்கல் மடங்குகள், வர்க்க-கன எண்கள், பகா எண்கள் மற்றும் மாற்றுத் தொடர் அமைப்புகளைக் கொண்டு எண்களின் அமைப்பைக் கண்டறியும் திறனாகும்."
+  },
+
+  "exam_importance": {
+    "en": "Number series is a high-yield compulsory topic appearing in every TNPSC Group 1, Group 2/2A, and Group 4 examination. Calculating difference progressions allows solving 80% of series problems rapidly.",
+    "ta": "எண் தொடர் என்பது அனைத்து TNPSC குரூப் 1, 2/2A மற்றும் 4 தேர்வுகளிலும் தவறாமல் கேட்கப்படும் பாடமாகும். வேறுபாடுகளைக் கணக்கிடும் முறை 80% வினாக்களுக்கு விரைவாக விடையளிக்க உதவும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 1: First & Second Difference Method (முதல் மற்றும் இரண்டாம் வேறுபாட்டு முறை)",
+      "formula": "d_1 = a_2 - a_1, \\quad d_2 = a_3 - a_2 \\implies \\Delta = d_2 - d_1 = \\text{constant}",
+      "explanation": {
+        "en": "When terms increase gradually, calculate consecutive differences. If 1st differences vary, calculate 2nd differences.",
+        "ta": "எண்கள் படிப்படியாக அதிகரிக்கும் போது, அடுத்தடுத்த எண்களின் வேறுபாட்டைக் கணக்கிடவும். 1-வது வேறுபாடு மாறினால் 2-வது வேறுபாட்டைக் கணக்கிடவும்."
+      }
+    },
+    {
+      "title": "Rule 2: Square & Cube Series Formulas (வர்க்க மற்றும் கனத் தொடர் சூத்திரங்கள்)",
+      "formula": "a_n = n^2 \\pm k \\quad \\text{or} \\quad a_n = n^3 \\pm k",
+      "explanation": {
+        "en": "Sequence terms correspond directly to perfect squares (1, 4, 9, 16, 25, 36, 49, 64, 81, 100) or cubes (1, 8, 27, 64, 125, 216) plus or minus a constant.",
+        "ta": "எண்கள் முழு வர்க்க எண்கள் (1, 4, 9, 16...) அல்லது முழு கன எண்களுடன் (1, 8, 27, 64...) ஒரு மாறிலியைக் கூட்டி அல்லது கழித்து அமையும்."
+      }
+    },
+    {
+      "title": "Rule 3: Prime Number Progression (பகா எண் தொடர்)",
+      "formula": "\\text{Primes } P = \\{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, \\dots\\}",
+      "explanation": {
+        "en": "Differences or terms themselves follow the sequence of prime numbers. (Note: 1 is NOT a prime number; 2 is the only EVEN prime number).",
+        "ta": "எண்கள் அல்லது வேறுபாடுகள் பகா எண்களின் வரிசையைப் பின்பற்றும். (குறிப்பு: 1 பகா எண் அல்ல; 2 மட்டுமே இரட்டைப் பகா எண்)."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Types of Number Series (எண் தொடர்களின் வகைகள்)",
+      "points": {
+        "en": [
+          "Arithmetic Difference Series: Constant or linearly increasing addition/subtraction.",
+          "Geometric Multiplicative Series: Rapidly growing numbers multiplied by a constant ratio (×2, ×3, ×4...).",
+          "Square / Cube Power Series: Terms are n², n³ or n² ± c.",
+          "Prime Series: Differences are prime numbers (2, 3, 5, 7, 11, 13...).",
+          "Alternating / Twin Series: Odd-indexed terms (1st, 3rd, 5th) follow pattern 1; Even-indexed terms (2nd, 4th, 6th) follow pattern 2."
+        ],
+        "ta": [
+          "கூட்டு வேறுபாட்டுத் தொடர்: நிலையான அல்லது அதிகரிக்கும் எண்களின் கூட்டல்/கழித்தல்.",
+          "பெருக்குத் தொடர்: வேகமாக அதிகரிக்கும் எண்கள் ஒரு நிலையான காரணியால் பெருக்கப்படுதல் (×2, ×3, ×4...).",
+          "வர்க்க / கனத் தொடர்: n², n³ அல்லது n² ± c வடிவ எண்கள்.",
+          "பகா எண் தொடர்: வேறுபாடுகள் பகா எண்களாக அமைதல் (2, 3, 5, 7, 11, 13...).",
+          "மாற்றுத் தொடர்: ஒற்றைப் படை இடங்களில் உள்ள எண்கள் (1, 3, 5) ஒரு விதியையும், இரட்டைப் படை இடங்களில் உள்ள எண்கள் (2, 4, 6) மற்றொரு விதியையும் பின்பற்றும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Series Growth Rate Recognition Rule",
+      "explanation": {
+        "en": "1. Slow growth (e.g. 5, 9, 14, 20...) -> Addition / Difference Series.\n2. Rapid growth (e.g. 3, 12, 48, 192...) -> Multiplication Series.\n3. Exponential growth (e.g. 2, 9, 28, 65...) -> Cube Series (n³ + 1).\n4. Fluctuating up and down (e.g. 10, 5, 15, 8, 20...) -> Alternating Twin Series.",
+        "ta": "1. மெதுவான வளர்ச்சி (எ.கா: 5, 9, 14...) -> கூட்டல் / வேறுபாட்டுத் தொடர்.\n2. வேகமான வளர்ச்சி (எ.கா: 3, 12, 48...) -> பெருக்கல் தொடர்.\n3. மிகவேக அடுக்கு வளர்ச்சி (எ.கா: 2, 9, 28...) -> கனத் தொடர் (n³ + 1).\n4. ஏறி இறங்கும் எண்கள் (எ.கா: 10, 5, 15, 8...) -> மாற்றுத் தொடர்."
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Second Difference Arithmetic Series",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "Find the missing number in the series: 4, 7, 12, 19, 28, ?",
+        "ta": "தொடரின் விடுபட்ட எண்ணைக் காண்க: 4, 7, 12, 19, 28, ?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Calculate 1st differences between consecutive terms:",
+        "7 - 4 = +3",
+        "12 - 7 = +5",
+        "19 - 12 = +7",
+        "28 - 19 = +9",
+        "Step 2: Observe 1st differences (+3, +5, +7, +9) form an odd number sequence.",
+        "The next difference must be +11.",
+        "Step 3: Missing term = 28 + 11 = 39."
+      ],
+      "final_answer": "39",
+      "tnpsc_trap": {
+        "en": "Ensure difference progression (+3, +5, +7, +9) is checked across all terms before adding.",
+        "ta": "கூட்டுவதற்கு முன் அனைத்து எண்களின் வேறுபாடுகளையும் (+3, +5, +7, +9) சரிபார்க்கவும்."
+      }
+    },
+    {
+      "model_name": "Model 2: Square Minus One Power Series",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "Find the next term in the series: 0, 3, 8, 15, 24, 35, ?",
+        "ta": "தொடரின் அடுத்த எண்ணைக் காண்க: 0, 3, 8, 15, 24, 35, ?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Test n² - 1 for n = 1, 2, 3, 4, 5, 6:",
+        "1² - 1 = 0",
+        "2² - 1 = 3",
+        "3² - 1 = 8",
+        "4² - 1 = 15",
+        "5² - 1 = 24",
+        "6² - 1 = 35",
+        "Step 2: Next term for n = 7 is 7² - 1 = 49 - 1 = 48."
+      ],
+      "final_answer": "48",
+      "tnpsc_trap": {
+        "en": "Can also be solved via 1st differences (+3, +5, +7, +9, +11 -> next +13: 35 + 13 = 48). Both conventional methods yield the identical unique answer 48.",
+        "ta": "முதல் வேறுபாடுகள் மூலமும் (+3, +5, +7, +9, +11 -> அடுத்தது +13: 35 + 13 = 48) விடையளிக்கலாம். இரண்டு முறைகளும் ஒரே விடையைத் தரும்."
+      }
+    },
+    {
+      "model_name": "Model 3: Alternating Twin Series",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "Find the missing number in the series: 3, 20, 7, 16, 11, 12, 15, 8, ?",
+        "ta": "தொடரின் விடுபட்ட எண்ணைக் காண்க: 3, 20, 7, 16, 11, 12, 15, 8, ?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Notice fluctuating terms up and down. Separate into two alternating sub-sequences.",
+        "Sub-sequence 1 (Odd positions 1st, 3rd, 5th, 7th, 9th): 3, 7, 11, 15, ?",
+        "Sub-sequence 2 (Even positions 2nd, 4th, 6th, 8th): 20, 16, 12, 8.",
+        "Step 2: Analyze Sub-sequence 1 (3, 7, 11, 15, ?):",
+        "3 + 4 = 7",
+        "7 + 4 = 11",
+        "11 + 4 = 15",
+        "15 + 4 = 19",
+        "Step 3: The 9th term (missing number) belongs to Sub-sequence 1.",
+        "Missing term = 19."
+      ],
+      "final_answer": "19",
+      "tnpsc_trap": {
+        "en": "Identify which sub-sequence (odd vs even position) the missing term belongs to before calculating.",
+        "ta": "விடுபட்ட எண் எந்தக் கிளத் தொடருக்குச் (ஒற்றை அல்லது இரட்டை இடம்) சொந்தமானது என்பதை முதலில் பார்க்க வேண்டும்."
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "num_p1_q1",
+      "question_en": "Find the next term in the series: 2, 5, 10, 17, 26, ?",
+      "question_ta": "தொடரின் அடுத்த எண்ணைக் காண்க: 2, 5, 10, 17, 26, ?",
+      "options": ["33", "35", "37", "39"],
+      "answer": "37",
+      "explanation_en": "Pattern is n² + 1 for n = 1, 2, 3, 4, 5, 6. Next term = 6² + 1 = 36 + 1 = 37.",
+      "explanation_ta": "அமைப்பு n² + 1 (n = 1, 2, 3, 4, 5, 6). அடுத்த எண் = 6² + 1 = 36 + 1 = 37."
+    },
+    {
+      "id": "num_p1_q2",
+      "question_en": "Find the next term in the prime difference series: 3, 5, 8, 13, 20, ?",
+      "question_ta": "பகா எண் வேறுபாட்டுத் தொடரின் அடுத்த எண்ணைக் காண்க: 3, 5, 8, 13, 20, ?",
+      "options": ["27", "29", "31", "33"],
+      "answer": "31",
+      "explanation_en": "Differences are prime numbers: 5-3=2, 8-5=3, 13-8=5, 20-13=7. Next prime is 11. Next term = 20 + 11 = 31.",
+      "explanation_ta": "வேறுபாடுகள் பகா எண்கள்: 5-3=2, 8-5=3, 13-8=5, 20-13=7. அடுத்த பகா எண் 11. அடுத்த எண் = 20 + 11 = 31."
+    },
+    {
+      "id": "num_p1_q3",
+      "question_en": "Find the next term in the cube series: 2, 9, 28, 65, 126, ?",
+      "question_ta": "கனத் தொடரின் அடுத்த எண்ணைக் காண்க: 2, 9, 28, 65, 126, ?",
+      "options": ["197", "215", "217", "225"],
+      "answer": "217",
+      "explanation_en": "Pattern is n³ + 1 for n = 1, 2, 3, 4, 5, 6. Next term = 6³ + 1 = 216 + 1 = 217.",
+      "explanation_ta": "அமைப்பு n³ + 1 (n = 1, 2, 3, 4, 5, 6). அடுத்த எண் = 6³ + 1 = 216 + 1 = 217."
+    },
+    {
+      "id": "num_p1_q4",
+      "question_en": "Find the missing number: 10, 100, 20, 90, 30, 80, 40, ?",
+      "question_ta": "விடுபட்ட எண்ணைக் காண்க: 10, 100, 20, 90, 30, 80, 40, ?",
+      "options": ["50", "60", "70", "80"],
+      "answer": "70",
+      "explanation_en": "Alternating series. Even position sub-sequence: 100, 90, 80, ? (-10 progression). Missing term = 80 - 10 = 70.",
+      "explanation_ta": "மாற்றுத் தொடர். இரட்டைப் படை இடத் தொடர்: 100, 90, 80, ? (-10 தொடர்). விடுபட்ட எண் = 80 - 10 = 70."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_num_basic",
+      "title_en": "Number Series Recognition Rules",
+      "title_ta": "எண் தொடர் அறிதல் விதிகள்",
+      "points_en": [
+        "Slow growth = 1st or 2nd difference series.",
+        "n² ± c = 0, 3, 8, 15, 24, 35, 48... or 2, 5, 10, 17, 26, 37...",
+        "n³ ± c = 2, 9, 28, 65, 126, 217... or 0, 7, 26, 63, 124...",
+        "Primes = 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31..."
+      ],
+      "points_ta": [
+        "மெதுவான வளர்ச்சி = 1 அல்லது 2-வது வேறுபாட்டுத் தொடர்.",
+        "n² ± c = 0, 3, 8, 15, 24, 35, 48... அல்லது 2, 5, 10, 17, 26, 37...",
+        "n³ ± c = 2, 9, 28, 65, 126, 217... அல்லது 0, 7, 26, 63, 124...",
+        "பகா எண்கள் = 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31..."
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Number Series Part 1",
+    "structure": [
+      {
+        "node": "Basic Number Series",
+        "subnodes": [
+          "Arithmetic Difference (1st & 2nd)",
+          "Squares & Cubes (n² ± k, n³ ± k)",
+          "Prime Number Sequences",
+          "Alternating Twin Series"
+        ]
+      }
+    ]
+  }
+}

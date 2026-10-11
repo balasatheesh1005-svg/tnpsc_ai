@@ -1,5 +1,5 @@
 import streamlit as st
-from ui.notes.layout import section_anchor
+from ui.notes.layout import bilingual_panels, localized_section_title, section_anchor
 
 
 def render_revision(revision_data):
@@ -12,19 +12,22 @@ def render_revision(revision_data):
 
     section_anchor("sec_revision")
     st.markdown('<div class="nova-card nova-revision-card animate-fade-in">', unsafe_allow_html=True)
-    st.markdown("### ⚡ **Quick Revision Bullet Summary**")
+    st.markdown(f"### ⚡ **{localized_section_title('Quick Revision Bullet Summary')}**")
 
     if isinstance(revision_data, dict):
         en = revision_data.get("en", [])
         ta = revision_data.get("ta", [])
-        if en or ta:
-            tab1, tab2 = st.tabs(["🇬🇧 English Summary", "🇮🇳 தமிழ் சுருக்கம்"])
-            with tab1:
-                for pt in en if isinstance(en, list) else [en]:
-                    st.markdown(f"✅ **{pt}**")
-            with tab2:
-                for pt in ta if isinstance(ta, list) else [ta]:
-                    st.markdown(f"✅ **{pt}**")
+        en_values = en if isinstance(en, list) else [en]
+        ta_values = ta if isinstance(ta, list) else [ta]
+        for language, panel in bilingual_panels(
+            en_values,
+            ta_values,
+            "🇬🇧 English Summary",
+            "🇮🇳 தமிழ் சுருக்கம்",
+        ):
+            with panel:
+                for point in en_values if language == "en" else ta_values:
+                    st.markdown(f"✅ **{point}**")
     elif isinstance(revision_data, list):
         for pt in revision_data:
             st.markdown(f"✅ **{pt}**")

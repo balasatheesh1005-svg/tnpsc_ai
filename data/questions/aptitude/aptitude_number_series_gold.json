@@ -1,0 +1,3647 @@
+[
+  {
+    "id": "NS_001",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 6, 8, 10, ?",
+      "en": "Find the next number in the series: 2, 4, 6, 8, 10, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 6, 8, 10, ?",
+    "question_en": "Find the next number in the series: 2, 4, 6, 8, 10, ?",
+    "options": [
+      "13",
+      "11",
+      "12",
+      "14"
+    ],
+    "options_ta": [
+      "13",
+      "11",
+      "12",
+      "14"
+    ],
+    "options_en": [
+      "13",
+      "11",
+      "12",
+      "14"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2 முந்தைய எண்ணுடன் கூட்டப்படுகிறது (+2).\n10 + 2 = 12.\nஎனவே அடுத்து வரும் எண் 12 ஆகும்.",
+      "en": "Pattern: Add +2 to the previous number.\n10 + 2 = 12.\nHence, the next number is 12."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2 முந்தைய எண்ணுடன் கூட்டப்படுகிறது (+2).\n10 + 2 = 12.\nஎனவே அடுத்து வரும் எண் 12 ஆகும்.",
+    "explanation_en": "Pattern: Add +2 to the previous number.\n10 + 2 = 12.\nHence, the next number is 12.",
+    "why_not_others": {
+      "A": {
+        "ta": "10 + 2 = 12, 13 இல்லை.",
+        "en": "10 + 2 = 12, 13 இல்லை."
+      },
+      "B": {
+        "ta": "10 + 2 = 12, 11 இல்லை.",
+        "en": "10 + 2 = 12, 11 இல்லை."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2 முந்தைய எண்ணுடன் கூட்டப்படுகிறது (+2).\n10 + 2 = 12.\nஎனவே அடுத்து வரும் எண் 12 ஆகும்.",
+        "en": "Correct. Pattern: Add +2 to the previous number.\n10 + 2 = 12.\nHence, the next number is 12."
+      },
+      "D": {
+        "ta": "10 + 2 = 12, 14 இல்லை.",
+        "en": "10 + 2 = 12, 14 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரட்டைப்படை எண்களின் தொடர் (+2 இடைவெளி).",
+      "en": "Series of even numbers with a constant difference of +2."
+    },
+    "revision_fact": {
+      "ta": "நிலையான முதல் வேறுபாடு தொடர் (+2 Constant First Difference).",
+      "en": "Constant first difference arithmetic sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_002",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 5, 10, 15, 20, 25, ?",
+      "en": "Find the next number in the series: 5, 10, 15, 20, 25, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 5, 10, 15, 20, 25, ?",
+    "question_en": "Find the next number in the series: 5, 10, 15, 20, 25, ?",
+    "options": [
+      "35",
+      "28",
+      "29",
+      "30"
+    ],
+    "options_ta": [
+      "35",
+      "28",
+      "29",
+      "30"
+    ],
+    "options_en": [
+      "35",
+      "28",
+      "29",
+      "30"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி).\n25 + 5 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+      "en": "Pattern: Multiples of 5 (+5 constant increment).\n25 + 5 = 30.\nHence, the next number is 30."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி).\n25 + 5 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+    "explanation_en": "Pattern: Multiples of 5 (+5 constant increment).\n25 + 5 = 30.\nHence, the next number is 30.",
+    "why_not_others": {
+      "A": {
+        "ta": "35 என்பது அடுத்தடுத்த 2வது எண்.",
+        "en": "35 என்பது அடுத்தடுத்த 2வது எண்."
+      },
+      "B": {
+        "ta": "25 + 5 = 30, 28 இல்லை.",
+        "en": "25 + 5 = 30, 28 இல்லை."
+      },
+      "C": {
+        "ta": "25 + 5 = 30, 29 இல்லை.",
+        "en": "25 + 5 = 30, 29 இல்லை."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி).\n25 + 5 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+        "en": "Correct. Pattern: Multiples of 5 (+5 constant increment).\n25 + 5 = 30.\nHence, the next number is 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "5-ன் மடங்குகளின் தொடர்.",
+      "en": "Progression of multiples of 5."
+    },
+    "revision_fact": {
+      "ta": "5-ன் மடங்கு எண் தொடர்.",
+      "en": "Arithmetic progression of multiples of 5."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_003",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Squares",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 9, 16, 25, ?",
+      "en": "Find the next number in the series: 1, 4, 9, 16, 25, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 9, 16, 25, ?",
+    "question_en": "Find the next number in the series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "36",
+      "49",
+      "35",
+      "30"
+    ],
+    "options_ta": [
+      "36",
+      "49",
+      "35",
+      "30"
+    ],
+    "options_en": [
+      "36",
+      "49",
+      "35",
+      "30"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: இயல் எண்களின் வர்க்கங்கள் (n^2):\n1^2 = 1\n2^2 = 4\n3^2 = 9\n4^2 = 16\n5^2 = 25\n6^2 = 36.\nஎனவே அடுத்து வரும் எண் 36 ஆகும்.",
+      "en": "Pattern: Squares of consecutive natural numbers (n^2):\n1^2 = 1, 2^2 = 4, 3^2 = 9, 4^2 = 16, 5^2 = 25, 6^2 = 36.\nHence, the next number is 36."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: இயல் எண்களின் வர்க்கங்கள் (n^2):\n1^2 = 1\n2^2 = 4\n3^2 = 9\n4^2 = 16\n5^2 = 25\n6^2 = 36.\nஎனவே அடுத்து வரும் எண் 36 ஆகும்.",
+    "explanation_en": "Pattern: Squares of consecutive natural numbers (n^2):\n1^2 = 1, 2^2 = 4, 3^2 = 9, 4^2 = 16, 5^2 = 25, 6^2 = 36.\nHence, the next number is 36.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: இயல் எண்களின் வர்க்கங்கள் (n^2):\n1^2 = 1\n2^2 = 4\n3^2 = 9\n4^2 = 16\n5^2 = 25\n6^2 = 36.\nஎனவே அடுத்து வரும் எண் 36 ஆகும்.",
+        "en": "Correct. Pattern: Squares of consecutive natural numbers (n^2):\n1^2 = 1, 2^2 = 4, 3^2 = 9, 4^2 = 16, 5^2 = 25, 6^2 = 36.\nHence, the next number is 36."
+      },
+      "B": {
+        "ta": "49 = 7^2, 6^2 அல்ல.",
+        "en": "49 = 7^2, 6^2 அல்ல."
+      },
+      "C": {
+        "ta": "6^2 = 36, 35 இல்லை.",
+        "en": "6^2 = 36, 35 இல்லை."
+      },
+      "D": {
+        "ta": "6^2 = 36, 30 இல்லை.",
+        "en": "6^2 = 36, 30 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இயல் எண்களின் வர்க்கத் தொடர் (1, 4, 9, 16, 25, 36...).",
+      "en": "Sequence of square numbers (1, 4, 9, 16, 25, 36...)."
+    },
+    "revision_fact": {
+      "ta": "வர்க்க எண் தொடர் (Square Number Series).",
+      "en": "Perfect squares sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_004",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 8, 27, 64, 125, ?",
+      "en": "Find the next number in the series: 1, 8, 27, 64, 125, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 8, 27, 64, 125, ?",
+    "question_en": "Find the next number in the series: 1, 8, 27, 64, 125, ?",
+    "options": [
+      "216",
+      "256",
+      "225",
+      "343"
+    ],
+    "options_ta": [
+      "216",
+      "256",
+      "225",
+      "343"
+    ],
+    "options_en": [
+      "216",
+      "256",
+      "225",
+      "343"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: இயல் எண்களின் கணங்கள் (n^3):\n1^3 = 1\n2^3 = 8\n3^3 = 27\n4^3 = 64\n5^3 = 125\n6^3 = 216.\nஎனவே அடுத்து வரும் எண் 216 ஆகும்.",
+      "en": "Pattern: Cubes of consecutive natural numbers (n^3):\n1^3 = 1, 2^3 = 8, 3^3 = 27, 4^3 = 64, 5^3 = 125, 6^3 = 216.\nHence, the next number is 216."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: இயல் எண்களின் கணங்கள் (n^3):\n1^3 = 1\n2^3 = 8\n3^3 = 27\n4^3 = 64\n5^3 = 125\n6^3 = 216.\nஎனவே அடுத்து வரும் எண் 216 ஆகும்.",
+    "explanation_en": "Pattern: Cubes of consecutive natural numbers (n^3):\n1^3 = 1, 2^3 = 8, 3^3 = 27, 4^3 = 64, 5^3 = 125, 6^3 = 216.\nHence, the next number is 216.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: இயல் எண்களின் கணங்கள் (n^3):\n1^3 = 1\n2^3 = 8\n3^3 = 27\n4^3 = 64\n5^3 = 125\n6^3 = 216.\nஎனவே அடுத்து வரும் எண் 216 ஆகும்.",
+        "en": "Correct. Pattern: Cubes of consecutive natural numbers (n^3):\n1^3 = 1, 2^3 = 8, 3^3 = 27, 4^3 = 64, 5^3 = 125, 6^3 = 216.\nHence, the next number is 216."
+      },
+      "B": {
+        "ta": "16^2 = 256, 6^3 அல்ல.",
+        "en": "16^2 = 256, 6^3 அல்ல."
+      },
+      "C": {
+        "ta": "15^2 = 225, 6^3 அல்ல.",
+        "en": "15^2 = 225, 6^3 அல்ல."
+      },
+      "D": {
+        "ta": "7^3 = 343, 6^3 அல்ல.",
+        "en": "7^3 = 343, 6^3 அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கண எண்களின் தொடர் (1, 8, 27, 64, 125, 216...).",
+      "en": "Sequence of cube numbers (1, 8, 27, 64, 125, 216...)."
+    },
+    "revision_fact": {
+      "ta": "கண எண் தொடர் (Perfect Cube Series).",
+      "en": "Perfect cubes sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_005",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Prime Progressions",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 3, 5, 7, 11, ?",
+      "en": "Find the next number in the series: 2, 3, 5, 7, 11, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 3, 5, 7, 11, ?",
+    "question_en": "Find the next number in the series: 2, 3, 5, 7, 11, ?",
+    "options": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "options_ta": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "options_en": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: தொடர்ச்சியான பகா எண்கள் (Consecutive Prime Numbers):\n2, 3, 5, 7, 11-க்கு அடுத்து வரும் பகா எண் 13 ஆகும்.",
+      "en": "Pattern: Sequence of consecutive prime numbers:\n2, 3, 5, 7, 11, next prime is 13."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: தொடர்ச்சியான பகா எண்கள் (Consecutive Prime Numbers):\n2, 3, 5, 7, 11-க்கு அடுத்து வரும் பகா எண் 13 ஆகும்.",
+    "explanation_en": "Pattern: Sequence of consecutive prime numbers:\n2, 3, 5, 7, 11, next prime is 13.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: தொடர்ச்சியான பகா எண்கள் (Consecutive Prime Numbers):\n2, 3, 5, 7, 11-க்கு அடுத்து வரும் பகா எண் 13 ஆகும்.",
+        "en": "Correct. Pattern: Sequence of consecutive prime numbers:\n2, 3, 5, 7, 11, next prime is 13."
+      },
+      "B": {
+        "ta": "14 பகு எண்.",
+        "en": "14 பகு எண்."
+      },
+      "C": {
+        "ta": "12 பகு எண்.",
+        "en": "12 பகு எண்."
+      },
+      "D": {
+        "ta": "15 பகு எண் (3x5).",
+        "en": "15 பகு எண் (3x5)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பகா எண்கள் தொடர் (1 மற்றும் தன்னால் மட்டுமே வகுபடும் எண்கள்).",
+      "en": "Prime number series (numbers divisible only by 1 and itself)."
+    },
+    "revision_fact": {
+      "ta": "பகா எண் தொடர் (Prime Number Series).",
+      "en": "Prime numbers sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_006",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Fibonacci",
+    "question": {
+      "ta": "பிபோனாசி எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 1, 2, 3, 5, 8, ?",
+      "en": "Find the next number in the Fibonacci series: 1, 1, 2, 3, 5, 8, ?"
+    },
+    "question_ta": "பிபோனாசி எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 1, 2, 3, 5, 8, ?",
+    "question_en": "Find the next number in the Fibonacci series: 1, 1, 2, 3, 5, 8, ?",
+    "options": [
+      "12",
+      "13",
+      "11",
+      "15"
+    ],
+    "options_ta": [
+      "12",
+      "13",
+      "11",
+      "15"
+    ],
+    "options_en": [
+      "12",
+      "13",
+      "11",
+      "15"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: முந்தைய இரு எண்களின் கூடுதல் பிபோனாசி தொடர் ஆகும்:\n1 + 1 = 2\n1 + 2 = 3\n2 + 3 = 5\n3 + 5 = 8\n5 + 8 = 13.\nஎனவே அடுத்து வரும் எண் 13 ஆகும்.",
+      "en": "Pattern: Each term is the sum of the previous two terms (Fibonacci sequence):\n1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13.\nHence, the next number is 13."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: முந்தைய இரு எண்களின் கூடுதல் பிபோனாசி தொடர் ஆகும்:\n1 + 1 = 2\n1 + 2 = 3\n2 + 3 = 5\n3 + 5 = 8\n5 + 8 = 13.\nஎனவே அடுத்து வரும் எண் 13 ஆகும்.",
+    "explanation_en": "Pattern: Each term is the sum of the previous two terms (Fibonacci sequence):\n1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13.\nHence, the next number is 13.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 + 8 = 13, 12 இல்லை.",
+        "en": "5 + 8 = 13, 12 இல்லை."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: முந்தைய இரு எண்களின் கூடுதல் பிபோனாசி தொடர் ஆகும்:\n1 + 1 = 2\n1 + 2 = 3\n2 + 3 = 5\n3 + 5 = 8\n5 + 8 = 13.\nஎனவே அடுத்து வரும் எண் 13 ஆகும்.",
+        "en": "Correct. Pattern: Each term is the sum of the previous two terms (Fibonacci sequence):\n1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13.\nHence, the next number is 13."
+      },
+      "C": {
+        "ta": "5 + 8 = 13, 11 இல்லை.",
+        "en": "5 + 8 = 13, 11 இல்லை."
+      },
+      "D": {
+        "ta": "5 + 8 = 13, 15 இல்லை.",
+        "en": "5 + 8 = 13, 15 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பிபோனாசி விதி: F(n) = F(n-1) + F(n-2).",
+      "en": "Fibonacci rule: Next term = sum of previous two terms."
+    },
+    "revision_fact": {
+      "ta": "பிபோனாசி எண் தொடர் (Fibonacci Series).",
+      "en": "Fibonacci sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_007",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 3, 6, 12, 24, 48, ?",
+      "en": "Find the next number in the series: 3, 6, 12, 24, 48, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 3, 6, 12, 24, 48, ?",
+    "question_en": "Find the next number in the series: 3, 6, 12, 24, 48, ?",
+    "options": [
+      "96",
+      "108",
+      "84",
+      "72"
+    ],
+    "options_ta": [
+      "96",
+      "108",
+      "84",
+      "72"
+    ],
+    "options_en": [
+      "96",
+      "108",
+      "84",
+      "72"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் பெருக்கப்படுகிறது (x2):\n3 x 2 = 6\n6 x 2 = 12\n12 x 2 = 24\n24 x 2 = 48\n48 x 2 = 96.\nஎனவே அடுத்து வரும் எண் 96 ஆகும்.",
+      "en": "Pattern: Multiply each term by 2 (Geometric Progression with r=2):\n3x2=6, 6x2=12, 12x2=24, 24x2=48, 48x2=96.\nHence, the next number is 96."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் பெருக்கப்படுகிறது (x2):\n3 x 2 = 6\n6 x 2 = 12\n12 x 2 = 24\n24 x 2 = 48\n48 x 2 = 96.\nஎனவே அடுத்து வரும் எண் 96 ஆகும்.",
+    "explanation_en": "Pattern: Multiply each term by 2 (Geometric Progression with r=2):\n3x2=6, 6x2=12, 12x2=24, 24x2=48, 48x2=96.\nHence, the next number is 96.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் பெருக்கப்படுகிறது (x2):\n3 x 2 = 6\n6 x 2 = 12\n12 x 2 = 24\n24 x 2 = 48\n48 x 2 = 96.\nஎனவே அடுத்து வரும் எண் 96 ஆகும்.",
+        "en": "Correct. Pattern: Multiply each term by 2 (Geometric Progression with r=2):\n3x2=6, 6x2=12, 12x2=24, 24x2=48, 48x2=96.\nHence, the next number is 96."
+      },
+      "B": {
+        "ta": "48 x 2 = 96, 108 இல்லை.",
+        "en": "48 x 2 = 96, 108 இல்லை."
+      },
+      "C": {
+        "ta": "48 x 2 = 96, 84 இல்லை.",
+        "en": "48 x 2 = 96, 84 இல்லை."
+      },
+      "D": {
+        "ta": "48 x 2 = 96, 72 இல்லை.",
+        "en": "48 x 2 = 96, 72 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "2-ஆல் பெருக்கிச் செல்லும் பெருக்குத் தொடர்.",
+      "en": "Geometric progression with common ratio of 2."
+    },
+    "revision_fact": {
+      "ta": "பெருக்குத் தொடர் (Geometric Series).",
+      "en": "Geometric progression sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_008",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 50, 46, 42, 38, 34, ?",
+      "en": "Find the next number in the series: 50, 46, 42, 38, 34, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 50, 46, 42, 38, 34, ?",
+    "question_en": "Find the next number in the series: 50, 46, 42, 38, 34, ?",
+    "options": [
+      "30",
+      "32",
+      "28",
+      "31"
+    ],
+    "options_ta": [
+      "30",
+      "32",
+      "28",
+      "31"
+    ],
+    "options_en": [
+      "30",
+      "32",
+      "28",
+      "31"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 4 கழிப்பால் குறைகிறது (-4):\n34 - 4 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+      "en": "Pattern: Subtract 4 from each term (-4 constant decrement):\n34 - 4 = 30.\nHence, the next number is 30."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 4 கழிப்பால் குறைகிறது (-4):\n34 - 4 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+    "explanation_en": "Pattern: Subtract 4 from each term (-4 constant decrement):\n34 - 4 = 30.\nHence, the next number is 30.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 4 கழிப்பால் குறைகிறது (-4):\n34 - 4 = 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+        "en": "Correct. Pattern: Subtract 4 from each term (-4 constant decrement):\n34 - 4 = 30.\nHence, the next number is 30."
+      },
+      "B": {
+        "ta": "34 - 4 = 30, 32 இல்லை.",
+        "en": "34 - 4 = 30, 32 இல்லை."
+      },
+      "C": {
+        "ta": "34 - 4 = 30, 28 இல்லை.",
+        "en": "34 - 4 = 30, 28 இல்லை."
+      },
+      "D": {
+        "ta": "34 - 4 = 30, 31 இல்லை.",
+        "en": "34 - 4 = 30, 31 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான -4 கழித்தல் தொடர்.",
+      "en": "Decreasing arithmetic series with a step of -4."
+    },
+    "revision_fact": {
+      "ta": "பின்னோக்கு கூட்டுத் தொடர் (Decreasing Arithmetic Series).",
+      "en": "Decreasing arithmetic sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_009",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Squares",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 16, 36, 64, 100, ?",
+      "en": "Find the next number in the series: 4, 16, 36, 64, 100, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 16, 36, 64, 100, ?",
+    "question_en": "Find the next number in the series: 4, 16, 36, 64, 100, ?",
+    "options": [
+      "144",
+      "121",
+      "196",
+      "169"
+    ],
+    "options_ta": [
+      "144",
+      "121",
+      "196",
+      "169"
+    ],
+    "options_en": [
+      "144",
+      "121",
+      "196",
+      "169"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் வர்க்கங்கள்:\n2^2 = 4\n4^2 = 16\n6^2 = 36\n8^2 = 64\n10^2 = 100\n12^2 = 144.\nஎனவே அடுத்து வரும் எண் 144 ஆகும்.",
+      "en": "Pattern: Squares of consecutive even numbers:\n2^2=4, 4^2=16, 6^2=36, 8^2=64, 10^2=100, 12^2=144.\nHence, the next number is 144."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் வர்க்கங்கள்:\n2^2 = 4\n4^2 = 16\n6^2 = 36\n8^2 = 64\n10^2 = 100\n12^2 = 144.\nஎனவே அடுத்து வரும் எண் 144 ஆகும்.",
+    "explanation_en": "Pattern: Squares of consecutive even numbers:\n2^2=4, 4^2=16, 6^2=36, 8^2=64, 10^2=100, 12^2=144.\nHence, the next number is 144.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் வர்க்கங்கள்:\n2^2 = 4\n4^2 = 16\n6^2 = 36\n8^2 = 64\n10^2 = 100\n12^2 = 144.\nஎனவே அடுத்து வரும் எண் 144 ஆகும்.",
+        "en": "Correct. Pattern: Squares of consecutive even numbers:\n2^2=4, 4^2=16, 6^2=36, 8^2=64, 10^2=100, 12^2=144.\nHence, the next number is 144."
+      },
+      "B": {
+        "ta": "121 = 11^2 (ஒற்றைப்படை).",
+        "en": "121 = 11^2 (ஒற்றைப்படை)."
+      },
+      "C": {
+        "ta": "196 = 14^2.",
+        "en": "196 = 14^2."
+      },
+      "D": {
+        "ta": "169 = 13^2.",
+        "en": "169 = 13^2."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரட்டைப்படை எண்களின் வர்க்கத் தொடர் (2, 4, 6, 8, 10, 12...).",
+      "en": "Series of squares of even numbers."
+    },
+    "revision_fact": {
+      "ta": "இரட்டைப்படை வர்க்கத் தொடர்.",
+      "en": "Even numbers square sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_010",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Alternating Series",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 10, 20, 15, 25, 20, ?",
+      "en": "Find the next number in the series: 10, 20, 15, 25, 20, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 10, 20, 15, 25, 20, ?",
+    "question_en": "Find the next number in the series: 10, 20, 15, 25, 20, ?",
+    "options": [
+      "40",
+      "35",
+      "30",
+      "25"
+    ],
+    "options_ta": [
+      "40",
+      "35",
+      "30",
+      "25"
+    ],
+    "options_en": [
+      "40",
+      "35",
+      "30",
+      "25"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: மாறி மாறி +10 மற்றும் -5:\n10 (+10) ⟹ 20 (-5) ⟹ 15 (+10) ⟹ 25 (-5) ⟹ 20 (+10) ⟹ 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+      "en": "Pattern: Alternating operations +10 and -5:\n10 (+10)-> 20 (-5)-> 15 (+10)-> 25 (-5)-> 20 (+10)-> 30.\nHence, the next number is 30."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: மாறி மாறி +10 மற்றும் -5:\n10 (+10) ⟹ 20 (-5) ⟹ 15 (+10) ⟹ 25 (-5) ⟹ 20 (+10) ⟹ 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+    "explanation_en": "Pattern: Alternating operations +10 and -5:\n10 (+10)-> 20 (-5)-> 15 (+10)-> 25 (-5)-> 20 (+10)-> 30.\nHence, the next number is 30.",
+    "why_not_others": {
+      "A": {
+        "ta": "20 + 10 = 30, 40 இல்லை.",
+        "en": "20 + 10 = 30, 40 இல்லை."
+      },
+      "B": {
+        "ta": "20 + 10 = 30, 35 இல்லை.",
+        "en": "20 + 10 = 30, 35 இல்லை."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: மாறி மாறி +10 மற்றும் -5:\n10 (+10) ⟹ 20 (-5) ⟹ 15 (+10) ⟹ 25 (-5) ⟹ 20 (+10) ⟹ 30.\nஎனவே அடுத்து வரும் எண் 30 ஆகும்.",
+        "en": "Correct. Pattern: Alternating operations +10 and -5:\n10 (+10)-> 20 (-5)-> 15 (+10)-> 25 (-5)-> 20 (+10)-> 30.\nHence, the next number is 30."
+      },
+      "D": {
+        "ta": "20 + 10 = 30, 25 இல்லை.",
+        "en": "20 + 10 = 30, 25 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மாறி வரும் +10 மற்றும் -5 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply alternating pattern (+10, -5, +10, -5...)."
+    },
+    "revision_fact": {
+      "ta": "மாறிவரும் செயல்பாட்டுத் தொடர் (Alternating Operation Series).",
+      "en": "Alternating addition/subtraction series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_011",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 7, 10, 13, ?",
+      "en": "Find the next number in the series: 1, 4, 7, 10, 13, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 7, 10, 13, ?",
+    "question_en": "Find the next number in the series: 1, 4, 7, 10, 13, ?",
+    "options": [
+      "15",
+      "17",
+      "16",
+      "14"
+    ],
+    "options_ta": [
+      "15",
+      "17",
+      "16",
+      "14"
+    ],
+    "options_en": [
+      "15",
+      "17",
+      "16",
+      "14"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 3 கூட்டப்படுகிறது (+3):\n13 + 3 = 16.\nஎனவே அடுத்து வரும் எண் 16 ஆகும்.",
+      "en": "Pattern: Add +3 to each term:\n13 + 3 = 16.\nHence, the next number is 16."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 3 கூட்டப்படுகிறது (+3):\n13 + 3 = 16.\nஎனவே அடுத்து வரும் எண் 16 ஆகும்.",
+    "explanation_en": "Pattern: Add +3 to each term:\n13 + 3 = 16.\nHence, the next number is 16.",
+    "why_not_others": {
+      "A": {
+        "ta": "13 + 3 = 16, 15 இல்லை.",
+        "en": "13 + 3 = 16, 15 இல்லை."
+      },
+      "B": {
+        "ta": "13 + 3 = 16, 17 இல்லை.",
+        "en": "13 + 3 = 16, 17 இல்லை."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 3 கூட்டப்படுகிறது (+3):\n13 + 3 = 16.\nஎனவே அடுத்து வரும் எண் 16 ஆகும்.",
+        "en": "Correct. Pattern: Add +3 to each term:\n13 + 3 = 16.\nHence, the next number is 16."
+      },
+      "D": {
+        "ta": "13 + 3 = 16, 14 இல்லை.",
+        "en": "13 + 3 = 16, 14 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "நிலையான +3 கூட்டுத் தொடர்.",
+      "en": "Arithmetic series with constant step +3."
+    },
+    "revision_fact": {
+      "ta": "கூட்டுத் தொடர் (Arithmetic Progression).",
+      "en": "Arithmetic progression (+3 step)."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_012",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 8, 64, 216, ?",
+      "en": "Find the next number in the series: 8, 64, 216, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 8, 64, 216, ?",
+    "question_en": "Find the next number in the series: 8, 64, 216, ?",
+    "options": [
+      "729",
+      "512",
+      "1000",
+      "343"
+    ],
+    "options_ta": [
+      "729",
+      "512",
+      "1000",
+      "343"
+    ],
+    "options_en": [
+      "729",
+      "512",
+      "1000",
+      "343"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் கணங்கள்:\n2^3 = 8\n4^3 = 64\n6^3 = 216\n8^3 = 512.\nஎனவே அடுத்து வரும் எண் 512 ஆகும்.",
+      "en": "Pattern: Cubes of consecutive even numbers:\n2^3=8, 4^3=64, 6^3=216, 8^3=512.\nHence, the next number is 512."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் கணங்கள்:\n2^3 = 8\n4^3 = 64\n6^3 = 216\n8^3 = 512.\nஎனவே அடுத்து வரும் எண் 512 ஆகும்.",
+    "explanation_en": "Pattern: Cubes of consecutive even numbers:\n2^3=8, 4^3=64, 6^3=216, 8^3=512.\nHence, the next number is 512.",
+    "why_not_others": {
+      "A": {
+        "ta": "9^3 = 729 (ஒற்றைப்படை).",
+        "en": "9^3 = 729 (ஒற்றைப்படை)."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: இரட்டைப்படை எண்களின் கணங்கள்:\n2^3 = 8\n4^3 = 64\n6^3 = 216\n8^3 = 512.\nஎனவே அடுத்து வரும் எண் 512 ஆகும்.",
+        "en": "Correct. Pattern: Cubes of consecutive even numbers:\n2^3=8, 4^3=64, 6^3=216, 8^3=512.\nHence, the next number is 512."
+      },
+      "C": {
+        "ta": "10^3 = 1000.",
+        "en": "10^3 = 1000."
+      },
+      "D": {
+        "ta": "7^3 = 343 (ஒற்றைப்படை).",
+        "en": "7^3 = 343 (ஒற்றைப்படை)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரட்டைப்படை எண்களின் கணத் தொடர் (2, 4, 6, 8...).",
+      "en": "Series of cubes of even numbers."
+    },
+    "revision_fact": {
+      "ta": "இரட்டைப்படை கணத் தொடர்.",
+      "en": "Even numbers cube sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_013",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Wrong Number Identification",
+    "question": {
+      "ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 5, 10, 15, 22, 25",
+      "en": "Find the wrong number in the following series: 5, 10, 15, 22, 25"
+    },
+    "question_ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 5, 10, 15, 22, 25",
+    "question_en": "Find the wrong number in the following series: 5, 10, 15, 22, 25",
+    "options": [
+      "25",
+      "10",
+      "15",
+      "22"
+    ],
+    "options_ta": [
+      "25",
+      "10",
+      "15",
+      "22"
+    ],
+    "options_en": [
+      "25",
+      "10",
+      "15",
+      "22"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி):\n5, 10, 15, 20, 25.\nஆனால் தொடரில் 20-க்கு பதிலாக 22 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 22 ஆகும்.",
+      "en": "Pattern: Multiples of 5 (+5 step):\n5, 10, 15, 20, 25.\nInstead of 20, the number 22 is given. Hence, 22 is the wrong number."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி):\n5, 10, 15, 20, 25.\nஆனால் தொடரில் 20-க்கு பதிலாக 22 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 22 ஆகும்.",
+    "explanation_en": "Pattern: Multiples of 5 (+5 step):\n5, 10, 15, 20, 25.\nInstead of 20, the number 22 is given. Hence, 22 is the wrong number.",
+    "why_not_others": {
+      "A": {
+        "ta": "25 சரியானது (20+5).",
+        "en": "25 சரியானது (20+5)."
+      },
+      "B": {
+        "ta": "10 சரியானது (5+5).",
+        "en": "10 சரியானது (5+5)."
+      },
+      "C": {
+        "ta": "15 சரியானது (10+5).",
+        "en": "15 சரியானது (10+5)."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: 5-ன் மடங்குகள் (+5 இடைவெளி):\n5, 10, 15, 20, 25.\nஆனால் தொடரில் 20-க்கு பதிலாக 22 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 22 ஆகும்.",
+        "en": "Correct. Pattern: Multiples of 5 (+5 step):\n5, 10, 15, 20, 25.\nInstead of 20, the number 22 is given. Hence, 22 is the wrong number."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "தொடரின் விதியை ஒப்பிட்டுப் தவறான உறுப்பைக் கண்டறியவும்.",
+      "en": "Compare given terms against the uniform rule (+5) to identify the outlier."
+    },
+    "revision_fact": {
+      "ta": "தவறான எண் கண்டறிதல் (Wrong Number Identification).",
+      "en": "Pattern outlier detection."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_014",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 6, 18, 54, ?",
+      "en": "Find the next number in the series: 2, 6, 18, 54, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 6, 18, 54, ?",
+    "question_en": "Find the next number in the series: 2, 6, 18, 54, ?",
+    "options": [
+      "162",
+      "144",
+      "216",
+      "108"
+    ],
+    "options_ta": [
+      "162",
+      "144",
+      "216",
+      "108"
+    ],
+    "options_en": [
+      "162",
+      "144",
+      "216",
+      "108"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: 3-ஆல் பெருக்கப்படுகிறது (x3):\n2 x 3 = 6\n6 x 3 = 18\n18 x 3 = 54\n54 x 3 = 162.\nஎனவே அடுத்து வரும் எண் 162 ஆகும்.",
+      "en": "Pattern: Multiply each term by 3 (x3):\n2x3=6, 6x3=18, 18x3=54, 54x3=162.\nHence, the next number is 162."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: 3-ஆல் பெருக்கப்படுகிறது (x3):\n2 x 3 = 6\n6 x 3 = 18\n18 x 3 = 54\n54 x 3 = 162.\nஎனவே அடுத்து வரும் எண் 162 ஆகும்.",
+    "explanation_en": "Pattern: Multiply each term by 3 (x3):\n2x3=6, 6x3=18, 18x3=54, 54x3=162.\nHence, the next number is 162.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: 3-ஆல் பெருக்கப்படுகிறது (x3):\n2 x 3 = 6\n6 x 3 = 18\n18 x 3 = 54\n54 x 3 = 162.\nஎனவே அடுத்து வரும் எண் 162 ஆகும்.",
+        "en": "Correct. Pattern: Multiply each term by 3 (x3):\n2x3=6, 6x3=18, 18x3=54, 54x3=162.\nHence, the next number is 162."
+      },
+      "B": {
+        "ta": "54 x 3 = 162, 144 இல்லை.",
+        "en": "54 x 3 = 162, 144 இல்லை."
+      },
+      "C": {
+        "ta": "54 x 4 = 216, 3x54=162.",
+        "en": "54 x 4 = 216, 3x54=162."
+      },
+      "D": {
+        "ta": "54 x 2 = 108, 3x54=162.",
+        "en": "54 x 2 = 108, 3x54=162."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3-ஆல் பெருக்கிச் செல்லும் பெருக்குத் தொடர்.",
+      "en": "Geometric progression with common ratio 3."
+    },
+    "revision_fact": {
+      "ta": "3-ன் மடங்கு பெருக்குத் தொடர்.",
+      "en": "Geometric series (x3)."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_015",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Easy",
+    "question_type": "Prime Progressions",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 11, 13, 17, 19, 23, ?",
+      "en": "Find the next number in the series: 11, 13, 17, 19, 23, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 11, 13, 17, 19, 23, ?",
+    "question_en": "Find the next number in the series: 11, 13, 17, 19, 23, ?",
+    "options": [
+      "25",
+      "29",
+      "27",
+      "31"
+    ],
+    "options_ta": [
+      "25",
+      "29",
+      "27",
+      "31"
+    ],
+    "options_en": [
+      "25",
+      "29",
+      "27",
+      "31"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: 11-லிருந்து தொடங்கும் பகா எண்கள் (Primes from 11):\n11, 13, 17, 19, 23-க்கு அடுத்து வரும் பகா எண் 29 ஆகும்.",
+      "en": "Pattern: Consecutive prime numbers starting from 11:\n11, 13, 17, 19, 23, next prime is 29."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: 11-லிருந்து தொடங்கும் பகா எண்கள் (Primes from 11):\n11, 13, 17, 19, 23-க்கு அடுத்து வரும் பகா எண் 29 ஆகும்.",
+    "explanation_en": "Pattern: Consecutive prime numbers starting from 11:\n11, 13, 17, 19, 23, next prime is 29.",
+    "why_not_others": {
+      "A": {
+        "ta": "25 பகு எண் (5x5).",
+        "en": "25 பகு எண் (5x5)."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: 11-லிருந்து தொடங்கும் பகா எண்கள் (Primes from 11):\n11, 13, 17, 19, 23-க்கு அடுத்து வரும் பகா எண் 29 ஆகும்.",
+        "en": "Correct. Pattern: Consecutive prime numbers starting from 11:\n11, 13, 17, 19, 23, next prime is 29."
+      },
+      "C": {
+        "ta": "27 பகு எண் (3x9).",
+        "en": "27 பகு எண் (3x9)."
+      },
+      "D": {
+        "ta": "31 என்பது 29-க்கு அடுத்த பகா எண்.",
+        "en": "31 என்பது 29-க்கு அடுத்த பகா எண்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடுத்தடுத்த பகா எண்களை கவனமாகச் சரிபார்க்கவும்.",
+      "en": "Check for consecutive prime numbers after 23."
+    },
+    "revision_fact": {
+      "ta": "பகா எண் வரிசை.",
+      "en": "Consecutive prime number sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_016",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 8, 14, 22, ?",
+      "en": "Find the next number in the series: 2, 4, 8, 14, 22, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 8, 14, 22, ?",
+    "question_en": "Find the next number in the series: 2, 4, 8, 14, 22, ?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "options_ta": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "options_en": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "முதல் வித்தியாசங்கள் (First differences):\n4-2 = 2\n8-4 = 4\n14-8 = 6\n22-14 = 8\nவித்தியασங்கள் 2, 4, 6, 8 என இரட்டைப்படை எண்களாக அதிகரிக்கின்றன (+2).\nஅடுத்த வித்தியாசம் = 10.\nஎனவே அடுத்து வரும் எண் = 22 + 10 = 32.",
+      "en": "First differences: 4-2=2, 8-4=4, 14-8=6, 22-14=8.\nThe differences increase by +2 each time (even numbers).\nNext difference = 10.\nNext term = 22 + 10 = 32."
+    },
+    "explanation_ta": "முதல் வித்தியாசங்கள் (First differences):\n4-2 = 2\n8-4 = 4\n14-8 = 6\n22-14 = 8\nவித்தியασங்கள் 2, 4, 6, 8 என இரட்டைப்படை எண்களாக அதிகரிக்கின்றன (+2).\nஅடுத்த வித்தியாசம் = 10.\nஎனவே அடுத்து வரும் எண் = 22 + 10 = 32.",
+    "explanation_en": "First differences: 4-2=2, 8-4=4, 14-8=6, 22-14=8.\nThe differences increase by +2 each time (even numbers).\nNext difference = 10.\nNext term = 22 + 10 = 32.",
+    "why_not_others": {
+      "A": {
+        "ta": "22 + 6 = 28.",
+        "en": "22 + 6 = 28."
+      },
+      "B": {
+        "ta": "22 + 8 = 30.",
+        "en": "22 + 8 = 30."
+      },
+      "C": {
+        "ta": "சரி. முதல் வித்தியாசங்கள் (First differences):\n4-2 = 2\n8-4 = 4\n14-8 = 6\n22-14 = 8\nவித்தியασங்கள் 2, 4, 6, 8 என இரட்டைப்படை எண்களாக அதிகரிக்கின்றன (+2).\nஅடுத்த வித்தியாசம் = 10.\nஎனவே அடுத்து வரும் எண் = 22 + 10 = 32.",
+        "en": "Correct. First differences: 4-2=2, 8-4=4, 14-8=6, 22-14=8.\nThe differences increase by +2 each time (even numbers).\nNext difference = 10.\nNext term = 22 + 10 = 32."
+      },
+      "D": {
+        "ta": "22 + 12 = 34.",
+        "en": "22 + 12 = 34."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முதல் வித்தியாசங்கள் +2, +4, +6, +8, +10 என அதிகரிக்கின்றன.",
+      "en": "First differences form an AP: 2, 4, 6, 8, 10."
+    },
+    "revision_fact": {
+      "ta": "இரண்டாம் வேறுபாட்டுத் தொடர் (Second Difference Series).",
+      "en": "Increasing difference pattern."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_017",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 11, 23, 47, ?",
+      "en": "Find the next number in the series: 2, 5, 11, 23, 47, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 11, 23, 47, ?",
+    "question_en": "Find the next number in the series: 2, 5, 11, 23, 47, ?",
+    "options": [
+      "94",
+      "91",
+      "96",
+      "95"
+    ],
+    "options_ta": [
+      "94",
+      "91",
+      "96",
+      "95"
+    ],
+    "options_en": [
+      "94",
+      "91",
+      "96",
+      "95"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n2 x 2 + 1 = 5\n5 x 2 + 1 = 11\n11 x 2 + 1 = 23\n23 x 2 + 1 = 47\n47 x 2 + 1 = 95.\nஎனவே அடுத்து வரும் எண் 95 ஆகும்.",
+      "en": "Pattern: Multiply by 2 and add 1 (x2 + 1):\n2x2+1=5, 5x2+1=11, 11x2+1=23, 23x2+1=47, 47x2+1=95.\nHence, the next number is 95."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n2 x 2 + 1 = 5\n5 x 2 + 1 = 11\n11 x 2 + 1 = 23\n23 x 2 + 1 = 47\n47 x 2 + 1 = 95.\nஎனவே அடுத்து வரும் எண் 95 ஆகும்.",
+    "explanation_en": "Pattern: Multiply by 2 and add 1 (x2 + 1):\n2x2+1=5, 5x2+1=11, 11x2+1=23, 23x2+1=47, 47x2+1=95.\nHence, the next number is 95.",
+    "why_not_others": {
+      "A": {
+        "ta": "47 x 2 = 94 (+0).",
+        "en": "47 x 2 = 94 (+0)."
+      },
+      "B": {
+        "ta": "47 x 2 - 3 = 91.",
+        "en": "47 x 2 - 3 = 91."
+      },
+      "C": {
+        "ta": "47 x 2 + 2 = 96.",
+        "en": "47 x 2 + 2 = 96."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n2 x 2 + 1 = 5\n5 x 2 + 1 = 11\n11 x 2 + 1 = 23\n23 x 2 + 1 = 47\n47 x 2 + 1 = 95.\nஎனவே அடுத்து வரும் எண் 95 ஆகும்.",
+        "en": "Correct. Pattern: Multiply by 2 and add 1 (x2 + 1):\n2x2+1=5, 5x2+1=11, 11x2+1=23, 23x2+1=47, 47x2+1=95.\nHence, the next number is 95."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x2 + 1 கூட்டு விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply (Term x 2 + 1) recursively."
+    },
+    "revision_fact": {
+      "ta": "பெருக்கல் மற்றும் கூட்டல் கலப்புத் தொடர்.",
+      "en": "Combined multiplication and constant addition series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_018",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Squares",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 17, 26, ?",
+      "en": "Find the next number in the series: 2, 5, 10, 17, 26, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 17, 26, ?",
+    "question_en": "Find the next number in the series: 2, 5, 10, 17, 26, ?",
+    "options": [
+      "38",
+      "36",
+      "35",
+      "37"
+    ],
+    "options_ta": [
+      "38",
+      "36",
+      "35",
+      "37"
+    ],
+    "options_en": [
+      "38",
+      "36",
+      "35",
+      "37"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: வர்க்கம் + 1 (n^2 + 1):\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17\n5^2 + 1 = 26\n6^2 + 1 = 37.\nஎனவே அடுத்து வரும் எண் 37 ஆகும்.",
+      "en": "Pattern: Square plus 1 (n^2 + 1):\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26, 6^2+1=37.\nHence, the next number is 37."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: வர்க்கம் + 1 (n^2 + 1):\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17\n5^2 + 1 = 26\n6^2 + 1 = 37.\nஎனவே அடுத்து வரும் எண் 37 ஆகும்.",
+    "explanation_en": "Pattern: Square plus 1 (n^2 + 1):\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26, 6^2+1=37.\nHence, the next number is 37.",
+    "why_not_others": {
+      "A": {
+        "ta": "6^2 + 2 = 38.",
+        "en": "6^2 + 2 = 38."
+      },
+      "B": {
+        "ta": "6^2 = 36.",
+        "en": "6^2 = 36."
+      },
+      "C": {
+        "ta": "6^2 - 1 = 35.",
+        "en": "6^2 - 1 = 35."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: வர்க்கம் + 1 (n^2 + 1):\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17\n5^2 + 1 = 26\n6^2 + 1 = 37.\nஎனவே அடுத்து வரும் எண் 37 ஆகும்.",
+        "en": "Correct. Pattern: Square plus 1 (n^2 + 1):\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26, 6^2+1=37.\nHence, the next number is 37."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^2 + 1 அமைப்பை அடையாளம் காணவும்.",
+      "en": "Identify the n^2 + 1 pattern."
+    },
+    "revision_fact": {
+      "ta": "வர்க்கக் கூடுதல் தொடர் (n^2 + 1 Series).",
+      "en": "n^2 + 1 series progression."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_019",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 7, 26, 63, 124, ?",
+      "en": "Find the next number in the series: 0, 7, 26, 63, 124, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 7, 26, 63, 124, ?",
+    "question_en": "Find the next number in the series: 0, 7, 26, 63, 124, ?",
+    "options": [
+      "216",
+      "215",
+      "217",
+      "225"
+    ],
+    "options_ta": [
+      "216",
+      "215",
+      "217",
+      "225"
+    ],
+    "options_en": [
+      "216",
+      "215",
+      "217",
+      "225"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: கணம் - 1 (n^3 - 1):\n1^3 - 1 = 0\n2^3 - 1 = 7\n3^3 - 1 = 26\n4^3 - 1 = 63\n5^3 - 1 = 124\n6^3 - 1 = 215.\nஎனவே அடுத்து வரும் எண் 215 ஆகும்.",
+      "en": "Pattern: Cube minus 1 (n^3 - 1):\n1^3-1=0, 2^3-1=7, 3^3-1=26, 4^3-1=63, 5^3-1=124, 6^3-1=215.\nHence, the next number is 215."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: கணம் - 1 (n^3 - 1):\n1^3 - 1 = 0\n2^3 - 1 = 7\n3^3 - 1 = 26\n4^3 - 1 = 63\n5^3 - 1 = 124\n6^3 - 1 = 215.\nஎனவே அடுத்து வரும் எண் 215 ஆகும்.",
+    "explanation_en": "Pattern: Cube minus 1 (n^3 - 1):\n1^3-1=0, 2^3-1=7, 3^3-1=26, 4^3-1=63, 5^3-1=124, 6^3-1=215.\nHence, the next number is 215.",
+    "why_not_others": {
+      "A": {
+        "ta": "6^3 = 216.",
+        "en": "6^3 = 216."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: கணம் - 1 (n^3 - 1):\n1^3 - 1 = 0\n2^3 - 1 = 7\n3^3 - 1 = 26\n4^3 - 1 = 63\n5^3 - 1 = 124\n6^3 - 1 = 215.\nஎனவே அடுத்து வரும் எண் 215 ஆகும்.",
+        "en": "Correct. Pattern: Cube minus 1 (n^3 - 1):\n1^3-1=0, 2^3-1=7, 3^3-1=26, 4^3-1=63, 5^3-1=124, 6^3-1=215.\nHence, the next number is 215."
+      },
+      "C": {
+        "ta": "6^3 + 1 = 217.",
+        "en": "6^3 + 1 = 217."
+      },
+      "D": {
+        "ta": "15^2 = 225.",
+        "en": "15^2 = 225."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^3 - 1 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply n^3 - 1 rule."
+    },
+    "revision_fact": {
+      "ta": "கணக் கழித்தல் தொடர் (n^3 - 1 Series).",
+      "en": "n^3 - 1 cube minus one sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_020",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Alternating Series",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 10, 4, 20, 6, 30, 8, ?",
+      "en": "Find the next number in the series: 2, 10, 4, 20, 6, 30, 8, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 10, 4, 20, 6, 30, 8, ?",
+    "question_en": "Find the next number in the series: 2, 10, 4, 20, 6, 30, 8, ?",
+    "options": [
+      "35",
+      "50",
+      "45",
+      "40"
+    ],
+    "options_ta": [
+      "35",
+      "50",
+      "45",
+      "40"
+    ],
+    "options_en": [
+      "35",
+      "50",
+      "45",
+      "40"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள்): 2, 4, 6, 8 (+2)\nதொடர் 2 (இரட்டை இடங்கள்): 10, 20, 30, ? (+10)\nஎனவே 30 + 10 = 40 ஆகும்.",
+      "en": "The series consists of two alternating sub-series:\nSeries 1 (odd positions): 2, 4, 6, 8 (+2 step)\nSeries 2 (even positions): 10, 20, 30, ? (+10 step)\nNext term in Series 2 = 30 + 10 = 40."
+    },
+    "explanation_ta": "இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள்): 2, 4, 6, 8 (+2)\nதொடர் 2 (இரட்டை இடங்கள்): 10, 20, 30, ? (+10)\nஎனவே 30 + 10 = 40 ஆகும்.",
+    "explanation_en": "The series consists of two alternating sub-series:\nSeries 1 (odd positions): 2, 4, 6, 8 (+2 step)\nSeries 2 (even positions): 10, 20, 30, ? (+10 step)\nNext term in Series 2 = 30 + 10 = 40.",
+    "why_not_others": {
+      "A": {
+        "ta": "30 + 10 = 40, 35 இல்லை.",
+        "en": "30 + 10 = 40, 35 இல்லை."
+      },
+      "B": {
+        "ta": "30 + 10 = 40, 50 இல்லை.",
+        "en": "30 + 10 = 40, 50 இல்லை."
+      },
+      "C": {
+        "ta": "30 + 10 = 40, 45 இல்லை.",
+        "en": "30 + 10 = 40, 45 இல்லை."
+      },
+      "D": {
+        "ta": "சரி. இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள்): 2, 4, 6, 8 (+2)\nதொடர் 2 (இரட்டை இடங்கள்): 10, 20, 30, ? (+10)\nஎனவே 30 + 10 = 40 ஆகும்.",
+        "en": "Correct. The series consists of two alternating sub-series:\nSeries 1 (odd positions): 2, 4, 6, 8 (+2 step)\nSeries 2 (even positions): 10, 20, 30, ? (+10 step)\nNext term in Series 2 = 30 + 10 = 40."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒற்றை மற்றும் இரட்டை இடத் தொடர்களைத் தனித்தனியாகப் பிரித்துத் தீர்க்கவும்.",
+      "en": "Separate into odd-indexed and even-indexed sub-series."
+    },
+    "revision_fact": {
+      "ta": "இரட்டை மாற்றுத் தொடர் (Dual Alternating Series).",
+      "en": "Interleaved dual series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_021",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 6, 15, 31, ?",
+      "en": "Find the next number in the series: 1, 2, 6, 15, 31, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 6, 15, 31, ?",
+    "question_en": "Find the next number in the series: 1, 2, 6, 15, 31, ?",
+    "options": [
+      "51",
+      "66",
+      "56",
+      "46"
+    ],
+    "options_ta": [
+      "51",
+      "66",
+      "56",
+      "46"
+    ],
+    "options_en": [
+      "51",
+      "66",
+      "56",
+      "46"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "வித்தியασங்கள் (First differences):\n2-1 = 1 (1^2)\n6-2 = 4 (2^2)\n15-6 = 9 (3^2)\n31-15 = 16 (4^2)\nஅடுத்த வித்தியாசம் = 5^2 = 25.\nஅடுத்து வரும் எண் = 31 + 25 = 56.",
+      "en": "First differences are squares of natural numbers:\n2-1 = 1 (1^2), 6-2 = 4 (2^2), 15-6 = 9 (3^2), 31-15 = 16 (4^2).\nNext difference = 5^2 = 25.\nNext term = 31 + 25 = 56."
+    },
+    "explanation_ta": "வித்தியασங்கள் (First differences):\n2-1 = 1 (1^2)\n6-2 = 4 (2^2)\n15-6 = 9 (3^2)\n31-15 = 16 (4^2)\nஅடுத்த வித்தியாசம் = 5^2 = 25.\nஅடுத்து வரும் எண் = 31 + 25 = 56.",
+    "explanation_en": "First differences are squares of natural numbers:\n2-1 = 1 (1^2), 6-2 = 4 (2^2), 15-6 = 9 (3^2), 31-15 = 16 (4^2).\nNext difference = 5^2 = 25.\nNext term = 31 + 25 = 56.",
+    "why_not_others": {
+      "A": {
+        "ta": "31 + 20 = 51.",
+        "en": "31 + 20 = 51."
+      },
+      "B": {
+        "ta": "31 + 35 = 66.",
+        "en": "31 + 35 = 66."
+      },
+      "C": {
+        "ta": "சரி. வித்தியασங்கள் (First differences):\n2-1 = 1 (1^2)\n6-2 = 4 (2^2)\n15-6 = 9 (3^2)\n31-15 = 16 (4^2)\nஅடுத்த வித்தியாசம் = 5^2 = 25.\nஅடுத்து வரும் எண் = 31 + 25 = 56.",
+        "en": "Correct. First differences are squares of natural numbers:\n2-1 = 1 (1^2), 6-2 = 4 (2^2), 15-6 = 9 (3^2), 31-15 = 16 (4^2).\nNext difference = 5^2 = 25.\nNext term = 31 + 25 = 56."
+      },
+      "D": {
+        "ta": "31 + 15 = 46.",
+        "en": "31 + 15 = 46."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியασங்கள் வர்க்கங்களாக உள்ளன (1, 4, 9, 16, 25).",
+      "en": "Differences are consecutive square numbers."
+    },
+    "revision_fact": {
+      "ta": "வர்க்க வித்தியாசத் தொடர் (Square Difference Series).",
+      "en": "Square difference progression."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_022",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 5, 14, 41, ?",
+      "en": "Find the next number in the series: 1, 2, 5, 14, 41, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 5, 14, 41, ?",
+    "question_en": "Find the next number in the series: 1, 2, 5, 14, 41, ?",
+    "options": [
+      "124",
+      "123",
+      "122",
+      "121"
+    ],
+    "options_ta": [
+      "124",
+      "123",
+      "122",
+      "121"
+    ],
+    "options_en": [
+      "124",
+      "123",
+      "122",
+      "121"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 3) - 1:\n1 x 3 - 1 = 2\n2 x 3 - 1 = 5\n5 x 3 - 1 = 14\n14 x 3 - 1 = 41\n41 x 3 - 1 = 122.\nஎனவே அடுத்து வரும் எண் 122 ஆகும்.",
+      "en": "Pattern: Multiply by 3 and subtract 1 (x3 - 1):\n1x3-1=2, 2x3-1=5, 5x3-1=14, 14x3-1=41, 41x3-1=122.\nHence, the next number is 122."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 3) - 1:\n1 x 3 - 1 = 2\n2 x 3 - 1 = 5\n5 x 3 - 1 = 14\n14 x 3 - 1 = 41\n41 x 3 - 1 = 122.\nஎனவே அடுத்து வரும் எண் 122 ஆகும்.",
+    "explanation_en": "Pattern: Multiply by 3 and subtract 1 (x3 - 1):\n1x3-1=2, 2x3-1=5, 5x3-1=14, 14x3-1=41, 41x3-1=122.\nHence, the next number is 122.",
+    "why_not_others": {
+      "A": {
+        "ta": "41 x 3 + 1 = 124.",
+        "en": "41 x 3 + 1 = 124."
+      },
+      "B": {
+        "ta": "41 x 3 = 123.",
+        "en": "41 x 3 = 123."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: (முந்தைய எண் x 3) - 1:\n1 x 3 - 1 = 2\n2 x 3 - 1 = 5\n5 x 3 - 1 = 14\n14 x 3 - 1 = 41\n41 x 3 - 1 = 122.\nஎனவே அடுத்து வரும் எண் 122 ஆகும்.",
+        "en": "Correct. Pattern: Multiply by 3 and subtract 1 (x3 - 1):\n1x3-1=2, 2x3-1=5, 5x3-1=14, 14x3-1=41, 41x3-1=122.\nHence, the next number is 122."
+      },
+      "D": {
+        "ta": "41 x 3 - 2 = 121.",
+        "en": "41 x 3 - 2 = 121."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x3 - 1 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply (Term x 3 - 1) rule."
+    },
+    "revision_fact": {
+      "ta": "பெருக்கல் மற்றும் கழித்தல் கலப்புத் தொடர்.",
+      "en": "Multiplication and constant subtraction series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_023",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Wrong Number Identification",
+    "question": {
+      "ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 2, 5, 10, 18, 26",
+      "en": "Find the wrong number in the following series: 2, 5, 10, 18, 26"
+    },
+    "question_ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 2, 5, 10, 18, 26",
+    "question_en": "Find the wrong number in the following series: 2, 5, 10, 18, 26",
+    "options": [
+      "26",
+      "10",
+      "5",
+      "18"
+    ],
+    "options_ta": [
+      "26",
+      "10",
+      "5",
+      "18"
+    ],
+    "options_en": [
+      "26",
+      "10",
+      "5",
+      "18"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: n^2 + 1:\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17 (தொடரில் 18 கொடுக்கப்பட்டுள்ளது)\n5^2 + 1 = 26.\nஎனவே தவறான எண் 18 ஆகும் (17 இருக்க வேண்டும்).",
+      "en": "Pattern: n^2 + 1:\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17 (given 18), 5^2+1=26.\nHence, 18 is the wrong number (should be 17)."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: n^2 + 1:\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17 (தொடரில் 18 கொடுக்கப்பட்டுள்ளது)\n5^2 + 1 = 26.\nஎனவே தவறான எண் 18 ஆகும் (17 இருக்க வேண்டும்).",
+    "explanation_en": "Pattern: n^2 + 1:\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17 (given 18), 5^2+1=26.\nHence, 18 is the wrong number (should be 17).",
+    "why_not_others": {
+      "A": {
+        "ta": "26 = 5^2+1 (சரி).",
+        "en": "26 = 5^2+1 (சரி)."
+      },
+      "B": {
+        "ta": "10 = 3^2+1 (சரி).",
+        "en": "10 = 3^2+1 (சரி)."
+      },
+      "C": {
+        "ta": "5 = 2^2+1 (சரி).",
+        "en": "5 = 2^2+1 (சரி)."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: n^2 + 1:\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17 (தொடரில் 18 கொடுக்கப்பட்டுள்ளது)\n5^2 + 1 = 26.\nஎனவே தவறான எண் 18 ஆகும் (17 இருக்க வேண்டும்).",
+        "en": "Correct. Pattern: n^2 + 1:\n1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17 (given 18), 5^2+1=26.\nHence, 18 is the wrong number (should be 17)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^2 + 1 விதியைச் சரிபார்த்து 17-க்கு பதிலாக வந்த 18-ஐக் கண்டறியவும்.",
+      "en": "Check n^2 + 1 sequence to locate 18 instead of 17."
+    },
+    "revision_fact": {
+      "ta": "n^2 + 1 தவறான எண் ஆய்வு.",
+      "en": "n^2 + 1 wrong number audit."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_024",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 2, 4, 8, 32, ?",
+      "en": "Find the next number in the series: 1, 2, 2, 4, 8, 32, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 2, 4, 8, 32, ?",
+    "question_en": "Find the next number in the series: 1, 2, 2, 4, 8, 32, ?",
+    "options": [
+      "256",
+      "512",
+      "128",
+      "64"
+    ],
+    "options_ta": [
+      "256",
+      "512",
+      "128",
+      "64"
+    ],
+    "options_en": [
+      "256",
+      "512",
+      "128",
+      "64"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய இரு உறுப்புகளின் பெருக்கற்பலன் ஆகும்:\n1 x 2 = 2\n2 x 2 = 4\n2 x 4 = 8\n4 x 8 = 32\n8 x 32 = 256.\nஎனவே அடுத்து வரும் எண் 256 ஆகும்.",
+      "en": "Pattern: Each term is the product of the previous two terms:\n1x2=2, 2x2=4, 2x4=8, 4x8=32, 8x32=256.\nHence, the next number is 256."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய இரு உறுப்புகளின் பெருக்கற்பலன் ஆகும்:\n1 x 2 = 2\n2 x 2 = 4\n2 x 4 = 8\n4 x 8 = 32\n8 x 32 = 256.\nஎனவே அடுத்து வரும் எண் 256 ஆகும்.",
+    "explanation_en": "Pattern: Each term is the product of the previous two terms:\n1x2=2, 2x2=4, 2x4=8, 4x8=32, 8x32=256.\nHence, the next number is 256.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய இரு உறுப்புகளின் பெருக்கற்பலன் ஆகும்:\n1 x 2 = 2\n2 x 2 = 4\n2 x 4 = 8\n4 x 8 = 32\n8 x 32 = 256.\nஎனவே அடுத்து வரும் எண் 256 ஆகும்.",
+        "en": "Correct. Pattern: Each term is the product of the previous two terms:\n1x2=2, 2x2=4, 2x4=8, 4x8=32, 8x32=256.\nHence, the next number is 256."
+      },
+      "B": {
+        "ta": "16 x 32 = 512.",
+        "en": "16 x 32 = 512."
+      },
+      "C": {
+        "ta": "8 x 16 = 128, 8x32=256.",
+        "en": "8 x 16 = 128, 8x32=256."
+      },
+      "D": {
+        "ta": "8 x 8 = 64, 8x32=256.",
+        "en": "8 x 8 = 64, 8x32=256."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முந்தைய இரு எண்களின் பெருக்கல் விதி.",
+      "en": "Rule: Next term = product of previous two terms."
+    },
+    "revision_fact": {
+      "ta": "பெருக்கல் பிபோனாசி வகை தொடர் (Product Fibonacci-type Series).",
+      "en": "Product-of-previous-two-terms series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_025",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 128, 64, 32, 16, 8, ?",
+      "en": "Find the next number in the series: 128, 64, 32, 16, 8, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 128, 64, 32, 16, 8, ?",
+    "question_en": "Find the next number in the series: 128, 64, 32, 16, 8, ?",
+    "options": [
+      "2",
+      "0",
+      "6",
+      "4"
+    ],
+    "options_ta": [
+      "2",
+      "0",
+      "6",
+      "4"
+    ],
+    "options_en": [
+      "2",
+      "0",
+      "6",
+      "4"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் வகுக்கப்படுகிறது (/2):\n128 / 2 = 64\n64 / 2 = 32\n32 / 2 = 16\n16 / 2 = 8\n8 / 2 = 4.\nஎனவே அடுத்து வரும் எண் 4 ஆகும்.",
+      "en": "Pattern: Divide each term by 2 (/2):\n128/2=64, 64/2=32, 32/2=16, 16/2=8, 8/2=4.\nHence, the next number is 4."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் வகுக்கப்படுகிறது (/2):\n128 / 2 = 64\n64 / 2 = 32\n32 / 2 = 16\n16 / 2 = 8\n8 / 2 = 4.\nஎனவே அடுத்து வரும் எண் 4 ஆகும்.",
+    "explanation_en": "Pattern: Divide each term by 2 (/2):\n128/2=64, 64/2=32, 32/2=16, 16/2=8, 8/2=4.\nHence, the next number is 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "8 / 4 = 2, 8/2=4.",
+        "en": "8 / 4 = 2, 8/2=4."
+      },
+      "B": {
+        "ta": "8 - 8 = 0, 8/2=4.",
+        "en": "8 - 8 = 0, 8/2=4."
+      },
+      "C": {
+        "ta": "8 - 2 = 6, 8/2=4.",
+        "en": "8 - 2 = 6, 8/2=4."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு எண்ணும் 2-ஆல் வகுக்கப்படுகிறது (/2):\n128 / 2 = 64\n64 / 2 = 32\n32 / 2 = 16\n16 / 2 = 8\n8 / 2 = 4.\nஎனவே அடுத்து வரும் எண் 4 ஆகும்.",
+        "en": "Correct. Pattern: Divide each term by 2 (/2):\n128/2=64, 64/2=32, 32/2=16, 16/2=8, 8/2=4.\nHence, the next number is 4."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பாதியாக்கும் தொடர் (/2 வகுத்தல்).",
+      "en": "Halving progression (divide by 2)."
+    },
+    "revision_fact": {
+      "ta": "வகுத்தல் தொடர் (Geometric Division Series).",
+      "en": "Geometric division series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_026",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Squares",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 3, 8, 15, 24, ?",
+      "en": "Find the next number in the series: 0, 3, 8, 15, 24, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 3, 8, 15, 24, ?",
+    "question_en": "Find the next number in the series: 0, 3, 8, 15, 24, ?",
+    "options": [
+      "32",
+      "35",
+      "36",
+      "48"
+    ],
+    "options_ta": [
+      "32",
+      "35",
+      "36",
+      "48"
+    ],
+    "options_en": [
+      "32",
+      "35",
+      "36",
+      "48"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: n^2 - 1:\n1^2 - 1 = 0\n2^2 - 1 = 3\n3^2 - 1 = 8\n4^2 - 1 = 15\n5^2 - 1 = 24\n6^2 - 1 = 35.\nஎனவே அடுத்து வரும் எண் 35 ஆகும்.",
+      "en": "Pattern: n^2 - 1:\n1^2-1=0, 2^2-1=3, 3^2-1=8, 4^2-1=15, 5^2-1=24, 6^2-1=35.\nHence, the next number is 35."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: n^2 - 1:\n1^2 - 1 = 0\n2^2 - 1 = 3\n3^2 - 1 = 8\n4^2 - 1 = 15\n5^2 - 1 = 24\n6^2 - 1 = 35.\nஎனவே அடுத்து வரும் எண் 35 ஆகும்.",
+    "explanation_en": "Pattern: n^2 - 1:\n1^2-1=0, 2^2-1=3, 3^2-1=8, 4^2-1=15, 5^2-1=24, 6^2-1=35.\nHence, the next number is 35.",
+    "why_not_others": {
+      "A": {
+        "ta": "6^2 - 4 = 32.",
+        "en": "6^2 - 4 = 32."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: n^2 - 1:\n1^2 - 1 = 0\n2^2 - 1 = 3\n3^2 - 1 = 8\n4^2 - 1 = 15\n5^2 - 1 = 24\n6^2 - 1 = 35.\nஎனவே அடுத்து வரும் எண் 35 ஆகும்.",
+        "en": "Correct. Pattern: n^2 - 1:\n1^2-1=0, 2^2-1=3, 3^2-1=8, 4^2-1=15, 5^2-1=24, 6^2-1=35.\nHence, the next number is 35."
+      },
+      "C": {
+        "ta": "6^2 = 36.",
+        "en": "6^2 = 36."
+      },
+      "D": {
+        "ta": "7^2 - 1 = 48.",
+        "en": "7^2 - 1 = 48."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^2 - 1 அமைப்பைப் பயன்படுத்தவும்.",
+      "en": "Apply n^2 - 1 formula."
+    },
+    "revision_fact": {
+      "ta": "வர்க்கக் கழித்தல் தொடர் (n^2 - 1 Series).",
+      "en": "n^2 - 1 series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_027",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Prime Progressions",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 17, 28, ?",
+      "en": "Find the next number in the series: 2, 5, 10, 17, 28, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 17, 28, ?",
+    "question_en": "Find the next number in the series: 2, 5, 10, 17, 28, ?",
+    "options": [
+      "43",
+      "45",
+      "41",
+      "39"
+    ],
+    "options_ta": [
+      "43",
+      "45",
+      "41",
+      "39"
+    ],
+    "options_en": [
+      "43",
+      "45",
+      "41",
+      "39"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "வித்தியασங்கள் பகா எண்களாக உள்ளன:\n5-2 = 3\n10-5 = 5\n17-10 = 7\n28-17 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 28 + 13 = 41.",
+      "en": "Differences are consecutive prime numbers:\n5-2=3, 10-5=5, 17-10=7, 28-17=11.\nNext prime difference = 13.\nNext term = 28 + 13 = 41."
+    },
+    "explanation_ta": "வித்தியασங்கள் பகா எண்களாக உள்ளன:\n5-2 = 3\n10-5 = 5\n17-10 = 7\n28-17 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 28 + 13 = 41.",
+    "explanation_en": "Differences are consecutive prime numbers:\n5-2=3, 10-5=5, 17-10=7, 28-17=11.\nNext prime difference = 13.\nNext term = 28 + 13 = 41.",
+    "why_not_others": {
+      "A": {
+        "ta": "28 + 15 = 43.",
+        "en": "28 + 15 = 43."
+      },
+      "B": {
+        "ta": "28 + 17 = 45.",
+        "en": "28 + 17 = 45."
+      },
+      "C": {
+        "ta": "சரி. வித்தியασங்கள் பகா எண்களாக உள்ளன:\n5-2 = 3\n10-5 = 5\n17-10 = 7\n28-17 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 28 + 13 = 41.",
+        "en": "Correct. Differences are consecutive prime numbers:\n5-2=3, 10-5=5, 17-10=7, 28-17=11.\nNext prime difference = 13.\nNext term = 28 + 13 = 41."
+      },
+      "D": {
+        "ta": "28 + 11 = 39.",
+        "en": "28 + 11 = 39."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியாசங்கள் பகா எண்களாக (+3, +5, +7, +11, +13) அதிகரிக்கின்றன.",
+      "en": "First differences follow the prime sequence: +3, +5, +7, +11, +13."
+    },
+    "revision_fact": {
+      "ta": "பகா வித்தியாசத் தொடர் (Prime Difference Series).",
+      "en": "Prime difference sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_028",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Alternating Series",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 13, 26, 29, ?",
+      "en": "Find the next number in the series: 2, 5, 10, 13, 26, 29, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 5, 10, 13, 26, 29, ?",
+    "question_en": "Find the next number in the series: 2, 5, 10, 13, 26, 29, ?",
+    "options": [
+      "58",
+      "32",
+      "62",
+      "52"
+    ],
+    "options_ta": [
+      "58",
+      "32",
+      "62",
+      "52"
+    ],
+    "options_en": [
+      "58",
+      "32",
+      "62",
+      "52"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: மாறி மாறி +3 மற்றும் x2:\n2 (+3) ⟹ 5 (x2) ⟹ 10 (+3) ⟹ 13 (x2) ⟹ 26 (+3) ⟹ 29 (x2) ⟹ 58.\nஎனவே அடுத்து வரும் எண் 58 ஆகும்.",
+      "en": "Pattern: Alternating +3 and x2 operations:\n2 (+3)-> 5 (x2)-> 10 (+3)-> 13 (x2)-> 26 (+3)-> 29 (x2)-> 58.\nHence, the next number is 58."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: மாறி மாறி +3 மற்றும் x2:\n2 (+3) ⟹ 5 (x2) ⟹ 10 (+3) ⟹ 13 (x2) ⟹ 26 (+3) ⟹ 29 (x2) ⟹ 58.\nஎனவே அடுத்து வரும் எண் 58 ஆகும்.",
+    "explanation_en": "Pattern: Alternating +3 and x2 operations:\n2 (+3)-> 5 (x2)-> 10 (+3)-> 13 (x2)-> 26 (+3)-> 29 (x2)-> 58.\nHence, the next number is 58.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: மாறி மாறி +3 மற்றும் x2:\n2 (+3) ⟹ 5 (x2) ⟹ 10 (+3) ⟹ 13 (x2) ⟹ 26 (+3) ⟹ 29 (x2) ⟹ 58.\nஎனவே அடுத்து வரும் எண் 58 ஆகும்.",
+        "en": "Correct. Pattern: Alternating +3 and x2 operations:\n2 (+3)-> 5 (x2)-> 10 (+3)-> 13 (x2)-> 26 (+3)-> 29 (x2)-> 58.\nHence, the next number is 58."
+      },
+      "B": {
+        "ta": "29 + 3 = 32 (அடுத்த சுற்றில் வர வேண்டியது).",
+        "en": "29 + 3 = 32 (அடுத்த சுற்றில் வர வேண்டியது)."
+      },
+      "C": {
+        "ta": "29 x 2 + 4 = 62.",
+        "en": "29 x 2 + 4 = 62."
+      },
+      "D": {
+        "ta": "26 x 2 = 52.",
+        "en": "26 x 2 = 52."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மாறி வரும் +3 மற்றும் x2 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply alternating operations (+3, x2, +3, x2...)."
+    },
+    "revision_fact": {
+      "ta": "கூட்டல் மற்றும் பெருக்கல் கலப்புத் தொடர்.",
+      "en": "Alternating addition and multiplication series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_029",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 9, 28, 65, 126, ?",
+      "en": "Find the next number in the series: 2, 9, 28, 65, 126, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 9, 28, 65, 126, ?",
+    "question_en": "Find the next number in the series: 2, 9, 28, 65, 126, ?",
+    "options": [
+      "216",
+      "225",
+      "215",
+      "217"
+    ],
+    "options_ta": [
+      "216",
+      "225",
+      "215",
+      "217"
+    ],
+    "options_en": [
+      "216",
+      "225",
+      "215",
+      "217"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: n^3 + 1:\n1^3 + 1 = 2\n2^3 + 1 = 9\n3^3 + 1 = 28\n4^3 + 1 = 65\n5^3 + 1 = 126\n6^3 + 1 = 217.\nஎனவே அடுத்து வரும் எண் 217 ஆகும்.",
+      "en": "Pattern: Cube plus 1 (n^3 + 1):\n1^3+1=2, 2^3+1=9, 3^3+1=28, 4^3+1=65, 5^3+1=126, 6^3+1=217.\nHence, the next number is 217."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: n^3 + 1:\n1^3 + 1 = 2\n2^3 + 1 = 9\n3^3 + 1 = 28\n4^3 + 1 = 65\n5^3 + 1 = 126\n6^3 + 1 = 217.\nஎனவே அடுத்து வரும் எண் 217 ஆகும்.",
+    "explanation_en": "Pattern: Cube plus 1 (n^3 + 1):\n1^3+1=2, 2^3+1=9, 3^3+1=28, 4^3+1=65, 5^3+1=126, 6^3+1=217.\nHence, the next number is 217.",
+    "why_not_others": {
+      "A": {
+        "ta": "6^3 = 216.",
+        "en": "6^3 = 216."
+      },
+      "B": {
+        "ta": "15^2 = 225.",
+        "en": "15^2 = 225."
+      },
+      "C": {
+        "ta": "6^3 - 1 = 215.",
+        "en": "6^3 - 1 = 215."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: n^3 + 1:\n1^3 + 1 = 2\n2^3 + 1 = 9\n3^3 + 1 = 28\n4^3 + 1 = 65\n5^3 + 1 = 126\n6^3 + 1 = 217.\nஎனவே அடுத்து வரும் எண் 217 ஆகும்.",
+        "en": "Correct. Pattern: Cube plus 1 (n^3 + 1):\n1^3+1=2, 2^3+1=9, 3^3+1=28, 4^3+1=65, 5^3+1=126, 6^3+1=217.\nHence, the next number is 217."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^3 + 1 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply n^3 + 1 formula."
+    },
+    "revision_fact": {
+      "ta": "கணக் கூடுதல் தொடர் (n^3 + 1 Series).",
+      "en": "n^3 + 1 series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_030",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Wrong Number Identification",
+    "question": {
+      "ta": "பின்வரும் பிபோனாசி தொடரில் தவறான எண்ணைக் கண்டறிக: 1, 1, 2, 3, 6, 8, 13",
+      "en": "Find the wrong number in the following Fibonacci series: 1, 1, 2, 3, 6, 8, 13"
+    },
+    "question_ta": "பின்வரும் பிபோனாசி தொடரில் தவறான எண்ணைக் கண்டறிக: 1, 1, 2, 3, 6, 8, 13",
+    "question_en": "Find the wrong number in the following Fibonacci series: 1, 1, 2, 3, 6, 8, 13",
+    "options": [
+      "8",
+      "2",
+      "3",
+      "6"
+    ],
+    "options_ta": [
+      "8",
+      "2",
+      "3",
+      "6"
+    ],
+    "options_en": [
+      "8",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "பிபோனாசி தொடர்: 1, 1, 2, 3, 5, 8, 13.\n3 + 2 = 5 இருக்க வேண்டும். ஆனால் தொடரில் 6 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 6 ஆகும்.",
+      "en": "Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13.\n2 + 3 = 5 (instead of 5, the number 6 is given). Hence, 6 is the wrong number."
+    },
+    "explanation_ta": "பிபோனாசி தொடர்: 1, 1, 2, 3, 5, 8, 13.\n3 + 2 = 5 இருக்க வேண்டும். ஆனால் தொடரில் 6 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 6 ஆகும்.",
+    "explanation_en": "Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13.\n2 + 3 = 5 (instead of 5, the number 6 is given). Hence, 6 is the wrong number.",
+    "why_not_others": {
+      "A": {
+        "ta": "5+3=8 (சரி).",
+        "en": "5+3=8 (சரி)."
+      },
+      "B": {
+        "ta": "1+1=2 (சரி).",
+        "en": "1+1=2 (சரி)."
+      },
+      "C": {
+        "ta": "1+2=3 (சரி).",
+        "en": "1+2=3 (சரி)."
+      },
+      "D": {
+        "ta": "சரி. பிபோனாசி தொடர்: 1, 1, 2, 3, 5, 8, 13.\n3 + 2 = 5 இருக்க வேண்டும். ஆனால் தொடரில் 6 கொடுக்கப்பட்டுள்ளது. எனவே தவறான எண் 6 ஆகும்.",
+        "en": "Correct. Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13.\n2 + 3 = 5 (instead of 5, the number 6 is given). Hence, 6 is the wrong number."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முந்தைய இரு எண்களின் கூட்டுத்தொகையைச் சரிபார்க்கவும்.",
+      "en": "Verify sum of previous two terms to catch 6 instead of 5."
+    },
+    "revision_fact": {
+      "ta": "பிபோனாசி தவறான எண் ஆய்வு.",
+      "en": "Fibonacci wrong term audit."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_031",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 3, 4, 6, 10, 18, ?",
+      "en": "Find the next number in the series: 3, 4, 6, 10, 18, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 3, 4, 6, 10, 18, ?",
+    "question_en": "Find the next number in the series: 3, 4, 6, 10, 18, ?",
+    "options": [
+      "32",
+      "26",
+      "34",
+      "36"
+    ],
+    "options_ta": [
+      "32",
+      "26",
+      "34",
+      "36"
+    ],
+    "options_en": [
+      "32",
+      "26",
+      "34",
+      "36"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "வித்தியασங்கள் (First differences):\n4-3 = 1 (2^0)\n6-4 = 2 (2^1)\n10-6 = 4 (2^2)\n18-10 = 8 (2^3)\nஅடுத்த வித்தியாசம் = 2^4 = 16.\nஅடுத்து வரும் எண் = 18 + 16 = 34.",
+      "en": "First differences are powers of 2:\n4-3=1 (2^0), 6-4=2 (2^1), 10-6=4 (2^2), 18-10=8 (2^3).\nNext difference = 2^4 = 16.\nNext term = 18 + 16 = 34."
+    },
+    "explanation_ta": "வித்தியασங்கள் (First differences):\n4-3 = 1 (2^0)\n6-4 = 2 (2^1)\n10-6 = 4 (2^2)\n18-10 = 8 (2^3)\nஅடுத்த வித்தியாசம் = 2^4 = 16.\nஅடுத்து வரும் எண் = 18 + 16 = 34.",
+    "explanation_en": "First differences are powers of 2:\n4-3=1 (2^0), 6-4=2 (2^1), 10-6=4 (2^2), 18-10=8 (2^3).\nNext difference = 2^4 = 16.\nNext term = 18 + 16 = 34.",
+    "why_not_others": {
+      "A": {
+        "ta": "18 + 14 = 32.",
+        "en": "18 + 14 = 32."
+      },
+      "B": {
+        "ta": "18 + 8 = 26.",
+        "en": "18 + 8 = 26."
+      },
+      "C": {
+        "ta": "சரி. வித்தியασங்கள் (First differences):\n4-3 = 1 (2^0)\n6-4 = 2 (2^1)\n10-6 = 4 (2^2)\n18-10 = 8 (2^3)\nஅடுத்த வித்தியாசம் = 2^4 = 16.\nஅடுத்து வரும் எண் = 18 + 16 = 34.",
+        "en": "Correct. First differences are powers of 2:\n4-3=1 (2^0), 6-4=2 (2^1), 10-6=4 (2^2), 18-10=8 (2^3).\nNext difference = 2^4 = 16.\nNext term = 18 + 16 = 34."
+      },
+      "D": {
+        "ta": "18 + 18 = 36.",
+        "en": "18 + 18 = 36."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியாசம் 2-ன் அடுக்குகளாக இரட்டிப்பாகிறது (1, 2, 4, 8, 16).",
+      "en": "Differences double each time (powers of 2)."
+    },
+    "revision_fact": {
+      "ta": "2-ன் அடுக்கு வித்தியாசத் தொடர்.",
+      "en": "Exponential difference progression."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_032",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 10, 22, 46, ?",
+      "en": "Find the next number in the series: 1, 4, 10, 22, 46, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 4, 10, 22, 46, ?",
+    "question_en": "Find the next number in the series: 1, 4, 10, 22, 46, ?",
+    "options": [
+      "92",
+      "90",
+      "94",
+      "96"
+    ],
+    "options_ta": [
+      "92",
+      "90",
+      "94",
+      "96"
+    ],
+    "options_en": [
+      "92",
+      "90",
+      "94",
+      "96"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 2:\n1 x 2 + 2 = 4\n4 x 2 + 2 = 10\n10 x 2 + 2 = 22\n22 x 2 + 2 = 46\n46 x 2 + 2 = 94.\nஎனவே அடுத்து வரும் எண் 94 ஆகும்.",
+      "en": "Pattern: Multiply by 2 and add 2 (x2 + 2):\n1x2+2=4, 4x2+2=10, 10x2+2=22, 22x2+2=46, 46x2+2=94.\nHence, the next number is 94."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 2:\n1 x 2 + 2 = 4\n4 x 2 + 2 = 10\n10 x 2 + 2 = 22\n22 x 2 + 2 = 46\n46 x 2 + 2 = 94.\nஎனவே அடுத்து வரும் எண் 94 ஆகும்.",
+    "explanation_en": "Pattern: Multiply by 2 and add 2 (x2 + 2):\n1x2+2=4, 4x2+2=10, 10x2+2=22, 22x2+2=46, 46x2+2=94.\nHence, the next number is 94.",
+    "why_not_others": {
+      "A": {
+        "ta": "46 x 2 = 92.",
+        "en": "46 x 2 = 92."
+      },
+      "B": {
+        "ta": "46 x 2 - 2 = 90.",
+        "en": "46 x 2 - 2 = 90."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 2:\n1 x 2 + 2 = 4\n4 x 2 + 2 = 10\n10 x 2 + 2 = 22\n22 x 2 + 2 = 46\n46 x 2 + 2 = 94.\nஎனவே அடுத்து வரும் எண் 94 ஆகும்.",
+        "en": "Correct. Pattern: Multiply by 2 and add 2 (x2 + 2):\n1x2+2=4, 4x2+2=10, 10x2+2=22, 22x2+2=46, 46x2+2=94.\nHence, the next number is 94."
+      },
+      "D": {
+        "ta": "46 x 2 + 4 = 96.",
+        "en": "46 x 2 + 4 = 96."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x2 + 2 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply (Term x 2 + 2) rule."
+    },
+    "revision_fact": {
+      "ta": "x2 + 2 கலப்புத் தொடர்.",
+      "en": "x2 + 2 combined series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_033",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 3, 6, 10, 15, 21, ?",
+      "en": "Find the next number in the series: 1, 3, 6, 10, 15, 21, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 3, 6, 10, 15, 21, ?",
+    "question_en": "Find the next number in the series: 1, 3, 6, 10, 15, 21, ?",
+    "options": [
+      "28",
+      "27",
+      "25",
+      "30"
+    ],
+    "options_ta": [
+      "28",
+      "27",
+      "25",
+      "30"
+    ],
+    "options_en": [
+      "28",
+      "27",
+      "25",
+      "30"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: முக்கோண எண்கள் (Triangular numbers n(n+1)/2):\nவித்தியασங்கள் +2, +3, +4, +5, +6.\nஅடுத்த வித்தியாசம் = +7.\n21 + 7 = 28.\nஎனவே அடுத்து வரும் எண் 28 ஆகும்.",
+      "en": "Pattern: Triangular numbers [n(n+1)/2] with differences +2, +3, +4, +5, +6.\nNext difference = +7.\n21 + 7 = 28.\nHence, the next number is 28."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: முக்கோண எண்கள் (Triangular numbers n(n+1)/2):\nவித்தியασங்கள் +2, +3, +4, +5, +6.\nஅடுத்த வித்தியாசம் = +7.\n21 + 7 = 28.\nஎனவே அடுத்து வரும் எண் 28 ஆகும்.",
+    "explanation_en": "Pattern: Triangular numbers [n(n+1)/2] with differences +2, +3, +4, +5, +6.\nNext difference = +7.\n21 + 7 = 28.\nHence, the next number is 28.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: முக்கோண எண்கள் (Triangular numbers n(n+1)/2):\nவித்தியασங்கள் +2, +3, +4, +5, +6.\nஅடுத்த வித்தியாசம் = +7.\n21 + 7 = 28.\nஎனவே அடுத்து வரும் எண் 28 ஆகும்.",
+        "en": "Correct. Pattern: Triangular numbers [n(n+1)/2] with differences +2, +3, +4, +5, +6.\nNext difference = +7.\n21 + 7 = 28.\nHence, the next number is 28."
+      },
+      "B": {
+        "ta": "21 + 6 = 27.",
+        "en": "21 + 6 = 27."
+      },
+      "C": {
+        "ta": "21 + 4 = 25.",
+        "en": "21 + 4 = 25."
+      },
+      "D": {
+        "ta": "21 + 9 = 30.",
+        "en": "21 + 9 = 30."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முக்கோண எண்கள் தொடர் (1, 3, 6, 10, 15, 21, 28...).",
+      "en": "Sequence of triangular numbers n(n+1)/2."
+    },
+    "revision_fact": {
+      "ta": "முக்கோண எண் தொடர் (Triangular Number Series).",
+      "en": "Triangular numbers sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_034",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 9, 19, 39, 79, ?",
+      "en": "Find the next number in the series: 4, 9, 19, 39, 79, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 9, 19, 39, 79, ?",
+    "question_en": "Find the next number in the series: 4, 9, 19, 39, 79, ?",
+    "options": [
+      "159",
+      "157",
+      "160",
+      "158"
+    ],
+    "options_ta": [
+      "159",
+      "157",
+      "160",
+      "158"
+    ],
+    "options_en": [
+      "159",
+      "157",
+      "160",
+      "158"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n4 x 2 + 1 = 9\n9 x 2 + 1 = 19\n19 x 2 + 1 = 39\n39 x 2 + 1 = 79\n79 x 2 + 1 = 159.\nஎனவே அடுத்து வரும் எண் 159 ஆகும்.",
+      "en": "Pattern: Multiply by 2 and add 1 (x2 + 1):\n4x2+1=9, 9x2+1=19, 19x2+1=39, 39x2+1=79, 79x2+1=159.\nHence, the next number is 159."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n4 x 2 + 1 = 9\n9 x 2 + 1 = 19\n19 x 2 + 1 = 39\n39 x 2 + 1 = 79\n79 x 2 + 1 = 159.\nஎனவே அடுத்து வரும் எண் 159 ஆகும்.",
+    "explanation_en": "Pattern: Multiply by 2 and add 1 (x2 + 1):\n4x2+1=9, 9x2+1=19, 19x2+1=39, 39x2+1=79, 79x2+1=159.\nHence, the next number is 159.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 1:\n4 x 2 + 1 = 9\n9 x 2 + 1 = 19\n19 x 2 + 1 = 39\n39 x 2 + 1 = 79\n79 x 2 + 1 = 159.\nஎனவே அடுத்து வரும் எண் 159 ஆகும்.",
+        "en": "Correct. Pattern: Multiply by 2 and add 1 (x2 + 1):\n4x2+1=9, 9x2+1=19, 19x2+1=39, 39x2+1=79, 79x2+1=159.\nHence, the next number is 159."
+      },
+      "B": {
+        "ta": "79 x 2 - 1 = 157.",
+        "en": "79 x 2 - 1 = 157."
+      },
+      "C": {
+        "ta": "79 x 2 + 2 = 160.",
+        "en": "79 x 2 + 2 = 160."
+      },
+      "D": {
+        "ta": "79 x 2 = 158.",
+        "en": "79 x 2 = 158."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x2 + 1 தொடர்பைப் பயன்படுத்தவும்.",
+      "en": "Apply x2 + 1 transformation."
+    },
+    "revision_fact": {
+      "ta": "x2 + 1 தொடர் விடை கணிப்பு.",
+      "en": "x2 + 1 sequence evaluation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_035",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Medium",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 5, 8, 14, 23, 35, ?",
+      "en": "Find the next number in the series: 5, 8, 14, 23, 35, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 5, 8, 14, 23, 35, ?",
+    "question_en": "Find the next number in the series: 5, 8, 14, 23, 35, ?",
+    "options": [
+      "50",
+      "52",
+      "49",
+      "47"
+    ],
+    "options_ta": [
+      "50",
+      "52",
+      "49",
+      "47"
+    ],
+    "options_en": [
+      "50",
+      "52",
+      "49",
+      "47"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "வித்தியασங்கள் 3-ன் மடங்குகளாக உள்ளன:\n8-5 = 3\n14-8 = 6\n23-14 = 9\n35-23 = 12\nஅடுத்த வித்தியாசம் = 15.\nஅடுத்து வரும் எண் = 35 + 15 = 50.",
+      "en": "Differences are multiples of 3:\n8-5=3, 14-8=6, 23-14=9, 35-23=12.\nNext difference = 15.\nNext term = 35 + 15 = 50."
+    },
+    "explanation_ta": "வித்தியασங்கள் 3-ன் மடங்குகளாக உள்ளன:\n8-5 = 3\n14-8 = 6\n23-14 = 9\n35-23 = 12\nஅடுத்த வித்தியாசம் = 15.\nஅடுத்து வரும் எண் = 35 + 15 = 50.",
+    "explanation_en": "Differences are multiples of 3:\n8-5=3, 14-8=6, 23-14=9, 35-23=12.\nNext difference = 15.\nNext term = 35 + 15 = 50.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. வித்தியασங்கள் 3-ன் மடங்குகளாக உள்ளன:\n8-5 = 3\n14-8 = 6\n23-14 = 9\n35-23 = 12\nஅடுத்த வித்தியாசம் = 15.\nஅடுத்து வரும் எண் = 35 + 15 = 50.",
+        "en": "Correct. Differences are multiples of 3:\n8-5=3, 14-8=6, 23-14=9, 35-23=12.\nNext difference = 15.\nNext term = 35 + 15 = 50."
+      },
+      "B": {
+        "ta": "35 + 17 = 52.",
+        "en": "35 + 17 = 52."
+      },
+      "C": {
+        "ta": "35 + 14 = 49.",
+        "en": "35 + 14 = 49."
+      },
+      "D": {
+        "ta": "35 + 12 = 47.",
+        "en": "35 + 12 = 47."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியασங்கள் 3, 6, 9, 12, 15 என அதிகரிக்கின்றன.",
+      "en": "First differences follow 3-times table: 3, 6, 9, 12, 15."
+    },
+    "revision_fact": {
+      "ta": "3-ன் மடங்கு வித்தியாசத் தொடர்.",
+      "en": "Multiple-of-3 difference series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_036",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 3, 11, 38, 102, ?",
+      "en": "Find the next number in the series: 2, 3, 11, 38, 102, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 3, 11, 38, 102, ?",
+    "question_en": "Find the next number in the series: 2, 3, 11, 38, 102, ?",
+    "options": [
+      "225",
+      "227",
+      "202",
+      "230"
+    ],
+    "options_ta": [
+      "225",
+      "227",
+      "202",
+      "230"
+    ],
+    "options_en": [
+      "225",
+      "227",
+      "202",
+      "230"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "வித்தியασங்கள் கணங்களாக (Cubes) உள்ளன:\n3-2 = 1 (1^3)\n11-3 = 8 (2^3)\n38-11 = 27 (3^3)\n102-38 = 64 (4^3)\nஅடுத்த வித்தியாசம் = 5^3 = 125.\nஅடுத்து வரும் எண் = 102 + 125 = 227.",
+      "en": "First differences are cubes of natural numbers:\n3-2 = 1 (1^3), 11-3 = 8 (2^3), 38-11 = 27 (3^3), 102-38 = 64 (4^3).\nNext difference = 5^3 = 125.\nNext term = 102 + 125 = 227."
+    },
+    "explanation_ta": "வித்தியασங்கள் கணங்களாக (Cubes) உள்ளன:\n3-2 = 1 (1^3)\n11-3 = 8 (2^3)\n38-11 = 27 (3^3)\n102-38 = 64 (4^3)\nஅடுத்த வித்தியாசம் = 5^3 = 125.\nஅடுத்து வரும் எண் = 102 + 125 = 227.",
+    "explanation_en": "First differences are cubes of natural numbers:\n3-2 = 1 (1^3), 11-3 = 8 (2^3), 38-11 = 27 (3^3), 102-38 = 64 (4^3).\nNext difference = 5^3 = 125.\nNext term = 102 + 125 = 227.",
+    "why_not_others": {
+      "A": {
+        "ta": "102 + 123 = 225.",
+        "en": "102 + 123 = 225."
+      },
+      "B": {
+        "ta": "சரி. வித்தியασங்கள் கணங்களாக (Cubes) உள்ளன:\n3-2 = 1 (1^3)\n11-3 = 8 (2^3)\n38-11 = 27 (3^3)\n102-38 = 64 (4^3)\nஅடுத்த வித்தியாசம் = 5^3 = 125.\nஅடுத்து வரும் எண் = 102 + 125 = 227.",
+        "en": "Correct. First differences are cubes of natural numbers:\n3-2 = 1 (1^3), 11-3 = 8 (2^3), 38-11 = 27 (3^3), 102-38 = 64 (4^3).\nNext difference = 5^3 = 125.\nNext term = 102 + 125 = 227."
+      },
+      "C": {
+        "ta": "102 + 100 = 202.",
+        "en": "102 + 100 = 202."
+      },
+      "D": {
+        "ta": "102 + 128 = 230.",
+        "en": "102 + 128 = 230."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியασங்கள் 1^3, 2^3, 3^3, 4^3, 5^3 (125) என கணங்களாக உள்ளன.",
+      "en": "First differences follow n^3 progression (1, 8, 27, 64, 125)."
+    },
+    "revision_fact": {
+      "ta": "கண வித்தியாசத் தொடர் (Cubic Difference Series).",
+      "en": "Cubic difference sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_037",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Alternating Series",
+    "question": {
+      "ta": "எண் தொடரில் 10-வது எண்ணைக் காண்க: 1, 1, 4, 8, 9, 27, 16, 64, 25, ?",
+      "en": "Find the 10th term in the series: 1, 1, 4, 8, 9, 27, 16, 64, 25, ?"
+    },
+    "question_ta": "எண் தொடரில் 10-வது எண்ணைக் காண்க: 1, 1, 4, 8, 9, 27, 16, 64, 25, ?",
+    "question_en": "Find the 10th term in the series: 1, 1, 4, 8, 9, 27, 16, 64, 25, ?",
+    "options": [
+      "100",
+      "216",
+      "121",
+      "125"
+    ],
+    "options_ta": [
+      "100",
+      "216",
+      "121",
+      "125"
+    ],
+    "options_en": [
+      "100",
+      "216",
+      "121",
+      "125"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "இத்தொடர் இரு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nஒற்றை இடங்கள் (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nஇரட்டை இடங்கள் (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 5^3 = 125.",
+      "en": "The sequence alternates between squares and cubes:\nOdd positions (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nEven positions (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10th term is an even-positioned element = 5^3 = 125."
+    },
+    "explanation_ta": "இத்தொடர் இரு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nஒற்றை இடங்கள் (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nஇரட்டை இடங்கள் (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 5^3 = 125.",
+    "explanation_en": "The sequence alternates between squares and cubes:\nOdd positions (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nEven positions (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10th term is an even-positioned element = 5^3 = 125.",
+    "why_not_others": {
+      "A": {
+        "ta": "100 = 10^2.",
+        "en": "100 = 10^2."
+      },
+      "B": {
+        "ta": "6^3 = 216.",
+        "en": "6^3 = 216."
+      },
+      "C": {
+        "ta": "121 = 11^2.",
+        "en": "121 = 11^2."
+      },
+      "D": {
+        "ta": "சரி. இத்தொடர் இரு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nஒற்றை இடங்கள் (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nஇரட்டை இடங்கள் (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 5^3 = 125.",
+        "en": "Correct. The sequence alternates between squares and cubes:\nOdd positions (n^2): 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25...\nEven positions (n^3): 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125...\n10th term is an even-positioned element = 5^3 = 125."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரட்டை இடங்கள் n^3 அமைப்பைப் பின்பற்றுகின்றன (1, 8, 27, 64, 125).",
+      "en": "Even positions follow n^3 pattern: 1^3, 2^3, 3^3, 4^3, 5^3."
+    },
+    "revision_fact": {
+      "ta": "வர்க்க-கண மாற்றுத் தொடர் (Interleaved Square and Cube Series).",
+      "en": "Interleaved squares and cubes sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_038",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Fibonacci",
+    "question": {
+      "ta": "ட்ரிபோனாசி தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 1, 2, 4, 7, 13, 24, ?",
+      "en": "Find the next number in the Tribonacci series: 1, 1, 2, 4, 7, 13, 24, ?"
+    },
+    "question_ta": "ட்ரிபோனாசி தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 1, 2, 4, 7, 13, 24, ?",
+    "question_en": "Find the next number in the Tribonacci series: 1, 1, 2, 4, 7, 13, 24, ?",
+    "options": [
+      "44",
+      "41",
+      "48",
+      "37"
+    ],
+    "options_ta": [
+      "44",
+      "41",
+      "48",
+      "37"
+    ],
+    "options_en": [
+      "44",
+      "41",
+      "48",
+      "37"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய 3 உறுப்புகளின் கூடுதல் ஆகும்:\n1 + 1 + 2 = 4\n1 + 2 + 4 = 7\n2 + 4 + 7 = 13\n4 + 7 + 13 = 24\n7 + 13 + 24 = 44.\nஎனவே அடுத்து வரும் எண் 44 ஆகும்.",
+      "en": "Pattern: Each term is the sum of the previous 3 terms (Tribonacci):\n1+1+2=4, 1+2+4=7, 2+4+7=13, 4+7+13=24, 7+13+24=44.\nHence, the next number is 44."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய 3 உறுப்புகளின் கூடுதல் ஆகும்:\n1 + 1 + 2 = 4\n1 + 2 + 4 = 7\n2 + 4 + 7 = 13\n4 + 7 + 13 = 24\n7 + 13 + 24 = 44.\nஎனவே அடுத்து வரும் எண் 44 ஆகும்.",
+    "explanation_en": "Pattern: Each term is the sum of the previous 3 terms (Tribonacci):\n1+1+2=4, 1+2+4=7, 2+4+7=13, 4+7+13=24, 7+13+24=44.\nHence, the next number is 44.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: ஒவ்வொரு உறுப்பும் முந்தைய 3 உறுப்புகளின் கூடுதல் ஆகும்:\n1 + 1 + 2 = 4\n1 + 2 + 4 = 7\n2 + 4 + 7 = 13\n4 + 7 + 13 = 24\n7 + 13 + 24 = 44.\nஎனவே அடுத்து வரும் எண் 44 ஆகும்.",
+        "en": "Correct. Pattern: Each term is the sum of the previous 3 terms (Tribonacci):\n1+1+2=4, 1+2+4=7, 2+4+7=13, 4+7+13=24, 7+13+24=44.\nHence, the next number is 44."
+      },
+      "B": {
+        "ta": "7 + 10 + 24 = 41.",
+        "en": "7 + 10 + 24 = 41."
+      },
+      "C": {
+        "ta": "24 x 2 = 48.",
+        "en": "24 x 2 = 48."
+      },
+      "D": {
+        "ta": "13 + 24 = 37 (இரு உறுப்புகள் மட்டும்).",
+        "en": "13 + 24 = 37 (இரு உறுப்புகள் மட்டும்)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ட்ரிபோனாசி விதி: முந்தைய 3 எண்களின் கூடுதல்.",
+      "en": "Tribonacci rule: Sum of the 3 preceding terms."
+    },
+    "revision_fact": {
+      "ta": "ட்ரிபோனாசி எண் தொடர் (Tribonacci Series).",
+      "en": "Tribonacci sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_039",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Multiplication ± constant",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 6, 21, 88, ?",
+      "en": "Find the next number in the series: 1, 2, 6, 21, 88, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 1, 2, 6, 21, 88, ?",
+    "question_en": "Find the next number in the series: 1, 2, 6, 21, 88, ?",
+    "options": [
+      "440",
+      "425",
+      "450",
+      "445"
+    ],
+    "options_ta": [
+      "440",
+      "425",
+      "450",
+      "445"
+    ],
+    "options_en": [
+      "440",
+      "425",
+      "450",
+      "445"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (x N) + N பெருக்கல் மற்றும் கூட்டல் காரணி n அதிகரிக்கின்றது:\n1 x 1 + 1 = 2\n2 x 2 + 2 = 6\n6 x 3 + 3 = 21\n21 x 4 + 4 = 88\n88 x 5 + 5 = 445.\nஎனவே அடுத்து வரும் எண் 445 ஆகும்.",
+      "en": "Pattern: Multiply by N and add N (increasing N):\n1x1+1=2, 2x2+2=6, 6x3+3=21, 21x4+4=88, 88x5+5=445.\nHence, the next number is 445."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (x N) + N பெருக்கல் மற்றும் கூட்டல் காரணி n அதிகரிக்கின்றது:\n1 x 1 + 1 = 2\n2 x 2 + 2 = 6\n6 x 3 + 3 = 21\n21 x 4 + 4 = 88\n88 x 5 + 5 = 445.\nஎனவே அடுத்து வரும் எண் 445 ஆகும்.",
+    "explanation_en": "Pattern: Multiply by N and add N (increasing N):\n1x1+1=2, 2x2+2=6, 6x3+3=21, 21x4+4=88, 88x5+5=445.\nHence, the next number is 445.",
+    "why_not_others": {
+      "A": {
+        "ta": "88 x 5 = 440.",
+        "en": "88 x 5 = 440."
+      },
+      "B": {
+        "ta": "88 x 5 - 15 = 425.",
+        "en": "88 x 5 - 15 = 425."
+      },
+      "C": {
+        "ta": "88 x 5 + 10 = 450.",
+        "en": "88 x 5 + 10 = 450."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: (x N) + N பெருக்கல் மற்றும் கூட்டல் காரணி n அதிகரிக்கின்றது:\n1 x 1 + 1 = 2\n2 x 2 + 2 = 6\n6 x 3 + 3 = 21\n21 x 4 + 4 = 88\n88 x 5 + 5 = 445.\nஎனவே அடுத்து வரும் எண் 445 ஆகும்.",
+        "en": "Correct. Pattern: Multiply by N and add N (increasing N):\n1x1+1=2, 2x2+2=6, 6x3+3=21, 21x4+4=88, 88x5+5=445.\nHence, the next number is 445."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x N + N அதிகரிக்கும் பெருக்கல் விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply increasing step transformation: (Term x N + N)."
+    },
+    "revision_fact": {
+      "ta": "அதிகரிக்கும் காரணி பெருக்கல் தொடர்.",
+      "en": "Increasing multiplier and addition constant series."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_040",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Second Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 7, 12, 19, 30, ?",
+      "en": "Find the next number in the series: 2, 4, 7, 12, 19, 30, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 2, 4, 7, 12, 19, 30, ?",
+    "question_en": "Find the next number in the series: 2, 4, 7, 12, 19, 30, ?",
+    "options": [
+      "41",
+      "45",
+      "47",
+      "43"
+    ],
+    "options_ta": [
+      "41",
+      "45",
+      "47",
+      "43"
+    ],
+    "options_en": [
+      "41",
+      "45",
+      "47",
+      "43"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "வித்தியασங்கள் பகா எண்களாக உள்ளன:\n4-2 = 2\n7-4 = 3\n12-7 = 5\n19-12 = 7\n30-19 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 30 + 13 = 43.",
+      "en": "First differences are consecutive prime numbers:\n4-2=2, 7-4=3, 12-7=5, 19-12=7, 30-19=11.\nNext prime difference = 13.\nNext term = 30 + 13 = 43."
+    },
+    "explanation_ta": "வித்தியασங்கள் பகா எண்களாக உள்ளன:\n4-2 = 2\n7-4 = 3\n12-7 = 5\n19-12 = 7\n30-19 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 30 + 13 = 43.",
+    "explanation_en": "First differences are consecutive prime numbers:\n4-2=2, 7-4=3, 12-7=5, 19-12=7, 30-19=11.\nNext prime difference = 13.\nNext term = 30 + 13 = 43.",
+    "why_not_others": {
+      "A": {
+        "ta": "30 + 11 = 41.",
+        "en": "30 + 11 = 41."
+      },
+      "B": {
+        "ta": "30 + 15 = 45.",
+        "en": "30 + 15 = 45."
+      },
+      "C": {
+        "ta": "30 + 17 = 47.",
+        "en": "30 + 17 = 47."
+      },
+      "D": {
+        "ta": "சரி. வித்தியασங்கள் பகா எண்களாக உள்ளன:\n4-2 = 2\n7-4 = 3\n12-7 = 5\n19-12 = 7\n30-19 = 11\nஅடுத்த பகா எண் வித்தியாசம் = 13.\nஅடுத்து வரும் எண் = 30 + 13 = 43.",
+        "en": "Correct. First differences are consecutive prime numbers:\n4-2=2, 7-4=3, 12-7=5, 19-12=7, 30-19=11.\nNext prime difference = 13.\nNext term = 30 + 13 = 43."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வித்தியασங்கள் 2, 3, 5, 7, 11, 13 என பகா எண்களாக அதிகரிக்கின்றன.",
+      "en": "Differences form the prime sequence: 2, 3, 5, 7, 11, 13."
+    },
+    "revision_fact": {
+      "ta": "பகா எண் வேறுபாட்டுத் தொடர்.",
+      "en": "Prime differences sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_041",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Wrong Number Identification",
+    "question": {
+      "ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 2, 7, 17, 37, 78, 157",
+      "en": "Find the wrong number in the following series: 2, 7, 17, 37, 78, 157"
+    },
+    "question_ta": "பின்வரும் தொடரில் தவறான எண்ணைக் கண்டறிக: 2, 7, 17, 37, 78, 157",
+    "question_en": "Find the wrong number in the following series: 2, 7, 17, 37, 78, 157",
+    "options": [
+      "17",
+      "157",
+      "37",
+      "78"
+    ],
+    "options_ta": [
+      "17",
+      "157",
+      "37",
+      "78"
+    ],
+    "options_en": [
+      "17",
+      "157",
+      "37",
+      "78"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 3:\n2 x 2 + 3 = 7\n7 x 2 + 3 = 17\n17 x 2 + 3 = 37\n37 x 2 + 3 = 77 (தொடரில் 78 எனத் தவறாகக் கொடுக்கப்பட்டுள்ளது)\n77 x 2 + 3 = 157.\nஎனவே தவறான எண் 78 ஆகும் (77 இருக்க வேண்டும்).",
+      "en": "Pattern: Multiply by 2 and add 3 (x2 + 3):\n2x2+3=7, 7x2+3=17, 17x2+3=37, 37x2+3=77 (given 78), 77x2+3=157.\nHence, 78 is the wrong number (should be 77)."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 3:\n2 x 2 + 3 = 7\n7 x 2 + 3 = 17\n17 x 2 + 3 = 37\n37 x 2 + 3 = 77 (தொடரில் 78 எனத் தவறாகக் கொடுக்கப்பட்டுள்ளது)\n77 x 2 + 3 = 157.\nஎனவே தவறான எண் 78 ஆகும் (77 இருக்க வேண்டும்).",
+    "explanation_en": "Pattern: Multiply by 2 and add 3 (x2 + 3):\n2x2+3=7, 7x2+3=17, 17x2+3=37, 37x2+3=77 (given 78), 77x2+3=157.\nHence, 78 is the wrong number (should be 77).",
+    "why_not_others": {
+      "A": {
+        "ta": "17 = 7x2+3 (சரி).",
+        "en": "17 = 7x2+3 (சரி)."
+      },
+      "B": {
+        "ta": "157 = 77x2+3 (சரி).",
+        "en": "157 = 77x2+3 (சரி)."
+      },
+      "C": {
+        "ta": "37 = 17x2+3 (சரி).",
+        "en": "37 = 17x2+3 (சரி)."
+      },
+      "D": {
+        "ta": "சரி. தொடரின் அமைப்பு: (முந்தைய எண் x 2) + 3:\n2 x 2 + 3 = 7\n7 x 2 + 3 = 17\n17 x 2 + 3 = 37\n37 x 2 + 3 = 77 (தொடரில் 78 எனத் தவறாகக் கொடுக்கப்பட்டுள்ளது)\n77 x 2 + 3 = 157.\nஎனவே தவறான எண் 78 ஆகும் (77 இருக்க வேண்டும்).",
+        "en": "Correct. Pattern: Multiply by 2 and add 3 (x2 + 3):\n2x2+3=7, 7x2+3=17, 17x2+3=37, 37x2+3=77 (given 78), 77x2+3=157.\nHence, 78 is the wrong number (should be 77)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "x2 + 3 விதியை ஒப்பிட்டு 77-க்கு பதிலாக வந்த 78-ஐக் கண்டறியவும்.",
+      "en": "Evaluate x2 + 3 progression to locate 78 instead of 77."
+    },
+    "revision_fact": {
+      "ta": "x2 + 3 தவறான எண் தணிக்கை.",
+      "en": "x2 + 3 wrong term detection."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_042",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Squares",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 9, 25, 49, 121, 169, ?",
+      "en": "Find the next number in the series: 4, 9, 25, 49, 121, 169, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 4, 9, 25, 49, 121, 169, ?",
+    "question_en": "Find the next number in the series: 4, 9, 25, 49, 121, 169, ?",
+    "options": [
+      "361",
+      "289",
+      "256",
+      "225"
+    ],
+    "options_ta": [
+      "361",
+      "289",
+      "256",
+      "225"
+    ],
+    "options_en": [
+      "361",
+      "289",
+      "256",
+      "225"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: பகா எண்களின் வர்க்கங்கள் (Prime Squares):\n2^2 = 4\n3^2 = 9\n5^2 = 25\n7^2 = 49\n11^2 = 121\n13^2 = 169\n17^2 = 289.\nஎனவே அடுத்து வரும் எண் 289 ஆகும்.",
+      "en": "Pattern: Squares of consecutive prime numbers:\n2^2=4, 3^2=9, 5^2=25, 7^2=49, 11^2=121, 13^2=169, 17^2=289.\nHence, the next number is 289."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: பகா எண்களின் வர்க்கங்கள் (Prime Squares):\n2^2 = 4\n3^2 = 9\n5^2 = 25\n7^2 = 49\n11^2 = 121\n13^2 = 169\n17^2 = 289.\nஎனவே அடுத்து வரும் எண் 289 ஆகும்.",
+    "explanation_en": "Pattern: Squares of consecutive prime numbers:\n2^2=4, 3^2=9, 5^2=25, 7^2=49, 11^2=121, 13^2=169, 17^2=289.\nHence, the next number is 289.",
+    "why_not_others": {
+      "A": {
+        "ta": "19^2 = 361 (அடுத்த பகா வர்க்கம்).",
+        "en": "19^2 = 361 (அடுத்த பகா வர்க்கம்)."
+      },
+      "B": {
+        "ta": "சரி. தொடரின் அமைப்பு: பகா எண்களின் வர்க்கங்கள் (Prime Squares):\n2^2 = 4\n3^2 = 9\n5^2 = 25\n7^2 = 49\n11^2 = 121\n13^2 = 169\n17^2 = 289.\nஎனவே அடுத்து வரும் எண் 289 ஆகும்.",
+        "en": "Correct. Pattern: Squares of consecutive prime numbers:\n2^2=4, 3^2=9, 5^2=25, 7^2=49, 11^2=121, 13^2=169, 17^2=289.\nHence, the next number is 289."
+      },
+      "C": {
+        "ta": "16^2 = 256 (பகு எண்).",
+        "en": "16^2 = 256 (பகு எண்)."
+      },
+      "D": {
+        "ta": "15^2 = 225 (பகு எண்).",
+        "en": "15^2 = 225 (பகு எண்)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பகா எண்களின் வர்க்கங்களை அடையாளம் காணவும் (2, 3, 5, 7, 11, 13, 17).",
+      "en": "Identify squares of consecutive prime numbers."
+    },
+    "revision_fact": {
+      "ta": "பகா வர்க்கத் தொடர் (Prime Square Series).",
+      "en": "Prime squares sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_043",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Cubes",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 4, 18, 48, 100, ?",
+      "en": "Find the next number in the series: 0, 4, 18, 48, 100, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 0, 4, 18, 48, 100, ?",
+    "question_en": "Find the next number in the series: 0, 4, 18, 48, 100, ?",
+    "options": [
+      "150",
+      "216",
+      "180",
+      "200"
+    ],
+    "options_ta": [
+      "150",
+      "216",
+      "180",
+      "200"
+    ],
+    "options_en": [
+      "150",
+      "216",
+      "180",
+      "200"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: n^3 - n^2:\n1^3 - 1^2 = 1 - 1 = 0\n2^3 - 2^2 = 8 - 4 = 4\n3^3 - 3^2 = 27 - 9 = 18\n4^3 - 4^2 = 64 - 16 = 48\n5^3 - 5^2 = 125 - 25 = 100\n6^3 - 6^2 = 216 - 36 = 180.\nஎனவே அடுத்து வரும் எண் 180 ஆகும்.",
+      "en": "Pattern: n^3 - n^2:\n1^3-1^2=0, 2^3-2^2=4, 3^3-3^2=18, 4^3-4^2=48, 5^3-5^2=100, 6^3-6^2=180.\nHence, the next number is 180."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: n^3 - n^2:\n1^3 - 1^2 = 1 - 1 = 0\n2^3 - 2^2 = 8 - 4 = 4\n3^3 - 3^2 = 27 - 9 = 18\n4^3 - 4^2 = 64 - 16 = 48\n5^3 - 5^2 = 125 - 25 = 100\n6^3 - 6^2 = 216 - 36 = 180.\nஎனவே அடுத்து வரும் எண் 180 ஆகும்.",
+    "explanation_en": "Pattern: n^3 - n^2:\n1^3-1^2=0, 2^3-2^2=4, 3^3-3^2=18, 4^3-4^2=48, 5^3-5^2=100, 6^3-6^2=180.\nHence, the next number is 180.",
+    "why_not_others": {
+      "A": {
+        "ta": "6^3 - 66 = 150.",
+        "en": "6^3 - 66 = 150."
+      },
+      "B": {
+        "ta": "6^3 = 216.",
+        "en": "6^3 = 216."
+      },
+      "C": {
+        "ta": "சரி. தொடரின் அமைப்பு: n^3 - n^2:\n1^3 - 1^2 = 1 - 1 = 0\n2^3 - 2^2 = 8 - 4 = 4\n3^3 - 3^2 = 27 - 9 = 18\n4^3 - 4^2 = 64 - 16 = 48\n5^3 - 5^2 = 125 - 25 = 100\n6^3 - 6^2 = 216 - 36 = 180.\nஎனவே அடுத்து வரும் எண் 180 ஆகும்.",
+        "en": "Correct. Pattern: n^3 - n^2:\n1^3-1^2=0, 2^3-2^2=4, 3^3-3^2=18, 4^3-4^2=48, 5^3-5^2=100, 6^3-6^2=180.\nHence, the next number is 180."
+      },
+      "D": {
+        "ta": "6^3 - 16 = 200.",
+        "en": "6^3 - 16 = 200."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "n^3 - n^2 விதியைப் பயன்படுத்தவும்.",
+      "en": "Apply n^3 - n^2 formula."
+    },
+    "revision_fact": {
+      "ta": "n^3 - n^2 தொடர் (n^3 - n^2 Series).",
+      "en": "n^3 - n^2 sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_044",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "First Difference",
+    "question": {
+      "ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 12, 15, 21, 24, 30, 33, ?",
+      "en": "Find the next number in the series: 12, 15, 21, 24, 30, 33, ?"
+    },
+    "question_ta": "எண் தொடரில் அடுத்து வரும் எண்ணைக் காண்க: 12, 15, 21, 24, 30, 33, ?",
+    "question_en": "Find the next number in the series: 12, 15, 21, 24, 30, 33, ?",
+    "options": [
+      "39",
+      "36",
+      "38",
+      "42"
+    ],
+    "options_ta": [
+      "39",
+      "36",
+      "38",
+      "42"
+    ],
+    "options_en": [
+      "39",
+      "36",
+      "38",
+      "42"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "தொடரின் அமைப்பு: முந்தைய எண்ணின் இலக்கங்களின் கூட்டல் பலனைக் கூட்டுதல்:\n12 + (1+2) = 15\n15 + (1+5) = 21\n21 + (2+1) = 24\n24 + (2+4) = 30\n30 + (3+0) = 33\n33 + (3+3) = 39.\nஎனவே அடுத்து வரும் எண் 39 ஆகும்.",
+      "en": "Pattern: Add the sum of the digits of the previous number to itself:\n12 + (1+2) = 15, 15 + (1+5) = 21, 21 + (2+1) = 24, 24 + (2+4) = 30, 30 + (3+0) = 33, 33 + (3+3) = 39.\nHence, the next number is 39."
+    },
+    "explanation_ta": "தொடரின் அமைப்பு: முந்தைய எண்ணின் இலக்கங்களின் கூட்டல் பலனைக் கூட்டுதல்:\n12 + (1+2) = 15\n15 + (1+5) = 21\n21 + (2+1) = 24\n24 + (2+4) = 30\n30 + (3+0) = 33\n33 + (3+3) = 39.\nஎனவே அடுத்து வரும் எண் 39 ஆகும்.",
+    "explanation_en": "Pattern: Add the sum of the digits of the previous number to itself:\n12 + (1+2) = 15, 15 + (1+5) = 21, 21 + (2+1) = 24, 24 + (2+4) = 30, 30 + (3+0) = 33, 33 + (3+3) = 39.\nHence, the next number is 39.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. தொடரின் அமைப்பு: முந்தைய எண்ணின் இலக்கங்களின் கூட்டல் பலனைக் கூட்டுதல்:\n12 + (1+2) = 15\n15 + (1+5) = 21\n21 + (2+1) = 24\n24 + (2+4) = 30\n30 + (3+0) = 33\n33 + (3+3) = 39.\nஎனவே அடுத்து வரும் எண் 39 ஆகும்.",
+        "en": "Correct. Pattern: Add the sum of the digits of the previous number to itself:\n12 + (1+2) = 15, 15 + (1+5) = 21, 21 + (2+1) = 24, 24 + (2+4) = 30, 30 + (3+0) = 33, 33 + (3+3) = 39.\nHence, the next number is 39."
+      },
+      "B": {
+        "ta": "33 + 3 = 36.",
+        "en": "33 + 3 = 36."
+      },
+      "C": {
+        "ta": "33 + 5 = 38.",
+        "en": "33 + 5 = 38."
+      },
+      "D": {
+        "ta": "33 + 9 = 42.",
+        "en": "33 + 9 = 42."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எண்ணுடன் அதன் இலக்கங்களின் கூட்டல் பலனைக் கூட்டவும் (Digit Sum Addition).",
+      "en": "Add the digit sum of the term to the term itself."
+    },
+    "revision_fact": {
+      "ta": "இலக்க கூடுதல் சேர்க்கைத் தொடர் (Digit Sum Addition Series).",
+      "en": "Digit sum addition sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  },
+  {
+    "id": "NS_045",
+    "subject": "aptitude",
+    "topic": "aptitude_number_series",
+    "topic_id": "aptitude_number_series",
+    "difficulty": "Hard",
+    "question_type": "Alternating Series",
+    "question": {
+      "ta": "எண் தொடரில் 10-வது எண்ணைக் காண்க: 2, 3, 5, 9, 10, 27, 17, 81, 26, ?",
+      "en": "Find the 10th term in the series: 2, 3, 5, 9, 10, 27, 17, 81, 26, ?"
+    },
+    "question_ta": "எண் தொடரில் 10-வது எண்ணைக் காண்க: 2, 3, 5, 9, 10, 27, 17, 81, 26, ?",
+    "question_en": "Find the 10th term in the series: 2, 3, 5, 9, 10, 27, 17, 81, 26, ?",
+    "options": [
+      "243",
+      "729",
+      "256",
+      "162"
+    ],
+    "options_ta": [
+      "243",
+      "729",
+      "256",
+      "162"
+    ],
+    "options_en": [
+      "243",
+      "729",
+      "256",
+      "162"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள் n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nதொடர் 2 (இரட்டை இடங்கள் 3^n): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 3^5 = 243 ஆகும்.",
+      "en": "Dual alternating series:\nOdd positions (n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nEven positions (powers of 3): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10th term is the 5th element of Series 2 = 3^5 = 243."
+    },
+    "explanation_ta": "இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள் n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nதொடர் 2 (இரட்டை இடங்கள் 3^n): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 3^5 = 243 ஆகும்.",
+    "explanation_en": "Dual alternating series:\nOdd positions (n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nEven positions (powers of 3): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10th term is the 5th element of Series 2 = 3^5 = 243.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. இத்தொடர் இரண்டு மாற்றுத் தொடர்களைக் கொண்டுள்ளது:\nதொடர் 1 (ஒற்றை இடங்கள் n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nதொடர் 2 (இரட்டை இடங்கள் 3^n): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10-வது இடம் என்பது இரட்டை இடம் ⟹ 3^5 = 243 ஆகும்.",
+        "en": "Correct. Dual alternating series:\nOdd positions (n^2+1): 1^2+1=2, 2^2+1=5, 3^2+1=10, 4^2+1=17, 5^2+1=26...\nEven positions (powers of 3): 3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243...\n10th term is the 5th element of Series 2 = 3^5 = 243."
+      },
+      "B": {
+        "ta": "3^6 = 729.",
+        "en": "3^6 = 729."
+      },
+      "C": {
+        "ta": "4^4 = 256.",
+        "en": "4^4 = 256."
+      },
+      "D": {
+        "ta": "81 x 2 = 162.",
+        "en": "81 x 2 = 162."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரட்டை இடங்கள் 3-ன் அடுக்குகளாக உள்ளன (3^1, 3^2, 3^3, 3^4, 3^5).",
+      "en": "Even positions follow powers of 3 (3^1, 3^2, 3^3, 3^4, 3^5)."
+    },
+    "revision_fact": {
+      "ta": "3-ன் அடுக்கு மாற்றுத் தொடர்.",
+      "en": "Powers of 3 alternating sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Number Series",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Number Series",
+    "tags": [
+      "aptitude",
+      "aptitude_number_series",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_number_series"
+  }
+]

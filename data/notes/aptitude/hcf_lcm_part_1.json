@@ -1,0 +1,339 @@
+{
+  "topic": "hcf_lcm_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "HCF & LCM Part 1 — Concepts, Methods & Product Relation",
+  "title_ta": "மீ.பெ.வ மற்றும் மீ.சி.ம பகுதி 1 — அடிப்படை முறைகள் மற்றும் தொடர்புகள்",
+
+  "definition": {
+    "en": "HCF (Highest Common Factor) is the largest number that divides two or more given numbers exactly. LCM (Least Common Multiple) is the smallest non-zero number that is divisible by each of the given numbers.",
+    "ta": "மீப்பெரு பொது வகுத்தி (HCF / GCD) என்பது கொடுக்கப்பட்ட எண்களை மீதியின்றி வகுக்கும் மிகப்பெரிய எண் ஆகும். மீச்சிறு பொது மடங்கு (LCM) என்பது கொடுக்கப்பட்ட அனைத்து எண்களாலும் வகுபடும் மிகச்சிறிய எண் ஆகும்."
+  },
+
+  "exam_importance": {
+    "en": "HCF and LCM form a fundamental core topic in TNPSC Aptitude across Group 1, Group 2/2A, and Group 4. Mastering prime factorisation, fraction/decimal rules, and the product relationship is essential for solving word problems.",
+    "ta": "மீ.பெ.வ மற்றும் மீ.சி.ம என்பது TNPSC குரூப் 1, குரூப் 2/2A மற்றும் குரூப் 4 தேர்வுகளில் தவிர்க்க முடியாத முதன்மை தலைப்பாகும். காரணி முறை, பின்னங்கள், தசம விதிகள் மற்றும் இரு எண்களின் பெருக்கற்பலன் தொடர்பை அறிவது வினாக்களை எளிதில் தீர்க்க உதவும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "HCF & LCM Product Relation (இரு எண்களின் பெருக்கற்பலன் தொடர்பு)",
+      "formula": "\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b",
+      "explanation": {
+        "en": "The product of the HCF and LCM of any two positive numbers equals the product of the two numbers. Note: This formula applies strictly to TWO numbers.",
+        "ta": "ஏதேனும் இரு எண்களின் மீ.பெ.வ மற்றும் மீ.சி.ம ஆகியவற்றின் பெருக்கற்பலன், அவ்விரு எண்களின் பெருக்கற்பலனுக்குச் சமம் (இது இரு எண்களுக்கு மட்டுமே பொருந்தும்)."
+      }
+    },
+    {
+      "title": "HCF & LCM of Fractions (பின்னங்களின் மீ.பெ.வ மற்றும் மீ.சி.ம)",
+      "formula": "\\text{HCF of Fractions} = \\frac{\\text{HCF of Numerators}}{\\text{LCM of Denominators}}, \\quad \\text{LCM of Fractions} = \\frac{\\text{LCM of Numerators}}{\\text{HCF of Denominators}}",
+      "explanation": {
+        "en": "Always simplify fractions to their irreducible lowest terms BEFORE applying these formulas.",
+        "ta": "சூத்திரத்தைப் பயன்படுத்துவதற்கு முன் பின்னங்களை அவற்றின் எளிய வடிவில் (Simplest Form) சுருக்க வேண்டும்."
+      }
+    },
+    {
+      "title": "Ratio & HCF Relation (விகிதம் மற்றும் மீ.பெ.வ தொடர்பு)",
+      "formula": "\\text{If ratio of two numbers is } a : b \\text{ with HCF } h, \\text{ numbers are } (ah, bh) \\text{ and } \\text{LCM} = a \\times b \\times h",
+      "explanation": {
+        "en": "When two numbers are co-prime in ratio a:b, multiplying each term by HCF gives the exact numbers, and LCM is a × b × HCF.",
+        "ta": "இரு எண்கள் a : b என்ற விகிதத்திலும் அவற்றின் மீ.பெ.வ h ஆகவும் இருந்தால், எண்கள் (ah, bh) ஆகும்; மீ.சி.ம = a × b × h."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Prime Factorisation Method (பகா காரணிப்படுத்துதல் முறை)",
+      "points": {
+        "en": [
+          "Express each number as a product of prime factors in exponent form.",
+          "HCF = Product of the LOWEST powers of all COMMON prime factors.",
+          "LCM = Product of the HIGHEST powers of ALL prime factors involved."
+        ],
+        "ta": [
+          "ஒவ்வொரு எண்ணையும் பகா காரணிகளின் அடுக்குகளாக எழுத வேண்டும்.",
+          "மீ.பெ.வ = பொதுவான பகா காரணிகளின் குறைந்தபட்ச அடுக்குகளின் பெருக்கற்பலன்.",
+          "மீ.சி.ம = அனைத்து பகா காரணிகளின் அதிகபட்ச அடுக்குகளின் பெருக்கற்பலன்."
+        ]
+      }
+    },
+    {
+      "title": "HCF Divisibility Property (மீ.பெ.வ மற்றும் மீ.சி.ம வகுபடும் பண்பு)",
+      "points": {
+        "en": [
+          "The HCF of any set of numbers ALWAYS divides their LCM exactly (LCM % HCF == 0).",
+          "If LCM is not divisible by a given number, that number CANNOT be the HCF.",
+          "HCF is always less than or equal to the smallest number; LCM is always greater than or equal to the largest number."
+        ],
+        "ta": [
+          "எந்த ஒரு எண் தொகுப்பின் மீ.பெ.வ-வும் அவற்றின் மீ.சி.ம-வை எப்போதும் மீதியின்றி வகுக்கும்.",
+          "மீ.சி.ம-வை மீதியின்றி வகுக்காத ஒரு எண், அந்த எண்களின் மீ.பெ.வ-ஆக இருக்க முடியாது.",
+          "மீ.பெ.வ எப்போதும் சிறிய எண்ணை விட குறைவாகவோ சமமாகவோ இருக்கும்; மீ.சி.ம பெரிய எண்ணை விட அதிகமாகவோ சமமாகவோ இருக்கும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Decimal HCF & LCM Conversion Shortcut",
+      "points": {
+        "en": [
+          "Count maximum decimal places among given numbers (say, k places).",
+          "Multiply all numbers by 10^k to convert them into integers.",
+          "Find HCF/LCM of integers, then divide the final result by 10^k."
+        ],
+        "ta": [
+          "கொடுக்கப்பட்ட எண்களில் அதிகபட்ச தசம இடங்களைக் கண்டறியவும் (எ.கா. k இடங்கள்).",
+          "அனைத்து எண்களையும் 10^k ஆல் பெருக்கி முழு எண்களாக மாற்றவும்.",
+          "முழு எண்களுக்கு மீ.பெ.வ/மீ.சி.ம கண்டறிந்து, விடையை மீண்டும் 10^k ஆல் வகுக்கவும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Applying HCF × LCM = a × b to Three Numbers",
+      "explanation": {
+        "en": "The relationship HCF × LCM = a × b × c is FALSE for three numbers.",
+        "ta": "HCF × LCM = a × b × c என்ற சூத்திரம் மூன்று எண்களுக்குப் பொருந்தாது (தவறானது)."
+      },
+      "avoidance": {
+        "en": "Use product relation strictly for TWO numbers. For 3 numbers, use prime factorisation or division method.",
+        "ta": "பெருக்கற்பலன் விதியை இரு எண்களுக்கு மட்டுமே பயன்படுத்த வேண்டும். 3 எண்களுக்கு பகா காரணி முறையைப் பயன்படுத்தவும்."
+      }
+    },
+    {
+      "trap": "Calculating Fraction HCF/LCM Without Prior Simplification",
+      "explanation": {
+        "en": "Calculating HCF of 2/4 and 3/6 directly without simplifying to 1/2 gives an incorrect fraction value.",
+        "ta": "2/4 மற்றும் 3/6 போன்ற பின்னங்களை 1/2 என சுருக்காமல் நேரடியாக மீ.பெ.வ கண்டறிந்தால் தவறான விடை வரும்."
+      },
+      "avoidance": {
+        "en": "Always reduce fractions to lowest terms before applying HCF/LCM of fraction formulas.",
+        "ta": "சூத்திரத்தை பயன்படுத்துவதற்கு முன்பாக பின்னங்களை எளிய வடிவிற்கு சுருக்கவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the HCF and LCM of 24 and 36 using prime factorisation.",
+      "method": "Prime Factorisation Method",
+      "steps": [
+        "Step 1: Write prime factors in exponent form:",
+        "24 = 2³ × 3¹",
+        "36 = 2² × 3²",
+        "Step 2: HCF = Common prime factors with lowest powers = 2² × 3¹ = 4 × 3 = 12.",
+        "Step 3: LCM = All prime factors with highest powers = 2³ × 3² = 8 × 9 = 72."
+      ],
+      "answer": "HCF = 12, LCM = 72"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the HCF and LCM of fractions: \\(\\frac{2}{3}, \\frac{8}{9}, \\frac{16}{81}, \\text{ and } \\frac{10}{27}\\)",
+      "method": "Fraction HCF and LCM Formulas",
+      "steps": [
+        "Step 1: Verify all fractions are in lowest terms (2/3, 8/9, 16/81, 10/27 - all simplified).",
+        "Step 2: Numerators = [2, 8, 16, 10], Denominators = [3, 9, 81, 27].",
+        "Step 3: HCF of Numerators(2, 8, 16, 10) = 2. LCM of Denominators(3, 9, 81, 27) = 81.",
+        "Step 4: HCF of Fractions = \\(\\frac{2}{81}\\).",
+        "Step 5: LCM of Numerators(2, 8, 16, 10) = 80. HCF of Denominators(3, 9, 81, 27) = 3.",
+        "Step 6: LCM of Fractions = \\(\\frac{80}{3}\\)."
+      ],
+      "answer": "HCF = 2/81, LCM = 80/3"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the HCF and LCM of decimals: 0.63, 1.05, and 2.1",
+      "method": "Integer Scaling Method",
+      "steps": [
+        "Step 1: Maximum decimal places = 2. Multiply all numbers by 100 to convert to integers:",
+        "0.63 × 100 = 63, 1.05 × 100 = 105, 2.10 × 100 = 210.",
+        "Step 2: Find HCF of (63, 105, 210):",
+        "63 = 3² × 7, 105 = 3 × 5 × 7, 210 = 2 × 3 × 5 × 7. Common factors = 3¹ × 7¹ = 21.",
+        "HCF of decimals = \\(21 / 100 = 0.21\\).",
+        "Step 3: Find LCM of (63, 105, 210):",
+        "Highest powers = 2¹ × 3² × 5¹ × 7¹ = 2 × 9 × 5 × 7 = 630.",
+        "LCM of decimals = \\(630 / 100 = 6.30\\) or 6.3."
+      ],
+      "answer": "HCF = 0.21, LCM = 6.3"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The LCM of two numbers is 6 times their HCF. If the HCF is 12 and one of the numbers is 36, find the other number.",
+      "method": "HCF × LCM = Product of Two Numbers",
+      "steps": [
+        "Step 1: Given HCF = 12.",
+        "Step 2: LCM = 6 × HCF = 6 × 12 = 72.",
+        "Step 3: First number (a) = 36. Let second number be (b).",
+        "Step 4: Formula: \\(\\text{HCF} \\times \\text{LCM} = a \\times b\\).",
+        "Step 5: \\(12 \\times 72 = 36 \\times b \\implies b = \\frac{12 \\times 72}{36} = 12 \\times 2 = 24\\)."
+      ],
+      "answer": "24"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Two numbers are in the ratio 3 : 4. If their LCM is 240, find the two numbers and their HCF.",
+      "method": "Ratio and HCF Multiplier Model",
+      "steps": [
+        "Step 1: Let the two numbers be 3x and 4x, where x is their HCF.",
+        "Step 2: Since 3 and 4 are co-prime, \\(\\text{LCM} = 3 \\times 4 \\times x = 12x\\).",
+        "Step 3: Given LCM = 240 \\(\\implies 12x = 240 \\implies x = 20\\).",
+        "Step 4: HCF = x = 20.",
+        "Step 5: First number = 3 × 20 = 60; Second number = 4 × 20 = 80."
+      ],
+      "answer": "Numbers = 60 and 80, HCF = 20"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The LCM of three different positive integers is 120. Which of the following CANNOT be their HCF? (Options: A) 12, B) 24, C) 35, D) 40)",
+      "method": "HCF Divisibility Property of LCM",
+      "steps": [
+        "Step 1: Property: The HCF of any set of numbers MUST be a divisor of their LCM.",
+        "Step 2: Test Option A: 120 ÷ 12 = 10 (Divisible).",
+        "Step 3: Test Option B: 120 ÷ 24 = 5 (Divisible).",
+        "Step 4: Test Option C: 120 ÷ 35 = 3.428 (NOT divisible).",
+        "Step 5: Test Option D: 120 ÷ 40 = 3 (Divisible).",
+        "Step 6: Since 120 is not divisible by 35, 35 CANNOT be their HCF."
+      ],
+      "answer": "C) 35"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the HCF of 108, 288, and 360.",
+      "options": ["A) 18", "B) 36", "C) 54", "D) 72"],
+      "correct_option": "B) 36",
+      "explanation": "108 = 2² × 3³, 288 = 2⁵ × 3², 360 = 2³ × 3² × 5. HCF = 2² × 3² = 4 × 9 = 36."
+    },
+    {
+      "id": 2,
+      "question": "Find the LCM of fractions 3/4, 6/7, and 9/8.",
+      "options": ["A) 18", "B) 18/56", "C) 9", "D) 36"],
+      "correct_option": "A) 18",
+      "explanation": "LCM of numerators(3, 6, 9) = 18. HCF of denominators(4, 7, 8) = 1. LCM = 18/1 = 18."
+    },
+    {
+      "id": 3,
+      "question": "The HCF and LCM of two numbers are 15 and 300 respectively. If one number is 60, find the other number.",
+      "options": ["A) 50", "B) 75", "C) 65", "D) 80"],
+      "correct_option": "B) 75",
+      "explanation": "Formula: HCF × LCM = a × b => 15 × 300 = 60 × b => b = (15 × 300) / 60 = 75."
+    },
+    {
+      "id": 4,
+      "question": "Two numbers are in the ratio 4 : 5 and their HCF is 8. Find their LCM.",
+      "options": ["A) 120", "B) 160", "C) 140", "D) 180"],
+      "correct_option": "B) 160",
+      "explanation": "Numbers are 4 × 8 = 32 and 5 × 8 = 40. LCM = 4 × 5 × HCF = 4 × 5 × 8 = 160."
+    },
+    {
+      "id": 5,
+      "question": "Find the HCF of 0.54, 1.8, and 7.2.",
+      "options": ["A) 0.18", "B) 0.09", "C) 0.54", "D) 1.8"],
+      "correct_option": "A) 0.18",
+      "explanation": "Multiply by 100: 54, 180, 720. HCF(54, 180, 720) = 18. Divide by 100 => 0.18."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "HCF Definition",
+      "back": "Highest Common Factor — largest number that divides given numbers without remainder."
+    },
+    {
+      "front": "LCM Definition",
+      "back": "Least Common Multiple — smallest non-zero number divisible by all given numbers."
+    },
+    {
+      "front": "Product Relation Formula",
+      "back": "HCF × LCM = a × b (Strictly for TWO numbers)."
+    },
+    {
+      "front": "HCF of Fractions Formula",
+      "back": "HCF of Numerators / LCM of Denominators."
+    },
+    {
+      "front": "LCM of Fractions Formula",
+      "back": "LCM of Numerators / HCF of Denominators."
+    },
+    {
+      "front": "HCF-LCM Divisibility Rule",
+      "back": "HCF MUST always divide LCM exactly (LCM % HCF == 0)."
+    }
+  ],
+
+  "mind_map": {
+    "title": "HCF & LCM Part 1 — Concepts & Methods Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "HCF & LCM Fundamentals",
+        "children": ["prime_fact", "fraction_decimal", "product_relation"]
+      },
+      {
+        "id": "prime_fact",
+        "label": "Prime Factorisation Method",
+        "children": ["hcf_lowest_powers", "lcm_highest_powers"]
+      },
+      {
+        "id": "hcf_lowest_powers",
+        "label": "HCF = Product of Lowest Powers of Common Factors",
+        "children": []
+      },
+      {
+        "id": "lcm_highest_powers",
+        "label": "LCM = Product of Highest Powers of All Factors",
+        "children": []
+      },
+      {
+        "id": "fraction_decimal",
+        "label": "Fractions & Decimals",
+        "children": ["hcf_frac_rule", "lcm_frac_rule", "decimal_scaling"]
+      },
+      {
+        "id": "hcf_frac_rule",
+        "label": "HCF Frac = HCF(Num) / LCM(Den)",
+        "children": []
+      },
+      {
+        "id": "lcm_frac_rule",
+        "label": "LCM Frac = LCM(Num) / HCF(Den)",
+        "children": []
+      },
+      {
+        "id": "decimal_scaling",
+        "label": "Multiply by 10^k → Compute → Divide 10^k",
+        "children": []
+      },
+      {
+        "id": "product_relation",
+        "label": "Product Relation & Ratio",
+        "children": ["two_num_product", "ratio_hcf_lcm"]
+      },
+      {
+        "id": "two_num_product",
+        "label": "HCF × LCM = a × b (2 numbers only)",
+        "children": []
+      },
+      {
+        "id": "ratio_hcf_lcm",
+        "label": "Ratio a:b ⇒ LCM = a × b × HCF",
+        "children": []
+      }
+    ]
+  }
+}

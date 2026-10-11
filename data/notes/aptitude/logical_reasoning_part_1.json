@@ -1,0 +1,285 @@
+{
+  "topic": "logical_reasoning_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Logical Reasoning Part 1 — Analogy, Classification & Coding-Decoding",
+  "title_ta": "தர்க்கத் திறன் பகுதி 1 — ஒப்புமை, வேறுபட்டதை அறிதல் மற்றும் குறியீட்டு முறைகள்",
+
+  "definition": {
+    "en": "Logical Reasoning evaluates systematic thinking, pattern recognition, analogical relationships, structural classification, and letter-number encoding/decoding rules.",
+    "ta": "தர்க்கத் திறன் என்பது முறையான சிந்தனை, அமைப்புகளைக் கண்டறிதல், ஒப்புமைத் தொடர்புகள், வகைப்படுத்துதல் மற்றும் குறியீடுகளைக் கண்டறிந்து விடையளிக்கும் திறனைக் குறிக்கிறது."
+  },
+
+  "exam_importance": {
+    "en": "Logical Reasoning is a compulsory core topic in TNPSC Mental Ability across Group 1, Group 2/2A, and Group 4 exams. Questions test word/number analogies, classification (odd one out), letter shifting codes, opposite position codes, and substitution coding.",
+    "ta": "தர்க்கத் திறன் என்பது TNPSC மனத்திறன் தேர்வுகளில் தவறாமல் கேட்கப்படும் முக்கிய பாடமாகும். சொல்/எண் ஒப்புமை, வேறுபட்டதைத் தேர்ந்தெடுத்தல், எழுத்து குறியீட்டு முறைகள் மற்றும் பதிலீட்டுக் குறியீடுகள் தொடர்பான வினாக்கள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Alphabet Position Mapping (எழுத்து நிலைப் அட்டவணை)",
+      "formula": "A=1, B=2, C=3, \\dots, M=13, N=14, \\dots, Z=26 \\quad \\text{Reverse: } A=26, B=25, \\dots, Z=1",
+      "explanation": {
+        "en": "Positional indexing is the foundation of letter coding. Reverse position = 27 - Forward position.",
+        "ta": "எழுத்துகளின் எண் வரிசை குறியீட்டு முறைக்கு அடிப்படை. எதிர்ப்பக்க எண் = 27 - நேர்முக எண்."
+      }
+    },
+    {
+      "title": "Analogy Rule (ஒப்புமை விதி)",
+      "formula": "A : B :: C : D \\implies \\text{Relation}(A, B) = \\text{Relation}(C, D)",
+      "explanation": {
+        "en": "The relationship between A and B must be identically replicated between C and D.",
+        "ta": "A மற்றும் B இடையே உள்ள அதே தர்க்கத் தொடர்பு C மற்றும் D இடையே நிலவ வேண்டும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Coding-Decoding Pattern Categories (குறியீட்டு முறைகளின் வகைகள்)",
+      "points": {
+        "en": [
+          "Forward/Backward Letter Shift: Each letter shifted by a constant (+2, -1, +3) or pattern (+1, +2, +3).",
+          "Alphabet Position Code: Letters replaced by their 1-26 positional numbers.",
+          "Opposite Letter Pairs: A-Z, B-Y, C-X, D-W (Sum of positions = 27).",
+          "Substitution Coding: 'White is called Blue, Blue is called Red...' (Identify target object and find its substitute name)."
+        ],
+        "ta": [
+          "எழுத்து நகர்வு: ஒவ்வொரு எழுத்தும் நிலையான எண்களால் (+2, -1) அல்லது வரிசையாக (+1, +2) நகர்த்தப்படும்.",
+          "எண் குறியீடு: எழுத்துகளுக்குப் பதிலாக அவற்றின் 1-26 வரிசை எண்கள் பிரதியிடப்படும்.",
+          "எதிர் எழுத்து ஜோடிகள்: A-Z, B-Y, C-X, D-W (எண்களின் கூடுதல் = 27).",
+          "பதிலீட்டுக் குறியீடு: 'வெள்ளை என்பது நீலம் எனில்...' (கேட்கப்பட்ட பொருளின் புதிய பெயரைக் கண்டறிதல்)."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "EJOTY 5-Table Position Shortcut",
+      "points": {
+        "en": [
+          "Remember EJOTY positions: E=5, J=10, O=15, T=20, Y=25.",
+          "Allows instantaneous calculation of any alphabet position without writing full A-Z."
+        ],
+        "ta": [
+          "EJOTY எண்களை நினைவில் கொள்க: E=5, J=10, O=15, T=20, Y=25.",
+          "எந்த ஒரு எழுத்தின் எண்ணையும் நொடியில் கண்டறிய இது உதவும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "In Substitution Coding, answering the original color instead of substitute name",
+      "explanation": {
+        "en": "If clear sky is blue, and blue is called 'red', writing 'blue' as answer is WRONG. The substitute name 'red' MUST be chosen.",
+        "ta": "தெளிவான வானம் நீலம், நீலம் என்பது 'சிவப்பு' எனில், 'நீலம்' என விடையளிப்பது தவறாகும்; புதிய பெயரான 'சிவப்பு' என்பதே விடை."
+      },
+      "avoidance": {
+        "en": "Always trace the chain: Real answer → Substitute name.",
+        "ta": "உண்மை விடை → அதற்குரிய புதிய பெயர் என்ற தொடரைக் கவனிக்கவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Complete the analogy: Moon : Satellite :: Earth : ?",
+      "method": "Category Analogy",
+      "steps": [
+        "Step 1: Identify relationship: Moon is a natural Satellite of Earth.",
+        "Step 2: Apply relationship to Earth: Earth is a Planet in the Solar System.",
+        "Step 3: Answer = Planet."
+      ],
+      "answer": "Planet"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the missing number in analogy: 7 : 49 :: 9 : ?",
+      "method": "Number Power Analogy",
+      "steps": [
+        "Step 1: Relationship in first pair: 7² = 49.",
+        "Step 2: Apply to second pair: 9² = 81.",
+        "Step 3: Answer = 81."
+      ],
+      "answer": "81"
+    },
+    {
+      "id": 3,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the odd one out: Apple, Mango, Potato, Banana.",
+      "method": "Classification Method",
+      "steps": [
+        "Step 1: Apple, Mango, and Banana are Fruits growing above ground.",
+        "Step 2: Potato is a Vegetable (tuber) growing underground.",
+        "Step 3: Odd one out = Potato."
+      ],
+      "answer": "Potato"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If 'CAT' is coded as '3120', how is 'DOG' coded in that language?",
+      "method": "Positional Number Coding",
+      "steps": [
+        "Step 1: C = 3rd letter, A = 1st letter, T = 20th letter \\(\\implies 3-1-20 = 3120\\).",
+        "Step 2: Apply to DOG: D = 4th letter, O = 15th letter, G = 7th letter.",
+        "Step 3: Concatenate numbers: 4-15-7 = 4157."
+      ],
+      "answer": "4157"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "In a certain code language, 'TEACHER' is written as 'VGCEJFT'. How is 'STUDENT' written in that code?",
+      "method": "Constant Letter Shift (+2 Shift)",
+      "steps": [
+        "Step 1: Analyze shift: T(+2)=V, E(+2)=G, A(+2)=C, C(+2)=E, H(+2)=J, E(+2)=F, R(+2)=T.",
+        "Step 2: Apply +2 shift to STUDENT:",
+        "S(+2)=U, T(+2)=V, U(+2)=W, D(+2)=F, E(+2)=G, N(+2)=P, T(+2)=V.",
+        "Step 3: Coded word = UVWGFPV."
+      ],
+      "answer": "UVWGFPV"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "If 'white' is called 'blue', 'blue' is called 'red', 'red' is called 'yellow', and 'yellow' is called 'green', what is the color of clear sky?",
+      "method": "Substitution Chain Decoding",
+      "steps": [
+        "Step 1: Identify real answer: Clear sky is Blue.",
+        "Step 2: Locate substitute rule: 'blue is called red'.",
+        "Step 3: Answer = red."
+      ],
+      "answer": "red"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Complete the analogy: Newspaper : Press :: Cloth : ?",
+      "options": ["A) Tailor", "B) Mill", "C) Fiber", "D) Shop"],
+      "correct_option": "B) Mill",
+      "explanation": "Newspaper is produced in a Press; Cloth is produced in a Mill."
+    },
+    {
+      "id": 2,
+      "question": "Find the odd one out from the given numbers: 13, 17, 19, 21.",
+      "options": ["A) 13", "B) 17", "C) 19", "D) 21"],
+      "correct_option": "D) 21",
+      "explanation": "21 is a composite number (3 × 7); 13, 17, and 19 are prime numbers."
+    },
+    {
+      "id": 3,
+      "question": "If 'MATH' is coded as '13-1-20-8', how is 'TAMIL' coded?",
+      "options": ["A) 20-1-13-9-12", "B) 20-1-12-9-13", "C) 19-1-13-9-12", "D) 20-2-13-9-12"],
+      "correct_option": "A) 20-1-13-9-12",
+      "explanation": "T=20, A=1, M=13, I=9, L=12 ⇒ 20-1-13-9-12."
+    },
+    {
+      "id": 4,
+      "question": "If 'LIGHT' is coded as 'MJHIU', how is 'NIGHT' coded?",
+      "options": ["A) OJHIU", "B) OHJIU", "C) OIHIU", "D) PKJIV"],
+      "correct_option": "A) OJHIU",
+      "explanation": "Each letter shifted +1: N(+1)=O, I(+1)=J, G(+1)=H, H(+1)=I, T(+1)=U ⇒ OJHIU."
+    },
+    {
+      "id": 5,
+      "question": "Find the odd one out: Eye, Ear, Nose, Heart.",
+      "options": ["A) Eye", "B) Ear", "C) Nose", "D) Heart"],
+      "correct_option": "D) Heart",
+      "explanation": "Heart is an internal organ; Eye, Ear, and Nose are external sense organs."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "EJOTY Letter Rule",
+      "back": "E=5, J=10, O=15, T=20, Y=25"
+    },
+    {
+      "front": "Reverse Letter Position",
+      "back": "Reverse Position = 27 - Forward Position (e.g. Z=1, A=26)"
+    },
+    {
+      "front": "Analogy Principle",
+      "back": "Relationship A:B must equal Relationship C:D"
+    },
+    {
+      "front": "Substitution Code Rule",
+      "back": "Answer the NEW substitute name, NOT the original word!"
+    },
+    {
+      "front": "Odd One Out Strategy",
+      "back": "Identify common property shared by 3 items; 4th is the odd one"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Logical Reasoning Part 1 — Analogy & Coding Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Logical Reasoning Part 1",
+        "children": ["analogy_sec", "classification_sec", "coding_sec"]
+      },
+      {
+        "id": "analogy_sec",
+        "label": "Analogy (ஒப்புமை)",
+        "children": ["word_an", "num_an"]
+      },
+      {
+        "id": "word_an",
+        "label": "Word: Relation A:B = C:D",
+        "children": []
+      },
+      {
+        "id": "num_an",
+        "label": "Number: Power/Multiple Relation",
+        "children": []
+      },
+      {
+        "id": "classification_sec",
+        "label": "Classification (Odd One Out)",
+        "children": ["prime_odd", "category_odd"]
+      },
+      {
+        "id": "prime_odd",
+        "label": "Number: Prime vs Composite",
+        "children": []
+      },
+      {
+        "id": "category_odd",
+        "label": "Word: Internal vs External Organ",
+        "children": []
+      },
+      {
+        "id": "coding_sec",
+        "label": "Coding-Decoding",
+        "children": ["shift_code", "position_code", "subst_code"]
+      },
+      {
+        "id": "shift_code",
+        "label": "Shift: Constant (+2) or Sequential",
+        "children": []
+      },
+      {
+        "id": "position_code",
+        "label": "Position: A=1..Z=26 (EJOTY rule)",
+        "children": []
+      },
+      {
+        "id": "subst_code",
+        "label": "Substitution: Real → Substitute Name",
+        "children": []
+      }
+    ]
+  }
+}

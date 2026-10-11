@@ -1,0 +1,763 @@
+{
+  "meta": {
+    "topic_id": "economy_mgnrega_part_3",
+    "repository_id": "economy_mgnrega",
+    "display_title": "MGNREGA – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "MGNREGA",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Schedule I Permissible Works Categories",
+    "Natural Resource Management NRM 60 Percent",
+    "Category B Private Land SC ST",
+    "Agricultural Wage Floor 5 to 9 Percent",
+    "Mitigation of Distress Migration",
+    "Women Participation National 57 TN 80 to 85",
+    "100 Percent Women Mates Tamil Nadu",
+    "Ooranis Cascading Tanks Rejuvenation",
+    "Delay Compensation 0 Point 05 Percent",
+    "Equal Remuneration Act 1976 Equal Wages",
+    "Rural Exclusive Jurisdiction Ban Urban",
+    "Automatic Stabilizer Macroeconomic Safety Net"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the four categories of permissible works under Schedule I and the 60% NRM mandate.",
+        "Examine how MGNREGA acts as an agricultural wage floor and mitigates seasonal distress migration."
+      ],
+      "ta": [
+        "அட்டவணை I-ன் கீழான 4 வகையான பணிகள் மற்றும் 60% NRM கட்டாய விதியைப் புரிந்துகொள்ளுதல்.",
+        "MGNREGA எவ்வாறு விவசாயக் கூலித் தளமாகச் செயல்பட்டு பருவகால இடப்பெயர்வைத் தடுக்கிறது என்பதை ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key metrics: Delay compensation rate is 0.05% per day; NRM floor is ≥60%.",
+        "Recall that Tamil Nadu records 80-85% women participation and deploys 100% Women Mates."
+      ],
+      "ta": [
+        "முக்கிய அளவீடுகளை நினைவில் நிறுத்துதல்: கூலி தாமத இழப்பீடு நாள் ஒன்றுக்கு 0.05%; NRM குறைந்தபட்சம் ≥60%.",
+        "தமிழ்நாட்டில் பெண்கள் பங்கேற்பு 80-85% என்பதையும், 100% பெண் Mates நியமிக்கப்படுகின்றனர் என்பதையும் நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the gender dividend of MGNREGA transforming intra-household decision making.",
+        "Appraise Tamil Nadu's model of water conservation through Ooranis and temple tanks rejuvenation."
+      ],
+      "ta": [
+        "குடும்ப முடிவெடுக்கும் அதிகாரத்தை மாற்றியமைத்த MGNREGA-ன் மகளிர் முன்னேற்றத்தை ஆய்வு செய்தல்.",
+        "பாரம்பரிய ஊரணிகள் மற்றும் கண்மாய்களைப் புனரமைக்கும் தமிழ்நாட்டின் நீர் மேலாண்மை மாதிரியை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps regarding private land work eligibility, delay compensation formulas, and rural jurisdiction."
+      ],
+      "ta": [
+        "தனியார் நிலப் பணிகள் தகுதி, தாமத இழப்பீட்டு சமன்பாடு மற்றும் ஊரக எல்லை வரம்புகள் தொடர்பான தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "MGNREGA – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_sustainable_asset_creation_nrm",
+      "title_en": "Sustainable Asset Creation: Schedule I Permissible Works & NRM Focus",
+      "title_ta": "நீடித்த சொத்து உருவாக்கம்: அட்டவணை I அனுமதிக்கப்பட்ட பணிகள் & NRM முன்னுரிமை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_socio_economic_and_labor_impacts",
+      "title_en": "Socio-Economic Impacts: Wage Floor, Migration & Financial Inclusion",
+      "title_ta": "சமூக-பொருளாதார தாக்கம்: கூலித் தளம், இடப்பெயர்வு குறைப்பு & வங்கிச் சேர்க்கை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_gender_empowerment_revolution",
+      "title_en": "Gender Empowerment Revolution: Economic Independence & Household Autonomy",
+      "title_ta": "மகளிர் அதிகாரமளித்தல் புரட்சி: பொருளாதார சுயாட்சி & குடும்ப அந்தஸ்து உயர்வு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_benchmark_model",
+      "title_en": "Tamil Nadu Benchmark Implementation Model & Contemporary Debates",
+      "title_ta": "தமிழ்நாடு முன்னோடி மாதிரி & தற்கால விவாதங்கள் / சவால்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The developmental impact and asset creation paradigm of MGNREGA represents its structural transformation of the rural economy, generating durable productive assets focused on Natural Resource Management (water harvesting, drought proofing, soil conservation under Schedule I), transforming rural labor markets through wage floors and distress migration reduction, empowering women socio-economically (>57% national, >80% in Tamil Nadu), and showcasing Tamil Nadu's pioneering implementation through 100% Women Mates and Kudimaramathu water bodies restoration.",
+      "ta": "MGNREGA திட்டத்தின் வளர்ச்சித் தாக்கம் மற்றும் சொத்து உருவாக்கம் என்பது ஊரகப் பொருளாதாரத்தின் கட்டமைப்பு மாற்றத்தைக் குறிக்கிறது; இது இயற்கை வள மேலாண்மை சார்ந்த நீடித்த உற்பத்தி சொத்துக்களை உருவாக்குதல் (அட்டவணை I-ன் கீழ் நீர்வளப் பாதுகாப்பு, வறட்சி தடுப்பு, மண் வளம்), கூலித் தளத்தை உயர்த்தி இடப்பெயர்வைத் தடுத்தல், பெண்களுக்கு சமூக-பொருளாதார அதிகாரமளித்தல் (தேசிய அளவில் >57%, தமிழ்நாட்டில் >80%), மற்றும் 100% பெண் பணி மேற்பார்வையாளர்கள் (Women Mates) மற்றும் குடிமராமத்து நீர்நிலை மறுசீரமைப்பு மூலம் வெளிப்படும் தமிழ்நாட்டின் முன்னோடி செயல்பாடுகளை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "Over nearly two decades of nationwide implementation, MGNREGA has functioned as both an essential macroeconomic automatic stabilizer and an engine of ecological asset creation. Schedule I of the Act mandates a structured classification of permissible works prioritizing Natural Resource Management (NRM)—with at least 60% of total expenditure in notified blocks dedicated to water harvesting, watershed development, check dams, and afforestation. Beyond physical assets, MGNREGA has reshaped the rural socio-economic equilibrium: it functions as a wage floor that pushes up open-market agricultural wages, enhances the bargaining power of Dalit and marginalized landless laborers, curtails desperate distress migration to urban slums during dry seasons, and accelerates financial inclusion as millions of rural poor opened formal bank accounts for the first time. The most transformative dimension of MGNREGA is its gender dividend. Women account for nearly 57% of all person-days generated nationally, surging to an astounding 80% to 85% in Tamil Nadu. Tamil Nadu has institutionalized global best practices: 100% worksite supervision entrusted to trained Women Mates selected from Self-Help Groups (SHGs), systematic rejuvenation of ancient Ooranis and temple tanks, and seamless convergence with rural housing and poverty reduction schemes. This concluding part evaluates asset categories, socio-economic and gender impacts, contemporary implementation debates, and Tamil Nadu's benchmark model.",
+      "ta": "கிட்டத்தட்ட இருபது ஆண்டுகால நாடு தழுவிய செயல்பாட்டில், MGNREGA ஊரகப் பொருளாதாரத்தின் தானியங்கி நிலைப்படுத்தியாகவும் (Automatic Stabilizer), சுற்றுச்சூழல் சொத்துக்களை உருவாக்கும் இயந்திரமாகவும் திகழ்கிறது. சட்டத்தின் அட்டவணை I-ன் கீழ் அனுமதிக்கப்பட்ட பணிகளில் இயற்கை வள மேலாண்மைக்கு (NRM) முன்னுரிமை அளிக்கப்பட்டு, மொத்த செலவில் குறைந்தபட்சம் 60% நீர்வளப் பாதுகாப்பு, நீர்ப்பிடிப்பு பகுதி மேம்பாடு, தடுப்பணைகள் மற்றும் காடு வளர்ப்பிற்கு ஒதுக்கப்பட வேண்டும் என நிர்ணயிக்கப்பட்டுள்ளது. பௌதிக சொத்துக்களுக்கு அப்பால், கிராமப்புற சமூக சமநிலையை இச்சட்டம் மாற்றியமைத்துள்ளது: விவசாயக் கூலியின் குறைந்தபட்ச தளத்தை உயர்த்துதல், விளிம்புநிலை நிலமற்ற விவசாயத் தொழிலாளர்களின் பேரம் பேசும் திறனை அதிகரித்தல், கோடை காலங்களில் நகரங்களை நோக்கிய கட்டாய இடப்பெயர்வைத் தடுத்தல், மற்றும் வங்கி சேவைகளை ஏழை மக்களிடம் கொண்டு சேர்த்தல் ஆகிய பணிகளை ஆற்றியுள்ளது. MGNREGA-ன் மிக முக்கிய வெற்றிப் பரிமாணம் பெண்களின் அதிகாரமளித்தல் ஆகும். தேசிய அளவில் மொத்த வேலைநாட்களில் பெண்கள் பங்கு 57% ஆகவும், தமிழ்நாட்டில் 80% முதல் 85% வரையிலும் உள்ளது. தமிழ்நாடு இதில் உலகிற்கே முன்மாதிரியாகத் திகழ்கிறது: மகளிர் சுயஉதவிக் குழுக்களிலிருந்து தேர்வு செய்யப்பட்ட பெண் பணி மேற்பார்வையாளர்கள் (100% Women Mates), பாரம்பரிய ஊரணிகள் மற்றும் கோயில் குளங்களை தூர்வாருதல், மற்றும் ஊரக வீடமைப்பு திட்டங்களுடன் ஒருங்கிணைப்பு செய்தல் ஆகியவை தமிழ்நாட்டின் சாதனைகளாகும். இப்பகுதி சொத்து வகைகள், பெண்கள் முன்னேற்றம் மற்றும் தமிழ்நாட்டின் முன்னோடி செயல்பாடுகளை அலசுகிறது."
+    },
+    "sec_sustainable_asset_creation_nrm": [
+      {
+        "term_en": "Schedule I Permissible Works Categories",
+        "term_ta": "அட்டவணை I அனுமதிக்கப்பட்ட பணிகளின் பிரிவுகள்",
+        "details_en": "Schedule I categorizes over 260 permissible works into four broad categories: (1) Category A: Natural Resource Management (NRM) - watershed, water harvesting, dug wells, check dams; (2) Category B: Individual assets for vulnerable sections (SC/ST, small/marginal farmers) - poultry shelters, cattle sheds, horticulture; (3) Category C: Common infrastructure for SHGs and rural livelihoods - agro-processing storage, fish drying yards; (4) Category D: Rural infrastructure - rural connectivity roads, Anganwadi buildings, crematorium paths.",
+        "details_ta": "சட்டத்தின் அட்டவணை I-ல் 260-க்கும் மேற்பட்ட பணிகள் 4 வகைகளாகப் பிரிக்கப்பட்டுள்ளன: (1) பிரிவு A: இயற்கை வள மேலாண்மை (NRM) - நீர்ப்பிடிப்பு, மழைநீர் சேகரிப்பு, கிணறுகள், தடுப்பணைகள்; (2) பிரிவு B: விளிம்புநிலை எளிய விவசாயிகளுக்கான தனிநபர் சொத்துக்கள் (SC/ST, சிறு/குறு விவசாயிகள்) - ஆட்டுக் கொட்டகை, மாட்டுத் தொழுவம், தோட்டக்கலை; (3) பிரிவு C: சுயஉதவிக் குழுக்களுக்கான பொது உள்கட்டமைப்பு - உலர் களங்கள், சேமிப்புக் கிடங்குகள்; (4) பிரிவு D: ஊரக உள்கட்டமைப்பு - சாலைகள், அங்கன்வாடி மையங்கள், மயானப் பாதைகள்."
+      },
+      {
+        "term_en": "Mandatory 60% Natural Resource Management (NRM) Floor",
+        "term_ta": "குறைந்தபட்சம் 60% இயற்கை வள மேலாண்மை (NRM) செலவின விதி",
+        "details_en": "To combat recurring droughts and groundwater depletion, the Ministry of Rural Development statutorily mandated that AT LEAST 60% OF TOTAL EXPENDITURE in notified water-stressed and drought-prone blocks must be invested in Category A Natural Resource Management works, building climate-resilient rural hydrology.",
+        "details_ta": "வறட்சி மற்றும் நிலத்தடி நீர்மட்டக் குறைவைத் தடுக்க, நீர் தட்டுப்பாடு உள்ள பகுதிகளில் மேற்கொள்ளப்படும் மொத்த பணிகளில் 'குறைந்தபட்சம் 60% செலவு இயற்கை வள மேலாண்மைப் பணிகளுக்காகவே (NRM)' முதலீடு செய்யப்பட வேண்டும் என ஊரக வளர்ச்சி அமைச்சகம் கட்டாயமாக்கியுள்ளது."
+      }
+    ],
+    "sec_socio_economic_and_labor_impacts": [
+      {
+        "term_en": "Agricultural Wage Floor & Labor Bargaining Power",
+        "term_ta": "விவசாயக் கூலித் தளம் & தொழிலாளர் பேரம் பேசும் திறன்",
+        "details_en": "MGNREGA functions as a statutory wage floor in the rural informal economy. Prior to the Act, feudal agricultural landowners could exploit seasonal unemployment by paying sub-subsistence wages. With an alternative guaranteed government fallback, private farm wages rose by an average of 5% to 9% nationally, enhancing the economic autonomy of landless laborers.",
+        "details_ta": "MGNREGA ஊரக முறைசாராப் பொருளாதாரத்தில் ஒரு சட்டப்பூர்வ கூலித் தளமாகச் செயல்படுகிறது. இச்சட்டம் வருவதற்கு முன், நிலப்பிரபுக்கள் வேலை இல்லாத காலங்களில் விவசாயத் தொழிலாளர்களுக்கு மிகக் குறைந்த கூலியையே வழங்கிச் சுரண்டினர். அரசு மாற்று வேலை வாய்ப்பை உறுதி செய்ததால், தனியார் விவசாயக் கூலியும் 5% முதல் 9% வரை உயர்ந்து, நிலமற்ற விவசாயத் தொழிலாளர்களின் பேரம் பேசும் திறன் அதிகரித்தது."
+      },
+      {
+        "term_en": "Mitigation of Distress Migration & Financial Inclusion",
+        "term_ta": "கட்டாய இடப்பெயர்வு தடுப்பு & முறையான வங்கிச் சேர்க்கை",
+        "details_en": "Empirical studies confirm that MGNREGA substantially reduces seasonal distress migration to urban construction sites and brick kilns during agricultural lean months. Furthermore, by mandating wage payments through post offices and commercial banks, the scheme brought tens of millions of unbanked rural women and Dalits into formal banking networks.",
+        "details_ta": "வேளாண்மையற்ற வறண்ட கோடை மாதங்களில் கிராமப்புறங்களிலிருந்து நகர கட்டுமானப் பணிகள் மற்றும் செங்கல் சூளைகளை நோக்கி நிகழும் அவலமான 'கட்டாய இடப்பெயர்வை' MGNREGA பெருமளவில் குறைத்துள்ளது. மேலும், கூலி வங்கிக் கணக்குகளில் செலுத்தப்படுவதால், கோடிக்கணக்கான கிராமப்புற பெண்களும் எளிய மக்களும் முதன்முதலில் வங்கி முறைக்குள் இணைக்கப்பட்டனர்."
+      }
+    ],
+    "sec_gender_empowerment_revolution": [
+      {
+        "term_en": "Surpassing the Quota: National 57% vs TN 80-85%",
+        "term_ta": "ஒதுக்கீட்டைத் தாண்டிய சாதனை: தேசிய 57% vs தமிழ்நாடு 80-85%",
+        "details_en": "While Section 33 statutorily requires a minimum of 33% female beneficiaries, women participate at vastly higher rates nationally (~57% of total person-days). In Tamil Nadu, female participation consistently reaches an astonishing 80% to 85%, turning MGNREGA primarily into a women-driven rural livelihood safety net.",
+        "details_ta": "சட்டப்பூர்வ குறைந்தபட்ச ஒதுக்கீடு 33% ஆக இருந்த போதிலும், தேசிய அளவில் பெண்களின் உண்மையான பங்கேற்பு 57% ஆக உயர்ந்துள்ளது. குறிப்பாக தமிழ்நாட்டில், பெண்களின் பங்கேற்பு வியக்கத்தக்க வகையில் 80% முதல் 85% வரை உள்ளது; இதன் மூலம் தமிழ்நாட்டில் இத்திட்டம் பெண்களால் வழிநடத்தப்படும் முதன்மை வாழ்வாதார திட்டமாக மாறியுள்ளது."
+      },
+      {
+        "term_en": "Economic Agency & Intra-Household Decision Making",
+        "term_ta": "பொருளாதார சுயாட்சி & குடும்ப முடிவெடுக்கும் அதிகாரம்",
+        "details_en": "Direct bank credit of equal wages directly into women's personal accounts has transformed intra-household gender dynamics. Women workers report greater spending autonomy on children's nutrition, education, and healthcare, reduced domestic financial disputes, and an enhanced social standing within village communities.",
+        "details_ta": "சம ஊதியம் பெண்களின் சொந்த வங்கிக் கணக்கிற்கு நேரடியாகச் செல்வதால், குடும்பத்திற்குள் பெண்களின் முடிவெடுக்கும் அதிகாரம் உயர்ந்துள்ளது. குழந்தைகள் கல்வி, ஊட்டச்சத்து மற்றும் மருத்துவச் செலவுகளுக்கு பெண்கள் சுயமாக முடிவெடுக்கவும், குடும்ப வன்முறைகள் குறையவும், கிராம சமூகத்தில் பெண்களின் மதிப்பு உயரவும் இது வழிவகுத்துள்ளது."
+      }
+    ],
+    "sec_tamil_nadu_benchmark_model": [
+      {
+        "term_en": "100% Women Mates & Kudimaramathu Water Heritage",
+        "term_ta": "100% பெண் பணித்தளப் பொறுப்பாளர்கள் & குடிமராமத்து நீர்நிலை மீட்பு",
+        "details_en": "Tamil Nadu established two signature implementation benchmarks: (1) 100% Women Worksite Mates: Almost all worksite supervisors (Mates) in TN are women mobilized from Self-Help Groups (Pudhu Vaazhvu / TNSRLM), ensuring meticulous muster tracking and zero gender harassment; (2) Traditional Water Rejuvenation: MGNREGA works are systematically converged with the restoration of ancient traditional cascading tanks, temple tanks, and Ooranis, boosting groundwater recharge across drought-prone districts.",
+        "details_ta": "தமிழ்நாடு இரண்டு உலகளாவிய சாதனைகளை நிலைநாட்டியுள்ளது: (1) 100% பெண் பணித்தள பொறுப்பாளர்கள் (Women Mates): பணி மேற்பார்வையாளர்கள் அனைவரும் மகளிர் சுயஉதவிக் குழுக்களிலிருந்து தேர்வு செய்யப்படுகின்றனர்; இது துல்லியமான வருகைப் பதிவையும் பெண் தொழிலாளர்களுக்கு பாதுகாப்பையும் உறுதி செய்கிறது; (2) பாரம்பரிய நீர்நிலை மீட்பு: பாரம்பரிய கண்மாய்கள், கோயில் குளங்கள், ஊரணிகளை தூர்வாரி நிலத்தடி நீரை செறிவூட்டும் பணிகளில் தமிழ்நாடு முன்னணியில் உள்ளது."
+      },
+      {
+        "term_en": "Contemporary Implementation Debates: Wages & Digital Friction",
+        "term_ta": "தற்கால அமலாக்க விவாதங்கள்: கூலி தாமதம் & டிஜிட்டல் சவால்கள்",
+        "details_en": "Key contemporary policy debates surround: (1) Wage Delays and Budget Rationing: Delays in central fund releases creating wage arrears, with demand for statutory compensation under Schedule II; (2) Digital Friction: Biometric mismatches, network connectivity gaps in remote tribal hills, and errors during mandatory ABPS migration; (3) Expansion to Urban Areas: Growing policy momentum demanding a national Urban Employment Guarantee Scheme modeled on Rajasthan (Indira Gandhi Shahari Rozgar) and Tamil Nadu.",
+        "details_ta": "தற்கால முக்கிய விவாதங்கள்: (1) கூலி தாமதம் மற்றும் நிதி பற்றாக்குறை: மத்திய அரசிடமிருந்து நிதி விடுவிக்க தாமதமாவதால் கூலி நிலுவை ஏற்படுதல் மற்றும் இழப்பீடு கோரிக்கை; (2) டிஜிட்டல் சவால்கள்: மலைப்பகுதிகளில் இணைய வசதியின்மை மற்றும் ஆதார் இணைப்பு (ABPS) நடைமுறைச் சிக்கல்கள்; (3) நகர்ப்புற வேலை உறுதித் திட்டம்: கிராமப்புறத்தைப் போலவே நகர்ப்புற ஏழைகளுக்கும் நகர்ப்புற வேலை உறுதித் திட்டம் வேண்டும் என்ற கோரிக்கை வலுவடைந்துள்ளது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_nrm_assets_vs_community_infrastructure",
+        "title_en": "Natural Resource Management (NRM) Assets vs Community Infrastructure Assets",
+        "title_ta": "இயற்கை வள மேலாண்மை (NRM) சொத்துக்கள் vs சமுதாய உள்கட்டமைப்பு சொத்துக்கள்",
+        "headers_en": [
+          "Asset Dimension",
+          "Category A: Natural Resource Management (NRM)",
+          "Category C & D: Community & Rural Infrastructure"
+        ],
+        "headers_ta": [
+          "சொத்து பரிமாணம்",
+          "பிரிவு A: இயற்கை வள மேலாண்மை (NRM)",
+          "பிரிவு C & D: சமுதாய மற்றும் ஊரக உள்கட்டமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "Mandatory Budget Share",
+            "Statutorily mandated at least 60% of expenditure in water-stressed blocks",
+            "Remaining expenditure (up to 40%) allocated for community works"
+          ],
+          [
+            "Primary Ecological Focus",
+            "Groundwater recharge, rainwater harvesting, soil moisture conservation",
+            "Physical connectivity, public sanitation, and local storage facilities"
+          ],
+          [
+            "Typical Works",
+            "Check dams, farm ponds, percolation tanks, continuous contour trenches",
+            "Gravel roads, Anganwadi buildings, crematorium sheds, solid waste sheds"
+          ],
+          [
+            "Climate Resilience Impact",
+            "Mitigates drought severity, increases crop cropping intensity, sequesters carbon",
+            "Improves village logistics, maternal child healthcare delivery, and hygiene"
+          ],
+          [
+            "Maintenance Responsibility",
+            "Gram Panchayat and user community through watershed committees",
+            "Line departments, Gram Panchayat, and Rural Development agencies"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கட்டாய நிதி ஒதுக்கீடு",
+            "வறட்சிப் பகுதிகளில் மொத்த செலவில் குறைந்தபட்சம் 60% நிதி கட்டாயம்",
+            "மீதமுள்ள நிதி (அதிகபட்சம் 40% வரை) சமுதாயப் பணிகளுக்கு ஒதுக்கீடு"
+          ],
+          [
+            "சுற்றுச்சூழல் நோக்கம்",
+            "நிலத்தடி நீர்மட்டம் உயர்வு, மழைநீர் சேகரிப்பு, மண் ஈரப்பதம் பாதுகாப்பு",
+            "ஊரகப் போக்குவரத்து, சுகாதாரம், விளைபொருள் சேமிப்பு வசதிகள்"
+          ],
+          [
+            "வழக்கமான பணிகள்",
+            "தடுப்பணைகள், பண்ணைக் குட்டைகள், ஊரணிகள், சமமட்ட வரப்புகள், கசிவுநீர்க் குட்டைகள்",
+            "கிராமச் சாலைகள், அங்கன்வாடி மைய கட்டிடங்கள், மயானப் பாதைகள், உரக் கூடங்கள்"
+          ],
+          [
+            "காலநிலை மாற்றத் தாக்கம்",
+            "வறட்சியின் தீவிரத்தைக் குறைத்தல், பயிர் சாகுபடி பரப்பை அதிகரித்தல்",
+            "கிராமப்புற போக்குவரத்து மற்றும் தாய்-சேய் நல விநியோகத்தை மேம்படுத்துதல்"
+          ],
+          [
+            "பராமரிப்புப் பொறுப்பு",
+            "கிராம ஊராட்சி மற்றும் நீர்ப்பிடிப்புப் பகுதி விவசாயிகள் குழுக்கள்",
+            "சம்பந்தப்பட்ட அரசுத் துறைகள் மற்றும் கிராம ஊராட்சி நிர்வாகம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_women_workers_pre_vs_post_mgnrega",
+        "title_en": "Rural Women Workers: Pre-MGNREGA vs Post-MGNREGA Socio-Economic Status",
+        "title_ta": "ஊரகப் பெண் தொழிலாளர்கள்: MGNREGA-க்கு முன் vs பின் ஒப்பீடு",
+        "headers_en": [
+          "Socio-Economic Indicator",
+          "Pre-MGNREGA Era (Before 2006)",
+          "Post-MGNREGA Reality (Contemporary)"
+        ],
+        "headers_ta": [
+          "சமூக-பொருளாதார குறிகாட்டி",
+          "MGNREGA-க்கு முந்தைய நிலை (2006 வரை)",
+          "MGNREGA-க்கு பிந்தைய சமகால நிலை"
+        ],
+        "rows_en": [
+          [
+            "Gender Wage Gap",
+            "Massive disparity: women paid 40-50% lower wages than men in farming",
+            "Statutory wage parity enforced under Equal Remuneration Act 1976"
+          ],
+          [
+            "Financial Inclusivity",
+            "Extreme exclusion: women rarely owned personal savings accounts",
+            "Universal bank account ownership with independent ATM/DBT access"
+          ],
+          [
+            "Seasonal Lean Period Vulnerability",
+            "High distress, borrowing from moneylenders at usurious interest rates",
+            "Predictable summer wage support buffering household caloric intake"
+          ],
+          [
+            "Intra-Household Decision Making",
+            "Subservient financial role; dependence on male household head",
+            "Independent earnings spent autonomously on children's education and diet"
+          ],
+          [
+            "Grassroots Leadership",
+            "Zero supervisory roles in public rural worksites",
+            "Trained Women Mates supervising muster rolls and worksite logistics"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பாலின கூலி இடைவெளி",
+            "விவசாயத்தில் ஆண்களை விட பெண்களுக்கு 40-50% குறைவான கூலியே வழங்கப்பட்டது",
+            "சம ஊதியச் சட்டம் 1976-ன் கீழ் இருபாலருக்கும் சமமான சட்டப்பூர்வ கூலி"
+          ],
+          [
+            "வங்கிச் சேர்க்கை நிலை",
+            "பெண்கள் சொந்தமாக வங்கிக் கணக்கு வைத்திருப்பது மிக அரிதாக இருந்தது",
+            "அனைத்து பெண் தொழிலாளர்களுக்கும் சொந்த வங்கிக் கணக்கு மற்றும் DBT வரவு"
+          ],
+          [
+            "கோடைகால பாதிப்பு",
+            "வேலையின்றி கந்துவட்டிக்காரர்களிடம் கடன் வாங்கி வறுமையில் சிக்குதல்",
+            "கோடைகாலத்தில் உத்தரவாதமான கூலி கிடைப்பதால் உணவுப் பாதுகாப்பு உறுதி"
+          ],
+          [
+            "குடும்ப முடிவெடுக்கும் அதிகாரம்",
+            "நிதி விஷயங்களில் குடும்ப ஆண்களை மட்டுமே சார்ந்திருக்கும் நிலை",
+            "சொந்த வருமானத்தின் மூலம் குழந்தைகள் கல்வி, ஊட்டச்சத்தில் முடிவெடுக்கும் அதிகாரம்"
+          ],
+          [
+            "களத்தலைமைப் பண்பு",
+            "அரசுப் பணிகளில் பெண்களுக்கு எந்தவித மேற்பார்வை அதிகாரமும் இல்லை",
+            "பெண் பணி மேற்பார்வையாளர்கள் (Women Mates) வருகைப் பதிவை நிர்வகிக்கும் அதிகாரம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mgnrega_tamil_nadu_vs_all_india",
+        "title_en": "MGNREGA Performance: All-India Benchmark vs Tamil Nadu Reality",
+        "title_ta": "MGNREGA செயல்பாடு: அகில இந்திய சராசரி vs தமிழ்நாடு ஒப்பீடு",
+        "headers_en": [
+          "Operational Parameter",
+          "All-India Average Benchmark",
+          "Tamil Nadu Performance Profile",
+          "Significance"
+        ],
+        "headers_ta": [
+          "செயல்பாட்டு அளவுரு",
+          "அகில இந்திய சராசரி",
+          "தமிழ்நாடு சாதனை நிலை",
+          "முக்கியத்துவம்"
+        ],
+        "rows_en": [
+          [
+            "Women Participation Share",
+            "~57% of total generated person-days",
+            "Consistently between 80% and 85%",
+            "Tamil Nadu leads all major states in female labor participation"
+          ],
+          [
+            "Worksite Mate Deployment",
+            "Mix of male and female supervisors",
+            "Nearly 100% Women Mates from SHGs",
+            "Institutionalized women's leadership and safe working conditions"
+          ],
+          [
+            "Average Person-Days per Household",
+            "45 to 50 days nationally",
+            "Consistently higher (~55 to 65 days)",
+            "Higher absorption and utilization of guaranteed work days"
+          ],
+          [
+            "Water Body Restoration",
+            "General rural infrastructure and roads",
+            "Targeted rejuvenation of Ooranis and tanks",
+            "Revitalized traditional Tamil irrigation systems"
+          ],
+          [
+            "Social Audit Institutionalization",
+            "Varied effectiveness; irregular in several states",
+            "TNSAS conducts rigorous regular biannual audits",
+            "High transparency and public trust in scheme execution"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பெண்கள் பங்கேற்பு சதவீதம்",
+            "மொத்த வேலைநாட்களில் சுமார் 57%",
+            "தொடர்ந்து 80% முதல் 85% வரை",
+            "பெரிய மாநிலங்களில் தமிழ்நாடு பெண்கள் பங்கேற்பில் முதலிடம்"
+          ],
+          [
+            "பணி மேற்பார்வையாளர் தேர்வு",
+            "ஆண் மற்றும் பெண் மேற்பார்வையாளர்கள் கலவை",
+            "மகளிர் சுயஉதவிக் குழுக்களைச் சேர்ந்த 100% பெண் Mates",
+            "பெண்கள் பாதுகாப்பு மற்றும் கள நிர்வாகத் திறன் உறுதி"
+          ],
+          [
+            "குடும்ப சராசரி வேலைநாட்கள்",
+            "தேசிய அளவில் சராசரியாக 45 முதல் 50 நாட்கள்",
+            "தமிழ்நாட்டில் தொடர்ந்து அதிகம் (55 முதல் 65 நாட்கள்)",
+            "உத்தரவாத வேலைநாட்களை மக்கள் முழுமையாகப் பயன்படுத்துதல்"
+          ],
+          [
+            "நீர்நிலை புனரமைப்புப் பணிகள்",
+            "பொதுவான சாலைகள் மற்றும் இதர உள்கட்டமைப்பு",
+            "ஊரணிகள், கோயில் குளங்கள், கண்மாய்களைத் தூர்வாருதல்",
+            "பாரம்பரிய தமிழக பாசன அமைப்புகளுக்கு மறுவாழ்வு"
+          ],
+          [
+            "சமூகத் தணிக்கை அமைப்பு",
+            "மாநிலத்திற்கு மாநிலம் மாறுபடும்; சில இடங்களில் ஒழுங்கற்றது",
+            "TNSAS மூலம் 6 மாதங்களுக்கு ஒருமுறை கடுமையான மக்கள் தணிக்கை",
+            "திட்ட அமலாக்கத்தில் மிக உயர்ந்த வெளிப்படைத்தன்மையும் மக்கள் நம்பிக்கையும்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mgnrega_benefits_vs_structural_challenges",
+        "title_en": "MGNREGA Macro Benefits vs Key Structural Implementation Challenges",
+        "title_ta": "MGNREGA-ன் பெருமளவிலான நன்மைகள் vs கட்டமைப்புச் சவால்கள் ஒப்பீடு",
+        "headers_en": [
+          "Analytical Domain",
+          "Macroeconomic & Social Benefits",
+          "Structural Implementation Challenges"
+        ],
+        "headers_ta": [
+          "பகுப்பாய்வு களம்",
+          "பொருளாதார & சமூக நன்மைகள்",
+          "கட்டமைப்புச் சவால்கள் / விவாதங்கள்"
+        ],
+        "rows_en": [
+          [
+            "Rural Employment & Poverty",
+            "Acts as an automatic stabilizer during rural distress and recessions",
+            "Budgetary outlays sometimes fall short of ground labor demand"
+          ],
+          [
+            "Agricultural Productivity",
+            "Creates groundwater-recharging check dams, dug wells, and ponds",
+            "Concerns from farmers regarding farm labor scarcity during peak harvest"
+          ],
+          [
+            "Wage Delivery Integrity",
+            "DBT and ABPS eliminated local cash pilferage and fake rosters",
+            "Biometric mismatch and technical glitches cause delayed wage credits"
+          ],
+          [
+            "Citizen Empowerment",
+            "Statutory rights paradigm enables citizens to demand accountability",
+            "Lack of awareness in remote tribal areas regarding unemployment allowance rights"
+          ],
+          [
+            "Climate Resilience",
+            "Ranks among the world's largest public ecological restoration programs",
+            "Inadequate engineering supervision sometimes leads to sub-optimal asset durability"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஊரக வேலை & வறுமை ஒழிப்பு",
+            "பொருளாதார மந்தநிலை மற்றும் வறட்சி காலங்களில் தானியங்கி மீட்புக் கவசமாகச் செயல்படுகிறது",
+            "கள அளவிலான உண்மையான தேவைக்கு பட்ஜெட் நிதி ஒதுக்கீடு போதுமானதாக இல்லாதிருத்தல்"
+          ],
+          [
+            "விவசாய உற்பத்தித்திறன்",
+            "நிலத்தடி நீரைச் செறிவூட்டும் தடுப்பணைகள், பண்ணைக் குட்டைகள் மற்றும் ஊரணிகள் உருவாக்கம்",
+            "அறுவடை காலங்களில் விவசாய வேலைகளுக்கு ஆட்கள் பற்றாக்குறை ஏற்படுவதாக விவசாயிகள் கவலை"
+          ],
+          [
+            "கூலி பட்டுவாடா நேர்மை",
+            "DBT மற்றும் ABPS மூலம் இடைத்தரகர்கள் மற்றும் போலி பெயர்கள் முழுமையாக ஒழிப்பு",
+            "பயோமெட்ரிக் கைரேகை பொருந்தாமை மற்றும் வங்கி இணைப்பு தாமதத்தால் கூலி வரவு தள்ளிப்போதல்"
+          ],
+          [
+            "மக்கள் அதிகாரம்",
+            "சட்டப்பூர்வ உரிமை என்பதால் மக்களால் அதிகாரிகளிடம் உரிமையுடன் கேள்வி கேட்க முடிகிறது",
+            "தொலைதூர பழங்குடி பகுதிகளில் வேலையின்மை படி கோரும் விழிப்புணர்வு போதிய அளவு இன்மை"
+          ],
+          [
+            "காலநிலை மாற்ற மீள்திறன்",
+            "உலகின் மிகப்பெரிய சூழலியல் மறுசீரமைப்பு திட்டங்களில் ஒன்றாகத் திகழ்கிறது",
+            "போதிய பொறியியல் மேற்பார்வை இல்லாத இடங்களில் உருவாக்கப்பட்ட சொத்துக்களின் தரம் குறைதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "MGNREGA Part 3: Impacts, Asset Creation & Tamil Nadu Model",
+        "short_label": "Impacts & TN Model",
+        "children": [
+          {
+            "title": "Sustainable Asset Creation",
+            "short_label": "Asset Creation",
+            "children": [
+              {
+                "title": "Schedule I Permissible Works (Categories A, B, C, D)",
+                "short_label": "Categories A-D"
+              },
+              {
+                "title": "Mandatory ≥60% NRM (Water harvesting, trenches, dams)",
+                "short_label": "60% NRM"
+              },
+              {
+                "title": "Ecological restoration and climate adaptation",
+                "short_label": "Climate Adaptation"
+              }
+            ]
+          },
+          {
+            "title": "Socio-Economic Impacts",
+            "short_label": "Economic Impacts",
+            "children": [
+              {
+                "title": "Agricultural Wage Floor pushes farm wages by 5-9%",
+                "short_label": "Wage Floor"
+              },
+              {
+                "title": "Substantial reduction in seasonal distress migration",
+                "short_label": "Migration Halt"
+              },
+              {
+                "title": "Financial inclusion of tens of millions of unbanked rural poor",
+                "short_label": "Bank Accounts"
+              }
+            ]
+          },
+          {
+            "title": "Gender Empowerment",
+            "short_label": "Gender Dividend",
+            "children": [
+              {
+                "title": "Women share: National ~57% vs Tamil Nadu 80-85%",
+                "short_label": "Women Share"
+              },
+              {
+                "title": "Equal wages under Equal Remuneration Act 1976",
+                "short_label": "Equal Wages"
+              },
+              {
+                "title": "Intra-household bargaining and child welfare spend",
+                "short_label": "Child Welfare"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu Benchmark Model",
+            "short_label": "TN Benchmark",
+            "children": [
+              {
+                "title": "100% Women Mates recruited from SHGs (TNSRLM)",
+                "short_label": "Women Mates"
+              },
+              {
+                "title": "Traditional water bodies: Ooranis & cascading tanks",
+                "short_label": "Ooranis"
+              },
+              {
+                "title": "Independent TNSAS rigorous social audits",
+                "short_label": "TNSAS"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Worksite Mate Gender Identity Trap: Tamil Nadu Deploys 100% WOMEN Mates",
+        "points": {
+          "en": [
+            "TRAP: Assuming that worksite supervisors (Mates) in Tamil Nadu are predominantly local male panchayat functionaries.",
+            "CORRECT FACT: Tamil Nadu established an institutional breakthrough by deploying nearly 100% WOMEN WORKsite MATES recruited from Self-Help Groups (SHGs) under Pudhu Vaazhvu / TNSRLM to record attendance and organize work.",
+            "WHY CANDIDATES FAIL: Assuming patriarchal dominance in supervisory roles on rural manual worksites."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாட்டில் பணித்தள மேற்பார்வையாளர்களாக (Mates) பெரும்பாலும் ஊராட்சி மன்ற ஆண் பிரதிநிதிகளே நியமிக்கப்படுகின்றனர் என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாட்டில் மகளிர் சுயஉதவிக் குழுக்களிலிருந்து தேர்வு செய்யப்பட்ட 'கிட்டத்தட்ட 100% பெண் பணி மேற்பார்வையாளர்களே (Women Mates)' வருகைப் பதிவேடு மற்றும் களப் பணிகளை நிர்வகிக்கின்றனர்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கிராமப்புற மேற்பார்வைப் பணிகளில் ஆண்களே ஆதிக்கம் செலுத்துவர் என்ற பொதுவான எண்ணம்."
+          ]
+        }
+      },
+      {
+        "title": "Private Land Asset Permissibility Trap: Permitted ONLY for Marginal/SC/ST Farmers",
+        "points": {
+          "en": [
+            "TRAP: Believing that MGNREGA works can never be executed on private agricultural land, or conversely that rich large landlords can get free farm ponds.",
+            "CORRECT FACT: Schedule I explicitly permits Category B works on private land, but STRICTLY RESTRICTED to SC/ST households, small/marginal farmers, IAY/PMAY beneficiaries, and Forest Rights Act title holders (large/wealthy landowners are barred).",
+            "WHY CANDIDATES FAIL: Missing the specific socio-economic vulnerability criteria governing private land works."
+          ],
+          "ta": [
+            "பொறி: MGNREGA பணிகளை எப்போதுமே தனியார் நிலங்களில் செய்ய முடியாது என்றோ, அல்லது பணக்கார பெரிய நிலப்பிரபுக்களின் நிலங்களிலும் இலவசமாக பண்ணைக்குட்டை வெட்டலாம் என்றோ நினைப்பது.",
+            "சரியான உண்மை: பிரிவு B-ன் கீழ் தனியார் நிலங்களிலும் வேலை செய்ய அனுமதி உண்டு; ஆனால் அது 'SC/ST குடும்பங்கள், சிறு/குறு விவசாயிகள் மற்றும் PMAY பயனாளிகளுக்கு மட்டுமே' அனுமதிக்கப்படுகிறது; பெரிய நிலப்பிரபுக்களுக்கு அனுமதி இல்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தனியார் நிலங்களுக்கான சிறப்பு நிபந்தனைகளை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "NRM Expenditure Priority Trap: At Least 60% in Notified Blocks",
+        "points": {
+          "en": [
+            "TRAP: Assuming funds can be spent entirely on building rural concrete village halls or bituminous roads.",
+            "CORRECT FACT: Ministry guidelines statutorily require that AT LEAST 60% OF TOTAL EXPENDITURE in notified water-stressed blocks must be allocated to Category A Natural Resource Management (NRM) works like check dams, percolation tanks, and trenches.",
+            "WHY CANDIDATES FAIL: Conflating general civil works with the core environmental conservation mandate of the Act."
+          ],
+          "ta": [
+            "பொறி: MGNREGA நிதியை முழுமையாக ஊரக கான்கிரீட் கட்டிடங்கள் அல்லது சாலைகள் அமைக்க மட்டுமே பயன்படுத்தலாம் என நினைப்பது.",
+            "சரியான உண்மை: நீர் தட்டுப்பாடு உள்ள பகுதிகளில் மொத்த செலவினத்தில் 'குறைந்தது 60% நிதி இயற்கை வள மேலாண்மை (NRM)' பணிகளான தடுப்பணைகள், கசிவுநீர்க் குட்டைகள், மழைநீர் சேகரிப்பிற்கே செலவிடப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொதுவான கட்டுமானப் பணிகளையும் திட்டத்தின் முதன்மை சுற்றுச்சூழல் நோக்கத்தையும் ஒன்றாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Wage Delay Compensation Rate Trap: 0.05% Per Day, NOT 5% or 10%",
+        "points": {
+          "en": [
+            "TRAP: Marking 1% or 5% per day as the statutory rate of delay compensation for unpaid wages under MGNREGA.",
+            "CORRECT FACT: Schedule II, Clause 29 specifies that if wages are not paid within 15 days of muster closure, workers are entitled to compensation at the rate of 0.05% OF UNPAID WAGES PER DAY OF DELAY.",
+            "WHY CANDIDATES FAIL: Overestimating the statutory percentage formula for delay compensation."
+          ],
+          "ta": [
+            "பொறி: கூலி தாமதத்திற்கான சட்டப்பூர்வ இழப்பீட்டு விகிதத்தை நாள் ஒன்றுக்கு 1% அல்லது 5% எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: அட்டவணை II, பிரிவு 29-ன் படி, வருகைப் பதிவேடு முடிந்த 15 நாட்களுக்குள் கூலி வழங்கப்படாவிட்டால், தாமதமாகும் ஒவ்வொரு நாளுக்கும் 'வழங்கப்படாத கூலியில் 0.05%' இழப்பீடாக வழங்கப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 0.05% என்ற துல்லியமான சட்டப்பூர்வ சதவீதத்தை நினைவில் கொள்ளத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Tamil Nadu Female Share Benchmark Trap: Consistently 80% to 85%, NOT 50%",
+        "points": {
+          "en": [
+            "TRAP: Assuming female participation in Tamil Nadu is around 50% in parity with the general gender ratio.",
+            "CORRECT FACT: Tamil Nadu records an overwhelming 80% to 85% female participation rate in MGNREGA, making it the highest among major Indian states and far above the national average of ~57%.",
+            "WHY CANDIDATES FAIL: Assuming female participation in manual labor cannot exceed 50-60%."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாட்டில் MGNREGA-ல் பெண்கள் பங்கேற்பு மக்கள் தொகை விகிதத்திற்கு ஏற்ப சுமார் 50% மட்டுமே இருக்கும் என எண்ணுவது.",
+            "சரியான உண்மை: தமிழ்நாட்டில் பெண்கள் பங்கேற்பு தொடர்ந்து '80% முதல் 85% வரை' நிலவுகிறது; இது இந்தியாவின் பெரிய மாநிலங்களிலேயே மிக மிக அதிகமாகும் (தேசிய சராசரி ~57%).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: உடலுழைப்பு திட்டத்தில் பெண்களின் பங்கு 80%-ஐத் தாண்டும் என்பதை நம்பத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Urban Employment Guarantee Trap: MGNREGA Does NOT Apply to Urban Municipalities",
+        "points": {
+          "en": [
+            "TRAP: Believing poor residents of town panchayats, municipalities, and municipal corporations can demand work under MGNREGA.",
+            "CORRECT FACT: MGNREGA is strictly a RURAL law applicable only to areas governed by Village Panchayats. Urban areas are covered only if a state introduces a separate state scheme (such as Rajasthan's Indira Gandhi Shahari Rozgar).",
+            "WHY CANDIDATES FAIL: Overlooking the explicit 'Rural' statutory boundary in the Act's title and scope."
+          ],
+          "ta": [
+            "பொறி: நகராட்சிகள் மற்றும் மாநகராட்சிகளில் வசிக்கும் ஏழை மக்களும் MGNREGA சட்டத்தின் கீழ் வேலை கோரலாம் என நினைப்பது.",
+            "சரியான உண்மை: MGNREGA என்பது முழுக்க முழுக்க 'ஊரகப் பகுதிகளுக்கு மட்டுமே' (கிராம ஊராட்சிகள்) பொருந்தும் சட்டமாகும்; பேரூராட்சிகள் அல்லது நகராட்சிகளுக்கு இது பொருந்தாது (அங்கு வேலை பெற மாநில அரசுகளின் தனி திட்டங்கள் தேவை).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சட்டத்தின் தலைப்பிலேயே உள்ள 'ஊரக' (Rural) என்ற சொல்லின் சட்டப்பூர்வ எல்லையைக் கவனிக்காமல் விடுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Schedule I of MGNREGA lists over 260 permissible works classified into four major categories (A, B, C, and D).",
+        "At least 60% of total expenditure in notified drought-prone and water-stressed blocks must be invested in Natural Resource Management (NRM) works.",
+        "Category B works on private agricultural land are restricted to SC/ST households, small/marginal farmers, and PMAY beneficiaries.",
+        "Empirical studies indicate MGNREGA raised open-market agricultural wages by 5% to 9% nationally by functioning as a rural wage floor.",
+        "MGNREGA has significantly reduced seasonal distress migration from rural villages to urban slums during summer months.",
+        "Women account for approximately 57% of all person-days generated nationally under MGNREGA.",
+        "In Tamil Nadu, women represent 80% to 85% of all MGNREGA workers, the highest proportion among major Indian states.",
+        "Tamil Nadu deploys nearly 100% Women Worksite Mates mobilized from Self-Help Groups under TNSRLM to supervise worksites.",
+        "Tamil Nadu systematically converges MGNREGA with the restoration of ancient traditional water bodies, Ooranis, and temple tanks.",
+        "Schedule II, Clause 29 provides for delay compensation at 0.05% of unpaid wages per day if payment is delayed beyond 15 days.",
+        "Equal wages for male and female workers are legally enforced under the Equal Remuneration Act, 1976.",
+        "MGNREGA is strictly applicable to rural Village Panchayat areas and does not cover urban municipal bodies."
+      ],
+      "ta": [
+        "MGNREGA அட்டவணை I-ல் அனுமதிக்கப்பட்ட 260-க்கும் மேற்பட்ட பணிகள் 4 முக்கிய பிரிவுகளாக (A, B, C, D) வகைப்படுத்தப்பட்டுள்ளன.",
+        "வறட்சிப் பகுதிகளில் மொத்த செலவில் குறைந்தபட்சம் 60% இயற்கை வள மேலாண்மை (NRM) பணிகளுக்கே செலவிடப்பட வேண்டும்.",
+        "தனியார் நிலங்களில் செய்யப்படும் பிரிவு B பணிகள் SC/ST குடும்பங்கள், சிறு/குறு விவசாயிகள் மற்றும் PMAY பயனாளிகளுக்கு மட்டுமே அனுமதிக்கப்படுகிறது.",
+        "MGNREGA ஒரு சட்டப்பூர்வ கூலித் தளமாகச் செயல்பட்டு, தேசிய அளவில் விவசாயக் கூலியை 5% முதல் 9% வரை உயர்த்தியுள்ளது.",
+        "வேளாண்மையற்ற கோடை காலங்களில் கிராமங்களிலிருந்து நகரங்களை நோக்கிய கட்டாய அவல இடப்பெயர்வை இத்திட்டம் பெருமளவில் குறைத்துள்ளது.",
+        "தேசிய அளவில் MGNREGA-ல் உருவாக்கப்பட்ட மொத்த வேலைநாட்களில் சுமார் 57% பெண்களாலேயே பெறப்படுகிறது.",
+        "தமிழ்நாட்டில் MGNREGA தொழிலாளர்களில் 80% முதல் 85% வரை பெண்கள் ஆவர்; இது பெரிய மாநிலங்களில் முதலிடமாகும்.",
+        "தமிழ்நாட்டில் மகளிர் சுயஉதவிக் குழுக்களைச் சேர்ந்த கிட்டத்தட்ட 100% பெண் பணி மேற்பார்வையாளர்களே (Women Mates) பணிகளை நிர்வகிக்கின்றனர்.",
+        "பாரம்பரிய நீர்நிலைகள், ஊரணிகள் மற்றும் கோயில் குளங்களைத் தூர்வாரும் பணிகளில் தமிழ்நாடு MGNREGA-வை வெற்றிகரமாகப் பயன்படுத்துகிறது.",
+        "அட்டவணை II, பிரிவு 29-ன் படி 15 நாட்களுக்கு மேல் கூலி தாமதமானால் நாள் ஒன்றுக்கு 0.05% இழப்பீடு வழங்கப்பட வேண்டும்.",
+        "சம ஊதியச் சட்டம் 1976-ன் கீழ் ஆண்-பெண் இருபாலருக்கும் பாகுபாடின்றி சம ஊதியம் சட்டப்பூர்வமாக உறுதி செய்யப்படுகிறது.",
+        "MGNREGA என்பது கிராம ஊராட்சிகளுக்கு மட்டுமே பொருந்தும் சட்டமாகும்; இது நகராட்சிப் பகுதிகளுக்குப் பொருந்தாது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Schedule I categorizes permissible works into 4 groups: Category A (NRM), B (Individual), C (SHG), D (Rural Infra).",
+        "Mandatory ≥60% expenditure on Category A Natural Resource Management (NRM) in water-stressed blocks.",
+        "Category B private land works permitted only for SC/ST, small/marginal farmers, and PMAY beneficiaries.",
+        "Functions as an economic wage floor, raising open-market agricultural wages by 5-9% and halting distress migration.",
+        "Gender dividend: Women constitute ~57% of national workforce and a massive 80-85% in Tamil Nadu.",
+        "Equal wages mandated by Equal Remuneration Act 1976; wages paid directly via bank/post office DBT.",
+        "Tamil Nadu benchmark: 100% Women Mates recruited from Self-Help Groups (TNSRLM) supervising worksites.",
+        "TN converges MGNREGA with Kudimaramathu water bodies, cascading tanks, and Ooranis restoration.",
+        "Clause 29 delay compensation: 0.05% of unpaid wages per day if wages delayed beyond 15 days of muster closure.",
+        "MGNREGA is strictly a rural statute; urban areas require separate state employment guarantee schemes."
+      ],
+      "ta": [
+        "அட்டவணை I பணிகளை 4 பிரிவுகளாகப் பிரிக்கிறது: பிரிவு A (NRM), B (தனிநபர்), C (சுயஉதவிக் குழு), D (ஊரக உள்கட்டமைப்பு).",
+        "நீர் தட்டுப்பாடு உள்ள பகுதிகளில் இயற்கை வள மேலாண்மை (NRM) பணிகளுக்கு குறைந்தபட்சம் 60% நிதி கட்டாயம்.",
+        "தனியார் நிலப் பணிகள் SC/ST, சிறு/குறு விவசாயிகள் மற்றும் PMAY பயனாளிகளுக்கு மட்டுமே அனுமதிக்கப்படுகிறது.",
+        "கூலித் தளமாகச் செயல்பட்டு விவசாயக் கூலியை 5-9% உயர்த்தியுள்ளது; நகரங்களை நோக்கிய கட்டாய இடப்பெயர்வைத் தடுத்துள்ளது.",
+        "மகளிர் முன்னேற்றம்: தேசிய அளவில் 57% மற்றும் தமிழ்நாட்டில் 80% முதல் 85% வரை பெண்கள் பங்கேற்பு.",
+        "சம ஊதியச் சட்டம் 1976-ன் படி சம ஊதியம்; வங்கி அல்லது அஞ்சலக DBT மூலம் நேரடியாக வரவு வைக்கப்படுகிறது.",
+        "தமிழ்நாடு சாதனை: மகளிர் சுயஉதவிக் குழுக்களைச் சேர்ந்த 100% பெண் பணி மேற்பார்வையாளர்கள் (Women Mates).",
+        "பாரம்பரிய நீர்நிலைகள், கண்மாய்கள், ஊரணிகளை தூர்வாரி நிலத்தடி நீரை செறிவூட்டுவதில் தமிழ்நாடு முன்னணி.",
+        "கூலி தாமத இழப்பீடு: வருகைப் பதிவேடு முடிந்த 15 நாட்களுக்கு மேல் தாமதமானால் நாள் ஒன்றுக்கு 0.05% இழப்பீடு.",
+        "MGNREGA கிராம ஊராட்சிகளுக்கு மட்டுமே பொருந்தும்; நகர்ப்புறத்திற்கு தனி மாநில திட்டங்கள் தேவை."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_mgnrega_301",
+        "front_en": "What is the mandatory minimum expenditure share for Natural Resource Management (NRM) works in notified water-stressed blocks under MGNREGA?",
+        "front_ta": "MGNREGA-ல் நீர் தட்டுப்பாடு உள்ள பகுதிகளில் இயற்கை வள மேலாண்மைப் பணிகளுக்கு (NRM) குறைந்தபட்சம் எத்தனை சதவீத நிதி ஒதுக்கப்பட வேண்டும்?",
+        "back_en": "At least 60% of total expenditure under Category A of Schedule I.",
+        "back_ta": "அட்டவணை I பிரிவு A-ன் கீழ் மொத்த செலவினத்தில் குறைந்தபட்சம் 60% நிதி."
+      },
+      {
+        "id": "rc_mgnrega_302",
+        "front_en": "Who is eligible to have MGNREGA Category B works executed on their private agricultural land?",
+        "front_ta": "MGNREGA பிரிவு B-ன் கீழ் தங்களின் சொந்த விவசாய நிலத்தில் பணிகள் செய்ய யார் யாருக்கு தகுதி உண்டு?",
+        "back_en": "Restricted strictly to SC/ST households, small and marginal farmers, IAY/PMAY beneficiaries, and FRA title holders.",
+        "back_ta": "SC/ST குடும்பங்கள், சிறு மற்றும் குறு விவசாயிகள் மற்றும் PMAY பயனாளிகளுக்கு மட்டுமே அனுமதி உண்டு."
+      },
+      {
+        "id": "rc_mgnrega_303",
+        "front_en": "How has MGNREGA impacted agricultural wages in the private rural labor market?",
+        "front_ta": "தனியார் ஊரக உழைப்புச் சந்தையில் விவசாயக் கூலியின் மீது MGNREGA ஏற்படுத்திய தாக்கம் என்ன?",
+        "back_en": "Functions as a wage floor, pushing up open-market agricultural wages by an average of 5% to 9% nationally.",
+        "back_ta": "சட்டப்பூர்வ கூலித் தளமாகச் செயல்பட்டு, தேசிய அளவில் விவசாயக் கூலியை சராசரியாக 5% முதல் 9% வரை உயர்த்தியுள்ளது."
+      },
+      {
+        "id": "rc_mgnrega_304",
+        "front_en": "What is the actual women participation percentage in MGNREGA in Tamil Nadu compared to the national average?",
+        "front_ta": "தேசிய சராசரியுடன் ஒப்பிடும்போது தமிழ்நாட்டில் MGNREGA-ல் பெண்களின் உண்மையான பங்கேற்பு சதவீதம் என்ன?",
+        "back_en": "Tamil Nadu records 80% to 85% women participation, compared to ~57% nationally (statutory minimum is 33.33%).",
+        "back_ta": "தேசிய சராசரி 57% ஆக உள்ள நிலையில், தமிழ்நாட்டில் பெண்கள் பங்கேற்பு 80% முதல் 85% வரை உள்ளது (சட்டப்பூர்வ குறைந்தபட்ச வரம்பு 33.33%)."
+      },
+      {
+        "id": "rc_mgnrega_305",
+        "front_en": "What unique institutional benchmark has Tamil Nadu established regarding worksite supervisors (Mates)?",
+        "front_ta": "பணித்தள மேற்பார்வையாளர்கள் (Mates) நியமனத்தில் தமிழ்நாடு ஏற்படுத்தியுள்ள தனித்துவமான சாதனை என்ன?",
+        "back_en": "Deploys nearly 100% Women Worksite Mates mobilized and trained from Self-Help Groups (SHGs).",
+        "back_ta": "மகளிர் சுயஉதவிக் குழுக்களிலிருந்து தேர்வு செய்யப்பட்ட கிட்டத்தட்ட 100% பெண் பணி மேற்பார்வையாளர்களை (Women Mates) நியமித்துள்ளது."
+      },
+      {
+        "id": "rc_mgnrega_306",
+        "front_en": "Which traditional water systems are systematically restored under MGNREGA in Tamil Nadu?",
+        "front_ta": "தமிழ்நாட்டில் MGNREGA திட்டத்தின் கீழ் முறையாக புனரமைக்கப்படும் பாரம்பரிய நீர்நிலைகள் எவை?",
+        "back_en": "Traditional cascading irrigation tanks, temple tanks, and Ooranis (drinking water ponds).",
+        "back_ta": "பாரம்பரிய பாசனக் கண்மாய்கள், கோயில் குளங்கள் மற்றும் ஊரணிகள் (குடிநீர்க் குட்டைகள்)."
+      },
+      {
+        "id": "rc_mgnrega_307",
+        "front_en": "What is the statutory rate of delay compensation under Schedule II Clause 29 if wages are delayed beyond 15 days of muster closure?",
+        "front_ta": "வருகைப் பதிவேடு முடிந்த 15 நாட்களுக்கு மேல் கூலி தாமதமானால் அட்டவணை II பிரிவு 29-ன் கீழ் வழங்கப்படும் இழப்பீட்டு விகிதம் என்ன?",
+        "back_en": "0.05% of unpaid wages per day of delay.",
+        "back_ta": "தாமதமாகும் ஒவ்வொரு நாளுக்கும் வழங்கப்படாத கூலியில் 0.05%."
+      },
+      {
+        "id": "rc_mgnrega_308",
+        "front_en": "Which legislation guarantees equal wages for male and female workers under MGNREGA?",
+        "front_ta": "MGNREGA-ல் ஆண் மற்றும் பெண் தொழிலாளர்களுக்கு சம ஊதியத்தை உத்தரவாதம் செய்யும் சட்டம் எது?",
+        "back_en": "The Equal Remuneration Act, 1976.",
+        "back_ta": "சம ஊதியச் சட்டம், 1976 (Equal Remuneration Act, 1976)."
+      },
+      {
+        "id": "rc_mgnrega_309",
+        "front_en": "Does MGNREGA apply to municipal corporations, municipalities, and urban local bodies?",
+        "front_ta": "மாநகராட்சிகள், நகராட்சிகள் போன்ற நகர்ப்புற உள்ளாட்சி அமைப்புகளுக்கு MGNREGA சட்டம் பொருந்துமா?",
+        "back_en": "No. MGNREGA is strictly applicable only to rural areas governed by Village Panchayats.",
+        "back_ta": "பொருந்தாது. MGNREGA என்பது கிராம ஊராட்சிகளால் நிர்வகிக்கப்படும் ஊரகப் பகுதிகளுக்கு மட்டுமே சட்டப்பூர்வமாகப் பொருந்தும்."
+      },
+      {
+        "id": "rc_mgnrega_310",
+        "front_en": "Name one major positive impact of MGNREGA on rural migration patterns.",
+        "front_ta": "ஊரக இடப்பெயர்வுப் போக்கின் மீது MGNREGA ஏற்படுத்திய ஒரு முதன்மையான சாதகமான தாக்கம் என்ன?",
+        "back_en": "Substantial reduction in seasonal distress migration to urban brick kilns and construction sites during agricultural dry months.",
+        "back_ta": "வேளாண்மையற்ற வறண்ட கோடை காலங்களில் நகர செங்கல் சூளைகள் மற்றும் கட்டுமானப் பணிகளை நோக்கிய அவல இடப்பெயர்வை பெருமளவில் தடுத்துள்ளது."
+      }
+    ]
+  }
+}

@@ -1,0 +1,863 @@
+{
+  "meta": {
+    "topic_id": "economy_agriculture_part_1",
+    "repository_id": "economy_agriculture",
+    "display_title": "Agriculture – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Agriculture",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundation",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Agriculture Role in GDP",
+    "State List Entry 14",
+    "Marginal Farmers Less than 1 Hectare",
+    "Small Farmers 1 to 2 Hectares",
+    "Kharif Season Monsoon",
+    "Rabi Season Winter Wheat",
+    "Zaid Summer Season",
+    "Disguised Unemployment Agriculture",
+    "Cash Crops vs Food Crops",
+    "Plantation Crops"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the strategic role of agriculture in the Indian national economy, food security, and workforce.",
+        "Comprehend the economic implications of land fragmentation and declining average holding sizes."
+      ],
+      "ta": [
+        "இந்திய தேசியப் பொருளாதாரம், உணவுப் பாதுகாப்பு மற்றும் வேலைவாய்ப்பில் வேளாண்மையின் பங்கை அறிதல்.",
+        "நிலத் துண்டாடல் மற்றும் சராசரி நிலப்பரப்பு குறைவதால் ஏற்படும் பொருளாதாரத் தாக்கங்களைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize landholding thresholds: Marginal (< 1 ha) and Small (1-2 ha).",
+        "Recall the distinct calendar and crop profiles of Kharif, Rabi, and Zaid seasons."
+      ],
+      "ta": [
+        "நிலவுடைமை அளவுகளை நினைவில் நிறுத்துதல்: குறு நிலம் (< 1 ஹெக்) மற்றும் சிறு நிலம் (1-2 ஹெக்).",
+        "கரீஃப், ரபி மற்றும் சையத் பருவங்களின் விதைப்பு, அறுவடை மற்றும் பயிர் விவரங்களை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how disguised unemployment depresses marginal productivity of agrarian labor.",
+        "Differentiate between subsistence, commercial, and plantation agricultural modes."
+      ],
+      "ta": [
+        "மறைமுக வேலையின்மை எவ்வாறு வேளாண் தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறனைக் குறைக்கிறது என ஆய்வு செய்தல்.",
+        "தன்னிறைவு, வணிக மற்றும் தோட்ட விவசாய முறைகளுக்கு இடையிலான வேறுபாடுகளை ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid TNPSC traps regarding constitutional entries, crop season alignments, and farmer size cutoffs."
+      ],
+      "ta": [
+        "அரசியலமைப்புப் பதிவுகள், பயிர் பருவங்கள் மற்றும் நிலவுடைமை வரம்புகள் குறித்த TNPSC தேர்வுப் பொறிகளைத் தவிர்க்க அறிவைப் பயன்படுத்துதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Agriculture – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_role_and_characteristics",
+      "title_en": "Role & Structural Characteristics of Indian Agriculture",
+      "title_ta": "இந்திய வேளாண்மையின் பங்கும் கட்டமைப்புப் பண்புகளும்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_landholding_structure",
+      "title_en": "Operational Landholding Structure & Classification",
+      "title_ta": "செயல்பாட்டு நிலவுடைமைக் கட்டமைப்பும் வகைப்பாடும்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_cropping_seasons",
+      "title_en": "Cropping Seasons of India: Kharif, Rabi & Zaid",
+      "title_ta": "இந்தியாவின் பயிர் பருவங்கள்: கரீஃப், ரபி மற்றும் சையத்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_farming_types_and_crops",
+      "title_en": "Types of Farming & Crop Classification in India",
+      "title_ta": "இந்தியாவில் விவசாய முறைகளும் பயிர் வகைப்பாடுகளும்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Agriculture in the Indian economy is the primary sector enterprise encompassing crop cultivation, sericulture, horticulture, animal husbandry, and allied agrarian activities, serving as the foundational provider of food security, raw materials for industry, and livelihoods for over 45% of the national workforce.",
+      "ta": "இந்தியப் பொருளாதாரத்தில் வேளாண்மை என்பது பயிர் சாகுபடி, பட்டுப்புழு வளர்ப்பு, தோட்டக்கலை, கால்நடை வளர்ப்பு மற்றும் சார்பு விவசாய நடவடிக்கைகளை உள்ளடக்கிய முதன்மைத் துறை நிறுவனமாகும். இது தேசிய உணவுப் பாதுகாப்பு, தொழில்துறைக்கான மூலப்பொருட்கள் மற்றும் நாட்டின் 45%-க்கும் மேற்பட்ட உழைப்பாளர்களுக்கு வாழ்வாதாரத்தை வழங்கும் அடித்தளமாகத் திகழ்கிறது."
+    },
+    "introduction": {
+      "en": "Agriculture occupies a paramount strategic position in India's socio-economic architecture. Despite its structural share in Gross Value Added (GVA) moderating from over 50% at independence to approximately 16-18% in contemporary times, it remains the single largest employment generator and the bedrock of rural demand. Characterized by high dependence on the monsoon, extensive fragmentation of operational landholdings, predominance of small and marginal farmers, and stark regional variations in productivity, understanding Indian agriculture requires mastering its seasonal classifications (Kharif, Rabi, Zaid), crop categories (foodgrains vs commercial cash crops), and the fundamental economics of land tenure.",
+      "ta": "இந்தியாவின் சமூக-பொருளாதாரக் கட்டமைப்பில் வேளாண்மை தலையாய இடத்தை வகிக்கிறது. சுதந்திரத்தின் போது மொத்த மதிப்பு கூட்டலில் (GVA) 50%-க்கும் மேல் இருந்த இதன் பங்களிப்பு தற்போது சுமார் 16-18% ஆகக் குறைந்திருந்தாலும், இதுவே நாட்டின் மிகப்பெரிய வேலைவாய்ப்பு ஆதாரமாகவும் கிராமப்புற நுகர்வுத் தேவையின் அடித்தளமாகவும் விளங்குகிறது. பருவமழையை பெரிதும் நம்பியிருத்தல், நிலவுடைமைத் துண்டாடல், சிறு மற்றும் குறு விவசாயிகளின் ஆதிக்கம் மற்றும் உற்பத்தித்திறனில் நிலவும் பிராந்திய ஏற்றத்தாழ்வுகள் இதன் முக்கிய பண்புகளாகும். இந்திய வேளாண்மையைப் புரிந்துகொள்ள அதன் பருவக்காலப் பயிர்கள் (கரீஃப், ரபி, சையத்), பயிர் வகைகள் (உணவுப் பயிர்கள் மற்றும் பணப்பயிர்கள்) மற்றும் நிலவுடைமைப் பொருளாதாரக் கோட்பாடுகளைத் தெளிவாகக் கற்பது அவசியமாகும்."
+    },
+    "sec_role_and_characteristics": [
+      {
+        "title": "Multifaceted Role in Economic Development",
+        "title_ta": "பொருளாதார வளர்ச்சியில் பன்முகப் பங்கு",
+        "points": {
+          "en": [
+            "Food Security Provider: Sustains a population exceeding 1.4 billion people with domestic foodgrain production.",
+            "Livelihood Bedrock: Employs approximately 45-47% of the total workforce, absorbing surplus rural labor.",
+            "Industrial Raw Material Supplier: Feeds agro-processing industries including textiles (cotton, jute), sugar, tea, edible oils, and tobacco.",
+            "Rural Demand Driver: Agrarian income directly dictates purchasing power for industrial consumer goods, tractors, FMCG, and rural housing.",
+            "Contribution to Foreign Trade: Accounts for substantial export earnings through basmati rice, marine products, spices, tea, and raw cotton."
+          ],
+          "ta": [
+            "உணவுப் பாதுகாப்பு வழங்குநர்: 140 கோடிக்கும் அதிகமான மக்கள் தொகைக்கு உள்நாட்டு உணவு தானிய உற்பத்தியின் மூலம் உணவுப் பாதுகாப்பை அளிக்கிறது.",
+            "வாழ்வாதார அடித்தளம்: நாட்டின் மொத்த உழைப்பாளர்களில் சுமார் 45-47% பேருக்கு வேலைவாய்ப்பை வழங்கி கிராமப்புற உபரி உழைப்பை உள்வாங்குகிறது.",
+            "தொழில்துறை மூலப்பொருள் விநியோகம்: ஜவுளி (பருத்தி, சணல்), சர்க்கரை, தேயிலை, சமையல் எண்ணெய் போன்ற வேளாண் சார் தொழில்களுக்கு மூலப்பொருட்களை வழங்குகிறது.",
+            "கிராமப்புற நுகர்வு உந்துதல்: விவசாய வருமானம் தொழில்துறை நுகர்வுப் பொருட்கள், டிராக்டர்கள் மற்றும் கிராமப்புற வீடுகளுக்கான வாங்கும் சக்தியைத் தீர்மானிக்கிறது.",
+            "வெளிநாட்டு வர்த்தகப் பங்களிப்பு: பாசுமதி அரிசி, கடல் உணவுப் பொருட்கள், நறுமணப் பொருட்கள் (மசாலாக்கள்), தேயிலை மற்றும் பருத்தி மூலம் குறிப்பிடத்தக்க ஏற்றுமதி வருவாயை ஈட்டுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Salient Characteristics & Vulnerabilities",
+        "title_ta": "முக்கியப் பண்புகளும் சவால்களும்",
+        "points": {
+          "en": [
+            "Gambling with Monsoons: Nearly 50% of the net sown area remains rainfed, vulnerable to erratic South-West Monsoon rainfall.",
+            "Subsistence Nature: The majority of cultivation is geared towards immediate household consumption rather than commercial profit.",
+            "Disguised Unemployment: Excessive workforce dependence results in zero or near-zero marginal physical productivity of labor.",
+            "Low Capital Formation: Historical underinvestment in rural infrastructure, post-harvest cold chains, and soil rejuvenation.",
+            "Traditional Practices: Coexistence of modern precision farming with primitive wooden ploughs and rain-dependent sowing."
+          ],
+          "ta": [
+            "பருவமழையுடன் சூதாட்டம்: நிகர பயிரிடப்பட்ட பரப்பில் கிட்டத்தட்ட 50% மானாவாரி நிலமாகவே உள்ளதால், தென்மேற்கு பருவமழையின் மாறுபாடுகளுக்கு உள்ளாகிறது.",
+            "தன்னிறைவு நோக்கம் (Subsistence): பெரும்பாலான சாகுபடி வணிக லாபத்தை விட குடும்பத்தின் உடனடி உணவு நுகர்வை நோக்கமாகக் கொண்டே செய்யப்படுகிறது.",
+            "மறைமுக வேலையின்மை (Disguised Unemployment): நிலத்தின் தேவையை விட அதிக தொழிலாளர்கள் சார்ந்திருப்பதால், தொழிலாளரின் இறுதிநிலை உற்பத்தித்திறன் பூஜ்ஜியமாகவோ அல்லது மிகக் குறைவாகவோ உள்ளது.",
+            "குறைந்த மூலதன உருவாக்கம்: கிராமப்புற உள்கட்டமைப்பு, அறுவடைக்குப் பிந்தைய குளிர்பதனக் கிடங்குகள் மற்றும் மண்வளப் பாதுகாப்பில் போதிய முதலீடின்மை.",
+            "பாரம்பரிய சாகுபடி முறை: நவீன துல்லிய விவசாய முறைகளுடன் பாரம்பரிய மரக்கலப்பை மற்றும் மழைசார்ந்த விதைப்பு முறைகளும் இணைந்திருப்பது."
+          ]
+        }
+      }
+    ],
+    "sec_landholding_structure": [
+      {
+        "title": "Agricultural Census Landholding Tiers",
+        "title_ta": "வேளாண் கணக்கெடுப்பு நிலவுடைமை அடுக்குகள்",
+        "points": {
+          "en": [
+            "Marginal Holdings: Operational area less than 1.0 hectare (< 2.47 acres). Represents over 68% of all operational holdings.",
+            "Small Holdings: Operational area between 1.0 and 2.0 hectares (2.47 to 4.94 acres). Represents around 17-18% of holdings.",
+            "Semi-Medium Holdings: Operational area between 2.0 and 4.0 hectares (4.94 to 9.88 acres).",
+            "Medium Holdings: Operational area between 4.0 and 10.0 hectares (9.88 to 24.7 acres).",
+            "Large Holdings: Operational area of 10.0 hectares and above (> 24.7 acres), representing less than 1% of operational holdings."
+          ],
+          "ta": [
+            "குறு நிலவுடைமை (Marginal): 1.0 ஹெக்டேருக்கும் குறைவான (< 2.47 ஏக்கர்) நிலப்பரப்பு. இது நாட்டின் மொத்த நிலவுடைமைகளில் 68%-க்கும் அதிகமாக உள்ளது.",
+            "சிறு நிலவுடைமை (Small): 1.0 முதல் 2.0 ஹெக்டேர் (2.47 முதல் 4.94 ஏக்கர்) வரையிலான நிலப்பரப்பு. இது சுமார் 17-18% நிலவுடைமைகளைக் குறிக்கிறது.",
+            "நடுத்தரத்திற்கு முந்தைய நிலவுடைமை (Semi-Medium): 2.0 முதல் 4.0 ஹெக்டேர் (4.94 முதல் 9.88 ஏக்கர்) வரையிலான செயல்பாட்டுப் பரப்பு.",
+            "நடுத்தர நிலவுடைமை (Medium): 4.0 முதல் 10.0 ஹெக்டேர் (9.88 முதல் 24.7 ஏக்கர்) வரையிலான செயல்பாட்டுப் பரப்பு.",
+            "பெரிய நிலவுடைமை (Large): 10.0 ஹெக்டேர் மற்றும் அதற்கு மேற்பட்ட (> 24.7 ஏக்கர்) நிலப்பரப்பு; இது மொத்த நிலவுடைமைகளில் 1%-க்கும் குறைவாகவே உள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Economic Implications of Land Fragmentation",
+        "title_ta": "நிலத் துண்டாடலின் பொருளாதாரத் தாக்கங்கள்",
+        "points": {
+          "en": [
+            "Small & Marginal Farmer Predominance: Together, small and marginal farmers account for over 86% of total operational holdings but operate only about 47% of operated area.",
+            "Average Size Decline: Average size of operational holdings in India has halved from 2.28 hectares in 1970-71 to approximately 1.08 hectares in recent censuses.",
+            "Loss of Economies of Scale: Fragmented plots impede farm mechanization (combine harvesters, laser land levelers) and institutional credit uptake.",
+            "Sub-division Drivers: Inheritance laws and population pressure inexorably divide family parcels across successive generations."
+          ],
+          "ta": [
+            "சிறு மற்றும் குறு விவசாயிகளின் ஆதிக்கம்: சிறு மற்றும் குறு விவசாயிகள் மொத்த நிலவுடைமையாளர்களில் 86%-க்கும் அதிகமாக உள்ள போதிலும், மொத்த சாகுபடி பரப்பில் சுமார் 47%-ஐ மட்டுமே கொண்டுள்ளனர்.",
+            "சராசரி நிலப்பரப்பு சரிவு: இந்தியாவில் சராசரி செயல்பாட்டு நிலப்பரப்பு 1970-71-ல் இருந்த 2.28 ஹெக்டேரிலிருந்து அண்மைக்கால கணக்கெடுப்பில் சுமார் 1.08 ஹெக்டேராகக் குறைந்துள்ளது.",
+            "அளவின் சிக்கனமின்மை (Loss of Economies of Scale): துண்டாடப்பட்ட சிறு நிலங்களில் நவீன இயந்திரங்களைப் (ஹார்வெஸ்டர்கள், லேசர் சமன்படுத்திகள்) பயன்படுத்துவதும் வங்கிக் கடன் பெறுவதும் கடினமாகிறது.",
+            "துண்டாடலின் காரணங்கள்: தலைமுறை தலைமுறையாக தொடரும் சொத்துப் பகிர்வு சட்டங்களும் மக்கள்தொகை பெருக்கமும் நிலங்களை மேலும் துண்டாக்குகின்றன."
+          ]
+        }
+      }
+    ],
+    "sec_cropping_seasons": [
+      {
+        "title": "Kharif Season (Monsoon Season)",
+        "title_ta": "கரீஃப் பருவம் (மழைக்காலப் பருவம்)",
+        "points": {
+          "en": [
+            "Sowing Window: Onset of South-West Monsoon in June - July.",
+            "Harvesting Window: Autumn harvest in September - October.",
+            "Climatic Requirement: High temperature, high humidity, and abundant water supply.",
+            "Major Crops: Rice (paddy), Maize, Jowar, Bajra, Tur (Arhar), Moong, Urad, Cotton, Jute, Groundnut, Soybean."
+          ],
+          "ta": [
+            "விதைப்பு காலம்: தென்மேற்கு பருவமழை தொடங்கும் ஜூன் - ஜூலை மாதங்கள்.",
+            "அறுவடை காலம்: இலையுதிர் காலமான செப்டம்பர் - அக்டோபர் மாதங்கள்.",
+            "காலநிலை தேவை: அதிக வெப்பநிலை, அதிக ஈரப்பதம் மற்றும் தாராளமான நீர் வழங்கல்.",
+            "முக்கிய பயிர்கள்: நெல், சோளம் (Maize), மக்காச்சோளம் (Jowar), கம்பு (Bajra), துவரை, பாசிப்பயறு, உளுந்து, பருத்தி, சணல், நிலக்கடலை, சோயாபீன்."
+          ]
+        }
+      },
+      {
+        "title": "Rabi Season (Winter Season)",
+        "title_ta": "ரபி பருவம் (குளிர்காலப் பருவம்)",
+        "points": {
+          "en": [
+            "Sowing Window: Onset of winter in October - December.",
+            "Harvesting Window: Spring harvest in April - June.",
+            "Climatic Requirement: Cool climate during growth, warm and sunny climate during grain maturation.",
+            "Major Crops: Wheat, Barley, Gram (chickpea), Mustard, Linseed, Peas, Rapeseed."
+          ],
+          "ta": [
+            "விதைப்பு காலம்: குளிர்காலம் தொடங்கும் அக்டோபர் - டிசம்பர் மாதங்கள்.",
+            "அறுவடை காலம்: வசந்த காலமான ஏப்ரல் - ஜூன் மாதங்கள்.",
+            "காலநிலை தேவை: பயிர் வளர்ச்சியின் போது குளிர்ந்த காலநிலையும், தானியங்கள் முதிரும் போது மிதமான வெப்பமும் பிரகாசமான சூரிய ஒளியும் தேவை.",
+            "முக்கிய பயிர்கள்: கோதுமை, பார்லி, கொண்டைக்கடலை (Gram), கடுகு, ஆளிவிதை (Linseed), பட்டாணி."
+          ]
+        }
+      },
+      {
+        "title": "Zaid Season (Summer Season)",
+        "title_ta": "சையத் பருவம் (கோடைக்காலப் பருவம்)",
+        "points": {
+          "en": [
+            "Sowing & Harvesting: Short summer window between Rabi and Kharif (March to June).",
+            "Characteristics: Grown primarily on irrigated lands during peak summer dry spell.",
+            "Major Crops: Watermelon, Muskmelon, Cucumber, seasonal vegetables, fodder crops."
+          ],
+          "ta": [
+            "விதைப்பு மற்றும் அறுவடை: ரபி மற்றும் கரீஃப் பருவங்களுக்கு இடைப்பட்ட குறுகிய கோடைக்காலம் (மார்ச் முதல் ஜூன் வரை).",
+            "பண்புகள்: கடுமையான கோடை வறட்சியின் போது முக்கியமாக நீர்ப்பாசன வசதி கொண்ட நிலங்களில் பயிரிடப்படுகிறது.",
+            "முக்கிய பயிர்கள்: தர்பூசணி, முலாம் பழம், வெள்ளரிக்காய், கோடைகால காய்கறிகள் மற்றும் தீவனப் பயிர்கள்."
+          ]
+        }
+      }
+    ],
+    "sec_farming_types_and_crops": [
+      {
+        "title": "Classification by Agricultural System",
+        "title_ta": "விவசாய முறை அடிப்படையிலான வகைப்பாடு",
+        "points": {
+          "en": [
+            "Primitive Subsistence: Shifting cultivation (Jhum in North-East, Podu in Andhra/Odisha), slash-and-burn using simple hand tools.",
+            "Intensive Subsistence: Practiced in densely populated plains (Ganga-Brahmaputra, Kaveri delta); high labor input and fertilizers on small holdings to maximize output.",
+            "Commercial Agriculture: High doses of modern inputs (HYV seeds, chemical fertilizers, pesticides) intended exclusively for market sale (e.g., Punjab wheat, cotton in Gujarat).",
+            "Plantation Agriculture: Single crop grown over an extensive estate requiring massive capital and migrant labor; integrated with processing factories (Tea in Assam/Nilgiris, Coffee in Karnataka, Rubber in Kerala)."
+          ],
+          "ta": [
+            "பழமையான தன்னிறைவு விவசாயம்: இடப்பெயர்வு விவசாயம் (வடகிழக்கில் ஜூம், ஆந்திரா/ஒடிசாவில் போடு); மரக்கலப்பை, எளிய கருவிகளால் காடுகளை அழித்து எரித்து செய்யப்படும் சாகுபடி.",
+            "தீவிர தன்னிறைவு விவசாயம்: அதிக மக்கள்தொகை கொண்ட சமவெளிப் பகுதிகளில் (கங்கை-பிரம்மபுத்திரா, காவிரி டெல்டா) சிறிய நிலங்களில் அதிக உழைப்பு மற்றும் உரங்களைப் பயன்படுத்தி அதிகபட்ச விளைச்சல் பெறுவது.",
+            "வணிக விவசாயம்: அதிக விளைச்சல் தரும் விதைகள் (HYV), ரசாயன உரங்கள், பூச்சிக்கொல்லிகளைப் பயன்படுத்தி சந்தை விற்பனைக்காகவே உற்பத்தி செய்வது (எ.கா., பஞ்சாப் கோதுமை, குஜராத் பருத்தி).",
+            "தோட்டக்கலைத் தோட்ட விவசாயம் (Plantation): மிகப்பெரிய பரப்பளவில் ஒற்றைப் பயிரை அதிக மூலதனம் மற்றும் புலம்பெயர் தொழிலாளர்களைக் கொண்டு பயிரிட்டு தொழிற்சாலைகளுடன் இணைப்பது (அசாம்/நீலகிரி தேயிலை, கர்நாடக காபி, கேரள ரப்பர்)."
+          ]
+        }
+      },
+      {
+        "title": "Food Crops vs Commercial / Cash Crops",
+        "title_ta": "உணவுப் பயிர்கள் vs வணிக / பணப்பயிர்கள்",
+        "points": {
+          "en": [
+            "Food Crops: Cereals (Rice, Wheat, Millets/Nutri-cereals, Maize) and Pulses (Gram, Tur, Urad, Moong). Direct staples for domestic caloric and protein intake.",
+            "Cash / Commercial Crops: Cultivated primarily for commercial profit and industrial feedstock: Cotton, Jute, Sugarcane, Tobacco, Oilseeds (Groundnut, Mustard, Soybean, Sunflower).",
+            "Horticulture Crops: Fruits (Mango, Banana, Apple), Vegetables, Floriculture, Spices (Pepper, Cardamom, Turmeric), Plantation beverages (Tea, Coffee)."
+          ],
+          "ta": [
+            "உணவுப் பயிர்கள்: தானியங்கள் (நெல், கோதுமை, சிறுதானியங்கள்/ஊட்டச்சத்து தானியங்கள், மக்காச்சோளம்) மற்றும் பருப்பு வகைகள் (கடலை, துவரை, உளுந்து, பாசிப்பயறு). உள்நாட்டு மக்களின் ஆற்றல் மற்றும் புரதத் தேவையை நிறைவு செய்பவை.",
+            "பணப்பயிர்கள் / வணிகப் பயிர்கள்: நேரடி பண லாபத்திற்காகவும் தொழில்துறை மூலப்பொருளுக்காகவும் சாகுபடி செய்யப்படுபவை: பருத்தி, சணல், கரும்பு, புகையிலை, எண்ணெய் வித்துக்கள் (நிலக்கடலை, கடுகு, சோயாபீன், சூரியகாந்தி).",
+            "தோட்டக்கலைப் பயிர்கள்: பழங்கள் (மாம்பழம், வாழை, ஆப்பிள்), காய்கறிகள், மலர்கள், நறுமணப் பொருட்கள் (மிளகு, ஏலக்காய், மஞ்சள்), பானப் பயிர்கள் (தேயிலை, காபி)."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_landholding_categories",
+        "title_en": "Classification of Operational Landholdings in India",
+        "title_ta": "இந்தியாவில் செயல்பாட்டு நிலவுடைமைகளின் அதிகாரப்பூர்வ வகைப்பாடு",
+        "headers_en": [
+          "Category",
+          "Size of Holding (Hectares)",
+          "Share in Total Holdings (%)",
+          "Share in Operated Area (%)"
+        ],
+        "headers_ta": [
+          "பிரிவு",
+          "நிலவுடைமை அளவு (ஹெக்டேர்)",
+          "மொத்த நிலவுடைமையில் பங்கு (%)",
+          "பயிரிடப்படும் பரப்பில் பங்கு (%)"
+        ],
+        "rows_en": [
+          [
+            "Marginal Farmers",
+            "Less than 1.0 ha (< 2.47 acres)",
+            "~68.5%",
+            "~24.0%"
+          ],
+          [
+            "Small Farmers",
+            "1.0 to 2.0 ha (2.47 - 4.94 acres)",
+            "~17.6%",
+            "~22.9%"
+          ],
+          [
+            "Semi-Medium Farmers",
+            "2.0 to 4.0 ha (4.94 - 9.88 acres)",
+            "~9.5%",
+            "~23.6%"
+          ],
+          [
+            "Medium Farmers",
+            "4.0 to 10.0 ha (9.88 - 24.7 acres)",
+            "~3.8%",
+            "~20.4%"
+          ],
+          [
+            "Large Farmers",
+            "10.0 ha and above (> 24.7 acres)",
+            "~0.6%",
+            "~9.1%"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "குறு விவசாயிகள்",
+            "1.0 ஹெக். குறைவு (< 2.47 ஏக்கர்)",
+            "~68.5%",
+            "~24.0%"
+          ],
+          [
+            "சிறு விவசாயிகள்",
+            "1.0 முதல் 2.0 ஹெக். (2.47 - 4.94 ஏக்கர்)",
+            "~17.6%",
+            "~22.9%"
+          ],
+          [
+            "நடுத்தரத்திற்கு முந்தையோர்",
+            "2.0 முதல் 4.0 ஹெக். (4.94 - 9.88 ஏக்கர்)",
+            "~9.5%",
+            "~23.6%"
+          ],
+          [
+            "நடுத்தர விவசாயிகள்",
+            "4.0 முதல் 10.0 ஹெக். (9.88 - 24.7 ஏக்கர்)",
+            "~3.8%",
+            "~20.4%"
+          ],
+          [
+            "பெரிய விவசாயிகள்",
+            "10.0 ஹெக். மற்றும் அதற்கு மேல் (> 24.7 ஏக்கர்)",
+            "~0.6%",
+            "~9.1%"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_cropping_seasons_comparison",
+        "title_en": "Comparison of Indian Cropping Seasons: Kharif, Rabi and Zaid",
+        "title_ta": "இந்திய பயிர் பருவங்களின் ஒப்பீடு: கரீஃப், ரபி மற்றும் சையத்",
+        "headers_en": [
+          "Parameter",
+          "Kharif Season",
+          "Rabi Season",
+          "Zaid Season"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "கரீஃப் பருவம்",
+          "ரபி பருவம்",
+          "சையத் பருவம்"
+        ],
+        "rows_en": [
+          [
+            "Sowing Period",
+            "June - July (Onset of SW Monsoon)",
+            "October - December (Onset of Winter)",
+            "March - April (Summer)"
+          ],
+          [
+            "Harvesting Period",
+            "September - October",
+            "April - June (Spring / Early Summer)",
+            "May - June (Pre-Monsoon)"
+          ],
+          [
+            "Climatic Condition",
+            "Warm, humid, abundant monsoon rainfall",
+            "Cold climate growing; warm sunny harvesting",
+            "Hot, dry summer with irrigation"
+          ],
+          [
+            "Major Crops",
+            "Paddy, Maize, Cotton, Jowar, Groundnut",
+            "Wheat, Barley, Gram, Mustard, Peas",
+            "Watermelon, Cucumber, Fodder crops"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "விதைப்பு காலம்",
+            "ஜூன் - ஜூலை (தென்மேற்கு பருவமழை)",
+            "அக்டோபர் - டிசம்பர் (குளிர்கால தொடக்கம்)",
+            "மார்ச் - ஏப்ரல் (கோடைகாலம்)"
+          ],
+          [
+            "அறுவடை காலம்",
+            "செப்டம்பர் - அக்டோபர்",
+            "ஏப்ரல் - ஜூன் (வசந்தம் / ஆரம்ப கோடை)",
+            "மே - ஜூன் (பருவமழைக்கு முன்)"
+          ],
+          [
+            "காலநிலை சூழல்",
+            "வெப்பம், அதிக ஈரப்பதம், பருவமழை நீர்",
+            "வளர்ச்சியில் குளிர்; முதிர்வில் பிரகாச சூரிய ஒளி",
+            "வெப்பமான உலர் கோடை; பாசனம் அவசியம்"
+          ],
+          [
+            "முக்கிய பயிர்கள்",
+            "நெல், சோளம், பருத்தி, கம்பு, நிலக்கடலை",
+            "கோதுமை, பார்லி, கடலை, கடுகு, பட்டாணி",
+            "தர்பூசணி, வெள்ளரி, காய்கறி, தீவனப் பயிர்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_subsistence_vs_commercial",
+        "title_en": "Subsistence Agriculture vs Commercial Agriculture",
+        "title_ta": "தன்னிறைவு விவசாயம் vs வணிக விவசாயம்",
+        "headers_en": [
+          "Feature",
+          "Subsistence Farming",
+          "Commercial Farming"
+        ],
+        "headers_ta": [
+          "பண்புக்கூறு",
+          "தன்னிறைவு விவசாயம்",
+          "வணிக விவசாயம்"
+        ],
+        "rows_en": [
+          [
+            "Primary Objective",
+            "Family consumption & food survival",
+            "Market sale and profit maximization"
+          ],
+          [
+            "Farm Size",
+            "Small and fragmented marginal plots",
+            "Large consolidated estates or holdings"
+          ],
+          [
+            "Input Technology",
+            "Traditional tools, family labor, low fertilizer",
+            "HYV seeds, heavy mechanization, chemical inputs"
+          ],
+          [
+            "Capital Intensity",
+            "Low capital investment; debt vulnerability",
+            "High capital investment; bank-financed working capital"
+          ],
+          [
+            "Market Integration",
+            "Negligible marketed surplus",
+            "Total integration with agro-commodity supply chains"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முக்கிய நோக்கம்",
+            "குடும்ப நுகர்வு மற்றும் உணவுத் தேவை",
+            "சந்தை விற்பனை மற்றும் லாபத்தை பெருக்குதல்"
+          ],
+          [
+            "நிலத்தின் அளவு",
+            "சிறிய, துண்டாடப்பட்ட குறு நிலப்பரப்புகள்",
+            "பெரிய ஒருங்கிணைந்த நிலங்கள் அல்லது எஸ்டேட்டுகள்"
+          ],
+          [
+            "உள்ளீட்டுத் தொழில்நுட்பம்",
+            "பாரம்பரிய கருவிகள், குடும்ப உழைப்பு, குறைந்த உரம்",
+            "HYV விதைகள், கனரக இயந்திரங்கள், ரசாயன உரங்கள்"
+          ],
+          [
+            "மூலதனத் தீவிரம்",
+            "குறைந்த முதலீடு; கடன்சுமைக்கு ஆளாகும் சூழல்",
+            "அதிக மூலதன முதலீடு; வங்கிசார் நிதி ஆதரவு"
+          ],
+          [
+            "சந்தை ஒருங்கிணைப்பு",
+            "சந்தைக்கு வரும் உபரி மிகக் குறைவு",
+            "வேளாண் பொருள் வர்த்தக சங்கிலியுடன் முழு இணைப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_food_vs_cash_crops",
+        "title_en": "Food Crops vs Cash Crops: Structural Matrix",
+        "title_ta": "உணவுப் பயிர்கள் vs பணப்பயிர்கள்: கட்டமைப்பு ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Food Crops",
+          "Cash / Commercial Crops"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "உணவுப் பயிர்கள்",
+          "பணப்பயிர்கள் / வணிகப் பயிர்கள்"
+        ],
+        "rows_en": [
+          [
+            "Core Definition",
+            "Crops grown directly for human dietary sustenance",
+            "Crops grown specifically for sale and industrial raw materials"
+          ],
+          [
+            "Examples",
+            "Rice, Wheat, Millets, Maize, Pulses",
+            "Cotton, Jute, Sugarcane, Tea, Tobacco, Oilseeds"
+          ],
+          [
+            "Price Volatility",
+            "Moderated by Government Minimum Support Price (MSP)",
+            "Subject to global commodity price swings and trade cycles"
+          ],
+          [
+            "Land Allocation Shift",
+            "Historical priority for national food self-sufficiency",
+            "Increasingly favored due to higher per-hectare commercial returns"
+          ],
+          [
+            "Water & Input Demand",
+            "Variable; millets require low water, paddy requires high water",
+            "Typically high capital and pesticide/processing input intensity"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடிப்படை வரைவிலக்கணம்",
+            "மனித உணவு மற்றும் ஊட்டச்சத்துக்காக பயிரிடப்படுபவை",
+            "தொழில்துறை மூலப்பொருள் மற்றும் நேரடி விற்பனைக்காக பயிரிடப்படுபவை"
+          ],
+          [
+            "எடுத்துக்காட்டுகள்",
+            "நெல், கோதுமை, சிறுதானியங்கள், மக்காச்சோளம், பருப்பு",
+            "பருத்தி, சணல், கரும்பு, தேயிலை, புகையிலை, எண்ணெய் வித்துக்கள்"
+          ],
+          [
+            "விலை ஏற்ற இறக்கம்",
+            "அரசின் குறைந்தபட்ச ஆதரவு விலை (MSP) மூலம் தணிக்கப்படுகிறது",
+            "உலகளாவிய சந்தை விலை மாற்றங்கள் மற்றும் வர்த்தக சுழற்சிக்கு உட்பட்டவை"
+          ],
+          [
+            "நில ஒதுக்கீட்டு மாற்றம்",
+            "தேசிய உணவு தன்னிறைவுக்காக வரலாற்று ரீதியான முன்னுரிமை",
+            "அதிக ஹெக்டேர் வருவாய் காரணமாக நில ஒதுக்கீடு அதிகரித்து வருகிறது"
+          ],
+          [
+            "நீர் மற்றும் உள்ளீட்டுத் தேவை",
+            "மாறுபடும்; சிறுதானியங்களுக்கு குறைவான நீர், நெல்லுக்கு அதிக நீர்",
+            "பொதுவாக அதிக மூலதனம், பூச்சிக்கொல்லி மற்றும் பதப்படுத்துதல் தேவை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Agriculture Part 1: Foundations & Cropping Structure",
+        "short_label": "Agri Foundations",
+        "children": [
+          {
+            "title": "Core Characteristics & Role",
+            "short_label": "Role & Structure",
+            "children": [
+              {
+                "title": "GVA Share (16-18%) & Workforce (~46%)",
+                "short_label": "Macro Profile"
+              },
+              {
+                "title": "Monsoon Dependence & Disguised Unemployment",
+                "short_label": "Structural Traits"
+              },
+              {
+                "title": "State List Entry 14 Constitutional Status",
+                "short_label": "Entry 14 List II"
+              }
+            ]
+          },
+          {
+            "title": "Landholding Classification",
+            "short_label": "Landholdings",
+            "children": [
+              {
+                "title": "Marginal (< 1 ha, 68.5% of holdings)",
+                "short_label": "Marginal <1ha"
+              },
+              {
+                "title": "Small (1-2 ha, 17.6% of holdings)",
+                "short_label": "Small 1-2ha"
+              },
+              {
+                "title": "Semi-Medium (2-4 ha), Medium (4-10 ha), Large (>10 ha)",
+                "short_label": "Medium & Large"
+              }
+            ]
+          },
+          {
+            "title": "Cropping Seasons & Farming Types",
+            "short_label": "Seasons & Types",
+            "children": [
+              {
+                "title": "Kharif Season (Monsoon: Rice, Cotton, Maize)",
+                "short_label": "Kharif June-Oct"
+              },
+              {
+                "title": "Rabi Season (Winter: Wheat, Mustard, Gram)",
+                "short_label": "Rabi Oct-April"
+              },
+              {
+                "title": "Zaid Season (Summer: Watermelon, Cucumber)",
+                "short_label": "Zaid March-June"
+              },
+              {
+                "title": "Subsistence vs Commercial vs Plantation",
+                "short_label": "Farming Systems"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Constitutional Jurisdiction Trap: Agriculture is a State Subject",
+        "points": {
+          "en": [
+            "TRAP: Candidates often mistakenly mark Agriculture as belonging to the Union List or Concurrent List due to prominent Central schemes like PM-KISAN or PMFBY.",
+            "CORRECT FACT: Under Seventh Schedule of the Constitution of India, 'Agriculture, including agricultural education and research' is explicitly enumerated under Entry 14 of the State List (List II). However, interstate trade and commerce in foodstuff fall under Concurrent List (Entry 33).",
+            "WHY CANDIDATES FAIL: Heavy Central funding and central policy guidelines blur the strict constitutional division of powers."
+          ],
+          "ta": [
+            "பொறி: PM-KISAN அல்லது PMFBY போன்ற மத்திய அரசின் முக்கியத் திட்டங்களைக் கண்டு, தேர்வர்கள் வேளாண்மை மத்திய பட்டியல் அல்லது பொதுப் பட்டியலில் உள்ளதாகத் தவறாகக் கருதுகின்றனர்.",
+            "சரியான உண்மை: இந்திய அரசியலமைப்பின் ஏழாவது அட்டவணையின் கீழ், 'வேளாண் கல்வி மற்றும் ஆராய்ச்சி உட்பட வேளாண்மை' என்பது மாநிலப் பட்டியலின் (பட்டியல் II) 14-வது பதிவில் உள்ளது. ஆனால், உணவுப் பொருட்களின் மாநிலங்களுக்கிடையேயான வர்த்தகம் பொதுப் பட்டியலில் (பதிவு 33) வருகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய அரசின் நிதி உதவிகளும் கொள்கை வழிகாட்டுதல்களும் அரசியலமைப்பு அதிகாரப் பகிர்வை குழப்பமடையச் செய்கின்றன."
+          ]
+        }
+      },
+      {
+        "title": "Landholding Definition Trap: Small vs Marginal Farmers",
+        "points": {
+          "en": [
+            "TRAP: Confusing the landholding cutoffs: assuming Small Farmers have less than 1 hectare and Marginal have 1-2 hectares.",
+            "CORRECT FACT: Marginal Farmer is strictly defined as an operational holding of LESS THAN 1.0 hectare (< 2.47 acres). Small Farmer is defined as an operational holding BETWEEN 1.0 and 2.0 hectares (2.47 - 4.94 acres).",
+            "WHY CANDIDATES FAIL: Colloquial usage bundles 'small and marginal farmers' together as a single phrase, obscuring the critical 1-hectare legal threshold."
+          ],
+          "ta": [
+            "பொறி: நில அளவை மாற்றிப் புரிந்துகொள்வது: சிறு விவசாயி 1 ஹெக்டேருக்குக் கீழ் என்றும், குறு விவசாயி 1-2 ஹெக்டேர் என்றும் நினைப்பது.",
+            "சரியான உண்மை: குறு விவசாயி (Marginal Farmer) என்பது கண்டிப்பாக 1.0 ஹெக்டேருக்கும் குறைவான நிலம் (< 2.47 ஏக்கர்). சிறு விவசாயி (Small Farmer) என்பது 1.0 முதல் 2.0 ஹெக்டேர் வரையிலான நிலவுடைமையைக் (2.47 - 4.94 ஏக்கர்) குறிக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'சிறு மற்றும் குறு விவசாயிகள்' என்று ஒன்றாகப் பேசுவதால், 1 ஹெக்டேர் என்ற சட்டப்பூர்வ எல்லை மறந்துபோகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Season Classification Trap: Mustard and Gram are Rabi, NOT Kharif",
+        "points": {
+          "en": [
+            "TRAP: Assuming oilseeds and pulses belong exclusively to the Kharif monsoon season.",
+            "CORRECT FACT: Mustard, Linseed, and Gram (chickpea) are quintessential RABI crops sown in winter. Groundnut and Soybean are Kharif crops. Rice is primarily Kharif, whereas Wheat is strictly Rabi.",
+            "WHY CANDIDATES FAIL: Pulses and oilseeds are grown across multiple seasons, but specific crops have strict agronomic temperature thresholds."
+          ],
+          "ta": [
+            "பொறி: எல்லா எண்ணெய் வித்துக்களும் பருப்பு வகைகளும் கரீஃப் பருவத்திற்கு மட்டுமே உரியவை என்று கருதுவது.",
+            "சரியான உண்மை: கடுகு, ஆளிவிதை மற்றும் கொண்டைக்கடலை ஆகியவை குளிர்காலத்தில் விதைக்கப்படும் முதன்மையான 'ரபி' பயிர்கள். நிலக்கடலை மற்றும் சோயாபீன் ஆகியவை கரீஃப் பயிர்கள். நெல் முக்கியமாக கரீஃப் பயிர்; கோதுமை முழுமையாக ரபி பயிர்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பருப்பு வகைகளும் எண்ணெய் வித்துக்களும் வெவ்வேறு பருவங்களில் பயிரிடப்படுவதால், குறிப்பிட்ட பயிர்களின் வெப்பநிலை தேவை குழப்பத்தை ஏற்படுத்துகிறது."
+          ]
+        }
+      },
+      {
+        "title": "GVA Share vs Workforce Share Trap: Declining GDP Share Does NOT Mean Declining Output",
+        "points": {
+          "en": [
+            "TRAP: Concluding that because agriculture's share in India's GDP fell from ~50% in 1950 to ~16-18% today, agricultural production has declined in absolute volume.",
+            "CORRECT FACT: Absolute agricultural production has multiplied manifold (foodgrain production rose from ~50 MT in 1950 to over 330 MT). The percentage share declined solely because the industrial and tertiary sectors grew at a vastly higher exponential rate.",
+            "WHY CANDIDATES FAIL: Failing to distinguish between structural percentage composition and absolute real physical output."
+          ],
+          "ta": [
+            "பொறி: 1950-ல் 50%-ஆக இருந்த வேளாண்மையின் GDP பங்கு தற்போது 16-18%-ஆக குறைந்ததால், வேளாண் உற்பத்தி அளவு குறைந்துவிட்டது என்று முடிவெடுப்பது.",
+            "சரியான உண்மை: உண்மையில் வேளாண் உற்பத்தி பலமடங்கு உயர்ந்துள்ளது (உணவு தானிய உற்பத்தி 1950-ல் ~50 மில்லியன் டன்னிலிருந்து 330 மில்லியன் டன்னுக்கும் மேல் உயர்ந்துள்ளது). தொழில்துறை மற்றும் சேவைத் துறைகள் மிக வேகமான விகிதத்தில் வளர்ந்ததாலேயே வேளாண்மையின் சதவீதப் பங்கு குறைந்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொருளாதார சதவீதப் பங்கிற்கும், உண்மையான மொத்த உற்பத்தி வளர்ச்சிக்கும் இடையிலான வேறுபாட்டைப் புரிந்து கொள்ளாமை."
+          ]
+        }
+      },
+      {
+        "title": "Zaid Season Trap: Not an Autonomous Third Annual Season",
+        "points": {
+          "en": [
+            "TRAP: Assuming Zaid is an independent, year-long cropping system that competes directly with Kharif or Rabi for total national land area.",
+            "CORRECT FACT: Zaid is an ultra-short transitional summer season (March to June) practiced predominantly on artificially irrigated lands, riverbeds, and delta tracts, occupying only a small fraction of gross cropped area.",
+            "WHY CANDIDATES FAIL: Standard textbooks list Kharif, Rabi, Zaid as a trio, giving the false impression of equal spatial and temporal weight."
+          ],
+          "ta": [
+            "பொறி: சையத் என்பது கரீஃப் மற்றும் ரபியுடன் சமமாக ஆண்டு முழுவதும் நிலப்பரப்பில் போட்டியிடும் ஒரு பெரிய தனிப் பருவம் என நினைப்பது.",
+            "சரியான உண்மை: சையத் என்பது ரபிக்கும் கரீஃபுக்கும் இடையே கோடைகாலத்தில் (மார்ச் - ஜூன்) நீர்ப்பாசன வசதி கொண்ட நிலங்கள் மற்றும் ஆற்றுப்படுகைகளில் குறுகிய காலத்தில் செய்யப்படும் இடைக்காலப் பயிர் முறை மட்டுமே.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பாடப்புத்தகங்கள் மூன்றையும் சமமாக பட்டியலிடுவதால், பரப்பளவிலும் காலத்திலும் சமமானவை என்ற தவறான கருத்து எழுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Plantation Crop Trap: Sugarcane and Cotton are Cash Crops, NOT Plantation Crops",
+        "points": {
+          "en": [
+            "TRAP: Labeling Sugarcane or Cotton as 'Plantation Crops' because they are grown commercially over extensive areas.",
+            "CORRECT FACT: Plantation Crops are strictly defined as perennial or perennial-type tree/bush crops grown on unified large estates (Tea, Coffee, Rubber, Oil Palm, Coconut). Sugarcane and Cotton are annual cash / field crops.",
+            "WHY CANDIDATES FAIL: Both categories generate cash income and supply agro-processing industries, confusing botanical habit with economic end-use."
+          ],
+          "ta": [
+            "பொறி: கரும்பும் பருத்தியும் பெரிய பரப்பில் வணிக ரீதியாக பயிரிடப்படுவதால் அவற்றை 'தோட்டப்பயிர்கள்' (Plantation Crops) என்று தவறாகக் குறிப்பிடுவது.",
+            "சரியான உண்மை: தோட்டப்பயிர்கள் (Plantation Crops) என்பது எஸ்டேட்டுகளில் பயிரிடப்படும் பலபருவ மரங்கள் அல்லது புதர் பயிர்களை மட்டுமே குறிக்கும் (தேயிலை, காபி, ரப்பர், பனை, தென்னை). கரும்பும் பருத்தியும் ஓராண்டு களப்பயிர்களான பணப்பயிர்கள் ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டுமே வணிக வருமானத்தையும் தொழிற்சாலை மூலப்பொருளையும் தருவதால் பயிர் அமைப்பும் பயன்பாடும் குழப்பப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Constitution lists Agriculture under State List (List II Entry 14) of the Seventh Schedule.",
+        "Over 68% of operational agricultural holdings in India are marginal (< 1 hectare).",
+        "Small and marginal farmers together constitute over 86% of total operational holdings.",
+        "The average size of operational landholdings in India is approximately 1.08 hectares.",
+        "Approximately 45-47% of India's total labor force remains engaged in agriculture.",
+        "Agriculture and allied sectors contribute roughly 16-18% of India's current Gross Value Added (GVA).",
+        "Kharif season commences with the arrival of the South-West Monsoon in June.",
+        "Rabi winter crops are harvested during spring between April and June.",
+        "Wheat is the premier Rabi foodgrain, requiring cold weather during vegetative development.",
+        "Paddy (rice) is the premier Kharif foodgrain requiring high temperature and standing water.",
+        "Shifting cultivation is known as Jhum in the North-East and Podu in Andhra Pradesh.",
+        "Watermelons, cucumbers, and gourds are characteristic crops of the hot summer Zaid season."
+      ],
+      "ta": [
+        "அரசியலமைப்பு 7-வது அட்டவணை வேளாண்மையை மாநிலப் பட்டியலில் (பட்டியல் II பதிவு 14) வைத்துள்ளது.",
+        "இந்தியாவில் 68%-க்கும் மேற்பட்ட விவசாய செயல்பாட்டு நிலவுடைமைகள் குறு நிலங்களாகும் (< 1 ஹெக்டேர்).",
+        "சிறு மற்றும் குறு விவசாயிகள் இணைந்து மொத்த நிலவுடைமையாளர்களில் 86%-க்கும் அதிகமாக உள்ளனர்.",
+        "இந்தியாவில் சராசரி விவசாய நிலவுடைமையின் அளவு சுமார் 1.08 ஹெக்டேர் ஆகும்.",
+        "இந்தியாவின் மொத்த உழைப்பாளர்களில் சுமார் 45-47% பேர் வேளாண்மையில் ஈடுபட்டுள்ளனர்.",
+        "வேளாண் மற்றும் சார்புத் துறைகள் இந்தியாவின் மொத்த மதிப்பு கூட்டலில் (GVA) சுமார் 16-18% பங்களிக்கின்றன.",
+        "தென்மேற்கு பருவமழை தொடங்கும் ஜூன் மாதத்தில் கரீஃப் விதைப்பு தொடங்குகிறது.",
+        "ரபி குளிர்காலப் பயிர்கள் வசந்த காலமான ஏப்ரல் முதல் ஜூன் வரை அறுவடை செய்யப்படுகின்றன.",
+        "கோதுமை முதன்மையான ரபி உணவு தானியமாகும்; இதன் வளர்ச்சிக்கு குளிர்ந்த காலநிலை தேவை.",
+        "நெல் முதன்மையான கரீஃப் உணவு தானியமாகும்; இதற்கு அதிக மழையும் தேங்கிய நீரும் தேவை.",
+        "இடப்பெயர்வு விவசாயம் வடகிழக்கில் 'ஜூம்' என்றும் ஆந்திராவில் 'போடு' என்றும் அழைக்கப்படுகிறது.",
+        "தர்பூசணி, வெள்ளரி மற்றும் பூசணி வகைகள் கோடைக்கால சையத் பருவத்தின் முக்கிய பயிர்களாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Constitutional Status: Agriculture, agricultural education, and research belong to State List Entry 14.",
+        "Marginal Farmers operate land under 1.0 hectare (< 2.47 acres); constitute 68.5% of holdings.",
+        "Small Farmers operate land between 1.0 and 2.0 hectares; constitute 17.6% of holdings.",
+        "Kharif Season runs June to October; relies directly on the South-West Monsoon rains.",
+        "Rabi Season runs October to April; relies on post-monsoon soil moisture and Western Disturbances.",
+        "Zaid Season is the short summer bridge season (March - June) focused on vegetables and melons.",
+        "Disguised Unemployment in agriculture means marginal productivity of redundant labor is zero.",
+        "Food Crops focus on dietary carbohydrates and proteins (Rice, Wheat, Millets, Pulses).",
+        "Commercial Cash Crops feed industrial manufacturing (Cotton, Jute, Sugarcane, Oilseeds).",
+        "Plantation Crops are large-estate perennial crops such as Tea, Coffee, and Rubber."
+      ],
+      "ta": [
+        "அரசியலமைப்பு நிலை: வேளாண்மை, வேளாண் கல்வி மற்றும் ஆராய்ச்சி மாநிலப் பட்டியல் பதிவு 14-ல் உள்ளது.",
+        "குறு விவசாயிகள் 1.0 ஹெக்டேருக்கும் குறைவான நிலம் கொண்டவர்கள்; மொத்த நிலவுடைமையில் 68.5% உள்ளனர்.",
+        "சிறு விவசாயிகள் 1.0 முதல் 2.0 ஹெக்டேர் வரை நிலம் கொண்டவர்கள்; மொத்த நிலவுடைமையில் 17.6% உள்ளனர்.",
+        "கரீஃப் பருவம் ஜூன் முதல் அக்டோபர் வரை; தென்மேற்கு பருவமழையை நேரடியாக நம்பியுள்ளது.",
+        "ரபி பருவம் அக்டோபர் முதல் ஏப்ரல் வரை; மண் ஈரப்பதம் மற்றும் மேற்கத்திய இடையூறுகளை நம்பியுள்ளது.",
+        "சையத் பருவம் என்பது காய்கறிகள், தர்பூசணிக்கான குறுகிய கோடைகால இடைக்காலப் பருவம் (மார்ச் - ஜூன்).",
+        "வேளாண் மறைமுக வேலையின்மை என்பது உபரி தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் பூஜ்ஜியம் என்பதாகும்.",
+        "உணவுப் பயிர்கள் உணவு மற்றும் புரதத் தேவையை நிறைவு செய்கின்றன (நெல், கோதுமை, சிறுதானியங்கள், பருப்பு).",
+        "பணப்பயிர்கள் தொழில்துறை உற்பத்திக்கு மூலப்பொருள் தருகின்றன (பருத்தி, சணல், கரும்பு, எண்ணெய் வித்துக்கள்).",
+        "தோட்டப்பயிர்கள் என்பது தேயிலை, காபி, ரப்பர் போன்ற எஸ்டேட்டுகளில் விளையும் பலபருவப் பயிர்கள்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_agri_101",
+        "front_en": "What is the operational landholding limit for a Marginal Farmer in India?",
+        "front_ta": "இந்தியாவில் குறு விவசாயிக்கான (Marginal Farmer) நிலவுடைமை வரம்பு என்ன?",
+        "back_en": "Less than 1.0 hectare (< 2.47 acres). They represent over 68% of all operational landholdings.",
+        "back_ta": "1.0 ஹெக்டேருக்கும் குறைவாக (< 2.47 ஏக்கர்). இவர்கள் மொத்த நிலவுடைமையாளர்களில் 68%-க்கும் அதிகமாக உள்ளனர்."
+      },
+      {
+        "id": "rc_agri_102",
+        "front_en": "What is the landholding size defined for a Small Farmer?",
+        "front_ta": "சிறு விவசாயிக்கான (Small Farmer) நிலவுடைமை அளவு என்ன?",
+        "back_en": "Between 1.0 and 2.0 hectares (2.47 to 4.94 acres).",
+        "back_ta": "1.0 முதல் 2.0 ஹெக்டேர் வரை (2.47 முதல் 4.94 ஏக்கர் வரை)."
+      },
+      {
+        "id": "rc_agri_103",
+        "front_en": "Which constitutional list and entry governs Agriculture in India?",
+        "front_ta": "இந்தியாவில் வேளாண்மை எந்த அரசியலமைப்புப் பட்டியல் மற்றும் பதிவில் உள்ளது?",
+        "back_en": "State List (List II), Entry 14 of the Seventh Schedule.",
+        "back_ta": "ஏழாவது அட்டவணையின் மாநிலப் பட்டியல் (பட்டியல் II), பதிவு 14."
+      },
+      {
+        "id": "rc_agri_104",
+        "front_en": "Which cropping season coincides with the South-West Monsoon?",
+        "front_ta": "தென்மேற்கு பருவமழையுடன் இணைந்து வரும் இந்தியப் பயிர் பருவம் எது?",
+        "back_en": "Kharif Season (sown June-July, harvested September-October).",
+        "back_ta": "கரீஃப் பருவம் (விதைப்பு ஜூன்-ஜூலை, அறுவடை செப்டம்பர்-அக்டோபர்)."
+      },
+      {
+        "id": "rc_agri_105",
+        "front_en": "Name three major Rabi food and oilseed crops.",
+        "front_ta": "மூன்று முக்கிய ரபி உணவு மற்றும் எண்ணெய் வித்து பயிர்களைக் குறிப்பிடுக.",
+        "back_en": "Wheat, Barley, Gram (chickpea), and Mustard.",
+        "back_ta": "கோதுமை, பார்லி, கொண்டைக்கடலை மற்றும் கடுகு."
+      },
+      {
+        "id": "rc_agri_106",
+        "front_en": "What is the Zaid season and what crops characterize it?",
+        "front_ta": "சையத் பருவம் என்றால் என்ன? அதன் முக்கிய பயிர்கள் யாவை?",
+        "back_en": "Short summer cropping season (March-June) characterized by watermelons, cucumbers, and vegetables.",
+        "back_ta": "மார்ச்-ஜூன் வரையிலான குறுகிய கோடைப் பருவம்; தர்பூசணி, வெள்ளரி மற்றும் காய்கறிகள் இதன் முக்கிய பயிர்கள்."
+      },
+      {
+        "id": "rc_agri_107",
+        "front_en": "What is meant by Disguised Unemployment in Indian agriculture?",
+        "front_ta": "இந்திய வேளாண்மையில் 'மறைமுக வேலையின்மை' என்றால் என்ன?",
+        "back_en": "A condition where more people work on a farm than required; the marginal productivity of additional labor is zero.",
+        "back_ta": "தேவைக்கு அதிகமான தொழிலாளர்கள் ஈடுபடும் நிலை; கூடுதல் தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் பூஜ்ஜியமாகும்."
+      },
+      {
+        "id": "rc_agri_108",
+        "front_en": "Distinguish Cash Crops from Plantation Crops.",
+        "front_ta": "பணப்பயிர்களையும் தோட்டப்பயிர்களையும் வேறுபடுத்துக.",
+        "back_en": "Cash crops are annual crops grown for industrial sale (cotton, sugarcane); plantation crops are perennial estate trees/bushes (tea, rubber).",
+        "back_ta": "பணப்பயிர்கள் விற்பனைக்கான ஓராண்டு பயிர்கள் (பருத்தி, கரும்பு); தோட்டப்பயிர்கள் பெரிய எஸ்டேட்களில் வளரும் பலபருவ மரங்கள்/புதர்கள் (தேயிலை, ரப்பர்)."
+      },
+      {
+        "id": "rc_agri_109",
+        "front_en": "What percentage of operational holdings do small and marginal farmers represent together?",
+        "front_ta": "சிறு மற்றும் குறு விவசாயிகள் இணைந்து மொத்த நிலவுடைமைகளில் எத்தனை சதவீதம் வகிக்கின்றனர்?",
+        "back_en": "Over 86% of total operational holdings (operating about 47% of operated land area).",
+        "back_ta": "மொத்த நிலவுடைமைகளில் 86%-க்கும் மேல் (ஆனால் சாகுபடி பரப்பில் சுமார் 47% மட்டுமே)."
+      },
+      {
+        "id": "rc_agri_110",
+        "front_en": "Why has agriculture's share of GDP fallen while production increased?",
+        "front_ta": "உற்பத்தி அதிகரித்த போதிலும் ஜிடிபியில் வேளாண்மையின் சதவீதப் பங்கு ஏன் குறைந்தது?",
+        "back_en": "Because the manufacturing and services sectors expanded at a vastly higher exponential rate, altering the proportional share.",
+        "back_ta": "தொழில்துறை மற்றும் சேவைத் துறைகள் மிக வேகமான விகிதத்தில் வளர்ந்ததால், சதவீத விகிதாச்சாரம் மாறியது."
+      }
+    ]
+  }
+}

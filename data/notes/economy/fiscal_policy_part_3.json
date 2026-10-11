@@ -1,0 +1,802 @@
+{
+  "meta": {
+    "topic_id": "economy_fiscal_policy_part_3",
+    "repository_id": "economy_fiscal_policy",
+    "display_title": "Fiscal Policy – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Fiscal Policy",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Fiscal Multiplier",
+    "Crowding-Out Effect",
+    "Crowding-In Effect",
+    "Ways and Means Advances",
+    "Ad-hoc Treasury Bills",
+    "Off-Budget Borrowings",
+    "Rangarajan-Manmohan Agreement"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the dynamics of the Fiscal Multiplier and Crowding-out effect.",
+        "Trace the evolution from Ad-hoc Treasury Bills to Ways and Means Advances (WMA)."
+      ],
+      "ta": [
+        "நிதிப் பெருக்கி மற்றும் முதலீடு நெரிசல் விளைவுகளின் இயக்கவியலைப் புரிந்துகொள்ளுதல்.",
+        "தற்காலிக கருவூலப் பத்திரங்களிலிருந்து WMA முறைக்கான வரலாற்று பரிணாமத்தை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize that the Balanced Budget Multiplier equals exactly 1.",
+        "Recall the 90-day repayment ceiling for WMA under Section 17(5) of the RBI Act."
+      ],
+      "ta": [
+        "சமநிலை பட்ஜெட் பெருக்கியின் மதிப்பு 1 என்பதை நினைவில் நிறுத்துதல்.",
+        "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17(5)-ன் கீழ் WMA-ன் 90-நாள் திருப்பிச் செலுத்தும் வரம்பை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why capital expenditure has a significantly higher multiplier than revenue expenditure.",
+        "Evaluate the importance of eliminating off-budget borrowings for fiscal transparency."
+      ],
+      "ta": [
+        "வருவாய் செலவினத்தை விட மூலதனச் செலவினம் ஏன் கணிசமாக அதிக பெருக்கியைக் கொண்டுள்ளது என பகுப்பாய்வு செய்தல்.",
+        "நிதி வெளிப்படைத்தன்மைக்கு பட்ஜெட்டுக்கு புறம்பான கடன்களை ஒழிப்பதன் முக்கியத்துவத்தை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply the multiplier formula to determine national income shifts from fiscal stimulus.",
+        "Identify high-yield TNPSC traps regarding market interest rates and public debt crowding-out."
+      ],
+      "ta": [
+        "நிதி ஊக்கத்தொகையால் தேசிய வருமானம் உயர்வதைக் கணக்கிட பெருக்கி சூத்திரத்தைப் பயன்படுத்துதல்.",
+        "சந்தை வட்டி விகிதம் மற்றும் கடன் நெரிசல் குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Fiscal Policy – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_multiplier_crowding_out",
+      "title_en": "Fiscal Multiplier and the Crowding-Out Effect",
+      "title_ta": "நிதிப் பெருக்கி மற்றும் தனியார் முதலீடு நெரிசல் விளைவு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_deficit_financing_evolution",
+      "title_en": "Deficit Financing and Ways and Means Advances (WMA)",
+      "title_ta": "பற்றாக்குறை நிதியாக்கம் மற்றும் வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (WMA)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_off_budget_fiscal_transparency",
+      "title_en": "Off-Budget Borrowings and Fiscal Transparency",
+      "title_ta": "பட்ஜெட்டுக்கு புறம்பான கடன்கள் மற்றும் நிதி வெளிப்படைத்தன்மை",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Advanced Fiscal Economics integrates the fiscal multiplier, crowding-out dynamics, deficit financing transition (from ad-hoc treasury bills to Ways and Means Advances), off-budget liabilities, and fiscal federalism discipline into high-yield exam mastery.",
+      "ta": "மேம்பட்ட நிதிப் பொருளியல் என்பது நிதிப் பெருக்கி (Fiscal Multiplier), தனியார் முதலீடு நெரிசல் (Crowding-out), பற்றாக்குறை நிதியாக்க மாற்றம் (WMA முறை), பட்ஜெட்டுக்கு புறம்பான கடன்கள் (Off-budget liabilities) மற்றும் கூட்டாட்சி நிதி ஒழுக்கம் ஆகியவற்றை ஒருங்கிணைத்து தேர்வு வெற்றிக்கான உயர்-மதிப்பு அறிவை வழங்குகிறது."
+    },
+    "introduction": {
+      "en": "Exam mastery in Fiscal Policy demands a deep understanding of macroeconomic transmission and institutional nuances tested in TNPSC Group 1. Candidates must master how capital expenditure yields a higher multiplier effect than revenue subsidies, how excessive sovereign borrowing induces private crowding-out by driving up bond yields, how deficit monetization was phased out in 1997 via the Rangarajan-Manmohan Singh agreement, and how recent budgets cleaned up off-budget borrowings to establish transparent fiscal accounting.",
+      "ta": "நிதிக் கொள்கையில் தேர்ச்சி பெறுவது என்பது TNPSC குரூப் 1 தேர்வில் கேட்கப்படும் நுட்பமான பேரியல் பொருளாதாரக் கருத்துக்களை ஆழமாகப் புரிந்துகொள்வதைக் கோருகிறது. வருவாய் மானியங்களை விட மூலதனச் செலவினம் எவ்வாறு அதிக பெருக்கி விளைவை (Multiplier effect) ஏற்படுத்துகிறது, அதிகப்படியான அரசு கடன் வாங்குதல் பத்திர ஈவுத்தொகையை உயர்த்தி தனியார் முதலீடுகளை எவ்வாறு வெளியேற்றுகிறது (Crowding-out), 1997-ல் ரங்கராஜன்-மன்மோகன் சிங் ஒப்பந்தம் மூலம் நாணயம் அச்சிட்டு பற்றாக்குறை தீர்க்கும் முறை எவ்வாறு முடிவுக்கு வந்தது மற்றும் பட்ஜெட்டுக்கு புறம்பான கடன்களை ஒழித்து அரசு எவ்வாறு வெளிப்படைத்தன்மையை நிலைநிறுத்தியது என்பதை மாணவர்கள் கற்க வேண்டும்."
+    },
+    "sec_multiplier_crowding_out": [
+      {
+        "title": "The Keynesian Fiscal Multiplier",
+        "title_ta": "கெயின்சியன் நிதிப் பெருக்கி",
+        "points": {
+          "en": [
+            "Concept: Measures the ratio of change in national income (GDP) resulting from an initial autonomous change in government spending.",
+            "Formula: Multiplier $k = \\frac{1}{1 - MPC} = \\frac{1}{MPS}$, where $MPC$ is Marginal Propensity to Consume and $MPS$ is Marginal Propensity to Save.",
+            "Capex vs Revenue Multiplier: RBI studies show that Capital Expenditure in India has a long-term multiplier of ~2.5 to 3.25, whereas Revenue Expenditure has a multiplier of only ~0.9 to 1.1.",
+            "Balanced Budget Multiplier: If government spending and taxes increase by the exact same amount, the multiplier equals exactly 1."
+          ],
+          "ta": [
+            "கருத்து: அரசு செலவினத்தில் செய்யப்படும் ஒரு ரூபாய் மாற்றம் தேசிய வருமானத்தில் (GDP) எத்தனை மடங்கு உயர்வை ஏற்படுத்துகிறது என்பதன் விகிதம்.",
+            "சூத்திரம்: பெருக்கி $k = \\frac{1}{1 - MPC} = \\frac{1}{MPS}$, இதில் $MPC$ என்பது நுகர்வு இறுதிநிலை நாட்டம், $MPS$ என்பது சேமிப்பு இறுதிநிலை நாட்டம்.",
+            "மூலதன vs வருவாய் பெருக்கி: ரிசர்வ் வங்கி ஆய்வுகளின்படி, இந்தியாவில் மூலதனச் செலவினத்தின் நீண்ட கால பெருக்கி ~2.5 முதல் 3.25 ஆக உள்ளது; ஆனால் வருவாய் செலவினத்தின் பெருக்கி ~0.9 முதல் 1.1 மட்டுமே.",
+            "சமநிலை பட்ஜெட் பெருக்கி: அரசு செலவும் வரியும் ஒரே அளவில் அதிகரிக்கப்பட்டால், பட்ஜெட் பெருக்கியின் மதிப்பு சரியாக 1 ஆக இருக்கும்."
+          ]
+        }
+      },
+      {
+        "title": "Crowding-Out Effect (தனியார் முதலீடு நெரிசல் விளைவு)",
+        "title_ta": "தனியார் முதலீடு நெரிசல் விளைவு (Crowding-Out Effect)",
+        "points": {
+          "en": [
+            "Mechanism: When the government runs a massive fiscal deficit, it floats large quantities of sovereign bonds in the domestic market to borrow funds.",
+            "Interest Rate Impact: This surge in sovereign borrowing absorbs scarce domestic savings, driving up benchmark government bond yields and commercial market interest rates.",
+            "Private Sector Squeeze: Private corporations face higher borrowing costs and credit rationing, forcing them to cancel or delay private capital investment projects.",
+            "Crowding-In Counterpart: If government borrowing is strictly channeled into core logistics and trunk infrastructure (ports, expressways), it reduces logistics costs and 'crowds-in' private industry."
+          ],
+          "ta": [
+            "செயல்முறை: அரசாங்கம் மிகப்பெரிய நிதிப் பற்றாக்குறையை சந்திக்கும் போது, கடனை ஈடுகட்ட உள்நாட்டு சந்தையில் அதிகளவில் அரசுப் பத்திரங்களை வெளியிடுகிறது.",
+            "வட்டி விகித தாக்கம்: இது உள்நாட்டு சேமிப்பை உறிஞ்சி, அரசுப் பத்திரங்களின் ஈவுத்தொகை மற்றும் வங்கி சந்தை வட்டி விகிதங்களை உயர்த்துகிறது.",
+            "தனியார் துறை நெரிசல்: தனியார் நிறுவனங்களுக்கு கடன் செலவு அதிகரிப்பதால், அவை தங்களது வணிக முதலீட்டுத் திட்டங்களை ரத்து செய்யவோ அல்லது ஒத்திவைக்கவோ தள்ளப்படுகின்றன.",
+            "தனியார் முதலீட்டு ஈர்ப்பு (Crowding-In): மாறாக, அரசு வாங்கும் கடன் முழுமையாக அடிப்படை உள்கட்டமைப்புக்கு (துறைமுகங்கள், விரைவுச்சாலைகள்) செலவிடப்பட்டால், அது போக்குவரத்து செலவைக் குறைத்து தனியார் முதலீட்டை ஈர்க்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_deficit_financing_evolution": [
+      {
+        "title": "Historical Monetization: Ad-hoc Treasury Bills",
+        "title_ta": "வரலாற்று நாணயமாக்கல்: தற்காலிக கருவூலப் பத்திரங்கள்",
+        "points": {
+          "en": [
+            "Pre-1997 Era: The Government automatically funded budget deficits by issuing 91-day Ad-hoc Treasury Bills to the RBI at a fixed 4.6% interest rate.",
+            "Inflationary Spiral: This was pure deficit monetization ('printing currency notes'), which fueled double-digit inflation and eroded macroeconomic stability.",
+            "Historic Agreement: In 1994, an agreement signed between RBI Governor C. Rangarajan and Finance Minister Manmohan Singh phased out Ad-hoc Treasury Bills completely by March 31, 1997."
+          ],
+          "ta": [
+            "1997-க்கு முந்தைய காலம்: அரசு 4.6% நிலையான வட்டியில் ரிசர்வ் வங்கிக்கு 91-நாள் தற்காலிக கருவூலப் பத்திரங்களை (Ad-hoc TBs) வழங்கி தானாகவே பணத்தை அச்சிட்டுப் பெற்றது.",
+            "பணவீக்க சுழல்: இது நேரடி நாணயமாக்கல் (பணம் அச்சிடுதல்) என்பதால் இரட்டை இலக்க பணவீக்கத்தைத் தூண்டி நிதி ஸ்திரத்தன்மையை சீர்குலைத்தது.",
+            "வரலாற்று ஒப்பந்தம்: 1994-ல் ரிசர்வ் வங்கி ஆளுநர் சி. ரங்கராஜன் மற்றும் நிதியமைச்சர் மன்மோகன் சிங் இடையே கையெழுத்தான ஒப்பந்தப்படி, மார்ச் 31, 1997-க்குள் தற்காலிக கருவூலப் பத்திர முறை முற்றிலும் ஒழிக்கப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Ways and Means Advances (WMA) System",
+        "title_ta": "வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (WMA) அமைப்பு",
+        "points": {
+          "en": [
+            "Introduced on April 1, 1997 to replace Ad-hoc Treasury Bills.",
+            "Nature: Temporary liquidity credit facility provided by the RBI to Centre and States to bridge purely temporary mismatches in cash receipts and disbursements.",
+            "Repayment Limit: Must be completely repaid within 90 consecutive days; not a permanent source of funding deficit.",
+            "Interest Rate: Charged at the prevailing Policy Repo Rate for normal WMA, and Repo + 2% for Overdraft beyond limits."
+          ],
+          "ta": [
+            "தற்காலிக கருவூலப் பத்திரங்களுக்குப் பதிலாக ஏப்ரல் 1, 1997 அன்று அறிமுகப்படுத்தப்பட்டது.",
+            "தன்மை: மத்திய மற்றும் மாநில அரசுகளின் தினசரி வரவு-செலவு பணப்புழக்க இடைவெளியைச் சரிசெய்ய ரிசர்வ் வங்கி வழங்கும் தற்காலிக குறுகிய கால கடன் வசதி.",
+            "திருப்பிச் செலுத்தும் காலக்கெடு: 90 நாட்களுக்குள் முழுமையாக திருப்பிச் செலுத்தப்பட வேண்டும்; இது நிரந்தர பற்றாக்குறை நிதியாக்கத்திற்கான வழி அல்ல.",
+            "வட்டி விகிதம்: சாதாரண WMA-க்கு நடப்பு ரெப்போ விகிதமும், அனுமதிக்கப்பட்ட வரம்பை மீறிய ஓவர் டிராஃப்ட்டிற்கு ரெப்போ + 2% வட்டியும் விதிக்கப்படும்."
+          ]
+        }
+      }
+    ],
+    "sec_off_budget_fiscal_transparency": [
+      {
+        "title": "Extra-Budgetary Resources (EBRs) Problem",
+        "title_ta": "பட்ஜெட்டுக்கு புறம்பான வளங்கள் (EBR) பிரச்சனை",
+        "points": {
+          "en": [
+            "Definition: Loans raised by state-owned public sector enterprises (e.g., Food Corporation of India - FCI, NHAI) on behalf of the government to fund government liabilities.",
+            "Window Dressing: The government historically did not count these borrowings in the official Fiscal Deficit, artificially showing a lower deficit figure to credit rating agencies.",
+            "CAG Critique: The Comptroller and Auditor General (CAG) repeatedly flagged EBRs in compliance audits, calling for transparent on-budget disclosures."
+          ],
+          "ta": [
+            "வரையறை: அரசின் உணவு மானியம் அல்லது நெடுஞ்சாலை பணிகளுக்காக, அரசின் சார்பாக பொதுத்துறை நிறுவனங்கள் (FCI, NHAI) தங்களது சொந்த பெயரில் வாங்கும் கடன்கள்.",
+            "பற்றாக்குறை மறைப்பு: அரசு இந்த கடன்களை அதிகாரப்பூர்வ பட்ஜெட் நிதிப் பற்றாக்குறையில் சேர்க்காமல் தவிர்த்து, பற்றாக்குறை குறைவாக இருப்பது போன்ற போலி தோற்றத்தை உருவாக்கியது.",
+            "CAG கண்டனம்: இந்திய தலைமை கணக்குத் தணிக்கையாளர் (CAG) இந்த மறைமுகக் கடன்களை பலமுறை சுட்டிக்காட்டி, பட்ஜெட்டிற்குள் வெளிப்படையாகக் கொண்டுவர வலியுறுத்தினார்."
+          ]
+        }
+      },
+      {
+        "title": "On-Budget Clean Up (Budget 2021-22 Onwards)",
+        "title_ta": "பட்ஜெட்டுக்குள் கொண்டுவந்த நிதிச் சீர்திருத்தம் (2021-22 முதல்)",
+        "points": {
+          "en": [
+            "In Union Budget 2021-22, the Finance Minister formally discontinued FCI's borrowings from the National Small Savings Fund (NSSF).",
+            "The Centre absorbed the entire food subsidy liability directly onto the Union Budget, marking a historic leap in sovereign fiscal transparency.",
+            "Similarly, off-budget borrowings by State Governments are now strictly counted against their Article 293(3) borrowing ceiling."
+          ],
+          "ta": [
+            "2021-22 மத்திய பட்ஜெட்டில், தேசிய சிறுசேமிப்பு நிதியிலிருந்து (NSSF) இந்திய உணவுக் கழகம் (FCI) கடன் வாங்கும் முறை முற்றிலுமாக நிறுத்தப்பட்டது.",
+            "மத்திய அரசு முழு உணவு மானியப் பொறுப்பையும் நேரடியாக தனது பட்ஜெட்டிலேயே ஏற்றுக் கொண்டு, வரலாற்றுச் சிறப்புமிக்க நிதி வெளிப்படைத்தன்மையை ஏற்படுத்தியது.",
+            "அதேபோல், மாநில அரசுகளின் பொதுத்துறை நிறுவனங்கள் வாங்கும் பட்ஜெட்டுக்கு புறம்பான கடன்களும் சரத்து 293(3)-ன் கீழ் மாநிலத்தின் கடன் வரம்பிலேயே கணக்கிடப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_capex_vs_revenue_multiplier",
+        "title_en": "Table 1: Fiscal Multiplier Comparison: Capital Expenditure vs Revenue Expenditure",
+        "title_ta": "அட்டவணை 1: நிதிப் பெருக்கி ஒப்பீடு: மூலதனச் செலவினம் vs வருவாய் செலவினம்",
+        "headers_en": [
+          "Economic Parameter",
+          "Capital Expenditure (Capex)",
+          "Revenue Expenditure (Revex)"
+        ],
+        "headers_ta": [
+          "பொருளாதார அளவுகோல்",
+          "மூலதனச் செலவினம் (Capex)",
+          "வருவாய் செலவினம் (Revex)"
+        ],
+        "rows_en": [
+          [
+            "Short-Term Multiplier",
+            "1.1 to 1.4 (immediate construction wages, materials demand)",
+            "0.8 to 0.98 (immediate consumption boost)"
+          ],
+          [
+            "Long-Term Multiplier",
+            "2.5 to 3.25 (cumulative logistics efficiency, private investment crowding-in)",
+            "Less than 1.0 (effects dissipate quickly without creating durable assets)"
+          ],
+          [
+            "Asset Creation",
+            "Creates tangible, productive national assets (ports, freight corridors, power grids)",
+            "Creates zero physical assets (salaries, interest payouts, operational subsidies)"
+          ],
+          [
+            "Inflationary Potential",
+            "Disinflationary in the long run by breaking supply bottlenecks",
+            "Inflationary if expanded excessively without matching supply growth"
+          ],
+          [
+            "TNPSC Group 1 Takeaway",
+            "Government's post-COVID strategy pivoted to aggressive capex to maximize growth multiplier",
+            "Revenue expenditure must be rationalized to create fiscal space for capex"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "குறுகிய கால பெருக்கி",
+            "1.1 முதல் 1.4 வரை (உடனடி கட்டுமான கூலிகள், பொருட்கள் தேவை)",
+            "0.8 முதல் 0.98 வரை (உடனடி நுகர்வு உயர்வு)"
+          ],
+          [
+            "நீண்ட கால பெருக்கி",
+            "2.5 முதல் 3.25 வரை (போக்குவரத்து திறன், தனியார் முதலீட்டு ஈர்ப்பு)",
+            "1.0-க்கு குறைவு (சொத்து உருவாகாததால் தாக்கம் விரைவில் மறைந்துவிடும்)"
+          ],
+          [
+            "சொத்து உருவாக்கம்",
+            "உற்பத்தித்திறன் கொண்ட தேசிய சொத்துக்களை உருவாக்குகிறது (துறைமுகங்கள், சரக்கு வழித்தடங்கள்)",
+            "சொத்துக்கள் எதையும் உருவாக்காது (ஊதியம், வட்டி, மானியங்கள்)"
+          ],
+          [
+            "பணவீக்க தாக்கம்",
+            "விநியோகத் தடைகளை நீக்குவதால் நீண்ட காலத்தில் பணவீக்கத்தைக் குறைக்கும்",
+            "உற்பத்தி உயராமல் நுகர்வு மட்டும் கூடினால் பணவீக்கத்தை அதிகரிக்கும்"
+          ],
+          [
+            "TNPSC முக்கியக் கருத்து",
+            "கோவிட்டுக்குப் பிறகு அரசு அதிக பெருக்கி விளைவை அடைய மூலதனச் செலவை அதிகரித்தது",
+            "மூலதனச் செலவுக்கு வழிவகுக்க வருவாய் செலவினங்கள் கட்டுப்படுத்தப்பட வேண்டும்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_wma_vs_adhoc_bills",
+        "title_en": "Table 2: Historical Comparison: Ad-hoc Treasury Bills vs Ways and Means Advances (WMA)",
+        "title_ta": "அட்டவணை 2: வரலாற்று ஒப்பீடு: தற்காலிக கருவூலப் பத்திரங்கள் vs வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (WMA)",
+        "headers_en": [
+          "Dimension",
+          "Ad-hoc Treasury Bills (1955-1997)",
+          "Ways and Means Advances - WMA (1997-Present)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "தற்காலிக கருவூலப் பத்திரங்கள் (1955-1997)",
+          "வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (1997 முதல்)"
+        ],
+        "rows_en": [
+          [
+            "Operational Mechanism",
+            "Automatic monetization; RBI created fresh currency to absorb bills",
+            "Temporary cash advance; no automatic printing of currency notes"
+          ],
+          [
+            "Tenure and Repayment",
+            "Virtually permanent; rolled over indefinitely at fixed 4.6% interest",
+            "Strict 90-day repayment tenure; must be settled in full"
+          ],
+          [
+            "Inflationary Consequences",
+            "Extremely inflationary; expanded reserve money base directly",
+            "Non-inflationary liquidity management; does not expand baseline money supply"
+          ],
+          [
+            "Statutory / Institutional Basis",
+            "Administrative agreement between Ministry of Finance & RBI",
+            "Section 17(5) of the Reserve Bank of India Act, 1934"
+          ],
+          [
+            "Pioneering Reformers",
+            "Terminated under C. Rangarajan (RBI Gov) and Manmohan Singh (FM)",
+            "Institutionalized rule-based fiscal discipline and central bank autonomy"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "செயல்பாட்டு வழிமுறை",
+            "தானியங்கி நாணயமாக்கல்; ரிசர்வ் வங்கி புதிய பணத்தை அச்சிட்டுப் பத்திரங்களை வாங்கியது",
+            "தற்காலிக பண முன்பணம் மட்டுமே; புதிய பணம் அச்சிடப்படாது"
+          ],
+          [
+            "கால அவகாசம்",
+            "கிட்டத்தட்ட நிரந்தரமானது; 4.6% வட்டியில் முடிவின்றி புதுப்பிக்கப்பட்டது",
+            "கடுமையான 90-நாள் திருப்பிச் செலுத்தும் காலக்கெடு; முழுமையாக அடைக்கப்பட வேண்டும்"
+          ],
+          [
+            "பணவீக்க விளைவுகள்",
+            "கடுமையான பணவீக்கத்தை ஏற்படுத்தியது; இருப்புப் பணத்தின் அளவை நேரடியாக உயர்த்தியது",
+            "பணவீக்கத்தை உருவாக்காத தற்காலிக பணப்புழக்க மேலாண்மை"
+          ],
+          [
+            "சட்டப்பூர்வ அடிப்படை",
+            "மத்திய நிதியமைச்சகம் மற்றும் ரிசர்வ் வங்கி இடையேயான நிர்வாக ஒப்பந்தம்",
+            "ரிசர்வ் வங்கிச் சட்டம், 1934-ன் பிரிவு 17(5)"
+          ],
+          [
+            "முக்கிய சீர்திருத்தவாதிகள்",
+            "சி. ரங்கராஜன் (RBI ஆளுநர்) மற்றும் மன்மோகன் சிங் (நிதியமைச்சர்) ஆகியோரால் முடிவுக்கு வந்தது",
+            "மத்திய வங்கியின் தன்னாட்சியையும் நிதி ஒழுக்கத்தையும் நிலைநிறுத்தியது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_crowding_out_vs_crowding_in",
+        "title_en": "Table 3: Economic Duality: Crowding-Out Effect vs Crowding-In Effect",
+        "title_ta": "அட்டவணை 3: பொருளாதார இருமை: தனியார் முதலீடு நெரிசல் vs தனியார் முதலீட்டு ஈர்ப்பு",
+        "headers_en": [
+          "Feature",
+          "Crowding-Out Effect (முதலீடு நெரிசல்)",
+          "Crowding-In Effect (முதலீட்டு ஈர்ப்பு)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "தனியார் முதலீடு நெரிசல் விளைவு",
+          "தனியார் முதலீட்டு ஈர்ப்பு விளைவு"
+        ],
+        "rows_en": [
+          [
+            "Primary Cause",
+            "Heavy government borrowing to finance unproductive revenue consumption",
+            "Targeted government capex in trunk logistics and core infrastructure"
+          ],
+          [
+            "Impact on Interest Rates",
+            "Drives up bond yields and market interest rates due to scarce credit",
+            "Lowers operational risks; private cost of doing business declines"
+          ],
+          [
+            "Private Investment Response",
+            "Private sector reduces capital investment due to high borrowing costs",
+            "Private sector increases investment to leverage complementary infrastructure"
+          ],
+          [
+            "Sectoral Destination",
+            "Subsidies, administrative salaries, election freebies",
+            "High-speed freight corridors, renewable energy grids, semiconductor parks"
+          ],
+          [
+            "Fiscal Consolidation Goal",
+            "Eliminate crowding-out by keeping fiscal deficit strictly within 3% to 4.5%",
+            "Maximize crowding-in by expanding capex-to-GDP ratio"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை காரணம்",
+            "உற்பத்திசாரா வருவாய் நுகர்வு செலவுகளுக்காக அரசு அதிகளவில் கடன் வாங்குவது",
+            "போக்குவரத்து மற்றும் அடிப்படை உள்கட்டமைப்பில் அரசு மூலதன முதலீடு செய்வது"
+          ],
+          [
+            "வட்டி விகித தாக்கம்",
+            "அரசு பத்திர ஈவுத்தொகை மற்றும் சந்தை கடன் வட்டி விகிதங்களை உயர்த்துகிறது",
+            "வணிக செலவைக் குறைக்கிறது; செயல்பாட்டு இடர்களைத் தணிக்கிறது"
+          ],
+          [
+            "தனியார் முதலீட்டு எதிர்வினை",
+            "அதிக வட்டி காரணமாக தனியார் நிறுவனங்கள் தங்களது முதலீடுகளைக் குறைக்கின்றன",
+            "அரசு உள்கட்டமைப்பைப் பயன்படுத்தி தனியார் முதலீடுகள் பெருகுகின்றன"
+          ],
+          [
+            "செலவிடப்படும் துறை",
+            "மானியங்கள், நிர்வாக ஊதியங்கள், இலவச திட்டங்கள்",
+            "சரக்கு வழித்தடங்கள், சூரியசக்தி பூங்காக்கள், துறைமுக விரிவாக்கம்"
+          ],
+          [
+            "நிதி ஒழுங்கு இலக்கு",
+            "நிதிப் பற்றாக்குறையைக் கட்டுப்படுத்தி தனியார் கடன் நெரிசலைத் தவிர்ப்பது",
+            "மூலதனச் செலவை உயர்த்தி தனியார் முதலீட்டு ஈர்ப்பை அதிகப்படுத்துவது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_fiscal_deficits_formula_cheat_sheet",
+        "title_en": "Table 4: Master High-Yield Formula Cheat Sheet for TNPSC Group 1",
+        "title_ta": "அட்டவணை 4: TNPSC குரூப் 1 தேர்வுக்கான பற்றாக்குறை சூத்திரங்களின் தொகுப்பு",
+        "headers_en": [
+          "Indicator Name",
+          "Definitive Formula",
+          "Key Components Included",
+          "Key Components Excluded"
+        ],
+        "headers_ta": [
+          "குறிகாட்டி பெயர்",
+          "துல்லியமான சூத்திரம்",
+          "உள்ளடக்கிய முக்கிய கூறுகள்",
+          "விலக்கப்பட்ட முக்கிய கூறுகள்"
+        ],
+        "rows_en": [
+          [
+            "Budgetary Deficit (Old)",
+            "Total Expenditure - Total Receipts",
+            "Revenue and capital receipts, Treasury bills",
+            "Concept abandoned in 1997 with end of Ad-hoc TBs"
+          ],
+          [
+            "Revenue Deficit (RD)",
+            "Revenue Expenditure - Revenue Receipts",
+            "Tax revenue, non-tax revenue, operational spending",
+            "All capital expenditures, loans, disinvestments"
+          ],
+          [
+            "Effective Revenue Deficit (ERD)",
+            "Revenue Deficit - Grants for Creation of Capital Assets",
+            "State-level asset creation funded by Central grants",
+            "Abolished as statutory target under Finance Act 2018"
+          ],
+          [
+            "Fiscal Deficit (FD)",
+            "Total Expenditure - (Revenue Receipts + Non-debt Capital Receipts)",
+            "Gross borrowing requirement from market, RBI, external",
+            "Excludes debt-creating capital receipts (market loans)"
+          ],
+          [
+            "Primary Deficit (PD)",
+            "Fiscal Deficit - Net Interest Payments",
+            "Current year's operational fiscal stance",
+            "Excludes historical legacy interest burden"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பட்ஜெட் பற்றாக்குறை (பழையது)",
+            "மொத்த செலவு - மொத்த வரவுகள்",
+            "வருவாய், மூலதன வரவுகள் மற்றும் கருவூலப் பத்திரங்கள்",
+            "1997-ல் தற்காலிக கருவூலப் பத்திரங்கள் ஒழிப்புடன் கைவிடப்பட்டது"
+          ],
+          [
+            "வருவாய்ப் பற்றாக்குறை (RD)",
+            "வருவாய் செலவினம் - வருவாய் வரவுகள்",
+            "வரி வருவாய், வரியல்லா வருவாய், அன்றாட செலவுகள்",
+            "அனைத்து மூலதனச் செலவுகள் மற்றும் கடன் மீட்புகள்"
+          ],
+          [
+            "பயனுள்ள வருவாய்ப் பற்றாக்குறை (ERD)",
+            "வருவாய்ப் பற்றாக்குறை - மூலதன சொத்து உருவாக்கும் மானியங்கள்",
+            "மத்திய மானியங்கள் மூலம் மாநிலங்கள் உருவாக்கிய சொத்துக்கள்",
+            "2018 நிதிச் சட்டத்தில் சட்டப்பூர்வ இலக்கிலிருந்து நீக்கப்பட்டது"
+          ],
+          [
+            "நிதிப் பற்றாக்குறை (FD)",
+            "மொத்த செலவு - (வருவாய் வரவுகள் + கடனல்லா மூலதன வரவுகள்)",
+            "சந்தை, ரிசர்வ் வங்கி மற்றும் வெளிநாட்டு மொத்தக் கடன் தேவை",
+            "கடன் சார்ந்த மூலதன வரவுகள் (சந்தைக் கடன்கள்) நீக்கப்படும்"
+          ],
+          [
+            "முதன்மைப் பற்றாக்குறை (PD)",
+            "நிதிப் பற்றாக்குறை - நிகர வட்டி கொடுப்பனவுகள்",
+            "நடப்பு ஆண்டின் உண்மையான செயல்பாட்டு நிதி நிலை",
+            "கடந்த கால அரசின் குவிந்த வட்டிச் சுமை நீக்கப்படும்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Fiscal Policy Exam Mastery (Part 3)",
+        "short_label": "Exam Mastery",
+        "children": [
+          {
+            "title": "Macroeconomic Transmissions",
+            "short_label": "Transmission",
+            "children": [
+              {
+                "title": "Fiscal Multiplier: Capex vs Revex",
+                "short_label": "Multiplier"
+              },
+              {
+                "title": "Crowding-Out: High Yields Squeeze Private Credit",
+                "short_label": "Crowding-Out"
+              },
+              {
+                "title": "Crowding-In: Infrastructure Catalyzes Private Capex",
+                "short_label": "Crowding-In"
+              }
+            ]
+          },
+          {
+            "title": "Historical Milestones",
+            "short_label": "Milestones",
+            "children": [
+              {
+                "title": "1997: Abolition of Ad-hoc Treasury Bills",
+                "short_label": "1997 Reform"
+              },
+              {
+                "title": "1997: Introduction of WMA (Sec 17(5) RBI Act)",
+                "short_label": "WMA Intro"
+              },
+              {
+                "title": "2021: Elimination of NSSF Off-Budget Food Subsidies",
+                "short_label": "On-Budget 2021"
+              }
+            ]
+          },
+          {
+            "title": "TNPSC Traps & High-Yield Keys",
+            "short_label": "Traps & Keys",
+            "children": [
+              {
+                "title": "WMA 90-Day Repayment Ceiling",
+                "short_label": "WMA 90 Days"
+              },
+              {
+                "title": "Primary Deficit Zero Interpretation",
+                "short_label": "PD = 0"
+              },
+              {
+                "title": "Balanced Budget Multiplier = 1",
+                "short_label": "BBM = 1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Balanced Budget Multiplier Value Trap (சமநிலை பட்ஜெட் பெருக்கி மதிப்பு)",
+        "points": {
+          "en": [
+            "TRAP: Candidates assume that if government spending and taxes are increased by equal amounts, the net multiplier effect on national income is zero.",
+            "CORRECT FACT: The Balanced Budget Multiplier equals exactly 1 (unity), because government spending acts directly on aggregate demand while taxes act indirectly through disposable income.",
+            "WHY CANDIDATES FAIL: Intuitive mathematical symmetry leads candidates to assume equal increase in revenue and spending cancels out completely."
+          ],
+          "ta": [
+            "பொறி: அரசு செலவும் வரியும் ஒரே அளவில் அதிகரிக்கப்பட்டால் தேசிய வருமானத்தில் ஏற்படும் நிகர பெருக்கி விளைவு பூஜ்ஜியம் என நினைப்பது.",
+            "சரியான உண்மை: சமநிலை பட்ஜெட் பெருக்கியின் மதிப்பு சரியாக 1 ஆகும்; ஏனெனில் அரசு செலவு ஒட்டுமொத்த தேவையில் நேரடியாக செயல்படுகிறது, ஆனால் வரி நுகர்வை மட்டுமே குறைக்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: செலவும் வரியும் சமமாக கூடுவதால் இரண்டும் ஒன்றையொன்று ரத்து செய்துவிடும் என தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "WMA Nature and Purpose Trap (WMA தன்மை மற்றும் நோக்கம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Ways and Means Advances (WMA) are used by the government to finance long-term fiscal deficits or capital projects.",
+            "CORRECT FACT: WMA is strictly a 90-day short-term liquidity facility to bridge temporary cash flow mismatches; it cannot be used for deficit financing.",
+            "WHY CANDIDATES FAIL: Candidates mix up RBI's liquidity support with long-term sovereign market borrowings."
+          ],
+          "ta": [
+            "பொறி: வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (WMA) என்பது அரசு தனது நீண்ட கால பற்றாக்குறை அல்லது திட்டங்களுக்கு பயன்படுத்தும் கடன் என நினைப்பது.",
+            "சரியான உண்மை: WMA என்பது தற்காலிக பணப்புழக்க இடைவெளியை சரிசெய்ய 90 நாட்களுக்கு மட்டுமே வழங்கப்படும் குறுகிய கால முன்பணம்; பற்றாக்குறைக்கு நிதியளிக்க இதைப் பயன்படுத்த முடியாது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ரிசர்வ் வங்கியின் குறுகிய கால பணப்புழக்க ஆதரவை அரசின் நீண்ட கால சந்தைக் கடனுடன் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Capex Multiplier vs Revex Multiplier Ratio Trap (மூலதன vs வருவாய் பெருக்கி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that revenue welfare handouts generate a higher long-term GDP multiplier than physical infrastructure investments.",
+            "CORRECT FACT: Capex has a long-term multiplier of 2.5 to 3.25, while Revenue expenditure has a multiplier of less than 1.0.",
+            "WHY CANDIDATES FAIL: Welfare transfers provide immediate political visibility and quick consumption, masking the superior long-term asset productivity of capex."
+          ],
+          "ta": [
+            "பொறி: உள்கட்டமைப்பு முதலீடுகளை விட நலத்திட்ட உதவித் தொகைகள் நீண்ட கால GDP பெருக்கியை அதிகம் உருவாக்கும் என தவறாகக் கருதுவது.",
+            "சரியான உண்மை: மூலதனச் செலவினத்தின் நீண்ட கால பெருக்கி 2.5 முதல் 3.25 வரை உள்ளது; ஆனால் வருவாய் செலவினத்தின் பெருக்கி 1.0-க்கும் குறைவாகவே உள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நலத்திட்டங்கள் உடனடி நுகர்வைத் தருவதால் அவை அதிக வளர்ச்சி தரும் என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Rangarajan-Manmohan 1994 Agreement Milestone Trap (தற்காலிக கருவூலப் பத்திர ஒழிப்பு ஆண்டு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that deficit financing via automatic currency printing was abolished during the 1991 economic crisis.",
+            "CORRECT FACT: The historic agreement to end Ad-hoc Treasury Bills was signed in September 1994 and became fully effective on March 31, 1997.",
+            "WHY CANDIDATES FAIL: Candidates attribute all landmark economic reforms indiscriminately to the 1991 LPG year."
+          ],
+          "ta": [
+            "பொறி: தற்காலிக கருவூலப் பத்திரங்கள் மூலம் தானாகவே பணம் அச்சிடும் முறை 1991 பொருளாதார நெருக்கடியின் போதே ஒழிக்கப்பட்டது என நினைப்பது.",
+            "சரியான உண்மை: இதற்கான வரலாற்று ஒப்பந்தம் செப்டம்பர் 1994-ல் கையெழுத்தாகி, மார்ச் 31, 1997 அன்று தான் முழுமையாக நடைமுறைக்கு வந்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து பொருளாதார சீர்திருத்தங்களையும் 1991-ல் நடந்ததாகவே பொதுமைப்படுத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Off-Budget Borrowing Inclusion Trap (பட்ஜெட்டுக்கு புறம்பான கடன் சேர்க்கை)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Extra-Budgetary Resources (EBRs) raised by PSUs were always included in the official Fiscal Deficit numbers.",
+            "CORRECT FACT: Historically, EBRs were excluded from the fiscal deficit, artificially depressing reported deficit figures until cleaned up in Budget 2021-22.",
+            "WHY CANDIDATES FAIL: Candidates assume modern standards of budget transparency existed throughout past decades."
+          ],
+          "ta": [
+            "பொறி: பொதுத்துறை நிறுவனங்கள் வாங்கிய பட்ஜெட்டுக்கு புறம்பான கடன்கள் (EBR) எப்போதும் உத்தியோகபூர்வ நிதிப் பற்றாக்குறையிலேயே சேர்க்கப்பட்டிருந்தன என நினைப்பது.",
+            "சரியான உண்மை: வரலாற்று ரீதியாக இந்த மறைமுகக் கடன்கள் பட்ஜெட்டில் சேர்க்கப்படாமல் தவிர்க்கப்பட்டு, 2021-22 பட்ஜெட்டில் தான் வெளிப்படையாகக் கொண்டுவரப்பட்டன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தற்போதைய வெளிப்படைத்தன்மை கடந்த காலங்களிலும் இருந்திருக்கும் என்று தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Crowding-Out Mechanism Direction Trap (முதலீடு நெரிசல் திசைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that crowding-out occurs because the government directly bans or limits private companies from borrowing.",
+            "CORRECT FACT: Crowding-out is purely market-driven: heavy sovereign bond issuance drives up interest rates, making private borrowing financially unviable.",
+            "WHY CANDIDATES FAIL: Candidates assume government intervention in crowding-out is administrative rather than price/interest-rate mediated."
+          ],
+          "ta": [
+            "பொறி: அரசாங்கம் தனியார் நிறுவனங்கள் கடன் வாங்குவதை சட்டப்படி தடை செய்வதால் முதலீடு நெரிசல் ஏற்படுகிறது என்று நினைப்பது.",
+            "சரியான உண்மை: முதலீடு நெரிசல் என்பது சந்தை அடிப்படையிலானது: அரசு அதிக கடன் வாங்குவதால் சந்தை வட்டி விகிதங்கள் உயர்ந்து, தனியார் நிறுவனங்களுக்கு கடன் வாங்குவது கட்டுப்படியாகாமல் போகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இது வட்டி விகித உயர்வால் ஏற்படும் சந்தை விளைவு என்பதை அறியாமல் நிர்வாகத் தடை என தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The Keynesian Fiscal Multiplier formula is k = 1 / (1 - MPC), where MPC is the Marginal Propensity to Consume.",
+        "The Balanced Budget Multiplier is always equal to 1, demonstrating that equal expansion of taxes and spending still stimulates GDP.",
+        "According to RBI and National Institute of Public Finance and Policy (NIPFP) studies, capex in India has a multiplier of 2.5 to 3.25.",
+        "Revenue expenditure in India has a low fiscal multiplier of approximately 0.9 to 1.1.",
+        "Ad-hoc Treasury Bills for automatic monetization of the deficit were abolished on March 31, 1997, based on the 1994 Rangarajan-Manmohan Singh agreement.",
+        "Ways and Means Advances (WMA) were operationalized on April 1, 1997, under Section 17(5) of the RBI Act, 1934.",
+        "WMA loans must be repaid within 90 consecutive days by the borrower government.",
+        "Special WMA (now known as Special Drawing Facility - SDF) is backed by government securities held by the borrowing State.",
+        "In Union Budget 2021-22, off-budget financing of the Food Corporation of India (FCI) through National Small Savings Fund (NSSF) loans was completely terminated.",
+        "The Comptroller and Auditor General (CAG) defines Extra-Budgetary Resources (EBRs) as financial liabilities incurred by public entities on behalf of the government.",
+        "Crowding-out occurs when heavy government borrowing absorbs loanable funds, driving up real interest rates and suppressing private capital expenditure.",
+        "Targeted infrastructure spending crowds-in private investment by lowering transportation, power, and transaction costs for businesses."
+      ],
+      "ta": [
+        "கெயின்சியன் நிதிப் பெருக்கி சூத்திரம் k = 1 / (1 - MPC) ஆகும், இதில் MPC என்பது நுகர்வு இறுதிநிலை நாட்டம்.",
+        "சமநிலை பட்ஜெட் பெருக்கியின் மதிப்பு எப்போதும் 1 ஆகும்; இது சமமான வரி மற்றும் செலவு அதிகரிப்பும் GDP-யை உயர்த்தும் என்பதை நிரூபிக்கிறது.",
+        "ரிசர்வ் வங்கி மற்றும் NIPFP ஆய்வுகளின்படி, இந்தியாவில் மூலதனச் செலவினத்தின் பெருக்கி 2.5 முதல் 3.25 வரை உள்ளது.",
+        "இந்தியாவில் வருவாய் செலவினத்தின் பெருக்கி சுமார் 0.9 முதல் 1.1 வரை மட்டுமே உள்ள மிகக் குறைந்த அளவாகும்.",
+        "தானாகப் பணம் அச்சிடும் தற்காலிக கருவூலப் பத்திரங்கள் 1994-ஆம் ஆண்டின் ரங்கராஜன்-மன்மோகன் சிங் ஒப்பந்தத்தின்படி மார்ச் 31, 1997 அன்று ஒழிக்கப்பட்டன.",
+        "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 17(5)-ன் கீழ் ஏப்ரல் 1, 1997 அன்று வழிகள் மற்றும் வழிமுறைகள் முன்பணம் (WMA) நடைமுறைக்கு வந்தது.",
+        "WMA கடன் முன்பணங்கள் 90 நாட்களுக்குள் அரசால் முழுமையாக திருப்பிச் செலுத்தப்பட வேண்டும்.",
+        "சிறப்பு WMA (தற்போது SDF என அழைக்கப்படுகிறது) மாநில அரசு வைத்திருக்கும் அரசுப் பத்திரங்களின் பிணையத்தின் அடிப்படையில் வழங்கப்படுகிறது.",
+        "2021-22 மத்திய பட்ஜெட்டில், தேசிய சிறுசேமிப்பு நிதி (NSSF) மூலம் FCI கடன் வாங்கும் பட்ஜெட்டுக்கு புறம்பான முறை முற்றிலுமாக நிறுத்தப்பட்டது.",
+        "அரசாங்கத்தின் சார்பாக பொதுத்துறை நிறுவனங்கள் ஏற்கும் நிதிப் பொறுப்புகளை பட்ஜெட்டுக்கு புறம்பான வளங்கள் (EBR) என CAG வரையறுக்கிறது.",
+        "அரசு அதிக கடன் வாங்கும் போது கடன் நிதி உறிஞ்சப்பட்டு, வட்டி விகிதங்கள் உயர்ந்து தனியார் முதலீடுகளை வெளியேற்றுவது 'முதலீடு நெரிசல்' (Crowding-out) எனப்படுகிறது.",
+        "இலக்கு வைக்கப்பட்ட உள்கட்டமைப்புச் செலவுகள் நிறுவனங்களின் போக்குவரத்து மற்றும் செயல்பாட்டு செலவைக் குறைத்து தனியார் முதலீட்டை ஈர்க்கின்றன (Crowding-in)."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Fiscal Multiplier: Ratio of change in GDP to an initial change in government expenditure; k = 1 / (1 - MPC).",
+        "Balanced Budget Multiplier: Exactly equals 1; spending directly adds to aggregate demand while tax reduction acts indirectly.",
+        "Capex vs Revex Multiplier: Capex delivers 2.5x to 3.25x GDP boost; Revex delivers less than 1.0x.",
+        "Crowding-Out Effect: High public debt issuance drives up interest rates and squeezes private commercial borrowing.",
+        "Crowding-In Effect: Core logistics and infrastructure investments crowd-in complementary private capital investments.",
+        "Ad-hoc Treasury Bills Abolition: Ended on March 31, 1997, permanently eliminating automatic monetization of deficit.",
+        "Ways and Means Advances (WMA): Short-term liquidity window under Section 17(5) of RBI Act; maximum 90 days tenure.",
+        "Off-Budget Clean Up: Ended in Budget 2021-22 by bringing FCI food subsidy directly onto the Union Budget.",
+        "Debt Ceiling Coordination: State off-budget borrowings are now counted against Article 293(3) borrowing limits.",
+        "Glide Path 2025-26: Fiscal consolidation path targeted bringing fiscal deficit below 4.5% of GDP by FY 2025-26."
+      ],
+      "ta": [
+        "நிதிப் பெருக்கி: அரசு செலவின மாற்றத்தால் GDP-யில் ஏற்படும் மாற்றத்தின் விகிதம்; k = 1 / (1 - MPC).",
+        "சமநிலை பட்ஜெட் பெருக்கி: இதன் மதிப்பு எப்போதும் சரியாக 1; அரசு செலவு நேரடியாக தேவையை உருவாக்குகிறது.",
+        "மூலதன vs வருவாய் பெருக்கி: மூலதனச் செலவு 2.5x முதல் 3.25x வரை பலன் தரும்; வருவாய் செலவு 1.0x-க்கும் குறைவாகவே பலன் தரும்.",
+        "முதலீடு நெரிசல் விளைவு: அரசு அதிக கடன் வாங்குவதால் வட்டி விகிதம் உயர்ந்து தனியார் கடன் பெறுவது தடுக்கப்படுகிறது.",
+        "முதலீட்டு ஈர்ப்பு விளைவு: அடிப்படை உள்கட்டமைப்பு முதலீடுகள் தனியார் வணிக முதலீடுகளை ஈர்க்கின்றன.",
+        "தற்காலிக கருவூலப் பத்திர ஒழிப்பு: மார்ச் 31, 1997 அன்று முடிவுக்கு வந்து, தானாக பணம் அச்சிடும் முறை ஒழிக்கப்பட்டது.",
+        "WMA முன்பணம்: ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17(5)-ன் கீழ் 90 நாட்களுக்குள் திருப்பிச் செலுத்த வேண்டிய குறுகிய கால பணப்புழக்க வசதி.",
+        "பட்ஜெட் வெளிப்படைத்தன்மை: 2021-22 பட்ஜெட்டில் FCI உணவு மானியக் கடன்கள் நேரடியாக பட்ஜெட்டிற்குள் கொண்டுவரப்பட்டன.",
+        "மாநில கடன் கட்டுப்பாடு: மாநில பொதுத்துறை நிறுவனங்களின் மறைமுகக் கடன்களும் சரத்து 293(3) வரம்பிற்குள் சேர்க்கப்படுகின்றன.",
+        "நிதிப் பாதை 2025-26: 2025-26-க்குள் நிதிப் பற்றாக்குறையை GDP-யில் 4.5%-க்குக் கீழ் கொண்டுவருவதற்கான இலக்கு."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_fp_301",
+        "front_en": "What is the numerical value of the Balanced Budget Multiplier?",
+        "front_ta": "சமநிலை பட்ஜெட் பெருக்கியின் (Balanced Budget Multiplier) எண் மதிப்பு என்ன?",
+        "back_en": "Exactly 1 (unity).",
+        "back_ta": "சரியாக 1."
+      },
+      {
+        "id": "rc_fp_302",
+        "front_en": "What is the formula for the Keynesian Fiscal Multiplier in terms of Marginal Propensity to Consume (MPC)?",
+        "front_ta": "நுகர்வு இறுதிநிலை நாட்டம் (MPC) அடிப்படையில் கெயின்சியன் நிதிப் பெருக்கிக்கான சூத்திரம் என்ன?",
+        "back_en": "k = 1 / (1 - MPC) or 1 / MPS.",
+        "back_ta": "k = 1 / (1 - MPC) அல்லது 1 / MPS."
+      },
+      {
+        "id": "rc_fp_303",
+        "front_en": "What is the estimated long-term multiplier of Capital Expenditure in India according to RBI studies?",
+        "front_ta": "ரிசர்வ் வங்கி ஆய்வுகளின்படி இந்தியாவில் மூலதனச் செலவினத்தின் மதிப்பிடப்பட்ட நீண்ட கால பெருக்கி என்ன?",
+        "back_en": "Approximately 2.5 to 3.25 (compared to ~0.9 to 1.1 for revenue expenditure).",
+        "back_ta": "சுமார் 2.5 முதல் 3.25 வரை (வருவாய் செலவினத்தின் பெருக்கி ~0.9 முதல் 1.1 மட்டுமே)."
+      },
+      {
+        "id": "rc_fp_304",
+        "front_en": "On what date was the system of 91-day Ad-hoc Treasury Bills completely abolished?",
+        "front_ta": "91-நாள் தற்காலிக கருவூலப் பத்திர முறை முழுமையாக எந்தத் தேதியில் ஒழிக்கப்பட்டது?",
+        "back_en": "March 31, 1997 (replaced by Ways and Means Advances on April 1, 1997).",
+        "back_ta": "மார்ச் 31, 1997 (ஏப்ரல் 1, 1997 அன்று WMA முறை அறிமுகப்படுத்தப்பட்டது)."
+      },
+      {
+        "id": "rc_fp_305",
+        "front_en": "What is the maximum statutory repayment period for Ways and Means Advances (WMA)?",
+        "front_ta": "வழிகள் மற்றும் வழிமுறைகள் முன்பணத்திற்கான (WMA) அதிகபட்ச திருப்பிச் செலுத்தும் காலம் என்ன?",
+        "back_en": "90 consecutive days.",
+        "back_ta": "90 நாட்கள்."
+      },
+      {
+        "id": "rc_fp_306",
+        "front_en": "Under which section of the Reserve Bank of India Act, 1934 is WMA extended to governments?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் எந்தப் பிரிவின் கீழ் அரசுகளுக்கு WMA வழங்கப்படுகிறது?",
+        "back_en": "Section 17(5) of the RBI Act, 1934.",
+        "back_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 17(5)."
+      },
+      {
+        "id": "rc_fp_307",
+        "front_en": "How does excessive government borrowing cause the 'Crowding-Out Effect' on the private sector?",
+        "front_ta": "அதிகப்படியான அரசு கடன் வாங்குதல் தனியார் துறையில் எவ்வாறு 'முதலீடு நெரிசல்' விளைவை ஏற்படுத்துகிறது?",
+        "back_en": "It raises government bond yields and market interest rates, making commercial borrowing expensive for private firms.",
+        "back_ta": "இது அரசு பத்திர ஈவுத்தொகை மற்றும் சந்தை வட்டி விகிதங்களை உயர்த்தி, தனியார் நிறுவனங்களுக்கு கடன் செலவை அதிகரிக்கிறது."
+      },
+      {
+        "id": "rc_fp_308",
+        "front_en": "In which Union Budget was the practice of funding food subsidies through NSSF loans formally stopped?",
+        "front_ta": "NSSF கடன்கள் மூலம் உணவு மானியத்திற்கு நிதியளிக்கும் மறைமுக முறை எந்த மத்திய பட்ஜெட்டில் நிறுத்தப்பட்டது?",
+        "back_en": "Union Budget 2021-22.",
+        "back_ta": "2021-22 மத்திய பட்ஜெட்."
+      },
+      {
+        "id": "rc_fp_309",
+        "front_en": "What term describes the phenomenon where infrastructure capex stimulates complementary private investment?",
+        "front_ta": "அரசு உள்கட்டமைப்பு மூலதனச் செலவு தனியார் முதலீடுகளை ஊக்குவிக்கும் நிகழ்வு எவ்வாறு அழைக்கப்படுகிறது?",
+        "back_en": "Crowding-In Effect.",
+        "back_ta": "தனியார் முதலீட்டு ஈர்ப்பு விளைவு (Crowding-In Effect)."
+      },
+      {
+        "id": "rc_fp_310",
+        "front_en": "Who were the signatories to the historic 1994 agreement phasing out automatic monetization of the deficit?",
+        "front_ta": "தானாக பணம் அச்சிடும் முறையை முடிவுக்கு கொண்டுவந்த வரலாற்றுச் சிறப்புமிக்க 1994 ஒப்பந்தத்தில் கையெழுத்திட்டவர்கள் யார்?",
+        "back_en": "Dr. C. Rangarajan (RBI Governor) and Dr. Manmohan Singh (Finance Minister).",
+        "back_ta": "டாக்டர் சி. ரங்கராஜன் (ரிசர்வ் வங்கி ஆளுநர்) மற்றும் டாக்டர் மன்மோகன் சிங் (நிதியமைச்சர்)."
+      },
+      {
+        "id": "rc_fp_311",
+        "front_en": "What is the interest rate charged by the RBI on normal Ways and Means Advances (WMA)?",
+        "front_ta": "சாதாரண WMA முன்பணங்களுக்கு ரிசர்வ் வங்கி விதிக்கும் வட்டி விகிதம் என்ன?",
+        "back_en": "The prevailing Policy Repo Rate.",
+        "back_ta": "நடப்பு கொள்கை ரெப்போ விகிதம் (Policy Repo Rate)."
+      },
+      {
+        "id": "rc_fp_312",
+        "front_en": "What target was set in Budget 2021-22 for India's fiscal deficit by FY 2025-26?",
+        "front_ta": "2025-26 நிதி ஆண்டிற்குள் இந்தியாவின் நிதிப் பற்றாக்குறைக்கு 2021-22 பட்ஜெட்டில் நிர்ணயிக்கப்பட்ட இலக்கு என்ன?",
+        "back_en": "Below 4.5% of GDP.",
+        "back_ta": "GDP-யில் 4.5%-க்குக் கீழ்."
+      }
+    ]
+  }
+}

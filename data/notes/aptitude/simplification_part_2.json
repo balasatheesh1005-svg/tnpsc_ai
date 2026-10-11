@@ -1,0 +1,341 @@
+{
+  "topic": "simplification_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Simplification Part 2 — Fractions, Decimals, Surds & Indices",
+  "title_ta": "சுருக்குதல் பகுதி 2 — பின்னங்கள், தசமங்கள், வர்க்கமூலம் மற்றும் அடுக்குகள்",
+
+  "definition": {
+    "en": "Fractions, decimals, powers, and surds form the core arithmetic component of TNPSC Simplification. mastering conversion rules, exponent laws, and ladder fractions enables solving multi-step numerical expressions quickly.",
+    "ta": "பின்னங்கள், தசமங்கள், அடுக்கு விதிகள் மற்றும் வர்க்கமூலங்கள் ஆகியவை TNPSC சுருக்குதல் பாடத்தின் முக்கிய அங்கமாகும். இவற்றின் மாற்று முறைகள் மற்றும் அடுக்கு விதிகளைப் பயன்படுத்துவது சிக்கலான கணிதக் கோவைகளை எளிதில் தீர்க்க உதவும்."
+  },
+
+  "exam_importance": {
+    "en": "Questions involving recurring decimals, ladder fractions, exponent equation solving, and surd rationalization are frequently asked in TNPSC Group 1, Group 2/2A, and Group 4 exams.",
+    "ta": "சுழல் தசம எண்கள் (Recurring Decimals), ஏணிப் பின்னங்கள் (Ladder Fractions), அடுக்கு சமன்பாடுகள் மற்றும் முறுடுகளின் பகுத்தெடுத்தல் தொடர்பான வினாக்கள் TNPSC தேர்வுகளில் அடிக்கடி கேட்கப்படும் முதன்மை வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Laws of Indices / Exponents (அடுக்கு விதிகள்)",
+      "formula": "a^m \\times a^n = a^{m+n}, \\quad \\frac{a^m}{a^n} = a^{m-n}, \\quad (a^m)^n = a^{mn}, \\quad a^{-n} = \\frac{1}{a^n}, \\quad a^0 = 1",
+      "explanation": {
+        "en": "Fundamental rules for multiplying, dividing, and raising powers with identical or different bases.",
+        "ta": "ஒரே அடிமானமுடைய எண்களைப் பெருக்கும் போது அடுக்குகளைக் கூட்ட வேண்டும்; வகுக்கும் போது அடுக்குகளைக் கழிக்க வேண்டும்."
+      }
+    },
+    {
+      "title": "Recurring Decimal to Fraction Conversion (சுழல் தசம விதியும் பின்ன மாற்றமும்)",
+      "formula": "0.\\bar{a} = \\frac{a}{9}, \\quad 0.\\overline{ab} = \\frac{ab}{99}, \\quad 0.a\\bar{b} = \\frac{ab - a}{90}",
+      "explanation": {
+        "en": "Subtract non-repeating digits from the total digits for numerator. Put 9s for repeating digits and 0s for non-repeating digits in denominator.",
+        "ta": "தொகுதி = (முழு எண் - சுழலாத பகுதி). பகுதி = சுழலும் இலக்கங்களுக்கு 9 மற்றும் சுழலாத புள்ளிக்குப் பின்னுள்ள இலக்கங்களுக்கு 0."
+      }
+    },
+    {
+      "title": "Rationalization of Surds (முறுடுகளின் பகுதியை விகிதமுறுக்குதல்)",
+      "formula": "\\frac{1}{\\sqrt{a} + \\sqrt{b}} = \\frac{\\sqrt{a} - \\sqrt{b}}{a - b}",
+      "explanation": {
+        "en": "Multiply numerator and denominator by the conjugate of the denominator.",
+        "ta": "பகுதியில் உள்ள முறுடின் இணைப்பு காரணியால் (Conjugate) தொகுதி மற்றும் பகுதியை பெருக்கி விகிதமுறச் செய்தல்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Ladder Fractions & Continued Fractions (ஏணிப் பின்னங்கள்)",
+      "points": {
+        "en": [
+          "Always start evaluating continued fractions from the lowest (bottom-most) denominator upwards.",
+          "Simplify each step into a simple fraction and invert it (reciprocal) for the upper layer.",
+          "Check step-by-step arithmetic carefully to avoid fractional carry-over errors."
+        ],
+        "ta": [
+          "ஏணிப் பின்னங்களை எப்போதும் கீழிருந்து மேல் நோக்கி சுருக்க வேண்டும்.",
+          "ஒவ்வொரு படியிலும் எளிய பின்னமாக மாற்றி, மேல் அடுக்குக்கு அதன் தலைகீழியை (Reciprocal) பயன்படுத்த வேண்டும்.",
+          "கீழ் படி சுருக்கலில் ஏற்படும் தவறுகள் முழு விடையையும் பாதிக்கும் என்பதால் கவனமாக கணக்கிட வேண்டும்."
+        ]
+      }
+    },
+    {
+      "title": "Properties of Surds & Square Roots (வர்க்கமூலம் மற்றும் முறுடுகளின் பண்புகள்)",
+      "points": {
+        "en": [
+          "Square root of a product: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\).",
+          "Square root of a fraction: \\(\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}\\).",
+          "Like surds can be added or subtracted: \\(3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}\\)."
+        ],
+        "ta": [
+          "பெருக்கலின் வர்க்கமூலம்: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\).",
+          "பின்னத்தின் வர்க்கமூலம்: \\(\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}\\).",
+          "ஒரே வகையான முறுடுகளை மட்டுமே கூட்டவோ கழிக்கவோ முடியும்: \\(3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}\\)."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Nested Infinite Square Root Shortcut",
+      "points": {
+        "en": [
+          "For \\(\\sqrt{n + \\sqrt{n + \\sqrt{n + \\dots \\infty}}}\\), if \\(n = k(k+1)\\), the answer is \\(k+1\\) (larger factor).",
+          "For \\(\\sqrt{n - \\sqrt{n - \\sqrt{n - \\dots \\infty}}}\\), if \\(n = k(k+1)\\), the answer is \\(k\\) (smaller factor).",
+          "For \\(\\sqrt{n \\sqrt{n \\sqrt{n \\dots \\infty}}}\\), the answer is directly \\(n\\)."
+        ],
+        "ta": [
+          "\\(\\sqrt{n + \\sqrt{n + \\dots}}\\)-ல் \\(n = k(k+1)\\) என பிரிக்க முடிந்தால், கூட்டலுக்கு பெரிய காரணி \\(k+1\\) விடை.",
+          "கழித்தலாக இருந்தால் சிறிய காரணி \\(k\\) விடை.",
+          "பெருக்கலாக இருந்தால் \\(\\sqrt{n \\sqrt{n \\dots \\infty}} = n\\) நேரடியாக விடை."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Confusing \\(a^m \\times a^n\\) with \\((a^m)^n\\)",
+      "explanation": {
+        "en": "\\(a^m \\times a^n = a^{m+n}\\) (adds powers), whereas \\((a^m)^n = a^{m \\times n}\\) (multiplies powers). For example, \\(2^3 \\times 2^4 = 2^7 = 128\\), but \\((2^3)^4 = 2^{12} = 4096\\).",
+        "ta": "\\(a^m \\times a^n = a^{m+n}\\) (அடுக்குகளின் கூட்டல்), ஆனால் \\((a^m)^n = a^{m \\times n}\\) (அடுக்குகளின் பெருக்கல்). இதை குழப்பிக் கொள்ளக் கூடாது."
+      },
+      "avoidance": {
+        "en": "Remember: Parentheses between exponents mean multiplication of exponents; explicit base multiplication means addition of exponents.",
+        "ta": "அடைப்புக்குறிக்குள் அடுக்கு இருந்தால் பெருக்கவும், ஒரே அடிமானம் பெருக்கலில் இருந்தால் அடுக்குகளை கூட்டவும்."
+      }
+    },
+    {
+      "trap": "Incorrect Subtraction in Mixed Recurring Decimal Conversion",
+      "explanation": {
+        "en": "In \\(0.4\\bar{7}\\), subtracting nothing from 47 gives \\(47/90\\) which is wrong. The non-repeating digit 4 MUST be subtracted: \\((47 - 4)/90 = 43/90\\).",
+        "ta": "\\(0.4\\bar{7}\\) ஐ மாற்றும்போது சுழலாத இலக்கமான 4 ஐ 47-ல் இருந்து கழிக்க மறந்தால் தவறான விடை வரும். சரியாக \\((47-4)/90 = 43/90\\) எனக் கணக்கிட வேண்டும்."
+      },
+      "avoidance": {
+        "en": "Always apply the formula: (Full Number - Non-repeating part) / (9s for repeating, 0s for non-repeating).",
+        "ta": "எப்போதும் (முழு எண் - சுழலாத பகுதி) / (9 மற்றும் 0) விதியை நினைவில் கொள்க."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Simplify the ladder fraction: \\(1 + \\frac{1}{1 + \\frac{1}{3}}\\)",
+      "method": "Bottom-up Step-by-Step Simplification",
+      "steps": [
+        "Step 1: Simplify the bottom-most fraction: \\(1 + \\frac{1}{3} = \\frac{3+1}{3} = \\frac{4}{3}\\).",
+        "Step 2: Take the reciprocal for the middle layer: \\(\\frac{1}{4/3} = \\frac{3}{4}\\).",
+        "Step 3: Perform final addition: \\(1 + \\frac{3}{4} = \\frac{4+3}{4} = \\frac{7}{4} = 1\\frac{3}{4}\\)."
+      ],
+      "answer": "\\(\\frac{7}{4}\\) or \\(1\\frac{3}{4}\\)"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Convert the recurring decimal \\(0.4\\bar{7}\\) into a simple fraction.",
+      "method": "Recurring Decimal Formula",
+      "steps": [
+        "Step 1: Identify full number after decimal = 47.",
+        "Step 2: Identify non-repeating part = 4.",
+        "Step 3: Numerator = \\(47 - 4 = 43\\).",
+        "Step 4: Denominator has one repeating digit (7 → 9) and one non-repeating digit (4 → 0), so Denominator = 90.",
+        "Step 5: Fraction = \\(\\frac{43}{90}\\)."
+      ],
+      "answer": "\\(\\frac{43}{90}\\)"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Simplify: \\(\\frac{3}{4} + \\frac{5}{6} \\div \\frac{2}{3} \\times 0.6 - \\frac{1}{2}\\)",
+      "method": "Fraction Conversion & VBODMAS Precedence",
+      "steps": [
+        "Step 1: Convert decimal to fraction: \\(0.6 = \\frac{6}{10} = \\frac{3}{5}\\).",
+        "Step 2: Perform Division first: \\(\\frac{5}{6} \\div \\frac{2}{3} = \\frac{5}{6} \\times \\frac{3}{2} = \\frac{5}{4}\\).",
+        "Step 3: Perform Multiplication next: \\(\\frac{5}{4} \\times \\frac{3}{5} = \\frac{3}{4}\\).",
+        "Step 4: Combine with Addition & Subtraction: \\(\\frac{3}{4} + \\frac{3}{4} - \\frac{1}{2} = \\frac{6}{4} - \\frac{1}{2} = \\frac{3}{2} - \\frac{1}{2} = \\frac{2}{2} = 1\\)."
+      ],
+      "answer": "1"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the value of \\(x\\) if \\(3^{x+2} + 3^x = 90\\).",
+      "method": "Exponent Factoring & Base Matching",
+      "steps": [
+        "Step 1: Split exponent term using law \\(a^{m+n} = a^m \\cdot a^n\\): \\(3^{x+2} = 3^x \\cdot 3^2 = 9 \\cdot 3^x\\).",
+        "Step 2: Rewrite equation: \\(9 \\cdot 3^x + 3^x = 90\\).",
+        "Step 3: Factor out \\(3^x\\): \\(3^x(9 + 1) = 90 \\implies 10 \\cdot 3^x = 90\\).",
+        "Step 4: Divide by 10: \\(3^x = \\frac{90}{10} = 9\\).",
+        "Step 5: Express 9 as power of 3: \\(3^x = 3^2 \\implies x = 2\\)."
+      ],
+      "answer": "x = 2"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Simplify: \\(\\frac{\\sqrt{5}}{\\sqrt{5}-\\sqrt{3}} - \\frac{\\sqrt{3}}{\\sqrt{5}+\\sqrt{3}}\\)",
+      "method": "Conjugate Rationalization / Common Denominator",
+      "steps": [
+        "Step 1: Take LCM of denominators: \\((\\sqrt{5}-\\sqrt{3})(\\sqrt{5}+\\sqrt{3}) = (\\sqrt{5})^2 - (\\sqrt{3})^2 = 5 - 3 = 2\\).",
+        "Step 2: Cross-multiply numerators: \\(\\sqrt{5}(\\sqrt{5}+\\sqrt{3}) - \\sqrt{3}(\\sqrt{5}-\\sqrt{3})\\).",
+        "Step 3: Expand numerator: \\((5 + \\sqrt{15}) - (\\sqrt{15} - 3) = 5 + \\sqrt{15} - \\sqrt{15} + 3 = 8\\).",
+        "Step 4: Divide numerator by denominator: \\(\\frac{8}{2} = 4\\)."
+      ],
+      "answer": "4"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "If \\(1 + \\frac{1}{1 + \\frac{1}{1 + \\frac{1}{x}}} = \\frac{11}{7}\\), find the value of \\(x\\).",
+      "method": "Reverse Continued Fraction Expansion",
+      "steps": [
+        "Step 1: Express bottom-up algebraic expansion: \\(1 + \\frac{1}{x} = \\frac{x+1}{x}\\).",
+        "Step 2: Invert: \\(\\frac{1}{\\frac{x+1}{x}} = \\frac{x}{x+1}\\). Next level: \\(1 + \\frac{x}{x+1} = \\frac{2x+1}{x+1}\\).",
+        "Step 3: Invert again: \\(\\frac{x+1}{2x+1}\\). Outer level: \\(1 + \\frac{x+1}{2x+1} = \\frac{3x+2}{2x+1}\\).",
+        "Step 4: Equate to given value: \\(\\frac{3x+2}{2x+1} = \\frac{11}{7}\\).",
+        "Step 5: Cross-multiply: \\(7(3x+2) = 11(2x+1) \\implies 21x + 14 = 22x + 11 \\implies x = 3\\)."
+      ],
+      "answer": "x = 3"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Simplify: \\(2\\frac{1}{2} + 3\\frac{1}{4} - 1\\frac{5}{8}\\)",
+      "options": ["A) 4 1/8", "B) 4 1/4", "C) 3 7/8", "D) 4 3/8"],
+      "correct_option": "A) 4 1/8",
+      "explanation": "Separate integers and fractions: (2 + 3 - 1) + (1/2 + 1/4 - 5/8) = 4 + (4/8 + 2/8 - 5/8) = 4 + 1/8 = 4 1/8."
+    },
+    {
+      "id": 2,
+      "question": "Convert \\(0.2\\bar{3}\\) into a simple fraction.",
+      "options": ["A) 23/99", "B) 7/30", "C) 21/90", "D) 23/90"],
+      "correct_option": "B) 7/30",
+      "explanation": "Formula: (23 - 2) / 90 = 21/90 = 7/30."
+    },
+    {
+      "id": 3,
+      "question": "Simplify: \\(\\frac{(2^3)^4 \\times 2^{-5}}{2^3 \\times 2^2}\\)",
+      "options": ["A) 4", "B) 8", "C) 16", "D) 32"],
+      "correct_option": "A) 4",
+      "explanation": "Numerator = 2^(12 - 5) = 2^7. Denominator = 2^(3+2) = 2^5. Result = 2^(7-5) = 2^2 = 4."
+    },
+    {
+      "id": 4,
+      "question": "Evaluate: \\(\\sqrt{12 + \\sqrt{12 + \\sqrt{12 + \\dots \\infty}}}\\)",
+      "options": ["A) 3", "B) 4", "C) 6", "D) 12"],
+      "correct_option": "B) 4",
+      "explanation": "Factor 12 into consecutive integers: 12 = 4 × 3. Since operation is addition (+), answer is larger factor 4."
+    },
+    {
+      "id": 5,
+      "question": "If \\(\\frac{1}{3 + \\frac{1}{x}} = \\frac{2}{7}\\), find \\(x\\).",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "correct_option": "A) 2",
+      "explanation": "Invert both sides: 3 + 1/x = 7/2 = 3.5 => 1/x = 0.5 => x = 2."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Ladder Fractions evaluation direction",
+      "back": "Always evaluate ladder fractions from bottom to top step-by-step."
+    },
+    {
+      "front": "Formula for 0.a̅b̅",
+      "back": "ab / 99"
+    },
+    {
+      "front": "Formula for 0.a b̅",
+      "back": "(ab - a) / 90"
+    },
+    {
+      "front": "Exponent Law: (a^m)^n vs a^m * a^n",
+      "back": "(a^m)^n = a^(m*n) [multiplication], while a^m * a^n = a^(m+n) [addition]."
+    },
+    {
+      "front": "Infinite radical: √(n + √(n + ...)) for n = k(k+1)",
+      "back": "Answer is k+1 (larger consecutive factor)."
+    }
+  ],
+
+  "mind_map": {
+    "title": "Simplification Part 2 — Fractions & Exponents Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Fractions, Decimals & Exponents",
+        "children": ["ladder_frac", "recurring_dec", "indices_laws", "surds_radicals"]
+      },
+      {
+        "id": "ladder_frac",
+        "label": "Ladder Fractions (ஏணிப் பின்னங்கள்)",
+        "children": ["bottom_up", "reciprocal_step"]
+      },
+      {
+        "id": "bottom_up",
+        "label": "Evaluate Bottom-to-Top",
+        "children": []
+      },
+      {
+        "id": "reciprocal_step",
+        "label": "Invert at Each Layer",
+        "children": []
+      },
+      {
+        "id": "recurring_dec",
+        "label": "Recurring Decimals (சுழல் தசமங்கள்)",
+        "children": ["pure_recurring", "mixed_recurring"]
+      },
+      {
+        "id": "pure_recurring",
+        "label": "0.a̅ = a/9",
+        "children": []
+      },
+      {
+        "id": "mixed_recurring",
+        "label": "0.ab̅ = (ab-a)/90",
+        "children": []
+      },
+      {
+        "id": "indices_laws",
+        "label": "Exponent Laws (அடுக்கு விதிகள்)",
+        "children": ["mult_add", "div_sub", "power_mult"]
+      },
+      {
+        "id": "mult_add",
+        "label": "a^m × a^n = a^(m+n)",
+        "children": []
+      },
+      {
+        "id": "div_sub",
+        "label": "a^m ÷ a^n = a^(m-n)",
+        "children": []
+      },
+      {
+        "id": "power_mult",
+        "label": "(a^m)^n = a^(m×n)",
+        "children": []
+      },
+      {
+        "id": "surds_radicals",
+        "label": "Surds & Roots (முறுடுகள் & மூலங்கள்)",
+        "children": ["rationalize", "infinite_nested"]
+      },
+      {
+        "id": "rationalize",
+        "label": "Rationalize Conjugate 1/(√a+√b)",
+        "children": []
+      },
+      {
+        "id": "infinite_nested",
+        "label": "√(n+√(n+...)) = k+1",
+        "children": []
+      }
+    ]
+  }
+}

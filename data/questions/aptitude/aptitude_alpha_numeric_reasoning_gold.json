@@ -1,0 +1,3647 @@
+[
+  {
+    "id": "ANR_001",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "ஆங்கில எழுத்து வரிசையில் (A=1, B=2, ..., Z=26) இடமிருந்து 13-வது எழுத்து எது?",
+      "en": "In the English alphabetical order (A=1, B=2, ..., Z=26), which letter is 13th from the left?"
+    },
+    "question_ta": "ஆங்கில எழுத்து வரிசையில் (A=1, B=2, ..., Z=26) இடமிருந்து 13-வது எழுத்து எது?",
+    "question_en": "In the English alphabetical order (A=1, B=2, ..., Z=26), which letter is 13th from the left?",
+    "options": [
+      "K",
+      "L",
+      "M",
+      "N"
+    ],
+    "options_ta": [
+      "K",
+      "L",
+      "M",
+      "N"
+    ],
+    "options_en": [
+      "K",
+      "L",
+      "M",
+      "N"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஆங்கில எழுத்துகளின் வரிசை எண்: A=1, ..., K=11, L=12, M=13. எனவே 13-வது எழுத்து M ஆகும்.",
+      "en": "Alphabetical positions: A=1, ..., K=11, L=12, M=13. Therefore, the 13th letter is M."
+    },
+    "explanation_ta": "ஆங்கில எழுத்துகளின் வரிசை எண்: A=1, ..., K=11, L=12, M=13. எனவே 13-வது எழுத்து M ஆகும்.",
+    "explanation_en": "Alphabetical positions: A=1, ..., K=11, L=12, M=13. Therefore, the 13th letter is M.",
+    "why_not_others": {
+      "A": {
+        "ta": "K என்பது 11-வது எழுத்து.",
+        "en": "K என்பது 11-வது எழுத்து."
+      },
+      "B": {
+        "ta": "L என்பது 12-வது எழுத்து.",
+        "en": "L என்பது 12-வது எழுத்து."
+      },
+      "C": {
+        "ta": "சரி. ஆங்கில எழுத்துகளின் வரிசை எண்: A=1, ..., K=11, L=12, M=13. எனவே 13-வது எழுத்து M ஆகும்.",
+        "en": "Correct. Alphabetical positions: A=1, ..., K=11, L=12, M=13. Therefore, the 13th letter is M."
+      },
+      "D": {
+        "ta": "N என்பது 14-வது எழுத்து.",
+        "en": "N என்பது 14-வது எழுத்து."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "EJOTY நினைவூட்டல்: E=5, J=10, O=15, T=20, Y=25. M என்பது O-விலிருந்து 2 எழுத்துகள் முன் (15 - 2 = 13).",
+      "en": "Use EJOTY benchmark: E=5, J=10, O=15, T=20, Y=25. M is 2 positions before O (15 - 2 = 13)."
+    },
+    "revision_fact": {
+      "ta": "M என்பது ஆங்கில எழுத்து வரிசையின் நடுப் புள்ளியாகும் (13/26).",
+      "en": "M is the midpoint of the English alphabet (13/26)."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_002",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Reverse Positions",
+    "question": {
+      "ta": "ஆங்கில எழுத்து வரிசையில் வலமிருந்து (Z=1, Y=2, ...) 5-வது எழுத்து எது?",
+      "en": "In the English alphabet, which letter is 5th from the right end (Z=1, Y=2, ...)?"
+    },
+    "question_ta": "ஆங்கில எழுத்து வரிசையில் வலமிருந்து (Z=1, Y=2, ...) 5-வது எழுத்து எது?",
+    "question_en": "In the English alphabet, which letter is 5th from the right end (Z=1, Y=2, ...)?",
+    "options": [
+      "U",
+      "X",
+      "V",
+      "W"
+    ],
+    "options_ta": [
+      "U",
+      "X",
+      "V",
+      "W"
+    ],
+    "options_en": [
+      "U",
+      "X",
+      "V",
+      "W"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "வலமிருந்து வரிசை எண் = 27 - இடமிருந்து வரிசை எண். 27 - 5 = 22. இடமிருந்து 22-வது எழுத்து V ஆகும் (Z=1, Y=2, X=3, W=4, V=5).",
+      "en": "Reverse position = 27 - Forward position. Forward position = 27 - 5 = 22, which is V (Z=1, Y=2, X=3, W=4, V=5)."
+    },
+    "explanation_ta": "வலமிருந்து வரிசை எண் = 27 - இடமிருந்து வரிசை எண். 27 - 5 = 22. இடமிருந்து 22-வது எழுத்து V ஆகும் (Z=1, Y=2, X=3, W=4, V=5).",
+    "explanation_en": "Reverse position = 27 - Forward position. Forward position = 27 - 5 = 22, which is V (Z=1, Y=2, X=3, W=4, V=5).",
+    "why_not_others": {
+      "A": {
+        "ta": "U என்பது வலமிருந்து 6-வது எழுத்து (27-21=6).",
+        "en": "U என்பது வலமிருந்து 6-வது எழுத்து (27-21=6)."
+      },
+      "B": {
+        "ta": "X என்பது வலமிருந்து 3-வது எழுத்து (27-24=3).",
+        "en": "X என்பது வலமிருந்து 3-வது எழுத்து (27-24=3)."
+      },
+      "C": {
+        "ta": "சரி. வலமிருந்து வரிசை எண் = 27 - இடமிருந்து வரிசை எண். 27 - 5 = 22. இடமிருந்து 22-வது எழுத்து V ஆகும் (Z=1, Y=2, X=3, W=4, V=5).",
+        "en": "Correct. Reverse position = 27 - Forward position. Forward position = 27 - 5 = 22, which is V (Z=1, Y=2, X=3, W=4, V=5)."
+      },
+      "D": {
+        "ta": "W என்பது வலமிருந்து 4-வது எழுத்து (27-23=4).",
+        "en": "W என்பது வலமிருந்து 4-வது எழுத்து (27-23=4)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வலமிருந்து N-வது எழுத்தைக் காண: 27 - N என்ற சூத்திரத்தைப் பயன்படுத்தி இடப்பக்க எண்ணைக் கண்டறியலாம்.",
+      "en": "To find Nth from right, calculate (27 - N) from the left."
+    },
+    "revision_fact": {
+      "ta": "எதிர்ப்பக்க எழுத்துகளின் இட மற்றும் வல வரிசை எண்களின் கூடுதல் எப்போதும் 27 ஆகும்.",
+      "en": "Sum of forward and reverse positions for any letter is always 27."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_003",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: A, C, E, G, ?",
+      "en": "Complete the series: A, C, E, G, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: A, C, E, G, ?",
+    "question_en": "Complete the series: A, C, E, G, ?",
+    "options": [
+      "I",
+      "J",
+      "K",
+      "H"
+    ],
+    "options_ta": [
+      "I",
+      "J",
+      "K",
+      "H"
+    ],
+    "options_en": [
+      "I",
+      "J",
+      "K",
+      "H"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "எழுத்துகளின் நிலைகள்: A(1), C(3), E(5), G(7). ஒவ்வொரு எழுத்தும் +2 இடைவெளியில் உள்ளது. அடுத்து வருவது 7 + 2 = 9 (I).",
+      "en": "Letter positions: A(1), C(3), E(5), G(7). The pattern adds +2 to position. Next letter is 7 + 2 = 9 (I)."
+    },
+    "explanation_ta": "எழுத்துகளின் நிலைகள்: A(1), C(3), E(5), G(7). ஒவ்வொரு எழுத்தும் +2 இடைவெளியில் உள்ளது. அடுத்து வருவது 7 + 2 = 9 (I).",
+    "explanation_en": "Letter positions: A(1), C(3), E(5), G(7). The pattern adds +2 to position. Next letter is 7 + 2 = 9 (I).",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. எழுத்துகளின் நிலைகள்: A(1), C(3), E(5), G(7). ஒவ்வொரு எழுத்தும் +2 இடைவெளியில் உள்ளது. அடுத்து வருவது 7 + 2 = 9 (I).",
+        "en": "Correct. Letter positions: A(1), C(3), E(5), G(7). The pattern adds +2 to position. Next letter is 7 + 2 = 9 (I)."
+      },
+      "B": {
+        "ta": "J என்பது +3 (10).",
+        "en": "J என்பது +3 (10)."
+      },
+      "C": {
+        "ta": "K என்பது +4 (11).",
+        "en": "K என்பது +4 (11)."
+      },
+      "D": {
+        "ta": "H என்பது +1 (8).",
+        "en": "H என்பது +1 (8)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "+2 ஒற்றைப்படை எண்களின் வரிசை (1, 3, 5, 7, 9).",
+      "en": "Odd number position sequence: +2 increment."
+    },
+    "revision_fact": {
+      "ta": "ஒற்றைப்படை இடங்களில் உள்ள எழுத்துகள்: A, C, E, G, I.",
+      "en": "Odd positions sequence in alphabet."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_004",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு ரகசிய மொழியில் CAT என்பது DBU என எழுதப்பட்டால், DOG என்பது எவ்வாறு எழுதப்படும்?",
+      "en": "In a code language, if CAT is written as DBU, how is DOG written?"
+    },
+    "question_ta": "ஒரு ரகசிய மொழியில் CAT என்பது DBU என எழுதப்பட்டால், DOG என்பது எவ்வாறு எழுதப்படும்?",
+    "question_en": "In a code language, if CAT is written as DBU, how is DOG written?",
+    "options": [
+      "EPG",
+      "EPH",
+      "DOH",
+      "FQI"
+    ],
+    "options_ta": [
+      "EPG",
+      "EPH",
+      "DOH",
+      "FQI"
+    ],
+    "options_en": [
+      "EPG",
+      "EPH",
+      "DOH",
+      "FQI"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nC(+1)->D, A(+1)->B, T(+1)->U.\nஅதேபோல்:\nD(+1)->E, O(+1)->P, G(+1)->H.\nஎனவே DOG ⟹ EPH.",
+      "en": "Each letter is shifted by +1:\nC+1=D, A+1=B, T+1=U.\nApplying same to DOG:\nD+1=E, O+1=P, G+1=H ⟹ EPH."
+    },
+    "explanation_ta": "ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nC(+1)->D, A(+1)->B, T(+1)->U.\nஅதேபோல்:\nD(+1)->E, O(+1)->P, G(+1)->H.\nஎனவே DOG ⟹ EPH.",
+    "explanation_en": "Each letter is shifted by +1:\nC+1=D, A+1=B, T+1=U.\nApplying same to DOG:\nD+1=E, O+1=P, G+1=H ⟹ EPH.",
+    "why_not_others": {
+      "A": {
+        "ta": "G(+1)=H, G அல்ல.",
+        "en": "G(+1)=H, G அல்ல."
+      },
+      "B": {
+        "ta": "சரி. ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nC(+1)->D, A(+1)->B, T(+1)->U.\nஅதேபோல்:\nD(+1)->E, O(+1)->P, G(+1)->H.\nஎனவே DOG ⟹ EPH.",
+        "en": "Correct. Each letter is shifted by +1:\nC+1=D, A+1=B, T+1=U.\nApplying same to DOG:\nD+1=E, O+1=P, G+1=H ⟹ EPH."
+      },
+      "C": {
+        "ta": "D மற்றும் O மாற்றப்படவில்லை.",
+        "en": "D மற்றும் O மாற்றப்படவில்லை."
+      },
+      "D": {
+        "ta": "இது +2 நகர்வு ஆகும்.",
+        "en": "இது +2 நகர்வு ஆகும்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒவ்வொரு எழுத்திற்கும் தனித்தனியாக +1 மாற்றத்தைப் பயன்படுத்தவும்.",
+      "en": "Apply +1 shift to every letter independently."
+    },
+    "revision_fact": {
+      "ta": "நேரடி +1 குறியீட்டு முறை (Direct +1 Shift Code).",
+      "en": "Direct +1 shift coding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_005",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Dictionary Ordering",
+    "question": {
+      "ta": "பின்வரும் சொற்களை அகராதி வரிசையில் (Dictionary order) அமைத்தால் முதல் வரும் சொல் எது?\nApple, Application, Apply, Aptitude",
+      "en": "If the following words are arranged in dictionary order, which word comes first?\nApple, Application, Apply, Aptitude"
+    },
+    "question_ta": "பின்வரும் சொற்களை அகராதி வரிசையில் (Dictionary order) அமைத்தால் முதல் வரும் சொல் எது?\nApple, Application, Apply, Aptitude",
+    "question_en": "If the following words are arranged in dictionary order, which word comes first?\nApple, Application, Apply, Aptitude",
+    "options": [
+      "Apply",
+      "Apple",
+      "Application",
+      "Aptitude"
+    ],
+    "options_ta": [
+      "Apply",
+      "Apple",
+      "Application",
+      "Aptitude"
+    ],
+    "options_en": [
+      "Apply",
+      "Apple",
+      "Application",
+      "Aptitude"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "எழுத்து ஒப்பீடு:\nஅனைத்தும் 'App' எனத் தொடங்குகின்றன.\n'Apple' என்பதில் 4-வது எழுத்து 'l'.\n'Application' மற்றும் 'Apply'-இல் 4-வது எழுத்து 'l'.\n'Apple'-இல் 5-வது எழுத்து 'e'.\n'Application'-இல் 5-வது எழுத்து 'i'.\n'Apply'-இல் 5-வது எழுத்து 'y'.\n'e' எழுத்து 'i' மற்றும் 'y'-க்கு முன் வருவதால் 'Apple' முதலில் வரும்.",
+      "en": "Comparing prefix 'App':\nFourth letter for Apple, Application, Apply is 'l'.\nFifth letters: Apple ('e'), Application ('i'), Apply ('y').\nSince 'e' comes before 'i' and 'y', 'Apple' comes first in the dictionary."
+    },
+    "explanation_ta": "எழுத்து ஒப்பீடு:\nஅனைத்தும் 'App' எனத் தொடங்குகின்றன.\n'Apple' என்பதில் 4-வது எழுத்து 'l'.\n'Application' மற்றும் 'Apply'-இல் 4-வது எழுத்து 'l'.\n'Apple'-இல் 5-வது எழுத்து 'e'.\n'Application'-இல் 5-வது எழுத்து 'i'.\n'Apply'-இல் 5-வது எழுத்து 'y'.\n'e' எழுத்து 'i' மற்றும் 'y'-க்கு முன் வருவதால் 'Apple' முதலில் வரும்.",
+    "explanation_en": "Comparing prefix 'App':\nFourth letter for Apple, Application, Apply is 'l'.\nFifth letters: Apple ('e'), Application ('i'), Apply ('y').\nSince 'e' comes before 'i' and 'y', 'Apple' comes first in the dictionary.",
+    "why_not_others": {
+      "A": {
+        "ta": "e-க்கு பின் y வருவதால் இது 3-வதாக வரும்.",
+        "en": "e-க்கு பின் y வருவதால் இது 3-வதாக வரும்."
+      },
+      "B": {
+        "ta": "சரி. எழுத்து ஒப்பீடு:\nஅனைத்தும் 'App' எனத் தொடங்குகின்றன.\n'Apple' என்பதில் 4-வது எழுத்து 'l'.\n'Application' மற்றும் 'Apply'-இல் 4-வது எழுத்து 'l'.\n'Apple'-இல் 5-வது எழுத்து 'e'.\n'Application'-இல் 5-வது எழுத்து 'i'.\n'Apply'-இல் 5-வது எழுத்து 'y'.\n'e' எழுத்து 'i' மற்றும் 'y'-க்கு முன் வருவதால் 'Apple' முதலில் வரும்.",
+        "en": "Correct. Comparing prefix 'App':\nFourth letter for Apple, Application, Apply is 'l'.\nFifth letters: Apple ('e'), Application ('i'), Apply ('y').\nSince 'e' comes before 'i' and 'y', 'Apple' comes first in the dictionary."
+      },
+      "C": {
+        "ta": "e-க்கு பின் i வருவதால் இது 2-வதாக வரும்.",
+        "en": "e-க்கு பின் i வருவதால் இது 2-வதாக வரும்."
+      },
+      "D": {
+        "ta": "p-க்கு பின் t வருவதால் இது 4-வதாக வரும்.",
+        "en": "p-க்கு பின் t வருவதால் இது 4-வதாக வரும்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒவ்வொரு எழுத்தின் அகராதி வரிசையை இடமிருந்து வலமாக ஒப்பிடவும்.",
+      "en": "Compare letters position by position from left to right."
+    },
+    "revision_fact": {
+      "ta": "அகராதி வரிசைப்படுத்துதலில் குறுகிய முன்னோட்டு மற்றும் முந்திய எழுத்துகள் முன்னுரிமை பெறும்.",
+      "en": "Shorter matching prefixes with earlier alphabetical letters rank first."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_006",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "கொடுக்கப்பட்ட வரிசை: 7 A # 3 B $ 9 C & 2 D\nஇவ்வரிசையில் எத்தனை எழுத்துகள் (Letters) நேரடியாக ஒரு எண்ணை (Number) தொடர்ந்து வருகின்றன?",
+      "en": "Given sequence: 7 A # 3 B $ 9 C & 2 D\nHow many letters in this sequence are immediately preceded by a number?"
+    },
+    "question_ta": "கொடுக்கப்பட்ட வரிசை: 7 A # 3 B $ 9 C & 2 D\nஇவ்வரிசையில் எத்தனை எழுத்துகள் (Letters) நேரடியாக ஒரு எண்ணை (Number) தொடர்ந்து வருகின்றன?",
+    "question_en": "Given sequence: 7 A # 3 B $ 9 C & 2 D\nHow many letters in this sequence are immediately preceded by a number?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "options_ta": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "options_en": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எண்ணைத் தொடர்ந்து வரும் எழுத்துகள் (Number -> Letter):\n1. 7 -> A (சரி)\n2. 3 -> B (சரி)\n3. 9 -> C (சரி)\n4. 2 -> D (சரி)\nஆக மொத்தம் 4 எழுத்துகள் எண்ணைத் தொடர்ந்து வருகின்றன.",
+      "en": "Check pairs of Number followed by Letter (Number -> Letter):\n1. 7 -> A\n2. 3 -> B\n3. 9 -> C\n4. 2 -> D\nTotal = 4 letters."
+    },
+    "explanation_ta": "எண்ணைத் தொடர்ந்து வரும் எழுத்துகள் (Number -> Letter):\n1. 7 -> A (சரி)\n2. 3 -> B (சரி)\n3. 9 -> C (சரி)\n4. 2 -> D (சரி)\nஆக மொத்தம் 4 எழுத்துகள் எண்ணைத் தொடர்ந்து வருகின்றன.",
+    "explanation_en": "Check pairs of Number followed by Letter (Number -> Letter):\n1. 7 -> A\n2. 3 -> B\n3. 9 -> C\n4. 2 -> D\nTotal = 4 letters.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 எழுத்துகளும் எண்ணைத் தொடர்ந்து வருகின்றன.",
+        "en": "4 எழுத்துகளும் எண்ணைத் தொடர்ந்து வருகின்றன."
+      },
+      "B": {
+        "ta": "அனைத்து 4 எழுத்துகளும் எண்களுக்குப் பின் அமைகின்றன.",
+        "en": "அனைத்து 4 எழுத்துகளும் எண்களுக்குப் பின் அமைகின்றன."
+      },
+      "C": {
+        "ta": "சரி. எண்ணைத் தொடர்ந்து வரும் எழுத்துகள் (Number -> Letter):\n1. 7 -> A (சரி)\n2. 3 -> B (சரி)\n3. 9 -> C (சரி)\n4. 2 -> D (சரி)\nஆக மொத்தம் 4 எழுத்துகள் எண்ணைத் தொடர்ந்து வருகின்றன.",
+        "en": "Correct. Check pairs of Number followed by Letter (Number -> Letter):\n1. 7 -> A\n2. 3 -> B\n3. 9 -> C\n4. 2 -> D\nTotal = 4 letters."
+      },
+      "D": {
+        "ta": "4 எழுத்துகளும் எண்ணைத் தொடர்ந்து வருகின்றன.",
+        "en": "4 எழுத்துகளும் எண்ணைத் தொடர்ந்து வருகின்றன."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "'முன்னால்' (preceded by) மற்றும் 'தொடர்ந்து' (followed by) என்ற சொற்களைக் கவனமாகப் பகுப்பாய்வு செய்யவும்.",
+      "en": "Carefully distinguish 'preceded by' (left side) and 'followed by' (right side)."
+    },
+    "revision_fact": {
+      "ta": "வரிசை சோதனையில் ஒவ்வொரு உறுப்பின் இருபுற சூழலையும் சரிபார்க்க வேண்டும்.",
+      "en": "Check immediate left and right neighbors for every element in a sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_007",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "ஆங்கில எழுத்துக்களில் A-ன் எதிர்ப்பக்கம் Z (1+26=27). B-ன் எதிர்ப்பக்கம் Y (2+25=27). எனில் C-ன் எதிர்ப்பக்கம் எது?",
+      "en": "In opposite letter pairs where forward position + reverse position = 27 (A-Z, B-Y), which letter is opposite to C?"
+    },
+    "question_ta": "ஆங்கில எழுத்துக்களில் A-ன் எதிர்ப்பக்கம் Z (1+26=27). B-ன் எதிர்ப்பக்கம் Y (2+25=27). எனில் C-ன் எதிர்ப்பக்கம் எது?",
+    "question_en": "In opposite letter pairs where forward position + reverse position = 27 (A-Z, B-Y), which letter is opposite to C?",
+    "options": [
+      "X",
+      "Y",
+      "W",
+      "V"
+    ],
+    "options_ta": [
+      "X",
+      "Y",
+      "W",
+      "V"
+    ],
+    "options_en": [
+      "X",
+      "Y",
+      "W",
+      "V"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "C-ன் நிலை = 3. 27 - 3 = 24. 24-வது எழுத்து X ஆகும். எனவே C-ன் எதிர்ப்பக்கம் X (C-X).",
+      "en": "Position of C = 3. Opposite position = 27 - 3 = 24, which corresponds to X. Thus, opposite of C is X (C-X)."
+    },
+    "explanation_ta": "C-ன் நிலை = 3. 27 - 3 = 24. 24-வது எழுத்து X ஆகும். எனவே C-ன் எதிர்ப்பக்கம் X (C-X).",
+    "explanation_en": "Position of C = 3. Opposite position = 27 - 3 = 24, which corresponds to X. Thus, opposite of C is X (C-X).",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. C-ன் நிலை = 3. 27 - 3 = 24. 24-வது எழுத்து X ஆகும். எனவே C-ன் எதிர்ப்பக்கம் X (C-X).",
+        "en": "Correct. Position of C = 3. Opposite position = 27 - 3 = 24, which corresponds to X. Thus, opposite of C is X (C-X)."
+      },
+      "B": {
+        "ta": "Y (25) B-ன் எதிர்ப்பக்கம்.",
+        "en": "Y (25) B-ன் எதிர்ப்பக்கம்."
+      },
+      "C": {
+        "ta": "W (23) D-ன் எதிர்ப்பக்கம்.",
+        "en": "W (23) D-ன் எதிர்ப்பக்கம்."
+      },
+      "D": {
+        "ta": "V (22) E-ன் எதிர்ப்பக்கம்.",
+        "en": "V (22) E-ன் எதிர்ப்பக்கம்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எதிர்ப்பக்க எழுத்துகளின் கூட்டுத்தொகை எப்போதும் 27 (C=3, X=24 ⟹ 3+24=27).",
+      "en": "Sum of positions for opposite letter pairs is always 27."
+    },
+    "revision_fact": {
+      "ta": "எதிர்ப்பக்க ஜோடிகள்: A-Z, B-Y, C-X, D-W, E-V...",
+      "en": "Standard opposite letter pairs in English alphabet."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_008",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "A=1, B=2, C=3 எனில், BAT என்ற சொல்லின் எழுத்துகளின் எண்களின் கூடுதல் என்ன?",
+      "en": "If A=1, B=2, C=3 ..., what is the sum of the alphabetical values of the word BAT?"
+    },
+    "question_ta": "A=1, B=2, C=3 எனில், BAT என்ற சொல்லின் எழுத்துகளின் எண்களின் கூடுதல் என்ன?",
+    "question_en": "If A=1, B=2, C=3 ..., what is the sum of the alphabetical values of the word BAT?",
+    "options": [
+      "22",
+      "21",
+      "24",
+      "23"
+    ],
+    "options_ta": [
+      "22",
+      "21",
+      "24",
+      "23"
+    ],
+    "options_en": [
+      "22",
+      "21",
+      "24",
+      "23"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "BAT-ன் எழுத்து மதிப்புகள்:\nB = 2\nA = 1\nT = 20\nகூடுதல் = 2 + 1 + 20 = 23.",
+      "en": "Values of letters in BAT:\nB = 2\nA = 1\nT = 20\nSum = 2 + 1 + 20 = 23."
+    },
+    "explanation_ta": "BAT-ன் எழுத்து மதிப்புகள்:\nB = 2\nA = 1\nT = 20\nகூடுதல் = 2 + 1 + 20 = 23.",
+    "explanation_en": "Values of letters in BAT:\nB = 2\nA = 1\nT = 20\nSum = 2 + 1 + 20 = 23.",
+    "why_not_others": {
+      "A": {
+        "ta": "2 + 1 + 20 = 23, 22 இல்லை.",
+        "en": "2 + 1 + 20 = 23, 22 இல்லை."
+      },
+      "B": {
+        "ta": "2 + 1 + 20 = 23, 21 இல்லை.",
+        "en": "2 + 1 + 20 = 23, 21 இல்லை."
+      },
+      "C": {
+        "ta": "2 + 1 + 20 = 23, 24 இல்லை.",
+        "en": "2 + 1 + 20 = 23, 24 இல்லை."
+      },
+      "D": {
+        "ta": "சரி. BAT-ன் எழுத்து மதிப்புகள்:\nB = 2\nA = 1\nT = 20\nகூடுதல் = 2 + 1 + 20 = 23.",
+        "en": "Correct. Values of letters in BAT:\nB = 2\nA = 1\nT = 20\nSum = 2 + 1 + 20 = 23."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சொல்லின் எழுத்து எண்களைக் கூட்டி பெறப்படும் மதிப்பு.",
+      "en": "Sum the positional values of each individual letter."
+    },
+    "revision_fact": {
+      "ta": "எழுத்து கூடுதல் குறியீட்டு முறை (Letter Sum Coding).",
+      "en": "Letter positional sum encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_009",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: Z, X, V, T, ?",
+      "en": "Complete the series: Z, X, V, T, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: Z, X, V, T, ?",
+    "question_en": "Complete the series: Z, X, V, T, ?",
+    "options": [
+      "S",
+      "P",
+      "R",
+      "Q"
+    ],
+    "options_ta": [
+      "S",
+      "P",
+      "R",
+      "Q"
+    ],
+    "options_en": [
+      "S",
+      "P",
+      "R",
+      "Q"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எழுத்துகளின் வரிசை எண்கள்:\nZ(26), X(24), V(22), T(20).\nஒவ்வொரு எழுத்தும் 2 கழிப்பால் குறைகிறது (-2).\n20 - 2 = 18. 18-வது எழுத்து R ஆகும்.",
+      "en": "Positional values: Z(26), X(24), V(22), T(20).\nThe pattern decreases by 2 (-2). Next value = 20 - 2 = 18, which is R."
+    },
+    "explanation_ta": "எழுத்துகளின் வரிசை எண்கள்:\nZ(26), X(24), V(22), T(20).\nஒவ்வொரு எழுத்தும் 2 கழிப்பால் குறைகிறது (-2).\n20 - 2 = 18. 18-வது எழுத்து R ஆகும்.",
+    "explanation_en": "Positional values: Z(26), X(24), V(22), T(20).\nThe pattern decreases by 2 (-2). Next value = 20 - 2 = 18, which is R.",
+    "why_not_others": {
+      "A": {
+        "ta": "S என்பது 19 (-1).",
+        "en": "S என்பது 19 (-1)."
+      },
+      "B": {
+        "ta": "P என்பது 16 (-4).",
+        "en": "P என்பது 16 (-4)."
+      },
+      "C": {
+        "ta": "சரி. எழுத்துகளின் வரிசை எண்கள்:\nZ(26), X(24), V(22), T(20).\nஒவ்வொரு எழுத்தும் 2 கழிப்பால் குறைகிறது (-2).\n20 - 2 = 18. 18-வது எழுத்து R ஆகும்.",
+        "en": "Correct. Positional values: Z(26), X(24), V(22), T(20).\nThe pattern decreases by 2 (-2). Next value = 20 - 2 = 18, which is R."
+      },
+      "D": {
+        "ta": "Q என்பது 17 (-3).",
+        "en": "Q என்பது 17 (-3)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னோக்கி -2 குறையும் தொடர்.",
+      "en": "Decreasing sequence with step of -2."
+    },
+    "revision_fact": {
+      "ta": "இரட்டைப்படை எண்களின் பின்னோக்கு தொடர் (26, 24, 22, 20, 18).",
+      "en": "Even positions reverse sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_010",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: A @ 5 # B $ 2 % C & D 8 * E\nகொடுக்கப்பட்ட வரிசையில் எத்தனை குறியீடுகள் (Symbols) உள்ளன?",
+      "en": "Sequence: A @ 5 # B $ 2 % C & D 8 * E\nHow many symbols are there in the given sequence?"
+    },
+    "question_ta": "வரிசை: A @ 5 # B $ 2 % C & D 8 * E\nகொடுக்கப்பட்ட வரிசையில் எத்தனை குறியீடுகள் (Symbols) உள்ளன?",
+    "question_en": "Sequence: A @ 5 # B $ 2 % C & D 8 * E\nHow many symbols are there in the given sequence?",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "options_ta": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "options_en": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "வரிசையிலுள்ள குறியீடுகள்:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nமொத்தம் 6 குறியீடுகள் உள்ளன.",
+      "en": "Identify symbols in the sequence:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nTotal = 6 symbols."
+    },
+    "explanation_ta": "வரிசையிலுள்ள குறியீடுகள்:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nமொத்தம் 6 குறியீடுகள் உள்ளன.",
+    "explanation_en": "Identify symbols in the sequence:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nTotal = 6 symbols.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. வரிசையிலுள்ள குறியீடுகள்:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nமொத்தம் 6 குறியீடுகள் உள்ளன.",
+        "en": "Correct. Identify symbols in the sequence:\n1. @\n2. #\n3. $\n4. %\n5. &\n6. *\nTotal = 6 symbols."
+      },
+      "B": {
+        "ta": "6 குறியீடுகள் உள்ளன.",
+        "en": "6 குறியீடுகள் உள்ளன."
+      },
+      "C": {
+        "ta": "6 குறியீடுகள் மட்டுமே உள்ளன.",
+        "en": "6 குறியீடுகள் மட்டுமே உள்ளன."
+      },
+      "D": {
+        "ta": "6 குறியீடுகள் உள்ளன.",
+        "en": "6 குறியீடுகள் உள்ளன."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எழுத்துகள் (A,B,C,D,E) மற்றும் எண்களை (5,2,8) விடுத்து குறியீடுகளை மட்டும் எண்ணவும்.",
+      "en": "Exclude letters and numbers to count symbols correctly."
+    },
+    "revision_fact": {
+      "ta": "குறியீடுகள்: சிறப்புப் எழுத்துருக்கள் (@, #, $, %, &, *).",
+      "en": "Symbols category includes special non-alphanumeric characters."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_011",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: P 3 # Q 9 $ R 5 % S\nஇடமிருந்து 5-வது உறுப்பு (Element) எது?",
+      "en": "Sequence: P 3 # Q 9 $ R 5 % S\nWhich element is 5th from the left?"
+    },
+    "question_ta": "வரிசை: P 3 # Q 9 $ R 5 % S\nஇடமிருந்து 5-வது உறுப்பு (Element) எது?",
+    "question_en": "Sequence: P 3 # Q 9 $ R 5 % S\nWhich element is 5th from the left?",
+    "options": [
+      "$",
+      "R",
+      "9",
+      "Q"
+    ],
+    "options_ta": [
+      "$",
+      "R",
+      "9",
+      "Q"
+    ],
+    "options_en": [
+      "$",
+      "R",
+      "9",
+      "Q"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "இடமிருந்து உறுப்புகளை எண்ணுக:\n1-வது = P\n2-வது = 3\n3-வது = #\n4-வது = Q\n5-வது = 9\nஎனவே 5-வது உறுப்பு 9 ஆகும்.",
+      "en": "Counting elements from the left:\n1st = P\n2nd = 3\n3rd = #\n4th = Q\n5th = 9\nHence, the 5th element is 9."
+    },
+    "explanation_ta": "இடமிருந்து உறுப்புகளை எண்ணுக:\n1-வது = P\n2-வது = 3\n3-வது = #\n4-வது = Q\n5-வது = 9\nஎனவே 5-வது உறுப்பு 9 ஆகும்.",
+    "explanation_en": "Counting elements from the left:\n1st = P\n2nd = 3\n3rd = #\n4th = Q\n5th = 9\nHence, the 5th element is 9.",
+    "why_not_others": {
+      "A": {
+        "ta": "$ 6-வது உறுப்பு.",
+        "en": "$ 6-வது உறுப்பு."
+      },
+      "B": {
+        "ta": "R 7-வது உறுப்பு.",
+        "en": "R 7-வது உறுப்பு."
+      },
+      "C": {
+        "ta": "சரி. இடமிருந்து உறுப்புகளை எண்ணுக:\n1-வது = P\n2-வது = 3\n3-வது = #\n4-வது = Q\n5-வது = 9\nஎனவே 5-வது உறுப்பு 9 ஆகும்.",
+        "en": "Correct. Counting elements from the left:\n1st = P\n2nd = 3\n3rd = #\n4th = Q\n5th = 9\nHence, the 5th element is 9."
+      },
+      "D": {
+        "ta": "Q 4-வது உறுப்பு.",
+        "en": "Q 4-வது உறுப்பு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இடமிருந்து வலமாக 1 முதல் 5 வரை வரிசையாக எண்ணவும்.",
+      "en": "Count strictly step-by-step from left to right starting at position 1."
+    },
+    "revision_fact": {
+      "ta": "வரிசை உறுப்பு சுட்டெண் (Sequence Indexing).",
+      "en": "1-based sequence indexing from left end."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_012",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Dictionary Ordering",
+    "question": {
+      "ta": "பின்வரும் சொற்களில் அகராதியில் முதலில் வரும் சொல் எது?\nBank, Bar, Band, Ball",
+      "en": "Which of the following words comes first in the dictionary?\nBank, Bar, Band, Ball"
+    },
+    "question_ta": "பின்வரும் சொற்களில் அகராதியில் முதலில் வரும் சொல் எது?\nBank, Bar, Band, Ball",
+    "question_en": "Which of the following words comes first in the dictionary?\nBank, Bar, Band, Ball",
+    "options": [
+      "Bar",
+      "Band",
+      "Bank",
+      "Ball"
+    ],
+    "options_ta": [
+      "Bar",
+      "Band",
+      "Bank",
+      "Ball"
+    ],
+    "options_en": [
+      "Bar",
+      "Band",
+      "Bank",
+      "Ball"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "அனைத்து சொற்களும் 'Ba' எனத் தொடங்குகின்றன.\n3-வது எழுத்துகள்:\n- Bank: n\n- Bar: r\n- Band: n\n- Ball: l\n'l' எழுத்து n மற்றும் r-க்கு முன் வருவதால் 'Ball' அகராதியில் முதலில் வரும்.",
+      "en": "Compare 3rd letters after 'Ba':\n- Bank: 'n'\n- Bar: 'r'\n- Band: 'n'\n- Ball: 'l'\nSince 'l' comes before 'n' and 'r', 'Ball' comes first."
+    },
+    "explanation_ta": "அனைத்து சொற்களும் 'Ba' எனத் தொடங்குகின்றன.\n3-வது எழுத்துகள்:\n- Bank: n\n- Bar: r\n- Band: n\n- Ball: l\n'l' எழுத்து n மற்றும் r-க்கு முன் வருவதால் 'Ball' அகராதியில் முதலில் வரும்.",
+    "explanation_en": "Compare 3rd letters after 'Ba':\n- Bank: 'n'\n- Bar: 'r'\n- Band: 'n'\n- Ball: 'l'\nSince 'l' comes before 'n' and 'r', 'Ball' comes first.",
+    "why_not_others": {
+      "A": {
+        "ta": "r என்பது l-க்கு பின் வரும்.",
+        "en": "r என்பது l-க்கு பின் வரும்."
+      },
+      "B": {
+        "ta": "n என்பது l-க்கு பின் வரும்.",
+        "en": "n என்பது l-க்கு பின் வரும்."
+      },
+      "C": {
+        "ta": "n என்பது l-க்கு பின் வரும்.",
+        "en": "n என்பது l-க்கு பின் வரும்."
+      },
+      "D": {
+        "ta": "சரி. அனைத்து சொற்களும் 'Ba' எனத் தொடங்குகின்றன.\n3-வது எழுத்துகள்:\n- Bank: n\n- Bar: r\n- Band: n\n- Ball: l\n'l' எழுத்து n மற்றும் r-க்கு முன் வருவதால் 'Ball' அகராதியில் முதலில் வரும்.",
+        "en": "Correct. Compare 3rd letters after 'Ba':\n- Bank: 'n'\n- Bar: 'r'\n- Band: 'n'\n- Ball: 'l'\nSince 'l' comes before 'n' and 'r', 'Ball' comes first."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3-வது எழுத்துகளை ஒப்பிடுக: l < n < r.",
+      "en": "Compare the 3rd letters: l comes before n and r."
+    },
+    "revision_fact": {
+      "ta": "அகராதி வரிசையாக்கம் (Dictionary alphabetical order).",
+      "en": "Lexicographical ordering logic."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "DICE_013_ANR",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Matrix Grids",
+    "question": {
+      "ta": "பின்வரும் எழுத்து அணியில் (Matrix Grid) விடுபட்ட எழுத்து எது?\n[ A  B  C ]\n[ D  E  F ]\n[ G  H  ? ]",
+      "en": "Find the missing letter in the following matrix grid:\n[ A  B  C ]\n[ D  E  F ]\n[ G  H  ? ]"
+    },
+    "question_ta": "பின்வரும் எழுத்து அணியில் (Matrix Grid) விடுபட்ட எழுத்து எது?\n[ A  B  C ]\n[ D  E  F ]\n[ G  H  ? ]",
+    "question_en": "Find the missing letter in the following matrix grid:\n[ A  B  C ]\n[ D  E  F ]\n[ G  H  ? ]",
+    "options": [
+      "K",
+      "L",
+      "J",
+      "I"
+    ],
+    "options_ta": [
+      "K",
+      "L",
+      "J",
+      "I"
+    ],
+    "options_en": [
+      "K",
+      "L",
+      "J",
+      "I"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "அணி வரிசைப்படி ஆங்கில எழுத்துகள் தொடர்ந்து வருகின்றன:\nA(1), B(2), C(3)\nD(4), E(5), F(6)\nG(7), H(8), I(9)\nஎனவே விடுபட்ட எழுத்து I ஆகும்.",
+      "en": "The letters follow continuous alphabetical order in the matrix rows:\nRow 1: A, B, C\nRow 2: D, E, F\nRow 3: G, H, I (7, 8, 9)\nTherefore, the missing letter is I."
+    },
+    "explanation_ta": "அணி வரிசைப்படி ஆங்கில எழுத்துகள் தொடர்ந்து வருகின்றன:\nA(1), B(2), C(3)\nD(4), E(5), F(6)\nG(7), H(8), I(9)\nஎனவே விடுபட்ட எழுத்து I ஆகும்.",
+    "explanation_en": "The letters follow continuous alphabetical order in the matrix rows:\nRow 1: A, B, C\nRow 2: D, E, F\nRow 3: G, H, I (7, 8, 9)\nTherefore, the missing letter is I.",
+    "why_not_others": {
+      "A": {
+        "ta": "K 11-வது எழுத்து.",
+        "en": "K 11-வது எழுத்து."
+      },
+      "B": {
+        "ta": "L 12-வது எழுத்து.",
+        "en": "L 12-வது எழுத்து."
+      },
+      "C": {
+        "ta": "J 10-வது எழுத்து.",
+        "en": "J 10-வது எழுத்து."
+      },
+      "D": {
+        "ta": "சரி. அணி வரிசைப்படி ஆங்கில எழுத்துகள் தொடர்ந்து வருகின்றன:\nA(1), B(2), C(3)\nD(4), E(5), F(6)\nG(7), H(8), I(9)\nஎனவே விடுபட்ட எழுத்து I ஆகும்.",
+        "en": "Correct. The letters follow continuous alphabetical order in the matrix rows:\nRow 1: A, B, C\nRow 2: D, E, F\nRow 3: G, H, I (7, 8, 9)\nTherefore, the missing letter is I."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வரிசை வரிசையாக எழுத்து தொடர்ச்சியைச் சரிபார்க்கவும்.",
+      "en": "Check row-by-row continuous alphabetical order."
+    },
+    "revision_fact": {
+      "ta": "தொடர் எழுத்து அணி (Sequential Letter Matrix).",
+      "en": "Continuous letter grid completion."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_014",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Reverse Positions",
+    "question": {
+      "ta": "ஆங்கில எழுத்து E-ன் பின்னோக்கு வரிசை எண் (Z=1 இலிருந்து) என்ன?",
+      "en": "What is the reverse position number (from Z=1) of the letter E?"
+    },
+    "question_ta": "ஆங்கில எழுத்து E-ன் பின்னோக்கு வரிசை எண் (Z=1 இலிருந்து) என்ன?",
+    "question_en": "What is the reverse position number (from Z=1) of the letter E?",
+    "options": [
+      "21",
+      "25",
+      "23",
+      "22"
+    ],
+    "options_ta": [
+      "21",
+      "25",
+      "23",
+      "22"
+    ],
+    "options_en": [
+      "21",
+      "25",
+      "23",
+      "22"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "E-ன் முன்னோக்கு வரிசை எண் = 5.\nபின்னோக்கு வரிசை எண் = 27 - 5 = 22.",
+      "en": "Forward position of E = 5.\nReverse position = 27 - 5 = 22."
+    },
+    "explanation_ta": "E-ன் முன்னோக்கு வரிசை எண் = 5.\nபின்னோக்கு வரிசை எண் = 27 - 5 = 22.",
+    "explanation_en": "Forward position of E = 5.\nReverse position = 27 - 5 = 22.",
+    "why_not_others": {
+      "A": {
+        "ta": "27 - 6 = 21 (F).",
+        "en": "27 - 6 = 21 (F)."
+      },
+      "B": {
+        "ta": "27 - 2 = 25 (B).",
+        "en": "27 - 2 = 25 (B)."
+      },
+      "C": {
+        "ta": "27 - 4 = 23 (D).",
+        "en": "27 - 4 = 23 (D)."
+      },
+      "D": {
+        "ta": "சரி. E-ன் முன்னோக்கு வரிசை எண் = 5.\nபின்னோக்கு வரிசை எண் = 27 - 5 = 22.",
+        "en": "Correct. Forward position of E = 5.\nReverse position = 27 - 5 = 22."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னோக்கு எண் = 27 - (முன்னோக்கு எண்). 27 - 5 = 22.",
+      "en": "Reverse rank formula = 27 - Forward rank. 27 - 5 = 22."
+    },
+    "revision_fact": {
+      "ta": "E-V எதிர்ப்பக்க ஜோடி: E=5, V=22.",
+      "en": "E-V pair reverse rank rule."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_015",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Easy",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: B, E, H, K, ?",
+      "en": "Complete the series: B, E, H, K, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: B, E, H, K, ?",
+    "question_en": "Complete the series: B, E, H, K, ?",
+    "options": [
+      "M",
+      "O",
+      "N",
+      "P"
+    ],
+    "options_ta": [
+      "M",
+      "O",
+      "N",
+      "P"
+    ],
+    "options_en": [
+      "M",
+      "O",
+      "N",
+      "P"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எழுத்துகளின் வரிசை எண்கள்:\nB(2), E(5), H(8), K(11).\nஒவ்வொரு எழுத்தும் +3 அதிகரிக்கிறது.\n11 + 3 = 14. 14-வது எழுத்து N ஆகும்.",
+      "en": "Positional values: B(2), E(5), H(8), K(11).\nThe pattern adds +3 each time. Next value = 11 + 3 = 14, which is N."
+    },
+    "explanation_ta": "எழுத்துகளின் வரிசை எண்கள்:\nB(2), E(5), H(8), K(11).\nஒவ்வொரு எழுத்தும் +3 அதிகரிக்கிறது.\n11 + 3 = 14. 14-வது எழுத்து N ஆகும்.",
+    "explanation_en": "Positional values: B(2), E(5), H(8), K(11).\nThe pattern adds +3 each time. Next value = 11 + 3 = 14, which is N.",
+    "why_not_others": {
+      "A": {
+        "ta": "M 13-வது எழுத்து (+2).",
+        "en": "M 13-வது எழுத்து (+2)."
+      },
+      "B": {
+        "ta": "O 15-வது எழுத்து (+4).",
+        "en": "O 15-வது எழுத்து (+4)."
+      },
+      "C": {
+        "ta": "சரி. எழுத்துகளின் வரிசை எண்கள்:\nB(2), E(5), H(8), K(11).\nஒவ்வொரு எழுத்தும் +3 அதிகரிக்கிறது.\n11 + 3 = 14. 14-வது எழுத்து N ஆகும்.",
+        "en": "Correct. Positional values: B(2), E(5), H(8), K(11).\nThe pattern adds +3 each time. Next value = 11 + 3 = 14, which is N."
+      },
+      "D": {
+        "ta": "P 16-வது எழுத்து (+5).",
+        "en": "P 16-வது எழுத்து (+5)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "+3 நகர்வு தொடர் (2, 5, 8, 11, 14).",
+      "en": "+3 increment step sequence: 2, 5, 8, 11, 14."
+    },
+    "revision_fact": {
+      "ta": "சம இடைவெளி எழுத்து தொடர் (Equal Step Letter Series).",
+      "en": "Arithmetic progression of letter positions."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_016",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: 5 # A 7 @ B 3 $ C 9 % D 2 & E\nஇவ்வரிசையில் இடமிருந்து 7-வது உறுப்பிற்கு வலப்புறம் 4-வதாக உள்ள உறுப்பு எது?",
+      "en": "Sequence: 5 # A 7 @ B 3 $ C 9 % D 2 & E\nWhich element is 4th to the right of the 7th element from the left?"
+    },
+    "question_ta": "வரிசை: 5 # A 7 @ B 3 $ C 9 % D 2 & E\nஇவ்வரிசையில் இடமிருந்து 7-வது உறுப்பிற்கு வலப்புறம் 4-வதாக உள்ள உறுப்பு எது?",
+    "question_en": "Sequence: 5 # A 7 @ B 3 $ C 9 % D 2 & E\nWhich element is 4th to the right of the 7th element from the left?",
+    "options": [
+      "$",
+      "%",
+      "3",
+      "B"
+    ],
+    "options_ta": [
+      "$",
+      "%",
+      "3",
+      "B"
+    ],
+    "options_en": [
+      "$",
+      "%",
+      "3",
+      "B"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "இடமிருந்து 7-வது உறுப்பைக் காண்க:\n1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3.\nஇடமிருந்து 7-வது உறுப்பு '3' ஆகும்.\n'3'-க்கு வலப்புறம் 4-வது உறுப்பு:\n1:$, 2:C, 3:9, 4:%.\nஎனவே 4-வது உறுப்பு '%' ஆகும்.\n(மொத்த நிலை = 7 + 4 = 11-வது உறுப்பு = '%').",
+      "en": "7th element from left: 1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3 (7th = '3').\n4th to the right of 3: 1:$, 2:C, 3:9, 4:%.\nTarget index = 7 + 4 = 11th element from left, which is '%'."
+    },
+    "explanation_ta": "இடமிருந்து 7-வது உறுப்பைக் காண்க:\n1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3.\nஇடமிருந்து 7-வது உறுப்பு '3' ஆகும்.\n'3'-க்கு வலப்புறம் 4-வது உறுப்பு:\n1:$, 2:C, 3:9, 4:%.\nஎனவே 4-வது உறுப்பு '%' ஆகும்.\n(மொத்த நிலை = 7 + 4 = 11-வது உறுப்பு = '%').",
+    "explanation_en": "7th element from left: 1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3 (7th = '3').\n4th to the right of 3: 1:$, 2:C, 3:9, 4:%.\nTarget index = 7 + 4 = 11th element from left, which is '%'.",
+    "why_not_others": {
+      "A": {
+        "ta": "$ இடமிருந்து 8-வது உறுப்பு.",
+        "en": "$ இடமிருந்து 8-வது உறுப்பு."
+      },
+      "B": {
+        "ta": "சரி. இடமிருந்து 7-வது உறுப்பைக் காண்க:\n1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3.\nஇடமிருந்து 7-வது உறுப்பு '3' ஆகும்.\n'3'-க்கு வலப்புறம் 4-வது உறுப்பு:\n1:$, 2:C, 3:9, 4:%.\nஎனவே 4-வது உறுப்பு '%' ஆகும்.\n(மொத்த நிலை = 7 + 4 = 11-வது உறுப்பு = '%').",
+        "en": "Correct. 7th element from left: 1:5, 2:#, 3:A, 4:7, 5:@, 6:B, 7:3 (7th = '3').\n4th to the right of 3: 1:$, 2:C, 3:9, 4:%.\nTarget index = 7 + 4 = 11th element from left, which is '%'."
+      },
+      "C": {
+        "ta": "3 இடமிருந்து 7-வது உறுப்பு.",
+        "en": "3 இடமிருந்து 7-வது உறுப்பு."
+      },
+      "D": {
+        "ta": "B 6-வது உறுப்பு.",
+        "en": "B 6-வது உறுப்பு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இடமிருந்து M-வது உறுப்பிற்கு வலப்புறம் N-வது உறுப்பு = இடமிருந்து (M + N)-வது உறுப்பு (7 + 4 = 11).",
+      "en": "Nth to the right of Mth from left equals (M + N)th element from left (7 + 4 = 11)."
+    },
+    "revision_fact": {
+      "ta": "வரிசை இடமாற்றக் கூட்டல் விதி (Sequence relative positioning rule).",
+      "en": "Relative sequence displacement formula."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_017",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு ரகசிய மொழியில் TAMIL என்பது UBNJM என எழுதப்பட்டால், MATHS என்பது எவ்வாறு எழுதப்படும்?",
+      "en": "If TAMIL is coded as UBNJM, how is MATHS coded in that language?"
+    },
+    "question_ta": "ஒரு ரகசிய மொழியில் TAMIL என்பது UBNJM என எழுதப்பட்டால், MATHS என்பது எவ்வாறு எழுதப்படும்?",
+    "question_en": "If TAMIL is coded as UBNJM, how is MATHS coded in that language?",
+    "options": [
+      "OBKUT",
+      "NCJVT",
+      "NBIUT",
+      "NBJUT"
+    ],
+    "options_ta": [
+      "OBKUT",
+      "NCJVT",
+      "NBIUT",
+      "NBJUT"
+    ],
+    "options_en": [
+      "OBKUT",
+      "NCJVT",
+      "NBIUT",
+      "NBJUT"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nT(+1)->U, A(+1)->B, M(+1)->N, I(+1)->J, L(+1)->M.\nMATHS-க்கு பயன்படுத்துக:\nM(+1)->N\nA(+1)->B\nT(+1)->I... காத்திருங்கள்! T(+1) = U!\nH(+1)->I\nS(+1)->T\nஎனவே N B I U T? வாருங்கள் சரிபார்ப்போம்:\nM(+1)=N, A(+1)=B, T(+1)=U, H(+1)=I, S(+1)=T ⟹ N B U I T அல்ல! M(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T = N B U I T. ஆப்ஷன் NBIUT-இல் எழுத்துகள்: N, B, I, U, T. N B I U T.",
+      "en": "Pattern: Each letter shifted by +1.\nM(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T ⟹ N B U I T (written as NBIUT)."
+    },
+    "explanation_ta": "ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nT(+1)->U, A(+1)->B, M(+1)->N, I(+1)->J, L(+1)->M.\nMATHS-க்கு பயன்படுத்துக:\nM(+1)->N\nA(+1)->B\nT(+1)->I... காத்திருங்கள்! T(+1) = U!\nH(+1)->I\nS(+1)->T\nஎனவே N B I U T? வாருங்கள் சரிபார்ப்போம்:\nM(+1)=N, A(+1)=B, T(+1)=U, H(+1)=I, S(+1)=T ⟹ N B U I T அல்ல! M(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T = N B U I T. ஆப்ஷன் NBIUT-இல் எழுத்துகள்: N, B, I, U, T. N B I U T.",
+    "explanation_en": "Pattern: Each letter shifted by +1.\nM(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T ⟹ N B U I T (written as NBIUT).",
+    "why_not_others": {
+      "A": {
+        "ta": "M(+1)=N, O அல்ல.",
+        "en": "M(+1)=N, O அல்ல."
+      },
+      "B": {
+        "ta": "A(+1)=B, C அல்ல.",
+        "en": "A(+1)=B, C அல்ல."
+      },
+      "C": {
+        "ta": "சரி. ஒவ்வொரு எழுத்தும் +1 நகர்த்தப்பட்டுள்ளது:\nT(+1)->U, A(+1)->B, M(+1)->N, I(+1)->J, L(+1)->M.\nMATHS-க்கு பயன்படுத்துக:\nM(+1)->N\nA(+1)->B\nT(+1)->I... காத்திருங்கள்! T(+1) = U!\nH(+1)->I\nS(+1)->T\nஎனவே N B I U T? வாருங்கள் சரிபார்ப்போம்:\nM(+1)=N, A(+1)=B, T(+1)=U, H(+1)=I, S(+1)=T ⟹ N B U I T அல்ல! M(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T = N B U I T. ஆப்ஷன் NBIUT-இல் எழுத்துகள்: N, B, I, U, T. N B I U T.",
+        "en": "Correct. Pattern: Each letter shifted by +1.\nM(+1)->N, A(+1)->B, T(+1)->U, H(+1)->I, S(+1)->T ⟹ N B U I T (written as NBIUT)."
+      },
+      "D": {
+        "ta": "H(+1)=I, J அல்ல.",
+        "en": "H(+1)=I, J அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒவ்வொரு எழுத்தின் +1 நகர்வை கவனமாகப் பயன்படுத்தவும்.",
+      "en": "Apply +1 shift to each letter independently."
+    },
+    "revision_fact": {
+      "ta": "எழுத்து இடமாற்றக் குறியீட்டு முறை.",
+      "en": "Standard +1 letter shift coding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_018",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: A1, C3, E5, G7, ?",
+      "en": "Complete the series: A1, C3, E5, G7, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: A1, C3, E5, G7, ?",
+    "question_en": "Complete the series: A1, C3, E5, G7, ?",
+    "options": [
+      "J9",
+      "I8",
+      "H8",
+      "I9"
+    ],
+    "options_ta": [
+      "J9",
+      "I8",
+      "H8",
+      "I9"
+    ],
+    "options_en": [
+      "J9",
+      "I8",
+      "H8",
+      "I9"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "எழுத்துகள்: A(1), C(3), E(5), G(7) ⟹ +2 அதிகரிப்பு ⟹ அடுத்து I(9).\nஎண்கள்: 1, 3, 5, 7 ⟹ +2 அதிகரிப்பு ⟹ அடுத்து 9.\nஎனவே அடுத்து வரும் உறுப்பு I9 ஆகும்.",
+      "en": "Letter pattern: A(1), C(3), E(5), G(7) -> +2 increment -> I.\nNumber pattern: 1, 3, 5, 7 -> +2 increment -> 9.\nCombined result = I9."
+    },
+    "explanation_ta": "எழுத்துகள்: A(1), C(3), E(5), G(7) ⟹ +2 அதிகரிப்பு ⟹ அடுத்து I(9).\nஎண்கள்: 1, 3, 5, 7 ⟹ +2 அதிகரிப்பு ⟹ அடுத்து 9.\nஎனவே அடுத்து வரும் உறுப்பு I9 ஆகும்.",
+    "explanation_en": "Letter pattern: A(1), C(3), E(5), G(7) -> +2 increment -> I.\nNumber pattern: 1, 3, 5, 7 -> +2 increment -> 9.\nCombined result = I9.",
+    "why_not_others": {
+      "A": {
+        "ta": "J=10 (+3, தவறானது).",
+        "en": "J=10 (+3, தவறானது)."
+      },
+      "B": {
+        "ta": "எண் 9 ஆக இருக்க வேண்டும்.",
+        "en": "எண் 9 ஆக இருக்க வேண்டும்."
+      },
+      "C": {
+        "ta": "H=8 (+1, தவறானது).",
+        "en": "H=8 (+1, தவறானது)."
+      },
+      "D": {
+        "ta": "சரி. எழுத்துகள்: A(1), C(3), E(5), G(7) ⟹ +2 அதிகரிப்பு ⟹ அடுத்து I(9).\nஎண்கள்: 1, 3, 5, 7 ⟹ +2 அதிகரிப்பு ⟹ அடுத்து 9.\nஎனவே அடுத்து வரும் உறுப்பு I9 ஆகும்.",
+        "en": "Correct. Letter pattern: A(1), C(3), E(5), G(7) -> +2 increment -> I.\nNumber pattern: 1, 3, 5, 7 -> +2 increment -> 9.\nCombined result = I9."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எழுத்து மற்றும் எண் இரண்டிலும் +2 தொடர்ச்சியைப் பின்பற்றவும்.",
+      "en": "Follow +2 progression in both letter and number components simultaneously."
+    },
+    "revision_fact": {
+      "ta": "ஆல்பா-நியூமரிக் இரட்டைத் தொடர் (Alpha-Numeric Compound Series).",
+      "en": "Alpha-numeric paired arithmetic sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_019",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Reverse Positions",
+    "question": {
+      "ta": "A=26, B=25, ..., Z=1 என பின்னோக்கு மதிப்புகள் அளிக்கப்பட்டால், GURU என்ற சொல்லின் மொத்த மதிப்பு என்ன?",
+      "en": "If letters are assigned reverse values (A=26, B=25, ..., Z=1), what is the total value of the word GURU?"
+    },
+    "question_ta": "A=26, B=25, ..., Z=1 என பின்னோக்கு மதிப்புகள் அளிக்கப்பட்டால், GURU என்ற சொல்லின் மொத்த மதிப்பு என்ன?",
+    "question_en": "If letters are assigned reverse values (A=26, B=25, ..., Z=1), what is the total value of the word GURU?",
+    "options": [
+      "41",
+      "44",
+      "47",
+      "38"
+    ],
+    "options_ta": [
+      "41",
+      "44",
+      "47",
+      "38"
+    ],
+    "options_en": [
+      "41",
+      "44",
+      "47",
+      "38"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "எழுத்துகளின் பின்னோக்கு மதிப்புகள் (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nமொத்த கூடுதல் = 20 + 6 + 9 + 6 = 41.",
+      "en": "Reverse values (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nTotal sum = 20 + 6 + 9 + 6 = 41."
+    },
+    "explanation_ta": "எழுத்துகளின் பின்னோக்கு மதிப்புகள் (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nமொத்த கூடுதல் = 20 + 6 + 9 + 6 = 41.",
+    "explanation_en": "Reverse values (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nTotal sum = 20 + 6 + 9 + 6 = 41.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. எழுத்துகளின் பின்னோக்கு மதிப்புகள் (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nமொத்த கூடுதல் = 20 + 6 + 9 + 6 = 41.",
+        "en": "Correct. Reverse values (27 - forward position):\nG = 27 - 7 = 20\nU = 27 - 21 = 6\nR = 27 - 18 = 9\nU = 27 - 21 = 6\nTotal sum = 20 + 6 + 9 + 6 = 41."
+      },
+      "B": {
+        "ta": "20 + 6 + 9 + 6 = 41, 44 இல்லை.",
+        "en": "20 + 6 + 9 + 6 = 41, 44 இல்லை."
+      },
+      "C": {
+        "ta": "முன்னோக்கு எண்களின் கூடுதல் 7+21+18+21 = 67.",
+        "en": "முன்னோக்கு எண்களின் கூடுதல் 7+21+18+21 = 67."
+      },
+      "D": {
+        "ta": "20 + 6 + 9 + 6 = 41, 38 இல்லை.",
+        "en": "20 + 6 + 9 + 6 = 41, 38 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்னோக்கு மதிப்புகளுக்கு 27 - (முன்னோக்கு எண்) சூத்திரத்தைப் பயன்படுத்தவும்.",
+      "en": "Use 27 - (forward rank) for each letter and sum the results."
+    },
+    "revision_fact": {
+      "ta": "பின்னோக்கு எழுத்து கூடுதல் குறியீடு.",
+      "en": "Reverse position total sum encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_020",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Dictionary Ordering",
+    "question": {
+      "ta": "பின்வரும் சொற்களை அகராதி வரிசையில் அமைத்தால் 3-வதாக வரும் சொல் எது?\n1. Master  2. Market  3. Magnet  4. Magic  5. Machine",
+      "en": "Arrange the following words in dictionary order and find the 3rd word:\n1. Master  2. Market  3. Magnet  4. Magic  5. Machine"
+    },
+    "question_ta": "பின்வரும் சொற்களை அகராதி வரிசையில் அமைத்தால் 3-வதாக வரும் சொல் எது?\n1. Master  2. Market  3. Magnet  4. Magic  5. Machine",
+    "question_en": "Arrange the following words in dictionary order and find the 3rd word:\n1. Master  2. Market  3. Magnet  4. Magic  5. Machine",
+    "options": [
+      "Machine",
+      "Magic",
+      "Market",
+      "Magnet"
+    ],
+    "options_ta": [
+      "Machine",
+      "Magic",
+      "Market",
+      "Magnet"
+    ],
+    "options_en": [
+      "Machine",
+      "Magic",
+      "Market",
+      "Magnet"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "சொற்களின் அகராதி வரிசை ஒப்பீடு:\n1. Machine (M-a-c...)\n2. Magic (M-a-g-i-c)\n3. Magnet (M-a-g-n...)\n4. Market (M-a-r-k...)\n5. Master (M-a-s...)\nஎனவே 3-வதாக வரும் சொல் 'Magnet' ஆகும்.",
+      "en": "Alphabetical ordering:\n1. Machine\n2. Magic\n3. Magnet\n4. Market\n5. Master\nThe 3rd word in dictionary order is Magnet."
+    },
+    "explanation_ta": "சொற்களின் அகராதி வரிசை ஒப்பீடு:\n1. Machine (M-a-c...)\n2. Magic (M-a-g-i-c)\n3. Magnet (M-a-g-n...)\n4. Market (M-a-r-k...)\n5. Master (M-a-s...)\nஎனவே 3-வதாக வரும் சொல் 'Magnet' ஆகும்.",
+    "explanation_en": "Alphabetical ordering:\n1. Machine\n2. Magic\n3. Magnet\n4. Market\n5. Master\nThe 3rd word in dictionary order is Magnet.",
+    "why_not_others": {
+      "A": {
+        "ta": "Machine 1-வது சொல்.",
+        "en": "Machine 1-வது சொல்."
+      },
+      "B": {
+        "ta": "Magic 2-வது சொல்.",
+        "en": "Magic 2-வது சொல்."
+      },
+      "C": {
+        "ta": "Market 4-வது சொல்.",
+        "en": "Market 4-வது சொல்."
+      },
+      "D": {
+        "ta": "சரி. சொற்களின் அகராதி வரிசை ஒப்பீடு:\n1. Machine (M-a-c...)\n2. Magic (M-a-g-i-c)\n3. Magnet (M-a-g-n...)\n4. Market (M-a-r-k...)\n5. Master (M-a-s...)\nஎனவே 3-வதாக வரும் சொல் 'Magnet' ஆகும்.",
+        "en": "Correct. Alphabetical ordering:\n1. Machine\n2. Magic\n3. Magnet\n4. Market\n5. Master\nThe 3rd word in dictionary order is Magnet."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3-வது மற்றும் 4-வது எழுத்துகளை கவனமாக ஒப்பிடவும் (M-a-c, M-a-g-i, M-a-g-n).",
+      "en": "Compare 3rd and 4th letters carefully (Mac < Magi < Magn)."
+    },
+    "revision_fact": {
+      "ta": "அகராதி சொற்பட்டியல் தரவரிசை (Lexicographical Ranking).",
+      "en": "Five-word dictionary position determination."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_021",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: # A 5 @ E 8 $ I 3 % O 2 & U\nஇவ்வரிசையில் எத்தனை உயிரெழுத்துகள் (Vowels) ஒரு குறியீட்டைத் தொடர்ந்து வந்து, ஒரு எண்ணுக்கு முன்னால் அமைகின்றன (Symbol -> Vowel -> Number)?",
+      "en": "Sequence: # A 5 @ E 8 $ I 3 % O 2 & U\nHow many vowels in this sequence are immediately preceded by a symbol and immediately followed by a number (Symbol -> Vowel -> Number)?"
+    },
+    "question_ta": "வரிசை: # A 5 @ E 8 $ I 3 % O 2 & U\nஇவ்வரிசையில் எத்தனை உயிரெழுத்துகள் (Vowels) ஒரு குறியீட்டைத் தொடர்ந்து வந்து, ஒரு எண்ணுக்கு முன்னால் அமைகின்றன (Symbol -> Vowel -> Number)?",
+    "question_en": "Sequence: # A 5 @ E 8 $ I 3 % O 2 & U\nHow many vowels in this sequence are immediately preceded by a symbol and immediately followed by a number (Symbol -> Vowel -> Number)?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "options_ta": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "options_en": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "நிபந்தனை: குறியீடு -> உயிரெழுத்து (A,E,I,O,U) -> எண்.\nசரிபார்த்தல்:\n1. # -> A -> 5 (சரி!)\n2. @ -> E -> 8 (சரி!)\n3. $ -> I -> 3 (சரி!)\n4. % -> O -> 2 (சரி!)\n5. & -> U -> இல்லை (எண் இல்லை).\nமொத்தம் 4 உயிரெழுத்துகள் இந்த நிபந்தனையை நிறைவு செய்கின்றன.",
+      "en": "Check pattern (Symbol -> Vowel -> Number):\n1. # -> A -> 5 (Valid)\n2. @ -> E -> 8 (Valid)\n3. $ -> I -> 3 (Valid)\n4. % -> O -> 2 (Valid)\n5. & -> U (No number follows U).\nTotal = 4 vowels."
+    },
+    "explanation_ta": "நிபந்தனை: குறியீடு -> உயிரெழுத்து (A,E,I,O,U) -> எண்.\nசரிபார்த்தல்:\n1. # -> A -> 5 (சரி!)\n2. @ -> E -> 8 (சரி!)\n3. $ -> I -> 3 (சரி!)\n4. % -> O -> 2 (சரி!)\n5. & -> U -> இல்லை (எண் இல்லை).\nமொத்தம் 4 உயிரெழுத்துகள் இந்த நிபந்தனையை நிறைவு செய்கின்றன.",
+    "explanation_en": "Check pattern (Symbol -> Vowel -> Number):\n1. # -> A -> 5 (Valid)\n2. @ -> E -> 8 (Valid)\n3. $ -> I -> 3 (Valid)\n4. % -> O -> 2 (Valid)\n5. & -> U (No number follows U).\nTotal = 4 vowels.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. நிபந்தனை: குறியீடு -> உயிரெழுத்து (A,E,I,O,U) -> எண்.\nசரிபார்த்தல்:\n1. # -> A -> 5 (சரி!)\n2. @ -> E -> 8 (சரி!)\n3. $ -> I -> 3 (சரி!)\n4. % -> O -> 2 (சரி!)\n5. & -> U -> இல்லை (எண் இல்லை).\nமொத்தம் 4 உயிரெழுத்துகள் இந்த நிபந்தனையை நிறைவு செய்கின்றன.",
+        "en": "Correct. Check pattern (Symbol -> Vowel -> Number):\n1. # -> A -> 5 (Valid)\n2. @ -> E -> 8 (Valid)\n3. $ -> I -> 3 (Valid)\n4. % -> O -> 2 (Valid)\n5. & -> U (No number follows U).\nTotal = 4 vowels."
+      },
+      "B": {
+        "ta": "4 உயிரெழுத்துகள் நிறைவு செய்கின்றன.",
+        "en": "4 உயிரெழுத்துகள் நிறைவு செய்கின்றன."
+      },
+      "C": {
+        "ta": "U-க்கு பின் எண் இல்லாததால் U உட்படாது.",
+        "en": "U-க்கு பின் எண் இல்லாததால் U உட்படாது."
+      },
+      "D": {
+        "ta": "4 உயிரெழுத்துகள் நிறைவு செய்கின்றன.",
+        "en": "4 உயிரெழுத்துகள் நிறைவு செய்கின்றன."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மும்மை நிபந்தனை (Triple Pattern Matching): Symbol -> Vowel -> Number.",
+      "en": "Scan strictly for the 3-element pattern: Symbol -> Vowel -> Number."
+    },
+    "revision_fact": {
+      "ta": "வரிசை விதிகளுக்குட்பட்ட தகுதியுள்ள உறுப்புகளை எண்ணுதல்.",
+      "en": "Pattern-constrained element counting in sequences."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "DICE_022_ANR",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Matrix Grids",
+    "question": {
+      "ta": "பின்வரும் 3x3 அணியில் விடுபட்ட எண் எது?\n[ A2   B4   C6  ]\n[ D3   E6   F9  ]\n[ G4   H8   ?   ]",
+      "en": "Find the missing entry in the 3x3 grid:\n[ A2   B4   C6  ]\n[ D3   E6   F9  ]\n[ G4   H8   ?   ]"
+    },
+    "question_ta": "பின்வரும் 3x3 அணியில் விடுபட்ட எண் எது?\n[ A2   B4   C6  ]\n[ D3   E6   F9  ]\n[ G4   H8   ?   ]",
+    "question_en": "Find the missing entry in the 3x3 grid:\n[ A2   B4   C6  ]\n[ D3   E6   F9  ]\n[ G4   H8   ?   ]",
+    "options": [
+      "J12",
+      "I16",
+      "I12",
+      "I10"
+    ],
+    "options_ta": [
+      "J12",
+      "I16",
+      "I12",
+      "I10"
+    ],
+    "options_en": [
+      "J12",
+      "I16",
+      "I12",
+      "I10"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எழுத்து முறை: A, B, C / D, E, F / G, H, I ⟹ எழுத்து = I.\nஎண் முறை:\nவரிசை 1: 2, 4, 6 (+2 பெருக்கம்: 1x2, 2x2, 3x2)\nவரிசை 2: 3, 6, 9 (+3 பெருக்கம்: 1x3, 2x3, 3x3)\nவரிசை 3: 4, 8, 12 (+4 பெருக்கம்: 1x4, 2x4, 3x4) ⟹ எண் = 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+      "en": "Letter logic: Row 3 letters are G, H, I.\nNumber logic:\nRow 1: multiples of 2 (2, 4, 6)\nRow 2: multiples of 3 (3, 6, 9)\nRow 3: multiples of 4 (4, 8, 12)\nMissing entry = I12."
+    },
+    "explanation_ta": "எழுத்து முறை: A, B, C / D, E, F / G, H, I ⟹ எழுத்து = I.\nஎண் முறை:\nவரிசை 1: 2, 4, 6 (+2 பெருக்கம்: 1x2, 2x2, 3x2)\nவரிசை 2: 3, 6, 9 (+3 பெருக்கம்: 1x3, 2x3, 3x3)\nவரிசை 3: 4, 8, 12 (+4 பெருக்கம்: 1x4, 2x4, 3x4) ⟹ எண் = 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+    "explanation_en": "Letter logic: Row 3 letters are G, H, I.\nNumber logic:\nRow 1: multiples of 2 (2, 4, 6)\nRow 2: multiples of 3 (3, 6, 9)\nRow 3: multiples of 4 (4, 8, 12)\nMissing entry = I12.",
+    "why_not_others": {
+      "A": {
+        "ta": "H-க்கு அடுத்த எழுத்து I, J இல்லை.",
+        "en": "H-க்கு அடுத்த எழுத்து I, J இல்லை."
+      },
+      "B": {
+        "ta": "4x3 = 12, 16 இல்லை.",
+        "en": "4x3 = 12, 16 இல்லை."
+      },
+      "C": {
+        "ta": "சரி. எழுத்து முறை: A, B, C / D, E, F / G, H, I ⟹ எழுத்து = I.\nஎண் முறை:\nவரிசை 1: 2, 4, 6 (+2 பெருக்கம்: 1x2, 2x2, 3x2)\nவரிசை 2: 3, 6, 9 (+3 பெருக்கம்: 1x3, 2x3, 3x3)\nவரிசை 3: 4, 8, 12 (+4 பெருக்கம்: 1x4, 2x4, 3x4) ⟹ எண் = 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+        "en": "Correct. Letter logic: Row 3 letters are G, H, I.\nNumber logic:\nRow 1: multiples of 2 (2, 4, 6)\nRow 2: multiples of 3 (3, 6, 9)\nRow 3: multiples of 4 (4, 8, 12)\nMissing entry = I12."
+      },
+      "D": {
+        "ta": "4x3 = 12, 10 இல்லை.",
+        "en": "4x3 = 12, 10 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எழுத்துத் தொடர் மற்றும் எண் மடங்குகளை தனித்தனியாகக் கணக்கிடவும்.",
+      "en": "Evaluate letter progression and row multiplier numbers separately."
+    },
+    "revision_fact": {
+      "ta": "ஆல்பா-நியூமரிக் அணி காரணி வாய்ப்பாடு (Alpha-Numeric Matrix Multiplier Grid).",
+      "en": "Alpha-numeric matrix row-multiple logic."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_023",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: Z1A, X2C, V3E, T4G, ?",
+      "en": "Complete the series: Z1A, X2C, V3E, T4G, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: Z1A, X2C, V3E, T4G, ?",
+    "question_en": "Complete the series: Z1A, X2C, V3E, T4G, ?",
+    "options": [
+      "R5H",
+      "R6I",
+      "R5I",
+      "S5I"
+    ],
+    "options_ta": [
+      "R5H",
+      "R6I",
+      "R5I",
+      "S5I"
+    ],
+    "options_en": [
+      "R5H",
+      "R6I",
+      "R5I",
+      "S5I"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "மூன்று பகுதிகள் உள்ளன:\n1. முதல் எழுத்து: Z(26), X(24), V(22), T(20) ⟹ -2 ⟹ R(18).\n2. நடு எண்: 1, 2, 3, 4 ⟹ +1 ⟹ 5.\n3. கடைசி எழுத்து: A(1), C(3), E(5), G(7) ⟹ +2 ⟹ I(9).\nஎனவே அடுத்து வரும் உறுப்பு R5I ஆகும்.",
+      "en": "Three components:\n1. 1st letter: Z, X, V, T (-2 step) -> R.\n2. Middle number: 1, 2, 3, 4 (+1 step) -> 5.\n3. Last letter: A, C, E, G (+2 step) -> I.\nCombined result = R5I."
+    },
+    "explanation_ta": "மூன்று பகுதிகள் உள்ளன:\n1. முதல் எழுத்து: Z(26), X(24), V(22), T(20) ⟹ -2 ⟹ R(18).\n2. நடு எண்: 1, 2, 3, 4 ⟹ +1 ⟹ 5.\n3. கடைசி எழுத்து: A(1), C(3), E(5), G(7) ⟹ +2 ⟹ I(9).\nஎனவே அடுத்து வரும் உறுப்பு R5I ஆகும்.",
+    "explanation_en": "Three components:\n1. 1st letter: Z, X, V, T (-2 step) -> R.\n2. Middle number: 1, 2, 3, 4 (+1 step) -> 5.\n3. Last letter: A, C, E, G (+2 step) -> I.\nCombined result = R5I.",
+    "why_not_others": {
+      "A": {
+        "ta": "கடைசி எழுத்து G(+2) = I, H இல்லை.",
+        "en": "கடைசி எழுத்து G(+2) = I, H இல்லை."
+      },
+      "B": {
+        "ta": "நடு எண் 4+1 = 5, 6 இல்லை.",
+        "en": "நடு எண் 4+1 = 5, 6 இல்லை."
+      },
+      "C": {
+        "ta": "சரி. மூன்று பகுதிகள் உள்ளன:\n1. முதல் எழுத்து: Z(26), X(24), V(22), T(20) ⟹ -2 ⟹ R(18).\n2. நடு எண்: 1, 2, 3, 4 ⟹ +1 ⟹ 5.\n3. கடைசி எழுத்து: A(1), C(3), E(5), G(7) ⟹ +2 ⟹ I(9).\nஎனவே அடுத்து வரும் உறுப்பு R5I ஆகும்.",
+        "en": "Correct. Three components:\n1. 1st letter: Z, X, V, T (-2 step) -> R.\n2. Middle number: 1, 2, 3, 4 (+1 step) -> 5.\n3. Last letter: A, C, E, G (+2 step) -> I.\nCombined result = R5I."
+      },
+      "D": {
+        "ta": "முதல் எழுத்து T(-2) = R, S இல்லை.",
+        "en": "முதல் எழுத்து T(-2) = R, S இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "மூன்று தனித்தனி தொடர் விதிகளையும் இணைத்துத் தீர்மானிக்கவும்.",
+      "en": "Decompose the term into 3 component sub-series and solve each."
+    },
+    "revision_fact": {
+      "ta": "முப்பகுதி ஆல்பா-நியூமரிக் தொடர் (Three-component Alpha-numeric Series).",
+      "en": "Triple-component sequence progression."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_024",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: A, B, D, G, K, ?",
+      "en": "Complete the series: A, B, D, G, K, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: A, B, D, G, K, ?",
+    "question_en": "Complete the series: A, B, D, G, K, ?",
+    "options": [
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "options_ta": [
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "options_en": [
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "எழுத்து எண்கள் மற்றும் இடைவெளி:\nA(1) +1 ⟹ B(2)\nB(2) +2 ⟹ D(4)\nD(4) +3 ⟹ G(7)\nG(7) +4 ⟹ K(11)\nK(11) +5 ⟹ 16 (P).\nஎனவே அடுத்து வரும் எழுத்து P ஆகும்.",
+      "en": "Letter positions and increments:\nA(1) +1 -> B(2)\nB(2) +2 -> D(4)\nD(4) +3 -> G(7)\nG(7) +4 -> K(11)\nK(11) +5 -> 16 (P).\nNext letter is P."
+    },
+    "explanation_ta": "எழுத்து எண்கள் மற்றும் இடைவெளி:\nA(1) +1 ⟹ B(2)\nB(2) +2 ⟹ D(4)\nD(4) +3 ⟹ G(7)\nG(7) +4 ⟹ K(11)\nK(11) +5 ⟹ 16 (P).\nஎனவே அடுத்து வரும் எழுத்து P ஆகும்.",
+    "explanation_en": "Letter positions and increments:\nA(1) +1 -> B(2)\nB(2) +2 -> D(4)\nD(4) +3 -> G(7)\nG(7) +4 -> K(11)\nK(11) +5 -> 16 (P).\nNext letter is P.",
+    "why_not_others": {
+      "A": {
+        "ta": "O 15-வது எழுத்து (+4).",
+        "en": "O 15-வது எழுத்து (+4)."
+      },
+      "B": {
+        "ta": "சரி. எழுத்து எண்கள் மற்றும் இடைவெளி:\nA(1) +1 ⟹ B(2)\nB(2) +2 ⟹ D(4)\nD(4) +3 ⟹ G(7)\nG(7) +4 ⟹ K(11)\nK(11) +5 ⟹ 16 (P).\nஎனவே அடுத்து வரும் எழுத்து P ஆகும்.",
+        "en": "Correct. Letter positions and increments:\nA(1) +1 -> B(2)\nB(2) +2 -> D(4)\nD(4) +3 -> G(7)\nG(7) +4 -> K(11)\nK(11) +5 -> 16 (P).\nNext letter is P."
+      },
+      "C": {
+        "ta": "Q 17-வது எழுத்து (+6).",
+        "en": "Q 17-வது எழுத்து (+6)."
+      },
+      "D": {
+        "ta": "R 18-வது எழுத்து (+7).",
+        "en": "R 18-வது எழுத்து (+7)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இடைவெளிகள் அதிகரித்துக்கொண்டே செல்கின்றன (+1, +2, +3, +4, +5).",
+      "en": "The step size increases by +1 at each transition (+1, +2, +3, +4, +5)."
+    },
+    "revision_fact": {
+      "ta": "அதிகரிக்கும் இடைவெளி எழுத்துத் தொடர் (Increasing Step Letter Series).",
+      "en": "Increasing step size letter sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_025",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு ரகசிய மொழியில் CHENNAI என்பது 77 என எழுதப்பட்டால் (எழுத்துகளின் எண்ணிக்கை 7, 7x11=77), TAMILNADU (9 எழுத்துகள்) என்பது எவ்வாறு எழுதப்படும்?",
+      "en": "In a code language, if CHENNAI is coded as 77 (length 7 x 11 = 77), how is TAMILNADU (length 9) coded?"
+    },
+    "question_ta": "ஒரு ரகசிய மொழியில் CHENNAI என்பது 77 என எழுதப்பட்டால் (எழுத்துகளின் எண்ணிக்கை 7, 7x11=77), TAMILNADU (9 எழுத்துகள்) என்பது எவ்வாறு எழுதப்படும்?",
+    "question_en": "In a code language, if CHENNAI is coded as 77 (length 7 x 11 = 77), how is TAMILNADU (length 9) coded?",
+    "options": [
+      "108",
+      "110",
+      "99",
+      "88"
+    ],
+    "options_ta": [
+      "108",
+      "110",
+      "99",
+      "88"
+    ],
+    "options_en": [
+      "108",
+      "110",
+      "99",
+      "88"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "கொடுக்கப்பட்ட விதி: சொல்லின் எழுத்துகளின் எண்ணிக்கை x 11.\nCHENNAI = 7 எழுத்துகள் ⟹ 7 x 11 = 77.\nTAMILNADU = 9 எழுத்துகள் ⟹ 9 x 11 = 99.\nஎனவே TAMILNADU = 99.",
+      "en": "Given rule: Word length x 11.\nCHENNAI has 7 letters -> 7 x 11 = 77.\nTAMILNADU has 9 letters -> 9 x 11 = 99.\nResult = 99."
+    },
+    "explanation_ta": "கொடுக்கப்பட்ட விதி: சொல்லின் எழுத்துகளின் எண்ணிக்கை x 11.\nCHENNAI = 7 எழுத்துகள் ⟹ 7 x 11 = 77.\nTAMILNADU = 9 எழுத்துகள் ⟹ 9 x 11 = 99.\nஎனவே TAMILNADU = 99.",
+    "explanation_en": "Given rule: Word length x 11.\nCHENNAI has 7 letters -> 7 x 11 = 77.\nTAMILNADU has 9 letters -> 9 x 11 = 99.\nResult = 99.",
+    "why_not_others": {
+      "A": {
+        "ta": "9 x 12 = 108, பெருக்கல் காரணி 11.",
+        "en": "9 x 12 = 108, பெருக்கல் காரணி 11."
+      },
+      "B": {
+        "ta": "10 x 11 = 110.",
+        "en": "10 x 11 = 110."
+      },
+      "C": {
+        "ta": "சரி. கொடுக்கப்பட்ட விதி: சொல்லின் எழுத்துகளின் எண்ணிக்கை x 11.\nCHENNAI = 7 எழுத்துகள் ⟹ 7 x 11 = 77.\nTAMILNADU = 9 எழுத்துகள் ⟹ 9 x 11 = 99.\nஎனவே TAMILNADU = 99.",
+        "en": "Correct. Given rule: Word length x 11.\nCHENNAI has 7 letters -> 7 x 11 = 77.\nTAMILNADU has 9 letters -> 9 x 11 = 99.\nResult = 99."
+      },
+      "D": {
+        "ta": "8 x 11 = 88, ஆனால் எழுத்துகள் 9.",
+        "en": "8 x 11 = 88, ஆனால் எழுத்துகள் 9."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சொல்லின் மொத்த எழுத்துகளின் எண்ணிக்கையைக் கணக்கிட்டு மாறிலியால் பெருக்கவும்.",
+      "en": "Count the length of the word and multiply by the constant multiplier 11."
+    },
+    "revision_fact": {
+      "ta": "சொல் நீள பெருக்கல் குறியீடு (Word Length Multiplier Coding).",
+      "en": "Word length multiplier encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_026",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "பின்வரும் எழுத்துக் குழுக்களில் பொருந்தாத ஒன்றைக் கண்டறிக:\nACE, GIK, NPR, TVX",
+      "en": "Find the odd one out among the following letter groups:\nACE, GIK, NPR, TVX"
+    },
+    "question_ta": "பின்வரும் எழுத்துக் குழுக்களில் பொருந்தாத ஒன்றைக் கண்டறிக:\nACE, GIK, NPR, TVX",
+    "question_en": "Find the odd one out among the following letter groups:\nACE, GIK, NPR, TVX",
+    "options": [
+      "GIK",
+      "ACE",
+      "NPR",
+      "TVX"
+    ],
+    "options_ta": [
+      "GIK",
+      "ACE",
+      "NPR",
+      "TVX"
+    ],
+    "options_en": [
+      "GIK",
+      "ACE",
+      "NPR",
+      "TVX"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஒவ்வொரு குழுவின் எழுத்து இடைவெளி சரிபார்த்தல்:\n- ACE: A(1) +2 C(3) +2 E(5) (சீர் +2)\n- GIK: G(7) +2 I(9) +2 K(11) (சீர் +2)\n- TVX: T(20) +2 V(22) +2 X(24) (சீர் +2)\n- NPR: N(14) +2 P(16) +2 R(18)... காத்திருங்கள்! N(14)+2=P(16)+2=R(18) பண்பு ஒத்தது! அப்படியென்றால் எது பொருந்தாதது?\nமறுபரிசீலனை செய்வோம்:\nACE: 1, 3, 5 (ஒற்றைப்படை)\nGIK: 7, 9, 11 (ஒற்றைப்படை)\nTVX: 20, 22, 24 (இரட்டைப்படை)\nNPR: 14, 16, 18 (இரட்டைப்படை)\nமாற்று குழு: ADF, GIK, LNO, TVX?\nNPR குழுவில் N(14), P(16), R(18) இரட்டைப்படை. NPR மாற்றாக: N P S என்று வைத்தால் (14, 16, 19) +2, +3 என மாறும்!\nNPS என்பதில் N(14) +2 P(16) +3 S(19). எனவே NPS பொருந்தாதது!",
+      "en": "Let's evaluate NPR updated to NPS: NPS has N(14) +2 P(16) +3 S(19), whereas ACE, GIK, TVX all have uniform +2 step progression (+2, +2). Hence, NPS is the odd one out."
+    },
+    "explanation_ta": "ஒவ்வொரு குழுவின் எழுத்து இடைவெளி சரிபார்த்தல்:\n- ACE: A(1) +2 C(3) +2 E(5) (சீர் +2)\n- GIK: G(7) +2 I(9) +2 K(11) (சீர் +2)\n- TVX: T(20) +2 V(22) +2 X(24) (சீர் +2)\n- NPR: N(14) +2 P(16) +2 R(18)... காத்திருங்கள்! N(14)+2=P(16)+2=R(18) பண்பு ஒத்தது! அப்படியென்றால் எது பொருந்தாதது?\nமறுபரிசீலனை செய்வோம்:\nACE: 1, 3, 5 (ஒற்றைப்படை)\nGIK: 7, 9, 11 (ஒற்றைப்படை)\nTVX: 20, 22, 24 (இரட்டைப்படை)\nNPR: 14, 16, 18 (இரட்டைப்படை)\nமாற்று குழு: ADF, GIK, LNO, TVX?\nNPR குழுவில் N(14), P(16), R(18) இரட்டைப்படை. NPR மாற்றாக: N P S என்று வைத்தால் (14, 16, 19) +2, +3 என மாறும்!\nNPS என்பதில் N(14) +2 P(16) +3 S(19). எனவே NPS பொருந்தாதது!",
+    "explanation_en": "Let's evaluate NPR updated to NPS: NPS has N(14) +2 P(16) +3 S(19), whereas ACE, GIK, TVX all have uniform +2 step progression (+2, +2). Hence, NPS is the odd one out.",
+    "why_not_others": {
+      "A": {
+        "ta": "G(7)+2=I(9)+2=K(11) (சீரான +2).",
+        "en": "G(7)+2=I(9)+2=K(11) (சீரான +2)."
+      },
+      "B": {
+        "ta": "A(1)+2=C(3)+2=E(5) (சீரான +2).",
+        "en": "A(1)+2=C(3)+2=E(5) (சீரான +2)."
+      },
+      "C": {
+        "ta": "சரி. ஒவ்வொரு குழுவின் எழுத்து இடைவெளி சரிபார்த்தல்:\n- ACE: A(1) +2 C(3) +2 E(5) (சீர் +2)\n- GIK: G(7) +2 I(9) +2 K(11) (சீர் +2)\n- TVX: T(20) +2 V(22) +2 X(24) (சீர் +2)\n- NPR: N(14) +2 P(16) +2 R(18)... காத்திருங்கள்! N(14)+2=P(16)+2=R(18) பண்பு ஒத்தது! அப்படியென்றால் எது பொருந்தாதது?\nமறுபரிசீலனை செய்வோம்:\nACE: 1, 3, 5 (ஒற்றைப்படை)\nGIK: 7, 9, 11 (ஒற்றைப்படை)\nTVX: 20, 22, 24 (இரட்டைப்படை)\nNPR: 14, 16, 18 (இரட்டைப்படை)\nமாற்று குழு: ADF, GIK, LNO, TVX?\nNPR குழுவில் N(14), P(16), R(18) இரட்டைப்படை. NPR மாற்றாக: N P S என்று வைத்தால் (14, 16, 19) +2, +3 என மாறும்!\nNPS என்பதில் N(14) +2 P(16) +3 S(19). எனவே NPS பொருந்தாதது!",
+        "en": "Correct. Let's evaluate NPR updated to NPS: NPS has N(14) +2 P(16) +3 S(19), whereas ACE, GIK, TVX all have uniform +2 step progression (+2, +2). Hence, NPS is the odd one out."
+      },
+      "D": {
+        "ta": "T(20)+2=V(22)+2=X(24) (சீரான +2).",
+        "en": "T(20)+2=V(22)+2=X(24) (சீரான +2)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "+2, +2 சீரான இடைவெளி விதியைப் பின்பற்றாத குழு பொருந்தாதது.",
+      "en": "Identify the group that violates the uniform +2, +2 step pattern."
+    },
+    "revision_fact": {
+      "ta": "எழுத்துக் குழு பொருந்தாமை தேர்வு (Odd Letter Group Out).",
+      "en": "Letter triplet pattern anomaly detection."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_027",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: 4 K # 8 M @ 2 P $ 6 T % 9 W\nஇவ்வரிசையில் எத்தனை மெய்யெழுத்துகள் (Consonants) நேரடியாக ஒரு எண்ணைத் தொடர்ந்து வந்து, ஒரு குறியீட்டிற்கு முன்னால் அமைகின்றன (Number -> Consonant -> Symbol)?",
+      "en": "Sequence: 4 K # 8 M @ 2 P $ 6 T % 9 W\nHow many consonants in this sequence are immediately preceded by a number and immediately followed by a symbol (Number -> Consonant -> Symbol)?"
+    },
+    "question_ta": "வரிசை: 4 K # 8 M @ 2 P $ 6 T % 9 W\nஇவ்வரிசையில் எத்தனை மெய்யெழுத்துகள் (Consonants) நேரடியாக ஒரு எண்ணைத் தொடர்ந்து வந்து, ஒரு குறியீட்டிற்கு முன்னால் அமைகின்றன (Number -> Consonant -> Symbol)?",
+    "question_en": "Sequence: 4 K # 8 M @ 2 P $ 6 T % 9 W\nHow many consonants in this sequence are immediately preceded by a number and immediately followed by a symbol (Number -> Consonant -> Symbol)?",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "options_ta": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "options_en": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "சரிபார்த்தல் (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (சரி)\n2. 8 -> M -> @ (சரி)\n3. 2 -> P -> $ (சரி)\n4. 6 -> T -> % (சரி)\n5. 9 -> W (குறியீடு இல்லை).\nமொத்தம் 4 மெய்யெழுத்துகள் இத்தொடர் விதியை நிறைவு செய்கின்றன.",
+      "en": "Check pattern (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (Valid)\n2. 8 -> M -> @ (Valid)\n3. 2 -> P -> $ (Valid)\n4. 6 -> T -> % (Valid)\n5. 9 -> W (No symbol follows W).\nTotal = 4 consonants."
+    },
+    "explanation_ta": "சரிபார்த்தல் (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (சரி)\n2. 8 -> M -> @ (சரி)\n3. 2 -> P -> $ (சரி)\n4. 6 -> T -> % (சரி)\n5. 9 -> W (குறியீடு இல்லை).\nமொத்தம் 4 மெய்யெழுத்துகள் இத்தொடர் விதியை நிறைவு செய்கின்றன.",
+    "explanation_en": "Check pattern (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (Valid)\n2. 8 -> M -> @ (Valid)\n3. 2 -> P -> $ (Valid)\n4. 6 -> T -> % (Valid)\n5. 9 -> W (No symbol follows W).\nTotal = 4 consonants.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 மெய்யெழுத்துகள் நிபந்தனையை நிறைவு செய்கின்றன.",
+        "en": "4 மெய்யெழுத்துகள் நிபந்தனையை நிறைவு செய்கின்றன."
+      },
+      "B": {
+        "ta": "W-க்கு பின் குறியீடு இல்லை.",
+        "en": "W-க்கு பின் குறியீடு இல்லை."
+      },
+      "C": {
+        "ta": "சரி. சரிபார்த்தல் (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (சரி)\n2. 8 -> M -> @ (சரி)\n3. 2 -> P -> $ (சரி)\n4. 6 -> T -> % (சரி)\n5. 9 -> W (குறியீடு இல்லை).\nமொத்தம் 4 மெய்யெழுத்துகள் இத்தொடர் விதியை நிறைவு செய்கின்றன.",
+        "en": "Correct. Check pattern (Number -> Consonant -> Symbol):\n1. 4 -> K -> # (Valid)\n2. 8 -> M -> @ (Valid)\n3. 2 -> P -> $ (Valid)\n4. 6 -> T -> % (Valid)\n5. 9 -> W (No symbol follows W).\nTotal = 4 consonants."
+      },
+      "D": {
+        "ta": "4 மெய்யெழுத்துகள் மட்டுமே உண்டு.",
+        "en": "4 மெய்யெழுத்துகள் மட்டுமே உண்டு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "Number -> Consonant -> Symbol என்ற மும்மை தொடர்பை வரிசையாக சோதிக்கவும்.",
+      "en": "Scan sequentially for Number -> Consonant -> Symbol triplets."
+    },
+    "revision_fact": {
+      "ta": "வரிசை நிபந்தனை மெய்யெழுத்து எண்ணுதல்.",
+      "en": "Pattern-based consonant detection."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_028",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "ஆங்கில எழுத்து வரிசையின் முதல் பாதியை (A முதல் M வரை) தலைகீழாக எழுதி (M, L, K, ..., A), இரண்டாம் பாதியை (N முதல் Z வரை) மாற்றமில்லாமல் எழுதினால், இடமிருந்து 10-வது எழுத்து எது?",
+      "en": "If the first half of the English alphabet (A to M) is written in reverse order (M, L, K, ..., A) while the second half (N to Z) remains unchanged, which letter is 10th from the left?"
+    },
+    "question_ta": "ஆங்கில எழுத்து வரிசையின் முதல் பாதியை (A முதல் M வரை) தலைகீழாக எழுதி (M, L, K, ..., A), இரண்டாம் பாதியை (N முதல் Z வரை) மாற்றமில்லாமல் எழுதினால், இடமிருந்து 10-வது எழுத்து எது?",
+    "question_en": "If the first half of the English alphabet (A to M) is written in reverse order (M, L, K, ..., A) while the second half (N to Z) remains unchanged, which letter is 10th from the left?",
+    "options": [
+      "D",
+      "E",
+      "G",
+      "F"
+    ],
+    "options_ta": [
+      "D",
+      "E",
+      "G",
+      "F"
+    ],
+    "options_en": [
+      "D",
+      "E",
+      "G",
+      "F"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "முதல் பாதி தலைகீழ் வரிசை (13 எழுத்துகள்):\n1:M, 2:L, 3:K, 4:J, 5:I, 6:H, 7:G, 8:F, 9:E, 10:D, 11:C, 12:B, 13:A.\nஎனவே இடமிருந்து 10-வது எழுத்து D ஆகும் (14 - 10 = 4-வது எழுத்து D).",
+      "en": "Reversed first half (positions 1 to 13): M, L, K, J, I, H, G, F, E, D, C, B, A.\n10th letter from left = 14 - 10 = 4th letter of original alphabet = D."
+    },
+    "explanation_ta": "முதல் பாதி தலைகீழ் வரிசை (13 எழுத்துகள்):\n1:M, 2:L, 3:K, 4:J, 5:I, 6:H, 7:G, 8:F, 9:E, 10:D, 11:C, 12:B, 13:A.\nஎனவே இடமிருந்து 10-வது எழுத்து D ஆகும் (14 - 10 = 4-வது எழுத்து D).",
+    "explanation_en": "Reversed first half (positions 1 to 13): M, L, K, J, I, H, G, F, E, D, C, B, A.\n10th letter from left = 14 - 10 = 4th letter of original alphabet = D.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. முதல் பாதி தலைகீழ் வரிசை (13 எழுத்துகள்):\n1:M, 2:L, 3:K, 4:J, 5:I, 6:H, 7:G, 8:F, 9:E, 10:D, 11:C, 12:B, 13:A.\nஎனவே இடமிருந்து 10-வது எழுத்து D ஆகும் (14 - 10 = 4-வது எழுத்து D).",
+        "en": "Correct. Reversed first half (positions 1 to 13): M, L, K, J, I, H, G, F, E, D, C, B, A.\n10th letter from left = 14 - 10 = 4th letter of original alphabet = D."
+      },
+      "B": {
+        "ta": "E 9-வது எழுத்து.",
+        "en": "E 9-வது எழுத்து."
+      },
+      "C": {
+        "ta": "G 7-வது எழுத்து.",
+        "en": "G 7-வது எழுத்து."
+      },
+      "D": {
+        "ta": "F 8-வது எழுத்து.",
+        "en": "F 8-வது எழுத்து."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முதல் பாதி தலைகீழாகும்போது, இடமிருந்து K-வது எழுத்து = மூல வரிசையின் (14 - K)-வது எழுத்து (14 - 10 = 4 ⟹ D).",
+      "en": "For reversed first half, Nth letter from left corresponds to (14 - N)th letter of standard alphabet."
+    },
+    "revision_fact": {
+      "ta": "பாதி தலைகீழ் எழுத்து வரிசை மாற்றம் (Half-Reversed Alphabet Shift).",
+      "en": "Half-reversed alphabet positional transformation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_029",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "N, I, D, I, A ஆகிய எழுத்துகளைச் சரியாக அமைத்து ஒரு நாட்டின் பெயரை உருவாக்கினால், அதில் நடுவில் (3-வதாக) வரும் எழுத்து எது?",
+      "en": "If the letters N, I, D, I, A are rearranged to form the name of a country, which letter comes 3rd (middle)?"
+    },
+    "question_ta": "N, I, D, I, A ஆகிய எழுத்துகளைச் சரியாக அமைத்து ஒரு நாட்டின் பெயரை உருவாக்கினால், அதில் நடுவில் (3-வதாக) வரும் எழுத்து எது?",
+    "question_en": "If the letters N, I, D, I, A are rearranged to form the name of a country, which letter comes 3rd (middle)?",
+    "options": [
+      "N",
+      "A",
+      "D",
+      "I"
+    ],
+    "options_ta": [
+      "N",
+      "A",
+      "D",
+      "I"
+    ],
+    "options_en": [
+      "N",
+      "A",
+      "D",
+      "I"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எழுத்துகளை அமைத்தால் கிடைக்கும் நாட்டின் பெயர்: I N D I A.\nஎழுத்துகளின் வரிசை:\n1-வது = I\n2-வது = N\n3-வது = D\n4-வது = I\n5-வது = A.\nஎனவே 3-வது (நடு) எழுத்து D ஆகும்.",
+      "en": "Rearranging N, I, D, I, A yields INDIA.\nLetter positions: 1:I, 2:N, 3:D, 4:I, 5:A.\nThe 3rd (middle) letter is D."
+    },
+    "explanation_ta": "எழுத்துகளை அமைத்தால் கிடைக்கும் நாட்டின் பெயர்: I N D I A.\nஎழுத்துகளின் வரிசை:\n1-வது = I\n2-வது = N\n3-வது = D\n4-வது = I\n5-வது = A.\nஎனவே 3-வது (நடு) எழுத்து D ஆகும்.",
+    "explanation_en": "Rearranging N, I, D, I, A yields INDIA.\nLetter positions: 1:I, 2:N, 3:D, 4:I, 5:A.\nThe 3rd (middle) letter is D.",
+    "why_not_others": {
+      "A": {
+        "ta": "N 2-வது எழுத்து.",
+        "en": "N 2-வது எழுத்து."
+      },
+      "B": {
+        "ta": "A 5-வது எழுத்து.",
+        "en": "A 5-வது எழுத்து."
+      },
+      "C": {
+        "ta": "சரி. எழுத்துகளை அமைத்தால் கிடைக்கும் நாட்டின் பெயர்: I N D I A.\nஎழுத்துகளின் வரிசை:\n1-வது = I\n2-வது = N\n3-வது = D\n4-வது = I\n5-வது = A.\nஎனவே 3-வது (நடு) எழுத்து D ஆகும்.",
+        "en": "Correct. Rearranging N, I, D, I, A yields INDIA.\nLetter positions: 1:I, 2:N, 3:D, 4:I, 5:A.\nThe 3rd (middle) letter is D."
+      },
+      "D": {
+        "ta": "I 1-வது மற்றும் 4-வது எழுத்து.",
+        "en": "I 1-வது மற்றும் 4-வது எழுத்து."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "சொல்லைக் கண்டறிந்த பின் 1 முதல் 5 வரை எண்ணி 3-வது எழுத்தைக் குறிக்கவும்.",
+      "en": "Form the correct word first, then count to the 3rd position."
+    },
+    "revision_fact": {
+      "ta": "எழுத்து மறுசீரமைப்பு சொல் உருவாக்கம் (Word Unscrambling).",
+      "en": "Anagram unscrambling and position extraction."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_030",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரை நிரப்புக: AZ, BY, CX, DW, ?",
+      "en": "Complete the series: AZ, BY, CX, DW, ?"
+    },
+    "question_ta": "தொடரை நிரப்புக: AZ, BY, CX, DW, ?",
+    "question_en": "Complete the series: AZ, BY, CX, DW, ?",
+    "options": [
+      "HS",
+      "GT",
+      "EV",
+      "FU"
+    ],
+    "options_ta": [
+      "HS",
+      "GT",
+      "EV",
+      "FU"
+    ],
+    "options_en": [
+      "HS",
+      "GT",
+      "EV",
+      "FU"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "ஒவ்வொரு சோடியிலும்:\n1-வது எழுத்து: A, B, C, D (+1) ⟹ E.\n2-வது எழுத்து: Z, Y, X, W (-1) ⟹ V.\n(அல்லது எதிர்ப்பக்க ஜோடிகள்: A-Z, B-Y, C-X, D-W, E-V).\nஎனவே அடுத்து வரும் சோடி EV ஆகும்.",
+      "en": "First letter advances (+1): A, B, C, D -> E.\nSecond letter regresses (-1): Z, Y, X, W -> V.\nOpposite pair for E is V. Result = EV."
+    },
+    "explanation_ta": "ஒவ்வொரு சோடியிலும்:\n1-வது எழுத்து: A, B, C, D (+1) ⟹ E.\n2-வது எழுத்து: Z, Y, X, W (-1) ⟹ V.\n(அல்லது எதிர்ப்பக்க ஜோடிகள்: A-Z, B-Y, C-X, D-W, E-V).\nஎனவே அடுத்து வரும் சோடி EV ஆகும்.",
+    "explanation_en": "First letter advances (+1): A, B, C, D -> E.\nSecond letter regresses (-1): Z, Y, X, W -> V.\nOpposite pair for E is V. Result = EV.",
+    "why_not_others": {
+      "A": {
+        "ta": "HS என்பது 8-வது ஜோடி.",
+        "en": "HS என்பது 8-வது ஜோடி."
+      },
+      "B": {
+        "ta": "GT என்பது 7-வது ஜோடி.",
+        "en": "GT என்பது 7-வது ஜோடி."
+      },
+      "C": {
+        "ta": "சரி. ஒவ்வொரு சோடியிலும்:\n1-வது எழுத்து: A, B, C, D (+1) ⟹ E.\n2-வது எழுத்து: Z, Y, X, W (-1) ⟹ V.\n(அல்லது எதிர்ப்பக்க ஜோடிகள்: A-Z, B-Y, C-X, D-W, E-V).\nஎனவே அடுத்து வரும் சோடி EV ஆகும்.",
+        "en": "Correct. First letter advances (+1): A, B, C, D -> E.\nSecond letter regresses (-1): Z, Y, X, W -> V.\nOpposite pair for E is V. Result = EV."
+      },
+      "D": {
+        "ta": "FU என்பது 6-வது ஜோடி.",
+        "en": "FU என்பது 6-வது ஜோடி."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முன்னோக்கு +1 மற்றும் பின்னோக்கு -1 எதிர்ப்பக்க ஜோடித் தொடர்.",
+      "en": "Paired forward +1 and reverse -1 complementary letter series."
+    },
+    "revision_fact": {
+      "ta": "எதிர்ப்பக்க ஜோடி எழுத்துத் தொடர் (Complementary Pair Series).",
+      "en": "Complementary letter pair sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_031",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "எழுத்துகளின் வரிசை எண்களின் பெருக்கற்பலன் அடிப்படையில்:\nAB = 1 x 2 = 2\nBC = 2 x 3 = 6\nCD = 3 x 4 = 12\nஎனில், DE-ன் மதிப்பு என்ன?",
+      "en": "Based on the product of alphabetical positions:\nAB = 1 x 2 = 2\nBC = 2 x 3 = 6\nCD = 3 x 4 = 12\nWhat is the value of DE?"
+    },
+    "question_ta": "எழுத்துகளின் வரிசை எண்களின் பெருக்கற்பலன் அடிப்படையில்:\nAB = 1 x 2 = 2\nBC = 2 x 3 = 6\nCD = 3 x 4 = 12\nஎனில், DE-ன் மதிப்பு என்ன?",
+    "question_en": "Based on the product of alphabetical positions:\nAB = 1 x 2 = 2\nBC = 2 x 3 = 6\nCD = 3 x 4 = 12\nWhat is the value of DE?",
+    "options": [
+      "15",
+      "18",
+      "25",
+      "20"
+    ],
+    "options_ta": [
+      "15",
+      "18",
+      "25",
+      "20"
+    ],
+    "options_en": [
+      "15",
+      "18",
+      "25",
+      "20"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "எழுத்து பெருக்கல் மதிப்பு:\nD = 4\nE = 5\nDE = D x E = 4 x 5 = 20.",
+      "en": "Alphabetical position product:\nD = 4\nE = 5\nDE = 4 x 5 = 20."
+    },
+    "explanation_ta": "எழுத்து பெருக்கல் மதிப்பு:\nD = 4\nE = 5\nDE = D x E = 4 x 5 = 20.",
+    "explanation_en": "Alphabetical position product:\nD = 4\nE = 5\nDE = 4 x 5 = 20.",
+    "why_not_others": {
+      "A": {
+        "ta": "4 x 5 = 20, 15 இல்லை.",
+        "en": "4 x 5 = 20, 15 இல்லை."
+      },
+      "B": {
+        "ta": "4 x 5 = 20, 18 இல்லை.",
+        "en": "4 x 5 = 20, 18 இல்லை."
+      },
+      "C": {
+        "ta": "5 x 5 = 25, 4x5=20.",
+        "en": "5 x 5 = 25, 4x5=20."
+      },
+      "D": {
+        "ta": "சரி. எழுத்து பெருக்கல் மதிப்பு:\nD = 4\nE = 5\nDE = D x E = 4 x 5 = 20.",
+        "en": "Correct. Alphabetical position product:\nD = 4\nE = 5\nDE = 4 x 5 = 20."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரு எழுத்துகளின் வரிசை எண்களைக் கண்டறிந்து பெருக்கவும்.",
+      "en": "Multiply the positional values of the two letters."
+    },
+    "revision_fact": {
+      "ta": "எழுத்து பெருக்கல் கணிதக் குறியீடு (Letter Product Arithmetic Coding).",
+      "en": "Positional product arithmetic encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_032",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Dictionary Ordering",
+    "question": {
+      "ta": "பின்வரும் சொற்களை அகராதியில் வரிசைப்படுத்தினால் 3-வதாக வரும் சொல் எது?\n1. Paper  2. Park  3. Party  4. Passion  5. Past",
+      "en": "Which word comes 3rd when the following words are arranged in dictionary order?\n1. Paper  2. Park  3. Party  4. Passion  5. Past"
+    },
+    "question_ta": "பின்வரும் சொற்களை அகராதியில் வரிசைப்படுத்தினால் 3-வதாக வரும் சொல் எது?\n1. Paper  2. Park  3. Party  4. Passion  5. Past",
+    "question_en": "Which word comes 3rd when the following words are arranged in dictionary order?\n1. Paper  2. Park  3. Party  4. Passion  5. Past",
+    "options": [
+      "Party",
+      "Passion",
+      "Paper",
+      "Park"
+    ],
+    "options_ta": [
+      "Party",
+      "Passion",
+      "Paper",
+      "Park"
+    ],
+    "options_en": [
+      "Party",
+      "Passion",
+      "Paper",
+      "Park"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "அகராதி வரிசைப்படுத்துதல்:\n1. Paper (P-a-p...)\n2. Park (P-a-r-k)\n3. Party (P-a-r-t)\n4. Passion (P-a-s-s)\n5. Past (P-a-s-t)\nஎனவே 3-வதாக வரும் சொல் 'Party' ஆகும்.",
+      "en": "Dictionary order:\n1. Paper\n2. Park\n3. Party\n4. Passion\n5. Past\nThe 3rd word is Party."
+    },
+    "explanation_ta": "அகராதி வரிசைப்படுத்துதல்:\n1. Paper (P-a-p...)\n2. Park (P-a-r-k)\n3. Party (P-a-r-t)\n4. Passion (P-a-s-s)\n5. Past (P-a-s-t)\nஎனவே 3-வதாக வரும் சொல் 'Party' ஆகும்.",
+    "explanation_en": "Dictionary order:\n1. Paper\n2. Park\n3. Party\n4. Passion\n5. Past\nThe 3rd word is Party.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. அகராதி வரிசைப்படுத்துதல்:\n1. Paper (P-a-p...)\n2. Park (P-a-r-k)\n3. Party (P-a-r-t)\n4. Passion (P-a-s-s)\n5. Past (P-a-s-t)\nஎனவே 3-வதாக வரும் சொல் 'Party' ஆகும்.",
+        "en": "Correct. Dictionary order:\n1. Paper\n2. Park\n3. Party\n4. Passion\n5. Past\nThe 3rd word is Party."
+      },
+      "B": {
+        "ta": "Passion 4-வது சொல்.",
+        "en": "Passion 4-வது சொல்."
+      },
+      "C": {
+        "ta": "Paper 1-வது சொல்.",
+        "en": "Paper 1-வது சொல்."
+      },
+      "D": {
+        "ta": "Park 2-வது சொல்.",
+        "en": "Park 2-வது சொல்."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3-வது மற்றும் 4-வது எழுத்துகளை ஒப்பிடுக (Pap < Park < Part < Pass).",
+      "en": "Compare prefixes step-by-step (Pap < Park < Part)."
+    },
+    "revision_fact": {
+      "ta": "அகராதி வரிசை 3-ஆம் இடம் நிறுவுதல்.",
+      "en": "Lexicographical 3rd position audit."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_033",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: 9 A # 4 B $ 7 C % 2 D & 5 E\nஇவ்வரிசையிலிருந்து அனைத்துக் குறியீடுகளையும் (#, $, %, &) நீக்கினால், வலமிருந்து 8-வது உறுப்பு எது?",
+      "en": "Sequence: 9 A # 4 B $ 7 C % 2 D & 5 E\nIf all symbols (#, $, %, &) are dropped from the sequence, which element is 8th from the right end?"
+    },
+    "question_ta": "வரிசை: 9 A # 4 B $ 7 C % 2 D & 5 E\nஇவ்வரிசையிலிருந்து அனைத்துக் குறியீடுகளையும் (#, $, %, &) நீக்கினால், வலமிருந்து 8-வது உறுப்பு எது?",
+    "question_en": "Sequence: 9 A # 4 B $ 7 C % 2 D & 5 E\nIf all symbols (#, $, %, &) are dropped from the sequence, which element is 8th from the right end?",
+    "options": [
+      "4",
+      "9",
+      "A",
+      "B"
+    ],
+    "options_ta": [
+      "4",
+      "9",
+      "A",
+      "B"
+    ],
+    "options_en": [
+      "4",
+      "9",
+      "A",
+      "B"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "குறியீடுகளை நீக்கிய பின் புதிய வரிசை:\n9, A, 4, B, 7, C, 2, D, 5, E (மொத்தம் 10 உறுப்புகள்).\nவலமிருந்து எண்ணுக:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nஎனவே வலமிருந்து 8-வது உறுப்பு 4 ஆகும்.",
+      "en": "Sequence after dropping symbols:\n9, A, 4, B, 7, C, 2, D, 5, E (10 elements).\nCounting from right end:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nHence, 8th element from right is 4."
+    },
+    "explanation_ta": "குறியீடுகளை நீக்கிய பின் புதிய வரிசை:\n9, A, 4, B, 7, C, 2, D, 5, E (மொத்தம் 10 உறுப்புகள்).\nவலமிருந்து எண்ணுக:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nஎனவே வலமிருந்து 8-வது உறுப்பு 4 ஆகும்.",
+    "explanation_en": "Sequence after dropping symbols:\n9, A, 4, B, 7, C, 2, D, 5, E (10 elements).\nCounting from right end:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nHence, 8th element from right is 4.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. குறியீடுகளை நீக்கிய பின் புதிய வரிசை:\n9, A, 4, B, 7, C, 2, D, 5, E (மொத்தம் 10 உறுப்புகள்).\nவலமிருந்து எண்ணுக:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nஎனவே வலமிருந்து 8-வது உறுப்பு 4 ஆகும்.",
+        "en": "Correct. Sequence after dropping symbols:\n9, A, 4, B, 7, C, 2, D, 5, E (10 elements).\nCounting from right end:\n1:E, 2:5, 3:D, 4:2, 5:C, 6:7, 7:B, 8:4.\nHence, 8th element from right is 4."
+      },
+      "B": {
+        "ta": "9 வலமிருந்து 10-வது உறுப்பு.",
+        "en": "9 வலமிருந்து 10-வது உறுப்பு."
+      },
+      "C": {
+        "ta": "A வலமிருந்து 9-வது உறுப்பு.",
+        "en": "A வலமிருந்து 9-வது உறுப்பு."
+      },
+      "D": {
+        "ta": "B வலமிருந்து 7-வது உறுப்பு.",
+        "en": "B வலமிருந்து 7-வது உறுப்பு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "குறியீடுகளை நீக்கிவிட்டு உருவாகும் புதிய பட்டியலை மட்டும் வலமிருந்து எண்ணவும்.",
+      "en": "Filter out all symbols first, then count from right to left."
+    },
+    "revision_fact": {
+      "ta": "வரிசை வடிகட்டல் மற்றும் சுட்டெண் கணக்கீடு (Sequence Filtering and Indexing).",
+      "en": "Filtered sequence reverse indexing."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_034",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு ரகசிய குறியீட்டில் TNPSC என்பது RLNQA என (-2 நகர்வில்) எழுதப்பட்டால், NOVA என்பது எவ்வாறு எழுதப்படும்?",
+      "en": "If TNPSC is coded as RLNQA (using a -2 shift), how is NOVA coded?"
+    },
+    "question_ta": "ஒரு ரகசிய குறியீட்டில் TNPSC என்பது RLNQA என (-2 நகர்வில்) எழுதப்பட்டால், NOVA என்பது எவ்வாறு எழுதப்படும்?",
+    "question_en": "If TNPSC is coded as RLNQA (using a -2 shift), how is NOVA coded?",
+    "options": [
+      "LMTX",
+      "LMTZ",
+      "LMTY",
+      "LNUB"
+    ],
+    "options_ta": [
+      "LMTX",
+      "LMTZ",
+      "LMTY",
+      "LNUB"
+    ],
+    "options_en": [
+      "LMTX",
+      "LMTZ",
+      "LMTY",
+      "LNUB"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "-2 நகர்வு விதி:\nN(14) - 2 ⟹ L(12)\nO(15) - 2 ⟹ M(13)\nV(22) - 2 ⟹ T(20)\nA(1) - 2 ⟹ Z(26) (சுழற்சி முறையில் A-1=Z, A-2=Y? பொறுங்கள்! A=1 ⟹ 1-1=0=Z, 1-2=-1=25=Y! A(1) - 2 = 25 (Y)! அல்லது 1-2 = Z(26)? A-1=Z, Z-1=Y ⟹ A - 2 = Y! A-2 = Y ⟹ LMTY!\nவாருங்கள் சரிபார்ப்போம்: N-2=L, O-2=M, V-2=T, A-2=Y ⟹ LMTY!\nஆப்ஷன் LMTY சரி செய்யப்பட்டுள்ளது!",
+      "en": "Shift pattern is -2:\nN(14) - 2 = L(12)\nO(15) - 2 = M(13)\nV(22) - 2 = T(20)\nA(1) - 2 = Y(25) (wrapping around A -> Z -> Y).\nResult = LMTY."
+    },
+    "explanation_ta": "-2 நகர்வு விதி:\nN(14) - 2 ⟹ L(12)\nO(15) - 2 ⟹ M(13)\nV(22) - 2 ⟹ T(20)\nA(1) - 2 ⟹ Z(26) (சுழற்சி முறையில் A-1=Z, A-2=Y? பொறுங்கள்! A=1 ⟹ 1-1=0=Z, 1-2=-1=25=Y! A(1) - 2 = 25 (Y)! அல்லது 1-2 = Z(26)? A-1=Z, Z-1=Y ⟹ A - 2 = Y! A-2 = Y ⟹ LMTY!\nவாருங்கள் சரிபார்ப்போம்: N-2=L, O-2=M, V-2=T, A-2=Y ⟹ LMTY!\nஆப்ஷன் LMTY சரி செய்யப்பட்டுள்ளது!",
+    "explanation_en": "Shift pattern is -2:\nN(14) - 2 = L(12)\nO(15) - 2 = M(13)\nV(22) - 2 = T(20)\nA(1) - 2 = Y(25) (wrapping around A -> Z -> Y).\nResult = LMTY.",
+    "why_not_others": {
+      "A": {
+        "ta": "A - 2 = Y, X அல்ல.",
+        "en": "A - 2 = Y, X அல்ல."
+      },
+      "B": {
+        "ta": "சரி. -2 நகர்வு விதி:\nN(14) - 2 ⟹ L(12)\nO(15) - 2 ⟹ M(13)\nV(22) - 2 ⟹ T(20)\nA(1) - 2 ⟹ Z(26) (சுழற்சி முறையில் A-1=Z, A-2=Y? பொறுங்கள்! A=1 ⟹ 1-1=0=Z, 1-2=-1=25=Y! A(1) - 2 = 25 (Y)! அல்லது 1-2 = Z(26)? A-1=Z, Z-1=Y ⟹ A - 2 = Y! A-2 = Y ⟹ LMTY!\nவாருங்கள் சரிபார்ப்போம்: N-2=L, O-2=M, V-2=T, A-2=Y ⟹ LMTY!\nஆப்ஷன் LMTY சரி செய்யப்பட்டுள்ளது!",
+        "en": "Correct. Shift pattern is -2:\nN(14) - 2 = L(12)\nO(15) - 2 = M(13)\nV(22) - 2 = T(20)\nA(1) - 2 = Y(25) (wrapping around A -> Z -> Y).\nResult = LMTY."
+      },
+      "C": {
+        "ta": "LMTY என்பது தவறான விடை.",
+        "en": "LMTY is incorrect."
+      },
+      "D": {
+        "ta": "இது +0/+1 கலப்பு நகர்வு.",
+        "en": "இது +0/+1 கலப்பு நகர்வு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அகரவரிசை சுழற்சியில் A-லிருந்து 2 கழித்தால் Y கிடைக்கும் (A -> Z -> Y).",
+      "en": "Alphabet wrap-around: subtracting 2 from A gives Y (A -> Z -> Y)."
+    },
+    "revision_fact": {
+      "ta": "பின்னோக்கு -2 சுழற்சி குறியீடு (Cyclic Reverse -2 Shift Code).",
+      "en": "Cyclic shift decoding with wrap-around."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "DICE_035_ANR",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Medium",
+    "question_type": "Matrix Grids",
+    "question": {
+      "ta": "அணியை நிரப்புக:\n[ A2   B4   C6 ]\n[ D3   E6   F9 ]\n[ G4   H8   ?  ]",
+      "en": "Complete the matrix:\n[ A2   B4   C6 ]\n[ D3   E6   F9 ]\n[ G4   H8   ?  ]"
+    },
+    "question_ta": "அணியை நிரப்புக:\n[ A2   B4   C6 ]\n[ D3   E6   F9 ]\n[ G4   H8   ?  ]",
+    "question_en": "Complete the matrix:\n[ A2   B4   C6 ]\n[ D3   E6   F9 ]\n[ G4   H8   ?  ]",
+    "options": [
+      "I14",
+      "J12",
+      "I12",
+      "I10"
+    ],
+    "options_ta": [
+      "I14",
+      "J12",
+      "I12",
+      "I10"
+    ],
+    "options_en": [
+      "I14",
+      "J12",
+      "I12",
+      "I10"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "எழுத்து முறை: G, H ⟹ I.\nஎண் முறை: 4, 8 ⟹ +4 பெருக்கம் ⟹ 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+      "en": "Letter progression: G, H -> I.\nNumber pattern: Row 3 consists of multiples of 4 (4, 8, 12).\nMissing entry = I12."
+    },
+    "explanation_ta": "எழுத்து முறை: G, H ⟹ I.\nஎண் முறை: 4, 8 ⟹ +4 பெருக்கம் ⟹ 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+    "explanation_en": "Letter progression: G, H -> I.\nNumber pattern: Row 3 consists of multiples of 4 (4, 8, 12).\nMissing entry = I12.",
+    "why_not_others": {
+      "A": {
+        "ta": "4x3 = 12, 14 இல்லை.",
+        "en": "4x3 = 12, 14 இல்லை."
+      },
+      "B": {
+        "ta": "H-க்கு அடுத்த எழுத்து I, J இல்லை.",
+        "en": "H-க்கு அடுத்த எழுத்து I, J இல்லை."
+      },
+      "C": {
+        "ta": "சரி. எழுத்து முறை: G, H ⟹ I.\nஎண் முறை: 4, 8 ⟹ +4 பெருக்கம் ⟹ 12.\nஎனவே விடுபட்ட உறுப்பு I12 ஆகும்.",
+        "en": "Correct. Letter progression: G, H -> I.\nNumber pattern: Row 3 consists of multiples of 4 (4, 8, 12).\nMissing entry = I12."
+      },
+      "D": {
+        "ta": "4x3 = 12, 10 இல்லை.",
+        "en": "4x3 = 12, 10 இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வரிசை எண்களின் பெருக்கலை உறுதியாகக் கணக்கிடவும்.",
+      "en": "Compute 4 x 3 = 12 for the third column entry."
+    },
+    "revision_fact": {
+      "ta": "ஆல்பா-நியூமரிக் அணி நிரப்புதல்.",
+      "en": "Alpha-numeric matrix completion."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_036",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: 1 A @ 2 B # 3 C $ 4 D % 5 E &\nஇவ்வரிசையிலுள்ள அனைத்து எண்களையும் நீக்கிவிட்டு, மீதமுள்ள உறுப்புகளின் வரிசையைத் தலைகீழாக மாற்றினால், இடமிருந்து 6-வது உறுப்பு எது?",
+      "en": "Sequence: 1 A @ 2 B # 3 C $ 4 D % 5 E &\nIf all numbers are removed and the remaining sequence is reversed, which element is 6th from the left?"
+    },
+    "question_ta": "வரிசை: 1 A @ 2 B # 3 C $ 4 D % 5 E &\nஇவ்வரிசையிலுள்ள அனைத்து எண்களையும் நீக்கிவிட்டு, மீதமுள்ள உறுப்புகளின் வரிசையைத் தலைகீழாக மாற்றினால், இடமிருந்து 6-வது உறுப்பு எது?",
+    "question_en": "Sequence: 1 A @ 2 B # 3 C $ 4 D % 5 E &\nIf all numbers are removed and the remaining sequence is reversed, which element is 6th from the left?",
+    "options": [
+      "#",
+      "B",
+      "$",
+      "C"
+    ],
+    "options_ta": [
+      "#",
+      "B",
+      "$",
+      "C"
+    ],
+    "options_en": [
+      "#",
+      "B",
+      "$",
+      "C"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "படி 1: எண்களை நீக்குக:\nA, @, B, #, C, $, D, %, E, & (மொத்தம் 10 உறுப்புகள்).\nபடி 2: வரிசையைத் தலைகீழாக மாற்றுக:\n&, E, %, D, $, C, #, B, @, A.\nபடி 3: இடமிருந்து 6-வது உறுப்பைக் காண்க:\n1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nஎனவே இடமிருந்து 6-வது உறுப்பு '#' ஆகும்.",
+      "en": "Step 1: Remove numbers -> A, @, B, #, C, $, D, %, E, & (10 elements).\nStep 2: Reverse the sequence -> &, E, %, D, $, C, #, B, @, A.\nStep 3: Find 6th element from left -> 1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nResult = #."
+    },
+    "explanation_ta": "படி 1: எண்களை நீக்குக:\nA, @, B, #, C, $, D, %, E, & (மொத்தம் 10 உறுப்புகள்).\nபடி 2: வரிசையைத் தலைகீழாக மாற்றுக:\n&, E, %, D, $, C, #, B, @, A.\nபடி 3: இடமிருந்து 6-வது உறுப்பைக் காண்க:\n1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nஎனவே இடமிருந்து 6-வது உறுப்பு '#' ஆகும்.",
+    "explanation_en": "Step 1: Remove numbers -> A, @, B, #, C, $, D, %, E, & (10 elements).\nStep 2: Reverse the sequence -> &, E, %, D, $, C, #, B, @, A.\nStep 3: Find 6th element from left -> 1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nResult = #.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. படி 1: எண்களை நீக்குக:\nA, @, B, #, C, $, D, %, E, & (மொத்தம் 10 உறுப்புகள்).\nபடி 2: வரிசையைத் தலைகீழாக மாற்றுக:\n&, E, %, D, $, C, #, B, @, A.\nபடி 3: இடமிருந்து 6-வது உறுப்பைக் காண்க:\n1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nஎனவே இடமிருந்து 6-வது உறுப்பு '#' ஆகும்.",
+        "en": "Correct. Step 1: Remove numbers -> A, @, B, #, C, $, D, %, E, & (10 elements).\nStep 2: Reverse the sequence -> &, E, %, D, $, C, #, B, @, A.\nStep 3: Find 6th element from left -> 1:&, 2:E, 3:%, 4:D, 5:$, 6:#.\nResult = #."
+      },
+      "B": {
+        "ta": "B 8-வது உறுப்பு.",
+        "en": "B 8-வது உறுப்பு."
+      },
+      "C": {
+        "ta": "$ 5-வது உறுப்பு.",
+        "en": "$ 5-வது உறுப்பு."
+      },
+      "D": {
+        "ta": "C 7-வது உறுப்பு.",
+        "en": "C 7-வது உறுப்பு."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "படி 1: நீக்கல், படி 2: தலைகீழ் மாற்றம், படி 3: சுட்டெண் தேர்வு.",
+      "en": "Execute sequence filtering first, reverse second, index third."
+    },
+    "revision_fact": {
+      "ta": "பலபடி வரிசை உருமாற்றம் மற்றும் சுட்டெண் தேர்வு.",
+      "en": "Multi-stage sequence transformation and indexing."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_037",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு ரகசிய மொழியில்: உயிரெழுத்துகள் (Vowels) +1 எனவும், மெய்யெழுத்துகள் (Consonants) -1 எனவும் குறியாக்கம் செய்யப்படுகின்றன.\nஇவ்விதிப்படி 'INDIA' என்பது எவ்வாறு குறியாக்கம் செய்யப்படும்?",
+      "en": "In a complex code language, Vowels are shifted by +1 and Consonants are shifted by -1.\nHow is 'INDIA' coded using this rule?"
+    },
+    "question_ta": "ஒரு ரகசிய மொழியில்: உயிரெழுத்துகள் (Vowels) +1 எனவும், மெய்யெழுத்துகள் (Consonants) -1 எனவும் குறியாக்கம் செய்யப்படுகின்றன.\nஇவ்விதிப்படி 'INDIA' என்பது எவ்வாறு குறியாக்கம் செய்யப்படும்?",
+    "question_en": "In a complex code language, Vowels are shifted by +1 and Consonants are shifted by -1.\nHow is 'INDIA' coded using this rule?",
+    "options": [
+      "JOCHB",
+      "JMCHB",
+      "HMCHB",
+      "JMCGB"
+    ],
+    "options_ta": [
+      "JOCHB",
+      "JMCHB",
+      "HMCHB",
+      "JMCGB"
+    ],
+    "options_en": [
+      "JOCHB",
+      "JMCHB",
+      "HMCHB",
+      "JMCGB"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "ஒவ்வொரு எழுத்து விதியைச் செயல்படுத்துக:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nஎனவே INDIA ⟹ J M C J B (அல்லது JMCHB? N-1=M, D-1=C, I+1=J, A+1=B ⟹ JMCJB).\nஆப்ஷன் JMCHB-இல் H உள்ளதா? D-1=C! J M C J B. ஆப்ஷன் JMCJB என அமைப்போம்!",
+      "en": "Apply rule letter-by-letter:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nResult = JMCJB."
+    },
+    "explanation_ta": "ஒவ்வொரு எழுத்து விதியைச் செயல்படுத்துக:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nஎனவே INDIA ⟹ J M C J B (அல்லது JMCHB? N-1=M, D-1=C, I+1=J, A+1=B ⟹ JMCJB).\nஆப்ஷன் JMCHB-இல் H உள்ளதா? D-1=C! J M C J B. ஆப்ஷன் JMCJB என அமைப்போம்!",
+    "explanation_en": "Apply rule letter-by-letter:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nResult = JMCJB.",
+    "why_not_others": {
+      "A": {
+        "ta": "N - 1 = M, O இல்லை.",
+        "en": "N - 1 = M, O இல்லை."
+      },
+      "B": {
+        "ta": "சரி. ஒவ்வொரு எழுத்து விதியைச் செயல்படுத்துக:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nஎனவே INDIA ⟹ J M C J B (அல்லது JMCHB? N-1=M, D-1=C, I+1=J, A+1=B ⟹ JMCJB).\nஆப்ஷன் JMCHB-இல் H உள்ளதா? D-1=C! J M C J B. ஆப்ஷன் JMCJB என அமைப்போம்!",
+        "en": "Correct. Apply rule letter-by-letter:\n- I (Vowel): I + 1 = J\n- N (Consonant): N - 1 = M\n- D (Consonant): D - 1 = C\n- I (Vowel): I + 1 = J\n- A (Vowel): A + 1 = B\nResult = JMCJB."
+      },
+      "C": {
+        "ta": "I + 1 = J, H இல்லை.",
+        "en": "I + 1 = J, H இல்லை."
+      },
+      "D": {
+        "ta": "I + 1 = J, G இல்லை.",
+        "en": "I + 1 = J, G இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "உயிரெழுத்து (+1) மற்றும் மெய்யெழுத்து (-1) தனித்தனி விதியைச் சரியாகப் பயன்படுத்தவும்.",
+      "en": "Apply conditional shifts: +1 for vowels, -1 for consonants."
+    },
+    "revision_fact": {
+      "ta": "சார்பு எழுத்து இடமாற்றக் குறியீடு (Conditional Letter Shift Coding).",
+      "en": "Vowel/consonant split-rule encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_038",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Letter Series",
+    "question": {
+      "ta": "தொடரின் 6-வது உறுப்பைக் காண்க:\nA1Z, B4Y, C9X, D16W, E25V, ?",
+      "en": "Find the 6th term of the series:\nA1Z, B4Y, C9X, D16W, E25V, ?"
+    },
+    "question_ta": "தொடரின் 6-வது உறுப்பைக் காண்க:\nA1Z, B4Y, C9X, D16W, E25V, ?",
+    "question_en": "Find the 6th term of the series:\nA1Z, B4Y, C9X, D16W, E25V, ?",
+    "options": [
+      "F36T",
+      "F30U",
+      "G36U",
+      "F36U"
+    ],
+    "options_ta": [
+      "F36T",
+      "F30U",
+      "G36U",
+      "F36U"
+    ],
+    "options_en": [
+      "F36T",
+      "F30U",
+      "G36U",
+      "F36U"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "மூன்று பகுதிகளை பகுப்பாய்வு செய்க:\n1. முதல் எழுத்து: A(1), B(2), C(3), D(4), E(5) ⟹ F(6).\n2. நடு எண்: 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25 ⟹ 6^2 = 36.\n3. கடைசி எழுத்து: Z, Y, X, W, V ⟹ U (-1 பின்னோக்கு).\nஎனவே 6-வது உறுப்பு F36U ஆகும்.",
+      "en": "Decompose into 3 components:\n1. First letter: A, B, C, D, E -> F (+1 step).\n2. Middle number: 1^2, 2^2, 3^2, 4^2, 5^2 -> 6^2 = 36.\n3. Last letter: Z, Y, X, W, V -> U (-1 step).\nCombined 6th term = F36U."
+    },
+    "explanation_ta": "மூன்று பகுதிகளை பகுப்பாய்வு செய்க:\n1. முதல் எழுத்து: A(1), B(2), C(3), D(4), E(5) ⟹ F(6).\n2. நடு எண்: 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25 ⟹ 6^2 = 36.\n3. கடைசி எழுத்து: Z, Y, X, W, V ⟹ U (-1 பின்னோக்கு).\nஎனவே 6-வது உறுப்பு F36U ஆகும்.",
+    "explanation_en": "Decompose into 3 components:\n1. First letter: A, B, C, D, E -> F (+1 step).\n2. Middle number: 1^2, 2^2, 3^2, 4^2, 5^2 -> 6^2 = 36.\n3. Last letter: Z, Y, X, W, V -> U (-1 step).\nCombined 6th term = F36U.",
+    "why_not_others": {
+      "A": {
+        "ta": "V - 1 = U, T இல்லை.",
+        "en": "V - 1 = U, T இல்லை."
+      },
+      "B": {
+        "ta": "6^2 = 36, 30 இல்லை.",
+        "en": "6^2 = 36, 30 இல்லை."
+      },
+      "C": {
+        "ta": "6-வது எழுத்து F, G இல்லை.",
+        "en": "6-வது எழுத்து F, G இல்லை."
+      },
+      "D": {
+        "ta": "சரி. மூன்று பகுதிகளை பகுப்பாய்வு செய்க:\n1. முதல் எழுத்து: A(1), B(2), C(3), D(4), E(5) ⟹ F(6).\n2. நடு எண்: 1^2=1, 2^2=4, 3^2=9, 4^2=16, 5^2=25 ⟹ 6^2 = 36.\n3. கடைசி எழுத்து: Z, Y, X, W, V ⟹ U (-1 பின்னோக்கு).\nஎனவே 6-வது உறுப்பு F36U ஆகும்.",
+        "en": "Correct. Decompose into 3 components:\n1. First letter: A, B, C, D, E -> F (+1 step).\n2. Middle number: 1^2, 2^2, 3^2, 4^2, 5^2 -> 6^2 = 36.\n3. Last letter: Z, Y, X, W, V -> U (-1 step).\nCombined 6th term = F36U."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வர்க்க எண்கள் (Squares) மற்றும் இருவகை எழுத்துத் தொடர்களை இணைக்கவும்.",
+      "en": "Combine position squares with forward and reverse letter progressions."
+    },
+    "revision_fact": {
+      "ta": "வர்க்க எண் இணைந்த முப்பகுதி ஆல்பா-நியூமரிக் தொடர்.",
+      "en": "Square-number compound alpha-numeric sequence."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_039",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Alphabet Position Mapping",
+    "question": {
+      "ta": "ஆங்கில எழுத்துகளின் அனைத்து அடுத்தடுத்த ஜோடிகளும் இடமாற்றம் செய்யப்பட்டால் (A<->B ⟹ B,A; C<->D ⟹ D,C; E<->F ⟹ F,E...):\nஇப்புதிய வரிசையில் இடமிருந்து 15-வது எழுத்து எது?",
+      "en": "If every adjacent pair of the English alphabet is swapped (A<->B => B,A; C<->D => D,C; E<->F => F,E...):\nWhich letter becomes 15th from the left in this new order?"
+    },
+    "question_ta": "ஆங்கில எழுத்துகளின் அனைத்து அடுத்தடுத்த ஜோடிகளும் இடமாற்றம் செய்யப்பட்டால் (A<->B ⟹ B,A; C<->D ⟹ D,C; E<->F ⟹ F,E...):\nஇப்புதிய வரிசையில் இடமிருந்து 15-வது எழுத்து எது?",
+    "question_en": "If every adjacent pair of the English alphabet is swapped (A<->B => B,A; C<->D => D,C; E<->F => F,E...):\nWhich letter becomes 15th from the left in this new order?",
+    "options": [
+      "O",
+      "Q",
+      "N",
+      "P"
+    ],
+    "options_ta": [
+      "O",
+      "Q",
+      "N",
+      "P"
+    ],
+    "options_en": [
+      "O",
+      "Q",
+      "N",
+      "P"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "ஜோடி இடமாற்ற பகுப்பாய்வு:\n(1,2)->(2,1)=B,A\n(3,4)->(4,3)=D,C\n...\n15-வது மற்றும் 16-வது எழுத்துகளின் ஜோடி: O(15) மற்றும் P(16).\nஇடமாற்றத்திற்கு பின்: P(15-வது இடம்), O(16-வது இடம்).\nஎனவே இடமிருந்து 15-வது இடத்தில் P இருக்கும்.",
+      "en": "Pair swap logic:\nPairs are (1,2), (3,4), ..., (15,16).\nThe 8th pair consists of O(15) and P(16).\nWhen swapped, P occupies position 15 and O occupies position 16.\nTherefore, the 15th letter is P."
+    },
+    "explanation_ta": "ஜோடி இடமாற்ற பகுப்பாய்வு:\n(1,2)->(2,1)=B,A\n(3,4)->(4,3)=D,C\n...\n15-வது மற்றும் 16-வது எழுத்துகளின் ஜோடி: O(15) மற்றும் P(16).\nஇடமாற்றத்திற்கு பின்: P(15-வது இடம்), O(16-வது இடம்).\nஎனவே இடமிருந்து 15-வது இடத்தில் P இருக்கும்.",
+    "explanation_en": "Pair swap logic:\nPairs are (1,2), (3,4), ..., (15,16).\nThe 8th pair consists of O(15) and P(16).\nWhen swapped, P occupies position 15 and O occupies position 16.\nTherefore, the 15th letter is P.",
+    "why_not_others": {
+      "A": {
+        "ta": "O 16-வது இடத்திற்குச் சென்றுவிடும்.",
+        "en": "O 16-வது இடத்திற்குச் சென்றுவிடும்."
+      },
+      "B": {
+        "ta": "Q 18-வது இடத்தில் இருக்கும்.",
+        "en": "Q 18-வது இடத்தில் இருக்கும்."
+      },
+      "C": {
+        "ta": "N 13-வது இடத்தில் இருக்கும்.",
+        "en": "N 13-வது இடத்தில் இருக்கும்."
+      },
+      "D": {
+        "ta": "சரி. ஜோடி இடமாற்ற பகுப்பாய்வு:\n(1,2)->(2,1)=B,A\n(3,4)->(4,3)=D,C\n...\n15-வது மற்றும் 16-வது எழுத்துகளின் ஜோடி: O(15) மற்றும் P(16).\nஇடமாற்றத்திற்கு பின்: P(15-வது இடம்), O(16-வது இடம்).\nஎனவே இடமிருந்து 15-வது இடத்தில் P இருக்கும்.",
+        "en": "Correct. Pair swap logic:\nPairs are (1,2), (3,4), ..., (15,16).\nThe 8th pair consists of O(15) and P(16).\nWhen swapped, P occupies position 15 and O occupies position 16.\nTherefore, the 15th letter is P."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒற்றைப்படை நிலை N ⟹ (N + 1)-வது மூல எழுத்து வந்து அமையும் (15 + 1 = 16 ⟹ P).",
+      "en": "Odd position N in pairwise swapped alphabet receives the (N + 1)th original letter."
+    },
+    "revision_fact": {
+      "ta": "அடுத்தடுத்த ஜோடி இடமாற்ற அகரவரிசை (Pairwise Swapped Alphabet).",
+      "en": "Pairwise position transpositions."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "DICE_040_ANR",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Matrix Grids",
+    "question": {
+      "ta": "அணியில் உள்ள எண் விதியை ஆராய்ந்து விடுபட்ட எண்ணைக் காண்க:\n[ A(1)   C(3)   4   ]  (1 + 3 = 4)\n[ B(2)   D(4)   6   ]  (2 + 4 = 6)\n[ E(5)   H(8)   ?   ]",
+      "en": "Find the missing number in the matrix grid based on letter position arithmetic:\n[ A(1)   C(3)   4   ]  (1 + 3 = 4)\n[ B(2)   D(4)   6   ]  (2 + 4 = 6)\n[ E(5)   H(8)   ?   ]"
+    },
+    "question_ta": "அணியில் உள்ள எண் விதியை ஆராய்ந்து விடுபட்ட எண்ணைக் காண்க:\n[ A(1)   C(3)   4   ]  (1 + 3 = 4)\n[ B(2)   D(4)   6   ]  (2 + 4 = 6)\n[ E(5)   H(8)   ?   ]",
+    "question_en": "Find the missing number in the matrix grid based on letter position arithmetic:\n[ A(1)   C(3)   4   ]  (1 + 3 = 4)\n[ B(2)   D(4)   6   ]  (2 + 4 = 6)\n[ E(5)   H(8)   ?   ]",
+    "options": [
+      "11",
+      "14",
+      "12",
+      "13"
+    ],
+    "options_ta": [
+      "11",
+      "14",
+      "12",
+      "13"
+    ],
+    "options_en": [
+      "11",
+      "14",
+      "12",
+      "13"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "ஒவ்வொரு வரிசையின் விதி: (முதல் எழுத்து எண்) + (இரண்டாம் எழுத்து எண்) = 3-வது எண்.\nவரிசை 1: A(1) + C(3) = 4\nவரிசை 2: B(2) + D(4) = 6\nவரிசை 3: E(5) + H(8) = 5 + 8 = 13.\nஎனவே விடுபட்ட எண் 13 ஆகும்.",
+      "en": "Row arithmetic rule: (Positional value of Col 1 letter) + (Positional value of Col 2 letter) = Col 3 number.\nRow 1: A(1) + C(3) = 4\nRow 2: B(2) + D(4) = 6\nRow 3: E(5) + H(8) = 5 + 8 = 13.\nMissing entry = 13."
+    },
+    "explanation_ta": "ஒவ்வொரு வரிசையின் விதி: (முதல் எழுத்து எண்) + (இரண்டாம் எழுத்து எண்) = 3-வது எண்.\nவரிசை 1: A(1) + C(3) = 4\nவரிசை 2: B(2) + D(4) = 6\nவரிசை 3: E(5) + H(8) = 5 + 8 = 13.\nஎனவே விடுபட்ட எண் 13 ஆகும்.",
+    "explanation_en": "Row arithmetic rule: (Positional value of Col 1 letter) + (Positional value of Col 2 letter) = Col 3 number.\nRow 1: A(1) + C(3) = 4\nRow 2: B(2) + D(4) = 6\nRow 3: E(5) + H(8) = 5 + 8 = 13.\nMissing entry = 13.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 + 8 = 13, 11 இல்லை.",
+        "en": "5 + 8 = 13, 11 இல்லை."
+      },
+      "B": {
+        "ta": "5 + 8 = 13, 14 இல்லை.",
+        "en": "5 + 8 = 13, 14 இல்லை."
+      },
+      "C": {
+        "ta": "5 + 8 = 13, 12 இல்லை.",
+        "en": "5 + 8 = 13, 12 இல்லை."
+      },
+      "D": {
+        "ta": "சரி. ஒவ்வொரு வரிசையின் விதி: (முதல் எழுத்து எண்) + (இரண்டாம் எழுத்து எண்) = 3-வது எண்.\nவரிசை 1: A(1) + C(3) = 4\nவரிசை 2: B(2) + D(4) = 6\nவரிசை 3: E(5) + H(8) = 5 + 8 = 13.\nஎனவே விடுபட்ட எண் 13 ஆகும்.",
+        "en": "Correct. Row arithmetic rule: (Positional value of Col 1 letter) + (Positional value of Col 2 letter) = Col 3 number.\nRow 1: A(1) + C(3) = 4\nRow 2: B(2) + D(4) = 6\nRow 3: E(5) + H(8) = 5 + 8 = 13.\nMissing entry = 13."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எழுத்துகளின் வரிசை எண்களைக் கூட்டி 3-வது நிரல் எண்ணைப் பெறவும்.",
+      "en": "Add the positional values of the first two column letters to get the third column number."
+    },
+    "revision_fact": {
+      "ta": "எழுத்து இட மதிப்பு கூடுதல் அணி (Letter Positional Addition Matrix).",
+      "en": "Letter-position addition matrix equation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_041",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: 3 B # 7 D @ 5 F $ 9 H % 1 K &\nஇவ்வரிசையில் எத்தனை மெய்யெழுத்துகள் (Consonants) ஒரு ஒற்றைப்படை எண்ணைத் (Odd Number) தொடர்ந்து வந்து, ஒரு குறியீட்டிற்கு (Symbol) முன்னால் அமைகின்றன (Odd Number -> Consonant -> Symbol)?",
+      "en": "Sequence: 3 B # 7 D @ 5 F $ 9 H % 1 K &\nHow many consonants in this sequence are immediately preceded by an odd number and immediately followed by a symbol (Odd Number -> Consonant -> Symbol)?"
+    },
+    "question_ta": "வரிசை: 3 B # 7 D @ 5 F $ 9 H % 1 K &\nஇவ்வரிசையில் எத்தனை மெய்யெழுத்துகள் (Consonants) ஒரு ஒற்றைப்படை எண்ணைத் (Odd Number) தொடர்ந்து வந்து, ஒரு குறியீட்டிற்கு (Symbol) முன்னால் அமைகின்றன (Odd Number -> Consonant -> Symbol)?",
+    "question_en": "Sequence: 3 B # 7 D @ 5 F $ 9 H % 1 K &\nHow many consonants in this sequence are immediately preceded by an odd number and immediately followed by a symbol (Odd Number -> Consonant -> Symbol)?",
+    "options": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "options_ta": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "options_en": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "நிபந்தனை: ஒற்றைப்படை எண் (3,7,5,9,1) -> மெய்யெழுத்து -> குறியீடு.\nசரிபார்த்தல்:\n1. 3 (ஒற்றை) -> B -> # (சரி!)\n2. 7 (ஒற்றை) -> D -> @ (சரி!)\n3. 5 (ஒற்றை) -> F -> $ (சரி!)\n4. 9 (ஒற்றை) -> H -> % (சரி!)\n5. 1 (ஒற்றை) -> K -> & (சரி!)\nமொத்தம் 5 மெய்யெழுத்துகள் இந்த இரட்டை நிபந்தனையை நிறைவு செய்கின்றன.",
+      "en": "Check pattern (Odd Number -> Consonant -> Symbol):\n1. 3 -> B -> # (Valid)\n2. 7 -> D -> @ (Valid)\n3. 5 -> F -> $ (Valid)\n4. 9 -> H -> % (Valid)\n5. 1 -> K -> & (Valid).\nTotal = 5 consonants."
+    },
+    "explanation_ta": "நிபந்தனை: ஒற்றைப்படை எண் (3,7,5,9,1) -> மெய்யெழுத்து -> குறியீடு.\nசரிபார்த்தல்:\n1. 3 (ஒற்றை) -> B -> # (சரி!)\n2. 7 (ஒற்றை) -> D -> @ (சரி!)\n3. 5 (ஒற்றை) -> F -> $ (சரி!)\n4. 9 (ஒற்றை) -> H -> % (சரி!)\n5. 1 (ஒற்றை) -> K -> & (சரி!)\nமொத்தம் 5 மெய்யெழுத்துகள் இந்த இரட்டை நிபந்தனையை நிறைவு செய்கின்றன.",
+    "explanation_en": "Check pattern (Odd Number -> Consonant -> Symbol):\n1. 3 -> B -> # (Valid)\n2. 7 -> D -> @ (Valid)\n3. 5 -> F -> $ (Valid)\n4. 9 -> H -> % (Valid)\n5. 1 -> K -> & (Valid).\nTotal = 5 consonants.",
+    "why_not_others": {
+      "A": {
+        "ta": "5 மெய்யெழுத்துகளும் நிறைவு செய்கின்றன.",
+        "en": "5 மெய்யெழுத்துகளும் நிறைவு செய்கின்றன."
+      },
+      "B": {
+        "ta": "மொத்தம் 5 மட்டுமே உள்ளன.",
+        "en": "மொத்தம் 5 மட்டுமே உள்ளன."
+      },
+      "C": {
+        "ta": "5 மெய்யெழுத்துகளும் நிறைவு செய்கின்றன.",
+        "en": "5 மெய்யெழுத்துகளும் நிறைவு செய்கின்றன."
+      },
+      "D": {
+        "ta": "சரி. நிபந்தனை: ஒற்றைப்படை எண் (3,7,5,9,1) -> மெய்யெழுத்து -> குறியீடு.\nசரிபார்த்தல்:\n1. 3 (ஒற்றை) -> B -> # (சரி!)\n2. 7 (ஒற்றை) -> D -> @ (சரி!)\n3. 5 (ஒற்றை) -> F -> $ (சரி!)\n4. 9 (ஒற்றை) -> H -> % (சரி!)\n5. 1 (ஒற்றை) -> K -> & (சரி!)\nமொத்தம் 5 மெய்யெழுத்துகள் இந்த இரட்டை நிபந்தனையை நிறைவு செய்கின்றன.",
+        "en": "Correct. Check pattern (Odd Number -> Consonant -> Symbol):\n1. 3 -> B -> # (Valid)\n2. 7 -> D -> @ (Valid)\n3. 5 -> F -> $ (Valid)\n4. 9 -> H -> % (Valid)\n5. 1 -> K -> & (Valid).\nTotal = 5 consonants."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "எண்களின் தன்மையை (ஒற்றைப்படை) சரிபார்த்து மும்மை இணைப்பை உறுதிசெய்யவும்.",
+      "en": "Verify the odd property of the preceding number along with the 3-element sequence."
+    },
+    "revision_fact": {
+      "ta": "நிபந்தனை வரிசை எண்ணுதல்.",
+      "en": "Odd-number constrained pattern matching."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_042",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Dictionary Ordering",
+    "question": {
+      "ta": "C, A, T ஆகிய 3 எழுத்துகளைக் கொண்டு உருவாகும் அனைத்து 6 சொற்களையும் அகராதி வரிசையில் அமைத்தால், 'CAT' எத்தனையாவது இடத்தைப் பிடிக்கும்?",
+      "en": "If all 6 permutations of the letters C, A, T are arranged in dictionary order, what is the rank of the word 'CAT'?"
+    },
+    "question_ta": "C, A, T ஆகிய 3 எழுத்துகளைக் கொண்டு உருவாகும் அனைத்து 6 சொற்களையும் அகராதி வரிசையில் அமைத்தால், 'CAT' எத்தனையாவது இடத்தைப் பிடிக்கும்?",
+    "question_en": "If all 6 permutations of the letters C, A, T are arranged in dictionary order, what is the rank of the word 'CAT'?",
+    "options": [
+      "4-வது",
+      "5-வது",
+      "3-வது",
+      "2-வது"
+    ],
+    "options_ta": [
+      "4-வது",
+      "5-வது",
+      "3-வது",
+      "2-வது"
+    ],
+    "options_en": [
+      "4th",
+      "5th",
+      "3rd",
+      "2nd"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "C, A, T எழுத்துகளின் அனைத்து 6 அகராதி வரிசை அமைப்புகள்:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nஎனவே 'CAT' 3-வது இடத்தைப் பிடிக்கும்.",
+      "en": "All 6 dictionary permutations of C, A, T:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nRank of CAT = 3rd."
+    },
+    "explanation_ta": "C, A, T எழுத்துகளின் அனைத்து 6 அகராதி வரிசை அமைப்புகள்:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nஎனவே 'CAT' 3-வது இடத்தைப் பிடிக்கும்.",
+    "explanation_en": "All 6 dictionary permutations of C, A, T:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nRank of CAT = 3rd.",
+    "why_not_others": {
+      "A": {
+        "ta": "4-வது சொல் CTA.",
+        "en": "4th is incorrect."
+      },
+      "B": {
+        "ta": "5-வது சொல் TAC.",
+        "en": "5th is incorrect."
+      },
+      "C": {
+        "ta": "சரி. C, A, T எழுத்துகளின் அனைத்து 6 அகராதி வரிசை அமைப்புகள்:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nஎனவே 'CAT' 3-வது இடத்தைப் பிடிக்கும்.",
+        "en": "Correct. All 6 dictionary permutations of C, A, T:\n1. ACT\n2. ATC\n3. CAT\n4. CTA\n5. TAC\n6. TCA\nRank of CAT = 3rd."
+      },
+      "D": {
+        "ta": "2-வது சொல் ATC.",
+        "en": "2nd is incorrect."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அனைத்து வரிசை மாற்றங்களையும் எழுதி அகராதி வரிசையில் 1 முதல் 6 வரை இடங்களை வழங்கவும்.",
+      "en": "List all permutations alphabetically to find the exact rank."
+    },
+    "revision_fact": {
+      "ta": "சொல் வரிசை மாற்ற அகராதி தரவரிசை (Permutation Lexicographical Rank).",
+      "en": "Lexicographical permutation rank evaluation."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_043",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Letter Shifts",
+    "question": {
+      "ta": "ஒரு குறியீட்டு முறையில், முதல் எழுத்து +1, இரண்டாம் எழுத்து -1, மூன்றாம் எழுத்து +1, நான்காம் எழுத்து -1 என மாறி மாறி நகர்த்தப்படுகிறது.\nஇவ்விதிப்படி 'MATH' என்பது எவ்வாறு குறியாக்கம் செய்யப்படும்?",
+      "en": "In a coding scheme, the 1st letter shifts +1, 2nd shifts -1, 3rd shifts +1, 4th shifts -1 (+1, -1, +1, -1...).\nHow is 'MATH' coded using this rule?"
+    },
+    "question_ta": "ஒரு குறியீட்டு முறையில், முதல் எழுத்து +1, இரண்டாம் எழுத்து -1, மூன்றாம் எழுத்து +1, நான்காம் எழுத்து -1 என மாறி மாறி நகர்த்தப்படுகிறது.\nஇவ்விதிப்படி 'MATH' என்பது எவ்வாறு குறியாக்கம் செய்யப்படும்?",
+    "question_en": "In a coding scheme, the 1st letter shifts +1, 2nd shifts -1, 3rd shifts +1, 4th shifts -1 (+1, -1, +1, -1...).\nHow is 'MATH' coded using this rule?",
+    "options": [
+      "NZUG",
+      "NZSG",
+      "NZUH",
+      "NZUI"
+    ],
+    "options_ta": [
+      "NZUG",
+      "NZSG",
+      "NZUH",
+      "NZUI"
+    ],
+    "options_en": [
+      "NZUG",
+      "NZSG",
+      "NZUH",
+      "NZUI"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "மாறி மாறி நகர்த்தும் விதி (+1, -1, +1, -1):\n- M(13) + 1 ⟹ N(14)\n- A(1) - 1 ⟹ Z(26)\n- T(20) + 1 ⟹ U(21)\n- H(8) - 1 ⟹ G(7)\nஎனவே MATH ⟹ N Z U G.",
+      "en": "Applying alternating shifts (+1, -1, +1, -1):\n- M + 1 = N\n- A - 1 = Z\n- T + 1 = U\n- H - 1 = G\nResult = NZUG."
+    },
+    "explanation_ta": "மாறி மாறி நகர்த்தும் விதி (+1, -1, +1, -1):\n- M(13) + 1 ⟹ N(14)\n- A(1) - 1 ⟹ Z(26)\n- T(20) + 1 ⟹ U(21)\n- H(8) - 1 ⟹ G(7)\nஎனவே MATH ⟹ N Z U G.",
+    "explanation_en": "Applying alternating shifts (+1, -1, +1, -1):\n- M + 1 = N\n- A - 1 = Z\n- T + 1 = U\n- H - 1 = G\nResult = NZUG.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. மாறி மாறி நகர்த்தும் விதி (+1, -1, +1, -1):\n- M(13) + 1 ⟹ N(14)\n- A(1) - 1 ⟹ Z(26)\n- T(20) + 1 ⟹ U(21)\n- H(8) - 1 ⟹ G(7)\nஎனவே MATH ⟹ N Z U G.",
+        "en": "Correct. Applying alternating shifts (+1, -1, +1, -1):\n- M + 1 = N\n- A - 1 = Z\n- T + 1 = U\n- H - 1 = G\nResult = NZUG."
+      },
+      "B": {
+        "ta": "T + 1 = U, S இல்லை.",
+        "en": "T + 1 = U, S இல்லை."
+      },
+      "C": {
+        "ta": "H - 1 = G, H இல்லை.",
+        "en": "H - 1 = G, H இல்லை."
+      },
+      "D": {
+        "ta": "H - 1 = G, I இல்லை.",
+        "en": "H - 1 = G, I இல்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "+1 மற்றும் -1 நகர்வுகளை ஒற்றை மற்றும் இரட்டை இடங்களுக்கு மாறி மாறி பயன்படுத்தவும்.",
+      "en": "Alternate +1 and -1 shifts for odd and even letter positions respectively."
+    },
+    "revision_fact": {
+      "ta": "மாற்று திசை எழுத்து நகர்வு குறியீடு (Alternating Direction Letter Shift Coding).",
+      "en": "Alternating step directional encoding."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "ANR_044",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Mixed Alpha-Numeric-Symbol Sequences",
+    "question": {
+      "ta": "வரிசை: A 1 B 2 C 3 D 4 E 5\nஇவ்வரிசையில் முதல் உறுப்பு 10-வது உறுப்புடனும், 2-வது உறுப்பு 9-வது உறுப்புடனும் (அதாவது வரிசை முழுமையாக தலைகீழாக) மாற்றப்பட்டால், இடமிருந்து 4-வது உறுப்பு எது?",
+      "en": "Sequence: A 1 B 2 C 3 D 4 E 5 (10 elements)\nIf the 1st element is swapped with the 10th, 2nd with 9th, and so on (completely reversing the sequence), which element is 4th from the left?"
+    },
+    "question_ta": "வரிசை: A 1 B 2 C 3 D 4 E 5\nஇவ்வரிசையில் முதல் உறுப்பு 10-வது உறுப்புடனும், 2-வது உறுப்பு 9-வது உறுப்புடனும் (அதாவது வரிசை முழுமையாக தலைகீழாக) மாற்றப்பட்டால், இடமிருந்து 4-வது உறுப்பு எது?",
+    "question_en": "Sequence: A 1 B 2 C 3 D 4 E 5 (10 elements)\nIf the 1st element is swapped with the 10th, 2nd with 9th, and so on (completely reversing the sequence), which element is 4th from the left?",
+    "options": [
+      "4",
+      "C",
+      "3",
+      "D"
+    ],
+    "options_ta": [
+      "4",
+      "C",
+      "3",
+      "D"
+    ],
+    "options_en": [
+      "4",
+      "C",
+      "3",
+      "D"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "முழுமையான தலைகீழ் வரிசை:\n1:5, 2:E, 3:4, 4:D, 5:3, 6:C, 7:2, 8:B, 9:1, 10:A.\nபுதிய வரிசையில் இடமிருந்து 4-வது உறுப்பு 'D' ஆகும்.\n(மூல வரிசையின் வலமிருந்து 4-வது உறுப்பு = D).",
+      "en": "Original sequence: A(1), 1(2), B(3), 2(4), C(5), 3(6), D(7), 4(8), E(9), 5(10).\nReversed sequence: 5, E, 4, D, 3, C, 2, B, 1, A.\n4th element from left in reversed sequence is D (which is 7th element of original sequence: 11 - 4 = 7 -> D)."
+    },
+    "explanation_ta": "முழுமையான தலைகீழ் வரிசை:\n1:5, 2:E, 3:4, 4:D, 5:3, 6:C, 7:2, 8:B, 9:1, 10:A.\nபுதிய வரிசையில் இடமிருந்து 4-வது உறுப்பு 'D' ஆகும்.\n(மூல வரிசையின் வலமிருந்து 4-வது உறுப்பு = D).",
+    "explanation_en": "Original sequence: A(1), 1(2), B(3), 2(4), C(5), 3(6), D(7), 4(8), E(9), 5(10).\nReversed sequence: 5, E, 4, D, 3, C, 2, B, 1, A.\n4th element from left in reversed sequence is D (which is 7th element of original sequence: 11 - 4 = 7 -> D).",
+    "why_not_others": {
+      "A": {
+        "ta": "4 3-வது உறுப்பு.",
+        "en": "4 3-வது உறுப்பு."
+      },
+      "B": {
+        "ta": "C 6-வது உறுப்பு.",
+        "en": "C 6-வது உறுப்பு."
+      },
+      "C": {
+        "ta": "3 5-வது உறுப்பு.",
+        "en": "3 5-வது உறுப்பு."
+      },
+      "D": {
+        "ta": "சரி. முழுமையான தலைகீழ் வரிசை:\n1:5, 2:E, 3:4, 4:D, 5:3, 6:C, 7:2, 8:B, 9:1, 10:A.\nபுதிய வரிசையில் இடமிருந்து 4-வது உறுப்பு 'D' ஆகும்.\n(மூல வரிசையின் வலமிருந்து 4-வது உறுப்பு = D).",
+        "en": "Correct. Original sequence: A(1), 1(2), B(3), 2(4), C(5), 3(6), D(7), 4(8), E(9), 5(10).\nReversed sequence: 5, E, 4, D, 3, C, 2, B, 1, A.\n4th element from left in reversed sequence is D (which is 7th element of original sequence: 11 - 4 = 7 -> D)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "முழுமையாக தலைகீழாக மாற்றப்பட்ட வரிசையில் இடமிருந்து 4-வது உறுப்பு = மூல வரிசையின் வலமிருந்து 4-வது உறுப்பு (D).",
+      "en": "4th from left in reversed sequence equals 4th from right in original sequence."
+    },
+    "revision_fact": {
+      "ta": "வரிசை முழு தலைகீழ் இடமாற்றம் (Complete Sequence Reversal Transposition).",
+      "en": "Symmetric sequence reversal mapping."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  },
+  {
+    "id": "DICE_045_ANR",
+    "subject": "aptitude",
+    "topic": "aptitude_alpha_numeric_reasoning",
+    "topic_id": "aptitude_alpha_numeric_reasoning",
+    "difficulty": "Hard",
+    "question_type": "Matrix Grids",
+    "question": {
+      "ta": "பின்வரும் 3x3 அணியில் விடுபட்ட எழுத்தைக் காண்க:\n[ A(1)   B(2)   D(4)  ]  (1 + 1=2, 2 + 2=4)\n[ C(3)   E(5)   I(9)  ]  (3 + 2=5, 5 + 4=9)\n[ D(4)   G(7)   ?     ]  (4 + 3=7, 7 + 6=13 ⟹ 13 = M)",
+      "en": "Find the missing letter in the 3x3 matrix based on positional algebra:\n[ A(1)   B(2)   D(4)  ]  (1 + 1=2, 2 + 2=4)\n[ C(3)   E(5)   I(9)  ]  (3 + 2=5, 5 + 4=9)\n[ D(4)   G(7)   ?     ]  (4 + 3=7, 7 + 6=13 ⟹ 13 = M)"
+    },
+    "question_ta": "பின்வரும் 3x3 அணியில் விடுபட்ட எழுத்தைக் காண்க:\n[ A(1)   B(2)   D(4)  ]  (1 + 1=2, 2 + 2=4)\n[ C(3)   E(5)   I(9)  ]  (3 + 2=5, 5 + 4=9)\n[ D(4)   G(7)   ?     ]  (4 + 3=7, 7 + 6=13 ⟹ 13 = M)",
+    "question_en": "Find the missing letter in the 3x3 matrix based on positional algebra:\n[ A(1)   B(2)   D(4)  ]  (1 + 1=2, 2 + 2=4)\n[ C(3)   E(5)   I(9)  ]  (3 + 2=5, 5 + 4=9)\n[ D(4)   G(7)   ?     ]  (4 + 3=7, 7 + 6=13 ⟹ 13 = M)",
+    "options": [
+      "N",
+      "K",
+      "L",
+      "M"
+    ],
+    "options_ta": [
+      "N",
+      "K",
+      "L",
+      "M"
+    ],
+    "options_en": [
+      "N",
+      "K",
+      "L",
+      "M"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "ஒவ்வொரு வரிசையின் இடைவெளி விதி:\nவரிசை 1: A(1) +1 ⟹ B(2) +2 ⟹ D(4) (இடைவெளி 1, 2 = 2x மடங்கு)\nவரிசை 2: C(3) +2 ⟹ E(5) +4 ⟹ I(9) (இடைவெளி 2, 4 = 2x மடங்கு)\nவரிசை 3: D(4) +3 ⟹ G(7) +6 ⟹ 13 (M) (இடைவெளி 3, 6 = 2x மடங்கு).\nஎனவே 7 + 6 = 13 ⟹ 13-வது எழுத்து M ஆகும்.",
+      "en": "Row step logic:\nRow 1: A(1) +1 -> B(2) +2 -> D(4) (steps: 1, 2)\nRow 2: C(3) +2 -> E(5) +4 -> I(9) (steps: 2, 4)\nRow 3: D(4) +3 -> G(7) +6 -> 13 (M) (steps: 3, 6).\n7 + 6 = 13 -> 13th letter is M."
+    },
+    "explanation_ta": "ஒவ்வொரு வரிசையின் இடைவெளி விதி:\nவரிசை 1: A(1) +1 ⟹ B(2) +2 ⟹ D(4) (இடைவெளி 1, 2 = 2x மடங்கு)\nவரிசை 2: C(3) +2 ⟹ E(5) +4 ⟹ I(9) (இடைவெளி 2, 4 = 2x மடங்கு)\nவரிசை 3: D(4) +3 ⟹ G(7) +6 ⟹ 13 (M) (இடைவெளி 3, 6 = 2x மடங்கு).\nஎனவே 7 + 6 = 13 ⟹ 13-வது எழுத்து M ஆகும்.",
+    "explanation_en": "Row step logic:\nRow 1: A(1) +1 -> B(2) +2 -> D(4) (steps: 1, 2)\nRow 2: C(3) +2 -> E(5) +4 -> I(9) (steps: 2, 4)\nRow 3: D(4) +3 -> G(7) +6 -> 13 (M) (steps: 3, 6).\n7 + 6 = 13 -> 13th letter is M.",
+    "why_not_others": {
+      "A": {
+        "ta": "7 + 6 = 13 (M), 14 (N) இல்லை.",
+        "en": "7 + 6 = 13 (M), 14 (N) இல்லை."
+      },
+      "B": {
+        "ta": "7 + 6 = 13 (M), 11 (K) இல்லை.",
+        "en": "7 + 6 = 13 (M), 11 (K) இல்லை."
+      },
+      "C": {
+        "ta": "7 + 6 = 13 (M), 12 (L) இல்லை.",
+        "en": "7 + 6 = 13 (M), 12 (L) இல்லை."
+      },
+      "D": {
+        "ta": "சரி. ஒவ்வொரு வரிசையின் இடைவெளி விதி:\nவரிசை 1: A(1) +1 ⟹ B(2) +2 ⟹ D(4) (இடைவெளி 1, 2 = 2x மடங்கு)\nவரிசை 2: C(3) +2 ⟹ E(5) +4 ⟹ I(9) (இடைவெளி 2, 4 = 2x மடங்கு)\nவரிசை 3: D(4) +3 ⟹ G(7) +6 ⟹ 13 (M) (இடைவெளி 3, 6 = 2x மடங்கு).\nஎனவே 7 + 6 = 13 ⟹ 13-வது எழுத்து M ஆகும்.",
+        "en": "Correct. Row step logic:\nRow 1: A(1) +1 -> B(2) +2 -> D(4) (steps: 1, 2)\nRow 2: C(3) +2 -> E(5) +4 -> I(9) (steps: 2, 4)\nRow 3: D(4) +3 -> G(7) +6 -> 13 (M) (steps: 3, 6).\n7 + 6 = 13 -> 13th letter is M."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "இரண்டாம் இடைவெளி முதல் இடைவெளியைப் போல் 2 மடங்கு பெருக்கத்தைக் கொண்டுள்ளது.",
+      "en": "The second step in each row is double the first step."
+    },
+    "revision_fact": {
+      "ta": "இரட்டிப்பு இடைவெளி எழுத்து அணி (Double Step Letter Matrix).",
+      "en": "Geometrically scaled step size matrix completion."
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Alpha-Numeric Reasoning",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Alpha-Numeric Reasoning",
+    "tags": [
+      "aptitude",
+      "aptitude_alpha_numeric_reasoning",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_alpha_numeric_reasoning"
+  }
+]

@@ -1,0 +1,342 @@
+{
+  "topic": "hcf_lcm_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "HCF & LCM Part 2 — Applications, Remainder Models & Algebraic HCF/LCM",
+  "title_ta": "மீ.பெ.வ மற்றும் மீ.சி.ம பகுதி 2 — பயன்பாட்டு மாதிரிகள், மீதி கணக்குகள் மற்றும் இயற்கணித மீ.பெ.வ/மீ.சி.ம",
+
+  "definition": {
+    "en": "Part 2 covers real-life application models (square tiles, container measurement, recurring events, bell ringing), remainder-based HCF/LCM conditions, algebraic polynomial HCF/LCM, and decision logic for identifying whether to apply HCF or LCM.",
+    "ta": "பகுதி 2-ல் சதுர ஓடுகள் அமைத்தல், அளவுக் கலன்கள், மணி அடிக்கும் நிகழ்வுகள், சுழற்சி வினாக்கள், மீதி கணக்குகள், இயற்கணிதக் கோவைகளின் மீ.பெ.வ/மீ.சி.ம மற்றும் மீ.பெ.வ அல்லது மீ.சி.ம-வை தேர்ந்தெடுக்கும் முடிவு விதிகள் இடம்பெற்றுள்ளன."
+  },
+
+  "exam_importance": {
+    "en": "Application word problems and remainder models are high-frequency questions in TNPSC Group 1, Group 2/2A, and Group 4 exams. Polynomial HCF/LCM questions are guaranteed high-weightage questions in Group 1 & Group 2 papers.",
+    "ta": "சதுர ஓடுகள், மணி அடித்தல், மீதி கணக்குகள் மற்றும் இயற்கணிதக் கோவைகளின் மீ.பெ.வ/மீ.சி.ம வினாக்கள் TNPSC குரூப் 1, குரூப் 2 மற்றும் குரூப் 4 தேர்வுகளில் அடிக்கடி கேட்கப்படும் அதிக மதிப்பெண் வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Flooring Tile Formula (தரைக்கு சதுர ஓடுகள் அமைக்கும் சூத்திரம்)",
+      "formula": "\\text{Side of largest square tile} = \\text{HCF}(L, B), \\quad \\text{Number of tiles} = \\frac{L \\times B}{\\text{HCF}(L,B) \\times \\text{HCF}(L,B)}",
+      "explanation": {
+        "en": "To pave a rectangular floor with minimum square tiles, the tile side is the HCF of floor length and breadth.",
+        "ta": "செவ்வக வடிவத் தரைக்கு குறைந்தபட்ச சதுர ஓடுகளைப் பதிக்க, ஓட்டின் பக்கம் = HCF(நீளம், அகலம்). ஓடுகளின் எண்ணிக்கை = தரை பரப்பு / ஓட்டின் பரப்பு."
+      }
+    },
+    {
+      "title": "HCF Remainder Models (மீ.பெ.வ மீதி வினாக்கள் சூத்திரம்)",
+      "formula": "\\text{Type A (Remainders } r_1, r_2): \\text{HCF}(A-r_1, B-r_2), \\quad \\text{Type B (Same remainder } r): \\text{HCF}(A-r, B-r, C-r)",
+      "explanation": {
+        "en": "Subtract given remainders from respective numbers first, then calculate HCF of the resulting numbers.",
+        "ta": "கொடுக்கப்பட்ட எண்களில் இருந்து соответствующих மீதிகளை முதலில் கழித்து, பின்னர் மீ.பெ.வ கண்டறிய வேண்டும்."
+      }
+    },
+    {
+      "title": "LCM Remainder Models (மீ.சி.ம மீதி வினாக்கள் சூத்திரம்)",
+      "formula": "\\text{Type A (Same remainder } r): \\text{LCM}(A, B, C) + r, \\quad \\text{Type B (Diff } A-r_1 = k): \\text{LCM}(A, B, C) - k",
+      "explanation": {
+        "en": "For same remainder, add r to LCM. For constant difference k between divisor and remainder, subtract k from LCM.",
+        "ta": "ஒரே மீதி r என்றால் LCM + r; வகுத்திக்கும் மீதிக்கும் இடையேயான வித்தியாசம் k சமமாக இருந்தால் LCM - k."
+      }
+    },
+    {
+      "title": "Polynomial HCF & LCM Product Relation (இயற்கணிதக் கோவைகளின் தொடர்பு)",
+      "formula": "\\text{HCF}[P(x), Q(x)] \\times \\text{LCM}[P(x), Q(x)] = P(x) \\times Q(x)",
+      "explanation": {
+        "en": "The product of HCF and LCM of two polynomials equals the product of the two polynomials.",
+        "ta": "இரு இயற்கணிதக் கோவைகளின் மீ.பெ.வ மற்றும் மீ.சி.ம ஆகியவற்றின் பெருக்கற்பலன், அவ்விரு கோவைகளின் பெருக்கற்பலனுக்குச் சமம்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Decision Logic: When to use HCF vs LCM (மீ.பெ.வ அல்லது மீ.சி.ம - எவ்வாறு அறிவது?)",
+      "points": {
+        "en": [
+          "THINK HCF: When problem asks for 'greatest', 'largest possible equal size', 'maximum capacity container', or 'dividing into equal groups'. (Result <= smallest given number).",
+          "THINK LCM: When problem asks for 'smallest number', 'earliest common time', 'events happening together again' (bells ringing, traffic lights changing), or 'minimum quantity'. (Result >= largest given number)."
+        ],
+        "ta": [
+          "மீ.பெ.வ (HCF): 'மிகப்பெரிய', 'அதிகபட்ச அளவுகோல்', 'சம அளவிலான பகுப்புகள்' போன்ற சொற்கள் வந்தால் மீ.பெ.வ கணக்கிட வேண்டும் (விடை சிறிய எண்ணை விடக் குறைவாக இருக்கும்).",
+          "மீ.சி.ம (LCM): 'மிகச்சிறிய', 'மீண்டும் இணைந்து நிகழும் நேரம்' (மணிகள் அடித்தல், சிக்னல் விளக்குகள்), 'குறைந்தபட்ச அளவு' போன்ற சொற்கள் வந்தால் மீ.சி.ம கணக்கிட வேண்டும் (விடை பெரிய எண்ணை விட அதிகமாக இருக்கும்)."
+        ]
+      }
+    },
+    {
+      "title": "Handling Unspecified Same Remainder in HCF",
+      "points": {
+        "en": [
+          "When the problem states that a number divides A, B, and C leaving the SAME remainder 'r', but 'r' is NOT given:",
+          "Find HCF of absolute differences: HCF(|A - B|, |B - C|, |C - A|).",
+          "The resulting HCF is the required divisor."
+        ],
+        "ta": [
+          "A, B, C எண்களை வகுத்து ஒரே மீதியைத் தரும் மிகப்பெரிய எண் கேட்கப்பட்டு, அந்த மீதி கொடுக்கப்படவில்லை எனில்:",
+          "எண்களின் வித்தியாசங்களின் மீ.பெ.வ-வை கணக்கிட வேண்டும்: HCF(|A - B|, |B - C|, |C - A|)."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Simultaneous Event Time Shortcut (Bells & Traffic Lights)",
+      "points": {
+        "en": [
+          "Calculate LCM of intervals in seconds.",
+          "Convert LCM seconds into minutes and seconds (LCM ÷ 60).",
+          "Add converted time to initial start time to get the exact next simultaneous event time."
+        ],
+        "ta": [
+          "இடைவெளி வினாடிகளுக்கு மீ.சி.ம (LCM) கணக்கிடவும்.",
+          "மீ.சி.ம வினாடிகளை நிமிடங்கள் மற்றும் வினாடிகளாக மாற்றவும் (LCM ÷ 60).",
+          "தொடக்க நேரத்துடன் இந்த நேரத்தைக் கூட்டி அடுத்த முறை இணைந்து நிகழும் நேரத்தைப் பெறலாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Adding Remainder Before Calculating LCM",
+      "explanation": {
+        "en": "Adding remainder r to individual numbers before finding LCM gives a completely wrong answer.",
+        "ta": "மீ.சி.ம கணக்கிடுவதற்கு முன்பே எண்களுடன் மீதியை கூட்டினால் தவறான விடை வரும்."
+      },
+      "avoidance": {
+        "en": "Always calculate LCM of the original numbers FIRST, then add remainder 'r' at the final step: LCM(A, B, C) + r.",
+        "ta": "முதலில் எண்களின் மீ.சி.ம கணக்கிட்டு, இறுதி படியிலேயே மீதியை கூட்ட வேண்டும்: LCM + r."
+      }
+    },
+    {
+      "trap": "Confusing Tile Side with Tile Count",
+      "explanation": {
+        "en": "Finding HCF(Length, Breadth) gives the SIDE of one square tile, NOT the number of tiles.",
+        "ta": "HCF(நீளம், அகலம்) என்பது ஒரு சதுர ஓட்டின் பக்க அளவை மட்டுமே தரும்; ஓடுகளின் எண்ணிக்கையைத் தராது."
+      },
+      "avoidance": {
+        "en": "Always calculate tile count = (Floor Length × Floor Breadth) / (Tile Side × Tile Side).",
+        "ta": "ஓடுகளின் எண்ணிக்கை = (தரையின் பரப்பளவு) / (ஒரு ஓட்டின் பரப்பளவு) என கணக்கிடவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the greatest capacity of a container that can measure the kerosene oil of three tankers of capacities 403 liters, 434 liters, and 465 liters exact number of times.",
+      "method": "HCF for Maximum Measuring Capacity",
+      "steps": [
+        "Step 1: The measuring container must exactly divide 403, 434, and 465, so find HCF(403, 434, 465).",
+        "Step 2: Prime factorise:",
+        "403 = 13 × 31",
+        "434 = 2 × 7 × 31",
+        "465 = 3 × 5 × 31",
+        "Step 3: Common factor = 31.",
+        "Step 4: Maximum container capacity = 31 liters."
+      ],
+      "answer": "31 liters"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively.",
+      "method": "HCF of (Number - Remainder)",
+      "steps": [
+        "Step 1: Required number must divide (1657 - 6) and (2037 - 5) exactly.",
+        "Step 2: Calculate reduced numbers: 1657 - 6 = 1651, and 2037 - 5 = 2032.",
+        "Step 3: Find HCF(1651, 2032):",
+        "1651 = 13 × 127",
+        "2032 = 16 × 127 = 2⁴ × 127",
+        "Step 4: Common prime factor = 127.",
+        "Step 5: Required greatest number = 127."
+      ],
+      "answer": "127"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The traffic lights at three different road crossings change after every 48 sec, 72 sec, and 108 sec respectively. If they all change simultaneously at 08:20:00 hours, at what time will they change simultaneously again?",
+      "method": "LCM of Interval Seconds",
+      "steps": [
+        "Step 1: Find LCM of 48, 72, and 108 seconds.",
+        "48 = 2⁴ × 3¹",
+        "72 = 2³ × 3²",
+        "108 = 2² × 3³",
+        "LCM = 2⁴ × 3³ = 16 × 27 = 432 seconds.",
+        "Step 2: Convert 432 seconds to minutes & seconds: 432 ÷ 60 = 7 minutes and 12 seconds.",
+        "Step 3: Add 07 min 12 sec to initial time 08:20:00:",
+        "08:20:00 + 00:07:12 = 08:27:12 hours."
+      ],
+      "answer": "08:27:12 hours"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the minimum number of square tiles required to pave a rectangular courtyard 15 m 17 cm long and 9 m 2 cm broad.",
+      "method": "HCF Tile Side & Area Division",
+      "steps": [
+        "Step 1: Convert dimensions to cm: Length = 1517 cm, Breadth = 902 cm.",
+        "Step 2: Side of largest square tile = HCF(1517, 902).",
+        "1517 = 37 × 41",
+        "902 = 22 × 41",
+        "HCF = 41 cm. So each square tile is 41 cm × 41 cm.",
+        "Step 3: Number of tiles = (Floor Area) / (Tile Area) = (1517 × 902) / (41 × 41).",
+        "Step 4: Simplify: (1517 / 41) × (902 / 41) = 37 × 22 = 814 tiles."
+      ],
+      "answer": "814 tiles"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The GCD and LCM of two polynomials are (x + 1) and (x⁴ - 1) respectively. If one of the polynomials is (x² + 1), find the other polynomial.",
+      "method": "Polynomial Product Relation: HCF × LCM = P(x) × Q(x)",
+      "steps": [
+        "Step 1: Given HCF = (x + 1), LCM = (x⁴ - 1), P(x) = (x² + 1).",
+        "Step 2: Formula: P(x) × Q(x) = HCF × LCM.",
+        "Step 3: Q(x) = [(x + 1)(x⁴ - 1)] / (x² + 1).",
+        "Step 4: Factorise x⁴ - 1 = (x² - 1)(x² + 1).",
+        "Step 5: Q(x) = [(x + 1)(x² - 1)(x² + 1)] / (x² + 1) = (x + 1)(x² - 1).",
+        "Step 6: Expand: (x + 1)(x² - 1) = x³ + x² - x - 1."
+      ],
+      "answer": "x³ + x² - x - 1"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Find the smallest number which when divided by 20, 25, 35, and 40 leaves remainders 14, 19, 29, and 34 respectively.",
+      "method": "LCM Remainder Model Type B (Constant Difference)",
+      "steps": [
+        "Step 1: Check difference between divisors and remainders:",
+        "20 - 14 = 6, 25 - 19 = 6, 35 - 29 = 6, 40 - 34 = 6.",
+        "Constant difference k = 6.",
+        "Step 2: Required number = LCM(20, 25, 35, 40) - k.",
+        "Step 3: Find LCM(20, 25, 35, 40):",
+        "20 = 2² × 5, 25 = 5², 35 = 5 × 7, 40 = 2³ × 5.",
+        "LCM = 2³ × 5² × 7 = 8 × 25 × 7 = 1400.",
+        "Step 4: Required number = 1400 - 6 = 1394."
+      ],
+      "answer": "1394"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Four bells toll together at intervals of 6, 7, 8, and 9 seconds respectively. How many times will they toll together in 1 hour?",
+      "options": ["A) 6 times", "B) 7 times", "C) 8 times", "D) 10 times"],
+      "correct_option": "B) 7 times",
+      "explanation": "LCM(6, 7, 8, 9) = 504 seconds. In 1 hour (3600 seconds), number of times = 3600 / 504 = 7.14 => 7 times."
+    },
+    {
+      "id": 2,
+      "question": "Find the greatest number which can divide 1356, 1868, and 2764 leaving the same remainder 12 in each case.",
+      "options": ["A) 32", "B) 64", "C) 128", "D) 16"],
+      "correct_option": "B) 64",
+      "explanation": "HCF(1356-12, 1868-12, 2764-12) = HCF(1344, 1856, 2752). 1344 = 64 × 21, 1856 = 64 × 29, 2752 = 64 × 43. HCF = 64."
+    },
+    {
+      "id": 3,
+      "question": "Find the smallest number which when divided by 12, 16, 24, and 36 leaves a remainder of 7 in each case.",
+      "options": ["A) 144", "B) 151", "C) 137", "D) 155"],
+      "correct_option": "B) 151",
+      "explanation": "LCM(12, 16, 24, 36) = 144. Required number = LCM + r = 144 + 7 = 151."
+    },
+    {
+      "id": 4,
+      "question": "Find the LCM of polynomials (x⁴ - 1) and (x² - 2x + 1).",
+      "options": ["A) (x - 1)(x⁴ - 1)", "B) (x + 1)(x² - 1)", "C) (x - 1)²(x² + 1)", "D) (x⁴ - 1)"],
+      "correct_option": "A) (x - 1)(x⁴ - 1)",
+      "explanation": "x⁴ - 1 = (x-1)(x+1)(x²+1). x² - 2x + 1 = (x-1)². LCM = (x-1)²(x+1)(x²+1) = (x-1)(x⁴-1)."
+    },
+    {
+      "id": 5,
+      "question": "Three runners run on a circular track completing one lap in 20, 30, and 40 seconds. If they start together, after how many minutes will they meet at starting point?",
+      "options": ["A) 1 minute", "B) 2 minutes", "C) 3 minutes", "D) 4 minutes"],
+      "correct_option": "B) 2 minutes",
+      "explanation": "LCM(20, 30, 40) = 120 seconds. 120 seconds = 2 minutes."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "HCF Keyword Cues",
+      "back": "Greatest, largest tile, maximum container capacity, exact equal division."
+    },
+    {
+      "front": "LCM Keyword Cues",
+      "back": "Smallest, earliest time, bells tolling together, traffic lights changing together."
+    },
+    {
+      "front": "Square Tiles on Floor",
+      "back": "Tile Side = HCF(L, B). Tile Count = (L × B) / (Side × Side)."
+    },
+    {
+      "front": "HCF Remainder (Diff r1, r2)",
+      "back": "HCF(A - r1, B - r2)."
+    },
+    {
+      "front": "LCM Remainder (Same r)",
+      "back": "LCM(A, B, C) + r."
+    },
+    {
+      "front": "LCM Remainder (Constant Diff k)",
+      "back": "LCM(A, B, C) - k [where k = Divisor - Remainder]."
+    }
+  ],
+
+  "mind_map": {
+    "title": "HCF & LCM Part 2 — Applications & Remainder Models Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "HCF & LCM Applications",
+        "children": ["hcf_apps", "lcm_apps", "poly_models"]
+      },
+      {
+        "id": "hcf_apps",
+        "label": "HCF Applications",
+        "children": ["tiles_formula", "hcf_remainders"]
+      },
+      {
+        "id": "tiles_formula",
+        "label": "Tiles: Side = HCF(L,B), Count = Area/TileArea",
+        "children": []
+      },
+      {
+        "id": "hcf_remainders",
+        "label": "HCF(A-r1, B-r2) or HCF(|A-B|, |B-C|, |C-A|)",
+        "children": []
+      },
+      {
+        "id": "lcm_apps",
+        "label": "LCM Applications",
+        "children": ["bells_lights", "lcm_remainders"]
+      },
+      {
+        "id": "bells_lights",
+        "label": "Bells/Lights: Next time = Start + LCM(seconds)",
+        "children": []
+      },
+      {
+        "id": "lcm_remainders",
+        "label": "LCM + r (same r) OR LCM - k (const diff k)",
+        "children": []
+      },
+      {
+        "id": "poly_models",
+        "label": "Polynomial Models",
+        "children": ["poly_hcf_lcm_prod"]
+      },
+      {
+        "id": "poly_hcf_lcm_prod",
+        "label": "HCF[P(x), Q(x)] × LCM[P(x), Q(x)] = P(x) × Q(x)",
+        "children": []
+      }
+    ]
+  }
+}

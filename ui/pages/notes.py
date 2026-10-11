@@ -12,6 +12,7 @@ from core.navigation_v2.navigation_state import (
     get_selected_topic_id,
 )
 from core.streamlit_ui_engine import render_notes
+from ui.notes.layout import get_notes_language_mode
 
 
 @st.cache_data
@@ -25,6 +26,35 @@ def load_note(file_path: str, mtime: float = 0):
 
 def render_2_minute_revision_card(data: dict, display_title: str, subject: str):
     """Renders the 2-Minute Quick Revision Card at the bottom of Notes."""
+    content = data.get("content", data) if isinstance(data, dict) else {}
+    content = content if isinstance(content, dict) else {}
+
+    def localized_items(value):
+        if not isinstance(value, dict):
+            if isinstance(value, list):
+                return [str(item) for item in value if item]
+            return [str(value)] if value else []
+
+        english = value.get("en", [])
+        tamil = value.get("ta", [])
+        english = english if isinstance(english, list) else [english] if english else []
+        tamil = tamil if isinstance(tamil, list) else [tamil] if tamil else []
+        mode = get_notes_language_mode()
+        if mode == "English":
+            return [str(item) for item in english if item]
+        if mode == "தமிழ்":
+            return [str(item) for item in tamil if item]
+
+        paired = []
+        for index in range(max(len(english), len(tamil))):
+            en_text = str(english[index]) if index < len(english) and english[index] else ""
+            ta_text = str(tamil[index]) if index < len(tamil) and tamil[index] else ""
+            if en_text and ta_text:
+                paired.append(f"{en_text}  \n_{ta_text}_")
+            elif en_text or ta_text:
+                paired.append(en_text or ta_text)
+        return paired
+
     st.markdown("---")
     st.markdown(
         f"""
@@ -58,19 +88,10 @@ def render_2_minute_revision_card(data: dict, display_title: str, subject: str):
         )
         key_pts = []
         if isinstance(data, dict):
-            outcomes = data.get("learning_outcomes", {}).get("Understand", {}).get("en", [])
-            if outcomes:
-                key_pts.extend(outcomes[:3])
-            keywords = data.get("keywords", [])
-            if keywords and len(key_pts) < 3:
-                key_pts.append(f"Core Focus: {', '.join(keywords[:4])}")
-
-        if not key_pts:
-            key_pts = [
-                f"Master foundational concepts and constitutional framework of {display_title}.",
-                "Focus on landmark timeline events, acts, and statutory definitions.",
-                "Review bilingual terminology for high-frequency preliminary questions."
-            ]
+            outcomes = data.get("learning_outcomes", {}).get("Understand", {})
+            key_pts.extend(localized_items(outcomes)[:3])
+            if len(key_pts) < 3:
+                key_pts.extend(localized_items(content.get("quick_revision", {}))[: 3 - len(key_pts)])
 
         for pt in key_pts[:3]:
             st.markdown(f"- {pt}")
@@ -86,52 +107,41 @@ def render_2_minute_revision_card(data: dict, display_title: str, subject: str):
             unsafe_allow_html=True,
         )
         facts = []
-        if isinstance(data, dict):
-            imp_facts = data.get("important_facts", {}).get("en", [])
-            if isinstance(imp_facts, list):
-                facts.extend(imp_facts[:3])
-
-        if not facts:
-            facts = [
-                "Direct factual questions account for ~40% of preliminary examination items.",
-                "Ensure exact memory of dates, committee recommendations, and numerical limits.",
-                "Cross-check Samacheer Kalvi school textbook reference statements."
-            ]
+        if isinstance(content, dict):
+            facts.extend(localized_items(content.get("important_facts", {}))[:3])
 
         for f in facts[:3]:
             st.markdown(f"- {f}")
         st.markdown("</div>", unsafe_allow_html=True)
+
+    articles = content.get("important_articles", data.get("important_articles", []))
+    third_panel_title = "Important Articles & Provisions" if articles else "Quick Revision"
 
     col3, col4 = st.columns(2, gap="medium")
 
     # 3. Important Articles
     with col3:
         st.markdown(
-            """
+            f"""
             <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-left: 4px solid #D97706; padding: 14px; border-radius: 10px; margin-bottom: 12px;">
-                <h4 style="margin: 0 0 8px 0; color: #0F172A; font-size: 0.98rem;">• Important Articles & Provisions</h4>
+                <h4 style="margin: 0 0 8px 0; color: #0F172A; font-size: 0.98rem;">• {third_panel_title}</h4>
             """,
             unsafe_allow_html=True,
         )
-        articles = []
-        if isinstance(data, dict):
-            arts = data.get("important_articles", [])
-            if isinstance(arts, list):
-                for a in arts[:3]:
-                    if isinstance(a, dict):
-                        articles.append(f"Article {a.get('article', '')}: {a.get('title', {}).get('en', '')}")
-                    elif isinstance(a, str):
-                        articles.append(a)
+        third_panel_items = []
+        if articles and isinstance(articles, list):
+            for a in articles[:3]:
+                if isinstance(a, dict):
+                    article_titles = localized_items(a.get("title", {}))
+                    title = article_titles[0] if article_titles else ""
+                    third_panel_items.append(f"Article {a.get('article', '')}: {title}")
+                elif isinstance(a, str):
+                    third_panel_items.append(a)
+        else:
+            third_panel_items.extend(localized_items(content.get("quick_revision", {}))[:3])
 
-        if not articles:
-            articles = [
-                "Verify constitutional article numbers, schedules, and parts associated with this topic.",
-                "Pay attention to amendment numbers and enforcement years.",
-                "Note exceptions and special provisions under specific articles."
-            ]
-
-        for art in articles[:3]:
-            st.markdown(f"- {art}")
+        for item in third_panel_items[:3]:
+            st.markdown(f"- {item}")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # 4. TNPSC Traps
@@ -144,20 +154,16 @@ def render_2_minute_revision_card(data: dict, display_title: str, subject: str):
             unsafe_allow_html=True,
         )
         traps = []
-        if isinstance(data, dict):
-            t_list = data.get("tnpsc_traps", [])
-            if isinstance(t_list, list):
-                traps.extend(t_list[:3])
+        t_list = content.get("tnpsc_traps", [])
+        if isinstance(t_list, list):
+            for trap in t_list:
+                if isinstance(trap, dict):
+                    traps.extend(localized_items(trap.get("points", {})))
+                elif trap:
+                    traps.append(str(trap))
 
-        if not traps:
-            traps = [
-                "⚠️ Watch for 'NOT correct' or 'Incorrect' wording in question stems.",
-                "⚠️ Beware of absolute statements containing words like 'Only', 'All', or 'Never'.",
-                "⚠️ Don't confuse Governor/President appointment powers vs. removal procedures."
-            ]
-
-        for t in traps[:3]:
-            st.markdown(f"- {t}")
+        for trap in traps[:3]:
+            st.markdown(f"- {trap}")
         st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -248,6 +254,24 @@ def render_notes_page(section):
         st.info("Please select another available part or contact support.")
         return
 
+    identity = data.get("meta", {}) if isinstance(data, dict) else {}
+    identity = identity if isinstance(identity, dict) else {}
+    content_scope = identity.get("topic_id") or f"{topic_id}_part_{selected_part_num}"
+    previous_scope = st.session_state.get("_active_notes_content_scope")
+    if previous_scope and previous_scope != content_scope:
+        fixed_mind_map_keys = {
+            "mm_node_progress",
+            "mind_map_expanded",
+            "mm_view_mode_selector",
+            "input_mm_search",
+        }
+        mind_map_prefixes = ("show_mm_", "quiz_radio_", "btn_mm_", "btn_sub_quiz_")
+        for state_key in list(st.session_state.keys()):
+            if state_key in fixed_mind_map_keys or state_key.startswith(mind_map_prefixes):
+                del st.session_state[state_key]
+    st.session_state["_active_notes_content_scope"] = content_scope
+    st.session_state["notes_content_scope"] = content_scope
+
     try:
         render_notes(data)
         st.caption(f"UI Type: {data.get('ui_type', 'unknown')} | Part {selected_part_num} of {len(part_numbers)}")
@@ -269,5 +293,3 @@ def render_notes_page(section):
             st.rerun()
         else:
             st.error("No practice questions found for this topic.")
-
-

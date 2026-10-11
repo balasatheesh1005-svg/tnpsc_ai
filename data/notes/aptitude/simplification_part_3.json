@@ -1,0 +1,336 @@
+{
+  "topic": "simplification_part_3",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Simplification Part 3 — Algebraic Identities, Shortcuts & Master Revision",
+  "title_ta": "சுருக்குதல் பகுதி 3 — இயற்கணித முற்றொருமைகள், குறுக்குவழிகள் மற்றும் மீள்பார்வை",
+
+  "definition": {
+    "en": "Part 3 covers advanced algebraic identities, telescoping series cancellation, special product shortcuts, and comprehensive master revision strategies for TNPSC Group 1, Group 2/2A, and Group 4 exams.",
+    "ta": "பகுதி 3-ல் உயர்மட்ட இயற்கணித முற்றொருமைகள், தொடர் ரத்து முறைகள் (Telescoping Series), சிறப்புப் பெருக்கல் குறுக்குவழிகள் மற்றும் TNPSC தேர்வுகளுக்கான முழுமையான மீள்பார்வை குறிப்புகள் இடம்பெற்றுள்ளன."
+  },
+
+  "exam_importance": {
+    "en": "Questions based on algebraic forms like (a³ + b³) / (a² - ab + b²), product series, and 999 fraction multiplications are guaranteed high-weightage questions in Group 1 and Group 2/2A papers.",
+    "ta": "(a³ + b³) / (a² - ab + b²) வடிவிலான இயற்கணித வினாக்கள், தொடர்ப் பெருக்கல் மற்றும் 999 பின்னப் பெருக்கல் வினாக்கள் TNPSC தேர்வுகளில் நிச்சயம் கேட்கப்படும் அதிக மதிப்பெண் வினாக்களாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Algebraic Cube Identities (கன முற்றொருமைகள்)",
+      "formula": "\\frac{a^3 + b^3}{a^2 - ab + b^2} = a + b, \\quad \\frac{a^3 - b^3}{a^2 + ab + b^2} = a - b",
+      "explanation": {
+        "en": "Directly add or subtract values of 'a' and 'b' without calculating large numbers.",
+        "ta": "பெரிய எண்களைப் பெருக்காமல் 'a' மற்றும் 'b' மதிப்புகளை நேரடியாகக் கூட்டவோ கழிக்கவோ செய்ய வேண்டும்."
+      }
+    },
+    {
+      "title": "Square Differences & Quadratic Formulas (வர்க்க முற்றொருமைகள்)",
+      "formula": "\\frac{(a+b)^2 - (a-b)^2}{ab} = 4, \\quad \\frac{(a+b)^2 + (a-b)^2}{a^2 + b^2} = 2",
+      "explanation": {
+        "en": "Regardless of values of 'a' and 'b', the resulting value is always a constant 4 or 2 respectively.",
+        "ta": "'a', 'b' மதிப்புகள் எதுவாக இருந்தாலும், முதல் வடிவுக்கு விடை 4, இரண்டாவது வடிவுக்கு விடை 2 ஆகும்."
+      }
+    },
+    {
+      "title": "Telescoping Series Cancellation (தொடர் ரத்து விதிகளின் சூத்திரம்)",
+      "formula": "\\sum_{k=1}^{n} \\frac{1}{k(k+1)} = 1 - \\frac{1}{n+1} = \\frac{n}{n+1}",
+      "explanation": {
+        "en": "Adjacent middle terms cancel out, leaving only the first numerator and the last denominator.",
+        "ta": "நடுவில் உள்ள உறுப்புகள் அனைத்தும் ஒன்றுக்கொன்று ரத்தாகி, முதல் மற்றும் இறுதி உறுப்பு மட்டுமே மிஞ்சும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Algebraic Pattern Recognition (இயற்கணித வடிவங்களை அடையாளம் காணல்)",
+      "points": {
+        "en": [
+          "Never attempt direct multiplication when numbers like 885 × 885 × 885 appear in a problem.",
+          "Assign variables: Let a = 885 and b = 115.",
+          "Identify the underlying algebraic formula and substitute variables to simplify instantly."
+        ],
+        "ta": [
+          "885 × 885 × 885 போன்ற பெரிய எண்கள் வரும் போது நேரடிப் பெருக்கல் செய்யக் கூடாது.",
+          "மாறிகளைப் பிரதியிடுக: a = 885, b = 115 என எடுத்துக் கொள்க.",
+          "மூல இயற்கணித முற்றொருமையை அடையாளம் கண்டு பிரதியிட்டால் 5 வினாடிகளில் விடை காணலாம்."
+        ]
+      }
+    },
+    {
+      "title": "Telescoping Product & Sum Series (தொடர்ப் பெருக்கல் மற்றும் கூட்டல் சீர்கள்)",
+      "points": {
+        "en": [
+          "For product series (1 - 1/2)(1 - 1/3)...(1 - 1/n), consecutive terms cancel diagonally leaving 1/n.",
+          "For product series (1 + 1/2)(1 + 1/3)...(1 + 1/n), numerators cancel denominators leaving (n+1)/2.",
+          "Telescoping sum 1/(1×2) + 1/(2×3) + ... + 1/(n×(n+1)) reduces to n/(n+1)."
+        ],
+        "ta": [
+          "(1 - 1/2)(1 - 1/3)...(1 - 1/n) பெருக்கல் தொடரில் குறுக்கு ரத்தாகி இறுதி விடை 1/n கிடைக்கும்.",
+          "(1 + 1/2)(1 + 1/3)...(1 + 1/n) பெருக்கல் தொடரில் இறுதி விடை (n+1)/2 கிடைக்கும்.",
+          "1/(1×2) + 1/(2×3) + ... + 1/(n×(n+1)) கூட்டல் தொடரின் இறுதி விடை n/(n+1) ஆகும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Mixed Fraction Multiplication Shortcut (999 fraction trick)",
+      "points": {
+        "en": [
+          "To simplify \\(999\\frac{998}{999} \\times 999\\), rewrite \\(999\\) as \\((1000 - 1)\\).",
+          "Expression becomes \\((1000 - \\frac{1}{999}) \\times 999 = 999000 - 1 = 998999\\).",
+          "This avoids multiplying 999 × 999 manually."
+        ],
+        "ta": [
+          "\\(999\\frac{998}{999} \\times 999\\) ஐ சுருக்க \\(999\\) ஐ \\((1000 - 1)\\) என மாற்றவும்.",
+          "\\((1000 - \\frac{1}{999}) \\times 999 = 999000 - 1 = 998999\\) என நொடியில் கணக்கிடலாம்.",
+          "இது நேரடிப் பெருக்கல் நேரத்தை முற்றிலும் மிச்சப்படுத்தும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Misidentifying Signs in \\(a^3 + b^3\\) vs \\(a^3 - b^3\\)",
+      "explanation": {
+        "en": "\\(a^3 + b^3\\) denominator has a MINUS sign: \\(a^2 - ab + b^2\\), giving result \\(a+b\\). \\(a^3 - b^3\\) denominator has a PLUS sign: \\(a^2 + ab + b^2\\), giving result \\(a-b\\).",
+        "ta": "\\(a^3 + b^3\\)-ன் பகுதியில் கழித்தல் குறியீடு (\\(a^2 - ab + b^2\\)) இருக்கும் (விடை \\(a+b\\)). \\(a^3 - b^3\\)-ன் பகுதியில் கூட்டல் குறியீடு (\\(a^2 + ab + b^2\\)) இருக்கும் (விடை \\(a-b\\))."
+      },
+      "avoidance": {
+        "en": "Check the sign between cubes in the numerator: + in numerator means answer is (a + b); - in numerator means answer is (a - b).",
+        "ta": "தொகுதியில் உள்ள கனங்களுக்கு இடையேயான குறியீட்டைப் பார்க்கவும்: + என்றால் விடை (a + b), - என்றால் விடை (a - b)."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Simplify: \\(\\frac{0.87 \\times 0.87 \\times 0.87 + 0.13 \\times 0.13 \\times 0.13}{0.87 \\times 0.87 - 0.87 \\times 0.13 + 0.13 \\times 0.13}\\)",
+      "method": "Algebraic Identity \\(\\frac{a^3+b^3}{a^2-ab+b^2} = a+b\\)",
+      "steps": [
+        "Step 1: Let \\(a = 0.87\\) and \\(b = 0.13\\).",
+        "Step 2: Expression takes the form: \\(\\frac{a^3 + b^3}{a^2 - ab + b^2}\\).",
+        "Step 3: Apply identity: \\(\\frac{a^3+b^3}{a^2-ab+b^2} = a + b\\).",
+        "Step 4: Calculate \\(a + b = 0.87 + 0.13 = 1.00\\)."
+      ],
+      "answer": "1"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Simplify the product series: \\(\\left(1 - \\frac{1}{2}\\right)\\left(1 - \\frac{1}{3}\\right)\\left(1 - \\frac{1}{4}\\right) \\dots \\left(1 - \\frac{1}{100}\\right)\\)",
+      "method": "Telescoping Diagonal Cancellation",
+      "steps": [
+        "Step 1: Evaluate each term: \\(\\frac{1}{2} \\times \\frac{2}{3} \\times \\frac{3}{4} \\times \\dots \\times \\frac{99}{100}\\).",
+        "Step 2: Observe diagonal cancellation: 2 in denominator of 1st term cancels 2 in numerator of 2nd term, and so on.",
+        "Step 3: Only the numerator of 1st term (1) and denominator of last term (100) remain.",
+        "Step 4: Result = \\(\\frac{1}{100}\\)."
+      ],
+      "answer": "\\(\\frac{1}{100}\\)"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Evaluate: \\(\\frac{(758 + 324)^2 - (758 - 324)^2}{758 \\times 324}\\)",
+      "method": "Algebraic Identity \\(\\frac{(a+b)^2 - (a-b)^2}{ab} = 4\\)",
+      "steps": [
+        "Step 1: Let \\(a = 758\\) and \\(b = 324\\).",
+        "Step 2: The given expression is \\(\\frac{(a+b)^2 - (a-b)^2}{ab}\\).",
+        "Step 3: Expand numerator: \\((a^2 + 2ab + b^2) - (a^2 - 2ab + b^2) = 4ab\\).",
+        "Step 4: Expression becomes \\(\\frac{4ab}{ab} = 4\\)."
+      ],
+      "answer": "4"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the value of: \\(\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\dots + \\frac{1}{9 \\times 10}\\)",
+      "method": "Telescoping Partial Fraction Sum",
+      "steps": [
+        "Step 1: Express each term as difference of unit fractions: \\(\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}\\).",
+        "Step 2: Expand series: \\((1 - \\frac{1}{2}) + (\\frac{1}{2} - \\frac{1}{3}) + (\\frac{1}{3} - \\frac{1}{4}) + \\dots + (\\frac{1}{9} - \\frac{1}{10})\\).",
+        "Step 3: Cancel all intermediate terms: \\(-\\frac{1}{2} + \\frac{1}{2} = 0\\), etc.",
+        "Step 4: Remaining terms: \\(1 - \\frac{1}{10} = \\frac{9}{10} = 0.9\\)."
+      ],
+      "answer": "\\(\\frac{9}{10}\\) or \\(0.9\\)"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "If \\(a + b + c = 0\\), find the value of \\(\\frac{a^2}{bc} + \\frac{b^2}{ca} + \\frac{c^2}{ab}\\).",
+      "method": "Conditional Identity Substitution",
+      "steps": [
+        "Step 1: Take LCM of denominators (bc, ca, ab) which is \\(abc\\).",
+        "Step 2: Rewrite terms over common denominator: \\(\\frac{a^3 + b^3 + c^3}{abc}\\).",
+        "Step 3: Use conditional identity: If \\(a + b + c = 0\\), then \\(a^3 + b^3 + c^3 = 3abc\\).",
+        "Step 4: Substitute \\(3abc\\) into expression: \\(\\frac{3abc}{abc} = 3\\)."
+      ],
+      "answer": "3"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Simplify: \\(999\\frac{998}{999} \\times 999\\)",
+      "method": "Distributive Expansion & Complement Shortcut",
+      "steps": [
+        "Step 1: Split mixed fraction: \\(999\\frac{998}{999} = 999 + \\frac{998}{999}\\).",
+        "Step 2: Express 999 as \\((1000 - 1)\\): \\(1000 - 1 + \\frac{998}{999} = 1000 - (1 - \\frac{998}{999}) = 1000 - \\frac{1}{999}\\).",
+        "Step 3: Multiply by 999: \\((1000 - \\frac{1}{999}) \\times 999 = 1000 \\times 999 - \\frac{1}{999} \\times 999\\).",
+        "Step 4: Calculate: \\(999000 - 1 = 998999\\)."
+      ],
+      "answer": "998999"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Simplify: \\(\\frac{673 \\times 673 \\times 673 - 327 \\times 327 \\times 327}{673 \\times 673 + 673 \\times 327 + 327 \\times 327}\\)",
+      "options": ["A) 1000", "B) 346", "C) 1", "D) 0"],
+      "correct_option": "B) 346",
+      "explanation": "Formula (a³ - b³) / (a² + ab + b²) = a - b = 673 - 327 = 346."
+    },
+    {
+      "id": 2,
+      "question": "Evaluate: \\(\\frac{(963 + 137)^2 + (963 - 137)^2}{963 \\times 963 + 137 \\times 137}\\)",
+      "options": ["A) 1", "B) 2", "C) 4", "D) 1100"],
+      "correct_option": "B) 2",
+      "explanation": "Formula [(a+b)² + (a-b)²] / (a² + b²) = 2(a² + b²) / (a² + b²) = 2."
+    },
+    {
+      "id": 3,
+      "question": "Simplify: \\(\\left(1 + \\frac{1}{2}\\right)\\left(1 + \\frac{1}{3}\\right)\\left(1 + \\frac{1}{4}\\right) \\dots \\left(1 + \\frac{1}{50}\\right)\\)",
+      "options": ["A) 25.5", "B) 50", "C) 51/2", "D) Both A and C"],
+      "correct_option": "D) Both A and C",
+      "explanation": "(3/2) × (4/3) × (5/4) × ... × (51/50) = 51/2 = 25.5. Both options A and C represent the correct value."
+    },
+    {
+      "id": 4,
+      "question": "If \\(x + \\frac{1}{x} = 3\\), find \\(x^2 + \\frac{1}{x^2}\\).",
+      "options": ["A) 7", "B) 9", "C) 11", "D) 6"],
+      "correct_option": "A) 7",
+      "explanation": "Square both sides: (x + 1/x)² = 3² => x² + 2 + 1/x² = 9 => x² + 1/x² = 7."
+    },
+    {
+      "id": 5,
+      "question": "Evaluate: \\(99\\frac{48}{49} \\times 49\\)",
+      "options": ["A) 4899", "B) 4851", "C) 4850", "D) 4900"],
+      "correct_option": "A) 4899",
+      "explanation": "(100 - 1/49) × 49 = 4900 - 1 = 4899."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "(a³ + b³) / (a² - ab + b²)",
+      "back": "a + b"
+    },
+    {
+      "front": "(a³ - b³) / (a² + ab + b²)",
+      "back": "a - b"
+    },
+    {
+      "front": "[(a+b)² - (a-b)²] / ab",
+      "back": "4"
+    },
+    {
+      "front": "[(a+b)² + (a-b)²] / (a² + b²)",
+      "back": "2"
+    },
+    {
+      "front": "(1 - 1/2)(1 - 1/3)...(1 - 1/n)",
+      "back": "1 / n"
+    },
+    {
+      "front": "(1 + 1/2)(1 + 1/3)...(1 + 1/n)",
+      "back": "(n + 1) / 2"
+    },
+    {
+      "front": "Telescoping series: 1/(1×2) + 1/(2×3) + ... + 1/(n×(n+1))",
+      "back": "n / (n + 1)"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Simplification Part 3 — Algebraic Identities & Master Revision Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Algebraic Identities & Series",
+        "children": ["cube_formulas", "square_formulas", "telescoping_series", "master_tricks"]
+      },
+      {
+        "id": "cube_formulas",
+        "label": "Cube Formulas (கன முற்றொருமைகள்)",
+        "children": ["a3_plus_b3", "a3_minus_b3"]
+      },
+      {
+        "id": "a3_plus_b3",
+        "label": "(a³+b³)/(a²-ab+b²) = a+b",
+        "children": []
+      },
+      {
+        "id": "a3_minus_b3",
+        "label": "(a³-b³)/(a²+ab+b²) = a-b",
+        "children": []
+      },
+      {
+        "id": "square_formulas",
+        "label": "Square Formulas (வர்க்க வடிவங்கள்)",
+        "children": ["ab_diff_4", "ab_sum_2"]
+      },
+      {
+        "id": "ab_diff_4",
+        "label": "[(a+b)²-(a-b)²]/ab = 4",
+        "children": []
+      },
+      {
+        "id": "ab_sum_2",
+        "label": "[(a+b)²+(a-b)²]/(a²+b²) = 2",
+        "children": []
+      },
+      {
+        "id": "telescoping_series",
+        "label": "Telescoping Series (தொடர் விதிகளின் ரத்து)",
+        "children": ["prod_sub_series", "prod_add_series", "sum_frac_series"]
+      },
+      {
+        "id": "prod_sub_series",
+        "label": "Π(1 - 1/k) = 1/n",
+        "children": []
+      },
+      {
+        "id": "prod_add_series",
+        "label": "Π(1 + 1/k) = (n+1)/2",
+        "children": []
+      },
+      {
+        "id": "sum_frac_series",
+        "label": "Σ 1/k(k+1) = n/(n+1)",
+        "children": []
+      },
+      {
+        "id": "master_tricks",
+        "label": "Master Shortcuts (சிறப்பு வழிமுறைகள்)",
+        "children": ["frac_999_trick", "cond_abc_zero"]
+      },
+      {
+        "id": "frac_999_trick",
+        "label": "999 (998/999) × 999 = 998999",
+        "children": []
+      },
+      {
+        "id": "cond_abc_zero",
+        "label": "a+b+c=0 ⇒ a³+b³+c³ = 3abc",
+        "children": []
+      }
+    ]
+  }
+}

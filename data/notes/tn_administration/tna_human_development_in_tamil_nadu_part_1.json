@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "topic_id": "tna_human_development_in_tamil_nadu_part_1",
+    "repository_id": "tna_human_development_in_tamil_nadu",
+    "display_title": "Human Development in Tamil Nadu — Part 1: Human Development Concepts",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "tn_administration",
+    "chapter": "Human Development Indicators in Tamil Nadu",
+    "language": "bilingual"
+  },
+  "metadata": {
+    "version": "1.0",
+    "status": "validated",
+    "review_status": "peer_reviewed",
+    "difficulty": "advanced",
+    "estimated_study_time": "45 mins"
+  },
+  "keywords": [
+    "Human Development Index",
+    "HDI",
+    "UNDP",
+    "Mahbub ul Haq",
+    "Amartya Sen",
+    "MPI",
+    "GDI",
+    "PQLI",
+    "TNPSC"
+  ],
+  "learning_outcomes": [
+    "Understand core human development concepts, UNDP methodology, and index calculation.",
+    "Differentiate HDI, MPI, GDI, and PQLI dimensions and indicators.",
+    "Analyze why human development fundamentally differs from mere GDP/economic growth."
+  ],
+  "subject": "tn_administration",
+  "topic": "Human Development in Tamil Nadu — Part 1: Human Development Concepts",
+  "language": "bilingual",
+  "ui_type": "standard_note",
+  "sections": [
+    "Meaning and Evolution of Human Development",
+    "Human Development Index (HDI) Dimensions & Calculation",
+    "Multidimensional Poverty Index (MPI) Framework",
+    "Gender Development & Physical Quality of Life Indicators",
+    "Economic Growth vs Human Development Comparison"
+  ],
+  "content": {
+    "definition": {
+      "en": "Human Development is defined by UNDP as the process of enlarging people's choices, enhancing human capabilities, and expanding freedoms so that people can live long, healthy, knowledgeable, and decent lives.",
+      "ta": "மனித வள மேம்பாடு என்பது ஐ.நா. மேம்பாட்டுத் திட்டத்தினால் (UNDP) மக்களின் தேர்வுகளை விரிவுபடுத்துதல், மனிதத் திறன்களை மேம்படுத்துதல் மற்றும் சுதந்திரங்களை விரிவாக்குதல் என வரையறுக்கப்படுகிறது."
+    },
+    "comparison_tables": [
+      {
+        "id": "table_hdi_vs_economic_growth",
+        "title_en": "Economic Growth vs Human Development",
+        "title_ta": "பொருளாதார வளர்ச்சி vs மனித வள மேம்பாடு",
+        "headers_en": [
+          "Feature",
+          "Economic Growth (GDP)",
+          "Human Development (HDI)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "பொருளாதார வளர்ச்சி (GDP)",
+          "மனித வள மேம்பாடு (HDI)"
+        ],
+        "rows_en": [
+          [
+            "Focus",
+            "Quantitative increase in monetary goods & services",
+            "Qualitative enhancement of human life and capabilities"
+          ],
+          [
+            "Primary Metric",
+            "Gross Domestic Product (GDP) / Per Capita Income",
+            "Human Development Index (HDI - Health, Education, Income)"
+          ],
+          [
+            "Ends vs Means",
+            "Treats income as the ultimate end goal",
+            "Treats income as a means to expand human freedoms"
+          ],
+          [
+            "Distribution",
+            "Can occur with rising inequality and poor health",
+            "Requires broad-based progress in health, schooling, and living standards"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மையம்",
+            "பொருட்கள் மற்றும் சேவைகளின் அளவியல் அதிகரிப்பு",
+            "மனித வாழ்க்கை மற்றும் திறன்களின் குணவியல் மேம்பாடு"
+          ],
+          [
+            "முக்கிய அளவுகோல்",
+            "மொத்த உள்நாட்டு உற்பத்தி (GDP) / தலா வருமானம்",
+            "மனித வள மேம்பாட்டுக் குறியீடு (HDI)"
+          ],
+          [
+            "நோக்கம்",
+            "வருமானத்தையே இறுதி இலக்காகக் கருதுகிறது",
+            "வருமானத்தை சுதந்திரத்தை விரிவாக்கும் ஒரு வழியாகக் கருதுகிறது"
+          ],
+          [
+            "பகிர்வு",
+            "சமத்துவமின்மையுடனும் ஏற்படலாம்",
+            "சுகாதாரம், கல்வி மற்றும் வாழ்க்கைத் தரத்தில் பரவலான முன்னேற்றம் தேவை"
+          ]
+        ]
+      },
+      {
+        "id": "table_hdi_vs_mpi",
+        "title_en": "HDI vs Multidimensional Poverty Index (MPI)",
+        "title_ta": "HDI vs பலபரிமாண வறுமைக் குறியீடு (MPI)",
+        "headers_en": [
+          "Dimension / Metric",
+          "Human Development Index (HDI)",
+          "Multidimensional Poverty Index (MPI)"
+        ],
+        "headers_ta": [
+          "பரிமாணம் / அளவுகோல்",
+          "மனித வள மேம்பாட்டுக் குறியீடு (HDI)",
+          "பலபரிமாண வறுமைக் குறியீடு (MPI)"
+        ],
+        "rows_en": [
+          [
+            "Developed By",
+            "UNDP (1990) by Mahbub ul Haq & Amartya Sen",
+            "UNDP & OPHI (2010) by Sabina Alkire & James Foster"
+          ],
+          [
+            "Core Dimensions",
+            "3 Dimensions: Long Life, Knowledge, Decent Income",
+            "3 Dimensions: Health, Education, Standard of Living"
+          ],
+          [
+            "Indicators Count",
+            "4 Indicators: Life Expectancy, EYOS, MYOS, GNI per capita",
+            "10 Indicators: Nutrition, Child Mortality, Schooling, Assets, Cooking Fuel, etc."
+          ],
+          [
+            "Measurement Focus",
+            "Measures average national achievement",
+            "Measures acute deprivation at individual / household level"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உருவாக்கியவர்",
+            "UNDP (1990) மஹபூப் உல் ஹக் & அமர்த்தியா சென்",
+            "UNDP & OPHI (2010) சபினா ஆல்கயர் & ஜேம்ஸ் பாஸ்டர்"
+          ],
+          [
+            "முதன்மை பரிமாணங்கள்",
+            "3 பரிமாணங்கள்: நீண்ட வாழ்வு, அறிவு, நல்ல வருமானம்",
+            "3 பரிமாணங்கள்: சுகாதாரம், கல்வி, வாழ்க்கைத்தரம்"
+          ],
+          [
+            "குறியீடுகளின் எண்ணிக்கை",
+            "4 குறியீடுகள்: வாழ்நாள் எதிர்பார்ப்பு, EYOS, MYOS, GNI",
+            "10 குறியீடுகள்: ஊட்டச்சத்து, குழந்தை இறப்பு, கல்வி, சொத்துக்கள், எரிபொருள் போன்றவை"
+          ],
+          [
+            "அளவீட்டு மையம்",
+            "தேசிய சராசரி சாதனையை அளவிடுகிறது",
+            "தனிநபர் / குடும்ப மட்டத்திலான கடுமையான இழப்புகளை அளவிடுகிறது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "node_en": "Human Development Framework",
+        "node_ta": "மனித வள மேம்பாட்டு அமைப்பு",
+        "children": [
+          {
+            "node_en": "Core Indices (UNDP)",
+            "node_ta": "முதன்மை குறியீடுகள் (UNDP)",
+            "children": [
+              {
+                "node_en": "HDI (Health, Education, Income)",
+                "node_ta": "HDI (சுகாதாரம், கல்வி, வருமானம்)"
+              },
+              {
+                "node_en": "MPI (10 Household Indicators)",
+                "node_ta": "MPI (10 குடும்பக் குறியீடுகள்)"
+              },
+              {
+                "node_en": "GDI & GII (Gender Parity)",
+                "node_ta": "GDI & GII (பாலின சமத்துவம்)"
+              }
+            ]
+          },
+          {
+            "node_en": "Key Pioneers",
+            "node_ta": "முக்கிய முன்னோடிகள்",
+            "children": [
+              {
+                "node_en": "Mahbub ul Haq (Pakistan - HDR 1990)",
+                "node_ta": "மஹபூப் உல் ஹக் (பாகிஸ்தான் - HDR 1990)"
+              },
+              {
+                "node_en": "Amartya Sen (Capability Approach)",
+                "node_ta": "அமர்த்தியா சென் (திறன் அணுகுமுறை)"
+              },
+              {
+                "node_en": "Morris D. Morris (PQLI - 1979)",
+                "node_ta": "மோரிஸ் டி. மோரிஸ் (PQLI - 1979)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "trap_id": "t1p1_trap1",
+        "title_en": "HDI Calculation Components vs Indicators Trap",
+        "title_ta": "HDI கணக்கீட்டு கூறுகளின் ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Assuming HDI uses Gross Domestic Product (GDP) per capita instead of Gross National Income (GNI) per capita in PPP$.",
+            "CORRECT FACT: UNDP shifted from GDP per capita to GNI per capita (PPP$) in the 2010 Human Development Report to accurately capture net foreign income flows."
+          ],
+          "ta": [
+            "ஏமாற்று: HDI தலா GDP-ஐப் பயன்படுத்துகிறது என நினைப்பது தவறாகும்.",
+            "சரியான உண்மை: 2010 முதல் UNDP தலா GNI (PPP$) அளவீட்டை மட்டுமே பயன்படுத்தி வருகிறது."
+          ]
+        }
+      },
+      {
+        "trap_id": "t1p1_trap2",
+        "title_en": "PQLI vs HDI Indicators Distinction",
+        "title_ta": "PQLI vs HDI குறியீடுகளின் வேறுபாடு",
+        "points": {
+          "en": [
+            "TRAP: Including income or GDP in Physical Quality of Life Index (PQLI).",
+            "CORRECT FACT: Morris D. Morris created PQLI (1979) using 3 non-monetary indicators: Infant Mortality Rate, Life Expectancy at Age 1, and Basic Literacy Rate. PQLI explicitly excludes income."
+          ],
+          "ta": [
+            "ஏமாற்று: PQLI-இல் வருமானம் அல்லது GDP சேர்க்கப்பட்டுள்ளது எனக் கருதுவது.",
+            "சரியான உண்மை: PQLI (1979) மூன்று பணமில்லா அளவீடுகளை மட்டுமே கொண்டது: குழந்தை இறப்பு விகிதம், 1 வயதில் வாழ்நாள் எதிர்பார்ப்பு, மற்றும் அடிப்படை எழுத்தறிவு விகிதம்."
+          ]
+        }
+      },
+      {
+        "trap_id": "t1p1_trap3",
+        "title_en": "Expected vs Mean Years of Schooling",
+        "title_ta": "எதிர்பார்க்கப்படும் vs சராசரி பள்ளிக்கல்வி ஆண்டுகள்",
+        "points": {
+          "en": [
+            "TRAP: Confusing Expected Years of Schooling (EYOS) with Mean Years of Schooling (MYOS).",
+            "CORRECT FACT: EYOS measures children of school-entering age (future expectation), while MYOS measures adults aged 25 years and older (actual historical attainment)."
+          ],
+          "ta": [
+            "ஏமாற்று: EYOS மற்றும் MYOS இரண்டையும் ஒன்றாகக் குழப்புவது.",
+            "சரியான உண்மை: EYOS என்பது பள்ளியில் சேரும் குழந்தையின் எதிர்கால எதிர்பார்ப்பு; MYOS என்பது 25 வயதுக்கு மேற்பட்ட பெரியவர்கள் பெற்ற உண்மையான சராசரி கல்வி ஆண்டுகள்."
+          ]
+        }
+      },
+      {
+        "trap_id": "t1p1_trap4",
+        "title_en": "Geometric Mean vs Arithmetic Mean Shift",
+        "title_ta": "பெருக்கு சராசரி vs கூட்டு சராசரி மாற்றம்",
+        "points": {
+          "en": [
+            "TRAP: Believing HDI dimension indices are combined using a simple arithmetic average.",
+            "CORRECT FACT: Since 2010, UNDP uses the Geometric Mean of the three dimension indices. This ensures that low achievement in one dimension cannot be completely substituted by high achievement in another."
+          ],
+          "ta": [
+            "ஏமாற்று: HDI குறியீடுகள் கூட்டுச் சராசரி மூலம் இணைக்கப்படுகின்றன எனக் கருதுவது.",
+            "சரியான உண்மை: 2010 முதல், UNDP மூன்று குறியீடுகளின் பெருக்குச் சராசரியை (Geometric Mean) பயன்படுத்துகிறது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Mahbub ul Haq (Pakistan Economist) launched the first UNDP Human Development Report in 1990.",
+        "Amartya Sen provided the conceptual groundwork through his 'Capability Approach' to human welfare.",
+        "The three dimensions of HDI are Health (Life Expectancy), Education (EYOS & MYOS), and Standard of Living (GNI per capita in PPP$).",
+        "PQLI was developed by Morris D. Morris in 1979 for the Overseas Development Council, scored from 1 to 100.",
+        "MPI was introduced by UNDP and OPHI in 2010, replacing the earlier Human Poverty Index (HPI)."
+      ],
+      "ta": [
+        "1990 இல் பாகிஸ்தான் பொருளாதார அறிஞர் மஹபூப் உல் ஹக் முதல் UNDP மனித வள மேம்பாட்டு அறிக்கையை வெளியிட்டார்.",
+        "அமர்த்தியா சென் தனது 'திறன் அணுகுமுறை' (Capability Approach) மூலம் இதன் கருத்தியல் அடித்தளத்தை வழங்கினார்.",
+        "HDI-இன் மூன்று பரிமாணங்கள்: சுகாதாரம், கல்வி, மற்றும் வாழ்க்கைத்தரம் (தலா GNI PPP$).",
+        "PQLI 1979 இல் மோரிஸ் டி. மோரிஸால் உருவாக்கப்பட்டது, இதன் அளவுரு 1 முதல் 100 வரை மதிப்பிடப்படுகிறது.",
+        "2010 இல் UNDP மற்றும் OPHI இணைந்தது பலபரிமாண வறுமைக் குறியீட்டை (MPI) அறிமுகப்படுத்தின."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Human Development focuses on expanding capabilities, freedoms, and choices rather than mere GDP expansion.",
+        "HDI range is 0.000 to 1.000, calculated using geometric mean across Health, Education, and Income indices.",
+        "MPI measures acute deprivations across 10 indicators in Health, Education, and Living Standards at household level.",
+        "PQLI excludes income and focuses strictly on Infant Mortality, Life Expectancy at Age 1, and Literacy."
+      ],
+      "ta": [
+        "மனித வள மேம்பாடு என்பது வெறும் GDP வளர்ச்சியைத் தாண்டி மக்களின் திறன்களையும் தேர்வுகளையும் விரிவாக்குவதாகும்.",
+        "HDI மதிப்பு 0.000 முதல் 1.000 வரை இருக்கும், இது சுகாதாரம், கல்வி, வருமானக் குறியீடுகளின் பெருக்குச் சராசரியாகும்.",
+        "MPI என்பது குடும்ப மட்டத்திலான 10 குறியீடுகளின் அடிப்படையில் அமைந்த பலபரிமாண இழப்புகளை அளவிடுகிறது.",
+        "PQLI வருமானத்தை விலக்கி குழந்தை இறப்பு, 1 வயதில் வாழ்நாள் எதிர்பார்ப்பு, எழுத்தறிவு ஆகியவற்றை மட்டுமே அளவிடுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "front_en": "Who launched the UNDP Human Development Report in 1990?",
+        "front_ta": "1990 இல் UNDP மனித வள மேம்பாட்டு அறிக்கையைத் தொடங்கியவர் யார்?",
+        "back_en": "Mahbub ul Haq (Pakistani Economist) along with Nobel Laureate Amartya Sen.",
+        "back_ta": "மஹபூப் உல் ஹக் (பாகிஸ்தான்) மற்றும் நோபல் வெற்றியாளர் அமர்த்தியா சென்."
+      },
+      {
+        "front_en": "What are the 3 dimensions of the Human Development Index (HDI)?",
+        "front_ta": "மனித வள மேம்பாட்டுக் குறியீட்டின் (HDI) 3 பரிமாணங்கள் யாவை?",
+        "back_en": "1. Long & Healthy Life, 2. Knowledge, 3. Decent Standard of Living.",
+        "back_ta": "1. நீண்ட ஆரோக்கியமான வாழ்வு, 2. அறிவு, 3. நல்ல வாழ்க்கைத்தரம்."
+      },
+      {
+        "front_en": "Which income metric is used in HDI post-2010?",
+        "front_ta": "2010 க்குப் பின் HDI-இல் பயன்படுத்தப்படும் வருமான அளவீடு எது?",
+        "back_en": "Gross National Income (GNI) per capita in Purchasing Power Parity (PPP$).",
+        "back_ta": "வாங்கும் திறன் சமநிலை தலா மொத்த தேசிய வருமானம் (GNI per capita in PPP$)."
+      },
+      {
+        "front_en": "What indicators are used in PQLI created by Morris D. Morris?",
+        "front_ta": "மோரிஸ் டி. மோரிஸ் உருவாக்கிய PQLI-இல் உள்ள குறியீடுகள் எவை?",
+        "back_en": "1. Infant Mortality Rate, 2. Life Expectancy at Age 1, 3. Basic Literacy Rate (No income).",
+        "back_ta": "1. குழந்தை இறப்பு விகிதம், 2. 1 வயதில் வாழ்நாள் எதிர்பார்ப்பு, 3. அடிப்படை எழுத்தறிவு (வருமானம் இல்லை)."
+      },
+      {
+        "front_en": "What mathematical method combines the 3 HDI dimensions post-2010?",
+        "front_ta": "2010 க்குப் பின் 3 HDI பரிமாணங்களை இணைக்கும் கணித முறை எது?",
+        "back_en": "Geometric Mean of the three dimension indices.",
+        "back_ta": "மூன்று பரிமாணக் குறியீடுகளின் பெருக்குச் சராசரி (Geometric Mean)."
+      },
+      {
+        "front_en": "How many total indicators comprise the Multidimensional Poverty Index (MPI)?",
+        "front_ta": "பலபரிமாண வறுமைக் குறியீட்டில் (MPI) மொத்தம் எத்தனை குறியீடுகள் உள்ளன?",
+        "back_en": "10 indicators across 3 dimensions (Health, Education, Standard of Living).",
+        "back_ta": "3 பரிமாணங்களில் உள்ள 10 குறியீடுகள் (சுகாதாரம், கல்வி, வாழ்க்கைத்தரம்)."
+      },
+      {
+        "front_en": "What is the difference between EYOS and MYOS in HDI?",
+        "front_ta": "HDI-இல் EYOS மற்றும் MYOS இடையேயான வேறுபாடு என்ன?",
+        "back_en": "EYOS = Expected Years of Schooling for children entering school; MYOS = Mean Years of Schooling for adults aged 25+.",
+        "back_ta": "EYOS = பள்ளியில் சேரும் குழந்தைகளுக்கான எதிர்காலக் கல்வி; MYOS = 25+ வயது பெரியவர்களின் சராசரிக் கல்வி."
+      },
+      {
+        "front_en": "Which organisation co-developed MPI alongside UNDP in 2010?",
+        "front_ta": "2010 இல் UNDP உடன் இணைந்து MPI-ஐ உருவாக்கிய அமைப்பு எது?",
+        "back_en": "Oxford Poverty and Human Development Initiative (OPHI).",
+        "back_ta": "ஆக்ஸ்போர்டு வறுமை மற்றும் மனித மேம்பாட்டு மையம் (OPHI)."
+      }
+    ]
+  }
+}

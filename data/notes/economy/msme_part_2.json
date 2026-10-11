@@ -1,0 +1,821 @@
+{
+  "meta": {
+    "topic_id": "economy_msme_part_2",
+    "repository_id": "economy_msme",
+    "display_title": "Micro, Small and Medium Enterprises (MSME) – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Micro, Small and Medium Enterprises (MSME)",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Udyam Registration July 1 2020",
+    "Paperless Self Declaration",
+    "Udyam Assist Platform UAP",
+    "CGTMSE Collateral Free 5 Crore",
+    "SIDBI Lucknow 1990",
+    "MSMED Act Section 15 45 Days",
+    "Section 16 Penal Compound Interest 3x Bank Rate",
+    "Section 23 Tax Disallowance",
+    "MSME Samadhaan MSEFC",
+    "TReDS Factoring 500 Crore Turnover",
+    "Public Procurement 25 Percent",
+    "4 Percent SC ST 3 Percent Women"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Evaluate the digital transformation of enterprise formalisation via the Udyam portal and UAP.",
+        "Understand credit enhancement mechanisms through CGTMSE collateral-free guarantee architecture."
+      ],
+      "ta": [
+        "உத்யம் தளம் மற்றும் UAP மூலம் தொழில் நிறுவனங்கள் முறைப்படுத்தப்படுவதன் டிஜிட்டல் மாற்றத்தை அறிதல்.",
+        "CGTMSE பிணையில்லா கடன் உத்தரவாதக் கட்டமைப்பின் மூலம் கடன் வாய்ப்புகள் பெருகுவதைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize statutory payment rules: 15/45 days under Section 15, and 3x Bank Rate penal interest under Section 16.",
+        "Recall mandatory procurement targets: 25% total, 4% SC/ST, 3% Women, and ₹500 Cr TReDS threshold."
+      ],
+      "ta": [
+        "சட்டப்பூர்வ பணப்பட்டுவாடா விதிகளை நினைவில் நிறுத்துதல்: பிரிவு 15 (15/45 நாட்கள்) மற்றும் பிரிவு 16 (3x வங்கி விகித கூட்டு வட்டி).",
+        "கட்டாயக் கொள்முதல் இலக்குகளை நினைவுகூருதல்: 25% மொத்தம், 4% SC/ST, 3% பெண்கள் மற்றும் ₹500 கோடி TReDS வரம்பு."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how Section 23 tax disallowance creates a fiscal deterrent against large corporate payment defaults.",
+        "Appraise the auction-based factoring liquidity delivered by the TReDS platform."
+      ],
+      "ta": [
+        "பிரிவு 23 வரி கழிவு மறுப்பு எவ்வாறு கார்ப்பரேட் நிறுவனங்கள் பணத்தை தாமதப்படுத்துவதைத் தடுக்கிறது என்பதை ஆய்வு செய்தல்.",
+        "TReDS மின்னணு தளம் வழங்கும் உடனடி பணப்புழக்க நன்மைகளை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to detect exam traps regarding 45-day contract limits, 3x compound penal rates, and SIDBI headquarters."
+      ],
+      "ta": [
+        "45 நாட்கள் வரம்பு, 3 மடங்கு கூட்டு வட்டி மற்றும் சிட்பி தலைமையகம் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Micro, Small and Medium Enterprises (MSME) – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_udyam_registration",
+      "title_en": "Udyam Registration Portal: Paperless Digital Formalisation",
+      "title_ta": "உத்யம் பதிவு இணையதளம்: காகிதமற்ற டிஜிட்டல் முறைப்படுத்தல்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_credit_guarantee_cgtmse",
+      "title_en": "Credit Access & Collateral-Free Guarantees: CGTMSE Framework",
+      "title_ta": "கடன் அணுகலும் பிணையில்லா உத்தரவாதமும்: CGTMSE கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_delayed_payments_and_treds",
+      "title_en": "Delayed Payments Framework (MSMED Sections 15-24) & TReDS",
+      "title_ta": "காலதாமதமான பணப்பட்டுவாடா கட்டமைப்பு (MSMED பிரிவுகள் 15-24) & TReDS",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_public_procurement_and_clusters",
+      "title_en": "Public Procurement Policy & Cluster Development Schemes",
+      "title_ta": "பொதுக் கொள்முதல் கொள்கை & தொழிற்தொகுப்பு மேம்பாட்டுத் திட்டங்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The institutional and financial architecture supporting Indian MSMEs comprises paperless digital formalisation via the Udyam Registration portal, credit enhancement through collateral-free guarantees (CGTMSE), statutory remedies against delayed commercial payments under Sections 15-24 of the MSMED Act (MSME Samadhaan), electronic trade factoring rails (TReDS), and mandatory public procurement quotas.",
+      "ta": "இந்திய MSME நிறுவனங்களை ஆதரிக்கும் நிறுவன மற்றும் நிதி கட்டமைப்பு என்பது உத்யம் (Udyam) இணையதளம் மூலமான காகிதமற்ற முறையான பதிவு, பிணையில்லா கடன் உத்தரவாதம் (CGTMSE), MSMED சட்டத்தின் 15-24 பிரிவுகளின் கீழான காலதாமதமான பணப்பட்டுவாடாவுக்கான சட்டப்பூர்வ தீர்வுகள் (MSME Samadhaan), வர்த்தக ரசீது தள்ளுபடி மின்னணு தளம் (TReDS) மற்றும் கட்டாய அரசு கொள்முதல் ஒதுக்கீடுகளை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "While MSMEs drive vast economic activity, they confront structural vulnerabilities: lack of formal credit, chronic delays in payment realization from large corporates, and cumbersome compliance burdens. To address these deficits, the Government transformed the institutional architecture. On July 1, 2020, the paperless, self-declaration-based Udyam Registration portal replaced the cumbersome Udyog Aadhaar Memorandum, interfacing directly with CBDT (Income Tax) and GSTN databases. Financially, the Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE), jointly set up by the Ministry of MSME and SIDBI, provides collateral-free credit guarantees up to ₹5 crore. Legally, the MSMED Act, 2006 mandates that buyers must settle dues within 45 days, failing which compound interest at three times the RBI Bank Rate becomes payable—a statutory right operationalized via Micro and Small Enterprise Facilitation Councils (MSEFC) and the MSME Samadhaan portal. Concurrently, the Trade Receivables Discounting System (TReDS) and the 25% Public Procurement Policy guarantee liquidity and institutional market access.",
+      "ta": "MSME நிறுவனங்கள் நாட்டின் பொருளாதாரத்தை இயக்கினாலும், முறையான வங்கிக் கடன் கிடைக்காமை, கார்ப்பரேட் நிறுவனங்களிடமிருந்து உரிய நேரத்தில் பணம் வராமல் போவது மற்றும் கடுமையான விதிமுறைகள் போன்ற பலவீனங்களை எதிர்கொள்கின்றன. இவற்றைத் தீர்க்க அரசு நிறுவனக் கட்டமைப்பை முழுமையாக மாற்றியமைத்தது. ஜூலை 1, 2020 அன்று காகிதமற்ற, சுய-சான்றளிப்பு அடிப்படையிலான 'உத்யம் பதிவு' (Udyam Registration) இணையதளம் பழைய உத்யோக் ஆதாரை மாற்றி, வருமான வரி (CBDT) மற்றும் ஜிஎஸ்டி (GSTN) தரவுகளுடன் நேரடியாக இணைக்கப்பட்டது. நிதி ரீதியாக, மத்திய MSME அமைச்சகம் மற்றும் சிட்பி (SIDBI) இணைந்து உருவாக்கிய CGTMSE அமைப்பு ₹5 கோடி வரை பிணையில்லா கடன் உத்தரவாதத்தை வழங்குகிறது. சட்டப்பூர்வமாக, வாங்குபவர்கள் 45 நாட்களுக்குள் நிலுவைத் தொகையை வழங்க வேண்டும் எனவும், தவறினால் ரிசர்வ் வங்கி விகிதத்தைப் போல 3 மடங்கு கூட்டு வட்டி செலுத்த வேண்டும் எனவும் MSMED சட்டம் ஆணையிடுகிறது; இது MSME சமாதான் இணையதளம் மூலம் செயல்படுத்தப்படுகிறது. மேலும் TReDS ரசீது தள்ளுபடி முறை மற்றும் 25% கட்டாய அரசு கொள்முதல் கொள்கை ஆகியவை நிறுவனங்களுக்கு பணப்புழக்கத்தையும் சந்தையையும் உறுதி செய்கின்றன."
+    },
+    "sec_udyam_registration": [
+      {
+        "title": "Architecture and Features of Udyam",
+        "title_ta": "உத்யம் போர்ட்டலின் கட்டமைப்பும் சிறப்பம்சங்களும்",
+        "points": {
+          "en": [
+            "Launch Date: Launched on July 1, 2020, replacing the legacy Udyog Aadhaar Memorandum (UAM) and Entrepreneurs Memorandum (EM).",
+            "Paperless & Zero Document Upload: 100% online registration based entirely on self-declaration; no physical certificates or proof documents need to be uploaded.",
+            "Direct Database Integration: Fully integrated with the Central Board of Direct Taxes (CBDT) PAN database and the Goods and Services Tax Network (GSTN); investment and turnover data are automatically verified from tax returns.",
+            "Udyam Certificate & QR Code: Issues a permanent digital registration number and a dynamic QR-code-enabled certificate.",
+            "Single Identification Key: Mandatory prerequisite for availing Priority Sector Lending (PSL) benefits, government subsidies, and participating in public procurement tenders."
+          ],
+          "ta": [
+            "தொடங்கப்பட்ட நாள்: ஜூலை 1, 2020 அன்று தொடங்கப்பட்டு, பழைய உத்யோக் ஆதார் மெமோராண்டம் (UAM) முறையை மாற்றியது.",
+            "காகிதமற்றது & ஆவணப் பதிவேற்றம் இல்லை: 100% ஆன்லைன் முறை; சுய-சான்றளிப்பின் அடிப்படையில் மட்டுமே இயங்குகிறது; எந்த இயற்பியல் ஆவணங்களையும் பதிவேற்ற வேண்டிய அவசியமில்லை.",
+            "நேரடி தரவுத்தள இணைப்பு: வருமான வரி (CBDT PAN) மற்றும் ஜிஎஸ்டி (GSTN) அமைப்புகளுடன் முழுமையாக இணைக்கப்பட்டுள்ளது; இயந்திர முதலீடு மற்றும் விற்றுமுதல் விவரங்கள் வரி தாக்கல்களில் இருந்து தானாகவே சரிபார்க்கப்படுகின்றன.",
+            "உத்யம் சான்றிதழ் & QR குறியீடு: நிரந்தர டிஜிட்டல் பதிவு எண் மற்றும் பாதுகாப்பான QR குறியீட்டுடன் கூடிய அதிகாரப்பூர்வ சான்றிதழ் வழங்கப்படுகிறது.",
+            "முதன்மையான அடையாள அட்டை: முன்னுரிமைத் துறை கடன் (PSL), அரசு மானியங்கள் மற்றும் அரசு டெண்டர்களில் பங்கேற்க உத்யம் பதிவு கட்டாய முன்நிபந்தனையாகும்."
+          ]
+        }
+      },
+      {
+        "title": "Udyam Assist Platform (UAP) for Informal Micro Enterprises",
+        "title_ta": "முறைசாரா குறு நிறுவனங்களுக்கான உத்யம் அசிஸ்ட் தளம் (UAP)",
+        "points": {
+          "en": [
+            "Targeting the Unregistered: Launched in January 2023 to bring millions of informal micro enterprises (IMEs) lacking GST registration into the formal fold.",
+            "Facilitated Registration: Designated Intermediary Banks and Non-Banking Financial Companies (NBFCs) assist tiny vendors and artisans to register using basic Aadhaar.",
+            "Priority Sector Lending Benefit: IMEs registered on UAP are legally treated on par with formal micro enterprises for Priority Sector Lending (PSL) credit targets by commercial banks."
+          ],
+          "ta": [
+            "பதிவு செய்யப்படாதோரை இணைத்தல்: ஜிஎஸ்டி பதிவு இல்லாத லட்சக்கணக்கான முறைசாரா குறு நிறுவனங்களை (IME) முறைப்படுத்த ஜனவரி 2023-ல் தொடங்கப்பட்டது.",
+            "வங்கி உதவிப் பதிவு: வங்கிகள் மற்றும் வங்கி சாரா நிதி நிறுவனங்கள் (NBFC) எளிய ஆதார் விவரங்களைக் கொண்டு சிறு வியாபாரிகளையும் கைவினைஞர்களையும் பதிவு செய்ய உதவுகின்றன.",
+            "முன்னுரிமைத் துறை கடன் நன்மை: UAP தளத்தில் பதிவு செய்த முறைசாரா நிறுவனங்கள் வங்கிகளின் முன்னுரிமைத் துறை கடன் (PSL) இலக்குகளின் கீழ் அதிகாரப்பூர்வ குறு நிறுவனங்களாகக் கருதப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "sec_credit_guarantee_cgtmse": [
+      {
+        "title": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+        "title_ta": "குறு மற்றும் சிறு நிறுவனங்களுக்கான கடன் உத்தரவாத நிதி அறக்கட்டளை (CGTMSE)",
+        "points": {
+          "en": [
+            "Institutional Genesis: Jointly established in August 2000 by the Ministry of MSME and the Small Industries Development Bank of India (SIDBI).",
+            "Collateral-Free Mandate: Provides institutional credit guarantees to Member Lending Institutions (commercial banks, RRBs, SFBs) to deliver collateral-free term loans and working capital to first-generation entrepreneurs.",
+            "Coverage Ceiling Expansion: The guarantee coverage ceiling has been progressively enhanced to ₹5 Crore per eligible MSE borrower (expanded from ₹2 Crore in recent union budgets).",
+            "Guarantee Extent: Offers guarantee coverage typically between 75% and 85% of the defaulted amount (up to 85% for women-owned MSEs, SC/ST entrepreneurs, and units in North-East / Aspirational Districts)."
+          ],
+          "ta": [
+            "நிறுவனத் தோற்றம்: மத்திய MSME அமைச்சகம் மற்றும் இந்திய சிறுதொழில் வளர்ச்சி வங்கி (SIDBI) இணைந்து ஆகஸ்ட் 2000-ல் நிறுவியது.",
+            "பிணையில்லா கடன் ஆணை: முதல் தலைமுறை தொழில்முனைவோருக்கு வங்கிகள் எந்த சொத்துப் பிணையமும் இன்றி (Collateral-free) கடன் வழங்குவதை ஊக்குவிக்க, வங்கிகளுக்கு அரசு கடன் உத்தரவாதத்தை அளிக்கிறது.",
+            "உத்தரவாத உச்சவரம்பு உயர்வு: தகுதியுள்ள ஒரு குறு-சிறு நிறுவனத்திற்கு வழங்கப்படும் கடன் உத்தரவாத உச்சவரம்பு ₹5 கோடியாக கணிசமாக உயர்த்தப்பட்டுள்ளது.",
+            "உத்தரவாத விகிதம்: கடன் இழப்பு ஏற்படும் போது 75% முதல் 85% வரை கடன் தொகையை வங்கிகளுக்கு CGTMSE ஈடுசெய்கிறது (பெண்கள், SC/ST தொழில்முனைவோர் மற்றும் பின்தங்கிய மாவட்டங்களுக்கு 85% வரை உத்தரவாதம்)."
+          ]
+        }
+      },
+      {
+        "title": "Small Industries Development Bank of India (SIDBI)",
+        "title_ta": "இந்திய சிறுதொழில் வளர்ச்சி வங்கி (SIDBI)",
+        "points": {
+          "en": [
+            "Apex Financial Institution: Set up on April 2, 1990 under the SIDBI Act, 1989, as the principal financial institution for promotion, financing, and development of the MSME sector.",
+            "Refinancing and Direct Lending: Provides indirect refinance to commercial banks, SFBs, and MFIs, while directly financing growth capital, green transition, and cluster modernization.",
+            "Headquarters: Headquartered in Lucknow, Uttar Pradesh."
+          ],
+          "ta": [
+            "தலைமை நிதி நிறுவனம்: MSME துறையை ஊக்குவிக்கவும், நிதி அளிக்கவும், மேம்படுத்தவும் SIDBI சட்டம் 1989-ன் கீழ் ஏப்ரல் 2, 1990 அன்று முதன்மை நிறுவனமாக அமைக்கப்பட்டது.",
+            "மறுநிதி மற்றும் நேரடி கடன்: வங்கிகள் மற்றும் நுண்கடன் நிறுவனங்களுக்கு மறுநிதி (Refinance) வழங்குவதோடு, பசுமைத் தொழில் மற்றும் தொழிற்தொகுப்புகளுக்கு நேரடிக் கடன்களையும் வழங்குகிறது.",
+            "தலைமையகம்: உத்தரப் பிரதேச மாநிலம் லக்னோவில் தலைமையகத்தைக் கொண்டுள்ளது."
+          ]
+        }
+      }
+    ],
+    "sec_delayed_payments_and_treds": [
+      {
+        "title": "Statutory Payment Windows (Sections 15 to 24 of MSMED Act)",
+        "title_ta": "சட்டப்பூர்வ பணப்பட்டுவாடா காலக்கெடு (MSMED சட்டப் பிரிவுகள் 15 முதல் 24 வரை)",
+        "points": {
+          "en": [
+            "Section 15 Mandatory Window: The buyer must pay the MSME supplier on or before the agreed date. In the absence of an agreement, payment must be made within 15 DAYS. In NO case can the agreed payment period exceed 45 DAYS from the date of acceptance of goods/services.",
+            "Section 16 Penal Interest: If the buyer fails to pay within 45 days, the buyer is statutorily liable to pay COMPOUND INTEREST with monthly rests at THREE TIMES (3x) the Bank Rate notified by the RBI.",
+            "Section 23 Tax Disallowance: The penal interest paid or payable by the buyer is strictly DISALLOWED as a deductible business expenditure under the Income Tax Act, 1961.",
+            "Section 18 MSEFC Arbitration: Disputes are arbitrated by the Micro and Small Enterprise Facilitation Council (MSEFC) through conciliation and statutory arbitration."
+          ],
+          "ta": [
+            "பிரிவு 15 கட்டாயக் கெடு: வாங்குபவர் ஒப்புக்கொள்ளப்பட்ட தேதிக்குள் பணத்தைச் செலுத்த வேண்டும். ஒப்பந்தம் இல்லையெனில் 15 நாட்களுக்குள் செலுத்த வேண்டும். ஒப்பந்தம் இருந்தாலும் எந்தச் சூழலிலும் '45 நாட்களுக்கு மேல்' கால அவகாசம் நீட்டிக்கப்படக் கூடாது.",
+            "பிரிவு 16 அபராத வட்டி: 45 நாட்களுக்குள் பணத்தைச் செலுத்தத் தவறினால், வாங்குபவர் ரிசர்வ் வங்கி நிர்ணயிக்கும் வங்கி விகிதத்தைப் போல 'மூன்று மடங்கு' (3x) கூட்டு வட்டியை மாதாந்திர ஓய்வுடன் அபராதமாகச் செலுத்த வேண்டும்.",
+            "பிரிவு 23 வரி கழிவு மறுப்பு: வாங்குபவர் செலுத்தும் இந்த அபராத வட்டியை தனது வருமான வரிக் கணக்கில் வணிகச் செலவாகக் காட்ட முடியாது; அதற்கு வரி விலக்கு முற்றிலும் மறுக்கப்படுகிறது.",
+            "பிரிவு 18 சமரச தீர்ப்பாயம்: பணப் பிரச்சனைகளை மாநில அளவிலான 'குறு மற்றும் சிறு தொழில் வசதிக் கவுன்சில்கள்' (MSEFC) சமரசம் மற்றும் நடுவர் தீர்ப்பாயம் மூலம் விசாரிக்கின்றன."
+          ]
+        }
+      },
+      {
+        "title": "MSME Samadhaan Portal & TReDS Factoring Platform",
+        "title_ta": "MSME சமாதான் போர்ட்டல் & TReDS ரசீது தள்ளுபடி தளம்",
+        "points": {
+          "en": [
+            "MSME Samadhaan Portal: Launched in October 2017 to enable registered MSEs to directly file online cases against defaulting CPSEs, Central Ministries, and private buyers.",
+            "Trade Receivables Discounting System (TReDS): An institutional electronic factoring platform regulated by RBI under the Payment and Settlement Systems Act, 2007.",
+            "Auction Mechanism: Allows MSMEs to upload trade invoices accepted by corporate/government buyers; multiple financiers (banks/NBFCs) bid to discount the invoice, providing instant liquidity without recourse to the MSME.",
+            "Mandatory Onboarding: Central Public Sector Enterprises (CPSEs) and companies with turnover > ₹500 Crore are statutorily mandated to onboard onto TReDS platforms (e.g., RXIL, M1xchange, Invoicemart)."
+          ],
+          "ta": [
+            "MSME சமாதான் இணையதளம்: பணம் தராத அரசு நிறுவனங்கள் மற்றும் பெருநிறுவனங்கள் மீது பாதிக்கப்பட்ட குறு-சிறு நிறுவனங்கள் நேரடியாக ஆன்லைனில் புகார் அளிக்க அக்டோபர் 2017-ல் தொடங்கப்பட்டது.",
+            "TReDS ரசீது தள்ளுபடி தளம்: ரிசர்வ் வங்கியின் வழிகாட்டுதலில் இயங்கும் ஒரு நிறுவன மின்னணு காரணி (Factoring) தளம்.",
+            "ஏல முறை: கார்ப்பரேட் நிறுவனங்கள் ஒப்புக்கொண்ட இன்வாய்ஸ்களை MSME-க்கள் இதில் பதிவேற்றுகின்றன; வங்கிகள் ஏலம் மூலம் குறைந்த வட்டியில் உடனடியாக பணத்தை வழங்கிவிட்டு, பின்னர் வாங்குபவரிடமிருந்து வசூலித்துக் கொள்கின்றன.",
+            "கட்டாய இணைப்பு: ₹500 கோடிக்கு மேல் விற்றுமுதல் கொண்ட பெருநிறுவனங்களும் அனைத்து பொதுத்துறை நிறுவனங்களும் (CPSE) TReDS தளங்களில் கட்டாயம் இணைய வேண்டும் என அரசு உத்தரவிட்டுள்ளது."
+          ]
+        }
+      }
+    ],
+    "sec_public_procurement_and_clusters": [
+      {
+        "title": "Public Procurement Policy for MSEs Order, 2012 (Revised)",
+        "title_ta": "MSE நிறுவனங்களுக்கான பொதுக் கொள்முதல் கொள்கை ஆணை (2012 / திருத்தப்பட்டது)",
+        "points": {
+          "en": [
+            "Mandatory 25% Procurement: Every Central Ministry, Department, and Central Public Sector Enterprise (CPSE) must mandatorily procure a minimum of 25% of their total annual purchases from Micro and Small Enterprises.",
+            "Sub-Target for SC/ST Entrepreneurs: Within the 25% target, a minimum sub-quota of 4% is earmarked specifically for MSEs owned by Scheduled Caste and Scheduled Tribe entrepreneurs.",
+            "Sub-Target for Women Entrepreneurs: A sub-quota of 3% is earmarked specifically for MSEs owned by Women entrepreneurs.",
+            "Government e-Marketplace (GeM): Dedicated national portal facilitating seamless direct public procurement from verified MSE vendors."
+          ],
+          "ta": [
+            "கட்டாய 25% கொள்முதல்: மத்திய அமைச்சகங்கள், துறைகள் மற்றும் பொதுத்துறை நிறுவனங்கள் (CPSE) தங்களின் மொத்த ஆண்டு கொள்முதலில் குறைந்தது 25%-ஐ குறு மற்றும் சிறு நிறுவனங்களிடமிருந்து மட்டுமே கட்டாயம் பெற வேண்டும்.",
+            "SC/ST தொழில்முனைவோருக்கான துணை ஒதுக்கீடு: இந்த 25% இலக்கில், 4% கொள்முதல் பட்டியல் சாதி (SC) மற்றும் பட்டியல் பழங்குடி (ST) தொழில்முனைவோர் நடத்தும் நிறுவனங்களிடமிருந்து பெறப்பட வேண்டும்.",
+            "பெண் தொழில்முனைவோருக்கான துணை ஒதுக்கீடு: இந்த 25% இலக்கில், 3% கொள்முதல் பெண்களால் நடத்தப்படும் நிறுவனங்களிடமிருந்து பெறப்பட வேண்டும்.",
+            "GeM போர்ட்டல் (அரசு இ-சந்தை): சரிபார்க்கப்பட்ட குறு-சிறு நிறுவனங்களிடமிருந்து அரசுத் துறைகள் நேரடியாக மின்னணு கொள்முதல் செய்ய உதவும் தேசிய தளம்."
+          ]
+        }
+      },
+      {
+        "title": "Cluster Development (MSE-CDP, SFURTI & ASPIRE)",
+        "title_ta": "தொழிற்தொகுப்பு வளர்ச்சி (MSE-CDP, SFURTI & ASPIRE)",
+        "points": {
+          "en": [
+            "Micro and Small Enterprises Cluster Development Programme (MSE-CDP): Supports Common Facility Centres (CFCs), testing labs, raw material depots, and plug-and-play industrial estates.",
+            "SFURTI (Scheme of Fund for Regeneration of Traditional Industries): Organizes traditional artisans, khadi, and coir workers into competitive agro-rural clusters with modern tooling.",
+            "ASPIRE: Promotes rural innovation, rural enterprise incubation, and livelihood business incubators (LBIs) in agro-rural industries."
+          ],
+          "ta": [
+            "குறு-சிறு தொழிற்தொகுப்பு மேம்பாட்டுத் திட்டம் (MSE-CDP): பொது வசதி மையங்கள் (CFC), தரப் பரிசோதனை ஆய்வகங்கள் மற்றும் தொழில்துறை பூங்காக்களை அமைத்து தொழிற்தொகுப்புகளை பலப்படுத்துகிறது.",
+            "SFURTI திட்டம்: பாரம்பரிய கைவினைஞர்கள், கதர் மற்றும் தென்னை நார் தொழிலாளர்களை நவீன கருவிகளுடன் கூடிய போட்டித்தன்மை வாய்ந்த தொழிற்தொகுப்புகளாக ஒழுங்கமைக்கிறது.",
+            "ASPIRE திட்டம்: கிராமப்புற கண்டுபிடிப்புகள், கிராமப்புற தொழில் இன்குபேட்டர்கள் (LBI) மற்றும் வேளாண் சார்ந்த ஊரகத் தொழில்களை ஊக்குவிக்கிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_delayed_payment_provisions",
+        "title_en": "Statutory Delayed Payment Architecture under MSMED Act, 2006",
+        "title_ta": "MSMED சட்டம் 2006-ன் கீழான காலதாமதமான பணப்பட்டுவாடா சட்ட விதிகள்",
+        "headers_en": [
+          "Statutory Section",
+          "Core Legal Mandate",
+          "Penal Consequence",
+          "Enforcement Body"
+        ],
+        "headers_ta": [
+          "சட்டப்பிரிவு",
+          "முக்கிய சட்டப்பூர்வ ஆணை",
+          "அபராத விளைவு",
+          "அமலாக்க அமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "Section 15",
+            "Mandatory settlement window: 15 days (no agreement) or max 45 days (with agreement)",
+            "Payment default triggered immediately on the 46th day",
+            "Micro and Small Enterprise Facilitation Council (MSEFC)"
+          ],
+          [
+            "Section 16",
+            "Mandatory penal interest liability on buyer for delayed payment",
+            "Compound interest with monthly rests at 3x the RBI Bank Rate",
+            "Recoverable as legal decree by supplier"
+          ],
+          [
+            "Section 18",
+            "Right of MSE to file reference before Facilitation Council",
+            "Time-bound conciliation (90 days) followed by statutory arbitration",
+            "State MSEFC chaired by Director of Industries"
+          ],
+          [
+            "Section 19",
+            "Pre-deposit requirement if buyer challenges MSEFC award in court",
+            "Buyer must deposit 75% of awarded amount in court before appeal is heard",
+            "Appellate Courts (High Court / District Court)"
+          ],
+          [
+            "Section 23",
+            "Tax disallowance of penal interest paid on MSME delayed dues",
+            "Interest penalty cannot be deducted as business expense for Income Tax",
+            "Income Tax Assessing Officer (Section 43B/23)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிரிவு 15",
+            "கட்டாயக் கால அவகாசம்: ஒப்பந்தமில்லையெனில் 15 நாட்கள்; ஒப்பந்தமிருந்தால் அதிகபட்சம் 45 நாட்கள்",
+            "46-வது நாளில் தானாகவே பண மோசடியாகக் கருதப்படுகிறது",
+            "குறு மற்றும் சிறு தொழில் வசதிக் கவுன்சில் (MSEFC)"
+          ],
+          [
+            "பிரிவு 16",
+            "தாமதமான பணத்திற்கு வாங்குபவர் மீது கட்டாய அபராத வட்டி விதிப்பு",
+            "ரிசர்வ் வங்கி விகிதத்தைப் போல 3 மடங்கு (3x) கூட்டு வட்டி",
+            "சட்டப்பூர்வ நீதிமன்ற ஆணை போல வசூலிக்கத்தக்கது"
+          ],
+          [
+            "பிரிவு 18",
+            "பாதிக்கப்பட்ட நிறுவனம் கவுன்சிலிடம் நேரடிப் புகார் அளிக்கும் உரிமை",
+            "90 நாட்களுக்குள் சமரசம்; தவறினால் கட்டாய நடுவர் தீர்ப்பாயம்",
+            "தொழில்துறை இயக்குனர் தலைமையிலான மாநில MSEFC"
+          ],
+          [
+            "பிரிவு 19",
+            "கவுன்சில் தீர்ப்பை எதிர்த்து வாங்குபவர் நீதிமன்றம் சென்றால் முன்வைப்புத் தொகை",
+            "தீர்ப்பளிக்கப்பட்ட தொகையில் 75%-ஐ நீதிமன்றத்தில் செலுத்தினால்தான் மேல்முறையீடு ஏற்கப்படும்",
+            "மேல்முறையீட்டு நீதிமன்றங்கள் (உயர் நீதிமன்றம் / மாவட்ட நீதிமன்றம்)"
+          ],
+          [
+            "பிரிவு 23",
+            "தாமத வட்டிக்கு வருமான வரி கழிவு முற்றிலும் மறுப்பு",
+            "செலுத்தப்பட்ட அபராத வட்டியை வருமான வரிக் கணக்கில் செலவாகக் காட்ட முடியாது",
+            "வருமான வரி மதிப்பீட்டு அதிகாரி (பிரிவு 43B / 23)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_public_procurement_breakdown",
+        "title_en": "Mandatory Public Procurement Quotas from MSEs",
+        "title_ta": "குறு மற்றும் சிறு நிறுவனங்களுக்கான கட்டாய பொதுக் கொள்முதல் ஒதுக்கீடு",
+        "headers_en": [
+          "Quota Category",
+          "Mandatory Target (%)",
+          "Target Beneficiary Group",
+          "Monitoring Portal"
+        ],
+        "headers_ta": [
+          "ஒதுக்கீட்டுப் பிரிவு",
+          "கட்டாய இலக்கு (%)",
+          "இலக்கு பயனாளி குழு",
+          "கண்காணிப்பு தளம்"
+        ],
+        "rows_en": [
+          [
+            "Total Annual Procurement",
+            "Minimum 25% of total purchases",
+            "All registered Micro and Small Enterprises (MSEs)",
+            "MSME Sambandh Portal"
+          ],
+          [
+            "SC / ST Sub-Target",
+            "Minimum 4% (within 25% quota)",
+            "MSEs owned by SC/ST entrepreneurs",
+            "National SC-ST Hub (NSSH)"
+          ],
+          [
+            "Women Entrepreneur Sub-Target",
+            "Minimum 3% (within 25% quota)",
+            "MSEs owned by Women entrepreneurs",
+            "MSME Sambandh / GeM"
+          ],
+          [
+            "General MSE Procurement",
+            "Remaining 18% (within 25% quota)",
+            "General category MSE vendors",
+            "GeM (Government e-Marketplace)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்த வருடாந்திர கொள்முதல்",
+            "மொத்த வாங்குதலில் குறைந்தது 25%",
+            "பதிவு செய்யப்பட்ட அனைத்து குறு மற்றும் சிறு நிறுவனங்கள் (MSE)",
+            "MSME சம்பந்த் (Sambandh) போர்ட்டல்"
+          ],
+          [
+            "SC / ST துணை ஒதுக்கீடு",
+            "குறைந்தது 4% (25% ஒதுக்கீட்டிற்குள்)",
+            "SC / ST தொழில்முனைவோர் நடத்தும் நிறுவனங்கள்",
+            "தேசிய SC-ST மையம் (NSSH)"
+          ],
+          [
+            "பெண் தொழில்முனைவோர் துணை ஒதுக்கீடு",
+            "குறைந்தது 3% (25% ஒதுக்கீட்டிற்குள்)",
+            "பெண்களால் நடத்தப்படும் நிறுவனங்கள்",
+            "MSME சம்பந்த் / GeM போர்ட்டல்"
+          ],
+          [
+            "பொது MSE கொள்முதல்",
+            "மீதமுள்ள 18% (25% ஒதுக்கீட்டிற்குள்)",
+            "பொதுப் பிரிவைச் சேர்ந்த MSE விற்பனையாளர்கள்",
+            "GeM (அரசு இ-சந்தை)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_cgtmse_vs_traditional_banking",
+        "title_en": "CGTMSE Collateral-Free Loans vs Traditional Commercial Lending",
+        "title_ta": "CGTMSE பிணையில்லா கடன்கள் vs பாரம்பரிய வணிக வங்கிக் கடன்கள்",
+        "headers_en": [
+          "Dimension",
+          "CGTMSE Guaranteed Credit",
+          "Traditional Commercial Bank Lending"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "CGTMSE உத்தரவாதக் கடன்",
+          "பாரம்பரிய வணிக வங்கிக் கடன்"
+        ],
+        "rows_en": [
+          [
+            "Collateral Requirement",
+            "Zero third-party guarantee or immovable property collateral",
+            "Mandatory real estate mortgage or fixed deposit collateral (100-150%)"
+          ],
+          [
+            "Credit Guarantee Ceiling",
+            "Up to ₹5 Crore per eligible MSE unit",
+            "Limited strictly by value of physical collateral pledged"
+          ],
+          [
+            "Default Risk Mitigation",
+            "Trust absorbs 75% to 85% of defaulted loan loss",
+            "Lending bank bears 100% credit risk unless covered by property auction"
+          ],
+          [
+            "Target Beneficiaries",
+            "First-generation entrepreneurs, technocrats, start-ups",
+            "Established asset-rich business families and corporate entities"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிணையத் தேவை",
+            "எந்த அசையாச் சொத்து அல்லது மூன்றாம் நபர் உத்தரவாதமும் தேவையில்லை",
+            "கட்டாய நில அடமானம் அல்லது நிரந்தர வைப்பு நிதி பிணையம் (100-150%) தேவை"
+          ],
+          [
+            "கடன் உத்தரவாத உச்சவரம்பு",
+            "தகுதியுள்ள ஒரு நிறுவனத்திற்கு ₹5 கோடி வரை",
+            "அடமானம் வைக்கப்பட்ட சொத்தின் சந்தை மதிப்பிற்கு ஏற்ப மட்டுமே கடன்"
+          ],
+          [
+            "கடன் இழப்பு ஈடுசெய்தல்",
+            "கடன் திரும்ப வராத பட்சத்தில் 75% முதல் 85% இழப்பை அறக்கட்டளையே ஏற்கிறது",
+            "சொத்தை ஏலம் விடும் வரை 100% இழப்பையும் வங்கியே ஏற்க வேண்டும்"
+          ],
+          [
+            "இலக்கு பயனாளிகள்",
+            "முதல் தலைமுறை தொழில்முனைவோர், தொழில்நுட்ப வல்லுநர்கள், ஸ்டார்ட்-அப்கள்",
+            "சொத்துக்கள் அதிகம் கொண்ட பாரம்பரிய வணிகக் குடும்பங்கள் மற்றும் கார்ப்பரேட்டுகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_udyam_vs_uam",
+        "title_en": "Udyam Registration Portal (2020) vs Udyog Aadhaar Memorandum (Legacy)",
+        "title_ta": "உத்யம் பதிவு தளம் (2020) vs உத்யோக் ஆதார் முறை (பழைய முறை)",
+        "headers_en": [
+          "Feature",
+          "Udyam Registration Portal (Current)",
+          "Udyog Aadhaar Memorandum (Legacy UAM)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "உத்யம் பதிவு (தற்போதைய முறை)",
+          "உத்யோக் ஆதார் (பழைய முறை)"
+        ],
+        "rows_en": [
+          [
+            "Tax Verification",
+            "Fully automated live data fetching from Income Tax (CBDT) and GSTN",
+            "Pure manual self-declaration without automated tax verification"
+          ],
+          [
+            "Paper Documentation",
+            "100% paperless; zero document upload required",
+            "Required manual uploading of certificates and proofs"
+          ],
+          [
+            "Certificate Validity",
+            "Permanent life-long digital certificate with dynamic QR code",
+            "Paper memorandum requiring frequent manual updates"
+          ],
+          [
+            "Export Exemption Tracking",
+            "Automated exclusion of export turnover from GSTN records",
+            "No automated mechanism to identify or exclude export sales"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரி சரிபார்ப்பு",
+            "வருமான வரி (CBDT) மற்றும் ஜிஎஸ்டி (GSTN) தளங்களில் இருந்து தானியங்கி சரிபார்ப்பு",
+            "தானியங்கி வரி இணைப்பு இல்லாத வெறும் கைமுறை சுய-சான்றளிப்பு"
+          ],
+          [
+            "ஆவண சமர்ப்பிப்பு",
+            "100% காகிதமற்றது; எந்த ஆவணங்களையும் பதிவேற்றத் தேவையில்லை",
+            "சான்றிதழ்கள் மற்றும் ஆதாரங்களை கைமுறையாக பதிவேற்ற வேண்டியிருந்தது"
+          ],
+          [
+            "சான்றிதழ் ஆயுள்",
+            "டைனமிக் QR குறியீட்டுடன் கூடிய வாழ்நாள் நிரந்தர டிஜிட்டல் சான்றிதழ்",
+            "அடிக்கடி புதுப்பிக்க வேண்டிய காகித மெமோராண்டம்"
+          ],
+          [
+            "ஏற்றுமதி விலக்கு கண்காணிப்பு",
+            "ஜிஎஸ்டி தரவுகளின் அடிப்படையில் ஏற்றுமதி விற்றுமுதல் தானாகவே கழிக்கப்படுகிறது",
+            "ஏற்றுமதி வருமானத்தைத் தனியாகக் கண்டறிந்து விலக்கும் வழிமுறை இல்லை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "MSME Part 2: Institutional & Financial Architecture",
+        "short_label": "Institutional Rails",
+        "children": [
+          {
+            "title": "Digital Formalisation",
+            "short_label": "Formalisation",
+            "children": [
+              {
+                "title": "Udyam Portal (July 1, 2020, Paperless, QR)",
+                "short_label": "Udyam Portal"
+              },
+              {
+                "title": "CBDT (PAN) & GSTN Database Live Linkage",
+                "short_label": "Tax Integration"
+              },
+              {
+                "title": "Udyam Assist Platform (UAP) for Informal Units",
+                "short_label": "UAP Platform"
+              }
+            ]
+          },
+          {
+            "title": "Credit Delivery & Guarantees",
+            "short_label": "Credit Architecture",
+            "children": [
+              {
+                "title": "CGTMSE (Collateral-Free Guarantees up to ₹5 Cr)",
+                "short_label": "CGTMSE ₹5Cr"
+              },
+              {
+                "title": "SIDBI (Apex MSME Development Bank, Lucknow)",
+                "short_label": "SIDBI 1990"
+              },
+              {
+                "title": "Priority Sector Lending (PSL) Mandates",
+                "short_label": "PSL Mandates"
+              }
+            ]
+          },
+          {
+            "title": "Payment Protection & Procurement",
+            "short_label": "Protection & Market",
+            "children": [
+              {
+                "title": "MSMED Act: 45 Days Max, 3x Bank Rate Compound Penalty",
+                "short_label": "Sec 15-24 Penalty"
+              },
+              {
+                "title": "MSME Samadhaan & MSEFC Facilitation Councils",
+                "short_label": "Samadhaan & MSEFC"
+              },
+              {
+                "title": "TReDS Factoring Platforms (Mandatory for >₹500 Cr)",
+                "short_label": "TReDS Factoring"
+              },
+              {
+                "title": "25% Public Procurement (4% SC/ST, 3% Women)",
+                "short_label": "25% Procurement"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Delayed Payment Statutory Days Trap: 45 Days Max, 15 Days Without Agreement",
+        "points": {
+          "en": [
+            "TRAP: Believing buyers and MSMEs can legally contract for 90 or 120 days payment credit.",
+            "CORRECT FACT: Under Section 15 of the MSMED Act, if there is no agreement, payment is due within 15 DAYS. Even if an agreement exists, the credit period CANNOT EXCEED 45 DAYS under any circumstances.",
+            "WHY CANDIDATES FAIL: Candidates assume freedom of contract allows parties to agree on extended commercial payment terms beyond 45 days."
+          ],
+          "ta": [
+            "பொறி: வாங்குபவரும் MSME நிறுவனமும் தங்களுக்குள் 90 அல்லது 120 நாட்கள் கடன் கால அவகாசத்தை சட்டப்பூர்வமாக ஒப்பந்தம் செய்து கொள்ளலாம் என நினைப்பது.",
+            "சரியான உண்மை: MSMED சட்டப் பிரிவு 15-ன் கீழ், ஒப்பந்தம் இல்லையெனில் 15 நாட்களுக்குள் பணம் செலுத்த வேண்டும். ஒப்பந்தம் இருந்தாலும் எந்தச் சூழலிலும் அது '45 நாட்களுக்கு மிகாமல்' இருக்க வேண்டும்!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வணிகச் சுதந்திரத்தின் அடிப்படையில் இரு தரப்பும் பேசி எத்தனை நாட்கள் வேண்டுமானாலும் அவகாசம் நிர்ணயிக்கலாம் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Delayed Payment Penal Interest Rate Trap: 3x Bank Rate, NOT Simple Interest",
+        "points": {
+          "en": [
+            "TRAP: Stating that penal interest on delayed payments is simple interest at 18% or 24%.",
+            "CORRECT FACT: Under Section 16 of the MSMED Act, the buyer is liable to pay COMPOUND INTEREST with monthly rests at THREE TIMES (3x) the Bank Rate notified by the Reserve Bank of India.",
+            "WHY CANDIDATES FAIL: Multiple choice questions offer simple interest options or random commercial rates, obscuring the statutory '3x RBI Bank Rate compounded monthly' formula."
+          ],
+          "ta": [
+            "பொறி: தாமதமான பணத்திற்கான அபராத வட்டி ஆண்டுக்கு 18% அல்லது 24% தனிவட்டி என நினைப்பது.",
+            "சரியான உண்மை: MSMED சட்டப் பிரிவு 16-ன் கீழ், வாங்குபவர் ரிசர்வ் வங்கி நிர்ணயிக்கும் வங்கி விகிதத்தைப் போல 'மூன்று மடங்கு' (3x) தொகையை மாதாந்திர ஓய்வுடன் கூடிய 'கூட்டு வட்டியாக' (Compound Interest) செலுத்த வேண்டும்!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தேர்வில் 18% அல்லது 24% தனிவட்டி போன்ற விருப்பங்கள் கொடுக்கப்படும் போது, சட்டப்பூர்வமான 3 மடங்கு கூட்டு வட்டி சூத்திரத்தை மறந்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "Public Procurement Quota Trap: 25% Total, 4% SC/ST, 3% Women",
+        "points": {
+          "en": [
+            "TRAP: Mixing up the sub-quotas under the 25% mandatory Public Procurement Policy for MSEs.",
+            "CORRECT FACT: Total mandatory procurement from MSEs is 25%. Within this 25%, exactly 4% is earmarked for SC/ST-owned MSEs, and exactly 3% is earmarked for Women-owned MSEs. The remaining 18% is for general MSEs.",
+            "WHY CANDIDATES FAIL: Reversing the 4% and 3% sub-quotas between SC/ST and Women entrepreneurs."
+          ],
+          "ta": [
+            "பொறி: 25% கட்டாய அரசு கொள்முதல் கொள்கையின் கீழான துணை ஒதுக்கீட்டு சதவீதங்களை மாற்றிப் புரிந்து கொள்வது.",
+            "சரியான உண்மை: மொத்த கட்டாயக் கொள்முதல் 25%. இதில் SC/ST தொழில்முனைவோருக்கு '4%' மற்றும் பெண் தொழில்முனைவோருக்கு '3%' பிரத்யேகமாக ஒதுக்கப்பட்டுள்ளது (மீதமுள்ள 18% பொதுவானது).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 4% மற்றும் 3% ஆகிய எண்களை SC/ST மற்றும் பெண்கள் ஆகிய இரு பிரிவினரிடையே மாற்றி நினைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "CGTMSE Guarantee Ceiling Trap: Enhanced to ₹5 Crore, NOT ₹2 Crore",
+        "points": {
+          "en": [
+            "TRAP: Quoting the old ceiling of ₹2 Crore for CGTMSE collateral-free credit guarantees.",
+            "CORRECT FACT: In recent union budgets, the maximum credit guarantee ceiling under CGTMSE was officially enhanced from ₹2 Crore to FIVE CRORE (₹5 Crore) per borrower.",
+            "WHY CANDIDATES FAIL: Studying outdated textbooks that still cite the legacy ₹2 Crore limit."
+          ],
+          "ta": [
+            "பொறி: CGTMSE பிணையில்லா கடன் உத்தரவாதத்தின் உச்சவரம்பு ₹2 கோடி என்ற பழைய வரம்பையே குறிப்பிடுவது.",
+            "சரியான உண்மை: மத்திய பட்ஜெட் சீர்திருத்தங்கள் மூலம் CGTMSE கடன் உத்தரவாத உச்சவரம்பு ₹2 கோடியிலிருந்து '₹5 கோடியாக' அதிகாரப்பூர்வமாக உயர்த்தப்பட்டுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய பாடப்புத்தகங்கள் மற்றும் வினாத்தாள்களில் உள்ள ₹2 கோடி வரம்பை புதிய வரம்புடன் புதுப்பிக்காமல் போவது."
+          ]
+        }
+      },
+      {
+        "title": "TReDS Mandatory Onboarding Threshold Trap: Turnover > ₹500 Crore",
+        "points": {
+          "en": [
+            "TRAP: Assuming all companies regardless of size must mandatorily register on TReDS factoring platforms.",
+            "CORRECT FACT: The statutory mandate to onboard onto TReDS applies specifically to Central Public Sector Enterprises (CPSEs) and private companies with an annual turnover of ₹500 CRORE and above.",
+            "WHY CANDIDATES FAIL: Missing the ₹500 crore corporate turnover trigger and assuming universal corporate applicability."
+          ],
+          "ta": [
+            "பொறி: அனைத்து தனியார் நிறுவனங்களும் கட்டாயமாக TReDS தளத்தில் இணைய வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: அனைத்து பொதுத்துறை நிறுவனங்கள் (CPSE) மற்றும் ஆண்டு விற்றுமுதல் '₹500 கோடி அல்லது அதற்கு மேல்' உள்ள பெருநிறுவனங்கள் மட்டுமே TReDS தளத்தில் கட்டாயம் இணைய வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ₹500 கோடி என்ற பெருநிறுவன விற்றுமுதல் நிபந்தனையை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "SIDBI Headquarters Trap: Lucknow, NOT Mumbai",
+        "points": {
+          "en": [
+            "TRAP: Marking Mumbai as the headquarters of SIDBI, confusing it with RBI and SEBI.",
+            "CORRECT FACT: While RBI, SEBI, and SBI are headquartered in Mumbai, SIDBI is headquartered in LUCKNOW, Uttar Pradesh (established 1990).",
+            "WHY CANDIDATES FAIL: Habitually assuming that all apex financial institutions and development banks are located in India's financial capital Mumbai."
+          ],
+          "ta": [
+            "பொறி: ரிசர்வ் வங்கி மற்றும் செபி போல சிட்பி (SIDBI) வங்கியின் தலைமையகமும் மும்பையில்தான் உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: ரிசர்வ் வங்கி மற்றும் செபி மும்பையில் இருந்தாலும், சிட்பி (SIDBI) வங்கியின் தலைமையகம் உத்தரப் பிரதேச மாநிலம் 'லக்னோவில்' (Lucknow) அமைந்துள்ளது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து நிதி நிறுவனங்களின் தலைமையகமும் நிதித் தலைநகரான மும்பையிலேயே இருக்கும் என்ற குருட்டுத்தனமான அனுமானம்."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Udyam Registration was launched on July 1, 2020 as a paperless digital portal.",
+        "Udyam is integrated directly with CBDT (PAN) and GSTN for automatic financial verification.",
+        "Udyam Assist Platform (UAP) was launched in January 2023 for informal micro units.",
+        "CGTMSE was established in August 2000 jointly by the Ministry of MSME and SIDBI.",
+        "The credit guarantee coverage ceiling under CGTMSE has been expanded to ₹5 Crore.",
+        "SIDBI was established on April 2, 1990 and is headquartered in Lucknow, Uttar Pradesh.",
+        "Under Section 15 of MSMED Act, payment to MSEs cannot exceed 45 days from acceptance.",
+        "Section 16 of MSMED Act levies compound interest at 3x the RBI Bank Rate on delayed dues.",
+        "Section 23 of MSMED Act disallows penal interest as an expense under Income Tax Act.",
+        "MSME Samadhaan portal was launched in October 2017 for monitoring delayed payment references.",
+        "Central Ministries and CPSEs must mandatorily procure 25% of annual purchases from MSEs.",
+        "Companies with annual turnover of ₹500 Crore and above are mandated to onboard onto TReDS."
+      ],
+      "ta": [
+        "உத்யம் பதிவு தளம் ஜூலை 1, 2020 அன்று காகிதமற்ற டிஜிட்டல் போர்ட்டலாகத் தொடங்கப்பட்டது.",
+        "உத்யம் தானியங்கி நிதி சரிபார்ப்பிற்காக வருமான வரி (CBDT) மற்றும் ஜிஎஸ்டி (GSTN) தளங்களுடன் இணைக்கப்பட்டுள்ளது.",
+        "முறைசாரா குறு நிறுவனங்களுக்காக ஜனவரி 2023-ல் உத்யம் அசிஸ்ட் தளம் (UAP) தொடங்கப்பட்டது.",
+        "மத்திய MSME அமைச்சகம் மற்றும் சிட்பி இணைந்து ஆகஸ்ட் 2000-ல் CGTMSE-ஐ நிறுவின.",
+        "CGTMSE கடன் உத்தரவாத உச்சவரம்பு ₹5 கோடியாக உயர்த்தப்பட்டுள்ளது.",
+        "சிட்பி (SIDBI) ஏப்ரல் 2, 1990 அன்று நிறுவப்பட்டது; இதன் தலைமையகம் லக்னோவில் உள்ளது.",
+        "MSMED சட்டப் பிரிவு 15-ன் கீழ், MSE நிறுவனங்களுக்கான பணப்பட்டுவாடா 45 நாட்களுக்கு மிகக் கூடாது.",
+        "பிரிவு 16 தாமதமான நிலுவைகளுக்கு ரிசர்வ் வங்கி விகிதத்தைப் போல 3 மடங்கு கூட்டு வட்டி விதிக்கிறது.",
+        "பிரிவு 23 தாமத அபராத வட்டியை வருமான வரிச் செலவாகக் கழிப்பதை முற்றிலும் தடை செய்கிறது.",
+        "தாமதமான பணப் புகார்களைக் கண்காணிக்க அக்டோபர் 2017-ல் MSME சமாதான் தளம் தொடங்கப்பட்டது.",
+        "மத்திய அமைச்சகங்களும் CPSE-களும் தங்கள் ஆண்டு கொள்முதலில் 25%-ஐ MSE-களிடமிருந்து பெற வேண்டும்.",
+        "ஆண்டு விற்றுமுதல் ₹500 கோடி மற்றும் அதற்கு மேல் உள்ள நிறுவனங்கள் TReDS தளத்தில் இணைவது கட்டாயம்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Udyam Registration (July 1, 2020) provides paperless lifetime registration integrated with PAN and GSTN.",
+        "Udyam Assist Platform (UAP, Jan 2023) brings informal micro enterprises under Priority Sector Lending.",
+        "CGTMSE (August 2000, MoMSME + SIDBI) offers collateral-free credit guarantees up to ₹5 Crore.",
+        "SIDBI (est. April 2, 1990, HQ Lucknow) functions as the apex development bank for MSMEs.",
+        "MSMED Section 15: Payment mandatory within 15 days (no agreement) or max 45 days (with agreement).",
+        "MSMED Section 16: Default penal compound interest at three times (3x) the RBI Bank Rate.",
+        "MSMED Section 23: Penal interest paid on delayed MSME payments is disallowed under Income Tax Act.",
+        "MSME Samadhaan (Oct 2017) tracks delayed payment references arbitrated by MSEFCs.",
+        "Public Procurement: Mandatory 25% procurement from MSEs (including 4% SC/ST and 3% Women).",
+        "TReDS: Institutional electronic factoring mechanism mandatory for CPSEs and firms >₹500 Cr turnover."
+      ],
+      "ta": [
+        "உத்யம் பதிவு (ஜூலை 1, 2020) பான் மற்றும் ஜிஎஸ்டியுடன் இணைக்கப்பட்ட காகிதமற்ற வாழ்நாள் பதிவை வழங்குகிறது.",
+        "உத்யம் அசிஸ்ட் தளம் (UAP, ஜன 2023) முறைசாரா குறு நிறுவனங்களுக்கு முன்னுரிமைத் துறை கடனை உறுதி செய்கிறது.",
+        "CGTMSE (ஆகஸ்ட் 2000, MSME + SIDBI) ₹5 கோடி வரை பிணையில்லா கடன் உத்தரவாதத்தை வழங்குகிறது.",
+        "சிட்பி வங்கி (ஏப்ரல் 2, 1990, தலைமையகம் லக்னோ) MSME-களுக்கான முதன்மை வளர்ச்சி வங்கியாக இயங்குகிறது.",
+        "பிரிவு 15: பணம் வழங்க அதிகபட்ச அவகாசம் ஒப்பந்தமில்லையெனில் 15 நாட்கள்; ஒப்பந்தமிருந்தால் 45 நாட்கள்.",
+        "பிரிவு 16: தாமதத்திற்கு ரிசர்வ் வங்கி விகிதத்தைப் போல 3 மடங்கு (3x) கூட்டு வட்டி அபராதம்.",
+        "பிரிவு 23: தாமத அபராத வட்டியை வருமான வரிக் கணக்கில் செலவாகக் கழிப்பது முற்றிலும் தடை செய்யப்பட்டுள்ளது.",
+        "MSME சமாதான் போர்ட்டல் (அக் 2017) MSEFC கவுன்சில்களின் பண மீட்பு வழக்குகளைக் கண்காணிக்கிறது.",
+        "பொதுக் கொள்முதல்: கட்டாய 25% MSE கொள்முதல் (இதில் 4% SC/ST மற்றும் 3% பெண்கள் துணை ஒதுக்கீடு).",
+        "TReDS: ₹500 கோடிக்கு மேல் விற்றுமுதல் கொண்ட நிறுவனங்களுக்கு கட்டாயமாக்கப்பட்ட ரசீது தள்ளுபடி தளம்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_msme_201",
+        "front_en": "When was the paperless Udyam Registration portal launched?",
+        "front_ta": "காகிதமற்ற உத்யம் பதிவு இணையதளம் எப்போது தொடங்கப்பட்டது?",
+        "back_en": "July 1, 2020 (replacing the legacy Udyog Aadhaar Memorandum).",
+        "back_ta": "ஜூலை 1, 2020 (பழைய உத்யோக் ஆதார் மெமோராண்டத்திற்கு பதிலாக)."
+      },
+      {
+        "id": "rc_msme_202",
+        "front_en": "What is the enhanced credit guarantee ceiling under CGTMSE?",
+        "front_ta": "CGTMSE திட்டத்தின் கீழான உயர்த்தப்பட்ட கடன் உத்தரவாத உச்சவரம்பு என்ன?",
+        "back_en": "Up to ₹5 Crore per eligible MSE borrower.",
+        "back_ta": "தகுதியுள்ள ஒரு நிறுவனத்திற்கு ₹5 கோடி வரை."
+      },
+      {
+        "id": "rc_msme_203",
+        "front_en": "Where is the headquarters of the Small Industries Development Bank of India (SIDBI) located?",
+        "front_ta": "இந்திய சிறுதொழில் வளர்ச்சி வங்கியின் (SIDBI) தலைமையகம் எங்கு அமைந்துள்ளது?",
+        "back_en": "Lucknow, Uttar Pradesh (established on April 2, 1990).",
+        "back_ta": "உத்தரப் பிரதேச மாநிலம் லக்னோவில் (ஏப்ரல் 2, 1990-ல் நிறுவப்பட்டது)."
+      },
+      {
+        "id": "rc_msme_204",
+        "front_en": "What is the maximum statutory credit period allowed under Section 15 of the MSMED Act, 2006?",
+        "front_ta": "MSMED சட்டம் 2006-ன் பிரிவு 15-ன் கீழ் அனுமதிக்கப்பட்ட அதிகபட்ச கடன் கால அவகாசம் என்ன?",
+        "back_en": "45 days from the date of acceptance of goods or services.",
+        "back_ta": "சரக்குகள் அல்லது சேவைகளை ஏற்றுக்கொண்ட நாளிலிருந்து அதிகபட்சம் 45 நாட்கள்."
+      },
+      {
+        "id": "rc_msme_205",
+        "front_en": "What penal interest rate is levied under Section 16 of the MSMED Act for delayed payment?",
+        "front_ta": "MSMED சட்டப் பிரிவு 16-ன் கீழ் தாமதமான பணத்திற்கு விதிக்கப்படும் அபராத வட்டி விகிதம் என்ன?",
+        "back_en": "Compound interest with monthly rests at three times (3x) the Bank Rate notified by the RBI.",
+        "back_ta": "ரிசர்வ் வங்கி நிர்ணயிக்கும் வங்கி விகிதத்தைப் போல மூன்று மடங்கு (3x) மாதாந்திர கூட்டு வட்டி."
+      },
+      {
+        "id": "rc_msme_206",
+        "front_en": "Can penal interest paid for delayed payments to MSMEs be claimed as a tax deduction?",
+        "front_ta": "MSME நிலுவைத் தொகைக்காக செலுத்தப்படும் அபராத வட்டியை வருமான வரி கழிவாகக் கோர முடியுமா?",
+        "back_en": "No; Section 23 of the MSMED Act strictly disallows penal interest as an expense under the Income Tax Act.",
+        "back_ta": "முடியாது; MSMED சட்டத்தின் பிரிவு 23 இதை வருமான வரிச் சட்டத்தின் கீழ் செலவாகக் கழிப்பதை முற்றிலும் தடை செய்கிறது."
+      },
+      {
+        "id": "rc_msme_207",
+        "front_en": "What is the mandatory percentage of annual procurement from MSEs by Central Ministries and CPSEs?",
+        "front_ta": "மத்திய அமைச்சகங்கள் மற்றும் CPSE-கள் MSE-களிடமிருந்து செய்ய வேண்டிய கட்டாய ஆண்டு கொள்முதல் சதவீதம் என்ன?",
+        "back_en": "Minimum 25% of total annual purchases.",
+        "back_ta": "மொத்த ஆண்டு கொள்முதலில் குறைந்தது 25%."
+      },
+      {
+        "id": "rc_msme_208",
+        "front_en": "Within the 25% procurement quota, what are the sub-quotas for SC/ST and Women entrepreneurs?",
+        "front_ta": "25% கொள்முதல் ஒதுக்கீட்டிற்குள் SC/ST மற்றும் பெண் தொழில்முனைவோருக்கான துணை ஒதுக்கீடுகள் என்ன?",
+        "back_en": "4% for SC/ST-owned MSEs, and 3% for Women-owned MSEs.",
+        "back_ta": "SC/ST தொழில்முனைவோருக்கு 4% மற்றும் பெண் தொழில்முனைவோருக்கு 3%."
+      },
+      {
+        "id": "rc_msme_209",
+        "front_en": "What is the corporate turnover threshold that triggers mandatory onboarding onto the TReDS platform?",
+        "front_ta": "TReDS தளத்தில் கட்டாயம் இணைய வேண்டிய பெருநிறுவன ஆண்டு விற்றுமுதல் வரம்பு என்ன?",
+        "back_en": "Companies with an annual turnover of ₹500 Crore and above (and all CPSEs).",
+        "back_ta": "ஆண்டு விற்றுமுதல் ₹500 கோடி மற்றும் அதற்கு மேல் உள்ள நிறுவனங்கள் (மற்றும் அனைத்து CPSE-களும்)."
+      },
+      {
+        "id": "rc_msme_210",
+        "front_en": "Which dedicated portal enables MSEs to file references regarding delayed payments?",
+        "front_ta": "காலதாமதமான பணப் புகார்களைப் பதிவு செய்ய MSE-களுக்கு உதவும் பிரத்யேக தளம் எது?",
+        "back_en": "MSME Samadhaan Portal (operationalized in October 2017).",
+        "back_ta": "MSME சமாதான் போர்ட்டல் (அக்டோபர் 2017-ல் தொடங்கப்பட்டது)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,823 @@
+{
+  "meta": {
+    "topic_id": "economy_banking_part_3",
+    "repository_id": "economy_banking",
+    "display_title": "Banking – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Banking",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Pradhan Mantri Jan Dhan Yojana PMJDY",
+    "DICGC 5 Lakh Insurance",
+    "DICGC 90 Day Rule",
+    "Lead Bank Scheme Nariman",
+    "Service Area Approach Ojha",
+    "Business Correspondent Khan Committee",
+    "12 Anchor Public Sector Banks",
+    "PNB Canara Mergers"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand national financial inclusion initiatives: PMJDY, Lead Bank Scheme, and the BC model.",
+        "Comprehend the depositor safety net under the DICGC framework."
+      ],
+      "ta": [
+        "தேசிய உள்ளடக்கிய நிதித் திட்டங்களைப் புரிந்து கொள்ளுதல்: PMJDY, முன்னோடி வங்கித் திட்டம் மற்றும் BC முறை.",
+        "DICGC கட்டமைப்பின் கீழான வைப்பாளர் பாதுகாப்பு அமைப்பை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the ₹5 lakh DICGC insurance limit and 90-day mandatory payout rule.",
+        "Recall the 12 consolidated Public Sector Banks and their merger configurations."
+      ],
+      "ta": [
+        "DICGC-ன் ₹5 லட்சம் காப்பீட்டு வரம்பு மற்றும் 90-நாள் கட்டாய தீர்வு விதியை நினைவில் நிறுத்துதல்.",
+        "12 ஒருங்கிணைக்கப்பட்ட பொதுத்துறை வங்கிகள் மற்றும் அவற்றின் இணைப்புப் பட்டியலை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the strategic rationale behind creating mega-anchor banks via public sector consolidation.",
+        "Examine the role of digital payment rails (RTGS, NEFT, UPI, AePS) in accelerating banking reach."
+      ],
+      "ta": [
+        "பொதுத்துறை வங்கிகளை இணைத்து பெரிய தலைமை வங்கிகளை உருவாக்கியதன் பின்னணியில் உள்ள உத்திகளை ஆய்வு செய்தல்.",
+        "வங்கிச் சேவையை விரிவாக்குவதில் டிஜிட்டல் வழிகளின் (RTGS, NEFT, UPI, AePS) பங்கை பகுப்பாய்வு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply DICGC rules to compute insured payout across multiple accounts held by a single depositor.",
+        "Identify high-yield TNPSC traps regarding PMJDY overdraft eligibility and interbank deposit exclusions."
+      ],
+      "ta": [
+        "ஒரே வைப்பாளர் பல கணக்குகள் வைத்திருக்கும் போது கிடைக்கும் காப்பீட்டுத் தொகையைக் கணக்கிட DICGC விதிகளைப் பயன்படுத்துதல்.",
+        "PMJDY ஓவர் டிராஃப்ட் தகுதி மற்றும் வங்கிகளுக்கு இடையேயான வைப்பு விலக்குகள் குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Banking – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_financial_inclusion_initiatives",
+      "title_en": "National Financial Inclusion Frameworks (PMJDY & Lead Bank Scheme)",
+      "title_ta": "தேசிய உள்ளடக்கிய நிதித் திட்டங்கள் (PMJDY & முன்னோடி வங்கித் திட்டம்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_dicgc_depositor_protection",
+      "title_en": "Depositor Safety: DICGC Coverage (₹5 Lakh Insurance)",
+      "title_ta": "வைப்பாளர் பாதுகாப்பு: DICGC காப்பீடு (₹5 லட்சம் பாதுகாப்பு)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_bank_consolidation_12psbs",
+      "title_en": "Public Sector Bank Mega-Mergers & 12 Anchor Banks",
+      "title_ta": "பொதுத்துறை வங்கி பெரு இணைப்புகள் & 12 தலைமை வங்கிகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Advanced Banking Integration evaluates national financial inclusion frameworks (PMJDY, Business Correspondents, Lead Bank Scheme), depositor safety nets under the DICGC (₹5 lakh insurance), PSB consolidation dynamics, digital payment rails, and integrated TNPSC exam mastery.",
+      "ta": "மேம்பட்ட வங்கி ஒருங்கிணைப்பு என்பது தேசிய உள்ளடக்கிய நிதி கட்டமைப்புகள் (PMJDY, வங்கித் தொடர்பாளர்கள், முன்னோடி வங்கித் திட்டம்), DICGC-ன் கீழான வைப்பாளர் பாதுகாப்பு (₹5 லட்சம் காப்பீடு), பொதுத்துறை வங்கி இணைப்புகள், டிஜிட்டல் பரிவர்த்தனை வழிகள் மற்றும் முழுமையான TNPSC தேர்வு வெற்றிக்கான அறிவை மதிப்பீடு செய்கிறது."
+    },
+    "introduction": {
+      "en": "Exam mastery in Banking requires an in-depth understanding of grassroots financial inclusion and depositor safety mechanisms. Key milestones include the Lead Bank Scheme (1969) based on the Nariman Committee, the Business Correspondent (BC) model, the transformative Pradhan Mantri Jan Dhan Yojana (PMJDY) launched in 2014, the elevation of deposit insurance coverage to ₹5 lakh under the DICGC Act in 2020, and the structural reduction of Public Sector Banks to 12 anchor banks. Candidates must master these institutional nuances alongside high-yield TNPSC traps.",
+      "ta": "வங்கித் துறையில் முழுத் தேர்ச்சி பெறுவது என்பது அடித்தட்டு கிராமப்புற உள்ளடக்கிய நிதி மற்றும் வைப்பாளர் பாதுகாப்பு அமைப்புகளை ஆழமாகப் புரிந்து கொள்வதைக் கோருகிறது. நாரிமன் குழுவின் அடிப்படையிலான முன்னோடி வங்கித் திட்டம் (1969), வங்கித் தொடர்பாளர் (BC) முறை, 2014-ல் தொடங்கப்பட்ட பிரதான் மந்திரி ஜன் தன் யோஜனா (PMJDY), 2020-ல் DICGC சட்டத்தின் கீழ் வைப்புத்தொகை காப்பீடு ₹5 லட்சமாக உயர்த்தப்பட்டது மற்றும் பொதுத்துறை வங்கிகள் 12 தலைமை வங்கிகளாகக் குறைக்கப்பட்ட சீர்திருத்தங்கள் இதில் முதன்மை பெறுகின்றன."
+    },
+    "sec_financial_inclusion_initiatives": [
+      {
+        "title": "Pradhan Mantri Jan Dhan Yojana (PMJDY) - 2014",
+        "title_ta": "பிரதான் மந்திரி ஜன் தன் யோஜனா (PMJDY) - 2014",
+        "points": {
+          "en": [
+            "Launch Date: Launched on August 28, 2014 with the national mission slogan 'Mera Khata, Bhagya Vidhata'.",
+            "Guinness World Record: Opened 1.8 crore bank accounts in a single week (August 23-29, 2014).",
+            "Zero Balance & Basic Services: Basic Savings Bank Deposit Accounts (BSBDA) opened with zero minimum balance requirement.",
+            "Overdraft & Insurance: Overdraft facility up to ₹10,000 (for accounts with regular transactions) and a RuPay Debit Card with built-in accidental insurance cover of ₹2 lakh (for accounts opened after August 2018).",
+            "Direct Benefit Transfer (DBT): Serves as the primary rail for Direct Benefit Transfers under the JAM Trinity (Jan Dhan, Aadhaar, Mobile)."
+          ],
+          "ta": [
+            "தொடங்கப்பட்ட நாள்: ஆகஸ்ட் 28, 2014 அன்று 'எனது கணக்கு, எனது வாழ்வின் விதியமைப்பாளர்' என்ற முழக்கத்துடன் தொடங்கப்பட்டது.",
+            "கின்னஸ் உலக சாதனை: ஒரே வாரத்தில் (ஆகஸ்ட் 23-29, 2014) 1.8 கோடி வங்கிக் கணக்குகளைத் திறந்து சாதனை படைத்தது.",
+            "பூஜ்ஜிய இருப்பு & அடிப்படைச் சேவைகள்: குறைந்தபட்ச இருப்புத் தேவையின்றி எளிய அடிப்படை சேமிப்பு வங்கிக் கணக்குகள் (BSBDA) திறக்கப்படுகின்றன.",
+            "ஓவர் டிராஃப்ட் & காப்பீடு: ₹10,000 வரை ஓவர் டிராஃப்ட் (மிகைப்பற்று) கடன் வசதி மற்றும் ₹2 லட்சம் விபத்துக் காப்பீட்டுடன் கூடிய ரூபே (RuPay) டெபிட் கார்டு வழங்கப்படுகிறது.",
+            "நேரடி மானியப் பரிமாற்றம் (DBT): JAM மும்மை (ஜன் தன், ஆதார், மொபைல்) திட்டத்தின் கீழ் அரசின் நேரடி மானியங்களை மக்களுக்கு கொண்டு சேர்க்கும் முதன்மை அமைப்பாக செயல்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Lead Bank Scheme & Service Area Approach",
+        "title_ta": "முன்னோடி வங்கித் திட்டம் & சேவைப் பகுதி அணுகுமுறை",
+        "points": {
+          "en": [
+            "Lead Bank Scheme (1969): Recommended by the F.K.F. Nariman Committee and Gadgil Study Group; allotted each district in India to a designated commercial bank (the 'Lead Bank') to coordinate credit planning and lead district development.",
+            "District Credit Plan (DCP): The Lead Bank prepares the Annual Credit Plan for the district in consultation with NABARD, commercial banks, RRBs, and district administration.",
+            "Service Area Approach (SAA - 1989): Introduced on the recommendation of the P.D. Ojha Committee; assigned a cluster of 15-25 villages to a designated rural bank branch to ensure planned, intensive rural credit delivery."
+          ],
+          "ta": [
+            "முன்னோடி வங்கித் திட்டம் (1969): நாரிமன் குழு மற்றும் காட்கில் ஆய்வுக் குழுவின் பரிந்துரையால் தொடங்கப்பட்டது; இந்தியாவில் உள்ள ஒவ்வொரு மாவட்டமும் ஒரு குறிப்பிட்ட வணிக வங்கியிடம் ('முன்னோடி வங்கி') ஒப்படைக்கப்பட்டு மாவட்ட கடன் திட்டமிடல் ஒருங்கிணைக்கப்பட்டது.",
+            "மாவட்ட கடன் திட்டம் (DCP): நபார்டு, வணிக வங்கிகள் மற்றும் மாவட்ட நிர்வாகத்துடன் கலந்தாலோசித்து முன்னோடி வங்கி ஆண்டு கடன் திட்டத்தைத் தயாரிக்கிறது.",
+            "சேவைப் பகுதி அணுகுமுறை (SAA - 1989): பி.டி. ஓஜா குழுவின் பரிந்துரையின்படி அறிமுகப்படுத்தப்பட்டது; ஒரு குறிப்பிட்ட கிராமப்புற வங்கி கிளைக்கு 15-25 கிராமங்கள் ஒதுக்கப்பட்டு தீவிர கிராமப்புற கடன் சேவை உறுதி செய்யப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Business Correspondent (BC) Model",
+        "title_ta": "வங்கித் தொடர்பாளர் (BC) முறை",
+        "points": {
+          "en": [
+            "Introduced by the RBI in 2006 (Khan Committee recommendations) to achieve last-mile financial inclusion in unbanked rural hamlets.",
+            "Mechanism: Banks appoint non-governmental organizations, microfinance institutions, retired teachers, postal agents, and kirana shop owners as 'Bank Mitras' (Business Correspondents).",
+            "Function: Equipped with biometric micro-ATMs and point-of-sale devices, BCs enable cash deposit, cash withdrawal, remittances, and mini-statements at the villager's doorstep."
+          ],
+          "ta": [
+            "வங்கி இல்லாத தொலைதூர கிராமப்புறங்களுக்கு வங்கி சேவைகளைக் கொண்டு சேர்க்க 2006-ல் கான் குழுவின் பரிந்துரைப்படி ரிசர்வ் வங்கியால் அறிமுகப்படுத்தப்பட்டது.",
+            "செயல்முறை: தன்னார்வ தொண்டு நிறுவனங்கள், நுண் நிதி நிறுவனங்கள், ஓய்வுபெற்ற ஆசிரியர்கள், நியாயவிலைக் கடைக்காரர்களை வங்கிகள் தங்களது 'வங்கி மித்ரா' (Bank Mitras) முகவர்களாக நியமிக்கின்றன.",
+            "செயல்பாடு: கைரேகை பயோமெட்ரிக் மைக்ரோ-ஏடிஎம் கருவிகள் மூலம் கிராம மக்களின் வீட்டு வாசலிலேயே பணம் போடுதல், எடுத்தல் மற்றும் பரிமாற்ற சேவைகளை வழங்குகின்றனர்."
+          ]
+        }
+      }
+    ],
+    "sec_dicgc_depositor_protection": [
+      {
+        "title": "Deposit Insurance and Credit Guarantee Corporation (DICGC)",
+        "title_ta": "வைப்புத்தொகை காப்பீடு மற்றும் கடன் உத்தரவாதக் கழகம் (DICGC)",
+        "points": {
+          "en": [
+            "Statutory Basis: Established on July 15, 1978 by merging the Deposit Insurance Corporation (1961) and Credit Guarantee Corporation of India (1971) under the DICGC Act, 1961.",
+            "Ownership: Fully owned subsidiary of the Reserve Bank of India.",
+            "Coverage Limit Raised: The Union Budget 2020-21 increased deposit insurance coverage five-fold from ₹1,00,000 to ₹5,00,000 per depositor per bank (covering both principal and interest).",
+            "Time-Bound Payout (2021 Amendment): Following PMC Bank crisis, the DICGC (Amendment) Act, 2021 mandated that depositors of troubled banks placed under moratorium must receive their insured funds up to ₹5 lakh within 90 days."
+          ],
+          "ta": [
+            "சட்டப்பூர்வ அடிப்படை: 1961-ஆம் ஆண்டு DICGC சட்டத்தின் கீழ் ஜூலை 15, 1978 அன்று இரு அமைப்புகளை இணைத்து ரிசர்வ் வங்கியின் முழு துணை அமைப்பாக உருவாக்கப்பட்டது.",
+            "உரிமை: இந்திய ரிசர்வ் வங்கிக்கு 100% சொந்தமான துணை நிறுவனம்.",
+            "காப்பீட்டு வரம்பு உயர்வு: 2020-21 பட்ஜெட்டில் ஒரு வங்கியின் ஒரு வைப்பாளருக்கான காப்பீட்டுத் தொகை ₹1 லட்சத்திலிருந்து ₹5 லட்சமாக ஐந்து மடங்கு உயர்த்தப்பட்டது (அசல் மற்றும் வட்டி இரண்டுக்கும் பாதுகாப்பு).",
+            "90-நாள் கால வரம்பு தீர்வு (2021 திருத்தம்): PMC வங்கி நெருக்கடியைத் தொடர்ந்து, ரிசர்வ் வங்கியால் முடக்கப்பட்ட வங்கிகளின் வைப்பாளர்களுக்கு 90 நாட்களுக்குள் ₹5 லட்சம் வரையிலான காப்பீட்டுப் பணத்தை வழங்க சட்டம் திருத்தப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Insured vs Uninsured Deposits",
+        "title_ta": "காப்பீடு செய்யப்பட்ட vs காப்பீடு இல்லாத வைப்புகள்",
+        "points": {
+          "en": [
+            "Insured Accounts: All savings, fixed, current, and recurring deposits in all commercial banks (public, private, foreign, RRBs, and cooperative banks).",
+            "Excluded Accounts: Deposits of foreign governments, deposits of Central/State Governments, inter-bank deposits, and any amount due on account of any transfer outside India."
+          ],
+          "ta": [
+            "காப்பீடு பெற்ற கணக்குகள்: வணிக வங்கிகள், RRB மற்றும் கூட்டுறவு வங்கிகளில் உள்ள அனைத்து சேமிப்பு, நடப்பு, நிலையான மற்றும் தொடர் வைப்புகள்.",
+            "விலக்கப்பட்ட கணக்குகள்: வெளிநாட்டு அரசுகளின் வைப்புகள், மத்திய/மாநில அரசுகளின் வைப்புகள் மற்றும் வங்கிகளுக்கு இடையேயான வைப்புத் தொகைகள் (Inter-bank deposits)."
+          ]
+        }
+      }
+    ],
+    "sec_bank_consolidation_12psbs": [
+      {
+        "title": "Consolidation into 12 Anchor Banks (2019-2020)",
+        "title_ta": "12 தலைமை வங்கிகளாக ஒருங்கிணைப்பு (2019-2020)",
+        "points": {
+          "en": [
+            "Strategic Rationale: Create globally competitive 'next-generation' anchor banks with large balance sheets capable of financing massive national infrastructure projects without systemic failure.",
+            "Mega-Mergers Effective April 1, 2020: (1) Oriental Bank of Commerce and United Bank of India merged into Punjab National Bank; (2) Syndicate Bank merged into Canara Bank; (3) Andhra Bank and Corporation Bank merged into Union Bank of India; (4) Allahabad Bank merged into Indian Bank.",
+            "Earlier Precedents: SBI absorbed its 5 associate banks and Bharatiya Mahila Bank in 2017; Dena Bank and Vijaya Bank merged into Bank of Baroda in 2019.",
+            "Current Structure: Exactly 12 Public Sector Banks operate in India today (6 merged anchor banks + 6 standalone banks like Central Bank of India, Indian Overseas Bank, UCO Bank, Bank of Maharashtra, Punjab & Sind Bank, Bank of India)."
+          ],
+          "ta": [
+            "உத்திசார் நோக்கம்: நாட்டின் மாபெரும் உள்கட்டமைப்புத் திட்டங்களுக்கு நிதி வழங்கும் திறன் கொண்ட உலகத்தரம் வாய்ந்த பெரிய தலைமை வங்கிகளை உருவாக்குதல்.",
+            "ஏப்ரல் 1, 2020 பெரு இணைப்புகள்: (1) ஓரியண்டல் பாங்க் மற்றும் யுனைடெட் பாங்க் ஆகியவை பஞ்சாப் நேஷனல் வங்கியுடன் இணைந்தன; (2) சிண்டிகேட் வங்கி கனரா வங்கியுடன் இணைந்தது; (3) ஆந்திரா வங்கி மற்றும் கார்ப்பரேஷன் வங்கி யூனியன் பாங்க் ஆஃப் இந்தியாவுடன் இணைந்தன; (4) அலகாபாத் வங்கி இந்தியன் வங்கியுடன் இணைந்தது.",
+            "முந்தைய முன்னோடி இணைப்புகள்: 2017-ல் SBI தனது 5 துணை வங்கிகளையும் பாரதிய மகிளா வங்கியையும் இணைத்தது; 2019-ல் தேனா வங்கி மற்றும் விஜயா வங்கி பாங்க் ஆஃப் பரோடாவுடன் இணைந்தன.",
+            "தற்போதைய நிலை: இந்தியாவில் தற்போது சரியாக 12 பொதுத்துறை வங்கிகள் செயல்படுகின்றன (6 இணைக்கப்பட்ட பெரிய வங்கிகள் + 6 தனித்து இயங்கும் வங்கிகள்)."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_psb_mergers_mapping",
+        "title_en": "Table 1: Master Mapping of Public Sector Bank Mega-Mergers (2017-2020)",
+        "title_ta": "அட்டவணை 1: பொதுத்துறை வங்கிகளின் பெரு இணைப்புகள் முழுமையான தொகுப்பு (2017-2020)",
+        "headers_en": [
+          "Anchor Bank (தொடரும் தலைமை வங்கி)",
+          "Amalgamated / Merged Banks (இணைக்கப்பட்ட வங்கிகள்)",
+          "Effective Date",
+          "Post-Merger National Rank by Size"
+        ],
+        "headers_ta": [
+          "தலைமை வங்கி",
+          "இணைக்கப்பட்ட வங்கிகள்",
+          "நடைமுறைக்கு வந்த நாள்",
+          "அளவின் அடிப்படையில் தேசிய தரவரிசை"
+        ],
+        "rows_en": [
+          [
+            "State Bank of India (SBI)",
+            "5 Associate Banks (SBBJ, SBM, SBP, SBH, SBT) + Bharatiya Mahila Bank",
+            "April 1, 2017",
+            "Rank 1 (Largest commercial bank in India)"
+          ],
+          [
+            "Bank of Baroda",
+            "Vijaya Bank and Dena Bank",
+            "April 1, 2019",
+            "Rank 3 (Pioneering three-way public bank amalgamation)"
+          ],
+          [
+            "Punjab National Bank (PNB)",
+            "Oriental Bank of Commerce (OBC) and United Bank of India",
+            "April 1, 2020",
+            "Rank 2 (Second largest Public Sector Bank)"
+          ],
+          [
+            "Canara Bank",
+            "Syndicate Bank",
+            "April 1, 2020",
+            "Rank 4 (Major southern-headquartered anchor bank)"
+          ],
+          [
+            "Union Bank of India",
+            "Andhra Bank and Corporation Bank",
+            "April 1, 2020",
+            "Rank 5 (Substantial multi-state branch consolidation)"
+          ],
+          [
+            "Indian Bank",
+            "Allahabad Bank (Oldest joint-stock bank, est. 1865)",
+            "April 1, 2020",
+            "Rank 7 (Deep regional branch integration in South and North)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பாரத ஸ்டேட் வங்கி (SBI)",
+            "5 துணை வங்கிகள் (பிகானீர் & ஜெய்ப்பூர், மைசூர், பாட்டியாலா, ஐதராபாத், திருவாங்கூர்) + பாரதிய மகிளா வங்கி",
+            "ஏப்ரல் 1, 2017",
+            "தரம் 1 (இந்தியாவின் மிகப்பெரிய வணிக வங்கி)"
+          ],
+          [
+            "பாங்க் ஆஃப் பரோடா",
+            "விஜயா வங்கி மற்றும் தேனா வங்கி",
+            "ஏப்ரல் 1, 2019",
+            "தரம் 3 (முதன்முதலில் நடந்த மூன்று வங்கிகள் இணைப்பு)"
+          ],
+          [
+            "பஞ்சாப் நேஷனல் வங்கி (PNB)",
+            "ஓரியண்டல் பாங்க் ஆஃப் காமர்ஸ் மற்றும் யுனைடெட் பாங்க் ஆஃப் இந்தியா",
+            "ஏப்ரல் 1, 2020",
+            "தரம் 2 (இரண்டாவது பெரிய பொதுத்துறை வங்கி)"
+          ],
+          [
+            "கனரா வங்கி",
+            "சிண்டிகேட் வங்கி",
+            "ஏப்ரல் 1, 2020",
+            "தரம் 4 (தென்னிந்தியாவைத் தலைமையிடமாகக் கொண்ட பெரிய வங்கி)"
+          ],
+          [
+            "யூனியன் பாங்க் ஆஃப் இந்தியா",
+            "ஆந்திரா வங்கி மற்றும் கார்ப்பரேஷன் வங்கி",
+            "ஏப்ரல் 1, 2020",
+            "தரம் 5 (பல மாநில கிளைகளைக் கொண்ட தலைமை வங்கி)"
+          ],
+          [
+            "இந்தியன் வங்கி",
+            "அலகாபாத் வங்கி (பழமையான வங்கி, 1865)",
+            "ஏப்ரல் 1, 2020",
+            "தரம் 7 (வடக்கு மற்றும் தெற்கில் வலுவான கிளைப் பிணைப்பு)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_dicgc_old_vs_new_rules",
+        "title_en": "Table 2: Depositor Protection: DICGC Pre-2020 vs Post-2020 / 2021 Rules",
+        "title_ta": "அட்டவணை 2: வைப்பாளர் பாதுகாப்பு: DICGC 2020-க்கு முந்தைய vs 2020/2021-க்கு பிந்தைய விதிகள்",
+        "headers_en": [
+          "Feature",
+          "Old Framework (Pre-February 2020)",
+          "New Reformed Framework (2020 & 2021 Amendment)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "பழைய கட்டமைப்பு (பிப்ரவரி 2020 வரை)",
+          "புதிய சீர்திருத்த கட்டமைப்பு (2020 & 2021 திருத்தம்)"
+        ],
+        "rows_en": [
+          [
+            "Maximum Insurance Limit",
+            "₹1,00,000 per depositor per bank (fixed in 1993)",
+            "₹5,00,000 per depositor per bank (five-fold increase in Budget 2020)"
+          ],
+          [
+            "Coverage of Deposits",
+            "Covered both principal and interest up to cumulative ₹1 lakh",
+            "Covers both principal and interest up to cumulative ₹5 lakh"
+          ],
+          [
+            "Payout Timeframe on Moratorium",
+            "No statutory time-limit; depositors waited years until bank liquidation",
+            "Mandatory payout within exactly 90 days from the date of moratorium"
+          ],
+          [
+            "Premium Paid by",
+            "Commercial banks pay premium (not charged to depositors)",
+            "Commercial banks pay premium (raised from 10 paise to 12 paise per ₹100 deposit)"
+          ],
+          [
+            "Insured Institutions",
+            "All commercial and cooperative banks covered",
+            "All commercial, foreign, small finance, payments, and cooperative banks covered"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அதிகபட்ச காப்பீட்டு வரம்பு",
+            "ஒரு வங்கியின் ஒரு வைப்பாளருக்கு ₹1,00,000 மட்டுமே (1993-ல் நிர்ணயிக்கப்பட்டது)",
+            "ஒரு வங்கியின் ஒரு வைப்பாளருக்கு ₹5,00,000 (2020 பட்ஜெட்டில் 5 மடங்கு உயர்வு)"
+          ],
+          [
+            "வைப்புகளின் பாதுகாப்பு",
+            "அசல் மற்றும் வட்டி சேர்த்து அதிகபட்சம் ₹1 லட்சம் வரை மட்டுமே பாதுகாப்பு",
+            "அசல் மற்றும் வட்டி சேர்த்து அதிகபட்சம் ₹5 லட்சம் வரை முழுப் பாதுகாப்பு"
+          ],
+          [
+            "முடக்கத்தின் போது பணம் தரும் காலம்",
+            "சட்டப்பூர்வ கால வரம்பு இல்லை; வங்கி கலைக்கப்படும் வரை பல ஆண்டுகள் காத்திருக்க நேரிட்டது",
+            "வங்கி முடக்கப்பட்ட தேதியிலிருந்து சரியாக 90 நாட்களுக்குள் பணம் வழங்கப்பட வேண்டும்"
+          ],
+          [
+            "காப்பீட்டுக் கட்டணம் செலுத்துபவர்",
+            "வங்கிகளே பிரீமியம் செலுத்துகின்றன (வைப்பாளர்களிடம் வசூலிக்கப்படுவதில்லை)",
+            "வங்கிகளே செலுத்துகின்றன (₹100 வைப்புக்கு 10 காசிலிருந்து 12 காசாக உயர்த்தப்பட்டது)"
+          ],
+          [
+            "காப்பீடு பெற்ற நிறுவனங்கள்",
+            "அனைத்து வணிக மற்றும் கூட்டுறவு வங்கிகள்",
+            "அனைத்து வணிக, வெளிநாட்டு, சிறு நிதி, பேமெண்ட்ஸ் மற்றும் கூட்டுறவு வங்கிகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_financial_inclusion_schemes",
+        "title_en": "Table 3: Flagship Financial Inclusion Initiatives in India",
+        "title_ta": "அட்டவணை 3: இந்தியாவில் முதன்மையான நிதி உள்ளடக்கல் திட்டங்களின் ஒப்பீடு",
+        "headers_en": [
+          "Scheme Name",
+          "Launch Year",
+          "Core Operational Feature",
+          "Primary Target Segment"
+        ],
+        "headers_ta": [
+          "திட்டத்தின் பெயர்",
+          "தொடங்கப்பட்ட ஆண்டு",
+          "முதன்மை செயல்பாட்டு அம்சம்",
+          "முக்கிய இலக்குப் பிரிவு"
+        ],
+        "rows_en": [
+          [
+            "Lead Bank Scheme",
+            "1969 (Nariman Committee)",
+            "Allots each district to a designated commercial bank for coordinated credit planning",
+            "District-level agrarian economy and unbanked rural pockets"
+          ],
+          [
+            "Service Area Approach (SAA)",
+            "1989 (P.D. Ojha Committee)",
+            "Allots 15 to 25 villages to a designated bank branch for targeted credit delivery",
+            "Rural farming households and rural cottage artisans"
+          ],
+          [
+            "Business Correspondent (BC)",
+            "2006 (Khan Committee)",
+            "Appoints local agents ('Bank Mitras') using biometric micro-ATMs for doorstep banking",
+            "Last-mile unbanked villages without brick-and-mortar branches"
+          ],
+          [
+            "PM Jan Dhan Yojana (PMJDY)",
+            "2014 (National Mission)",
+            "Zero-balance accounts with ₹10,000 overdraft and ₹2 lakh accidental insurance RuPay card",
+            "Universal financial access for every unbanked household in India"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முன்னோடி வங்கித் திட்டம்",
+            "1969 (நாரிமன் குழு)",
+            "மாவட்ட கடன் திட்டமிடலுக்காக ஒவ்வொரு மாவட்டமும் ஒரு குறிப்பிட்ட வங்கியிடம் ஒப்படைப்பு",
+            "மாவட்ட அளவிலான வேளாண் பொருளாதாரம் மற்றும் வங்கிச் சேவையற்ற பகுதிகள்"
+          ],
+          [
+            "சேவைப் பகுதி அணுகுமுறை (SAA)",
+            "1989 (பி.டி. ஓஜா குழு)",
+            "இலக்கு கடன் சேவைக்காக ஒரு வங்கி கிளைக்கு 15 முதல் 25 கிராமங்கள் ஒதுக்கீடு",
+            "கிராமப்புற விவசாயக் குடும்பங்கள் மற்றும் குடிசைத் தொழில் கைவினைஞர்கள்"
+          ],
+          [
+            "வங்கித் தொடர்பாளர் முறை (BC)",
+            "2006 (கான் குழு)",
+            "பயோமெட்ரிக் கருவிகளுடன் 'வங்கி மித்ரா' முகவர்கள் மூலம் வீட்டு வாசலில் வங்கிச் சேவை",
+            "வங்கி கிளைகள் இல்லாத கடைக்கோடி கிராமப்புற மக்கள்"
+          ],
+          [
+            "PM ஜன் தன் யோஜனா (PMJDY)",
+            "2014 (தேசிய திட்டம்)",
+            "பூஜ்ஜிய இருப்பு கணக்குகள், ₹10,000 ஓவர் டிராஃப்ட் மற்றும் ₹2 லட்சம் விபத்துக் காப்பீடு ரூபே அட்டை",
+            "இந்தியாவில் வங்கி கணக்கில்லாத அனைத்து குடும்பங்களுக்கும் உலகளாவிய வங்கி சேவை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_digital_payment_mechanisms",
+        "title_en": "Table 4: Digital Payment Infrastructure Matrix in Indian Banking",
+        "title_ta": "அட்டவணை 4: இந்திய வங்கித் துறையில் டிஜிட்டல் கட்டண உள்கட்டமைப்புகளின் ஒப்பீடு",
+        "headers_en": [
+          "Platform",
+          "Operating Agency",
+          "Settlement Architecture",
+          "Primary Operational Utility"
+        ],
+        "headers_ta": [
+          "கட்டண தளம்",
+          "இயக்கும் அமைப்பு",
+          "தீர்வு கட்டமைப்பு",
+          "முதன்மை பயன்பாடு"
+        ],
+        "rows_en": [
+          [
+            "RTGS",
+            "Reserve Bank of India (RBI)",
+            "Real-time continuous gross settlement; min ₹2 lakh",
+            "High-value corporate, interbank, and treasury fund transfers"
+          ],
+          [
+            "NEFT",
+            "Reserve Bank of India (RBI)",
+            "Deferred net settlement in 30-minute batches; no min limit",
+            "Retail, business, and wage payments across banking network"
+          ],
+          [
+            "UPI",
+            "NPCI (licensed by RBI)",
+            "Instant real-time mobile payment via Virtual Payment Address (VPA)",
+            "P2P (peer-to-peer) and P2M (merchant) micro and daily payments"
+          ],
+          [
+            "IMPS",
+            "NPCI (licensed by RBI)",
+            "Instant 24x7 interbank fund transfer via mobile/net banking",
+            "Immediate interbank retail account transfers up to ₹5 lakh"
+          ],
+          [
+            "AePS",
+            "NPCI (licensed by RBI)",
+            "Aadhaar-authenticated biometric micro-ATM cash withdrawals",
+            "Rural financial inclusion via Business Correspondents"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "RTGS",
+            "இந்திய ரிசர்வ் வங்கி (RBI)",
+            "நிகழ்நேர மொத்தத் தீர்வு; குறைந்தபட்ச வரம்பு ₹2 லட்சம்",
+            "அதிக மதிப்பு கொண்ட கார்ப்பரேட் மற்றும் வங்கிகளுக்கு இடையேயான பணப் பரிமாற்றம்"
+          ],
+          [
+            "NEFT",
+            "இந்திய ரிசர்வ் வங்கி (RBI)",
+            "30 நிமிட தொகுதி நிகரத் தீர்வு; குறைந்தபட்ச வரம்பு இல்லை",
+            "சில்லறை, வணிக மற்றும் ஊதியப் பரிவர்த்தனைகள்"
+          ],
+          [
+            "UPI",
+            "NPCI (ரிசர்வ் வங்கி உரிமம்)",
+            "மெய்நிகர் முகவரி (VPA) மூலம் உடனடி மொபைல் கட்டணத் தீர்வு",
+            "நபருக்கு நபர் (P2P) மற்றும் வணிகர் (P2M) தினசரி சில்லறை கட்டணங்கள்"
+          ],
+          [
+            "IMPS",
+            "NPCI (ரிசர்வ் வங்கி உரிமம்)",
+            "மொபைல்/இணைய வங்கி மூலம் உடனடி 24x7 வங்கிப் பரிமாற்றம்",
+            "₹5 லட்சம் வரையிலான உடனடி வங்கிகளுக்கு இடையேயான பணப் பரிமாற்றம்"
+          ],
+          [
+            "AePS",
+            "NPCI (ரிசர்வ் வங்கி உரிமம்)",
+            "ஆதார் பயோமெட்ரிக் கைரேகை அங்கீகார மைக்ரோ-ஏடிஎம் பணம் எடுத்தல்",
+            "வங்கித் தொடர்பாளர்கள் மூலமான கிராமப்புற உள்ளடக்கிய நிதிச் சேவை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Banking Mastery: Financial Inclusion & Safety (Part 3)",
+        "short_label": "Banking Mastery",
+        "children": [
+          {
+            "title": "Financial Inclusion Rails",
+            "short_label": "Inclusion",
+            "children": [
+              {
+                "title": "PMJDY (2014): Zero-Balance, ₹10k Overdraft",
+                "short_label": "PMJDY"
+              },
+              {
+                "title": "Lead Bank Scheme (1969 - Nariman Committee)",
+                "short_label": "Lead Bank"
+              },
+              {
+                "title": "Business Correspondent (BC) Model (Khan Committee)",
+                "short_label": "BC Model"
+              }
+            ]
+          },
+          {
+            "title": "Depositor Protection (DICGC)",
+            "short_label": "DICGC Safety",
+            "children": [
+              {
+                "title": "₹5 Lakh Insurance Ceiling (Budget 2020)",
+                "short_label": "₹5 Lakh Limit"
+              },
+              {
+                "title": "90-Day Mandatory Payout on Moratorium (2021)",
+                "short_label": "90-Day Payout"
+              },
+              {
+                "title": "Exclusions: Govt & Interbank Deposits",
+                "short_label": "Exclusions"
+              }
+            ]
+          },
+          {
+            "title": "Structural Transformation",
+            "short_label": "Structural Consolidation",
+            "children": [
+              {
+                "title": "12 Public Sector Banks (Post-2020 Mergers)",
+                "short_label": "12 PSBs"
+              },
+              {
+                "title": "Digital Rails: RTGS, NEFT, UPI, AePS",
+                "short_label": "Digital Rails"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "DICGC Insurance Limit Per Bank vs Per Account Trap (DICGC காப்பீட்டு வரம்பு கணக்கு வாரியா?)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the ₹5 lakh DICGC insurance applies separately to each individual account (savings, FD, RD) a person holds within the SAME bank.",
+            "CORRECT FACT: The ₹5 lakh limit applies cumulatively to all deposits held by a person in the SAME bank (principal + interest combined). Having 5 accounts in one bank still yields only ₹5 lakh total coverage.",
+            "WHY CANDIDATES FAIL: Candidates assume every separate savings account or fixed deposit receipt carries an independent ₹5 lakh cover."
+          ],
+          "ta": [
+            "பொறி: ஒரே வங்கியில் ஒருவர் வைத்துள்ள ஒவ்வொரு தனித்தனி கணக்கிற்கும் (சேமிப்பு, FD, RD) தலா ₹5 லட்சம் காப்பீடு உண்டு என நினைப்பது.",
+            "சரியான உண்மை: ஒரே வங்கியில் ஒருவர் எத்தனை கணக்குகள் வைத்திருந்தாலும், அவை அனைத்திற்கும் சேர்த்து ஒட்டுமொத்தமாக ₹5 லட்சம் மட்டுமே அதிகபட்ச காப்பீடு கிடைக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஒவ்வொரு கணக்கிற்கும் தனித்தனியாக ₹5 லட்சம் கிடைக்கும் என்று தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "DICGC Insurance Premium Payer Trap (DICGC பிரீமியம் செலுத்துபவர் யார்?)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that bank account holders/depositors must pay an annual premium to DICGC to secure insurance on their savings.",
+            "CORRECT FACT: The insurance premium is paid entirely by the insured bank itself (currently 12 paise per ₹100 deposit); depositors are not charged any fee.",
+            "WHY CANDIDATES FAIL: Standard commercial insurance requires policyholders to pay premiums, leading students to apply that rule to bank deposit insurance."
+          ],
+          "ta": [
+            "பொறி: தங்களது வைப்புகளுக்கு காப்பீடு பெற வாடிக்கையாளர்களே DICGC-க்கு ஆண்டுதோறும் பிரீமியம் செலுத்துகின்றனர் என நினைப்பது.",
+            "சரியான உண்மை: இதற்கான காப்பீட்டுக் கட்டணத்தை சம்பந்தப்பட்ட வங்கியே முழுமையாக செலுத்துகிறது (₹100 வைப்புக்கு 12 காசுகள்); வாடிக்கையாளர்களிடம் எந்தக் கட்டணமும் பிடிக்கப்படுவதில்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொதுவான காப்பீடுகளில் வாடிக்கையாளரே பிரீமியம் செலுத்துவதால் வங்கி வைப்பு காப்பீட்டிலும் வாடிக்கையாளரே செலுத்துவார் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "PMJDY Overdraft Eligibility Trap (PMJDY ஓவர் டிராஃப்ட் தகுதி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that an overdraft of ₹10,000 is handed out automatically in cash the moment a PMJDY account is opened.",
+            "CORRECT FACT: The overdraft facility is sanctioned only after six months of satisfactory operational conduct of the account, primarily to the earning member/woman of the household.",
+            "WHY CANDIDATES FAIL: Slogans and political announcements obscure the operational banking prerequisite of six months of satisfactory transactions."
+          ],
+          "ta": [
+            "பொறி: ஜன் தன் கணக்கு தொடங்கிய உடனேயே அனைவருக்கும் ₹10,000 ஓவர் டிராஃப்ட் கடன் தானாகவே உடனடியாக வழங்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: கணக்கு தொடங்கப்பட்டு ஆறு மாதங்கள் திருப்திகரமாக பரிவர்த்தனைகள் நடைபெற்ற பின்னரே, குடும்பத்தின் பெண் உறுப்பினருக்கு முன்னுரிமை அடிப்படையில் ₹10,000 வரை ஓவர் டிராஃப்ட் அனுமதிக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: விளம்பரங்களை மேலோட்டமாகப் பார்த்துவிட்டு ஆறு மாத செயல்பாட்டு தகுதி விதியை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Lead Bank Scheme Role Trap (முன்னோடி வங்கி அதிகாரம்)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that the designated 'Lead Bank' in a district possesses exclusive monopoly over all banking transactions and can order other commercial banks.",
+            "CORRECT FACT: The Lead Bank acts only as a coordinator for credit planning and development; it does NOT possess a commercial monopoly or supervisory administrative authority over other banks.",
+            "WHY CANDIDATES FAIL: The word 'Lead' leads candidates to assume an authoritative hierarchical command over other financial institutions."
+          ],
+          "ta": [
+            "பொறி: ஒரு மாவட்டத்தின் 'முன்னோடி வங்கி' அம்மாவட்டத்தின் அனைத்து வங்கிப் பணிகளிலும் ஏகபோக அதிகாரம் கொண்டு பிற வங்கிகளுக்கு உத்தரவிட முடியும் என நினைப்பது.",
+            "சரியான உண்மை: முன்னோடி வங்கி என்பது மாவட்ட கடன் திட்டமிடலை ஒருங்கிணைக்கும் ஒரு வழிகாட்டி அமைப்பு மட்டுமே; அது பிற வங்கிகள் மீது எந்தவொரு மேலாதிக்க அதிகாரமும் செலுத்த முடியாது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'முன்னோடி' என்ற வார்த்தையைக் கண்டு பிற வங்கிகள் மீது ஆதிக்கம் செலுத்தும் அதிகாரம் உண்டு என தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Number of Public Sector Banks Trap (பொதுத்துறை வங்கிகளின் தற்போதைய எண்ணிக்கை)",
+        "points": {
+          "en": [
+            "TRAP: Stating that there are still 27 Public Sector Banks operating in India.",
+            "CORRECT FACT: Following the historic mega-mergers implemented between 2017 and 2020, the total number of Public Sector Banks in India was consolidated to exactly 12.",
+            "WHY CANDIDATES FAIL: Outdated textbooks and unrevised online material frequently list the pre-merger count of 27 banks."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவில் இன்னமும் 27 பொதுத்துறை வங்கிகள் செயல்படுகின்றன என பழைய புள்ளிவிவரத்தைக் குறிப்பிடுவது.",
+            "சரியான உண்மை: 2017 முதல் 2020 வரை செயல்படுத்தப்பட்ட தொடர் பெரு இணைப்புகளுக்குப் பிறகு, இந்தியாவில் உள்ள பொதுத்துறை வங்கிகளின் எண்ணிக்கை சரியாக 12 ஆக ஒருங்கிணைக்கப்பட்டுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய புத்தகங்கள் மற்றும் புதுப்பிக்கப்படாத குறிப்புகளில் உள்ள 27 என்ற பழைய எண்ணிக்கையை நினைவில் வைத்திருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Interbank Deposits DICGC Insurance Trap (வங்கிகளுக்கு இடையேயான வைப்பு காப்பீடு)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that deposits placed by one commercial bank with another bank are protected under DICGC insurance.",
+            "CORRECT FACT: Inter-bank deposits and Government deposits are explicitly EXCLUDED from DICGC insurance coverage.",
+            "WHY CANDIDATES FAIL: Candidates assume that since all public retail deposits are insured, institutional inter-bank deposits must enjoy identical safety."
+          ],
+          "ta": [
+            "பொறி: ஒரு வணிக வங்கி மற்றொரு வங்கியில் வைத்துள்ள வைப்புத்தொகைகளுக்கும் DICGC காப்பீடு உண்டு என நினைப்பது.",
+            "சரியான உண்மை: வங்கிகளுக்கு இடையேயான வைப்புகள் (Inter-bank deposits) மற்றும் அரசு வைப்புகள் DICGC காப்பீட்டுப் பாதுகாப்பிலிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொதுமக்களின் வைப்புகளுக்கு பாதுகாப்பு இருப்பதால் வங்கிகளின் சொந்த வைப்புகளுக்கும் பாதுகாப்பு இருக்கும் என தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Pradhan Mantri Jan Dhan Yojana (PMJDY) was launched on August 28, 2014, as the world's largest financial inclusion mission.",
+        "PMJDY accounts offer an overdraft facility of up to ₹10,000 and a RuPay debit card with an accidental insurance cover of ₹2 lakh.",
+        "The Lead Bank Scheme was introduced in 1969 based on the recommendations of the F.K.F. Nariman Committee and Gadgil Study Group.",
+        "The Service Area Approach (SAA) was introduced in April 1989 following the recommendations of the P.D. Ojha Committee.",
+        "The Business Correspondent (BC) model was operationalized in 2006 on the advice of the Khan Committee to deliver doorstep rural banking.",
+        "The Deposit Insurance and Credit Guarantee Corporation (DICGC) was established on July 15, 1978, as a wholly-owned subsidiary of the RBI.",
+        "The deposit insurance limit was raised from ₹1,00,000 to ₹5,00,000 per depositor per bank in the Union Budget 2020-21.",
+        "The DICGC (Amendment) Act, 2021 mandated that insured depositors of troubled banks under RBI moratorium must receive up to ₹5 lakh within 90 days.",
+        "Government deposits and inter-bank deposits are explicitly excluded from DICGC deposit insurance coverage.",
+        "Following the mega-mergers effective April 1, 2020, India has exactly 12 Public Sector Banks.",
+        "State Bank of India is the largest commercial bank in India, accounting for nearly a quarter of total national deposits and advances.",
+        "Punjab National Bank became the second largest Public Sector Bank in India after absorbing Oriental Bank of Commerce and United Bank of India."
+      ],
+      "ta": [
+        "பிரதான் மந்திரி ஜன் தன் யோஜனா (PMJDY) ஆகஸ்ட் 28, 2014 அன்று உலகின் மிகப்பெரிய உள்ளடக்கிய நிதித் திட்டமாகத் தொடங்கப்பட்டது.",
+        "PMJDY கணக்குகள் ₹10,000 வரை ஓவர் டிராஃப்ட் வசதியையும், ₹2 லட்சம் விபத்துக் காப்பீட்டுடன் கூடிய ரூபே டெபிட் கார்டையும் வழங்குகின்றன.",
+        "1969-ல் நாரிமன் குழு மற்றும் காட்கில் ஆய்வுக் குழுவின் பரிந்துரையின் அடிப்படையில் முன்னோடி வங்கித் திட்டம் அறிமுகப்படுத்தப்பட்டது.",
+        "பி.டி. ஓஜா குழுவின் பரிந்துரைகளைத் தொடர்ந்து ஏப்ரல் 1989-ல் சேவைப் பகுதி அணுகுமுறை (SAA) கொண்டுவரப்பட்டது.",
+        "கிராமப்புற வீட்டு வாசலில் வங்கிச் சேவையை வழங்க 2006-ல் கான் குழுவின் ஆலோசனையின்படி வங்கித் தொடர்பாளர் (BC) முறை தொடங்கப்பட்டது.",
+        "ரிசர்வ் வங்கியின் முழு துணை அமைப்பான DICGC ஜூலை 15, 1978 அன்று 1961 சட்டத்தின் கீழ் நிறுவப்பட்டது.",
+        "2020-21 மத்திய பட்ஜெட்டில் வைப்புத்தொகை காப்பீட்டு வரம்பு ₹1 லட்சத்திலிருந்து ₹5 லட்சமாக உயர்த்தப்பட்டது.",
+        "2021 DICGC திருத்தச் சட்டம், முடக்கப்பட்ட வங்கிகளின் வைப்பாளர்களுக்கு 90 நாட்களுக்குள் ₹5 லட்சம் வரை காப்பீட்டுத் தொகையை வழங்க ஆணையிடுகிறது.",
+        "அரசு வைப்புகள் மற்றும் வங்கிகளுக்கு இடையேயான வைப்புத் தொகைகள் DICGC காப்பீட்டிலிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன.",
+        "ஏப்ரல் 1, 2020 பெரு வங்கி இணைப்புகளுக்குப் பிறகு, இந்தியாவில் உள்ள பொதுத்துறை வங்கிகளின் எண்ணிக்கை சரியாக 12 ஆகும்.",
+        "பாரத ஸ்டேட் வங்கி இந்தியாவின் மிகப்பெரிய வணிக வங்கியாகும்; நாட்டின் மொத்த வைப்புகள் மற்றும் கடன்களில் நான்கில் ஒரு பங்கை நிர்வகிக்கிறது.",
+        "ஓரியண்டல் பாங்க் மற்றும் யுனைடெட் பாங்க் ஆகியவற்றை இணைத்த பிறகு பஞ்சாப் நேஷனல் வங்கி இந்தியாவின் இரண்டாவது பெரிய பொதுத்துறை வங்கியானது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "PMJDY (2014): Zero-balance basic savings accounts; ₹10,000 overdraft limit; ₹2 lakh accident cover on RuPay cards.",
+        "Lead Bank Scheme (1969): Nariman Committee initiative allotting each district to an anchor bank for credit planning.",
+        "Service Area Approach (1989): P.D. Ojha Committee reform assigning 15-25 villages to a designated rural bank branch.",
+        "Business Correspondent (BC) Model: Khan Committee (2006) innovation deploying 'Bank Mitras' with micro-ATMs for doorstep banking.",
+        "DICGC Coverage: ₹5,00,000 per depositor per bank (raised five-fold from ₹1 lakh in Budget 2020-21).",
+        "DICGC 90-Day Rule (2021): Troubled banks placed under moratorium must disburse insured deposits up to ₹5 lakh within 90 days.",
+        "Deposit Insurance Exclusions: Excludes foreign government deposits, domestic government funds, and inter-bank deposits.",
+        "12 Anchor PSBs: Consolidated into 12 Public Sector Banks following mega-mergers in 2017, 2019, and 2020.",
+        "PNB Mega-Merger: Merged Oriental Bank of Commerce and United Bank of India, becoming India's 2nd largest PSB.",
+        "Canara Bank Merger: Absorbed Syndicate Bank, creating the 4th largest public sector lender in India."
+      ],
+      "ta": [
+        "PMJDY (2014): பூஜ்ஜிய இருப்பு கணக்குகள்; ₹10,000 ஓவர் டிராஃப்ட் கடன்; ரூபே அட்டையில் ₹2 லட்சம் விபத்துக் காப்பீடு.",
+        "முன்னோடி வங்கித் திட்டம் (1969): நாரிமன் குழுவின் கீழ் மாவட்ட கடன் திட்டமிடலுக்காக வங்கிகளுக்கு மாவட்டங்கள் ஒதுக்கீடு.",
+        "சேவைப் பகுதி அணுகுமுறை (1989): பி.டி. ஓஜா குழுவின் கீழ் ஒரு வங்கி கிளைக்கு 15-25 கிராமங்கள் ஒதுக்கப்பட்டு கடன் வழங்கல்.",
+        "வங்கித் தொடர்பாளர் முறை (BC): கான் குழு (2006) மூலம் 'வங்கி மித்ரா' முகவர்கள் வீட்டு வாசலில் வங்கிச் சேவை அளித்தல்.",
+        "DICGC காப்பீட்டு வரம்பு: ஒரு வங்கியின் ஒரு வைப்பாளருக்கு ₹5,00,000 (2020-21 பட்ஜெட்டில் 5 மடங்கு உயர்த்தப்பட்டது).",
+        "DICGC 90-நாள் விதி (2021): முடக்கப்பட்ட வங்கிகளின் வாடிக்கையாளர்களுக்கு 90 நாட்களுக்குள் ₹5 லட்சம் வரை காப்பீட்டுத் தொகை வழங்கப்பட வேண்டும்.",
+        "காப்பீட்டு விதிவிலக்குகள்: அரசு வைப்புகள், வெளிநாட்டு அரசு நிதிகள் மற்றும் வங்கிகளுக்கு இடையேயான வைப்புகளுக்கு காப்பீடு இல்லை.",
+        "12 பொதுத்துறை வங்கிகள்: 2017, 2019 மற்றும் 2020 பெரு வங்கி இணைப்புகளுக்குப் பிறகு 12 தலைமை வங்கிகளாக ஒருங்கிணைப்பு.",
+        "PNB பெரு இணைப்பு: ஓரியண்டல் பாங்க் மற்றும் யுனைடெட் பாங்க் இணைக்கப்பட்டு இந்தியாவின் 2-வது பெரிய பொது வங்கியானது.",
+        "கனரா வங்கி இணைப்பு: சிண்டிகேட் வங்கியைத் தன்னுள் இணைத்து இந்தியாவின் 4-வது பெரிய பொதுத்துறை கடன் அமைப்பானது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_bk_301",
+        "front_en": "What is the current deposit insurance coverage provided by DICGC per depositor per bank?",
+        "front_ta": "ஒரு வங்கியின் ஒரு வைப்பாளருக்கு DICGC வழங்கும் தற்போதைய வைப்புத்தொகை காப்பீட்டு வரம்பு என்ன?",
+        "back_en": "₹5,00,000 (covering both principal and interest).",
+        "back_ta": "₹5,00,000 (அசல் மற்றும் வட்டி இரண்டையும் உள்ளடக்கியது)."
+      },
+      {
+        "id": "rc_bk_302",
+        "front_en": "Within how many days must DICGC disburse insured deposits to depositors of a bank placed under moratorium?",
+        "front_ta": "முடக்கப்பட்ட வங்கியின் வைப்பாளர்களுக்கு DICGC எத்தனை நாட்களுக்குள் காப்பீட்டுத் தொகையை வழங்க வேண்டும்?",
+        "back_en": "Within exactly 90 days (mandated by the DICGC Amendment Act, 2021).",
+        "back_ta": "சரியாக 90 நாட்களுக்குள் (2021 DICGC திருத்தச் சட்டம் மூலம் கட்டாயமாக்கப்பட்டது)."
+      },
+      {
+        "id": "rc_bk_303",
+        "front_en": "On what date was the Pradhan Mantri Jan Dhan Yojana (PMJDY) officially launched?",
+        "front_ta": "பிரதான் மந்திரி ஜன் தன் யோஜனா (PMJDY) அதிகாரப்பூர்வமாக எந்தத் தேதியில் தொடங்கப்பட்டது?",
+        "back_en": "August 28, 2014.",
+        "back_ta": "ஆகஸ்ட் 28, 2014."
+      },
+      {
+        "id": "rc_bk_304",
+        "front_en": "What is the maximum overdraft limit permitted under PMJDY accounts?",
+        "front_ta": "PMJDY கணக்குகளின் கீழ் அனுமதிக்கப்படும் அதிகபட்ச ஓவர் டிராஃப்ட் (மிகைப்பற்று) கடன் வரம்பு என்ன?",
+        "back_en": "Up to ₹10,000.",
+        "back_ta": "₹10,000 வரை."
+      },
+      {
+        "id": "rc_bk_305",
+        "front_en": "Which committee recommended the introduction of the Lead Bank Scheme in 1969?",
+        "front_ta": "1969-ல் முன்னோடி வங்கித் திட்டத்தை அறிமுகப்படுத்தப் பரிந்துரைத்த குழு எது?",
+        "back_en": "F.K.F. Nariman Committee (along with the Gadgil Study Group).",
+        "back_ta": "எஃப்.கே.எஃப். நாரிமன் குழு (மற்றும் காட்கில் ஆய்வுக் குழு)."
+      },
+      {
+        "id": "rc_bk_306",
+        "front_en": "Which committee recommended the Service Area Approach (SAA) introduced in 1989?",
+        "front_ta": "1989-ல் அறிமுகப்படுத்தப்பட்ட சேவைப் பகுதி அணுகுமுறையை (SAA) பரிந்துரைத்த குழு எது?",
+        "back_en": "P.D. Ojha Committee.",
+        "back_ta": "பி.டி. ஓஜா குழு."
+      },
+      {
+        "id": "rc_bk_307",
+        "front_en": "Which committee paved the way for the Business Correspondent (BC) model in 2006?",
+        "front_ta": "2006-ல் வங்கித் தொடர்பாளர் (BC) முறைக்கு வழியமைத்த குழு எது?",
+        "back_en": "Khan Committee on Financial Inclusion.",
+        "back_ta": "உள்ளடக்கிய நிதி மீதான கான் குழு (Khan Committee)."
+      },
+      {
+        "id": "rc_bk_308",
+        "front_en": "Which two banks were merged into the Punjab National Bank (PNB) on April 1, 2020?",
+        "front_ta": "ஏப்ரல் 1, 2020 அன்று பஞ்சாப் நேஷனல் வங்கியுடன் (PNB) இணைக்கப்பட்ட இரண்டு வங்கிகள் எவை?",
+        "back_en": "Oriental Bank of Commerce (OBC) and United Bank of India.",
+        "back_ta": "ஓரியண்டல் பாங்க் ஆஃப் காமர்ஸ் (OBC) மற்றும் யுனைடெட் பாங்க் ஆஃப் இந்தியா."
+      },
+      {
+        "id": "rc_bk_309",
+        "front_en": "Which bank was merged into Canara Bank during the mega-mergers effective April 1, 2020?",
+        "front_ta": "ஏப்ரல் 1, 2020 பெரு இணைப்பின் போது கனரா வங்கியுடன் இணைக்கப்பட்ட வங்கி எது?",
+        "back_en": "Syndicate Bank.",
+        "back_ta": "சிண்டிகேட் வங்கி (Syndicate Bank)."
+      },
+      {
+        "id": "rc_bk_310",
+        "front_en": "Are inter-bank deposits insured under the DICGC insurance framework?",
+        "front_ta": "வங்கிகளுக்கு இடையேயான வைப்புத் தொகைகள் DICGC காப்பீட்டுத் திட்டத்தின் கீழ் பாதுகாக்கப்படுகின்றனவா?",
+        "back_en": "No, inter-bank deposits are explicitly excluded from DICGC insurance.",
+        "back_ta": "இல்லை, வங்கிகளுக்கு இடையேயான வைப்புகள் DICGC காப்பீட்டிலிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன."
+      },
+      {
+        "id": "rc_bk_311",
+        "front_en": "How many Public Sector Banks operate in India today following the consolidation drive?",
+        "front_ta": "ஒருங்கிணைப்பு நடவடிக்கைகளுக்குப் பிறகு இன்று இந்தியாவில் எத்தனை பொதுத்துறை வங்கிகள் செயல்படுகின்றன?",
+        "back_en": "Exactly 12 Public Sector Banks.",
+        "back_ta": "சரியாக 12 பொதுத்துறை வங்கிகள்."
+      },
+      {
+        "id": "rc_bk_312",
+        "front_en": "What accidental insurance cover is bundled with the RuPay debit card issued under PMJDY?",
+        "front_ta": "PMJDY-ன் கீழ் வழங்கப்படும் ரூபே டெபிட் கார்டுடன் இணைக்கப்பட்டுள்ள விபத்துக் காப்பீட்டுத் தொகை என்ன?",
+        "back_en": "₹2 lakh (for accounts opened after August 28, 2018; ₹1 lakh previously).",
+        "back_ta": "₹2 லட்சம் (ஆகஸ்ட் 28, 2018-க்குப் பின் திறக்கப்பட்ட கணக்குகளுக்கு; முன்பு ₹1 லட்சம்)."
+      }
+    ]
+  }
+}

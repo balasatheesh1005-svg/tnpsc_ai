@@ -1,0 +1,771 @@
+{
+  "meta": {
+    "topic_id": "economy_unemployment_part_3",
+    "repository_id": "economy_unemployment",
+    "display_title": "Unemployment – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Unemployment",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "exam_mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Jobless Growth",
+    "Employment Elasticity of GDP",
+    "Informal Employment Dual Informality",
+    "Contractualization Formal Sector",
+    "Female Labour Force Participation FLFPR",
+    "Claudia Goldin U Shaped Curve",
+    "Unpaid Domestic Care Work",
+    "Demographic Dividend Window 2005 to 2055",
+    "Skill India Mission 2015",
+    "PMKVY Recognition of Prior Learning RPL",
+    "e Shram Portal 12 digit UAN",
+    "Naan Mudhalvan 2022 Tamil Nadu",
+    "Pudhumai Penn Thittam 1000 Rupees",
+    "Vazhndhu Kaattuvom TNREAP"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Examine why rapid GDP growth in India has failed to generate mass employment, diagnosing the drop in employment elasticity.",
+        "Understand Claudia Goldin's U-shaped curve explaining the structural dynamics of female labour participation."
+      ],
+      "ta": [
+        "இந்தியாவின் வேகமான GDP வளர்ச்சி ஏன் போதுமான வேலைவாய்ப்பை உருவாக்கவில்லை என்பதை வேலைவாய்ப்பு நெகிழ்ச்சிச் சரிவு மூலம் புரிந்து கொள்ளுதல்.",
+        "பெண்கள் உழைப்பாளர் பங்கேற்பை விளக்கும் கிளாடியா கோல்டினின் 'U' வடிவ வளைவுக் கோட்பாட்டை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Recall key national metrics: informal workforce share (~88-90%), demographic dividend window (2005-2055), and median age (~28.5 years).",
+        "Memorize launch dates of key interventions: Skill India (2015), e-Shram (2021), Naan Mudhalvan (2022), and Pudhumai Penn (2022)."
+      ],
+      "ta": [
+        "முக்கிய தேசிய அளவீடுகளை நினைவுகூருதல்: முறைசாரா தொழிலாளர் பங்கு (~88-90%), மக்கள் தொகை நன்மைக் காலம் (2005-2055), சராசரி வயது (~28.5 ஆண்டுகள்).",
+        "முக்கியத் திட்டங்களின் தொடக்க ஆண்டுகளை நினைவில் நிறுத்துதல்: திறன் இந்தியா (2015), இ-ஷ்ராம் (2021), நான் முதல்வன் (2022), புதுமைப் பெண் (2022)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how contractualization inside formal establishments blurs the distinction between formal and informal employment.",
+        "Appraise the transformative impact of Tamil Nadu's educational and skill initiatives (Naan Mudhalvan and Pudhumai Penn) on youth and female empowerment."
+      ],
+      "ta": [
+        "முறையான நிறுவனங்களுக்குள் ஒப்பந்தத் தொழிலாளர்கள் புகுத்தப்படுவது முறையான மற்றும் முறைசாரா வேலைக்கு இடையேயான எல்லையை எவ்வாறு மாற்றுகிறது என ஆய்வு செய்தல்.",
+        "இளைஞர்கள் மற்றும் பெண்கள் அதிகாரமளித்தலில் தமிழ்நாட்டின் கல்வி மற்றும் திறன் திட்டங்களின் (நான் முதல்வன் மற்றும் புதுமைப் பெண்) தாக்கத்தை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge of skill programs and labour reforms to answer analytical mains and prelims questions without falling for common traps."
+      ],
+      "ta": [
+        "தேர்வுப் பொறிகளில் சிக்காமல் முதன்மை மற்றும் முதல்நிலை வினாக்களுக்கு தொழிலாளர் சந்தை மற்றும் திறன் திட்டங்கள் சார்ந்து துல்லியமாக விடையளித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Unemployment – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_jobless_growth_informality",
+      "title_en": "Jobless Growth & Structural Informality in India",
+      "title_ta": "வேலைவாய்ப்பற்ற வளர்ச்சி & கட்டமைப்பு முறைசாரா தொழிலாளர் நிலை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_female_lfpr_dynamics",
+      "title_en": "Female Labour Force Participation Rate (FLFPR) & The U-Shaped Curve",
+      "title_ta": "பெண்கள் உழைப்பாளர் பங்கேற்பு விகிதம் (FLFPR) & 'U' வடிவ வளைவு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_demographic_dividend_skilling",
+      "title_en": "Demographic Dividend & National Skilling Architecture",
+      "title_ta": "மக்கள் தொகை நன்மை & தேசிய திறன் மேம்பாட்டுக் கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_skill_initiatives",
+      "title_en": "Tamil Nadu Pioneering Skill & Youth Employment Models",
+      "title_ta": "தமிழ்நாட்டின் முன்னோடி திறன் & இளைஞர் வேலைவாய்ப்பு மாதிரிகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Contemporary labour market dynamics in India examine the structural distortions of growth and policy interventions, focusing on the paradox of 'Jobless Growth', the historically low Female Labour Force Participation Rate (FLFPR), massive informalization, and state skill development missions designed to reap India's demographic dividend.",
+      "ta": "இந்தியாவில் சமகால தொழிலாளர் சந்தை இயக்கவியல் என்பது பொருளாதார வளர்ச்சியின் கட்டமைப்பு குறைபாடுகளையும் அரசு கொள்கைகளையும் ஆராய்வதாகும்; குறிப்பாக 'வேலைவாய்ப்பற்ற வளர்ச்சி' (Jobless Growth), வரலாற்று ரீதியாகக் குறைந்த 'பெண்கள் உழைப்பாளர் பங்கேற்பு விகிதம்' (FLFPR), அதிகப்படியான முறைசாரா தொழிலாளர்கள் மற்றும் இந்தியாவின் மக்கள் தொகை நன்மையைப் பயன்படுத்த உதவும் தேசியத் திறன் மேம்பாட்டுத் திட்டங்களை இது மையமாகக் கொண்டுள்ளது."
+    },
+    "introduction": {
+      "en": "The contemporary trajectory of India's labour market presents a profound structural paradox. While India has maintained one of the fastest GDP growth rates among major global economies over the past two decades, this expansion has been largely characterized as 'Jobless Growth'—driven by capital-intensive manufacturing and high-productivity services that generate substantial gross value added but minimal direct employment elasticity. Concurrently, India faces the acute structural challenge of a persistently low and depressed Female Labour Force Participation Rate (FLFPR), reflecting societal barriers, unpaid care burdens, and the economic 'U-shaped hypothesis'. Over 85% of the total workforce remains mired in informal employment lacking social security, written contracts, or statutory benefits. To bridge the massive skill deficit and harvest the golden demographic dividend window before population ageing begins, the government has launched comprehensive skilling and registration frameworks, including Skill India, PMKVY, and the e-Shram portal, complemented by pioneering state initiatives like Tamil Nadu's Naan Mudhalvan scheme. Mastering these contemporary dynamics and state initiatives is critical for TNPSC Group 1 aspirants.",
+      "ta": "இந்தியாவின் சமகால தொழிலாளர் சந்தைப் போக்கு ஒரு ஆழமான கட்டமைப்பு முரண்பாட்டை வெளிப்படுத்துகிறது. கடந்த இரண்டு தசாப்தங்களில் உலகின் மிக வேகமாக வளரும் பொருளாதாரங்களில் ஒன்றாக இந்தியா திகழ்ந்தாலும், இந்த வளர்ச்சி பெரும்பாலும் 'வேலைவாய்ப்பற்ற வளர்ச்சி' (Jobless Growth) என்றே வர்ணிக்கப்படுகிறது; ஏனெனில் மூலதனம் சார்ந்த தொழிற்சாலைகளும் தகவல் தொழில்நுட்ப சேவைகளும் அதிக மொத்த மதிப்பைச் சேர்த்தாலும், அவற்றின் வேலைவாய்ப்பு உருவாக்கும் திறன் மிகவும் குறைவாகவே உள்ளது. அதே நேரத்தில், சமூகத் தடைகள் மற்றும் ஊதியமற்ற குடும்பப் பணிகளால் வரலாற்று ரீதியாகக் குறைந்த 'பெண்கள் உழைப்பாளர் பங்கேற்பு விகிதத்தை' (FLFPR) இந்தியா எதிர்கொள்கிறது. நாட்டின் மொத்த தொழிலாளர்களில் 85%-க்கும் அதிகமானோர் ஒப்பந்தமோ, சமூகப் பாதுகாப்போ அற்ற முறைசாரா தொழிலாளர்களாகவே உள்ளனர். மக்கள் தொகை முதிர்ச்சியடைவதற்குள் நாட்டின் 'மக்கள் தொகை நன்மையை' (Demographic Dividend) அறுவடை செய்ய, திறன் இந்தியா, PMKVY மற்றும் இ-ஷ்ராம் (e-Shram) போன்ற தேசியத் திட்டங்களும், தமிழ்நாட்டின் 'நான் முதல்வன்' போன்ற முன்னோடி மாநிலத் திட்டங்களும் செயல்படுத்தப்படுகின்றன. இவைகளை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_jobless_growth_informality": [
+      {
+        "term_en": "The Phenomenon of 'Jobless Growth'",
+        "term_ta": "'வேலைவாய்ப்பற்ற வளர்ச்சி' (Jobless Growth) நிகழ்வு",
+        "details_en": "A macroeconomic condition where an economy experiences robust growth in Gross Domestic Product (GDP) accompanied by stagnant, negligible, or declining rates of employment creation. In India, the Employment Elasticity of GDP (the percentage increase in employment resulting from a 1% increase in GDP) has precipitously declined from approximately 0.40 in the 1970s and 1980s to near-zero (0.01 to 0.04) in the post-2000 period. Growth has been driven by capital-intensive manufacturing, automated assembly lines, and high-end tertiary services (IT, finance, consulting) that require minimal but highly specialized talent.",
+        "details_ta": "ஒரு நாட்டின் மொத்த உள்நாட்டு உற்பத்தி (GDP) வேகமாக வளரும் போது, வேலைவாய்ப்பு உருவாக்கம் தேக்கமடைந்து அல்லது குறைந்து காணப்படும் பொருளாதார நிலை. இந்தியாவில் GDP-ன் வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் (1% GDP வளர்ச்சிக்கு உருவாகும் வேலைவாய்ப்பு சதவீதம்) 1970 மற்றும் 1980-களில் சுமார் 0.40 ஆக இருந்தது, ஆனால் 2000-க்குப் பிந்தைய காலத்தில் பூஜ்ஜியத்திற்கு அருகில் (0.01 முதல் 0.04 வரை) சரிந்துவிட்டது. வளர்ச்சி என்பது அதிக மனித உழைப்பு தேவைப்படாத மூலதனம் சார்ந்த ஆலைகள் மற்றும் உயர் தகவல் தொழில்நுட்ப சேவைகளால் மட்டுமே வழிநடத்தப்படுவதே இதற்குக் காரணமாகும்."
+      },
+      {
+        "term_en": "Informality: Enterprises vs Workers",
+        "term_ta": "முறைசாரா தன்மை: நிறுவனங்கள் vs தொழிலாளர்கள்",
+        "details_en": "India's labour market is characterized by twin dimensions of informality: (1) Informal Sector Enterprises: unincorporated proprietary or partnership enterprises employing fewer than 10 workers without official registration; (2) Informal Workers: workers lacking written contracts, paid leave, health benefits, or pension security. Crucially, informal workers exist NOT ONLY in the informal sector, but ALSO within the formal sector (where over 50% of employees are now hired on informal, temporary third-party contractual arrangements). Over 85% to 90% of all Indian workers are informal.",
+        "details_ta": "இந்தியத் தொழிலாளர் சந்தை இரண்டு வகையான முறைசாரா தன்மைகளைக் கொண்டுள்ளது: (1) முறைசாரா நிறுவனங்கள்: 10 தொழிலாளர்களுக்கும் குறைவாகப் பணிபுரியும் பதிவு செய்யப்படாத சிறு நிறுவனங்கள்; (2) முறைசாரா தொழிலாளர்கள்: எழுத்துப்பூர்வ ஒப்பந்தம், ஊதியத்துடன் கூடிய விடுப்பு, மருத்துவக் காப்பீடு அல்லது ஓய்வூதியம் இல்லாத தொழிலாளர்கள். மிக முக்கியமாக, முறைசாரா தொழிலாளர்கள் முறைசாரா துறையில் மட்டுமல்லாமல், 'ஒழுங்கமைக்கப்பட்ட முறையான துறையிலும்' (ஒப்பந்தத் தொழிலாளர்களாக 50%-க்கும் மேல்) பெருமளவில் உள்ளனர்! இந்தியாவின் மொத்த தொழிலாளர்களில் 85% முதல் 90% வரை முறைசாரா தொழிலாளர்களே."
+      }
+    ],
+    "sec_female_lfpr_dynamics": [
+      {
+        "term_en": "The FLFPR Deficit in India",
+        "term_ta": "இந்தியாவில் பெண்கள் பங்கேற்புக் குறைபாடு",
+        "details_en": "India's female labour force participation has historically been among the lowest in South Asia and G20 nations, hovering between 20% and 30% for decades. While recent PLFS surveys (2022-23 and 2023-24) indicate an uptick to ~37% to 41% (largely driven by unpaid rural family agricultural labor), urban female participation remains stubbornly low at ~24% to 26%.",
+        "details_ta": "இந்தியாவில் பெண்கள் உழைப்பாளர் பங்கேற்பு விகிதம் தெற்காசிய மற்றும் G20 நாடுகளில் மிகக் குறைந்த ஒன்றாக பல தசாப்தங்களாக 20% முதல் 30% வரை தேங்கியிருந்தது. அண்மைய PLFS கணக்கெடுப்புகள் (2022-23 மற்றும் 2023-24) இது ~37% முதல் 41% வரை உயர்ந்துள்ளதாகக் காட்டினாலும் (முக்கியமாக கிராமப்புற குடும்ப விவசாயப் பணிகளால்), நகர்ப்புறங்களில் பெண்கள் பங்கேற்பு இன்றும் 24% முதல் 26% என்ற மிகக் குறைந்த அளவிலேயே உள்ளது."
+      },
+      {
+        "term_en": "Claudia Goldin's U-Shaped Hypothesis",
+        "term_ta": "கிளாடியா கோல்டினின் 'U' வடிவ வளைவுக் கோட்பாடு",
+        "details_en": "Nobel Laureate Claudia Goldin demonstrated that female labour force participation follows a U-shaped curve across economic development: (1) At low income/agrarian stages, female LFPR is high as women work out of subsistence necessity on family farms; (2) During industrialization and rising household incomes, female LFPR PLUMMETS because rising male wages allow families to withdraw women from manual labor as a mark of social status (Income Effect); (3) At advanced tertiary development stages, women's education surges, white-collar wages rise, and female LFPR rebounds sharply (Substitution Effect). India has spent decades in the declining trough of this U-shaped curve.",
+        "details_ta": "நோபல் பரிசு பெற்ற கிளாடியா கோல்டின் பொருளாதார வளர்ச்சியின் போது பெண்கள் வேலைவாய்ப்பு 'U' வடிவில் மாறுவதை நிறுவினார்: (1) ஆரம்பகால விவசாய நிலையில் ஏழ்மை காரணமாக பெண்கள் குடும்ப நிலங்களில் அதிகம் வேலை செய்வதால் LFPR அதிகமாக இருக்கும்; (2) தொழில்மயமாதல் மற்றும் குடும்ப வருமானம் உயரும் போது, ஆண்கள் அதிக ஊதியம் பெறுவதால் சமூக அந்தஸ்திற்காக பெண்களை உடலுழைப்பு வேலைகளிலிருந்து விலக்கிக்கொள்வர், இதனால் பெண்கள் வேலைவாய்ப்பு 'கடுமையாகச் சரியும்' (வருமான விளைவு); (3) உயர் பொருளாதார நிலையை அடையும் போது, பெண்களின் கல்வி உயர்ந்து அலுவலகப் பணிகள் அதிகரிப்பதால் பெண்கள் பங்கேற்பு மீண்டும் 'வேகமாக உயரும்' (மாற்று விளைவு). இந்தியா நீண்ட காலமாக இந்த 'U' வளைவின் சரிவுப் பகுதியில் உள்ளது."
+      },
+      {
+        "term_en": "Structural Barriers to Female Employment",
+        "term_ta": "பெண்கள் வேலைவாய்ப்பிற்கான கட்டமைப்புத் தடைகள்",
+        "details_en": "Key drivers: (1) Disproportionate burden of unpaid domestic care work (Time-Use Surveys reveal Indian women spend 7x more time on unpaid domestic care than men); (2) Lack of safe public transport and child-care creche facilities; (3) Mechanization of traditional female agricultural tasks (weeding, harvesting); (4) Social stigma and safety concerns in urban informal settings.",
+        "details_ta": "முக்கியக் காரணங்கள்: (1) ஊதியமற்ற வீட்டுப் பணிகளின் அதீத சுமை (இந்திய பெண்கள் ஆண்களை விட 7 மடங்கு அதிக நேரத்தை வீட்டுப் பணிகளில் செலவிடுகின்றனர்); (2) பாதுகாப்பான பொதுப் போக்குவரத்து மற்றும் குழந்தைப் பராமரிப்பு மையங்களின்மை; (3) பெண்கள் பாரம்பரியமாக செய்த களை எடுத்தல், அறுவடை போன்ற பணிகளில் இயந்திரங்கள் புகுத்தப்படுதல்; (4) சமூகக் கட்டுப்பாடுகள் மற்றும் நகர்ப்புற பாதுகாப்பு குறைபாடுகள்."
+      }
+    ],
+    "sec_demographic_dividend_skilling": [
+      {
+        "term_en": "India's Demographic Dividend Window (2005–2055)",
+        "term_ta": "இந்தியாவின் மக்கள் தொகை நன்மை காலம் (2005–2055)",
+        "details_en": "A demographic condition where the proportion of the working-age population (15–59) exceeds the dependent population (children <15 and elderly 60+), leading to a low Dependency Ratio. India entered this sweet spot around 2005-06, with a median age of ~28.5 years, expected to peak around 2040 and close around 2055. However, this dividend does not automatically translate into wealth—without quality education, health, and market-relevant skilling, it risks deteriorating into a 'Demographic Disaster' characterized by educated youth unrest.",
+        "details_ta": "நாட்டின் மொத்த மக்கள் தொகையில் சார்புடையவர்களை விட (குழந்தைகள் மற்றும் முதியவர்கள்) உழைக்கும் வயதுடைய மக்களின் (15–59) பங்கு அதிகமாக இருக்கும் போது ஏற்படும் பொருளாதார வாய்ப்பாகும். இந்தியா சுமார் 2005-06-ல் இந்த நன்மைக் காலத்திற்குள் நுழைந்தது (சராசரி வயது ~28.5 ஆண்டுகள்); இது 2040-ல் உச்சமடைந்து 2055-ல் முடிவடையும். ஆனால் இது தானாகவே செல்வமாக மாறாது; முறையான கல்வி, ஆரோக்கியம் மற்றும் தொழில்துறைத் திறன் வழங்கப்படாவிட்டால், இது வேலையற்ற இளைஞர்களின் 'மக்கள் தொகை பேரழிவாக' (Demographic Disaster) மாறும் அபாயம் உண்டு."
+      },
+      {
+        "term_en": "Skill India Mission & PMKVY (Pradhan Mantri Kaushal Vikas Yojana)",
+        "term_ta": "திறன் இந்தியா இயக்கம் & பிரதம மந்திரி கௌஷல் விகாஸ் யோஜனா",
+        "details_en": "Launched on World Youth Skills Day (July 15, 2015) under the Ministry of Skill Development and Entrepreneurship (MSDE) and implemented via the National Skill Development Corporation (NSDC). PMKVY provides short-term skill training, certification, and monetary rewards aligned with the National Skills Qualifications Framework (NSQF). Features: (1) Short Term Training (STT) for school/college dropouts; (2) Recognition of Prior Learning (RPL) to formally certify informally skilled workers; (3) Special Projects in backward geographies.",
+        "details_ta": "உலக இளைஞர் திறன் தினமான ஜூலை 15, 2015 அன்று மத்திய திறன் மேம்பாட்டு அமைச்சகத்தின் கீழ் தொடங்கப்பட்டு NSDC மூலம் செயல்படுத்தப்படுகிறது. NSQF தரநிலைகளுக்கு ஏற்ப குறுகிய கால திறன் பயிற்சி, சான்றிதழ் மற்றும் பண வெகுமதிகளை வழங்குகிறது. முக்கிய கூறுகள்: (1) பள்ளியை விட்டு நின்றவர்களுக்கான குறுகிய காலப் பயிற்சி (STT); (2) முறைசாரா முறையில் ஏற்கனவே திறன் பெற்ற தொழிலாளர்களின் திறனை அங்கீகரித்து சான்றிதழ் வழங்கும் முன் கற்றல் அங்கீகாரம் (RPL); (3) பின்தங்கிய பகுதிகளுக்கான சிறப்புத் திட்டங்கள்."
+      },
+      {
+        "term_en": "e-Shram Portal (National Database of Unorganized Workers)",
+        "term_ta": "இ-ஷ்ராம் இணையதளம் (e-Shram Portal)",
+        "details_en": "Launched on August 26, 2021, by the Ministry of Labour and Employment following Supreme Court directives. It is India's first centralized national database of unorganized workers seeded with Aadhaar. Each registered worker receives a 12-digit Universal Account Number (UAN) e-Shram Card and accidental insurance cover (₹2 lakh for death/permanent disability). Crucially, e-Shram is a SOCIAL SECURITY REGISTRY, NOT a direct employment guarantee scheme.",
+        "details_ta": "உச்சநீதிமன்ற உத்தரவைத் தொடர்ந்து ஆகஸ்ட் 26, 2021 அன்று மத்திய தொழிலாளர் நல அமைச்சகத்தால் தொடங்கப்பட்டது. ஆதார் இணைக்கப்பட்ட இந்தியாவின் முதல் தேசிய அளவிலான முறைசாரா தொழிலாளர்கள் தரவுத்தளமாகும். இதில் பதிவு செய்யும் ஒவ்வொரு தொழிலாளிக்கும் 12 இலக்க உலகளாவிய கணக்கு எண் (UAN) அட்டை மற்றும் ₹2 லட்சம் விபத்துக் காப்பீடு வழங்கப்படுகிறது. மிக முக்கியமாக, இது 'சமூகப் பாதுகாப்புப் பதிவேடு' மட்டுமே, வேலை தரும் திட்டம் அல்ல!"
+      }
+    ],
+    "sec_tamil_nadu_skill_initiatives": [
+      {
+        "term_en": "Naan Mudhalvan Scheme (Flagship Upskilling Initiative)",
+        "term_ta": "நான் முதல்வன் திட்டம் (முன்னணி திறன் மேம்பாட்டு இயக்கம்)",
+        "details_en": "Launched on March 1, 2022, by the Government of Tamil Nadu, Naan Mudhalvan is a pioneering state skilling platform targeting over 10 lakh college students annually across engineering, arts, science, and polytechnic colleges. It embeds modern industry-aligned curricula directly into college timetables: Artificial Intelligence, Data Analytics, Cloud Computing, Cyber Security, Robotics, and Foreign Languages (German, Japanese), partnered with global tech giants (Microsoft, IBM, Google). It bridges the structural skill mismatch between university degrees and private industry needs.",
+        "details_ta": "தமிழ்நாடு அரசால் மார்ச் 1, 2022 அன்று தொடங்கப்பட்டது. பொறியியல், கலை, அறிவியல் மற்றும் பாலிடெக்னிக் கல்லூரிகளில் பயிலும் ஆண்டுக்கு 10 லட்சத்திற்கும் மேற்பட்ட மாணவர்களை இலக்காகக் கொண்ட முன்னணி திறன் தளமாகும். கல்லூரி பாடத்திட்டங்களோடு நேரடியாக தொழில்துறைக்குத் தேவையான செயற்கை நுண்ணறிவு (AI), தரவு பகுப்பாய்வு, கிளவுட் கம்ப்யூட்டிங், சைபர் பாதுகாப்பு மற்றும் ஜெர்மன், ஜப்பானிய வெளிநாட்டு மொழிகளை மைக்ரோசாப்ட், கூகுள் போன்ற சர்வதேச நிறுவனங்களின் ஒத்துழைப்போடு மாணவர்களுக்குக் கற்றுத் தருகிறது. இது கல்லூரி கல்விக்கும் தொழில்துறை தேவைகளுக்கும் இடையேயான திறன் இடைவெளியைப் போக்குகிறது."
+      },
+      {
+        "term_en": "Moovalur Ramamirtham Ammaiyar Pudhumai Penn Thittam",
+        "term_ta": "மூவலூர் ராமாமிர்தம் அம்மையார் புதுமைப் பெண் திட்டம்",
+        "details_en": "Launched on September 5, 2022, providing ₹1,000 per month financial assistance directly to girl students who studied classes 6 to 12 in government schools until they complete their undergraduate degree, diploma, or ITI course. By eliminating financial dropouts, it directly empowers women's tertiary educational attainment, structurally elevating future Female Labour Force Participation Rates in Tamil Nadu.",
+        "details_ta": "செப்டம்பர் 5, 2022 அன்று தொடங்கப்பட்டது. அரசுப் பள்ளிகளில் 6 முதல் 12-ம் வகுப்பு வரை படித்து உயர்கல்விக்குச் செல்லும் மாணவிகளுக்கு பட்டப்படிப்பு அல்லது ஐடிஐ முடியும் வரை மாதம் ₹1,000 நேரடி உதவித்தொகை வழங்குகிறது. பெண்களின் உயர்கல்வி சேர்க்கையை உயர்த்துவதன் மூலம், தமிழ்நாட்டின் வருங்கால பெண்கள் உழைப்பாளர் பங்கேற்பு விகிதத்தை (FLFPR) கணிசமாக உயர்த்த இது வழிவகுக்கிறது."
+      },
+      {
+        "term_en": "Tamil Nadu Vazhndhu Kaattuvom Project (TNREAP)",
+        "term_ta": "தமிழ்நாடு வாழ்ந்து காட்டுவோம் திட்டம் (TNREAP)",
+        "details_en": "Assisted by the World Bank, the project focuses on rural enterprise promotion and non-farm employment generation, transforming rural youth and women from job seekers into micro-entrepreneurs through Community Farm Schools, Enterprise Development Centers, and matching grant equity financing.",
+        "details_ta": "உலக வங்கி உதவியுடன் செயல்படுத்தப்படும் இத்திட்டம், ஊரகத் தொழில்முனைவு மற்றும் விவசாயம் அல்லாத வேலைவாய்ப்புகளை உருவாக்குவதில் கவனம் செலுத்துகிறது. ஊரக இளைஞர்கள் மற்றும் பெண்களை வெறும் வேலை தேடுபவர்களாக அல்லாமல், மானியக் கடன் மற்றும் தொழிற்பயிற்சி மூலம் குறுந்தொழில் முனைவோராக இது மாற்றுகிறது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_formal_vs_informal_employment",
+        "title_en": "Formal Employment vs Informal Employment in India",
+        "title_ta": "ஒழுங்கமைக்கப்பட்ட முறையான வேலை vs முறைசாரா வேலைவாய்ப்பு ஒப்பீடு",
+        "headers_en": [
+          "Attribute",
+          "Formal Employment",
+          "Informal Employment"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "முறையான வேலை (Formal)",
+          "முறைசாரா வேலை (Informal)"
+        ],
+        "rows_en": [
+          [
+            "Legal Contract",
+            "Legally binding, written employment contract specifying terms",
+            "Verbal agreement only; zero written employment contract"
+          ],
+          [
+            "Social Security Coverage",
+            "Statutory benefits: EPF, ESI, gratuity, paid leave, maternity benefits",
+            "Zero statutory social security or health insurance benefits"
+          ],
+          [
+            "Job Security & Severance",
+            "Protection against unfair dismissal; mandatory notice period and compensation",
+            "Hire-and-fire at employer's discretion; zero severance protection"
+          ],
+          [
+            "Prevalence in India",
+            "Accounts for only ~10% to 12% of total national employment",
+            "Accounts for ~88% to 90% of total national employment"
+          ],
+          [
+            "Cross-Sector Presence",
+            "Strictly confined to organized public/private establishments",
+            "Present in BOTH unorganized sector AND organized sector (contractual labor)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சட்டப்பூர்வ ஒப்பந்தம்",
+            "பணி விதிகளைக் குறிப்பிடும் எழுத்துப்பூர்வ சட்டப்பூர்வ ஒப்பந்தம் உண்டு",
+            "வாய்மொழி ஒப்பந்தம் மட்டுமே; எழுத்துப்பூர்வ பணி ஆவணங்கள் எதுவும் இல்லை"
+          ],
+          [
+            "சமூகப் பாதுகாப்பு",
+            "சட்டப்பூர்வ நன்மைகள்: EPF வருங்கால வைப்பு நிதி, ESI மருத்துவக் காப்பீடு, பணிக்கொடை, விடுப்பு",
+            "எவ்வித சட்டப்பூர்வ சமூகப் பாதுகாப்போ மருத்துவக் காப்பீடோ கிடையாது"
+          ],
+          [
+            "வேலை பாதுகாப்பு",
+            "அநியாய பணிநீக்கத்திற்கு எதிரான பாதுகாப்பு; முன்அறிவிப்பு மற்றும் இழப்பீடு கட்டாயம்",
+            "முதலாளியின் விருப்பப்படி பணிநீக்கம்; எவ்வித இழப்பீடும் கிடைக்காது"
+          ],
+          [
+            "இந்தியாவில் இதன் பங்கு",
+            "நாட்டின் மொத்த வேலைவாய்ப்பில் வெறும் 10% முதல் 12% மட்டுமே",
+            "நாட்டின் மொத்த வேலைவாய்ப்பில் 88% முதல் 90% வரை ஆதிக்கம் செலுத்துகிறது"
+          ],
+          [
+            "துறைசார் இருப்பு",
+            "ஒழுங்கமைக்கப்பட்ட அரசு மற்றும் தனியார் நிறுவனங்களில் மட்டுமே இருக்கும்",
+            "முறைசாரா துறையிலும் மற்றும் முறையான நிறுவனங்களிலும் (ஒப்பந்தத் தொழிலாளர்) உள்ளது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_job_rich_vs_jobless_growth",
+        "title_en": "Job-Rich Growth vs Jobless Growth Dynamics",
+        "title_ta": "வேலைவாய்ப்பு மிகுந்த வளர்ச்சி vs வேலைவாய்ப்பற்ற வளர்ச்சி ஒப்பீடு",
+        "headers_en": [
+          "Analytical Feature",
+          "Job-Rich Growth Regime",
+          "Jobless Growth Regime"
+        ],
+        "headers_ta": [
+          "பகுப்பாய்வு அம்சம்",
+          "வேலைவாய்ப்பு மிகுந்த வளர்ச்சி",
+          "வேலைவாய்ப்பற்ற வளர்ச்சி"
+        ],
+        "rows_en": [
+          [
+            "Employment Elasticity",
+            "High employment elasticity of GDP (> 0.40)",
+            "Low or near-zero employment elasticity of GDP (< 0.05)"
+          ],
+          [
+            "Growth Drivers",
+            "Labor-intensive manufacturing: textiles, apparel, leather, construction",
+            "Capital-intensive manufacturing, software services, financial automation"
+          ],
+          [
+            "Poverty Alleviation Mechanism",
+            "Direct poverty reduction via mass wage employment and rising wages",
+            "Wealth concentration at the top; relies solely on fiscal welfare transfers"
+          ],
+          [
+            "Demographic Impact",
+            "Harvests the demographic dividend effectively, absorbing youth",
+            "Generates demographic frustration and educated youth unemployment"
+          ],
+          [
+            "Indian Timeline",
+            "Characteristics of early planning and 1980s recovery",
+            "Dominant characteristic of post-1991 reforms and modern service-led growth"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வேலைவாய்ப்பு நெகிழ்ச்சித்திறன்",
+            "அதிக வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் (> 0.40)",
+            "மிகக் குறைந்த அல்லது பூஜ்ஜியத்திற்கு அருகிலான நெகிழ்ச்சித்திறன் (< 0.05)"
+          ],
+          [
+            "வளர்ச்சியின் உந்துசக்திகள்",
+            "மனித உழைப்பு சார்ந்த உற்பத்தி: ஜவுளி, ஆடை, தோல் பொருட்கள், கட்டுமானம்",
+            "மூலதனம் சார்ந்த ஆலைகள், மென்பொருள் சேவைகள், தானியங்கி நிதித் துறைகள்"
+          ],
+          [
+            "வறுமை ஒழிப்பு முறை",
+            "அதிக மக்கள் தொகைக்கு வேலைவாய்ப்பு மற்றும் ஊதியம் வழங்குவதன் மூலம் நேரடி வறுமை ஒழிப்பு",
+            "செல்வம் சிலரிடம் மட்டுமே குவியும்; அரசு இலவச நலத்திட்டங்களையே நம்பியிருக்கும்"
+          ],
+          [
+            "மக்கள் தொகை நன்மை மீதான தாக்கம்",
+            "இளைஞர்களுக்கு வேலை கொடுத்து மக்கள் தொகை நன்மையை முழுமையாகப் பயன்படுத்துகிறது",
+            "வேலையற்ற இளைஞர்களின் விரக்தியையும் மக்கள் தொகை பேரழிவையும் உருவாக்குகிறது"
+          ],
+          [
+            "இந்தியாவில் காலவரிசை",
+            "ஆரம்பகால திட்டமிடல் மற்றும் 1980-களின் பொருளாதாரப் பண்பு",
+            "1991-க்குப் பிந்தைய சீர்திருத்தங்கள் மற்றும் நவீன சேவைத் துறை வளர்ச்சியின் பண்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_female_lfpr_supply_vs_demand",
+        "title_en": "Supply-Side Constraints vs Demand-Side Barriers in Female LFPR",
+        "title_ta": "பெண்கள் பங்கேற்பில் விநியோகத் தடைகள் vs தேவைக் குறைபாடுகள் ஒப்பீடு",
+        "headers_en": [
+          "Barrier Dimension",
+          "Supply-Side Constraints (Worker Level)",
+          "Demand-Side Barriers (Firm & Market Level)"
+        ],
+        "headers_ta": [
+          "தடையின் பரிமாணம்",
+          "விநியோகத் தரப்புத் தடைகள் (தொழிலாளர் நிலை)",
+          "தேவைத் தரப்புத் தடைகள் (நிறுவனங்கள் & சந்தை)"
+        ],
+        "rows_en": [
+          [
+            "Primary Locus",
+            "Household, family, societal norms, and cultural traditions",
+            "Labor market, employers, industrial structure, and labor laws"
+          ],
+          [
+            "Core Factors",
+            "Unpaid domestic care burden, marriage penalty, restricted mobility",
+            "Mechanization of female-dominated jobs, lack of creche/flexibility"
+          ],
+          [
+            "Income Effect Impact",
+            "Rising male wages cause voluntary withdrawal of women from manual work",
+            "Firms prefer male workers for night shifts and continuous factory operations"
+          ],
+          [
+            "Safety Concerns",
+            "Lack of safe and reliable last-mile public transport from home",
+            "Hostile workplace environments, lack of POSH compliance, poor lighting"
+          ],
+          [
+            "Policy Remediation",
+            "Direct cash incentives (Pudhumai Penn), community creches, social shift",
+            "Equal remuneration enforcement, maternity benefit subsidies, hiring mandates"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை இடம்",
+            "குடும்பம், சமூகக் கட்டுப்பாடுகள் மற்றும் கலாச்சார வழக்கங்கள்",
+            "தொழிலாளர் சந்தை, முதலாளிகள், தொழிற்துறை கட்டமைப்பு மற்றும் சட்டங்கள்"
+          ],
+          [
+            "முக்கியக் காரணிகள்",
+            "ஊதியமற்ற குடும்பப் பணிச் சுமை, திருமணத்திற்குப் பின் வேலை இழப்பு, பயணத் தடை",
+            "பெண்கள் செய்த பணிகளில் இயந்திரங்கள் வருவது, பணியிடத்தில் குழந்தை மையமின்மை"
+          ],
+          [
+            "வருமான விளைவின் தாக்கம்",
+            "கணவரின் ஊதியம் உயர்ந்தவுடன் குடும்ப கௌரவத்திற்காக பெண்கள் வேலையை விடுவது",
+            "இரவுப் பணிகளுக்கும் நீண்ட நேர வேலைக்கும் ஆண்களை முதலாளிகள் விரும்புவது"
+          ],
+          [
+            "பாதுகாப்புக் கவலைகள்",
+            "வீட்டிலிருந்து செல்ல பாதுகாப்பான பொதுப் போக்குவரத்து வசதிகள் இன்மை",
+            "பணியிடத்தில் பாதுகாப்பு குறைபாடு, POSH குழுக்கள் இன்மை, போதிய வெளிச்சமின்மை"
+          ],
+          [
+            "கொள்கைத் தீர்வுகள்",
+            "நேரடி பண உதவி (புதுமைப் பெண்), கிராமப்புற குழந்தை மையங்கள், விழிப்புணர்வு",
+            "சம ஊதியச் சட்ட அமலாக்கம், மகப்பேறு விடுப்புச் சுமையை அரசே ஏற்பது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pmkvy_vs_traditional_iti",
+        "title_en": "PMKVY (Skill Mission) vs Traditional Technical Education (ITI/Polytechnic)",
+        "title_ta": "PMKVY திறன் திட்டம் vs பாரம்பரிய தொழிற்கல்வி (ITI/பாலிடெக்னிக்) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "PMKVY (Short-Term Skilling)",
+          "Traditional ITI / Polytechnic Education"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "PMKVY (குறுகிய காலத் திறன்)",
+          "பாரம்பரிய ITI / பாலிடெக்னிக்"
+        ],
+        "rows_en": [
+          [
+            "Course Duration",
+            "Short-term: typically 150 to 300 hours (2 to 4 months)",
+            "Long-term formal: 1 to 3 years full-time diploma/certificate"
+          ],
+          [
+            "Curriculum Alignment",
+            "Market-driven National Skills Qualifications Framework (NSQF)",
+            "Standardized state/central technical board academic syllabi"
+          ],
+          [
+            "Prior Experience Recognition",
+            "Explicitly incorporates Recognition of Prior Learning (RPL)",
+            "Zero provision for RPL; everyone must complete full 1-2 year course"
+          ],
+          [
+            "Target Demographic",
+            "School/college dropouts and existing informally skilled workers",
+            "Students completing formal 10th or 12th standard schooling"
+          ],
+          [
+            "Institutional Agency",
+            "National Skill Development Corporation (NSDC) and private training partners",
+            "Directorate General of Training (DGT) and State Technical Education Boards"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பாடநெறி கால அளவு",
+            "குறுகிய காலப் பயிற்சி: பொதுவாக 150 முதல் 300 மணி நேரம் (2 முதல் 4 மாதங்கள்)",
+            "நீண்டகால முறையான படிப்பு: 1 முதல் 3 ஆண்டுகள் முழுநேர டிப்ளமோ/சான்றிதழ்"
+          ],
+          [
+            "பாடத்திட்ட கட்டமைப்பு",
+            "தொழில்துறை தேவைகளுக்கேற்ப மாறும் தேசிய திறன் தகுதி கட்டமைப்பு (NSQF)",
+            "அரசு தொழில்நுட்பக் கல்வி வாரியங்களின் நிலையான பாடத்திட்டம்"
+          ],
+          [
+            "முந்தைய திறனை அங்கீகரித்தல்",
+            "முன் கற்றல் அங்கீகாரம் (RPL) மூலம் ஏற்கனவே உள்ள திறனுக்கு சான்றிதழ் உண்டு",
+            "RPL வசதி கிடையாது; அனைவரும் 1-2 ஆண்டுகள் முழுமையாகப் படிக்க வேண்டும்"
+          ],
+          [
+            "இலக்கு மக்கள்",
+            "பள்ளி, கல்லூரியை பாதியில் விட்டவர்கள் மற்றும் முறைசாரா தொழிலாளர்கள்",
+            "10 அல்லது 12-ம் வகுப்பு முடித்த வழக்கமான மாணவர்கள்"
+          ],
+          [
+            "நிர்வாக அமைப்பு",
+            "தேசிய திறன் மேம்பாட்டுக் கழகம் (NSDC) மற்றும் தனியார் பயிற்சி மையங்கள்",
+            "பயிற்சி தலைமை இயக்குநரகம் (DGT) மற்றும் மாநில தொழில்நுட்ப கல்வி வாரியங்கள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Unemployment Part 3: Contemporary Labour Dynamics & Interventions",
+        "short_label": "Contemporary Labour",
+        "children": [
+          {
+            "title": "Jobless Growth & Informality",
+            "short_label": "Jobless Growth",
+            "children": [
+              {
+                "title": "Declining Employment Elasticity (0.40 -> 0.04)",
+                "short_label": "Elasticity Drop"
+              },
+              {
+                "title": "Informal Enterprises (<10 workers, Unregistered)",
+                "short_label": "Informal Firms"
+              },
+              {
+                "title": "Contractualization within Formal Sector (>50%)",
+                "short_label": "Contractualization"
+              }
+            ]
+          },
+          {
+            "title": "Female LFPR Dynamics",
+            "short_label": "Female LFPR",
+            "children": [
+              {
+                "title": "Claudia Goldin U-Shaped Curve (Trough Phase)",
+                "short_label": "U-Shaped Curve"
+              },
+              {
+                "title": "Unpaid Domestic Care Burden (7x of men)",
+                "short_label": "Unpaid Care"
+              },
+              {
+                "title": "Urban Deficit (~24%) vs Rural Uptick (~37-41%)",
+                "short_label": "Urban Deficit"
+              }
+            ]
+          },
+          {
+            "title": "National Skilling Architecture",
+            "short_label": "National Skilling",
+            "children": [
+              {
+                "title": "Demographic Dividend (2005-2055, Median Age 28.5)",
+                "short_label": "Dividend Window"
+              },
+              {
+                "title": "PMKVY (2015: NSDC, Short-Term, RPL certification)",
+                "short_label": "PMKVY"
+              },
+              {
+                "title": "e-Shram (2021: 12-digit UAN, Database of Unorganized)",
+                "short_label": "e-Shram"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu Pioneer Models",
+            "short_label": "Tamil Nadu Models",
+            "children": [
+              {
+                "title": "Naan Mudhalvan (2022: Industry skills in college curricula)",
+                "short_label": "Naan Mudhalvan"
+              },
+              {
+                "title": "Pudhumai Penn (2022: ₹1,000/month for girls' tertiary education)",
+                "short_label": "Pudhumai Penn"
+              },
+              {
+                "title": "Vazhndhu Kaattuvom (TNREAP: Rural non-farm enterprises)",
+                "short_label": "TNREAP"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Informal Employment in Formal Sector Trap: Formal Firm != Formal Worker",
+        "points": {
+          "en": [
+            "TRAP: Assuming that all workers employed by formal organized corporations (e.g., registered IT or automotive giants) are formal workers.",
+            "CORRECT FACT: A massive proportion of workers inside formal establishments are INFORMAL WORKERS hired through third-party labor contractors. If an employee lacks a written contract, paid sick leave, or social security (EPF/ESI), they are statistically classified as INFORMAL WORKERS, even if working inside a Fortune 500 company's corporate headquarters.",
+            "WHY CANDIDATES FAIL: Equating the legal status of the enterprise with the legal protection of the individual employee."
+          ],
+          "ta": [
+            "பொறி: ஒரு பெரிய முறையான நிறுவனத்தில் (டாடா அல்லது இன்போசிஸ் போன்றவை) வேலை செய்யும் அனைத்து தொழிலாளர்களும் 'முறையான தொழிலாளர்கள்' என நினைப்பது.",
+            "சரியான உண்மை: பெரிய முறையான நிறுவனங்களுக்குள்ளும் மூன்றாம் தரப்பு ஒப்பந்ததாரர்கள் மூலம் பணிபுரியும் பல தொழிலாளர்கள் 'முறைசாரா தொழிலாளர்களே' (Informal Workers) ஆவர்! ஒரு தொழிலாளிக்கு எழுத்துப்பூர்வ ஒப்பந்தம், PF, ESI போன்ற நன்மைகள் இல்லையெனில், அவர் புகழ்பெற்ற நிறுவனத்தில் பணிபுரிந்தாலும் புள்ளிவிவரப்படி 'முறைசாரா தொழிலாளியாகவே' வகைப்படுத்தப்படுவார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நிறுவனத்தின் சட்டப்பூர்வ தகுதியையும், அங்கு பணிபுரியும் தொழிலாளியின் பாதுகாப்புத் தகுதியையும் ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "e-Shram Portal Function Trap: Welfare Registry, NOT Job Guarantee",
+        "points": {
+          "en": [
+            "TRAP: Treating the e-Shram portal as a government scheme that provides guaranteed employment or direct monthly stipends.",
+            "CORRECT FACT: The e-Shram portal is strictly a NATIONAL DATABASE / WELFARE REGISTRY of unorganized workers seeded with Aadhaar. Registration provides a 12-digit UAN card and ₹2 lakh accidental insurance, but it DOES NOT guarantee jobs or transfer regular monthly income.",
+            "WHY CANDIDATES FAIL: Misinterpreting digital identification portals as active employment guarantee programs like MGNREGA."
+          ],
+          "ta": [
+            "பொறி: இ-ஷ்ராம் (e-Shram) இணையதளத்தை மக்களுக்கு வேலை வாய்ப்பை உத்தரவாதம் செய்யும் அல்லது மாதாந்திர உதவித்தொகை தரும் திட்டம் என நினைப்பது.",
+            "சரியான உண்மை: இ-ஷ்ராம் என்பது ஆதார் அடிப்படையிலான 'தேசிய முறைசாரா தொழிலாளர்கள் தகவல் பதிவேடு' மட்டுமே! இதில் பதிவு செய்தால் 12 இலக்க UAN அட்டை மற்றும் ₹2 லட்சம் விபத்துக் காப்பீடு கிடைக்குமே தவிர, இது வேலைவாய்ப்பையோ மாதாந்திர ஊதியத்தையோ உத்தரவாதம் செய்வதில்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: டிஜிட்டல் தகவல் பதிவுத் திட்டங்களை, MGNREGA போன்ற நேரடி வேலை உறுதித் திட்டங்களுடன் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Claudia Goldin U-Curve Intermediate Stage Trap: Rising Income Drops Participation",
+        "points": {
+          "en": [
+            "TRAP: Assuming that economic growth and rising family income automatically increase female labour force participation.",
+            "CORRECT FACT: Under Claudia Goldin's Nobel-winning U-shaped hypothesis, in the intermediate stage of economic development, rising family income CAUSES FEMALE LABOUR PARTICIPATION TO DROP! As male wages rise, households withdraw women from manual agricultural labor as a badge of social status (Income Effect), creating a deep trough before advanced female education rebounds participation.",
+            "WHY CANDIDATES FAIL: Assuming a linear positive correlation between macroeconomic GDP growth and female employment."
+          ],
+          "ta": [
+            "பொறி: நாட்டின் பொருளாதார வளர்ச்சியும் குடும்ப வருமான உயர்வும் தானாகவே பெண்கள் உழைப்பாளர் பங்கேற்பை அதிகரிக்கும் என நினைப்பது.",
+            "சரியான உண்மை: நோபல் பரிசு பெற்ற கிளாடியா கோல்டின் நிறுவிய 'U' வடிவ கோட்பாட்டின்படி, வளர்ச்சியின் இடைநிலைக் கட்டத்தில் குடும்ப வருமானம் உயரும் போது 'பெண்கள் உழைப்பாளர் பங்கேற்பு குறைகிறது'! கணவரின் ஊதியம் உயரும் போது குடும்ப கௌரவத்திற்காக பெண்கள் உடலுழைப்பு வேலைகளிலிருந்து விலக்கிக் கொள்ளப்படுகின்றனர் (வருமான விளைவு). உயர் கல்வி பரவும் பிற்பகுதியில் மட்டுமே இது மீண்டும் உயரும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: GDP வளர்ச்சிக்கும் பெண்கள் வேலைவாய்ப்பிற்கும் இடையே எப்போதும் நேரடி நேர்மறைத் தொடர்பு இருக்கும் என தவறாகக் கணிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Employment Elasticity Concept Trap: Rate of Job Growth Relative to GDP Growth",
+        "points": {
+          "en": [
+            "TRAP: Defining Employment Elasticity of GDP as the total percentage of people employed in the country.",
+            "CORRECT FACT: Employment Elasticity is a numerical sensitivity ratio: Employment Elasticity = (% Change in Employment) / (% Change in GDP). An elasticity of 0.4 means a 10% GDP growth generates a 4% increase in jobs. An elasticity near 0.01 means a 10% GDP growth generates virtually zero new employment ('Jobless Growth').",
+            "WHY CANDIDATES FAIL: Confusing an elasticity sensitivity ratio with the absolute employment percentage or Worker Population Ratio."
+          ],
+          "ta": [
+            "பொறி: வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் என்பதை நாட்டின் மொத்த உழைப்பாளர் சதவீதத்துடன் குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் என்பது ஒரு விகிதமாகும்: வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் = (வேலைவாய்ப்பு மாற்ற சதவீதம்) / (GDP வளர்ச்சி சதவீத மாற்றம்). நெகிழ்ச்சித்திறன் 0.4 என்றால் 10% GDP வளர்ச்சிக்கு 4% புதிய வேலைகள் உருவாகும். இதுவே 0.01 ஆகக் குறைந்தால், 10% GDP வளர்ச்சி ஏற்பட்டாலும் புதிய வேலைகள் எதுவும் உருவாகாது ('வேலைவாய்ப்பற்ற வளர்ச்சி').",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நெகிழ்ச்சித்திறன் என்ற உணர்திறன் விகிதத்தை, தொழிலாளர் மக்கள் தொகை விகிதத்தோடு குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "PMKVY RPL Component Trap: Certification, NOT Fresh Classroom Training",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Recognition of Prior Learning (RPL) under PMKVY involves putting experienced workers through a multi-month classroom training program.",
+            "CORRECT FACT: RPL is designed for individuals who ALREADY POSSESS practical skills acquired informally (e.g., traditional carpenters, masons, electricians). It involves brief orientation (12 to 80 hours) followed by standard assessment and formal government NSQF certification, acknowledging their existing mastery without forcing them into long fresh training.",
+            "WHY CANDIDATES FAIL: Treating all skill programs as long-duration fresh training courses."
+          ],
+          "ta": [
+            "பொறி: PMKVY-ன் முன் கற்றல் அங்கீகாரம் (RPL) என்பது அனுபவம் வாய்ந்த தொழிலாளர்களுக்கு பல மாதங்கள் வகுப்பறைப் பயிற்சி அளிப்பது என நினைப்பது.",
+            "சரியான உண்மை: RPL என்பது முறைசாரா முறையில் ஏற்கனவே கைத்தொழில் அனுபவம் பெற்றுள்ள திறமையான தொழிலாளர்களுக்கு (தச்சர்கள், கொத்தனார்கள்போன்றோர்) ஒரு குறுகிய வழிகாட்டல் (12 முதல் 80 மணி நேரம்) வழங்கி, அவர்களின் திறனை மதிப்பீடு செய்து அரசு NSQF சான்றிதழ் வழங்கும் திட்டமாகும்; இது அவர்களுக்கு நீண்ட புதிய பயிற்சியைக் கட்டாயப்படுத்துவதில்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: திறன் திட்டங்கள் அனைத்தும் நீண்டகால புதிய பயிற்சிப் படிப்புகளே என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Demographic Dividend Realization Trap: Potential Opportunity, NOT Automatic Guarantee",
+        "points": {
+          "en": [
+            "TRAP: Assuming that possessing a young population automatically makes a nation economically prosperous.",
+            "CORRECT FACT: A demographic bulge in the working-age population is strictly a 'DEMOGRAPHIC WINDOW OF OPPORTUNITY', not an automatic guarantee of economic growth. If the state fails to provide quality nutrition, healthcare, industry-aligned technical skills, and job creation, the dividend degenerates into a 'DEMOGRAPHIC DISASTER' characterized by massive educated youth unemployment, crime, and social instability.",
+            "WHY CANDIDATES FAIL: Equating the demographic demographic transition with guaranteed macroeconomic growth."
+          ],
+          "ta": [
+            "பொறி: நாட்டில் இளைஞர்கள் அதிகம் இருப்பது தானாகவே நாட்டை பொருளாதார ரீதியாக பணக்கார நாடாக மாற்றிவிடும் என நினைப்பது.",
+            "சரியான உண்மை: உழைக்கும் வயதுடைய இளைஞர்கள் அதிகம் இருப்பது என்பது 'வாய்ப்புகளின் ஒரு சாளரம்' (Window of Opportunity) மட்டுமே தவிர, தானியங்கி வளர்ச்சி அல்ல! அரசு தரமான கல்வி, ஆரோக்கியம், வேலைவாய்ப்பு மற்றும் திறன் பயிற்சியை வழங்காவிட்டால், அது வேலையற்ற இளைஞர்களின் விரக்தியாகவும், சமூக அமைதியின்மையாகவும் மாறி 'மக்கள் தொகை பேரழிவாக' முடியும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மக்கள் தொகை நன்மையை தானாகக் கிடைக்கும் பொருளாதார வெற்றி என தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Employment Elasticity of GDP in India fell from ~0.40 in the 1970-80s to near-zero (0.01-0.04) in recent decades.",
+        "Informal workers constitute approximately 88% to 90% of the total Indian workforce.",
+        "Over 50% of the workforce within the formal organized sector is employed under informal contractual arrangements.",
+        "Claudia Goldin was awarded the 2023 Nobel Prize in Economics for demonstrating the U-shaped curve of female labor participation.",
+        "Time-Use Surveys indicate that Indian women spend over 7 times more time on unpaid domestic care than men.",
+        "India's demographic dividend window opened around 2005-06 and is projected to peak around 2040 and close by 2055.",
+        "India's median population age is approximately 28.5 years, making it one of the youngest major economies globally.",
+        "Skill India Mission was officially launched on World Youth Skills Day, July 15, 2015.",
+        "Recognition of Prior Learning (RPL) under PMKVY certifies existing informal skills without long fresh classroom courses.",
+        "The e-Shram portal was launched on August 26, 2021, providing a 12-digit Universal Account Number (UAN) to unorganized workers.",
+        "Tamil Nadu launched the flagship Naan Mudhalvan scheme on March 1, 2022, to upskill 10 lakh college students annually.",
+        "Tamil Nadu's Moovalur Ramamirtham Ammaiyar Pudhumai Penn Thittam provides ₹1,000/month to girl students pursuing higher education."
+      ],
+      "ta": [
+        "இந்தியாவில் GDP-ன் வேலைவாய்ப்பு நெகிழ்ச்சித்திறன் 1970-80-களில் ~0.40 ஆக இருந்து சமீபத்திய தசாப்தங்களில் பூஜ்ஜியத்திற்கு அருகில் (0.01-0.04) சரிந்தது.",
+        "நாட்டின் மொத்த தொழிலாளர் படையில் முறைசாரா தொழிலாளர்கள் சுமார் 88% முதல் 90% வரை உள்ளனர்.",
+        "ஒழுங்கமைக்கப்பட்ட முறையான துறைக்குள்ளேயே 50%-க்கும் அதிகமான தொழிலாளர்கள் முறைசாரா ஒப்பந்த முறையில் பணிபுரிகின்றனர்.",
+        "பெண்கள் உழைப்பாளர் பங்கேற்பின் 'U' வடிவ வளைவை நிரூபித்ததற்காக கிளாடியா கோல்டினுக்கு 2023-ஆம் ஆண்டின் பொருளாதார நோபல் பரிசு வழங்கப்பட்டது.",
+        "நேரப் பயன்பாட்டுக் கணக்கெடுப்பின்படி, இந்தியப் பெண்கள் ஆண்களை விட 7 மடங்கு அதிக நேரத்தை ஊதியமற்ற வீட்டுப் பணிகளில் செலவிடுகின்றனர்.",
+        "இந்தியாவின் மக்கள் தொகை நன்மைக் காலம் 2005-06-ல் தொடங்கி, 2040-ல் உச்சமடைந்து, 2055-ல் முடிவடையும் என கணிக்கப்பட்டுள்ளது.",
+        "இந்தியாவின் சராசரி வயது சுமார் 28.5 ஆண்டுகள்; இது உலகின் முன்னணி இளமையான பொருளாதாரங்களில் ஒன்றாகும்.",
+        "திறன் இந்தியா இயக்கம் ஜூலை 15, 2015 அன்று உலக இளைஞர் திறன் தினத்தில் அதிகாரப்பூர்வமாகத் தொடங்கப்பட்டது.",
+        "PMKVY-ன் கீழ் உள்ள முன் கற்றல் அங்கீகாரம் (RPL) நீண்ட பயிற்சி இன்றி முறைசாரா தொழிலாளர்களின் அனுபவத்திற்கு சான்றிதழ் அளிக்கிறது.",
+        "இ-ஷ்ராம் இணையதளம் ஆகஸ்ட் 26, 2021 அன்று தொடங்கப்பட்டு முறைசாரா தொழிலாளர்களுக்கு 12 இலக்க UAN அட்டையை வழங்குகிறது.",
+        "ஆண்டுக்கு 10 லட்சம் கல்லூரி மாணவர்களுக்கு திறன் பயிற்சி அளிக்க தமிழ்நாடு அரசு மார்ச் 1, 2022 அன்று 'நான் முதல்வன்' திட்டத்தைத் தொடங்கியது.",
+        "தமிழ்நாட்டின் மூவலூர் ராமாமிர்தம் அம்மையார் புதுமைப் பெண் திட்டம் உயர்கல்வி பயிலும் மாணவிகளுக்கு மாதம் ₹1,000 உதவித்தொகை வழங்குகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Jobless Growth: High GDP growth with low employment elasticity (<0.05); capital-intensive services fail to absorb mass labor.",
+        "Dual Informality: Unregistered informal enterprises (<10 workers) PLUS informal contract workers within formal firms.",
+        "Over 88% of Indian workers are informal, lacking written contracts, paid leave, and statutory pension/PF security.",
+        "Female LFPR follows Claudia Goldin's U-shaped curve; rising family incomes initially withdraw women from manual work.",
+        "Time-Use Survey: Indian women perform 7x more unpaid care work than men, restricting formal employment mobility.",
+        "Demographic Dividend: Median age ~28.5 years; window (2005-2055) requires skill and health capital to avoid disaster.",
+        "Skill India (2015): Implemented via NSDC under NSQF framework; includes PMKVY Short Term Training and RPL certification.",
+        "e-Shram (2021): National Database of Unorganized Workers with 12-digit UAN and ₹2 lakh accident cover (a registry, not jobs).",
+        "Naan Mudhalvan (2022, TN): Embeds AI, coding, and foreign languages directly into college curricula for 10 lakh students/year.",
+        "Pudhumai Penn (2022, TN): ₹1000/month for government school girls pursuing higher education to structurally lift future FLFPR."
+      ],
+      "ta": [
+        "வேலைவாய்ப்பற்ற வளர்ச்சி: குறைந்த வேலைவாய்ப்பு நெகிழ்ச்சியுடன் (<0.05) கூடிய அதிக GDP வளர்ச்சி; மூலதனத் துறைகள் வேலை தருவதில்லை.",
+        "இரட்டை முறைசாரா தன்மை: பதிவு செய்யப்படாத முறைசாரா நிறுவனங்கள் மற்றும் முறையான நிறுவனங்களுக்குள் பணிபுரியும் ஒப்பந்தத் தொழிலாளர்கள்.",
+        "இந்தியத் தொழிலாளர்களில் 88%-க்கும் அதிகமானோர் ஒப்பந்தமோ, ஊதிய விடுப்போ, PF பாதுகாப்போ இல்லாத முறைசாரா தொழிலாளர்களே.",
+        "பெண்கள் உழைப்பாளர் பங்கேற்பு கிளாடியா கோல்டினின் 'U' வடிவ வளைவைப் பின்பற்றுகிறது; குடும்ப வருமானம் உயரும் போது தொடக்கத்தில் குறைகிறது.",
+        "நேரப் பயன்பாட்டுக் கணக்கெடுப்பு: இந்தியப் பெண்கள் ஆண்களை விட 7 மடங்கு அதிக ஊதியமற்ற குடும்பப் பணிகளைச் செய்கின்றனர்.",
+        "மக்கள் தொகை நன்மை: சராசரி வயது ~28.5 ஆண்டுகள்; இந்த வாய்ப்பு (2005-2055) பலனளிக்க கல்வி மற்றும் திறன் முதலீடு அவசியம்.",
+        "திறன் இந்தியா (2015): NSDC மூலம் NSQF கட்டமைப்பில் செயல்படுகிறது; PMKVY குறுகிய காலப் பயிற்சி மற்றும் RPL சான்றிதழை உள்ளடக்கியது.",
+        "இ-ஷ்ராம் (2021): 12 இலக்க UAN மற்றும் ₹2 லட்சம் விபத்துக் காப்பீடு கொண்ட முறைசாரா தொழிலாளர்கள் தேசியப் பதிவேடு (வேலைத் திட்டம் அல்ல).",
+        "நான் முதல்வன் (2022, TN): ஆண்டுக்கு 10 லட்சம் கல்லூரி மாணவர்களுக்கு AI, கோடிங் மற்றும் வெளிநாட்டு மொழிகளை பாடத்திட்டத்தோடு இணைக்கிறது.",
+        "புதுமைப் பெண் (2022, TN): எதிர்கால பெண்கள் உழைப்பாளர் பங்கேற்பை உயர்த்த அரசுப் பள்ளி மாணவிகளுக்கு உயர்கல்வியில் மாதம் ₹1000 வழங்குகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_unemp_301",
+        "front_en": "What does a decline in the 'Employment Elasticity of GDP' signify for an economy?",
+        "front_ta": "ஒரு நாட்டின் GDP-ன் 'வேலைவாய்ப்பு நெகிழ்ச்சித்திறன்' சரிவது எதனைக் குறிக்கிறது?",
+        "back_en": "It signifies Jobless Growth: every additional percentage of GDP growth generates fewer and fewer new employment opportunities.",
+        "back_ta": "வேலைவாய்ப்பற்ற வளர்ச்சியைக் குறிக்கிறது: GDP வளர்ச்சி அடைந்தாலும் புதிய வேலைவாய்ப்புகள் உருவாவது குறைந்து கொண்டே செல்கிறது."
+      },
+      {
+        "id": "rc_unemp_302",
+        "front_en": "What percentage of the Indian workforce is employed informally without social security?",
+        "front_ta": "சமூகப் பாதுகாப்பற்ற முறைசாரா வேலைகளில் ஈடுபட்டுள்ள இந்தியத் தொழிலாளர்களின் சதவீதம் என்ன?",
+        "back_en": "Approximately 88% to 90% of the total workforce.",
+        "back_ta": "மொத்த தொழிலாளர்களில் சுமார் 88% முதல் 90% வரை."
+      },
+      {
+        "id": "rc_unemp_303",
+        "front_en": "Who won the 2023 Nobel Prize in Economics for pioneering research on the U-shaped curve of female labour participation?",
+        "front_ta": "பெண்கள் உழைப்பாளர் பங்கேற்பின் 'U' வடிவ வளைவு குறித்த ஆராய்ச்சிக்காக 2023-ல் பொருளாதார நோபல் பரிசு பெற்றவர் யார்?",
+        "back_en": "Claudia Goldin (Harvard University).",
+        "back_ta": "கிளாடியா கோல்டின் (ஹார்வர்ட் பல்கலைக்கழகம்)."
+      },
+      {
+        "id": "rc_unemp_304",
+        "front_en": "According to Time-Use Surveys in India, how much more time do women spend on unpaid domestic care work compared to men?",
+        "front_ta": "இந்திய நேரப் பயன்பாட்டுக் கணக்கெடுப்பின்படி, ஆண்கள் செய்யும் ஊதியமற்ற குடும்பப் பணிகளை விட பெண்கள் எத்தனை மடங்கு அதிக நேரம் செய்கின்றனர்?",
+        "back_en": "Over seven times (7x) more time than men.",
+        "back_ta": "ஆண்களை விட 7 மடங்குக்கும் அதிகமான நேரம்."
+      },
+      {
+        "id": "rc_unemp_305",
+        "front_en": "What is the projected timespan of India's Demographic Dividend window?",
+        "front_ta": "இந்தியாவின் மக்கள் தொகை நன்மை காலத்தின் கணிக்கப்பட்ட கால அளவு என்ன?",
+        "back_en": "From approximately 2005-06 to 2055, peaking around 2040.",
+        "back_ta": "சுமார் 2005-06 முதல் 2055 வரை, இது 2040-ல் உச்சமடையும்."
+      },
+      {
+        "id": "rc_unemp_306",
+        "front_en": "When was the Skill India Mission launched and under which ministry?",
+        "front_ta": "திறன் இந்தியா இயக்கம் எப்போது மற்றும் எந்த அமைச்சகத்தின் கீழ் தொடங்கப்பட்டது?",
+        "back_en": "July 15, 2015 (World Youth Skills Day) under the Ministry of Skill Development and Entrepreneurship (MSDE).",
+        "back_ta": "ஜூலை 15, 2015 அன்று மத்திய திறன் மேம்பாட்டு மற்றும் தொழில்முனைவு அமைச்சகத்தின் (MSDE) கீழ்."
+      },
+      {
+        "id": "rc_unemp_307",
+        "front_en": "What does the Recognition of Prior Learning (RPL) component of PMKVY do?",
+        "front_ta": "PMKVY திட்டத்தின் முன் கற்றல் அங்கீகாரம் (RPL) எதனைச் செய்கிறது?",
+        "back_en": "It formally assesses and certifies the existing practical skills of informal workers without requiring long fresh classroom training.",
+        "back_ta": "முறைசாரா தொழிலாளர்கள் ஏற்கனவே பெற்றுள்ள அனுபவத் திறனை மதிப்பீடு செய்து, நீண்ட வகுப்பறைப் பயிற்சி இன்றி அரசு சான்றிதழ் வழங்குகிறது."
+      },
+      {
+        "id": "rc_unemp_308",
+        "front_en": "What is the e-Shram portal launched on August 26, 2021?",
+        "front_ta": "ஆகஸ்ட் 26, 2021 அன்று தொடங்கப்பட்ட இ-ஷ்ராம் (e-Shram) இணையதளம் என்பது என்ன?",
+        "back_en": "A centralized national database of unorganized workers offering a 12-digit UAN card and ₹2 lakh accidental insurance.",
+        "back_ta": "முறைசாரா தொழிலாளர்களுக்கான தேசிய தரவுத்தளம்; இது 12 இலக்க UAN அட்டை மற்றும் ₹2 லட்சம் விபத்துக் காப்பீட்டை வழங்குகிறது."
+      },
+      {
+        "id": "rc_unemp_309",
+        "front_en": "What is the core objective of Tamil Nadu's flagship 'Naan Mudhalvan' scheme launched on March 1, 2022?",
+        "front_ta": "மார்ச் 1, 2022 அன்று தொடங்கப்பட்ட தமிழ்நாட்டின் 'நான் முதல்வன்' திட்டத்தின் முதன்மை நோக்கம் என்ன?",
+        "back_en": "To provide industry-aligned technical and language upskilling to over 10 lakh college students annually directly through college timetables.",
+        "back_ta": "கல்லூரி பாடத்திட்டங்களோடு இணைத்து ஆண்டுக்கு 10 லட்சத்திற்கும் மேற்பட்ட மாணவர்களுக்கு தொழில்துறை திறன் மற்றும் மொழிப் பயிற்சி அளித்தல்."
+      },
+      {
+        "id": "rc_unemp_310",
+        "front_en": "How does Tamil Nadu's Pudhumai Penn Thittam structurally promote future female labour force participation?",
+        "front_ta": "தமிழ்நாட்டின் புதுமைப் பெண் திட்டம் எவ்வாறு எதிர்கால பெண்கள் வேலைவாய்ப்பை கட்டமைப்பு ரீதியாக உயர்த்துகிறது?",
+        "back_en": "By providing ₹1,000/month to government school girls in tertiary education, drastically reducing college dropouts and building female human capital.",
+        "back_ta": "உயர்கல்வி பயிலும் அரசுப் பள்ளி மாணவிகளுக்கு மாதம் ₹1,000 வழங்கி இடைநிற்றலைத் தடுத்து, பெண்களின் மனித மூலதனத்தை உயர்த்துவதன் மூலம்."
+      }
+    ]
+  }
+}

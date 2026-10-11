@@ -1,0 +1,785 @@
+{
+  "meta": {
+    "topic_id": "economy_unemployment_part_2",
+    "repository_id": "economy_unemployment",
+    "display_title": "Unemployment – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Unemployment",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "analytical",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Disguised Unemployment MPL Zero",
+    "Seasonal Unemployment Agro Processing",
+    "Structural Unemployment Skill Mismatch",
+    "Frictional Unemployment Search Lag",
+    "Cyclical Unemployment Keynesian Demand",
+    "Educated Unemployment Graduate Paradox",
+    "Visible Underemployment",
+    "Invisible Underemployment",
+    "Technological Unemployment Automation",
+    "Voluntary vs Involuntary Unemployment",
+    "Natural Rate of Unemployment NAIRU",
+    "Arthur Lewis Surplus Labor"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Distinguish between Disguised Unemployment (MPL=0), Seasonal Unemployment, and Underemployment.",
+        "Understand why Frictional and Structural unemployment persist even when the economy achieves 'Full Employment'."
+      ],
+      "ta": [
+        "மறைமுக வேலையின்மை (MPL=0), பருவ கால வேலையின்மை மற்றும் குறைவேலைவாய்ப்பு ஆகியவற்றை வேறுபடுத்தி அறிதல்.",
+        "முழு வேலைவாய்ப்பு நிலையிலும் ஏன் உராய்வு மற்றும் கட்டமைப்பு வேலையின்மை நீடிக்கிறது என்பதைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the defining condition of Disguised Unemployment: Marginal Productivity of Labour is EXACTLY ZERO.",
+        "Recall that NAIRU comprises Frictional and Structural unemployment with zero Cyclical unemployment."
+      ],
+      "ta": [
+        "மறைமுக வேலையின்மையின் முக்கிய நிபந்தனையை நினைவில் நிறுத்துதல்: தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் சரியாக பூஜ்ஜியம்.",
+        "NAIRU என்பது உராய்வு மற்றும் கட்டமைப்பு வேலையின்மையைக் கொண்டது என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the paradox of high educated unemployment in developing economies compared to low illiterate unemployment.",
+        "Appraise the impact of technological automation and Artificial Intelligence on modern employment structures."
+      ],
+      "ta": [
+        "வளரும் நாடுகளில் படிக்காதவர்களை விட பட்டதாரிகளிடையே வேலையின்மை அதிகமாக இருக்கும் முரண்பாட்டை ஆய்வு செய்தல்.",
+        "நவீன வேலைவாய்ப்புக் கட்டமைப்பில் தானியங்கி மற்றும் AI தொழில்நுட்பங்களின் தாக்கத்தை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge of unemployment classifications to solve scenario-based questions in TNPSC Group 1 examinations."
+      ],
+      "ta": [
+        "சூழல் சார்ந்த TNPSC வினாக்களில் வேலையின்மை வகைகளைத் துல்லியமாக அடையாளம் கண்டு விடையளித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Unemployment – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_disguised_seasonal",
+      "title_en": "Agrarian Unemployment: Disguised & Seasonal",
+      "title_ta": "விவசாய வேலையின்மை: மறைமுக வேலையின்மை & பருவ கால வேலையின்மை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_structural_frictional",
+      "title_en": "Industrial & Market Unemployment: Structural, Frictional & Cyclical",
+      "title_ta": "தொழில்துறை & சந்தை வேலையின்மை: கட்டமைப்பு, உராய்வு & சுழற்சி வேலையின்மை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_educated_underemployment",
+      "title_en": "Modern Challenges: Educated Unemployment & Underemployment",
+      "title_ta": "நவீன சவால்கள்: படித்த வேலையின்மை & குறைவேலைவாய்ப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_voluntary_involuntary",
+      "title_en": "Voluntary vs Involuntary Unemployment & Classical Dichotomy",
+      "title_ta": "சுயவிருப்ப வேலையின்மை vs விருப்பமில்லா வேலையின்மை & செவ்வியல் வேறுபாடு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Types of unemployment categorize the diverse structural, cyclical, seasonal, and frictional causes underlying labour joblessness. In developing economies like India, unemployment is predominantly structural and disguised rather than cyclical, manifested in severe skill mismatches, agrarian over-crowding where marginal productivity is zero, and acute underemployment in the unorganized informal sector.",
+      "ta": "வேலையின்மையின் வகைகள் என்பது தொழிலாளர்கள் வேலைவாய்ப்பின்றி இருப்பதற்குப் பின்னணியில் உள்ள பல்வேறு கட்டமைப்பு, சுழற்சி, பருவ கால மற்றும் உராய்வு காரணங்களை வகைப்படுத்துவதாகும். இந்தியா போன்ற வளரும் நாடுகளில், வேலையின்மை என்பது வணிகச் சுழற்சியால் ஏற்படுவதை விட பிரதானமாக கட்டமைப்பு மற்றும் மறைமுக வேலையின்மையாகவே உள்ளது; இது திறன் பொருத்தமின்மை, இறுதிநிலை உற்பத்தி பூஜ்ஜியமாக உள்ள விவசாயத்தில் அதிகப்படியான நெரிசல் மற்றும் முறைசாரா துறையில் நிலவும் தீவிர குறைவேலைவாய்ப்பாக வெளிப்படுகிறது."
+    },
+    "introduction": {
+      "en": "A nuanced comprehension of the taxonomy of unemployment is indispensable for discerning the structural distortions of the Indian economy. While advanced industrial economies predominantly experience demand-deficient Keynesian (cyclical) unemployment during recessions and voluntary frictional search unemployment, India's labour landscape is structurally unique. The agrarian sector is burdened by pervasive Disguised Unemployment—where surplus family hands work on subdivided land parcels with zero marginal productivity. Simultaneously, seasonal crop cycles produce widespread Seasonal Unemployment. In urban centers, rapid technological disruptions generate severe Structural Unemployment where educated youth possess degrees lacking industry-aligned competencies. Furthermore, millions are trapped in Underemployment (involuntary part-time work or misallocation below skill levels). Mastering these classifications, theoretical axioms, and comparative distinctions is essential for TNPSC Group 1 examination mastery.",
+      "ta": "இந்தியப் பொருளாதாரத்தின் கட்டமைப்பு மாற்றங்களைப் புரிந்துகொள்வதற்கு வேலையின்மையின் பல்வேறு வகைகளை ஆழமாக அறிவது அவசியமாகும். வளர்ந்த தொழில் நாடுகள் மந்தநிலையின் போது தேவை குறைவால் ஏற்படும் கீன்சியன் (சுழற்சி) வேலையின்மையையும், வேலை மாறும் போது ஏற்படும் உராய்வு வேலையின்மையையும் பிரதானமாக எதிர்கொள்கின்றன. ஆனால் இந்தியாவின் தொழிலாளர் சூழல் தனித்துவமானது. விவசாயத் துறை பரவலான 'மறைமுக வேலையின்மையால்' (Disguised Unemployment) பாதிக்கப்பட்டுள்ளது; இதில் துண்டு நிலங்களில் உழைக்கும் உபரி தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் பூஜ்ஜியமாக உள்ளது. அத்துடன் பயிர் சுழற்சிகளால் 'பருவ கால வேலையின்மை' ஏற்படுகிறது. நகரங்களில் வேகமான தொழில்நுட்ப மாற்றங்களால் படித்த இளைஞர்களின் பட்டப் படிப்புகளுக்கும் தொழில்துறை தேவைகளுக்கும் இடையே இடைவெளி ஏற்பட்டு 'கட்டமைப்பு வேலையின்மை' நிலவுகிறது. மேலும் லட்சக்கணக்கான மக்கள் தங்களின் திறனுக்குக் குறைவான பணிகளில் 'குறைவேலைவாய்ப்பில்' (Underemployment) சிக்கியுள்ளனர். இந்த வகைப்பாடுகளை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_disguised_seasonal": [
+      {
+        "term_en": "Disguised Unemployment (Hidden Unemployment)",
+        "term_ta": "மறைமுக வேலையின்மை (Disguised Unemployment)",
+        "details_en": "A situation where more workers are engaged in an economic activity than are strictly necessary, such that the Marginal Productivity of Labour (MPL) is EXACTLY ZERO. If the surplus workers are withdrawn and transferred elsewhere, total agricultural output remains COMPLETELY UNCHANGED. Prevalent on small, fragmented family farms where family members share tasks due to lack of non-farm employment. In economic theory (Arthur Lewis, Ragnar Nurkse), disguised unemployed laborers represent potential 'disguised savings' that can be mobilized for capital accumulation in industrial sectors.",
+        "details_ta": "ஒரு குறிப்பிட்ட பணியைச் செய்து முடிக்கத் தேவையான தொழிலாளர்களை விட அதிகமான நபர்கள் அப்பணியில் ஈடுபட்டிருக்கும் நிலை; இதில் கூடுதல் தொழிலாளர்களின் 'இறுதிநிலை உற்பத்தித்திறன்' (Marginal Productivity of Labour - MPL) 'சரியாக பூஜ்ஜியமாக' இருக்கும்! அந்த உபரித் தொழிலாளர்களை அத்துறையிலிருந்து வெளியேற்றினாலும் மொத்த உற்பத்தி சற்றும் குறையாது. மாற்று வேலைவாய்ப்பின்றி குடும்பத் துண்டு நிலங்களில் அனைவரும் வேலை செய்யும் கிராமப்புற விவசாயத்தில் இது பிரதானமாக உள்ளது. பொருளாதாரக் கோட்பாடுகளில் (ஆர்தர் லூயிஸ், ராக்னர் நர்க்சே) இந்த மறைமுக வேலையற்ற தொழிலாளர்கள் தொழில்துறை மூலதன உருவாக்கத்திற்குப் பயன்படக்கூடிய 'மறைமுக சேமிப்பாகக்' கருதப்படுகின்றனர்."
+      },
+      {
+        "term_en": "Seasonal Unemployment",
+        "term_ta": "பருவ கால வேலையின்மை (Seasonal Unemployment)",
+        "details_en": "Occurs when workers are employed only during specific seasons of the year and remain completely idle during off-season months. Classic in rainfed agriculture (busy during sowing and harvesting; unemployed during intervening growth and post-harvest months, typically 4 to 7 months a year). Also prevalent in agro-based seasonal manufacturing (sugar mills operating only during crushing season, ice factories, tourism).",
+        "details_ta": "ஆண்டின் குறிப்பிட்ட சில பருவங்களில் மட்டுமே வேலைவாய்ப்பு கிடைத்து, மற்ற பருவ காலங்களில் தொழிலாளர்கள் வேலையின்றி இருக்கும் நிலை. மானாவாரி விவசாயத்தில் விதைப்பு மற்றும் அறுவடை காலங்களில் தீவிர வேலை கிடைத்து, இடையில் உள்ள 4 முதல் 7 மாதங்கள் வேலையற்ற நிலை நிலவுகிறது. கரும்பு ஆலைகள் (அரவை பருவம் மட்டும்), பனிப்பொழிவு சுற்றுலா போன்ற வேளாண் சார்ந்த தொழிற்சாலைகளிலும் இது காணப்படுகிறது."
+      }
+    ],
+    "sec_structural_frictional": [
+      {
+        "term_en": "Structural Unemployment",
+        "term_ta": "கட்டமைப்பு வேலையின்மை (Structural Unemployment)",
+        "details_en": "Arises from a profound MISMATCH between the skills possessed by available job seekers and the specific technical competencies demanded by expanding modern industries. It is long-term and endemic in nature, triggered by technological obsolescence, structural shifts from agriculture to capital-intensive services, and outdated educational curricula. In India, thousands of engineering and arts graduates remain unemployed while emerging IT/automation/EV firms report severe shortages of skilled technicians.",
+        "details_ta": "வேலை தேடுபவர்களிடம் உள்ள திறன்களுக்கும், நவீன தொழில்துறைகள் எதிர்பார்க்கும் தொழில்நுட்பத் திறன்களுக்கும் இடையே நிலவும் 'திறன் பொருத்தமின்மையால்' (Skill Mismatch) ஏற்படும் வேலையின்மை. தொழில்நுட்ப வளர்ச்சி, விவசாயத்திலிருந்து மூலதனத் துறைக்கு பொருளாதாரம் மாறுதல் மற்றும் பழைய பாடத்திட்டங்களால் இது ஏற்படுகிறது. இந்தியாவில் ஆயிரக்கணக்கான பொறியியல் பட்டதாரிகள் வேலையின்றி இருக்கும் அதே நேரத்தில், தகவல் தொழில்நுட்ப நிறுவனங்கள் தகுதியான திறன் கொண்ட பணியாளர்கள் கிடைக்கவில்லை எனக் கூறுவது இதற்கு சிறந்த உதாரணமாகும்."
+      },
+      {
+        "term_en": "Frictional Unemployment (Search Unemployment)",
+        "term_ta": "உராய்வு வேலையின்மை (Frictional Unemployment)",
+        "details_en": "Temporary, short-term transition unemployment that occurs when an individual voluntarily leaves a job to search for a better, higher-paying one, or when fresh graduates enter the labor market for the first time. It reflects imperfect market information and time lags in job matching. Unlike structural unemployment, it is NOT considered pathological and exists even in high-performing economies operating at 'full employment'.",
+        "details_ta": "ஒருவர் சிறந்த ஊதியம் கொண்ட வேறு வேலைக்கு மாறுவதற்காக தற்போதைய வேலையை விட்டுவிட்டு புதிய வேலை தேடும் இடைப்பட்ட குறுகிய காலத்தில் ஏற்படும் தற்காலிக வேலையின்மை. சந்தை தகவல் பற்றாக்குறை மற்றும் வேலை கிடைக்க எடுக்கும் கால தாமதத்தால் இது ஏற்படுகிறது. இது பொருளாதார வீழ்ச்சியால் ஏற்படுவது அல்ல என்பதால், 'முழு வேலைவாய்ப்பு' நிலவும் வளர்ந்த நாடுகளிலும் இது இயல்பாகக் காணப்படும்."
+      },
+      {
+        "term_en": "Cyclical Unemployment (Keynesian / Demand-Deficient)",
+        "term_ta": "சுழற்சி வேலையின்மை (Cyclical / Keynesian Unemployment)",
+        "details_en": "Caused by the business cycle downswing and deficiency in aggregate macroeconomic demand. During an economic recession, consumer spending contracts, unsold inventories pile up, firms cut production, and workers are laid off across manufacturing and services. Common in capitalist Western economies and export-oriented Indian sectors during global recessions (e.g., 2008 Global Financial Crisis, COVID-19 pandemic).",
+        "details_ta": "பொருளாதார வணிகச் சுழற்சியின் மந்தநிலையின் போதும், ஒட்டுமொத்த சந்தைத் தேவை குறைவதாலும் ஏற்படும் வேலையின்மை. பொருளாதார மந்தநிலையின் போது நுகர்வுச் செலவுகள் குறைந்து, பொருட்கள் தேங்குவதால், நிறுவனங்கள் உற்பத்தியைக் குறைத்து தொழிலாளர்களை ஆட்குறைப்பு செய்கின்றன. மேற்கத்திய முதலாளித்துவ நாடுகளிலும், உலகப் பொருளாதார மந்தநிலையின் போது இந்தியாவின் ஏற்றுமதி சார்ந்த துறைகளிலும் (எ.கா. 2008 உலக நிதி நெருக்கடி, கோவிட் பெருந்தொற்று) இது ஏற்படுகிறது."
+      }
+    ],
+    "sec_educated_underemployment": [
+      {
+        "term_en": "Educated Unemployment",
+        "term_ta": "படித்த வேலையின்மை (Educated Unemployment)",
+        "details_en": "Unemployment among individuals who have completed formal secondary (Matriculation/Higher Secondary) or tertiary (Graduation/Post-Graduation) education. In developing countries like India, the Unemployment Rate among graduates is consistently MULTIPLE TIMES HIGHER than among illiterate or primary-educated workers. Educated youth have higher reservation wages, refuse low-prestige manual labor, and queue for scarce organized-sector or government jobs.",
+        "details_ta": "மேல்நிலைக் கல்வி அல்லது பட்டப்படிப்பு முடித்தவர்களிடையே நிலவும் வேலையின்மை. இந்தியா போன்ற வளரும் நாடுகளில் படிக்காத அல்லது ஆரம்பக் கல்வி மட்டுமே முடித்த தொழிலாளர்களை விட, கல்லூரிப் பட்டதாரிகளிடையே வேலையின்மை விகிதம் 'பல மடங்கு அதிகமாக' உள்ளது! படித்த இளைஞர்கள் தங்களின் கல்வித் தகுதிக்கேற்ற குறைந்தபட்ச ஊதியத்தை (Reservation Wage) எதிர்பார்ப்பதாலும், உடலுழைப்பு வேலைகளைத் தவிர்ப்பதாலும், குறைந்த எண்ணிக்கையிலான அரசு மற்றும் ஒழுங்கமைக்கப்பட்ட பணிகளுக்காக நீண்ட காலம் காத்திருக்கின்றனர்."
+      },
+      {
+        "term_en": "Underemployment (Involuntary Sub-Optimal Employment)",
+        "term_ta": "குறைவேலைவாய்ப்பு (Underemployment)",
+        "details_en": "A condition where individuals are technically classified as employed, but their employment is sub-optimal in hours, income, or skill utilization: (1) Visible Underemployment: working fewer hours per week than desired (e.g., casual workers wanting 48 hours but getting only 18 hours); (2) Invisible Underemployment: working full-time in occupations that require far lower skills and pay far less than their qualifications (e.g., an M.Tech or PhD graduate working as a peon or delivery gig worker).",
+        "details_ta": "ஒருவர் வேலை செய்பவராக அதிகாரப்பூர்வமாகப் பதிவாகியிருந்தாலும், அவரது வேலை நேரம், வருமானம் அல்லது திறனுக்கு மிகவும் குறைவாக இருக்கும் நிலை: (1) வெளிப்படையான குறைவேலைவாய்ப்பு: ஒருவர் விரும்பும் வேலை நேரத்தை விடக் குறைவான மணிநேரம் மட்டுமே வேலை கிடைப்பது (வாரம் 48 மணி நேரம் விரும்பும் ஒருவருக்கு 18 மணி நேரம் மட்டுமே கிடைப்பது); (2) மறைமுக குறைவேலைவாய்ப்பு: ஒருவரின் உயர் கல்வித் தகுதிக்கு தொடர்பில்லாத மிகக் குறைந்த ஊதியப் பணிகளில் முழுநேரம் வேலை செய்வது (முதுகலை பொறியியல் முடித்தவர் அலுவலக உதவியாளராகவோ டெலிவரி ஊழியராகவோ பணியாற்றுவது)."
+      },
+      {
+        "term_en": "Technological Unemployment",
+        "term_ta": "தொழில்நுட்ப வேலையின்மை (Technological Unemployment)",
+        "details_en": "Displacement of workers caused by rapid labor-saving technological innovations, automation, robotics, and Artificial Intelligence (AI) that substitute capital machinery for routine human manual and cognitive tasks faster than new jobs can be created.",
+        "details_ta": "மனித உழைப்பைச் சேமிக்கும் புதிய தொழில்நுட்பங்கள், தானியங்கி இயந்திரங்கள் மற்றும் செயற்கை நுண்ணறிவு (AI) மனித வழக்கப் பணிகளை மாற்றுவதால், புதிய வேலைகள் உருவாவதை விட வேகமாக பழைய தொழிலாளர்கள் வேலை இழக்கும் நிலையாகும்."
+      }
+    ],
+    "sec_voluntary_involuntary": [
+      {
+        "term_en": "Voluntary Unemployment",
+        "term_ta": "சுயவிருப்ப வேலையின்மை (Voluntary Unemployment)",
+        "details_en": "A situation where an individual chooses not to work at prevailing market wage rates, holding out for higher pay, better working conditions, or relying on unearned income (family wealth, investments). In classical economic theory (Pigou), all market unemployment is voluntary due to artificially rigid minimum wages.",
+        "details_ta": "சந்தையில் நிலவும் ஊதிய விகிதத்தில் வேலை செய்ய ஒருவர் சுயமாக மறுக்கும் நிலை; அதிக ஊதியம் அல்லது சிறந்த பணிச்சூழலை எதிர்பார்த்தோ, குடும்பச் செல்வத்தை நம்பியோ வேலை செய்யாமல் இருப்பது. செவ்வியல் பொருளாதாரத்தில் இது மட்டுமே உண்மையான வேலையின்மையாகக் கருதப்படுகிறது."
+      },
+      {
+        "term_en": "Involuntary Unemployment",
+        "term_ta": "விருப்பமில்லா வேலையின்மை (Involuntary Unemployment)",
+        "details_en": "A situation where individuals are willing and eager to work at the prevailing market wage rate (or even slightly below it) but cannot find employment due to structural macroeconomic constraints or deficient demand. Formalized by J.M. Keynes as the core problem of capitalist macroeconomics.",
+        "details_ta": "சந்தையில் நிலவும் ஊதியத்திற்கோ அல்லது அதற்குக் குறைந்த ஊதியத்திற்கோ கூட வேலை செய்யத் தயாராக இருந்தும் வேலை கிடைக்காமல் தவிக்கும் நிலை. இதுவே உண்மையான பொருளாதாரப் பிரச்சினையாக ஜே.எம். கீன்ஸால் முன்வைக்கப்பட்டது."
+      },
+      {
+        "term_en": "Natural Rate of Unemployment (NRU) / NAIRU",
+        "term_ta": "இயற்கை வேலையின்மை விகிதம் (Natural Rate / NAIRU)",
+        "details_en": "The long-run equilibrium level of unemployment in an economy consistent with stable inflation (Non-Accelerating Inflation Rate of Unemployment - NAIRU). It comprises Frictional and Structural unemployment, with ZERO Cyclical unemployment.",
+        "details_ta": "பணவீக்கம் நிலையாக இருக்கும் போது ஒரு பொருளாதாரத்தில் நீண்டகால சமநிலையில் நிலவும் வேலையின்மை விகிதம் (NAIRU). இதில் உராய்வு மற்றும் கட்டமைப்பு வேலையின்மை மட்டுமே அடங்கும்; சுழற்சி வேலையின்மை பூஜ்ஜியமாக இருக்கும்."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_disguised_vs_seasonal_vs_underemp",
+        "title_en": "Disguised vs Seasonal Unemployment vs Underemployment",
+        "title_ta": "மறைமுக வேலையின்மை vs பருவ கால வேலையின்மை vs குறைவேலைவாய்ப்பு ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Disguised Unemployment",
+          "Seasonal Unemployment",
+          "Underemployment"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "மறைமுக வேலையின்மை",
+          "பருவ கால வேலையின்மை",
+          "குறைவேலைவாய்ப்பு"
+        ],
+        "rows_en": [
+          [
+            "Marginal Productivity",
+            "Marginal Productivity of Labour (MPL) is EXACTLY ZERO",
+            "Positive during working season; zero during off-season",
+            "Positive (MPL > 0) but sub-optimally low relative to potential"
+          ],
+          [
+            "Visibility of Idleness",
+            "Completely INVISIBLE; workers appear physically occupied",
+            "Completely VISIBLE; workers sit idle during off-season",
+            "Partially visible (low hours) or invisible (low-skill job)"
+          ],
+          [
+            "Primary Sector / Location",
+            "Subdivided family agriculture, informal family retail stalls",
+            "Rainfed farming, agro-processing (sugar mills, salt pans)",
+            "Informal gig sector, temporary casual contract labor, graduates"
+          ],
+          [
+            "Impact of Withdrawal",
+            "Withdrawing surplus workers causes ZERO drop in output",
+            "Withdrawing workers during season causes sharp output collapse",
+            "Workers can be upgraded without changing headcount"
+          ],
+          [
+            "Policy Remedy",
+            "Shifting surplus labor to rural industrialization & MSMEs",
+            "Multi-cropping, irrigation, off-season public works (MGNREGA)",
+            "Skill-matching, higher-order formal job creation, minimum wage enforcement"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "இறுதிநிலை உற்பத்தித்திறன்",
+            "இறுதிநிலை உற்பத்தித்திறன் (MPL) 'சரியாக பூஜ்ஜியம்'",
+            "வேலை பருவத்தில் நேர்மறை; பருவம் இல்லாத போது பூஜ்ஜியம்",
+            "நேர்மறையானது (MPL > 0) ஆனால் முழு திறனை விட மிகக் குறைவு"
+          ],
+          [
+            "வேலையின்மையின் தெரிவுநிலை",
+            "முற்றிலும் 'மறைமுகமானது'; அனைவரும் வேலை செய்வது போல் தோன்றும்",
+            "முற்றிலும் 'வெளிப்படையானது'; பருவமற்ற காலத்தில் சும்மா இருப்பர்",
+            "பகுதி வெளிப்படையானது (குறைந்த நேரம்) அல்லது மறைமுகமானது (திறனற்ற வேலை)"
+          ],
+          [
+            "முதன்மைத் துறை / இடம்",
+            "துண்டு நில விவசாயம், குடும்ப சிறு வணிகக் கடைகள்",
+            "மானாவாரி விவசாயம், சர்க்கரை ஆலைகள், உப்பளங்கள், சுற்றுலா",
+            "முறைசாரா கிக் துறை, ஒப்பந்தக் கூலி வேலை, படித்த இளைஞர்கள்"
+          ],
+          [
+            "தொழிலாளர்களை நீக்குவதால் தாக்கம்",
+            "உபரி தொழிலாளர்களை நீக்கினாலும் உற்பத்தியில் துளி இழப்பும் ஏற்படாது",
+            "பருவ காலத்தில் தொழிலாளர்களை நீக்கினால் உற்பத்தி கடுமையாகப் பாதிக்கப்படும்",
+            "தொழிலாளர்களின் திறனை உயர்த்துவதன் மூலம் பொருளாதார உற்பத்தி பெருகும்"
+          ],
+          [
+            "கொள்கைத் தீர்வுகள்",
+            "உபரி தொழிலாளர்களை ஊரகத் தொழில்கள் மற்றும் MSME-க்கு மாற்றுதல்",
+            "பயிர் சுழற்சி, பாசன வசதி, பருவமற்ற கால பொதுப்பணிகள் (MGNREGA)",
+            "திறன் மேம்பாடு, ஒழுங்கமைக்கப்பட்ட வேலை உருவாக்கம், குறைந்தபட்ச ஊதியம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_structural_vs_frictional_vs_cyclical",
+        "title_en": "Structural vs Frictional vs Cyclical Unemployment",
+        "title_ta": "கட்டமைப்பு vs உராய்வு vs சுழற்சி வேலையின்மை ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Structural Unemployment",
+          "Frictional Unemployment",
+          "Cyclical (Keynesian) Unemployment"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "கட்டமைப்பு வேலையின்மை",
+          "உராய்வு வேலையின்மை",
+          "சுழற்சி (கீன்சியன்) வேலையின்மை"
+        ],
+        "rows_en": [
+          [
+            "Root Underlying Cause",
+            "Mismatch between job seekers' skills and industry requirements",
+            "Temporary search time lag between leaving and finding jobs",
+            "Macroeconomic downswing and deficiency of aggregate demand"
+          ],
+          [
+            "Duration & Persistence",
+            "Long-term, chronic, and persistent until skills are upgraded",
+            "Short-term, transient, and self-correcting in nature",
+            "Medium-term; lasts as long as the economic recession persists"
+          ],
+          [
+            "Presence at Full Employment",
+            "Exists even at theoretical 'Full Employment' (part of NRU)",
+            "Exists even at theoretical 'Full Employment' (part of NRU)",
+            "ZERO at full employment; only appears during recessionary gaps"
+          ],
+          [
+            "Voluntary vs Involuntary",
+            "Involuntary (workers want work but lack relevant skills)",
+            "Largely voluntary (workers seeking better wages or positions)",
+            "Involuntary (workers laid off due to falling business revenues)"
+          ],
+          [
+            "Primary Policy Solution",
+            "Technical skilling, vocational training (PMKVY), curriculum reform",
+            "Job portals (National Career Service), employment exchanges",
+            "Counter-cyclical fiscal stimulus, public infrastructure, rate cuts"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடிப்படை மூலகாரணம்",
+            "தொழிலாளர்களின் திறன்களுக்கும் தொழில் தேவைகளுக்கும் உள்ள பொருத்தமின்மை",
+            "ஒரு வேலையிலிருந்து மற்றொரு வேலைக்கு மாறுவதற்கான தேடல் கால தாமதம்",
+            "பொருளாதார வணிகச் சுழற்சியில் ஒட்டுமொத்த சந்தைத் தேவை குறைதல்"
+          ],
+          [
+            "கால அளவும் நீடிப்பும்",
+            "நீண்டகால, நாள்பட்ட தன்மை; மறுபயிற்சி பெறும் வரை நீடிக்கும்",
+            "குறுகிய கால, தற்காலிக மற்றும் தானாகவே சரியாகும் தன்மை கொண்டது",
+            "இடைநிலைக் காலம்; பொருளாதார மந்தநிலை நீடிக்கும் வரை இருக்கும்"
+          ],
+          [
+            "முழு வேலைவாய்ப்பில் இருத்தல்",
+            "முழு வேலைவாய்ப்பு நிலையிலும் நீடிக்கும் (இயற்கை வேலையின்மையின் பங்கு)",
+            "முழு வேலைவாய்ப்பு நிலையிலும் நீடிக்கும் (இயற்கை வேலையின்மையின் பங்கு)",
+            "முழு வேலைவாய்ப்பில் இது பூஜ்ஜியம்; மந்த காலத்தில் மட்டுமே தோன்றும்"
+          ],
+          [
+            "விருப்பம் vs விருப்பமின்மை",
+            "விருப்பமில்லாதது (வேலை செய்ய விருப்பம் உண்டு, ஆனால் திறன் இல்லை)",
+            "பெரும்பாலும் சுயவிருப்பமானது (சிறந்த வேலைக்காக பழைய வேலையை விடுதல்)",
+            "முற்றிலும் விருப்பமில்லாதது (நிறுவனங்கள் ஆட்குறைப்பு செய்வதால் ஏற்படுவது)"
+          ],
+          [
+            "முதன்மைக் கொள்கைத் தீர்வு",
+            "தொழில்நுட்ப திறன் பயிற்சி (PMKVY), பாடத்திட்ட சீர்திருத்தம்",
+            "வேலைவாய்ப்பு இணையதளங்கள் (NCS), வேலைவாய்ப்பு அலுவலகங்கள்",
+            "அரசின் நிதி ஊக்குவிப்பு செலவுகள், உட்கட்டமைப்பு முதலீடு, வட்டி குறைப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_voluntary_vs_involuntary",
+        "title_en": "Voluntary Unemployment vs Involuntary Unemployment",
+        "title_ta": "சுயவிருப்ப வேலையின்மை vs விருப்பமில்லா வேலையின்மை ஒப்பீடு",
+        "headers_en": [
+          "Criterion",
+          "Voluntary Unemployment",
+          "Involuntary Unemployment"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "சுயவிருப்ப வேலையின்மை",
+          "விருப்பமில்லா வேலையின்மை"
+        ],
+        "rows_en": [
+          [
+            "Willingness to Work at Market Wage",
+            "Unwilling to work at prevailing market wage rates",
+            "Fully willing and eager to work at or below market wages"
+          ],
+          [
+            "Cause of Joblessness",
+            "Personal choice: holding out for higher pay, better perks, or leisure",
+            "Lack of job openings due to structural, cyclical, or capital constraints"
+          ],
+          [
+            "Theoretical School",
+            "Classical Economics (A.C. Pigou): all unemployment is voluntary",
+            "Keynesian Economics (J.M. Keynes): persistent involuntary slump"
+          ],
+          [
+            "Social Welfare Impact",
+            "Low distress; households supported by unearned wealth or family",
+            "Severe distress, poverty, mental health erosion, and social unrest"
+          ],
+          [
+            "Government Responsibility",
+            "No state responsibility to provide artificial jobs to voluntary seekers",
+            "Direct state responsibility: employment guarantees, stimulus, safety nets"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சந்தை ஊதியத்தில் வேலை செய்ய விருப்பம்",
+            "சந்தையில் நிலவும் ஊதியத்தில் வேலை செய்ய விருப்பமின்மை",
+            "நிலவும் ஊதியத்திற்கோ அல்லது சற்று குறைவான ஊதியத்திற்கோ வேலை செய்ய விருப்பம்"
+          ],
+          [
+            "வேலையின்மைக்கான காரணம்",
+            "தனிநபர் தேர்வு: அதிக ஊதியம், சலுகைகள் அல்லது ஓய்வை விரும்புதல்",
+            "வேலைவாய்ப்புகள் இல்லாதிருத்தல்; கட்டமைப்பு மற்றும் தேவை பற்றாக்குறை"
+          ],
+          [
+            "பொருளாதாரக் கோட்பாட்டுப் பள்ளி",
+            "செவ்வியல் பொருளாதாரம் (பிகு): அனைத்து வேலையின்மையும் சுயவிருப்பமே",
+            "கீன்சியன் பொருளாதாரம் (கீன்ஸ்): விருப்பமில்லா வேலையின்மையே முதன்மைப் பிரச்சினை"
+          ],
+          [
+            "சமூக நலன் மீதான தாக்கம்",
+            "குறைந்த பாதிப்பு; குடும்பச் சொத்து அல்லது முதலீடுகளால் வாழ்பவர்கள்",
+            "கடுமையான பாதிப்பு, வறுமை, மன உளைச்சல் மற்றும் சமூக அமைதியின்மை"
+          ],
+          [
+            "அரசின் பொறுப்பு",
+            "சுயமாக வேலை செய்யாதவர்களுக்கு அரசு வேலை தர வேண்டிய கட்டாயமில்லை",
+            "அரசின் நேரடிப் பொறுப்பு: சட்டப்பூர்வ வேலை உத்தரவாதம் (MGNREGA), நிவாரணம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rural_vs_urban_unemployment_profile",
+        "title_en": "Rural vs Urban Labour Market Characteristics in India",
+        "title_ta": "கிராமப்புற vs நகர்ப்புற தொழிலாளர் சந்தை பண்புகள் ஒப்பீடு",
+        "headers_en": [
+          "Characteristic",
+          "Rural Labour Market",
+          "Urban Labour Market"
+        ],
+        "headers_ta": [
+          "பண்பு",
+          "கிராமப்புற தொழிலாளர் சந்தை",
+          "நகர்ப்புற தொழிலாளர் சந்தை"
+        ],
+        "rows_en": [
+          [
+            "Dominant Types of Unemployment",
+            "Disguised unemployment, seasonal unemployment, casual underemployment",
+            "Educated unemployment, structural unemployment, open CWS unemployment"
+          ],
+          [
+            "Nature of Work Arrangements",
+            "Agrarian self-employment (family farms), casual agricultural labor",
+            "Informal services, gig/platform labor, regular private wage jobs"
+          ],
+          [
+            "Female Participation Pattern",
+            "Higher recorded LFPR (women work on family farms in UPSS)",
+            "Substantially lower female LFPR due to urban mobility barriers"
+          ],
+          [
+            "Seasonal Fluctuation Impact",
+            "Extreme seasonal swings linked to South-West / North-East monsoons",
+            "Relatively insulated from monsoons; driven by economic business cycles"
+          ],
+          [
+            "Statutory Employment Safety Net",
+            "Protected by statutory legal guarantee under MGNREGA (100 days)",
+            "No national legal guarantee; dependent on unorganized wage markets"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிரதான வேலையின்மை வகைகள்",
+            "மறைமுக வேலையின்மை, பருவ கால வேலையின்மை, தினக்கூலி குறைவேலை",
+            "படித்த வேலையின்மை, கட்டமைப்பு வேலையின்மை, திறந்தநிலை வாராந்திர வேலையின்மை"
+          ],
+          [
+            "பணி அமைப்பின் தன்மை",
+            "விவசாய சுயதொழில் (குடும்ப நிலங்கள்), முறைசாரா விவசாய தினக்கூலி",
+            "முறைசாரா சேவைகள், கிக்/டெலிவரி பணிகள், ஒழுங்கமைக்கப்பட்ட தனியார் பணிகள்"
+          ],
+          [
+            "பெண்கள் பங்கேற்பு முறை",
+            "அதிகமான LFPR (பெண்கள் குடும்ப விவசாயத்தில் UPSS முறையில் ஈடுபடுவது)",
+            "மிகக் குறைவான LFPR (பாதுகாப்பு, போக்குவரத்து தடைகளால் பெண்கள் பணிக்கு செல்லாமை)"
+          ],
+          [
+            "பருவ கால தாக்கங்கள்",
+            "தென்மேற்கு மற்றும் வடகிழக்கு பருவமழையோடு இணைந்த தீவிர ஏற்ற இறக்கங்கள்",
+            "பருவமழையால் பெரிய பாதிப்பில்லை; வணிக மற்றும் தொழில் சுழற்சியால் தீர்மானிக்கப்படுவது"
+          ],
+          [
+            "சட்டப்பூர்வ வேலை பாதுகாப்பு",
+            "MGNREGA சட்டத்தின் கீழ் 100 நாட்கள் சட்டப்பூர்வ வேலை உத்தரவாதம் உண்டு",
+            "தேசிய அளவில் சட்டப்பூர்வ நகர்ப்புற வேலை உத்தரவாதம் கிடையாது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Unemployment Part 2: Types & Structural Characteristics",
+        "short_label": "Types of Unemployment",
+        "children": [
+          {
+            "title": "Agrarian Unemployment",
+            "short_label": "Agrarian Types",
+            "children": [
+              {
+                "title": "Disguised Unemployment (MPL = 0, Output Unchanged, Lewis Surplus)",
+                "short_label": "Disguised"
+              },
+              {
+                "title": "Seasonal Unemployment (Monsoon dependent, Off-season slack)",
+                "short_label": "Seasonal"
+              }
+            ]
+          },
+          {
+            "title": "Industrial & Structural Types",
+            "short_label": "Industrial Types",
+            "children": [
+              {
+                "title": "Structural Unemployment (Skill Mismatch, Tech Obsolescence)",
+                "short_label": "Structural"
+              },
+              {
+                "title": "Frictional Unemployment (Job search lag, Part of NRU)",
+                "short_label": "Frictional"
+              },
+              {
+                "title": "Cyclical Unemployment (Keynesian Demand Deficiency, Recessions)",
+                "short_label": "Cyclical"
+              }
+            ]
+          },
+          {
+            "title": "Educational & Skill Distortions",
+            "short_label": "Modern Distortions",
+            "children": [
+              {
+                "title": "Educated Unemployment (Higher rate among graduates, Reservation wage)",
+                "short_label": "Educated"
+              },
+              {
+                "title": "Underemployment (Visible: low hours; Invisible: low skill)",
+                "short_label": "Underemployment"
+              },
+              {
+                "title": "Technological Unemployment (Automation, AI labor substitution)",
+                "short_label": "Technological"
+              }
+            ]
+          },
+          {
+            "title": "Classical Dichotomies",
+            "short_label": "Dichotomies",
+            "children": [
+              {
+                "title": "Voluntary (Unwilling at market wage) vs Involuntary (Keynesian)",
+                "short_label": "Vol vs Invol"
+              },
+              {
+                "title": "Natural Rate of Unemployment (NAIRU = Frictional + Structural)",
+                "short_label": "NAIRU"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Disguised Unemployment Marginal Productivity Trap: EXACTLY Zero, NOT Negative",
+        "points": {
+          "en": [
+            "TRAP: Describing the Marginal Productivity of Labour (MPL) in disguised unemployment as 'negative' or 'very low'.",
+            "CORRECT FACT: In classical economic theory (Arthur Lewis, Joan Robinson), disguised unemployment is strictly defined by Marginal Productivity of Labour being EXACTLY ZERO (MPL = 0). It is not merely low; an additional worker adds zero net output. While extreme crowding could theoretically yield negative productivity, the standard economic definition is MPL = 0.",
+            "WHY CANDIDATES FAIL: Conflating 'low average productivity' with 'zero marginal productivity'."
+          ],
+          "ta": [
+            "பொறி: மறைமுக வேலையின்மையில் தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் (MPL) 'எதிர்மறையானது' அல்லது 'மிகக் குறைவானது' எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: பொருளாதாரக் கோட்பாட்டின்படி (ஆர்தர் லூயிஸ்), மறைமுக வேலையின்மை என்பது தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் 'சரியாக பூஜ்ஜியமாக' (MPL = 0) இருக்கும் நிலையாகும்! சராசரி உற்பத்தி குறைவாக இருக்கலாம், ஆனால் கூடுதல் தொழிலாளியால் உருவாகும் இறுதிநிலை உற்பத்தி பூஜ்ஜியமே ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'குறைந்த சராசரி உற்பத்தித்திறன்' என்பதையும் 'பூஜ்ஜிய இறுதிநிலை உற்பத்தித்திறன்' என்பதையும் ஒன்றாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Frictional Unemployment Reality Trap: Exists Even at Full Employment",
+        "points": {
+          "en": [
+            "TRAP: Assuming that achieving 'Full Employment' means the complete elimination of frictional unemployment.",
+            "CORRECT FACT: 'Full Employment' does NOT mean zero unemployment! In macroeconomics, Full Employment corresponds to the Natural Rate of Unemployment (NRU/NAIRU), which INCLUDES Frictional and Structural unemployment. Frictional unemployment will ALWAYS exist in a free market economy as workers voluntarily transition between jobs.",
+            "WHY CANDIDATES FAIL: Interpreting 'Full Employment' literally as 100% of the labour force working 365 days a year."
+          ],
+          "ta": [
+            "பொறி: 'முழு வேலைவாய்ப்பு' (Full Employment) நிலை ஏற்படும் போது உராய்வு வேலையின்மை முற்றிலும் பூஜ்ஜியமாகிவிடும் என நினைப்பது.",
+            "சரியான உண்மை: 'முழு வேலைவாய்ப்பு' என்பது வேலையின்மையே இல்லாத நிலை அல்ல! பொருளாதாரத்தில் முழு வேலைவாய்ப்பு என்பது 'இயற்கை வேலையின்மை விகிதத்தைக்' (NRU/NAIRU) குறிக்கிறது; இதில் உராய்வு மற்றும் கட்டமைப்பு வேலையின்மை எப்போதும் உள்ளடங்கியே இருக்கும். மக்கள் சுதந்திரமாக வேலை மாறும் வரை உராய்வு வேலையின்மை நீடிக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'முழு வேலைவாய்ப்பு' என்ற வார்த்தையை சொல்லர்த்தமாக எடுத்துக்கொண்டு நாட்டில் எவருக்கும் வேலையின்மை இருக்காது என தவறாகக் கணிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Educated Unemployment Rate Paradox: Higher Among Educated, NOT Illiterate",
+        "points": {
+          "en": [
+            "TRAP: Believing that illiterate individuals in India experience higher unemployment rates than college graduates.",
+            "CORRECT FACT: NSSO and PLFS data consistently reveal that the Unemployment Rate among GRADUATES is 4 to 5 times HIGHER than among illiterate workers. Illiterate and poor individuals cannot afford to remain openly unemployed—they are compelled by extreme poverty to accept low-wage informal manual labor.",
+            "WHY CANDIDATES FAIL: Assuming that higher educational attainment automatically guarantees immediate employment in developing economies."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவில் படிக்காத தொழிலாளர்களிடையே கல்லூரிப் பட்டதாரிகளை விட வேலையின்மை விகிதம் அதிகமாக உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: NSSO மற்றும் PLFS புள்ளிவிவரங்கள் படிக்காதவர்களை விடக் கல்லூரிப் 'பட்டதாரிகளிடையே வேலையின்மை விகிதம் 4 முதல் 5 மடங்கு அதிகமாக' உள்ளதைக் காட்டுகின்றன! ஏழை மற்றும் படிக்காத மக்கள் பசியின் காரணமாக ஏதேனும் ஒரு முறைசாரா கூலி வேலையை உடனே ஏற்றுக்கொள்கின்றனர்; ஆனால் படித்தவர்கள் தங்கள் தகுதிக்கேற்ற வேலைக்காக நீண்ட காலம் காத்திருக்கின்றனர்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அதிக கல்வித்தகுதி தானாகவே உடனடி வேலைவாய்ப்பைத் தந்துவிடும் என பொதுவாக தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Invisible Underemployment vs Disguised Unemployment Trap",
+        "points": {
+          "en": [
+            "TRAP: Confusing Invisible Underemployment with Disguised Unemployment.",
+            "CORRECT FACT: In Disguised Unemployment, workers' marginal productivity is zero because too many people are doing a task that fewer could do (e.g., 5 family members farming a 1-acre plot). In Invisible Underemployment, an individual works full-time with positive productivity, but their job requires skills VASTLY INFERIOR to their actual qualifications (e.g., an engineer working as a peon).",
+            "WHY CANDIDATES FAIL: Missing the distinction between surplus labor headcounts (disguised) and skill-qualification downgrade (underemployment)."
+          ],
+          "ta": [
+            "பொறி: மறைமுக குறைவேலைவாய்ப்பையும் (Invisible Underemployment) மறைமுக வேலையின்மையையும் (Disguised Unemployment) ஒன்றாகக் கருதுவது.",
+            "சரியான உண்மை: மறைமுக வேலையின்மையில் கூடுதல் தொழிலாளரின் இறுதிநிலை உற்பத்தி பூஜ்ஜியம் (1 ஏக்கர் நிலத்தில் 5 பேர் வேலை செய்வது). ஆனால் மறைமுக குறைவேலைவாய்ப்பில் நபர் முழுநேரம் வேலை செய்கிறார், உற்பத்தியும் செய்கிறார்; ஆனால் அவரது உயர் தகுதிக்குத் தொடர்பில்லாத மிகக் குறைந்த திறன் பணியைச் செய்கிறார் (முதுகலை பட்டதாரி பியூனாக வேலை செய்வது).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: உபரி மனித உழைப்புக்கும், திறன் தரமிறக்கத்திற்கும் இடையேயான வேறுபாட்டைப் புரிந்து கொள்ளாமை."
+          ]
+        }
+      },
+      {
+        "title": "Structural vs Cyclical Unemployment Identification Trap: Mismatch vs Demand Slump",
+        "points": {
+          "en": [
+            "TRAP: Attributing structural unemployment to business cycle recessions.",
+            "CORRECT FACT: Cyclical unemployment is caused by temporary macroeconomic demand shortfalls during recessions. Structural unemployment is caused by long-term technological, demographic, or institutional MISMATCHES between worker skills and employer job requirements, persisting even during economic booms.",
+            "WHY CANDIDATES FAIL: Failing to diagnose the underlying economic mechanism: demand shortage (cyclical) versus skill/geographic obsolescence (structural)."
+          ],
+          "ta": [
+            "பொறி: கட்டமைப்பு வேலையின்மை என்பது பொருளாதார வணிக மந்தநிலையால் ஏற்படுகிறது எனக் கூறுவது.",
+            "சரியான உண்மை: சுழற்சி வேலையின்மையே வணிக மந்தநிலை மற்றும் சந்தைத் தேவை குறைவால் ஏற்படுகிறது. கட்டமைப்பு வேலையின்மை என்பது பொருளாதாரம் வேகமாக வளரும் காலத்திலும் கூட, தொழிலாளர்களின் திறனுக்கும் நிறுவனங்களின் தேவைக்கும் இடையே நிலவும் 'திறன் இடைவெளியால்' ஏற்படும் நீண்டகால பிரச்சினையாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தேவை பற்றாக்குறையையும் (சுழற்சி), திறன் பொருத்தமின்மையையும் (கட்டமைப்பு) ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Keynesian Full Employment Trap: Involuntary Unemployment is Eliminated, NOT Frictional",
+        "points": {
+          "en": [
+            "TRAP: Stating that Keynesian macroeconomic policies aim to eradicate both voluntary and involuntary unemployment.",
+            "CORRECT FACT: J.M. Keynes's 'General Theory' focused EXCLUSIVELY on eradicating INVOLUNTARY UNEMPLOYMENT through aggregate demand stimulation. Keynes accepted that voluntary and frictional unemployment are normal structural features of free markets.",
+            "WHY CANDIDATES FAIL: Forgetting that involuntary unemployment is the sole target of Keynesian counter-cyclical demand management."
+          ],
+          "ta": [
+            "பொறி: கீன்சியன் பொருளாதாரக் கொள்கை சுயவிருப்ப மற்றும் விருப்பமில்லா வேலையின்மை ஆகிய இரண்டையும் ஒழிப்பதை நோக்கமாகக் கொண்டது எனக் கூறுவது.",
+            "சரியான உண்மை: ஜே.எம். கீன்ஸின் கொள்கை 'விருப்பமில்லா வேலையின்மையை' (Involuntary Unemployment) மட்டுமே ஒழிப்பதை நோக்கமாகக் கொண்டது! சுயவிருப்ப மற்றும் உராய்வு வேலையின்மை சந்தைப் பொருளாதாரத்தில் இயல்பாக இருக்கும் என்பதை கீன்ஸ் ஏற்றுக்கொண்டார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கீன்ஸ் எந்த வகையான வேலையின்மையை ஒழிக்க வாதாடினார் என்பதைத் துல்லியமாக அறியாமல் போவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Disguised unemployment is characterized by Marginal Productivity of Labour being exactly equal to zero (MPL = 0).",
+        "Withdrawing disguised unemployed workers from agriculture causes zero reduction in total agricultural output.",
+        "Arthur Lewis characterized disguised unemployment as surplus labor that can be mobilized for capital accumulation.",
+        "Seasonal unemployment is prevalent in rainfed agriculture and agro-based industries like sugar mills.",
+        "Structural unemployment arises from severe mismatch between job seekers' skills and industry requirements.",
+        "Frictional unemployment is temporary search unemployment occurring when workers transition between jobs.",
+        "Frictional unemployment exists even at theoretical 'Full Employment' as part of the Natural Rate of Unemployment.",
+        "Cyclical unemployment is caused by macroeconomic business cycle contractions and deficient aggregate demand.",
+        "Unemployment rate among tertiary-educated graduates in India is consistently multiple times higher than among illiterates.",
+        "Visible underemployment refers to individuals working fewer hours per week than they are available and willing to work.",
+        "Invisible underemployment refers to individuals working full-time in jobs vastly below their skill and education qualifications.",
+        "Natural Rate of Unemployment (NAIRU) consists exclusively of Frictional and Structural unemployment."
+      ],
+      "ta": [
+        "மறைமுக வேலையின்மையில் தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறன் சரியாக பூஜ்ஜியமாக (MPL = 0) இருக்கும்.",
+        "விவசாயத்திலிருந்து மறைமுக வேலையற்ற தொழிலாளர்களை வெளியேற்றினாலும் மொத்த விவசாய உற்பத்தியில் எவ்வித குறைவும் ஏற்படாது.",
+        "ஆர்தர் லூயிஸ் மறைமுக வேலையின்மையை தொழில்துறை மூலதன உருவாக்கத்திற்குப் பயன்படும் உபரி உழைப்பாக விவரித்தார்.",
+        "பருவ கால வேலையின்மை மானாவாரி விவசாயத்திலும், சர்க்கரை ஆலை போன்ற வேளாண் சார்ந்த தொழிற்சாலைகளிலும் நிலவுகிறது.",
+        "வேலை தேடுபவர்களின் திறனுக்கும் தொழில்துறை தேவைகளுக்கும் இடையே நிலவும் பொருத்தமின்மையால் கட்டமைப்பு வேலையின்மை ஏற்படுகிறது.",
+        "உராய்வு வேலையின்மை என்பது ஒரு வேலையிலிருந்து மற்றொரு வேலைக்கு மாறும் போது ஏற்படும் தற்காலிக தேடல் வேலையின்மையாகும்.",
+        "முழு வேலைவாய்ப்பு நிலையிலும் இயற்கை வேலையின்மை விகிதத்தின் ஒரு பகுதியாக உராய்வு வேலையின்மை எப்போதும் நீடிக்கும்.",
+        "பொருளாதார வணிகச் சுழற்சி மந்தநிலை மற்றும் சந்தைத் தேவை பற்றாக்குறையால் சுழற்சி வேலையின்மை ஏற்படுகிறது.",
+        "இந்தியாவில் படிக்காத தொழிலாளர்களை விடக் கல்லூரிப் பட்டதாரிகளிடையே வேலையின்மை விகிதம் பல மடங்கு அதிகமாக உள்ளது.",
+        "வெளிப்படையான குறைவேலைவாய்ப்பு என்பது ஒருவர் விரும்பும் வேலை நேரத்தை விடக் குறைவான மணிநேரம் மட்டுமே வேலை கிடைப்பதாகும்.",
+        "மறைமுக குறைவேலைவாய்ப்பு என்பது ஒருவர் தனது கல்வித் தகுதி மற்றும் திறனுக்கு மிகவும் குறைவான பணிகளில் முழுநேரம் வேலை செய்வதாகும்.",
+        "இயற்கை வேலையின்மை விகிதம் (NAIRU) என்பது உராய்வு மற்றும் கட்டமைப்பு வேலையின்மையை மட்டுமே உள்ளடக்கியதாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Disguised Unemployment: MPL = 0; output unchanged upon withdrawal; widespread in agrarian family holdings.",
+        "Seasonal Unemployment: occurs due to agricultural sowing/harvesting cycles and seasonal agro-manufacturing.",
+        "Structural Unemployment: mismatch between worker skills and modern tech requirements; requires vocational reskilling.",
+        "Frictional Unemployment: transitional job search unemployment; natural part of full employment (NRU).",
+        "Cyclical Unemployment: Keynesian demand deficiency during economic recessions; addressed via fiscal/monetary stimulus.",
+        "Educated Unemployment: paradoxical higher unemployment among graduates due to high reservation wages and skill mismatch.",
+        "Visible Underemployment: involuntary low working hours; Invisible Underemployment: full-time work below qualification.",
+        "Technological Unemployment: capital equipment, automation, and AI substituting routine manual and cognitive tasks.",
+        "Voluntary Unemployment: refusing work at market wages; Involuntary Unemployment: unable to find work despite willingness.",
+        "Natural Rate of Unemployment (NAIRU) = Frictional Unemployment + Structural Unemployment (zero cyclical unemployment)."
+      ],
+      "ta": [
+        "மறைமுக வேலையின்மை: MPL = 0; ஆட்களை நீக்கினாலும் உற்பத்தி மாறாது; விவசாயக் குடும்ப நிலங்களில் பிரதானம்.",
+        "பருவ கால வேலையின்மை: விதைப்பு, அறுவடை கால மாற்றங்கள் மற்றும் பருவகால தொழிற்சாலைகளால் ஏற்படுவது.",
+        "கட்டமைப்பு வேலையின்மை: தொழிலாளர் திறனுக்கும் நவீன தொழில்நுட்பத் தேவைக்கும் உள்ள இடைவெளி; மறுபயிற்சி தேவை.",
+        "உராய்வு வேலையின்மை: சிறந்த வேலை தேடும் இடைப்பட்ட தற்காலிக வேலையின்மை; முழு வேலைவாய்ப்பிலும் நீடிக்கும்.",
+        "சுழற்சி வேலையின்மை: மந்த காலத்தில் ஏற்படும் கீன்சியன் தேவை பற்றாக்குறை; அரசின் நிதி ஊக்கத்தால் சரிசெய்யப்பட வேண்டியது.",
+        "படித்த வேலையின்மை: அதிக ஊதிய எதிர்பார்ப்பு மற்றும் திறன் பொருத்தமின்மையால் பட்டதாரிகளிடையே நிலவும் அதிக வேலையின்மை.",
+        "வெளிப்படையான குறைவேலை: குறைந்த வேலை நேரம்; மறைமுக குறைவேலை: கல்வித் தகுதிக்கு தொடர்பில்லாத தகுதியற்ற வேலை.",
+        "தொழில்நுட்ப வேலையின்மை: தானியங்கி இயந்திரங்கள் மற்றும் AI மனிதப் பணிகளை மாற்றுவதால் ஏற்படும் வேலை இழப்பு.",
+        "சுயவிருப்ப வேலையின்மை: சந்தை ஊதியத்தில் வேலை செய்ய மறுப்பது; விருப்பமில்லா வேலையின்மை: விரும்பியும் வேலை கிடைக்காதது.",
+        "இயற்கை வேலையின்மை விகிதம் (NAIRU) = உராய்வு வேலையின்மை + கட்டமைப்பு வேலையின்மை (சுழற்சி வேலையின்மை பூஜ்ஜியம்)."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_unemp_201",
+        "front_en": "What is the mathematical value of the Marginal Productivity of Labour (MPL) in disguised unemployment?",
+        "front_ta": "மறைமுக வேலையின்மையில் தொழிலாளர்களின் இறுதிநிலை உற்பத்தித்திறனின் (MPL) கணித மதிப்பு என்ன?",
+        "back_en": "Exactly ZERO (MPL = 0).",
+        "back_ta": "சரியாக பூஜ்ஜியம் (MPL = 0)."
+      },
+      {
+        "id": "rc_unemp_202",
+        "front_en": "What happens to total output if disguised unemployed workers are withdrawn from an agricultural plot?",
+        "front_ta": "விவசாய நிலத்திலிருந்து மறைமுக வேலையற்ற தொழிலாளர்களை வெளியேற்றினால் மொத்த உற்பத்தி என்னவாகும்?",
+        "back_en": "Total output remains completely unchanged (zero drop in output).",
+        "back_ta": "மொத்த உற்பத்தியில் எவ்வித மாற்றமும் ஏற்படாது (துளி அளவும் குறையாது)."
+      },
+      {
+        "id": "rc_unemp_203",
+        "front_en": "Which development economist viewed disguised agrarian unemployment as potential 'surplus labor' for industrial growth?",
+        "front_ta": "மறைமுக விவசாய வேலையின்மையை தொழில்துறை வளர்ச்சிக்கான 'உபரி உழைப்பாக' விவரித்த வளர்ச்சிப் பொருளாதார நிபுணர் யார்?",
+        "back_en": "Sir W. Arthur Lewis (Nobel Laureate, 1979) in his dual-sector development model.",
+        "back_ta": "சர் டபிள்யூ. ஆர்தர் லூயிஸ் (நோபல் பரிசு 1979) தனது இரட்டைத் துறை வளர்ச்சி மாதிரியில்."
+      },
+      {
+        "id": "rc_unemp_204",
+        "front_en": "What is the underlying economic cause of Structural Unemployment?",
+        "front_ta": "கட்டமைப்பு வேலையின்மைக்கு பின்னணியில் உள்ள அடிப்படைக் காரணம் என்ன?",
+        "back_en": "A fundamental mismatch between the technical skills of job seekers and the evolving requirements of expanding industries.",
+        "back_ta": "வேலை தேடுபவர்களின் தொழில்நுட்பத் திறன்களுக்கும், விரிவடையும் தொழிற்துறைகளின் தேவைகளுக்கும் இடையே நிலவும் திறன் பொருத்தமின்மை."
+      },
+      {
+        "id": "rc_unemp_205",
+        "front_en": "Does Frictional Unemployment exist when an economy is operating at Full Employment?",
+        "front_ta": "ஒரு பொருளாதாரம் 'முழு வேலைவாய்ப்பு' நிலையில் இயங்கும் போது உராய்வு வேலையின்மை நீடிக்குமா?",
+        "back_en": "Yes, frictional unemployment always exists as part of the Natural Rate of Unemployment (NAIRU).",
+        "back_ta": "ஆம், இயற்கை வேலையின்மை விகிதத்தின் (NAIRU) ஒரு பகுதியாக உராய்வு வேலையின்மை எப்போதும் நீடிக்கும்."
+      },
+      {
+        "id": "rc_unemp_206",
+        "front_en": "What is the primary cause of Cyclical (Keynesian) Unemployment?",
+        "front_ta": "சுழற்சி (கீன்சியன்) வேலையின்மைக்கு முதன்மைக் காரணம் என்ன?",
+        "back_en": "Deficiency in aggregate macroeconomic demand during economic recessions and business cycle contractions.",
+        "back_ta": "பொருளாதார மந்தநிலையின் போது ஒட்டுமொத்த சந்தைத் தேவையில் ஏற்படும் பற்றாக்குறை."
+      },
+      {
+        "id": "rc_unemp_207",
+        "front_en": "Why is the unemployment rate among college graduates in India paradoxically higher than among illiterates?",
+        "front_ta": "இந்தியாவில் படிக்காதவர்களை விட கல்லூரிப் பட்டதாரிகளிடையே வேலையின்மை விகிதம் அதிகமாக இருப்பது ஏன்?",
+        "back_en": "Graduates have higher reservation wages, reject informal manual labor, and queue for scarce white-collar jobs.",
+        "back_ta": "பட்டதாரிகள் அதிக ஊதியத்தை எதிர்பார்ப்பதாலும், உடலுழைப்பு வேலைகளை நிராகரித்துவிட்டு குறைவான அலுவலகப் பணிகளுக்காகக் காத்திருப்பதாலும்."
+      },
+      {
+        "id": "rc_unemp_208",
+        "front_en": "What is the difference between Visible Underemployment and Invisible Underemployment?",
+        "front_ta": "வெளிப்படையான குறைவேலைவாய்ப்புக்கும் மறைமுக குறைவேலைவாய்ப்புக்கும் உள்ள வேறுபாடு என்ன?",
+        "back_en": "Visible Underemployment involves working fewer hours than desired; Invisible Underemployment involves working full-time in jobs vastly below one's skill qualification.",
+        "back_ta": "வெளிப்படையானது குறைந்த வேலை நேரத்தைக் குறிக்கிறது; மறைமுகமானது கல்வித் தகுதிக்கு தொடர்பில்லாத மிகக் குறைந்த திறன் பணியில் முழுநேரம் ஈடுபடுவதைக் குறிக்கிறது."
+      },
+      {
+        "id": "rc_unemp_209",
+        "front_en": "Which two types of unemployment constitute the Natural Rate of Unemployment (NRU)?",
+        "front_ta": "இயற்கை வேலையின்மை விகிதத்தில் (NRU) உள்ளடங்கியுள்ள இரண்டு வேலையின்மை வகைகள் யாவை?",
+        "back_en": "Frictional Unemployment and Structural Unemployment (with zero Cyclical unemployment).",
+        "back_ta": "உராய்வு வேலையின்மை மற்றும் கட்டமைப்பு வேலையின்மை (சுழற்சி வேலையின்மை பூஜ்ஜியம்)."
+      },
+      {
+        "id": "rc_unemp_210",
+        "front_en": "Who formalized the concept of Involuntary Unemployment as the core challenge of modern macroeconomics?",
+        "front_ta": "நவீன பேரியல் பொருளாதாரத்தின் முதன்மை சவாலாக 'விருப்பமில்லா வேலையின்மை' என்ற கருத்தை முறைப்படுத்தியவர் யார்?",
+        "back_en": "John Maynard Keynes in his 1936 treatise 'The General Theory of Employment, Interest and Money'.",
+        "back_ta": "ஜான் மேனார்ட் கீன்ஸ் 1936-ல் தனது 'வேலைவாய்ப்பு, வட்டி மற்றும் பணம் பற்றிய பொதுக் கோட்பாடு' என்ற நூலில்."
+      }
+    ]
+  }
+}

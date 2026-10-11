@@ -1,0 +1,791 @@
+{
+  "meta": {
+    "topic_id": "economy_gst_part_2",
+    "repository_id": "economy_gst",
+    "display_title": "Goods and Services Tax (GST) – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Goods and Services Tax (GST)",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Article 246A Simultaneous Power",
+    "Article 269A IGST",
+    "Article 279A GST Council",
+    "Weighted Voting Formula",
+    "One Third Centre Two Thirds States",
+    "75 Percent Supermajority",
+    "Section 7 Supply",
+    "Rule 88A ITC Utilization",
+    "GST Compensation Act 2017",
+    "14 Percent Growth Guarantee"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the simultaneous legislative power conferred by Article 246A and inter-state IGST regime under Article 269A.",
+        "Comprehend the weighted voting formula and mutual veto dynamics of the GST Council under Article 279A."
+      ],
+      "ta": [
+        "பிரிவு 246A வழங்கும் இணையான சட்டமன்ற அதிகாரம் மற்றும் பிரிவு 269A-இன் கீழான IGST முறையைப் புரிந்து கொள்ளுதல்.",
+        "பிரிவு 279A-இன் கீழ் ஜிஎஸ்டி கவுன்சிலின் எடைசார் வாக்குமுறை மற்றும் பரஸ்பர வீட்டோ அதிகாரத்தை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the voting weights: Centre 1/3rd (33.33%), States 2/3rd (66.67%), and 3/4th (75%) decision threshold.",
+        "Recall the 14% revenue growth rate benchmark and 5-year guarantee period under the Compensation Act."
+      ],
+      "ta": [
+        "வாக்கு எடைகளை நினைவில் நிறுத்துதல்: மத்திய அரசு 1/3 (33.33%), மாநிலங்கள் 2/3 (66.67%), மற்றும் 3/4 (75%) முடிவெடுக்கும் வரம்பு.",
+        "இழப்பீட்டுச் சட்டத்தின் கீழ் 14% வருவாய் வளர்ச்சி மற்றும் 5 ஆண்டு உத்தரவாதக் காலத்தை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how Section 7 'Supply' unified diverse pre-existing taxable events into a single taxable nexus.",
+        "Evaluate the strict prohibition on CGST-SGST cross-credit in safeguarding dual fiscal federalism."
+      ],
+      "ta": [
+        "பிரிவு 7 'விநியோகம்' எவ்வாறு முந்தைய பல்வேறு வரி நிகழ்வுகளை ஒற்றை வரிப் புள்ளியாக ஒருங்கிணைத்தது என்பதை ஆய்வு செய்தல்.",
+        "இரட்டைக் கூட்டாட்சி நிதித் தன்னாட்சியைப் பாதுகாப்பதில் CGST-SGST குறுக்கு வரவுத் தடையை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to resolve exam traps regarding Article 246A overriding power, GST Council voting thresholds, and IGST CFI exclusions.",
+        "Determine correct ITC utilization sequences under Rule 88A across complex inter-state and intra-state transactions."
+      ],
+      "ta": [
+        "பிரிவு 246A மேலோங்கும் அதிகாரம், கவுன்சில் வாக்கு வரம்பு மற்றும் IGST தொகுப்பு நிதி விலக்கு குறித்த தேர்வுப் பொறிகளைக் கண்டறிதல்.",
+        "மாநிலங்களுக்கு இடையேயான மற்றும் மாநிலத்திற்குள் பரிவர்த்தனைகளில் விதி 88A-இன் கீழ் சரியான ITC பயன்பாட்டு வரிசையைத் தீர்மானித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Goods and Services Tax (GST) – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_constitutional_articles_246a_269a",
+      "title_en": "Constitutional Bedrock: Article 246A and Article 269A",
+      "title_ta": "அரசியலமைப்பு அடித்தளம்: பிரிவு 246A மற்றும் பிரிவு 269A",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_gst_council_voting_and_composition",
+      "title_en": "GST Council Structure & Weighted Voting Formula (Article 279A)",
+      "title_ta": "ஜிஎஸ்டி கவுன்சில் கட்டமைப்பு & எடைசார் வாக்குமுறை (பிரிவு 279A)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_taxable_event_and_itc",
+      "title_en": "Taxable Event: 'Supply' & Input Tax Credit (ITC) Utilization",
+      "title_ta": "வரி நிகழ்வு: 'விநியோகம்' (Supply) & உள்ளீட்டு வரி வரவு (ITC) பயன்பாடு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_compensation_mechanism",
+      "title_en": "GST Compensation to States Act, 2017",
+      "title_ta": "மாநிலங்களுக்கான ஜிஎஸ்டி இழப்பீட்டுச் சட்டம், 2017",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The structural and operational framework of GST is grounded in three revolutionary constitutional provisions introduced by the 101st Amendment—Article 246A (simultaneous legislative power), Article 269A (inter-state IGST levy and apportionment), and Article 279A (the GST Council with weighted voting)—underpinned by the taxable concept of 'Supply' and the Input Tax Credit (ITC) ledger system.",
+      "ta": "ஜிஎஸ்டியின் கட்டமைப்பு மற்றும் செயல்பாட்டு முறையானது 101-வது திருத்தத்தால் சேர்க்கப்பட்ட மூன்று புரட்சிகர அரசியலமைப்புப் பிரிவுகளின் மீது கட்டமைக்கப்பட்டுள்ளது—பிரிவு 246A (ஒரே நேரத்தில் சட்டம் இயற்றும் இணையான அதிகாரம்), பிரிவு 269A (மாநிலங்களுக்கு இடையேயான IGST விதிப்பு மற்றும் பகிர்வு), மற்றும் பிரிவு 279A (எடைசார் வாக்குமுறையைக் கொண்ட ஜிஎஸ்டி கவுன்சில்)—இவை 'விநியோகம்' (Supply) என்ற வரி நிகழ்வு மற்றும் உள்ளீட்டு வரி வரவு (ITC) முறையால் இயக்கப்படுகின்றன."
+    },
+    "introduction": {
+      "en": "The 101st Constitutional Amendment Act, 2016 reshaped Indian fiscal federalism by abolishing the traditional mutually exclusive tax domains under the Seventh Schedule and enacting Article 246A, which confers 'simultaneous power' on Parliament and State Legislatures to make laws with respect to GST. For inter-state trade, Article 269A empowers Parliament exclusively to levy IGST, with proceeds apportioned between the Union and the States based on GST Council recommendations. The GST Council itself, constituted under Article 279A, institutionalizes collaborative federalism through a weighted voting formula where the Centre holds one-third (33.33%) of the voting power and all States combined hold two-thirds (66.67%), requiring a three-fourths (75%) supermajority to pass any decision. Operationally, the tax pivots on the comprehensive statutory concept of 'Supply' under Section 7 of the CGST Act, regulated by strict Input Tax Credit (ITC) utilization hierarchies and a 5-year revenue compensation mechanism under the GST Compensation Act, 2017.",
+      "ta": "101-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2016 ஏழாவது அட்டவணையின் கீழான தனித்தனி வரி அதிகார முறையை நீக்கி, நாடாளுமன்றத்திற்கும் மாநில சட்டமன்றங்களுக்கும் ஜிஎஸ்டி தொடர்பாகச் சட்டம் இயற்ற 'ஒரே நேரத்தில் இணையான அதிகாரத்தை' (Simultaneous Power) வழங்கும் பிரிவு 246A-ஐ இயற்றியது. மாநிலங்களுக்கு இடையேயான வர்த்தகத்திற்குப் பிரிவு 269A நாடாளுமன்றத்திற்கு பிரத்யேக IGST அதிகாரத்தை வழங்கி, ஜிஎஸ்டி கவுன்சில் பரிந்துரைப்படி அப்பணத்தைப் பிரிக்கிறது. பிரிவு 279A-இன் கீழான ஜிஎஸ்டி கவுன்சில், மத்திய அரசுக்கு மூன்றில் ஒரு பங்கு (33.33%) வாக்குகளும், அனைத்து மாநிலங்களுக்கும் சேர்த்து மூன்றில் இரண்டு பங்கு (66.67%) வாக்குகளும் கொண்ட எடைசார் வாக்குமுறையைக் கொண்டு, முடிவுகளை எடுக்க நான்கில் மூன்று பங்கு (75%) பெரும்பான்மையைக் கட்டாயமாக்குகிறது. செயல்பாட்டு ரீதியாக, CGST சட்டத்தின் பிரிவு 7-இன் கீழான 'விநியோகம்' (Supply), உள்ளீட்டு வரி வரவு (ITC) பயன்பாட்டு அடுக்கு மற்றும் 2017 இழப்பீட்டுச் சட்டம் ஆகியவை ஜிஎஸ்டி-யை வழிநடத்துகின்றன."
+    },
+    "sec_constitutional_articles_246a_269a": [
+      {
+        "title": "Article 246A: Simultaneous Legislative Power",
+        "title_ta": "பிரிவு 246A: ஒரே நேரத்தில் இணையான சட்டமன்ற அதிகாரம்",
+        "points": {
+          "en": [
+            "Non-Obstante Clause: Begins with 'Notwithstanding anything contained in Articles 246 and 254', bypassing the traditional Seventh Schedule exclusivity (Union List vs State List).",
+            "Simultaneous Power: Article 246A(1) confers concurrent and simultaneous power on Parliament and the Legislature of every State to make laws with respect to goods and services tax imposed by the Union or by such State.",
+            "Inter-State Exclusivity: Article 246A(2) confers EXCLUSIVE power on Parliament to make laws with respect to goods and services tax where the supply takes place in the course of inter-State trade or commerce.",
+            "Petroleum Carve-Out: Article 246A(4) mandates that GST on five specified petroleum products (crude, high-speed diesel, petrol, natural gas, and aviation turbine fuel) shall take effect only from a future date recommended by the GST Council."
+          ],
+          "ta": [
+            "தடைநீக்கும் தொடக்கம்: ஏழாவது அட்டவணையின் பிரத்யேக அதிகாரப் பட்டியல்களை (மத்திய பட்டியல் vs மாநிலப் பட்டியல்) தவிர்த்து, 'பிரிவுகள் 246 மற்றும் 254-இல் என்ன கூறப்பட்டிருந்த போதிலும்' என்ற வாசகத்துடன் தொடங்குகிறது.",
+            "இணையான அதிகாரம்: பிரிவு 246A(1) மத்திய அல்லது மாநில அரசுகளால் விதிக்கப்படும் ஜிஎஸ்டி தொடர்பாகச் சட்டம் இயற்ற நாடாளுமன்றத்திற்கும் அனைத்து மாநில சட்டமன்றங்களுக்கும் ஒரே நேரத்தில் இணையான அதிகாரத்தை அளிக்கிறது.",
+            "மாநிலங்களுக்கிடையேயான பிரத்யேக அதிகாரம்: பிரிவு 246A(2) மாநிலங்களுக்கு இடையேயான வர்த்தகத்தில் விநியோகிக்கப்படும் ஜிஎஸ்டி தொடர்பாகச் சட்டம் இயற்ற 'நாடாளுமன்றத்திற்கு மட்டுமே' பிரத்யேக அதிகாரம் அளிக்கிறது.",
+            "பெட்ரோலியப் பொருட்கள் விதிவிலக்கு: ஐந்து குறிப்பிட்ட பெட்ரோலியப் பொருட்கள் (கச்சா எண்ணெய், டீசல், பெட்ரோல், இயற்கை எரிவாயு, விமான எரிபொருள்) மீதான ஜிஎஸ்டி, ஜிஎஸ்டி கவுன்சில் பரிந்துரைக்கும் எதிர்காலத் தேதியிலிருந்தே அமலுக்கு வரும் எனப் பிரிவு 246A(4) கூறுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Article 269A: Inter-State Trade & IGST Apportionment",
+        "title_ta": "பிரிவு 269A: மாநிலங்களுக்கு இடையேயான வர்த்தகம் & IGST பகிர்வு",
+        "points": {
+          "en": [
+            "Levy and Collection: Goods and Services Tax on supplies in the course of inter-State trade or commerce shall be levied and collected by the Government of India.",
+            "Apportionment: The collected IGST shall be apportioned between the Union and the States in the manner provided by Parliament by law on the recommendations of the GST Council.",
+            "Imports Treated as Inter-State: Deems the import of goods or services into the territory of India to be a supply in the course of inter-State trade or commerce, subjecting imports to IGST alongside Basic Customs Duty (BCD).",
+            "Exclusion from Divisible Pool: IGST apportioned to a State does NOT form part of the Consolidated Fund of India and is not subject to Finance Commission devolution under Article 270."
+          ],
+          "ta": [
+            "விதிப்பும் வசூலும்: மாநிலங்களுக்கு இடையேயான வர்த்தக விநியோகங்களின் மீதான ஜிஎஸ்டி (IGST) இந்திய அரசால் மட்டுமே விதிக்கப்பட்டு வசூலிக்கப்படும்.",
+            "பகிர்ந்தளித்தல்: வசூலிக்கப்பட்ட IGST தொகையானது ஜிஎஸ்டி கவுன்சிலின் பரிந்துரையின் பேரில் நாடாளுமன்றச் சட்டத்தின்படி மத்திய மற்றும் மாநில அரசுகளுக்கு இடையே பகிர்ந்தளிக்கப்படும்.",
+            "இறக்குமதிகள் மாநிலங்களுக்கு இடையேயான வர்த்தகமாகக் கருதப்படுதல்: இந்தியாவிற்குள் இறக்குமதி செய்யப்படும் பொருட்கள் அல்லது சேவைகள் மாநிலங்களுக்கு இடையேயான வர்த்தகமாகக் கருதப்பட்டு, அடிப்படை சுங்க வரியுடன் (BCD) IGST வரியும் விதிக்கப்படும்.",
+            "பகிர்வுத் தொகுப்பில் சேராது: மாநிலத்திற்கு ஒதுக்கப்படும் IGST பங்கு இந்தியத் தொகுப்பு நிதியில் சேராது; எனவே பிரிவு 270-இன் கீழான நிதி ஆணைய வரிப் பகிர்வுக்கு உட்படாது."
+          ]
+        }
+      }
+    ],
+    "sec_gst_council_voting_and_composition": [
+      {
+        "title": "Composition of the GST Council",
+        "title_ta": "ஜிஎஸ்டி கவுன்சிலின் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Chairperson: Union Finance Minister (ex-officio).",
+            "Union Member: Union Minister of State in charge of Revenue or Finance.",
+            "State Members: The Minister in charge of Finance or Taxation, or any other Minister nominated by each State Government (total 31 States/UTs with legislatures).",
+            "Vice-Chairperson: One amongst the State Finance Ministers elected by the State members."
+          ],
+          "ta": [
+            "தலைவர்: மத்திய நிதி அமைச்சர் (அலுவல் வழி தலைவர்).",
+            "மத்திய உறுப்பினர்: வருவாய் அல்லது நிதித்துறைக்கான மத்திய இணையமைச்சர்.",
+            "மாநில உறுப்பினர்கள்: ஒவ்வொரு மாநில அரசாலும் நியமிக்கப்படும் நிதி அல்லது வரித்துறை அமைச்சர் அல்லது பிற அமைச்சர் (சட்டமன்றம் உள்ள மொத்தம் 31 மாநிலங்கள்/ஒன்றியப் பிரதேசங்கள்).",
+            "துணைத் தலைவர்: மாநில உறுப்பினர்களால் தங்களுக்குள்ளிருந்து தேர்ந்தெடுக்கப்படும் ஒரு மாநில நிதி அமைச்சர்."
+          ]
+        }
+      },
+      {
+        "title": "Weighted Voting Mechanism (Article 279A(9))",
+        "title_ta": "எடைசார் வாக்கு முறை (பிரிவு 279A(9))",
+        "points": {
+          "en": [
+            "Quorum: One-half (50%) of the total number of members of the GST Council shall constitute the quorum for meetings.",
+            "Weight of Central Vote: The vote of the Central Government shall have a weight of ONE-THIRD (33.33%) of the total votes cast.",
+            "Weight of State Votes: The votes of all the State Governments taken together shall have a weight of TWO-THIRDS (66.67%) of the total votes cast.",
+            "Decision Threshold: Every decision shall be taken by a majority of NOT LESS THAN THREE-FOURTHS (75%) of the weighted votes of the members present and voting.",
+            "Mutual Veto: Neither the Centre (with 33.33%) can pass a decision without States, nor can all States combined (with 66.67%) pass a decision without the Centre (since 75% is required)."
+          ],
+          "ta": [
+            "குறைந்தபட்ச வருகை (Quorum): கூட்டத்தை நடத்த மொத்த உறுப்பினர்களில் சரிபாதி (50%) பேர் வருகை தந்திருக்க வேண்டும்.",
+            "மத்திய அரசின் வாக்கு எடை: பதிவான மொத்த வாக்குகளில் மத்திய அரசின் வாக்குக்கு மூன்றில் ஒரு பங்கு (33.33%) எடை உண்டு.",
+            "மாநிலங்களின் வாக்கு எடை: அனைத்து மாநில அரசுகளின் வாக்குகளுக்கும் சேர்த்து பதிவான வாக்குகளில் மூன்றில் இரண்டு பங்கு (66.67%) எடை உண்டு.",
+            "முடிவெடுக்கும் வரம்பு: வருகை தந்து வாக்களித்த உறுப்பினர்களின் எடைசார் வாக்குகளில் நான்கில் மூன்று பங்குக்குக் (75%) குறையாத பெரும்பான்மையால் மட்டுமே முடிவுகள் எடுக்கப்படும்.",
+            "பரஸ்பர வீட்டோ அதிகாரம்: மாநிலங்களின் ஆதரவின்றி மத்திய அரசால் (33.33%) தன்னிச்சையாக முடிவெடுக்க முடியாது; மத்திய அரசின் ஆதரவின்றி அனைத்து மாநிலங்களும் சேர்ந்தாலும் (66.67%) முடிவெடுக்க முடியாது (75% தேவை என்பதால்)."
+          ]
+        }
+      }
+    ],
+    "sec_taxable_event_and_itc": [
+      {
+        "title": "The Concept of 'Supply' (Section 7, CGST Act)",
+        "title_ta": "விநியோகம் என்ற கருத்தாக்கம் (பிரிவு 7, CGST சட்டம்)",
+        "points": {
+          "en": [
+            "Replaced traditional fragmented taxable events (manufacture, sale, service provision) with a single comprehensive event: 'Supply'.",
+            "Covers all forms of supply of goods or services such as sale, transfer, barter, exchange, license, rental, lease, or disposal made for a consideration in the course of business.",
+            "Schedule I: Deemed supplies without consideration (e.g., transfers between distinct persons or related entities).",
+            "Schedule II: Classifies activities as supply of goods versus supply of services (e.g., restaurant service is deemed a supply of services).",
+            "Schedule III: Non-supplies (Negative List) - neither supply of goods nor services (e.g., services by an employee to an employer, services of funeral, sale of land)."
+          ],
+          "ta": [
+            "உற்பத்தி, விற்பனை, சேவை போன்ற பழைய சிதறுண்ட நிகழ்வுகளுக்குப் பதிலாக 'விநியோகம்' (Supply) என்ற ஒற்றை விரிவான நிகழ்வு மாற்றாக வந்தது.",
+            "வணிகத்தின் போது பணப் பரிமாற்றத்திற்காக செய்யப்படும் விற்பனை, பரிமாற்றம், பண்டமாற்று, குத்தகை, வாடகை அல்லது அகற்றுதல் ஆகிய அனைத்து வடிவங்களையும் உள்ளடக்கியது.",
+            "அட்டவணை I: பணப் பரிமாற்றம் இன்றி விநியோகமாகக் கருதப்படுபவை (எ.கா: தொடர்புடைய நிறுவனங்களுக்கிடையேயான பரிமாற்றம்).",
+            "அட்டவணை II: ஒரு செயல்பாட்டை சரக்கு விநியோகமா அல்லது சேவை விநியோகமா என வகைப்படுத்துகிறது (எ.கா: உணவக சேவை என்பது சேவை விநியோகமாகக் கருதப்படுகிறது).",
+            "அட்டவணை III: எதிர்மறைப் பட்டியல் (Negative List) - சரக்கும் அல்ல சேவையும் அல்லாதவை (எ.கா: ஊழியர் முதலாளிக்குச் செய்யும் பணி, ஈமச்சடங்கு சேவைகள், நில விற்பனை)."
+          ]
+        }
+      },
+      {
+        "title": "Input Tax Credit (ITC) Utilization Order (Rule 88A)",
+        "title_ta": "உள்ளீட்டு வரி வரவு (ITC) பயன்பாட்டு வரிசை (விதி 88A)",
+        "points": {
+          "en": [
+            "Mandatory First Step: IGST credit must be completely exhausted before utilizing CGST or SGST credit.",
+            "IGST Credit Utilization: Can be used to offset IGST output liability first, and the balance can be utilized towards CGST and SGST liability in any order or proportion.",
+            "CGST Credit Utilization: Can be utilized towards CGST first, then IGST. CANNOT be used to pay SGST liability.",
+            "SGST Credit Utilization: Can be utilized towards SGST first, then IGST. CANNOT be used to pay CGST liability.",
+            "Cross-Credit Bar: Direct cross-utilization between CGST and SGST is strictly prohibited to protect federal revenue autonomy."
+          ],
+          "ta": [
+            "கட்டாய முதல் படி: CGST அல்லது SGST வரவைப் பயன்படுத்துவதற்கு முன்பு IGST வரவு முழுமையாகப் பயன்படுத்தித் தீர்க்கப்பட வேண்டும்.",
+            "IGST வரவு பயன்பாடு: முதலில் IGST வெளியீட்டு வரிக்கு செலுத்தலாம்; எஞ்சிய தொகையை CGST மற்றும் SGST வரிப் பொறுப்புகளுக்கு விருப்பமான விகிதத்தில் பயன்படுத்தலாம்.",
+            "CGST வரவு பயன்பாடு: முதலில் CGST-க்கு, பின்னர் IGST-க்கு பயன்படுத்தலாம். ஒருபோதும் SGST வரிக்கு செலுத்தப் பயன்படுத்த முடியாது.",
+            "SGST வரவு பயன்பாடு: முதலில் SGST-க்கு, பின்னர் IGST-க்கு பயன்படுத்தலாம். ஒருபோதும் CGST வரிக்கு செலுத்தப் பயன்படுத்த முடியாது.",
+            "குறுக்கு வரவு தடை: கூட்டாட்சி நிதித் தன்னாட்சியைப் பாதுகாக்க CGST மற்றும் SGST ஆகியவற்றுக்கு இடையே நேரடி குறுக்கு பயன்பாட்டிற்கு கடுமையான தடையுள்ளது."
+          ]
+        }
+      }
+    ],
+    "sec_compensation_mechanism": [
+      {
+        "title": "5-Year Revenue Protection Guarantee",
+        "title_ta": "5 ஆண்டு கால வருவாய் பாதுகாப்பு உத்தரவாதம்",
+        "points": {
+          "en": [
+            "Parliament enacted the Goods and Services Tax (Compensation to States) Act, 2017 to guarantee full revenue protection to States for 5 years (from July 1, 2017 to June 30, 2022).",
+            "Base Year & Growth Rate: Fiscal year 2015-16 was chosen as the base year, with a projected nominal revenue growth rate of 14% compounded per annum.",
+            "Shortfall Compensation: If a State's actual GST revenue grew by less than 14%, the shortfall was compensated 100% bimonthly by the Central Government.",
+            "Funding Source: Financed through a dedicated GST Compensation Cess levied on luxury items (luxury cars) and demerit/sin goods (tobacco, pan masala, aerated drinks)."
+          ],
+          "ta": [
+            "நாடாளுமன்றம் 2017-ஆம் ஆண்டின் ஜிஎஸ்டி இழப்பீட்டுச் சட்டத்தை இயற்றி, 5 ஆண்டுகளுக்கு (ஜூலை 1, 2017 முதல் ஜூன் 30, 2022 வரை) மாநிலங்களுக்கு முழு வருவாய் பாதுகாப்பை உறுதி செய்தது.",
+            "அடிப்படை ஆண்டு & வளர்ச்சி விகிதம்: 2015-16 அடிப்படை ஆண்டாகத் தேர்ந்தெடுக்கப்பட்டு, ஆண்டுக்கு 14% கூட்டு வளர்ச்சி விகிதம் நிர்ணயிக்கப்பட்டது.",
+            "பற்றாக்குறை இழப்பீடு: ஒரு மாநிலத்தின் ஜிஎஸ்டி வருவாய் 14%-க்கும் குறைவாக வளர்ந்தால், அப்பற்றாக்குறையை இரு மாதங்களுக்கு ஒருமுறை மத்திய அரசு 100% ஈடுசெய்தது.",
+            "நிதி ஆதாரம்: ஆடம்பரப் பொருட்கள் (விலை உயர்ந்த கார்கள்) மற்றும் தீமை பயக்கும் பொருட்கள் (புகையிலை, பான் மசாலா, குளிர்பானங்கள்) மீது விதிக்கப்படும் 'ஜிஎஸ்டி இழப்பீட்டு செஸ்' மூலம் இந்நிதி திரட்டப்பட்டது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_constitutional_articles_matrix_p2",
+        "title_en": "Table 1: Constitutional Trinity of GST: Article 246A vs 269A vs 279A",
+        "title_ta": "அட்டவணை 1: ஜிஎஸ்டியின் முப்பெரும் அரசியலமைப்புப் பிரிவுகள் ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Article 246A (Simultaneous Power)",
+          "Article 269A (Inter-State IGST)",
+          "Article 279A (GST Council)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பிரிவு 246A (இணையான அதிகாரம்)",
+          "பிரிவு 269A (மாநிலங்களுக்கிடையேயான IGST)",
+          "பிரிவு 279A (ஜிஎஸ்டி கவுன்சில்)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Core",
+            "Legislative competence to enact GST laws",
+            "Levy, collection, and apportionment of IGST",
+            "Federal apex decision-making body"
+          ],
+          [
+            "Power Distribution",
+            "Simultaneous (Parliament + State Assemblies)",
+            "Exclusive to Parliament (apportioned to States)",
+            "Joint Federal Forum (Centre + 31 States/UTs)"
+          ],
+          [
+            "Cross-Jurisdiction Clause",
+            "Bypasses Art 246 & 254 non-obstante",
+            "Imports deemed inter-state commerce",
+            "Weighted voting formula (3/4th majority)"
+          ],
+          [
+            "Special Exclusions",
+            "Petroleum 5 items deferred to Council date",
+            "State apportioned share kept outside CFI",
+            "Recommendations on rates, exemptions, thresholds"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு மையம்",
+            "ஜிஎஸ்டி சட்டங்களை இயற்றுவதற்கான சட்டமன்ற அதிகாரம்",
+            "IGST வரியை விதித்தல், வசூலித்தல் மற்றும் பகிர்ந்தளித்தல்",
+            "கூட்டாட்சி உச்ச முடிவெடுக்கும் அமைப்பு"
+          ],
+          [
+            "அதிகாரப் பகிர்வு",
+            "இணையானது (நாடாளுமன்றம் + மாநில சட்டமன்றங்கள்)",
+            "நாடாளுமன்றத்திற்கு மட்டுமே (மாநிலங்களுக்குப் பகிரப்படும்)",
+            "கூட்டுக் கூட்டாட்சி அரங்கம் (மத்திய அரசு + 31 மாநிலங்கள்/UTs)"
+          ],
+          [
+            "சிறப்பு சட்ட விதி",
+            "பிரிவுகள் 246 & 254-ஐ மீறி நிற்கும் தடைநீக்கு வாசகம்",
+            "இறக்குமதிகள் மாநிலங்களுக்கிடையேயான வர்த்தகமாக கருதப்படும்",
+            "எடைசார் வாக்குமுறை (3/4 பெரும்பான்மை)"
+          ],
+          [
+            "குறிப்பிட்ட விலக்குகள்",
+            "5 பெட்ரோலியப் பொருட்கள் கவுன்சில் தேதிக்கு ஒத்திவைப்பு",
+            "மாநிலங்களுக்குப் பகிரப்படும் IGST இந்தியத் தொகுப்பு நிதியில் சேராது",
+            "வரி விகிதங்கள், விலக்குகள், வரம்புகள் மீதான பரிந்துரைகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_itc_cross_utilization_matrix_p2",
+        "title_en": "Table 2: Input Tax Credit (ITC) Cross-Utilization Matrix",
+        "title_ta": "அட்டவணை 2: உள்ளீட்டு வரி வரவு (ITC) குறுக்குப் பயன்பாட்டு வரைபடம்",
+        "headers_en": [
+          "ITC Credit Available",
+          "May Be Used for IGST Output?",
+          "May Be Used for CGST Output?",
+          "May Be Used for SGST Output?"
+        ],
+        "headers_ta": [
+          "உள்ளீட்டு வரவு (ITC)",
+          "IGST செலுத்துவதற்குப் பயன்படுமா?",
+          "CGST செலுத்துவதற்குப் பயன்படுமா?",
+          "SGST செலுத்துவதற்குப் பயன்படுமா?"
+        ],
+        "rows_en": [
+          [
+            "IGST Credit",
+            "YES (Priority 1)",
+            "YES (Priority 2)",
+            "YES (Priority 3)"
+          ],
+          [
+            "CGST Credit",
+            "YES (Priority 2)",
+            "YES (Priority 1)",
+            "NO (Strictly Prohibited)"
+          ],
+          [
+            "SGST / UTGST Credit",
+            "YES (Priority 2)",
+            "NO (Strictly Prohibited)",
+            "YES (Priority 1)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "IGST வரவு",
+            "ஆம் (முன்னுரிமை 1)",
+            "ஆம் (முன்னுரிமை 2)",
+            "ஆம் (முன்னுரிமை 3)"
+          ],
+          [
+            "CGST வரவு",
+            "ஆம் (முன்னுரிமை 2)",
+            "ஆம் (முன்னுரிமை 1)",
+            "இல்லை (கடுமையான தடை)"
+          ],
+          [
+            "SGST / UTGST வரவு",
+            "ஆம் (முன்னுரிமை 2)",
+            "இல்லை (கடுமையான தடை)",
+            "ஆம் (முன்னுரிமை 1)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_registration_thresholds_p2",
+        "title_en": "Table 3: GST Statutory Registration Threshold Limits",
+        "title_ta": "அட்டவணை 3: ஜிஎஸ்டி சட்டப்பூர்வ பதிவு வரம்புகள்",
+        "headers_en": [
+          "Category / Jurisdiction",
+          "Goods Only Threshold",
+          "Services / Mixed Threshold",
+          "Composition Scheme Turnover Limit"
+        ],
+        "headers_ta": [
+          "வகை / அதிகார எல்லை",
+          "சரக்குகள் மட்டுமே விற்றுமுதல் வரம்பு",
+          "சேவைகள் / கலப்பு வரம்பு",
+          "கலவை வரித் திட்ட (Composition) வரம்பு"
+        ],
+        "rows_en": [
+          [
+            "Normal Category States",
+            "₹40 Lakh annual turnover",
+            "₹20 Lakh annual turnover",
+            "Up to ₹1.5 Crore annual turnover"
+          ],
+          [
+            "Special Category States (NE & Hills)",
+            "₹20 Lakh / ₹10 Lakh (selected states)",
+            "₹10 Lakh annual turnover",
+            "Up to ₹75 Lakh annual turnover"
+          ],
+          [
+            "Inter-State Supplier",
+            "Mandatory Registration (Threshold ₹0)",
+            "Mandatory Registration (Threshold ₹0)",
+            "Ineligible for Composition Scheme"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பொதுப் பிரிவு மாநிலங்கள்",
+            "ஆண்டு விற்றுமுதல் ₹40 லட்சம்",
+            "ஆண்டு விற்றுமுதல் ₹20 லட்சம்",
+            "ஆண்டு விற்றுமுதல் ₹1.5 கோடி வரை"
+          ],
+          [
+            "சிறப்புப் பிரிவு மாநிலங்கள் (வடகிழக்கு)",
+            "₹20 லட்சம் / ₹10 லட்சம் (குறிப்பிட்ட மாநிலங்கள்)",
+            "ஆண்டு விற்றுமுதல் ₹10 லட்சம்",
+            "ஆண்டு விற்றுமுதல் ₹75 லட்சம் வரை"
+          ],
+          [
+            "மாநிலங்களுக்கு இடையே விநியோகிப்பாளர்",
+            "கட்டாயப் பதிவு (வரம்பு ₹0)",
+            "கட்டாயப் பதிவு (வரம்பு ₹0)",
+            "கலவை வரித் திட்டத்திற்குத் தகுதியற்றவர்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_schedules_under_cgst_p2",
+        "title_en": "Table 4: Statutory Schedules Under CGST Act, 2017",
+        "title_ta": "அட்டவணை 4: CGST சட்டம் 2017-இன் கீழான சட்ட அட்டவணைகள்",
+        "headers_en": [
+          "Schedule Number",
+          "Statutory Subject / Purpose",
+          "Practical Illustration / Example"
+        ],
+        "headers_ta": [
+          "அட்டவணை எண்",
+          "சட்டப்பூர்வ பொருள் / நோக்கம்",
+          "நடைமுறை விளக்கம் / எடுத்துக்காட்டு"
+        ],
+        "rows_en": [
+          [
+            "Schedule I",
+            "Activities treated as Supply EVEN IF made without consideration",
+            "Permanent transfer of business assets on which ITC was claimed"
+          ],
+          [
+            "Schedule II",
+            "Classification standard: Supply of Goods versus Supply of Services",
+            "Restaurant dining and works contract deemed supply of services"
+          ],
+          [
+            "Schedule III",
+            "Negative List: Activities neither supply of goods nor services",
+            "Employee services to employer; actionable claims other than lottery/gambling"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அட்டவணை I",
+            "பணப் பரிமாற்றம் இல்லாவிட்டாலும் விநியோகமாகக் கருதப்படும் நடவடிக்கைகள்",
+            "ITC பெறப்பட்ட வணிகச் சொத்துக்களை நிரந்தரமாக மாற்றுதல்"
+          ],
+          [
+            "அட்டவணை II",
+            "வகைப்பாடு அளவுகோல்: சரக்கு விநியோகமா அல்லது சேவை விநியோகமா",
+            "உணவக உணவு வழங்குதல் மற்றும் பணிக் ஒப்பந்தங்கள் சேவை விநியோகமாகும்"
+          ],
+          [
+            "அட்டவணை III",
+            "எதிர்மறைப் பட்டியல்: சரக்கும் அல்ல சேவையும் அல்லாத நடவடிக்கைகள்",
+            "முதலாளிக்கு ஊழியர் செய்யும் பணி; லாட்டரி/சூதாட்டம் தவிர்த்த சட்டக் கோரிக்கைகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "GST Part 2: Constitutional Architecture & Operations",
+        "short_label": "GST Architecture",
+        "children": [
+          {
+            "title": "Constitutional Articles",
+            "short_label": "Articles",
+            "children": [
+              {
+                "title": "Article 246A: Simultaneous Legislative Power",
+                "short_label": "Art 246A"
+              },
+              {
+                "title": "Article 269A: IGST Inter-State & Import",
+                "short_label": "Art 269A"
+              },
+              {
+                "title": "Article 279A: GST Council Creation",
+                "short_label": "Art 279A"
+              }
+            ]
+          },
+          {
+            "title": "Council Voting Formula",
+            "short_label": "Voting Formula",
+            "children": [
+              {
+                "title": "Centre Weight: 1/3rd (33.33%)",
+                "short_label": "Centre 1/3rd"
+              },
+              {
+                "title": "States Weight: 2/3rd (66.67%)",
+                "short_label": "States 2/3rd"
+              },
+              {
+                "title": "Supermajority Threshold: 3/4th (75%)",
+                "short_label": "Threshold 75%"
+              }
+            ]
+          },
+          {
+            "title": "Supply & ITC Rules",
+            "short_label": "Supply & ITC",
+            "children": [
+              {
+                "title": "Section 7: Supply Taxable Event",
+                "short_label": "Sec 7 Supply"
+              },
+              {
+                "title": "Rule 88A: IGST Exhaustion First",
+                "short_label": "Rule 88A"
+              },
+              {
+                "title": "Zero Cross-Credit: CGST <-> SGST Barred",
+                "short_label": "No Cross-Credit"
+              }
+            ]
+          },
+          {
+            "title": "State Compensation",
+            "short_label": "Compensation",
+            "children": [
+              {
+                "title": "5-Year Guarantee (2017-2022)",
+                "short_label": "5-Year Guarantee"
+              },
+              {
+                "title": "14% Compounded Growth Benchmark",
+                "short_label": "14% Benchmark"
+              },
+              {
+                "title": "Funded via Compensation Cess",
+                "short_label": "Compensation Cess"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Article 246A Overriding Power Trap (பிரிவு 246A மேலோங்கும் அதிகாரம் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Candidates assume that under Article 246A, Central GST law automatically overrides State GST law in case of conflict as in Concurrent List (Article 254).",
+            "CORRECT FACT: Article 246A confers SIMULTANEOUS power, not concurrent power under List III! The doctrine of repugnancy under Article 254 does NOT apply to Article 246A(1). Central and State legislatures have co-equal simultaneous powers within their intra-state jurisdiction.",
+            "WHY CANDIDATES FAIL: Candidates confuse 'simultaneous power' under Art 246A with traditional 'concurrent list' power under Art 246/254."
+          ],
+          "ta": [
+            "பொறி: பொதுப்பட்டியலைப் போல (பிரிவு 254) பிரிவு 246A-இன் கீழும் மத்திய சட்டம் மாநில சட்டத்தை தானாகவே முறியடிக்கும் என நினைப்பது.",
+            "சரியான உண்மை: பிரிவு 246A பொதுப்பட்டியலில் இல்லை; அது நாடாளுமன்றத்திற்கும் மாநில சட்டமன்றங்களுக்கும் 'ஒரே நேரத்தில் இணையான அதிகாரத்தை' (Simultaneous Power) அளிக்கிறது! பிரிவு 254-இன் கீழான முரண்பாட்டு விதி பிரிவு 246A(1)-க்கு பொருந்தாது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'இணையான அதிகாரம்' என்பதை ஏழாவது அட்டவணையின் பொதுப்பட்டியல் அதிகாரத்துடன் தவறாகப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "GST Council Voting Weights Trap (ஜிஎஸ்டி கவுன்சில் வாக்கு எடை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Centre and States each have 50% voting weight in the GST Council.",
+            "CORRECT FACT: Central Government holds ONE-THIRD (33.33%) of the voting weight; all State Governments combined hold TWO-THIRDS (66.67%) of the voting weight. Decisions require a 75% majority.",
+            "WHY CANDIDATES FAIL: Candidates assume equal 50:50 partnership in cooperative federalism."
+          ],
+          "ta": [
+            "பொறி: ஜிஎஸ்டி கவுன்சிலில் மத்திய அரசுக்கும் மாநிலங்களுக்கும் தலா 50% வாக்கு எடை உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: மத்திய அரசுக்கு மூன்றில் ஒரு பங்கு (1/3rd அல்லது 33.33%) வாக்குகளும், அனைத்து மாநிலங்களுக்கும் சேர்த்து மூன்றில் இரண்டு பங்கு (2/3rd அல்லது 66.67%) வாக்குகளும் உள்ளன. முடிவெடுக்க 75% வாக்குகள் தேவை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கூட்டாட்சியில் மத்திய-மாநில அரசுகளுக்கு 50:50 சமபங்கு இருக்கும் என தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Decision Supermajority Threshold Trap (முடிவெடுக்கும் பெரும்பான்மை வரம்பு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing decisions in the GST Council are taken by a simple two-thirds (66.67%) majority.",
+            "CORRECT FACT: Under Article 279A(9), decisions require a supermajority of NOT LESS THAN THREE-FOURTHS (75%) of the weighted votes of members present and voting.",
+            "WHY CANDIDATES FAIL: Because States hold 66.67% of votes, candidates frequently confuse the State voting weight (2/3rd) with the decision threshold (3/4th)."
+          ],
+          "ta": [
+            "பொறி: ஜிஎஸ்டி கவுன்சிலில் முடிவுகள் மூன்றில் இரண்டு பங்கு (66.67%) பெரும்பான்மையால் எடுக்கப்படுகின்றன என நினைப்பது.",
+            "சரியான உண்மை: பிரிவு 279A(9)-இன் படி, முடிவுகள் நான்கில் மூன்று பங்குக்குக் (3/4th அல்லது 75%) குறையாத பெரும்பான்மையால் மட்டுமே எடுக்கப்பட முடியும்!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மாநிலங்களின் வாக்கு எடையையும் (2/3), முடிவெடுப்பதற்கான வரம்பையும் (3/4) ஒன்றெனக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "CGST and SGST Cross-Utilization Trap (CGST மற்றும் SGST குறுக்குப் பயன்பாடு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that CGST credit can be used to pay SGST output liability.",
+            "CORRECT FACT: CGST credit can NEVER be used to pay SGST liability, and SGST credit can NEVER be used to pay CGST liability. Direct cross-credit between CGST and SGST is completely prohibited.",
+            "WHY CANDIDATES FAIL: Since both taxes are paid on the same transaction, candidates assume their credits are interchangeable."
+          ],
+          "ta": [
+            "பொறி: CGST உள்ளீட்டு வரவைக் கொண்டு SGST வரிப் பொறுப்பைச் செலுத்த முடியும் என நினைப்பது.",
+            "சரியான உண்மை: CGST வரவைக் கொண்டு ஒருபோதும் SGST வரியைச் செலுத்த முடியாது; அதேபோல SGST வரவைக் கொண்டு ஒருபோதும் CGST வரியைச் செலுத்த முடியாது! இவை இரண்டிற்கும் இடையே குறுக்குப் பயன்பாட்டிற்கு முழுத் தடையுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டு வரிகளும் ஒரே பரிவர்த்தனையில் விதிக்கப்படுவதால் அவற்றின் வரவுகளையும் மாற்றிப் பயன்படுத்தலாம் எனத் தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Compensation Growth Rate Benchmark Trap (இழப்பீட்டு வளர்ச்சி விகித அளவு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that GST compensation guaranteed a 10% or 12% annual revenue growth to States.",
+            "CORRECT FACT: The GST (Compensation to States) Act, 2017 guaranteed an annual compounded revenue growth rate of exactly 14% based on 2015-16 revenue.",
+            "WHY CANDIDATES FAIL: Many financial targets use 10% or 12%, obscuring the statutory 14% figure."
+          ],
+          "ta": [
+            "பொறி: ஜிஎஸ்டி இழப்பீட்டுச் சட்டம் மாநிலங்களுக்கு 10% அல்லது 12% வருவாய் வளர்ச்சியை உத்தரவாதம் செய்தது என நினைப்பது.",
+            "சரியான உண்மை: 2017-ஆம் ஆண்டின் ஜிஎஸ்டி இழப்பீட்டுச் சட்டம் 2015-16 அடிப்படை ஆண்டிலிருந்து ஆண்டுக்குச் சரியாக 14% கூட்டு வருவாய் வளர்ச்சியை உத்தரவாதம் செய்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொதுவாக நிதித் திட்டங்களில் 10% அல்லது 12% குறிப்பிடப்படுவதால், சட்டப்பூர்வமான 14% என்பதை மறந்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "IGST in Consolidated Fund of India Trap (IGST இந்தியத் தொகுப்பு நிதியில் சேருதல் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that the entire IGST collected forms part of the Consolidated Fund of India and is shared via the Finance Commission divisible pool.",
+            "CORRECT FACT: Under Article 269A(1) and (2), the portion of IGST apportioned to a State does NOT form part of the Consolidated Fund of India and is NOT subject to Finance Commission tax devolution under Article 270.",
+            "WHY CANDIDATES FAIL: Candidates assume that because the Union collects IGST, it automatically enters the divisible pool."
+          ],
+          "ta": [
+            "பொறி: வசூலிக்கப்படும் மொத்த IGST தொகையும் இந்தியத் தொகுப்பு நிதியில் சேர்ந்து, நிதி ஆணையத்தின் மூலம் மாநிலங்களுக்குப் பகிரப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: அரசியலமைப்பு பிரிவு 269A-இன் கீழ், மாநிலத்திற்கு ஒதுக்கப்படும் IGST பங்கு இந்தியத் தொகுப்பு நிதியில் சேராது; அது பிரிவு 270-இன் கீழான நிதி ஆணைய வரிப் பகிர்வுக்கும் உட்படாது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய அரசு வசூலிப்பதால் அனைத்துப் பணமும் இந்தியத் தொகுப்பு நிதிக்குள் செல்லும் என தவறாக அனுமானிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Article 246A confers simultaneous power on Parliament and State Legislatures to legislate on GST.",
+        "Parliament has exclusive power under Article 246A(2) to make GST laws on inter-state supply.",
+        "Article 269A provides that IGST is levied and collected by the Government of India.",
+        "Import of goods and services is deemed inter-state trade under Article 269A and subject to IGST.",
+        "Article 279A establishes the GST Council, chaired by the Union Finance Minister.",
+        "In the GST Council, the Central Government holds one-third (33.33%) of the total voting weight.",
+        "All State Governments combined hold two-thirds (66.67%) of the total voting weight in the GST Council.",
+        "Decisions in the GST Council require a three-fourths (75%) supermajority of weighted votes.",
+        "Quorum for a GST Council meeting is 50% of the total number of members.",
+        "Section 7 of the CGST Act defines 'Supply' as the single comprehensive taxable event.",
+        "Under Rule 88A, IGST credit must be completely exhausted before utilizing CGST or SGST credits.",
+        "The GST (Compensation to States) Act, 2017 guaranteed a 14% annual revenue growth rate for 5 years."
+      ],
+      "ta": [
+        "அரசியலமைப்பு பிரிவு 246A ஜிஎஸ்டி சட்டம் இயற்ற நாடாளுமன்றத்திற்கும் மாநில சட்டமன்றங்களுக்கும் ஒரே நேரத்தில் இணையான அதிகாரத்தை அளிக்கிறது.",
+        "மாநிலங்களுக்கு இடையேயான விநியோகத்தில் சட்டம் இயற்ற பிரிவு 246A(2)-இன் கீழ் நாடாளுமன்றத்திற்கு மட்டுமே பிரத்யேக அதிகாரம் உண்டு.",
+        "பிரிவு 269A-இன் படி IGST வரியானது இந்திய அரசால் மட்டுமே விதிக்கப்பட்டு வசூலிக்கப்படுகிறது.",
+        "இறக்குமதிகள் மாநிலங்களுக்கு இடையேயான வர்த்தகமாகக் கருதப்பட்டு பிரிவு 269A-இன் கீழ் IGST விதிக்கப்படுகிறது.",
+        "பிரிவு 279A மத்திய நிதி அமைச்சரைத் தலைவராகக் கொண்ட ஜிஎஸ்டி கவுன்சிலை நிறுவுகிறது.",
+        "ஜிஎஸ்டி கவுன்சிலில் மத்திய அரசுக்கு மூன்றில் ஒரு பங்கு (33.33%) வாக்கு எடை உள்ளது.",
+        "ஜிஎஸ்டி கவுன்சிலில் அனைத்து மாநிலங்களுக்கும் சேர்த்து மூன்றில் இரண்டு பங்கு (66.67%) வாக்கு எடை உள்ளது.",
+        "ஜிஎஸ்டி கவுன்சில் முடிவுகளுக்கு நான்கில் மூன்று பங்கு (75%) பெரும்பான்மை வாக்குகள் கட்டாயமாகும்.",
+        "ஜிஎஸ்டி கவுன்சில் கூட்டத்திற்கான குறைந்தபட்ச வருகை வரம்பு (Quorum) 50% உறுப்பினர்கள் ஆகும்.",
+        "CGST சட்டத்தின் பிரிவு 7 'விநியோகம்' (Supply) என்பதை ஒற்றை வரி நிகழ்வாக வரையறுக்கிறது.",
+        "விதி 88A-இன் கீழ், CGST அல்லது SGST வரவைப் பயன்படுத்துவதற்கு முன்பு IGST வரவு முழுமையாகத் தீர்க்கப்பட வேண்டும்.",
+        "2017-ஆம் ஆண்டின் ஜிஎஸ்டி இழப்பீட்டுச் சட்டம் 5 ஆண்டுகளுக்கு 14% ஆண்டு வருவாய் வளர்ச்சியை உத்தரவாதம் செய்தது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Article 246A: Simultaneous legislative power (overrides Art 246/254 exclusivity).",
+        "Article 269A: Central levy and collection of IGST on inter-state trade & imports.",
+        "Article 279A: GST Council composition and weighted decision-making.",
+        "Central Vote Weight: 1/3rd (33.33%) of total votes cast.",
+        "States Vote Weight: 2/3rd (66.67%) of total votes cast.",
+        "Decision Majority: 3/4th (75%) of weighted votes of members present and voting.",
+        "Taxable Event: 'Supply' under Section 7 of CGST Act, 2017.",
+        "ITC Rule 88A: IGST credit must be completely exhausted first.",
+        "Cross-Credit Rule: CGST and SGST can NEVER be cross-utilized.",
+        "Compensation Guarantee: 14% annual revenue growth over 2015-16 base for 5 years."
+      ],
+      "ta": [
+        "பிரிவு 246A: ஒரே நேரத்தில் இணையான சட்டமன்ற அதிகாரம் (பிரிவுகள் 246/254-ஐ மீறியது).",
+        "பிரிவு 269A: மாநிலங்களுக்கிடையேயான வர்த்தகம் மற்றும் இறக்குமதிகள் மீது மத்திய அரசு IGST விதித்தல்.",
+        "பிரிவு 279A: ஜிஎஸ்டி கவுன்சில் அமைப்பு மற்றும் எடைசார் முடிவெடுக்கும் முறை.",
+        "மத்திய அரசின் வாக்கு எடை: பதிவான வாக்குகளில் மூன்றில் ஒரு பங்கு (33.33%).",
+        "மாநிலங்களின் வாக்கு எடை: பதிவான வாக்குகளில் மூன்றில் இரண்டு பங்கு (66.67%).",
+        "முடிவெடுக்கும் பெரும்பான்மை: வருகை தந்து வாக்களித்தவர்களில் நான்கில் மூன்று பங்கு (75%).",
+        "வரி நிகழ்வு: CGST சட்டம் பிரிவு 7-இன் கீழான 'விநியோகம்' (Supply).",
+        "ITC விதி 88A: IGST வரவு முதலில் முழுமையாகப் பயன்படுத்தப்பட வேண்டும்.",
+        "குறுக்கு வரவு விதி: CGST மற்றும் SGST ஆகியவற்றை ஒருபோதும் மாற்றிப் பயன்படுத்த முடியாது.",
+        "இழப்பீட்டு உத்தரவாதம்: 2015-16 அடிப்படையிலிருந்து 5 ஆண்டுகளுக்கு 14% ஆண்டு வருவாய் வளர்ச்சி."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_gst_201",
+        "front_en": "Which constitutional Article confers simultaneous legislative power on Parliament and States for GST?",
+        "front_ta": "ஜிஎஸ்டி தொடர்பாக சட்டம் இயற்ற நாடாளுமன்றத்திற்கும் மாநிலங்களுக்கும் ஒரே நேரத்தில் அதிகாரம் அளிக்கும் அரசியலமைப்புப் பிரிவு எது?",
+        "back_en": "Article 246A of the Constitution.",
+        "back_ta": "அரசியலமைப்பு பிரிவு 246A."
+      },
+      {
+        "id": "rc_gst_202",
+        "front_en": "Who has exclusive power to make laws with respect to GST on inter-state trade under Art 246A(2)?",
+        "front_ta": "பிரிவு 246A(2)-இன் கீழ் மாநிலங்களுக்கு இடையேயான வர்த்தகத்தில் ஜிஎஸ்டி சட்டம் இயற்ற யாருக்கு பிரத்யேக அதிகாரம் உண்டு?",
+        "back_en": "Parliament of India exclusively.",
+        "back_ta": "இந்திய நாடாளுமன்றத்திற்கு மட்டுமே."
+      },
+      {
+        "id": "rc_gst_203",
+        "front_en": "Under which Article are imports of goods and services subjected to Integrated GST (IGST)?",
+        "front_ta": "சரக்கு மற்றும் சேவைகள் இறக்குமதி மீது எந்தப் பிரிவின் கீழ் ஒருங்கிணைந்த ஜிஎஸ்டி (IGST) விதிக்கப்படுகிறது?",
+        "back_en": "Article 269A(1) of the Constitution (imports deemed inter-state commerce).",
+        "back_ta": "அரசியலமைப்பு பிரிவு 269A(1) (இறக்குமதிகள் மாநிலங்களுக்கிடையேயான வர்த்தகமாகக் கருதப்படுகின்றன)."
+      },
+      {
+        "id": "rc_gst_204",
+        "front_en": "What is the voting weight of the Central Government in the GST Council?",
+        "front_ta": "ஜிஎஸ்டி கவுன்சிலில் மத்திய அரசின் வாக்கு எடை என்ன?",
+        "back_en": "One-third (33.33%) of the total votes cast.",
+        "back_ta": "பதிவான மொத்த வாக்குகளில் மூன்றில் ஒரு பங்கு (33.33%)."
+      },
+      {
+        "id": "rc_gst_205",
+        "front_en": "What is the combined voting weight of all State Governments in the GST Council?",
+        "front_ta": "ஜிஎஸ்டி கவுன்சிலில் அனைத்து மாநில அரசுகளின் கூட்டு வாக்கு எடை என்ன?",
+        "back_en": "Two-thirds (66.67%) of the total votes cast.",
+        "back_ta": "பதிவான மொத்த வாக்குகளில் மூன்றில் இரண்டு பங்கு (66.67%)."
+      },
+      {
+        "id": "rc_gst_206",
+        "front_en": "What majority threshold is required to pass a decision in the GST Council?",
+        "front_ta": "ஜிஎஸ்டி கவுன்சிலில் ஒரு முடிவை நிறைவேற்ற என்ன பெரும்பான்மை வரம்பு தேவை?",
+        "back_en": "Three-fourths (75%) of the weighted votes of members present and voting.",
+        "back_ta": "வருகை தந்து வாக்களித்த உறுப்பினர்களின் எடைசார் வாக்குகளில் நான்கில் மூன்று பங்கு (75%)."
+      },
+      {
+        "id": "rc_gst_207",
+        "front_en": "Can Input Tax Credit of CGST be utilized to pay output liability of SGST?",
+        "front_ta": "CGST உள்ளீட்டு வரி வரவைக் கொண்டு SGST வெளியீட்டு வரிப் பொறுப்பைச் செலுத்த முடியுமா?",
+        "back_en": "No, direct cross-utilization between CGST and SGST is strictly barred.",
+        "back_ta": "முடியாது; CGST மற்றும் SGST இடையே நேரடி குறுக்குப் பயன்பாடு முற்றிலும் தடைசெய்யப்பட்டுள்ளது."
+      },
+      {
+        "id": "rc_gst_208",
+        "front_en": "Which credit must be exhausted completely before utilizing CGST or SGST credits under Rule 88A?",
+        "front_ta": "விதி 88A-இன் கீழ் CGST அல்லது SGST வரவைப் பயன்படுத்துவதற்கு முன்பு எந்த வரவு முழுமையாகத் தீர்க்கப்பட வேண்டும்?",
+        "back_en": "IGST credit must be completely exhausted first.",
+        "back_ta": "IGST வரவு முதலில் முழுமையாகப் பயன்படுத்தித் தீர்க்கப்பட வேண்டும்."
+      },
+      {
+        "id": "rc_gst_209",
+        "front_en": "What annual revenue growth rate was guaranteed to States under the GST Compensation Act, 2017?",
+        "front_ta": "2017 ஜிஎஸ்டி இழப்பீட்டுச் சட்டத்தின் கீழ் மாநிலங்களுக்கு என்ன ஆண்டு வருவாய் வளர்ச்சி உத்தரவாதம் செய்யப்பட்டது?",
+        "back_en": "14% compounded per annum over the 2015-16 base year revenue.",
+        "back_ta": "2015-16 அடிப்படை ஆண்டின் மீது ஆண்டுக்கு 14% கூட்டு வளர்ச்சி."
+      },
+      {
+        "id": "rc_gst_210",
+        "front_en": "What is the statutory quorum required to hold a valid meeting of the GST Council?",
+        "front_ta": "ஜிஎஸ்டி கவுன்சில் கூட்டத்தை நடத்துவதற்குத் தேவைப்படும் சட்டப்பூர்வ குறைந்தபட்ச வருகை (Quorum) என்ன?",
+        "back_en": "One-half (50%) of the total number of members of the GST Council.",
+        "back_ta": "மொத்த உறுப்பினர்களில் சரிபாதி (50%) பேர் வருகை தந்திருக்க வேண்டும்."
+      }
+    ]
+  }
+}

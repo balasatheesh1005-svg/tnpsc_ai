@@ -1,0 +1,795 @@
+{
+  "meta": {
+    "topic_id": "economy_food_security_part_2",
+    "repository_id": "economy_food_security",
+    "display_title": "Food Security – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Food Security",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "NFSA 2013",
+    "75 Percent Rural 50 Percent Urban",
+    "Priority Households 5kg",
+    "Antyodaya Anna Yojana 35kg",
+    "Section 13 Oldest Woman Head",
+    "Maternity Benefit 6000",
+    "Food Corporation of India Thanjavur 1965",
+    "One Nation One Ration Card ONORC e-PoS",
+    "PM POSHAN 450 700 Calories",
+    "ICDS October 2 1975"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Evaluate the transition from administrative welfare rationing to justiciable statutory entitlements under NFSA 2013.",
+        "Comprehend the operational functioning of FCI in procurement, buffer stock norms, and open-ended MSP."
+      ],
+      "ta": [
+        "NFSA 2013 மூலம் நிர்வாக நலத்திட்டத்திலிருந்து சட்டப்பூர்வ உரிமையாக மாறிய உணவு விநியோக முறையை அறிதல்.",
+        "FCI-ன் நெல்-கோதுமை கொள்முதல், சேமிப்பு இருப்பு விதிமுறைகள் மற்றும் திறந்தவெளி கொள்முதலைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize statutory allocations: PHH (5 kg/person) vs AAY (35 kg/household) and Section 13 woman head (18+).",
+        "Recall PM POSHAN nutritional standards: Primary (450 kcal/12g) and Upper Primary (700 kcal/20g)."
+      ],
+      "ta": [
+        "சட்டப்பூர்வ ஒதுக்கீடுகளை நினைவில் நிறுத்துதல்: PHH (5 கிலோ/நபர்) vs AAY (35 கிலோ/குடும்பம்) மற்றும் பிரிவு 13 (18+ பெண் தலைவி).",
+        "பிஎம் போஷான் ஊட்டச்சத்து அளவுகளை நினைவுகூருதல்: தொடக்கப்பள்ளி (450 kcal/12g) மற்றும் நடுநிலைப்பள்ளி (700 kcal/20g)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the division of federal responsibilities between the Union and States in foodgrain logistics and card issuance.",
+        "Appraise the technological disintermediation achieved by biometric e-PoS portability under ONORC."
+      ],
+      "ta": [
+        "தானியப் போக்குவரத்து மற்றும் அட்டை வழங்குவதில் மத்திய-மாநில அரசுகளுக்கு இடையேயான கூட்டாட்சிப் பொறுப்புகளை ஆய்வு செய்தல்.",
+        "ONORC பயோமெட்ரிக் பெயர்வுத்திறன் மூலம் இடைத்தரகர்கள் நீக்கப்பட்டதை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid TNPSC traps regarding rural/urban coverage quotas, AAY household allocations, and FCI genesis."
+      ],
+      "ta": [
+        "கிராம/நகர ஒதுக்கீட்டு விகிதங்கள், AAY குடும்ப ஒதுக்கீடு மற்றும் FCI தோற்றம் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Food Security – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_nfsa_2013_architecture",
+      "title_en": "National Food Security Act (NFSA), 2013: Statutory Architecture",
+      "title_ta": "தேசிய உணவுப் பாதுகாப்புச் சட்டம் (NFSA) 2013: சட்டப்பூர்வ கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_pds_evolution_and_fci",
+      "title_en": "Evolution of PDS, FCI Operations & Buffer Stocks",
+      "title_ta": "PDS பரிணாமம், FCI செயல்பாடுகள் மற்றும் சேமிப்புக் கிடங்கு விதிகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_onorc_and_pm_poshan",
+      "title_en": "One Nation One Ration Card (ONORC) & PM POSHAN",
+      "title_ta": "ஒரே நாடு ஒரே ரேஷன் கார்டு (ONORC) & பிஎம் போஷான் திட்டம்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The institutional framework of food security in India is an integrated statutory, logistics, and delivery architecture comprising the National Food Security Act (NFSA), 2013, the Food Corporation of India (FCI) for procurement and buffer stock management, the Targeted Public Distribution System (TPDS), biometric portability via One Nation One Ration Card (ONORC), and nutritional life-cycle interventions under PM POSHAN and Anganwadi ICDS.",
+      "ta": "இந்தியாவின் உணவுப் பாதுகாப்பு நிறுவனக் கட்டமைப்பு என்பது தேசிய உணவுப் பாதுகாப்புச் சட்டம் (NFSA) 2013, தானியக் கொள்முதல் மற்றும் சேமிப்பிற்கான இந்திய உணவுக் கழகம் (FCI), இலக்குசார் பொது விநியோக முறை (TPDS), ஒரே நாடு ஒரே ரேஷன் கார்டு (ONORC) மூலமான பயோமெட்ரிக் பெயர்வுத்திறன், மற்றும் பிஎம் போஷான் மற்றும் அங்கன்வாடி ICDS மூலமான வாழ்க்கை சுழற்சி ஊட்டச்சத்து திட்டங்களை உள்ளடக்கிய சட்டப்பூர்வ விநியோக அமைப்பாகும்."
+    },
+    "introduction": {
+      "en": "India's food delivery mechanism underwent a profound paradigm shift from an administrative welfare scheme to a justiciable legal right with the enactment of the National Food Security Act (NFSA), 2013. Legally covering up to 75% of the rural population and 50% of the urban population (~67% of total national population), NFSA guarantees 5 kg of subsidized foodgrains per person per month to Priority Households, while safeguarding the poorest through Antyodaya Anna Yojana (AAY) with 35 kg per household. Operationally, this massive distribution relies on the Food Corporation of India (FCI, established under the Food Corporations Act 1964) which procures wheat and paddy at Minimum Support Prices (MSP) and maintains strategic buffer stocks. The historic rollout of the One Nation One Ration Card (ONORC) broke geographical lock-ins using electronic Point of Sale (e-PoS) devices and Aadhaar biometric verification, granting inter-state portability to migrant workers. Together with school-feeding (PM POSHAN) and infant-feeding (ICDS), it forms the world's largest food safety net.",
+      "ta": "இந்தியாவின் உணவு விநியோக முறை வெறும் நிர்வாக நலத்திட்டம் என்ற நிலையிலிருந்து, 2013-ஆம் ஆண்டின் தேசிய உணவுப் பாதுகாப்புச் சட்டம் (NFSA) மூலம் 'சட்டப்பூர்வ உரிமையாக' மாற்றப்பட்டது. கிராமப்புறங்களில் 75% மற்றும் நகர்ப்புறங்களில் 50% மக்களை (நாட்டின் மொத்த மக்கள் தொகையில் சுமார் 67%) உள்ளடக்கிய இச்சட்டம், முன்னுரிமைக் குடும்பங்களுக்கு நபர் ஒருவருக்கு மாதம் 5 கிலோ மானிய உணவு தானியத்தையும், அந்தியோதயா அன்ன யோஜனா (AAY) திட்டத்தின் கீழ் மிக ஏழ்மையான குடும்பங்களுக்கு மாதம் 35 கிலோ தானியத்தையும் சட்டப்பூர்வமாக உத்தரவாதம் செய்கிறது. இந்த பிரம்மாண்ட விநியோகமானது குறைந்தபட்ச ஆதரவு விலையில் (MSP) கொள்முதல் செய்து சேமிப்பு வைக்கும் இந்திய உணவுக் கழகத்தை (FCI - 1964 சட்டம்) அடிப்படையாகக் கொண்டது. 'ஒரே நாடு ஒரே ரேஷன் கார்டு' (ONORC) திட்டம் e-PoS இயந்திரங்கள் மற்றும் ஆதார் பயோமெட்ரிக் சரிபார்ப்பு மூலம் புலம்பெயர் தொழிலாளர்கள் நாட்டின் எந்த ரேஷன் கடையிலும் பொருட்களைப் பெற வழிவகுத்தது. பள்ளிக் குழந்தைகளுக்கான பிஎம் போஷான் (மதிய உணவு) மற்றும் அங்கன்வாடி (ICDS) திட்டங்களுடன் இணைந்து இது உலகின் மிகப்பெரிய உணவுப் பாதுகாப்பு வலையமைப்பாகத் திகழ்கிறது."
+    },
+    "sec_nfsa_2013_architecture": [
+      {
+        "title": "Coverage and Legal Entitlements",
+        "title_ta": "திட்ட வரம்பும் சட்டப்பூர்வ உரிமைகளும்",
+        "points": {
+          "en": [
+            "Legislative Enactment: Enacted on September 10, 2013 (with retrospective effect from July 5, 2013), legally transforming food from a discretionary welfare benefit into a justiciable legal right.",
+            "Population Coverage: Legally covers up to 75% of the rural population and 50% of the urban population, encompassing approximately two-thirds (67%) of India's total population.",
+            "Priority Households (PHH): Entitled to receive 5 kg of foodgrains per person per month at heavily subsidized Central Issue Prices (CIP): ₹3/kg for rice, ₹2/kg for wheat, and ₹1/kg for coarse grains (nutri-cereals).",
+            "Antyodaya Anna Yojana (AAY): The poorest of the poor households are protected with a statutory allocation of 35 kg of foodgrains per household per month, irrespective of the number of family members.",
+            "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) Integration: Since January 1, 2023, the Central Government provides these foodgrain entitlements completely FREE OF COST to all NFSA beneficiaries."
+          ],
+          "ta": [
+            "சட்டப்பூர்வ உருவாக்கம்: செப்டம்பர் 10, 2013 அன்று இயற்றப்பட்டது (ஜூலை 5, 2013 முதல் முன்செல்லும் தேதியுடன்); உணவை வெறும் அரசின் கருணைத் திட்டமாக இல்லாமல் நீதிமன்றத்தில் வழக்காடிப் பெறக்கூடிய 'சட்டப்பூர்வ உரிமையாக' மாற்றியது.",
+            "மக்கள் தொகை வரம்பு: கிராமப்புறங்களில் 75% மற்றும் நகர்ப்புறங்களில் 50% என நாட்டின் மொத்த மக்கள் தொகையில் மூன்றில் இரண்டு பங்கு (67%) மக்களுக்குச் சட்டப்பூர்வ பாதுகாப்பு அளிக்கிறது.",
+            "முன்னுரிமைக் குடும்பங்கள் (PHH): நபர் ஒருவருக்கு மாதம் 5 கிலோ உணவு தானியம் மானிய விலையில் வழங்கப்படுகிறது: அரிசி கிலோ ₹3, கோதுமை கிலோ ₹2, சிறுதானியங்கள் கிலோ ₹1.",
+            "அந்தியோதயா அன்ன யோஜனா (AAY): குடும்ப உறுப்பினர்களின் எண்ணிக்கையைப் பொருட்படுத்தாமல், மிக ஏழ்மையான குடும்பங்களுக்கு மாதம் 35 கிலோ உணவு தானியம் சட்டப்பூர்வமாக உத்தரவாதம் செய்யப்படுகிறது.",
+            "PMGKAY திட்டம் இணைப்பு: ஜனவரி 1, 2023 முதல் மத்திய அரசு இந்த NFSA உணவு தானியங்களை அனைத்து பயனாளிகளுக்கும் 'முற்றிலும் இலவசமாக' வழங்கி வருகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Life-Cycle Approach & Women Empowerment Mandate",
+        "title_ta": "வாழ்க்கை சுழற்சி அணுகுமுறையும் மகளிர் அதிகாரமளித்தலும்",
+        "points": {
+          "en": [
+            "Oldest Woman as Head of Household (Section 13): Mandates that the oldest woman member of the household, aged 18 years or above, shall be designated as the Head of the Household for the issuance of ration cards.",
+            "Maternity Benefits (Section 4): Pregnant women and lactating mothers are legally entitled to receive free nutritious meals during pregnancy and for six months after childbirth, plus maternity benefit of not less than ₹6,000 (operationalized via Pradhan Mantri Matru Vandana Yojana - PMMVY).",
+            "Child Nutritional Support (Section 5): Free, hot cooked meals for children aged 6 months to 6 years through Anganwadi centres (ICDS), and for school children aged 6 to 14 years (up to Class 8) through PM POSHAN (Mid-Day Meal Scheme).",
+            "Food Security Allowance (Section 8): If the state fails to supply entitled foodgrains, eligible persons are legally entitled to receive cash Food Security Allowance from the State Government."
+          ],
+          "ta": [
+            "குடும்பத் தலைவியாக மூத்த பெண் (பிரிவு 13): ரேஷன் கார்டு வழங்குவதற்காக, குடும்பத்தில் உள்ள 18 வயது அல்லது அதற்கு மேற்பட்ட மூத்த பெண் உறுப்பினரே 'குடும்பத் தலைவியாக' அங்கீகரிக்கப்பட வேண்டும் எனக் கட்டாயமாக்குகிறது.",
+            "மகப்பேறு நன்மைகள் (பிரிவு 4): கர்ப்பிணிகள் மற்றும் பாலூட்டும் தாய்மார்களுக்கு இலவச சத்துணவு மற்றும் குறைந்தது ₹6,000 மகப்பேறு உதவித்தொகை சட்டப்பூர்வமாக உத்தரவாதம் செய்யப்படுகிறது (PMMVY திட்டம் மூலம் செயல்படுத்தப்படுகிறது).",
+            "குழந்தைகள் ஊட்டச்சத்து ஆதரவு (பிரிவு 5): 6 மாதம் முதல் 6 வயது வரையிலான குழந்தைகளுக்கு அங்கன்வாடி (ICDS) மூலமும், 6 முதல் 14 வயது பள்ளி குழந்தைகளுக்கு (8-ஆம் வகுப்பு வரை) பிஎம் போஷான் (மதிய உணவுத் திட்டம்) மூலமும் இலவச சூடான சத்துணவு.",
+            "உணவுப் பாதுகாப்பு படி (பிரிவு 8): அரசு ரேஷன் தானியங்களை வழங்கத் தவறினால், தகுதியுள்ள நபர் அதற்கான பணத்தை 'உணவுப் பாதுகாப்பு படியாக' மாநில அரசிடமிருந்து சட்டப்படி கோரிப் பெறலாம்."
+          ]
+        }
+      }
+    ],
+    "sec_pds_evolution_and_fci": [
+      {
+        "title": "Historical Evolution: Universal to Targeted PDS",
+        "title_ta": "வரலாற்றுப் பரிணாமம்: பொது PDS முதல் இலக்குசார் PDS வரை",
+        "points": {
+          "en": [
+            "Universal PDS (Pre-1992): General rationing system covering all consumers uniformly without income targeting; heavily criticized for urban bias and high fiscal leakages.",
+            "Revamped PDS (RPDS, June 1992): Launched in 1,775 designated blocks in backward, hilly, tribal, and drought-prone tracts with preferential grain pricing.",
+            "Targeted PDS (TPDS, June 1997): Landmark structural shift dividing beneficiaries into Below Poverty Line (BPL) and Above Poverty Line (APL) categories, establishing subsidized issue prices based on economic status.",
+            "Antyodaya Anna Yojana (AAY, Dec 2000): Launched under Atal Bihari Vajpayee to identify the poorest one crore BPL families and provide them 35 kg foodgrains per month."
+          ],
+          "ta": [
+            "அனைவருக்குமான பொது PDS (1992-க்கு முன்): எவ்வித வருமான வரம்பும் இன்றி அனைத்து நுகர்வோருக்கும் ஒரே மாதிரியாக வழங்கப்பட்ட ரேஷன் முறை; நகர்ப்புற சாதகமும் நிதி விரயமும் கொண்டதாக விமர்சிக்கப்பட்டது.",
+            "மறுசீரமைக்கப்பட்ட PDS (RPDS, ஜூன் 1992): பின்தங்கிய, மலைப்பகுதிகள், பழங்குடியினர் மற்றும் வறட்சி பாதித்த 1,775 வட்டாரங்களில் சிறப்பு சலுகை விலையில் தொடங்கப்பட்டது.",
+            "இலக்குசார் பொது விநியோக முறை (TPDS, ஜூன் 1997): வறுமைக் கோட்டிற்கு கீழ் (BPL) மற்றும் வறுமைக் கோட்டிற்கு மேல் (APL) எனப் பிரித்து வருமான அடிப்படையில் மானிய விலையை நிர்ணயித்த வரலாற்று மாற்றம்.",
+            "அந்தியோதயா அன்ன யோஜனா (AAY, டிசம்பர் 2000): அடல் பிகாரி வாஜ்பாய் அரசால் தொடங்கப்பட்டது; மிக ஏழ்மையான ஒரு கோடி BPL குடும்பங்களை அடையாளம் கண்டு அவர்களுக்கு மாதம் 35 கிலோ தானியம் வழங்கியது."
+          ]
+        }
+      },
+      {
+        "title": "Food Corporation of India (FCI) & Buffer Stock Norms",
+        "title_ta": "இந்திய உணவுக் கழகம் (FCI) & சேமிப்புக் கிடங்கு விதிமுறைகள்",
+        "points": {
+          "en": [
+            "FCI Inception: Set up under the Food Corporations Act, 1964 (commenced operations in 1965 in Thanjavur, Tamil Nadu) as the central operational agency for procurement, storage, movement, and distribution.",
+            "Open-Ended Procurement: FCI and state agencies procure all foodgrains (paddy and wheat) conforming to Fair Average Quality (FAQ) offered by farmers at Minimum Support Prices (MSP).",
+            "Buffer Stock Objectives: (1) Maintain operational stocks for monthly PDS distribution, (2) Strategic reserve for emergency natural disasters/famines, and (3) Open market price stabilization through OMSS (Open Market Sale Scheme).",
+            "Quarterly Buffer Norms: Minimum quarterly inventory benchmarks fixed for four dates: 1st April, 1st July, 1st October, and 1st January."
+          ],
+          "ta": [
+            "FCI தோற்றம்: உணவு தானியக் கொள்முதல், சேமிப்பு, போக்குவரத்து மற்றும் விநியோகத்திற்கான முதன்மை அமைப்பாக இந்திய உணவுக் கழகச் சட்டம் 1964-ன் கீழ் நிறுவப்பட்டது (1965-ல் தஞ்சாவூரில் முதல் அலுவலகம்).",
+            "திறந்தவெளி கொள்முதல்: அரசு நிர்ணயித்த குறைந்தபட்ச ஆதரவு விலையில் (MSP) விவசாயிகள் கொண்டுவரும் தரமான நெல் மற்றும் கோதுமை முழுவதையும் வரம்பின்றி FCI கொள்முதல் செய்கிறது.",
+            "சேமிப்புக் கிடங்கு நோக்கங்கள்: (1) மாதாந்திர ரேஷன் விநியோகத்திற்கான நடைமுறை இருப்பு, (2) பேரிடர் கால அவசர உதவிக்கான உத்திசார் இருப்பு, (3) வெளிச்சந்தை விற்பனைத் திட்டம் (OMSS) மூலம் விலை ஏற்றத்தைக் கட்டுப்படுத்துதல்.",
+            "காலாண்டு இருப்பு விதிமுறைகள்: ஆண்டுக்கு நான்கு முக்கிய தேதிகளில் (ஏப்ரல் 1, ஜூலை 1, அக்டோபர் 1, ஜனவரி 1) வைத்திருக்க வேண்டிய குறைந்தபட்ச தானிய இருப்பு வரம்புகள் நிர்ணயிக்கப்பட்டுள்ளன."
+          ]
+        }
+      }
+    ],
+    "sec_onorc_and_pm_poshan": [
+      {
+        "title": "One Nation One Ration Card (ONORC) Architecture",
+        "title_ta": "ஒரே நாடு ஒரே ரேஷன் கார்டு (ONORC) கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Nationwide Portability: Enables NFSA beneficiaries, particularly migrant laborers, to lift their entitled foodgrains from ANY Fair Price Shop (FPS) across India using their existing ration card.",
+            "Technological Spine: Powered by electronic Point of Sale (e-PoS) devices installed at FPS, integrated with the Annavitran portal and Integrated Management of PDS (IM-PDS).",
+            "Biometric Authentication: Aadhaar-seeded biometric authentication (fingerprint or iris scan) validates the beneficiary, eliminating bogus cards and manual record-keeping.",
+            "Intra-State vs Inter-State Portability: Intra-state enables lifting from any shop within the home state; Inter-state enables migrant workers working in Maharashtra, Gujarat, or Tamil Nadu to draw food while family draws their share at home."
+          ],
+          "ta": [
+            "நாடு தழுவிய பெயர்வுத்திறன்: NFSA பயனாளிகள், குறிப்பாக புலம்பெயர் தொழிலாளர்கள், தங்களின் தற்போதைய ரேஷன் கார்டைப் பயன்படுத்தி இந்தியாவின் எந்தவொரு நியாய விலைக் கடையிலிருந்தும் (FPS) ரேஷன் பொருட்களைப் பெற வழிசெய்கிறது.",
+            "தொழில்நுட்ப கட்டமைப்பு: நியாய விலைக் கடைகளில் நிறுவப்பட்டுள்ள மின்னணு விற்பனை இயந்திரங்கள் (e-PoS), அன்னவிதரன் மற்றும் IM-PDS இணையதளங்கள் மூலம் இயக்கப்படுகிறது.",
+            "பயோமெட்ரிக் சரிபார்ப்பு: ஆதார் இணைக்கப்பட்ட கைரேகை அல்லது கண்விழி பயோமெட்ரிக் சரிபார்ப்பு மூலம் உண்மையான பயனாளிகள் உறுதி செய்யப்பட்டு போலி கார்டுகள் ஒழிக்கப்படுகின்றன.",
+            "மாநிலத்திற்குள் vs மாநிலங்களுக்கிடையே: மாநிலத்திற்குள் எங்கு வேண்டுமானாலும் பெறுவது intra-state; வெளிமாநிலங்களில் வேலை செய்யும் தொழிலாளர்கள் தங்களின் பங்கைப் பெறவும், சொந்த ஊரிலுள்ள குடும்பத்தினர் அங்குள்ள பங்கைப் பெறவும் வழிவகுப்பது inter-state."
+          ]
+        }
+      },
+      {
+        "title": "PM POSHAN & Integrated Child Development Services (ICDS)",
+        "title_ta": "பிஎம் போஷான் & ஒருங்கிணைந்த குழந்தைகள் வளர்ச்சித் திட்டம் (ICDS)",
+        "points": {
+          "en": [
+            "PM POSHAN (Pradhan Mantri Poshan Shakti Nirman): Formerly National Programme of Nutritional Support to Primary Education (Mid-Day Meal Scheme, launched August 15, 1995); provides hot cooked meals to children in Government and Government-aided schools up to Class 8.",
+            "Nutritional Norms: Primary (Classes 1-5) receives 450 calories and 12 grams of protein; Upper Primary (Classes 6-8) receives 700 calories and 20 grams of protein.",
+            "Balvatika Expansion: Extended to cover pre-primary children (Balvatikas) in government schools under NEP 2020.",
+            "ICDS / Anganwadi Services: Launched October 2, 1975; delivers supplementary nutrition, immunization, health check-ups, and pre-school non-formal education to children under 6 years and pregnant/lactating mothers."
+          ],
+          "ta": [
+            "பிஎம் போஷான் திட்டம்: முன்பு தேசிய சத்துணவுத் திட்டம் (மதிய உணவுத் திட்டம் - ஆகஸ்ட் 15, 1995 அன்று தொடங்கப்பட்டது); அரசு மற்றும் அரசு உதவிபெறும் பள்ளிகளில் 8-ஆம் வகுப்பு வரை படிக்கும் குழந்தைகளுக்கு சூடான சமைத்த மதிய உணவை வழங்குகிறது.",
+            "ஊட்டச்சத்து அளவுகள்: தொடக்கப்பள்ளி (1-5 வகுப்புகள்) குழந்தைகளுக்கு 450 கலோரிகள் மற்றும் 12 கிராம் புரதம்; நடுநிலைப்பள்ளி (6-8 வகுப்புகள்) குழந்தைகளுக்கு 700 கலோரிகள் மற்றும் 20 கிராம் புரதம்.",
+            "பால்வாடிகளுக்கு விரிவாக்கம்: தேசிய கல்விக் கொள்கை 2020-ன் படி முன்-தொடக்கக் கல்வி பயிலும் குழந்தைகளுக்கும் (பால்வாடிகா) விரிவுபடுத்தப்பட்டுள்ளது.",
+            "ICDS / அங்கன்வாடி சேவைகள்: அக்டோபர் 2, 1975 அன்று தொடங்கப்பட்டது; 6 வயதுக்குட்பட்ட குழந்தைகள் மற்றும் கர்ப்பிணி/பாலூட்டும் தாய்மார்களுக்கு இணை உணவு, தடுப்பூசி, மருத்துவப் பரிசோதனை மற்றும் முன்பள்ளிக் கல்வியை வழங்குகிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_pds_evolution_matrix",
+        "title_en": "Evolutionary Stages of the Public Distribution System (PDS) in India",
+        "title_ta": "இந்தியாவில் பொது விநியோக முறையின் (PDS) பரிணாம வளர்ச்சிப் படிகள்",
+        "headers_en": [
+          "Phase / Scheme",
+          "Year of Inception",
+          "Targeting Criterion",
+          "Key Structural Innovation"
+        ],
+        "headers_ta": [
+          "கட்டம் / திட்டம்",
+          "தொடங்கப்பட்ட ஆண்டு",
+          "இலக்கு அளவுகோல்",
+          "முக்கிய கட்டமைப்பு மாற்றம்"
+        ],
+        "rows_en": [
+          [
+            "Universal PDS",
+            "Pre-1992 (Origins in WWII rationing)",
+            "Universal (No income targeting)",
+            "General entitlement; subsidized grain across urban centers"
+          ],
+          [
+            "Revamped PDS (RPDS)",
+            "June 1992",
+            "Geographical targeting (1,775 backward blocks)",
+            "Differential pricing for hilly, desert, and tribal habitations"
+          ],
+          [
+            "Targeted PDS (TPDS)",
+            "June 1997",
+            "Income targeting (BPL vs APL households)",
+            "Established dual-price mechanism based on official poverty line"
+          ],
+          [
+            "Antyodaya Anna Yojana (AAY)",
+            "December 2000",
+            "Poorest of the poor (Bottom decile of BPL)",
+            "Fixed quota of 35 kg/household/month at rock-bottom prices"
+          ],
+          [
+            "National Food Security Act (NFSA)",
+            "2013 (Act passed Sept 2013)",
+            "Statutory rights-based (75% rural, 50% urban)",
+            "Legal entitlement: 5 kg/person for PHH, 35 kg for AAY; head of household woman"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அனைவருக்குமான PDS",
+            "1992-க்கு முன் (இரண்டாம் உலகப்போர் தோற்றம்)",
+            "அனைவருக்கும் பொதுவானது (வருமான வரம்பின்றி)",
+            "நகர்ப்புற மையங்களில் பொதுவான ரேஷன் தானிய விநியோகம்"
+          ],
+          [
+            "மறுசீரமைக்கப்பட்ட PDS (RPDS)",
+            "ஜூன் 1992",
+            "புவியியல் இலக்கு (1,775 பின்தங்கிய வட்டாரங்கள்)",
+            "மலைப்பகுதிகள் மற்றும் பழங்குடியினர் பகுதிகளுக்கு சலுகை விலை"
+          ],
+          [
+            "இலக்குசார் PDS (TPDS)",
+            "ஜூன் 1997",
+            "வருமான இலக்கு (வறுமைக் கோட்டிற்கு கீழ் - BPL vs மேல் - APL)",
+            "வறுமைக்கோடு அடிப்படையில் இருவேறு விலை நிர்ணய முறை"
+          ],
+          [
+            "அந்தியோதயா அன்ன யோஜனா (AAY)",
+            "டிசம்பர் 2000",
+            "மிக ஏழ்மையான குடும்பங்கள் (BPL-ன் கீழ்மட்டம்)",
+            "குடும்பத்திற்கு மாதம் 35 கிலோ தானியம் மிகக்குறைந்த விலையில்"
+          ],
+          [
+            "தேசிய உணவுப் பாதுகாப்புச் சட்டம் (NFSA)",
+            "2013 (செப்டம்பர் 2013-ல் சட்டம்)",
+            "சட்டப்பூர்வ உரிமை (கிராமப்புறம் 75%, நகர்ப்புறம் 50%)",
+            "சட்டப்பூர்வ உரிமை: PHH-க்கு 5 கிலோ/நபர், AAY-க்கு 35 கிலோ; மூத்த பெண் குடும்பத் தலைவி"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nfsa_entitlements_matrix",
+        "title_en": "NFSA 2013 Statutory Beneficiary Categories and Entitlements",
+        "title_ta": "NFSA 2013 சட்டப்பூர்வ பயனாளிப் பிரிவுகளும் உணவு உரிமைகளும்",
+        "headers_en": [
+          "Beneficiary Category",
+          "Population / Allocation Scope",
+          "Monthly Entitlement",
+          "Statutory Central Issue Price (CIP)"
+        ],
+        "headers_ta": [
+          "பயனாளி பிரிவு",
+          "மக்கள் தொகை / ஒதுக்கீட்டு வரம்பு",
+          "மாதாந்திர உணவு உரிமை",
+          "சட்டப்பூர்வ மத்திய வெளியீட்டு விலை (CIP)"
+        ],
+        "rows_en": [
+          [
+            "Priority Households (PHH)",
+            "Identified by States (covers bulk of 67% population)",
+            "5 kg per person per month",
+            "₹3/kg Rice, ₹2/kg Wheat, ₹1/kg Coarse Grains (Free under PMGKAY)"
+          ],
+          [
+            "Antyodaya Anna Yojana (AAY)",
+            "Poorest of poor households (~2.5 crore families)",
+            "35 kg per household per month",
+            "₹3/kg Rice, ₹2/kg Wheat, ₹1/kg Coarse Grains (Free under PMGKAY)"
+          ],
+          [
+            "Pregnant & Lactating Mothers",
+            "All pregnant women (except regular govt employees)",
+            "Free meal during pregnancy + 6 months post-delivery",
+            "Free meal + Maternity cash benefit not less than ₹6,000"
+          ],
+          [
+            "Children (6 months to 6 years)",
+            "All children through Anganwadi network",
+            "Free morning snack and hot cooked meal",
+            "Completely free (ICDS supplementary nutrition)"
+          ],
+          [
+            "Children (6 to 14 years / Class 1-8)",
+            "All enrolled students in government/aided schools",
+            "One daily hot cooked school lunch",
+            "Completely free (PM POSHAN Mid-Day Meal norms)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முன்னுரிமைக் குடும்பங்கள் (PHH)",
+            "மாநிலங்களால் அடையாளம் காணப்பட்டவை (67% மக்கள் தொகை)",
+            "நபர் ஒருவருக்கு மாதம் 5 கிலோ",
+            "அரிசி ₹3, கோதுமை ₹2, தானியங்கள் ₹1 (தற்போது PMGKAY கீழ் முற்றிலும் இலவசம்)"
+          ],
+          [
+            "அந்தியோதயா அன்ன யோஜனா (AAY)",
+            "மிக ஏழ்மையான குடும்பங்கள் (~2.5 கோடி குடும்பங்கள்)",
+            "குடும்பத்திற்கு மாதம் 35 கிலோ",
+            "அரிசி ₹3, கோதுமை ₹2, தானியங்கள் ₹1 (தற்போது PMGKAY கீழ் முற்றிலும் இலவசம்)"
+          ],
+          [
+            "கர்ப்பிணி & பாலூட்டும் தாய்மார்கள்",
+            "அனைத்து கர்ப்பிணிப் பெண்கள் (அரசு ஊழியர்கள் தவிர)",
+            "கர்ப்ப காலம் மற்றும் பிரசவத்திற்குப் பின் 6 மாதங்களுக்கு இலவச உணவு",
+            "இலவச உணவு + குறைந்தது ₹6,000 மகப்பேறு உதவித்தொகை"
+          ],
+          [
+            "குழந்தைகள் (6 மாதம் முதல் 6 வயது)",
+            "அங்கன்வாடி மூலமான அனைத்து குழந்தைகள்",
+            "இலவச காலை சிற்றுண்டி மற்றும் மதிய சூடான சத்துணவு",
+            "முற்றிலும் இலவசம் (ICDS இணை உணவு திட்டம்)"
+          ],
+          [
+            "பள்ளிக் குழந்தைகள் (6-14 வயது / 1-8 வகுப்பு)",
+            "அரசு / அரசு உதவிபெறும் பள்ளி மாணவர்கள்",
+            "தினசரி ஒரு வேளை சூடான மதிய உணவு",
+            "முற்றிலும் இலவசம் (பிஎம் போஷான் மதிய உணவு திட்டம்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_centre_state_responsibilities_food",
+        "title_en": "Centre-State Division of Responsibilities under NFSA 2013",
+        "title_ta": "NFSA 2013-ன் கீழ் மத்திய-மாநில அரசுகளின் அதிகாரப் பகிர்வு",
+        "headers_en": [
+          "Functional Domain",
+          "Central Government Responsibilities",
+          "State Government Responsibilities"
+        ],
+        "headers_ta": [
+          "செயல்பாட்டுத் துறை",
+          "மத்திய அரசின் பொறுப்புகள்",
+          "மாநில அரசின் பொறுப்புகள்"
+        ],
+        "rows_en": [
+          [
+            "Procurement & Buffer Stocks",
+            "Procures grains via FCI at MSP; maintains quarterly buffer reserves",
+            "Decentralized Procurement (DCP) states assist in direct procurement"
+          ],
+          [
+            "Interstate Logistics",
+            "Transports allocated grains to designated FCI base depots in each State",
+            "Transports grain from FCI base depots to Fair Price Shops (last-mile doorstep)"
+          ],
+          [
+            "Beneficiary Identification",
+            "Determines overall state-wise coverage percentage (NITI Aayog formula)",
+            "Identifies actual eligible individual households and issues ration cards"
+          ],
+          [
+            "Fair Price Shop (FPS) Licensing",
+            "Formulates Model Control Orders under Essential Commodities Act",
+            "Issues licenses, monitors FPS dealers, and supervises daily distribution"
+          ],
+          [
+            "Grievance Redressal",
+            "Monitors national compliance and central portal",
+            "Sets up District Grievance Redressal Officers (DGRO) and State Food Commissions"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கொள்முதல் & சேமிப்பு",
+            "FCI மூலம் MSP விலையில் கொள்முதல்; காலாண்டு சேமிப்பு இருப்பு பராமரிப்பு",
+            "பரவலாக்கப்பட்ட கொள்முதல் (DCP) மாநிலங்கள் நேரடிக் கொள்முதலில் உதவுகின்றன"
+          ],
+          [
+            "மாநிலங்களுக்கிடையேயான போக்குவரத்து",
+            "ஒதுக்கப்பட்ட தானியங்களை மாநிலங்களிலுள்ள FCI கிடங்குகளுக்கு கொண்டு சேர்த்தல்",
+            "FCI கிடங்குகளில் இருந்து ரேஷன் கடைகளுக்கு (கடைசி மைல்) தானியங்களைக் கொண்டு செல்லுதல்"
+          ],
+          [
+            "பயனாளிகள் அடையாளம் காணுதல்",
+            "மாநிலங்களுக்கான மொத்த சதவீத ஒதுக்கீட்டை நிர்ணயித்தல் (நிதி ஆயோக்)",
+            "உண்மையான தகுதியுள்ள குடும்பங்களை அடையாளம் கண்டு ரேஷன் கார்டுகளை வழங்குதல்"
+          ],
+          [
+            "ரேஷன் கடை உரிமம் (FPS)",
+            "அத்தியாவசியப் பொருட்கள் சட்டத்தின் கீழ் மாதிரி வழிகாட்டுதல்களை உருவாக்குதல்",
+            "ரேஷன் கடைகளுக்கு உரிமம் வழங்குதல், விநியோகத்தை தினசரி கண்காணித்தல்"
+          ],
+          [
+            "குறைதீர்ப்பு கட்டமைப்பு",
+            "தேசிய அளவிலான இணக்கத்தையும் இணையதளத்தையும் கண்காணித்தல்",
+            "மாவட்ட குறைதீர்ப்பு அதிகாரிகளையும் (DGRO) மாநில உணவு ஆணையத்தையும் அமைத்தல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pm_poshan_nutritional_norms",
+        "title_en": "PM POSHAN (Mid-Day Meal) Statutory Nutritional Norms per Child per Day",
+        "title_ta": "பிஎம் போஷான் (மதிய உணவு) ஒரு குழந்தைக்கு ஒரு நாளைக்கான ஊட்டச்சத்து அளவுகள்",
+        "headers_en": [
+          "Educational Level",
+          "Caloric Norm",
+          "Protein Norm",
+          "Foodgrain Component (Rice/Wheat)",
+          "Pulse Component"
+        ],
+        "headers_ta": [
+          "கல்வி நிலை",
+          "கலோரி அளவு",
+          "புரத அளவு",
+          "உணவு தானிய அளவு (அரிசி/கோதுமை)",
+          "பருப்பு அளவு"
+        ],
+        "rows_en": [
+          [
+            "Primary (Classes 1 to 5)",
+            "450 Calories",
+            "12 Grams Protein",
+            "100 Grams per day",
+            "20 Grams per day"
+          ],
+          [
+            "Upper Primary (Classes 6 to 8)",
+            "700 Calories",
+            "20 Grams Protein",
+            "150 Grams per day",
+            "30 Grams per day"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொடக்கப்பள்ளி (1 முதல் 5 வகுப்புகள்)",
+            "450 கலோரிகள்",
+            "12 கிராம் புரதம்",
+            "தினசரி 100 கிராம்",
+            "தினசரி 20 கிராம்"
+          ],
+          [
+            "நடுநிலைப்பள்ளி (6 முதல் 8 வகுப்புகள்)",
+            "700 கலோரிகள்",
+            "20 கிராம் புரதம்",
+            "தினசரி 150 கிராம்",
+            "தினசரி 30 கிராம்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Food Security Part 2: Institutions, NFSA & Delivery",
+        "short_label": "Institutional Rails",
+        "children": [
+          {
+            "title": "NFSA 2013 Legal Architecture",
+            "short_label": "NFSA 2013",
+            "children": [
+              {
+                "title": "Coverage (75% Rural, 50% Urban = ~67% Population)",
+                "short_label": "Coverage (67%)"
+              },
+              {
+                "title": "Priority Households (5 kg/person/month)",
+                "short_label": "PHH (5kg)"
+              },
+              {
+                "title": "AAY Poorest Households (35 kg/household/month)",
+                "short_label": "AAY (35kg)"
+              },
+              {
+                "title": "Oldest Woman (18+) as Head of Household",
+                "short_label": "Woman Head"
+              }
+            ]
+          },
+          {
+            "title": "Procurement & Storage (FCI)",
+            "short_label": "FCI & Buffers",
+            "children": [
+              {
+                "title": "FCI (Food Corporations Act 1964, Thanjavur 1965)",
+                "short_label": "FCI 1964"
+              },
+              {
+                "title": "MSP Open-Ended Procurement at FAQ Standards",
+                "short_label": "MSP Procurement"
+              },
+              {
+                "title": "Quarterly Buffer Stock Norms (Apr, Jul, Oct, Jan)",
+                "short_label": "Buffer Norms"
+              }
+            ]
+          },
+          {
+            "title": "Modern Delivery & Life-Cycle Schemes",
+            "short_label": "Delivery Systems",
+            "children": [
+              {
+                "title": "ONORC (Biometric e-PoS Nationwide Portability)",
+                "short_label": "ONORC Portability"
+              },
+              {
+                "title": "PM POSHAN (Classes 1-8: 450/700 kcal, 12/20g protein)",
+                "short_label": "PM POSHAN"
+              },
+              {
+                "title": "ICDS / Anganwadi Services (Oct 2, 1975, Under 6)",
+                "short_label": "ICDS Services"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "NFSA Coverage Percentages Trap: 75% Rural, 50% Urban, 67% Overall",
+        "points": {
+          "en": [
+            "TRAP: Assuming NFSA covers 100% of the rural population or uniform 75% across both rural and urban areas.",
+            "CORRECT FACT: NFSA statutorily covers up to 75% of the RURAL population and up to 50% of the URBAN population, resulting in an aggregate national coverage of approximately TWO-THIRDS (~67%) of the total population.",
+            "WHY CANDIDATES FAIL: Memorizing the overall 67% number and confusing the specific 75% rural and 50% urban sectoral caps."
+          ],
+          "ta": [
+            "பொறி: NFSA சட்டம் 100% கிராமப்புற மக்களை உள்ளடக்கியது அல்லது கிராமம்-நகரம் இரண்டிலும் ஒரே மாதிரியாக 75% மக்களை உள்ளடக்கியது என நினைப்பது.",
+            "சரியான உண்மை: NFSA சட்டம் கிராமப்புறங்களில் அதிகபட்சம் 75% மக்களையும், நகர்ப்புறங்களில் அதிகபட்சம் 50% மக்களையும் உள்ளடக்கியுள்ளது; இது நாட்டின் மொத்த மக்கள் தொகையில் சுமார் மூன்றில் இரண்டு பங்கு (~67%) ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மொத்த சராசரியான 67%-ஐ மட்டும் படித்துவிட்டு, 75% கிராமம் மற்றும் 50% நகரம் என்ற தனித்தனி வரம்புகளை மறந்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "AAY Allocation Basis Trap: Per Household, NOT Per Person",
+        "points": {
+          "en": [
+            "TRAP: Stating that Antyodaya Anna Yojana (AAY) beneficiaries receive 35 kg of foodgrains per PERSON per month.",
+            "CORRECT FACT: Under AAY, the 35 kg allocation is strictly PER HOUSEHOLD per month, regardless of family size. Under Priority Households (PHH), the allocation is 5 kg PER PERSON per month.",
+            "WHY CANDIDATES FAIL: Mixing up the 'per person' metric of PHH with the 'per household' metric of AAY."
+          ],
+          "ta": [
+            "பொறி: அந்தியோதயா அன்ன யோஜனா (AAY) திட்டத்தின் கீழ் நபர் ஒருவருக்கு மாதம் 35 கிலோ தானியம் வழங்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: AAY திட்டத்தில் குடும்ப உறுப்பினர்களின் எண்ணிக்கையைப் பொருட்படுத்தாமல் 'குடும்பத்திற்கு' மாதம் 35 கிலோ வழங்கப்படுகிறது! முன்னுரிமைக் குடும்பங்களில் (PHH) மட்டுமே 'நபர் ஒருவருக்கு' மாதம் 5 கிலோ வழங்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: PHH-ன் நபர் அடிப்படையிலான கணக்கையும், AAY-ன் குடும்ப அடிப்படையிலான கணக்கையும் ஒன்றோடொன்று குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Head of Household Age Threshold Trap: 18 Years, NOT 21 Years",
+        "points": {
+          "en": [
+            "TRAP: Marking 21 years as the minimum age for a woman to be designated Head of Household on a ration card under Section 13 of NFSA.",
+            "CORRECT FACT: Under Section 13 of NFSA, the oldest woman member aged EIGHTEEN (18) YEARS OR ABOVE is designated as the Head of the Household for ration card issuance.",
+            "WHY CANDIDATES FAIL: Confusing general marital/electoral age conventions with the statutory 18-year cutoff specified in Section 13."
+          ],
+          "ta": [
+            "பொறி: NFSA பிரிவு 13-ன் கீழ் ரேஷன் கார்டில் குடும்பத் தலைவியாகக் குறிப்பிடப்படும் பெண்ணின் குறைந்தபட்ச வயது 21 என நினைப்பது.",
+            "சரியான உண்மை: NFSA சட்டப் பிரிவு 13-ன் கீழ், குடும்பத்தின் மூத்த பெண் உறுப்பினருக்கு '18 வயது அல்லது அதற்கு மேல்' இருந்தால் அவரே குடும்பத் தலைவியாக அங்கீகரிக்கப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சில சட்டங்களிலுள்ள 21 வயது வரம்பை இதனுடன் தவறாகப் பொருத்திப் பார்ப்பது."
+          ]
+        }
+      },
+      {
+        "title": "FCI First Operational Office Location Trap: Thanjavur, NOT Delhi",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Food Corporation of India began operations in New Delhi.",
+            "CORRECT FACT: While FCI is headquartered in New Delhi today, it was set up in 1964 and commenced its very FIRST district operational office in THANJAVUR, Tamil Nadu (the rice bowl of South India) on January 14, 1965.",
+            "WHY CANDIDATES FAIL: This is a classic, high-yield TNPSC state-specific trap that tests historical institutional origin."
+          ],
+          "ta": [
+            "பொறி: இந்திய உணவுக் கழகம் (FCI) தனது முதல் அலுவலகத்தை புது தில்லியில் தொடங்கியது என நினைப்பது.",
+            "சரியான உண்மை: FCI-ன் தலைமை அலுவலகம் தற்போது தில்லியில் இருந்தாலும், 1964 சட்டத்தின்படி அது தனது 'முதல் மாவட்ட அலுவலகத்தை' ஜனவரி 14, 1965 அன்று தமிழ்நாட்டின் நெற்களஞ்சியமான 'தஞ்சாவூரில்' தொடங்கியது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இது டிஎன்பிஎஸ்சி தேர்வுகளில் கேட்கப்படும் முதன்மையான தமிழ்நாடு சார்ந்த தனித்துவமான கேள்வியாகும்."
+          ]
+        }
+      },
+      {
+        "title": "ONORC Requirement Trap: Does NOT Require a New National Ration Card",
+        "points": {
+          "en": [
+            "TRAP: Believing beneficiaries must surrender their state ration card and obtain a new central 'ONORC Smart Card' to access portability.",
+            "CORRECT FACT: ONORC does NOT require any new ration card. Beneficiaries use their EXISTING state ration card or simply quote their Aadhaar number at any biometrically enabled e-PoS Fair Price Shop anywhere in India.",
+            "WHY CANDIDATES FAIL: Falling for commercial rumors that a separate card must be issued by the Union Ministry."
+          ],
+          "ta": [
+            "பொறி: ஒரே நாடு ஒரே ரேஷன் கார்டு திட்டத்தின் பலனைப் பெற பழைய கார்டை ஒப்படைத்துவிட்டு புதிய மத்திய 'ONORC ஸ்மார்ட் கார்டு' வாங்க வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: ONORC திட்டத்திற்கு எந்த புதிய ரேஷன் கார்டும் தேவையில்லை! பயனாளிகள் தங்களின் 'தற்போதைய மாநில ரேஷன் கார்டை' பயன்படுத்தியோ அல்லது ஆதார் எண்ணைக் கூறியோ பயோமெட்ரிக் e-PoS இயந்திரம் உள்ள எந்த ரேஷன் கடையிலும் பொருட்களைப் பெறலாம்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: புதிய திட்டம் என்பதால் புதிய அடையாள அட்டை வழங்கப்படும் என்ற தவறான எண்ணம்."
+          ]
+        }
+      },
+      {
+        "title": "Beneficiary Identification Responsibility Trap: States Identify, NOT Centre",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Central Government directly selects and identifies individual eligible households under NFSA.",
+            "CORRECT FACT: The Central Government ONLY determines state-wise population coverage quotas using NITI Aayog/Census data. The actual identification of eligible Antyodaya and Priority households, and the physical issuance of ration cards, is the EXCLUSIVE statutory responsibility of the respective STATE GOVERNMENTS.",
+            "WHY CANDIDATES FAIL: Because NFSA is a central statute heavily funded by Delhi, candidates misattribute grassroots beneficiary enumeration to the Union."
+          ],
+          "ta": [
+            "பொறி: NFSA-ன் கீழ் தகுதியுள்ள ஏழைக் குடும்பங்களை மத்திய அரசே நேரடியாகத் தேர்வு செய்து அடையாளம் காண்கிறது என நினைப்பது.",
+            "சரியான உண்மை: மத்திய அரசு மாநிலங்களுக்கான ஒட்டுமொத்த மக்கள் தொகை ஒதுக்கீட்டு அளவை மட்டுமே நிர்ணயிக்கிறது. உண்மையான தகுதியுள்ள குடும்பங்களை களத்தில் அடையாளம் காண்பதும், ரேஷன் கார்டுகளை வழங்குவதும் முழுமையாக 'மாநில அரசுகளின்' பிரத்யேகப் பொறுப்பாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய அரசின் சட்டம் என்பதாலும் மத்திய அரசே நிதி தருவதாலும் கணக்கெடுப்பையும் மத்திய அரசே செய்யும் என தவறாக எண்ணுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "NFSA was enacted on September 10, 2013 with retrospective effect from July 5, 2013.",
+        "NFSA legally covers 75% of the rural and 50% of the urban population (~67% nationally).",
+        "Priority Households are entitled to 5 kg of foodgrains per person per month.",
+        "Antyodaya Anna Yojana families receive 35 kg of foodgrains per household per month.",
+        "Section 13 of NFSA designates the oldest woman aged 18+ as Head of the Household.",
+        "NFSA guarantees a maternity cash entitlement of not less than ₹6,000 for pregnant women.",
+        "FCI set up its first district office in Thanjavur, Tamil Nadu on January 14, 1965.",
+        "The Mid-Day Meal Scheme (now PM POSHAN) was originally launched on August 15, 1995.",
+        "Primary school meals provide 450 calories and 12 grams of protein per child per day.",
+        "Upper primary meals provide 700 calories and 20 grams of protein per child per day.",
+        "Integrated Child Development Services (ICDS) was launched on October 2, 1975.",
+        "Under PMGKAY, NFSA foodgrain allocations were made 100% free of cost from January 1, 2023."
+      ],
+      "ta": [
+        "NFSA சட்டம் செப்டம்பர் 10, 2013-ல் ஜூலை 5, 2013 முதல் முன்செல்லும் தேதியுடன் இயற்றப்பட்டது.",
+        "NFSA கிராமப்புறத்தில் 75% மற்றும் நகர்ப்புறத்தில் 50% (தேசிய அளவில் ~67%) மக்களுக்குப் பாதுகாப்பு அளிக்கிறது.",
+        "முன்னுரிமைக் குடும்பங்களுக்கு நபர் ஒருவருக்கு மாதம் 5 கிலோ உணவு தானியம் வழங்கப்படுகிறது.",
+        "அந்தியோதயா அன்ன யோஜனா குடும்பங்களுக்கு மாதம் 35 கிலோ தானியம் வழங்கப்படுகிறது.",
+        "NFSA பிரிவு 13-ன் படி 18 வயது நிரம்பிய மூத்த பெண்ணே குடும்பத் தலைவியாகக் குறிப்பிடப்படுகிறார்.",
+        "கர்ப்பிணிப் பெண்களுக்கு குறைந்தது ₹6,000 மகப்பேறு உதவித்தொகையை NFSA உத்தரவாதம் செய்கிறது.",
+        "FCI தனது முதல் மாவட்ட அலுவலகத்தை ஜனவரி 14, 1965 அன்று தமிழ்நாட்டின் தஞ்சாவூரில் அமைத்தது.",
+        "மதிய உணவுத் திட்டம் (தற்போது பிஎம் போஷான்) ஆகஸ்ட் 15, 1995 அன்று தொடங்கப்பட்டது.",
+        "தொடக்கப்பள்ளி மதிய உணவு தினசரி குழந்தைக்கு 450 கலோரிகள் மற்றும் 12 கிராம் புரதத்தை வழங்குகிறது.",
+        "நடுநிலைப்பள்ளி மதிய உணவு தினசரி குழந்தைக்கு 700 கலோரிகள் மற்றும் 20 கிராம் புரதத்தை வழங்குகிறது.",
+        "ஒருங்கிணைந்த குழந்தைகள் வளர்ச்சித் திட்டம் (ICDS) அக்டோபர் 2, 1975 அன்று தொடங்கப்பட்டது.",
+        "PMGKAY திட்டத்தின் கீழ் NFSA தானியங்கள் ஜனவரி 1, 2023 முதல் முற்றிலும் இலவசமாக்கப்பட்டன."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "NFSA 2013 converted food assistance from discretionary welfare into a justiciable legal right.",
+        "Coverage: 75% rural and 50% urban population, covering two-thirds (~67%) of India's population.",
+        "Priority Households receive 5 kg/person/month; AAY households receive 35 kg/household/month.",
+        "Section 13: Oldest woman aged 18+ is legally designated Head of the Household on ration cards.",
+        "Maternity benefit under NFSA is not less than ₹6,000, linked with PMMVY.",
+        "PDS Evolution: Universal PDS -> RPDS (1992) -> Targeted PDS (1997) -> AAY (2000) -> NFSA (2013).",
+        "FCI was established under Food Corporations Act 1964; first office opened in Thanjavur in 1965.",
+        "ONORC provides nationwide ration portability through biometric e-PoS devices without new cards.",
+        "PM POSHAN guarantees 450 kcal / 12g protein for primary and 700 kcal / 20g protein for upper primary.",
+        "Centre determines state quota percentages; States identify beneficiaries and issue ration cards."
+      ],
+      "ta": [
+        "NFSA 2013 உணவு உதவியை அரசின் கருணைத் திட்டத்திலிருந்து சட்டப்பூர்வ உரிமையாக மாற்றியது.",
+        "வரம்பு: கிராமப்புறத்தில் 75% மற்றும் நகர்ப்புறத்தில் 50%, நாட்டின் மக்கள் தொகையில் மூன்றில் இரண்டு பங்கு (~67%).",
+        "முன்னுரிமைக் குடும்பங்களுக்கு 5 கிலோ/நபர்/மாதம்; AAY குடும்பங்களுக்கு 35 கிலோ/குடும்பம்/மாதம்.",
+        "பிரிவு 13: 18 வயது நிரம்பிய மூத்த பெண் ரேஷன் கார்டில் குடும்பத் தலைவியாக நியமிக்கப்படுகிறார்.",
+        "NFSA-ன் கீழான மகப்பேறு உதவித்தொகை குறைந்தது ₹6,000 ஆகும், இது PMMVY உடன் இணைக்கப்பட்டுள்ளது.",
+        "PDS வளர்ச்சி: பொது PDS -> RPDS (1992) -> இலக்கு PDS (1997) -> AAY (2000) -> NFSA (2013).",
+        "1964 சட்டத்தின் கீழ் FCI உருவாக்கப்பட்டது; முதல் அலுவலகம் 1965-ல் தஞ்சாவூரில் திறக்கப்பட்டது.",
+        "ONORC புதிய கார்டுகள் இன்றி பயோமெட்ரிக் e-PoS மூலம் நாடு தழுவிய ரேஷன் பெயர்வுத்திறனை அளிக்கிறது.",
+        "பிஎம் போஷான் தொடக்கப்பள்ளிக்கு 450 kcal / 12g புரதமும், நடுநிலைப் பள்ளிக்கு 700 kcal / 20g புரதமும் தருகிறது.",
+        "மத்திய அரசு மாநில ஒதுக்கீட்டு சதவீதத்தை தீர்மானிக்கிறது; மாநிலங்கள் பயனாளிகளை அடையாளம் காண்கின்றன."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_fs_201",
+        "front_en": "What proportion of India's population is statutorily covered under the National Food Security Act, 2013?",
+        "front_ta": "தேசிய உணவுப் பாதுகாப்புச் சட்டம் 2013-ன் கீழ் சட்டப்பூர்வமாகப் பாதுகாக்கப்படும் மக்கள் தொகை விகிதம் என்ன?",
+        "back_en": "Up to 75% of the rural population and 50% of the urban population (~67% of total national population).",
+        "back_ta": "கிராமப்புற மக்கள் தொகையில் 75% வரை மற்றும் நகர்ப்புற மக்கள் தொகையில் 50% வரை (தேசிய அளவில் ~67%)."
+      },
+      {
+        "id": "rc_fs_202",
+        "front_en": "What is the monthly foodgrain entitlement for Priority Households (PHH) under NFSA?",
+        "front_ta": "NFSA சட்டத்தின் கீழ் முன்னுரிமைக் குடும்பங்களுக்கு (PHH) வழங்கப்படும் மாதாந்திர உணவு தானிய அளவு என்ன?",
+        "back_en": "5 kg of foodgrains per person per month.",
+        "back_ta": "நபர் ஒருவருக்கு மாதம் 5 கிலோ உணவு தானியம்."
+      },
+      {
+        "id": "rc_fs_203",
+        "front_en": "What is the monthly foodgrain entitlement for Antyodaya Anna Yojana (AAY) families?",
+        "front_ta": "அந்தியோதயா அன்ன யோஜனா (AAY) குடும்பங்களுக்கான மாதாந்திர உணவு தானிய உரிமை என்ன?",
+        "back_en": "35 kg of foodgrains per household per month.",
+        "back_ta": "குடும்பத்திற்கு மாதம் 35 கிலோ உணவு தானியம்."
+      },
+      {
+        "id": "rc_fs_204",
+        "front_en": "Who is designated as the Head of the Household for ration card issuance under Section 13 of NFSA?",
+        "front_ta": "NFSA பிரிவு 13-ன் கீழ் ரேஷன் கார்டு வழங்குவதற்காக குடும்பத் தலைவியாக யார் நியமிக்கப்படுகிறார்கள்?",
+        "back_en": "The oldest woman member of the household aged 18 years or above.",
+        "back_ta": "குடும்பத்தில் உள்ள 18 வயது அல்லது அதற்கு மேற்பட்ட மூத்த பெண் உறுப்பினர்."
+      },
+      {
+        "id": "rc_fs_205",
+        "front_en": "What minimum maternity benefit is guaranteed to pregnant women under Section 4 of NFSA?",
+        "front_ta": "NFSA பிரிவு 4-ன் கீழ் கர்ப்பிணிப் பெண்களுக்கு உத்தரவாதம் அளிக்கப்பட்டுள்ள குறைந்தபட்ச மகப்பேறு உதவித்தொகை என்ன?",
+        "back_en": "A cash maternity benefit of not less than ₹6,000.",
+        "back_ta": "குறைந்தது ₹6,000 மகப்பேறு நிதி உதவி."
+      },
+      {
+        "id": "rc_fs_206",
+        "front_en": "Where did the Food Corporation of India (FCI) establish its very first operational office in 1965?",
+        "front_ta": "இந்திய உணவுக் கழகம் (FCI) 1965-ல் தனது முதல் செயல்பாட்டு அலுவலகத்தை எங்கு அமைத்தது?",
+        "back_en": "Thanjavur, Tamil Nadu (on January 14, 1965).",
+        "back_ta": "தமிழ்நாட்டின் தஞ்சாவூரில் (ஜனவரி 14, 1965 அன்று)."
+      },
+      {
+        "id": "rc_fs_207",
+        "front_en": "What technological devices enable ration portability under the One Nation One Ration Card (ONORC) scheme?",
+        "front_ta": "ஒரே நாடு ஒரே ரேஷன் கார்டு (ONORC) திட்டத்தில் ரேஷன் பெயர்வுத்திறனை சாத்தியமாக்கும் தொழில்நுட்பக் கருவி எது?",
+        "back_en": "Electronic Point of Sale (e-PoS) devices with biometric Aadhaar authentication at Fair Price Shops.",
+        "back_ta": "நியாய விலைக் கடைகளில் உள்ள பயோமெட்ரிக் ஆதார் இணைப்பு கொண்ட மின்னணு விற்பனை இயந்திரங்கள் (e-PoS)."
+      },
+      {
+        "id": "rc_fs_208",
+        "front_en": "What are the daily nutritional norms for primary students (Classes 1-5) under PM POSHAN?",
+        "front_ta": "பிஎம் போஷான் திட்டத்தில் தொடக்கப்பள்ளி மாணவர்களுக்கான (1-5 வகுப்புகள்) தினசரி ஊட்டச்சத்து அளவுகள் என்ன?",
+        "back_en": "450 Calories and 12 Grams of Protein.",
+        "back_ta": "450 கலோரிகள் மற்றும் 12 கிராம் புரதம்."
+      },
+      {
+        "id": "rc_fs_209",
+        "front_en": "What are the daily nutritional norms for upper primary students (Classes 6-8) under PM POSHAN?",
+        "front_ta": "பிஎம் போஷான் திட்டத்தில் நடுநிலைப்பள்ளி மாணவர்களுக்கான (6-8 வகுப்புகள்) தினசரி ஊட்டச்சத்து அளவுகள் என்ன?",
+        "back_en": "700 Calories and 20 Grams of Protein.",
+        "back_ta": "700 கலோரிகள் மற்றும் 20 கிராம் புரதம்."
+      },
+      {
+        "id": "rc_fs_210",
+        "front_en": "Which level of government is statutorily responsible for identifying eligible beneficiaries and issuing ration cards under NFSA?",
+        "front_ta": "NFSA சட்டத்தின் கீழ் தகுதியான பயனாளிகளை அடையாளம் கண்டு ரேஷன் கார்டுகளை வழங்கும் சட்டப்பூர்வப் பொறுப்பு யாரிடம் உள்ளது?",
+        "back_en": "The respective State Governments (the Centre only determines overall population quota percentages).",
+        "back_ta": "அந்தந்த மாநில அரசுகளிடம் (மத்திய அரசு ஒட்டுமொத்த மக்கள் தொகை ஒதுக்கீட்டை மட்டுமே தீர்மானிக்கிறது)."
+      }
+    ]
+  }
+}

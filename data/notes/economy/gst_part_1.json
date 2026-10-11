@@ -1,0 +1,813 @@
+{
+  "meta": {
+    "topic_id": "economy_gst_part_1",
+    "repository_id": "economy_gst",
+    "display_title": "Goods and Services Tax (GST) – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Goods and Services Tax (GST)",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundation",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "101st Constitutional Amendment Act 2016",
+    "122nd Amendment Bill",
+    "Destination Based Consumption Tax",
+    "Input Tax Credit ITC",
+    "Cascading Effect Elimination",
+    "CGST SGST IGST UTGST",
+    "Article 279A GST Council",
+    "Vijay Kelkar Task Force 2003",
+    "Asim Dasgupta Empowered Committee",
+    "July 1 2017 Rollout"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the fundamental definition, destination-based principle, and cascading elimination under GST.",
+        "Comprehend the historical roadmap from the Kelkar Task Force (2003) to the 101st Constitutional Amendment."
+      ],
+      "ta": [
+        "ஜிஎஸ்டியின் அடிப்படை வரையறை, சேருமிடம் சார்ந்த கோட்பாடு மற்றும் வரி அடுக்கு ஒழிப்பைப் புரிந்து கொள்ளுதல்.",
+        "கேல்கர் பணிக்குழு (2003) முதல் 101-வது அரசியலமைப்புத் திருத்தம் வரையிலான வரலாற்றுப் பாதையை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key milestones: 122nd Bill vs 101st Act, assent on Sept 8, 2016, rollout on July 1, 2017.",
+        "Recall the four pillars of the Dual GST model: CGST, SGST, IGST (Article 269A), and UTGST."
+      ],
+      "ta": [
+        "முக்கிய மைல்கற்களை நினைவில் நிறுத்துதல்: 122-வது மசோதா vs 101-வது சட்டம், ஒப்புதல் செப்டம்பர் 8, 2016, அமல் ஜூலை 1, 2017.",
+        "இரட்டை ஜிஎஸ்டி மாதிரியின் நான்கு தூண்களை நினைவுகூருதல்: CGST, SGST, IGST (பிரிவு 269A), மற்றும் UTGST."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how the destination-based consumption model shifts revenue accruals from producing to consuming states.",
+        "Compare intra-state tax splitting (CGST + SGST) with inter-state integrated taxation (IGST)."
+      ],
+      "ta": [
+        "சேருமிடம் சார்ந்த நுகர்வு மாதிரி வரி வருவாயை உற்பத்தி மாநிலங்களிலிருந்து நுகர்வு மாநிலங்களுக்கு எவ்வாறு மாற்றுகிறது என்பதை ஆய்வு செய்தல்.",
+        "மாநிலத்திற்குள் வரிப் பகிர்வை (CGST + SGST) மாநிலங்களுக்கு இடையேயான வரியுடன் (IGST) ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to identify TNPSC exam traps regarding Bill vs Act numbers, UTGST scope, and IGST levying powers.",
+        "Evaluate the economic benefits of Input Tax Credit in lowering retail price distortions."
+      ],
+      "ta": [
+        "மசோதா vs சட்ட எண்கள், UTGST வரம்பு மற்றும் IGST விதிக்கும் அதிகாரம் குறித்த TNPSC தேர்வுப் பொறிகளைக் கண்டறிய அறிவைப் பயன்படுத்துதல்.",
+        "சில்லறை விலைச் சிதைவுகளைக் குறைப்பதில் உள்ளீட்டு வரி வரவின் பொருளாதார நன்மைகளை மதிப்பிடுதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Goods and Services Tax (GST) – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_indirect_tax_concepts",
+      "title_en": "Core Principles of GST: Cascading Elimination & Value Addition",
+      "title_ta": "ஜிஎஸ்டியின் அடிப்படைக் கோட்பாடுகள்: வரி அடுக்கு ஒழிப்பு மற்றும் மதிப்புக்கூட்டல்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_genesis_and_kelkar_task_force",
+      "title_en": "Historical Genesis & Evolution of GST in India",
+      "title_ta": "இந்தியாவில் ஜிஎஸ்டியின் வரலாற்றுத் தோற்றமும் பரிணாமமும்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_dual_gst_architecture",
+      "title_en": "The Dual Federal GST Architecture: CGST, SGST, IGST, UTGST",
+      "title_ta": "இரட்டை கூட்டாட்சி ஜிஎஸ்டி கட்டமைப்பு: CGST, SGST, IGST, UTGST",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_gst_council_constitutional_foundation",
+      "title_en": "GST Council: The Sovereign Constitutional Body (Article 279A)",
+      "title_ta": "ஜிஎஸ்டி கவுன்சில்: இறையாண்மை அரசியலமைப்பு அமைப்பு (பிரிவு 279A)",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The Goods and Services Tax (GST) is a comprehensive, multi-stage, destination-based value-added tax levied on the supply of goods and services across India, designed to eliminate cascading tax-on-tax effects through seamless input tax credit and establish a unified common national market.",
+      "ta": "சரக்கு மற்றும் சேவை வரி (GST) என்பது நாடு முழுவதும் பொருட்கள் மற்றும் சேவைகளின் விநியோகத்தின் மீது விதிக்கப்படும் ஒரு விரிவான, பல கட்ட, சேருமிடம் சார்ந்த மதிப்புக்கூட்டு வரியாகும். இது தொடர் உள்ளீட்டு வரி வரவு (Input Tax Credit) மூலம் வரியின் மீது வரி விதிக்கப்படும் அடுக்குகளைக் களைந்து, ஒருங்கிணைந்த பொதுவான தேசிய சந்தையை உருவாக்கும் நோக்கம் கொண்டது."
+    },
+    "introduction": {
+      "en": "Prior to July 1, 2017, India's indirect tax regime was severely fragmented across federal jurisdictions. The Centre levied taxes on manufacture (Central Excise Duty) and interstate trade (Central Sales Tax), while States levied taxes on retail sales (State VAT), entry of goods (Entry Tax / Octroi), and entertainment. This multiplicity created crippling tax cascading (tax-on-tax), interstate trade barriers, and intense economic distortion. Conceptualized initially by the Kelkar Task Force (2003) and shaped by the Empowered Committee of State Finance Ministers, GST was engineered as a Dual Federal Model—comprising Central GST (CGST) and State GST (SGST) on intra-state supplies, and Integrated GST (IGST) on inter-state supplies—underpinned by the constitutional creation of the GST Council under Article 279A.",
+      "ta": "ஜூலை 1, 2017-க்கு முன்னர், இந்தியாவின் மறைமுக வரி முறையானது மத்திய மற்றும் மாநில அதிகார வரம்புகளுக்கு இடையே கடுமையாகச் சிதறுண்டு காணப்பட்டது. மத்திய அரசு உற்பத்தி மீதும் (மத்திய கலால் வரி) மாநிலங்களுக்கு இடையேயான விற்பனை மீதும் (மத்திய விற்பனை வரி - CST) வரி விதித்தது; மாநில அரசுகள் சில்லறை விற்பனை (மாநில VAT), பொருட்கள் நுழைவு (நுழைவு வரி / ஆக்ட்ராய்) மற்றும் பொழுதுபோக்கு ஆகியவற்றின் மீது வரி விதித்தன. இந்த வரிப் பெருக்கம் வரி மீது வரி விதிக்கப்படும் அடுக்கு விளைவையும் (Cascading Effect), மாநில எல்லைச் சோதனைகளையும், தீவிர பொருளாதாரச் சிதைவுகளையும் ஏற்படுத்தியது. 2003-ஆம் ஆண்டு கேல்கர் பணிக்குழுவால் முன்மொழியப்பட்டு மாநில நிதி அமைச்சர்களின் அதிகாரமளிக்கப்பட்ட குழுவால் வடிவமைக்கப்பட்ட ஜிஎஸ்டி, இரட்டை கூட்டாட்சி மாதிரியாக (Dual GST) உருவாக்கப்பட்டது. இது மாநிலத்திற்குள்ளான விநியோகத்திற்கு CGST மற்றும் SGST-ஐயும், மாநிலங்களுக்கு இடையேயான விநியோகத்திற்கு IGST-ஐயும் கொண்டு, பிரிவு 279A-இன் கீழான ஜிஎஸ்டி கவுன்சிலின் வழிகாட்டுதலில் இயங்குகிறது."
+    },
+    "sec_indirect_tax_concepts": [
+      {
+        "title": "Elimination of Cascading Effect (Tax-on-Tax)",
+        "title_ta": "வரி அடுக்கு விளைவு (Tax-on-Tax) ஒழிப்பு",
+        "points": {
+          "en": [
+            "Cascading Effect occurs when a tax is levied on a product value that already includes previous taxes (e.g., State VAT being levied on top of Central Excise Duty).",
+            "Under GST, uninterrupted Input Tax Credit (ITC) is available across the entire value chain from manufacturer to retailer.",
+            "Tax is levied only on the net 'value addition' at each stage, dramatically reducing the embedded tax burden on final consumers."
+          ],
+          "ta": [
+            "வரி அடுக்கு விளைவு (Cascading Effect) என்பது ஏற்கனவே முந்தைய வரிகளை உள்ளடக்கிய ஒரு பொருளின் மொத்த மதிப்பின் மீது மீண்டும் வரி விதிக்கப்படுவதாகும் (எடுத்துக்காட்டாக, மத்திய கலால் வரி சேர்க்கப்பட்ட தொகையின் மீது மாநில VAT விதிக்கப்பட்டது).",
+            "ஜிஎஸ்டி-யின் கீழ், உற்பத்தியாளர் முதல் சில்லறை விற்பனையாளர் வரை முழு மதிப்புச் சங்கிலியிலும் தடையற்ற உள்ளீட்டு வரி வரவு (ITC) கிடைக்கிறது.",
+            "ஒவ்வொரு கட்டத்திலும் செய்யப்பட்ட நிகர 'மதிப்புக் கூட்டலுக்கு' (Value Addition) மட்டுமே வரி விதிக்கப்படுகிறது; இது இறுதி நுகர்வோர் மீதான வரிச் சுமையைப் பெருமளவு குறைக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Destination-Based Consumption Principle",
+        "title_ta": "சேருமிடம் சார்ந்த நுகர்வு வரி கோட்பாடு",
+        "points": {
+          "en": [
+            "Old Indirect Tax System was Origin-Based: Taxes like Central Sales Tax (CST) accrued to the producing/manufacturing State where goods originated.",
+            "GST is Destination-Based: The tax revenue accrues entirely to the jurisdiction where the goods or services are ultimately consumed, not where they are produced.",
+            "Consuming States (e.g., Uttar Pradesh, Bihar) benefit significantly from revenue inflows, whereas producing States (e.g., Tamil Nadu, Gujarat, Maharashtra) were initially protected via the 5-year compensation mechanism."
+          ],
+          "ta": [
+            "பழைய மறைமுக வரி முறை பிறப்பிடம் சார்ந்தது (Origin-Based): மத்திய விற்பனை வரி (CST) போன்ற வரிகள் பொருட்கள் உற்பத்தி செய்யப்பட்ட மாநிலத்திற்கே சென்றன.",
+            "ஜிஎஸ்டி என்பது சேருமிடம் சார்ந்தது (Destination-Based): பொருட்கள் உற்பத்தி செய்யப்பட்ட இடத்திற்கு வரி செல்லாமல், அவை இறுதியாக நுகரப்படும் (Consuming State) மாநிலத்திற்கே முழு வரி வருவாயும் செல்கிறது.",
+            "நுகர்வு மாநிலங்கள் (உ.பி., பீகார்) இதன் மூலம் அதிக வருவாய் பெறுகின்றன; உற்பத்தி மாநிலங்கள் (தமிழ்நாடு, குஜராத், மகாராஷ்டிரா) துவக்கத்தில் 5 ஆண்டு இழப்பீட்டுத் திட்டத்தின் மூலம் பாதுகாக்கப்பட்டன."
+          ]
+        }
+      }
+    ],
+    "sec_genesis_and_kelkar_task_force": [
+      {
+        "title": "Kelkar Task Force (2003) & Early Roadmaps",
+        "title_ta": "கேல்கர் பணிக்குழு (2003) மற்றும் ஆரம்ப வழிகாட்டுதல்கள்",
+        "points": {
+          "en": [
+            "The concept of a comprehensive national GST was first recommended in India by the Vijay Kelkar Task Force on Fiscal Responsibility and Budget Management (FRBM) in 2003.",
+            "Kelkar Committee recommended replacing the multiple central and state indirect levies with a unified national VAT.",
+            "In the Union Budget speech of 2006-07, Union Finance Minister P. Chidambaram officially proposed an ambitious roadmap to roll out a nationwide GST by April 1, 2010.",
+            "The Empowered Committee of State Finance Ministers, originally set up under Dr. Asim Dasgupta (West Bengal FM) in 2000 to design State VAT, was entrusted with drafting the design and roadmap of GST."
+          ],
+          "ta": [
+            "ஒரு விரிவான தேசிய ஜிஎஸ்டி வரிக்கான கருத்தாக்கத்தை இந்தியாவில் முதன்முதலில் 2003-இல் விஜய் கேல்கர் தலைமையிலான FRBM பணிக்குழு பரிந்துரைத்தது.",
+            "மத்திய மற்றும் மாநிலங்களின் பலதரப்பட்ட மறைமுக வரிகளை நீக்கிவிட்டு ஒருங்கிணைந்த தேசிய மதிப்புக்கூட்டு வரியைக் கொண்டுவர கேல்கர் குழு பரிந்துரைத்தது.",
+            "2006-07 மத்திய பட்ஜெட் உரையில், அப்போதைய நிதி அமைச்சர் ப. சிதம்பரம் ஏப்ரல் 1, 2010-க்குள் நாடு முழுவதும் ஜிஎஸ்டி-யை அமல்படுத்தும் இலக்கை முறைப்படி அறிவித்தார்.",
+            "2000-ஆம் ஆண்டில் மாநில VAT வரியை வடிவமைக்க டாக்டர் அசீம் தாஸ்குப்தா தலைமையில் அமைக்கப்பட்ட மாநில நிதி அமைச்சர்களின் அதிகாரமளிக்கப்பட்ட குழுவிடம் ஜிஎஸ்டி-யை வடிவமைக்கும் பொறுப்பு ஒப்படைக்கப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "First Discussion Paper & Legislative Journey",
+        "title_ta": "முதல் விவாத அறிக்கை மற்றும் சட்டமன்றப் பயணம்",
+        "points": {
+          "en": [
+            "In November 2009, the Empowered Committee released the landmark 'First Discussion Paper on Goods and Services Tax in India', outlining the Dual GST structure.",
+            "The Constitution (115th Amendment) Bill was introduced in Lok Sabha in 2011 but lapsed with the dissolution of the 15th Lok Sabha.",
+            "The Constitution (122nd Amendment) Bill was introduced in December 2014, eventually passed by Parliament in August 2016, receiving Presidential assent as the 101st Constitutional Amendment Act, 2016."
+          ],
+          "ta": [
+            "நவம்பர் 2009-இல், அதிகாரமளிக்கப்பட்ட குழு 'இந்தியாவில் சரக்கு மற்றும் சேவை வரி மீதான முதல் விவாத அறிக்கையை' வெளியிட்டு, இரட்டை ஜிஎஸ்டி கட்டமைப்பை விவரித்தது.",
+            "115-வது அரசியலமைப்புத் திருத்த மசோதா 2011-இல் மக்களவையில் அறிமுகப்படுத்தப்பட்டது; ஆனால் 15-வது மக்களவை கலைக்கப்பட்டதால் அது காலாவதியானது.",
+            "பின்னர் 122-வது அரசியலமைப்புத் திருத்த மசோதா டிசம்பர் 2014-இல் அறிமுகப்படுத்தப்பட்டு, ஆகஸ்ட் 2016-இல் நாடாளுமன்றத்தால் நிறைவேற்றப்பட்டு, 101-வது அரசியலமைப்புத் திருத்தச் சட்டம் 2016-ஆக குடியரசுத் தலைவரின் ஒப்புதலைப் பெற்றது."
+          ]
+        }
+      }
+    ],
+    "sec_dual_gst_architecture": [
+      {
+        "title": "Four Pillars of the Dual Model",
+        "title_ta": "இரட்டை மாதிரியின் நான்கு தூண்கள்",
+        "points": {
+          "en": [
+            "Central GST (CGST): Levied and collected by the Central Government on intra-state supplies of goods and services under the CGST Act, 2017.",
+            "State GST (SGST): Levied and collected by the respective State Government on intra-state supplies under respective SGST Acts enacted by State Legislatures.",
+            "Integrated GST (IGST): Levied and collected by the Central Government under Article 269A and the IGST Act, 2017 on inter-state trade and import of goods/services; apportioned between the Union and the consuming State.",
+            "Union Territory GST (UTGST): Levied on intra-territory supplies in Union Territories without legislatures (e.g., Andaman & Nicobar, Chandigarh, Ladakh) under the UTGST Act, 2017."
+          ],
+          "ta": [
+            "மத்திய ஜிஎஸ்டி (CGST): மாநிலத்திற்குள் நடைபெறும் விநியோகங்களின் மீது 2017-ஆம் ஆண்டின் CGST சட்டத்தின் கீழ் மத்திய அரசால் விதிக்கப்பட்டு வசூலிக்கப்படுகிறது.",
+            "மாநில ஜிஎஸ்டி (SGST): மாநிலத்திற்குள் நடைபெறும் விநியோகங்களின் மீது அந்தந்த மாநில சட்டமன்றங்கள் இயற்றிய SGST சட்டங்களின் கீழ் மாநில அரசால் விதிக்கப்பட்டு வசூலிக்கப்படுகிறது.",
+            "ஒருங்கிணைந்த ஜிஎஸ்டி (IGST): மாநிலங்களுக்கு இடையேயான வர்த்தகம் மற்றும் இறக்குமதிகள் மீது அரசியலமைப்பு பிரிவு 269A மற்றும் 2017-ஆம் ஆண்டின் IGST சட்டத்தின் கீழ் மத்திய அரசால் விதிக்கப்பட்டு வசூலிக்கப்படுகிறது; பின்னர் மத்திய மற்றும் நுகர்வு மாநிலங்களுக்கு இடையே பகிர்ந்தளிக்கப்படுகிறது.",
+            "ஒன்றியப் பிரதேச ஜிஎஸ்டி (UTGST): சட்டமன்றம் இல்லாத ஒன்றியப் பிரதேசங்களில் (அந்தமான், சண்டிகர், லடாக்) நடைபெறும் விநியோகங்கள் மீது UTGST சட்டம் 2017-இன் கீழ் விதிக்கப்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Supply Mechanics & Revenue Symmetry",
+        "title_ta": "விநியோக இயக்கவியல் மற்றும் வருவாய் சமநிலை",
+        "points": {
+          "en": [
+            "Intra-State Supply: When Location of Supplier and Place of Supply are in the SAME State: CGST + SGST are charged equally (e.g., 18% slab = 9% CGST + 9% SGST).",
+            "Inter-State Supply: When Location of Supplier and Place of Supply are in DIFFERENT States: IGST is charged at the full slab rate (e.g., 18% IGST).",
+            "Rate Parity: IGST rate is mathematically identical to CGST rate plus SGST rate (IGST = CGST + SGST)."
+          ],
+          "ta": [
+            "மாநிலத்திற்குள் விநியோகம்: விற்பனையாளர் இருப்பிடமும் விநியோக இடமும் ஒரே மாநிலத்திற்குள் இருக்கும் போது: CGST + SGST சரிசமமாக விதிக்கப்படுகிறது (எ.கா: 18% வரி = 9% CGST + 9% SGST).",
+            "மாநிலங்களுக்கு இடையே விநியோகம்: விற்பனையாளர் இருப்பிடமும் விநியோக இடமும் வெவ்வேறு மாநிலங்களில் இருக்கும் போது: முழு வரி விகிதமும் IGST ஆக விதிக்கப்படுகிறது (எ.கா: 18% IGST).",
+            "வரிச் சமநிலை: IGST விகிதம் என்பது CGST மற்றும் SGST ஆகிய இரண்டின் கூட்டுத்தொகைக்கு சமமாகும் (IGST = CGST + SGST)."
+          ]
+        }
+      }
+    ],
+    "sec_gst_council_constitutional_foundation": [
+      {
+        "title": "Article 279A Enactment",
+        "title_ta": "பிரிவு 279A உருவாக்கம்",
+        "points": {
+          "en": [
+            "Article 279A was inserted by the 101st Constitutional Amendment Act, 2016.",
+            "Mandated the President of India to constitute the GST Council within 60 days of the commencement of Article 279A (notified September 12, 2016).",
+            "The GST Council is a joint constitutional forum of the Union and the States, acting as the highest decision-making apex body on GST policies, rates, and exemptions across India."
+          ],
+          "ta": [
+            "101-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2016 மூலம் அரசியலமைப்பில் பிரிவு 279A சேர்க்கப்பட்டது.",
+            "பிரிவு 279A நடைமுறைக்கு வந்த 60 நாட்களுக்குள் குடியரசுத் தலைவர் ஜிஎஸ்டி கவுன்சிலை அமைக்க வேண்டும் எனக் கட்டாயமாக்கியது (செப்டம்பர் 12, 2016 அன்று அமைக்கப்பட்டது).",
+            "ஜிஎஸ்டி கவுன்சில் என்பது மத்திய மற்றும் மாநில அரசுகளின் கூட்டுக் கூட்டாட்சி அமைப்பாகும்; இது இந்தியாவில் ஜிஎஸ்டி கொள்கைகள், வரி விகிதங்கள் மற்றும் விலக்குகள் குறித்த உச்ச முடிவெடுக்கும் அமைப்பாக இயங்குகிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_old_indirect_vs_gst_p1",
+        "title_en": "Table 1: Structural Paradigm: Pre-GST Indirect Tax System vs GST",
+        "title_ta": "அட்டவணை 1: கட்டமைப்பு மாற்றம்: ஜிஎஸ்டி-க்கு முந்தைய மறைமுக வரி முறை vs ஜிஎஸ்டி",
+        "headers_en": [
+          "Feature",
+          "Pre-GST Indirect Tax Regime",
+          "Goods and Services Tax (GST)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "ஜிஎஸ்டி-க்கு முந்தைய மறைமுக வரி முறை",
+          "சரக்கு மற்றும் சேவை வரி (GST)"
+        ],
+        "rows_en": [
+          [
+            "Taxable Base / Event",
+            "Fragmented: Manufacture (Excise), Sale (VAT), Service provision",
+            "Single unified taxable event: 'Supply' of goods or services"
+          ],
+          [
+            "Tax Point Principle",
+            "Origin-based (producing state collected and retained CST)",
+            "Destination-based consumption tax (consuming state benefits)"
+          ],
+          [
+            "Cascading Impact",
+            "Severe tax-on-tax (VAT levied on Excise; no cross-credit)",
+            "Completely eliminated via seamless Input Tax Credit (ITC)"
+          ],
+          [
+            "Tax Multiplicity",
+            "17 major indirect taxes and 13 cesses levied across Centre and States",
+            "Single unified national tax subsuming major federal levies"
+          ],
+          [
+            "Interstate Checkposts",
+            "Physical border checkposts causing transit delays and congestion",
+            "Abolished border checkposts; seamless transit via e-Way Bills"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரி விதிப்பு நிகழ்வு",
+            "சிதறுண்ட நிகழ்வுகள்: உற்பத்தி (கலால்), விற்பனை (VAT), சேவை வழங்குதல்",
+            "ஒற்றை ஒருங்கிணைந்த நிகழ்வு: சரக்கு அல்லது சேவையின் 'விநியோகம்' (Supply)"
+          ],
+          [
+            "வரி விதிப்புக் கோட்பாடு",
+            "பிறப்பிடம் சார்ந்தது (உற்பத்தி மாநிலமே CST வரியைப் பெற்றது)",
+            "சேருமிடம் சார்ந்த நுகர்வு வரி (பொருளை நுகரும் மாநிலத்திற்கே வரி)"
+          ],
+          [
+            "வரி அடுக்கு விளைவு",
+            "கடுமையான வரி மீது வரி (கலால் வரி மீது VAT; வரவு மறுப்பு)",
+            "தடையற்ற உள்ளீட்டு வரி வரவு (ITC) மூலம் முழுமையாக ஒழிக்கப்பட்டது"
+          ],
+          [
+            "வரிகளின் எண்ணிக்கை",
+            "மத்திய மற்றும் மாநில அரசுகளால் விதிக்கப்பட்ட 17 வரிகள் மற்றும் 13 செஸ்கள்",
+            "பெரும்பாலான வரிகளை உள்ளடக்கிய ஒற்றை தேசிய வரி முறை"
+          ],
+          [
+            "மாநில எல்லை சோதனைச் சாவடிகள்",
+            "வாகன நெரிசலை ஏற்படுத்திய இயற்பியல் எல்லைச் சோதனைச் சாவடிகள்",
+            "சோதனைச் சாவடிகள் ஒழிப்பு; e-Way Bill மூலம் தடையற்ற சரக்கு போக்குவரத்து"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_dual_gst_components_p1",
+        "title_en": "Table 2: Components of India's Dual GST Model",
+        "title_ta": "அட்டவணை 2: இந்தியாவின் இரட்டை ஜிஎஸ்டி மாதிரியின் கூறுகள்",
+        "headers_en": [
+          "Component",
+          "Levying & Administering Authority",
+          "Statutory Enactment",
+          "Applicability Horizon"
+        ],
+        "headers_ta": [
+          "கூறு",
+          "விதிக்கும் மற்றும் நிர்வகிக்கும் அதிகாரம்",
+          "சட்டப்பூர்வ அடிப்படை",
+          "பயன்பாட்டு வரம்பு"
+        ],
+        "rows_en": [
+          [
+            "CGST",
+            "Central Government",
+            "CGST Act, 2017",
+            "Intra-state supplies (shared equally with SGST)"
+          ],
+          [
+            "SGST",
+            "Respective State Government",
+            "Respective SGST Acts, 2017",
+            "Intra-state supplies (shared equally with CGST)"
+          ],
+          [
+            "IGST",
+            "Central Government (apportioned to States)",
+            "Article 269A & IGST Act, 2017",
+            "Inter-state trade, commerce, and import transactions"
+          ],
+          [
+            "UTGST",
+            "Central Government (Union Territories)",
+            "UTGST Act, 2017",
+            "Intra-territory supplies in UTs without Legislature"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "CGST (மத்திய ஜிஎஸ்டி)",
+            "மத்திய அரசு",
+            "CGST சட்டம், 2017",
+            "மாநிலத்திற்குள் நடைபெறும் விநியோகங்கள் (SGST உடன் சமபங்கு)"
+          ],
+          [
+            "SGST (மாநில ஜிஎஸ்டி)",
+            "தொடர்புடைய மாநில அரசு",
+            "மாநில SGST சட்டங்கள், 2017",
+            "மாநிலத்திற்குள் நடைபெறும் விநியோகங்கள் (CGST உடன் சமபங்கு)"
+          ],
+          [
+            "IGST (ஒருங்கிணைந்த ஜிஎஸ்டி)",
+            "மத்திய அரசு (மாநிலங்களுக்குப் பகிர்ந்தளிக்கப்படும்)",
+            "பிரிவு 269A & IGST சட்டம், 2017",
+            "மாநிலங்களுக்கு இடையேயான வர்த்தகம் மற்றும் இறக்குமதிகள்"
+          ],
+          [
+            "UTGST (ஒன்றியப் பிரதேச ஜிஎஸ்டி)",
+            "மத்திய அரசு (ஒன்றியப் பிரதேசங்கள்)",
+            "UTGST சட்டம், 2017",
+            "சட்டமன்றம் இல்லாத ஒன்றியப் பிரதேச விநியோகங்கள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_origin_vs_destination_p1",
+        "title_en": "Table 3: Economic Delineation: Origin-Based vs Destination-Based Taxation",
+        "title_ta": "அட்டவணை 3: பொருளாதார வேறுபாடு: பிறப்பிடம் சார்ந்த வரி vs சேருமிடம் சார்ந்த வரி",
+        "headers_en": [
+          "Dimension",
+          "Origin-Based Taxation (Old System)",
+          "Destination-Based Taxation (GST)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பிறப்பிடம் சார்ந்த வரி (பழைய முறை)",
+          "சேருமிடம் சார்ந்த வரி (ஜிஎஸ்டி)"
+        ],
+        "rows_en": [
+          [
+            "Taxing Jurisdiction",
+            "State where goods are manufactured or sold from",
+            "State where goods or services are final-consumed"
+          ],
+          [
+            "Primary Tax Instrument",
+            "Central Sales Tax (CST) levied at 2% origin retention",
+            "Integrated GST (IGST) transferred to destination state"
+          ],
+          [
+            "Revenue Distribution",
+            "Heavily skewed towards industrialized manufacturing states",
+            "Equitably distributed based on actual final consumption"
+          ],
+          [
+            "Export Competitiveness",
+            "Taxes embedded in export price reduced global competitiveness",
+            "Exports zero-rated; all taxes refunded at destination border"
+          ],
+          [
+            "Interstate Distortion",
+            "Encouraged branch transfers and artificial corporate depots",
+            "Neutralized geographic tax arbitrage across state lines"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரி விதிக்கும் எல்லை",
+            "பொருட்கள் எங்கு உற்பத்தி அல்லது விற்பனை செய்யப்படுகிறதோ அந்த மாநிலம்",
+            "பொருட்கள் அல்லது சேவைகள் எங்கு நுகரப்படுகிறதோ அந்த மாநிலம்"
+          ],
+          [
+            "முக்கிய வரி கருவி",
+            "2% மூலத்தில் தக்கவைக்கப்பட்ட மத்திய விற்பனை வரி (CST)",
+            "நுகர்வு மாநிலத்திற்கு மாற்றப்படும் ஒருங்கிணைந்த ஜிஎஸ்டி (IGST)"
+          ],
+          [
+            "வருவாய் பகிர்வு",
+            "தொழில்மயமான உற்பத்தி மாநிலங்களுக்கு சாதகமாக அமைந்தது",
+            "உண்மையான இறுதி நுகர்வின் அடிப்படையில் சமமாக விநியோகிக்கப்படுகிறது"
+          ],
+          [
+            "ஏற்றுமதி போட்டித்தன்மை",
+            "ஏற்றுமதி விலையில் மறைமுக வரிகள் சேர்ந்து உலக சந்தையில் பின்னடைவு",
+            "ஏற்றுமதிகள் பூஜ்ஜிய வரி (Zero-Rated); வரிகள் முழுமையாகத் திரும்பப் பெறப்படுகின்றன"
+          ],
+          [
+            "மாநிலங்களுக்கிடையேயான சிதைவு",
+            "வரி ஏய்ப்புக்காக கிளை மாற்றங்கள் மற்றும் போலி கிடங்குகளை உருவாக்கியது",
+            "மாநில எல்லைகளுக்கு இடையேயான வரி வேறுபாடுகள் முற்றிலும் களையப்பட்டன"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_constitutional_milestones_p1",
+        "title_en": "Table 4: Foundational Legislative Milestones of GST in India",
+        "title_ta": "அட்டவணை 4: இந்தியாவில் ஜிஎஸ்டியின் அடிப்படை சட்டமன்ற மைல்கற்கள்",
+        "headers_en": [
+          "Milestone Event",
+          "Date / Year",
+          "Key Persona / Committee",
+          "Constitutional / Statutory Significance"
+        ],
+        "headers_ta": [
+          "மைல்கல் நிகழ்வு",
+          "நாள் / ஆண்டு",
+          "முக்கிய நபர் / குழு",
+          "அரசியலமைப்பு / சட்டப்பூர்வ முக்கியத்துவம்"
+        ],
+        "rows_en": [
+          [
+            "FRBM Task Force Report",
+            "2003",
+            "Dr. Vijay Kelkar",
+            "First formal blueprint recommending a comprehensive national GST"
+          ],
+          [
+            "Union Budget Declaration",
+            "February 28, 2006",
+            "P. Chidambaram (Union FM)",
+            "First sovereign deadline proposed: National GST by April 1, 2010"
+          ],
+          [
+            "First Discussion Paper",
+            "November 2009",
+            "Empowered Committee (Asim Dasgupta)",
+            "Formulated the dual GST framework (CGST + SGST + IGST)"
+          ],
+          [
+            "101st Amendment Passed",
+            "August 2016",
+            "Parliament of India",
+            "Enacted Articles 246A, 269A, and 279A; received assent Sept 8, 2016"
+          ],
+          [
+            "Nationwide Launch",
+            "July 1, 2017",
+            "Parliament Midnight Session",
+            "Historic midnight rollout replacing pre-existing indirect taxes"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "FRBM பணிக்குழு அறிக்கை",
+            "2003",
+            "டாக்டர் விஜய் கேல்கர்",
+            "தேசிய ஜிஎஸ்டி-யை பரிந்துரைத்த முதல் அதிகாரப்பூர்வ வரைவு அறிக்கை"
+          ],
+          [
+            "மத்திய பட்ஜெட் அறிவிப்பு",
+            "பிப்ரவரி 28, 2006",
+            "ப. சிதம்பரம் (மத்திய நிதி அமைச்சர்)",
+            "ஏப்ரல் 1, 2010-க்குள் ஜிஎஸ்டி அமல்படுத்தப்படும் என முதல் அதிகாரப்பூர்வ இலக்கு"
+          ],
+          [
+            "முதல் விவாத அறிக்கை",
+            "நவம்பர் 2009",
+            "அதிகாரமளிக்கப்பட்ட குழு (அசீம் தாஸ்குப்தா)",
+            "இரட்டை ஜிஎஸ்டி கட்டமைப்பை (CGST + SGST + IGST) முறைப்படுத்தியது"
+          ],
+          [
+            "101-வது திருத்தச் சட்டம்",
+            "ஆகஸ்ட் 2016",
+            "இந்திய நாடாளுமன்றம்",
+            "பிரிவுகள் 246A, 269A, 279A உருவாக்கம்; செப்டம்பர் 8, 2016-இல் ஒப்புதல்"
+          ],
+          [
+            "நாடு தழுவிய தொடக்கம்",
+            "ஜூலை 1, 2017",
+            "நாடாளுமன்ற நள்ளிரவுக் கூட்டம்",
+            "பழைய மறைமுக வரிகளை நீக்கி வரலாற்றுச் சிறப்புமிக்க நள்ளிரவு தொடக்கம்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "GST Part 1: Foundations & Architecture",
+        "short_label": "GST Foundations",
+        "children": [
+          {
+            "title": "Conceptual Core",
+            "short_label": "Core Principles",
+            "children": [
+              {
+                "title": "Destination-Based Consumption Principle",
+                "short_label": "Destination Tax"
+              },
+              {
+                "title": "Input Tax Credit (Cascading Elimination)",
+                "short_label": "Cascading Removal"
+              },
+              {
+                "title": "Value Addition Node Taxation",
+                "short_label": "Value Addition"
+              }
+            ]
+          },
+          {
+            "title": "Historical Genesis",
+            "short_label": "Genesis",
+            "children": [
+              {
+                "title": "Kelkar Task Force (2003)",
+                "short_label": "Kelkar 2003"
+              },
+              {
+                "title": "Empowered Committee (Asim Dasgupta 2009)",
+                "short_label": "Empowered Committee"
+              },
+              {
+                "title": "101st Amendment Act, 2016",
+                "short_label": "101st Amendment"
+              }
+            ]
+          },
+          {
+            "title": "Dual GST Model",
+            "short_label": "Dual Architecture",
+            "children": [
+              {
+                "title": "Intra-State: CGST + SGST (Equally Shared)",
+                "short_label": "CGST + SGST"
+              },
+              {
+                "title": "Inter-State: IGST (Article 269A)",
+                "short_label": "IGST Art 269A"
+              },
+              {
+                "title": "UTGST (UTs without Legislature)",
+                "short_label": "UTGST"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Bill Number vs Act Number Trap (மசோதா எண் vs சட்ட எண் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Candidates confuse the Constitutional Amendment Bill number with the final Constitutional Amendment Act number.",
+            "CORRECT FACT: GST was introduced as the Constitution (122nd Amendment) Bill, 2014, but upon enactment, it became the Constitution (101st Amendment) Act, 2016.",
+            "WHY CANDIDATES FAIL: Multiple-choice options frequently list both '101st' and '122nd', tricking candidates who did not read whether the question asked for the Bill or the Act."
+          ],
+          "ta": [
+            "பொறி: அரசியலமைப்புத் திருத்த மசோதா எண்ணையும் இறுதி அரசியலமைப்புத் திருத்தச் சட்ட எண்ணையும் குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: ஜிஎஸ்டி நாடாளுமன்றத்தில் 122-வது அரசியலமைப்புத் திருத்த மசோதாவாக (Bill) அறிமுகப்படுத்தப்பட்டது; ஆனால் நிறைவேறிய போது அது 101-வது அரசியலமைப்புத் திருத்தச் சட்டமாக (Act) மாறியது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தேர்வில் மசோதா கேட்கப்பட்டுள்ளதா அல்லது சட்டம் கேட்கப்பட்டுள்ளதா என்பதைக் கவனிக்காமல் 101 மற்றும் 122-ஐ மாற்றி விடையளிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Origin vs Destination Revenue Accrual Trap (பிறப்பிடம் vs சேருமிடம் வருவாய் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that under GST, the State where goods are manufactured receives the tax revenue from interstate sales.",
+            "CORRECT FACT: GST is a DESTINATION-BASED consumption tax. Revenue from inter-state trade (IGST) accrues to the State where the goods or services are finally consumed, NOT the manufacturing state.",
+            "WHY CANDIDATES FAIL: Candidates anchored in the pre-GST CST system assume industrial producing states retain the sales taxes."
+          ],
+          "ta": [
+            "பொறி: ஜிஎஸ்டி-யின் கீழ் பொருட்கள் எங்கு உற்பத்தி செய்யப்படுகிறதோ அந்த மாநிலத்திற்கே மாநிலங்களுக்கு இடையேயான விற்பனை வரி வருவாய் செல்கிறது என நினைப்பது.",
+            "சரியான உண்மை: ஜிஎஸ்டி என்பது ஒரு 'சேருமிடம் சார்ந்த' (Destination-Based) நுகர்வு வரி! மாநிலங்களுக்கு இடையேயான வர்த்தகத்தின் (IGST) வரி வருவாய் பொருட்கள் இறுதியாக நுகரப்படும் மாநிலத்திற்கே செல்கிறது; உற்பத்தி மாநிலத்திற்கு அல்ல!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய விற்பனை வரி (CST) முறையில் உற்பத்தி மாநிலங்களுக்கே வரி சென்றதால், ஜிஎஸ்டியிலும் அப்படியே இருக்கும் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "IGST Levying and Collecting Authority Trap (IGST விதிக்கும் மற்றும் வசூலிக்கும் அதிகாரம் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Integrated GST (IGST) is levied and collected jointly by both the Union and the respective State Governments.",
+            "CORRECT FACT: Under Article 269A, IGST is levied and collected EXCLUSIVELY by the Government of India. It is subsequently apportioned between the Union and the States according to formula determined by Parliament on the GST Council's recommendation.",
+            "WHY CANDIDATES FAIL: Because IGST revenue is shared between Centre and States, candidates assume both levels of government jointly levy and collect it."
+          ],
+          "ta": [
+            "பொறி: ஒருங்கிணைந்த ஜிஎஸ்டி (IGST) வரியானது மத்திய மற்றும் மாநில அரசுகளால் கூட்டாக விதிக்கப்பட்டு வசூலிக்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: அரசியலமைப்பு பிரிவு 269A-இன் கீழ், IGST வரியானது 'மத்திய அரசால் மட்டுமே' பிரத்யேகமாக விதிக்கப்பட்டு வசூலிக்கப்படுகிறது. பின்னர் அது நாடாளுமன்றச் சட்டத்தின்படி மத்திய மற்றும் மாநில அரசுகளுக்கு இடையே பகிர்ந்தளிக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: IGST வருவாய் மத்திய-மாநில அரசுகளால் பகிர்ந்து கொள்ளப்படுவதால், வசூலிப்பதும் இரண்டு அரசுகளும் சேர்ந்தே செய்யும் என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Cascading Effect Removal Mechanism Trap (வரி அடுக்கு விளைவு நீக்க வழிமுறை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing cascading effect was removed simply by fixing low uniform tax rates.",
+            "CORRECT FACT: Cascading effect was eliminated through the unbroken mechanism of INPUT TAX CREDIT (ITC), which allows taxes paid on inputs to be set off against output tax liabilities across the entire supply chain.",
+            "WHY CANDIDATES FAIL: Candidates confuse the rate structure (slabs) with the credit mechanism (ITC) that mathematically prevents tax-on-tax."
+          ],
+          "ta": [
+            "பொறி: குறைந்த வரி விகிதங்களை நிர்ணயித்ததன் மூலமே வரி அடுக்கு விளைவு (Cascading) நீக்கப்பட்டது என நினைப்பது.",
+            "சரியான உண்மை: வரி அடுக்கு விளைவானது தடையற்ற 'உள்ளீட்டு வரி வரவு' (Input Tax Credit - ITC) என்ற வழிமுறையின் மூலமே ஒழிக்கப்பட்டது; இது மூலப்பொருட்களுக்குச் செலுத்திய வரியை இறுதி வரிப் பொறுப்பிலிருந்து கழித்துக் கொள்ள அனுமதிக்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வரி விகித அடுக்குகளையும், வரியின் மீது வரி விழுவதைத் தடுக்கும் ITC வரவு முறையையும் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "UTGST Applicability in Union Territories Trap (ஒன்றியப் பிரதேசங்களில் UTGST பொருந்துதல் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that UTGST applies to ALL Union Territories in India including Delhi and Puducherry.",
+            "CORRECT FACT: UTGST applies ONLY to Union Territories WITHOUT a Legislative Assembly (Andaman & Nicobar Islands, Chandigarh, Dadra & Nagar Haveli and Daman & Diu, Ladakh, Lakshadweep). UTs WITH a Legislative Assembly (Delhi, Puducherry, Jammu & Kashmir) have enacted their own SGST Acts and apply SGST, not UTGST.",
+            "WHY CANDIDATES FAIL: Failing to distinguish between Union Territories with legislatures and those without legislatures."
+          ],
+          "ta": [
+            "பொறி: தில்லி மற்றும் புதுச்சேரி உட்பட இந்தியாவின் அனைத்து ஒன்றியப் பிரதேசங்களிலும் UTGST தான் விதிக்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: சட்டமன்றம் 'இல்லாத' ஒன்றியப் பிரதேசங்களில் மட்டுமே (அந்தமான், சண்டிகர், லடாக் போன்றவை) UTGST விதிக்கப்படுகிறது! சட்டமன்றம் 'உள்ள' ஒன்றியப் பிரதேசங்கள் (தில்லி, புதுச்சேரி, ஜம்மு-காஷ்மீர்) தங்களின் சொந்த SGST சட்டங்களை இயற்றி, மாநிலங்களைப் போல SGST-ஐயே விதிக்கின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சட்டமன்றம் கொண்ட ஒன்றியப் பிரதேசங்களுக்கும் சட்டமன்றம் இல்லாத ஒன்றியப் பிரதேசங்களுக்கும் உள்ள அரசியலமைப்பு வேறுபாட்டைக் கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "First Recommended Committee Name Trap (முதலில் பரிந்துரைத்த குழு பெயர் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that GST was first recommended by the Chelliah Committee or the Sarkaria Commission.",
+            "CORRECT FACT: The concept of a comprehensive GST was first recommended in 2003 by the Vijay Kelkar Task Force on the Implementation of the Fiscal Responsibility and Budget Management (FRBM) Act.",
+            "WHY CANDIDATES FAIL: The Raja Chelliah Committee recommended tax reforms in 1991, leading candidates to conflate early tax reforms with GST's specific genesis."
+          ],
+          "ta": [
+            "பொறி: ஜிஎஸ்டி வரியை முதன்முதலில் பரிந்துரைத்தது ராஜா செல்லையா குழு அல்லது சர்க்காரியா ஆணையம் என நினைப்பது.",
+            "சரியான உண்மை: விரிவான தேசிய ஜிஎஸ்டி முறையை இந்தியாவில் முதன்முதலில் 2003-இல் பரிந்துரைத்தது 'விஜய் கேல்கர் பணிக்குழு' (FRBM பணிக்குழு) ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1991-இல் ராஜா செல்லையா குழு வரிச் சீர்திருத்தங்களைப் பரிந்துரைத்ததால், ஜிஎஸ்டி-யின் குறிப்பிட்ட தோற்றத்தை அக்குழுவுடன் தவறாக இணைத்துப் பார்ப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "GST is a destination-based consumption tax levied on the supply of goods and services.",
+        "GST was first recommended in India by the Vijay Kelkar Task Force on FRBM in 2003.",
+        "Union Finance Minister P. Chidambaram proposed rolling out GST by April 1, 2010 in Budget 2006-07.",
+        "The Constitution (122nd Amendment) Bill was enacted as the 101st Constitutional Amendment Act, 2016.",
+        "Presidential assent to the 101st Amendment Act was granted on September 8, 2016.",
+        "GST was officially rolled out across India at midnight on July 1, 2017.",
+        "Article 279A of the Constitution establishes the GST Council as the apex decision-making body.",
+        "Intra-state supplies are subject to CGST (Central GST) and SGST (State GST) in equal proportion.",
+        "Inter-state supplies and imports are subject to IGST (Integrated GST) under Article 269A.",
+        "Union Territories without legislatures levy UTGST under the UTGST Act, 2017.",
+        "Input Tax Credit (ITC) eliminates the cascading effect by taxing only net value addition.",
+        "The Empowered Committee of State Finance Ministers released the First Discussion Paper on GST in November 2009."
+      ],
+      "ta": [
+        "ஜிஎஸ்டி என்பது பொருட்கள் மற்றும் சேவைகளின் விநியோகத்தின் மீது விதிக்கப்படும் சேருமிடம் சார்ந்த நுகர்வு வரியாகும்.",
+        "இந்தியாவில் ஜிஎஸ்டி-யை முதன்முதலில் 2003-இல் விஜய் கேல்கர் பணிக்குழு பரிந்துரைத்தது.",
+        "2006-07 பட்ஜெட்டில் ஏப்ரல் 1, 2010-க்குள் ஜிஎஸ்டி கொண்டுவரப்படும் என நிதி அமைச்சர் ப. சிதம்பரம் அறிவித்தார்.",
+        "122-வது அரசியலமைப்புத் திருத்த மசோதா 101-வது அரசியலமைப்புத் திருத்தச் சட்டம் 2016-ஆக நிறைவேற்றப்பட்டது.",
+        "101-வது திருத்தச் சட்டத்திற்கு செப்டம்பர் 8, 2016 அன்று குடியரசுத் தலைவரின் ஒப்புதல் கிடைத்தது.",
+        "ஜிஎஸ்டி ஜூலை 1, 2017 அன்று நள்ளிரவில் நாடு முழுவதும் முறைப்படி அமல்படுத்தப்பட்டது.",
+        "அரசியலமைப்பு பிரிவு 279A உச்ச முடிவெடுக்கும் அமைப்பாக ஜிஎஸ்டி கவுன்சிலை நிறுவுகிறது.",
+        "மாநிலத்திற்குள் நடைபெறும் விநியோகங்களுக்கு CGST மற்றும் SGST சரிசமமாக விதிக்கப்படுகின்றன.",
+        "மாநிலங்களுக்கு இடையேயான வர்த்தகம் மற்றும் இறக்குமதிகளுக்கு பிரிவு 269A-இன் கீழ் IGST விதிக்கப்படுகிறது.",
+        "சட்டமன்றம் இல்லாத ஒன்றியப் பிரதேசங்கள் UTGST சட்டம் 2017-இன் கீழ் UTGST-ஐ விதிக்கின்றன.",
+        "உள்ளீட்டு வரி வரவு (ITC) நிகர மதிப்புக் கூட்டலுக்கு மட்டுமே வரி விதித்து வரி அடுக்குகளை ஒழிக்கிறது.",
+        "மாநில நிதி அமைச்சர்களின் அதிகாரமளிக்கப்பட்ட குழு நவம்பர் 2009-இல் ஜிஎஸ்டி மீதான முதல் விவாத அறிக்கையை வெளியிட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "GST Meaning: Comprehensive, multi-stage, destination-based value-added consumption tax.",
+        "First Recommendation: Vijay Kelkar Task Force (2003).",
+        "Target Roadmap: Budget 2006-07 by P. Chidambaram (April 1, 2010 target).",
+        "Constitutional Amendment: 122nd Amendment Bill -> 101st Amendment Act, 2016.",
+        "Rollout Date: July 1, 2017 (Midnight Parliament Special Session).",
+        "Constitutional Body: GST Council under Article 279A (notified Sept 12, 2016).",
+        "Taxable Event: 'Supply' of goods or services (replacing manufacture/sale).",
+        "Dual Architecture: CGST + SGST (Intra-state) and IGST (Inter-state under Art 269A).",
+        "Tax Point: Destination principle (tax revenue accrues to consuming state).",
+        "Cascading Removal: Seamless Input Tax Credit (ITC) mechanism across supply chain."
+      ],
+      "ta": [
+        "ஜிஎஸ்டி பொருள்: விரிவான, பல கட்ட, சேருமிடம் சார்ந்த மதிப்புக்கூட்டு நுகர்வு வரி.",
+        "முதல் பரிந்துரை: விஜய் கேல்கர் பணிக்குழு (2003).",
+        "இலக்கு அறிவிப்பு: ப. சிதம்பரம் தாக்கல் செய்த 2006-07 பட்ஜெட் (ஏப்ரல் 1, 2010 இலக்கு).",
+        "அரசியலமைப்புத் திருத்தம்: 122-வது திருத்த மசோதா -> 101-வது திருத்தச் சட்டம், 2016.",
+        "அமல்படுத்தப்பட்ட நாள்: ஜூலை 1, 2017 (நாடாளுமன்ற நள்ளிரவு சிறப்புக் கூட்டம்).",
+        "அரசியலமைப்பு அமைப்பு: பிரிவு 279A-இன் கீழான ஜிஎஸ்டி கவுன்சில் (செப்டம்பர் 12, 2016).",
+        "வரி விதிப்பு நிகழ்வு: சரக்கு அல்லது சேவையின் 'விநியோகம்' (Supply).",
+        "இரட்டை அமைப்பு: CGST + SGST (மாநிலத்திற்குள்) மற்றும் IGST (மாநிலங்களுக்கு இடையே - பிரிவு 269A).",
+        "வரி விதிப்புக் கொள்கை: சேருமிடம் சார்ந்தது (நுகர்வு மாநிலத்திற்கே வரி வருவாய்).",
+        "வரி அடுக்கு ஒழிப்பு: மதிப்புச் சங்கிலியில் தடையற்ற உள்ளீட்டு வரி வரவு (ITC) முறை."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_gst_101",
+        "front_en": "Which Constitutional Amendment Act introduced the Goods and Services Tax (GST) in India?",
+        "front_ta": "இந்தியாவில் சரக்கு மற்றும் சேவை வரியை (GST) அறிமுகப்படுத்திய அரசியலமைப்புத் திருத்தச் சட்டம் எது?",
+        "back_en": "The 101st Constitutional Amendment Act, 2016 (introduced as the 122nd Amendment Bill, 2014).",
+        "back_ta": "101-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2016 (122-வது திருத்த மசோதாவாக அறிமுகப்படுத்தப்பட்டது)."
+      },
+      {
+        "id": "rc_gst_102",
+        "front_en": "On what date was GST officially rolled out across India?",
+        "front_ta": "இந்தியா முழுவதும் ஜிஎஸ்டி எந்த நாளில் முறைப்படி அமலுக்கு வந்தது?",
+        "back_en": "July 1, 2017 (launched at a historic midnight session of Parliament).",
+        "back_ta": "ஜூலை 1, 2017 (நாடாளுமன்ற வரலாற்றுச் சிறப்புமிக்க நள்ளிரவுக் கூட்டத்தில் தொடங்கப்பட்டது)."
+      },
+      {
+        "id": "rc_gst_103",
+        "front_en": "Which committee or task force first recommended the introduction of GST in India?",
+        "front_ta": "இந்தியாவில் ஜிஎஸ்டி-யை முதன்முதலில் பரிந்துரைத்த குழு அல்லது பணிக்குழு எது?",
+        "back_en": "Vijay Kelkar Task Force on Implementation of the FRBM Act (2003).",
+        "back_ta": "2003-ஆம் ஆண்டின் விஜய் கேல்கர் பணிக்குழு (FRBM பணிக்குழு)."
+      },
+      {
+        "id": "rc_gst_104",
+        "front_en": "Is GST an origin-based tax or a destination-based tax?",
+        "front_ta": "ஜிஎஸ்டி என்பது பிறப்பிடம் சார்ந்த வரியா அல்லது சேருமிடம் சார்ந்த வரியா?",
+        "back_en": "Destination-based consumption tax (tax revenue accrues to the state where goods/services are consumed).",
+        "back_ta": "சேருமிடம் சார்ந்த (Destination-based) நுகர்வு வரி; நுகரப்படும் மாநிலத்திற்கே வரி வருவாய் செல்கிறது."
+      },
+      {
+        "id": "rc_gst_105",
+        "front_en": "Under which constitutional Article was the GST Council established?",
+        "front_ta": "எந்த அரசியலமைப்புப் பிரிவின் கீழ் ஜிஎஸ்டி கவுன்சில் அமைக்கப்பட்டது?",
+        "back_en": "Article 279A (inserted by the 101st Amendment Act, 2016).",
+        "back_ta": "அரசியலமைப்பு பிரிவு 279A (101-வது திருத்தச் சட்டம் 2016 மூலம் சேர்க்கப்பட்டது)."
+      },
+      {
+        "id": "rc_gst_106",
+        "front_en": "What taxes are levied on an intra-state supply of goods or services?",
+        "front_ta": "மாநிலத்திற்குள் நடைபெறும் ஒரு சரக்கு அல்லது சேவை விநியோகத்தின் மீது என்ன வரிகள் விதிக்கப்படுகின்றன?",
+        "back_en": "Central GST (CGST) and State GST (SGST) in equal proportions (or UTGST in UTs).",
+        "back_ta": "மத்திய ஜிஎஸ்டி (CGST) மற்றும் மாநில ஜிஎஸ்டி (SGST) சம விகிதத்தில் விதிக்கப்படுகின்றன."
+      },
+      {
+        "id": "rc_gst_107",
+        "front_en": "Which Article of the Constitution governs the levy and collection of Integrated GST (IGST)?",
+        "front_ta": "ஒருங்கிணைந்த ஜிஎஸ்டி (IGST) விதிப்பு மற்றும் வசூலை நிர்வகிக்கும் அரசியலமைப்புப் பிரிவு எது?",
+        "back_en": "Article 269A of the Constitution.",
+        "back_ta": "அரசியலமைப்பு பிரிவு 269A."
+      },
+      {
+        "id": "rc_gst_108",
+        "front_en": "What is the single unified taxable event under the GST regime?",
+        "front_ta": "ஜிஎஸ்டி முறையின் கீழ் ஒற்றை ஒருங்கிணைந்த வரி விதிப்பு நிகழ்வு எது?",
+        "back_en": "'Supply' of goods or services (replacing manufacture, sale, or service provision).",
+        "back_ta": "பொருட்கள் அல்லது சேவைகளின் 'விநியோகம்' (Supply) ஆகும்."
+      },
+      {
+        "id": "rc_gst_109",
+        "front_en": "How does GST eliminate the cascading effect (tax-on-tax)?",
+        "front_ta": "வரி அடுக்கு விளைவை (Tax-on-Tax) ஜிஎஸ்டி எவ்வாறு ஒழிக்கிறது?",
+        "back_en": "Through seamless Input Tax Credit (ITC), ensuring tax is charged only on net value addition at each stage.",
+        "back_ta": "தடையற்ற உள்ளீட்டு வரி வரவு (ITC) மூலம் ஒவ்வொரு கட்டத்திலும் நிகர மதிப்புக் கூட்டலுக்கு மட்டுமே வரி விதிக்கப்படுகிறது."
+      },
+      {
+        "id": "rc_gst_110",
+        "front_en": "Do Union Territories with Legislative Assemblies (e.g., Delhi, Puducherry) levy UTGST or SGST?",
+        "front_ta": "சட்டமன்றம் கொண்ட ஒன்றியப் பிரதேசங்கள் (தில்லி, புதுச்சேரி) UTGST விதிக்கின்றனவா அல்லது SGST விதிக்கின்றனவா?",
+        "back_en": "They levy SGST under their own enacted State GST legislation, NOT UTGST.",
+        "back_ta": "அவை தங்களின் சொந்த SGST சட்டங்களின் கீழ் SGST-ஐயே விதிக்கின்றன; UTGST அல்ல."
+      }
+    ]
+  }
+}

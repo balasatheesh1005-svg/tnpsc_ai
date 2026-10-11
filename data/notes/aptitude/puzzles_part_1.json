@@ -1,0 +1,279 @@
+{
+  "topic": "puzzles_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Puzzles Part 1 — Linear, Circular & Height/Age Ordering Puzzles",
+  "title_ta": "புதிர் பகுதி 1 — நேர்கோட்டு, வட்ட மற்றும் உயர/வயது வரிசைப் புதிர்கள்",
+
+  "definition": {
+    "en": "Puzzles evaluate analytical reasoning, logical deduction, step-by-step arrangement of clues, and spatial/ordering consistency without assumptions.",
+    "ta": "புதிர் என்பது தகவல்களை பகுப்பாய்வு செய்து, குறிப்புகளின் அடிப்படையில் தர்க்கரீதியாக படம்போட்டு பார்க்காமல் படிப்படியாக சரியான வரிசையைக் கண்டறியும் திறனைக் குறிக்கிறது."
+  },
+
+  "exam_importance": {
+    "en": "Puzzles is a core topic in TNPSC Mental Ability for Group 1, Group 2/2A, and Group 4. Questions test 5-person linear seating facing North, 4-person circular seating facing centre, height/marks comparison ordering, and race finishing order.",
+    "ta": "புதிர் என்பது TNPSC மனத்திறன் தேர்வுகளில் தவறாமல் கேட்கப்படும் முக்கிய பாடமாகும். 5 பேர் நேர்கோட்டு அமர்வு, 4 பேர் வட்ட அமர்வு, உயர/மதிப்பெண் ஒப்பீட்டு வரிசை போன்றவை இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Linear Seating Facing North Rule (வடக்கு நோக்கிய அமர்வு விதி)",
+      "formula": "\\text{Facing North: } \\text{Left} = \\leftarrow, \\quad \\text{Right} = \\rightarrow",
+      "explanation": {
+        "en": "When facing North, your left is the arrangement's left, and your right is the arrangement's right.",
+        "ta": "வடக்கு நோக்கும் போது, உங்களின் இடதுபுறமே அமைப்பின் இடதுபுறமாகவும், வலப்புறமே அமைப்பின் வலப்புறமாகவும் அமையும்."
+      }
+    },
+    {
+      "title": "Circular Seating Facing Centre Rule (மையம் நோக்கிய வட்ட அமர்வு விதி)",
+      "formula": "\\text{Facing Centre: } \\text{Right} = \\text{Counter-Clockwise (இடஞ்சுழி)}, \\quad \\text{Left} = \\text{Clockwise (வலஞ்சுழி)}",
+      "explanation": {
+        "en": "For persons facing the centre of a circle, moving right goes counter-clockwise.",
+        "ta": "மையத்தை நோக்கி அமரும் போது, வலப்புறம் என்பது கடிகார எதிர்திசையிலும் (இடஞ்சுழி), இடப்புறம் என்பது கடிகார திசையிலும் (வலஞ்சுழி) அமையும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Step-by-Step Puzzle Deduction Strategy (புதிர் தீர்க்கும் படிநிலைகள்)",
+      "points": {
+        "en": [
+          "Step 1: Start with definite clues (e.g., 'R is at extreme right end').",
+          "Step 2: Connect linked clues mentioning the placed persons.",
+          "Step 3: Fill negative clues to eliminate impossible positions.",
+          "Step 4: Verify that the final arrangement satisfies EVERY clue without contradiction."
+        ],
+        "ta": [
+          "படி 1: உறுதியான குறிப்புகளிலிருந்து தொடங்கவும் (எ.கா: 'R வலது கோடியில் உள்ளார்').",
+          "படி 2: ஏற்கனவே அமர்ந்த நபர்கள் தொடர்பான தொடர்புக் குறிப்புகளை இணைக்கவும்.",
+          "படி 3: எதிர்மறைக் குறிப்புகளைப் பயன்படுத்தி சாத்தியமற்ற இடங்களை நீக்கவும்.",
+          "படி 4: இறுதி அமைப்பு அனைத்துக் குறிப்புகளுக்கும் பொருந்துகிறதா எனச் சரிபார்க்கவும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Transitive Inequality Chain for Ordering",
+      "points": {
+        "en": [
+          "Combine height/marks inequalities: If A > B and C > A ⇒ C > A > B.",
+          "Merge independent chains into a single line to identify tallest/shortest instantaneously."
+        ],
+        "ta": [
+          "சமனின்மைகளை இணைத்தல்: A > B மற்றும் C > A எனில் ⇒ C > A > B.",
+          "அனைத்து ஒப்பீடுகளையும் ஒரே சங்கிலியாக இணைத்து உயரமானவரை எளிதில் கண்டறியலாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Placing a person on the wrong side due to confusing 'Facing North' with 'Facing South'",
+      "explanation": {
+        "en": "If persons face South, Left and Right directions are exact opposites of when facing North!",
+        "ta": "தெற்கு நோக்கும் போது இடது மற்றும் வலது திசைகள் வடக்கு நோக்கும் திசைக்கு நேர் எதிராக மாறும்."
+      },
+      "avoidance": {
+        "en": "Always draw a direction arrow indicating facing direction before placing left/right clues.",
+        "ta": "திசையைக் குறிக்கும் அம்புக்குறியை வரைந்த பிறகே இடது/வலது குறிப்புகளை இடமாற்றம் செய்ய வேண்டும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Five friends A, B, C, D, E sit in a row facing North. C is to the immediate right of D. B is to the immediate left of E. A is to the immediate left of D. Who sits in the middle?",
+      "method": "Linear Seating Clue Linking",
+      "steps": [
+        "Step 1: Link D and C: D, C.",
+        "Step 2: Link A to left of D: A, D, C.",
+        "Step 3: Link B and E to left of A: B, E, A, D, C.",
+        "Step 4: Final seating order from left to right: B - E - A - D - C.",
+        "Step 5: The person in the middle (3rd position) = A."
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Five people P, Q, R, S, T sit in a row. R is at the extreme right end. Q is to the immediate left of R. P is between S and Q. Who sits at the extreme left end?",
+      "method": "Definite End Position Deduction",
+      "steps": [
+        "Step 1: Place R at position 5 (extreme right): [ _ , _ , _ , _ , R ].",
+        "Step 2: Place Q to immediate left of R at position 4: [ _ , _ , _ , Q , R ].",
+        "Step 3: P is between S and Q \\(\\implies\\) P is at 3, S is at 2: [ _ , S , P , Q , R ].",
+        "Step 4: Place remaining T at position 1 (extreme left): [ T , S , P , Q , R ].",
+        "Step 5: Extreme left person = T."
+      ],
+      "answer": "T"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Four friends A, B, C, D sit around a circular table facing the centre. A is opposite to C. B is to the immediate right of A. Who is to the immediate right of C?",
+      "method": "4-Person Circular Deduction",
+      "steps": [
+        "Step 1: Place A at bottom (6 o'clock). Opposite C is at top (12 o'clock).",
+        "Step 2: Facing centre, right of A is counter-clockwise at 3 o'clock \\(\\implies\\) B is at 3 o'clock.",
+        "Step 3: Remaining D is placed at 9 o'clock.",
+        "Step 4: Facing centre from C (12 o'clock), immediate right is counter-clockwise at 9 o'clock \\(\\implies\\) D is to the immediate right of C."
+      ],
+      "answer": "D"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Five persons P, Q, R, S, T sit around a circular table facing the centre. R is between P and Q. T is to the immediate left of P. Who is to the immediate right of Q?",
+      "method": "5-Person Circular Arrangement",
+      "steps": [
+        "Step 1: Place P at position 1. T is to immediate left of P (pos 5).",
+        "Step 2: R is between P and Q \\(\\implies\\) R is at pos 2, Q is at pos 3.",
+        "Step 3: Remaining S is at pos 4.",
+        "Step 4: Circular order counter-clockwise: P(1) - R(2) - Q(3) - S(4) - T(5).",
+        "Step 5: Facing centre from Q (pos 3), immediate right is pos 2 = R."
+      ],
+      "answer": "R"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Among five friends A, B, C, D, E, A is taller than B but shorter than C. D is taller than C but shorter than E. Who is the tallest?",
+      "method": "Height Inequality Chain",
+      "steps": [
+        "Step 1: 'A is taller than B but shorter than C' \\(\\implies C > A > B\\).",
+        "Step 2: 'D is taller than C but shorter than E' \\(\\implies E > D > C\\).",
+        "Step 3: Merge both inequalities: \\(E > D > C > A > B\\).",
+        "Step 4: The tallest person = E."
+      ],
+      "answer": "E"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Five students scored marks: P scored more than Q. R scored more than S but less than Q. T scored the highest. Who scored the lowest?",
+      "method": "Score Ordering Chain",
+      "steps": [
+        "Step 1: 'T scored the highest' \\(\\implies T\\) is 1st.",
+        "Step 2: 'P scored more than Q' \\(\\implies P > Q\\).",
+        "Step 3: 'R scored more than S but less than Q' \\(\\implies Q > R > S\\).",
+        "Step 4: Full score chain: \\(T > P > Q > R > S\\).",
+        "Step 5: The lowest scorer = S."
+      ],
+      "answer": "S"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Five friends X, Y, Z, W, V sit in a row facing North. Z is in the middle. X is to the left of Z, Y is to the right of Z. V is at the extreme left end. Who is at the extreme right end?",
+      "options": ["A) X", "B) Y", "C) W", "D) V"],
+      "correct_option": "C) W",
+      "explanation": "Row order: V - X - Z - Y - W. Extreme right end = W."
+    },
+    {
+      "id": 2,
+      "question": "Four friends P, Q, R, S sit around a circular table facing centre. P is opposite R. Q is to the right of P. Who is to the right of R?",
+      "options": ["A) P", "B) Q", "C) S", "D) Cannot be determined"],
+      "correct_option": "C) S",
+      "explanation": "P at bottom, R at top. Q is at right of P (3 o'clock). S is at 9 o'clock. Right of R (12 o'clock) is S."
+    },
+    {
+      "id": 3,
+      "question": "A is older than B. B is older than C. D is older than A. Who is the oldest?",
+      "options": ["A) A", "B) B", "C) C", "D) D"],
+      "correct_option": "D) D",
+      "explanation": "Age chain: D > A > B > C. Oldest = D."
+    },
+    {
+      "id": 4,
+      "question": "In a race of 5 runners: A finished before B. C finished after D. B finished before D. Who won the race?",
+      "options": ["A) A", "B) B", "C) C", "D) D"],
+      "correct_option": "A) A",
+      "explanation": "Finish order: A > B > D > C. Winner = A."
+    },
+    {
+      "id": 5,
+      "question": "Five boxes are stacked: Red box is above Blue box. Green box is below Yellow box. Blue box is above Yellow box. Which box is at the top?",
+      "options": ["A) Red", "B) Blue", "C) Yellow", "D) Green"],
+      "correct_option": "A) Red",
+      "explanation": "Stack order top to bottom: Red - Blue - Yellow - Green. Top box = Red."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Facing North Seating Rule",
+      "back": "Left is your left, Right is your right"
+    },
+    {
+      "front": "Facing Centre Circle Rule",
+      "back": "Right = Counter-Clockwise | Left = Clockwise"
+    },
+    {
+      "front": "First Step in Puzzles",
+      "back": "Always start by placing definite fixed-position clues first!"
+    },
+    {
+      "front": "Transitive Inequality Chain",
+      "back": "If A > B and B > C ⇒ A > B > C"
+    },
+    {
+      "front": "Puzzle Consistency Check",
+      "back": "Ensure final arrangement satisfies all clues without contradiction"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Puzzles Part 1 — Linear, Circular & Ordering Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Puzzles Part 1",
+        "children": ["linear_puzzle", "circular_puzzle", "ordering_puzzle"]
+      },
+      {
+        "id": "linear_puzzle",
+        "label": "Linear Arrangement",
+        "children": ["north_facing", "extreme_ends"]
+      },
+      {
+        "id": "north_facing",
+        "label": "Facing North: L=Left, R=Right",
+        "children": []
+      },
+      {
+        "id": "extreme_ends",
+        "label": "Fix extreme end clues first",
+        "children": []
+      },
+      {
+        "id": "circular_puzzle",
+        "label": "Circular Arrangement",
+        "children": ["facing_centre"]
+      },
+      {
+        "id": "facing_centre",
+        "label": "Facing Centre: Right=CCW, Left=CW",
+        "children": []
+      },
+      {
+        "id": "ordering_puzzle",
+        "label": "Ordering & Ranking",
+        "children": ["ineq_chain"]
+      },
+      {
+        "id": "ineq_chain",
+        "label": "Chain Inequalities: E > D > C > A > B",
+        "children": []
+      }
+    ]
+  }
+}

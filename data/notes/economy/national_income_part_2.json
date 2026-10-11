@@ -1,0 +1,838 @@
+{
+  "meta": {
+    "topic_id": "economy_national_income_part_2",
+    "repository_id": "economy_national_income",
+    "display_title": "National Income – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "National Income",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "intermediate",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [],
+      "ta": []
+    },
+    "Remember": {
+      "en": [],
+      "ta": []
+    },
+    "Analyze": {
+      "en": [],
+      "ta": []
+    },
+    "Apply": {
+      "en": [],
+      "ta": []
+    }
+  },
+  "subject": "Economy",
+  "topic": "National Income – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_three_measurement_methods",
+      "title_en": "1. The Three Methods of National Income Estimation",
+      "title_ta": "1. தேசிய வருமானத்தை கணக்கிடும் மூன்று முறைகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_factor_incomes_and_adjustments",
+      "title_en": "2. Structural Adjustments: Depreciation, NIT, and NFIA",
+      "title_ta": "2. கட்டமைப்பு சரிசெய்தல்கள்: தேய்மானம், NIT மற்றும் NFIA",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sectoral_gva_structure",
+      "title_en": "3. Sectoral Composition of GVA in India",
+      "title_ta": "3. இந்தியாவில் GVA-வின் துறைசார் கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_measurement_difficulties_in_india",
+      "title_en": "4. Measurement Difficulties in Indian National Accounting",
+      "title_ta": "4. இந்திய தேசிய வருமானக் கணக்கீட்டில் உள்ள சவால்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The measurement and structure of National Income encompasses three standardized macroeconomic methods: the Production (Value-Added) Method, the Income Method, and the Expenditure Method. These triple approaches capture output generation, factor distribution, and aggregate disposal across the primary, secondary, and tertiary sectors.",
+      "ta": "தேசிய வருமானத்தின் அளவீடு மற்றும் கட்டமைப்பு மூன்று தரப்படுத்தப்பட்ட பேரியல் பொருளாதார முறைகளை உள்ளடக்கியது: உற்பத்தி (மதிப்புக் கூட்டல்) முறை, வருமான முறை மற்றும் செலவின முறை. இந்த மூன்று முறைகளும் முதன்மை, இரண்டாம் நிலை மற்றும் மூன்றாம் நிலைத் துறைகளில் உற்பத்தி உருவாக்கம், காரணி பகிர்வு மற்றும் மொத்த செலவழிப்பு ஆகியவற்றை துல்லியமாக படம் பிடிக்கின்றன."
+    },
+    "introduction": {
+      "en": "National Income accounting operationalizes the circular flow of income into rigorous statistical accounting. Because every rupee spent by a buyer represents income earned by a seller and output created by a producer, the three measurement methods yield theoretically identical values. In India, the National Statistical Office (NSO) employs a combined approach: the Production Method for agriculture, forestry, fishing, mining, and manufacturing; the Income Method for trade, transport, finance, and services; and the Expenditure Method to estimate final consumption and capital formation. Understanding factor incomes, intermediate consumption, and depreciation is vital for mastering TNPSC national accounts questions.",
+      "ta": "தேசிய வருமானக் கணக்கியல் என்பது வருமான சுழல் ஓட்டத்தை கடுமையான புள்ளியியல் கணக்கியலாக நடைமுறைப்படுத்துகிறது. ஒரு வாங்குபவர் செலவிடும் ஒவ்வொரு ரூபாயும் விற்பனையாளருக்கு வருமானமாகவும், உற்பத்தியாளரின் உற்பத்தியாகவும் மாறுவதால், இந்த மூன்று முறைகளும் கோட்பாட்டு ரீதியாக சமமான முடிவுகளைத் தருகின்றன. இந்தியாவில் தேசிய புள்ளியியல் அலுவலகம் (NSO) ஒரு ஒருங்கிணைந்த அணுகுமுறையைப் பயன்படுத்துகிறது: வேளாண்மை, வனம், மீன்பிடி, சுரங்கம் மற்றும் உற்பத்திக்கு உற்பத்தி முறையும்; வர்த்தகம், போக்குவரத்து, நிதி மற்றும் சேவைகளுக்கு வருமான முறையும்; இறுதி நுகர்வு மற்றும் மூலதன உருவாக்கத்தை மதிப்பிட செலவின முறையும் பயன்படுத்தப்படுகின்றன. காரணி வருவாய்கள், இடைநிலை நுகர்வு மற்றும் தேய்மானத்தைப் புரிந்துகொள்வது டிஎன்பிஎஸ்சி தேசிய கணக்கு வினாக்களை எதிர்கொள்ள இன்றியமையாதது."
+    },
+    "sec_three_measurement_methods": [
+      {
+        "title": "Production / Value Added Method",
+        "title_ta": "உற்பத்தி / மதிப்பு கூட்டல் முறை (Product Method)",
+        "points": {
+          "en": [
+            "Conceptual Mechanism: Measures the net contribution of each producing enterprise by calculating Gross Value Added (GVA = Value of Gross Output - Value of Intermediate Consumption).",
+            "Avoidance of Double Counting: Deducts intermediate inputs (raw materials, electricity, packing) to ensure only original value added at each transformation stage is aggregated.",
+            "Indian Sectoral Usage: Predominantly used by NSO for commodity-producing sectors: Agriculture, Livestock, Forestry, Fishing, Mining & Quarrying, and Registered Manufacturing."
+          ],
+          "ta": [
+            "கோட்பாட்டு வழிமுறை: ஒவ்வொரு உற்பத்தி நிறுவனத்தின் நிகரப் பங்களிப்பையும் மொத்த மதிப்பு கூட்டல் மூலம் கணக்கிடுகிறது (GVA = மொத்த உற்பத்தி மதிப்பு - இடைநிலை நுகர்வு மதிப்பு).",
+            "இரட்டை கணக்கீட்டைத் தவிர்த்தல்: ஒவ்வொரு உருமாற்ற நிலையிலும் சேர்க்கப்பட்ட நிகர மதிப்பை மட்டுமே கணக்கிட இடைநிலை உள்ளீடுகளை (மூலப்பொருள், மின்சாரம்) கழிக்கிறது.",
+            "இந்தியாவில் பயன்பாடு: பொருட்கள் உற்பத்தி செய்யும் துறைகளுக்கு NSO-வால் முதன்மையாகப் பயன்படுத்தப்படுகிறது: வேளாண்மை, கால்நடை, வனவியல், மீன்பிடி, சுரங்கம் மற்றும் பதிவு செய்யப்பட்ட தொழிற்சாலைகள்."
+          ]
+        }
+      },
+      {
+        "title": "Income Method (Factor Payment Method)",
+        "title_ta": "வருமான முறை (Factor Payment Method)",
+        "points": {
+          "en": [
+            "Conceptual Mechanism: Measures national income from the distribution side by summing all factor incomes earned by normal residents for providing factor services during a year.",
+            "Three Factor Categories: (1) Compensation of Employees (wages, salaries, employer EPF/ESI contributions), (2) Operating Surplus (rent, royalty, interest, corporate profits), and (3) Mixed Income of Self-Employed (unincorporated own-account enterprises).",
+            "Indian Sectoral Usage: Applied to Services sectors: Banking, Insurance, Real Estate, Professional Services, Public Administration, and Defense."
+          ],
+          "ta": [
+            "கோட்பாட்டு வழிமுறை: ஒரு ஆண்டில் உற்பத்தி காரணிகளை வழங்கியதற்காக இயல்பான குடிமக்கள் ஈட்டிய அனைத்து காரணி வருமானங்களையும் பகிர்வுப் பக்கத்திலிருந்து கூட்டி கணக்கிடுகிறது.",
+            "மூன்று காரணிப் பிரிவுகள்: (1) உழைப்பாளர் இழப்பீடு (கூலி, சம்பளம், முதலாளி பிஎப்/இஎஸ்ஐ பங்களிப்பு), (2) இயக்க உபரி (வாரம், ராயல்டி, வட்டி, நிறுவன லாபம்), மற்றும் (3) சுயதொழில் செய்வோரின் கலப்பு வருமானம்.",
+            "இந்தியாவில் பயன்பாடு: சேவைத் துறைகளுக்குப் பயன்படுத்தப்படுகிறது: வங்கி, காப்பீடு, ரியல் எஸ்டேட், தொழில்முறை சேவைகள், பொது நிர்வாகம் மற்றும் பாதுகாப்பு."
+          ]
+        }
+      },
+      {
+        "title": "Expenditure Method (Outlay Method)",
+        "title_ta": "செலவின முறை (Outlay / Consumption-Investment Method)",
+        "points": {
+          "en": [
+            "Conceptual Mechanism: Measures national income from the disposal side by aggregating all final expenditures incurred on purchasing final goods and services within the economy.",
+            "Standard Components: GDP = C + I + G + (X - M). C = Private Final Consumption Expenditure (PFCE); I = Gross Domestic Capital Formation (GDCF); G = Government Final Consumption Expenditure (GFCE); (X - M) = Net Exports.",
+            "Indian Usage & Cross-Check: Used to cross-check aggregate demand, evaluate investment rates, and measure household consumption expenditure."
+          ],
+          "ta": [
+            "கோட்பாட்டு வழிமுறை: பொருளாதாரத்தில் உற்பத்தி செய்யப்பட்ட இறுதிப் பொருட்கள் மற்றும் பணிகளை வாங்குவதற்காக மேற்கொள்ளப்பட்ட அனைத்து இறுதி செலவினங்களையும் கூட்டி அளவிடுகிறது.",
+            "முக்கிய கூறுகள்: GDP = C + I + G + (X - M). C = தனியார் இறுதி நுகர்வுச் செலவு; I = மொத்த உள்நாட்டு மூலதன உருவாக்கம் (முதலீடு); G = அரசு இறுதி நுகர்வுச் செலவு; (X - M) = நிகர ஏற்றுமதி.",
+            "இந்தியாவில் பயன்பாடு: மொத்த தேவையை சரிபார்க்கவும், மூலதன முதலீட்டு விகிதங்களை மதிப்பிடவும், நுகர்வுப் போக்கை அளவிடவும் பயன்படுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_factor_incomes_and_adjustments": [
+      {
+        "title": "Depreciation (Consumption of Fixed Capital)",
+        "title_ta": "தேய்மானம் (Consumption of Fixed Capital - CFC)",
+        "points": {
+          "en": [
+            "Concept: Replacement investment needed to maintain the existing physical capital stock due to normal wear and tear and foreseen obsolescence.",
+            "Impact on Aggregates: The bridge between 'Gross' and 'Net' aggregates. Gross Aggregate - Depreciation = Net Aggregate (e.g., GDP - CFC = NDP; GNP - CFC = NNP).",
+            "Measurement Challenge: Often estimated using statutory depreciation accounting rates rather than actual physical engineering depletion."
+          ],
+          "ta": [
+            "கருத்து: வழக்கமான தேய்மானம் மற்றும் எதிர்பார்க்கப்பட்ட பழுதடைதல் காரணமாக தற்போதைய மூலதனக் கட்டமைப்பை பராமரிக்க தேவைப்படும் மறுமுதலீடு.",
+            "மதிப்பீட்டுத் தாக்கம்: 'மொத்த' மற்றும் 'நிகர' திரட்டுகளுக்கு இடையேயான பாலம். மொத்த மதிப்பு - தேய்மானம் = நிகர மதிப்பு (எ.கா: GDP - தேய்மானம் = NDP; GNP - தேய்மானம் = NNP).",
+            "அளவீட்டு சவால்: பொறியியல் மதிப்பீட்டிற்கு பதிலாக நிறுவனங்களின் சட்டப்பூர்வ கணக்கியல் தேய்மான விகிதங்களை அடிப்படையாகக் கொண்டு பெரும்பாலும் கணக்கிடப்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Net Indirect Taxes (NIT) and Factor Income Flow",
+        "title_ta": "நிகர மறைமுக வரிகள் (NIT) மற்றும் காரணி வருமான ஓட்டம்",
+        "points": {
+          "en": [
+            "Net Indirect Taxes Formula: NIT = Indirect Taxes - Subsidies. Reflects the net fiscal distortion between producer receipts and consumer prices.",
+            "Bridging Factor Cost and Market Price: Aggregate at Factor Cost + NIT = Aggregate at Market Price (e.g., GDP_FC + NIT = GDP_MP).",
+            "Post-2015 Distinction: Product Taxes/Subsidies apply per unit of physical good (GST, excise), while Production Taxes/Subsidies are independent of volume (land revenue, stamp duty, factory license fees)."
+          ],
+          "ta": [
+            "நிகர மறைமுக வரி சூத்திரம்: NIT = மறைமுக வரிகள் - மானியங்கள். உற்பத்தியாளர் பெறும் தொகைக்கும் நுகர்வோர் செலுத்தும் விலைக்கும் இடையேயான நிதி இடைவெளியைக் காட்டுகிறது.",
+            "காரணி விலை மற்றும் சந்தை விலைப் பாலம்: காரணி விலையிலான மதிப்பு + NIT = சந்தை விலையிலான மதிப்பு (எ.கா: GDP_FC + NIT = GDP_MP).",
+            "2015-க்குப் பிந்தைய வேறுபாடு: தயாரிப்பு வரிகள்/மானியங்கள் பொருளின் உற்பத்தி அளவிற்கு ஏற்ப மாறும் (ஜிஎஸ்டி, கலால்); உற்பத்தி வரிகள்/மானியங்கள் உற்பத்தி அளவோடு தொடர்பில்லாத நிலையானவை (நில வருவாய், முத்திரைத்தாள், உரிமக் கட்டணம்)."
+          ]
+        }
+      }
+    ],
+    "sec_sectoral_gva_structure": [
+      {
+        "title": "NSO's Eight Industry Group Classification",
+        "title_ta": "NSO-வின் எட்டு தொழிற்துறை குழு வகைப்பாடு",
+        "points": {
+          "en": [
+            "Primary Sector: (1) Agriculture, forestry & fishing; (2) Mining & quarrying.",
+            "Secondary Sector: (3) Manufacturing; (4) Electricity, gas, water supply & other utility services; (5) Construction.",
+            "Tertiary / Services Sector: (6) Trade, hotels, transport, communication & services related to broadcasting; (7) Financial, real estate & professional services; (8) Public administration, defence & other services."
+          ],
+          "ta": [
+            "முதன்மைத் துறை: (1) வேளாண்மை, வனவியல் & மீன்பிடித்தல்; (2) சுரங்கம் & குவாரி பணிகள்.",
+            "இரண்டாம் நிலைத் துறை: (3) உற்பத்தி; (4) மின்சாரம், எரிவாயு, குடிநீர் வழங்கல் & பிற பயன்பாட்டு சேவைகள்; (5) கட்டுமானம்.",
+            "மூன்றாம் நிலை / சேவைத் துறை: (6) வர்த்தகம், உணவகங்கள், போக்குவரத்து, தகவல் தொடர்பு & ஒளிபரப்பு சேவைகள்; (7) நிதி, ரியல் எஸ்டேட் & தொழில்முறை சேவைகள்; (8) பொது நிர்வாகம், பாதுகாப்பு & பிற சேவைகள்."
+          ]
+        }
+      },
+      {
+        "title": "Sectoral Contributions and Asymmetries",
+        "title_ta": "துறைசார் பங்களிப்புகள் மற்றும் கட்டமைப்பு முரண்பாடுகள்",
+        "points": {
+          "en": [
+            "Services Dominance: Contributes ~53% to 54% of total GVA, representing the growth engine of the Indian economy.",
+            "Industry Stagnation: Contributes ~28% to 29% of GVA, with manufacturing hovering around 15-17% (below the 25% target envisaged in the National Manufacturing Policy).",
+            "Agriculture Productivity Gap: Contributes ~16% to 18% of GVA but engages ~45% to 47% of the nation's workforce, highlighting low per-worker agricultural productivity."
+          ],
+          "ta": [
+            "சேவைத் துறையின் ஆதிக்கம்: மொத்த GVA-வில் ~53% முதல் 54% வரை பங்களித்து, இந்திய பொருளாதாரத்தின் வளர்ச்சி இயந்திரமாக திகழ்கிறது.",
+            "தொழில்துறை தேக்கம்: மொத்த GVA-வில் ~28% முதல் 29% வரை பங்களிக்கிறது; இதில் உற்பத்தித் துறை 15-17% அளவில் தேங்கியுள்ளது (தேசிய உற்பத்திக் கொள்கையின் 25% இலக்கை விட குறைவு).",
+            "வேளாண் உற்பத்தித் திறன் இடைவெளி: GVA-வில் ~16% முதல் 18% மட்டுமே பங்களித்தாலும் நாட்டின் ~45% முதல் 47% உழைப்பாளர்களை ஈர்த்துள்ளது; இது வேளாண்மையின் குறைந்த தனிநபர் உற்பத்தித் திறனை காட்டுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_measurement_difficulties_in_india": [
+      {
+        "title": "Conceptual Difficulties",
+        "title_ta": "கோட்பாட்டு ரீதியான சவால்கள் (Conceptual Difficulties)",
+        "points": {
+          "en": [
+            "Non-Monetized & Barter Transactions: Large volume of agricultural output consumed directly by farmers (subsistence farming) without entering formal market channels.",
+            "Unpaid Household Services: Housework, childcare, and elderly care predominantly performed by women are excluded from GDP, distorting gender economic contribution.",
+            "Intermediate vs Final Goods Ambiguity: Difficulty in distinguishing whether goods like coal, electricity, or petrol are used as final consumption or business intermediate inputs."
+          ],
+          "ta": [
+            "பணமில்லா & பண்டமாற்று பரிவர்த்தனைகள்: விவசாயிகள் உற்பத்தி செய்த தானியங்களை சந்தைக்கு விற்காமல் தங்களின் சொந்த நுகர்வுக்கு நேரடியாகப் பயன்படுத்துவது (தன்னிறைவு வேளாண்மை).",
+            "ஊதியமில்லா வீட்டுப் பணிகள்: பெண்களால் செய்யப்படும் சமையல், குழந்தைப் பராமரிப்பு மற்றும் முதியோர் பராமரிப்பு போன்ற பணிகள் GDP-யில் சேர்க்கப்படாமல் விடுபடுவது.",
+            "இடைநிலை மற்றும் இறுதிப் பொருட்கள் குழப்பம்: நிலக்கரி, மின்சாரம் அல்லது பெட்ரோல் போன்ற பொருட்கள் இறுதி நுகர்வுக்குப் பயன்பட்டதா அல்லது வணிக உள்ளீடாகப் பயன்பட்டதா என்பதை பிரித்தறிவதில் உள்ள சிரமம்."
+          ]
+        }
+      },
+      {
+        "title": "Statistical & Practical Difficulties",
+        "title_ta": "புள்ளியியல் & நடைமுறை சவால்கள் (Statistical Difficulties)",
+        "points": {
+          "en": [
+            "Vast Unorganised / Informal Sector: Accounts for >80% of total employment; units maintain no formal accounts, making reliance on intermittent sample surveys necessary.",
+            "Unreported Income & Parallel Economy: Evasion of taxes, black money generation, and informal cash transactions result in systematic underestimation of aggregate income.",
+            "Inadequate Reliability of Depreciation: Calculating actual physical asset wear-and-tear across millions of unregistered MSMEs remains highly speculative."
+          ],
+          "ta": [
+            "பரந்த முறைசாரா துறை: நாட்டின் மொத்த வேலைவாய்ப்பில் 80%-க்கும் அதிகமானவர்கள் இத்துறையில் உள்ளனர்; இவர்கள் முறையான கணக்குப் புத்தகங்களை பராமரிக்காததால் மாதிரி கணக்கெடுப்புகளையே நம்ப வேண்டியுள்ளது.",
+            "கணக்கில் காட்டப்படாத வருமானம் & கறுப்புப் பணம்: வரி ஏய்ப்பு, கறுப்புப் பண புழக்கம் மற்றும் முறைசாரா பணப்பரிவர்த்தனைகள் காரணமாக தேசிய வருமானம் குறைவாக மதிப்பிடப்படுவது.",
+            "தேய்மானத்தை துல்லியமாக கணக்கிட முடியாமை: கோடிக்கணக்கான பதிவு செய்யப்படாத சிறு, குறு தொழில்களில் மூலதனச் சொத்துக்களின் உண்மையான தேய்மானத்தை கணக்கிடுவது கடினம்."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "comp_three_methods",
+        "title_en": "Comparative Matrix of Three National Income Estimation Methods",
+        "title_ta": "தேசிய வருமானக் கணக்கீட்டின் மூன்று முறைகளின் ஒப்பீட்டு அணி",
+        "headers_en": [
+          "Feature",
+          "Production Method",
+          "Income Method",
+          "Expenditure Method"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "உற்பத்தி முறை (Product)",
+          "வருமான முறை (Income)",
+          "செலவின முறை (Expenditure)"
+        ],
+        "rows_en": [
+          [
+            "Focus of Measurement",
+            "Output generation and value addition",
+            "Distribution of factor payments",
+            "Disposal of income on final goods"
+          ],
+          [
+            "Starting Formula",
+            "GVA = Gross Output - Intermediate Consumption",
+            "Factor Income = Compensation + Operating Surplus + Mixed Income",
+            "GDP = C + I + G + (X - M)"
+          ],
+          [
+            "Key Danger to Avoid",
+            "Double counting of intermediate inputs",
+            "Transfer payments (pensions, gifts) inclusion",
+            "Expenditure on second-hand goods or shares"
+          ],
+          [
+            "Primary Sector Applications",
+            "Agriculture, Mining, Manufacturing",
+            "Services, Banking, Public Administration",
+            "Macroeconomic Aggregate Demand cross-check"
+          ],
+          [
+            "Indian Compiling Agency",
+            "NSO (National Accounts Division)",
+            "NSO (National Accounts Division)",
+            "NSO (National Accounts Division)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அளவீட்டின் மையம்",
+            "உற்பத்தி உருவாக்கம் மற்றும் மதிப்பு கூட்டல்",
+            "காரணி ஊதியங்களின் பகிர்வு",
+            "இறுதிப் பொருட்களுக்கான செலவழிப்பு"
+          ],
+          [
+            "தொடக்க சூத்திரம்",
+            "GVA = மொத்த உற்பத்தி - இடைநிலை நுகர்வு",
+            "காரணி வருமானம் = உழைப்பாளர் இழப்பீடு + இயக்க உபரி + கலப்பு வருமானம்",
+            "GDP = C + I + G + (X - M)"
+          ],
+          [
+            "தவிர்க்க வேண்டிய பிழை",
+            "இடைநிலைப் பொருட்களின் இரட்டை கணக்கீடு",
+            "மாற்றுச் செலுத்துதல்களை (பரிசு, உதவித்தொகை) சேர்த்தல்",
+            "பழைய பொருட்கள் அல்லது பங்குகள் மீதான செலவை சேர்த்தல்"
+          ],
+          [
+            "முக்கிய பயன்பாட்டுத் துறைகள்",
+            "வேளாண்மை, சுரங்கம், தொழிற்சாலைகள்",
+            "சேவைத் துறை, வங்கி, பொது நிர்வாகம்",
+            "பேரியல் பொருளாதார மொத்த தேவையை சரிபார்த்தல்"
+          ],
+          [
+            "தொகுக்கும் இந்திய முகமை",
+            "NSO (தேசிய கணக்குகள் பிரிவு)",
+            "NSO (தேசிய கணக்குகள் பிரிவு)",
+            "NSO (தேசிய கணக்குகள் பிரிவு)"
+          ]
+        ]
+      },
+      {
+        "id": "comp_factor_income_vs_transfer_payment",
+        "title_en": "Factor Income vs Transfer Payment Distinction",
+        "title_ta": "காரணி வருமானம் vs மாற்றுச் செலுத்துதல் வேறுபாடுகள்",
+        "headers_en": [
+          "Criterion",
+          "Factor Income",
+          "Transfer Payment"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "காரணி வருமானம் (Factor Income)",
+          "மாற்றுச் செலுத்துதல் (Transfer Payment)"
+        ],
+        "rows_en": [
+          [
+            "Nature",
+            "Earned income received for factor services",
+            "Unearned unilateral receipt without productive service"
+          ],
+          [
+            "Quid-Pro-Quo",
+            "Direct quid-pro-quo exists (labor, land, capital provided)",
+            "No quid-pro-quo (one-sided welfare transfer)"
+          ],
+          [
+            "Inclusion in National Income",
+            "Strictly INCLUDED in National Income (NNP_FC)",
+            "Strictly EXCLUDED from National Income"
+          ],
+          [
+            "Examples",
+            "Wages, salaries, rent, interest, corporate profit",
+            "Old-age pension, unemployment dole, scholarships, pocket money"
+          ],
+          [
+            "Recipients",
+            "Owners of factors of production",
+            "Households, students, distressed citizens"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தன்மை",
+            "உற்பத்தி காரணிகளை வழங்கியதற்காக ஈட்டப்பட்ட வருமானம்",
+            "எந்தவொரு உற்பத்திப் பணியும் இன்றி பெறப்படும் ஒருதலைப்பட்ச வருமானம்"
+          ],
+          [
+            "நேரடி பலன் (Quid-Pro-Quo)",
+            "நேரடி பலன் உண்டு (உழைப்பு, நிலம், மூலதனம் வழங்கப்படுகிறது)",
+            "நேரடி பலன் இல்லை (ஒருதலைப்பட்ச சமூக நல உதவி)"
+          ],
+          [
+            "தேசிய வருமானத்தில் சேர்த்தல்",
+            "தேசிய வருமானத்தில் (NNP_FC) கட்டாயம் சேர்க்கப்படும்",
+            "தேசிய வருமானத்தில் முழுமையாக நீக்கப்படும்"
+          ],
+          [
+            "உதாரணங்கள்",
+            "கூலி, சம்பளம், வாரம், வட்டி, நிறுவன லாபம்",
+            "முதியோர் உதவித்தொகை, வேலையின்மை உதவித்தொகை, கல்வி உதவி"
+          ],
+          [
+            "பெறுநர்கள்",
+            "உற்பத்திக் காரணிகளின் உரிமையாளர்கள்",
+            "குடும்பங்கள், மாணவர்கள், பாதிக்கப்பட்ட பொதுமக்கள்"
+          ]
+        ]
+      },
+      {
+        "id": "comp_gross_vs_net_capital",
+        "title_en": "Gross Investment vs Net Investment & Depreciation",
+        "title_ta": "மொத்த முதலீடு vs நிகர முதலீடு மற்றும் தேய்மானம்",
+        "headers_en": [
+          "Aspect",
+          "Gross Investment",
+          "Net Investment"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "மொத்த முதலீடு (Gross Investment)",
+          "நிகர முதலீடு (Net Investment)"
+        ],
+        "rows_en": [
+          [
+            "Definition",
+            "Total expenditure on new physical capital goods during a year",
+            "Actual net addition to the capital stock of the economy"
+          ],
+          [
+            "Depreciation Component",
+            "Includes replacement investment (Depreciation / CFC)",
+            "Excludes Depreciation (Net Investment = Gross Investment - CFC)"
+          ],
+          [
+            "Economic Signal",
+            "Can be positive even if capital stock is shrinking (if below depreciation)",
+            "True indicator of whether productive capacity is expanding"
+          ],
+          [
+            "Zero Growth Scenario",
+            "Gross Investment = Depreciation (Zero Net Investment)",
+            "Net Investment is Zero (Stationary Economy)"
+          ],
+          [
+            "Negative Condition",
+            "Cannot be negative (expenditure cannot be less than zero)",
+            "Can be negative if Gross Investment < Depreciation (Depleting capital)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரையறை",
+            "ஒரு ஆண்டில் புதிய மூலதன சொத்துக்கள் மீது செய்யப்பட்ட மொத்த செலவு",
+            "பொருளாதாரத்தின் மூலதன இருப்பில் ஏற்பட்ட உண்மையான நிகர உயர்வு"
+          ],
+          [
+            "தேய்மான உள்ளடக்கம்",
+            "மாற்று முதலீட்டை (தேய்மானத்தை) உள்ளடக்கியது",
+            "தேய்மானத்தை கழித்தது (நிகர முதலீடு = மொத்த முதலீடு - தேய்மானம்)"
+          ],
+          [
+            "பொருளாதார சமிக்ஞை",
+            "மூலதன இருப்பு குறையும் போதும் நேர்மறையாக இருக்கக்கூடும்",
+            "உற்பத்தித் திறன் உண்மையில் விரிவடைகிறதா என்பதற்கான உண்மையான குறியீடு"
+          ],
+          [
+            "வளர்ச்சியற்ற நிலை",
+            "மொத்த முதலீடு = தேய்மானம் (நிகர முதலீடு பூஜ்ஜியம்)",
+            "நிகர முதலீடு பூஜ்ஜியம் (தேக்கமடைந்த பொருளாதாரம்)"
+          ],
+          [
+            "எதிர்மறை நிலை",
+            "எதிர்மறையாக இருக்க முடியாது (செலவு பூஜ்ஜியத்திற்குக் கீழ் செல்லாது)",
+            "மொத்த முதலீடு தேய்மானத்தை விடக் குறைவாக இருந்தால் எதிர்மறையாகலாம்"
+          ]
+        ]
+      },
+      {
+        "id": "comp_conceptual_vs_statistical_hurdles",
+        "title_en": "Conceptual vs Statistical Difficulties in Measuring National Income",
+        "title_ta": "தேசிய வருமானத்தை அளவிடுவதில் கோட்பாட்டு vs புள்ளியியல் சவால்கள்",
+        "headers_en": [
+          "Parameter",
+          "Conceptual Difficulties",
+          "Statistical Difficulties"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "கோட்பாட்டு சவால்கள் (Conceptual)",
+          "புள்ளியியல் சவால்கள் (Statistical)"
+        ],
+        "rows_en": [
+          [
+            "Origin of Problem",
+            "Theoretical definition and boundary issues of 'economic activity'",
+            "Practical data collection, non-availability of records, and illiteracy"
+          ],
+          [
+            "Key Examples",
+            "Unpaid domestic services, subsistence farming output, imputed rent",
+            "Unorganised sector (>80%), black money evasion, lack of accounting"
+          ],
+          [
+            "Resolution Method",
+            "Adopting standardized statistical conventions (UN SNA frameworks)",
+            "Digitization, tax formalization (GST, e-Way bill), periodic sample surveys"
+          ],
+          [
+            "Universal vs Specific",
+            "Present in both developed and developing countries",
+            "Particularly acute in developing economies like India"
+          ],
+          [
+            "Policy Impact",
+            "Distorts gender and welfare evaluations of GDP",
+            "Causes systematic under-reporting of GDP and tax-to-GDP ratio"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிரச்சினையின் தோற்றம்",
+            "'பொருளாதார நடவடிக்கை' என்பதன் தத்துவார்த்த வரையறை எல்லை சிக்கல்கள்",
+            "நடைமுறை தரவு சேகரிப்பு, கணக்கு புத்தகங்கள் இன்மை மற்றும் படிப்பறிவின்மை"
+          ],
+          [
+            "முக்கிய உதாரணங்கள்",
+            "ஊதியமில்லா வீட்டு வேலை, தன்னிறைவு வேளாண்மை நுகர்வு, உத்தேச வாடகை",
+            "முறைசாரா துறை (>80%), கறுப்புப் பணம், கணக்கு வைக்காமை"
+          ],
+          [
+            "தீர்க்கும் முறை",
+            "சர்வதேச புள்ளியியல் மரபுகளை ஏற்றுக்கொள்வது (UN SNA கட்டமைப்பு)",
+            "டிஜிட்டல் மயமாக்கல், ஜிஎஸ்டி முறைப்படுத்துதல், காலமுறை மாதிரி கணக்கெடுப்பு"
+          ],
+          [
+            "உலகளாவிய தன்மை",
+            "வளர்ந்த மற்றும் வளரும் நாடுகள் இரண்டிலும் காணப்படுகிறது",
+            "இந்தியா போன்ற வளரும் நாடுகளில் மிகக் கடுமையான பாதிப்பை ஏற்படுத்துகிறது"
+          ],
+          [
+            "கொள்கை தாக்கம்",
+            "GDP-யின் பாலின மற்றும் சமூக நல மதிப்பீடுகளை திரிக்கிறது",
+            "GDP மற்றும் வரி-GDP விகிதம் குறைவாகப் பதிவாக வழிவகுக்கிறது"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "National Income Structure & Functioning (Part 2)",
+        "short_label": "NI Methods & Structure",
+        "children": [
+          {
+            "title": "Three Estimation Methods",
+            "short_label": "3 Methods",
+            "children": [
+              {
+                "title": "Production Method (GVA = Output - Intermediate)",
+                "short_label": "Production"
+              },
+              {
+                "title": "Income Method (Wages + Operating Surplus + Mixed)",
+                "short_label": "Income"
+              },
+              {
+                "title": "Expenditure Method (C + I + G + [X - M])",
+                "short_label": "Expenditure"
+              }
+            ]
+          },
+          {
+            "title": "Factor Incomes & Adjustments",
+            "short_label": "Adjustments",
+            "children": [
+              {
+                "title": "Compensation of Employees (Wages, Salaries, EPF)",
+                "short_label": "Compensation"
+              },
+              {
+                "title": "Operating Surplus (Rent, Interest, Profits)",
+                "short_label": "Op Surplus"
+              },
+              {
+                "title": "Mixed Income of Self-Employed",
+                "short_label": "Mixed Income"
+              },
+              {
+                "title": "Depreciation (CFC) & NIT Adjustments",
+                "short_label": "Depr & NIT"
+              }
+            ]
+          },
+          {
+            "title": "Sectoral GVA Composition",
+            "short_label": "Sectoral GVA",
+            "children": [
+              {
+                "title": "Primary Sector (~16-18% GVA, ~45% Workforce)",
+                "short_label": "Primary"
+              },
+              {
+                "title": "Secondary Sector (~28-29% GVA, Mfg 15-17%)",
+                "short_label": "Secondary"
+              },
+              {
+                "title": "Tertiary Sector (~53-54% GVA Engine)",
+                "short_label": "Tertiary"
+              }
+            ]
+          },
+          {
+            "title": "Measurement Difficulties",
+            "short_label": "Difficulties",
+            "children": [
+              {
+                "title": "Conceptual (Unpaid work, Barter, Subsistence)",
+                "short_label": "Conceptual"
+              },
+              {
+                "title": "Statistical (Informal >80%, Black money, No records)",
+                "short_label": "Statistical"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Second-Hand Goods Sale Commission Trap",
+        "points": {
+          "en": [
+            "Trap: Assuming that everything related to the sale of an old second-hand car is excluded from GDP.",
+            "Correct Understanding: The sale value of the second-hand car itself is EXCLUDED (already counted in the year it was originally produced); however, the brokerage or commission earned by the agent IS INCLUDED as a fresh productive service rendered in the current year.",
+            "Exam Tip: Goods value of second-hand sales = Excluded; Brokerage/commission on sale = Included."
+          ],
+          "ta": [
+            "பொறி: பழைய பயன்பாட்டு கார் விற்பனை தொடர்பான அனைத்தும் GDP-யில் இருந்து நீக்கப்படும் என நினைப்பது.",
+            "சரியான புரிதல்: பழைய காரின் விற்பனை மதிப்பு நீக்கப்படும் (ஏனெனில் அது தயாரிக்கப்பட்ட ஆண்டிலேயே கணக்கிடப்பட்டுவிட்டது); ஆனால் அதை விற்றுக்கொடுத்த தரகரின் கமிஷன் நடப்பு ஆண்டில் வழங்கப்பட்ட புதிய சேவையாகக் கருதப்பட்டு GDP-யில் சேர்க்கப்படும்.",
+            "தேர்வு குறிப்பு: பழைய பண்டத்தின் மதிப்பு = நீக்கப்படும்; தரகு / கமிஷன் கட்டணம் = சேர்க்கப்படும்."
+          ]
+        }
+      },
+      {
+        "title": "Imputed Rent of Owner-Occupied Houses Trap",
+        "points": {
+          "en": [
+            "Trap: Believing that living in one's own house does not generate any income for GDP because no rent is actually paid.",
+            "Correct Understanding: National Accounts imputes a rental value ('imputed rent') to owner-occupied residential properties and INCLUDES it in GDP, as housing service is actively consumed.",
+            "Exam Tip: Imputed rent of self-occupied house = Included; Unpaid housework by homemaker = Excluded."
+          ],
+          "ta": [
+            "பொறி: சொந்த வீட்டில் வசிப்பவர்கள் வாடகை எதுவும் செலுத்தாததால் அது GDP-யில் சேர்க்கப்படாது என தவறாக நினைப்பது.",
+            "சரியான புரிதல்: தேசிய கணக்கியலில் சொந்த வீட்டில் வசிப்பவர்களுக்கும் உத்தேச வாடகை மதிப்பு (Imputed Rent) கணக்கிடப்பட்டு GDP-யில் சேர்க்கப்படுகிறது; ஏனெனில் அவர்கள் வீட்டுச் சேவையை நுகர்கிறார்கள்.",
+            "தேர்வு குறிப்பு: சொந்த வீட்டின் உத்தேச வாடகை = சேர்க்கப்படும்; குடும்பத் தலைவியின் ஊதியமில்லா வீட்டு வேலை = நீக்கப்படும்."
+          ]
+        }
+      },
+      {
+        "title": "Financial Assets & Capital Gains Trap",
+        "points": {
+          "en": [
+            "Trap: Including profits made by selling shares in the stock market (capital gains) in National Income.",
+            "Correct Understanding: Capital gains from stock market or real estate price appreciation represent mere paper title transfers and do NOT reflect physical production of goods/services; they are EXCLUDED from National Income.",
+            "Exam Tip: Capital gains from shares = Excluded; Commission paid to stockbroker = Included."
+          ],
+          "ta": [
+            "பொறி: பங்குச் சந்தையில் பங்குகளை விற்று ஈட்டிய லாபத்தை (மூலதன ஆதாயம்) தேசிய வருமானத்தில் சேர்ப்பது.",
+            "சரியான புரிதல்: பங்குச் சந்தை அல்லது நில விற்பனை மூலம் கிடைக்கும் மூலதன ஆதாயங்கள் வெறும் உரிமைப் பரிமாற்றங்கள் மட்டுமே; அவை எந்த புதிய உற்பத்திப் பண்டத்தையும் உருவாக்காததால் தேசிய வருமானத்தில் சேர்க்கப்படாது.",
+            "தேர்வு குறிப்பு: பங்குகளின் மூலதன ஆதாயம் = நீக்கப்படும்; பங்குத் தரகருக்கு வழங்கப்படும் கமிஷன் = சேர்க்கப்படும்."
+          ]
+        }
+      },
+      {
+        "title": "Operating Surplus Components Trap",
+        "points": {
+          "en": [
+            "Trap: Believing Operating Surplus includes all income earned by an enterprise including salaries.",
+            "Correct Understanding: Operating Surplus strictly consists of income from property and entrepreneurship: Rent + Royalty + Interest + Profit. It EXCLUDES Compensation of Employees (salaries/wages) and Mixed Income.",
+            "Exam Tip: Operating Surplus = Rent + Royalty + Interest + Profit (Dividends + Undistributed Profits + Corporate Tax)."
+          ],
+          "ta": [
+            "பொறி: இயக்க உபரி (Operating Surplus) என்பது ஒரு நிறுவனம் வழங்கும் ஊழியர் சம்பளத்தையும் உள்ளடக்கியது என நினைப்பது.",
+            "சரியான புரிதல்: இயக்க உபரி என்பது சொத்து மற்றும் தொழில்முனைவிலிருந்து கிடைக்கும் வருவாயை மட்டுமே குறிக்கும்: வாரம் + ராயல்டி + வட்டி + லாபம். இதில் ஊழியர் ஊதியம் மற்றும் கலப்பு வருமானம் சேராது.",
+            "தேர்வு குறிப்பு: இயக்க உபரி = வாரம் + ராயல்டி + வட்டி + லாபம் (பங்காதாயம் + பகிரப்படாத லாபம் + நிறுவன வரி)."
+          ]
+        }
+      },
+      {
+        "title": "Windfall Gains Exclusion Trap",
+        "points": {
+          "en": [
+            "Trap: Treating lottery winnings or horse racing prize money as part of National Income.",
+            "Correct Understanding: Windfall gains from lotteries, gambling, or betting arise without any economic productive activity; they are completely EXCLUDED from National Income.",
+            "Exam Tip: Windfall gains = Excluded; Factor payments = Included."
+          ],
+          "ta": [
+            "பொறி: லாட்டரி பரிசு அல்லது குதிரைப் பந்தயத்தில் வென்ற தொகையை தேசிய வருமானத்தின் ஒரு பகுதியாகக் கருதுவது.",
+            "சரியான புரிதல்: லாட்டரி அல்லது சூதாட்டம் மூலம் கிடைக்கும் எதிர்பாராத வரவுகள் எந்தவொரு உற்பத்தி நடவடிக்கையாலும் உருவானவை அல்ல; அவை தேசிய வருமானத்திலிருந்து முற்றிலும் நீக்கப்படும்.",
+            "தேர்வு குறிப்பு: எதிர்பாராத பரிசு வரவுகள் = நீக்கப்படும்; உழைப்பால் ஈட்டிய காரணி ஊதியம் = சேர்க்கப்படும்."
+          ]
+        }
+      },
+      {
+        "title": "Intermediate Consumption vs Capital Investment Trap",
+        "points": {
+          "en": [
+            "Trap: Treating a factory purchasing a machine as intermediate consumption.",
+            "Correct Understanding: Raw materials consumed in the production process within the year are 'Intermediate Consumption' (deducted); long-lasting machines, equipment, and buildings are 'Gross Fixed Capital Formation' (capital investment, NOT intermediate consumption).",
+            "Exam Tip: Electricity, raw cotton = Intermediate consumption; Loom machine, factory shed = Capital investment (GDP component)."
+          ],
+          "ta": [
+            "பொறி: ஒரு தொழிற்சாலை வாங்கும் புதிய இயந்திரத்தை இடைநிலை நுகர்வு எனத் தவறாகக் கருதுவது.",
+            "சரியான புரிதல்: உற்பத்தி செயல்பாட்டில் ஒரே ஆண்டில் முற்றிலும் நுகரப்படும் மூலப்பொருட்கள் 'இடைநிலை நுகர்வு' (கழிக்கப்படும்); பல ஆண்டுகள் உழைக்கும் இயந்திரங்கள், கருவிகள் மற்றும் கட்டிடங்கள் 'மூலதன முதலீடு' (GDP-யில் சேர்க்கப்படும்).",
+            "தேர்வு குறிப்பு: பருத்தி, மின்சாரம் = இடைநிலை நுகர்வு; தறி இயந்திரம், ஆலை கட்டிடம் = மூலதன உருவாக்கம் (முதலீடு)."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Value Added = Value of Gross Output minus Value of Intermediate Consumption.",
+        "Double counting occurs when the value of intermediate goods is counted alongside final goods.",
+        "Income Method aggregates three factor classes: Compensation of Employees, Operating Surplus, and Mixed Income.",
+        "Operating Surplus comprises Rent, Royalty, Interest, and Corporate Profit.",
+        "Expenditure Method identity: GDP = C + I + G + (X - M).",
+        "CFC (Consumption of Fixed Capital) is the official national accounts term for Depreciation.",
+        "Net Indirect Taxes (NIT) = Indirect Taxes minus Subsidies.",
+        "GVA at Basic Prices = Factor Cost + Production Taxes - Production Subsidies.",
+        "GDP at Market Prices = GVA at Basic Prices + Product Taxes - Product Subsidies.",
+        "Services sector contributes ~53-54% to India's total Gross Value Added (GVA).",
+        "Agriculture engages ~45-47% of India's workforce but contributes only ~16-18% of GVA.",
+        "Unpaid household chores performed by homemakers are excluded from GDP calculations."
+      ],
+      "ta": [
+        "மதிப்புக் கூட்டல் (Value Added) = மொத்த உற்பத்தி மதிப்பு - இடைநிலை நுகர்வு மதிப்பு.",
+        "இடைநிலைப் பொருட்களின் மதிப்பை இறுதிப் பொருட்களுடன் சேர்த்து கணக்கிடும் போது இரட்டை கணக்கீட்டுப் பிழை ஏற்படுகிறது.",
+        "வருமான முறை மூன்று காரணிப் பிரிவுகளைக் கூட்டுகிறது: உழைப்பாளர் இழப்பீடு, இயக்க உபரி மற்றும் கலப்பு வருமானம்.",
+        "இயக்க உபரி என்பது வாரம், ராயல்டி, வட்டி மற்றும் நிறுவன லாபம் ஆகியவற்றை உள்ளடக்கியது.",
+        "செலவின முறை சமன்பாடு: GDP = C + I + G + (X - M).",
+        "நிலையான மூலதன நுகர்வு (CFC) என்பது தேய்மானத்திற்கான அதிகாரப்பூர்வ தேசிய கணக்கியல் பெயராகும்.",
+        "நிகர மறைமுக வரிகள் (NIT) = மறைமுக வரிகள் - மானியங்கள்.",
+        "அடிப்படை விலையிலான GVA = காரணி விலை + உற்பத்தி வரிகள் - உற்பத்தி மானியங்கள்.",
+        "சந்தை விலையிலான GDP = அடிப்படை விலையிலான GVA + தயாரிப்பு வரிகள் - தயாரிப்பு மானியங்கள்.",
+        "இந்தியாவின் மொத்த மதிப்பு கூட்டலில் (GVA) சேவைத் துறை ~53-54% பங்களிக்கிறது.",
+        "வேளாண்மைத் துறை ~45-47% தொழிலாளர்களை ஈர்த்திருந்தாலும் GVA-வில் ~16-18% மட்டுமே பங்களிக்கிறது.",
+        "குடும்பத் தலைவிகள் செய்யும் ஊதியமில்லா வீட்டு வேலைகள் GDP கணக்கீட்டில் சேர்க்கப்படுவதில்லை."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Three approaches (Production, Income, Expenditure) measure the circular flow from output, distribution, and disposal.",
+        "Production Method calculates Gross Value Added (GVA) by deducting intermediate consumption from total output.",
+        "Income Method sums factor rewards: Wages + Operating Surplus (Rent, Interest, Profit) + Mixed Income.",
+        "Expenditure Method aggregates Private Consumption (C) + Investment (I) + Government Spending (G) + Net Exports (X-M).",
+        "Depreciation (CFC) bridges Gross and Net concepts (Gross - Depreciation = Net).",
+        "Net Indirect Taxes (Taxes - Subsidies) bridges Factor Cost and Market Prices.",
+        "GVA at Basic Prices excludes product-specific taxes/subsidies but includes general production taxes/subsidies.",
+        "Sale of second-hand goods is excluded from GDP, but broker's commission is included.",
+        "Imputed rent of owner-occupied housing is included in National Income.",
+        "Non-monetized subsistence farming and informal employment (>80%) represent key measurement challenges in India."
+      ],
+      "ta": [
+        "உற்பத்தி, வருமானம், செலவினம் ஆகிய மூன்று முறைகளும் சுழல் ஓட்டத்தை வெளியீடு, பகிர்வு மற்றும் செலவழிப்பில் அளவிடுகின்றன.",
+        "உற்பத்தி முறை மொத்த உற்பத்தியிலிருந்து இடைநிலை நுகர்வைக் கழித்து மொத்த மதிப்பு கூட்டலை (GVA) கணக்கிடுகிறது.",
+        "வருமான முறை காரணி ஊதியங்களைக் கூட்டுகிறது: கூலி + இயக்க உபரி (வாரம், வட்டி, லாபம்) + கலப்பு வருமானம்.",
+        "செலவின முறை தனியார் நுகர்வு (C) + முதலீடு (I) + அரசு செலவு (G) + நிகர ஏற்றுமதி (X-M) ஆகியவற்றை ஒருங்கிணைக்கிறது.",
+        "தேய்மானம் (CFC) என்பது மொத்த மற்றும் நிகரக் கருத்துகளுக்கு இடையேயான பாலமாகும் (மொத்தம் - தேய்மானம் = நிகரம்).",
+        "நிகர மறைமுக வரிகள் (வரிகள் - மானியங்கள்) காரணி விலைக்கும் சந்தை விலைக்கும் இடையேயான பாலமாகும்.",
+        "அடிப்படை விலையிலான GVA தயாரிப்பு வரிகளைத் தவிர்த்து பொதுவான உற்பத்தி வரிகளை உள்ளடக்கியது.",
+        "பழைய பொருட்கள் விற்பனை GDP-யில் நீக்கப்படுகிறது; ஆனால் தரகரின் கமிஷன் சேர்க்கப்படுகிறது.",
+        "சொந்த வீட்டில் வசிப்பதற்கான உத்தேச வாடகை தேசிய வருமானத்தில் சேர்க்கப்படுகிறது.",
+        "பணமில்லா தன்னிறைவு வேளாண்மை மற்றும் முறைசாரா வேலைவாய்ப்பு (>80%) இந்திய தேசிய கணக்கீட்டின் முக்கிய சவால்களாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "card_ni2_1",
+        "front_en": "What is the formula for calculating Gross Value Added (GVA) under the Production Method?",
+        "front_ta": "உற்பத்தி முறையில் மொத்த மதிப்பு கூட்டலை (GVA) கணக்கிடுவதற்கான சூத்திரம் என்ன?",
+        "back_en": "GVA = Value of Gross Output - Value of Intermediate Consumption.",
+        "back_ta": "GVA = மொத்த உற்பத்தி மதிப்பு - இடைநிலை நுகர்வு மதிப்பு."
+      },
+      {
+        "id": "card_ni2_2",
+        "front_en": "Why is intermediate consumption subtracted in the Value Added Method?",
+        "front_ta": "மதிப்பு கூட்டல் முறையில் இடைநிலை நுகர்வு ஏன் கழிக்கப்படுகிறது?",
+        "back_en": "To avoid the error of double counting (counting the same input twice).",
+        "back_ta": "இரட்டை கணக்கீட்டுப் பிழையைத் தவிர்ப்பதற்காக (ஒரே உள்ளீட்டை இருமுறை கணக்கிடுவதைத் தவிர்க்க)."
+      },
+      {
+        "id": "card_ni2_3",
+        "front_en": "What are the three main components of factor income under the Income Method?",
+        "front_ta": "வருமான முறையில் காரணி வருமானத்தின் மூன்று முக்கிய கூறுகள் யாவை?",
+        "back_en": "Compensation of Employees, Operating Surplus, and Mixed Income of the self-employed.",
+        "back_ta": "உழைப்பாளர் இழப்பீடு, இயக்க உபரி மற்றும் சுயதொழில் செய்வோரின் கலப்பு வருமானம்."
+      },
+      {
+        "id": "card_ni2_4",
+        "front_en": "What four elements constitute 'Operating Surplus'?",
+        "front_ta": "'இயக்க உபரி' (Operating Surplus) என்பது எந்த நான்கு கூறுகளை உள்ளடக்கியது?",
+        "back_en": "Rent, Royalty, Interest, and Profit.",
+        "back_ta": "வாரம் (Rent), ராயல்டி (Royalty), வட்டி (Interest) மற்றும் லாபம் (Profit)."
+      },
+      {
+        "id": "card_ni2_5",
+        "front_en": "What is the formula for GDP under the Expenditure Method?",
+        "front_ta": "செலவின முறையில் GDP-க்கான சமன்பாடு என்ன?",
+        "back_en": "GDP = C + I + G + (X - M) [Private Consumption + Investment + Government Expenditure + Net Exports].",
+        "back_ta": "GDP = C + I + G + (X - M) [தனியார் நுகர்வு + முதலீடு + அரசு செலவு + நிகர ஏற்றுமதி]."
+      },
+      {
+        "id": "card_ni2_6",
+        "front_en": "What is Net Indirect Tax (NIT)?",
+        "front_ta": "நிகர மறைமுக வரி (NIT) என்றால் என்ன?",
+        "back_en": "NIT = Indirect Taxes minus Subsidies.",
+        "back_ta": "NIT = மறைமுக வரிகள் கழித்தல் மானியங்கள்."
+      },
+      {
+        "id": "card_ni2_7",
+        "front_en": "What is the difference between GVA at Factor Cost and GVA at Basic Prices?",
+        "front_ta": "காரணி விலையிலான GVA மற்றும் அடிப்படை விலையிலான GVA இடையே உள்ள வேறுபாடு என்ன?",
+        "back_en": "GVA at Basic Prices = GVA at Factor Cost + Production Taxes - Production Subsidies.",
+        "back_ta": "அடிப்படை விலையிலான GVA = காரணி விலையிலான GVA + உற்பத்தி வரிகள் - உற்பத்தி மானியங்கள்."
+      },
+      {
+        "id": "card_ni2_8",
+        "front_en": "Are transfer payments like scholarships or old age pensions included in National Income?",
+        "front_ta": "கல்வி உதவித்தொகை அல்லது முதியோர் ஓய்வூதியம் போன்ற மாற்றுச் செலுத்துதல்கள் தேசிய வருமானத்தில் சேர்க்கப்படுமா?",
+        "back_en": "No, they are strictly excluded because they do not reflect any productive activity.",
+        "back_ta": "இல்லை, அவை உற்பத்தி நடவடிக்கைகள் ஏதுமின்றி வழங்கப்படுவதால் முற்றிலும் நீக்கப்படும்."
+      },
+      {
+        "id": "card_ni2_9",
+        "front_en": "Is the brokerage or commission paid to an agent on the sale of a second-hand asset included in GDP?",
+        "front_ta": "பழைய சொத்து விற்பனையில் தரகருக்கு வழங்கப்படும் கமிஷன் GDP-யில் சேர்க்கப்படுமா?",
+        "back_en": "Yes, because it represents payment for a fresh productive service rendered in the current year.",
+        "back_ta": "ஆம், ஏனெனில் அது நடப்பு ஆண்டில் வழங்கப்பட்ட புதிய உற்பத்திச் சேவைக்கான ஊதியமாகும்."
+      },
+      {
+        "id": "card_ni2_10",
+        "front_en": "Is the imputed rent of an owner-occupied house included in National Income?",
+        "front_ta": "சொந்த வீட்டில் வசிப்பவர்களுக்கான உத்தேச வாடகை மதிப்பு தேசிய வருமானத்தில் சேர்க்கப்படுமா?",
+        "back_en": "Yes, imputed rent is included as an active housing service.",
+        "back_ta": "ஆம், உத்தேச வாடகை நுகரப்படும் வீட்டுச் சேவையாகக் கருதப்பட்டு சேர்க்கப்படும்."
+      },
+      {
+        "id": "card_ni2_11",
+        "front_en": "Which sector contributes the highest share to India's Gross Value Added (GVA)?",
+        "front_ta": "இந்தியாவின் மொத்த மதிப்பு கூட்டலில் (GVA) அதிக பங்கு வகிக்கும் துறை எது?",
+        "back_en": "Tertiary / Services Sector (~53% to 54%).",
+        "back_ta": "மூன்றாம் நிலை / சேவைத் துறை (~53% முதல் 54% வரை)."
+      },
+      {
+        "id": "card_ni2_12",
+        "front_en": "What is the primary statistical challenge caused by India's informal sector in national accounting?",
+        "front_ta": "தேசிய கணக்கியலில் இந்தியாவின் முறைசாரா துறையால் ஏற்படும் முதன்மை புள்ளியியல் சவால் என்ன?",
+        "back_en": "Over 80% of workers lack formal bookkeeping, requiring estimation via periodic sample surveys.",
+        "back_ta": "80%-க்கும் அதிகமான தொழிலாளர்கள் முறையான கணக்குகளைப் பராமரிக்காததால் மாதிரி ஆய்வுகளையே நம்ப வேண்டியுள்ளது."
+      }
+    ]
+  }
+}

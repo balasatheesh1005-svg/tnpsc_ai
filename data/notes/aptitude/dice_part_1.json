@@ -1,0 +1,273 @@
+{
+  "topic": "dice_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Dice Part 1 — Standard Dice Rules, 1-Common Face & 2-Common Face Methods",
+  "title_ta": "பகடை பகுதி 1 — அடிப்படை விதிகள், 1-பொதுப் பக்கம் மற்றும் 2-பொதுப் பக்க முறைகள்",
+
+  "definition": {
+    "en": "Dice reasoning evaluates 3-dimensional spatial rotation, face adjacency, opposite face identification, and cube reconstruction from different 2D view angles.",
+    "ta": "பகடை தர்க்கம் என்பது 3D முப்பரிமாண சுழற்சி, பக்கங்களின் இணைப்பு, எதிர் பக்கங்களைக் கண்டறிதல் மற்றும் வெவ்வேறு கோணக் காட்சிகளிலிருந்து பகடையை அமைத்தலைக் குறிக்கிறது."
+  },
+
+  "exam_importance": {
+    "en": "Dice is a compulsory core topic in TNPSC Mental Ability across Group 1, Group 2/2A, and Group 4. Questions test 1-common face clockwise rule, 2-common face elimination rule, and 3/4-position cube reconstructions.",
+    "ta": "பகடை என்பது TNPSC மனத்திறன் தேர்வுகளில் தவறாமல் கேட்கப்படும் பாடமாகும். 1-பொதுப்பக்க கடிகார முறை, 2-பொதுப்பக்க நீக்கல் முறை மற்றும் 3 அல்லது 4 நிலைகள் கொண்ட பகடைக் கணக்குகள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 1: One Common Face Clockwise Rule (1-பொதுப்பக்க கடிகார சுழற்சி விதி)",
+      "formula": "\\text{Common Face } C: \\quad C \\to A \\to B \\quad \\& \\quad C \\to D \\to E \\implies A \\text{ opp } D, \\quad B \\text{ opp } E",
+      "explanation": {
+        "en": "When 2 views of a die have 1 common face, write numbers clockwise starting from the common face. Matching positions are opposite.",
+        "ta": "இரு பகடைக் காட்சிகளில் 1 பக்கம் மட்டுமே பொதுவாக இருந்தால், பொதுப் பக்கத்திலிருந்து கடிகாரத் திசையில் எண்களை எழுதவும். ஒத்த இடங்களில் உள்ள எண்கள் எதிர் எதிர் பக்கங்களாகும்."
+      }
+    },
+    {
+      "title": "Rule 2: Two Common Faces Elimination Rule (2-பொதுப்பக்க நீக்கல் விதி)",
+      "formula": "\\text{If faces } (X, Y) \\text{ are common in both views} \\implies \\text{Remaining 3rd faces are opposite to each other}",
+      "explanation": {
+        "en": "When 2 views share 2 identical faces, the remaining unshared face in view 1 is strictly opposite to the unshared face in view 2.",
+        "ta": "இரு பகடைக் காட்சிகளில் 2 பக்கங்கள் பொதுவாக இருந்தால், மீதமுள்ள 3-வது பக்கங்கள் ஒன்றுக்கொன்று எதிர் எதிர் பக்கங்களாகும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Fundamental Properties of a Cube/Dice (பகடையின் அடிப்படைப் பண்புகள்)",
+      "points": {
+        "en": [
+          "A cube has 6 faces, 8 vertices (corners), and 12 edges.",
+          "Every face has exactly 1 opposite face and 4 adjacent (neighboring) faces.",
+          "Opposite faces can NEVER be seen together in any single 2D view of a die.",
+          "Never assume opposite faces sum to 7 unless explicitly stated as a standard numbered die!"
+        ],
+        "ta": [
+          "ஒரு பகடைக்கு 6 பக்கங்கள், 8 முனைகள் மற்றும் 12 விளிம்புகள் உண்டு.",
+          "ஒவ்வொரு பக்கத்திற்கும் சரியாக 1 எதிர் பக்கமும், 4 பக்கவாட்டு (அருகிலுள்ள) பக்கங்களும் இருக்கும்.",
+          "எதிர் எதிர் பக்கங்கள் ஒருபோதும் ஒரே பகடைக் காட்சியில் ஒன்றாகத் தோன்ற முடியாது.",
+          "வினாவில் தரப்படாத வரை எதிர் பக்கங்களின் கூடுதல் 7 எனத் தானாகக் கருதக் கூடாது!"
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Adjacent Elimination Shortcut",
+      "points": {
+        "en": [
+          "If face A is seen adjacent to faces B, C, D, E across views, then the ONLY unseen face F is opposite to A.",
+          "Instantly identifies opposite without drawing rotation circles."
+        ],
+        "ta": [
+          "A என்ற பக்கத்தின் அருகில் B, C, D, E ஆகிய 4 பக்கங்களும் தெரிந்தால், மீதமுள்ள F என்ற பக்கமே A-ன் எதிர் பக்கமாகும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Assuming opposite faces sum to 7 for non-standard TNPSC dice questions",
+      "explanation": {
+        "en": "Assuming 1 is opposite 6, 2 is opposite 5, 3 is opposite 4 automatically for any numbered die is WRONG in TNPSC reasoning!",
+        "ta": "எண் பகடை என்றாலே 1-க்கு எதிர் 6, 2-க்கு எதிர் 5 எனத் தானாகக் கருதுவது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Always derive opposite pairs from the given figure views using Rule 1 or Rule 2.",
+        "ta": "எப்போதும் தரப்பட்ட படங்களிலிருந்தே விதி 1 அல்லது விதி 2-ஐப் பயன்படுத்தி எதிர் பக்கங்களைக் கண்டறிய வேண்டும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Two positions of a die are shown: Position A shows faces 1, 2, 3 (with 1 on top). Position B shows faces 1, 4, 5 (with 1 on top). Find the face opposite to 2.",
+      "method": "1-Common Face Clockwise Rule",
+      "steps": [
+        "Step 1: Identify common face in both positions = 1.",
+        "Step 2: Write clockwise sequence starting from 1 for Position A: 1 → 2 → 3.",
+        "Step 3: Write clockwise sequence starting from 1 for Position B: 1 → 4 → 5.",
+        "Step 4: Pair matching positions: 2 is paired with 4, 3 is paired with 5.",
+        "Step 5: Therefore, face opposite to 2 is 4."
+      ],
+      "answer": "4"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Two positions of a die are shown: Position A shows faces 2, 3, 5. Position B shows faces 3, 5, 6. Find the face opposite to 2.",
+      "method": "2-Common Face Elimination Rule",
+      "steps": [
+        "Step 1: Identify common faces in both positions = 3 and 5.",
+        "Step 2: By Rule 2, when 2 faces are common, the remaining 3rd faces are opposite.",
+        "Step 3: Remaining face in Position A = 2. Remaining face in Position B = 6.",
+        "Step 4: Therefore, face opposite to 2 is 6."
+      ],
+      "answer": "6"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Three positions of a single die show: Pos A (1, 2, 3), Pos B (1, 4, 5), Pos C (2, 3, 6). Find the face opposite to 1.",
+      "method": "Cross-Matching 3 Positions",
+      "steps": [
+        "Step 1: Compare Pos A (1, 2, 3) and Pos B (1, 4, 5). Common face = 1.",
+        "Step 2: Clockwise from 1: Pos A (1 → 2 → 3), Pos B (1 → 4 → 5).",
+        "Step 3: 2 is opposite 4, 3 is opposite 5.",
+        "Step 4: The 6 faces are 1, 2, 3, 4, 5, 6. Since 2-4 and 3-5 are pairs, the remaining face opposite to 1 is 6.",
+        "Step 5: Verification: Pos C shows 2, 3, 6 together (adjacent to each other), which confirms 6 is adjacent to 2 and 3, and opposite to 1."
+      ],
+      "answer": "6"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Two positions of a die show: Pos A has 4 on top, 1 on front, 2 on right. Pos B has 4 on top, 5 on front, 6 on right. Find the face opposite to 1.",
+      "method": "1-Common Face Clockwise Rule",
+      "steps": [
+        "Step 1: Common face on top = 4.",
+        "Step 2: Clockwise order Pos A: 4 → 1 → 2.",
+        "Step 3: Clockwise order Pos B: 4 → 5 → 6.",
+        "Step 4: 1 matches with 5, 2 matches with 6.",
+        "Step 5: Face opposite to 1 = 5."
+      ],
+      "answer": "5"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Two positions of a non-standard die show: Pos A (1, 3, 4) and Pos B (1, 2, 5). Find the face opposite to 3.",
+      "method": "Clockwise Rotation Deduction",
+      "steps": [
+        "Step 1: Common face = 1.",
+        "Step 2: Clockwise from 1 in Pos A: 1 → 3 → 4.",
+        "Step 3: Clockwise from 1 in Pos B: 1 → 2 → 5.",
+        "Step 4: Pair 3 with 2, and 4 with 5.",
+        "Step 5: Face opposite to 3 = 2."
+      ],
+      "answer": "2"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Four positions of a single die show numbers 1 to 6: Pos 1 (1, 2, 4), Pos 2 (2, 3, 5), Pos 3 (3, 5, 6), Pos 4 (1, 4, 6). Find the face opposite to 2.",
+      "method": "4-Position Multi-Elimination",
+      "steps": [
+        "Step 1: Compare Pos 2 (2, 3, 5) and Pos 3 (3, 5, 6). Common faces = 3 and 5.",
+        "Step 2: By 2-common face rule, remaining face 2 in Pos 2 is opposite to remaining face 6 in Pos 3.",
+        "Step 3: Verification: Pos 1 shows (1, 2, 4) and Pos 4 shows (1, 4, 6) -> 1, 4 common, so 2 opp 6.",
+        "Step 4: Both comparisons independently confirm face opposite to 2 is 6."
+      ],
+      "answer": "6"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Two positions of a die show: Pos A (3, 1, 2) and Pos B (3, 4, 5). Find the face opposite to 1.",
+      "options": ["A) 2", "B) 4", "C) 5", "D) 6"],
+      "correct_option": "B) 4",
+      "explanation": "Common face = 3. Clockwise: 3 → 1 → 2 and 3 → 4 → 5. So 1 is opposite 4."
+    },
+    {
+      "id": 2,
+      "question": "Two positions of a die show: Pos A (1, 4, 5) and Pos B (4, 5, 6). Find the face opposite to 1.",
+      "options": ["A) 2", "B) 3", "C) 5", "D) 6"],
+      "correct_option": "D) 6",
+      "explanation": "Common faces = 4 and 5. By 2-common face rule, remaining 1 is opposite 6."
+    },
+    {
+      "id": 3,
+      "question": "Two positions of a die show: Pos A (2, 3, 4) and Pos B (2, 5, 6). Find the face opposite to 3.",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 1"],
+      "correct_option": "B) 5",
+      "explanation": "Common face = 2. Clockwise: 2 → 3 → 4 and 2 → 5 → 6. So 3 is opposite 5."
+    },
+    {
+      "id": 4,
+      "question": "Two positions of a die show: Pos A (5, 1, 3) and Pos B (5, 2, 4). Find the face opposite to 3.",
+      "options": ["A) 1", "B) 2", "C) 4", "D) 6"],
+      "correct_option": "C) 4",
+      "explanation": "Common face = 5. Clockwise: 5 → 1 → 3 and 5 → 2 → 4. So 3 is opposite 4."
+    },
+    {
+      "id": 5,
+      "question": "Two positions of a die show: Pos A (6, 2, 3) and Pos B (6, 4, 5). Find the face opposite to 6.",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "correct_option": "A) 1",
+      "explanation": "Clockwise pairs: 2-4 and 3-5. The remaining unshown number 1 is opposite 6."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "1-Common Face Clockwise Rule",
+      "back": "Rotate clockwise from common face in both views to pair opposite faces"
+    },
+    {
+      "front": "2-Common Faces Rule",
+      "back": "When 2 faces match in both views, the remaining 3rd faces are opposite"
+    },
+    {
+      "front": "Opposite Face Visibility Rule",
+      "back": "Opposite faces can NEVER appear together in any single 2D view of a die!"
+    },
+    {
+      "front": "Adjacent Faces Count",
+      "back": "Every face has 1 opposite face and 4 adjacent (neighboring) faces"
+    },
+    {
+      "front": "TNPSC Standard Dice Trap",
+      "back": "Do NOT assume opposite sum = 7 unless explicitly stated!"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Dice Part 1 — 3D Cube Rotation Rules Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Dice Part 1",
+        "children": ["rule1_sec", "rule2_sec", "properties_sec"]
+      },
+      {
+        "id": "rule1_sec",
+        "label": "1-Common Face Rule",
+        "children": ["clockwise_step"]
+      },
+      {
+        "id": "clockwise_step",
+        "label": "Rotate Clockwise from Common Face",
+        "children": []
+      },
+      {
+        "id": "rule2_sec",
+        "label": "2-Common Faces Rule",
+        "children": ["elimination_step"]
+      },
+      {
+        "id": "elimination_step",
+        "label": "Remaining 3rd faces are opposite",
+        "children": []
+      },
+      {
+        "id": "properties_sec",
+        "label": "Cube Properties",
+        "children": ["no_opposite_visible"]
+      },
+      {
+        "id": "no_opposite_visible",
+        "label": "Opposites never visible together!",
+        "children": []
+      }
+    ]
+  }
+}

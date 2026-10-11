@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "topic_id": "tna_district_and_revenue_administration_part_3",
+    "repository_id": "tna_district_and_revenue_administration",
+    "display_title": "District & Revenue Administration — Part 3: Land Records & Field Services",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "tn_administration",
+    "chapter": "District & Revenue Administration in Tamil Nadu",
+    "language": "bilingual"
+  },
+  "metadata": {
+    "version": "1.0",
+    "status": "validated",
+    "review_status": "peer_reviewed",
+    "difficulty": "advanced",
+    "estimated_study_time": "45 mins"
+  },
+  "keywords": [
+    "A-Register",
+    "Adangal",
+    "Patta",
+    "Chitta",
+    "Jamabandi",
+    "Revenue Certificates",
+    "FMB",
+    "Computerised Patta"
+  ],
+  "learning_outcomes": [
+    "Understand the key statutory land records in Tamil Nadu including A-Register, Adangal, Patta, Chitta, and FMB.",
+    "Examine the Jamabandi process as an annual revenue audit and public grievance forum.",
+    "Analyze the procedure for issuing community, income, and nativity revenue certificates."
+  ],
+  "subject": "tn_administration",
+  "topic": "District & Revenue Administration — Part 3: Land Records & Field Services",
+  "language": "bilingual",
+  "ui_type": "standard_note",
+  "sections": [
+    "Land Records Architecture: A-Register, Adangal, Patta & Chitta",
+    "Computerised Patta Transfer (CPT) & e-Services Integration",
+    "Statutory Revenue Certificates & Verification Workflow",
+    "Jamabandi: Annual Revenue Settlement & Grievance Audit",
+    "Field-Level Disaster Relief & Welfare Scheme Delivery"
+  ],
+  "content": {
+    "definition": {
+      "en": "Land Records and Field Services in Tamil Nadu comprise the statutory documentation framework (A-Register, Adangal, Patta, Chitta, FMB) managed by the Revenue Department, digitized through e-Services, audited annually during Jamabandi, and utilized for issuing essential citizen certificates and field relief.",
+      "ta": "தமிழ்நாட்டின் நிலப் பதிவேடுகள் மற்றும் களச் சேவைகள் என்பவை வருவாய்த் துறையால் பராமரிக்கப்படும் சட்டப்பூர்வ நிலப் பதிவேடுகள் (A-பதிவேடு, அடங்கல், பட்டா, சிட்டா, FMB), மின் சேவை மூலம் டிஜிட்டல் மயமாக்கல், ஜமாபந்தி மூலம் ஆண்டறிக்கை தணிக்கை மற்றும் சான்றிதழ்கள் வழங்கல் ஆகியவற்றை உள்ளடக்கிய அமைப்பாகும்."
+    },
+    "comparison_tables": [
+      {
+        "id": "table_land_records_types",
+        "title_en": "Statutory Land Records in Tamil Nadu",
+        "title_ta": "தமிழ்நாட்டின் முக்கிய சட்டப்பூர்வ நிலப் பதிவேடுகள்",
+        "headers_en": [
+          "Record Name",
+          "Primary Purpose",
+          "Key Information Contained",
+          "Custodian Officer"
+        ],
+        "headers_ta": [
+          "பதிவேட்டின் பெயர்",
+          "முதன்மை நோக்கம்",
+          "உள்ளடங்கிய முக்கியத் தகவல்கள்",
+          "பொறுப்பு அதிகாரி"
+        ],
+        "rows_en": [
+          [
+            "A-Register (Permanent Record)",
+            "Master land registry of the village",
+            "Survey number, land classification (Nanjai/Punjai), extent, assessment tax, tenure type",
+            "Tahsildar / VAO"
+          ],
+          [
+            "Adangal (Annual Crop Register)",
+            "Record of land cultivation and crop details",
+            "Current crop grown, soil classification, irrigation source, tree counts, cultivator details",
+            "Village Administrative Officer (VAO)"
+          ],
+          [
+            "Patta (Ownership Title Document)",
+            "Document establishing land ownership title",
+            "Patta number, owner names, survey numbers, extent of land held",
+            "Tahsildar (issued to owner)"
+          ],
+          [
+            "Chitta (Landholder Register)",
+            "Register of land holdings by owner",
+            "Owner-wise compilation of survey numbers and total land holdings in village",
+            "VAO / Revenue Inspector"
+          ],
+          [
+            "FMB (Field Measurement Book)",
+            "Map sketch of individual land survey fields",
+            "Exact boundary measurements, sub-division boundaries, field shape, scale drawing",
+            "Taluk Surveyor / Head Surveyor"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "A-பதிவேடு (A-Register)",
+            "கிராமத்தின் முதன்மை நிலப் பதிவேடு",
+            "சர்வே எண், நில வகைப்பாடு (நஞ்சை/புஞ்சை), பரப்பளவு, தீர்வை வரி, உடைமை வகை",
+            "வட்டாட்சியர் / VAO"
+          ],
+          [
+            "அடங்கல் (Adangal)",
+            "ஆண்டுப் பயிர் சாகுபடிப் பதிவேடு",
+            "தற்போது சாகுபடி செய்யப்பட்ட பயிர், நீர் ஆதாரம், மரங்களின் எண்ணிக்கை, பயிரிடுபவர் விபரம்",
+            "கிராம நிர்வாக அலுவலர் (VAO)"
+          ],
+          [
+            "பட்டா (Patta)",
+            "நில உரிமையை உறுதிப்படுத்தும் ஆவணம்",
+            "பட்டா எண், உரிமையாளர் பெயர், சர்வே எண்கள், நிலத்தின் பரப்பு",
+            "வட்டாட்சியர் (உரிமையாளருக்கு வழங்குவது)"
+          ],
+          [
+            "சிட்டா (Chitta)",
+            "நில உரிமையாளர் வாரியான பதிவேடு",
+            "உரிமையாளர் அடிப்படையில் கிராமத்தில் உள்ள அனைத்து நிலங்களின் தொகுப்பு",
+            "VAO / வருவாய் ஆய்வாளர்"
+          ],
+          [
+            "FMB (புல வரைபடப் புத்தகம்)",
+            "சர்வே புலங்களின் வரைபடச் சித்திரம்",
+            "துல்லியமான எல்லை அளவுகள், உட்பிரிவு எல்லைகள், வரைபட அளவுத் திட்டம்",
+            "வட்ட சர்வேயர் / முதன்மை சர்வேயர்"
+          ]
+        ]
+      },
+      {
+        "id": "table_jamabandi_vs_regular_audit",
+        "title_en": "Jamabandi (Annual Revenue Audit) Framework",
+        "title_ta": "ஜமாபந்தி (ஆண்டு வருவாய்த் தணிக்கை) கட்டமைப்பு",
+        "headers_en": [
+          "Dimension",
+          "Jamabandi (Annual Revenue Settlement)",
+          "Regular Day-to-Day Revenue Administration"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "ஜமாபந்தி (ஆண்டு வருவாய்த் தீர்வு)",
+          "வழக்கமான அன்றாட வருவாய் நிர்வாகம்"
+        ],
+        "rows_en": [
+          [
+            "Frequency & Timing",
+            "Annual exercise conducted usually during May - June (Fasli year end)",
+            "Continuous round-the-year administrative routine"
+          ],
+          [
+            "Conducting Officer",
+            "District Collector, DRO, RDO, or Senior Officers designated for Jamabandi",
+            "Tahsildar and Taluk office staff"
+          ],
+          [
+            "Core Audit Focus",
+            "Scrutiny of Village Accounts 1 to 24, crop remission, land revenue collection audit",
+            "Processing individual applications for certificates, patta transfers, pensions"
+          ],
+          [
+            "Public Grievance Forum",
+            "Public petitions received directly by Jamabandi Officer with immediate spot disposal",
+            "Standard office file routing through section staff"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அதிர்வெண் & காலம்",
+            "ஆண்டுதோறும் மே - ஜூன் மாதங்களில் நடத்தப்படும் (பசலி ஆண்டின் முடிவு)",
+            "ஆண்டு முழுவதும் தொடர்ச்சியாக நடைபெறும் வழக்கமான பணிகள்"
+          ],
+          [
+            "நடத்தும் அதிகாரி",
+            "மாவட்ட ஆட்சியர், DRO, RDO அல்லது நியமிக்கப்பட்ட மூத்த அதிகாரிகள்",
+            "வட்டாட்சியர் மற்றும் வட்ட அலுவலகப் பணியாளர்கள்"
+          ],
+          [
+            "முதன்மைத் தணிக்கை மையம்",
+            "கிராமக் கணக்குகள் 1 முதல் 24 வரை ஆய்வு, பயிர் இழப்பீடு தள்ளுபடி, வருவாய் வசூல் தணிக்கை",
+            "சான்றிதழ்கள், பட்டா மாறுதல், ஓய்வூதிய விண்ணப்பங்களைச் செயலாக்குதல்"
+          ],
+          [
+            "பொதுமக்கள் குறைதீர்ப்பு",
+            "பொதுமக்களின் மனுக்கள் सीधे பெறப்பட்டு உடனடியாகத் தீர்வு காணப்படுதல்",
+            "வழக்கமான அலுவலகக் கோப்பு வழிமுறைகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "node_en": "Land Records & Field Administration",
+        "node_ta": "நிலப் பதிவேடுகள் & கள நிர்வாகம்",
+        "children": [
+          {
+            "node_en": "Core Records",
+            "node_ta": "முதன்மைப் பதிவேடுகள்",
+            "children": [
+              {
+                "node_en": "A-Register (Master)",
+                "node_ta": "A-பதிவேடு (முதன்மை)"
+              },
+              {
+                "node_en": "Adangal (Crop Details)",
+                "node_ta": "அடங்கல் (பயிர்ப் விபரம்)"
+              },
+              {
+                "node_en": "Patta & Chitta (Title)",
+                "node_ta": "பட்டா & சிட்டா (உரிமை)"
+              },
+              {
+                "node_en": "FMB (Survey Sketch)",
+                "node_ta": "FMB (புல வரைபடம்)"
+              }
+            ]
+          },
+          {
+            "node_en": "Special Audits",
+            "node_ta": "சிறப்புத் தணிக்கைகள்",
+            "children": [
+              {
+                "node_en": "Jamabandi (Annual Accounts)",
+                "node_ta": "ஜமாபந்தி (ஆண்டுக் கணக்குகள்)"
+              },
+              {
+                "node_en": "Revenue Certificates",
+                "node_ta": "வருவாய் சான்றிதழ்கள்"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "trap_id": "t13p3_trap1",
+        "title_en": "A-Register vs Adangal Distinction Trap",
+        "title_ta": "A-பதிவேடு vs அடங்கல் வேறுபாட்டு ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Confusing the permanent A-Register with the annual Adangal register.",
+            "CORRECT FACT: A-Register is the master permanent land registry detailing land classification and tax assessment; Adangal is the dynamic annual crop cultivation register updated every season by the VAO."
+          ],
+          "ta": [
+            "ஏமாற்று: நிரந்தர A-பதிவேட்டையும் ஆண்டு அடங்கல் பதிவேட்டையும் ஒன்றாகக் குழப்புவது.",
+            "சரியான உண்மை: A-பதிவேடு என்பது நில வகைப்பாட்டைக் கூறும் நிரந்தரப் பதிவேடு; அடங்கல் என்பது ஒவ்வொரு பருவத்திலும் VAO-வால் புதுப்பிக்கப்படும் பயிர்ச் சாகுபடிப் பதிவேடு."
+          ]
+        }
+      },
+      {
+        "trap_id": "t13p3_trap2",
+        "title_en": "Fasli Year Definition Trap",
+        "title_ta": "பசலி ஆண்டு வரையறை ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Believing the Revenue Fasli year runs from January 1st to December 31st.",
+            "CORRECT FACT: The Revenue Fasli Year in Tamil Nadu runs from July 1st to June 30th of the succeeding calendar year (Fasli 1433, etc.)."
+          ],
+          "ta": [
+            "ஏமாற்று: வருவாய்ப் பசலி ஆண்டு ஜனவரி 1 முதல் டிசம்பர் 31 வரை இயங்குகிறது எனக் கருதுவது.",
+            "சரியான உண்மை: தமிழ்நாட்டின் வருவாய்ப் பசலி ஆண்டு ஜூலை 1 முதல் அடுத்த ஆண்டின் ஜூன் 30 வரை கணக்கிடப்படுகிறது."
+          ]
+        }
+      },
+      {
+        "trap_id": "t13p3_trap3",
+        "title_en": "Jamabandi Presiding Authority Trap",
+        "title_ta": "ஜமாபந்தி தலைமை அதிகாரி ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Assuming Jamabandi is conducted by the Village Administrative Officer (VAO).",
+            "CORRECT FACT: Jamabandi is conducted by senior revenue officers (Collector, DRO, RDO, or designated Senior Officers) who audit the village accounts maintained by the VAO."
+          ],
+          "ta": [
+            "ஏமாற்று: ஜமாபந்தியை கிராம நிர்வாக அலுவலரே (VAO) நடத்துகிறார் என நினைப்பது.",
+            "சரியான உண்மை: ஜமாபந்தியை மூத்த வருவாய் அதிகாரிகள் (ஆட்சியர், DRO, RDO) நடத்தி, VAO பராமரிக்கும் கணக்குகளைத் தணிக்கை செய்கின்றனர்."
+          ]
+        }
+      },
+      {
+        "trap_id": "t13p3_trap4",
+        "title_en": "FMB Diagram Scope Trap",
+        "title_ta": "FMB புல வரைபட எல்லை ஏமாற்று வினா",
+        "points": {
+          "en": [
+            "TRAP: Believing FMB contains text-only crop details without field measurements.",
+            "CORRECT FACT: FMB (Field Measurement Book) is a precise scale drawing showing physical survey boundaries, sub-division lines, and field measurement lengths."
+          ],
+          "ta": [
+            "ஏமாற்று: FMB என்பது அளவுகள் இல்லாத உரைநடைப் பயிர் விபரம் எனக் கருதுவது.",
+            "சரியான உண்மை: FMB என்பது புல எல்லைகள் மற்றும் அளவுகளைத் துல்லியமாகக் காட்டும் வரைபட ஆவணமாகும்."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "A-Register is the master permanent land record showing classification (Nanjai/Punjai) and tax assessment.",
+        "Adangal is the annual land cultivation register maintained by the VAO.",
+        "Revenue Fasli year runs from July 1 to June 30.",
+        "Jamabandi is the annual audit of village accounts 1 to 24 conducted by senior officers.",
+        "FMB stands for Field Measurement Book, depicting survey field map sketches."
+      ],
+      "ta": [
+        "A-பதிவேடு என்பது நில வகைப்பாடு (நஞ்சை/புஞ்சை) மற்றும் வரியைக் காட்டும் முதன்மைப் பதிவேடாகும்.",
+        "அடங்கல் என்பது VAO-வால் பராமரிக்கப்படும் ஆண்டுச் சாகுபடிப் பதிவேடாகும்.",
+        "வருவாய்ப் பசலி ஆண்டு ஜூலை 1 முதல் ஜூன் 30 வரை இயங்குகிறது.",
+        "ஜமாபந்தி என்பது 1 முதல் 24 வரையிலான கிராமக் கணக்குகளின் ஆண்டுக் தணிக்கையாகும்.",
+        "FMB என்பது புல எல்லை அளவுகளைக் காட்டும் புல வரைபடப் புத்தகமாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Land Records: A-Register (Master), Adangal (Annual Crops), Patta (Ownership Title), Chitta (Landholder summary), FMB (Field sketch).",
+        "Fasli Year: July 1 to June 30.",
+        "Jamabandi: Annual revenue settlement & accounts audit conducted post-Fasli by senior officers.",
+        "CPT (Computerised Patta Transfer) enables digital land record updates online."
+      ],
+      "ta": [
+        "நிலப் பதிவேடுகள்: A-பதிவேடு (முதன்மை), அடங்கல் (ஆண்டுப் பயிர்), பட்டா (உரிமை ஆவணம்), சிட்டா (நில உரிமையாளர் தொகுப்பு), FMB (வரைபடம்).",
+        "பசலி ஆண்டு: ஜூலை 1 முதல் ஜூன் 30 வரை.",
+        "ஜமாபந்தி: மூத்த அதிகாரிகளால் நடத்தப்படும் ஆண்டு வருவாய்த் தீர்வு & கணக்குகள் தணிக்கை.",
+        "CPT மூலம் ஆன்லைனில் பட்டா மாறுதல் கோரிக்கைகள் டிஜிட்டல் முறையில் செயலாக்கப்படுகின்றன."
+      ]
+    },
+    "revision_cards": [
+      {
+        "front_en": "Which record is considered the master permanent land registry of a village?",
+        "front_ta": "கிராமத்தின் முதன்மை நிரந்தர நிலப் பதிவேடாகக் கருதப்படுவது எது?",
+        "back_en": "A-Register.",
+        "back_ta": "A-பதிவேடு."
+      },
+      {
+        "front_en": "Which annual record details current crop cultivation in a village?",
+        "front_ta": "கிராமத்தின் தற்போதைய பயிர்ச் சாகுபடியை விளக்கும் ஆண்டுப் பதிவேடு எது?",
+        "back_en": "Adangal.",
+        "back_ta": "அடங்கல் (Adangal)."
+      },
+      {
+        "front_en": "What are the exact start and end dates of a Revenue Fasli Year?",
+        "front_ta": "வருவாய்ப் பசலி ஆண்டின் தொடக்கம் மற்றும் முடிவு தேதிகள் எவை?",
+        "back_en": "July 1 to June 30.",
+        "back_ta": "ஜூலை 1 முதல் ஜூன் 30 வரை."
+      },
+      {
+        "front_en": "What is Jamabandi in Tamil Nadu revenue administration?",
+        "front_ta": "தமிழ்நாடு வருவாய் நிர்வாகத்தில் ஜமாபந்தி என்றால் என்ன?",
+        "back_en": "Annual revenue settlement and audit of village accounts (1-24) by senior officers.",
+        "back_ta": "மூத்த அதிகாரிகளால் நடத்தப்படும் கிராமக் கணக்குகளின் (1-24) ஆண்டுக் தணிக்கை & தீர்வு."
+      },
+      {
+        "front_en": "What does FMB expand to in land records?",
+        "front_ta": "நிலப் பதிவேடுகளில் FMB என்பதன் விரிவாக்கம் என்ன?",
+        "back_en": "Field Measurement Book (புல வரைபடப் புத்தகம்).",
+        "back_ta": "புல வரைபடப் புத்தகம் (Field Measurement Book)."
+      },
+      {
+        "front_en": "Which document establishes formal title of land ownership?",
+        "front_ta": "நில உரிமையை முறைப்படி உறுதிப்படுத்தும் ஆவணம் எது?",
+        "back_en": "Patta.",
+        "back_ta": "பட்டா (Patta)."
+      },
+      {
+        "front_en": "Who maintains the Adangal crop register at the ground level?",
+        "front_ta": "கள மட்டத்தில் அடங்கல் பயிர்ப் பதிவேட்டைப் பராமரிப்பவர் யார்?",
+        "back_en": "Village Administrative Officer (VAO).",
+        "back_ta": "கிராம நிர்வாக அலுவலர் (VAO)."
+      },
+      {
+        "front_en": "What is CPT in Tamil Nadu e-Governance land services?",
+        "front_ta": "தமிழ்நாடு நிலச் சேவைகளில் CPT என்றால் என்ன?",
+        "back_en": "Computerised Patta Transfer (கணினிமயமாக்கப்பட்ட பட்டா மாறுதல்).",
+        "back_ta": "கணினிமயமாக்கப்பட்ட பட்டா மாறுதல் (Computerised Patta Transfer)."
+      }
+    ]
+  }
+}

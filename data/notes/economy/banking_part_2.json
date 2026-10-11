@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "topic_id": "economy_banking_part_2",
+    "repository_id": "economy_banking",
+    "display_title": "Banking – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Banking",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "90-Day NPA Overdue",
+    "Sub-Standard Doubtful Loss",
+    "SARFAESI Section 31i Agri Exclusion",
+    "IBC 2016 330 Days",
+    "NARCL Bad Bank",
+    "Priority Sector Lending 40% 75%",
+    "Basel III CRAR 9% 11.5%"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the 90-day delinquency norm and four-stage asset classification.",
+        "Comprehend the mechanics of corporate debt recovery under SARFAESI and the IBC."
+      ],
+      "ta": [
+        "90-நாள் தவணை தவறிய விதி மற்றும் நான்கு நிலை சொத்து வகைப்பாட்டைப் புரிந்து கொள்ளுதல்.",
+        "SARFAESI மற்றும் IBC-ன் கீழ் நிறுவன கடன் மீட்பு வழிமுறைகளை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the IBC statutory limit (330 days) and CoC voting threshold (66%).",
+        "Recall the PSL targets (40% for SCBs, 75% for RRBs/SFBs)."
+      ],
+      "ta": [
+        "IBC சட்டப்பூர்வ கால வரம்பு (330 நாட்கள்) மற்றும் கடன் குழு ஒப்புதல் வாக்கை (66%) நினைவில் நிறுத்துதல்.",
+        "PSL இலக்குகளை நினைவுகூருதல் (வணிக வங்கிகளுக்கு 40%, RRB/SFB-களுக்கு 75%)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the statutory differences between Payments Banks and Small Finance Banks.",
+        "Compare Gross NPA vs Net NPA and the importance of the Provisioning Coverage Ratio."
+      ],
+      "ta": [
+        "பேமெண்ட்ஸ் வங்கிகள் மற்றும் சிறு நிதி வங்கிகளுக்கு இடையிலான சட்டப்பூர்வ வேறுபாடுகளை ஆய்வு செய்தல்.",
+        "மொத்த NPA vs நிகர NPA மற்றும் பாதுகாப்பு ஒதுக்கீட்டு விகிதத்தின் முக்கியத்துவத்தை ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply SARFAESI rules to distinguish attachable commercial assets from exempt agricultural land.",
+        "Identify high-yield TNPSC traps regarding Basel III CRAR percentage floors."
+      ],
+      "ta": [
+        "SARFAESI விதிகளின்படி பறிமுதல் செய்யக்கூடிய சொத்துக்களை விவசாய நிலங்களிலிருந்து வேறுபடுத்துதல்.",
+        "பேசல் III CRAR சதவீத வரம்புகள் குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Banking – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_npa_asset_classification",
+      "title_en": "Non-Performing Assets (NPAs) & Prudential Asset Classification",
+      "title_ta": "வாராக் கடன்கள் (NPAs) & விவேக சொத்து வகைப்பாடு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_resolution_mechanisms",
+      "title_en": "Stressed Asset Resolution: SARFAESI, IBC & Bad Bank (NARCL)",
+      "title_ta": "வாராக் கடன் தீர்வு வழிமுறைகள்: SARFAESI, IBC & வாராக் கடன் வங்கி (NARCL)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_psl_and_basel",
+      "title_en": "Priority Sector Lending (PSL) & Basel Capital Adequacy",
+      "title_ta": "முன்னுரிமைத் துறை கடன் (PSL) & பேசல் மூலதனப் பாதுகாப்பு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Banking Operations and Prudential Regulation encompass the credit creation multiplier, asset classification norms and Non-Performing Assets (NPAs), resolution mechanisms (SARFAESI, IBC, Bad Bank), Priority Sector Lending (PSL) mandates, Capital Adequacy under the Basel framework, and the regulatory architecture of Differentiated Banks.",
+      "ta": "வங்கி செயல்பாடுகள் மற்றும் விவேக ஒழுங்குமுறை என்பது கடன் உருவாக்கப் பெருக்கி, சொத்து வகைப்பாடு மற்றும் வாராக் கடன்கள் (NPAs), கடன் மீட்பு வழிமுறைகள் (SARFAESI, IBC, வாராக் கடன் வங்கி), முன்னுரிமைத் துறை கடன் (PSL) கட்டாயங்கள், பேசல் விதிகளின் கீழான மூலதனப் பாதுகாப்பு மற்றும் வகைப்படுத்தப்பட்ட வங்கிகளின் ஒழுங்குமுறைக் கட்டமைப்பை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "A healthy banking system is crucial for capital formation and sovereign financial stability. Following the twin balance sheet crisis, India instituted aggressive banking reforms. Asset classification strictly categorizes loans based on the 90-day delinquency threshold. Simultaneously, recovery frameworks evolved from debt recovery tribunals to the SARFAESI Act, 2002, the Insolvency and Bankruptcy Code (IBC), 2016, and the National Asset Reconstruction Company Limited (NARCL). Furthermore, prudential capital standards under Basel III and specialized licensing for Payments Banks and Small Finance Banks have diversified the financial landscape.",
+      "ta": "மூலதன உருவாக்கம் மற்றும் நிதி ஸ்திரத்தன்மைக்கு ஆரோக்கியமான வங்கி அமைப்பு இன்றியமையாதது. இரட்டை இருப்புநிலைக் குறிப்பு நெருக்கடியைத் தொடர்ந்து, இந்தியா தீவிர வங்கிச் சீர்திருத்தங்களை மேற்கொண்டது. 90-நாள் தவணை தவறிய அளவுகோலின் அடிப்படையில் கடன்கள் வாராக் கடன்களாக வகைப்படுத்தப்படுகின்றன. அதே சமயம், கடன் மீட்பு அமைப்புகள் கடன் மீட்பு தீர்ப்பாயங்களிலிருந்து SARFAESI சட்டம் 2002, திவால் சட்டம் (IBC) 2016 மற்றும் தேசிய சொத்து மறுசீரமைப்பு நிறுவனம் (NARCL) வரை பரிணாமம் அடைந்துள்ளன. மேலும், பேசல் III மூலதன விதிகள் மற்றும் பேமெண்ட்ஸ் வங்கிகள், சிறு நிதி வங்கிகள் வங்கித் துறையை பன்முகப்படுத்தியுள்ளன."
+    },
+    "sec_npa_asset_classification": [
+      {
+        "title": "Prudential 90-Day Overdue Norm",
+        "title_ta": "விவேகமான 90-நாள் தவணை தவறிய விதி",
+        "points": {
+          "en": [
+            "NPA Definition: An asset (term loan, overdraft, or cash credit) becomes Non-Performing when it ceases to generate income for the bank.",
+            "Commercial Loans: Principal or interest payment remains overdue for a period of more than 90 days.",
+            "Agricultural Loans: (a) Short-duration crops: overdue for 2 crop seasons; (b) Long-duration crops: overdue for 1 crop season.",
+            "SMA Classification: Special Mention Accounts monitor early distress: SMA-0 (1-30 days overdue), SMA-1 (31-60 days overdue), and SMA-2 (61-90 days overdue)."
+          ],
+          "ta": [
+            "வாராக் கடன் வரையறை: ஒரு கடன் சொத்தானது வங்கிக்கு வருமானம் ஈட்டுவதை நிறுத்தும் போது அது வாராக் கடனாக (NPA) மாறுகிறது.",
+            "வணிகக் கடன்கள்: அசல் அல்லது வட்டித் தொகை 90 நாட்களுக்கு மேல் செலுத்தப்படாமல் நிலுவையில் இருப்பது.",
+            "விவசாயக் கடன்கள்: (அ) குறுகிய காலப் பயிர்கள்: 2 பயிர் பருவங்களுக்கு நிலுவை; (ஆ) நீண்ட காலப் பயிர்கள்: 1 பயிர் பருவத்திற்கு நிலுவை.",
+            "SMA வகைப்பாடு: சிறப்பு குறிப்புக் கணக்குகள் ஆரம்பகால கடன் அழுத்தத்தைக் கண்காணிக்கின்றன: SMA-0 (1-30 நாட்கள் நிலுவை), SMA-1 (31-60 நாட்கள் நிலுவை), மற்றும் SMA-2 (61-90 நாட்கள் நிலுவை)."
+          ]
+        }
+      },
+      {
+        "title": "Four Stages of Asset Classification",
+        "title_ta": "சொத்து வகைப்பாட்டின் நான்கு நிலைகள்",
+        "points": {
+          "en": [
+            "Standard Assets: Performing loans with regular repayments (requires general provisioning of 0.25% to 1.0%).",
+            "Sub-Standard Assets: An asset that has remained an NPA for a period of up to 12 months (requires 15% secured provisioning).",
+            "Doubtful Assets: An asset that has remained in the sub-standard category for a period exceeding 12 months (provisioning 25% to 100%).",
+            "Loss Assets: An asset identified as completely uncollectible by the bank, internal/external auditors, or the RBI inspection, where salvage value is zero (requires 100% provisioning or full write-off)."
+          ],
+          "ta": [
+            "வழக்கமான சொத்துக்கள் (Standard): முறைப்படி அசல் மற்றும் வட்டி செலுத்தப்படும் செயல்பாட்டுக் கடன்கள் (0.25% முதல் 1.0% வரை ஒதுக்கீடு தேவை).",
+            "துணை-நிலை சொத்துக்கள் (Sub-Standard): 12 மாதங்கள் வரை வாராக் கடனாக நீடிக்கும் சொத்துக்கள் (15% பாதுகாப்பு ஒதுக்கீடு தேவை).",
+            "ஐயத்திற்குரிய சொத்துக்கள் (Doubtful): 12 மாதங்களுக்கும் மேலாக துணை-நிலை பிரிவில் நீடிக்கும் சொத்துக்கள் (25% முதல் 100% வரை ஒதுக்கீடு).",
+            "இழப்பு சொத்துக்கள் (Loss): வங்கியின் தணிக்கையாளர்கள் அல்லது ரிசர்வ் வங்கியால் முற்றிலும் வசூலிக்க முடியாதது என அடையாளம் காணப்பட்ட சொத்துக்கள் (100% முழு ஒதுக்கீடு அல்லது ரத்து செய்யப்பட வேண்டும்)."
+          ]
+        }
+      },
+      {
+        "title": "Gross NPA, Net NPA and Provisioning Coverage Ratio (PCR)",
+        "title_ta": "மொத்த NPA, நிகர NPA மற்றும் ஒதுக்கீட்டு பாதுகாப்பு விகிதம் (PCR)",
+        "points": {
+          "en": [
+            "Gross NPA (GNPA): Total absolute value of all non-performing loans on the bank's books.",
+            "Net NPA: Gross NPA minus total cumulative provisions set aside by the bank (Net NPA = Gross NPA - Provisions).",
+            "Provisioning Coverage Ratio (PCR): Ratio of total provisions held to total gross NPAs; a PCR above 70% indicates strong balance sheet resilience against loan defaults."
+          ],
+          "ta": [
+            "மொத்த வாராக் கடன் (Gross NPA): வங்கியின் கணக்குப் புத்தகத்தில் உள்ள அனைத்து வாராக் கடன்களின் மொத்த மதிப்பு.",
+            "நிகர வாராக் கடன் (Net NPA): மொத்த வாராக் கடனிலிருந்து வங்கி ஒதுக்கி வைத்துள்ள பாதுகாப்பு ஒதுக்கீட்டைக் கழித்தது (Net NPA = Gross NPA - Provisions).",
+            "ஒதுக்கீட்டு பாதுகாப்பு விகிதம் (PCR): மொத்த வாராக் கடன்களுக்கு வங்கி வைத்துள்ள பாதுகாப்பு ஒதுக்கீட்டின் விகிதம்; 70%-க்கு அதிகமான PCR வங்கியின் நிதி ஆரோக்கியத்தைக் காட்டுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_resolution_mechanisms": [
+      {
+        "title": "SARFAESI Act, 2002",
+        "title_ta": "SARFAESI சட்டம், 2002",
+        "points": {
+          "en": [
+            "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002.",
+            "Direct Seizure Power: Enables banks and financial institutions to auction residential or commercial properties pledged as collateral without the intervention of courts.",
+            "Threshold: Applicable to loans with outstanding dues exceeding ₹1 lakh, where the loan is classified as an NPA, and the remaining debt is 20% or more of the original principal.",
+            "Exclusion: Explicitly excludes agricultural land from seizure under Section 31(i)."
+          ],
+          "ta": [
+            "நிதிச் சொத்துக்களின் பத்திரமயமாக்கல் மற்றும் மறுசீரமைப்பு மற்றும் பாதுகாப்பு வட்டி அமலாக்கச் சட்டம், 2002.",
+            "நேரடி பறிமுதல் அதிகாரம்: நீதிமன்றத்தின் தலையீடு இன்றியே அடமானமாக வைக்கப்பட்ட குடியிருப்பு அல்லது வணிகச் சொத்துக்களைப் பறிமுதல் செய்து ஏலம் விட வங்கிகளுக்கு அதிகாரம் அளிக்கிறது.",
+            "வரம்பு: ₹1 லட்சத்திற்கு அதிகமான நிலுவைத் தொகை உள்ள மற்றும் அசல் தொகையில் 20%-க்கு மேல் கடன் மீதமுள்ள வாராக் கடன்களுக்கு மட்டுமே பொருந்தும்.",
+            "விதிவிலக்கு: பிரிவு 31(i)-ன் கீழ் விவசாய நிலங்களைப் பறிமுதல் செய்வதிலிருந்து முழுமையாக விலக்கு அளிக்கப்பட்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Insolvency and Bankruptcy Code (IBC), 2016",
+        "title_ta": "திவால் மற்றும் நொடிப்பு நிலைச் சட்டம் (IBC), 2016",
+        "points": {
+          "en": [
+            "Enacted in 2016 to consolidate and streamline corporate insolvency resolution into a time-bound, creditor-in-control process.",
+            "Adjudicating Authority: National Company Law Tribunal (NCLT) for corporate debtors; Debt Recovery Tribunal (DRT) for individuals.",
+            "Time Limit: Corporate Insolvency Resolution Process (CIRP) must be completed within 180 days (extendable by 90 days, with a statutory cap of 330 days including litigation).",
+            "Committee of Creditors (CoC): Holds decisive authority to approve resolution plans with a minimum 66% voting majority."
+          ],
+          "ta": [
+            "கார்ப்பரேட் நிறுவனங்களின் திவால் தீர்வை காலக்கெடுவுக்குள் முடிக்க கடன் கொடுத்தோரின் கட்டுப்பாட்டில் இயங்கும் சட்டமாக 2016-ல் இயற்றப்பட்டது.",
+            "தீர்ப்பு அதிகாரம்: பெருநிறுவனங்களுக்கு தேசிய நிறுவன சட்டத் தீர்ப்பாயம் (NCLT); தனிநபர்களுக்கு கடன் மீட்பு தீர்ப்பாயம் (DRT).",
+            "கால வரம்பு: நிறுவன திவால் தீர்வு செயல்முறை (CIRP) 180 நாட்களுக்குள் முடிக்கப்பட வேண்டும் (90 நாட்கள் நீட்டிப்புடன், வழக்குகள் உட்பட அதிகபட்சம் 330 நாட்கள்).",
+            "கடன் கொடுத்தோர் குழு (CoC): குறைந்தபட்சம் 66% வாக்கு பெரும்பான்மையுடன் தீர்வுத் திட்டங்களை அங்கீகரிக்கும் உச்ச அதிகாரத்தைக் கொண்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "National Asset Reconstruction Company Limited (NARCL - Bad Bank)",
+        "title_ta": "தேசிய சொத்து மறுசீரமைப்பு நிறுவனம் (NARCL - வாராக் கடன் வங்கி)",
+        "points": {
+          "en": [
+            "Incorporated in 2021 under the Companies Act as an asset reconstruction company (Bad Bank) to clean up legacy stressed assets of commercial banks.",
+            "Dual Structure: NARCL acquires stressed assets; India Debt Resolution Company Ltd (IDRCL) manages and resolves the assets.",
+            "Sovereign Guarantee: The Central Government provided a ₹30,600 crore sovereign guarantee for Security Receipts (SRs) issued by NARCL (15% cash upfront, 85% in SRs)."
+          ],
+          "ta": [
+            "வங்கிகளின் மிகப்பெரிய வாராக் கடன்களை வாங்கி சுத்தப்படுத்த நிறுவனங்கள் சட்டத்தின் கீழ் 2021-ல் உருவாக்கப்பட்ட ஒரு 'வாராக் கடன் வங்கி' (Bad Bank).",
+            "இரட்டை அமைப்பு: NARCL வாராக் கடன்களை வாங்குகிறது; இந்திய கடன் தீர்வு நிறுவனம் (IDRCL) அந்த சொத்துக்களை இயக்கி பணமாக மாற்றுகிறது.",
+            "அரசு உத்தரவாதம்: NARCL வழங்கும் பாதுகாப்பு ரசீதுகளுக்கு (Security Receipts) மத்திய அரசு ₹30,600 கோடி மதிப்பிலான இறையாண்மை உத்தரவாதத்தை வழங்கியுள்ளது (15% ரொக்கம், 85% ரசீதுகள்)."
+          ]
+        }
+      }
+    ],
+    "sec_psl_and_basel": [
+      {
+        "title": "Priority Sector Lending (PSL) Mandates",
+        "title_ta": "முன்னுரிமைத் துறை கடன் (PSL) கட்டாயங்கள்",
+        "points": {
+          "en": [
+            "Overall Target: Domestic Scheduled Commercial Banks and Foreign Banks (with >= 20 branches) must deploy at least 40% of Adjusted Net Bank Credit (ANBC) into priority sectors.",
+            "RRBs & Small Finance Banks: Must allocate a higher mandatory target of 75% of ANBC to priority sectors.",
+            "Eight Recognized Sectors: (1) Agriculture (18% target, with 10% sub-target for Small/Marginal Farmers), (2) Micro, Small and Medium Enterprises (MSMEs - 7.5% for Micro), (3) Export Credit, (4) Education, (5) Housing, (6) Social Infrastructure, (7) Renewable Energy, and (8) Weaker Sections (12% sub-target).",
+            "RIDF Penalty: Shortfalls in PSL targets must be deposited into the Rural Infrastructure Development Fund (RIDF) managed by NABARD at sub-market interest rates."
+          ],
+          "ta": [
+            "ஒட்டுமொத்த இலக்கு: உள்நாட்டு வணிக வங்கிகள் மற்றும் வெளிநாட்டு வங்கிகள் (20+ கிளைகள்) தங்களது நிகர வங்கிக் கடனில் (ANBC) 40% முன்னுரிமை துறைகளுக்கு வழங்க வேண்டும்.",
+            "RRB & சிறு நிதி வங்கிகள்: தங்களது ANBC-ல் கட்டாயமாக 75% முன்னுரிமை துறைகளுக்கு ஒதுக்க வேண்டும்.",
+            "எட்டு அங்கீகரிக்கப்பட்ட துறைகள்: (1) விவசாயம் (18% இலக்கு, சிறு/குறு விவசாயிகளுக்கு 10%), (2) MSME (நுண் நிறுவனங்களுக்கு 7.5%), (3) ஏற்றுமதி கடன், (4) கல்வி, (5) வீட்டுக்கடன், (6) சமூக உள்கட்டமைப்பு, (7) புதுப்பிக்கத்தக்க எரிசக்தி, மற்றும் (8) நலிவடைந்த பிரிவினர் (12%).",
+            "RIDF அபராதம்: PSL இலக்குகளில் ஏற்படும் பற்றாக்குறைத் தொகையை நபார்டு நிர்வகிக்கும் ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதியில் (RIDF) குறைந்த வட்டியில் வங்கிகள் டெபாசிட் செய்ய வேண்டும்."
+          ]
+        }
+      },
+      {
+        "title": "Basel Capital Adequacy Norms (CRAR)",
+        "title_ta": "பேசல் மூலதனப் பாதுகாப்பு நெறிமுறைகள் (CRAR)",
+        "points": {
+          "en": [
+            "Capital to Risk-Weighted Assets Ratio (CRAR): Ratio of a bank's capital to its risk-weighted credit exposure, ensuring the bank can absorb a reasonable amount of losses before insolvency.",
+            "Basel III Norms (2010): Introduced Three Pillars: Pillar 1 (Minimum Capital), Pillar 2 (Supervisory Review), and Pillar 3 (Market Discipline).",
+            "India's Stricter Norm: While the global Basel III minimum total capital ratio is 8.0%, the RBI mandates a higher floor of 9.0% for commercial banks (plus a 2.5% Capital Conservation Buffer - CCB, taking total mandatory CRAR to 11.5%)."
+          ],
+          "ta": [
+            "இடர்-எடையிடப்பட்ட சொத்துக்களின் மூலதன விகிதம் (CRAR): வங்கி திவாலாவதைத் தடுக்க இழப்புகளைத் தாங்கும் வகையில் வங்கி வைத்திருக்கும் மூலதனத்திற்கும் அதன் கடன் இடர்களுக்கும் இடையேயான விகிதம்.",
+            "பேசல் III நெறிமுறைகள் (2010): மூன்று தூண்களைக் கொண்டது: தூண் 1 (குறைந்தபட்ச மூலதனம்), தூண் 2 (மேற்பார்வை ஆய்வு), மற்றும் தூண் 3 (சந்தை ஒழுக்கம்).",
+            "இந்தியாவின் கடுமையான விதி: சர்வதேச பேசல் III விதி 8.0% மூலதனத்தை மட்டுமே கோரும் போது, ரிசர்வ் வங்கி வணிக வங்கிகளுக்கு 9.0% குறைந்தபட்ச மூலதனத்தை (2.5% மூலதனப் பாதுகாப்பு தாங்கலுடன் சேர்த்து மொத்தம் 11.5%) கட்டாயமாக்கியுள்ளது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_gross_npa_vs_net_npa",
+        "title_en": "Table 1: Asset Quality Metrics: Gross NPA vs Net NPA",
+        "title_ta": "அட்டவணை 1: சொத்து தரம் ஒப்பீடு: மொத்த வாராக் கடன் vs நிகர வாராக் கடன்",
+        "headers_en": [
+          "Parameter",
+          "Gross Non-Performing Assets (GNPA)",
+          "Net Non-Performing Assets (NNPA)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "மொத்த வாராக் கடன் (GNPA)",
+          "நிகர வாராக் கடன் (NNPA)"
+        ],
+        "rows_en": [
+          [
+            "Exact Definition",
+            "Total unadjusted value of all loan assets defaulted past 90 days",
+            "Actual default exposure remaining after deducting provisions and write-offs"
+          ],
+          [
+            "Mathematical Formula",
+            "GNPA = Sum of all Sub-standard + Doubtful + Loss assets",
+            "Net NPA = Gross NPA - Total Provisions made by the bank"
+          ],
+          [
+            "Reflected Quality",
+            "Reflects the total extent of credit underwriting failures and asset distress",
+            "Reflects the actual unhedged financial risk threatening the bank's solvency"
+          ],
+          [
+            "Regulatory Target",
+            "Tracked globally to measure historical delinquency rates across sectors",
+            "Tracked strictly in India under the Prompt Corrective Action (PCA) framework"
+          ],
+          [
+            "Bank Provisioning Impact",
+            "Does not change when banks allocate higher provisions from profits",
+            "Declines directly whenever a bank sets aside higher provisioning coverage"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "துல்லியமான வரையறை",
+            "90 நாட்களுக்கு மேல் தவணை தவறிய அனைத்து கடன் சொத்துக்களின் மொத்த மதிப்பு",
+            "பாதுகாப்பு ஒதுக்கீடுகளைக் கழித்த பிறகு வங்கிக்கு எஞ்சியிருக்கும் உண்மையான கடன் இழப்பு"
+          ],
+          [
+            "கணித சூத்திரம்",
+            "GNPA = துணை நிலை + ஐயத்திற்குரிய + இழப்பு சொத்துக்களின் கூட்டுத்தொகை",
+            "Net NPA = மொத்த வாராக் கடன் (GNPA) - வங்கியின் மொத்த பாதுகாப்பு ஒதுக்கீடுகள்"
+          ],
+          [
+            "பிரதிபலிக்கும் தரம்",
+            "கடன் வழங்கலில் ஏற்பட்ட தோல்விகள் மற்றும் சொத்து அழுத்தத்தின் மொத்த அளவைக் காட்டுகிறது",
+            "வங்கியின் மூலதனத்திற்கு நேரடியாக அச்சுறுத்தலாக உள்ள உண்மையான நிதி இடரைக் காட்டுகிறது"
+          ],
+          [
+            "ஒழுங்குமுறை இலக்கு",
+            "பல்வேறு துறைகளில் வாராக் கடன்களின் ஒட்டுமொத்தப் போக்கைக் கணக்கிட பயன்படுகிறது",
+            "ரிசர்வ் வங்கியின் உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பில் நேரடியாகக் கண்காணிக்கப்படுகிறது"
+          ],
+          [
+            "ஒதுக்கீட்டுத் தாக்கம்",
+            "வங்கி தனது லாபத்திலிருந்து அதிக நிதி ஒதுக்கீடு செய்தாலும் இது மாறாது",
+            "வங்கி அதிக பாதுகாப்பு ஒதுக்கீடு செய்யும் போது நிகர வாராக் கடன் உடனடியாகக் குறைகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_sarfaesi_vs_ibc",
+        "title_en": "Table 2: Debt Recovery Contrast: SARFAESI Act (2002) vs Insolvency & Bankruptcy Code (2016)",
+        "title_ta": "அட்டவணை 2: கடன் மீட்பு சட்ட ஒப்பீடு: SARFAESI சட்டம் (2002) vs திவால் சட்டம் - IBC (2016)",
+        "headers_en": [
+          "Feature",
+          "SARFAESI Act, 2002",
+          "Insolvency and Bankruptcy Code (IBC), 2016"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "SARFAESI சட்டம், 2002",
+          "திவால் மற்றும் நொடிப்பு நிலைச் சட்டம் (IBC), 2016"
+        ],
+        "rows_en": [
+          [
+            "Primary Mechanism",
+            "Secured creditor seizes and auctions mortgaged collateral without courts",
+            "Creditor-in-control corporate insolvency resolution or liquidation"
+          ],
+          [
+            "Tribunal Jurisdiction",
+            "Debt Recovery Tribunal (DRT) handles appeals against bank seizures",
+            "National Company Law Tribunal (NCLT) serves as adjudicating authority"
+          ],
+          [
+            "Application Scope",
+            "Secured loans only; unsecured creditors cannot utilize SARFAESI",
+            "Both secured and unsecured financial and operational creditors can initiate"
+          ],
+          [
+            "Resolution Timeframe",
+            "No statutory time-limit; subject to stay orders and civil delays",
+            "Strictly time-bound: 180 days (extendable to 330 days maximum)"
+          ],
+          [
+            "Agricultural Exclusion",
+            "Agricultural land is explicitly barred from seizure under Section 31(i)",
+            "Agricultural land exclusion is not the central issue; targets corporate entities"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை வழிமுறை",
+            "நீதிமன்ற அனுமதியின்றி அடமானச் சொத்துக்களை வங்கிகள் நேரடியாகப் பறிமுதல் செய்து ஏலம் விடுதல்",
+            "கடன் கொடுத்தோரின் கட்டுப்பாட்டில் நிறுவனத்தை மீட்டெடுத்தல் அல்லது கலைத்தல்"
+          ],
+          [
+            "தீர்ப்பாய அதிகாரம்",
+            "பறிமுதலுக்கு எதிரான மேல்முறையீடுகளை கடன் மீட்பு தீர்ப்பாயம் (DRT) விசாரிக்கிறது",
+            "தேசிய நிறுவன சட்டத் தீர்ப்பாயம் (NCLT) முதன்மை தீர்ப்பு அதிகார அமைப்பாகச் செயல்படுகிறது"
+          ],
+          [
+            "பொருந்தும் வரம்பு",
+            "பிணையமுள்ள பாதுகாக்கப்பட்ட கடன்கள் மட்டுமே; பாதுகாப்பற்ற கடன்களுக்குப் பொருந்தாது",
+            "பாதுகாக்கப்பட்ட மற்றும் பாதுகாப்பற்ற அனைத்து நிதி மற்றும் செயல்பாட்டுக் கடன்களுக்கும் பொருந்தும்"
+          ],
+          [
+            "தீர்வு கால அளவு",
+            "சட்டப்பூர்வ கால வரம்பு இல்லை; நீதிமன்றத் தடைகளால் தாமதமாகலாம்",
+            "கடுமையான கால வரம்பு: 180 நாட்கள் (அதிகபட்சம் 330 நாட்களுக்குள் முடிக்கப்பட வேண்டும்)"
+          ],
+          [
+            "விவசாய விதிவிலக்கு",
+            "விவசாய நிலங்களைப் பறிமுதல் செய்வதற்கு பிரிவு 31(i)-ன் கீழ் முழுமையான தடை உள்ளது",
+            "நிறுவனங்களின் திவால் நிலையைத் தீர்ப்பதே முதன்மை நோக்கம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_payments_bank_vs_small_finance_bank",
+        "title_en": "Table 3: Differentiated Banking: Payments Banks vs Small Finance Banks (SFBs)",
+        "title_ta": "அட்டவணை 3: வகைப்படுத்தப்பட்ட வங்கிகள்: பேமெண்ட்ஸ் வங்கிகள் vs சிறு நிதி வங்கிகள் (SFBs)",
+        "headers_en": [
+          "Dimension",
+          "Payments Banks (பேமெண்ட்ஸ் வங்கிகள்)",
+          "Small Finance Banks (சிறு நிதி வங்கிகள்)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பேமெண்ட்ஸ் வங்கிகள்",
+          "சிறு நிதி வங்கிகள் (SFBs)"
+        ],
+        "rows_en": [
+          [
+            "Lending Authority",
+            "Strictly prohibited from lending money or issuing credit cards",
+            "Full-fledged commercial lending allowed (focus on micro-enterprises)"
+          ],
+          [
+            "Deposit Mobilization",
+            "Can accept demand deposits up to ₹2,00,000 per customer; no FDs/RDs",
+            "Can accept all demand and time deposits (Savings, Current, FD, RD) without limit"
+          ],
+          [
+            "Card Issuing Power",
+            "Can issue Debit Cards and ATM cards; CANNOT issue Credit Cards",
+            "Can issue both Debit Cards and Credit Cards to account holders"
+          ],
+          [
+            "Priority Sector Target",
+            "Not applicable (as lending is completely prohibited)",
+            "Mandatory 75% of Adjusted Net Bank Credit must go to priority sectors"
+          ],
+          [
+            "Pioneering Example",
+            "Airtel Payments Bank (first), India Post Payments Bank (IPPB)",
+            "AU Small Finance Bank, Equitas SFB, Ujjivan SFB"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கடன் வழங்கும் அதிகாரம்",
+            "கடன் வழங்கவோ அல்லது கிரெடிட் கார்டு வழங்கவோ முழுமையான தடை உள்ளது",
+            "முழுமையான வணிகக் கடன் வழங்கலாம் (சிறு வணிகர்களுக்கு முன்னுரிமை)"
+          ],
+          [
+            "வைப்புத்தொகை வரம்பு",
+            "வாடிக்கையாளருக்கு அதிகபட்சம் ₹2,00,000 வரை மட்டுமே கேட்பு வைப்பு பெறலாம்; FD கிடையாது",
+            "அனைத்து விதமான வைப்புகளையும் (சேமிப்பு, நடப்பு, FD, RD) வரம்பின்றி பெறலாம்"
+          ],
+          [
+            "அட்டைகள் வழங்கும் உரிமை",
+            "டெபிட் கார்டு வழங்கலாம்; கிரெடிட் கார்டு வழங்க சட்டப்படி அனுமதியில்லை",
+            "டெபிட் கார்டு மற்றும் கிரெடிட் கார்டு ஆகிய இரண்டையும் வழங்கலாம்"
+          ],
+          [
+            "முன்னுரிமைத் துறை இலக்கு",
+            "பொருந்தாது (ஏனெனில் கடன்கள் வழங்கவே அனுமதியில்லை)",
+            "வழங்கப்படும் கடன்களில் 75% கட்டாயமாக முன்னுரிமைத் துறைகளுக்கு செல்ல வேண்டும்"
+          ],
+          [
+            "முக்கிய உதாரணங்கள்",
+            "ஏர்டெல் பேமெண்ட்ஸ் வங்கி (முதல் வங்கி), இந்தியா போஸ்ட் பேமெண்ட்ஸ் வங்கி (IPPB)",
+            "ஏயூ சிறு நிதி வங்கி, ஈக்விடாஸ் SFB, உஜ்ஜீவன் SFB"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_basel_three_pillars",
+        "title_en": "Table 4: Architecture of the Basel Capital Accord Framework",
+        "title_ta": "அட்டவணை 4: பேசல் மூலதன ஒப்பந்த கட்டமைப்பின் மூன்று தூண்களின் ஒப்பீடு",
+        "headers_en": [
+          "Pillar Number",
+          "Pillar Name",
+          "Operational Focus",
+          "Core Regulatory Mandate"
+        ],
+        "headers_ta": [
+          "தூண் எண்",
+          "தூணின் பெயர்",
+          "செயல்பாட்டு கவனம்",
+          "முதன்மை ஒழுங்குமுறை ஆணை"
+        ],
+        "rows_en": [
+          [
+            "Pillar 1",
+            "Minimum Capital Requirements",
+            "Prescribes mathematical capital ratios for Credit Risk, Market Risk, and Operational Risk",
+            "Mandates minimum CRAR (8% global Basel; 9% RBI norm) plus Capital Conservation Buffer"
+          ],
+          [
+            "Pillar 2",
+            "Supervisory Review Process (SRP)",
+            "Requires central banks to evaluate banks' internal risk assessment mechanisms (ICAAP)",
+            "Enables RBI to mandate extra capital if a bank has unhedged concentrations of risk"
+          ],
+          [
+            "Pillar 3",
+            "Market Discipline and Disclosure",
+            "Enforces public transparency through standardized quarterly and annual disclosures",
+            "Forces banks to publicly disclose Tier 1 capital, NPAs, and risk-weighted exposures"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தூண் 1",
+            "குறைந்தபட்ச மூலதனத் தேவைகள்",
+            "கடன் இடர், சந்தை இடர் மற்றும் செயல்பாட்டு இடர்களுக்கான கணித மூலதன விகிதங்கள்",
+            "குறைந்தபட்ச CRAR (சர்வதேசம் 8%; ரிசர்வ் வங்கி 9%) மற்றும் மூலதனப் பாதுகாப்பு தாங்கல் கட்டாயம்"
+          ],
+          [
+            "தூண் 2",
+            "மேற்பார்வை ஆய்வு செயல்முறை (SRP)",
+            "வங்கிகளின் உள் இடர் மதிப்பீட்டு முறைகளை (ICAAP) மத்திய வங்கி ஆய்வு செய்தல்",
+            "வங்கியிடம் அதிக இடர் குவிந்திருந்தால் கூடுதல் மூலதனத்தை வைத்திருக்க ரிசர்வ் வங்கி உத்தரவிடலாம்"
+          ],
+          [
+            "தூண் 3",
+            "சந்தை ஒழுக்கம் மற்றும் வெளிப்படைத்தன்மை",
+            "காலாண்டு மற்றும் வருடாந்திர பொது நிதிநிலை வெளிப்பாடுகள் மூலம் வெளிப்படைத்தன்மையை நிலைநாட்டுதல்",
+            "அடுக்கு 1 மூலதனம், வாராக் கடன்கள் மற்றும் இடர் சொத்துக்களை பொதுமக்கள் அறிய வெளியிட கட்டாயப்படுத்துதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Banking Operations & Regulation (Part 2)",
+        "short_label": "Banking Operations",
+        "children": [
+          {
+            "title": "Non-Performing Assets (NPAs)",
+            "short_label": "NPAs",
+            "children": [
+              {
+                "title": "90-Day Overdue Norm & SMA Classification",
+                "short_label": "90-Day Norm"
+              },
+              {
+                "title": "Classification: Standard, Sub-Standard, Doubtful, Loss",
+                "short_label": "Classification"
+              },
+              {
+                "title": "Gross NPA vs Net NPA & PCR",
+                "short_label": "Gross vs Net"
+              }
+            ]
+          },
+          {
+            "title": "Resolution Infrastructure",
+            "short_label": "Resolution",
+            "children": [
+              {
+                "title": "SARFAESI 2002: Direct Collateral Seizure",
+                "short_label": "SARFAESI"
+              },
+              {
+                "title": "IBC 2016: 180 to 330 Days Time-Bound CIRP",
+                "short_label": "IBC 2016"
+              },
+              {
+                "title": "NARCL (Bad Bank): ₹30,600 Cr Govt Guarantee",
+                "short_label": "NARCL"
+              }
+            ]
+          },
+          {
+            "title": "Prudential & Differentiated Banking",
+            "short_label": "Prudential Norms",
+            "children": [
+              {
+                "title": "PSL: 40% for SCBs, 75% for RRBs/SFBs",
+                "short_label": "PSL 40% & 75%"
+              },
+              {
+                "title": "Basel III: 9% CRAR (11.5% with CCB)",
+                "short_label": "Basel III 11.5%"
+              },
+              {
+                "title": "Payments Banks (No Lending) vs SFBs (75% PSL)",
+                "short_label": "PB vs SFB"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "SARFAESI Agricultural Land Exclusion Trap (SARFAESI விவசாய நில விதிவிலக்கு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that banks can seize agricultural land under the SARFAESI Act, 2002.",
+            "CORRECT FACT: Section 31(i) of the SARFAESI Act explicitly bars the seizure of agricultural land; banks must approach civil courts for farm defaults.",
+            "WHY CANDIDATES FAIL: Candidates assume banks can auction any mortgaged property regardless of its agricultural classification."
+          ],
+          "ta": [
+            "பொறி: SARFAESI சட்டத்தின் கீழ் வங்கிகள் விவசாய நிலங்களையும் பறிமுதல் செய்து ஏலம் விடலாம் என நினைப்பது.",
+            "சரியான உண்மை: SARFAESI சட்டத்தின் பிரிவு 31(i) விவசாய நிலங்களைப் பறிமுதல் செய்வதை வெளிப்படையாகத் தடை செய்கிறது; விவசாயக் கடன்களுக்கு வங்கிகள் நீதிமன்றங்களை மட்டுமே நாட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கடன் அடமானம் வைக்கப்பட்டுள்ளதால் எந்த நிலத்தையும் வங்கிகள் பறிமுதல் செய்யலாம் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Payments Bank Lending Prohibition Trap (பேமெண்ட்ஸ் வங்கி கடன் வழங்கும் தடை)",
+        "points": {
+          "en": [
+            "TRAP: Assuming Payments Banks can issue credit cards or offer small personal loans.",
+            "CORRECT FACT: Payments Banks are strictly prohibited by law from lending money, advancing credit, or issuing credit cards. They can only accept deposits (up to ₹2 lakh) and issue debit cards.",
+            "WHY CANDIDATES FAIL: Candidates confuse Payments Banks with Small Finance Banks (which are fully empowered to lend)."
+          ],
+          "ta": [
+            "பொறி: பேமெண்ட்ஸ் வங்கிகள் கிரெடிட் கார்டுகளை வழங்கலாம் அல்லது சிறிய தனிநபர் கடன்களைத் தரலாம் என நினைப்பது.",
+            "சரியான உண்மை: பேமெண்ட்ஸ் வங்கிகள் கடன் வழங்கவோ, கிரெடிட் கார்டு தரவோ சட்டப்படி முழுமையாகத் தடை செய்யப்பட்டுள்ளது; அவை வைப்புகளைப் பெற்று டெபிட் கார்டுகளை மட்டுமே வழங்க முடியும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பேமெண்ட்ஸ் வங்கிகளையும் முழுமையாக கடன் வழங்கக்கூடிய சிறு நிதி வங்கிகளையும் (SFBs) குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "NPA Agricultural Loan Overdue Period Trap (விவசாயக் கடன் வாராக் கடன் காலம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that agricultural loans become NPAs after 90 days of non-payment just like industrial loans.",
+            "CORRECT FACT: Agricultural loans do NOT follow the 90-day rule: they become NPAs if overdue for 2 crop seasons (short-duration crops) or 1 crop season (long-duration crops).",
+            "WHY CANDIDATES FAIL: Candidates apply the standard 90-day commercial delinquency rule uniformly to all agricultural advances."
+          ],
+          "ta": [
+            "பொறி: வணிகக் கடன்களைப் போலவே விவசாயக் கடன்களும் 90 நாட்கள் தவணை தவறினால் வாராக் கடனாகிவிடும் என நினைப்பது.",
+            "சரியான உண்மை: விவசாயக் கடன்களுக்கு 90-நாள் விதி பொருந்தாது: குறுகிய காலப் பயிர்களுக்கு 2 பயிர் பருவங்களும், நீண்ட காலப் பயிர்களுக்கு 1 பயிர் பருவமும் தவணை தவறினால் மட்டுமே வாராக் கடனாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 90-நாள் என்ற பொதுவான விதியை விவசாயக் கடன்களுக்கும் பொருத்தி தவறிழைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "India's Basel III CRAR vs Global Norm Trap (இந்திய பேசல் III CRAR விகிதம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the RBI mandates a minimum CRAR of 8.0% for commercial banks in accordance with Basel III.",
+            "CORRECT FACT: Basel III global guidelines prescribe 8.0%, but the RBI mandates a stricter 9.0% floor (11.5% including Capital Conservation Buffer).",
+            "WHY CANDIDATES FAIL: Candidates recall the international Basel Committee baseline (8%) instead of the higher statutory RBI requirement (9% / 11.5%)."
+          ],
+          "ta": [
+            "பொறி: பேசல் III-ன் படி இந்தியாவில் வணிக வங்கிகளுக்கு ரிசர்வ் வங்கி 8.0% குறைந்தபட்ச CRAR-ஐ நிர்ணயித்துள்ளது என நினைப்பது.",
+            "சரியான உண்மை: சர்வதேச பேசல் விதி 8.0% மட்டுமே; ஆனால் இந்திய ரிசர்வ் வங்கி வணிக வங்கிகளுக்கு கடுமையான 9.0% குறைந்தபட்ச மூலதனத்தை (தாங்கலுடன் 11.5%) கட்டாயமாக்கியுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சர்வதேச விதியான 8%-ஐ நினைவில் வைத்துக்கொண்டு இந்திய ரிசர்வ் வங்கியின் 9% விதியை மறப்பது."
+          ]
+        }
+      },
+      {
+        "title": "PSL Target for Small Finance Banks Trap (சிறு நிதி வங்கிகளின் PSL இலக்கு)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Small Finance Banks have the same 40% Priority Sector Lending target as regular commercial banks.",
+            "CORRECT FACT: Small Finance Banks and Regional Rural Banks must mandatorily allocate 75% of their ANBC to priority sectors.",
+            "WHY CANDIDATES FAIL: Failing to recognize that differentiated and rural banks carry a substantially higher social lending obligation."
+          ],
+          "ta": [
+            "பொறி: வழக்கமான வணிக வங்கிகளைப் போலவே சிறு நிதி வங்கிகளுக்கும் (SFB) முன்னுரிமைத் துறை கடன் இலக்கு 40% மட்டுமே என நினைப்பது.",
+            "சரியான உண்மை: சிறு நிதி வங்கிகள் மற்றும் பிராந்திய கிராமப்புற வங்கிகள் (RRBs) தங்களது கடனில் கட்டாயமாக 75% முன்னுரிமைத் துறைகளுக்கு வழங்க வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வகைப்படுத்தப்பட்ட வங்கிகளுக்கு சமூகக் கடன் பொறுப்பு மிக அதிகம் (75%) என்பதை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "IBC Maximum Statutory Resolution Time Trap (IBC அதிகபட்ச கால வரம்பு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that corporate insolvency under IBC can be prolonged indefinitely beyond one year.",
+            "CORRECT FACT: Under the 2019 amendment to the IBC, the entire resolution process must mandatorily be completed within 330 days (including legal litigation and extensions).",
+            "WHY CANDIDATES FAIL: Candidates recall the initial 180-day window and forget the statutory 330-day outer ceiling."
+          ],
+          "ta": [
+            "பொறி: IBC-ன் கீழ் கார்ப்பரேட் நிறுவனங்களின் திவால் தீர்வை ஓராண்டுக்கும் மேலாக முடிவின்றி நீட்டிக்கலாம் என நினைப்பது.",
+            "சரியான உண்மை: 2019 திருத்தச் சட்டத்தின்படி, நீதிமன்ற வழக்குகள் உட்பட அனைத்து தீர்வு நடவடிக்கைகளும் கட்டாயமாக 330 நாட்களுக்குள் முடிக்கப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஆரம்ப 180-நாள் காலத்தை மட்டும் நினைவில் கொண்டு, சட்டப்பூர்வ 330-நாள் உச்சவரம்பை அறியாமல் இருப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "A loan asset turns into a Non-Performing Asset (NPA) if principal or interest remains overdue for more than 90 days.",
+        "For agricultural loans, NPAs are defined by crop seasons: 2 seasons for short-duration crops and 1 season for long-duration crops.",
+        "Sub-standard assets are those remaining as NPAs for up to 12 months, requiring 15% secured provisioning.",
+        "Doubtful assets remain sub-standard for more than 12 months, requiring provisioning between 25% and 100%.",
+        "Loss assets are identified as uncollectible by auditors or the RBI and require 100% provisioning.",
+        "The SARFAESI Act, 2002 allows banks to seize and auction mortgaged collateral exceeding ₹1 lakh without court intervention.",
+        "Section 31(i) of the SARFAESI Act explicitly excludes agricultural land from seizure.",
+        "The Insolvency and Bankruptcy Code (IBC), 2016 sets a resolution timeline of 180 days, with a strict outer limit of 330 days.",
+        "The Committee of Creditors (CoC) under the IBC requires a 66% majority vote to approve corporate resolution plans.",
+        "National Asset Reconstruction Company Limited (NARCL) was set up with a ₹30,600 crore Government of India sovereign guarantee for security receipts.",
+        "Priority Sector Lending targets are 40% of ANBC for scheduled commercial banks, and 75% for RRBs and Small Finance Banks.",
+        "Under Basel III, the RBI mandates a minimum CRAR of 9.0% (11.5% with the Capital Conservation Buffer) for commercial banks in India."
+      ],
+      "ta": [
+        "அசல் அல்லது வட்டி 90 நாட்களுக்கு மேல் நிலுவையில் இருந்தால் ஒரு கடன் சொத்து வாராக் கடனாக (NPA) மாறுகிறது.",
+        "விவசாயக் கடன்களுக்கு பயிர் பருவங்கள் அடிப்படையில் NPA நிர்ணயிக்கப்படுகிறது: குறுகிய காலப் பயிர்களுக்கு 2 பருவங்கள், நீண்ட காலப் பயிர்களுக்கு 1 பருவம்.",
+        "12 மாதங்கள் வரை வாராக் கடனாக நீடிக்கும் சொத்துக்கள் துணை நிலை சொத்துக்கள் எனப்பட்டு, 15% பாதுகாப்பு ஒதுக்கீடு கோருகின்றன.",
+        "12 மாதங்களுக்கும் மேலாக துணை நிலையில் நீடிக்கும் சொத்துக்கள் ஐயத்திற்குரிய சொத்துக்கள் எனப்பட்டு, 25% முதல் 100% வரை ஒதுக்கீடு கோருகின்றன.",
+        "முற்றிலும் வசூலிக்க முடியாத இழப்பு சொத்துக்களுக்கு 100% முழுமையான பாதுகாப்பு ஒதுக்கீடு செய்யப்பட வேண்டும்.",
+        "SARFAESI சட்டம் 2002, ₹1 லட்சத்திற்கு அதிகமான நிலுவைக் கடன்களுக்கு நீதிமன்ற அனுமதியின்றி அடமானச் சொத்தைப் பறிமுதல் செய்ய அனுமதிக்கிறது.",
+        "SARFAESI சட்டத்தின் பிரிவு 31(i) விவசாய நிலங்களைப் பறிமுதல் செய்வதிலிருந்து வெளிப்படையாக விலக்கு அளிக்கிறது.",
+        "திவால் சட்டம் (IBC) 2016 தீர்வுக்கான காலக்கெடுவாக 180 நாட்களையும், வழக்குகள் உட்பட அதிகபட்சமாக 330 நாட்களையும் நிர்ணயித்துள்ளது.",
+        "IBC-ன் கீழ் தீர்வுத் திட்டங்களை அங்கீகரிக்க கடன் கொடுத்தோர் குழுவில் (CoC) 66% வாக்கு பெரும்பான்மை கட்டாயமாகும்.",
+        "NARCL வழங்கும் பாதுகாப்பு ரசீதுகளுக்கு மத்திய அரசு ₹30,600 கோடி மதிப்பிலான இறையாண்மை உத்தரவாதத்தை வழங்கியுள்ளது.",
+        "முன்னுரிமைத் துறை கடன் இலக்கு வணிக வங்கிகளுக்கு 40% ஆகவும், RRB மற்றும் சிறு நிதி வங்கிகளுக்கு 75% ஆகவும் உள்ளது.",
+        "பேசல் III-ன் கீழ் ரிசர்வ் வங்கி இந்தியாவில் உள்ள வணிக வங்கிகளுக்கு 9.0% குறைந்தபட்ச CRAR-ஐ (தாங்கலுடன் 11.5%) கட்டாயமாக்கியுள்ளது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "NPA 90-Day Rule: Commercial loans overdue past 90 days turn into Non-Performing Assets.",
+        "Agri NPA Rule: Overdue for 2 seasons (short-duration crops) or 1 season (long-duration crops).",
+        "Asset Stages: Standard (performing), Sub-Standard (<= 12 mos), Doubtful (> 12 mos), Loss (uncollectible).",
+        "SARFAESI Act 2002: Direct seizure of pledged collateral; Section 31(i) exempts agricultural land.",
+        "IBC 2016: 180-day resolution process; maximum statutory cap of 330 days; 66% CoC vote.",
+        "NARCL (Bad Bank): Dual structure with IDRCL; ₹30,600 crore sovereign guarantee on Security Receipts.",
+        "PSL Quotas: 40% for Domestic Commercial Banks; 75% for Regional Rural Banks and Small Finance Banks.",
+        "CRAR Norm in India: 9% minimum capital requirement (11.5% including Capital Conservation Buffer).",
+        "Payments Banks: Deposit limit ₹2 lakh; can issue debit cards; strictly prohibited from lending/credit cards.",
+        "Small Finance Banks: Full lending allowed; 75% PSL quota; minimum 25% branches in unbanked rural areas."
+      ],
+      "ta": [
+        "90-நாள் வாராக் கடன் விதி: வணிகக் கடன்கள் 90 நாட்களுக்கு மேல் தவணை தவறினால் வாராக் கடனாக மாறும்.",
+        "விவசாய வாராக் கடன் விதி: குறுகிய காலப் பயிர்களுக்கு 2 பருவங்கள் அல்லது நீண்ட காலப் பயிர்களுக்கு 1 பருவம் நிலுவை.",
+        "சொத்து நிலைகள்: வழக்கமானது (Standard), துணை நிலை (<=12 மாதம்), ஐயத்திற்குரியது (>12 மாதம்), இழப்பு (Loss).",
+        "SARFAESI சட்டம் 2002: நீதிமன்றமின்றி சொத்துப் பறிமுதல்; பிரிவு 31(i) விவசாய நிலத்திற்கு விலக்கு அளிக்கிறது.",
+        "IBC 2016: 180-நாள் தீர்வு காலக்கெடு; அதிகபட்சம் 330 நாட்கள் வரம்பு; கடன் குழுவில் 66% வாக்கு ஒப்புதல்.",
+        "NARCL (வாராக் கடன் வங்கி): IDRCL உடன் இரட்டை அமைப்பு; பாதுகாப்பு ரசீதுகளுக்கு ₹30,600 கோடி அரசு உத்தரவாதம்.",
+        "PSL ஒதுக்கீடு: வணிக வங்கிகளுக்கு 40%; பிராந்திய கிராமப்புற மற்றும் சிறு நிதி வங்கிகளுக்கு 75%.",
+        "இந்தியாவில் CRAR விதி: 9% குறைந்தபட்ச மூலதனம் (மூலதனப் பாதுகாப்பு தாங்கலுடன் 11.5%).",
+        "பேமெண்ட்ஸ் வங்கிகள்: ₹2 லட்சம் வைப்பு வரம்பு; டெபிட் கார்டு வழங்கலாம்; கடன் வழங்கவோ கிரெடிட் கார்டு தரவோ தடை.",
+        "சிறு நிதி வங்கிகள்: முழு கடன் வழங்கலாம்; 75% PSL கட்டாயம்; 25% கிளைகள் கிராமங்களில் இருக்க வேண்டும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_bk_201",
+        "front_en": "What is the standard overdue threshold for a commercial loan to turn into an NPA?",
+        "front_ta": "வணிகக் கடன் வாராக் கடனாக (NPA) மாறுவதற்கான நிலையான தவணை தவறிய கால அளவு என்ன?",
+        "back_en": "More than 90 days overdue.",
+        "back_ta": "90 நாட்களுக்கு மேல் நிலுவையில் இருப்பது."
+      },
+      {
+        "id": "rc_bk_202",
+        "front_en": "How are agricultural loans classified as NPAs for short-duration crops?",
+        "front_ta": "குறுகிய காலப் பயிர்களுக்கான விவசாயக் கடன்கள் எவ்வாறு வாராக் கடனாக வகைப்படுத்தப்படுகின்றன?",
+        "back_en": "If interest or installment remains overdue for two crop seasons.",
+        "back_ta": "அசல் அல்லது வட்டி இரண்டு பயிர் பருவங்களுக்கு நிலுவையில் இருந்தால்."
+      },
+      {
+        "id": "rc_bk_203",
+        "front_en": "Which section of the SARFAESI Act, 2002 prohibits the seizure of agricultural land?",
+        "front_ta": "SARFAESI சட்டம் 2002-ன் எந்தப் பிரிவு விவசாய நிலங்களைப் பறிமுதல் செய்வதைத் தடை செய்கிறது?",
+        "back_en": "Section 31(i) of the SARFAESI Act, 2002.",
+        "back_ta": "SARFAESI சட்டம் 2002-ன் பிரிவு 31(i)."
+      },
+      {
+        "id": "rc_bk_204",
+        "front_en": "What is the maximum statutory time limit to complete the corporate insolvency process under IBC?",
+        "front_ta": "IBC-ன் கீழ் நிறுவன திவால் தீர்வு செயல்முறையை முடிக்க அனுமதிக்கப்பட்ட அதிகபட்ச கால வரம்பு என்ன?",
+        "back_en": "330 days (including litigation and extensions).",
+        "back_ta": "330 நாட்கள் (வழக்குகள் மற்றும் நீட்டிப்புகள் உட்பட)."
+      },
+      {
+        "id": "rc_bk_205",
+        "front_en": "What is the mandatory Priority Sector Lending (PSL) target for Small Finance Banks?",
+        "front_ta": "சிறு நிதி வங்கிகளுக்கான (SFBs) கட்டாய முன்னுரிமைத் துறை கடன் (PSL) இலக்கு என்ன?",
+        "back_en": "75% of Adjusted Net Bank Credit (ANBC).",
+        "back_ta": "சரிசெய்யப்பட்ட நிகர வங்கிக் கடனில் (ANBC) 75%."
+      },
+      {
+        "id": "rc_bk_206",
+        "front_en": "What is the maximum deposit a customer can hold in a Payments Bank?",
+        "front_ta": "பேமெண்ட்ஸ் வங்கியில் ஒரு வாடிக்கையாளர் வைத்திருக்கக்கூடிய அதிகபட்ச வைப்புத்தொகை என்ன?",
+        "back_en": "₹2,00,000 per individual customer.",
+        "back_ta": "ஒரு வாடிக்கையாளருக்கு அதிகபட்சம் ₹2,00,000."
+      },
+      {
+        "id": "rc_bk_207",
+        "front_en": "What is the minimum Capital to Risk-Weighted Assets Ratio (CRAR) mandated by RBI under Basel III?",
+        "front_ta": "பேசல் III-ன் கீழ் ரிசர்வ் வங்கியால் கட்டாயமாக்கப்பட்ட குறைந்தபட்ச CRAR விகிதம் என்ன?",
+        "back_en": "9.0% (11.5% including the Capital Conservation Buffer).",
+        "back_ta": "9.0% (மூலதனப் பாதுகாப்பு தாங்கலுடன் சேர்த்து 11.5%)."
+      },
+      {
+        "id": "rc_bk_208",
+        "front_en": "What is the value of the sovereign guarantee provided by the Central Government to NARCL?",
+        "front_ta": "NARCL பாதுகாப்பு ரசீதுகளுக்கு மத்திய அரசு வழங்கியுள்ள இறையாண்மை உத்தரவாதத்தின் மதிப்பு என்ன?",
+        "back_en": "₹30,600 crore.",
+        "back_ta": "₹30,600 கோடி."
+      },
+      {
+        "id": "rc_bk_209",
+        "front_en": "What is the voting majority required in the Committee of Creditors (CoC) to approve an IBC resolution?",
+        "front_ta": "IBC தீர்வுத் திட்டத்தை அங்கீகரிக்க கடன் கொடுத்தோர் குழுவில் (CoC) தேவைப்படும் வாக்கு பெரும்பான்மை என்ன?",
+        "back_en": "66% of the voting share.",
+        "back_ta": "66% வாக்குகள்."
+      },
+      {
+        "id": "rc_bk_210",
+        "front_en": "How long must an asset remain in the sub-standard category before it is classified as 'Doubtful'?",
+        "front_ta": "ஒரு சொத்து 'ஐயத்திற்குரிய' சொத்தாக மாறுவதற்கு முன் எத்தனை மாதங்கள் துணை நிலை பிரிவில் இருக்க வேண்டும்?",
+        "back_en": "Exceeding 12 months.",
+        "back_ta": "12 மாதங்களுக்கும் மேலாக."
+      },
+      {
+        "id": "rc_bk_211",
+        "front_en": "Can Payments Banks issue credit cards to their depositors?",
+        "front_ta": "பேமெண்ட்ஸ் வங்கிகள் தங்களது வைப்பாளர்களுக்கு கிரெடிட் கார்டுகளை வழங்க முடியுமா?",
+        "back_en": "No, Payments Banks are legally prohibited from lending or issuing credit cards.",
+        "back_ta": "முடியாது, பேமெண்ட்ஸ் வங்கிகள் கடன் வழங்கவோ கிரெடிட் கார்டு தரவோ சட்டப்படி தடை உள்ளது."
+      },
+      {
+        "id": "rc_bk_212",
+        "front_en": "Where must commercial banks deposit their shortfalls in achieving Priority Sector Lending targets?",
+        "front_ta": "முன்னுரிமைத் துறை கடன் இலக்குகளை எட்டாத வங்கிகள் தங்களது பற்றாக்குறை நிதியை எங்கு டெபாசிட் செய்ய வேண்டும்?",
+        "back_en": "Rural Infrastructure Development Fund (RIDF) maintained by NABARD.",
+        "back_ta": "நபார்டு வங்கியால் பராமரிக்கப்படும் ஊரக உள்கட்டமைப்பு வளர்ச்சி நிதியில் (RIDF)."
+      }
+    ]
+  }
+}

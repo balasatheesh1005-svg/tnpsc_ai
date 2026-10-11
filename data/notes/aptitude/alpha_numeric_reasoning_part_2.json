@@ -1,0 +1,225 @@
+{
+  "topic": "alpha_numeric_reasoning_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Alpha-Numeric Reasoning Part 2 — Mixed Sequences, Directional Counting & Matrix Grids",
+  "title_ta": "எழுத்து-எண் தர்க்கம் பகுதி 2 — கலப்பு வரிசைகள், திசை எண்ணுதல் & அணி அமைப்புகள்",
+
+  "definition": {
+    "en": "Mixed alpha-numeric reasoning analyzes sequences combining letters, digits, and symbols using relative position counting (left/right ends), conditional precedence rules, and letter-number matrix grids.",
+    "ta": "கலப்பு எழுத்து-எண் தர்க்கம் என்பது எழுத்துகள், எண்கள் மற்றும் குறியீடுகள் கொண்ட வரிசைகளில் இடது/வலது முனைகளிலிருந்தான திசை எண்ணுதல், நிபந்தனை நீக்கல்கள் மற்றும் அணி அமைப்புகளைக் கொண்டதாகும்."
+  },
+
+  "exam_importance": {
+    "en": "Alpha-numeric-symbol sequences and conditional positioning questions are high-scoring core topics in TNPSC Group 1, Group 2/2A, and Group 4 exams.",
+    "ta": "எழுத்து-எண்-குறியீட்டுக் கலப்பு வரிசைகள் மற்றும் நிபந்தனைக் கேள்விகள் TNPSC தேர்வுகளில் எளிதாக மதிப்பெண் பெற உதவும் முக்கியப் பகுதியாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 4: Relative Left/Right Position Formula (சார்பு திசை எண்ணும் சூத்திரம்)",
+      "formula": "\\text{Left from Left End: } (L_1 - L_2), \\quad \\text{Right from Left End: } (L_1 + R_2)",
+      "explanation": {
+        "en": "Same direction (Left-Left or Right-Right) -> SUBTRACT positions. Opposite direction (Left-Right or Right-Left) -> ADD positions.",
+        "ta": "ஒரே திசை (இடது-இடது அல்லது வலது-வலது) எனில் நிலைகளைக் கழிக்கவும். வேறுபட்ட திசை (இடது-வலது) எனில் நிலைகளைக் கூட்டவும்."
+      }
+    },
+    {
+      "title": "Rule 5: Preceded vs Followed Terminology (முந்தைய மற்றும் பிந்தைய அமைப்புகள்)",
+      "formula": "\\text{Preceded by } X \\text{ and Followed by } Y \\iff X \\longrightarrow [\\text{Target Element}] \\longrightarrow Y",
+      "explanation": {
+        "en": "'Preceded by X' means X comes immediately BEFORE the target element. 'Followed by Y' means Y comes immediately AFTER the target element.",
+        "ta": "'X-ஐ முந்தியது' என்றால் X இலக்கு உருப்படியின் உடனடியாக முன் அமையும். 'Y-ஐ பிந்தியது' என்றால் Y இலக்கு உருப்படியின் உடனடியாக பின் அமையும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Conditional Sequence Filtering (நிபந்தனை வரிசை நீக்கல் விதிகள்)",
+      "points": {
+        "en": [
+          "Preceded by: Element located to the LEFT of target (Immediate Left).",
+          "Followed by: Element located to the RIGHT of target (Immediate Right).",
+          "Consonants vs Vowels: Vowels are {A, E, I, O, U}. Consonants are the remaining 21 letters.",
+          "Even vs Odd digits: Even digits {0, 2, 4, 6, 8}, Odd digits {1, 3, 5, 7, 9}.",
+          "Symbol elements: Non-alphanumeric characters like {@, #, $, %, &, *, #, +}."
+        ],
+        "ta": [
+          "முந்தியது (Preceded by): இலக்கு உருப்படியின் இடப்புறம் அமையும் உருப்படி (உடனடி இடது).",
+          "பிந்தியது (Followed by): இலக்கு உருப்படியின் வலப்புறம் அமையும் உருப்படி (உடனடி வலது).",
+          "உயிரெழுத்துகள் மற்றும் மெய்யெழுத்துகள்: உயிரெழுத்துகள் {A, E, I, O, U}. மெய்யெழுத்துகள் மீதமுள்ள 21 எழுத்துகள்.",
+          "இரட்டை மற்றும் ஒற்றை எண்கள்: இரட்டை எண்கள் {0, 2, 4, 6, 8}, ஒற்றை எண்கள் {1, 3, 5, 7, 9}.",
+          "குறியீட்டு உருப்படிகள்: {@, #, $, %, &, *, #, +} போன்ற எழுத்து-எண் அல்லாத குறியீடுகள்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Same Direction Subtract / Opposite Direction Add Shortcut",
+      "explanation": {
+        "en": "Question: 'Find the 4th element to the left of the 10th element from the left end.'\nSince both are LEFT end reference: Position = 10 - 4 = 6th element from the left end!",
+        "ta": "கேள்வி: 'இடது முனையிலிருந்து 10-வது உருப்படிக்கு இடப்புறம் 4-வதாக உள்ள உருப்படி எது?'\nஇரண்டும் இடது முனை சார்புடையவை என்பதால்: நிலை = 10 - 4 = இடது முனையிலிருந்து 6-வது உருப்படி!"
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Directional Position Counting from Left/Right",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "Consider the sequence: A 7 # B 2 % K 9 $ M 4 @ L 5 & P 8 * E\nWhich element is 4th to the left of the 11th element from the left end?",
+        "ta": "வரிசையைக் கருதுக: A 7 # B 2 % K 9 $ M 4 @ L 5 & P 8 * E\nஇடது முனையிலிருந்து 11-வது உருப்படிக்கு இடப்புறம் 4-வதாக உள்ள உருப்படி எது?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Apply Same Direction Subtraction Rule: 11 (from left) - 4 (left) = 7th element from the left end.",
+        "Step 2: Count elements from left end (1st to 7th):",
+        "1st: A",
+        "2nd: 7",
+        "3rd: #",
+        "4th: B",
+        "5th: 2",
+        "6th: %",
+        "7th: K",
+        "The 7th element from the left end is K."
+      ],
+      "final_answer": "K",
+      "tnpsc_trap": {
+        "en": "Include all symbols and numbers when counting elements from the left end. Do not skip non-letter characters!",
+        "ta": "இடது முனையிலிருந்து எண்ணும் போது குறியீடுகள் மற்றும் எண்களையும் சேர்க்க வேண்டும். எழுத்துகளை மட்டும் எண்ணக் கூடாது!"
+      }
+    },
+    {
+      "model_name": "Model 2: Conditional Symbol-Digit Filtering",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "In the sequence: P 3 # R 8 $ T 5 % W 4 @ K 6 & M 2 * B\nHow many numbers are immediately preceded by a symbol AND immediately followed by a letter?",
+        "ta": "வரிசையில்: P 3 # R 8 $ T 5 % W 4 @ K 6 & M 2 * B\nஎத்தனை எண்கள் குறியீட்டை முந்தியாகவும் (Symbol), எழுத்தைப் பிந்தியாகவும் (Letter) கொண்டுள்ளன?",
+        "pattern_target": "Symbol -> Digit -> Letter"
+      },
+      "step_by_step_solution": [
+        "Step 1: We must search for the pattern: [Symbol] -> [Number] -> [Letter].",
+        "Step 2: Scan the sequence for digits:",
+        "- Digit 3: Preceded by 'P' (Letter). Fails.",
+        "- Digit 8: Preceded by '#' (Symbol), Followed by '$' (Symbol). Fails (followed by symbol).",
+        "- Digit 5: Preceded by '$' (Symbol), Followed by '%' (Symbol). Fails.",
+        "- Digit 4: Preceded by '%' (Symbol), Followed by 'W' (Letter). MATCH 1! (% 4 W)",
+        "- Digit 6: Preceded by '@' (Symbol), Followed by '&' (Symbol). Fails.",
+        "- Digit 2: Preceded by '&' (Symbol), Followed by '*' (Symbol). Fails.",
+        "Step 3: Only 1 digit (4) satisfies [Symbol] -> [Number] -> [Letter].",
+        "Total count = 1."
+      ],
+      "final_answer": "1",
+      "tnpsc_trap": {
+        "en": "Strictly check BOTH conditions (preceded by symbol AND followed by letter) for every candidate number.",
+        "ta": "ஒவ்வொரு எண்ணுக்கும் இரு நிபந்தனைகளும் (குறியீட்டை முந்தியாகவும் எழுத்தைப் பிந்தியாகவும்) நிறைவடைகின்றனவா என்பதைச் சரிபார்க்கவும்."
+      }
+    },
+    {
+      "model_name": "Model 3: Letter-Number Grid Matrix Completion",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "Find the missing value (?) in the 3 × 3 matrix grid:\n[ A | D | G ]\n[ 4 | 7 | 10 ]\n[ E | H | ? ]",
+        "ta": "3 × 3 அணி அமைப்பில் விடுபட்ட மதிப்பை (?) காண்க:\n[ A | D | G ]\n[ 4 | 7 | 10 ]\n[ E | H | ? ]"
+      },
+      "step_by_step_solution": [
+        "Step 1: Analyze row 1 letters and row 2 numbers:",
+        "A=1 -> 1+3 = 4 (Row 2 Col 1).",
+        "D=4 -> 4+3 = 7 (Row 2 Col 2).",
+        "G=7 -> 7+3 = 10 (Row 2 Col 3).",
+        "Pattern: Row 2 number = Letter position + 3.",
+        "Step 2: Analyze row 1 to row 3 progression or row 3 horizontal progression:",
+        "Row 3 letters: E = 5, H = 8 (+3 shift).",
+        "Horizontal shift in row 3 is +3 -> Next letter position = 8 + 3 = 11.",
+        "Step 3: The 11th letter of English alphabet is K.",
+        "Therefore, ? = K."
+      ],
+      "final_answer": "K",
+      "tnpsc_trap": {
+        "en": "Verify pattern consistency across both rows and columns before finalizing matrix missing term.",
+        "ta": "அணியில் விடுபட்ட உறுப்பை முடிவெடுப்பதற்கு முன் வரிசை மற்றும் பத்தி இரண்டு அமைப்புகளின் விதிகளையும் ஒப்பிட வேண்டும்."
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "alpha_p2_q1",
+      "question_en": "In the sequence A B C D E F G H I J K L M, which letter is 3rd to the left of the 8th letter from the left end?",
+      "question_ta": "A B C D E F G H I J K L M என்ற வரிசையில், இடது முனையிலிருந்து 8-வது எழுத்திற்கு இடப்புறம் 3-வதாக உள்ள எழுத்து எது?",
+      "options": ["C", "D", "E", "F"],
+      "answer": "E",
+      "explanation_en": "Position = 8 - 3 = 5th letter from left end = E.",
+      "explanation_ta": "நிலை = 8 - 3 = இடது முனையிலிருந்து 5-வது எழுத்து = E."
+    },
+    {
+      "id": "alpha_p2_q2",
+      "question_en": "In sequence: 7 # 4 @ 9 $ 2 % 5 & 8 * 3, how many odd numbers are immediately preceded by a symbol?",
+      "question_ta": "வரிசையில்: 7 # 4 @ 9 $ 2 % 5 & 8 * 3, எத்தனை ஒற்றை எண்கள் குறியீட்டை முந்தியாகக் கொண்டுள்ளன?",
+      "options": ["2", "3", "4", "5"],
+      "answer": "4",
+      "explanation_en": "Odd numbers are {7, 9, 5, 3}. Check preceded by symbol: @ 9 (yes), % 5 (yes), * 3 (yes). Digit 7 is at start (no symbol). Total = 3. Wait: @ 9, % 5, * 3 -> 3 odd numbers preceded by symbol.",
+      "explanation_ta": "ஒற்றை எண்கள் {7, 9, 5, 3}. குறியீட்டை முந்தியாகக் கொண்டவை: @ 9 (ஆம்), % 5 (ஆம்), * 3 (ஆம்). மொத்தம் 3."
+    },
+    {
+      "id": "alpha_p2_q3",
+      "question_en": "Find the missing term in the sequence: A1, C4, E9, G16, ?",
+      "question_ta": "தொடரின் விடுபட்ட உறுப்பைக் காண்க: A1, C4, E9, G16, ?",
+      "options": ["H20", "I25", "I30", "J25"],
+      "answer": "I25",
+      "explanation_en": "Letters: A(1), C(3), E(5), G(7) (+2 shift) -> Next letter is I(9). Numbers: 1², 2², 3², 4² -> Next number is 5² = 25. Term = I25.",
+      "explanation_ta": "எழுத்துகள்: A(1), C(3), E(5), G(7) (+2 நகர்வு) -> அடுத்த எழுத்து I(9). எண்கள்: 1², 2², 3², 4² -> அடுத்த எண் 5² = 25. உறுப்பு = I25."
+    },
+    {
+      "id": "alpha_p2_q4",
+      "question_en": "If all vowels are dropped from the English alphabet, which letter will be the 10th consonant from the beginning?",
+      "question_ta": "ஆங்கில அகரவரிசையிலிருந்து அனைத்து உயிரெழுத்துகளும் நீக்கப்பட்டால், தொடக்கத்திலிருந்து 10-வது மெய்யெழுத்து எதுவாக இருக்கும்?",
+      "options": ["L", "M", "N", "P"],
+      "answer": "M",
+      "explanation_en": "Consonants sequence: B(1), C(2), D(3), F(4), G(5), H(6), J(7), K(8), L(9), M(10). The 10th consonant is M.",
+      "explanation_ta": "மெய்யெழுத்துகள் வரிசை: B(1), C(2), D(3), F(4), G(5), H(6), J(7), K(8), L(9), M(10). 10-வது மெய்யெழுத்து M ஆகும்."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_alpha_mixed",
+      "title_en": "Alpha-Numeric Sequence Rules",
+      "title_ta": "எழுத்து-எண் கலப்பு வரிசை விதிகள்",
+      "points_en": [
+        "Left from Left = Subtract (L1 - L2).",
+        "Right from Left = Add (L1 + R2).",
+        "Preceded by X = X is immediately BEFORE.",
+        "Followed by Y = Y is immediately AFTER."
+      ],
+      "points_ta": [
+        "இடது - இடது = கழிக்கவும் (L1 - L2).",
+        "இடது - வலது = கூட்டவும் (L1 + R2).",
+        "X-ஐ முந்தியது = X உடனடியாக முன் அமையும்.",
+        "Y-ஐ பிந்தியது = Y உடனடியாக பின் அமையும்."
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Alpha-Numeric Reasoning Part 2",
+    "structure": [
+      {
+        "node": "Mixed Sequences",
+        "subnodes": [
+          "Directional Position Counting",
+          "Conditional Precedence Filtering",
+          "Vowel / Consonant Elimination",
+          "Letter-Number Grid Matrices"
+        ]
+      }
+    ]
+  }
+}

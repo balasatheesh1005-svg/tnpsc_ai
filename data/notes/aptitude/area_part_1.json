@@ -1,0 +1,286 @@
+{
+  "topic": "area_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Area Part 1 — Square, Rectangle, Triangles & Quadrilaterals",
+  "title_ta": "பரப்பளவு பகுதி 1 — சதுரம், செவ்வகம், முக்கோணங்கள் மற்றும் நாற்கரங்கள்",
+
+  "definition": {
+    "en": "Area is the amount of 2-dimensional space enclosed within a closed 2D shape, measured in square units (sq.cm, sq.m). Perimeter is the total boundary length.",
+    "ta": "பரப்பளவு என்பது இருபரிமாண மூடிய வடிவத்திற்குள் அடைபடும் தளத்தின் அளவு ஆகும் (சதுர செ.மீ, சதுர மீ). சுற்றளவு என்பது அந்த வடிவத்தின் எல்லை நீளத்தின் கூடுதல் ஆகும்."
+  },
+
+  "exam_importance": {
+    "en": "Area & Mensuration 2D is a compulsory topic in TNPSC Aptitude for Group 1, Group 2/2A, and Group 4. Questions test perimeter vs area distinctions, squares, rectangles, equilateral/right triangles, parallelograms, rhombuses, and trapeziums.",
+    "ta": "பரப்பளவு என்பது TNPSC குரூப் 1, குரூப் 2/2A மற்றும் குரூப் 4 தேர்வுகளில் தவறாமல் கேட்கப்படும் பாடமாகும். சுற்றளவுக்கும் பரப்பளவுக்குமான வேறுபாடு, சதுரம், செவ்வகம், சமபக்க முக்கோணம், சாய்சதுரம் மற்றும் சரிவகம் தொடர்பான கணக்குகள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Square & Rectangle Formulas (சதுரம் & செவ்வகச் சூத்திரங்கள்)",
+      "formula": "\\text{Square: } Area = a^2, \\quad Perimeter = 4a, \\quad Diagonal = a\\sqrt{2} \\\\ \\text{Rectangle: } Area = l \\times b, \\quad Perimeter = 2(l + b), \\quad Diagonal = \\sqrt{l^2 + b^2}",
+      "explanation": {
+        "en": "a = side of square; l = length, b = breadth of rectangle.",
+        "ta": "a = சதுரத்தின் பக்கம்; l = செவ்வகத்தின் நீளம், b = அகலம்."
+      }
+    },
+    {
+      "title": "Triangle Area Formulas (முக்கோணப் பரப்பளவு சூத்திரங்கள்)",
+      "formula": "\\text{General: } Area = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\\\ \\text{Equilateral Triangle: } Area = \\frac{\\sqrt{3}}{4} a^2, \\quad Height = \\frac{\\sqrt{3}}{2} a",
+      "explanation": {
+        "en": "Equilateral triangle has all 3 sides equal to 'a'.",
+        "ta": "சமபக்க முக்கோணத்தின் மூன்று பக்கங்களும் 'a' எனச் சமமாக இருக்கும்."
+      }
+    },
+    {
+      "title": "Quadrilateral Formulas (நாற்கரச் சூத்திரங்கள்)",
+      "formula": "\\text{Parallelogram: } Area = b \\times h \\\\ \\text{Rhombus: } Area = \\frac{1}{2} \\times d_1 \\times d_2, \\quad \\text{Side } a = \\sqrt{\\left(\\frac{d_1}{2}\\right)^2 + \\left(\\frac{d_2}{2}\\right)^2} \\\\ \\text{Trapezium: } Area = \\frac{1}{2} \\times (a + b) \\times h",
+      "explanation": {
+        "en": "Rhombus diagonals d1, d2 bisect at right angles. Trapezium has parallel sides 'a' and 'b'.",
+        "ta": "சாய்சதுர மூலைவிட்டங்கள் d1, d2 செங்கோணத்தில் இருசமக்கூறிடும். சரிவகத்தின் இணைப்பக்கங்கள் 'a', 'b'."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Perimeter vs Area Distinction (சுற்றளவுக்கும் பரப்பளவுக்குமான வேறுபாடு)",
+      "points": {
+        "en": [
+          "Perimeter is measured in linear units (m, cm). Used for fencing, boundary wire, border ribbon.",
+          "Area is measured in square units (m², cm²). Used for flooring, painting, turfing, carpeting.",
+          "Confusing perimeter with area is the most common student error in word problems."
+        ],
+        "ta": [
+          "சுற்றளவு நீள அலகுகளில் (மீ, செ.மீ) அளக்கப்படும். வேலி அமைத்தல், எல்லைக் கம்பிக்கு சுற்றளவு பயன்படுகிறது.",
+          "பரப்பளவு சதுர அலகுகளில் (மீ², செ.மீ²) அளக்கப்படும். தரை அமைத்தல், வண்ணம் பூசுதல், புல்வெளி அமைத்தலுக்கு பரப்பளவு பயன்படுகிறது.",
+          "சுற்றளவையும் பரப்பளவையும் குழப்பிக் கொள்வது தேர்வில் அடிக்கடி நிகழும் தவறாகும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Equilateral Triangle Side from Perimeter",
+      "points": {
+        "en": [
+          "If perimeter P of equilateral triangle is given: Side a = P / 3.",
+          "Area = (√3 / 4) × (P / 3)² = (√3 / 36) × P²."
+        ],
+        "ta": [
+          "சமபக்க முக்கோணத்தின் சுற்றளவு P தரப்பட்டால்: பக்கம் a = P / 3.",
+          "பரப்பளவு = (√3 / 4) × (P / 3)²."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Mixing diagonal formula of square with rectangle",
+      "explanation": {
+        "en": "Diagonal of square is a√2. Diagonal of rectangle is √(l² + b²). Using a√2 for rectangle is WRONG.",
+        "ta": "சதுரத்தின் மூலைவிட்டம் a√2. செவ்வகத்தின் மூலைவிட்டம் √(l² + b²). செவ்வகத்திற்கு a√2-ஐப் பயன்படுத்துவது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Always apply Pythagoras theorem for rectangle diagonal: d = √(l² + b²).",
+        "ta": "செவ்வகத்தின் மூலைவிட்டத்திற்கு பிதாகரஸ் தேற்றத்தைப் பயன்படுத்தவும்: d = √(l² + b²)."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the area, perimeter, and diagonal of a square of side 12 cm.",
+      "method": "Square Core Formulas",
+      "steps": [
+        "Step 1: Given side a = 12 cm.",
+        "Step 2: Calculate Area: \\(Area = a^2 = 12^2 = 144\\) cm².",
+        "Step 3: Calculate Perimeter: \\(Perimeter = 4a = 4 \\times 12 = 48\\) cm.",
+        "Step 4: Calculate Diagonal: \\(Diagonal = a\\sqrt{2} = 12\\sqrt{2}\\) cm."
+      ],
+      "answer": "Area = 144 cm², Perimeter = 48 cm, Diagonal = 12√2 cm"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The length and breadth of a rectangular field are 15 m and 10 m respectively. Find its area and perimeter.",
+      "method": "Rectangle Core Formulas",
+      "steps": [
+        "Step 1: Given length l = 15 m, breadth b = 10 m.",
+        "Step 2: Area: \\(Area = l \\times b = 15 \\times 10 = 150\\) m².",
+        "Step 3: Perimeter: \\(Perimeter = 2(l + b) = 2(15 + 10) = 2(25) = 50\\) m."
+      ],
+      "answer": "Area = 150 m², Perimeter = 50 m"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the area of an equilateral triangle whose perimeter is 180 cm.",
+      "method": "Equilateral Triangle Formula",
+      "steps": [
+        "Step 1: Given Perimeter = 180 cm.",
+        "Step 2: Calculate side a: \\(3a = 180 \\implies a = 60\\) cm.",
+        "Step 3: Apply area formula: \\(Area = \\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} \\times 60^2 = \\frac{\\sqrt{3}}{4} \\times 3600\\).",
+        "Step 4: Calculate: \\(Area = 900\\sqrt{3}\\) cm²."
+      ],
+      "answer": "900√3 cm² (approx 1558.85 cm²)"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The base of a triangle is 16 cm and its height is 9 cm. Find its area.",
+      "method": "General Triangle Formula",
+      "steps": [
+        "Step 1: Given base b = 16 cm, height h = 9 cm.",
+        "Step 2: Apply formula: \\(Area = \\frac{1}{2} \\times b \\times h = \\frac{1}{2} \\times 16 \\times 9 = 8 \\times 9 = 72\\) cm²."
+      ],
+      "answer": "72 cm²"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The diagonals of a rhombus are 16 cm and 12 cm. Find its area and side.",
+      "method": "Rhombus Diagonal Method",
+      "steps": [
+        "Step 1: Given d1 = 16 cm, d2 = 12 cm.",
+        "Step 2: Area: \\(Area = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 16 \\times 12 = 96\\) cm².",
+        "Step 3: Calculate side a: \\(a = \\sqrt{\\left(\\frac{16}{2}\\right)^2 + \\left(\\frac{12}{2}\\right)^2} = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10\\) cm."
+      ],
+      "answer": "Area = 96 cm², Side = 10 cm"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The parallel sides of a trapezium are 20 cm and 14 cm, and the perpendicular distance between them is 8 cm. Find its area.",
+      "method": "Trapezium Area Formula",
+      "steps": [
+        "Step 1: Given parallel sides a = 20 cm, b = 14 cm, height h = 8 cm.",
+        "Step 2: Apply formula: \\(Area = \\frac{1}{2} \\times (a + b) \\times h = \\frac{1}{2} \\times (20 + 14) \\times 8\\).",
+        "Step 3: Calculate: \\(Area = \\frac{1}{2} \\times 34 \\times 8 = 17 \\times 8 = 136\\) cm²."
+      ],
+      "answer": "136 cm²"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "If the perimeter of a square is 40 cm, find its area.",
+      "options": ["A) 80 cm²", "B) 100 cm²", "C) 120 cm²", "D) 160 cm²"],
+      "correct_option": "B) 100 cm²",
+      "explanation": "Side = 40/4 = 10 cm. Area = 10^2 = 100 cm²."
+    },
+    {
+      "id": 2,
+      "question": "The length of a rectangle is 12 m and breadth is 8 m. Find its area.",
+      "options": ["A) 40 m²", "B) 80 m²", "C) 96 m²", "D) 100 m²"],
+      "correct_option": "C) 96 m²",
+      "explanation": "Area = 12 × 8 = 96 m²."
+    },
+    {
+      "id": 3,
+      "question": "Find the area of a right-angled triangle with base 10 cm and height 24 cm.",
+      "options": ["A) 120 cm²", "B) 240 cm²", "C) 60 cm²", "D) 100 cm²"],
+      "correct_option": "A) 120 cm²",
+      "explanation": "Area = (1/2) × 10 × 24 = 120 cm²."
+    },
+    {
+      "id": 4,
+      "question": "Find the area of an equilateral triangle of side 10 cm.",
+      "options": ["A) 25 cm²", "B) 25√3 cm²", "C) 50√3 cm²", "D) 100 cm²"],
+      "correct_option": "B) 25√3 cm²",
+      "explanation": "Area = (√3/4) × 10^2 = 25√3 cm²."
+    },
+    {
+      "id": 5,
+      "question": "The diagonals of a rhombus are 10 cm and 24 cm. Find its area.",
+      "options": ["A) 60 cm²", "B) 120 cm²", "C) 240 cm²", "D) 480 cm²"],
+      "correct_option": "B) 120 cm²",
+      "explanation": "Area = (1/2) × 10 × 24 = 120 cm²."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Square Formulas",
+      "back": "Area = a² | Perimeter = 4a | Diagonal = a√2"
+    },
+    {
+      "front": "Rectangle Formulas",
+      "back": "Area = l × b | Perimeter = 2(l + b) | Diagonal = √(l² + b²)"
+    },
+    {
+      "front": "Equilateral Triangle Area",
+      "back": "Area = (√3 / 4) a² | Height = (√3 / 2) a"
+    },
+    {
+      "front": "Rhombus Area & Side",
+      "back": "Area = (1/2) d1 d2 | Side = √[(d1/2)² + (d2/2)²]"
+    },
+    {
+      "front": "Trapezium Area",
+      "back": "Area = (1/2) (a + b) h"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Area Part 1 — 2D Polygon Shapes Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Area Part 1 (2D Shapes)",
+        "children": ["square_rect", "triangles", "quadrilaterals"]
+      },
+      {
+        "id": "square_rect",
+        "label": "Square & Rectangle",
+        "children": ["sq_f", "rect_f"]
+      },
+      {
+        "id": "sq_f",
+        "label": "Square: A = a², P = 4a, d = a√2",
+        "children": []
+      },
+      {
+        "id": "rect_f",
+        "label": "Rectangle: A = lb, P = 2(l+b), d = √(l²+b²)",
+        "children": []
+      },
+      {
+        "id": "triangles",
+        "label": "Triangles",
+        "children": ["gen_tri", "eq_tri"]
+      },
+      {
+        "id": "gen_tri",
+        "label": "General: A = (1/2)bh",
+        "children": []
+      },
+      {
+        "id": "eq_tri",
+        "label": "Equilateral: A = (√3/4)a²",
+        "children": []
+      },
+      {
+        "id": "quadrilaterals",
+        "label": "Quadrilaterals",
+        "children": ["rhombus_f", "trapezium_f"]
+      },
+      {
+        "id": "rhombus_f",
+        "label": "Rhombus: A = (1/2)d1 d2",
+        "children": []
+      },
+      {
+        "id": "trapezium_f",
+        "label": "Trapezium: A = (1/2)(a+b)h",
+        "children": []
+      }
+    ]
+  }
+}

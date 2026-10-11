@@ -1,5 +1,5 @@
 import streamlit as st
-from ui.notes.layout import section_anchor
+from ui.notes.layout import bilingual_panels, localized_section_title, section_anchor
 
 
 def render_fact_box(facts_data):
@@ -12,19 +12,20 @@ def render_fact_box(facts_data):
 
     section_anchor("sec_fact_box")
     st.markdown('<div class="nova-card nova-fact-card animate-fade-in">', unsafe_allow_html=True)
-    st.markdown("### 💡 **Important Fact Box**")
+    st.markdown(f"### 💡 **{localized_section_title('Important Fact Box')}**")
 
     if isinstance(facts_data, dict):
         en = facts_data.get("en", [])
         ta = facts_data.get("ta", [])
 
-        if en or ta:
-            tab1, tab2 = st.tabs(["🇬🇧 English Facts", "🇮🇳 தமிழ் குறிப்புகள்"])
-            with tab1:
-                for fact in en:
-                    st.markdown(f"⭐ **{fact}**")
-            with tab2:
-                for fact in ta:
+        for language, panel in bilingual_panels(
+            en,
+            ta,
+            "🇬🇧 English Facts",
+            "🇮🇳 தமிழ் குறிப்புகள்",
+        ):
+            with panel:
+                for fact in en if language == "en" else ta:
                     st.markdown(f"⭐ **{fact}**")
     elif isinstance(facts_data, list):
         for fact in facts_data:

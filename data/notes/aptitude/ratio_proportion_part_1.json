@@ -1,0 +1,326 @@
+{
+  "topic": "ratio_proportion_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Ratio & Proportion Part 1 — Basics, Division & Combined Ratios",
+  "title_ta": "விகிதம் பகுதி 1 — அடிப்படைகள், பகிர்வு மற்றும் கூட்டு விகிதங்கள்",
+
+  "definition": {
+    "en": "Ratio is a mathematical comparison of two quantities of the same kind measured in the same units by division. Expressed as a : b or a/b in its simplest irreducible form.",
+    "ta": "விகிதம் என்பது ஒரே அலகுடைய இரு அளவுகளை வகுத்தல் முறையில் ஒப்பிடுவதாகும். இதனை a : b அல்லது a/b என எளிய வடிவத்தில் குறிப்பிடுவோம்."
+  },
+
+  "exam_importance": {
+    "en": "Ratio & Proportion is a cornerstone topic in TNPSC Aptitude for Group 1, Group 2/2A, and Group 4 exams. Questions test unit conversion, share distribution, sum of squares, and combining two ratios into A:B:C.",
+    "ta": "விகிதம் மற்றும் விகிதாச்சாரம் என்பது TNPSC தேர்வுகளுக்கான மிக முக்கிய தலைப்பாகும். அலகு மாற்றம், தொகையைப் பிரித்தளித்தல், வர்க்கங்களின் கூடுதல் மற்றும் A:B:C கூட்டு விகிதம் காண்பது தொடர்பான வினாக்கள் அடிக்கடி கேட்கப்படுகின்றன."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Ratio Definition & Simplest Form (விகிதத்தின் எளிய வடிவம்)",
+      "formula": "a : b = \\frac{a}{b} \\quad (\\text{where } b \\neq 0)",
+      "explanation": {
+        "en": "A ratio has no units. Both terms can be multiplied or divided by the same non-zero number without changing its value.",
+        "ta": "விகிதத்திற்கு அலகுகள் இல்லை. இரு உறுப்புகளையும் ஒரே பூஜ்யமற்ற எண்ணால் பெருக்கவோ வகுக்கவோ செய்யும்போது அதன் மதிப்பு மாறாது."
+      }
+    },
+    {
+      "title": "Division of Quantity in a Ratio (தொகையைப் பிரிக்கும் சூத்திரம்)",
+      "formula": "\\text{Share of } A = \\frac{a}{a + b} \\times S, \\quad \\text{Share of } B = \\frac{b}{a + b} \\times S",
+      "explanation": {
+        "en": "To divide a total sum S in the ratio a : b, divide S by the sum of ratio terms (a + b) to get 1 part, then multiply by respective ratio terms.",
+        "ta": "S என்ற தொகையை a : b என்ற விகிதத்தில் பிரிக்க, 1 பங்கின் மதிப்பு = S / (a + b). பின் முறையே a மற்றும் b ஆல் பெருக்க வேண்டும்."
+      }
+    },
+    {
+      "title": "Combining Ratios A:B and B:C to A:B:C (கூட்டு விகிதம் காணும் சூத்திரம்)",
+      "formula": "\\text{If } A:B = x:y \\text{ and } B:C = m:n, \\text{ then } A:B:C = (x \\times m) : (y \\times m) : (y \\times n)",
+      "explanation": {
+        "en": "Make the common term (B) equal in both ratios by taking LCM or multiplying cross terms to get the unified ratio A:B:C.",
+        "ta": "இரு விகிதங்களிலும் பொதுவான உறுப்பான B-ன் மதிப்பை சமப்படுத்தி A:B:C விகிதத்தைக் கண்டறிதல்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Unit Normalization Rule (அலகு சமப்படுத்துதல் விதி)",
+      "points": {
+        "en": [
+          "Ratios can only be formed between quantities measured in identical units.",
+          "Convert larger units to smaller units before writing ratio (e.g. Rupee to Paise, Kg to Grams, Hours to Minutes).",
+          "Example: 75 paise to ₹3 = 75 paise to 300 paise = 75 : 300 = 1 : 4."
+        ],
+        "ta": [
+          "விகிதம் காணும் இரண்டு அளவுகளும் ஒரே அலகில் இருக்க வேண்டும்.",
+          "பெரிய அலகை சிறிய அலகாக மாற்றிய பிறகே விகிதம் எழுத வேண்டும் (எ.கா. ரூபாய் → பைசா, கி.கி → கிராம், மணி → நிமிடம்).",
+          "எடுத்துக்காட்டு: 75 பைசாவுக்கும் ₹3-க்கும் உள்ள விகிதம் = 75 பைசா : 300 பைசா = 75 : 300 = 1 : 4."
+        ]
+      }
+    },
+    {
+      "title": "Fractional & Cross-Equality Ratios (பின்ன மற்றும் சமநிலை விகிதங்கள்)",
+      "points": {
+        "en": [
+          "To simplify fractional ratios like (1/2 : 1/3 : 1/4), multiply each fraction by LCM of denominators (LCM of 2, 3, 4 = 12) -> (6 : 4 : 3).",
+          "If xA = yB = zC, then A : B : C = (1/x) : (1/y) : (1/z).",
+          "If A/x = B/y = C/z, then A : B : C = x : y : z directly."
+        ],
+        "ta": [
+          "(1/2 : 1/3 : 1/4) போன்ற பின்ன விகிதங்களை சுருக்க, பகுதிகளின் மீ.சி.ம-வால் பெருக்க வேண்டும் (2, 3, 4 மீ.சி.ம = 12) -> (6 : 4 : 3).",
+          "xA = yB = zC எனில், A : B : C = (1/x) : (1/y) : (1/z).",
+          "A/x = B/y = C/z எனில், A : B : C = x : y : z நேரடியாக அமையும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "N-Method Shortcut for A:B:C",
+      "points": {
+        "en": [
+          "Write A:B = a:b on line 1, and B:C = c:d on line 2.",
+          "A = a × c, B = b × c, C = b × d.",
+          "Directly yields A : B : C in a single line."
+        ],
+        "ta": [
+          "A:B = a:b ஐ முதல் வரியிலும், B:C = c:d ஐ இரண்டாம் வரியிலும் எழுதவும்.",
+          "A = a × c, B = b × c, C = b × d எனப் பெருக்க A:B:C நொடியில் கிடைக்கும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Forming Ratio Without Converting Units",
+      "explanation": {
+        "en": "Writing ratio of 500 grams to 2 kg directly as 500 : 2 = 250 : 1 is WRONG. Units must be equalized first.",
+        "ta": "500 கிராமிற்கும் 2 கி.கி-க்கும் உள்ள விகிதத்தை 500 : 2 = 250 : 1 என அலகு மாற்றாமல் எழுதுவது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Always convert 2 kg = 2000 grams first, then calculate 500 : 2000 = 1 : 4.",
+        "ta": "முதலில் 2 கி.கி = 2000 கிராம் என மாற்றி, பின்னர் 500 : 2000 = 1 : 4 என சுருக்கவும்."
+      }
+    },
+    {
+      "trap": "Misinterpreting 2A = 3B = 4C as A:B:C = 2:3:4",
+      "explanation": {
+        "en": "2A = 3B = 4C does NOT mean A:B:C = 2:3:4. In fact, A = k/2, B = k/3, C = k/4.",
+        "ta": "2A = 3B = 4C என்பதன் அர்த்தம் A:B:C = 2:3:4 அல்ல. A = k/2, B = k/3, C = k/4 ஆகும்."
+      },
+      "avoidance": {
+        "en": "Take LCM of 2, 3, 4 = 12. Then A:B:C = (12/2) : (12/3) : (12/4) = 6 : 4 : 3.",
+        "ta": "2, 3, 4-ன் மீ.சி.ம = 12. எனவே A:B:C = (12/2) : (12/3) : (12/4) = 6 : 4 : 3 எனக் கணக்கிடுக."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the ratio of 75 paise to ₹3.",
+      "method": "Unit Normalization Method",
+      "steps": [
+        "Step 1: Convert ₹3 to paise: ₹1 = 100 paise \\(\\implies ₹3 = 300\\) paise.",
+        "Step 2: Form ratio with identical units: 75 paise : 300 paise.",
+        "Step 3: Simplify by dividing both terms by 75: \\(\\frac{75}{75} : \\frac{300}{75} = 1 : 4\\)."
+      ],
+      "answer": "1 : 4"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Divide ₹1,200 between A and B in the ratio 3 : 5. Find the share of each.",
+      "method": "Sum of Ratio Terms Division",
+      "steps": [
+        "Step 1: Total sum S = ₹1,200. Ratio = 3 : 5.",
+        "Step 2: Sum of ratio terms = 3 + 5 = 8 parts.",
+        "Step 3: Value of 1 part = \\(1200 / 8 = ₹150\\).",
+        "Step 4: Share of A = 3 × 150 = ₹450.",
+        "Step 5: Share of B = 5 × 150 = ₹750."
+      ],
+      "answer": "A's share = ₹450, B's share = ₹750"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Sum of squares of three positive numbers is 608 and they are in the ratio 2 : 3 : 5. Find the numbers.",
+      "method": "Algebraic Ratio Multiplier (x)",
+      "steps": [
+        "Step 1: Let the three numbers be 2x, 3x, and 5x.",
+        "Step 2: Write sum of squares equation: \\((2x)^2 + (3x)^2 + (5x)^2 = 608\\).",
+        "Step 3: Expand squares: \\(4x^2 + 9x^2 + 25x^2 = 608 \\implies 38x^2 = 608\\).",
+        "Step 4: Solve for x²: \\(x^2 = \\frac{608}{38} = 16 \\implies x = 4\\).",
+        "Step 5: Calculate numbers: 2(4) = 8, 3(4) = 12, 5(4) = 20."
+      ],
+      "answer": "8, 12, 20"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If A : B = 2 : 3 and B : C = 4 : 5, find A : B : C and A : C.",
+      "method": "Common Term Balancing (N-Method)",
+      "steps": [
+        "Step 1: Write given ratios: A : B = 2 : 3 and B : C = 4 : 5.",
+        "Step 2: Multiply 1st ratio by 4: A : B = 8 : 12.",
+        "Step 3: Multiply 2nd ratio by 3: B : C = 12 : 15.",
+        "Step 4: Combined ratio A : B : C = 8 : 12 : 15.",
+        "Step 5: Ratio A : C = 8 : 15."
+      ],
+      "answer": "A : B : C = 8 : 12 : 15, A : C = 8 : 15"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "If 30% of A = 0.25 of B = 1/5 of C, find the ratio A : B : C.",
+      "method": "Fraction Conversion & Equal Constant (k)",
+      "steps": [
+        "Step 1: Express all coefficients as fractions:",
+        "30% of A = \\(\\frac{30}{100}A = \\frac{3}{10}A\\).",
+        "0.25 of B = \\(\\frac{25}{100}B = \\frac{1}{4}B\\).",
+        "1/5 of C = \\(\\frac{1}{5}C\\).",
+        "Step 2: Equate to constant k: \\(\\frac{3}{10}A = \\frac{1}{4}B = \\frac{1}{5}C = k\\).",
+        "Step 3: Express A, B, C in terms of k: \\(A = \\frac{10}{3}k, B = 4k, C = 5k\\).",
+        "Step 4: Ratio A : B : C = \\(\\frac{10}{3} : 4 : 5\\).",
+        "Step 5: Multiply all terms by 3: \\(10 : 12 : 15\\)."
+      ],
+      "answer": "10 : 12 : 15"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "Three persons A, B, C share a sum such that A gets 2/3 of B's share, and B gets 1/4 of C's share. If the difference between C's share and A's share is ₹500, find the total sum.",
+      "method": "Fractional Ratio Construction & Share Difference",
+      "steps": [
+        "Step 1: Write individual ratios: A = (2/3)B \\(\\implies A : B = 2 : 3\\).",
+        "Step 2: B = (1/4)C \\(\\implies B : C = 1 : 4 = 3 : 12\\).",
+        "Step 3: Combined ratio A : B : C = 2 : 3 : 12.",
+        "Step 4: Let shares be 2x, 3x, 12x. Total sum = 17x.",
+        "Step 5: Difference C - A = 12x - 2x = 10x = ₹500 \\(\\implies x = 50\\).",
+        "Step 6: Total sum = 17 × 50 = ₹850."
+      ],
+      "answer": "₹850"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the ratio of 2 hours 40 minutes to 4 hours.",
+      "options": ["A) 2 : 3", "B) 3 : 4", "C) 4 : 5", "D) 1 : 2"],
+      "correct_option": "A) 2 : 3",
+      "explanation": "2 hrs 40 mins = 160 mins. 4 hrs = 240 mins. Ratio = 160 : 240 = 2 : 3."
+    },
+    {
+      "id": 2,
+      "question": "A sum of ₹1,050 is divided among A, B, C in the ratio 2 : 3 : 5. Find the share of B.",
+      "options": ["A) ₹210", "B) ₹315", "C) ₹525", "D) ₹420"],
+      "correct_option": "B) ₹315",
+      "explanation": "Total parts = 2 + 3 + 5 = 10. 1 part = 1050/10 = ₹105. B's share = 3 × 105 = ₹315."
+    },
+    {
+      "id": 3,
+      "question": "If A : B = 3 : 4 and B : C = 8 : 9, find A : C.",
+      "options": ["A) 1 : 2", "B) 2 : 3", "C) 3 : 4", "D) 4 : 5"],
+      "correct_option": "B) 2 : 3",
+      "explanation": "A/C = (A/B) × (B/C) = (3/4) × (8/9) = 2/3 => A : C = 2 : 3."
+    },
+    {
+      "id": 4,
+      "question": "If 2A = 3B = 4C, find A : B : C.",
+      "options": ["A) 2 : 3 : 4", "B) 4 : 3 : 2", "C) 6 : 4 : 3", "D) 3 : 4 : 6"],
+      "correct_option": "C) 6 : 4 : 3",
+      "explanation": "LCM(2, 3, 4) = 12. A : B : C = 12/2 : 12/3 : 12/4 = 6 : 4 : 3."
+    },
+    {
+      "id": 5,
+      "question": "The ratio of two numbers is 4 : 7 and their sum is 132. Find the smaller number.",
+      "options": ["A) 44", "B) 48", "C) 77", "D) 36"],
+      "correct_option": "B) 48",
+      "explanation": "Total parts = 4 + 7 = 11. 1 part = 132/11 = 12. Smaller number = 4 × 12 = 48."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Ratio Unit Rule",
+      "back": "Both quantities must be converted to the same unit before writing a ratio."
+    },
+    {
+      "front": "Division in Ratio Formula",
+      "back": "Share = (Ratio Part / Total Parts) × Total Sum."
+    },
+    {
+      "front": "A:B and B:C to A:B:C Shortcut",
+      "back": "A = a×c, B = b×c, C = b×d [for A:B = a:b and B:C = c:d]."
+    },
+    {
+      "front": "xA = yB = zC Conversion",
+      "back": "A : B : C = (1/x) : (1/y) : (1/z) = LCM(x,y,z)/x : LCM/y : LCM/z."
+    },
+    {
+      "front": "Simplifying Fractional Ratios",
+      "back": "Multiply all fractions by the LCM of their denominators."
+    }
+  ],
+
+  "mind_map": {
+    "title": "Ratio Part 1 — Basics & Combined Ratios Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Ratio Basics & Division",
+        "children": ["unit_norm", "share_div", "combined_ratios"]
+      },
+      {
+        "id": "unit_norm",
+        "label": "Unit Normalization",
+        "children": ["same_unit_rule", "fraction_lcm"]
+      },
+      {
+        "id": "same_unit_rule",
+        "label": "Convert to Smaller Unit First",
+        "children": []
+      },
+      {
+        "id": "fraction_lcm",
+        "label": "Multiply Fractions by LCM(Den)",
+        "children": []
+      },
+      {
+        "id": "share_div",
+        "label": "Share Division Models",
+        "children": ["sum_parts", "sum_of_squares"]
+      },
+      {
+        "id": "sum_parts",
+        "label": "1 Part = Sum / (a+b+c)",
+        "children": []
+      },
+      {
+        "id": "sum_of_squares",
+        "label": "Sum of Squares: (ax)²+(bx)² = S ⇒ Solve x",
+        "children": []
+      },
+      {
+        "id": "combined_ratios",
+        "label": "Combined Ratios A:B:C",
+        "children": ["n_method", "cross_equality"]
+      },
+      {
+        "id": "n_method",
+        "label": "A:B = a:b, B:C = c:d ⇒ (ac):(bc):(bd)",
+        "children": []
+      },
+      {
+        "id": "cross_equality",
+        "label": "xA = yB = zC ⇒ A:B:C = 1/x : 1/y : 1/z",
+        "children": []
+      }
+    ]
+  }
+}

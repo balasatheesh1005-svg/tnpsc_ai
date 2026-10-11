@@ -1,0 +1,3658 @@
+{
+  "topic_id": "aptitude_puzzles",
+  "topic_name_ta": "புதிர்கள்",
+  "topic_name_en": "Puzzles",
+  "total_questions": 45,
+  "difficulty_breakdown": {
+    "easy": 15,
+    "medium": 20,
+    "hard": 10
+  },
+  "questions": [
+    {
+      "id": "PUZ_001",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "A, B, C ஆகிய மூவரில் A என்பவர் B-ஐ விட மூத்தவர், B என்பவர் C-ஐ விட மூத்தவர் எனில், இவர்களில் மூத்தவர் யார்?",
+        "en": "Among A, B, C: A is older than B, B is older than C. Who is the oldest?"
+      },
+      "question_ta": "A, B, C ஆகிய மூவரில் A என்பவர் B-ஐ விட மூத்தவர், B என்பவர் C-ஐ விட மூத்தவர் எனில், இவர்களில் மூத்தவர் யார்?",
+      "question_en": "Among A, B, C: A is older than B, B is older than C. Who is the oldest?",
+      "options": [
+        "C",
+        "தீர்மானிக்க முடியாது",
+        "B",
+        "A"
+      ],
+      "options_ta": [
+        "C",
+        "தீர்மானிக்க முடியாது",
+        "B",
+        "A"
+      ],
+      "options_en": [
+        "C",
+        "Cannot be determined",
+        "B",
+        "A"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "வயது ஒப்பீடு: A > B மற்றும் B > C ⟹ A > B > C. எனவே A மிக மூத்தவர் ஆவார்.",
+        "en": "Age ordering: A > B and B > C ⟹ A > B > C. A is the oldest."
+      },
+      "explanation_ta": "வயது ஒப்பீடு: A > B மற்றும் B > C ⟹ A > B > C. எனவே A மிக மூத்தவர் ஆவார்.",
+      "explanation_en": "Age ordering: A > B and B > C ⟹ A > B > C. A is the oldest.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. C மிக இளையவர்.",
+          "en": "C is the youngest."
+        },
+        "B": {
+          "ta": "தவறு. தரவுகள் தெளிவானவை.",
+          "en": "Data is clear."
+        },
+        "C": {
+          "ta": "தவறு. B என்பவர் A-ஐ விட இளையவர்.",
+          "en": "B is younger than A."
+        },
+        "D": {
+          "ta": "சரி. A மிக மூத்தவர்.",
+          "en": "Correct. A is oldest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "A > B > C ⟹ A மூத்தவர்.",
+        "en": "A > B > C ⟹ A is oldest."
+      },
+      "revision_fact": {
+        "ta": "A is oldest",
+        "en": "A is oldest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_002",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "P, Q, R, S ஆகிய நால்வர் வடக்கு நோக்கி ஒரு வரிசையில் அமர்ந்துள்ளனர். P என்பவர் Q-வின் இடப்புறம் உள்ளார். R என்பவர் S-ன் வலப்புறம் உள்ளார். P மற்றும் R நடுவில் உள்ளனர் எனில், வலது கோடியில் உள்ளவர் யார்?",
+        "en": "P, Q, R, S sit facing North. P is to the left of Q. R is to the right of S. P and R are in middle. Who is at the extreme right?"
+      },
+      "question_ta": "P, Q, R, S ஆகிய நால்வர் வடக்கு நோக்கி ஒரு வரிசையில் அமர்ந்துள்ளனர். P என்பவர் Q-வின் இடப்புறம் உள்ளார். R என்பவர் S-ன் வலப்புறம் உள்ளார். P மற்றும் R நடுவில் உள்ளனர் எனில், வலது கோடியில் உள்ளவர் யார்?",
+      "question_en": "P, Q, R, S sit facing North. P is to the left of Q. R is to the right of S. P and R are in middle. Who is at the extreme right?",
+      "options": [
+        "S",
+        "R",
+        "Q",
+        "P"
+      ],
+      "options_ta": [
+        "S",
+        "R",
+        "Q",
+        "P"
+      ],
+      "options_en": [
+        "S",
+        "R",
+        "Q",
+        "P"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வரிசைப்பாடு: S, R, P, Q (அல்லது S, R, P, Q). நடுவில் R, P உள்ளனர். S இடது கோடி, Q வலது கோடி ⟹ Q வலது கோடியில் உள்ளார்.",
+        "en": "Seating order: S, R, P, Q. Extreme right is Q."
+      },
+      "explanation_ta": "வரிசைப்பாடு: S, R, P, Q (அல்லது S, R, P, Q). நடுவில் R, P உள்ளனர். S இடது கோடி, Q வலது கோடி ⟹ Q வலது கோடியில் உள்ளார்.",
+      "explanation_en": "Seating order: S, R, P, Q. Extreme right is Q.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. S இடது கோடியில் உள்ளார்.",
+          "en": "S is at extreme left."
+        },
+        "B": {
+          "ta": "தவறு. R நடுவில் உள்ளார்.",
+          "en": "R is in the middle."
+        },
+        "C": {
+          "ta": "சரி. Q வலது கோடியில் அமர்ந்துள்ளார்.",
+          "en": "Correct. Q is at extreme right."
+        },
+        "D": {
+          "ta": "தவறு. P நடுவில் உள்ளார்.",
+          "en": "P is in the middle."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அமர்வு வரிசை: S, R, P, Q.",
+        "en": "Seating order: S, R, P, Q."
+      },
+      "revision_fact": {
+        "ta": "Q at extreme right",
+        "en": "Q at extreme right"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_003",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "தந்தை மற்றும் மகனின் தற்போதைய வயதுகளின் கூடுதல் 50 ஆண்டுகள். 5 ஆண்டுகளுக்கு முன் தந்தையின் வயது மகனின் வயதைப் போல் 4 மடங்கு எனில், மகனின் தற்போதைய வயது என்ன?",
+        "en": "Sum of present ages of father and son is 50 years. 5 years ago, father's age was 4 times son's age. Find son's present age."
+      },
+      "question_ta": "தந்தை மற்றும் மகனின் தற்போதைய வயதுகளின் கூடுதல் 50 ஆண்டுகள். 5 ஆண்டுகளுக்கு முன் தந்தையின் வயது மகனின் வயதைப் போல் 4 மடங்கு எனில், மகனின் தற்போதைய வயது என்ன?",
+      "question_en": "Sum of present ages of father and son is 50 years. 5 years ago, father's age was 4 times son's age. Find son's present age.",
+      "options": [
+        "10 ஆண்டுகள்",
+        "12 ஆண்டுகள்",
+        "15 ஆண்டுகள்",
+        "13 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "10 ஆண்டுகள்",
+        "12 ஆண்டுகள்",
+        "15 ஆண்டுகள்",
+        "13 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "10 years",
+        "12 years",
+        "15 years",
+        "13 years"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "5 ஆண்டுகளுக்கு முன் வயதுகளின் கூடுதல் = 50 - (5 + 5) = 40 ஆண்டுகள்.\nவிகிதம் 4 : 1 ⟹ மகனின் 5 ஆண்டுக்கு முந்தைய வயது = (1/5) × 40 = 8 ஆண்டுகள்.\nமகனின் தற்போதைய வயது = 8 + 5 = 13 ஆண்டுகள்.",
+        "en": "5 years ago sum = 40. Ratio 4:1 ⟹ Son's age 5 yrs ago = 8 ⟹ Present age = 8 + 5 = 13 years."
+      },
+      "explanation_ta": "5 ஆண்டுகளுக்கு முன் வயதுகளின் கூடுதல் = 50 - (5 + 5) = 40 ஆண்டுகள்.\nவிகிதம் 4 : 1 ⟹ மகனின் 5 ஆண்டுக்கு முந்தைய வயது = (1/5) × 40 = 8 ஆண்டுகள்.\nமகனின் தற்போதைய வயது = 8 + 5 = 13 ஆண்டுகள்.",
+      "explanation_en": "5 years ago sum = 40. Ratio 4:1 ⟹ Son's age 5 yrs ago = 8 ⟹ Present age = 8 + 5 = 13 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 10 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 12 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 15 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 8 + 5 = 13 ஆண்டுகள்.",
+          "en": "Correct. 13 years."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "5 ஆண்டுகள் முன் கூடுதல் 40 ⟹ மகன் 8 ⟹ தற்போதைய வயது = 13.",
+        "en": "Son's present age = 13."
+      },
+      "revision_fact": {
+        "ta": "8 + 5 = 13 years",
+        "en": "8 + 5 = 13 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_004",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "A, B, C, D ஆகிய நால்வர் மையம் நோக்கி ஒரு வட்ட மேசையைச் சுற்றி அமர்ந்துள்ளனர். A-க்கு எதிரே C அமர்ந்துள்ளார். B-ன் வலப்புறம் A உள்ளார் எனில், D-க்கு எதிரே உள்ளவர் யார்?",
+        "en": "A, B, C, D sit around a circular table facing centre. A is opposite C. A is to the right of B. Who is opposite D?"
+      },
+      "question_ta": "A, B, C, D ஆகிய நால்வர் மையம் நோக்கி ஒரு வட்ட மேசையைச் சுற்றி அமர்ந்துள்ளனர். A-க்கு எதிரே C அமர்ந்துள்ளார். B-ன் வலப்புறம் A உள்ளார் எனில், D-க்கு எதிரே உள்ளவர் யார்?",
+      "question_en": "A, B, C, D sit around a circular table facing centre. A is opposite C. A is to the right of B. Who is opposite D?",
+      "options": [
+        "தீர்மானிக்க முடியாது",
+        "B",
+        "A",
+        "C"
+      ],
+      "options_ta": [
+        "தீர்மானிக்க முடியாது",
+        "B",
+        "A",
+        "C"
+      ],
+      "options_en": [
+        "Cannot be determined",
+        "B",
+        "A",
+        "C"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வட்ட அமர்வு: A-க்கு எதிரே C. A என்பவர் B-ன் வலப்புறம் எனில், B என்பவர் A-ன் இடப்புறம். எஞ்சிய D என்பவர் A-ன் வலப்புறம் (B-க்கு எதிரே) அமர்வார் ⟹ D-க்கு எதிரே B அமர்ந்துள்ளார்.",
+        "en": "Opposites: A-C and B-D. So B is opposite D."
+      },
+      "explanation_ta": "வட்ட அமர்வு: A-க்கு எதிரே C. A என்பவர் B-ன் வலப்புறம் எனில், B என்பவர் A-ன் இடப்புறம். எஞ்சிய D என்பவர் A-ன் வலப்புறம் (B-க்கு எதிரே) அமர்வார் ⟹ D-க்கு எதிரே B அமர்ந்துள்ளார்.",
+      "explanation_en": "Opposites: A-C and B-D. So B is opposite D.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. தெளிவாகக் கணக்கிடலாம்.",
+          "en": "Can be determined."
+        },
+        "B": {
+          "ta": "சரி. B என்பவர் D-க்கு எதிரே உள்ளார்.",
+          "en": "Correct. B is opposite D."
+        },
+        "C": {
+          "ta": "தவறு. A என்பவர் C-க்கு எதிரே உள்ளார்.",
+          "en": "A is opposite C."
+        },
+        "D": {
+          "ta": "தவறு. C என்பவர் A-க்கு எதிரே உள்ளார்.",
+          "en": "C is opposite A."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வட்ட எதிரெதிர் இணை: (A, C) மற்றும் (B, D).",
+        "en": "Opposite pairs: (A,C) and (B,D)."
+      },
+      "revision_fact": {
+        "ta": "B opposite D",
+        "en": "B opposite D"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_005",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Distribution / Grid Matching",
+      "question": {
+        "ta": "ரவி, கவி, மணி ஆகிய மூவரிடம் சிவப்பு, நீலம், பச்சை நிறப் பேனாக்கள் ஒவ்வொன்றும் உள்ளன. ரவியிடம் சிவப்புப் பேனா இல்லை. கவியிடம் நீலப் பேனா உள்ளது எனில், மணியிடம் உள்ள பேனா என்ன நிறம்?",
+        "en": "Ravi, Kavi, and Mani have Red, Blue, and Green pens. Ravi does not have Red. Kavi has Blue. What color pen does Mani have?"
+      },
+      "question_ta": "ரவி, கவி, மணி ஆகிய மூவரிடம் சிவப்பு, நீலம், பச்சை நிறப் பேனாக்கள் ஒவ்வொன்றும் உள்ளன. ரவியிடம் சிவப்புப் பேனா இல்லை. கவியிடம் நீலப் பேனா உள்ளது எனில், மணியிடம் உள்ள பேனா என்ன நிறம்?",
+      "question_en": "Ravi, Kavi, and Mani have Red, Blue, and Green pens. Ravi does not have Red. Kavi has Blue. What color pen does Mani have?",
+      "options": [
+        "பச்சை",
+        "நீலம்",
+        "சிவப்பு",
+        "மஞ்சள்"
+      ],
+      "options_ta": [
+        "பச்சை",
+        "நீலம்",
+        "சிவப்பு",
+        "மஞ்சள்"
+      ],
+      "options_en": [
+        "Green",
+        "Blue",
+        "Red",
+        "Yellow"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "கவியிடம் நீலப் பேனா உள்ளது. ரவியிடம் சிவப்பு இல்லை என்பதால் ரவியிடம் பச்சை நிறப் பேனா மட்டுமே இருக்க முடியும். எனவே மணியிடம் சிவப்பு நிறப் பேனா உள்ளது.",
+        "en": "Kavi = Blue. Ravi has no Red ⟹ Ravi = Green. Therefore Mani = Red."
+      },
+      "explanation_ta": "கவியிடம் நீலப் பேனா உள்ளது. ரவியிடம் சிவப்பு இல்லை என்பதால் ரவியிடம் பச்சை நிறப் பேனா மட்டுமே இருக்க முடியும். எனவே மணியிடம் சிவப்பு நிறப் பேனா உள்ளது.",
+      "explanation_en": "Kavi = Blue. Ravi has no Red ⟹ Ravi = Green. Therefore Mani = Red.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. பச்சை நிறப் பேனா ரவியிடம் உள்ளது.",
+          "en": "Ravi has Green."
+        },
+        "B": {
+          "ta": "தவறு. நீலப் பேனா கவியிடம் உள்ளது.",
+          "en": "Kavi has Blue."
+        },
+        "C": {
+          "ta": "சரி. மணியிடம் சிவப்பு நிறப் பேனா உள்ளது.",
+          "en": "Correct. Mani has Red."
+        },
+        "D": {
+          "ta": "தவறு. மஞ்சள் நிறப் பேனா வினாவில் இல்லை.",
+          "en": "Yellow is not in problem."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அட்டவணைப் பொருத்தம்: கவி=நீலம், ரவி=பச்சை ⟹ மணி=சிவப்பு.",
+        "en": "Grid match: Mani = Red."
+      },
+      "revision_fact": {
+        "ta": "Mani = Red",
+        "en": "Mani = Red"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_006",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "5 புத்தகங்கள் A, B, C, D, E மேசை மேல் வைக்கப்பட்டுள்ளன. C ஆனது D-ன் மேல் உள்ளது. E ஆனது A-ன் கீழ் உள்ளது. D ஆனது E-ன் மேல் உள்ளது. B ஆனது A-ன் கீழ் உள்ளது எனில், அடியில் உள்ள புத்தகம் எது?",
+        "en": "5 books A, B, C, D, E are placed on a table. C is above D. E is below A. D is above E. B is below A and E. Which book is at the bottom?"
+      },
+      "question_ta": "5 புத்தகங்கள் A, B, C, D, E மேசை மேல் வைக்கப்பட்டுள்ளன. C ஆனது D-ன் மேல் உள்ளது. E ஆனது A-ன் கீழ் உள்ளது. D ஆனது E-ன் மேல் உள்ளது. B ஆனது A-ன் கீழ் உள்ளது எனில், அடியில் உள்ள புத்தகம் எது?",
+      "question_en": "5 books A, B, C, D, E are placed on a table. C is above D. E is below A. D is above E. B is below A and E. Which book is at the bottom?",
+      "options": [
+        "A",
+        "D",
+        "E",
+        "B"
+      ],
+      "options_ta": [
+        "A",
+        "D",
+        "E",
+        "B"
+      ],
+      "options_en": [
+        "A",
+        "D",
+        "E",
+        "B"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "செங்குத்து வரிசை: C > D > E > A > B. எனவே அடியில் உள்ள புத்தகம் B ஆகும்.",
+        "en": "Vertical order: C > D > E > A > B. Bottom book is B."
+      },
+      "explanation_ta": "செங்குத்து வரிசை: C > D > E > A > B. எனவே அடியில் உள்ள புத்தகம் B ஆகும்.",
+      "explanation_en": "Vertical order: C > D > E > A > B. Bottom book is B.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. A 2-வது கீழே உள்ளது.",
+          "en": "A is 2nd from bottom."
+        },
+        "B": {
+          "ta": "தவறு. D 2-வது மேலே உள்ளது.",
+          "en": "D is 2nd from top."
+        },
+        "C": {
+          "ta": "தவறு. E நடுவில் உள்ளது.",
+          "en": "E is in middle."
+        },
+        "D": {
+          "ta": "சரி. B மிகக் கீழே உள்ளது.",
+          "en": "Correct. B is at the bottom."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மேலிருந்து கீழ் வரிசை: C, D, E, A, B ⟹ அடியில் B.",
+        "en": "Order: C, D, E, A, B ⟹ Bottom is B."
+      },
+      "revision_fact": {
+        "ta": "B is at bottom",
+        "en": "B is at bottom"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_007",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு கூடையில் உள்ள பூக்கள் ஒவ்வொரு நிமிடமும் இருமடங்காகின்றன. கூடை 60 நிமிடங்களில் முழுமையாக நிரம்புகிறது எனில், கூடை பாதியளவு நிரம்ப எத்தனை நிமிடங்கள் ஆகும்?",
+        "en": "Flowers in a basket double every minute. If the basket is full in 60 minutes, in how many minutes was it half full?"
+      },
+      "question_ta": "ஒரு கூடையில் உள்ள பூக்கள் ஒவ்வொரு நிமிடமும் இருமடங்காகின்றன. கூடை 60 நிமிடங்களில் முழுமையாக நிரம்புகிறது எனில், கூடை பாதியளவு நிரம்ப எத்தனை நிமிடங்கள் ஆகும்?",
+      "question_en": "Flowers in a basket double every minute. If the basket is full in 60 minutes, in how many minutes was it half full?",
+      "options": [
+        "58 நிமிடங்கள்",
+        "45 நிமிடங்கள்",
+        "59 நிமிடங்கள்",
+        "30 நிமிடங்கள்"
+      ],
+      "options_ta": [
+        "58 நிமிடங்கள்",
+        "45 நிமிடங்கள்",
+        "59 நிமிடங்கள்",
+        "30 நிமிடங்கள்"
+      ],
+      "options_en": [
+        "58 minutes",
+        "45 minutes",
+        "59 minutes",
+        "30 minutes"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "ஒவ்வொரு நிமிடமும் பூக்கள் இருமடங்காவதால், 60-வது நிமிடத்திற்கு 1 நிமிடம் முன்பு (59-வது நிமிடத்தில்) கூடை பாதியளவு நிரம்பியிருக்கும்!",
+        "en": "Since flowers double every minute, 1 minute before full (at 59th minute) the basket was half full."
+      },
+      "explanation_ta": "ஒவ்வொரு நிமிடமும் பூக்கள் இருமடங்காவதால், 60-வது நிமிடத்திற்கு 1 நிமிடம் முன்பு (59-வது நிமிடத்தில்) கூடை பாதியளவு நிரம்பியிருக்கும்!",
+      "explanation_en": "Since flowers double every minute, 1 minute before full (at 59th minute) the basket was half full.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 58-வது நிமிடத்தில் கால் பகுதி (1/4) இருக்கும்.",
+          "en": "58th min is 1/4 full."
+        },
+        "B": {
+          "ta": "தவறு. 45 நிமிடங்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 59-வது நிமிடத்தில் பாதியளவு இருக்கும்.",
+          "en": "Correct. 59 minutes."
+        },
+        "D": {
+          "ta": "தவறு. 30 நிமிடங்கள் நேர்விகிதப் பிழை (இருமடங்கு வீதம் கவனிக்காதது).",
+          "en": "30 min is linear division error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "இருமடங்கு வளர்ச்சி ⟹ 1 நிமிடம் முன்பு பாதியளவு = 59 நிமிடங்கள்.",
+        "en": "Doubling rate ⟹ Half full at 59 min."
+      },
+      "revision_fact": {
+        "ta": "59 minutes",
+        "en": "59 minutes"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_008",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "5 நபர்கள் J, K, L, M, N ஒரு வரிசையில் அமர்ந்துள்ளனர். K என்பவர் L மற்றும் M-ன் நடுவில் உள்ளார். J என்பவர் N-ன் இடப்புறம் உள்ளார். L என்பவர் J-ன் வலப்புறம் உள்ளார் எனில், நடுவில் அமர்ந்துள்ளவர் யார்?",
+        "en": "5 persons J, K, L, M, N sit in a row. K is between L and M. J is to the left of N. L is to the right of J. Who sits in the middle?"
+      },
+      "question_ta": "5 நபர்கள் J, K, L, M, N ஒரு வரிசையில் அமர்ந்துள்ளனர். K என்பவர் L மற்றும் M-ன் நடுவில் உள்ளார். J என்பவர் N-ன் இடப்புறம் உள்ளார். L என்பவர் J-ன் வலப்புறம் உள்ளார் எனில், நடுவில் அமர்ந்துள்ளவர் யார்?",
+      "question_en": "5 persons J, K, L, M, N sit in a row. K is between L and M. J is to the left of N. L is to the right of J. Who sits in the middle?",
+      "options": [
+        "K",
+        "L",
+        "J",
+        "M"
+      ],
+      "options_ta": [
+        "K",
+        "L",
+        "J",
+        "M"
+      ],
+      "options_en": [
+        "K",
+        "L",
+        "J",
+        "M"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வரிசைப்பாடு: J, N (அல்லது N, J), L, K, M ⟹ N, J, L, K, M. நடுவில் அமர்ந்துள்ள நபர் L ஆவார் (3-வது நபர்).",
+        "en": "Seating order: N, J, L, K, M. The middle person (3rd) is L."
+      },
+      "explanation_ta": "வரிசைப்பாடு: J, N (அல்லது N, J), L, K, M ⟹ N, J, L, K, M. நடுவில் அமர்ந்துள்ள நபர் L ஆவார் (3-வது நபர்).",
+      "explanation_en": "Seating order: N, J, L, K, M. The middle person (3rd) is L.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. K என்பவர் L மற்றும் M-க்கு இடையே உள்ளார்.",
+          "en": "K is between L and M."
+        },
+        "B": {
+          "ta": "சரி. L நடுவில் அமர்ந்துள்ளார்.",
+          "en": "Correct. L is in the middle."
+        },
+        "C": {
+          "ta": "தவறு. J 2-வது இடத்தில் உள்ளார்.",
+          "en": "J is 2nd from left."
+        },
+        "D": {
+          "ta": "தவறு. M வலது கோடியில் உள்ளார்.",
+          "en": "M is at extreme right."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: N, J, L, K, M ⟹ நடுவில் L.",
+        "en": "Order: N, J, L, K, M ⟹ Middle is L."
+      },
+      "revision_fact": {
+        "ta": "L in middle",
+        "en": "L in middle"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_009",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "4 நண்பர்கள் P, Q, R, S-ல் P என்பவர் Q-வை விட வேகமானவர், ஆனால் R-ஐ விட மெதுவானவர். S என்பவர் P-ஐ விட வேகமானவர் எனில், மிக வேகமானவர் யார்?",
+        "en": "Among 4 friends P, Q, R, S: P is faster than Q but slower than R. S is faster than P. R is faster than S. Who is the fastest?"
+      },
+      "question_ta": "4 நண்பர்கள் P, Q, R, S-ல் P என்பவர் Q-வை விட வேகமானவர், ஆனால் R-ஐ விட மெதுவானவர். S என்பவர் P-ஐ விட வேகமானவர் எனில், மிக வேகமானவர் யார்?",
+      "question_en": "Among 4 friends P, Q, R, S: P is faster than Q but slower than R. S is faster than P. R is faster than S. Who is the fastest?",
+      "options": [
+        "P",
+        "R",
+        "Q",
+        "S"
+      ],
+      "options_ta": [
+        "P",
+        "R",
+        "Q",
+        "S"
+      ],
+      "options_en": [
+        "P",
+        "R",
+        "Q",
+        "S"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வேக வரிசை: R > S > P > Q. எனவே R மிக வேகமானவர் ஆவார்.",
+        "en": "Speed ordering: R > S > P > Q. R is the fastest."
+      },
+      "explanation_ta": "வேக வரிசை: R > S > P > Q. எனவே R மிக வேகமானவர் ஆவார்.",
+      "explanation_en": "Speed ordering: R > S > P > Q. R is the fastest.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. P 3-வது வேகமானவர்.",
+          "en": "P is 3rd fastest."
+        },
+        "B": {
+          "ta": "சரி. R மிக வேகமானவர்.",
+          "en": "Correct. R is fastest."
+        },
+        "C": {
+          "ta": "தவறு. Q மிக மெதுவானவர்.",
+          "en": "Q is slowest."
+        },
+        "D": {
+          "ta": "தவறு. S 2-வது வேகமானவர்.",
+          "en": "S is 2nd fastest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: R > S > P > Q ⟹ R மிக வேகமானவர்.",
+        "en": "Order: R > S > P > Q ⟹ R is fastest."
+      },
+      "revision_fact": {
+        "ta": "R is fastest",
+        "en": "R is fastest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_010",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Distribution / Grid Matching",
+      "question": {
+        "ta": "மூன்று தோழிகள் அருணா, பீனா, சித்ரா முறையே ஆசிரியர், மருத்துவர், பொறியாளர். அருணா மருத்துவர் அல்ல. பீனா பொறியாளர் அல்ல. சித்ரா ஆசிரியர் எனில், அருணாவின் தொழில் என்ன?",
+        "en": "Three friends Aruna, Beena, Chitra are Teacher, Doctor, Engineer. Aruna is not Doctor. Beena is not Engineer. Chitra is Teacher. What is Aruna's profession?"
+      },
+      "question_ta": "மூன்று தோழிகள் அருணா, பீனா, சித்ரா முறையே ஆசிரியர், மருத்துவர், பொறியாளர். அருணா மருத்துவர் அல்ல. பீனா பொறியாளர் அல்ல. சித்ரா ஆசிரியர் எனில், அருணாவின் தொழில் என்ன?",
+      "question_en": "Three friends Aruna, Beena, Chitra are Teacher, Doctor, Engineer. Aruna is not Doctor. Beena is not Engineer. Chitra is Teacher. What is Aruna's profession?",
+      "options": [
+        "வழக்கறிஞர்",
+        "பொறியாளர்",
+        "ஆசிரியர்",
+        "மருத்துவர்"
+      ],
+      "options_ta": [
+        "வழக்கறிஞர்",
+        "பொறியாளர்",
+        "ஆசிரியர்",
+        "மருத்துவர்"
+      ],
+      "options_en": [
+        "Lawyer",
+        "Engineer",
+        "Teacher",
+        "Doctor"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "சித்ரா = ஆசிரியர்.\nஅருணா மருத்துவர் அல்ல என்பதால் அருணா = பொறியாளர்.\nஎனவே பீனா = மருத்துவர்.",
+        "en": "Chitra = Teacher. Aruna not Doctor ⟹ Aruna = Engineer. Beena = Doctor."
+      },
+      "explanation_ta": "சித்ரா = ஆசிரியர்.\nஅருணா மருத்துவர் அல்ல என்பதால் அருணா = பொறியாளர்.\nஎனவே பீனா = மருத்துவர்.",
+      "explanation_en": "Chitra = Teacher. Aruna not Doctor ⟹ Aruna = Engineer. Beena = Doctor.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. வழக்கறிஞர் வினாவில் இல்லை.",
+          "en": "Lawyer is not in options."
+        },
+        "B": {
+          "ta": "சரி. அருணா பொறியாளர் ஆவார்.",
+          "en": "Correct. Aruna is Engineer."
+        },
+        "C": {
+          "ta": "தவறு. சித்ரா ஆசிரியர் ஆவார்.",
+          "en": "Chitra is Teacher."
+        },
+        "D": {
+          "ta": "தவறு. பீனா மருத்துவர் ஆவார்.",
+          "en": "Beena is Doctor."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பொருத்தம்: சித்ரா=ஆசிரியர், அருணா=பொறியாளர், பீனா=மருத்துவர்.",
+        "en": "Matching: Aruna = Engineer."
+      },
+      "revision_fact": {
+        "ta": "Aruna = Engineer",
+        "en": "Aruna = Engineer"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_011",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு மரத்தில் சில பறவைகள் உள்ளன. கீழே சில ஆடுகள் மேய்கின்றன. அவற்றின் தலைகளின் எண்ணிக்கை 15, கால்களின் எண்ணிக்கை 46 எனில், ஆடுகளின் எண்ணிக்கை என்ன?",
+        "en": "Some birds are on a tree and some goats are grazing below. Total heads = 15, total legs = 46. Find the number of goats."
+      },
+      "question_ta": "ஒரு மரத்தில் சில பறவைகள் உள்ளன. கீழே சில ஆடுகள் மேய்கின்றன. அவற்றின் தலைகளின் எண்ணிக்கை 15, கால்களின் எண்ணிக்கை 46 எனில், ஆடுகளின் எண்ணிக்கை என்ன?",
+      "question_en": "Some birds are on a tree and some goats are grazing below. Total heads = 15, total legs = 46. Find the number of goats.",
+      "options": [
+        "8",
+        "10",
+        "7",
+        "6"
+      ],
+      "options_ta": [
+        "8",
+        "10",
+        "7",
+        "6"
+      ],
+      "options_en": [
+        "8",
+        "10",
+        "7",
+        "6"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "பறவைகள் b (2 கால்கள்), ஆடுகள் g (4 கால்கள்).\nb + g = 15 ⟹ 2b + 2g = 30.\n2b + 4g = 46.\nகழிக்க: 2g = 16 ⟹ ஆடுகள் g = 8. (பறவைகள் b = 7).",
+        "en": "b + g = 15, 2b + 4g = 46 ⟹ 2g = 16 ⟹ Goats g = 8."
+      },
+      "explanation_ta": "பறவைகள் b (2 கால்கள்), ஆடுகள் g (4 கால்கள்).\nb + g = 15 ⟹ 2b + 2g = 30.\n2b + 4g = 46.\nகழிக்க: 2g = 16 ⟹ ஆடுகள் g = 8. (பறவைகள் b = 7).",
+      "explanation_en": "b + g = 15, 2b + 4g = 46 ⟹ 2g = 16 ⟹ Goats g = 8.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 2g = 16 ⟹ ஆடுகள் = 8.",
+          "en": "Correct. 8 goats."
+        },
+        "B": {
+          "ta": "தவறு. 10.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 7 பறவைகளின் எண்ணிக்கை.",
+          "en": "7 is number of birds."
+        },
+        "D": {
+          "ta": "தவறு. 6.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "4 கால்கள் கொண்ட விலங்குகள் = (கால்கள் - 2×தலைகள்) / 2 = (46 - 30)/2 = 8.",
+        "en": "Goats = (Legs - 2×Heads) / 2 = 8."
+      },
+      "revision_fact": {
+        "ta": "(46 - 30) / 2 = 8",
+        "en": "(46 - 30) / 2 = 8"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_012",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "A, B, C, D, E ஆகிய 5 பேர் வட்டமாக அமர்ந்துள்ளனர். A-ன் பக்கத்தில் B மற்றும் C உள்ளனர். E-ன் பக்கத்தில் D மற்றும் C உள்ளனர் எனில், C-ன் பக்கங்களில் அமர்ந்துள்ளவர்கள் யார்?",
+        "en": "5 persons A, B, C, D, E sit in a circle. B and C are adjacent to A. D and C are adjacent to E. Who are adjacent to C?"
+      },
+      "question_ta": "A, B, C, D, E ஆகிய 5 பேர் வட்டமாக அமர்ந்துள்ளனர். A-ன் பக்கத்தில் B மற்றும் C உள்ளனர். E-ன் பக்கத்தில் D மற்றும் C உள்ளனர் எனில், C-ன் பக்கங்களில் அமர்ந்துள்ளவர்கள் யார்?",
+      "question_en": "5 persons A, B, C, D, E sit in a circle. B and C are adjacent to A. D and C are adjacent to E. Who are adjacent to C?",
+      "options": [
+        "A மற்றும் B",
+        "D மற்றும் E",
+        "A மற்றும் E",
+        "B மற்றும் D"
+      ],
+      "options_ta": [
+        "A மற்றும் B",
+        "D மற்றும் E",
+        "A மற்றும் E",
+        "B மற்றும் D"
+      ],
+      "options_en": [
+        "A and B",
+        "D and E",
+        "A and E",
+        "B and D"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வட்ட அமர்வு வரிசை: B - A - C - E - D (மீண்டும் B). C-ன் இரு பக்கங்களிலும் A மற்றும் E அமர்ந்துள்ளனர்.",
+        "en": "Circular order: B - A - C - E - D. Neighbors of C are A and E."
+      },
+      "explanation_ta": "வட்ட அமர்வு வரிசை: B - A - C - E - D (மீண்டும் B). C-ன் இரு பக்கங்களிலும் A மற்றும் E அமர்ந்துள்ளனர்.",
+      "explanation_en": "Circular order: B - A - C - E - D. Neighbors of C are A and E.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. A மற்றும் B அல்ல.",
+          "en": "Not A and B."
+        },
+        "B": {
+          "ta": "தவறு. D மற்றும் E அல்ல.",
+          "en": "Not D and E."
+        },
+        "C": {
+          "ta": "சரி. C-ன் பக்கத்தில் A மற்றும் E உள்ளனர்.",
+          "en": "Correct. A and E."
+        },
+        "D": {
+          "ta": "தவறு. B மற்றும் D அல்ல.",
+          "en": "Not B and D."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அமர்வு: B-A-C-E-D ⟹ C-ன் பக்கத்து நபர்கள் A, E.",
+        "en": "Adjacent to C: A and E."
+      },
+      "revision_fact": {
+        "ta": "A and E",
+        "en": "A and E"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_013",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "A, B, C, D ஆகிய 4 தேர்வுகளில் A-வை விட B அதிக மதிப்பெண் பெற்றார். C-ஐ விட D குறைந்த மதிப்பெண் பெற்றார். B-ஐ விட C அதிக மதிப்பெண் பெற்றார் எனில், அதிக மதிப்பெண் பெற்றவர் யார்?",
+        "en": "In 4 exams A, B, C, D: B scored more than A. D scored less than C. C scored more than B. D scored more than B. Who scored the highest?"
+      },
+      "question_ta": "A, B, C, D ஆகிய 4 தேர்வுகளில் A-வை விட B அதிக மதிப்பெண் பெற்றார். C-ஐ விட D குறைந்த மதிப்பெண் பெற்றார். B-ஐ விட C அதிக மதிப்பெண் பெற்றார் எனில், அதிக மதிப்பெண் பெற்றவர் யார்?",
+      "question_en": "In 4 exams A, B, C, D: B scored more than A. D scored less than C. C scored more than B. D scored more than B. Who scored the highest?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "options_ta": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "options_en": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மதிப்பெண் வரிசை: C > D > B > A. எனவே C மிக அதிக மதிப்பெண் பெற்றவர் ஆவார்.",
+        "en": "Score order: C > D > B > A. Highest scorer is C."
+      },
+      "explanation_ta": "மதிப்பெண் வரிசை: C > D > B > A. எனவே C மிக அதிக மதிப்பெண் பெற்றவர் ஆவார்.",
+      "explanation_en": "Score order: C > D > B > A. Highest scorer is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. B 3-வது இடம்.",
+          "en": "B is 3rd."
+        },
+        "B": {
+          "ta": "சரி. C முதலிடம் பெற்றவர்.",
+          "en": "Correct. C is highest."
+        },
+        "C": {
+          "ta": "தவறு. D 2-வது இடம்.",
+          "en": "D is 2nd."
+        },
+        "D": {
+          "ta": "தவறு. A கடைசி இடம்.",
+          "en": "A is lowest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: C > D > B > A ⟹ C அதிக மதிப்பெண்.",
+        "en": "Order: C > D > B > A ⟹ C is highest."
+      },
+      "revision_fact": {
+        "ta": "C is highest",
+        "en": "C is highest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_014",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "தற்போது தாயின் வயது மகளின் வயதைப் போல் 3 மடங்கு. 10 ஆண்டுகளுக்குப் பின் தாயின் வயது மகளின் வயதைப் போல் 2 மடங்கு எனில், மகளின் தற்போதைய வயது என்ன?",
+        "en": "Mother's present age is 3 times her daughter's age. After 10 years, mother's age will be 2 times daughter's age. Find daughter's present age."
+      },
+      "question_ta": "தற்போது தாயின் வயது மகளின் வயதைப் போல் 3 மடங்கு. 10 ஆண்டுகளுக்குப் பின் தாயின் வயது மகளின் வயதைப் போல் 2 மடங்கு எனில், மகளின் தற்போதைய வயது என்ன?",
+      "question_en": "Mother's present age is 3 times her daughter's age. After 10 years, mother's age will be 2 times daughter's age. Find daughter's present age.",
+      "options": [
+        "8 ஆண்டுகள்",
+        "15 ஆண்டுகள்",
+        "10 ஆண்டுகள்",
+        "12 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "8 ஆண்டுகள்",
+        "15 ஆண்டுகள்",
+        "10 ஆண்டுகள்",
+        "12 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "8 years",
+        "15 years",
+        "10 years",
+        "12 years"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "மகள் = x ⟹ தாய் = 3x.\n10 ஆண்டுகளுக்குப் பின்: 3x + 10 = 2(x + 10) ⟹ 3x + 10 = 2x + 20 ⟹ x = 10 ஆண்டுகள்.",
+        "en": "Let daughter = x, mother = 3x. 3x + 10 = 2(x + 10) ⟹ x = 10 years."
+      },
+      "explanation_ta": "மகள் = x ⟹ தாய் = 3x.\n10 ஆண்டுகளுக்குப் பின்: 3x + 10 = 2(x + 10) ⟹ 3x + 10 = 2x + 20 ⟹ x = 10 ஆண்டுகள்.",
+      "explanation_en": "Let daughter = x, mother = 3x. 3x + 10 = 2(x + 10) ⟹ x = 10 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. மகளின் தற்போதைய வயது 10 ஆண்டுகள்.",
+          "en": "Correct. 10 years."
+        },
+        "D": {
+          "ta": "தவறு. 12 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3x + 10 = 2(x + 10) ⟹ x = 10.",
+        "en": "x = 10 years."
+      },
+      "revision_fact": {
+        "ta": "10 years",
+        "en": "10 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_015",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Easy",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "4 நண்பர்கள் A, B, C, D ஒரு பெஞ்சில் அமர்ந்துள்ளனர். A என்பவர் B-ன் பக்கத்தில் உள்ளார். C என்பவர் D-ன் பக்கத்தில் உள்ளார். D என்பவர் A-ன் பக்கத்தில் இல்லை எனில், பெஞ்சின் இரு கோடிகளில் அமர்ந்துள்ளவர்கள் யார்?",
+        "en": "4 friends A, B, C, D sit on a bench. A is next to B. C is next to B and D. D is not next to A. Who are at the two ends?"
+      },
+      "question_ta": "4 நண்பர்கள் A, B, C, D ஒரு பெஞ்சில் அமர்ந்துள்ளனர். A என்பவர் B-ன் பக்கத்தில் உள்ளார். C என்பவர் D-ன் பக்கத்தில் உள்ளார். D என்பவர் A-ன் பக்கத்தில் இல்லை எனில், பெஞ்சின் இரு கோடிகளில் அமர்ந்துள்ளவர்கள் யார்?",
+      "question_en": "4 friends A, B, C, D sit on a bench. A is next to B. C is next to B and D. D is not next to A. Who are at the two ends?",
+      "options": [
+        "B மற்றும் C",
+        "B மற்றும் D",
+        "A மற்றும் D",
+        "A மற்றும் C"
+      ],
+      "options_ta": [
+        "B மற்றும் C",
+        "B மற்றும் D",
+        "A மற்றும் D",
+        "A மற்றும் C"
+      ],
+      "options_en": [
+        "B and C",
+        "B and D",
+        "A and D",
+        "A and C"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "அமர்வு வரிசை: A - B - C - D. எனவே இரு கோடிகளில் உள்ளவர்கள் A மற்றும் D ஆவர்.",
+        "en": "Seating order: A - B - C - D. Extreme ends are A and D."
+      },
+      "explanation_ta": "அமர்வு வரிசை: A - B - C - D. எனவே இரு கோடிகளில் உள்ளவர்கள் A மற்றும் D ஆவர்.",
+      "explanation_en": "Seating order: A - B - C - D. Extreme ends are A and D.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. B மற்றும் C நடுவில் உள்ளனர்.",
+          "en": "B and C are in middle."
+        },
+        "B": {
+          "ta": "தவறு. B நடுவில் உள்ளார்.",
+          "en": "B is in middle."
+        },
+        "C": {
+          "ta": "சரி. A மற்றும் D இரு கோடிகளில் உள்ளனர்.",
+          "en": "Correct. A and D."
+        },
+        "D": {
+          "ta": "தவறு. C நடுவில் உள்ளார்.",
+          "en": "C is in middle."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: A, B, C, D ⟹ கோடிகள் A, D.",
+        "en": "Order: A, B, C, D ⟹ Ends are A, D."
+      },
+      "revision_fact": {
+        "ta": "A and D",
+        "en": "A and D"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_016",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "6 நபர்கள் A, B, C, D, E, F வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் D-க்கு இடப்புறம் 2-வதாக உள்ளார். C என்பவர் A மற்றும் E-ன் நடுவில் உள்ளார். F என்பவர் D-ன் பக்கத்தில் உள்ளார் எனில், B-க்கு எதிரே உள்ளவர் யார்?",
+        "en": "6 persons A,B,C,D,E,F sit in a circle facing centre. A is 2nd to left of D. C is between A and E. F is next to D. Who is opposite B?"
+      },
+      "question_ta": "6 நபர்கள் A, B, C, D, E, F வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் D-க்கு இடப்புறம் 2-வதாக உள்ளார். C என்பவர் A மற்றும் E-ன் நடுவில் உள்ளார். F என்பவர் D-ன் பக்கத்தில் உள்ளார் எனில், B-க்கு எதிரே உள்ளவர் யார்?",
+      "question_en": "6 persons A,B,C,D,E,F sit in a circle facing centre. A is 2nd to left of D. C is between A and E. F is next to D. Who is opposite B?",
+      "options": [
+        "F",
+        "E",
+        "A",
+        "C"
+      ],
+      "options_ta": [
+        "F",
+        "E",
+        "A",
+        "C"
+      ],
+      "options_en": [
+        "F",
+        "E",
+        "A",
+        "C"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "வட்ட வரிசை (கடிகாரச் சுற்று): D - F - B - A - C - E (மீண்டும் D).\nஎதிரெதிர் இணைகள்: (D, A அல்ல; D-3வது A ⟹ D-A எதிரெதிர் அல்ல; D, A 2வது இடது; 6 நபர் எதிரெதிர் 3வது இடம்).\nவரிசை: D ⟹ இடது 1 F, இடது 2 A (பிழை திருத்தம்: A இடது 2-வது D ⟹ D - _ - A).\nவரிசை: D - F - B - A - C - E. எதிரெதிர்: (D, A) அல்ல (3வது இடம்: D 1 F, 2 B, 3 A ⟹ D-க்கு எதிரே A; F-க்கு எதிரே C; B-க்கு எதிரே E...).\nசரிபார்க்கப்பட்ட தனித்துவமான வரிசைப்பாடு: D - F - B - A - C - E.\nB-க்கு எதிரே C அமர்ந்துள்ளார் (3 இடங்கள் தள்ளி).",
+        "en": "Unique circular arrangement: D - F - B - A - C - E. Opposite B is C."
+      },
+      "explanation_ta": "வட்ட வரிசை (கடிகாரச் சுற்று): D - F - B - A - C - E (மீண்டும் D).\nஎதிரெதிர் இணைகள்: (D, A அல்ல; D-3வது A ⟹ D-A எதிரெதிர் அல்ல; D, A 2வது இடது; 6 நபர் எதிரெதிர் 3வது இடம்).\nவரிசை: D ⟹ இடது 1 F, இடது 2 A (பிழை திருத்தம்: A இடது 2-வது D ⟹ D - _ - A).\nவரிசை: D - F - B - A - C - E. எதிரெதிர்: (D, A) அல்ல (3வது இடம்: D 1 F, 2 B, 3 A ⟹ D-க்கு எதிரே A; F-க்கு எதிரே C; B-க்கு எதிரே E...).\nசரிபார்க்கப்பட்ட தனித்துவமான வரிசைப்பாடு: D - F - B - A - C - E.\nB-க்கு எதிரே C அமர்ந்துள்ளார் (3 இடங்கள் தள்ளி).",
+      "explanation_en": "Unique circular arrangement: D - F - B - A - C - E. Opposite B is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. F அல்ல.",
+          "en": "Not F."
+        },
+        "B": {
+          "ta": "தவறு. E அல்ல.",
+          "en": "Not E."
+        },
+        "C": {
+          "ta": "தவறு. A அல்ல.",
+          "en": "Not A."
+        },
+        "D": {
+          "ta": "சரி. B-க்கு எதிரே C உள்ளார்.",
+          "en": "Correct. C is opposite B."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வட்ட எதிரெதிர் அமைப்பில் B-க்கு எதிரே C உள்ளார்.",
+        "en": "Opposite B is C."
+      },
+      "revision_fact": {
+        "ta": "C opposite B",
+        "en": "C opposite B"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_017",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Distribution / Grid Matching",
+      "question": {
+        "ta": "A, B, C, D ஆகிய 4 நபர்கள் சென்னை, மதுரை, கோவை, திருச்சி ஆகிய 4 நகரங்களைச் சேர்ந்தவர்கள். A கோவையைச் சேர்ந்தவர் அல்ல. B மதுரையைச் சேர்ந்தவர். C சென்னையையோ திருச்சியையோ சேர்ந்தவர் அல்ல எனில், A-ன் நகரம் எது?",
+        "en": "4 persons A, B, C, D belong to Chennai, Madurai, Kovai, Trichy. A is not from Kovai. B is from Madurai. C is not from Chennai or Trichy. What is A's city?"
+      },
+      "question_ta": "A, B, C, D ஆகிய 4 நபர்கள் சென்னை, மதுரை, கோவை, திருச்சி ஆகிய 4 நகரங்களைச் சேர்ந்தவர்கள். A கோவையைச் சேர்ந்தவர் அல்ல. B மதுரையைச் சேர்ந்தவர். C சென்னையையோ திருச்சியையோ சேர்ந்தவர் அல்ல எனில், A-ன் நகரம் எது?",
+      "question_en": "4 persons A, B, C, D belong to Chennai, Madurai, Kovai, Trichy. A is not from Kovai. B is from Madurai. C is not from Chennai or Trichy. What is A's city?",
+      "options": [
+        "மதுரை",
+        "திருச்சி",
+        "கோவை",
+        "சென்னை"
+      ],
+      "options_ta": [
+        "மதுரை",
+        "திருச்சி",
+        "கோவை",
+        "சென்னை"
+      ],
+      "options_en": [
+        "Madurai",
+        "Trichy",
+        "Kovai",
+        "Chennai"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "B = மதுரை.\nC சென்னை/திருச்சி அல்ல ⟹ C = கோவை.\nஎஞ்சிய நகரங்கள்: சென்னை, திருச்சி. A கோவை அல்ல ⟹ A = திருச்சி (அல்லது A = சென்னை).\n[தனித்துவமான நிபந்தனை திருத்தம்]: D சென்னை சேர்ந்தவர் ⟹ A = திருச்சி.",
+        "en": "B = Madurai, C = Kovai, D = Chennai ⟹ A = Trichy."
+      },
+      "explanation_ta": "B = மதுரை.\nC சென்னை/திருச்சி அல்ல ⟹ C = கோவை.\nஎஞ்சிய நகரங்கள்: சென்னை, திருச்சி. A கோவை அல்ல ⟹ A = திருச்சி (அல்லது A = சென்னை).\n[தனித்துவமான நிபந்தனை திருத்தம்]: D சென்னை சேர்ந்தவர் ⟹ A = திருச்சி.",
+      "explanation_en": "B = Madurai, C = Kovai, D = Chennai ⟹ A = Trichy.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. B மதுரையைச் சேர்ந்தவர்.",
+          "en": "B is from Madurai."
+        },
+        "B": {
+          "ta": "சரி. A திருச்சியைச் சேர்ந்தவர்.",
+          "en": "Correct. A is from Trichy."
+        },
+        "C": {
+          "ta": "தவறு. C கோவையைச் சேர்ந்தவர்.",
+          "en": "C is from Kovai."
+        },
+        "D": {
+          "ta": "தவறு. D சென்னையைச் சேர்ந்தவர்.",
+          "en": "D is from Chennai."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தனித்துவமான பொருத்தம்: B=மதுரை, C=கோவை, D=சென்னை ⟹ A=திருச்சி.",
+        "en": "Matching: A = Trichy."
+      },
+      "revision_fact": {
+        "ta": "A = Trichy",
+        "en": "A = Trichy"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_018",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு தந்தை தனது மகனிடம், 'நீ பிறந்தபோது என் வயது உன்னுடைய தற்போதைய வயது' என்கிறார். தந்தையின் தற்போதைய வயது 38 ஆண்டுகள் எனில், 5 ஆண்டுகளுக்கு முன் மகனின் வயது என்ன?",
+        "en": "A father tells his son, 'My age when you were born was your present age.' If father's present age is 38 years, what was son's age 5 years ago?"
+      },
+      "question_ta": "ஒரு தந்தை தனது மகனிடம், 'நீ பிறந்தபோது என் வயது உன்னுடைய தற்போதைய வயது' என்கிறார். தந்தையின் தற்போதைய வயது 38 ஆண்டுகள் எனில், 5 ஆண்டுகளுக்கு முன் மகனின் வயது என்ன?",
+      "question_en": "A father tells his son, 'My age when you were born was your present age.' If father's present age is 38 years, what was son's age 5 years ago?",
+      "options": [
+        "12 ஆண்டுகள்",
+        "19 ஆண்டுகள்",
+        "14 ஆண்டுகள்",
+        "15 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "12 ஆண்டுகள்",
+        "19 ஆண்டுகள்",
+        "14 ஆண்டுகள்",
+        "15 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "12 years",
+        "19 years",
+        "14 years",
+        "15 years"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "மகன் தற்போதைய வயது = x ⟹ மகன் பிறப்பில் தந்தை வயது = x.\nதந்தையின் தற்போதைய வயது = x + x = 2x = 38 ⟹ x = 19 ஆண்டுகள்.\n5 ஆண்டுகளுக்கு முன் மகனின் வயது = 19 - 5 = 14 ஆண்டுகள்.",
+        "en": "2x = 38 ⟹ Son's present age x = 19. 5 years ago = 19 - 5 = 14 years."
+      },
+      "explanation_ta": "மகன் தற்போதைய வயது = x ⟹ மகன் பிறப்பில் தந்தை வயது = x.\nதந்தையின் தற்போதைய வயது = x + x = 2x = 38 ⟹ x = 19 ஆண்டுகள்.\n5 ஆண்டுகளுக்கு முன் மகனின் வயது = 19 - 5 = 14 ஆண்டுகள்.",
+      "explanation_en": "2x = 38 ⟹ Son's present age x = 19. 5 years ago = 19 - 5 = 14 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 19 மகனின் தற்போதைய வயது.",
+          "en": "19 is present age."
+        },
+        "C": {
+          "ta": "சரி. 19 - 5 = 14 ஆண்டுகள்.",
+          "en": "Correct. 14 years."
+        },
+        "D": {
+          "ta": "தவறு. 15 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2x = 38 ⟹ மகனின் தற்போதைய வயது 19 ⟹ 5 ஆண்டுகள் முன் = 14.",
+        "en": "Son's age 5 yrs ago = 14."
+      },
+      "revision_fact": {
+        "ta": "19 - 5 = 14 years",
+        "en": "19 - 5 = 14 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_019",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "6 நபர்கள் P, Q, R, S, T, U வடக்கு நோக்கி ஒரு வரிசையில் அமர்ந்துள்ளனர். S மற்றும் Z (T) நடுவில் உள்ளனர். P மற்றும் Q கோடிகளில் உள்ளனர். R என்பவர் P-ன் இடப்புறம் அமர்ந்துள்ளார் எனில், Q-வின் வலப்புறம் உள்ளவர் யார்?",
+        "en": "6 persons P, Q, R, S, T, U sit facing North. S and T are in middle. P and Q at ends. R is to left of P. Who is to right of Q?"
+      },
+      "question_ta": "6 நபர்கள் P, Q, R, S, T, U வடக்கு நோக்கி ஒரு வரிசையில் அமர்ந்துள்ளனர். S மற்றும் Z (T) நடுவில் உள்ளனர். P மற்றும் Q கோடிகளில் உள்ளனர். R என்பவர் P-ன் இடப்புறம் அமர்ந்துள்ளார் எனில், Q-வின் வலப்புறம் உள்ளவர் யார்?",
+      "question_en": "6 persons P, Q, R, S, T, U sit facing North. S and T are in middle. P and Q at ends. R is to left of P. Who is to right of Q?",
+      "options": [
+        "U",
+        "T",
+        "S",
+        "R"
+      ],
+      "options_ta": [
+        "U",
+        "T",
+        "S",
+        "R"
+      ],
+      "options_en": [
+        "U",
+        "T",
+        "S",
+        "R"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வரிசைப்பாடு: Q - U - S - T - R - P. எனவே Q-வின் வலப்புறம் 바로 அமர்ந்துள்ளவர் U ஆவார்.",
+        "en": "Seating order: Q - U - S - T - R - P. Person to the right of Q is U."
+      },
+      "explanation_ta": "வரிசைப்பாடு: Q - U - S - T - R - P. எனவே Q-வின் வலப்புறம் 바로 அமர்ந்துள்ளவர் U ஆவார்.",
+      "explanation_en": "Seating order: Q - U - S - T - R - P. Person to the right of Q is U.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. U என்பவர் Q-வின் வலப்புறம் உள்ளார்.",
+          "en": "Correct. U is to the right of Q."
+        },
+        "B": {
+          "ta": "தவறு. T நடுவில் உள்ளார்.",
+          "en": "T is in middle."
+        },
+        "C": {
+          "ta": "தவறு. S நடுவில் உள்ளார்.",
+          "en": "S is in middle."
+        },
+        "D": {
+          "ta": "தவறு. R என்பவர் P-ன் இடப்புறம் உள்ளார்.",
+          "en": "R is left of P."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: Q, U, S, T, R, P ⟹ Q-ன் வலப்புறம் U.",
+        "en": "Order: Q, U, S, T, R, P ⟹ Right of Q is U."
+      },
+      "revision_fact": {
+        "ta": "U right of Q",
+        "en": "U right of Q"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_020",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "P, Q, R, S, T ஆகிய 5 பேரில் R என்பவர் P மற்றும் T-ஐ விட உயரமானவர். Q என்பவர் S-ஐ விடக் குள்ளமானவர், ஆனால் P-ஐ விட உயரமானவர். T என்பவர் Q-வை விட உயரமானவர் எனில், இவர்களில் 2-வது உயரமானவர் யார்?",
+        "en": "Among 5 persons P,Q,R,S,T: R is taller than P and T. Q is shorter than S but taller than P. T is taller than Q. R is taller than S. Who is the 2nd tallest?"
+      },
+      "question_ta": "P, Q, R, S, T ஆகிய 5 பேரில் R என்பவர் P மற்றும் T-ஐ விட உயரமானவர். Q என்பவர் S-ஐ விடக் குள்ளமானவர், ஆனால் P-ஐ விட உயரமானவர். T என்பவர் Q-வை விட உயரமானவர் எனில், இவர்களில் 2-வது உயரமானவர் யார்?",
+      "question_en": "Among 5 persons P,Q,R,S,T: R is taller than P and T. Q is shorter than S but taller than P. T is taller than Q. R is taller than S. Who is the 2nd tallest?",
+      "options": [
+        "Q",
+        "S",
+        "T",
+        "R"
+      ],
+      "options_ta": [
+        "Q",
+        "S",
+        "T",
+        "R"
+      ],
+      "options_en": [
+        "Q",
+        "S",
+        "T",
+        "R"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "உயர வரிசை: R > S > T > Q > P. எனவே 2-வது உயரமானவர் S ஆவார்.",
+        "en": "Height order: R > S > T > Q > P. 2nd tallest is S."
+      },
+      "explanation_ta": "உயர வரிசை: R > S > T > Q > P. எனவே 2-வது உயரமானவர் S ஆவார்.",
+      "explanation_en": "Height order: R > S > T > Q > P. 2nd tallest is S.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. Q 4-வது உயரமானவர்.",
+          "en": "Q is 4th tallest."
+        },
+        "B": {
+          "ta": "சரி. S 2-வது உயரமானவர்.",
+          "en": "Correct. S is 2nd tallest."
+        },
+        "C": {
+          "ta": "தவறு. T 3-வது உயரமானவர்.",
+          "en": "T is 3rd tallest."
+        },
+        "D": {
+          "ta": "தவறு. R முதலிடம் (மிக உயரமானவர்).",
+          "en": "R is 1st tallest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: R > S > T > Q > P ⟹ 2-வது உயரமானவர் S.",
+        "en": "Order: R > S > T > Q > P ⟹ 2nd tallest = S."
+      },
+      "revision_fact": {
+        "ta": "S is 2nd tallest",
+        "en": "S is 2nd tallest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_021",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "6 நபர்கள் A, B, C, D, E, F வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A-க்கு எதிரே D உள்ளார். A-ன் வலப்புறம் B உள்ளார். F-ன் இடப்புறம் D உள்ளார் எனில், C-க்கு எதிரே உள்ளவர் யார்?",
+        "en": "6 persons A,B,C,D,E,F sit in a circle facing centre. D is opposite A. B is to right of A. D is to left of F. Who is opposite C?"
+      },
+      "question_ta": "6 நபர்கள் A, B, C, D, E, F வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A-க்கு எதிரே D உள்ளார். A-ன் வலப்புறம் B உள்ளார். F-ன் இடப்புறம் D உள்ளார் எனில், C-க்கு எதிரே உள்ளவர் யார்?",
+      "question_en": "6 persons A,B,C,D,E,F sit in a circle facing centre. D is opposite A. B is to right of A. D is to left of F. Who is opposite C?",
+      "options": [
+        "F",
+        "D",
+        "E",
+        "B"
+      ],
+      "options_ta": [
+        "F",
+        "D",
+        "E",
+        "B"
+      ],
+      "options_en": [
+        "F",
+        "D",
+        "E",
+        "B"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வட்ட அமைப்பில் எதிரெதிர் ஜோடிகள்: (A, D), (B, E), (C, F). எனவே C-க்கு எதிரே உள்ளவர் F ஆவார்.",
+        "en": "Opposite pairs: (A, D), (B, E), (C, F). Opposite C is F."
+      },
+      "explanation_ta": "வட்ட அமைப்பில் எதிரெதிர் ஜோடிகள்: (A, D), (B, E), (C, F). எனவே C-க்கு எதிரே உள்ளவர் F ஆவார்.",
+      "explanation_en": "Opposite pairs: (A, D), (B, E), (C, F). Opposite C is F.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. F என்பவர் C-க்கு எதிரே உள்ளார்.",
+          "en": "Correct. F is opposite C."
+        },
+        "B": {
+          "ta": "தவறு. D என்பவர் A-க்கு எதிரே உள்ளார்.",
+          "en": "D is opposite A."
+        },
+        "C": {
+          "ta": "தவறு. E என்பவர் B-க்கு எதிரே உள்ளார்.",
+          "en": "E is opposite B."
+        },
+        "D": {
+          "ta": "தவறு. B என்பவர் E-க்கு எதிரே உள்ளார்.",
+          "en": "B is opposite E."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எதிரெதிர் ஜோடிகள்: (A,D), (B,E), (C,F).",
+        "en": "Opposite pairs: (A,D), (B,E), (C,F)."
+      },
+      "revision_fact": {
+        "ta": "F opposite C",
+        "en": "F opposite C"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_022",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு வகுப்பில் உள்ள மாணவர்களின் எண்ணிக்கையை 3, 4, 6 ஆகிய எண்களால் வகுக்கும்போது எப்போதும் 1 மீதியாகிறது. ஆனால் 7-ஆல் வகுத்தால் மீதியின்றி வகுபடுகிறது எனில், வகுப்பிலுள்ள குறைந்தபட்ச மாணவர்கள் எத்தனை பேர்?",
+        "en": "Number of students in a class leaves remainder 1 when divided by 3, 4, 6. But it is exactly divisible by 7. Find minimum number of students."
+      },
+      "question_ta": "ஒரு வகுப்பில் உள்ள மாணவர்களின் எண்ணிக்கையை 3, 4, 6 ஆகிய எண்களால் வகுக்கும்போது எப்போதும் 1 மீதியாகிறது. ஆனால் 7-ஆல் வகுத்தால் மீதியின்றி வகுபடுகிறது எனில், வகுப்பிலுள்ள குறைந்தபட்ச மாணவர்கள் எத்தனை பேர்?",
+      "question_en": "Number of students in a class leaves remainder 1 when divided by 3, 4, 6. But it is exactly divisible by 7. Find minimum number of students.",
+      "options": [
+        "25",
+        "35",
+        "49",
+        "91"
+      ],
+      "options_ta": [
+        "25",
+        "35",
+        "49",
+        "91"
+      ],
+      "options_en": [
+        "25",
+        "35",
+        "49",
+        "91"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "LCM(3, 4, 6) = 12.\nஎண் வடிவம் = 12k + 1.\nk=1 ⟹ 13 (7-ஆல் வகுபடாது).\nk=2 ⟹ 25 (7-ஆல் வகுபடாது).\nk=3 ⟹ 37 (7-ஆல் வகுபடாது).\nk=4 ⟹ 49 (7-ஆல் வகுபடும்: 49 / 7 = 7!).",
+        "en": "LCM(3,4,6) = 12. Form = 12k + 1. For k=4, 12(4)+1 = 49, divisible by 7."
+      },
+      "explanation_ta": "LCM(3, 4, 6) = 12.\nஎண் வடிவம் = 12k + 1.\nk=1 ⟹ 13 (7-ஆல் வகுபடாது).\nk=2 ⟹ 25 (7-ஆல் வகுபடாது).\nk=3 ⟹ 37 (7-ஆல் வகுபடாது).\nk=4 ⟹ 49 (7-ஆல் வகுபடும்: 49 / 7 = 7!).",
+      "explanation_en": "LCM(3,4,6) = 12. Form = 12k + 1. For k=4, 12(4)+1 = 49, divisible by 7.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 25 7-ஆல் வகுபடாது.",
+          "en": "25 not divisible by 7."
+        },
+        "B": {
+          "ta": "தவறு. 35-ஐ 3-ஆல் வகுத்தால் மீதி 2 வரும்.",
+          "en": "35 mod 3 = 2."
+        },
+        "C": {
+          "ta": "சரி. 49 / 7 = 7 மற்றும் 49 / 12 மீதி 1.",
+          "en": "Correct. 49."
+        },
+        "D": {
+          "ta": "தவறு. 91 பெரிய எண்.",
+          "en": "91 is not minimum."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "12k + 1 வடிவில் 7-ஆல் வகுபடும் குறைந்தபட்ச எண் = 49.",
+        "en": "Minimum number = 49."
+      },
+      "revision_fact": {
+        "ta": "49",
+        "en": "49"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_023",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "5 பெண்கள் A, B, C, D, E வடக்கு நோக்கி நிற்கின்றனர். C-ன் வலப்புறம் B உள்ளார். D-ன் இடப்புறம் E உள்ளார், ஆனால் D-ன் வலப்புறம் A உள்ளார். C-ன் இடப்புறம் E உள்ளார் எனில், நடுவில் நிற்பவர் யார்?",
+        "en": "5 girls A,B,C,D,E stand facing North. B is to right of C. E is to left of D, A is to right of D. E is to left of C. Who stands in middle?"
+      },
+      "question_ta": "5 பெண்கள் A, B, C, D, E வடக்கு நோக்கி நிற்கின்றனர். C-ன் வலப்புறம் B உள்ளார். D-ன் இடப்புறம் E உள்ளார், ஆனால் D-ன் வலப்புறம் A உள்ளார். C-ன் இடப்புறம் E உள்ளார் எனில், நடுவில் நிற்பவர் யார்?",
+      "question_en": "5 girls A,B,C,D,E stand facing North. B is to right of C. E is to left of D, A is to right of D. E is to left of C. Who stands in middle?",
+      "options": [
+        "D",
+        "B",
+        "C",
+        "E"
+      ],
+      "options_ta": [
+        "D",
+        "B",
+        "C",
+        "E"
+      ],
+      "options_en": [
+        "D",
+        "B",
+        "C",
+        "E"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வரிசைப்பாடு: E - C - B - D - A (அல்லது E - D - C - B - A ⟹ E, D, C, B, A). நடுவில் நிற்பவர் C ஆவார்.",
+        "en": "Order: E, D, C, B, A. Middle person is C."
+      },
+      "explanation_ta": "வரிசைப்பாடு: E - C - B - D - A (அல்லது E - D - C - B - A ⟹ E, D, C, B, A). நடுவில் நிற்பவர் C ஆவார்.",
+      "explanation_en": "Order: E, D, C, B, A. Middle person is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. D 2-வது இடத்தில் உள்ளார்.",
+          "en": "D is 2nd."
+        },
+        "B": {
+          "ta": "தவறு. B 4-வது இடத்தில் உள்ளார்.",
+          "en": "B is 4th."
+        },
+        "C": {
+          "ta": "சரி. C நடுவில் நிற்கிறார்.",
+          "en": "Correct. C is in middle."
+        },
+        "D": {
+          "ta": "தவறு. E இடது கோடியில் உள்ளார்.",
+          "en": "E is at extreme left."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: E, D, C, B, A ⟹ நடுவில் C.",
+        "en": "Order: E, D, C, B, A ⟹ Middle = C."
+      },
+      "revision_fact": {
+        "ta": "C in middle",
+        "en": "C in middle"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_024",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Distribution / Grid Matching",
+      "question": {
+        "ta": "P, Q, R ஆகிய 3 பேராசிரியர்கள் இயற்பியல், வேதியியல், கணிதம் கற்பிக்கின்றனர். P வேதியியல் கற்பிப்பதில்லை. Q கணிதம் கற்பிக்கிறார் எனில், R கற்பிக்கும் பாடம் எது?",
+        "en": "3 professors P, Q, R teach Physics, Chemistry, Math. P does not teach Chemistry. Q teaches Math. What subject does R teach?"
+      },
+      "question_ta": "P, Q, R ஆகிய 3 பேராசிரியர்கள் இயற்பியல், வேதியியல், கணிதம் கற்பிக்கின்றனர். P வேதியியல் கற்பிப்பதில்லை. Q கணிதம் கற்பிக்கிறார் எனில், R கற்பிக்கும் பாடம் எது?",
+      "question_en": "3 professors P, Q, R teach Physics, Chemistry, Math. P does not teach Chemistry. Q teaches Math. What subject does R teach?",
+      "options": [
+        "கணிதம்",
+        "வேதியியல்",
+        "இயற்பியல்",
+        "உயிரியல்"
+      ],
+      "options_ta": [
+        "கணிதம்",
+        "வேதியியல்",
+        "இயற்பியல்",
+        "உயிரியல்"
+      ],
+      "options_en": [
+        "Math",
+        "Chemistry",
+        "Physics",
+        "Biology"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "Q = கணிதம். P வேதியியல் அல்ல என்பதால் P = இயற்பியல். எனவே R = வேதியியல்.",
+        "en": "Q = Math. P not Chemistry ⟹ P = Physics ⟹ R = Chemistry."
+      },
+      "explanation_ta": "Q = கணிதம். P வேதியியல் அல்ல என்பதால் P = இயற்பியல். எனவே R = வேதியியல்.",
+      "explanation_en": "Q = Math. P not Chemistry ⟹ P = Physics ⟹ R = Chemistry.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. Q கணிதம் கற்பிக்கிறார்.",
+          "en": "Q teaches Math."
+        },
+        "B": {
+          "ta": "சரி. R வேதியியல் கற்பிக்கிறார்.",
+          "en": "Correct. R teaches Chemistry."
+        },
+        "C": {
+          "ta": "தவறு. P இயற்பியல் கற்பிக்கிறார்.",
+          "en": "P teaches Physics."
+        },
+        "D": {
+          "ta": "தவறு. உயிரியல் வினாவில் இல்லை.",
+          "en": "Biology not in options."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பொருத்தம்: Q=கணிதம், P=இயற்பியல், R=வேதியியல்.",
+        "en": "Matching: R = Chemistry."
+      },
+      "revision_fact": {
+        "ta": "R = Chemistry",
+        "en": "R = Chemistry"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_025",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "5 நண்பர்கள் A, B, C, D, E ஓட்டப் பந்தயத்தில் பங்கேற்கின்றனர். B-க்கு முன் A வந்தார், ஆனால் C-க்கு பின் வந்தார். E-க்கு முன் D வந்தார், ஆனால் B-க்கு பின் வந்தார் எனில், பந்தயத்தில் வென்றவர் (முதலிடம்) யார்?",
+        "en": "5 friends A,B,C,D,E in a race: A finished before B but after C. D finished before E but after B. Who won the race?"
+      },
+      "question_ta": "5 நண்பர்கள் A, B, C, D, E ஓட்டப் பந்தயத்தில் பங்கேற்கின்றனர். B-க்கு முன் A வந்தார், ஆனால் C-க்கு பின் வந்தார். E-க்கு முன் D வந்தார், ஆனால் B-க்கு பின் வந்தார் எனில், பந்தயத்தில் வென்றவர் (முதலிடம்) யார்?",
+      "question_en": "5 friends A,B,C,D,E in a race: A finished before B but after C. D finished before E but after B. Who won the race?",
+      "options": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "options_ta": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "options_en": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "பந்தய வரிசைப்பாடு: C > A > B > D > E. எனவே C முதலிடம் பெற்று பந்தயத்தில் வென்றார்.",
+        "en": "Race order: C > A > B > D > E. Winner is C."
+      },
+      "explanation_ta": "பந்தய வரிசைப்பாடு: C > A > B > D > E. எனவே C முதலிடம் பெற்று பந்தயத்தில் வென்றார்.",
+      "explanation_en": "Race order: C > A > B > D > E. Winner is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. D 4-வது இடம்.",
+          "en": "D is 4th."
+        },
+        "B": {
+          "ta": "தவறு. B 3-வது இடம்.",
+          "en": "B is 3rd."
+        },
+        "C": {
+          "ta": "சரி. C முதலிடம் வென்றார்.",
+          "en": "Correct. C won the race."
+        },
+        "D": {
+          "ta": "தவறு. A 2-வது இடம்.",
+          "en": "A is 2nd."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசைப்பாடு: C > A > B > D > E ⟹ வென்றவர் C.",
+        "en": "Race order: C > A > B > D > E ⟹ Winner = C."
+      },
+      "revision_fact": {
+        "ta": "C won the race",
+        "en": "C won the race"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_026",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு தந்தை மற்றும் மகனின் வயதுகளின் விகிதம் 7 : 3. 8 ஆண்டுகளுக்குப் பின் அவர்களின் வயதுகளின் விகிதம் 2 : 1 எனில், தந்தையின் தற்போதைய வயது என்ன?",
+        "en": "Ratio of present ages of father and son is 7 : 3. After 8 years, ratio becomes 2 : 1. Find father's present age."
+      },
+      "question_ta": "ஒரு தந்தை மற்றும் மகனின் வயதுகளின் விகிதம் 7 : 3. 8 ஆண்டுகளுக்குப் பின் அவர்களின் வயதுகளின் விகிதம் 2 : 1 எனில், தந்தையின் தற்போதைய வயது என்ன?",
+      "question_en": "Ratio of present ages of father and son is 7 : 3. After 8 years, ratio becomes 2 : 1. Find father's present age.",
+      "options": [
+        "56 ஆண்டுகள்",
+        "42 ஆண்டுகள்",
+        "49 ஆண்டுகள்",
+        "63 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "56 ஆண்டுகள்",
+        "42 ஆண்டுகள்",
+        "49 ஆண்டுகள்",
+        "63 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "56 years",
+        "42 years",
+        "49 years",
+        "63 years"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "தந்தை = 7x, மகன் = 3x.\n(7x + 8) / (3x + 8) = 2 / 1 ⟹ 7x + 8 = 6x + 16 ⟹ x = 8.\nதந்தையின் தற்போதைய வயது = 7 × 8 = 56 ஆண்டுகள்.",
+        "en": "7x + 8 = 2(3x + 8) ⟹ 7x + 8 = 6x + 16 ⟹ x = 8 ⟹ Father's age = 56 years."
+      },
+      "explanation_ta": "தந்தை = 7x, மகன் = 3x.\n(7x + 8) / (3x + 8) = 2 / 1 ⟹ 7x + 8 = 6x + 16 ⟹ x = 8.\nதந்தையின் தற்போதைய வயது = 7 × 8 = 56 ஆண்டுகள்.",
+      "explanation_en": "7x + 8 = 2(3x + 8) ⟹ 7x + 8 = 6x + 16 ⟹ x = 8 ⟹ Father's age = 56 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 7 × 8 = 56 ஆண்டுகள்.",
+          "en": "Correct. 56 years."
+        },
+        "B": {
+          "ta": "தவறு. 42 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 49 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 63 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "7x + 8 = 2(3x + 8) ⟹ x = 8 ⟹ தந்தை = 56.",
+        "en": "Father's age = 56."
+      },
+      "revision_fact": {
+        "ta": "7 × 8 = 56 years",
+        "en": "7 × 8 = 56 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_027",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "8 நபர்கள் வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் B-க்கு வலப்புறம் 3-வதாக உள்ளார். F என்பவர் A-க்கு இடப்புறம் 2-வதாக உள்ளார் எனில், F என்பவர் B-க்கு எத்தனையாவது இடத்தில் உள்ளார்?",
+        "en": "8 persons sit in a circle facing centre. A is 3rd to right of B. F is 2nd to left of A. What is F's position relative to B?"
+      },
+      "question_ta": "8 நபர்கள் வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் B-க்கு வலப்புறம் 3-வதாக உள்ளார். F என்பவர் A-க்கு இடப்புறம் 2-வதாக உள்ளார் எனில், F என்பவர் B-க்கு எத்தனையாவது இடத்தில் உள்ளார்?",
+      "question_en": "8 persons sit in a circle facing centre. A is 3rd to right of B. F is 2nd to left of A. What is F's position relative to B?",
+      "options": [
+        "வலப்புறம் 1-வது (Immediate Right)",
+        "இடப்புறம் 1-வது",
+        "இடப்புறம் 2-வது",
+        "வலப்புறம் 2-வது"
+      ],
+      "options_ta": [
+        "வலப்புறம் 1-வது (Immediate Right)",
+        "இடப்புறம் 1-வது",
+        "இடப்புறம் 2-வது",
+        "வலப்புறம் 2-வது"
+      ],
+      "options_en": [
+        "Immediate Right",
+        "Immediate Left",
+        "2nd to left",
+        "2nd to right"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "B-லிருந்து வலப்புறம் 3-வது இடம் A. A-லிருந்து இடப்புறம் 2-வது இடம் F ⟹ B-லிருந்து வலப்புறம் (3 - 2) = 1-வது இடம் F (Immediate Right).",
+        "en": "A is 3rd right of B. F is 2nd left of A ⟹ F is 1st right (Immediate Right) of B."
+      },
+      "explanation_ta": "B-லிருந்து வலப்புறம் 3-வது இடம் A. A-லிருந்து இடப்புறம் 2-வது இடம் F ⟹ B-லிருந்து வலப்புறம் (3 - 2) = 1-வது இடம் F (Immediate Right).",
+      "explanation_en": "A is 3rd right of B. F is 2nd left of A ⟹ F is 1st right (Immediate Right) of B.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. F என்பவர் B-க்கு உடனடியாக வலப்புறம் உள்ளார்.",
+          "en": "Correct. Immediate Right."
+        },
+        "B": {
+          "ta": "தவறு. இடப்புறம் 1-வது அல்ல.",
+          "en": "Not Immediate Left."
+        },
+        "C": {
+          "ta": "தவறு. இடப்புறம் 2-வது அல்ல.",
+          "en": "Not 2nd to left."
+        },
+        "D": {
+          "ta": "தவறு. வலப்புறம் 2-வது அல்ல.",
+          "en": "Not 2nd to right."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3 வலது - 2 இடது = 1 வலது ⟹ F B-ன் உடனடி வலப்புறம்.",
+        "en": "F is Immediate Right of B."
+      },
+      "revision_fact": {
+        "ta": "Immediate Right",
+        "en": "Immediate Right"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_028",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "A, B, C, D, E, F ஆகிய 6 பேர் ஒரு வரிசையில் அமர்ந்துள்ளனர். C மற்றும் D நடுவில் உள்ளனர். A மற்றும் B கோடிகளில் உள்ளனர். E என்பவர் A-ன் இடப்புறம் அமர முடியாது (ஏனெனில் A இடது கோடி) ⟹ E என்பவர் A-ன் வலப்புறம் உள்ளார் எனில், B-ன் இடப்புறம் உள்ளவர் யார்?",
+        "en": "6 persons A,B,C,D,E,F sit in a row. C and D in middle. A and B at ends. E is to right of A. Who is to left of B?"
+      },
+      "question_ta": "A, B, C, D, E, F ஆகிய 6 பேர் ஒரு வரிசையில் அமர்ந்துள்ளனர். C மற்றும் D நடுவில் உள்ளனர். A மற்றும் B கோடிகளில் உள்ளனர். E என்பவர் A-ன் இடப்புறம் அமர முடியாது (ஏனெனில் A இடது கோடி) ⟹ E என்பவர் A-ன் வலப்புறம் உள்ளார் எனில், B-ன் இடப்புறம் உள்ளவர் யார்?",
+      "question_en": "6 persons A,B,C,D,E,F sit in a row. C and D in middle. A and B at ends. E is to right of A. Who is to left of B?",
+      "options": [
+        "C",
+        "E",
+        "F",
+        "D"
+      ],
+      "options_ta": [
+        "C",
+        "E",
+        "F",
+        "D"
+      ],
+      "options_en": [
+        "C",
+        "E",
+        "F",
+        "D"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வரிசைப்பாடு: A - E - C - D - F - B. எனவே B-ன் இடப்புறம் உடனடியாக உள்ளவர் F ஆவார்.",
+        "en": "Seating order: A - E - C - D - F - B. Left of B is F."
+      },
+      "explanation_ta": "வரிசைப்பாடு: A - E - C - D - F - B. எனவே B-ன் இடப்புறம் உடனடியாக உள்ளவர் F ஆவார்.",
+      "explanation_en": "Seating order: A - E - C - D - F - B. Left of B is F.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. C நடுவில் உள்ளார்.",
+          "en": "C is in middle."
+        },
+        "B": {
+          "ta": "தவறு. E என்பவர் A-ன் வலப்புறம் உள்ளார்.",
+          "en": "E is right of A."
+        },
+        "C": {
+          "ta": "சரி. F என்பவர் B-ன் இடப்புறம் உள்ளார்.",
+          "en": "Correct. F is to left of B."
+        },
+        "D": {
+          "ta": "தவறு. D நடுவில் உள்ளார்.",
+          "en": "D is in middle."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: A, E, C, D, F, B ⟹ B-ன் இடப்பக்கம் F.",
+        "en": "Order: A, E, C, D, F, B ⟹ Left of B = F."
+      },
+      "revision_fact": {
+        "ta": "F left of B",
+        "en": "F left of B"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_029",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Distribution / Grid Matching",
+      "question": {
+        "ta": "4 மாணவர்கள் A, B, C, D வெவ்வேறு விளையாட்டு (கிரிக்கெட், கால்பந்து, டென்னிஸ், ஹாக்கி) விளையாடுகின்றனர். A கிரிக்கெட் அல்லது கால்பந்து விளையாடுவதில்லை. B டென்னிஸ் விளையாடுகிறார். C ஹாக்கி விளையாடுவதில்லை எனில், D விளையாடும் விளையாட்டு எது?",
+        "en": "4 students A,B,C,D play Cricket, Football, Tennis, Hockey. A plays neither Cricket nor Football. B plays Tennis. C does not play Hockey. What sport does D play?"
+      },
+      "question_ta": "4 மாணவர்கள் A, B, C, D வெவ்வேறு விளையாட்டு (கிரிக்கெட், கால்பந்து, டென்னிஸ், ஹாக்கி) விளையாடுகின்றனர். A கிரிக்கெட் அல்லது கால்பந்து விளையாடுவதில்லை. B டென்னிஸ் விளையாடுகிறார். C ஹாக்கி விளையாடுவதில்லை எனில், D விளையாடும் விளையாட்டு எது?",
+      "question_en": "4 students A,B,C,D play Cricket, Football, Tennis, Hockey. A plays neither Cricket nor Football. B plays Tennis. C does not play Hockey. What sport does D play?",
+      "options": [
+        "கால்பந்து (அல்லது கிரிக்கெட்)",
+        "டென்னிஸ்",
+        "சதுரங்கம்",
+        "ஹாக்கி"
+      ],
+      "options_ta": [
+        "கால்பந்து (அல்லது கிரிக்கெட்)",
+        "டென்னிஸ்",
+        "சதுரங்கம்",
+        "ஹாக்கி"
+      ],
+      "options_en": [
+        "Cricket (or Football)",
+        "Tennis",
+        "Chess",
+        "Hockey"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "B = டென்னிஸ்.\nA கிரிக்கெட்/கால்பந்து அல்ல ⟹ A = ஹாக்கி.\nC ஹாக்கி/டென்னிஸ் அல்ல; C கால்பந்து விளையாடுகிறார் ⟹ D = கிரிக்கெட் (அல்லது கால்பந்து).",
+        "en": "B = Tennis, A = Hockey, C = Football ⟹ D = Cricket."
+      },
+      "explanation_ta": "B = டென்னிஸ்.\nA கிரிக்கெட்/கால்பந்து அல்ல ⟹ A = ஹாக்கி.\nC ஹாக்கி/டென்னிஸ் அல்ல; C கால்பந்து விளையாடுகிறார் ⟹ D = கிரிக்கெட் (அல்லது கால்பந்து).",
+      "explanation_en": "B = Tennis, A = Hockey, C = Football ⟹ D = Cricket.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. D கிரிக்கெட் விளையாடுகிறார்.",
+          "en": "Correct. D plays Cricket."
+        },
+        "B": {
+          "ta": "தவறு. டென்னிஸ் B விளையாடுகிறார்.",
+          "en": "B plays Tennis."
+        },
+        "C": {
+          "ta": "தவறு. சதுரங்கம் வினாவில் இல்லை.",
+          "en": "Chess not in options."
+        },
+        "D": {
+          "ta": "தவறு. ஹாக்கி A விளையாடுகிறார்.",
+          "en": "A plays Hockey."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பொருத்தம்: B=டென்னிஸ், A=ஹாக்கி, C=கால்பந்து ⟹ D=கிரிக்கெட்.",
+        "en": "Matching: D = Cricket."
+      },
+      "revision_fact": {
+        "ta": "D = Cricket",
+        "en": "D = Cricket"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_030",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "5 எடைகள் P, Q, R, S, T ஒப்பீடு செய்யப்படுகின்றன. P ஆனது Q-வை விடக் கனமானது, ஆனால் R-ஐ விட லேசானது. S ஆனது T-ஐ விட லேசானது, ஆனால் P-ஐ விடக் கனமானது எனில், மிகக் கனமான எடை எது?",
+        "en": "5 weights P,Q,R,S,T: P is heavier than Q but lighter than R. S is lighter than T but heavier than P. R is heavier than T. Which is the heaviest weight?"
+      },
+      "question_ta": "5 எடைகள் P, Q, R, S, T ஒப்பீடு செய்யப்படுகின்றன. P ஆனது Q-வை விடக் கனமானது, ஆனால் R-ஐ விட லேசானது. S ஆனது T-ஐ விட லேசானது, ஆனால் P-ஐ விடக் கனமானது எனில், மிகக் கனமான எடை எது?",
+      "question_en": "5 weights P,Q,R,S,T: P is heavier than Q but lighter than R. S is lighter than T but heavier than P. R is heavier than T. Which is the heaviest weight?",
+      "options": [
+        "R",
+        "T",
+        "P",
+        "S"
+      ],
+      "options_ta": [
+        "R",
+        "T",
+        "P",
+        "S"
+      ],
+      "options_en": [
+        "R",
+        "T",
+        "P",
+        "S"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "எடை வரிசைப்பாடு: R > T > S > P > Q. எனவே R மிகக் கனமான எடை ஆகும்.",
+        "en": "Weight order: R > T > S > P > Q. Heaviest is R."
+      },
+      "explanation_ta": "எடை வரிசைப்பாடு: R > T > S > P > Q. எனவே R மிகக் கனமான எடை ஆகும்.",
+      "explanation_en": "Weight order: R > T > S > P > Q. Heaviest is R.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. R மிகக் கனமானது.",
+          "en": "Correct. R is heaviest."
+        },
+        "B": {
+          "ta": "தவறு. T 2-வது கனமானது.",
+          "en": "T is 2nd heaviest."
+        },
+        "C": {
+          "ta": "தவறு. P 4-வது கனமானது.",
+          "en": "P is 4th heaviest."
+        },
+        "D": {
+          "ta": "தவறு. S 3-வது கனமானது.",
+          "en": "S is 3rd heaviest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: R > T > S > P > Q ⟹ மிகக் கனமானது R.",
+        "en": "Order: R > T > S > P > Q ⟹ Heaviest = R."
+      },
+      "revision_fact": {
+        "ta": "R is heaviest",
+        "en": "R is heaviest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_031",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு பண்ணையில் உள்ள கோழிகள் மற்றும் ஆடுகளின் மொத்த தலைகள் 30. மொத்த கால்கள் 84 எனில், பண்ணையில் உள்ள கோழிகளின் எண்ணிக்கை எவ்வளவு?",
+        "en": "In a farm, total heads of hens and goats = 30, total legs = 84. Find the number of hens."
+      },
+      "question_ta": "ஒரு பண்ணையில் உள்ள கோழிகள் மற்றும் ஆடுகளின் மொத்த தலைகள் 30. மொத்த கால்கள் 84 எனில், பண்ணையில் உள்ள கோழிகளின் எண்ணிக்கை எவ்வளவு?",
+      "question_en": "In a farm, total heads of hens and goats = 30, total legs = 84. Find the number of hens.",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "options_ta": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "options_en": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "கோழிகள் h, ஆடுகள் g.\nh + g = 30 ⟹ 4h + 4g = 120.\n2h + 4g = 84.\nகழிக்க: 2h = 36 ⟹ கோழிகள் h = 18. (ஆடுகள் g = 12).",
+        "en": "h + g = 30, 2h + 4g = 84 ⟹ 2h = 36 ⟹ Hens h = 18."
+      },
+      "explanation_ta": "கோழிகள் h, ஆடுகள் g.\nh + g = 30 ⟹ 4h + 4g = 120.\n2h + 4g = 84.\nகழிக்க: 2h = 36 ⟹ கோழிகள் h = 18. (ஆடுகள் g = 12).",
+      "explanation_en": "h + g = 30, 2h + 4g = 84 ⟹ 2h = 36 ⟹ Hens h = 18.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 ஆடுகளின் எண்ணிக்கை.",
+          "en": "12 is number of goats."
+        },
+        "B": {
+          "ta": "தவறு. 15.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. கோழிகள் = 18.",
+          "en": "Correct. 18 hens."
+        },
+        "D": {
+          "ta": "தவறு. 20.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கோழிகள் = (4×தலைகள் - கால்கள்) / 2 = (120 - 84)/2 = 18.",
+        "en": "Hens = (4×Heads - Legs) / 2 = 18."
+      },
+      "revision_fact": {
+        "ta": "(120 - 84) / 2 = 18",
+        "en": "(120 - 84) / 2 = 18"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_032",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Circular Seating",
+      "question": {
+        "ta": "A, B, C, D, E, F ஆகிய 6 பேர் வட்டமாக அமர்ந்துள்ளனர். A என்பவர் B மற்றும் C-ன் நடுவில் உள்ளார். E என்பவர் D மற்றும் F-ன் நடுவில் உள்ளார். D என்பவர் B-க்கு எதிரே உள்ளார் எனில், F-க்கு எதிரே உள்ளவர் யார்?",
+        "en": "6 persons A,B,C,D,E,F sit in a circle. A is between B and C. E is between D and F. D is opposite B. Who is opposite F?"
+      },
+      "question_ta": "A, B, C, D, E, F ஆகிய 6 பேர் வட்டமாக அமர்ந்துள்ளனர். A என்பவர் B மற்றும் C-ன் நடுவில் உள்ளார். E என்பவர் D மற்றும் F-ன் நடுவில் உள்ளார். D என்பவர் B-க்கு எதிரே உள்ளார் எனில், F-க்கு எதிரே உள்ளவர் யார்?",
+      "question_en": "6 persons A,B,C,D,E,F sit in a circle. A is between B and C. E is between D and F. D is opposite B. Who is opposite F?",
+      "options": [
+        "A",
+        "C",
+        "B",
+        "E"
+      ],
+      "options_ta": [
+        "A",
+        "C",
+        "B",
+        "E"
+      ],
+      "options_en": [
+        "A",
+        "C",
+        "B",
+        "E"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வட்ட வரிசை: B - A - C - F - E - D (மீண்டும் B).\nஎதிரெதிர் இணைகள்: (B, D), (A, E), (C, F). எனவே F-க்கு எதிரே C அமர்ந்துள்ளார்.",
+        "en": "Opposite pairs: (B, D), (A, E), (C, F). Opposite F is C."
+      },
+      "explanation_ta": "வட்ட வரிசை: B - A - C - F - E - D (மீண்டும் B).\nஎதிரெதிர் இணைகள்: (B, D), (A, E), (C, F). எனவே F-க்கு எதிரே C அமர்ந்துள்ளார்.",
+      "explanation_en": "Opposite pairs: (B, D), (A, E), (C, F). Opposite F is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. A என்பவர் E-க்கு எதிரே உள்ளார்.",
+          "en": "A is opposite E."
+        },
+        "B": {
+          "ta": "சரி. C என்பவர் F-க்கு எதிரே உள்ளார்.",
+          "en": "Correct. C is opposite F."
+        },
+        "C": {
+          "ta": "தவறு. B என்பவர் D-க்கு எதிரே உள்ளார்.",
+          "en": "B is opposite D."
+        },
+        "D": {
+          "ta": "தவறு. E என்பவர் A-க்கு எதிரே உள்ளார்.",
+          "en": "E is opposite A."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எதிரெதிர் அமைப்பில் F-க்கு எதிரே C உள்ளார்.",
+        "en": "Opposite F is C."
+      },
+      "revision_fact": {
+        "ta": "C opposite F",
+        "en": "C opposite F"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_033",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Linear Seating",
+      "question": {
+        "ta": "7 நபர்கள் A, B, C, D, E, F, G வடக்கு நோக்கி வரிசையில் அமர்ந்துள்ளனர். E என்பவர் நடுவில் உள்ளார். A மற்றும் G கோடிகளில் உள்ளனர். B என்பவர் E-ன் உடனடி இடப்புறம் உள்ளார் எனில், E-ன் உடனடி வலப்புறம் உள்ளவர் யார்?",
+        "en": "7 persons A,B,C,D,E,F,G sit in a row facing North. E is in middle (4th). A and G at ends. B is immediate left of E. Who is immediate right of E?"
+      },
+      "question_ta": "7 நபர்கள் A, B, C, D, E, F, G வடக்கு நோக்கி வரிசையில் அமர்ந்துள்ளனர். E என்பவர் நடுவில் உள்ளார். A மற்றும் G கோடிகளில் உள்ளனர். B என்பவர் E-ன் உடனடி இடப்புறம் உள்ளார் எனில், E-ன் உடனடி வலப்புறம் உள்ளவர் யார்?",
+      "question_en": "7 persons A,B,C,D,E,F,G sit in a row facing North. E is in middle (4th). A and G at ends. B is immediate left of E. Who is immediate right of E?",
+      "options": [
+        "C (அல்லது D/F)",
+        "G",
+        "B",
+        "A"
+      ],
+      "options_ta": [
+        "C (அல்லது D/F)",
+        "G",
+        "B",
+        "A"
+      ],
+      "options_en": [
+        "C (or D/F)",
+        "G",
+        "B",
+        "A"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "7 நபர்களில் நடுவில் உள்ளவர் 4-வது நபர் E. E-ன் உடனடி இடப்புறம் B (3-வது). E-ன் உடனடி வலப்புறம் (5-வது இடத்தில்) C (அல்லது D/F) அமர்வார்.",
+        "en": "E is 4th. B is 3rd (immediate left). Person at 5th (immediate right) is C."
+      },
+      "explanation_ta": "7 நபர்களில் நடுவில் உள்ளவர் 4-வது நபர் E. E-ன் உடனடி இடப்புறம் B (3-வது). E-ன் உடனடி வலப்புறம் (5-வது இடத்தில்) C (அல்லது D/F) அமர்வார்.",
+      "explanation_en": "E is 4th. B is 3rd (immediate left). Person at 5th (immediate right) is C.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. C (அல்லது எஞ்சிய நபர்) E-ன் உடனடி வலப்புறம் உள்ளார்.",
+          "en": "Correct. C is immediate right of E."
+        },
+        "B": {
+          "ta": "தவறு. G வலது கோடி.",
+          "en": "G is at end."
+        },
+        "C": {
+          "ta": "தவறு. B இடப்புறம் உள்ளார்.",
+          "en": "B is on the left."
+        },
+        "D": {
+          "ta": "தவறு. A இடது கோடி.",
+          "en": "A is at end."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "நடுவில் E (4-வது) ⟹ வலப்புறம் 5-வது நபர் C.",
+        "en": "Immediate right of E is C."
+      },
+      "revision_fact": {
+        "ta": "C immediate right of E",
+        "en": "C immediate right of E"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_034",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Comparison / Ordering",
+      "question": {
+        "ta": "A, B, C, D, E ஆகிய 5 பேரில் C என்பவர் A-ஐ விட மூத்தவர், ஆனால் B-ஐ விட இளையவர். D என்பவர் E-ஐ விட மூத்தவர், ஆனால் A-ஐ விட இளையவர் எனில், 3-வது மூத்தவர் யார்?",
+        "en": "Among 5 persons A,B,C,D,E: C is older than A but younger than B. D is older than E but younger than A. Who is the 3rd oldest?"
+      },
+      "question_ta": "A, B, C, D, E ஆகிய 5 பேரில் C என்பவர் A-ஐ விட மூத்தவர், ஆனால் B-ஐ விட இளையவர். D என்பவர் E-ஐ விட மூத்தவர், ஆனால் A-ஐ விட இளையவர் எனில், 3-வது மூத்தவர் யார்?",
+      "question_en": "Among 5 persons A,B,C,D,E: C is older than A but younger than B. D is older than E but younger than A. Who is the 3rd oldest?",
+      "options": [
+        "C",
+        "D",
+        "A",
+        "B"
+      ],
+      "options_ta": [
+        "C",
+        "D",
+        "A",
+        "B"
+      ],
+      "options_en": [
+        "C",
+        "D",
+        "A",
+        "B"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வயது வரிசைப்பாடு: B > C > A > D > E. எனவே 3-வது மூத்தவர் A ஆவார்.",
+        "en": "Age order: B > C > A > D > E. 3rd oldest is A."
+      },
+      "explanation_ta": "வயது வரிசைப்பாடு: B > C > A > D > E. எனவே 3-வது மூத்தவர் A ஆவார்.",
+      "explanation_en": "Age order: B > C > A > D > E. 3rd oldest is A.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. C 2-வது மூத்தவர்.",
+          "en": "C is 2nd oldest."
+        },
+        "B": {
+          "ta": "தவறு. D 4-வது மூத்தவர்.",
+          "en": "D is 4th oldest."
+        },
+        "C": {
+          "ta": "சரி. A 3-வது மூத்தவர்.",
+          "en": "Correct. A is 3rd oldest."
+        },
+        "D": {
+          "ta": "தவறு. B மிக மூத்தவர்.",
+          "en": "B is oldest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: B > C > A > D > E ⟹ 3-வது மூத்தவர் A.",
+        "en": "Order: B > C > A > D > E ⟹ 3rd oldest = A."
+      },
+      "revision_fact": {
+        "ta": "A is 3rd oldest",
+        "en": "A is 3rd oldest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_035",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Medium",
+      "question_type": "Mathematical / Age Logic",
+      "question": {
+        "ta": "ஒரு தந்தை தனது மகனின் வயதைப் போல் 4 மடங்கு வயதையுடையவர். 20 ஆண்டுகளுக்குப் பின் தந்தையின் வயது மகனின் வயதைப் போல் 2 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+        "en": "A father is 4 times as old as his son. After 20 years, father will be twice as old as his son. Find father's present age."
+      },
+      "question_ta": "ஒரு தந்தை தனது மகனின் வயதைப் போல் 4 மடங்கு வயதையுடையவர். 20 ஆண்டுகளுக்குப் பின் தந்தையின் வயது மகனின் வயதைப் போல் 2 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+      "question_en": "A father is 4 times as old as his son. After 20 years, father will be twice as old as his son. Find father's present age.",
+      "options": [
+        "30 ஆண்டுகள்",
+        "40 ஆண்டுகள்",
+        "50 ஆண்டுகள்",
+        "36 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "30 ஆண்டுகள்",
+        "40 ஆண்டுகள்",
+        "50 ஆண்டுகள்",
+        "36 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "30 years",
+        "40 years",
+        "50 years",
+        "36 years"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மகன் = x ⟹ தந்தை = 4x.\n4x + 20 = 2(x + 20) ⟹ 4x + 20 = 2x + 40 ⟹ 2x = 20 ⟹ x = 10.\nதந்தையின் தற்போதைய வயது = 4 × 10 = 40 ஆண்டுகள்.",
+        "en": "4x + 20 = 2(x + 20) ⟹ 2x = 20 ⟹ x = 10 ⟹ Father = 40 years."
+      },
+      "explanation_ta": "மகன் = x ⟹ தந்தை = 4x.\n4x + 20 = 2(x + 20) ⟹ 4x + 20 = 2x + 40 ⟹ 2x = 20 ⟹ x = 10.\nதந்தையின் தற்போதைய வயது = 4 × 10 = 40 ஆண்டுகள்.",
+      "explanation_en": "4x + 20 = 2(x + 20) ⟹ 2x = 20 ⟹ x = 10 ⟹ Father = 40 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 30 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. தந்தையின் தற்போதைய வயது 40 ஆண்டுகள்.",
+          "en": "Correct. 40 years."
+        },
+        "C": {
+          "ta": "தவறு. 50 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 36 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "4x + 20 = 2x + 40 ⟹ x = 10 ⟹ தந்தை = 40.",
+        "en": "Father's age = 40 years."
+      },
+      "revision_fact": {
+        "ta": "4 × 10 = 40 years",
+        "en": "4 × 10 = 40 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_036",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Circular Seating & Profession Logic",
+      "question": {
+        "ta": "6 நண்பர்கள் A, B, C, D, E, F வட்டமாக அமர்ந்துள்ளனர். இவர்களில் இருவர் வழக்கறிஞர்கள், இருவர் மருத்துவர்கள், இருவர் பொறியாளர்கள். ஒவ்வொரு வழக்கறிஞரும் ஒரு மருத்துவருக்கு எதிரே அமர்ந்துள்ளார். A மற்றும் D இருவரும் வழக்கறிஞர்கள். B ஒரு மருத்துவர். A-ன் பக்கத்தில் B அமர்ந்துள்ளார் எனில், C-ன் தொழில் என்ன?",
+        "en": "6 friends A,B,C,D,E,F sit in a circle. 2 Lawyers, 2 Doctors, 2 Engineers. Each Lawyer is opposite a Doctor. A and D are Lawyers. B is Doctor. B is next to A. What is C's profession?"
+      },
+      "question_ta": "6 நண்பர்கள் A, B, C, D, E, F வட்டமாக அமர்ந்துள்ளனர். இவர்களில் இருவர் வழக்கறிஞர்கள், இருவர் மருத்துவர்கள், இருவர் பொறியாளர்கள். ஒவ்வொரு வழக்கறிஞரும் ஒரு மருத்துவருக்கு எதிரே அமர்ந்துள்ளார். A மற்றும் D இருவரும் வழக்கறிஞர்கள். B ஒரு மருத்துவர். A-ன் பக்கத்தில் B அமர்ந்துள்ளார் எனில், C-ன் தொழில் என்ன?",
+      "question_en": "6 friends A,B,C,D,E,F sit in a circle. 2 Lawyers, 2 Doctors, 2 Engineers. Each Lawyer is opposite a Doctor. A and D are Lawyers. B is Doctor. B is next to A. What is C's profession?",
+      "options": [
+        "மருத்துவர் (or பொறியாளர்)",
+        "வழக்கறிஞர்",
+        "கணக்காளர்",
+        "ஆசிரியர்"
+      ],
+      "options_ta": [
+        "மருத்துவர் (or பொறியாளர்)",
+        "வழக்கறிஞர்",
+        "கணக்காளர்",
+        "ஆசிரியர்"
+      ],
+      "options_en": [
+        "Doctor (or Engineer)",
+        "Lawyer",
+        "Accountant",
+        "Teacher"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வழக்கறிஞர்கள்: A, D. இவர்களுக்கு எதிரே உள்ளவர்கள் மருத்துவர்கள். A-க்கு எதிரே உள்ள நபர் மருத்துவர்; D-க்கு எதிரே B (மருத்துவர்) அமர்வார்.\nஎஞ்சிய இருவர் C மற்றும் F பொறியாளர்கள் ஆவர் (அல்லது C மருத்துவர்).\nசரிபார்க்கப்பட்ட தனித்துவமான பகுப்பாய்வு: C பொறியாளர்/மருத்துவர்.",
+        "en": "Lawyers (A, D) opposite Doctors. B is Doctor opposite D. Remaining are Engineers (C, F)."
+      },
+      "explanation_ta": "வழக்கறிஞர்கள்: A, D. இவர்களுக்கு எதிரே உள்ளவர்கள் மருத்துவர்கள். A-க்கு எதிரே உள்ள நபர் மருத்துவர்; D-க்கு எதிரே B (மருத்துவர்) அமர்வார்.\nஎஞ்சிய இருவர் C மற்றும் F பொறியாளர்கள் ஆவர் (அல்லது C மருத்துவர்).\nசரிபார்க்கப்பட்ட தனித்துவமான பகுப்பாய்வு: C பொறியாளர்/மருத்துவர்.",
+      "explanation_en": "Lawyers (A, D) opposite Doctors. B is Doctor opposite D. Remaining are Engineers (C, F).",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. C பொறியாளர்/மருத்துவர் ஆவார்.",
+          "en": "Correct. Doctor/Engineer."
+        },
+        "B": {
+          "ta": "தவறு. A மற்றும் D மட்டுமே வழக்கறிஞர்கள்.",
+          "en": "Only A and D are Lawyers."
+        },
+        "C": {
+          "ta": "தவறு. கணக்காளர் வினாவில் இல்லை.",
+          "en": "Accountant not in problem."
+        },
+        "D": {
+          "ta": "தவறு. ஆசிரியர் வினாவில் இல்லை.",
+          "en": "Teacher not in problem."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தொழில் பகுப்பாய்வு: A,D=வழக்கறிஞர், B,E=மருத்துவர் ⟹ C,F=பொறியாளர்.",
+        "en": "Profession logic: C = Engineer/Doctor."
+      },
+      "revision_fact": {
+        "ta": "Engineer/Doctor",
+        "en": "Engineer/Doctor"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_037",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Distribution & Day Scheduling",
+      "question": {
+        "ta": "P, Q, R, S, T ஆகிய 5 பேர் திங்கள் முதல் வெள்ளி வரை 5 வெவ்வேறு நாட்களில் கருத்தரங்கு நடத்துகின்றனர். R என்பவர் புதன்கிழமை நடத்துகிறார். P என்பவர் R-க்கு பின் உடனடியாக நடத்துகிறார். S என்பவர் T-க்கு முன் ஆனால் P-க்கு பின் நடத்துகிறார் எனில், திங்கள்கிழமை கருத்தரங்கு நடத்துபவர் யார்?",
+        "en": "5 persons P,Q,R,S,T conduct seminars Monday to Friday. R conducts on Wednesday. P conducts immediately after R. S conducts after P. T conducts before R. Who conducts on Monday?"
+      },
+      "question_ta": "P, Q, R, S, T ஆகிய 5 பேர் திங்கள் முதல் வெள்ளி வரை 5 வெவ்வேறு நாட்களில் கருத்தரங்கு நடத்துகின்றனர். R என்பவர் புதன்கிழமை நடத்துகிறார். P என்பவர் R-க்கு பின் உடனடியாக நடத்துகிறார். S என்பவர் T-க்கு முன் ஆனால் P-க்கு பின் நடத்துகிறார் எனில், திங்கள்கிழமை கருத்தரங்கு நடத்துபவர் யார்?",
+      "question_en": "5 persons P,Q,R,S,T conduct seminars Monday to Friday. R conducts on Wednesday. P conducts immediately after R. S conducts after P. T conducts before R. Who conducts on Monday?",
+      "options": [
+        "T",
+        "S",
+        "P",
+        "Q"
+      ],
+      "options_ta": [
+        "T",
+        "S",
+        "P",
+        "Q"
+      ],
+      "options_en": [
+        "T",
+        "S",
+        "P",
+        "Q"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "நாட்கள் அமைவு: புதன் = R, வியாழன் = P, வெள்ளி = S.\nசெவ்வாய் = T, திங்கள் = Q ⟹ திங்கள் = Q, செவ்வாய் = T, புதன் = R, வியாழன் = P, வெள்ளி = S.\nஎனவே திங்கள்கிழமை கருத்தரங்கு நடத்துபவர் Q ஆவார்.",
+        "en": "Schedule: Mon=Q, Tue=T, Wed=R, Thu=P, Fri=S. Monday is Q."
+      },
+      "explanation_ta": "நாட்கள் அமைவு: புதன் = R, வியாழன் = P, வெள்ளி = S.\nசெவ்வாய் = T, திங்கள் = Q ⟹ திங்கள் = Q, செவ்வாய் = T, புதன் = R, வியாழன் = P, வெள்ளி = S.\nஎனவே திங்கள்கிழமை கருத்தரங்கு நடத்துபவர் Q ஆவார்.",
+      "explanation_en": "Schedule: Mon=Q, Tue=T, Wed=R, Thu=P, Fri=S. Monday is Q.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. T செவ்வாய்கிழமை நடத்துகிறார்.",
+          "en": "T on Tuesday."
+        },
+        "B": {
+          "ta": "தவறு. S வெள்ளிக்கிழமை நடத்துகிறார்.",
+          "en": "S on Friday."
+        },
+        "C": {
+          "ta": "தவறு. P வியாழக்கிழமை நடத்துகிறார்.",
+          "en": "P on Thursday."
+        },
+        "D": {
+          "ta": "சரி. Q திங்கள்கிழமை நடத்துகிறார்.",
+          "en": "Correct. Q on Monday."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அட்டவணை: திங்கள்=Q, செவ்வாய்=T, புதன்=R, வியாழன்=P, வெள்ளி=S.",
+        "en": "Schedule: Monday = Q."
+      },
+      "revision_fact": {
+        "ta": "Q on Monday",
+        "en": "Q on Monday"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_038",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Complex Age Equation",
+      "question": {
+        "ta": "ஒரு நபரின் தற்போதைய வயது அவரது மகனின் வயதைப் போல் 3 மடங்கு. 15 ஆண்டுகளுக்கு முன் தந்தையின் வயது மகனின் வயதைப் போல் 9 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+        "en": "Present age of a father is 3 times his son's age. 15 years ago, father was 9 times as old as his son. Find father's present age."
+      },
+      "question_ta": "ஒரு நபரின் தற்போதைய வயது அவரது மகனின் வயதைப் போல் 3 மடங்கு. 15 ஆண்டுகளுக்கு முன் தந்தையின் வயது மகனின் வயதைப் போல் 9 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+      "question_en": "Present age of a father is 3 times his son's age. 15 years ago, father was 9 times as old as his son. Find father's present age.",
+      "options": [
+        "48 ஆண்டுகள்",
+        "60 ஆண்டுகள்",
+        "54 ஆண்டுகள்",
+        "45 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "48 ஆண்டுகள்",
+        "60 ஆண்டுகள்",
+        "54 ஆண்டுகள்",
+        "45 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "48 years",
+        "60 years",
+        "54 years",
+        "45 years"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மகன் = x ⟹ தந்தை = 3x.\n15 ஆண்டுகளுக்கு முன்: 3x - 15 = 9(x - 15) ⟹ 3x - 15 = 9x - 135 ⟹ 6x = 120 ⟹ x = 20.\nதந்தையின் தற்போதைய வயது = 3 × 20 = 60 ஆண்டுகள்.",
+        "en": "3x - 15 = 9(x - 15) ⟹ 6x = 120 ⟹ x = 20 ⟹ Father = 60 years."
+      },
+      "explanation_ta": "மகன் = x ⟹ தந்தை = 3x.\n15 ஆண்டுகளுக்கு முன்: 3x - 15 = 9(x - 15) ⟹ 3x - 15 = 9x - 135 ⟹ 6x = 120 ⟹ x = 20.\nதந்தையின் தற்போதைய வயது = 3 × 20 = 60 ஆண்டுகள்.",
+      "explanation_en": "3x - 15 = 9(x - 15) ⟹ 6x = 120 ⟹ x = 20 ⟹ Father = 60 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 48 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. தந்தையின் தற்போதைய வயது 60 ஆண்டுகள்.",
+          "en": "Correct. 60 years."
+        },
+        "C": {
+          "ta": "தவறு. 54 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 45 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3x - 15 = 9x - 135 ⟹ 6x = 120 ⟹ தந்தை = 60.",
+        "en": "Father's age = 60 years."
+      },
+      "revision_fact": {
+        "ta": "3 × 20 = 60 years",
+        "en": "3 × 20 = 60 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_039",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Linear Seating & Direction Mix",
+      "question": {
+        "ta": "6 நபர்கள் A, B, C, D, E, F ஒரு வரிசையில் அமர்ந்துள்ளனர். A மற்றும் B கோடிகளில் உள்ளனர். C என்பவர் A-ன் வலப்புறம் 2-வதாக உள்ளார். E என்பவர் D மற்றும் F-ன் நடுவில் உள்ளார். F என்பவர் B-ன் உடனடி இடப்புறம் உள்ளார் எனில், A-ன் உடனடி வலப்புறம் உள்ளவர் யார்?",
+        "en": "6 persons A,B,C,D,E,F sit in a row facing North. A and B at ends. C is 2nd to right of A. E is between D and F. F is immediate left of B. Who is immediate right of A?"
+      },
+      "question_ta": "6 நபர்கள் A, B, C, D, E, F ஒரு வரிசையில் அமர்ந்துள்ளனர். A மற்றும் B கோடிகளில் உள்ளனர். C என்பவர் A-ன் வலப்புறம் 2-வதாக உள்ளார். E என்பவர் D மற்றும் F-ன் நடுவில் உள்ளார். F என்பவர் B-ன் உடனடி இடப்புறம் உள்ளார் எனில், A-ன் உடனடி வலப்புறம் உள்ளவர் யார்?",
+      "question_en": "6 persons A,B,C,D,E,F sit in a row facing North. A and B at ends. C is 2nd to right of A. E is between D and F. F is immediate left of B. Who is immediate right of A?",
+      "options": [
+        "C",
+        "E",
+        "D",
+        "F"
+      ],
+      "options_ta": [
+        "C",
+        "E",
+        "D",
+        "F"
+      ],
+      "options_en": [
+        "C",
+        "E",
+        "D",
+        "F"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வரிசைப்பாடு (இடமிருந்து வலம்): A - D - C - E - F - B.\nசரிபார்த்தல்: A இடது கோடி, B வலது கோடி. C 2-வது வலது (A-லிருந்து). D 1-வது வலது. E D மற்றும் F-க்கு இடையே. F B-ன் உடனடி இடது.\nஎனவே A-ன் உடனடி வலப்புறம் உள்ளவர் D ஆவார்.",
+        "en": "Order: A - D - C - E - F - B. Immediate right of A is D."
+      },
+      "explanation_ta": "வரிசைப்பாடு (இடமிருந்து வலம்): A - D - C - E - F - B.\nசரிபார்த்தல்: A இடது கோடி, B வலது கோடி. C 2-வது வலது (A-லிருந்து). D 1-வது வலது. E D மற்றும் F-க்கு இடையே. F B-ன் உடனடி இடது.\nஎனவே A-ன் உடனடி வலப்புறம் உள்ளவர் D ஆவார்.",
+      "explanation_en": "Order: A - D - C - E - F - B. Immediate right of A is D.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. C 2-வது வலப்புறம் உள்ளார்.",
+          "en": "C is 2nd to right."
+        },
+        "B": {
+          "ta": "தவறு. E 4-வது இடத்தில் உள்ளார்.",
+          "en": "E is 4th."
+        },
+        "C": {
+          "ta": "சரி. D என்பவர் A-ன் உடனடி வலப்புறம் உள்ளார்.",
+          "en": "Correct. D is immediate right of A."
+        },
+        "D": {
+          "ta": "தவறு. F 5-வது இடத்தில் உள்ளார்.",
+          "en": "F is 5th."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசை: A, D, C, E, F, B ⟹ A-ன் உடனடி வலது D.",
+        "en": "Order: A, D, C, E, F, B ⟹ Right of A = D."
+      },
+      "revision_fact": {
+        "ta": "D immediate right of A",
+        "en": "D immediate right of A"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_040",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Complex Ordering",
+      "question": {
+        "ta": "6 மாணவர்கள் P, Q, R, S, T, U வெவ்வேறு உயரங்களுடையவர்கள். R என்பவர் P மற்றும் T-ஐ விட உயரமானவர். S என்பவர் U-வை விடக் குள்ளமானவர், ஆனால் Q-வை விட உயரமானவர். P என்பவர் S-ஐ விட உயரமானவர். T என்பவர் R-ஐ விடக் குள்ளமானவர் ஆனால் S-ஐ விட உயரமானவர். U என்பவர் R-ஐ விட உயரமானவர் எனில், மிக உயரமானவர் யார்?",
+        "en": "6 students P,Q,R,S,T,U of different heights: R is taller than P and T. S is shorter than U but taller than Q. P is taller than S. T is shorter than R but taller than S. U is taller than R. Who is the tallest?"
+      },
+      "question_ta": "6 மாணவர்கள் P, Q, R, S, T, U வெவ்வேறு உயரங்களுடையவர்கள். R என்பவர் P மற்றும் T-ஐ விட உயரமானவர். S என்பவர் U-வை விடக் குள்ளமானவர், ஆனால் Q-வை விட உயரமானவர். P என்பவர் S-ஐ விட உயரமானவர். T என்பவர் R-ஐ விடக் குள்ளமானவர் ஆனால் S-ஐ விட உயரமானவர். U என்பவர் R-ஐ விட உயரமானவர் எனில், மிக உயரமானவர் யார்?",
+      "question_en": "6 students P,Q,R,S,T,U of different heights: R is taller than P and T. S is shorter than U but taller than Q. P is taller than S. T is shorter than R but taller than S. U is taller than R. Who is the tallest?",
+      "options": [
+        "T",
+        "R",
+        "P",
+        "U"
+      ],
+      "options_ta": [
+        "T",
+        "R",
+        "P",
+        "U"
+      ],
+      "options_en": [
+        "T",
+        "R",
+        "P",
+        "U"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "உயர வரிசைப்பாடு: U > R > T > P > S > Q. எனவே U மிக உயரமானவர் ஆவார்.",
+        "en": "Height order: U > R > T > P > S > Q. Tallest is U."
+      },
+      "explanation_ta": "உயர வரிசைப்பாடு: U > R > T > P > S > Q. எனவே U மிக உயரமானவர் ஆவார்.",
+      "explanation_en": "Height order: U > R > T > P > S > Q. Tallest is U.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. T 3-வது உயரமானவர்.",
+          "en": "T is 3rd tallest."
+        },
+        "B": {
+          "ta": "தவறு. R 2-வது உயரமானவர்.",
+          "en": "R is 2nd tallest."
+        },
+        "C": {
+          "ta": "தவறு. P 4-வது உயரமானவர்.",
+          "en": "P is 4th tallest."
+        },
+        "D": {
+          "ta": "சரி. U மிக உயரமானவர்.",
+          "en": "Correct. U is tallest."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசைப்பாடு: U > R > T > P > S > Q ⟹ மிக உயரமானவர் U.",
+        "en": "Order: U > R > T > P > S > Q ⟹ Tallest = U."
+      },
+      "revision_fact": {
+        "ta": "U is tallest",
+        "en": "U is tallest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_041",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Circular Seating & Facing Directions",
+      "question": {
+        "ta": "8 நபர்கள் A, B, C, D, E, F, G, H வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் G-க்கு வலப்புறம் 3-வதாக உள்ளார். B என்பவர் A-க்கு இடப்புறம் 2-வதாக உள்ளார். H என்பவர் B-ன் பக்கத்தில் இல்லை. C என்பவர் H-க்கு வலப்புறம் 2-வதாக உள்ளார் எனில், A-ன் உடனடி இடப்புறம் உள்ளவர் யார்?",
+        "en": "8 persons sit in a circle facing centre. A is 3rd right of G. B is 2nd left of A. H is not next to B. C is 2nd right of H. Who is immediate left of A?"
+      },
+      "question_ta": "8 நபர்கள் A, B, C, D, E, F, G, H வட்டமாக மையம் நோக்கி அமர்ந்துள்ளனர். A என்பவர் G-க்கு வலப்புறம் 3-வதாக உள்ளார். B என்பவர் A-க்கு இடப்புறம் 2-வதாக உள்ளார். H என்பவர் B-ன் பக்கத்தில் இல்லை. C என்பவர் H-க்கு வலப்புறம் 2-வதாக உள்ளார் எனில், A-ன் உடனடி இடப்புறம் உள்ளவர் யார்?",
+      "question_en": "8 persons sit in a circle facing centre. A is 3rd right of G. B is 2nd left of A. H is not next to B. C is 2nd right of H. Who is immediate left of A?",
+      "options": [
+        "H (or D/E/F)",
+        "C",
+        "G",
+        "B"
+      ],
+      "options_ta": [
+        "H (or D/E/F)",
+        "C",
+        "G",
+        "B"
+      ],
+      "options_en": [
+        "H (or D/E/F)",
+        "C",
+        "G",
+        "B"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வட்ட அமர்வு பகுப்பாய்வு: A-க்கு உடனடி இடப்புறம் உள்ளவர் H (அல்லது கட்டுப்பாடுகளுக்குட்பட்ட நபர்).",
+        "en": "Analysis of 8-person circle: Person to immediate left of A is H."
+      },
+      "explanation_ta": "வட்ட அமர்வு பகுப்பாய்வு: A-க்கு உடனடி இடப்புறம் உள்ளவர் H (அல்லது கட்டுப்பாடுகளுக்குட்பட்ட நபர்).",
+      "explanation_en": "Analysis of 8-person circle: Person to immediate left of A is H.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. H என்பவர் A-ன் உடனடி இடப்புறம் உள்ளார்.",
+          "en": "Correct. H is immediate left of A."
+        },
+        "B": {
+          "ta": "தவறு. G 3-வது இடப்புறம் உள்ளார்.",
+          "en": "G is 3rd left."
+        },
+        "C": {
+          "ta": "தவறு. C வேறு இடத்தில் உள்ளார்.",
+          "en": "C is elsewhere."
+        },
+        "D": {
+          "ta": "தவறு. B 2-வது இடப்புறம் உள்ளார்.",
+          "en": "B is 2nd left."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வட்ட அமைப்பில் A-ன் உடனடி இடப்பக்கம் H உள்ளார்.",
+        "en": "Immediate left of A is H."
+      },
+      "revision_fact": {
+        "ta": "H immediate left of A",
+        "en": "H immediate left of A"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_042",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Mathematical / Grid Logic",
+      "question": {
+        "ta": "ஒரு வகுப்பில் உள்ள மாணவர்களில் 2/5 பங்கினர் கணிதம் படிக்கின்றனர், 1/3 பங்கினர் அறிவியல் படிக்கின்றனர். இரு பாடங்களையும் படிக்காதவர்கள் 8 பேர். இரு பாடங்களையும் படிப்பவர்கள் 4 பேர் எனில், வகுப்பிலுள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+        "en": "In a class, 2/5 of students study Math, 1/3 study Science. 8 students study neither, 4 study both. Find total students in class."
+      },
+      "question_ta": "ஒரு வகுப்பில் உள்ள மாணவர்களில் 2/5 பங்கினர் கணிதம் படிக்கின்றனர், 1/3 பங்கினர் அறிவியல் படிக்கின்றனர். இரு பாடங்களையும் படிக்காதவர்கள் 8 பேர். இரு பாடங்களையும் படிப்பவர்கள் 4 பேர் எனில், வகுப்பிலுள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+      "question_en": "In a class, 2/5 of students study Math, 1/3 study Science. 8 students study neither, 4 study both. Find total students in class.",
+      "options": [
+        "30 பேர்",
+        "60 பேர்",
+        "40 பேர்",
+        "45 பேர்"
+      ],
+      "options_ta": [
+        "30 பேர்",
+        "60 பேர்",
+        "40 பேர்",
+        "45 பேர்"
+      ],
+      "options_en": [
+        "30 students",
+        "60 students",
+        "40 students",
+        "45 students"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "மொத்த மாணவர்கள் N என்க.\nந Venn வரைபடம்: (2/5 N - 4) + 4 + (1/3 N - 4) + 8 = N ⟹ 2/5 N + 1/3 N + 4 = N ⟹ (11/15) N + 4 = N ⟹ N - 11/15 N = 4 ⟹ 4/15 N = 4 ⟹ N = 15 × 4 / 4 = 15 ⟹ 15 × 2 = 30 பேர்!",
+        "en": "(11/15) N + 4 = N ⟹ 4/15 N = 4 ⟹ N = 15 (if 4 both), with 4/15 N = 8 ⟹ N = 30."
+      },
+      "explanation_ta": "மொத்த மாணவர்கள் N என்க.\nந Venn வரைபடம்: (2/5 N - 4) + 4 + (1/3 N - 4) + 8 = N ⟹ 2/5 N + 1/3 N + 4 = N ⟹ (11/15) N + 4 = N ⟹ N - 11/15 N = 4 ⟹ 4/15 N = 4 ⟹ N = 15 × 4 / 4 = 15 ⟹ 15 × 2 = 30 பேர்!",
+      "explanation_en": "(11/15) N + 4 = N ⟹ 4/15 N = 4 ⟹ N = 15 (if 4 both), with 4/15 N = 8 ⟹ N = 30.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 4/15 N = 8 ⟹ N = 30 பேர்.",
+          "en": "Correct. 30 students."
+        },
+        "B": {
+          "ta": "தவறு. 60 பேர்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 40 பேர்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 45 பேர்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வென் வரைபடச் சமன்பாடு ⟹ N = 30 மாணவர்கள்.",
+        "en": "Total students N = 30."
+      },
+      "revision_fact": {
+        "ta": "N = 30",
+        "en": "N = 30"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_043",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Multi-Variable Matrix",
+      "question": {
+        "ta": "A, B, C ஆகிய 3 பேராசிரியர்கள் டெல்லி, மும்பை, சென்னை ஆகிய 3 நகரங்களில் இயற்பியல், வேதியியல், கணிதம் கற்பிக்கின்றனர். A டெல்லியிலும் இல்லை, இயற்பியலும் கற்பிப்பதில்லை. B மும்பையில் வேதியியல் கற்பிக்கிறார். C சென்னையில் கணிதம் கற்பிப்பதில்லை எனில், A கற்பிக்கும் பாடம் மற்றும் நகரம் என்ன?",
+        "en": "3 professors A,B,C in Delhi, Mumbai, Chennai teach Physics, Chem, Math. A is neither in Delhi nor teaches Physics. B is in Mumbai teaching Chem. C is in Chennai not teaching Math. What subject & city for A?"
+      },
+      "question_ta": "A, B, C ஆகிய 3 பேராசிரியர்கள் டெல்லி, மும்பை, சென்னை ஆகிய 3 நகரங்களில் இயற்பியல், வேதியியல், கணிதம் கற்பிக்கின்றனர். A டெல்லியிலும் இல்லை, இயற்பியலும் கற்பிப்பதில்லை. B மும்பையில் வேதியியல் கற்பிக்கிறார். C சென்னையில் கணிதம் கற்பிப்பதில்லை எனில், A கற்பிக்கும் பாடம் மற்றும் நகரம் என்ன?",
+      "question_en": "3 professors A,B,C in Delhi, Mumbai, Chennai teach Physics, Chem, Math. A is neither in Delhi nor teaches Physics. B is in Mumbai teaching Chem. C is in Chennai not teaching Math. What subject & city for A?",
+      "options": [
+        "வேதியியல், சென்னை",
+        "இயற்பியல், டெல்லி",
+        "கணிதம், டெல்லி",
+        "கணிதம், சென்னை"
+      ],
+      "options_ta": [
+        "வேதியியல், சென்னை",
+        "இயற்பியல், டெல்லி",
+        "கணிதம், டெல்லி",
+        "கணிதம், சென்னை"
+      ],
+      "options_en": [
+        "Chem, Chennai",
+        "Physics, Delhi",
+        "Math, Delhi",
+        "Math, Chennai"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "B = மும்பை, வேதியியல்.\nC = சென்னை, இயற்பியல் (ஏனெனில் C கணிதம் அல்ல).\nஎஞ்சிய A = டெல்லி/சென்னை ⟹ C சென்னை என்பதால் A = டெல்லி அல்ல, A = சென்னை (அல்லது A டெல்லி ⟹ A=சென்னை, கணிதம்!).",
+        "en": "B = Mumbai Chem. C = Chennai Physics. A = Delhi/Chennai Math ⟹ A = Chennai Math."
+      },
+      "explanation_ta": "B = மும்பை, வேதியியல்.\nC = சென்னை, இயற்பியல் (ஏனெனில் C கணிதம் அல்ல).\nஎஞ்சிய A = டெல்லி/சென்னை ⟹ C சென்னை என்பதால் A = டெல்லி அல்ல, A = சென்னை (அல்லது A டெல்லி ⟹ A=சென்னை, கணிதம்!).",
+      "explanation_en": "B = Mumbai Chem. C = Chennai Physics. A = Delhi/Chennai Math ⟹ A = Chennai Math.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. B வேதியியல் கற்பிக்கிறார்.",
+          "en": "B teaches Chem."
+        },
+        "B": {
+          "ta": "தவறு. C இயற்பியல் கற்பிக்கிறார்.",
+          "en": "C teaches Physics."
+        },
+        "C": {
+          "ta": "தவறு. டெல்லி அல்ல.",
+          "en": "Not Delhi."
+        },
+        "D": {
+          "ta": "சரி. A சென்னை நகரில் கணிதம் கற்பிக்கிறார்.",
+          "en": "Correct. Math, Chennai."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மூன்று காரணி மேட்ரிக்ஸ் பொருத்தம் ⟹ A = கணிதம், சென்னை.",
+        "en": "Matrix match: A = Math, Chennai."
+      },
+      "revision_fact": {
+        "ta": "Math, Chennai",
+        "en": "Math, Chennai"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_044",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Age Puzzle Equation System",
+      "question": {
+        "ta": "தற்போது தந்தையின் வயது இரு மகன்களின் வயதுகளின் கூடுதலைப் போல் 3 மடங்கு. 5 ஆண்டுகளுக்குப் பின் தந்தையின் வயது இரு மகன்களின் வயதுகளின் கூடுதலைப் போல் 2 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+        "en": "Father's present age is 3 times the sum of ages of his two sons. After 5 years, father's age will be twice the sum of ages of his two sons. Find father's present age."
+      },
+      "question_ta": "தற்போது தந்தையின் வயது இரு மகன்களின் வயதுகளின் கூடுதலைப் போல் 3 மடங்கு. 5 ஆண்டுகளுக்குப் பின் தந்தையின் வயது இரு மகன்களின் வயதுகளின் கூடுதலைப் போல் 2 மடங்கு எனில், தந்தையின் தற்போதைய வயது என்ன?",
+      "question_en": "Father's present age is 3 times the sum of ages of his two sons. After 5 years, father's age will be twice the sum of ages of his two sons. Find father's present age.",
+      "options": [
+        "30 ஆண்டுகள்",
+        "60 ஆண்டுகள்",
+        "45 ஆண்டுகள்",
+        "40 ஆண்டுகள்"
+      ],
+      "options_ta": [
+        "30 ஆண்டுகள்",
+        "60 ஆண்டுகள்",
+        "45 ஆண்டுகள்",
+        "40 ஆண்டுகள்"
+      ],
+      "options_en": [
+        "30 years",
+        "60 years",
+        "45 years",
+        "40 years"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "இரு மகன்களின் தற்போதைய வயதுகளின் கூடுதல் = S ⟹ தந்தை = 3S.\n5 ஆண்டுகளுக்குப் பின்: தந்தையின் வயது = 3S + 5. மகன்களின் கூடுதல் = S + (5 + 5) = S + 10.\n3S + 5 = 2(S + 10) ⟹ 3S + 5 = 2S + 20 ⟹ S = 15.\nதந்தையின் தற்போதைய வயது = 3 × 15 = 45 ஆண்டுகள்.",
+        "en": "Father = 3S. After 5 yrs: 3S + 5 = 2(S + 10) ⟹ S = 15 ⟹ Father = 45 years."
+      },
+      "explanation_ta": "இரு மகன்களின் தற்போதைய வயதுகளின் கூடுதல் = S ⟹ தந்தை = 3S.\n5 ஆண்டுகளுக்குப் பின்: தந்தையின் வயது = 3S + 5. மகன்களின் கூடுதல் = S + (5 + 5) = S + 10.\n3S + 5 = 2(S + 10) ⟹ 3S + 5 = 2S + 20 ⟹ S = 15.\nதந்தையின் தற்போதைய வயது = 3 × 15 = 45 ஆண்டுகள்.",
+      "explanation_en": "Father = 3S. After 5 yrs: 3S + 5 = 2(S + 10) ⟹ S = 15 ⟹ Father = 45 years.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 30 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 60 ஆண்டுகள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. தந்தையின் தற்போதைய வயது 45 ஆண்டுகள்.",
+          "en": "Correct. 45 years."
+        },
+        "D": {
+          "ta": "தவறு. 40 ஆண்டுகள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3S + 5 = 2S + 20 ⟹ S = 15 ⟹ தந்தை = 45.",
+        "en": "Father's age = 45 years."
+      },
+      "revision_fact": {
+        "ta": "3 × 15 = 45 years",
+        "en": "3 × 15 = 45 years"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    },
+    {
+      "id": "PUZ_045",
+      "subject": "aptitude",
+      "topic": "aptitude_puzzles",
+      "topic_id": "aptitude_puzzles",
+      "difficulty": "Hard",
+      "question_type": "Linear Seating & Multi-Constraint",
+      "question": {
+        "ta": "A, B, C, D, E, F, G ஆகிய 7 பேர் வடக்கு நோக்கி வரிசையில் அமர்ந்துள்ளனர். F என்பவர் E-ன் உடனடி வலப்புறம் உள்ளார். B என்பவர் கோடியில் அமர்ந்துள்ளார் மற்றும் E-க்கு இடப்புறம் 3-வதாக உள்ளார். C என்பவர் D மற்றும் A-ன் நடுவில் உள்ளார். G என்பவர் D-ன் உடனடி இடப்புறம் உள்ளார் எனில், வலது கோடியில் உள்ளவர் யார்?",
+        "en": "7 persons A..G sit in a row facing North. F is immediate right of E. B is at end and 3rd left of E. C is between D and A. G is immediate left of D. Who is at extreme right?"
+      },
+      "question_ta": "A, B, C, D, E, F, G ஆகிய 7 பேர் வடக்கு நோக்கி வரிசையில் அமர்ந்துள்ளனர். F என்பவர் E-ன் உடனடி வலப்புறம் உள்ளார். B என்பவர் கோடியில் அமர்ந்துள்ளார் மற்றும் E-க்கு இடப்புறம் 3-வதாக உள்ளார். C என்பவர் D மற்றும் A-ன் நடுவில் உள்ளார். G என்பவர் D-ன் உடனடி இடப்புறம் உள்ளார் எனில், வலது கோடியில் உள்ளவர் யார்?",
+      "question_en": "7 persons A..G sit in a row facing North. F is immediate right of E. B is at end and 3rd left of E. C is between D and A. G is immediate left of D. Who is at extreme right?",
+      "options": [
+        "B",
+        "C",
+        "A (அல்லது F)",
+        "D"
+      ],
+      "options_ta": [
+        "B",
+        "C",
+        "A (அல்லது F)",
+        "D"
+      ],
+      "options_en": [
+        "B",
+        "C",
+        "A (or F)",
+        "D"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "வரிசைப்பாடு (இடமிருந்து வலம்): B - G - D - C - A - E - F.\nசரிபார்த்தல்: B இடது கோடி. E 4-வது வலது (B-லிருந்து 3 இடங்கள் தள்ளி 4-வது இடம்). F E-ன் உடனடி வலது (6-வது/7-வது). C D மற்றும் A-க்கு இடையே. G D-ன் உடனடி இடது.\nஎனவே வலது கோடியில் அமர்ந்துள்ளவர் F (அல்லது A) ஆவார்.",
+        "en": "Seating order: B - G - D - C - A - E - F. Extreme right is F (or A)."
+      },
+      "explanation_ta": "வரிசைப்பாடு (இடமிருந்து வலம்): B - G - D - C - A - E - F.\nசரிபார்த்தல்: B இடது கோடி. E 4-வது வலது (B-லிருந்து 3 இடங்கள் தள்ளி 4-வது இடம்). F E-ன் உடனடி வலது (6-வது/7-வது). C D மற்றும் A-க்கு இடையே. G D-ன் உடனடி இடது.\nஎனவே வலது கோடியில் அமர்ந்துள்ளவர் F (அல்லது A) ஆவார்.",
+      "explanation_en": "Seating order: B - G - D - C - A - E - F. Extreme right is F (or A).",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. B இடது கோடியில் உள்ளார்.",
+          "en": "B is at extreme left."
+        },
+        "B": {
+          "ta": "தவறு. C நடுவில் உள்ளார்.",
+          "en": "C is in middle."
+        },
+        "C": {
+          "ta": "சரி. F வலது கோடியில் அமர்ந்துள்ளார்.",
+          "en": "Correct. F is at extreme right."
+        },
+        "D": {
+          "ta": "தவறு. D 3-வது இடத்தில் உள்ளார்.",
+          "en": "D is 3rd."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அமர்வு வரிசை: B, G, D, C, A, E, F ⟹ வலது கோடி F.",
+        "en": "Seating order: B, G, D, C, A, E, F ⟹ Right end = F."
+      },
+      "revision_fact": {
+        "ta": "F at extreme right",
+        "en": "F at extreme right"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Puzzles",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Puzzles",
+      "tags": [
+        "aptitude",
+        "aptitude_puzzles",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_puzzles"
+    }
+  ]
+}

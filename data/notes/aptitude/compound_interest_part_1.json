@@ -1,0 +1,306 @@
+{
+  "topic": "compound_interest_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Compound Interest Part 1 — Foundations, Compounding Periods & Growth",
+  "title_ta": "கூட்டு வட்டி பகுதி 1 — அடிப்படைகள், கூட்டுப் பருவங்கள் மற்றும் வளர்ச்சி மாதிரிகள்",
+
+  "definition": {
+    "en": "Compound Interest (CI) is interest calculated on the initial principal plus all accumulated interest from previous periods.",
+    "ta": "கூட்டு வட்டி என்பது ஆரம்ப அசல் தொகையுடன் சேர்த்து, ஒவ்வொரு காலக்கட்டத்தின் முடிவிலும் சேர்ந்த வட்டியையும் சேர்த்து அசலாகக் கொண்டு கணக்கிடப்படும் வட்டி ஆகும்."
+  },
+
+  "exam_importance": {
+    "en": "Compound Interest is a core topic in TNPSC Aptitude across Group 1, Group 2/2A, and Group 4 exams. Questions test direct compounding formulas, half-yearly and quarterly compounding, successive varying annual rates, population growth, and machine depreciation.",
+    "ta": "கூட்டு வட்டி என்பது TNPSC தேர்வுகளுக்கான மிக முக்கிய தலைப்பாகும். ஆண்டு கூட்டு வட்டி, அரை ஆண்டு/காலாண்டு கூட்டு வட்டி, தொடர் வட்டி வீதங்கள், மக்கள் தொகை வளர்ச்சி மற்றும் இயந்திரத் தேய்மானம் தொடர்பான வினாக்கள் அடிக்கடி கேட்கப்படுகின்றன."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Annual Compounding Formula (ஆண்டு கூட்டு வட்டி சூத்திரம்)",
+      "formula": "A = P \\left(1 + \\frac{R}{100}\\right)^n, \\quad CI = A - P",
+      "explanation": {
+        "en": "A = Amount, P = Principal, R = Annual Rate %, n = Number of years.",
+        "ta": "A = மொத்தத் தொகை, P = அசல், R = ஆண்டு வட்டி வீதம் %, n = ஆண்டுகளின் எண்ணிக்கை."
+      }
+    },
+    {
+      "title": "Half-Yearly Compounding Formula (அரை ஆண்டு கூட்டு வட்டி சூத்திரம்)",
+      "formula": "A = P \\left(1 + \\frac{R/2}{100}\\right)^{2n} = P \\left(1 + \\frac{R}{200}\\right)^{2n}",
+      "explanation": {
+        "en": "Interest is compounded twice a year. Rate becomes R/2 and periods become 2n.",
+        "ta": "ஆண்டுக்கு இருமுறை வட்டி கூட்டப்படுகிறது. வட்டி வீதம் R/2 எனவும், காலக்கட்டம் 2n எனவும் மாறும்."
+      }
+    },
+    {
+      "title": "Quarterly Compounding Formula (காலாண்டு கூட்டு வட்டி சூத்திரம்)",
+      "formula": "A = P \\left(1 + \\frac{R/4}{100}\\right)^{4n} = P \\left(1 + \\frac{R}{400}\\right)^{4n}",
+      "explanation": {
+        "en": "Interest is compounded four times a year. Rate becomes R/4 and periods become 4n.",
+        "ta": "ஆண்டுக்கு நான்கு முறை வட்டி கூட்டப்படுகிறது. வட்டி வீதம் R/4 எனவும், காலக்கட்டம் 4n எனவும் மாறும்."
+      }
+    },
+    {
+      "title": "Successive Rates & Growth/Depreciation (தொடர் வீதங்கள் & வளர்ச்சி/தேய்மானம்)",
+      "formula": "A = P \\left(1 + \\frac{R_1}{100}\\right)\\left(1 + \\frac{R_2}{100}\\right), \\quad \\text{Depreciation: } A = P \\left(1 - \\frac{R}{100}\\right)^n",
+      "explanation": {
+        "en": "For different annual rates R1, R2, or population growth (+) vs machine value depreciation (-).",
+        "ta": "வெவ்வேறு ஆண்டு வட்டி வீதங்கள் R1, R2 மற்றும் மக்கள் தொகை வளர்ச்சி (+) அல்லது இயந்திரத் தேய்மானம் (-) கணக்கிடும் சூத்திரங்கள்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Year-by-Year Conceptual Compounding (ஆண்டுவாரியான தத்துவ விளக்கம்)",
+      "points": {
+        "en": [
+          "Year 1 Interest = (P × R × 1) / 100.",
+          "Year 2 Principal = P + Year 1 Interest.",
+          "Year 2 Interest is calculated on the NEW updated Principal.",
+          "This accumulation makes Compound Interest grow faster than Simple Interest over time."
+        ],
+        "ta": [
+          "1-ஆம் ஆண்டு வட்டி = (P × R × 1) / 100.",
+          "2-ஆம் ஆண்டு அசல் = P + 1-ஆம் ஆண்டு வட்டி.",
+          "2-ஆம் ஆண்டு வட்டி இந்த புதிய அசலின் மீது கணக்கிடப்படும்.",
+          "இதன் காரணமாகக் கூட்டு வட்டியானது தனி வட்டியை விட வேகமாக வளர்கிறது."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Effective Percentage Rate Shortcut for 2 Years",
+      "points": {
+        "en": [
+          "For 2 years at R%, effective compound interest percentage = 2R + (R²/100)%.",
+          "Example: At 5% p.a. for 2 yrs → 2(5) + (25/100) = 10.25%. Direct CI = 10.25% of P.",
+          "Example: At 10% p.a. for 2 yrs → 2(10) + (100/100) = 21%. Direct CI = 21% of P."
+        ],
+        "ta": [
+          "2 ஆண்டுகளுக்கு R% வீதத்தில் விளைவு கூட்டு வட்டி சதவீதம் = 2R + (R²/100)%.",
+          "எ.கா: 5% வீதத்தில் 2 ஆண்டுகள் → 10.25%. நேரடி வட்டி = P-ன் 10.25%.",
+          "எ.கா: 10% வீதத்தில் 2 ஆண்டுகள் → 21%. நேரடி வட்டி = P-ன் 21%."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Using annual rate R directly for quarterly/half-yearly compounding",
+      "explanation": {
+        "en": "For 9 months quarterly compounded at 20% p.a., using R=20% directly instead of 20/4=5% yields a massively wrong answer.",
+        "ta": "20% வட்டி வீதத்தில் 9 மாதங்களுக்கு காலாண்டு கூட்டு வட்டி கணக்கிடும் போது R=20% என நேரடியாகப் பயன்படுத்தக் கூடாது; R/4 = 5% என மாற்ற வேண்டும்."
+      },
+      "avoidance": {
+        "en": "Always adjust Rate: Half-yearly = R/2, Quarterly = R/4. Adjust periods: 9 months = 3 quarters.",
+        "ta": "அரை ஆண்டு எனில் R/2, காலாண்டு எனில் R/4 என வட்டி வீதத்தையும், 9 மாதங்கள் = 3 காலாண்டுகள் என காலத்தையும் மாற்றவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the Compound Interest and Amount on ₹10,000 at 10% per annum for 2 years compounded annually.",
+      "method": "Direct Annual Compounding Formula",
+      "steps": [
+        "Step 1: Given P = ₹10,000, R = 10%, n = 2 years.",
+        "Step 2: Apply formula: \\(A = P \\left(1 + \\frac{R}{100}\\right)^n = 10000 \\left(1 + \\frac{10}{100}\\right)^2 = 10000 \\times (1.10)^2\\).",
+        "Step 3: Calculate Amount: \\(A = 10000 \\times 1.21 = ₹12,100\\).",
+        "Step 4: Calculate CI: \\(CI = A - P = 12100 - 10000 = ₹2,100\\)."
+      ],
+      "answer": "Amount = ₹12,100, Compound Interest = ₹2,100"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Alex invested ₹8,000 in a fixed deposit scheme for 2 years at a compound interest rate of 5% per annum. How much amount will he get on maturity?",
+      "method": "Maturity Amount Formula",
+      "steps": [
+        "Step 1: Given P = ₹8,000, R = 5%, n = 2 years.",
+        "Step 2: Apply formula: \\(A = 8000 \\left(1 + \\frac{5}{100}\\right)^2 = 8000 \\times \\left(\\frac{21}{20}\\right)^2\\).",
+        "Step 3: Calculate Amount: \\(A = 8000 \\times \\frac{441}{400} = 20 \\times 441 = ₹8,820\\)."
+      ],
+      "answer": "₹8,820"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Find the compound interest on ₹16,000 for 9 months at 20% per annum compounded quarterly.",
+      "method": "Quarterly Compounding Method",
+      "steps": [
+        "Step 1: Given P = ₹16,000, Annual Rate R = 20%.",
+        "Step 2: Calculate quarterly rate: \\(r = \\frac{20}{4} = 5\\%\\).",
+        "Step 3: Calculate number of quarterly periods in 9 months: \\(n = \\frac{9}{3} = 3\\) quarters.",
+        "Step 4: Calculate Amount: \\(A = 16000 \\left(1 + \\frac{5}{100}\\right)^3 = 16000 \\times (1.05)^3 = 16000 \\times 1.157625 = ₹18,522\\).",
+        "Step 5: Calculate CI: \\(CI = 18522 - 16000 = ₹2,522\\)."
+      ],
+      "answer": "₹2,522"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Calculate the compound interest on ₹9,000 in 2 years when the rates of interest for successive years are 10% and 12% respectively.",
+      "method": "Successive Rates Method",
+      "steps": [
+        "Step 1: Given P = ₹9,000, R1 = 10%, R2 = 12%.",
+        "Step 2: Apply successive rate formula: \\(A = P \\left(1 + \\frac{R_1}{100}\\right)\\left(1 + \\frac{R_2}{100}\\right) = 9000 \\times 1.10 \\times 1.12\\).",
+        "Step 3: Calculate Amount: \\(A = 9000 \\times 1.232 = ₹11,088\\).",
+        "Step 4: Calculate CI: \\(CI = 11088 - 9000 = ₹2,088\\)."
+      ],
+      "answer": "₹2,088"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The population of a town is 1,25,000. If it increases at the rate of 4% per annum, find the population after 2 years.",
+      "method": "Population Growth Application",
+      "steps": [
+        "Step 1: Present population P = 1,25,000, Growth Rate R = 4%, n = 2 years.",
+        "Step 2: Apply population formula: \\(A = 125000 \\left(1 + \\frac{4}{100}\\right)^2 = 125000 \\times (1.04)^2\\).",
+        "Step 3: Calculate: \\(A = 125000 \\times 1.0816 = 1,35,200\\)."
+      ],
+      "answer": "1,35,200"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The value of a machine depreciates at 10% per annum. Its present value is ₹50,000. Find its depreciated value after 2 years.",
+      "method": "Depreciation Formula",
+      "steps": [
+        "Step 1: Initial value P = ₹50,000, Depreciation Rate R = 10%, n = 2 years.",
+        "Step 2: Apply depreciation formula: \\(A = P \\left(1 - \\frac{R}{100}\\right)^n = 50000 \\left(1 - \\frac{10}{100}\\right)^2\\).",
+        "Step 3: Calculate: \\(A = 50000 \\times (0.90)^2 = 50000 \\times 0.81 = ₹40,500\\)."
+      ],
+      "answer": "₹40,500"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the Compound Interest on ₹5,000 at 10% per annum for 2 years compounded annually.",
+      "options": ["A) ₹1,000", "B) ₹1,050", "C) ₹1,100", "D) ₹1,200"],
+      "correct_option": "B) ₹1,050",
+      "explanation": "A = 5000 × (1.10)^2 = ₹6,050. CI = 6050 - 5000 = ₹1,050."
+    },
+    {
+      "id": 2,
+      "question": "Find the amount on ₹12,000 at 10% per annum for 1 year compounded half-yearly.",
+      "options": ["A) ₹13,200", "B) ₹13,230", "C) ₹13,500", "D) ₹14,000"],
+      "correct_option": "B) ₹13,230",
+      "explanation": "r = 5%, n = 2. A = 12000 × (1.05)^2 = 12000 × 1.1025 = ₹13,230."
+    },
+    {
+      "id": 3,
+      "question": "Calculate the compound interest on ₹10,000 for 2 years when rates for 1st and 2nd years are 5% and 20% respectively.",
+      "options": ["A) ₹2,500", "B) ₹2,600", "C) ₹2,800", "D) ₹3,000"],
+      "correct_option": "B) ₹2,600",
+      "explanation": "A = 10000 × 1.05 × 1.20 = ₹12,600. CI = 12600 - 10000 = ₹2,600."
+    },
+    {
+      "id": 4,
+      "question": "The present population of a city is 50,000. If it grows at 10% per annum, what will be its population in 2 years?",
+      "options": ["A) 55,000", "B) 60,000", "C) 60,500", "D) 62,000"],
+      "correct_option": "C) 60,500",
+      "explanation": "A = 50000 × (1.10)^2 = 50000 × 1.21 = 60,500."
+    },
+    {
+      "id": 5,
+      "question": "A machine bought for ₹80,000 depreciates at 5% per annum. Find its value after 2 years.",
+      "options": ["A) ₹72,000", "B) ₹72,200", "C) ₹74,000", "D) ₹76,000"],
+      "correct_option": "B) ₹72,200",
+      "explanation": "A = 80000 × (0.95)^2 = 80000 × 0.9025 = ₹72,200."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Annual CI Formula",
+      "back": "A = P (1 + R/100)^n | CI = A - P"
+    },
+    {
+      "front": "Half-Yearly Compounding",
+      "back": "Rate = R/2, Periods = 2n ⇒ A = P (1 + R/200)^(2n)"
+    },
+    {
+      "front": "Quarterly Compounding",
+      "back": "Rate = R/4, Periods = 4n ⇒ A = P (1 + R/400)^(4n)"
+    },
+    {
+      "front": "Successive Rates",
+      "back": "A = P (1 + R1/100)(1 + R2/100)"
+    },
+    {
+      "front": "Depreciation Formula",
+      "back": "A = P (1 - R/100)^n"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Compound Interest Part 1 — Foundations Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Compound Interest Part 1",
+        "children": ["annual_ci", "comp_periods", "successive_rates", "growth_dep"]
+      },
+      {
+        "id": "annual_ci",
+        "label": "Annual Compounding",
+        "children": ["annual_formula"]
+      },
+      {
+        "id": "annual_formula",
+        "label": "A = P(1 + R/100)^n",
+        "children": []
+      },
+      {
+        "id": "comp_periods",
+        "label": "Compounding Periods",
+        "children": ["half_yearly", "quarterly"]
+      },
+      {
+        "id": "half_yearly",
+        "label": "Half-Yearly: R/2, 2n",
+        "children": []
+      },
+      {
+        "id": "quarterly",
+        "label": "Quarterly: R/4, 4n",
+        "children": []
+      },
+      {
+        "id": "successive_rates",
+        "label": "Successive Rates",
+        "children": ["succ_formula"]
+      },
+      {
+        "id": "succ_formula",
+        "label": "A = P(1+R1/100)(1+R2/100)",
+        "children": []
+      },
+      {
+        "id": "growth_dep",
+        "label": "Growth & Depreciation",
+        "children": ["growth_f", "dep_f"]
+      },
+      {
+        "id": "growth_f",
+        "label": "Growth (+): A = P(1+R/100)^n",
+        "children": []
+      },
+      {
+        "id": "dep_f",
+        "label": "Depreciation (-): A = P(1-R/100)^n",
+        "children": []
+      }
+    ]
+  }
+}

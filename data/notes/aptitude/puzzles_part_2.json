@@ -1,0 +1,273 @@
+{
+  "topic": "puzzles_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Puzzles Part 2 — Distribution Matrix, Scheduling & Mathematical Logic Puzzles",
+  "title_ta": "புதிர் பகுதி 2 — பகிர்வு அட்டவணை, கால அட்டவணை மற்றும் கணித தர்க்கப் புதிர்கள்",
+
+  "definition": {
+    "en": "Part 2 covers matrix distribution puzzles (persons, places, occupations), weekday scheduling puzzles, pet/item ownership, and mathematical logical puzzles.",
+    "ta": "பகுதி 2-ல் நபர்கள்-இடங்கள்-தொழில்கள் அடங்கிய பகிர்வு அட்டவணைப் புதிர்கள், கிழமை அட்டவணைப் புதிர்கள் மற்றும் கணிதத் தர்க்கப் புதிர்கள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1, Group 2/2A, and Group 4 questions. Attribute matching matrices, Monday-to-Friday exam/lecture scheduling, and age/weight balance puzzles are frequently tested.",
+    "ta": "பகுதி 2-ல் TNPSC தேர்வுகளில் அதிகம் கேட்கப்படும் பண்புகள் பொருத்தும் அட்டவணைப் புதிர்கள், திங்கள்-வெள்ளி பாட அட்டவணை மற்றும் வயது/எடைச் சமன்பாட்டுப் புதிர்கள் இடம்பெற்றுள்ளன."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Matrix Distribution Matching Grid (பகிர்வு அட்டவணை முறை)",
+      "formula": "\\text{Grid: } \\text{Persons (Rows)} \\times \\text{Attributes (Columns)} \\implies (\\checkmark / \\times)",
+      "explanation": {
+        "en": "Use a grid table to mark positive matches (✓) and negative eliminations (×). One ✓ per row and column.",
+        "ta": "நபர்கள் மற்றும் பண்புகளை அட்டவணையாக எழுதி, சாத்தியமானவற்றுக்கு (✓) என்றும் சாத்தியமற்றவற்றுக்கு (×) என்றும் குறிக்க வேண்டும்."
+      }
+    },
+    {
+      "title": "Mathematical Age Puzzle Equation (வயது புதிர் சமன்பாடு)",
+      "formula": "\\text{Father} = 3x, \\quad \\text{In } N \\text{ years: } 3x + N = k(x + N)",
+      "explanation": {
+        "en": "Formulate algebraic equation using present ages x and 3x, then add N years to both.",
+        "ta": "தற்போதைய வயதை x மற்றும் 3x என வைத்து, N ஆண்டுகளுக்குப் பின் இருவர் வயதுடனும் N-ஐக் கூட்டி சமன்பாடு அமைக்கவும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Attribute Elimination Strategy (பண்புகள் நீக்கல் தத்துவம்)",
+      "points": {
+        "en": [
+          "If clue says 'A is not a Doctor', place × in A's Doctor column.",
+          "When a row or column gets all × except one cell, that remaining cell MUST be ✓.",
+          "When a cell gets ✓, mark × in all other cells of that row and column."
+        ],
+        "ta": [
+          "குறிப்பில் 'A மருத்துவர் அல்ல' எனில், A-ன் மருத்துவர் கட்டத்தில் × குறியிடவும்.",
+          "ஒரு வரியில் அல்லது பத்தியில் ஒரு கட்டத்தைத் தவிர மற்றவை × ஆனால், அக்கட்டம் கட்டாயம் ✓ ஆகும்.",
+          "ஒரு கட்டம் ✓ ஆனால், அவ்வரியின் மற்றும் பத்தியின் மற்ற அனைத்துக் கட்டங்களிலும் × குறியிடவும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Weekday Scheduling Fixed Pinning",
+      "points": {
+        "en": [
+          "Write days Monday to Sunday vertically.",
+          "Pin fixed clues (e.g. 'Maths is on Wednesday') directly to the day list.",
+          "Place consecutive pairs (e.g. 'Science immediately after Maths') without guessing."
+        ],
+        "ta": [
+          "திங்கள் முதல் ஞாயிறு வரையிலான நாட்களை செங்குத்தாக எழுதவும்.",
+          "நிலையான குறிப்புகளை (எ.கா: 'கணிதம் புதன்கிழமை') நேரடியாகக் குறிக்கவும்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Assuming negative information implies another specific positive attribute without checking remaining options",
+      "explanation": {
+        "en": "If A is not Doctor, assuming A is Teacher when Engineer is also available leads to incorrect grid matching.",
+        "ta": "'A மருத்துவர் அல்ல' என்பதற்காக உடனே 'A ஆசிரியர்' என மற்ற வாய்ப்புகளை சரிபார்க்காமல் முடிவெடுப்பது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Only place ✓ when all other options in that row/column have been strictly eliminated.",
+        "ta": "மற்ற அனைத்து வாய்ப்புகளும் நீக்கப்பட்ட பின்னரே ✓ குறியிட வேண்டும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Three friends A, B, C belong to Chennai, Delhi, and Mumbai, and have professions Doctor, Engineer, and Teacher. A is from Delhi and is not a Doctor. B is a Teacher. The person from Mumbai is a Doctor. Who is the Engineer and where is B from?",
+      "method": "Matrix Distribution Grid",
+      "steps": [
+        "Step 1: Clue 'Mumbai person = Doctor'. Since A is from Delhi, A is not Doctor.",
+        "Step 2: B is Teacher \\(\\implies\\) B is not Doctor. Therefore, C MUST be the Doctor from Mumbai.",
+        "Step 3: A is from Delhi and is not Doctor \\(\\implies\\) A is the Engineer.",
+        "Step 4: B is Teacher. Remaining city for B = Chennai.",
+        "Step 5: Final Match: A (Engineer, Delhi), B (Teacher, Chennai), C (Doctor, Mumbai)."
+      ],
+      "answer": "Engineer = A, B is from Chennai"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Three items Red, Green, and Blue belong to three boys P, Q, and R. P does not have Red. Q has Blue. Which color item does P have?",
+      "method": "Attribute Elimination",
+      "steps": [
+        "Step 1: Q has Blue \\(\\implies\\) Blue is taken by Q.",
+        "Step 2: Remaining colors for P and R are Red and Green.",
+        "Step 3: P does not have Red \\(\\implies\\) P MUST have Green.",
+        "Step 4: Therefore, R has Red."
+      ],
+      "answer": "Green"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Four exams Tamil, English, Maths, Science are held from Monday to Thursday. Maths is on Wednesday. Tamil is held immediately before Maths. Science is held on Thursday. When is English held?",
+      "method": "Day Scheduling Pinning",
+      "steps": [
+        "Step 1: Pin fixed days: Wed = Maths, Thu = Science.",
+        "Step 2: 'Tamil is immediately before Maths' \\(\\implies\\) Tamil = Tuesday.",
+        "Step 3: Remaining day for English = Monday."
+      ],
+      "answer": "Monday"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "A lecture series on 5 subjects A, B, C, D, E is held from Monday to Friday. A is on Monday. C is held immediately after E. D is on Friday. On which day is B held?",
+      "method": "Consecutive Pair Scheduling",
+      "steps": [
+        "Step 1: Fixed days: Mon = A, Fri = D.",
+        "Step 2: Available days: Tuesday, Wednesday, Thursday for B, E, C.",
+        "Step 3: 'C is immediately after E' \\(\\implies\\) E and C must occupy consecutive days. Place E = Tuesday, C = Wednesday.",
+        "Step 4: Remaining day for B = Thursday."
+      ],
+      "answer": "Thursday"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Three balls X, Y, Z have total weight 30 kg. X is 15 kg and Y is 10 kg. Find the weight of ball Z.",
+      "method": "Weight Balance Equation",
+      "steps": [
+        "Step 1: Total Weight = X + Y + Z = 30 kg.",
+        "Step 2: Substitute given weights: 15 + 10 + Z = 30.",
+        "Step 3: 25 + Z = 30 \\(\\implies\\) Z = 30 - 25 = 5 kg."
+      ],
+      "answer": "5 kg"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A father's present age is 3 times his son's age. After 15 years, the father's age will be 2 times his son's age. Find the present age of the son.",
+      "method": "Algebraic Age Equation",
+      "steps": [
+        "Step 1: Let Son's present age = x. Father's present age = 3x.",
+        "Step 2: Ages after 15 years: Son = x + 15, Father = 3x + 15.",
+        "Step 3: Write equation: \\(3x + 15 = 2(x + 15)\\).",
+        "Step 4: Expand: \\(3x + 15 = 2x + 30 \\implies 3x - 2x = 30 - 15 \\implies x = 15\\) years."
+      ],
+      "answer": "15 years"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Three friends P, Q, R like Red, Yellow, Green. P likes Green. Q does not like Red. Which color does R like?",
+      "options": ["A) Red", "B) Yellow", "C) Green", "D) Blue"],
+      "correct_option": "A) Red",
+      "explanation": "P=Green. Q doesn't like Red => Q=Yellow. Therefore R=Red."
+    },
+    {
+      "id": 2,
+      "question": "Four workshops IT, Finance, Marketing, HR are held Mon to Thu. IT is on Mon, HR on Thu. Finance is before Marketing. When is Marketing?",
+      "options": ["A) Monday", "B) Tuesday", "C) Wednesday", "D) Thursday"],
+      "correct_option": "C) Wednesday",
+      "explanation": "Mon=IT, Thu=HR. Tue=Finance, Wed=Marketing."
+    },
+    {
+      "id": 3,
+      "question": "Three pets Dog, Cat, Bird belong to A, B, C. A has no fur (Bird). B has Dog. Which pet does C have?",
+      "options": ["A) Dog", "B) Cat", "C) Bird", "D) Fish"],
+      "correct_option": "B) Cat",
+      "explanation": "A=Bird, B=Dog => C=Cat."
+    },
+    {
+      "id": 4,
+      "question": "The sum of ages of A and B is 40. A is 10 years older than B. Find B's age.",
+      "options": ["A) 10 years", "B) 15 years", "C) 20 years", "D) 25 years"],
+      "correct_option": "B) 15 years",
+      "explanation": "(B+10) + B = 40 => 2B + 10 = 40 => 2B = 30 => B = 15 years."
+    },
+    {
+      "id": 5,
+      "question": "Four cars Red, Blue, White, Black are in a row. Red is next to Blue. Black is at extreme right end. White is at extreme left end. Order of Red and Blue is left to right. What is 2nd car from left?",
+      "options": ["A) White", "B) Red", "C) Blue", "D) Black"],
+      "correct_option": "B) Red",
+      "explanation": "Order: White(1) - Red(2) - Blue(3) - Black(4). 2nd from left = Red."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Matrix Matching Rule",
+      "back": "Mark ✓ for positive clues, × for negative clues"
+    },
+    {
+      "front": "Matrix Deductive Rule",
+      "back": "When a row/column has all × except one, that remaining cell MUST be ✓"
+    },
+    {
+      "front": "Day Scheduling Pinning",
+      "back": "Pin fixed-day clues first before inserting consecutive pairs"
+    },
+    {
+      "front": "Age Equation Principle",
+      "back": "Add N years to BOTH persons' ages when moving N years into future"
+    },
+    {
+      "front": "Puzzle Answer Uniqueness",
+      "back": "Verify that clues yield exactly ONE unique solution without extra assumptions"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Puzzles Part 2 — Matrix, Scheduling & Math Logic Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Puzzles Part 2",
+        "children": ["matrix_puzzle", "scheduling_puzzle", "math_puzzle"]
+      },
+      {
+        "id": "matrix_puzzle",
+        "label": "Distribution Matrix",
+        "children": ["grid_method"]
+      },
+      {
+        "id": "grid_method",
+        "label": "Grid: Rows (Persons) × Cols (Attributes)",
+        "children": []
+      },
+      {
+        "id": "scheduling_puzzle",
+        "label": "Day Scheduling",
+        "children": ["pinning_days"]
+      },
+      {
+        "id": "pinning_days",
+        "label": "Pin Mon-Fri fixed clues first",
+        "children": []
+      },
+      {
+        "id": "math_puzzle",
+        "label": "Mathematical Logic",
+        "children": ["age_eq", "weight_bal"]
+      },
+      {
+        "id": "age_eq",
+        "label": "Age Eq: (3x + N) = k(x + N)",
+        "children": []
+      },
+      {
+        "id": "weight_bal",
+        "label": "Weight Balance: X + Y + Z = Total",
+        "children": []
+      }
+    ]
+  }
+}

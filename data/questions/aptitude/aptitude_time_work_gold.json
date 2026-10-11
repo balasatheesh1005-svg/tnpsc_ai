@@ -1,0 +1,4063 @@
+{
+  "topic_id": "aptitude_time_work",
+  "topic_name_ta": "காலமும் வேலையும்",
+  "topic_name_en": "Time and Work",
+  "total_questions": 50,
+  "difficulty_breakdown": {
+    "easy": 15,
+    "medium": 25,
+    "hard": 10
+  },
+  "questions": [
+    {
+      "id": "TW_001",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A என்பவர் ஒரு வேலையை 10 நாட்களிலும், B என்பவர் அதே வேலையை 15 நாட்களிலும் செய்து முடிப்பர் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A can complete a work in 10 days and B in 15 days. In how many days can both complete the work together?"
+      },
+      "question_ta": "A என்பவர் ஒரு வேலையை 10 நாட்களிலும், B என்பவர் அதே வேலையை 15 நாட்களிலும் செய்து முடிப்பர் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A can complete a work in 10 days and B in 15 days. In how many days can both complete the work together?",
+      "options": [
+        "12 நாட்கள்",
+        "5 நாட்கள்",
+        "8 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "12 நாட்கள்",
+        "5 நாட்கள்",
+        "8 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "12 days",
+        "5 days",
+        "8 days",
+        "6 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "இருவரும் சேர்ந்து செய்யும் நாட்கள் T = (A × B) / (A + B) = (10 × 15) / (10 + 15) = 150 / 25 = 6 நாட்கள்.",
+        "en": "Combined time = (10 × 15) / (10 + 15) = 150 / 25 = 6 days."
+      },
+      "explanation_ta": "இருவரும் சேர்ந்து செய்யும் நாட்கள் T = (A × B) / (A + B) = (10 × 15) / (10 + 15) = 150 / 25 = 6 நாட்கள்.",
+      "explanation_en": "Combined time = (10 × 15) / (10 + 15) = 150 / 25 = 6 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. (15 - 10) = 5 நாட்கள்.",
+          "en": "Difference of days."
+        },
+        "C": {
+          "ta": "தவறு. (10 + 15) / 3 = 8.33 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 150 / 25 = 6 நாட்கள்.",
+          "en": "Correct. 6 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சேர்ந்து செய்யும் நாட்கள் = (A × B) / (A + B).",
+        "en": "Combined Time = (A × B) / (A + B)."
+      },
+      "revision_fact": {
+        "ta": "(10 × 15) / 25 = 6 days",
+        "en": "(10 × 15) / 25 = 6 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_002",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A என்பவர் ஒரு வேலையை 12 நாட்களில் முடிப்பார் எனில், அவரின் 1 நாள் வேலை என்ன?",
+        "en": "If A completes a work in 12 days, what is A's 1-day work?"
+      },
+      "question_ta": "A என்பவர் ஒரு வேலையை 12 நாட்களில் முடிப்பார் எனில், அவரின் 1 நாள் வேலை என்ன?",
+      "question_en": "If A completes a work in 12 days, what is A's 1-day work?",
+      "options": [
+        "12",
+        "1/12",
+        "1/2",
+        "1/6"
+      ],
+      "options_ta": [
+        "12",
+        "1/12",
+        "1/2",
+        "1/6"
+      ],
+      "options_en": [
+        "12",
+        "1/12",
+        "1/2",
+        "1/6"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "1 நாள் வேலை = 1 / மொத்த நாட்கள் = 1/12.",
+        "en": "1-day work = 1 / Total days = 1/12."
+      },
+      "explanation_ta": "1 நாள் வேலை = 1 / மொத்த நாட்கள் = 1/12.",
+      "explanation_en": "1-day work = 1 / Total days = 1/12.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 நாட்கள் என்பது மொத்த காலம்.",
+          "en": "12 is total days."
+        },
+        "B": {
+          "ta": "சரி. 1/12 பங்கு.",
+          "en": "Correct. 1/12."
+        },
+        "C": {
+          "ta": "தவறு. 1/2.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 1/6.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "1 நாள் வேலை = 1 / n.",
+        "en": "1-day work = 1 / n."
+      },
+      "revision_fact": {
+        "ta": "1/12",
+        "en": "1/12"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_003",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "12 மனிதர்கள் ஒரு வேலையை 10 நாட்களில் முடிப்பார்கள் எனில், 15 மனிதர்கள் அதே வேலையை எத்தனை நாட்களில் முடிப்பார்கள்?",
+        "en": "If 12 men can complete a work in 10 days, in how many days can 15 men complete the same work?"
+      },
+      "question_ta": "12 மனிதர்கள் ஒரு வேலையை 10 நாட்களில் முடிப்பார்கள் எனில், 15 மனிதர்கள் அதே வேலையை எத்தனை நாட்களில் முடிப்பார்கள்?",
+      "question_en": "If 12 men can complete a work in 10 days, in how many days can 15 men complete the same work?",
+      "options": [
+        "12.5 நாட்கள்",
+        "8 நாட்கள்",
+        "9 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "12.5 நாட்கள்",
+        "8 நாட்கள்",
+        "9 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "12.5 days",
+        "8 days",
+        "9 days",
+        "6 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "M1 × D1 = M2 × D2 ⟹ 12 × 10 = 15 × D2 ⟹ 120 = 15 D2 ⟹ D2 = 120 / 15 = 8 நாட்கள்.",
+        "en": "M1 × D1 = M2 × D2 ⟹ 12 × 10 = 15 × D2 ⟹ D2 = 8 days."
+      },
+      "explanation_ta": "M1 × D1 = M2 × D2 ⟹ 12 × 10 = 15 × D2 ⟹ 120 = 15 D2 ⟹ D2 = 120 / 15 = 8 நாட்கள்.",
+      "explanation_en": "M1 × D1 = M2 × D2 ⟹ 12 × 10 = 15 × D2 ⟹ D2 = 8 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. (15 × 10) / 12 = 12.5 நாட்கள் (நேர்விகிதம் எடுத்தது).",
+          "en": "Used direct proportion instead of inverse."
+        },
+        "B": {
+          "ta": "சரி. 120 / 15 = 8 நாட்கள்.",
+          "en": "Correct. 8 days."
+        },
+        "C": {
+          "ta": "தவறு. 9 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மனிதர்களும் நாட்களும் எதிர்விகிதத்தில் இருக்கும்: M1 D1 = M2 D2.",
+        "en": "Men and Days are inversely proportional: M1 D1 = M2 D2."
+      },
+      "revision_fact": {
+        "ta": "120 / 15 = 8 days",
+        "en": "120 / 15 = 8 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_004",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "A மற்றும் B இருவரும் சேர்ந்து ஒரு வேலையை 6 நாட்களில் முடிப்பர். A மட்டும் தனியாக அவ்வேலையை 10 நாட்களில் முடிப்பார் எனில், B மட்டும் தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A and B together can do a work in 6 days. If A alone can do it in 10 days, in how many days can B alone complete it?"
+      },
+      "question_ta": "A மற்றும் B இருவரும் சேர்ந்து ஒரு வேலையை 6 நாட்களில் முடிப்பர். A மட்டும் தனியாக அவ்வேலையை 10 நாட்களில் முடிப்பார் எனில், B மட்டும் தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A and B together can do a work in 6 days. If A alone can do it in 10 days, in how many days can B alone complete it?",
+      "options": [
+        "12 நாட்கள்",
+        "14 நாட்கள்",
+        "15 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_ta": [
+        "12 நாட்கள்",
+        "14 நாட்கள்",
+        "15 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_en": [
+        "12 days",
+        "14 days",
+        "15 days",
+        "16 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "B = (A × T) / (A - T) = (10 × 6) / (10 - 6) = 60 / 4 = 15 நாட்கள்.",
+        "en": "B's time = (A × T) / (A - T) = 60 / 4 = 15 days."
+      },
+      "explanation_ta": "B = (A × T) / (A - T) = (10 × 6) / (10 - 6) = 60 / 4 = 15 நாட்கள்.",
+      "explanation_en": "B's time = (A × T) / (A - T) = 60 / 4 = 15 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 60 / 4 = 15 நாட்கள்.",
+          "en": "Correct. 15 days."
+        },
+        "D": {
+          "ta": "தவறு. 10 + 6 = 16 நாட்கள்.",
+          "en": "Added days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தனித்த நபர் காலம் B = (A × T) / (A - T).",
+        "en": "Single person time B = (A × T) / (A - T)."
+      },
+      "revision_fact": {
+        "ta": "60 / 4 = 15 days",
+        "en": "60 / 4 = 15 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_005",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A என்பவர் B-ஐ விட 2 மடங்கு திறமையானவர். B ஒரு வேலையை 20 நாட்களில் முடிப்பார் எனில், A அதே வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A is twice as efficient as B. If B can complete a work in 20 days, in how many days will A complete it?"
+      },
+      "question_ta": "A என்பவர் B-ஐ விட 2 மடங்கு திறமையானவர். B ஒரு வேலையை 20 நாட்களில் முடிப்பார் எனில், A அதே வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A is twice as efficient as B. If B can complete a work in 20 days, in how many days will A complete it?",
+      "options": [
+        "10 நாட்கள்",
+        "15 நாட்கள்",
+        "5 நாட்கள்",
+        "40 நாட்கள்"
+      ],
+      "options_ta": [
+        "10 நாட்கள்",
+        "15 நாட்கள்",
+        "5 நாட்கள்",
+        "40 நாட்கள்"
+      ],
+      "options_en": [
+        "10 days",
+        "15 days",
+        "5 days",
+        "40 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "திறன் A : B = 2 : 1 ⟹ காலம் A : B = 1 : 2.\nB-ன் காலம் = 20 நாட்கள் ⟹ A-ன் காலம் = 20 / 2 = 10 நாட்கள்.",
+        "en": "Efficiency ratio = 2 : 1 ⟹ Time ratio = 1 : 2 ⟹ A's time = 20 / 2 = 10 days."
+      },
+      "explanation_ta": "திறன் A : B = 2 : 1 ⟹ காலம் A : B = 1 : 2.\nB-ன் காலம் = 20 நாட்கள் ⟹ A-ன் காலம் = 20 / 2 = 10 நாட்கள்.",
+      "explanation_en": "Efficiency ratio = 2 : 1 ⟹ Time ratio = 1 : 2 ⟹ A's time = 20 / 2 = 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 20 / 2 = 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 5 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 20 × 2 = 40 நாட்கள் (அதிக திறன் உள்ளவருக்கு அதிக நாள் எடுத்துக்கொண்டதாக தவறாகக் கணக்கிடப்பட்டது).",
+          "en": "Multiplied instead of dividing."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "திறன் அதிகமாக இருந்தால் காலம் குறைவாகும்: A-ன் காலம் = B-ன் காலம் / திறன் மடங்கு.",
+        "en": "More efficiency = Less time."
+      },
+      "revision_fact": {
+        "ta": "20 / 2 = 10 days",
+        "en": "20 / 2 = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_006",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 10, 15 மற்றும் 30 நாட்களில் முடிப்பர் எனில், மூவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A, B, C can complete a work in 10, 15, and 30 days respectively. In how many days will all three finish it together?"
+      },
+      "question_ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 10, 15 மற்றும் 30 நாட்களில் முடிப்பர் எனில், மூவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A, B, C can complete a work in 10, 15, and 30 days respectively. In how many days will all three finish it together?",
+      "options": [
+        "4 நாட்கள்",
+        "8 நாட்கள்",
+        "5 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "4 நாட்கள்",
+        "8 நாட்கள்",
+        "5 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "4 days",
+        "8 days",
+        "5 days",
+        "6 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "1 நாள் வேலை = 1/10 + 1/15 + 1/30 = (3 + 2 + 1) / 30 = 6 / 30 = 1/5.\nஎனவே மூவரும் சேர்ந்து செய்யும் காலம் = 5 நாட்கள்.",
+        "en": "Combined 1-day work = 1/10 + 1/15 + 1/30 = 6/30 = 1/5 ⟹ Total days = 5."
+      },
+      "explanation_ta": "1 நாள் வேலை = 1/10 + 1/15 + 1/30 = (3 + 2 + 1) / 30 = 6 / 30 = 1/5.\nஎனவே மூவரும் சேர்ந்து செய்யும் காலம் = 5 நாட்கள்.",
+      "explanation_en": "Combined 1-day work = 1/10 + 1/15 + 1/30 = 6/30 = 1/5 ⟹ Total days = 5.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 4 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 30 / 6 = 5 நாட்கள்.",
+          "en": "Correct. 5 days."
+        },
+        "D": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மூவர் 1 நாள் வேலை = 1/A + 1/B + 1/C.",
+        "en": "Three workers 1-day work = 1/A + 1/B + 1/C."
+      },
+      "revision_fact": {
+        "ta": "6/30 = 1/5 ⟹ 5 days",
+        "en": "6/30 = 1/5 ⟹ 5 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_007",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "20 நபர்கள் நாளொன்றுக்கு 6 மணி நேரம் வேலை செய்து ஒரு வேலையை 15 நாட்களில் முடிக்கின்றனர் எனில், அதே வேலையை 10 நாட்களில் முடிக்க 24 நபர்கள் நாளொன்றுக்கு எத்தனை மணி நேரம் வேலை செய்ய வேண்டும்?",
+        "en": "20 men working 6 hours a day complete a work in 15 days. How many hours a day must 24 men work to complete it in 10 days?"
+      },
+      "question_ta": "20 நபர்கள் நாளொன்றுக்கு 6 மணி நேரம் வேலை செய்து ஒரு வேலையை 15 நாட்களில் முடிக்கின்றனர் எனில், அதே வேலையை 10 நாட்களில் முடிக்க 24 நபர்கள் நாளொன்றுக்கு எத்தனை மணி நேரம் வேலை செய்ய வேண்டும்?",
+      "question_en": "20 men working 6 hours a day complete a work in 15 days. How many hours a day must 24 men work to complete it in 10 days?",
+      "options": [
+        "9 மணி நேரம்",
+        "6 மணி நேரம்",
+        "7.5 மணி நேரம்",
+        "8 மணி நேரம்"
+      ],
+      "options_ta": [
+        "9 மணி நேரம்",
+        "6 மணி நேரம்",
+        "7.5 மணி நேரம்",
+        "8 மணி நேரம்"
+      ],
+      "options_en": [
+        "9 hours",
+        "6 hours",
+        "7.5 hours",
+        "8 hours"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "M1 × D1 × H1 = M2 × D2 × H2 ⟹ 20 × 15 × 6 = 24 × 10 × H2 ⟹ 1800 = 240 H2 ⟹ H2 = 1800 / 240 = 7.5 மணி நேரம்.",
+        "en": "20 × 15 × 6 = 24 × 10 × H2 ⟹ 1800 = 240 H2 ⟹ H2 = 7.5 hours."
+      },
+      "explanation_ta": "M1 × D1 × H1 = M2 × D2 × H2 ⟹ 20 × 15 × 6 = 24 × 10 × H2 ⟹ 1800 = 240 H2 ⟹ H2 = 1800 / 240 = 7.5 மணி நேரம்.",
+      "explanation_en": "20 × 15 × 6 = 24 × 10 × H2 ⟹ 1800 = 240 H2 ⟹ H2 = 7.5 hours.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 9 மணி நேரம்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 6 மணி நேரம்.",
+          "en": "Original hours unchanged."
+        },
+        "C": {
+          "ta": "சரி. 1800 / 240 = 7.5 மணி நேரம்.",
+          "en": "Correct. 7.5 hours."
+        },
+        "D": {
+          "ta": "தவறு. 8 மணி நேரம்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "M1 D1 H1 = M2 D2 H2.",
+        "en": "M1 D1 H1 = M2 D2 H2."
+      },
+      "revision_fact": {
+        "ta": "1800 / 240 = 7.5 hours",
+        "en": "1800 / 240 = 7.5 hours"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_008",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையின் 1/3 பகுதியை 5 நாட்களில் செய்கிறார் எனில், அவர் முழு வேலையையும் எத்தனை நாட்களில் செய்து முடிப்பார்?",
+        "en": "If A completes 1/3 of a work in 5 days, in how many days can he complete the full work?"
+      },
+      "question_ta": "A ஒரு வேலையின் 1/3 பகுதியை 5 நாட்களில் செய்கிறார் எனில், அவர் முழு வேலையையும் எத்தனை நாட்களில் செய்து முடிப்பார்?",
+      "question_en": "If A completes 1/3 of a work in 5 days, in how many days can he complete the full work?",
+      "options": [
+        "12 நாட்கள்",
+        "15 நாட்கள்",
+        "20 நாட்கள்",
+        "10 நாட்கள்"
+      ],
+      "options_ta": [
+        "12 நாட்கள்",
+        "15 நாட்கள்",
+        "20 நாட்கள்",
+        "10 நாட்கள்"
+      ],
+      "options_en": [
+        "12 days",
+        "15 days",
+        "20 days",
+        "10 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "முழு வேலை காலம் = 5 / (1/3) = 5 × 3 = 15 நாட்கள்.",
+        "en": "Full work time = 5 × 3 = 15 days."
+      },
+      "explanation_ta": "முழு வேலை காலம் = 5 / (1/3) = 5 × 3 = 15 நாட்கள்.",
+      "explanation_en": "Full work time = 5 × 3 = 15 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 5 × 3 = 15 நாட்கள்.",
+          "en": "Correct. 15 days."
+        },
+        "C": {
+          "ta": "தவறு. 5 × 4 = 20 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 5 × 2 = 10 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "முழு வேலை காலம் = நாட்கள் / வேலைப் பங்கு.",
+        "en": "Full work time = Days / Fraction of work."
+      },
+      "revision_fact": {
+        "ta": "5 × 3 = 15 days",
+        "en": "5 × 3 = 15 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_009",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A மற்றும் B இருவரும் சேர்ந்து ஒரு வேலையைச் செய்து ₹600 கூலியாகப் பெறுகின்றனர். A-ன் 1 நாள் வேலை B-ன் 1 நாள் வேலையைப் போல் 2 மடங்கு எனில், A-ன் பங்கு என்ன?",
+        "en": "A and B together earn ₹600 for a work. If A's 1-day work is twice that of B, what is A's share?"
+      },
+      "question_ta": "A மற்றும் B இருவரும் சேர்ந்து ஒரு வேலையைச் செய்து ₹600 கூலியாகப் பெறுகின்றனர். A-ன் 1 நாள் வேலை B-ன் 1 நாள் வேலையைப் போல் 2 மடங்கு எனில், A-ன் பங்கு என்ன?",
+      "question_en": "A and B together earn ₹600 for a work. If A's 1-day work is twice that of B, what is A's share?",
+      "options": [
+        "₹400",
+        "₹450",
+        "₹300",
+        "₹200"
+      ],
+      "options_ta": [
+        "₹400",
+        "₹450",
+        "₹300",
+        "₹200"
+      ],
+      "options_en": [
+        "₹400",
+        "₹450",
+        "₹300",
+        "₹200"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "கூலி விகிதம் A : B = 2 : 1.\nமொத்தப் பங்குகள் = 2 + 1 = 3.\nA-ன் பங்கு = (2/3) × 600 = ₹400.",
+        "en": "Ratio A : B = 2 : 1 ⟹ A's share = (2/3) × 600 = ₹400."
+      },
+      "explanation_ta": "கூலி விகிதம் A : B = 2 : 1.\nமொத்தப் பங்குகள் = 2 + 1 = 3.\nA-ன் பங்கு = (2/3) × 600 = ₹400.",
+      "explanation_en": "Ratio A : B = 2 : 1 ⟹ A's share = (2/3) × 600 = ₹400.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. (2/3) × 600 = ₹400.",
+          "en": "Correct. ₹400."
+        },
+        "B": {
+          "ta": "தவறு. ₹450.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 600 / 2 = ₹300 (சமப் பகிர்வு).",
+          "en": "Equal split ₹300."
+        },
+        "D": {
+          "ta": "தவறு. (1/3) × 600 = ₹200 (B-ன் பங்கு).",
+          "en": "₹200 is B's share."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கூலி பகிர்வு விகிதம் = வேலையாட்களின் திறன் விகிதம்.",
+        "en": "Wage share ratio = Efficiency ratio."
+      },
+      "revision_fact": {
+        "ta": "(2/3) × 600 = ₹400",
+        "en": "(2/3) × 600 = ₹400"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_010",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையை 20 நாட்களில் செய்கிறார். அவர் 5 நாட்கள் வேலை செய்தால், முடிந்த வேலையின் பங்கு என்ன?",
+        "en": "A completes a work in 20 days. If he works for 5 days, what fraction of work is completed?"
+      },
+      "question_ta": "A ஒரு வேலையை 20 நாட்களில் செய்கிறார். அவர் 5 நாட்கள் வேலை செய்தால், முடிந்த வேலையின் பங்கு என்ன?",
+      "question_en": "A completes a work in 20 days. If he works for 5 days, what fraction of work is completed?",
+      "options": [
+        "3/4",
+        "1/2",
+        "1/5",
+        "1/4"
+      ],
+      "options_ta": [
+        "3/4",
+        "1/2",
+        "1/5",
+        "1/4"
+      ],
+      "options_en": [
+        "3/4",
+        "1/2",
+        "1/5",
+        "1/4"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "முடிந்த வேலை பங்கு = 5 / 20 = 1/4.",
+        "en": "Fraction completed = 5 / 20 = 1/4."
+      },
+      "explanation_ta": "முடிந்த வேலை பங்கு = 5 / 20 = 1/4.",
+      "explanation_en": "Fraction completed = 5 / 20 = 1/4.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 / 20 = 3/4 (மீதமுள்ள வேலை பங்கு).",
+          "en": "3/4 is remaining work fraction."
+        },
+        "B": {
+          "ta": "தவறு. 1/2.",
+          "en": "Half work."
+        },
+        "C": {
+          "ta": "தவறு. 1/5.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 5 / 20 = 1/4.",
+          "en": "Correct. 1/4."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "முடிந்த வேலைப் பங்கு = செய்த நாட்கள் / மொத்த நாட்கள்.",
+        "en": "Fraction of work = Days worked / Total days."
+      },
+      "revision_fact": {
+        "ta": "5 / 20 = 1/4",
+        "en": "5 / 20 = 1/4"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_011",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையை 16 நாட்களில் செய்கிறார். B என்பவர் A-வை விட 60% அதிக திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A completes a work in 16 days. B is 60% more efficient than A. In how many days can B finish the work alone?"
+      },
+      "question_ta": "A ஒரு வேலையை 16 நாட்களில் செய்கிறார். B என்பவர் A-வை விட 60% அதிக திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A completes a work in 16 days. B is 60% more efficient than A. In how many days can B finish the work alone?",
+      "options": [
+        "12 நாட்கள்",
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_ta": [
+        "12 நாட்கள்",
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_en": [
+        "12 days",
+        "8 days",
+        "10 days",
+        "14 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "A-ன் திறன் = 100 ⟹ B-ன் திறன் = 160.\nதிறன் A : B = 100 : 160 = 5 : 8.\nகாலம் A : B = 8 : 5.\n8 பங்குகள் = 16 நாட்கள் ⟹ 1 பங்கு = 2 நாட்கள் ⟹ B-ன் காலம் = 5 × 2 = 10 நாட்கள்.",
+        "en": "Efficiency A:B = 5:8 ⟹ Time A:B = 8:5. 8 parts = 16 days ⟹ B's time = 5 × 2 = 10 days."
+      },
+      "explanation_ta": "A-ன் திறன் = 100 ⟹ B-ன் திறன் = 160.\nதிறன் A : B = 100 : 160 = 5 : 8.\nகாலம் A : B = 8 : 5.\n8 பங்குகள் = 16 நாட்கள் ⟹ 1 பங்கு = 2 நாட்கள் ⟹ B-ன் காலம் = 5 × 2 = 10 நாட்கள்.",
+      "explanation_en": "Efficiency A:B = 5:8 ⟹ Time A:B = 8:5. 8 parts = 16 days ⟹ B's time = 5 × 2 = 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 16 / 2 = 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 16 × (100 / 160) = 16 × (5/8) = 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "D": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "B-ன் காலம் = A-ன் காலம் × (100 / 100 + r%).",
+        "en": "B's time = A's time × (100 / 100 + r%)."
+      },
+      "revision_fact": {
+        "ta": "16 × (100 / 160) = 10 days",
+        "en": "16 × (100 / 160) = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_012",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "15 விவாசாயிகள் 6 நாட்களில் 12 ஏக்கர் நிலத்தை உழுகின்றனர் எனில், 10 விவசாயிகள் 18 ஏக்கர் நிலத்தை உழ எத்தனை நாட்கள் ஆகும்?",
+        "en": "If 15 farmers plough 12 acres of land in 6 days, how many days will 10 farmers take to plough 18 acres?"
+      },
+      "question_ta": "15 விவாசாயிகள் 6 நாட்களில் 12 ஏக்கர் நிலத்தை உழுகின்றனர் எனில், 10 விவசாயிகள் 18 ஏக்கர் நிலத்தை உழ எத்தனை நாட்கள் ஆகும்?",
+      "question_en": "If 15 farmers plough 12 acres of land in 6 days, how many days will 10 farmers take to plough 18 acres?",
+      "options": [
+        "15 நாட்கள்",
+        "12 நாட்கள்",
+        "10 நாட்கள்",
+        "13.5 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 நாட்கள்",
+        "12 நாட்கள்",
+        "10 நாட்கள்",
+        "13.5 நாட்கள்"
+      ],
+      "options_en": [
+        "15 days",
+        "12 days",
+        "10 days",
+        "13.5 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "(M1 × D1) / W1 = (M2 × D2) / W2 ⟹ (15 × 6) / 12 = (10 × D2) / 18 ⟹ 90 / 12 = 10 D2 / 18 ⟹ 7.5 = 10 D2 / 18 ⟹ 10 D2 = 135 ⟹ D2 = 13.5 நாட்கள்.",
+        "en": "(15 × 6) / 12 = (10 × D2) / 18 ⟹ 7.5 = 10 D2 / 18 ⟹ D2 = 13.5 days."
+      },
+      "explanation_ta": "(M1 × D1) / W1 = (M2 × D2) / W2 ⟹ (15 × 6) / 12 = (10 × D2) / 18 ⟹ 90 / 12 = 10 D2 / 18 ⟹ 7.5 = 10 D2 / 18 ⟹ 10 D2 = 135 ⟹ D2 = 13.5 நாட்கள்.",
+      "explanation_en": "(15 × 6) / 12 = (10 × D2) / 18 ⟹ 7.5 = 10 D2 / 18 ⟹ D2 = 13.5 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 135 / 10 = 13.5 நாட்கள்.",
+          "en": "Correct. 13.5 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "(M1 × D1) / W1 = (M2 × D2) / W2.",
+        "en": "(M1 × D1) / W1 = (M2 × D2) / W2."
+      },
+      "revision_fact": {
+        "ta": "(15 × 6 × 18) / (12 × 10) = 13.5 days",
+        "en": "(15 × 6 × 18) / (12 × 10) = 13.5 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_013",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையை 8 நாட்களில் முடிக்கிறார். B என்பவர் A-வை விட 3 மடங்கு விரைவாக வேலை செய்யக்கூடியவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A completes a work in 8 days. B is 3 times as fast as A. In how many days can B complete the work alone?"
+      },
+      "question_ta": "A ஒரு வேலையை 8 நாட்களில் முடிக்கிறார். B என்பவர் A-வை விட 3 மடங்கு விரைவாக வேலை செய்யக்கூடியவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A completes a work in 8 days. B is 3 times as fast as A. In how many days can B complete the work alone?",
+      "options": [
+        "2 நாட்கள்",
+        "24 நாட்கள்",
+        "4 நாட்கள்",
+        "2 2/3 நாட்கள்"
+      ],
+      "options_ta": [
+        "2 நாட்கள்",
+        "24 நாட்கள்",
+        "4 நாட்கள்",
+        "2 2/3 நாட்கள்"
+      ],
+      "options_en": [
+        "2 days",
+        "24 days",
+        "4 days",
+        "2 2/3 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "B-ன் காலம் = A-ன் காலம் / 3 = 8 / 3 = 2 2/3 நாட்கள்.",
+        "en": "B's time = A's time / 3 = 8 / 3 = 2 2/3 days."
+      },
+      "explanation_ta": "B-ன் காலம் = A-ன் காலம் / 3 = 8 / 3 = 2 2/3 நாட்கள்.",
+      "explanation_en": "B's time = A's time / 3 = 8 / 3 = 2 2/3 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 2 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 8 × 3 = 24 நாட்கள் (3 மடங்கு காலம் அதிகமாக்கியது).",
+          "en": "Multiplied 8 × 3."
+        },
+        "C": {
+          "ta": "தவறு. 8 / 2 = 4 நாட்கள்.",
+          "en": "Divided by 2."
+        },
+        "D": {
+          "ta": "சரி. 8 / 3 = 2 2/3 நாட்கள் (அல்லது 2.67 நாட்கள்).",
+          "en": "Correct. 2 2/3 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வேகம் 3 மடங்கு ⟹ காலம் 1/3 பங்கு.",
+        "en": "3x faster ⟹ 1/3 time."
+      },
+      "revision_fact": {
+        "ta": "8 / 3 = 2 2/3 days",
+        "en": "8 / 3 = 2 2/3 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_014",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A மற்றும் B சேர்ந்து ஒரு வேலையை 12 நாட்களில் செய்கின்றனர். B தனியாக 20 நாட்களில் முடிப்பார் எனில், A தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A and B together finish a work in 12 days. B alone finishes it in 20 days. In how many days can A alone finish it?"
+      },
+      "question_ta": "A மற்றும் B சேர்ந்து ஒரு வேலையை 12 நாட்களில் செய்கின்றனர். B தனியாக 20 நாட்களில் முடிப்பார் எனில், A தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A and B together finish a work in 12 days. B alone finishes it in 20 days. In how many days can A alone finish it?",
+      "options": [
+        "24 நாட்கள்",
+        "16 நாட்கள்",
+        "32 நாட்கள்",
+        "30 நாட்கள்"
+      ],
+      "options_ta": [
+        "24 நாட்கள்",
+        "16 நாட்கள்",
+        "32 நாட்கள்",
+        "30 நாட்கள்"
+      ],
+      "options_en": [
+        "24 days",
+        "16 days",
+        "32 days",
+        "30 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "A-ன் காலம் = (B × T) / (B - T) = (20 × 12) / (20 - 12) = 240 / 8 = 30 நாட்கள்.",
+        "en": "A's time = (20 × 12) / (20 - 12) = 240 / 8 = 30 days."
+      },
+      "explanation_ta": "A-ன் காலம் = (B × T) / (B - T) = (20 × 12) / (20 - 12) = 240 / 8 = 30 நாட்கள்.",
+      "explanation_en": "A's time = (20 × 12) / (20 - 12) = 240 / 8 = 30 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 24 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 16 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 20 + 12 = 32 நாட்கள்.",
+          "en": "Added days."
+        },
+        "D": {
+          "ta": "சரி. 240 / 8 = 30 நாட்கள்.",
+          "en": "Correct. 30 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "A தனியாக = (B × T) / (B - T).",
+        "en": "A alone = (B × T) / (B - T)."
+      },
+      "revision_fact": {
+        "ta": "240 / 8 = 30 days",
+        "en": "240 / 8 = 30 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_015",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Easy",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A, B மற்றும் C ஒரு வேலையைச் செய்ய பெறப்பட்ட மொத்தத் தொகை ₹1200. அவர்கள் 1 நாளில் செய்யும் வேலைகளின் விகிதம் 1 : 2 : 3 எனில், C-ன் பங்கு என்ன?",
+        "en": "Total wages earned by A, B, and C for a work is ₹1200. Their 1-day work ratio is 1 : 2 : 3. Find C's share."
+      },
+      "question_ta": "A, B மற்றும் C ஒரு வேலையைச் செய்ய பெறப்பட்ட மொத்தத் தொகை ₹1200. அவர்கள் 1 நாளில் செய்யும் வேலைகளின் விகிதம் 1 : 2 : 3 எனில், C-ன் பங்கு என்ன?",
+      "question_en": "Total wages earned by A, B, and C for a work is ₹1200. Their 1-day work ratio is 1 : 2 : 3. Find C's share.",
+      "options": [
+        "₹400",
+        "₹600",
+        "₹200",
+        "₹500"
+      ],
+      "options_ta": [
+        "₹400",
+        "₹600",
+        "₹200",
+        "₹500"
+      ],
+      "options_en": [
+        "₹400",
+        "₹600",
+        "₹200",
+        "₹500"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "கூலி விகிதம் A : B : C = 1 : 2 : 3.\nமொத்தப் பங்குகள் = 1 + 2 + 3 = 6.\nC-ன் பங்கு = (3/6) × 1200 = (1/2) × 1200 = ₹600.",
+        "en": "Ratio = 1:2:3 ⟹ C's share = (3/6) × 1200 = ₹600."
+      },
+      "explanation_ta": "கூலி விகிதம் A : B : C = 1 : 2 : 3.\nமொத்தப் பங்குகள் = 1 + 2 + 3 = 6.\nC-ன் பங்கு = (3/6) × 1200 = (1/2) × 1200 = ₹600.",
+      "explanation_en": "Ratio = 1:2:3 ⟹ C's share = (3/6) × 1200 = ₹600.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. (2/6) × 1200 = ₹400 (B-ன் பங்கு).",
+          "en": "₹400 is B's share."
+        },
+        "B": {
+          "ta": "சரி. 1200 / 2 = ₹600.",
+          "en": "Correct. ₹600."
+        },
+        "C": {
+          "ta": "தவறு. (1/6) × 1200 = ₹200 (A-ன் பங்கு).",
+          "en": "₹200 is A's share."
+        },
+        "D": {
+          "ta": "தவறு. ₹500.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "C-ன் கூலிப் பங்கு = (C-ன் பங்கு / மொத்தப் பங்குகள்) × மொத்தத் தொகை.",
+        "en": "C's share = (3/6) × Total wages."
+      },
+      "revision_fact": {
+        "ta": "(3/6) × 1200 = ₹600",
+        "en": "(3/6) × 1200 = ₹600"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_016",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Joining & Leaving Work",
+      "question": {
+        "ta": "A ஒரு வேலையை 10 நாட்களிலும், B அதே வேலையை 15 நாட்களிலும் செய்கின்றனர். இருவரும் சேர்ந்து வேலை செய்யத் தொடங்கி 3 நாட்களுக்குப் பிறகு A விலகிவிடுகிறார் எனில், மீதமுள்ள வேலையை B எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A completes a work in 10 days and B in 15 days. They start together, but A leaves after 3 days. In how many days will B complete the remaining work?"
+      },
+      "question_ta": "A ஒரு வேலையை 10 நாட்களிலும், B அதே வேலையை 15 நாட்களிலும் செய்கின்றனர். இருவரும் சேர்ந்து வேலை செய்யத் தொடங்கி 3 நாட்களுக்குப் பிறகு A விலகிவிடுகிறார் எனில், மீதமுள்ள வேலையை B எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A completes a work in 10 days and B in 15 days. They start together, but A leaves after 3 days. In how many days will B complete the remaining work?",
+      "options": [
+        "8 நாட்கள்",
+        "6 நாட்கள்",
+        "9 நாட்கள்",
+        "7.5 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "6 நாட்கள்",
+        "9 நாட்கள்",
+        "7.5 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "6 days",
+        "9 days",
+        "7.5 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "A, B 1 நாள் வேலை = 1/10 + 1/15 = 5/30 = 1/6.\n3 நாட்களில் முடிந்த வேலை = 3 × (1/6) = 1/2.\nமீதமுள்ள வேலை = 1 - 1/2 = 1/2.\nB மீதமுள்ள வேலையைச் செய்ய ஆகும் நாட்கள் = (1/2) / (1/15) = (1/2) × 15 = 7.5 நாட்கள்.",
+        "en": "3 days work = 3 × (1/6) = 1/2. Remaining = 1/2 ⟹ B's time = 1/2 × 15 = 7.5 days."
+      },
+      "explanation_ta": "A, B 1 நாள் வேலை = 1/10 + 1/15 = 5/30 = 1/6.\n3 நாட்களில் முடிந்த வேலை = 3 × (1/6) = 1/2.\nமீதமுள்ள வேலை = 1 - 1/2 = 1/2.\nB மீதமுள்ள வேலையைச் செய்ய ஆகும் நாட்கள் = (1/2) / (1/15) = (1/2) × 15 = 7.5 நாட்கள்.",
+      "explanation_en": "3 days work = 3 × (1/6) = 1/2. Remaining = 1/2 ⟹ B's time = 1/2 × 15 = 7.5 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 9 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 15 / 2 = 7.5 நாட்கள்.",
+          "en": "Correct. 7.5 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள வேலை = 1 - (இருவரின் 3 நாள் வேலை); B-ன் நாட்கள் = மீதமுள்ள வேலை / B-ன் 1 நாள் வேலை.",
+        "en": "B's remaining time = Remaining work / B's rate."
+      },
+      "revision_fact": {
+        "ta": "15 / 2 = 7.5 days",
+        "en": "15 / 2 = 7.5 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_017",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Joining & Leaving Work",
+      "question": {
+        "ta": "A ஒரு வேலையை 20 நாட்களிலும், B அதை 30 நாட்களிலும் முடிப்பர். இருவரும் சேர்ந்து வேலை செய்யத் தொடங்குகின்றனர். வேலை முடிவதற்கு 5 நாட்களுக்கு முன் B விலகிவிட்டால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A can do a work in 20 days and B in 30 days. They start together, but B leaves 5 days before completion. In how many total days is the work completed?"
+      },
+      "question_ta": "A ஒரு வேலையை 20 நாட்களிலும், B அதை 30 நாட்களிலும் முடிப்பர். இருவரும் சேர்ந்து வேலை செய்யத் தொடங்குகின்றனர். வேலை முடிவதற்கு 5 நாட்களுக்கு முன் B விலகிவிட்டால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A can do a work in 20 days and B in 30 days. They start together, but B leaves 5 days before completion. In how many total days is the work completed?",
+      "options": [
+        "14 நாட்கள்",
+        "15 நாட்கள்",
+        "12 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_ta": [
+        "14 நாட்கள்",
+        "15 நாட்கள்",
+        "12 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_en": [
+        "14 days",
+        "15 days",
+        "12 days",
+        "16 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "கடைசி 5 நாட்கள் A மட்டும் வேலை செய்கிறார் ⟹ A-ன் 5 நாள் வேலை = 5 / 20 = 1/4.\nமுந்தைய வேலை = 1 - 1/4 = 3/4.\nA மற்றும் B சேர்ந்து 3/4 வேலையைச் செய்ய ஆகும் நாட்கள் = (3/4) / (1/20 + 1/30) = (3/4) / (1/12) = (3/4) × 12 = 9 நாட்கள்.\nமொத்த நாட்கள் = 9 + 5 = 14 நாட்கள்.",
+        "en": "Last 5 days A's work = 5/20 = 1/4. Prior work = 3/4. Combined time for 3/4 work = 3/4 × 12 = 9 days. Total = 9 + 5 = 14 days."
+      },
+      "explanation_ta": "கடைசி 5 நாட்கள் A மட்டும் வேலை செய்கிறார் ⟹ A-ன் 5 நாள் வேலை = 5 / 20 = 1/4.\nமுந்தைய வேலை = 1 - 1/4 = 3/4.\nA மற்றும் B சேர்ந்து 3/4 வேலையைச் செய்ய ஆகும் நாட்கள் = (3/4) / (1/20 + 1/30) = (3/4) / (1/12) = (3/4) × 12 = 9 நாட்கள்.\nமொத்த நாட்கள் = 9 + 5 = 14 நாட்கள்.",
+      "explanation_en": "Last 5 days A's work = 5/20 = 1/4. Prior work = 3/4. Combined time for 3/4 work = 3/4 × 12 = 9 days. Total = 9 + 5 = 14 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 9 + 5 = 14 நாட்கள்.",
+          "en": "Correct. 14 days."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள் (முழுமையாக இருவரும் சேர்ந்து செய்தால் ஆகும் காலம்).",
+          "en": "12 days is time if B didn't leave."
+        },
+        "D": {
+          "ta": "தவறு. 16 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கடைசி 5 நாட்கள் A மட்டும் செய்த வேலை 1/4 ⟹ முந்தைய 9 நாட்களில் இருவரும் சேர்ந்து செய்தனர் ⟹ 9 + 5 = 14 நாட்கள்.",
+        "en": "Total days = 9 + 5 = 14 days."
+      },
+      "revision_fact": {
+        "ta": "9 + 5 = 14 days",
+        "en": "9 + 5 = 14 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_018",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Alternate Days",
+      "question": {
+        "ta": "A ஒரு வேலையை 10 நாட்களிலும் B 20 நாட்களிலும் தனித்தனியாக முடிப்பர். இருவரும் மாற்று நாட்களில் (Alternate days) A முதலில் தொடங்கி வேலை செய்தால், அவ்வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A and B can do a work in 10 and 20 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?"
+      },
+      "question_ta": "A ஒரு வேலையை 10 நாட்களிலும் B 20 நாட்களிலும் தனித்தனியாக முடிப்பர். இருவரும் மாற்று நாட்களில் (Alternate days) A முதலில் தொடங்கி வேலை செய்தால், அவ்வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A and B can do a work in 10 and 20 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?",
+      "options": [
+        "14 நாட்கள்",
+        "13 1/2 நாட்கள்",
+        "13 நாட்கள்",
+        "12 1/2 நாட்கள்"
+      ],
+      "options_ta": [
+        "14 நாட்கள்",
+        "13 1/2 நாட்கள்",
+        "13 நாட்கள்",
+        "12 1/2 நாட்கள்"
+      ],
+      "options_en": [
+        "14 days",
+        "13 1/2 days",
+        "13 days",
+        "12 1/2 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "A-ன் 1 நாள் வேலை = 1/10, B-ன் 1 நாள் வேலை = 1/20.\n1 சுழற்சி (2 நாட்கள்) வேலை = 1/10 + 1/20 = 3/20.\n6 சுழற்சிகள் (12 நாட்கள்) முடிந்த வேலை = 6 × (3/20) = 18/20 = 9/10.\nமீதமுள்ள வேலை = 1 - 9/10 = 1/10.\n13 ஆம் நாளில் A வேலை செய்வார்: A-ன் 1 நாள் வேலை = 1/10 ⟹ 13 ஆம் நாளின் முடிவில் வேலை முழுமையாக நிறைவடையும்!",
+        "en": "1 cycle (2 days) = 3/20. 6 cycles (12 days) = 18/20. Day 13: A does 1/10 = 2/20. Total = 20/20 = 1 work completed in 13 days."
+      },
+      "explanation_ta": "A-ன் 1 நாள் வேலை = 1/10, B-ன் 1 நாள் வேலை = 1/20.\n1 சுழற்சி (2 நாட்கள்) வேலை = 1/10 + 1/20 = 3/20.\n6 சுழற்சிகள் (12 நாட்கள்) முடிந்த வேலை = 6 × (3/20) = 18/20 = 9/10.\nமீதமுள்ள வேலை = 1 - 9/10 = 1/10.\n13 ஆம் நாளில் A வேலை செய்வார்: A-ன் 1 நாள் வேலை = 1/10 ⟹ 13 ஆம் நாளின் முடிவில் வேலை முழுமையாக நிறைவடையும்!",
+      "explanation_en": "1 cycle (2 days) = 3/20. 6 cycles (12 days) = 18/20. Day 13: A does 1/10 = 2/20. Total = 20/20 = 1 work completed in 13 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 13 1/2 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 12 நாட்கள் (18/20) + 13 ஆம் நாள் A (2/20) = 13 நாட்கள்.",
+          "en": "Correct. Exactly 13 days."
+        },
+        "D": {
+          "ta": "தவறு. 12 1/2 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2 நாட்கள் (1 சுழற்சி) = 3/20; 12 நாட்கள் = 18/20; 13 ஆம் நாள் A 2/20 சேர்த்து முடிப்பார்.",
+        "en": "13th day A completes remaining 2/20 work."
+      },
+      "revision_fact": {
+        "ta": "12 + 1 = 13 days",
+        "en": "12 + 1 = 13 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_019",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "4 மனிதர்கள் அல்லது 6 பெண்கள் ஒரு வேலையை 20 நாட்களில் முடிப்பர் எனில், 6 மனிதர்களும் 11 பெண்களும் சேர்ந்து அதே வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "4 men or 6 women can do a work in 20 days. In how many days can 6 men and 11 women complete the same work?"
+      },
+      "question_ta": "4 மனிதர்கள் அல்லது 6 பெண்கள் ஒரு வேலையை 20 நாட்களில் முடிப்பர் எனில், 6 மனிதர்களும் 11 பெண்களும் சேர்ந்து அதே வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "4 men or 6 women can do a work in 20 days. In how many days can 6 men and 11 women complete the same work?",
+      "options": [
+        "8 நாட்கள்",
+        "5 நாட்கள்",
+        "4 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "5 நாட்கள்",
+        "4 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "5 days",
+        "4 days",
+        "6 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "4 M = 6 W ⟹ 1 M = 1.5 W.\n6 M + 11 W = 6(1.5 W) + 11 W = 9 W + 11 W = 20 W.\n6 W ⟹ 20 நாட்கள் எனில், 20 W ⟹ D2 நாட்கள்.\nM1 D1 = M2 D2 ⟹ 6 × 20 = 20 × D2 ⟹ D2 = 6 நாட்கள்! (பிழை திருத்தம்: 6 × 20 = 120 ⟹ 120 / 20 = 6 நாட்கள். விருப்பம்: 6 நாட்கள்).",
+        "en": "4 M = 6 W ⟹ 1 M = 1.5 W ⟹ 6 M + 11 W = 20 W. 6 W do in 20 days ⟹ 20 W do in (6 × 20) / 20 = 6 days."
+      },
+      "explanation_ta": "4 M = 6 W ⟹ 1 M = 1.5 W.\n6 M + 11 W = 6(1.5 W) + 11 W = 9 W + 11 W = 20 W.\n6 W ⟹ 20 நாட்கள் எனில், 20 W ⟹ D2 நாட்கள்.\nM1 D1 = M2 D2 ⟹ 6 × 20 = 20 × D2 ⟹ D2 = 6 நாட்கள்! (பிழை திருத்தம்: 6 × 20 = 120 ⟹ 120 / 20 = 6 நாட்கள். விருப்பம்: 6 நாட்கள்).",
+      "explanation_en": "4 M = 6 W ⟹ 1 M = 1.5 W ⟹ 6 M + 11 W = 20 W. 6 W do in 20 days ⟹ 20 W do in (6 × 20) / 20 = 6 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. (6 × 20) / 20 = 6 நாட்கள்.",
+          "en": "Correct. 6 days."
+        },
+        "C": {
+          "ta": "தவறு. 4 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 5 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பெண்களின் எண்ணிக்கையாக மாற்றி: 6 W × 20 நாட்கள் = 20 W × D2 ⟹ D2 = 6 நாட்கள்.",
+        "en": "Convert men to women: 6 × 20 = 20 × D2 ⟹ D2 = 6 days."
+      },
+      "revision_fact": {
+        "ta": "120 / 20 = 6 days",
+        "en": "120 / 20 = 6 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_020",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 6, 8, 12 நாட்களில் முடிப்பர். மூவரும் சேர்ந்து அவ்வேலையைச் செய்து ₹1350 பெறுகின்றனர் எனில், B-ன் பங்கு என்ன?",
+        "en": "A, B, and C can complete a work in 6, 8, and 12 days respectively. Working together, they earn ₹1350. Find B's share."
+      },
+      "question_ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 6, 8, 12 நாட்களில் முடிப்பர். மூவரும் சேர்ந்து அவ்வேலையைச் செய்து ₹1350 பெறுகின்றனர் எனில், B-ன் பங்கு என்ன?",
+      "question_en": "A, B, and C can complete a work in 6, 8, and 12 days respectively. Working together, they earn ₹1350. Find B's share.",
+      "options": [
+        "₹300",
+        "₹450",
+        "₹600",
+        "₹400"
+      ],
+      "options_ta": [
+        "₹300",
+        "₹450",
+        "₹600",
+        "₹400"
+      ],
+      "options_en": [
+        "₹300",
+        "₹450",
+        "₹600",
+        "₹400"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "1 நாள் வேலை விகிதம் A : B : C = 1/6 : 1/8 : 1/12.\nமீச்சிறு பொது மடங்கு 24-ஆல் பெருக்க: A : B : C = 4 : 3 : 2.\nமொத்தப் பங்குகள் = 4 + 3 + 2 = 9.\nB-ன் பங்கு = (3/9) × 1350 = (1/3) × 1350 = ₹450.",
+        "en": "Ratio A:B:C = 1/6 : 1/8 : 1/12 = 4 : 3 : 2. B's share = (3/9) × 1350 = ₹450."
+      },
+      "explanation_ta": "1 நாள் வேலை விகிதம் A : B : C = 1/6 : 1/8 : 1/12.\nமீச்சிறு பொது மடங்கு 24-ஆல் பெருக்க: A : B : C = 4 : 3 : 2.\nமொத்தப் பங்குகள் = 4 + 3 + 2 = 9.\nB-ன் பங்கு = (3/9) × 1350 = (1/3) × 1350 = ₹450.",
+      "explanation_en": "Ratio A:B:C = 1/6 : 1/8 : 1/12 = 4 : 3 : 2. B's share = (3/9) × 1350 = ₹450.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. (2/9) × 1350 = ₹300 (C-ன் பங்கு).",
+          "en": "₹300 is C's share."
+        },
+        "B": {
+          "ta": "சரி. (3/9) × 1350 = ₹450.",
+          "en": "Correct. ₹450."
+        },
+        "C": {
+          "ta": "தவறு. (4/9) × 1350 = ₹600 (A-ன் பங்கு).",
+          "en": "₹600 is A's share."
+        },
+        "D": {
+          "ta": "தவறு. ₹400.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கூலி விகிதம் = 1/A : 1/B : 1/C = 4 : 3 : 2 ⟹ B-ன் பங்கு = (3/9) × 1350 = ₹450.",
+        "en": "Wage ratio = 4 : 3 : 2 ⟹ B = ₹450."
+      },
+      "revision_fact": {
+        "ta": "(3/9) × 1350 = ₹450",
+        "en": "(3/9) × 1350 = ₹450"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_021",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Efficiency Model",
+      "question": {
+        "ta": "A என்பவர் B-ஐ விட 50% அதிக திறமையுடையவர். A தனியாக ஒரு வேலையை 12 நாட்களில் முடிப்பார் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A is 50% more efficient than B. If A alone can do a work in 12 days, in how many days can both finish it together?"
+      },
+      "question_ta": "A என்பவர் B-ஐ விட 50% அதிக திறமையுடையவர். A தனியாக ஒரு வேலையை 12 நாட்களில் முடிப்பார் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A is 50% more efficient than B. If A alone can do a work in 12 days, in how many days can both finish it together?",
+      "options": [
+        "7.2 நாட்கள்",
+        "6 நாட்கள்",
+        "8 நாட்கள்",
+        "9 நாட்கள்"
+      ],
+      "options_ta": [
+        "7.2 நாட்கள்",
+        "6 நாட்கள்",
+        "8 நாட்கள்",
+        "9 நாட்கள்"
+      ],
+      "options_en": [
+        "7.2 days",
+        "6 days",
+        "8 days",
+        "9 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "A-ன் திறன் = 150, B-ன் திறன் = 100 ⟹ திறன் A : B = 3 : 2.\nகாலம் A : B = 2 : 3. 2 பங்குகள் = 12 நாட்கள் ⟹ B-ன் காலம் = 18 நாட்கள்.\nஇருவரும் சேர்ந்து செய்யும் காலம் T = (12 × 18) / (12 + 18) = 216 / 30 = 7.2 நாட்கள்.",
+        "en": "Efficiency A:B = 3:2 ⟹ B's time = 18 days. Combined time = (12 × 18) / 30 = 7.2 days."
+      },
+      "explanation_ta": "A-ன் திறன் = 150, B-ன் திறன் = 100 ⟹ திறன் A : B = 3 : 2.\nகாலம் A : B = 2 : 3. 2 பங்குகள் = 12 நாட்கள் ⟹ B-ன் காலம் = 18 நாட்கள்.\nஇருவரும் சேர்ந்து செய்யும் காலம் T = (12 × 18) / (12 + 18) = 216 / 30 = 7.2 நாட்கள்.",
+      "explanation_en": "Efficiency A:B = 3:2 ⟹ B's time = 18 days. Combined time = (12 × 18) / 30 = 7.2 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 216 / 30 = 7.2 நாட்கள்.",
+          "en": "Correct. 7.2 days."
+        },
+        "B": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 9 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "B-ன் காலம் = 18 நாட்கள் ⟹ இருவரும் சேர்ந்து = (12 × 18) / 30 = 7.2 நாட்கள்.",
+        "en": "B's time = 18 days ⟹ Combined = 7.2 days."
+      },
+      "revision_fact": {
+        "ta": "216 / 30 = 7.2 days",
+        "en": "216 / 30 = 7.2 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_022",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "15 ஆண்கள் நாளொன்றுக்கு 8 மணி நேரம் வேலை செய்து 21 நாட்களில் முடிக்கும் ஒரு வேலையை, 21 ஆண்கள் நாளொன்றுக்கு 6 மணி நேரம் வேலை செய்து எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "15 men working 8 hours a day finish a work in 21 days. How many days will 21 men working 6 hours a day take to finish it?"
+      },
+      "question_ta": "15 ஆண்கள் நாளொன்றுக்கு 8 மணி நேரம் வேலை செய்து 21 நாட்களில் முடிக்கும் ஒரு வேலையை, 21 ஆண்கள் நாளொன்றுக்கு 6 மணி நேரம் வேலை செய்து எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "15 men working 8 hours a day finish a work in 21 days. How many days will 21 men working 6 hours a day take to finish it?",
+      "options": [
+        "18 நாட்கள்",
+        "15 நாட்கள்",
+        "20 நாட்கள்",
+        "24 நாட்கள்"
+      ],
+      "options_ta": [
+        "18 நாட்கள்",
+        "15 நாட்கள்",
+        "20 நாட்கள்",
+        "24 நாட்கள்"
+      ],
+      "options_en": [
+        "18 days",
+        "15 days",
+        "20 days",
+        "24 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "M1 D1 H1 = M2 D2 H2 ⟹ 15 × 21 × 8 = 21 × D2 × 6 ⟹ D2 = (15 × 21 × 8) / (21 × 6) = (15 × 8) / 6 = 120 / 6 = 20 நாட்கள்.",
+        "en": "15 × 21 × 8 = 21 × D2 × 6 ⟹ D2 = 120 / 6 = 20 days."
+      },
+      "explanation_ta": "M1 D1 H1 = M2 D2 H2 ⟹ 15 × 21 × 8 = 21 × D2 × 6 ⟹ D2 = (15 × 21 × 8) / (21 × 6) = (15 × 8) / 6 = 120 / 6 = 20 நாட்கள்.",
+      "explanation_en": "15 × 21 × 8 = 21 × D2 × 6 ⟹ D2 = 120 / 6 = 20 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 18 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 120 / 6 = 20 நாட்கள்.",
+          "en": "Correct. 20 days."
+        },
+        "D": {
+          "ta": "தவறு. 24 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "D2 = (M1 × D1 × H1) / (M2 × H2).",
+        "en": "D2 = (M1 × D1 × H1) / (M2 × H2)."
+      },
+      "revision_fact": {
+        "ta": "(15 × 8) / 6 = 20 days",
+        "en": "(15 × 8) / 6 = 20 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_023",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Joining & Leaving Work",
+      "question": {
+        "ta": "A ஒரு வேலையை 15 நாட்களிலும், B அதை 20 நாட்களிலும் செய்கின்றனர். 4 நாட்கள் இருவரும் சேர்ந்து வேலை செய்த பின் A விலகுகிறார். மீதமுள்ள வேலையை B மட்டும் செய்து முடிக்க ஆகும் மொத்த நாட்கள் (ஆரம்பத்தில் இருந்து) என்ன?",
+        "en": "A can do a work in 15 days and B in 20 days. After working together for 4 days, A leaves. What is the total number of days taken to complete the work?"
+      },
+      "question_ta": "A ஒரு வேலையை 15 நாட்களிலும், B அதை 20 நாட்களிலும் செய்கின்றனர். 4 நாட்கள் இருவரும் சேர்ந்து வேலை செய்த பின் A விலகுகிறார். மீதமுள்ள வேலையை B மட்டும் செய்து முடிக்க ஆகும் மொத்த நாட்கள் (ஆரம்பத்தில் இருந்து) என்ன?",
+      "question_en": "A can do a work in 15 days and B in 20 days. After working together for 4 days, A leaves. What is the total number of days taken to complete the work?",
+      "options": [
+        "14.67 நாட்கள்",
+        "15 நாட்கள்",
+        "10.67 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_ta": [
+        "14.67 நாட்கள்",
+        "15 நாட்கள்",
+        "10.67 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_en": [
+        "14.67 days",
+        "15 days",
+        "10.67 days",
+        "12 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "4 நாட்களில் முடிந்த வேலை = 4 × (1/15 + 1/20) = 4 × (7/60) = 28/60 = 7/15.\nமீதமுள்ள வேலை = 1 - 7/15 = 8/15.\nB மீதமுள்ள வேலையைச் செய்ய ஆகும் காலம் = (8/15) × 20 = 160 / 15 = 10.67 நாட்கள்.\nமொத்த நாட்கள் = 4 + 10.67 = 14.67 நாட்கள்.",
+        "en": "4 days work = 7/15. Remaining = 8/15 ⟹ B's remaining time = 10.67 days. Total days = 4 + 10.67 = 14.67 days."
+      },
+      "explanation_ta": "4 நாட்களில் முடிந்த வேலை = 4 × (1/15 + 1/20) = 4 × (7/60) = 28/60 = 7/15.\nமீதமுள்ள வேலை = 1 - 7/15 = 8/15.\nB மீதமுள்ள வேலையைச் செய்ய ஆகும் காலம் = (8/15) × 20 = 160 / 15 = 10.67 நாட்கள்.\nமொத்த நாட்கள் = 4 + 10.67 = 14.67 நாட்கள்.",
+      "explanation_en": "4 days work = 7/15. Remaining = 8/15 ⟹ B's remaining time = 10.67 days. Total days = 4 + 10.67 = 14.67 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 4 + 10.67 = 14.67 நாட்கள்.",
+          "en": "Correct. 14.67 days."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 10.67 நாட்கள் என்பது B மட்டும் செய்த மீதி வேலை நாட்கள் மட்டுமே.",
+          "en": "10.67 is only remaining days for B."
+        },
+        "D": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மொத்த நாட்கள் = ஆரம்ப 4 நாட்கள் + B-ன் மீதி நாட்கள் (10.67) = 14.67 நாட்கள்.",
+        "en": "Total days = 4 + 10.67 = 14.67 days."
+      },
+      "revision_fact": {
+        "ta": "4 + 10.67 = 14.67 days",
+        "en": "4 + 10.67 = 14.67 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_024",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை 12 நாட்களில் செய்கின்றனர். B மற்றும் C 15 நாட்களில் செய்கின்றனர். C மற்றும் A 20 நாட்களில் செய்கின்றனர் எனில், மூவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A and B can do a work in 12 days, B and C in 15 days, C and A in 20 days. In how many days can all three finish it together?"
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை 12 நாட்களில் செய்கின்றனர். B மற்றும் C 15 நாட்களில் செய்கின்றனர். C மற்றும் A 20 நாட்களில் செய்கின்றனர் எனில், மூவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A and B can do a work in 12 days, B and C in 15 days, C and A in 20 days. In how many days can all three finish it together?",
+      "options": [
+        "15 நாட்கள்",
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 நாட்கள்",
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_en": [
+        "15 days",
+        "8 days",
+        "10 days",
+        "12 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "2(A + B + C) 1 நாள் வேலை = 1/12 + 1/15 + 1/20 = (5 + 4 + 3) / 60 = 12 / 60 = 1/5.\n(A + B + C) 1 நாள் வேலை = (1/5) / 2 = 1/10.\nஎனவே மூவரும் சேர்ந்து செய்யும் காலம் = 10 நாட்கள்.",
+        "en": "2(A + B + C) 1-day work = 12/60 = 1/5 ⟹ (A + B + C) 1-day work = 1/10 ⟹ 10 days."
+      },
+      "explanation_ta": "2(A + B + C) 1 நாள் வேலை = 1/12 + 1/15 + 1/20 = (5 + 4 + 3) / 60 = 12 / 60 = 1/5.\n(A + B + C) 1 நாள் வேலை = (1/5) / 2 = 1/10.\nஎனவே மூவரும் சேர்ந்து செய்யும் காலம் = 10 நாட்கள்.",
+      "explanation_en": "2(A + B + C) 1-day work = 12/60 = 1/5 ⟹ (A + B + C) 1-day work = 1/10 ⟹ 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "D": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2(A+B+C) 1 நாள் வேலை = 1/12 + 1/15 + 1/20 = 1/5 ⟹ A+B+C = 1/10 ⟹ 10 நாட்கள்.",
+        "en": "All three combined time = 10 days."
+      },
+      "revision_fact": {
+        "ta": "1 / (1/10) = 10 days",
+        "en": "1 / (1/10) = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_025",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "மேற்கண்ட வினாவில் (A+B=12, B+C=15, C+A=20), A மட்டும் தனியாக அவ்வேலையை எத்தனை நாட்களில் செய்து முடிப்பார்?",
+        "en": "From the previous data (A+B=12, B+C=15, C+A=20), in how many days can A alone finish the work?"
+      },
+      "question_ta": "மேற்கண்ட வினாவில் (A+B=12, B+C=15, C+A=20), A மட்டும் தனியாக அவ்வேலையை எத்தனை நாட்களில் செய்து முடிப்பார்?",
+      "question_en": "From the previous data (A+B=12, B+C=15, C+A=20), in how many days can A alone finish the work?",
+      "options": [
+        "60 நாட்கள்",
+        "30 நாட்கள்",
+        "20 நாட்கள்",
+        "40 நாட்கள்"
+      ],
+      "options_ta": [
+        "60 நாட்கள்",
+        "30 நாட்கள்",
+        "20 நாட்கள்",
+        "40 நாட்கள்"
+      ],
+      "options_en": [
+        "60 days",
+        "30 days",
+        "20 days",
+        "40 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "(A + B + C) 1 நாள் வேலை = 1/10.\n(B + C) 1 நாள் வேலை = 1/15.\nA-ன் 1 நாள் வேலை = (A+B+C) - (B+C) = 1/10 - 1/15 = (3 - 2) / 30 = 1/30.\nஎனவே A தனியாகச் செய்யும் காலம் = 30 நாட்கள்.",
+        "en": "A's 1-day work = 1/10 - 1/15 = 1/30 ⟹ A alone = 30 days."
+      },
+      "explanation_ta": "(A + B + C) 1 நாள் வேலை = 1/10.\n(B + C) 1 நாள் வேலை = 1/15.\nA-ன் 1 நாள் வேலை = (A+B+C) - (B+C) = 1/10 - 1/15 = (3 - 2) / 30 = 1/30.\nஎனவே A தனியாகச் செய்யும் காலம் = 30 நாட்கள்.",
+      "explanation_en": "A's 1-day work = 1/10 - 1/15 = 1/30 ⟹ A alone = 30 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 60 நாட்கள் (C தனியாகச் செய்யும் காலம்).",
+          "en": "60 days is C alone."
+        },
+        "B": {
+          "ta": "சரி. 1 / (1/30) = 30 நாட்கள்.",
+          "en": "Correct. 30 days."
+        },
+        "C": {
+          "ta": "தவறு. 20 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 40 நாட்கள் (B தனியாகச் செய்யும் காலம்).",
+          "en": "40 days is B alone."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "A-ன் 1 நாள் வேலை = 1/10 - 1/15 = 1/30 ⟹ 30 நாட்கள்.",
+        "en": "A's rate = 1/10 - 1/15 = 1/30 ⟹ 30 days."
+      },
+      "revision_fact": {
+        "ta": "1 / (1/30) = 30 days",
+        "en": "1 / (1/30) = 30 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_026",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "20 ஆண்கள் ஒரு வேலையை 18 நாட்களில் முடிப்பர். 3 நாட்களுக்குப் பின் 5 ஆண்கள் புதியதாகச் சேர்ந்தால், மீதமுள்ள வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "20 men can complete a work in 18 days. After 3 days, 5 more men join them. In how many days will the remaining work be finished?"
+      },
+      "question_ta": "20 ஆண்கள் ஒரு வேலையை 18 நாட்களில் முடிப்பர். 3 நாட்களுக்குப் பின் 5 ஆண்கள் புதியதாகச் சேர்ந்தால், மீதமுள்ள வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "20 men can complete a work in 18 days. After 3 days, 5 more men join them. In how many days will the remaining work be finished?",
+      "options": [
+        "14 நாட்கள்",
+        "12 நாட்கள்",
+        "10 நாட்கள்",
+        "15 நாட்கள்"
+      ],
+      "options_ta": [
+        "14 நாட்கள்",
+        "12 நாட்கள்",
+        "10 நாட்கள்",
+        "15 நாட்கள்"
+      ],
+      "options_en": [
+        "14 days",
+        "12 days",
+        "10 days",
+        "15 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "20 ஆண்களுக்கு மீதமுள்ள நாட்களின் வேலை = 18 - 3 = 15 நாட்கள்.\nதற்போது ஆண்கள் எண்ணிக்கை = 20 + 5 = 25 ஆண்கள்.\nM1 D1 = M2 D2 ⟹ 20 × 15 = 25 × D2 ⟹ 300 = 25 D2 ⟹ D2 = 300 / 25 = 12 நாட்கள்.",
+        "en": "Remaining work for 20 men = 15 days. 20 × 15 = 25 × D2 ⟹ D2 = 12 days."
+      },
+      "explanation_ta": "20 ஆண்களுக்கு மீதமுள்ள நாட்களின் வேலை = 18 - 3 = 15 நாட்கள்.\nதற்போது ஆண்கள் எண்ணிக்கை = 20 + 5 = 25 ஆண்கள்.\nM1 D1 = M2 D2 ⟹ 20 × 15 = 25 × D2 ⟹ 300 = 25 D2 ⟹ D2 = 300 / 25 = 12 நாட்கள்.",
+      "explanation_en": "Remaining work for 20 men = 15 days. 20 × 15 = 25 × D2 ⟹ D2 = 12 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 300 / 25 = 12 நாட்கள்.",
+          "en": "Correct. 12 days."
+        },
+        "C": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள மனிதர்-நாட்கள் = 20 × 15 = 300; 25 ஆண்களுக்கு 300 / 25 = 12 நாட்கள்.",
+        "en": "20 × 15 = 25 × D2 ⟹ D2 = 12 days."
+      },
+      "revision_fact": {
+        "ta": "300 / 25 = 12 days",
+        "en": "300 / 25 = 12 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_027",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "ஒரு முகாமில் 150 வீரர்களுக்கு 45 நாட்களுக்குத் தேவையான உணவுப் பொருட்கள் உள்ளன. 10 நாட்களுக்குப் பின் 25 வீரர்கள் முகாமிலிருந்து வெளியேறினால், மீதமுள்ள உணவு எத்தனை நாட்களுக்கு வரும்?",
+        "en": "A camp has food provision for 150 soldiers for 45 days. After 10 days, 25 soldiers leave. How many days will the remaining food last for the remaining soldiers?"
+      },
+      "question_ta": "ஒரு முகாமில் 150 வீரர்களுக்கு 45 நாட்களுக்குத் தேவையான உணவுப் பொருட்கள் உள்ளன. 10 நாட்களுக்குப் பின் 25 வீரர்கள் முகாமிலிருந்து வெளியேறினால், மீதமுள்ள உணவு எத்தனை நாட்களுக்கு வரும்?",
+      "question_en": "A camp has food provision for 150 soldiers for 45 days. After 10 days, 25 soldiers leave. How many days will the remaining food last for the remaining soldiers?",
+      "options": [
+        "40 நாட்கள்",
+        "50 நாட்கள்",
+        "42 நாட்கள்",
+        "35 நாட்கள்"
+      ],
+      "options_ta": [
+        "40 நாட்கள்",
+        "50 நாட்கள்",
+        "42 நாட்கள்",
+        "35 நாட்கள்"
+      ],
+      "options_en": [
+        "40 days",
+        "50 days",
+        "42 days",
+        "35 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "150 வீரர்களுக்கு மீதமுள்ள நாட்கள் = 45 - 10 = 35 நாட்கள்.\nமீதமுள்ள வீரர்கள் = 150 - 25 = 125 வீரர்கள்.\nM1 D1 = M2 D2 ⟹ 150 × 35 = 125 × D2 ⟹ 5250 = 125 D2 ⟹ D2 = 5250 / 125 = 42 நாட்கள்.",
+        "en": "150 × 35 = 125 × D2 ⟹ D2 = 5250 / 125 = 42 days."
+      },
+      "explanation_ta": "150 வீரர்களுக்கு மீதமுள்ள நாட்கள் = 45 - 10 = 35 நாட்கள்.\nமீதமுள்ள வீரர்கள் = 150 - 25 = 125 வீரர்கள்.\nM1 D1 = M2 D2 ⟹ 150 × 35 = 125 × D2 ⟹ 5250 = 125 D2 ⟹ D2 = 5250 / 125 = 42 நாட்கள்.",
+      "explanation_en": "150 × 35 = 125 × D2 ⟹ D2 = 5250 / 125 = 42 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 40 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 50 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 5250 / 125 = 42 நாட்கள்.",
+          "en": "Correct. 42 days."
+        },
+        "D": {
+          "ta": "தவறு. 35 நாட்கள் (வீரர்கள் மாறாத நிலை).",
+          "en": "Original remaining days 35."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள உணவு மனிதர்-நாட்கள் = 150 × 35 = 5250 ⟹ 125 வீரர்களுக்கு 42 நாட்கள்.",
+        "en": "150 × 35 = 125 × D2 ⟹ D2 = 42 days."
+      },
+      "revision_fact": {
+        "ta": "5250 / 125 = 42 days",
+        "en": "5250 / 125 = 42 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_028",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A என்பவர் ஒரு வேலையை 24 நாட்களில் முடிப்பார். B என்பவர் A-வை விட 20% குறைந்த திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A completes a work in 24 days. B is 20% less efficient than A. In how many days can B finish the work alone?"
+      },
+      "question_ta": "A என்பவர் ஒரு வேலையை 24 நாட்களில் முடிப்பார். B என்பவர் A-வை விட 20% குறைந்த திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A completes a work in 24 days. B is 20% less efficient than A. In how many days can B finish the work alone?",
+      "options": [
+        "32 நாட்கள்",
+        "20 நாட்கள்",
+        "28 நாட்கள்",
+        "30 நாட்கள்"
+      ],
+      "options_ta": [
+        "32 நாட்கள்",
+        "20 நாட்கள்",
+        "28 நாட்கள்",
+        "30 நாட்கள்"
+      ],
+      "options_en": [
+        "32 days",
+        "20 days",
+        "28 days",
+        "30 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "A-ன் திறன் = 100 ⟹ B-ன் திறன் = 80.\nதிறன் A : B = 5 : 4 ⟹ காலம் A : B = 4 : 5.\n4 பங்குகள் = 24 நாட்கள் ⟹ 1 பங்கு = 6 நாட்கள் ⟹ B-ன் காலம் = 5 × 6 = 30 நாட்கள்.",
+        "en": "Efficiency A:B = 5:4 ⟹ Time A:B = 4:5. 4 parts = 24 ⟹ B's time = 5 × 6 = 30 days."
+      },
+      "explanation_ta": "A-ன் திறன் = 100 ⟹ B-ன் திறன் = 80.\nதிறன் A : B = 5 : 4 ⟹ காலம் A : B = 4 : 5.\n4 பங்குகள் = 24 நாட்கள் ⟹ 1 பங்கு = 6 நாட்கள் ⟹ B-ன் காலம் = 5 × 6 = 30 நாட்கள்.",
+      "explanation_en": "Efficiency A:B = 5:4 ⟹ Time A:B = 4:5. 4 parts = 24 ⟹ B's time = 5 × 6 = 30 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 32 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 24 × 0.8 = 19.2 ≈ 20 நாட்கள் (தவறாகக் குறைத்தது).",
+          "en": "Incorrectly reduced time."
+        },
+        "C": {
+          "ta": "தவறு. 28 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 24 × (100 / 80) = 30 நாட்கள்.",
+          "en": "Correct. 30 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "குறைவான திறன் ⟹ அதிகமான காலம்: B-ன் காலம் = 24 × (100/80) = 30 நாட்கள்.",
+        "en": "Less efficiency = More time."
+      },
+      "revision_fact": {
+        "ta": "24 × (5/4) = 30 days",
+        "en": "24 × (5/4) = 30 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_029",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை ₹4500-க்குக் கொள்கின்றனர். A தனியாக 6 நாட்களிலும், B தனியாக 8 நாட்களிலும் செய்வர். C-ன் உதவியுடன் மூவரும் சேர்ந்து 3 நாட்களில் முடித்தால், C-ன் கூலிப் பங்கு என்ன?",
+        "en": "A and B undertake a work for ₹4500. A alone takes 6 days, B alone 8 days. With C's help, they finish it in 3 days. Find C's share of wages."
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை ₹4500-க்குக் கொள்கின்றனர். A தனியாக 6 நாட்களிலும், B தனியாக 8 நாட்களிலும் செய்வர். C-ன் உதவியுடன் மூவரும் சேர்ந்து 3 நாட்களில் முடித்தால், C-ன் கூலிப் பங்கு என்ன?",
+      "question_en": "A and B undertake a work for ₹4500. A alone takes 6 days, B alone 8 days. With C's help, they finish it in 3 days. Find C's share of wages.",
+      "options": [
+        "₹1125",
+        "₹2250",
+        "₹562.50",
+        "₹750"
+      ],
+      "options_ta": [
+        "₹1125",
+        "₹2250",
+        "₹562.50",
+        "₹750"
+      ],
+      "options_en": [
+        "₹1125",
+        "₹2250",
+        "₹562.50",
+        "₹750"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "C-ன் 1 நாள் வேலை = 1/3 - (1/6 + 1/8) = 1/3 - 7/24 = (8 - 7) / 24 = 1/24.\n3 நாட்களில் A செய்த வேலை = 3/6 = 1/2 ⟹ பங்கு = ₹2250.\n3 நாட்களில் B செய்த வேலை = 3/8 ⟹ பங்கு = ₹1687.50.\n3 நாட்களில் C செய்த வேலை = 3/24 = 1/8 ⟹ C-ன் பங்கு = (1/8) × 4500 = ₹562.50.",
+        "en": "C's 3-day work = 3/24 = 1/8 ⟹ C's share = 4500 / 8 = ₹562.50."
+      },
+      "explanation_ta": "C-ன் 1 நாள் வேலை = 1/3 - (1/6 + 1/8) = 1/3 - 7/24 = (8 - 7) / 24 = 1/24.\n3 நாட்களில் A செய்த வேலை = 3/6 = 1/2 ⟹ பங்கு = ₹2250.\n3 நாட்களில் B செய்த வேலை = 3/8 ⟹ பங்கு = ₹1687.50.\n3 நாட்களில் C செய்த வேலை = 3/24 = 1/8 ⟹ C-ன் பங்கு = (1/8) × 4500 = ₹562.50.",
+      "explanation_en": "C's 3-day work = 3/24 = 1/8 ⟹ C's share = 4500 / 8 = ₹562.50.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 4500 / 4 = ₹1125.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 4500 / 2 = ₹2250 (A-ன் பங்கு).",
+          "en": "₹2250 is A's share."
+        },
+        "C": {
+          "ta": "சரி. 4500 / 8 = ₹562.50.",
+          "en": "Correct. ₹562.50."
+        },
+        "D": {
+          "ta": "தவறு. ₹750.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3 நாட்களில் C செய்த வேலைப் பங்கு = 3/24 = 1/8 ⟹ C-ன் கூலி = 4500 / 8 = ₹562.50.",
+        "en": "C's work fraction = 1/8 ⟹ Share = ₹562.50."
+      },
+      "revision_fact": {
+        "ta": "4500 / 8 = ₹562.50",
+        "en": "4500 / 8 = ₹562.50"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_030",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Joining & Leaving Work",
+      "question": {
+        "ta": "A ஒரு வேலையை 24 நாட்களிலும், B அதை 32 நாட்களிலும் செய்வர். இருவரும் சேர்ந்து வேலை செய்து, வேலை முடிவதற்கு 4 நாட்களுக்கு முன் A விலகிவிட்டால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A can do a work in 24 days and B in 32 days. They start together, but A leaves 4 days before completion. In how many total days is the work completed?"
+      },
+      "question_ta": "A ஒரு வேலையை 24 நாட்களிலும், B அதை 32 நாட்களிலும் செய்வர். இருவரும் சேர்ந்து வேலை செய்து, வேலை முடிவதற்கு 4 நாட்களுக்கு முன் A விலகிவிட்டால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A can do a work in 24 days and B in 32 days. They start together, but A leaves 4 days before completion. In how many total days is the work completed?",
+      "options": [
+        "15 நாட்கள்",
+        "16 நாட்கள்",
+        "18 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 நாட்கள்",
+        "16 நாட்கள்",
+        "18 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_en": [
+        "15 days",
+        "16 days",
+        "18 days",
+        "14 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "கடைசி 4 நாட்கள் B மட்டும் செய்கிறார் ⟹ B-ன் 4 நாள் வேலை = 4 / 32 = 1/8.\nமுந்தைய வேலை = 1 - 1/8 = 7/8.\nA மற்றும் B 1 நாள் வேலை = 1/24 + 1/32 = 7/96.\nமுந்தைய வேலைக்கான நாட்கள் = (7/8) / (7/96) = (7/8) × (96/7) = 12 நாட்கள்.\nமொத்த நாட்கள் = 12 + 4 = 16 நாட்கள்.",
+        "en": "Last 4 days B's work = 1/8. Remaining 7/8 done together in 12 days. Total days = 12 + 4 = 16 days."
+      },
+      "explanation_ta": "கடைசி 4 நாட்கள் B மட்டும் செய்கிறார் ⟹ B-ன் 4 நாள் வேலை = 4 / 32 = 1/8.\nமுந்தைய வேலை = 1 - 1/8 = 7/8.\nA மற்றும் B 1 நாள் வேலை = 1/24 + 1/32 = 7/96.\nமுந்தைய வேலைக்கான நாட்கள் = (7/8) / (7/96) = (7/8) × (96/7) = 12 நாட்கள்.\nமொத்த நாட்கள் = 12 + 4 = 16 நாட்கள்.",
+      "explanation_en": "Last 4 days B's work = 1/8. Remaining 7/8 done together in 12 days. Total days = 12 + 4 = 16 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 12 + 4 = 16 நாட்கள்.",
+          "en": "Correct. 16 days."
+        },
+        "C": {
+          "ta": "தவறு. 18 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கடைசி 4 நாட்கள் B செய்த வேலை 1/8 ⟹ முந்தைய 12 நாட்கள் இருவரும் சேர்ந்து செய்தனர் ⟹ 12 + 4 = 16 நாட்கள்.",
+        "en": "Total days = 12 + 4 = 16 days."
+      },
+      "revision_fact": {
+        "ta": "12 + 4 = 16 days",
+        "en": "12 + 4 = 16 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_031",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை 8 நாட்களில் செய்வர். B மற்றும் C 12 நாட்களில் செய்வர். A, B, C மூவரும் சேர்ந்து 6 நாட்களில் முடித்தால், A மற்றும் C சேர்ந்து எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A and B do a work in 8 days, B and C in 12 days. All three together finish it in 6 days. In how many days can A and C together finish it?"
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை 8 நாட்களில் செய்வர். B மற்றும் C 12 நாட்களில் செய்வர். A, B, C மூவரும் சேர்ந்து 6 நாட்களில் முடித்தால், A மற்றும் C சேர்ந்து எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A and B do a work in 8 days, B and C in 12 days. All three together finish it in 6 days. In how many days can A and C together finish it?",
+      "options": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "6 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "6 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "10 days",
+        "6 days",
+        "12 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "1/A + 1/B + 1/C = 1/6.\n1/C = 1/6 - 1/8 = (4 - 3) / 24 = 1/24.\n1/A = 1/6 - 1/12 = (2 - 1) / 12 = 1/12.\n(A + C) 1 நாள் வேலை = 1/12 + 1/24 = 3/24 = 1/8.\nஎனவே A மற்றும் C சேர்ந்து செய்யும் நாட்கள் = 8 நாட்கள்.",
+        "en": "1/C = 1/24, 1/A = 1/12 ⟹ 1/A + 1/C = 1/12 + 1/24 = 1/8 ⟹ 8 days."
+      },
+      "explanation_ta": "1/A + 1/B + 1/C = 1/6.\n1/C = 1/6 - 1/8 = (4 - 3) / 24 = 1/24.\n1/A = 1/6 - 1/12 = (2 - 1) / 12 = 1/12.\n(A + C) 1 நாள் வேலை = 1/12 + 1/24 = 3/24 = 1/8.\nஎனவே A மற்றும் C சேர்ந்து செய்யும் நாட்கள் = 8 நாட்கள்.",
+      "explanation_en": "1/C = 1/24, 1/A = 1/12 ⟹ 1/A + 1/C = 1/12 + 1/24 = 1/8 ⟹ 8 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 1 / (1/8) = 8 நாட்கள்.",
+          "en": "Correct. 8 days."
+        },
+        "B": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "A மற்றும் C 1 நாள் வேலை = 1/12 + 1/24 = 1/8 ⟹ 8 நாட்கள்.",
+        "en": "A and C combined = 8 days."
+      },
+      "revision_fact": {
+        "ta": "1 / (1/8) = 8 days",
+        "en": "1 / (1/8) = 8 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_032",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Efficiency Model",
+      "question": {
+        "ta": "A என்பவர் ஒரு வேலையை 15 நாட்களில் செய்வார். B என்பவர் A-வை விட 50% அதிக திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A can do a work in 15 days. B is 50% more efficient than A. In how many days can B complete it alone?"
+      },
+      "question_ta": "A என்பவர் ஒரு வேலையை 15 நாட்களில் செய்வார். B என்பவர் A-வை விட 50% அதிக திறமையுடையவர் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A can do a work in 15 days. B is 50% more efficient than A. In how many days can B complete it alone?",
+      "options": [
+        "7.5 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_ta": [
+        "7.5 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_en": [
+        "7.5 days",
+        "10 days",
+        "12 days",
+        "8 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "B-ன் காலம் = A-ன் காலம் × (100 / 150) = 15 × (2/3) = 10 நாட்கள்.",
+        "en": "B's time = 15 × (100 / 150) = 10 days."
+      },
+      "explanation_ta": "B-ன் காலம் = A-ன் காலம் × (100 / 150) = 15 × (2/3) = 10 நாட்கள்.",
+      "explanation_en": "B's time = 15 × (100 / 150) = 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 / 2 = 7.5 நாட்கள் (50% காலம் என நினைத்தது).",
+          "en": "Halved time to 7.5."
+        },
+        "B": {
+          "ta": "சரி. 15 × (2/3) = 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "B-ன் காலம் = 15 × (2/3) = 10 நாட்கள்.",
+        "en": "B's time = 15 × (2/3) = 10 days."
+      },
+      "revision_fact": {
+        "ta": "15 × (2/3) = 10 days",
+        "en": "15 × (2/3) = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_033",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "12 ஆண்கள் ஒரு வேலையை 9 நாட்களில் முடிப்பர். 6 நாட்கள் வேலை செய்த பின் 6 ஆண்கள் விலகிவிட்டால், மீதமுள்ள வேலையை எஞ்சிய ஆண்கள் எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "12 men finish a work in 9 days. After 6 days, 6 men leave. In how many days will the remaining men finish the rest of the work?"
+      },
+      "question_ta": "12 ஆண்கள் ஒரு வேலையை 9 நாட்களில் முடிப்பர். 6 நாட்கள் வேலை செய்த பின் 6 ஆண்கள் விலகிவிட்டால், மீதமுள்ள வேலையை எஞ்சிய ஆண்கள் எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "12 men finish a work in 9 days. After 6 days, 6 men leave. In how many days will the remaining men finish the rest of the work?",
+      "options": [
+        "8 நாட்கள்",
+        "6 நாட்கள்",
+        "5 நாட்கள்",
+        "4 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "6 நாட்கள்",
+        "5 நாட்கள்",
+        "4 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "6 days",
+        "5 days",
+        "4 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "12 ஆண்களுக்கு மீதமுள்ள நாட்களின் வேலை = 9 - 6 = 3 நாட்கள்.\nஎஞ்சிய ஆண்கள் = 12 - 6 = 6 ஆண்கள்.\nM1 D1 = M2 D2 ⟹ 12 × 3 = 6 × D2 ⟹ 36 = 6 D2 ⟹ D2 = 6 நாட்கள்.",
+        "en": "12 × 3 = 6 × D2 ⟹ D2 = 36 / 6 = 6 days."
+      },
+      "explanation_ta": "12 ஆண்களுக்கு மீதமுள்ள நாட்களின் வேலை = 9 - 6 = 3 நாட்கள்.\nஎஞ்சிய ஆண்கள் = 12 - 6 = 6 ஆண்கள்.\nM1 D1 = M2 D2 ⟹ 12 × 3 = 6 × D2 ⟹ 36 = 6 D2 ⟹ D2 = 6 நாட்கள்.",
+      "explanation_en": "12 × 3 = 6 × D2 ⟹ D2 = 36 / 6 = 6 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 36 / 6 = 6 நாட்கள்.",
+          "en": "Correct. 6 days."
+        },
+        "C": {
+          "ta": "தவறு. 5 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 4 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள மனிதர்-நாட்கள் = 12 × 3 = 36 ⟹ 6 ஆண்களுக்கு 36 / 6 = 6 நாட்கள்.",
+        "en": "12 × 3 = 6 × D2 ⟹ D2 = 6 days."
+      },
+      "revision_fact": {
+        "ta": "36 / 6 = 6 days",
+        "en": "36 / 6 = 6 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_034",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையின் 2/5 பகுதியை 6 நாட்களில் செய்கிறார். B அதே வேலையின் 1/3 பகுதியை 10 நாட்களில் செய்கிறார் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "A does 2/5 of a work in 6 days and B does 1/3 of the work in 10 days. How many days will both take together to complete the work?"
+      },
+      "question_ta": "A ஒரு வேலையின் 2/5 பகுதியை 6 நாட்களில் செய்கிறார். B அதே வேலையின் 1/3 பகுதியை 10 நாட்களில் செய்கிறார் எனில், இருவரும் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "A does 2/5 of a work in 6 days and B does 1/3 of the work in 10 days. How many days will both take together to complete the work?",
+      "options": [
+        "8 நாட்கள்",
+        "15 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "15 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "15 days",
+        "10 days",
+        "12 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "A-ன் முழு வேலை காலம் = 6 / (2/5) = 15 நாட்கள்.\nB-ன் முழு வேலை காலம் = 10 / (1/3) = 30 நாட்கள்.\nஇருவரும் சேர்ந்து = (15 × 30) / (15 + 30) = 450 / 45 = 10 நாட்கள்.",
+        "en": "A's total time = 15 days, B's total time = 30 days. Combined = (15 × 30) / 45 = 10 days."
+      },
+      "explanation_ta": "A-ன் முழு வேலை காலம் = 6 / (2/5) = 15 நாட்கள்.\nB-ன் முழு வேலை காலம் = 10 / (1/3) = 30 நாட்கள்.\nஇருவரும் சேர்ந்து = (15 × 30) / (15 + 30) = 450 / 45 = 10 நாட்கள்.",
+      "explanation_en": "A's total time = 15 days, B's total time = 30 days. Combined = (15 × 30) / 45 = 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 450 / 45 = 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "D": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "A = 15 நாட்கள், B = 30 நாட்கள் ⟹ சேர்ந்து = (15 × 30) / 45 = 10 நாட்கள்.",
+        "en": "Combined time = 10 days."
+      },
+      "revision_fact": {
+        "ta": "450 / 45 = 10 days",
+        "en": "450 / 45 = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_035",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை ₹720-க்கு ஒப்புக் கொள்கின்றனர். A தனியாக 8 நாட்களில், B தனியாக 12 நாட்களில் முடிப்பர். C-ன் உதவியுடன் 4 நாட்களில் முடித்தால், C-ன் கூலி என்ன?",
+        "en": "A and B take a work for ₹720. A alone takes 8 days, B alone 12 days. With C's help, they finish in 4 days. Find C's share."
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை ₹720-க்கு ஒப்புக் கொள்கின்றனர். A தனியாக 8 நாட்களில், B தனியாக 12 நாட்களில் முடிப்பர். C-ன் உதவியுடன் 4 நாட்களில் முடித்தால், C-ன் கூலி என்ன?",
+      "question_en": "A and B take a work for ₹720. A alone takes 8 days, B alone 12 days. With C's help, they finish in 4 days. Find C's share.",
+      "options": [
+        "₹120",
+        "₹180",
+        "₹360",
+        "₹240"
+      ],
+      "options_ta": [
+        "₹120",
+        "₹180",
+        "₹360",
+        "₹240"
+      ],
+      "options_en": [
+        "₹120",
+        "₹180",
+        "₹360",
+        "₹240"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "4 நாட்களில் A செய்த வேலை = 4/8 = 1/2 ⟹ பங்கு = ₹360.\n4 நாட்களில் B செய்த வேலை = 4/12 = 1/3 ⟹ பங்கு = ₹240.\nC செய்த வேலை பங்கு = 1 - (1/2 + 1/3) = 1 - 5/6 = 1/6.\nC-ன் பங்கு = (1/6) × 720 = ₹120.",
+        "en": "C's 4-day work fraction = 1 - 5/6 = 1/6 ⟹ C's share = 720 / 6 = ₹120."
+      },
+      "explanation_ta": "4 நாட்களில் A செய்த வேலை = 4/8 = 1/2 ⟹ பங்கு = ₹360.\n4 நாட்களில் B செய்த வேலை = 4/12 = 1/3 ⟹ பங்கு = ₹240.\nC செய்த வேலை பங்கு = 1 - (1/2 + 1/3) = 1 - 5/6 = 1/6.\nC-ன் பங்கு = (1/6) × 720 = ₹120.",
+      "explanation_en": "C's 4-day work fraction = 1 - 5/6 = 1/6 ⟹ C's share = 720 / 6 = ₹120.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 720 / 6 = ₹120.",
+          "en": "Correct. ₹120."
+        },
+        "B": {
+          "ta": "தவறு. ₹180.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. (1/2) × 720 = ₹360 (A-ன் பங்கு).",
+          "en": "₹360 is A's share."
+        },
+        "D": {
+          "ta": "தவறு. (1/3) × 720 = ₹240 (B-ன் பங்கு).",
+          "en": "₹240 is B's share."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "C-ன் வேலை பங்கு = 1/6 ⟹ கூலி = ₹120.",
+        "en": "C's work fraction = 1/6 ⟹ Share = ₹120."
+      },
+      "revision_fact": {
+        "ta": "720 / 6 = ₹120",
+        "en": "720 / 6 = ₹120"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_036",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Alternate Days",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை 12 மற்றும் 18 நாட்களில் தனித்தனியாக செய்வர். A முதலில் தொடங்கி மாற்று நாட்களில் வேலை செய்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A and B can do a work in 12 and 18 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?"
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை 12 மற்றும் 18 நாட்களில் தனித்தனியாக செய்வர். A முதலில் தொடங்கி மாற்று நாட்களில் வேலை செய்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A and B can do a work in 12 and 18 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?",
+      "options": [
+        "14 1/3 நாட்கள்",
+        "13 1/2 நாட்கள்",
+        "15 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_ta": [
+        "14 1/3 நாட்கள்",
+        "13 1/2 நாட்கள்",
+        "15 நாட்கள்",
+        "14 நாட்கள்"
+      ],
+      "options_en": [
+        "14 1/3 days",
+        "13 1/2 days",
+        "15 days",
+        "14 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "A = 1/12, B = 1/18.\n2 நாட்கள் (1 சுழற்சி) = 1/12 + 1/18 = (3 + 2) / 36 = 5/36.\n7 சுழற்சிகள் (14 நாட்கள்) = 7 × 5/36 = 35/36.\nமீதமுள்ள வேலை = 1 - 35/36 = 1/36.\n15 ஆம் நாளில் A வேலை செய்வார் ⟹ ஆகும் நேரம் = (1/36) / (1/12) = 12 / 36 = 1/3 நாள்.\nமொத்த நாட்கள் = 14 + 1/3 = 14 1/3 நாட்கள்.",
+        "en": "7 cycles (14 days) = 35/36. Remaining 1/36 done by A in (1/36)/(1/12) = 1/3 day. Total = 14 1/3 days."
+      },
+      "explanation_ta": "A = 1/12, B = 1/18.\n2 நாட்கள் (1 சுழற்சி) = 1/12 + 1/18 = (3 + 2) / 36 = 5/36.\n7 சுழற்சிகள் (14 நாட்கள்) = 7 × 5/36 = 35/36.\nமீதமுள்ள வேலை = 1 - 35/36 = 1/36.\n15 ஆம் நாளில் A வேலை செய்வார் ⟹ ஆகும் நேரம் = (1/36) / (1/12) = 12 / 36 = 1/3 நாள்.\nமொத்த நாட்கள் = 14 + 1/3 = 14 1/3 நாட்கள்.",
+      "explanation_en": "7 cycles (14 days) = 35/36. Remaining 1/36 done by A in (1/36)/(1/12) = 1/3 day. Total = 14 1/3 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 14 + 1/3 = 14 1/3 நாட்கள்.",
+          "en": "Correct. 14 1/3 days."
+        },
+        "B": {
+          "ta": "தவறு. 13 1/2 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Incomplete work at 14 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "14 நாட்கள் = 35/36 ⟹ மீதி 1/36 A 1/3 நாளில் முடிப்பார் ⟹ 14 1/3 நாட்கள்.",
+        "en": "Total days = 14 1/3 days."
+      },
+      "revision_fact": {
+        "ta": "14 + 1/3 = 14 1/3 days",
+        "en": "14 + 1/3 = 14 1/3 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_037",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "3 ஆண்கள் அல்லது 4 பெண்கள் ஒரு வேலையை 43 நாட்களில் முடிப்பர் எனில், 7 ஆண்களும் 5 பெண்களும் சேர்ந்து அதே வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "3 men or 4 women can do a work in 43 days. In how many days can 7 men and 5 women do the same work?"
+      },
+      "question_ta": "3 ஆண்கள் அல்லது 4 பெண்கள் ஒரு வேலையை 43 நாட்களில் முடிப்பர் எனில், 7 ஆண்களும் 5 பெண்களும் சேர்ந்து அதே வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "3 men or 4 women can do a work in 43 days. In how many days can 7 men and 5 women do the same work?",
+      "options": [
+        "10 நாட்கள்",
+        "15 நாட்கள்",
+        "14 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_ta": [
+        "10 நாட்கள்",
+        "15 நாட்கள்",
+        "14 நாட்கள்",
+        "12 நாட்கள்"
+      ],
+      "options_en": [
+        "10 days",
+        "15 days",
+        "14 days",
+        "12 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "3 M = 4 W ⟹ 1 M = 4/3 W.\n7 M + 5 W = 7(4/3 W) + 5 W = 28/3 W + 5 W = 43/3 W.\n4 W ⟹ 43 நாட்கள் எனில், (43/3) W ⟹ D2 நாட்கள்.\nM1 D1 = M2 D2 ⟹ 4 × 43 = (43/3) × D2 ⟹ D2 = (4 × 43 × 3) / 43 = 12 நாட்கள்.",
+        "en": "3 M = 4 W ⟹ 7 M + 5 W = 43/3 W. 4 × 43 = (43/3) × D2 ⟹ D2 = 12 days."
+      },
+      "explanation_ta": "3 M = 4 W ⟹ 1 M = 4/3 W.\n7 M + 5 W = 7(4/3 W) + 5 W = 28/3 W + 5 W = 43/3 W.\n4 W ⟹ 43 நாட்கள் எனில், (43/3) W ⟹ D2 நாட்கள்.\nM1 D1 = M2 D2 ⟹ 4 × 43 = (43/3) × D2 ⟹ D2 = (4 × 43 × 3) / 43 = 12 நாட்கள்.",
+      "explanation_en": "3 M = 4 W ⟹ 7 M + 5 W = 43/3 W. 4 × 43 = (43/3) × D2 ⟹ D2 = 12 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 4 × 3 = 12 நாட்கள்.",
+          "en": "Correct. 12 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "D2 = (4 × 43 × 3) / 43 = 12 நாட்கள்.",
+        "en": "D2 = 12 days."
+      },
+      "revision_fact": {
+        "ta": "4 × 3 = 12 days",
+        "en": "4 × 3 = 12 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_038",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "A என்பவர் B-ஐ விட 3 மடங்கு திறமையானவர். A ஒரு வேலையை B-ஐ விட 60 நாட்கள் குறைவாக முடிப்பார் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A is 3 times as efficient as B and takes 60 days less than B to complete a work. In how many days can B finish the work alone?"
+      },
+      "question_ta": "A என்பவர் B-ஐ விட 3 மடங்கு திறமையானவர். A ஒரு வேலையை B-ஐ விட 60 நாட்கள் குறைவாக முடிப்பார் எனில், B தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A is 3 times as efficient as B and takes 60 days less than B to complete a work. In how many days can B finish the work alone?",
+      "options": [
+        "30 நாட்கள்",
+        "90 நாட்கள்",
+        "60 நாட்கள்",
+        "120 நாட்கள்"
+      ],
+      "options_ta": [
+        "30 நாட்கள்",
+        "90 நாட்கள்",
+        "60 நாட்கள்",
+        "120 நாட்கள்"
+      ],
+      "options_en": [
+        "30 days",
+        "90 days",
+        "60 days",
+        "120 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "திறன் A : B = 3 : 1 ⟹ காலம் A : B = 1 : 3.\nகால வித்தியாசம் = 3 - 1 = 2 பங்குகள்.\n2 பங்குகள் = 60 நாட்கள் ⟹ 1 பங்கு = 30 நாட்கள்.\nB-ன் காலம் = 3 × 30 = 90 நாட்கள்.",
+        "en": "Time ratio = 1:3. Difference 2 parts = 60 days ⟹ 1 part = 30 ⟹ B's time = 3 × 30 = 90 days."
+      },
+      "explanation_ta": "திறன் A : B = 3 : 1 ⟹ காலம் A : B = 1 : 3.\nகால வித்தியாசம் = 3 - 1 = 2 பங்குகள்.\n2 பங்குகள் = 60 நாட்கள் ⟹ 1 பங்கு = 30 நாட்கள்.\nB-ன் காலம் = 3 × 30 = 90 நாட்கள்.",
+      "explanation_en": "Time ratio = 1:3. Difference 2 parts = 60 days ⟹ 1 part = 30 ⟹ B's time = 3 × 30 = 90 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 30 நாட்கள் (A-ன் காலம்).",
+          "en": "30 days is A's time."
+        },
+        "B": {
+          "ta": "சரி. 3 × 30 = 90 நாட்கள்.",
+          "en": "Correct. 90 days."
+        },
+        "C": {
+          "ta": "தவறு. 60 நாட்கள் (கால வித்தியாசம்).",
+          "en": "60 days is difference."
+        },
+        "D": {
+          "ta": "தவறு. 120 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2 பங்குகள் = 60 நாட்கள் ⟹ A = 30 நாட்கள், B = 90 நாட்கள்.",
+        "en": "B's time = 90 days."
+      },
+      "revision_fact": {
+        "ta": "3 × 30 = 90 days",
+        "en": "3 × 30 = 90 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_039",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Joining & Leaving Work",
+      "question": {
+        "ta": "A ஒரு வேலையை 18 நாட்களிலும், B அதை 24 நாட்களிலும் முடிப்பர். B தனியாக வேலை செய்யத் தொடங்கி 6 நாட்களுக்குப் பின், A அவருடன் சேர்ந்தால் எஞ்சிய வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A can do a work in 18 days and B in 24 days. B starts alone and after 6 days, A joins him. In how many days will the remaining work be finished?"
+      },
+      "question_ta": "A ஒரு வேலையை 18 நாட்களிலும், B அதை 24 நாட்களிலும் முடிப்பர். B தனியாக வேலை செய்யத் தொடங்கி 6 நாட்களுக்குப் பின், A அவருடன் சேர்ந்தால் எஞ்சிய வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A can do a work in 18 days and B in 24 days. B starts alone and after 6 days, A joins him. In how many days will the remaining work be finished?",
+      "options": [
+        "8 நாட்கள்",
+        "7.71 நாட்கள்",
+        "10 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "7.71 நாட்கள்",
+        "10 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "7.71 days",
+        "10 days",
+        "6 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "B-ன் 6 நாள் வேலை = 6 / 24 = 1/4.\nமீதமுள்ள வேலை = 1 - 1/4 = 3/4.\nA மற்றும் B 1 நாள் வேலை = 1/18 + 1/24 = (4 + 3) / 72 = 7/72.\nஎஞ்சிய வேலைக்கான நாட்கள் = (3/4) / (7/72) = (3/4) × (72/7) = 54 / 7 = 7.71 நாட்கள் (அல்லது 7 5/7 நாட்கள்).",
+        "en": "B's 6-day work = 1/4. Remaining 3/4 done together in 54/7 = 7.71 days."
+      },
+      "explanation_ta": "B-ன் 6 நாள் வேலை = 6 / 24 = 1/4.\nமீதமுள்ள வேலை = 1 - 1/4 = 3/4.\nA மற்றும் B 1 நாள் வேலை = 1/18 + 1/24 = (4 + 3) / 72 = 7/72.\nஎஞ்சிய வேலைக்கான நாட்கள் = (3/4) / (7/72) = (3/4) × (72/7) = 54 / 7 = 7.71 நாட்கள் (அல்லது 7 5/7 நாட்கள்).",
+      "explanation_en": "B's 6-day work = 1/4. Remaining 3/4 done together in 54/7 = 7.71 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 54 / 7 = 7.71 நாட்கள் (7 5/7 நாட்கள்).",
+          "en": "Correct. 7.71 days."
+        },
+        "C": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள நாட்கள் = (3/4) / (7/72) = 54/7 = 7 5/7 நாட்கள் (7.71 நாட்கள்).",
+        "en": "Remaining days = 54/7 = 7.71 days."
+      },
+      "revision_fact": {
+        "ta": "54 / 7 = 7.71 days",
+        "en": "54 / 7 = 7.71 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_040",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "A, B, C மூவரும் ஒரு வேலையை 4 நாட்களில் முடிப்பர். A தனியாக 12 நாட்களிலும், B தனியாக 18 நாட்களிலும் முடித்தால், C தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A, B, C together complete a work in 4 days. A alone takes 12 days and B alone 18 days. In how many days can C alone complete it?"
+      },
+      "question_ta": "A, B, C மூவரும் ஒரு வேலையை 4 நாட்களில் முடிப்பர். A தனியாக 12 நாட்களிலும், B தனியாக 18 நாட்களிலும் முடித்தால், C தனியாக எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A, B, C together complete a work in 4 days. A alone takes 12 days and B alone 18 days. In how many days can C alone complete it?",
+      "options": [
+        "9 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_ta": [
+        "9 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_en": [
+        "9 days",
+        "10 days",
+        "12 days",
+        "8 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "C-ன் 1 நாள் வேலை = 1/4 - (1/12 + 1/18) = 1/4 - (3 + 2)/36 = 1/4 - 5/36 = (9 - 5) / 36 = 4/36 = 1/9.\nஎனவே C தனியாகச் செய்யும் காலம் = 9 நாட்கள்.",
+        "en": "C's 1-day work = 1/4 - 5/36 = 4/36 = 1/9 ⟹ C alone = 9 days."
+      },
+      "explanation_ta": "C-ன் 1 நாள் வேலை = 1/4 - (1/12 + 1/18) = 1/4 - (3 + 2)/36 = 1/4 - 5/36 = (9 - 5) / 36 = 4/36 = 1/9.\nஎனவே C தனியாகச் செய்யும் காலம் = 9 நாட்கள்.",
+      "explanation_en": "C's 1-day work = 1/4 - 5/36 = 4/36 = 1/9 ⟹ C alone = 9 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 1 / (1/9) = 9 நாட்கள்.",
+          "en": "Correct. 9 days."
+        },
+        "B": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "C 1 நாள் வேலை = 1/4 - 5/36 = 1/9 ⟹ C = 9 நாட்கள்.",
+        "en": "C alone = 9 days."
+      },
+      "revision_fact": {
+        "ta": "1 / (1/9) = 9 days",
+        "en": "1 / (1/9) = 9 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_041",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Application",
+      "question": {
+        "ta": "2 ஆண்கள் மற்றும் 3 சிறுவர்கள் சேர்ந்து ஒரு வேலையை 10 நாட்களில் முடிப்பர். 3 ஆண்கள் மற்றும் 2 சிறுவர்கள் சேர்ந்து அதே வேலையை 8 நாட்களில் முடிப்பர் எனில், 2 ஆண்கள் மற்றும் 1 சிறுவன் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "2 men and 3 boys can do a work in 10 days while 3 men and 2 boys can do it in 8 days. In how many days can 2 men and 1 boy finish the work?"
+      },
+      "question_ta": "2 ஆண்கள் மற்றும் 3 சிறுவர்கள் சேர்ந்து ஒரு வேலையை 10 நாட்களில் முடிப்பர். 3 ஆண்கள் மற்றும் 2 சிறுவர்கள் சேர்ந்து அதே வேலையை 8 நாட்களில் முடிப்பர் எனில், 2 ஆண்கள் மற்றும் 1 சிறுவன் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "2 men and 3 boys can do a work in 10 days while 3 men and 2 boys can do it in 8 days. In how many days can 2 men and 1 boy finish the work?",
+      "options": [
+        "15 நாட்கள்",
+        "14 நாட்கள்",
+        "10 நாட்கள்",
+        "12.5 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 நாட்கள்",
+        "14 நாட்கள்",
+        "10 நாட்கள்",
+        "12.5 நாட்கள்"
+      ],
+      "options_en": [
+        "15 days",
+        "14 days",
+        "10 days",
+        "12.5 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "10(2 M + 3 B) = 8(3 M + 2 B) ⟹ 20 M + 30 B = 24 M + 16 B ⟹ 4 M = 14 B ⟹ 1 M = 3.5 B.\n2 M + 3 B = 2(3.5 B) + 3 B = 10 B ⟹ 10 B செய்ய ஆகும் நாட்கள் = 10.\n2 M + 1 B = 2(3.5 B) + 1 B = 8 B.\nM1 D1 = M2 D2 ⟹ 10 × 10 = 8 × D2 ⟹ 100 = 8 D2 ⟹ D2 = 100 / 8 = 12.5 நாட்கள்.",
+        "en": "1 M = 3.5 B. 10 B take 10 days ⟹ 8 B take 100 / 8 = 12.5 days."
+      },
+      "explanation_ta": "10(2 M + 3 B) = 8(3 M + 2 B) ⟹ 20 M + 30 B = 24 M + 16 B ⟹ 4 M = 14 B ⟹ 1 M = 3.5 B.\n2 M + 3 B = 2(3.5 B) + 3 B = 10 B ⟹ 10 B செய்ய ஆகும் நாட்கள் = 10.\n2 M + 1 B = 2(3.5 B) + 1 B = 8 B.\nM1 D1 = M2 D2 ⟹ 10 × 10 = 8 × D2 ⟹ 100 = 8 D2 ⟹ D2 = 100 / 8 = 12.5 நாட்கள்.",
+      "explanation_en": "1 M = 3.5 B. 10 B take 10 days ⟹ 8 B take 100 / 8 = 12.5 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 14 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 100 / 8 = 12.5 நாட்கள்.",
+          "en": "Correct. 12.5 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "1 M = 3.5 B ⟹ 10 B-க்கு 10 நாட்கள் எனில், 8 B-க்கு 12.5 நாட்கள்.",
+        "en": "8 B time = 100 / 8 = 12.5 days."
+      },
+      "revision_fact": {
+        "ta": "100 / 8 = 12.5 days",
+        "en": "100 / 8 = 12.5 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_042",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Alternate Days",
+      "question": {
+        "ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 20, 30 மற்றும் 60 நாட்களில் முடிப்பர். A தொடர்ந்து வேலை செய்ய, ஒவ்வொரு 3 ஆம் நாளிலும் B மற்றும் C இருவரும் A உடன் சேர்ந்தால், அவ்வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A, B, C can do a work in 20, 30, and 60 days respectively. If A works continuously and is assisted by B and C every third day, in how many days will the work be completed?"
+      },
+      "question_ta": "A, B, C மூவரும் ஒரு வேலையை முறையே 20, 30 மற்றும் 60 நாட்களில் முடிப்பர். A தொடர்ந்து வேலை செய்ய, ஒவ்வொரு 3 ஆம் நாளிலும் B மற்றும் C இருவரும் A உடன் சேர்ந்தால், அவ்வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A, B, C can do a work in 20, 30, and 60 days respectively. If A works continuously and is assisted by B and C every third day, in how many days will the work be completed?",
+      "options": [
+        "15 நாட்கள்",
+        "18 நாட்கள்",
+        "12 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 நாட்கள்",
+        "18 நாட்கள்",
+        "12 நாட்கள்",
+        "16 நாட்கள்"
+      ],
+      "options_en": [
+        "15 days",
+        "18 days",
+        "16 days",
+        "12 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "1 ஆம் நாள் A = 1/20.\n2 ஆம் நாள் A = 1/20.\n3 ஆம் நாள் (A + B + C) = 1/20 + 1/30 + 1/60 = (3 + 2 + 1)/60 = 6/60 = 1/10.\n3 நாட்கள் (1 சுழற்சி) வேலை = 1/20 + 1/20 + 1/10 = (1 + 1 + 2) / 20 = 4/20 = 1/5.\n1/5 வேலைக்கு 3 நாட்கள் ஆகும் என்பதால், முழு வேலை (5 × 1/5) செய்ய ஆகும் நாட்கள் = 5 × 3 = 15 நாட்கள்.",
+        "en": "3 days work = 1/20 + 1/20 + 1/10 = 1/5. Full work = 5 × 3 = 15 days."
+      },
+      "explanation_ta": "1 ஆம் நாள் A = 1/20.\n2 ஆம் நாள் A = 1/20.\n3 ஆம் நாள் (A + B + C) = 1/20 + 1/30 + 1/60 = (3 + 2 + 1)/60 = 6/60 = 1/10.\n3 நாட்கள் (1 சுழற்சி) வேலை = 1/20 + 1/20 + 1/10 = (1 + 1 + 2) / 20 = 4/20 = 1/5.\n1/5 வேலைக்கு 3 நாட்கள் ஆகும் என்பதால், முழு வேலை (5 × 1/5) செய்ய ஆகும் நாட்கள் = 5 × 3 = 15 நாட்கள்.",
+      "explanation_en": "3 days work = 1/20 + 1/20 + 1/10 = 1/5. Full work = 5 × 3 = 15 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 5 × 3 = 15 நாட்கள்.",
+          "en": "Correct. 15 days."
+        },
+        "B": {
+          "ta": "தவறு. 18 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 16 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "3 நாட்களுக்கு (1 சுழற்சி) 1/5 வேலை ⟹ 5 × 3 = 15 நாட்களில் முழு வேலை முடியும்.",
+        "en": "1 cycle (3 days) = 1/5 work ⟹ 15 days."
+      },
+      "revision_fact": {
+        "ta": "5 × 3 = 15 days",
+        "en": "5 × 3 = 15 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_043",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Efficiency Model",
+      "question": {
+        "ta": "A ஒரு வேலையை 10 நாட்களில் முடிப்பார். B அதை 12 நாட்களில் முடிப்பார். C தனியாக அவ்வேலையை 15 நாட்களில் முடிப்பார். A மற்றும் B இருவரும் 2 நாட்கள் வேலை செய்து விலகிய பின், C எஞ்சிய வேலையை செய்யத் தொடங்கி, அவரின் திறன் 50% அதிகரிக்கப்பட்டால் எஞ்சிய வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A can do a work in 10 days, B in 12 days, C in 15 days. A and B work together for 2 days and leave. If C takes over the remaining work with his efficiency increased by 50%, in how many days will he finish it?"
+      },
+      "question_ta": "A ஒரு வேலையை 10 நாட்களில் முடிப்பார். B அதை 12 நாட்களில் முடிப்பார். C தனியாக அவ்வேலையை 15 நாட்களில் முடிப்பார். A மற்றும் B இருவரும் 2 நாட்கள் வேலை செய்து விலகிய பின், C எஞ்சிய வேலையை செய்யத் தொடங்கி, அவரின் திறன் 50% அதிகரிக்கப்பட்டால் எஞ்சிய வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A can do a work in 10 days, B in 12 days, C in 15 days. A and B work together for 2 days and leave. If C takes over the remaining work with his efficiency increased by 50%, in how many days will he finish it?",
+      "options": [
+        "6.33 நாட்கள்",
+        "5 நாட்கள்",
+        "7 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_ta": [
+        "6.33 நாட்கள்",
+        "5 நாட்கள்",
+        "7 நாட்கள்",
+        "8 நாட்கள்"
+      ],
+      "options_en": [
+        "6.33 days",
+        "5 days",
+        "7 days",
+        "8 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "2 நாட்களில் A, B செய்த வேலை = 2 × (1/10 + 1/12) = 2 × (11/60) = 22/60 = 11/30.\nமீதமுள்ள வேலை = 1 - 11/30 = 19/30.\nC-ன் இயல்பு 1 நாள் வேலை = 1/15.\nC-ன் புதிய திறன் 50% உயர்வு ⟹ புதிய 1 நாள் வேலை = (1/15) × 1.5 = 1.5/15 = 1/10.\nஎஞ்சிய வேலைக்கான நாட்கள் = (19/30) / (1/10) = (19/30) × 10 = 19 / 3 = 6.33 நாட்கள் (6 1/3 நாட்கள்).",
+        "en": "A+B 2 days work = 11/30. Remaining = 19/30. C's new rate = 1/10 ⟹ Days = (19/30) × 10 = 6.33 days."
+      },
+      "explanation_ta": "2 நாட்களில் A, B செய்த வேலை = 2 × (1/10 + 1/12) = 2 × (11/60) = 22/60 = 11/30.\nமீதமுள்ள வேலை = 1 - 11/30 = 19/30.\nC-ன் இயல்பு 1 நாள் வேலை = 1/15.\nC-ன் புதிய திறன் 50% உயர்வு ⟹ புதிய 1 நாள் வேலை = (1/15) × 1.5 = 1.5/15 = 1/10.\nஎஞ்சிய வேலைக்கான நாட்கள் = (19/30) / (1/10) = (19/30) × 10 = 19 / 3 = 6.33 நாட்கள் (6 1/3 நாட்கள்).",
+      "explanation_en": "A+B 2 days work = 11/30. Remaining = 19/30. C's new rate = 1/10 ⟹ Days = (19/30) × 10 = 6.33 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 19 / 3 = 6.33 நாட்கள் (6 1/3 நாட்கள்).",
+          "en": "Correct. 6.33 days."
+        },
+        "B": {
+          "ta": "தவறு. 5 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 7 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. (19/30) × 15 = 9.5 நாட்கள் (திறன் உயராத நிலை).",
+          "en": "9.5 days without efficiency boost."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "C-ன் புதிய 1 நாள் வேலை = 1/10 ⟹ எஞ்சிய வேலை நாட்கள் = (19/30) × 10 = 6.33 நாட்கள்.",
+        "en": "C's new rate = 1/10 ⟹ 6.33 days."
+      },
+      "revision_fact": {
+        "ta": "19 / 3 = 6.33 days",
+        "en": "19 / 3 = 6.33 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_044",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "ஒரு கோட்டையில் 200 வீரர்களுக்கு 31 நாட்களுக்கு உணவு உள்ளது. 27 நாட்களுக்குப் பின் 120 வீரர்கள் கோட்டையை விட்டு வெளியேறினால், எஞ்சிய உணவு மீதமுள்ள வீரர்களுக்கு எத்தனை நாட்களுக்கு வரும்?",
+        "en": "A fort has provisions for 200 men for 31 days. After 27 days, 120 men leave the fort. How many days will the remaining food last for the remaining men?"
+      },
+      "question_ta": "ஒரு கோட்டையில் 200 வீரர்களுக்கு 31 நாட்களுக்கு உணவு உள்ளது. 27 நாட்களுக்குப் பின் 120 வீரர்கள் கோட்டையை விட்டு வெளியேறினால், எஞ்சிய உணவு மீதமுள்ள வீரர்களுக்கு எத்தனை நாட்களுக்கு வரும்?",
+      "question_en": "A fort has provisions for 200 men for 31 days. After 27 days, 120 men leave the fort. How many days will the remaining food last for the remaining men?",
+      "options": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "10 days",
+        "12 days",
+        "6 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "200 வீரர்களுக்கு மீதமுள்ள நாட்கள் = 31 - 27 = 4 நாட்கள்.\nஎஞ்சிய வீரர்கள் = 200 - 120 = 80 வீரர்கள்.\nM1 D1 = M2 D2 ⟹ 200 × 4 = 80 × D2 ⟹ 800 = 80 D2 ⟹ D2 = 800 / 80 = 10 நாட்கள்.",
+        "en": "200 × 4 = 80 × D2 ⟹ D2 = 800 / 80 = 10 days."
+      },
+      "explanation_ta": "200 வீரர்களுக்கு மீதமுள்ள நாட்கள் = 31 - 27 = 4 நாட்கள்.\nஎஞ்சிய வீரர்கள் = 200 - 120 = 80 வீரர்கள்.\nM1 D1 = M2 D2 ⟹ 200 × 4 = 80 × D2 ⟹ 800 = 80 D2 ⟹ D2 = 800 / 80 = 10 நாட்கள்.",
+      "explanation_en": "200 × 4 = 80 × D2 ⟹ D2 = 800 / 80 = 10 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 800 / 80 = 10 நாட்கள்.",
+          "en": "Correct. 10 days."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "200 × 4 = 800 மனிதர்-நாட்கள் ⟹ 80 வீரர்களுக்கு 800 / 80 = 10 நாட்கள்.",
+        "en": "200 × 4 = 80 × D2 ⟹ D2 = 10 days."
+      },
+      "revision_fact": {
+        "ta": "800 / 80 = 10 days",
+        "en": "800 / 80 = 10 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_045",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Application",
+      "question": {
+        "ta": "A மற்றும் B சேர்ந்து ஒரு வேலையை 12 நாட்களில் முடிப்பர். B மற்றும் C சேர்ந்து 16 நாட்களில் முடிப்பர். A 5 நாட்கள், B 7 நாட்கள் வேலை செய்த பின் C எஞ்சிய வேலையை 13 நாட்களில் முடித்தால், C தனியாக முழு வேலையையும் எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A and B can do a work in 12 days, B and C in 16 days. A worked for 5 days, B for 7 days, and C finished the remaining work in 13 days. In how many days can C alone finish the whole work?"
+      },
+      "question_ta": "A மற்றும் B சேர்ந்து ஒரு வேலையை 12 நாட்களில் முடிப்பர். B மற்றும் C சேர்ந்து 16 நாட்களில் முடிப்பர். A 5 நாட்கள், B 7 நாட்கள் வேலை செய்த பின் C எஞ்சிய வேலையை 13 நாட்களில் முடித்தால், C தனியாக முழு வேலையையும் எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A and B can do a work in 12 days, B and C in 16 days. A worked for 5 days, B for 7 days, and C finished the remaining work in 13 days. In how many days can C alone finish the whole work?",
+      "options": [
+        "32 நாட்கள்",
+        "20 நாட்கள்",
+        "16 நாட்கள்",
+        "24 நாட்கள்"
+      ],
+      "options_ta": [
+        "32 நாட்கள்",
+        "20 நாட்கள்",
+        "16 நாட்கள்",
+        "24 நாட்கள்"
+      ],
+      "options_en": [
+        "32 days",
+        "20 days",
+        "16 days",
+        "24 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "(A+B) 5 நாட்கள் வேலை + (B+C) 2 நாட்கள் வேலை + C தனியாக 11 நாட்கள் வேலை = 1.\n5 × (1/12) + 2 × (1/16) + 11 × (1/C) = 1 ⟹ 5/12 + 1/8 + 11/C = 1 ⟹ (10 + 3)/24 + 11/C = 1 ⟹ 13/24 + 11/C = 1.\n11/C = 1 - 13/24 = 11/24 ⟹ C = 24 நாட்கள்.",
+        "en": "5/12 + 1/8 + 11/C = 1 ⟹ 13/24 + 11/C = 1 ⟹ 11/C = 11/24 ⟹ C = 24 days."
+      },
+      "explanation_ta": "(A+B) 5 நாட்கள் வேலை + (B+C) 2 நாட்கள் வேலை + C தனியாக 11 நாட்கள் வேலை = 1.\n5 × (1/12) + 2 × (1/16) + 11 × (1/C) = 1 ⟹ 5/12 + 1/8 + 11/C = 1 ⟹ (10 + 3)/24 + 11/C = 1 ⟹ 13/24 + 11/C = 1.\n11/C = 1 - 13/24 = 11/24 ⟹ C = 24 நாட்கள்.",
+      "explanation_en": "5/12 + 1/8 + 11/C = 1 ⟹ 13/24 + 11/C = 1 ⟹ 11/C = 11/24 ⟹ C = 24 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 32 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 20 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 16 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. C தனியாக = 24 நாட்கள்.",
+          "en": "Correct. 24 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வேலையைப் பிரித்து எழுதுக: 5(A+B) + 2(B+C) + 11(C) = 1 ⟹ C = 24 நாட்கள்.",
+        "en": "5(A+B) + 2(B+C) + 11(C) = 1 ⟹ C = 24 days."
+      },
+      "revision_fact": {
+        "ta": "11/C = 11/24 ⟹ C = 24 days",
+        "en": "11/C = 11/24 ⟹ C = 24 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_046",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Wage Distribution",
+      "question": {
+        "ta": "A, B, C ஒரு வேலையை முறையே 10, 15, 20 நாட்களில் முடிப்பர். மூவரும் சேர்ந்து வேலை செய்து ₹3900 கூலியாகப் பெறுகின்றனர் எனில், B பெறக்கூடிய தொகை என்ன?",
+        "en": "A, B, C can do a work in 10, 15, 20 days respectively. Working together, they earn ₹3900. What is B's share?"
+      },
+      "question_ta": "A, B, C ஒரு வேலையை முறையே 10, 15, 20 நாட்களில் முடிப்பர். மூவரும் சேர்ந்து வேலை செய்து ₹3900 கூலியாகப் பெறுகின்றனர் எனில், B பெறக்கூடிய தொகை என்ன?",
+      "question_en": "A, B, C can do a work in 10, 15, 20 days respectively. Working together, they earn ₹3900. What is B's share?",
+      "options": [
+        "₹1800",
+        "₹1200",
+        "₹1500",
+        "₹900"
+      ],
+      "options_ta": [
+        "₹1800",
+        "₹1200",
+        "₹1500",
+        "₹900"
+      ],
+      "options_en": [
+        "₹1800",
+        "₹1200",
+        "₹1500",
+        "₹900"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "1 நாள் வேலை விகிதம் A : B : C = 1/10 : 1/15 : 1/20.\nமீச்சிறு பொது மடங்கு 60-ஆல் பெருக்க: A : B : C = 6 : 4 : 3.\nமொத்தப் பங்குகள் = 6 + 4 + 3 = 13.\nB-ன் பங்கு = (4/13) × 3900 = 4 × 300 = ₹1200.",
+        "en": "Ratio A:B:C = 6:4:3 ⟹ B's share = (4/13) × 3900 = ₹1200."
+      },
+      "explanation_ta": "1 நாள் வேலை விகிதம் A : B : C = 1/10 : 1/15 : 1/20.\nமீச்சிறு பொது மடங்கு 60-ஆல் பெருக்க: A : B : C = 6 : 4 : 3.\nமொத்தப் பங்குகள் = 6 + 4 + 3 = 13.\nB-ன் பங்கு = (4/13) × 3900 = 4 × 300 = ₹1200.",
+      "explanation_en": "Ratio A:B:C = 6:4:3 ⟹ B's share = (4/13) × 3900 = ₹1200.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 6 × 300 = ₹1800 (A-ன் பங்கு).",
+          "en": "₹1800 is A's share."
+        },
+        "B": {
+          "ta": "சரி. 4 × 300 = ₹1200.",
+          "en": "Correct. ₹1200."
+        },
+        "C": {
+          "ta": "தவறு. ₹1500.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 3 × 300 = ₹900 (C-ன் பங்கு).",
+          "en": "₹900 is C's share."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கூலி விகிதம் 6 : 4 : 3 ⟹ B-ன் கூலி = (4/13) × 3900 = ₹1200.",
+        "en": "Wage ratio 6 : 4 : 3 ⟹ B = ₹1200."
+      },
+      "revision_fact": {
+        "ta": "(4/13) × 3900 = ₹1200",
+        "en": "(4/13) × 3900 = ₹1200"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_047",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Chain Rule",
+      "question": {
+        "ta": "6 ஆண்கள் மற்றும் 8 சிறுவர்கள் ஒரு வேலையை 10 நாட்களில் செய்வர். 26 ஆண்கள் மற்றும் 48 சிறுவர்கள் அதே வேலையை 2 நாட்களில் செய்வர் எனில், 15 ஆண்கள் மற்றும் 20 சிறுவர்கள் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+        "en": "6 men and 8 boys can do a work in 10 days, while 26 men and 48 boys can do it in 2 days. In how many days will 15 men and 20 boys complete the work?"
+      },
+      "question_ta": "6 ஆண்கள் மற்றும் 8 சிறுவர்கள் ஒரு வேலையை 10 நாட்களில் செய்வர். 26 ஆண்கள் மற்றும் 48 சிறுவர்கள் அதே வேலையை 2 நாட்களில் செய்வர் எனில், 15 ஆண்கள் மற்றும் 20 சிறுவர்கள் சேர்ந்து அவ்வேலையை எத்தனை நாட்களில் முடிப்பர்?",
+      "question_en": "6 men and 8 boys can do a work in 10 days, while 26 men and 48 boys can do it in 2 days. In how many days will 15 men and 20 boys complete the work?",
+      "options": [
+        "5 நாட்கள்",
+        "3 நாட்கள்",
+        "4 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_ta": [
+        "5 நாட்கள்",
+        "3 நாட்கள்",
+        "4 நாட்கள்",
+        "6 நாட்கள்"
+      ],
+      "options_en": [
+        "5 days",
+        "3 days",
+        "4 days",
+        "6 days"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "10(6 M + 8 B) = 2(26 M + 48 B) ⟹ 60 M + 80 B = 52 M + 96 B ⟹ 8 M = 16 B ⟹ 1 M = 2 B.\n6 M + 8 B = 6(2 B) + 8 B = 20 B.\n20 B ஒரு வேலையை 10 நாட்களில் செய்வர்.\n15 M + 20 B = 15(2 B) + 20 B = 50 B.\nM1 D1 = M2 D2 ⟹ 20 × 10 = 50 × D2 ⟹ 200 = 50 D2 ⟹ D2 = 200 / 50 = 4 நாட்கள்.",
+        "en": "1 M = 2 B ⟹ 20 B take 10 days ⟹ 50 B take (20 × 10) / 50 = 4 days."
+      },
+      "explanation_ta": "10(6 M + 8 B) = 2(26 M + 48 B) ⟹ 60 M + 80 B = 52 M + 96 B ⟹ 8 M = 16 B ⟹ 1 M = 2 B.\n6 M + 8 B = 6(2 B) + 8 B = 20 B.\n20 B ஒரு வேலையை 10 நாட்களில் செய்வர்.\n15 M + 20 B = 15(2 B) + 20 B = 50 B.\nM1 D1 = M2 D2 ⟹ 20 × 10 = 50 × D2 ⟹ 200 = 50 D2 ⟹ D2 = 200 / 50 = 4 நாட்கள்.",
+      "explanation_en": "1 M = 2 B ⟹ 20 B take 10 days ⟹ 50 B take (20 × 10) / 50 = 4 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 5 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 3 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 200 / 50 = 4 நாட்கள்.",
+          "en": "Correct. 4 days."
+        },
+        "D": {
+          "ta": "தவறு. 6 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "1 M = 2 B ⟹ 20 B-க்கு 10 நாட்கள் ⟹ 50 B-க்கு 4 நாட்கள்.",
+        "en": "50 B time = 200 / 50 = 4 days."
+      },
+      "revision_fact": {
+        "ta": "200 / 50 = 4 days",
+        "en": "200 / 50 = 4 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_048",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Alternate Days",
+      "question": {
+        "ta": "A மற்றும் B ஒரு வேலையை 9 மற்றும் 12 நாட்களில் செய்வர். A தொடங்கி மாற்று நாட்களில் வேலை செய்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A and B can do a work in 9 and 12 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?"
+      },
+      "question_ta": "A மற்றும் B ஒரு வேலையை 9 மற்றும் 12 நாட்களில் செய்வர். A தொடங்கி மாற்று நாட்களில் வேலை செய்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A and B can do a work in 9 and 12 days respectively. If they work on alternate days starting with A, in how many days will the work be completed?",
+      "options": [
+        "11 நாட்கள்",
+        "10 1/4 நாட்கள்",
+        "10 நாட்கள்",
+        "10 1/2 நாட்கள்"
+      ],
+      "options_ta": [
+        "11 நாட்கள்",
+        "10 1/4 நாட்கள்",
+        "10 நாட்கள்",
+        "10 1/2 நாட்கள்"
+      ],
+      "options_en": [
+        "11 days",
+        "10 1/4 days",
+        "10 days",
+        "10 1/2 days"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "2 நாட்கள் (1 சுழற்சி) = 1/9 + 1/12 = (4 + 3) / 36 = 7/36.\n5 சுழற்சிகள் (10 நாட்கள்) = 5 × 7/36 = 35/36.\nமீதமுள்ள வேலை = 1 - 35/36 = 1/36.\n11 ஆம் நாளில் A வேலை செய்வார்: A-ன் 1 நாள் வேலை = 1/9 ⟹ நேரம் = (1/36) / (1/9) = 9 / 36 = 1/4 நாள்.\nமொத்த நாட்கள் = 10 + 1/4 = 10 1/4 நாட்கள்.",
+        "en": "5 cycles (10 days) = 35/36. Remaining 1/36 done by A in (1/36)/(1/9) = 1/4 day. Total = 10 1/4 days."
+      },
+      "explanation_ta": "2 நாட்கள் (1 சுழற்சி) = 1/9 + 1/12 = (4 + 3) / 36 = 7/36.\n5 சுழற்சிகள் (10 நாட்கள்) = 5 × 7/36 = 35/36.\nமீதமுள்ள வேலை = 1 - 35/36 = 1/36.\n11 ஆம் நாளில் A வேலை செய்வார்: A-ன் 1 நாள் வேலை = 1/9 ⟹ நேரம் = (1/36) / (1/9) = 9 / 36 = 1/4 நாள்.\nமொத்த நாட்கள் = 10 + 1/4 = 10 1/4 நாட்கள்.",
+      "explanation_en": "5 cycles (10 days) = 35/36. Remaining 1/36 done by A in (1/36)/(1/9) = 1/4 day. Total = 10 1/4 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 11 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 10 + 1/4 = 10 1/4 நாட்கள்.",
+          "en": "Correct. 10 1/4 days."
+        },
+        "C": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Incomplete work at 10 days."
+        },
+        "D": {
+          "ta": "தவறு. 10 1/2 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "10 நாட்கள் = 35/36 ⟹ மீதி 1/36 A 1/4 நாளில் முடிப்பார் ⟹ 10 1/4 நாட்கள்.",
+        "en": "Total days = 10 1/4 days."
+      },
+      "revision_fact": {
+        "ta": "10 + 1/4 = 10 1/4 days",
+        "en": "10 + 1/4 = 10 1/4 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_049",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Application",
+      "question": {
+        "ta": "A தனியாக ஒரு வேலையை 16 நாட்களில் முடிப்பார். B தனியாக 12 நாட்களில் முடிப்பார். C-ன் உதவியுடன் மூவரும் சேர்ந்து 4 நாட்களில் முடித்தால், C தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+        "en": "A alone takes 16 days, B alone 12 days to complete a work. With C's help, all three finish it in 4 days. In how many days can C alone complete it?"
+      },
+      "question_ta": "A தனியாக ஒரு வேலையை 16 நாட்களில் முடிப்பார். B தனியாக 12 நாட்களில் முடிப்பார். C-ன் உதவியுடன் மூவரும் சேர்ந்து 4 நாட்களில் முடித்தால், C தனியாக அவ்வேலையை எத்தனை நாட்களில் முடிப்பார்?",
+      "question_en": "A alone takes 16 days, B alone 12 days to complete a work. With C's help, all three finish it in 4 days. In how many days can C alone complete it?",
+      "options": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "9.6 நாட்கள்"
+      ],
+      "options_ta": [
+        "8 நாட்கள்",
+        "10 நாட்கள்",
+        "12 நாட்கள்",
+        "9.6 நாட்கள்"
+      ],
+      "options_en": [
+        "8 days",
+        "10 days",
+        "12 days",
+        "9.6 days"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "1/C = 1/4 - (1/16 + 1/12) = 1/4 - (3 + 4)/48 = 1/4 - 7/48 = (12 - 7) / 48 = 5/48.\nC தனியாகச் செய்யும் காலம் = 48 / 5 = 9.6 நாட்கள் (அல்லது 9 3/5 நாட்கள்).",
+        "en": "1/C = 1/4 - 7/48 = 5/48 ⟹ C alone = 48 / 5 = 9.6 days."
+      },
+      "explanation_ta": "1/C = 1/4 - (1/16 + 1/12) = 1/4 - (3 + 4)/48 = 1/4 - 7/48 = (12 - 7) / 48 = 5/48.\nC தனியாகச் செய்யும் காலம் = 48 / 5 = 9.6 நாட்கள் (அல்லது 9 3/5 நாட்கள்).",
+      "explanation_en": "1/C = 1/4 - 7/48 = 5/48 ⟹ C alone = 48 / 5 = 9.6 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 10 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 48 / 5 = 9.6 நாட்கள்.",
+          "en": "Correct. 9.6 days."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "C தனியாக = 48 / 5 = 9.6 நாட்கள்.",
+        "en": "C alone = 48 / 5 = 9.6 days."
+      },
+      "revision_fact": {
+        "ta": "48 / 5 = 9.6 days",
+        "en": "48 / 5 = 9.6 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    },
+    {
+      "id": "TW_050",
+      "subject": "aptitude",
+      "topic": "aptitude_time_work",
+      "topic_id": "aptitude_time_work",
+      "difficulty": "Hard",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "A ஒரு வேலையை 20 நாட்களிலும், B அதை 30 நாட்களிலும் முடிப்பர். A தொடர்ந்து வேலை செய்ய, B 2 நாட்களுக்கு ஒருமுறை மட்டுமே வேலைக்கு வந்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+        "en": "A can do a work in 20 days and B in 30 days. If A works continuously while B works only on every second day, in how many days will the work be completed?"
+      },
+      "question_ta": "A ஒரு வேலையை 20 நாட்களிலும், B அதை 30 நாட்களிலும் முடிப்பர். A தொடர்ந்து வேலை செய்ய, B 2 நாட்களுக்கு ஒருமுறை மட்டுமே வேலைக்கு வந்தால், மொத்த வேலை எத்தனை நாட்களில் முடியும்?",
+      "question_en": "A can do a work in 20 days and B in 30 days. If A works continuously while B works only on every second day, in how many days will the work be completed?",
+      "options": [
+        "15 1/5 நாட்கள்",
+        "12 நாட்கள்",
+        "15 நாட்கள்",
+        "18 நாட்கள்"
+      ],
+      "options_ta": [
+        "15 1/5 நாட்கள்",
+        "12 நாட்கள்",
+        "15 நாட்கள்",
+        "18 நாட்கள்"
+      ],
+      "options_en": [
+        "15 1/5 days",
+        "12 days",
+        "15 days",
+        "18 days"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "1 ஆம் நாள் A மட்டும் = 1/20.\n2 ஆம் நாள் (A + B) = 1/20 + 1/30 = 5/60 = 1/12.\n2 நாட்கள் (1 சுழற்சி) வேலை = 1/20 + 1/12 = 8/60 = 2/15.\n7 சுழற்சிகள் (14 நாட்கள்) = 7 × (2/15) = 14/15.\n15 ஆம் நாள் A மட்டும் 1/20 செய்கிறார் ⟹ 14/15 + 3/60 = 59/60.\n16 ஆம் நாள் A+B 1/60 வேலையை (1/60)/(5/60) = 1/5 நாளில் முடிப்பர் ⟹ 15 + 1/5 = 15 1/5 நாட்கள்.",
+        "en": "1 cycle (2 days) = 8/60 = 2/15. 7 cycles (14 days) = 56/60. Day 15 A does 3/60 ⟹ 59/60. Day 16 A+B do 1/60 in 1/5 day ⟹ 15 1/5 days."
+      },
+      "explanation_ta": "1 ஆம் நாள் A மட்டும் = 1/20.\n2 ஆம் நாள் (A + B) = 1/20 + 1/30 = 5/60 = 1/12.\n2 நாட்கள் (1 சுழற்சி) வேலை = 1/20 + 1/12 = 8/60 = 2/15.\n7 சுழற்சிகள் (14 நாட்கள்) = 7 × (2/15) = 14/15.\n15 ஆம் நாள் A மட்டும் 1/20 செய்கிறார் ⟹ 14/15 + 3/60 = 59/60.\n16 ஆம் நாள் A+B 1/60 வேலையை (1/60)/(5/60) = 1/5 நாளில் முடிப்பர் ⟹ 15 + 1/5 = 15 1/5 நாட்கள்.",
+      "explanation_en": "1 cycle (2 days) = 8/60 = 2/15. 7 cycles (14 days) = 56/60. Day 15 A does 3/60 ⟹ 59/60. Day 16 A+B do 1/60 in 1/5 day ⟹ 15 1/5 days.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 15 + 1/5 = 15 1/5 நாட்கள்.",
+          "en": "Correct. 15 1/5 days."
+        },
+        "B": {
+          "ta": "தவறு. 12 நாட்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 15 நாட்கள்.",
+          "en": "Calculated till 15 days only."
+        },
+        "D": {
+          "ta": "தவறு. 18 நாட்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "14 நாட்கள் = 56/60; 15 ஆம் நாள் A (3/60) ⟹ 59/60; 16 ஆம் நாள் 1/5 நாள் ⟹ 15 1/5 நாட்கள்.",
+        "en": "Total days = 15 1/5 days."
+      },
+      "revision_fact": {
+        "ta": "15 + 1/5 = 15 1/5 days",
+        "en": "15 + 1/5 = 15 1/5 days"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Time and Work",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Time and Work",
+      "tags": [
+        "aptitude",
+        "aptitude_time_work",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_time_work"
+    }
+  ]
+}

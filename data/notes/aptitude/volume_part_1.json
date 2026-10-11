@@ -1,0 +1,280 @@
+{
+  "topic": "volume_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Volume Part 1 — Cube, Cuboid, Cylinder & Cone",
+  "title_ta": "கனஅளவு பகுதி 1 — கனசதுரம், கனசெவ்வகம், உருளை மற்றும் கூம்பு",
+
+  "definition": {
+    "en": "Volume is the 3-dimensional space occupied by a solid object, measured in cubic units (cm³, m³). Total Surface Area (TSA) is the total outer surface area.",
+    "ta": "கனஅளவு (கொள்ளளவு) என்பது முப்பரிமாண திண்மப் பொருள் அடைத்துக் கொள்ளும் இடத்தின் அளவு ஆகும் (கன செ.மீ, கன மீ). மொத்தப் புறப்பரப்பு என்பது அதன் அனைத்து வெளிப் பக்கங்களின் பரப்பளவாகும்."
+  },
+
+  "exam_importance": {
+    "en": "Volume & Mensuration 3D is a core topic in TNPSC Aptitude for Group 1, Group 2/2A, and Group 4. Questions test cube diagonals, cuboid dimensions, cylinder volume & CSAs, and cone slant heights.",
+    "ta": "கனஅளவு என்பது TNPSC குரூப் 1, குரூப் 2/2A மற்றும் குரூப் 4 தேர்வுகளில் தவறாமல் கேட்கப்படும் முக்கிய பாடமாகும். கனசதுர மூலைவிட்டம், கனசெவ்வக அளவுகள், உருளையின் கனஅளவு/வளைபரப்பு மற்றும் கூம்பின் சாய்வுயரம் தொடர்பான வினாக்கள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Cube & Cuboid Formulas (கனசதுரம் & கனசெவ்வகம்)",
+      "formula": "\\text{Cube: } Volume = a^3, \\quad TSA = 6a^2, \\quad Diagonal = a\\sqrt{3} \\\\ \\text{Cuboid: } Volume = l \\times b \\times h, \\quad TSA = 2(lb + bh + lh), \\quad Diagonal = \\sqrt{l^2 + b^2 + h^2}",
+      "explanation": {
+        "en": "a = side of cube; l, b, h = length, breadth, height of cuboid.",
+        "ta": "a = கனசதுரத்தின் பக்கம்; l, b, h = கனசெவ்வகத்தின் நீளம், அகலம், உயரம்."
+      }
+    },
+    {
+      "title": "Right Circular Cylinder Formulas (உருளைச் சூத்திரங்கள்)",
+      "formula": "Volume = \\pi r^2 h, \\quad CSA = 2\\pi r h, \\quad TSA = 2\\pi r (r + h)",
+      "explanation": {
+        "en": "r = base radius, h = height of cylinder.",
+        "ta": "r = அடிப்பக்க ஆரம், h = உருளையின் உயரம்."
+      }
+    },
+    {
+      "title": "Right Circular Cone Formulas (கூம்புச் சூத்திரங்கள்)",
+      "formula": "Volume = \\frac{1}{3}\\pi r^2 h, \\quad CSA = \\pi r l, \\quad TSA = \\pi r (r + l), \\quad \\text{Slant Height } l = \\sqrt{r^2 + h^2}",
+      "explanation": {
+        "en": "r = base radius, h = vertical height, l = slant height of cone. Volume of cone is 1/3 of a cylinder of same base and height.",
+        "ta": "r = அடிப்பக்க ஆரம், h = நேர் உயரம், l = சாய்வுயரம். ஒரே ஆரம் மற்றும் உயரமுடைய உருளையின் கனஅளவில் 1/3 பங்கு கூம்பின் கனஅளவாகும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Ratio of Cone, Hemisphere, Cylinder Volumes (கூம்பு, அரைக்கோளம், உருளை கனஅளவு விகிதம்)",
+      "points": {
+        "en": [
+          "If a cone, a hemisphere, and a cylinder have equal base radius 'r' and height 'h = r':",
+          "Volume of Cone = (1/3)πr³.",
+          "Volume of Hemisphere = (2/3)πr³.",
+          "Volume of Cylinder = πr³.",
+          "Ratio of Volumes = Cone : Hemisphere : Cylinder = 1 : 2 : 3."
+        ],
+        "ta": [
+          "ஒரே அடிப்பக்க ஆரம் 'r' மற்றும் உயரம் 'h = r' கொண்ட கூம்பு, அரைக்கோளம், உருளையின்:",
+          "கூம்பின் கனஅளவு = (1/3)πr³.",
+          "அரைக்கோளத்தின் கனஅளவு = (2/3)πr³.",
+          "உருளையின் கனஅளவு = πr³.",
+          "கனஅளவுகளின் விகிதம் = கூம்பு : அரைக்கோளம் : உருளை = 1 : 2 : 3."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Cube Side from Diagonal Shortcut",
+      "points": {
+        "en": [
+          "If diagonal of a cube is d = k√3, then side a = k.",
+          "Volume = k³, TSA = 6k²."
+        ],
+        "ta": [
+          "கனசதுரத்தின் மூலைவிட்டம் d = k√3 எனில், பக்கம் a = k.",
+          "கனஅளவு = k³, மொத்தப் புறப்பரப்பு = 6k²."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Confusing vertical height (h) with slant height (l) in Cone CSA",
+      "explanation": {
+        "en": "Using vertical height h instead of slant height l in Cone CSA (πrl) yields a WRONG answer.",
+        "ta": "கூம்பின் வளைபரப்பு (πrl) காண்பதற்கு சாய்வுயரம் l-க்கு பதிலாக நேர் உயரம் h-ஐப் பயன்படுத்துவது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Always calculate slant height l = √(r² + h²) first before evaluating CSA = πrl.",
+        "ta": "வளைபரப்பு காண்பதற்கு முன் சாய்வுயரம் l = √(r² + h²) எனக் கண்டறியவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The diagonal of a cubic room is 11√3 feet. Find its side length, volume, and total surface area.",
+      "method": "Cube Diagonal Method",
+      "steps": [
+        "Step 1: Given diagonal \\(d = \\sqrt{3} a = 11\\sqrt{3}\\) feet.",
+        "Step 2: Solve for side a: \\(a = 11\\) feet.",
+        "Step 3: Calculate Volume: \\(V = a^3 = 11^3 = 1331\\) cu.ft.",
+        "Step 4: Calculate TSA: \\(TSA = 6a^2 = 6 \\times 11^2 = 6 \\times 121 = 726\\) sq.ft."
+      ],
+      "answer": "Side = 11 ft, Volume = 1,331 cu.ft, TSA = 726 sq.ft"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The length, breadth, and height of a cuboid are 10 cm, 8 cm, and 5 cm respectively. Find its volume and total surface area.",
+      "method": "Cuboid Core Formulas",
+      "steps": [
+        "Step 1: Given l = 10 cm, b = 8 cm, h = 5 cm.",
+        "Step 2: Calculate Volume: \\(V = l \\times b \\times h = 10 \\times 8 \\times 5 = 400\\) cm³.",
+        "Step 3: Calculate TSA: \\(TSA = 2(lb + bh + lh) = 2(10 \\times 8 + 8 \\times 5 + 10 \\times 5) = 2(80 + 40 + 50) = 2(170) = 340\\) cm²."
+      ],
+      "answer": "Volume = 400 cm³, TSA = 340 cm²"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The radius of a cylinder is 7 cm and its height is 10 cm. Find its volume and curved surface area.",
+      "method": "Cylinder Core Formulas",
+      "steps": [
+        "Step 1: Given radius r = 7 cm, height h = 10 cm.",
+        "Step 2: Calculate Volume: \\(V = \\pi r^2 h = \\frac{22}{7} \\times 7^2 \\times 10 = \\frac{22}{7} \\times 49 \\times 10 = 1540\\) cm³.",
+        "Step 3: Calculate CSA: \\(CSA = 2 \\pi r h = 2 \\times \\frac{22}{7} \\times 7 \\times 10 = 440\\) cm²."
+      ],
+      "answer": "Volume = 1,540 cm³, CSA = 440 cm²"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If the radii of two cylinders are in the ratio 5 : 3 and their heights are in the ratio 3 : 5, find the ratio of their volumes.",
+      "method": "Cylinder Volume Ratio Method",
+      "steps": [
+        "Step 1: Given \\(r_1 : r_2 = 5 : 3\\) and \\(h_1 : h_2 = 3 : 5\\).",
+        "Step 2: Volume ratio formula: \\(\\frac{V_1}{V_2} = \\frac{\\pi r_1^2 h_1}{\\pi r_2^2 h_2} = \\left(\\frac{r_1}{r_2}\\right)^2 \\times \\left(\\frac{h_1}{h_2}\\right)\\).",
+        "Step 3: Substitute ratios: \\(\\frac{V_1}{V_2} = \\left(\\frac{5}{3}\\right)^2 \\times \\left(\\frac{3}{5}\\right) = \\frac{25}{9} \\times \\frac{3}{5} = \\frac{5}{3}\\).",
+        "Step 4: Ratio = 5 : 3."
+      ],
+      "answer": "5 : 3"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The base radius of a cone is 6 cm and its height is 8 cm. Find its slant height, volume, and curved surface area.",
+      "method": "Cone Slant Height & Volume Formulas",
+      "steps": [
+        "Step 1: Given r = 6 cm, h = 8 cm.",
+        "Step 2: Calculate slant height: \\(l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\) cm.",
+        "Step 3: Calculate Volume: \\(V = \\frac{1}{3} \\pi r^2 h = \\frac{1}{3} \\times \\frac{22}{7} \\times 36 \\times 8 = \\frac{2112}{7} \\approx 301.71\\) cm³.",
+        "Step 4: Calculate CSA: \\(CSA = \\pi r l = \\frac{22}{7} \\times 6 \\times 10 = \\frac{1320}{7} \\approx 188.57\\) cm²."
+      ],
+      "answer": "Slant height = 10 cm, Volume = 301.71 cm³, CSA = 188.57 cm²"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A cone, a hemisphere, and a cylinder have equal bases and equal heights. Find the ratio of their respective volumes.",
+      "method": "Equal Dimension Solid Comparison",
+      "steps": [
+        "Step 1: Let common base radius be r, and common height be h = r.",
+        "Step 2: Volume of cone: \\(V_1 = \\frac{1}{3} \\pi r^2 (r) = \\frac{1}{3} \\pi r^3\\).",
+        "Step 3: Volume of hemisphere: \\(V_2 = \\frac{2}{3} \\pi r^3\\).",
+        "Step 4: Volume of cylinder: \\(V_3 = \\pi r^2 (r) = \\pi r^3\\).",
+        "Step 5: Write ratio \\(V_1 : V_2 : V_3 = \\frac{1}{3} \\pi r^3 : \\frac{2}{3} \\pi r^3 : \\pi r^3\\).",
+        "Step 6: Multiply by 3: \\(1 : 2 : 3\\)."
+      ],
+      "answer": "1 : 2 : 3"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the volume of a cube of side 5 cm.",
+      "options": ["A) 25 cm³", "B) 100 cm³", "C) 125 cm³", "D) 150 cm³"],
+      "correct_option": "C) 125 cm³",
+      "explanation": "Volume = 5^3 = 125 cm³."
+    },
+    {
+      "id": 2,
+      "question": "Find the volume of a cuboid of dimensions 8 cm × 6 cm × 5 cm.",
+      "options": ["A) 120 cm³", "B) 240 cm³", "C) 360 cm³", "D) 480 cm³"],
+      "correct_option": "B) 240 cm³",
+      "explanation": "Volume = 8 × 6 × 5 = 240 cm³."
+    },
+    {
+      "id": 3,
+      "question": "Find the volume of a cylinder of radius 7 cm and height 5 cm.",
+      "options": ["A) 770 cm³", "B) 1540 cm³", "C) 385 cm³", "D) 500 cm³"],
+      "correct_option": "A) 770 cm³",
+      "explanation": "Volume = (22/7) × 49 × 5 = 770 cm³."
+    },
+    {
+      "id": 4,
+      "question": "The base radius of a cone is 7 cm and height is 24 cm. Find its curved surface area.",
+      "options": ["A) 500 cm²", "B) 550 cm²", "C) 600 cm²", "D) 650 cm²"],
+      "correct_option": "B) 550 cm²",
+      "explanation": "Slant height l = √(7^2 + 24^2) = √625 = 25 cm. CSA = (22/7) × 7 × 25 = 550 cm²."
+    },
+    {
+      "id": 5,
+      "question": "If the diagonal of a cube is 6√3 cm, find its volume.",
+      "options": ["A) 36 cm³", "B) 108 cm³", "C) 216 cm³", "D) 256 cm³"],
+      "correct_option": "C) 216 cm³",
+      "explanation": "Side a = 6 cm. Volume = 6^3 = 216 cm³."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Cube Formulas",
+      "back": "Volume = a³ | TSA = 6a² | Diagonal = a√3"
+    },
+    {
+      "front": "Cuboid Formulas",
+      "back": "Volume = l × b × h | TSA = 2(lb + bh + lh) | Diagonal = √(l² + b² + h²)"
+    },
+    {
+      "front": "Cylinder Formulas",
+      "back": "Volume = πr²h | CSA = 2πrh | TSA = 2πr(r + h)"
+    },
+    {
+      "front": "Cone Formulas",
+      "back": "Volume = (1/3)πr²h | Slant height l = √(r² + h²) | CSA = πrl"
+    },
+    {
+      "front": "Cone : Hemisphere : Cylinder Ratio",
+      "back": "1 : 2 : 3 (for equal radius and height h = r)"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Volume Part 1 — 3D Polyhedrons & Circular Solids Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Volume Part 1 (3D Solids)",
+        "children": ["cube_cuboid", "cylinder_cone"]
+      },
+      {
+        "id": "cube_cuboid",
+        "label": "Cube & Cuboid",
+        "children": ["cube_f", "cuboid_f"]
+      },
+      {
+        "id": "cube_f",
+        "label": "Cube: V = a³, TSA = 6a², d = a√3",
+        "children": []
+      },
+      {
+        "id": "cuboid_f",
+        "label": "Cuboid: V = lbh, TSA = 2(lb+bh+lh)",
+        "children": []
+      },
+      {
+        "id": "cylinder_cone",
+        "label": "Cylinder & Cone",
+        "children": ["cyl_f", "cone_f"]
+      },
+      {
+        "id": "cyl_f",
+        "label": "Cylinder: V = πr²h, CSA = 2πrh",
+        "children": []
+      },
+      {
+        "id": "cone_f",
+        "label": "Cone: V = (1/3)πr²h, CSA = πrl",
+        "children": []
+      }
+    ]
+  }
+}

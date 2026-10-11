@@ -1,0 +1,340 @@
+{
+  "topic": "simple_interest_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Simple Interest Part 1 — Foundations, Formulas & Direct Models",
+  "title_ta": "தனி வட்டி பகுதி 1 — அடிப்படைகள், சூத்திரங்கள் மற்றும் நேரடி மாதிரிகள்",
+
+  "definition": {
+    "en": "Simple Interest (SI) is interest calculated uniformly solely on the original principal amount for the entire duration of the loan or investment.",
+    "ta": "தனி வட்டி என்பது முதலீடு அல்லது கடனாகப் பெற்ற அசல் தொகையின் மீது மட்டுமே காலம் முழுவதும் சீராகக் கணக்கிடப்படும் வட்டி ஆகும்."
+  },
+
+  "exam_importance": {
+    "en": "Simple Interest is a compulsory core topic in TNPSC Aptitude across Group 1, Group 2/2A, and Group 4 exams. Questions test direct formula application, parameter rearrangement, time unit conversions (months/days), money doubling/tripling relationships, and finding principal from amount.",
+    "ta": "தனி வட்டி என்பது TNPSC குரூப் 1, குரூப் 2/2A மற்றும் குரூப் 4 தேர்வுகளில் தட்டாமல் கேட்கப்படும் முக்கிய தலைப்பாகும். நேரடி சூத்திரப் பயன்பாடு, காலம் மற்றும் வட்டி வீதம் கண்டறிதல், மாதங்கள்/நாட்களுக்கான அலகு மாற்றம், அசல் இரட்டிப்பாதல் மற்றும் மொத்தத் தொகையிலிருந்து அசல் காண்பது போன்ற வினாக்கள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Core Simple Interest Formula (தனி வட்டி அடிப்படைச் சூத்திரம்)",
+      "formula": "SI = \\frac{P \\times R \\times T}{100}",
+      "explanation": {
+        "en": "SI = Simple Interest, P = Principal (அசல்), R = Rate per annum (ஆண்டு வட்டி வீதம் %), T = Time in years (காலம் ஆண்டுகளில்).",
+        "ta": "SI = தனி வட்டி, P = அசல், R = ஆண்டு வட்டி வீதம் (%), T = காலம் (ஆண்டுகளில்)."
+      }
+    },
+    {
+      "title": "Amount Formula (மொத்தத் தொகை சூத்திரம்)",
+      "formula": "A = P + SI = P \\left(1 + \\frac{R \\times T}{100}\\right)",
+      "explanation": {
+        "en": "Total Amount (A) equals Principal plus Simple Interest.",
+        "ta": "மொத்தத் தொகை (A) என்பது அசல் மற்றும் தனி வட்டியின் கூடுதல் ஆகும்."
+      }
+    },
+    {
+      "title": "Formula Rearrangements (P, R, T கண்டறியும் சூத்திரங்கள்)",
+      "formula": "P = \\frac{100 \\times SI}{R \\times T}, \\quad R = \\frac{100 \\times SI}{P \\times T}, \\quad T = \\frac{100 \\times SI}{P \\times R}",
+      "explanation": {
+        "en": "Used to find missing Principal, Rate of interest, or Time duration when SI and remaining parameters are known.",
+        "ta": "தனி வட்டியுடன் மற்ற இரு மதிப்புகள் கொடுக்கப்பட்டால், விடுபட்ட அசல் (P), வட்டி வீதம் (R) அல்லது காலம் (T) கண்டறியும் சூத்திரங்கள்."
+      }
+    },
+    {
+      "title": "Principal from Amount Formula (மொத்தத் தொகையிலிருந்து அசல் காண்பது)",
+      "formula": "P = \\frac{100 \\times A}{100 + (R \\times T)}",
+      "explanation": {
+        "en": "Directly calculates Principal when total Amount (A), Rate (R), and Time (T) are given without explicit SI.",
+        "ta": "தனி வட்டி தனியாகத் தெரியாமல், மொத்தத் தொகை (A), வட்டி வீதம் (R) மற்றும் காலம் (T) மட்டும் கொடுக்கப்பட்டால் அசல் காணும் நேரடிச் சூத்திரம்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Time Unit Conversion Rules (காலத்தை வருடங்களாக மாற்றும் விதிகள்)",
+      "points": {
+        "en": [
+          "Time (T) in the formula MUST always be expressed in YEARS.",
+          "If time is given in Months: T = (Months / 12) years. Example: 6 months = 6/12 = 0.5 yrs; 9 months = 9/12 = 0.75 yrs.",
+          "If time is given in Days: T = (Days / 365) years. Example: 73 days = 73/365 = 1/5 = 0.2 yrs; 146 days = 146/365 = 2/5 = 0.4 yrs.",
+          "If mixed years and months are given: 2 years 6 months = 2.5 years; 2 years 3 months = 2.25 years."
+        ],
+        "ta": [
+          "சூத்திரத்தில் பயன்படும் காலம் (T) எப்போதும் வருடங்களில் மட்டுமே இருக்க வேண்டும்.",
+          "மாதங்களில் தரப்பட்டால்: T = (மாதங்கள் / 12) ஆண்டுகள். (எ.கா. 6 மாதங்கள் = 0.5 ஆண்டுகள்; 9 மாதங்கள் = 0.75 ஆண்டுகள்).",
+          "நாட்களில் தரப்பட்டால்: T = (நாட்கள் / 365) ஆண்டுகள். (எ.கா. 73 நாட்கள் = 1/5 = 0.2 ஆண்டுகள்; 146 நாட்கள் = 2/5 = 0.4 ஆண்டுகள்).",
+          "ஆண்டு + மாதம் கலந்து தரப்பட்டால்: 2 ஆண்டுகள் 6 மாதங்கள் = 2.5 ஆண்டுகள்; 2 ஆண்டுகள் 3 மாதங்கள் = 2.25 ஆண்டுகள்."
+        ]
+      }
+    },
+    {
+      "title": "Money Doubling & Multiples Concept (தொகை பல மடங்காக மாறும் தத்துவம்)",
+      "points": {
+        "en": [
+          "If Principal doubles itself (A = 2P): Interest earned SI = A - P = 2P - P = P. Therefore, (R × T) = 100.",
+          "If Principal triples itself (A = 3P): Interest earned SI = 3P - P = 2P. Therefore, (R × T) = 200.",
+          "General Rule: If Amount becomes 'n' times the Principal (A = nP), then SI = (n - 1)P, so R × T = 100 × (n - 1)."
+        ],
+        "ta": [
+          "அசல் தொகை இரட்டிப்பாகும் போது (A = 2P): வட்டி SI = 2P - P = P. எனவே (R × T) = 100.",
+          "அசல் தொகை 3 மடங்காகும் போது (A = 3P): வட்டி SI = 3P - P = 2P. எனவே (R × T) = 200.",
+          "பொது விதி: தொகை 'n' மடங்காக மாறினால் (A = nP), வட்டி SI = (n - 1)P, எனவே R × T = 100 × (n - 1)."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Doubling & N-Times Rule Shortcut",
+      "points": {
+        "en": [
+          "Time to double at Rate R%: T = 100 / R years.",
+          "Rate to double in Time T yrs: R = 100 / T %.",
+          "Time to become 'n' times: T = [100 × (n - 1)] / R years."
+        ],
+        "ta": [
+          "R% வட்டி வீதத்தில் அசல் இரட்டிப்பாக ஆகும் காலம்: T = 100 / R ஆண்டுகள்.",
+          "T ஆண்டுகளில் அசல் இரட்டிப்பாக தேவையான வட்டி வீதம்: R = 100 / T %.",
+          "அசல் n மடங்காக தேவையான காலம்: T = [100 × (n - 1)] / R ஆண்டுகள்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Directly using months or days for T without dividing by 12 or 365",
+      "explanation": {
+        "en": "Substituting T = 6 directly for 6 months yields an answer 12 times larger than the correct interest!",
+        "ta": "6 மாதங்கள் என்பதற்கு T = 6 என நேரடியாகப் பிரதியிட்டால், சரியான வட்டியை விட 12 மடங்கு அதிகமான விடை கிடைக்கும்."
+      },
+      "avoidance": {
+        "en": "Always convert months by dividing by 12 (6/12 = 0.5) and days by dividing by 365 before substituting into SI = PRT/100.",
+        "ta": "மாதங்களை 12 ஆலும், நாட்களை 365 ஆலும் வகுத்து வருடங்களாக மாற்றிய பின்னரே சூத்திரத்தில் பிரதியிட வேண்டும்."
+      }
+    },
+    {
+      "trap": "Confusing Amount (A) with Interest (SI) when given 'Amount becomes 3 times'",
+      "explanation": {
+        "en": "If money becomes 3 times, learners often set SI = 3P. In reality, Amount = 3P, so Interest SI = 2P!",
+        "ta": "தொகை 3 மடங்காகிறது என்பதில் வட்டி SI = 3P எனத் தவறுதலாக நினைப்பர். உண்மையில் மொத்தத் தொகை A = 3P, எனவே வட்டி SI = 2P ஆகும்."
+      },
+      "avoidance": {
+        "en": "Subtract Principal (P) from total Amount (nP) to get Interest SI = (n - 1)P.",
+        "ta": "மொத்தத் தொகையிலிருந்து அசலைக் கழித்து வட்டியை கண்டறியவும்: SI = (n - 1)P."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the Simple Interest and Amount on ₹5,000 at 8% per annum for 3 years.",
+      "method": "Direct Core Formula Method",
+      "steps": [
+        "Step 1: Identify given parameters: Principal P = ₹5,000, Rate R = 8%, Time T = 3 years.",
+        "Step 2: Apply SI formula: \\(SI = \\frac{P \\times R \\times T}{100} = \\frac{5000 \\times 8 \\times 3}{100}\\).",
+        "Step 3: Calculate SI: \\(SI = 50 \\times 24 = ₹1,200\\).",
+        "Step 4: Calculate total Amount: \\(A = P + SI = 5000 + 1200 = ₹6,200\\)."
+      ],
+      "answer": "Simple Interest = ₹1,200, Total Amount = ₹6,200"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the total amount to be received after 2 years 6 months at 5% per annum Simple Interest on a sum of ₹6,400.",
+      "method": "Time Unit Conversion & Amount Calculation",
+      "steps": [
+        "Step 1: Identify parameters: P = ₹6,400, R = 5%.",
+        "Step 2: Convert time to years: T = 2 years 6 months = \\(2 + \\frac{6}{12} = 2.5\\) years.",
+        "Step 3: Calculate Simple Interest: \\(SI = \\frac{6400 \\times 5 \\times 2.5}{100} = 64 \\times 12.5 = ₹800\\).",
+        "Step 4: Calculate Amount: \\(A = P + SI = 6400 + 800 = ₹7,200\\)."
+      ],
+      "answer": "₹7,200"
+    },
+    {
+      "id": 3,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the principal on an amount of ₹11,800 at 6% per annum for 3 years at Simple Interest.",
+      "method": "Principal from Amount Formula",
+      "steps": [
+        "Step 1: Given: Total Amount A = ₹11,800, Rate R = 6%, Time T = 3 years.",
+        "Step 2: Calculate \\(100 + (R \\times T) = 100 + (6 \\times 3) = 118\\).",
+        "Step 3: Apply formula \\(P = \\frac{100 \\times A}{100 + RT} = \\frac{100 \\times 11800}{118}\\).",
+        "Step 4: Solve for P: \\(P = 100 \\times 100 = ₹10,000\\)."
+      ],
+      "answer": "₹10,000"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "How many years will it take for a certain sum of money to double itself at 8% Simple Interest per annum?",
+      "method": "Doubling Money Shortcut (RT = 100)",
+      "steps": [
+        "Step 1: When sum doubles, Amount A = 2P, so Interest SI = 2P - P = P.",
+        "Step 2: Substitute SI = P in \\(SI = \\frac{P \\times R \\times T}{100} \\implies P = \\frac{P \\times 8 \\times T}{100}\\).",
+        "Step 3: Cancel P from both sides: \\(8 \\times T = 100 \\implies T = \\frac{100}{8} = 12.5\\) years.",
+        "Step 4: Express in mixed fraction: \\(12 \\frac{1}{2}\\) years (or 12 years 6 months)."
+      ],
+      "answer": "12 ½ years (12.5 years)"
+    },
+    {
+      "id": 5,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "Simple interest on a sum of money is 4/9 of the principal. If the number of years is numerically equal to the rate percent per annum, find the rate of interest.",
+      "method": "Algebraic Parameter Equating (T = R)",
+      "steps": [
+        "Step 1: Given SI = \\(\\frac{4}{9}P\\) and T = R.",
+        "Step 2: Substitute into core formula: \\(\\frac{4}{9}P = \\frac{P \\times R \\times R}{100}\\).",
+        "Step 3: Cancel P: \\(\\frac{4}{9} = \\frac{R^2}{100} \\implies R^2 = \\frac{400}{9}\\).",
+        "Step 4: Take square root: \\(R = \\sqrt{\\frac{400}{9}} = \\frac{20}{3} = 6 \\frac{2}{3}\\%\\)."
+      ],
+      "answer": "6 ⅔ % per annum"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A sum of ₹48,000 was lent out at Simple Interest and at the end of 2 years 3 months the total amount was ₹55,560. Find the rate of interest per year.",
+      "method": "Mixed Fractional Time & Rate Derivation",
+      "steps": [
+        "Step 1: Identify given values: P = ₹48,000, Amount A = ₹55,560.",
+        "Step 2: Calculate Interest SI = A - P = 55,560 - 48,000 = ₹7,560.",
+        "Step 3: Convert time: 2 years 3 months = \\(2 + \\frac{3}{12} = 2 + 0.25 = 2.25\\) years (or \\(\\frac{9}{4}\\) years).",
+        "Step 4: Apply Rate formula: \\(R = \\frac{100 \\times SI}{P \\times T} = \\frac{100 \\times 7560}{48000 \\times 2.25}\\).",
+        "Step 5: Simplify: \\(R = \\frac{756000}{108000} = 7\\%\\)."
+      ],
+      "answer": "7% per annum"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the Simple Interest on ₹8,000 at 5% per annum for 2 years.",
+      "options": ["A) ₹600", "B) ₹800", "C) ₹1,000", "D) ₹1,200"],
+      "correct_option": "B) ₹800",
+      "explanation": "SI = (8000 × 5 × 2) / 100 = ₹800."
+    },
+    {
+      "id": 2,
+      "question": "A sum of money invested at 6% p.a. Simple Interest yields ₹1,800 as interest in 3 years. Find the principal sum.",
+      "options": ["A) ₹8,000", "B) ₹9,000", "C) ₹10,000", "D) ₹12,000"],
+      "correct_option": "C) ₹10,000",
+      "explanation": "P = (100 × SI) / (R × T) = (100 × 1800) / (6 × 3) = 180000 / 18 = ₹10,000."
+    },
+    {
+      "id": 3,
+      "question": "In how many years will a sum of money triple itself at 20% Simple Interest per annum?",
+      "options": ["A) 5 years", "B) 8 years", "C) 10 years", "D) 12 years"],
+      "correct_option": "A) 5 years",
+      "explanation": "Amount triples => SI = 2P => RT = 200 => 20 × T = 200 => T = 10 years."
+    },
+    {
+      "id": 4,
+      "question": "Calculate Simple Interest on ₹7,300 at 10% per annum for 73 days.",
+      "options": ["A) ₹146", "B) ₹73", "C) ₹219", "D) ₹292"],
+      "correct_option": "A) ₹146",
+      "explanation": "T = 73/365 = 1/5 years. SI = (7300 × 10 × 1/5) / 100 = 730 / 5 = ₹146."
+    },
+    {
+      "id": 5,
+      "question": "A sum amounts to ₹9,440 in 3 years at 12% p.a. Simple Interest. Find the principal sum.",
+      "options": ["A) ₹6,500", "B) ₹7,000", "C) ₹7,500", "D) ₹8,000"],
+      "correct_option": "B) ₹7,000",
+      "explanation": "P = 100A / (100 + RT) = (100 × 9440) / (100 + 36) = 944000 / 136 = ₹7,000."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Core SI Formula",
+      "back": "SI = (P × R × T) / 100"
+    },
+    {
+      "front": "Amount Formula",
+      "back": "A = P + SI = P [1 + (R×T)/100]"
+    },
+    {
+      "front": "Time Unit Conversions",
+      "back": "Months → T = Months / 12 | Days → T = Days / 365"
+    },
+    {
+      "front": "Money Doubling Shortcut",
+      "back": "When money doubles (A = 2P) under SI: R × T = 100 ⇒ T = 100 / R"
+    },
+    {
+      "front": "Finding P from Amount A",
+      "back": "P = (100 × A) / (100 + R × T)"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Simple Interest Part 1 — Foundations & Core Models Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Simple Interest Part 1",
+        "children": ["core_formulas", "time_conversions", "doubling_models", "amount_to_principal"]
+      },
+      {
+        "id": "core_formulas",
+        "label": "Core Formulas",
+        "children": ["si_formula", "rearrangements"]
+      },
+      {
+        "id": "si_formula",
+        "label": "SI = (P × R × T) / 100",
+        "children": []
+      },
+      {
+        "id": "rearrangements",
+        "label": "P = 100SI/RT | R = 100SI/PT | T = 100SI/PR",
+        "children": []
+      },
+      {
+        "id": "time_conversions",
+        "label": "Time Unit Conversions",
+        "children": ["months_conv", "days_conv"]
+      },
+      {
+        "id": "months_conv",
+        "label": "Months / 12 (e.g. 6m = 0.5 yrs)",
+        "children": []
+      },
+      {
+        "id": "days_conv",
+        "label": "Days / 365 (e.g. 73d = 0.2 yrs)",
+        "children": []
+      },
+      {
+        "id": "doubling_models",
+        "label": "Doubling & N-Times Models",
+        "children": ["double_rule", "n_times_rule"]
+      },
+      {
+        "id": "double_rule",
+        "label": "Doubles (A=2P) ⇒ SI=P ⇒ RT=100",
+        "children": []
+      },
+      {
+        "id": "n_times_rule",
+        "label": "n-times (A=nP) ⇒ SI=(n-1)P ⇒ RT=100(n-1)",
+        "children": []
+      },
+      {
+        "id": "amount_to_principal",
+        "label": "Finding Principal from Amount",
+        "children": ["p_from_a"]
+      },
+      {
+        "id": "p_from_a",
+        "label": "P = 100A / (100 + RT)",
+        "children": []
+      }
+    ]
+  }
+}

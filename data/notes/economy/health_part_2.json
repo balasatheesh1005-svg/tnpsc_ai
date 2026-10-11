@@ -1,0 +1,781 @@
+{
+  "meta": {
+    "topic_id": "economy_health_part_2",
+    "repository_id": "economy_health",
+    "display_title": "Health – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Health",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "analytical",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Joseph Bhore Committee 1946 Magna Carta",
+    "Mudaliar Committee 1962",
+    "Kartar Singh 1973 MPW ANM",
+    "National Health Policy 1983 Alma Ata",
+    "National Health Policy 2017 2.5 Percent GDP",
+    "NHP 2017 Two Thirds Primary",
+    "National Rural Health Mission NRHM 2005",
+    "National Health Mission NHM NUHM 2013",
+    "ASHA Accredited Social Health Activist 1000",
+    "Janani Suraksha Yojana JSY Cash",
+    "Janani Shishu Suraksha JSSK Cashless",
+    "Out of Pocket Expenditure OOPE NHA 47.1 Percent"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Trace the evolution of Indian health policy from the landmark Bhore Committee (1946) to the National Health Policy 2017.",
+        "Understand the grassroots architecture of NHM through ASHAs, Rogi Kalyan Samitis, JSY, and JSSK."
+      ],
+      "ta": [
+        "வரலாற்றுச் சிறப்புமிக்க போரே குழு (1946) முதல் தேசிய சுகாதாரக் கொள்கை 2017 வரையிலான சுகாதாரக் கொள்கை வரலாற்றைப் புரிந்து கொள்ளுதல்.",
+        "ஆஷா பணியாளர்கள், நோயாளி நலச் சங்கங்கள், JSY மற்றும் JSSK மூலம் NHM-ன் அடித்தளக் கட்டமைப்பை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize core policy targets of NHP 2017: 2.5% of GDP by 2025, 67% to primary care, and life expectancy to 70 years.",
+        "Recall that an ASHA operates at 1 per 1,000 population and is an honorary volunteer receiving performance incentives."
+      ],
+      "ta": [
+        "NHP 2017-ன் முக்கிய இலக்குகளை நினைவில் நிறுத்துதல்: 2025-க்குள் GDP-யில் 2.5%, ஆரம்ப சுகாதாரத்திற்கு 67%, ஆயுட்காலம் 70 ஆண்டுகள்.",
+        "ஆஷா பணியாளர் 1,000 மக்களுக்கு 1 என்ற விகிதத்தில் இயங்கும் கௌரவத் தன்னார்வலர் என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the operational distinction between JSY (conditional cash transfer) and JSSK (100% cashless entitlement).",
+        "Appraise the catastrophic impact of Out-of-Pocket Expenditure (OOPE) on household impoverishment in India."
+      ],
+      "ta": [
+        "JSY (நிபந்தனை பண உதவி) மற்றும் JSSK (100% இலவச சேவை) ஆகியவற்றிற்கு இடையேயான நடைமுறை வேறுபாட்டை ஆய்வு செய்தல்.",
+        "அதிகப்படியான தனிநபர் மருத்துவச் செலவுகள் (OOPE) எவ்வாறு குடும்பங்களை வறுமையில் தள்ளுகின்றன என்பதை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Avoid exam traps regarding the 2.5% GDP health target (vs 6% education target) and ASHA legal status."
+      ],
+      "ta": [
+        "சுகாதாரத்திற்கான 2.5% GDP இலக்கு (கல்விக்கான 6% அல்ல) மற்றும் ஆஷா பணியாளரின் சட்ட தகுதி குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Health – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_historical_health_committees",
+      "title_en": "Historical Health Committees: Bhore (1946) to Shrivastav (1975)",
+      "title_ta": "வரலாற்றுச் சிறப்புமிக்க சுகாதாரக் குழுக்கள்: போரே (1946) முதல் ஸ்ரீவஸ்தவ் (1975) வரை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_national_health_policies",
+      "title_en": "Evolution of National Health Policies: NHP 1983, 2002 & 2017",
+      "title_ta": "தேசிய சுகாதாரக் கொள்கைகளின் பரிணாமம்: NHP 1983, 2002 & 2017",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_national_health_mission",
+      "title_en": "National Health Mission (NHM): Architecture, ASHA & Key Initiatives",
+      "title_ta": "தேசிய சுகாதார இயக்கம் (NHM): கட்டமைப்பு, ஆஷா & முக்கியத் திட்டங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_health_financing_oope",
+      "title_en": "Health Financing Architecture & Out-of-Pocket Expenditure (OOPE)",
+      "title_ta": "சுகாதார நிதி ஒதுக்கீட்டுக் கட்டமைப்பு & தனிநபர் நேரடி மருத்துவச் செலவு (OOPE)",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "National health policies and financing in India represent the institutional frameworks and budgetary mechanisms guiding public healthcare delivery, structured from foundational committee blueprints (Bhore Committee 1946) through the National Health Mission (NHM 2005/2013) to the National Health Policy (NHP) 2017 targeting public health expenditure of 2.5% of GDP and reduction of catastrophic Out-of-Pocket Expenditure (OOPE).",
+      "ta": "இந்தியாவில் தேசிய சுகாதாரக் கொள்கைகளும் நிதி ஒதுக்கீடும் என்பது பொதுச் சுகாதார விநியோகத்தை வழிநடத்தும் நிறுவனக் கட்டமைப்புகள் மற்றும் நிதி வழிமுறைகளைக் குறிக்கிறது; இது போரே குழுவின் (1946) அடித்தள பரிந்துரைகள் முதல் தேசிய சுகாதார இயக்கம் (NHM 2005/2013) வழியாக, பொதுச் சுகாதாரச் செலவை GDP-யில் 2.5% ஆக உயர்த்தவும், ஏழைகளை வறுமையில் தள்ளும் நேரடி மருத்துவச் செலவுகளைக் (OOPE) குறைக்கவும் இலக்கு நிர்ணயித்த தேசிய சுகாதாரக் கொள்கை 2017 (NHP 2017) வரை கட்டமைக்கப்பட்டுள்ளது."
+    },
+    "introduction": {
+      "en": "The institutional evolution of health policy and health financing in independent India reflects a protracted struggle between ambitious welfare ideals and chronic fiscal constraints. The foundational architecture was drafted by the Health Survey and Development Committee chaired by Sir Joseph Bhore in 1946, which advocated a comprehensive state-funded national health service with zero user fees. Post-independence policy evolved through successive milestones: NHP 1983 committing India to the Alma-Ata declaration of 'Health for All by 2000', NHP 2002 introducing decentralized planning, and NHP 2017 articulating a rights-oriented transition toward Universal Health Coverage with an explicit fiscal commitment to raise government health spending to 2.5% of GDP by 2025. Programmatically, the National Rural Health Mission (NRHM, 2005) revolutionized grassroots healthcare by deploying over 10 lakh Accredited Social Health Activists (ASHAs), establishing Rogi Kalyan Samitis, and launching institutional delivery schemes like Janani Suraksha Yojana (JSY) and Janani Shishu Suraksha Karyakram (JSSK). Concurrently, health financing analysis reveals a massive Out-of-Pocket Expenditure (OOPE) burden that historically pushed 5 to 6 crore Indians into poverty annually. Mastering these policy milestones, ASHA norms, and financing ratios is crucial for TNPSC Group 1 success.",
+      "ta": "சுதந்திர இந்தியாவின் சுகாதாரக் கொள்கை மற்றும் நிதி ஒதுக்கீட்டின் வரலாறு என்பது உன்னதமான மக்கள் நலக் குறிக்கோள்களுக்கும், பட்ஜெட் நிதிப் பற்றாக்குறைக்கும் இடையே நடைபெற்ற நீண்ட போராட்டத்தைப் பிரதிபலிக்கிறது. 1946-ல் சர் ஜோசப் போரே தலைமையிலான குழு கட்டணமில்லாத அரசு சுகாதார சேவையை பரிந்துரைத்து அடித்தளமிட்டது. சுதந்திரத்திற்குப் பின்: 1983-ல் '2000-க்குள் அனைவருக்கும் சுகாதாரம்' என்ற அல்மா-அட்டா இலக்கை ஏற்ற NHP 1983, பரவலாக்கப்பட்ட திட்டமிடலைக் கொண்டுவந்த NHP 2002, மற்றும் 2025-க்குள் பொது சுகாதாரச் செலவை GDP-யில் 2.5% ஆக உயர்த்த இலக்கு நிர்ணயித்த NHP 2017 ஆகியவை முக்கிய மைல்கற்களாகும். திட்ட அளவில், 2005-ல் தொடங்கப்பட்ட தேசிய ஊரக சுகாதார இயக்கம் (NRHM) 10 லட்சத்திற்கும் மேற்பட்ட ஆஷா (ASHA) பணியாளர்களை நியமித்தும், ஜனனி சுரக்ஷா யோஜனா (JSY) மற்றும் ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK) மூலம் இலவச மருத்துவமனை பிரசவங்களை உறுதி செய்தும் பெரும் புரட்சியை ஏற்படுத்தியது. அதே நேரத்தில், அதிகப்படியான தனிநபர் நேரடி மருத்துவச் செலவுகள் (OOPE) ஆண்டுதோறும் 5 முதல் 6 கோடி மக்களை வறுமையில் தள்ளுவது பெரும் சவாலாக உள்ளது. இக்கொள்கைகள் மற்றும் நிதி விகிதங்களை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_historical_health_committees": [
+      {
+        "term_en": "Joseph Bhore Committee (1946): The Magna Carta of Indian Healthcare",
+        "term_ta": "ஜோசப் போரே குழு (1946): இந்திய சுகாதாரத்தின் மகாசாசனம்",
+        "details_en": "The Health Survey and Development Committee chaired by Sir Joseph Bhore submitted its report in 1946. Key principles: (1) Health care should be provided to every citizen irrelative of ability to pay; (2) Prevention and treatment must be integrated under a single administrative cadre; (3) Proposed Primary Health Centres (PHCs) staffed by doctors and nurses to serve 40,000 population; (4) Advocated a '3-Million Plan' creating a national health service funded entirely through general taxation without charging user fees.",
+        "details_ta": "1946-ல் சர் ஜோசப் போரே தலைமையில் சமர்ப்பிக்கப்பட்ட அறிக்கை இந்திய சுகாதாரத்தின் மகாசாசனமாகக் கருதப்படுகிறது. முக்கிய கோட்பாடுகள்: (1) கட்டணம் செலுத்தும் திறனைப் பொருட்படுத்தாமல் அனைத்து குடிமக்களுக்கும் அரசு இலவச சுகாதார சேவையை வழங்க வேண்டும்; (2) நோய் தடுப்பு மற்றும் சிகிச்சைப் பணிகள் ஒரே நிர்வாகத்தின் கீழ் ஒருங்கிணைக்கப்பட வேண்டும்; (3) 40,000 மக்கள் தொகைக்கு மருத்துவர்கள் கொண்ட ஆரம்ப சுகாதார நிலையங்களை (PHC) அமைக்கப் பரிந்துரைத்தது; (4) எவ்வித கட்டணமும் வசூலிக்காமல் பொது வரி வருவாய் மூலம் இயங்கும் தேசிய சுகாதார சேவையை உருவாக்க பரிந்துரைத்தது."
+      },
+      {
+        "term_en": "A.L. Mudaliar Committee (1962)",
+        "term_ta": "ஏ.எல். முதலியார் குழு (1962)",
+        "details_en": "Chaired by Dr. A. Lakshmanaswami Mudaliar (Vice-Chancellor, Madras University). Recommended strengthening District Hospitals as referral specialist hubs before opening new sub-centres, and consolidating the quality of existing PHCs.",
+        "details_ta": "சென்னை பல்கலைக்கழக துணைவேந்தர் டாக்டர் ஏ. லட்சுமணசுவாமி முதலியார் தலைமையில் அமைக்கப்பட்டது. புதிய மையங்களைத் தொடங்குவதற்கு முன்பாக, மாவட்ட மருத்துவமனைகளை வலுவான பரிந்துரை மையங்களாக மாற்றவும், ஏற்கனவே உள்ள PHC-களின் தரத்தை உயர்த்தவும் பரிந்துரைத்தது."
+      },
+      {
+        "term_en": "Kartar Singh (1973) & Shrivastav (1975) Committees",
+        "term_ta": "கர்தார் சிங் (1973) & ஸ்ரீவஸ்தவ் (1975) குழுக்கள்",
+        "details_en": "(1) Kartar Singh Committee (1973): Recommended creating 'Multi-Purpose Workers' (MPWs), transforming vertical program workers (malaria, smallpox, family planning) into a unified grassroots health workforce, designating female MPWs as Auxiliary Nurse Midwives (ANMs); (2) Shrivastav Committee (1975): Recommended creating Village Health Guides (precursor to ASHAs) and developing medical education oriented toward community needs.",
+        "details_ta": "(1) கர்தார் சிங் குழு (1973): பல்வேறு தனித்தனி திட்ட ஊழியர்களை (மலேரியா, குடும்பக் கட்டுப்பாடு) ஒன்றிணைத்து 'பல்நோக்கு சுகாதாரப் பணியாளர்களை' (MPWs) உருவாக்கப் பரிந்துரைத்தது; பெண் பணியாளர்களை கிராம சுகாதார செவிலியர்களாக (ANM) நியமித்தது; (2) ஸ்ரீவஸ்தவ் குழு (1975): கிராமப்புற சுகாதார வழிகாட்டிகளை (ஆஷா பணியாளர்களின் முன்னோடி) உருவாக்கவும், சமூகத் தேவைகளுக்கு ஏற்ப மருத்துவக் கல்வியை மாற்றியமைக்கவும் பரிந்துரைத்தது."
+      }
+    ],
+    "sec_national_health_policies": [
+      {
+        "term_en": "National Health Policy 1983",
+        "term_ta": "தேசிய சுகாதாரக் கொள்கை 1983",
+        "details_en": "Formulated in the wake of the historic Alma-Ata Declaration (1978), committing India to 'Health for All by the Year 2000'. It prioritized primary healthcare, rural outreach, comprehensive vertical disease eradication programs, and established a nationwide network of Sub-Centres and PHCs.",
+        "details_ta": "1978-ஆம் ஆண்டின் வரலாற்றுச் சிறப்புமிக்க அல்மா-அட்டா பிரகடனத்தின் அடிப்படையில் '2000-க்குள் அனைவருக்கும் சுகாதாரம்' என்ற இலக்கை ஏற்று உருவானது. ஆரம்ப சுகாதாரம், கிராமப்புற சேவை மற்றும் நாடு தழுவிய துணை நிலையங்கள் மற்றும் PHC-களின் கட்டமைப்பை உருவாக்க முன்னுரிமை அளித்தது."
+      },
+      {
+        "term_en": "National Health Policy 2002",
+        "term_ta": "தேசிய சுகாதாரக் கொள்கை 2002",
+        "details_en": "Recognized growing private sector participation, focused on decentralizing public health administration to Panchayati Raj Institutions, increasing public health spending to 2% of GDP by 2010, and targeting the elimination of polio, leprosy, and lymphatic filariasis.",
+        "details_ta": "தனியார் துறையின் பங்களிப்பை அங்கீகரித்தது; சுகாதார நிர்வாகத்தை பஞ்சாயத்து ராஜ் அமைப்புகளுக்குப் பரவலாக்குதல், சுகாதாரச் செலவை 2010-க்குள் GDP-யில் 2% ஆக உயர்த்துதல் மற்றும் போலியோ, தொழுநோய், யானைக்கால் நோய்களை ஒழிப்பதை இலக்காகக் கொண்டது."
+      },
+      {
+        "term_en": "National Health Policy 2017 (Current Policy)",
+        "term_ta": "தேசிய சுகாதாரக் கொள்கை 2017 (தற்போதைய கொள்கை)",
+        "details_en": "Approved in March 2017, marking a fundamental paradigm shift from sick-care to preventative wellness and progressive realization of Universal Health Coverage (UHC). Key quantifiable targets: (1) Increase Government Health Expenditure to 2.5% OF GDP BY 2025; (2) Allocate more than two-thirds (67%) of health budgets to primary healthcare; (3) Reduce Out-of-Pocket Expenditure (OOPE); (4) Increase life expectancy at birth from 67.5 to 70 years by 2025; (5) Reduce IMR to 28 by 2019 and U5MR to 23 by 2025; (6) Eliminate Kala-Azar, Lymphatic Filariasis, and Leprosy.",
+        "details_ta": "மார்ச் 2017-ல் அங்கீகரிக்கப்பட்டது. வெறும் நோய்ச் சிகிச்சையிலிருந்து விடுபட்டு 'முழுமையான நல்வாழ்வு' மற்றும் 'அனைவருக்கும் உலகளாவிய சுகாதாரம்' (UHC) என்ற புரட்சிகர மாற்றத்தை ஏற்படுத்தியது. முக்கிய இலக்குகள்: (1) அரசு சுகாதாரச் செலவை 2025-க்குள் 'GDP-யில் 2.5% ஆக' உயர்த்துவது; (2) சுகாதார பட்ஜெட்டில் மூன்றில் இரண்டு பங்கை (67%) ஆரம்ப சுகாதாரத்திற்கு ஒதுக்குவது; (3) மக்களின் சொந்த மருத்துவச் செலவைக் (OOPE) குறைப்பது; (4) சராசரி ஆயுட்காலத்தை 2025-க்குள் 70 ஆண்டுகளாக உயர்த்துவது; (5) IMR-ஐ 28 ஆகவும், U5MR-ஐ 23 ஆகவும் குறைப்பது."
+      }
+    ],
+    "sec_national_health_mission": [
+      {
+        "term_en": "Genesis: NRHM (2005) and NUHM (2013)",
+        "term_ta": "தோற்றம்: NRHM (2005) மற்றும் NUHM (2013)",
+        "details_en": "Launched as the National Rural Health Mission (NRHM) on April 12, 2005, to address rural public health deficits across 18 high-focus states. In 2013, the National Urban Health Mission (NUHM) was launched to address slum and urban poor healthcare. Both were amalgamated under the overarching umbrella of the National Health Mission (NHM). Institutional innovations: Rogi Kalyan Samitis (hospital management committees) and Untied Grants to village health committees.",
+        "details_ta": "18 பின்தங்கிய மாநிலங்களின் ஊரக சுகாதாரப் பற்றாக்குறையைப் போக்க ஏப்ரல் 12, 2005 அன்று தேசிய ஊரக சுகாதார இயக்கமாக (NRHM) தொடங்கப்பட்டது. 2013-ல் நகர்ப்புற ஏழைகளுக்காக தேசிய நகர்ப்புற சுகாதார இயக்கம் (NUHM) தொடங்கப்பட்டது. பின்னர் இரண்டும் 'தேசிய சுகாதார இயக்கம்' (NHM) என்ற குடையின் கீழ் இணைக்கப்பட்டன. முக்கிய நிறுவன மாற்றங்கள்: நோயாளி நலச் சங்கங்கள் (ரோகி கல்யாண் சமிதிகள்) மற்றும் கிராம சுகாதாரக் குழுக்களுக்கு நிபந்தனையற்ற நிதி ஒதுக்கீடு."
+      },
+      {
+        "term_en": "ASHA: Accredited Social Health Activist",
+        "term_ta": "ஆஷா: அங்கீகரிக்கப்பட்ட சமூக சுகாதார ஆர்வலர் (ASHA)",
+        "details_en": "The cornerstone of NHM: A female community health volunteer resident in the village, deployed at a norm of 1 ASHA PER 1,000 POPULATION. Criteria: literate woman aged 25 to 45 with formal education up to class 8 or 10. Crucially, an ASHA is an HONORARY VOLUNTEER who receives performance-based outcome incentives (for institutional delivery accompaniment, immunization tracking, TB DOTS), NOT a permanent government employee with a fixed civil-service salary. Over 10 lakh ASHAs operate across India.",
+        "details_ta": "NHM இயக்கத்தின் முதுகெலும்பு: கிராமத்தில் வசிக்கும் பெண் சமூக தன்னார்வலர்; '1,000 மக்கள் தொகைக்கு 1 ஆஷா பணியாளர்' என்ற விகிதத்தில் நியமிக்கப்படுகிறார். தகுதிகள்: 8 அல்லது 10-ம் வகுப்பு வரை படித்த 25 முதல் 45 வயதுடைய கிராமத்துப் பெண். மிக முக்கியப் பொறி: ஆஷா பணியாளர் என்பவர் 'தன்னார்வலர்' மட்டுமே; அரசு ஊழியர் அல்ல! அவர் செய்யும் பணிகளுக்கு ஏற்ப (மருத்துவமனை பிரசவத்திற்கு அழைத்து வருதல், தடுப்பூசி போடுதல்) 'செயல்திறன் அடிப்படையிலான ஊக்கத்தொகை' வழங்கப்படுகிறதே தவிர நிரந்தர மாத ஊதியம் கிடையாது. இந்தியாவில் 10 லட்சத்திற்கும் மேற்பட்ட ஆஷா பணியாளர்கள் உள்ளனர்."
+      },
+      {
+        "term_en": "Janani Suraksha Yojana (JSY) & Janani Shishu Suraksha Karyakram (JSSK)",
+        "term_ta": "ஜனனி சுரக்ஷா யோஜனா (JSY) & ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK)",
+        "details_en": "(1) Janani Suraksha Yojana (JSY, 2005): A safe motherhood intervention under NRHM modifying the earlier National Maternity Benefit Scheme. Provides a CONDITIONAL CASH TRANSFER to pregnant women who deliver in government health facilities (₹1,400 in rural / ₹1,000 in urban areas for Low Performing States; ₹700 rural / ₹600 urban in High Performing States), incentivizing the shift from dangerous home deliveries to institutional care; (2) Janani Shishu Suraksha Karyakram (JSSK, June 2011): Fully guarantees completely FREE AND CASHLESS ENTITLEMENTS for all pregnant women delivering in public institutions—including 100% free C-section, free drugs, free diagnostics, free blood, free food during hospital stay (3 days normal, 7 days C-section), and free transport to and from home, extended to sick infants up to 1 year of age.",
+        "details_ta": "(1) ஜனனி சுரக்ஷா யோஜனா (JSY, 2005): NRHM-ன் கீழ் தொடங்கப்பட்ட திட்டம். அரசு மருத்துவமனைகளில் பிரசவிக்கும் தாய்மார்களுக்கு 'நிபந்தனையுடன் கூடிய ரொக்க உதவி' வழங்குகிறது (பின்தங்கிய மாநிலங்களில் கிராமத்திற்கு ₹1,400 / நகர்ப்புறத்திற்கு ₹1,000; முன்னேறிய மாநிலங்களில் கிராமத்திற்கு ₹700 / நகர்ப்புறத்திற்கு ₹600), இது வீட்டுப் பிரசவங்களைத் தவிர்த்து மருத்துவமனை பிரசவங்களை ஊக்குவித்தது; (2) ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK, ஜூன் 2011): அரசு மருத்துவமனைகளில் பிரசவிக்கும் பெண்களுக்கு 'முழுமையான கட்டணமில்லா பணமில்லா சேவைகளை' உத்தரவாதம் செய்கிறது—இலவச சிசேரியன் அறுவை சிகிச்சை, இலவச மருந்துகள், இலவச பரிசோதனைகள், இலவச ரத்தம், இலவச உணவு (சாதாரண பிரசவத்திற்கு 3 நாட்கள், சிசேரியனுக்கு 7 நாட்கள்) மற்றும் ஆம்புலன்ஸ் மூலம் வீடு திரும்புதல் உள்ளிட்டவை அடங்கும்; இது 1 வயது வரையிலான குழந்தைகளுக்கும் பொருந்தும்."
+      }
+    ],
+    "sec_health_financing_oope": [
+      {
+        "term_en": "Out-of-Pocket Expenditure (OOPE) Crisis",
+        "term_ta": "தனிநபர் நேரடி மருத்துவச் செலவு (OOPE) நெருக்கடி",
+        "details_en": "Out-of-Pocket Expenditure refers to the direct payments made by patients at the point of receiving healthcare services, un-reimbursed by insurance or government schemes. Historically in India, OOPE accounted for an astronomical 64% to 70% of Total Health Expenditure (THE), primarily driven by private out-patient consultations and expensive branded medicines. High OOPE causes Catastrophic Health Expenditure, pushing an estimated 5.5 to 6 crore Indians below the poverty line every year.",
+        "details_ta": "அரசு அல்லது காப்பீட்டுத் தொகையின்றி நோயாளிகள் தங்களின் சொந்த பாக்கெட்டிலிருந்து நேரடியாக மருத்துவம் மற்றும் மருந்துகளுக்காகச் செய்யும் செலவாகும். வரலாற்று ரீதியாக இந்தியாவில் இது மொத்த சுகாதாரச் செலவில் 64% முதல் 70% வரை மிக அதிகமாக இருந்தது; முக்கியமாக தனியார் கிளினிக்குகள் மற்றும் விலை உயர்ந்த மருந்துகளால் இது ஏற்பட்டது. இந்த அதிகப்படியான செலவு 'பேரழிவு சுகாதாரச் செலவாக' (Catastrophic Health Expenditure) மாறி, ஆண்டுதோறும் சுமார் 5.5 முதல் 6 கோடி இந்தியர்களை வறுமைக் கோட்டிற்கு கீழ் தள்ளுகிறது."
+      },
+      {
+        "term_en": "Recent National Health Accounts (NHA) Trends",
+        "term_ta": "அண்மைக்கால தேசிய சுகாதாரக் கணக்குகள் (NHA) போக்குகள்",
+        "details_en": "According to official National Health Accounts (NHA) estimates (2019-20 / 2020-21): (1) OOPE as a percentage of Total Health Expenditure declined significantly from 64.2% in 2013-14 to 47.1% in 2019-20 and ~39.4% in 2021-22; (2) Government Health Expenditure (GHE) as a share of Total Health Expenditure rose from 28.6% to over 41.4%; (3) However, GHE as a percentage of GDP remains relatively low at ~1.35% to 1.84% of GDP, still falling short of the National Health Policy 2017 target of 2.5% of GDP by 2025.",
+        "details_ta": "தேசிய சுகாதாரக் கணக்குகள் (NHA) அறிக்கைகளின்படி: (1) மொத்த சுகாதாரச் செலவில் மக்களின் சொந்த செலவு (OOPE) 2013-14-ல் 64.2% ஆக இருந்தது 2019-20-ல் 47.1% ஆகவும், 2021-22-ல் ~39.4% ஆகவும் கணிசமாகக் குறைந்துள்ளது; (2) அரசு சுகாதாரச் செலவின் பங்கு 28.6%-லிருந்து 41.4% ஆக உயர்ந்தது; (3) எனினும், GDP-யில் அரசின் சுகாதாரச் செலவு இன்னும் ~1.35% முதல் 1.84% என்ற அளவிலேயே உள்ளது; இது NHP 2017-ன் 2.5% GDP இலக்கை விடக் குறைவாகவே உள்ளது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_bhore_vs_mudaliar",
+        "title_en": "Bhore Committee (1946) vs Mudaliar Committee (1962)",
+        "title_ta": "போரே குழு (1946) vs முதலியார் குழு (1962) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Joseph Bhore Committee (1946)",
+          "A.L. Mudaliar Committee (1962)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "ஜோசப் போரே குழு (1946)",
+          "ஏ.எல். முதலியார் குழு (1962)"
+        ],
+        "rows_en": [
+          [
+            "Historical Era",
+            "Pre-independence colonial transition (Health Survey and Development)",
+            "Post-independence consolidation (Health Survey and Planning)"
+          ],
+          [
+            "Primary Focus",
+            "Establishing comprehensive universal primary healthcare from scratch",
+            "Consolidating and improving the quality of existing infrastructure"
+          ],
+          [
+            "User Fee Stance",
+            "Strictly zero user fees; fully funded through general taxation",
+            "Accepted nominal co-payments and user charges to augment state funds"
+          ],
+          [
+            "Key Recommendation",
+            "Proposed Primary Health Centres serving 40,000 people; 3-Million Plan",
+            "Strengthening District Hospitals as specialty referral centers first"
+          ],
+          [
+            "Healthcare Integration",
+            "Total integration of preventive and curative medical services",
+            "Recommended mobile clinics and targeted family planning consolidation"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரலாற்றுக் காலம்",
+            "சுதந்திரத்திற்கு முந்தைய காலனித்துவ மாற்றக் காலம் (வளர்ச்சிக் கணக்கெடுப்பு)",
+            "சுதந்திரத்திற்குப் பிந்தைய திட்டக் காலம் (திட்டமிடல் கணக்கெடுப்பு)"
+          ],
+          [
+            "முதன்மை நோக்கம்",
+            "தொடக்கத்திலிருந்தே விரிவான அனைவருக்கும் பொதுவான சுகாதாரத்தை உருவாக்குதல்",
+            "ஏற்கனவே உள்ள கட்டமைப்பின் தரத்தை உயர்த்துதல் மற்றும் சீரமைத்தல்"
+          ],
+          [
+            "கட்டணம் குறித்த நிலைப்பாடு",
+            "எவ்வித கட்டணமும் இருக்கக் கூடாது; பொது வரி வருவாயிலிருந்து முழு நிதி",
+            "நிதி பற்றாக்குறையை ஈடுகட்ட மிதமான பயனர் கட்டணங்களை ஏற்றுக்கொண்டது"
+          ],
+          [
+            "முக்கிய பரிந்துரை",
+            "40,000 மக்களுக்கு ஆரம்ப சுகாதார நிலையம்; '3 மில்லியன் திட்டம்'",
+            "மாவட்ட மருத்துவமனைகளை முதலில் உயர் சிறப்பு பரிந்துரை மையங்களாக மாற்றுவது"
+          ],
+          [
+            "சுகாதார ஒருங்கிணைப்பு",
+            "தடுப்பு மற்றும் சிகிச்சைப் பணிகளை முழுமையாக ஒரே குடையின் கீழ் இணைத்தல்",
+            "நடமாடும் மருத்துவமனைகள் மற்றும் குடும்பக் கட்டுப்பாடு பணிகளை வலுப்படுத்துதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nhp_policies_evolution",
+        "title_en": "National Health Policies: NHP 1983 vs NHP 2002 vs NHP 2017",
+        "title_ta": "தேசிய சுகாதாரக் கொள்கைகள்: 1983 vs 2002 vs 2017 விரிவான ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "NHP 1983",
+          "NHP 2002",
+          "NHP 2017 (Current)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "NHP 1983",
+          "NHP 2002",
+          "NHP 2017 (தற்போதையது)"
+        ],
+        "rows_en": [
+          [
+            "Core Strategic Vision",
+            "'Health for All by 2000' (Alma-Ata Declaration)",
+            "Decentralization to Panchayati Raj and vertical disease control",
+            "Universal Health Coverage (UHC) and preventive wellness"
+          ],
+          [
+            "Public Spending Target",
+            "No explicit numerical percentage of GDP target",
+            "2% of GDP by 2010",
+            "2.5% OF GDP BY 2025 (two-thirds to primary care)"
+          ],
+          [
+            "Private Sector Role",
+            "Marginal; overwhelmingly state-led public provisioning",
+            "Acknowledged private sector growth; invited private co-financing",
+            "Strategic purchasing of secondary/tertiary care from private providers"
+          ],
+          [
+            "Life Expectancy Target",
+            "No explicit target",
+            "64 years by 2015",
+            "70 years by 2025"
+          ],
+          [
+            "Financial Protection Focus",
+            "State dispensary supply; minimal insurance coverage",
+            "Introduced targeted health insurance pilots",
+            "Aggressive reduction of OOPE and catastrophic expenditure via AB-PMJAY"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மைக் கோட்பாடு",
+            "'2000-க்குள் அனைவருக்கும் சுகாதாரம்' (அல்மா-அட்டா பிரகடனம்)",
+            "பஞ்சாயத்து ராஜ் பரவலாக்கம் மற்றும் குறிப்பிட்ட நோய் ஒழிப்பு",
+            "அனைவருக்கும் உலகளாவிய சுகாதாரம் (UHC) மற்றும் நல்வாழ்வு"
+          ],
+          [
+            "அரசு நிதி ஒதுக்கீட்டு இலக்கு",
+            "குறிப்பிட்ட GDP சதவீத இலக்கு எதுவும் நிர்ணயிக்கப்படவில்லை",
+            "2010-க்குள் GDP-யில் 2%",
+            "2025-க்குள் GDP-யில் 2.5% (மூன்றில் இரு பங்கு ஆரம்ப சுகாதாரத்திற்கு)"
+          ],
+          [
+            "தனியார் துறையின் பங்கு",
+            "மிகக் குறைவு; அரசு தலைமையிலான பொது விநியோகத்திற்கே முக்கியத்துவம்",
+            "தனியார் துறையின் வளர்ச்சியை அங்கீகரித்து இணைத்துக் கொள்ளுதல்",
+            "தனியார் மருத்துவமனைகளிடமிருந்து சிறப்பு சிகிச்சைகளை அரசு விலைக்கு வாங்குதல்"
+          ],
+          [
+            "சராசரி ஆயுட்கால இலக்கு",
+            "குறிப்பிட்ட இலக்கு இல்லை",
+            "2015-க்குள் 64 ஆண்டுகள்",
+            "2025-க்குள் 70 ஆண்டுகள்"
+          ],
+          [
+            "நிதிப் பாதுகாப்பு நோக்கு",
+            "அரசு மருந்தகங்கள் மூலம் விநியோகம்; காப்பீடு இல்லை",
+            "சோதனை முறையிலான சுகாதாரக் காப்பீட்டுத் திட்டங்கள்",
+            "ஆயுஷ்மான் பாரத் மூலம் மக்களின் நேரடி மருத்துவச் செலவைக் (OOPE) குறைப்பது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_jsy_vs_jssk",
+        "title_en": "Janani Suraksha Yojana (JSY) vs Janani Shishu Suraksha Karyakram (JSSK)",
+        "title_ta": "ஜனனி சுரக்ஷா யோஜனா (JSY) vs ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Janani Suraksha Yojana (JSY, 2005)",
+          "Janani Shishu Suraksha Karyakram (JSSK, 2011)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "ஜனனி சுரக்ஷா யோஜனா (JSY, 2005)",
+          "ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK, 2011)"
+        ],
+        "rows_en": [
+          [
+            "Nature of Assistance",
+            "CONDITIONAL CASH TRANSFER directly to mother's account",
+            "CASHLESS ENTITLEMENT with 100% zero out-of-pocket expenses"
+          ],
+          [
+            "Primary Strategic Goal",
+            "Incentivize pregnant women to deliver in health institutions rather than home",
+            "Eliminate out-of-pocket spending on drugs, tests, food, and transport in hospitals"
+          ],
+          [
+            "Cash Entitlement Amount",
+            "Low Performing States: ₹1,400 rural / ₹1,000 urban; High: ₹700 rural / ₹600 urban",
+            "No direct cash transfer; guarantees 100% free institutional hospital stay"
+          ],
+          [
+            "Scope of Free Services",
+            "Restricted to delivery cash incentive and ASHA motivation fee",
+            "Free C-section, free drugs, free diagnostics, free blood, free food, free transport"
+          ],
+          [
+            "Beneficiary Coverage",
+            "Pregnant women delivering in accredited institutions",
+            "All pregnant women delivering in public facilities PLUS sick infants up to 1 year"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உதவியின் தன்மை",
+            "தாயின் வங்கிக் கணக்கிற்கு வழங்கப்படும் 'நிபந்தனை ரொக்க உதவி'",
+            "100% சொந்த செலவே இல்லாத 'கட்டணமில்லா சேவை உரிமை'"
+          ],
+          [
+            "முதன்மை குறிக்கோள்",
+            "வீட்டுப் பிரசவங்களைத் தவிர்த்து மருத்துவமனை பிரசவங்களை ஊக்குவிப்பது",
+            "மருத்துவமனையில் மருந்துகள், பரிசோதனை, உணவுக்கான செலவை முற்றிலும் ஒழிப்பது"
+          ],
+          [
+            "ரொக்க உதவி அளவு",
+            "பின்தங்கிய மாநிலங்கள்: கிராமத்திற்கு ₹1,400 / நகர்ப்புறம் ₹1,000; முன்னேறிய: ₹700 / ₹600",
+            "நேரடி ரொக்கப் பணம் இல்லை; மருத்துவமனையில் முழுமையான இலவச சேவைகளைத் தருகிறது"
+          ],
+          [
+            "இலவச சேவைகளின் வரம்பு",
+            "பிரசவ ஊக்கத்தொகை மற்றும் ஆஷா பணியாளருக்கான ஊக்கத்தொகை மட்டுமே",
+            "இலவச சிசேரியன், மருந்துகள், ரத்தப் பரிசோதனை, உணவு மற்றும் ஆம்புலன்ஸ் போக்குவரத்து"
+          ],
+          [
+            "பயனாளிகள் வரம்பு",
+            "அங்கீகரிக்கப்பட்ட மையங்களில் பிரசவிக்கும் தாய்மார்கள்",
+            "அரசு மருத்துவமனைகளில் பிரசவிக்கும் அனைத்துத் தாய்மார்கள் + 1 வயது வரையிலான குழந்தைகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_oope_vs_ghe",
+        "title_en": "Out-of-Pocket Expenditure (OOPE) vs Government Health Expenditure (GHE)",
+        "title_ta": "தனிநபர் நேரடி மருத்துவச் செலவு (OOPE) vs அரசு சுகாதாரச் செலவு (GHE) ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Out-of-Pocket Expenditure (OOPE)",
+          "Government Health Expenditure (GHE)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "தனிநபர் நேரடிச் செலவு (OOPE)",
+          "அரசு சுகாதாரச் செலவு (GHE)"
+        ],
+        "rows_en": [
+          [
+            "Funding Source",
+            "Direct private expenditure from household income, savings, or debt",
+            "Public budgetary appropriations from central, state, and local governments"
+          ],
+          [
+            "Financial Protection Impact",
+            "Regressive; drives catastrophic healthcare expenditure and impoverishment",
+            "Progressive; provides universal risk-pooling and equitable access"
+          ],
+          [
+            "Major Cost Driver",
+            "Purchasing retail branded medicines and private outpatient consultations",
+            "Public hospital infrastructure, doctor salaries, vaccines, free schemes"
+          ],
+          [
+            "Target Direction",
+            "Policy aims to REDUCE OOPE below 30% of Total Health Expenditure",
+            "Policy aims to INCREASE GHE to 2.5% of GDP by 2025 (NHP 2017)"
+          ],
+          [
+            "Latest NHA 2019-20 Share",
+            "47.1% of Total Health Expenditure (down from 64.2% in 2013-14)",
+            "41.4% of Total Health Expenditure (~1.35% of GDP)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிதி ஆதாரம்",
+            "குடும்ப வருமானம், சேமிப்பு அல்லது வட்டிக்கு வாங்கிய கடன் மூலம் நேரடிச் செலவு",
+            "மத்திய, மாநில மற்றும் உள்ளாட்சி அரசுகளின் பட்ஜெட் வரி ஒதுக்கீடு"
+          ],
+          [
+            "நிதிப் பாதுகாப்பு மீதான தாக்கம்",
+            "பிற்போக்கானது; குடும்பங்களை கடன் வலையிலும் வறுமையிலும் தள்ளுகிறது",
+            "முற்போக்கானது; ஏழை பணக்காரர் பாகுபாடின்றி அனைவருக்கும் சம வாய்ப்பை அளிக்கிறது"
+          ],
+          [
+            "செலவுக்கான முதன்மைக் காரணம்",
+            "விலை உயர்ந்த மருந்துகளை வாங்குவது மற்றும் தனியார் கிளினிக் கட்டணங்கள்",
+            "அரசு மருத்துவமனைகள், மருத்துவர் ஊதியம், இலவச மருந்துகள், தடுப்பூசிகள்"
+          ],
+          [
+            "கொள்கை இலக்கு நோக்கு",
+            "மொத்த சுகாதாரச் செலவில் OOPE-ஐ 30%-க்கு கீழ் 'குறைப்பது' கொள்கை இலக்கு",
+            "GHE-ஐ 2025-க்குள் GDP-யில் 2.5% ஆக 'உயர்த்துவது' கொள்கை இலக்கு"
+          ],
+          [
+            "NHA 2019-20 தரவுப் பங்கு",
+            "மொத்த சுகாதாரச் செலவில் 47.1% (2013-14-ல் இருந்த 64.2%-லிருந்து குறைந்தது)",
+            "மொத்த சுகாதாரச் செலவில் 41.4% (GDP-யில் சுமார் 1.35% மட்டுமே)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Health Part 2: Policies, National Health Mission & Health Financing",
+        "short_label": "Policies & Financing",
+        "children": [
+          {
+            "title": "Historical Health Committees",
+            "short_label": "Committees",
+            "children": [
+              {
+                "title": "Bhore Committee (1946: Free State Service, Integrated PHC)",
+                "short_label": "Bhore 1946"
+              },
+              {
+                "title": "Mudaliar (1962: District Hospital Referral Hubs)",
+                "short_label": "Mudaliar"
+              },
+              {
+                "title": "Kartar Singh (1973: MPWs, ANMs) & Shrivastav (1975)",
+                "short_label": "Kartar & Shrivastav"
+              }
+            ]
+          },
+          {
+            "title": "National Health Policies",
+            "short_label": "NHP Policies",
+            "children": [
+              {
+                "title": "NHP 1983 (Health for All by 2000, Alma-Ata)",
+                "short_label": "NHP 1983"
+              },
+              {
+                "title": "NHP 2002 (Decentralization, Polio elimination)",
+                "short_label": "NHP 2002"
+              },
+              {
+                "title": "NHP 2017 (2.5% GDP by 2025, UHC, Reduce OOPE)",
+                "short_label": "NHP 2017"
+              }
+            ]
+          },
+          {
+            "title": "National Health Mission (NHM)",
+            "short_label": "NHM Architecture",
+            "children": [
+              {
+                "title": "NRHM (2005) & NUHM (2013) Amalgamation",
+                "short_label": "NRHM & NUHM"
+              },
+              {
+                "title": "ASHA (1 per 1,000; Volunteer, Incentive-based)",
+                "short_label": "ASHA"
+              },
+              {
+                "title": "JSY (Conditional Cash) vs JSSK (100% Cashless)",
+                "short_label": "JSY vs JSSK"
+              }
+            ]
+          },
+          {
+            "title": "Health Financing & OOPE",
+            "short_label": "Health Financing",
+            "children": [
+              {
+                "title": "OOPE Crisis (Historical 64% -> 47.1% in 2019-20)",
+                "short_label": "OOPE Crisis"
+              },
+              {
+                "title": "GHE Target (2.5% of GDP vs Current ~1.35-1.8%)",
+                "short_label": "GHE Target"
+              },
+              {
+                "title": "Catastrophic Health Expenditure (Poverty trap)",
+                "short_label": "Catastrophic Exp"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "NHP 2017 Public Health Spending Target Trap: 2.5% of GDP, NOT 5% or 6%",
+        "points": {
+          "en": [
+            "TRAP: Quoting 5% or 6% of GDP as the public spending target in the National Health Policy 2017.",
+            "CORRECT FACT: NHP 2017 explicitly mandates raising Government Health Expenditure to 2.5% OF GDP BY 2025. The famous 6% of GDP target belongs to EDUCATION under the National Education Policy (NEP 2020) and Kothari Commission (1966), NOT health.",
+            "WHY CANDIDATES FAIL: Conflating the 6% GDP education target with the 2.5% GDP health target."
+          ],
+          "ta": [
+            "பொறி: தேசிய சுகாதாரக் கொள்கை 2017-ன் பொதுச் சுகாதாரச் செலவு இலக்கு GDP-யில் 5% அல்லது 6% எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: NHP 2017 அரசு சுகாதாரச் செலவை '2025-க்குள் GDP-யில் 2.5% ஆக உயர்த்த' வேண்டும் என்று மட்டுமே இலக்கு நிர்ணயித்துள்ளது! 6% GDP இலக்கு என்பது தேசிய கல்விக் கொள்கை (NEP 2020) மற்றும் கோத்தாரி குழுவின் 'கல்விக்கான' இலக்காகும், சுகாதாரத்திற்கானதல்ல.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கல்விக்கான 6% GDP இலக்கையும், சுகாதாரத்திற்கான 2.5% GDP இலக்கையும் மாற்றி நினைவில் வைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "ASHA Worker Legal Status Trap: Honorary Volunteer, NOT Permanent Civil Servant",
+        "points": {
+          "en": [
+            "TRAP: Describing an ASHA worker as a permanent, salaried civil servant under the Ministry of Health.",
+            "CORRECT FACT: An ASHA is statutorily an HONORARY COMMUNITY VOLUNTEER. She does NOT receive a fixed monthly civil-service salary; she receives PERFORMANCE-BASED INCENTIVES tied to specific public health outcomes (e.g., accompanying pregnant mothers for institutional delivery under JSY, immunizing infants, distributing ORS/contraceptives).",
+            "WHY CANDIDATES FAIL: Assuming that wearing a standardized uniform and performing state functions makes ASHAs permanent civil servants."
+          ],
+          "ta": [
+            "பொறி: ஆஷா (ASHA) பணியாளரை மத்திய சுகாதார அமைச்சகத்தின் கீழ் உள்ள நிரந்தர மாத ஊதியம் பெறும் அரசு ஊழியர் எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: ஆஷா பணியாளர் சட்டப்பூர்வமாக ஒரு 'கௌரவ சமூகத் தன்னார்வலர்' (Honorary Volunteer) மட்டுமே! அவருக்கு நிரந்தர அரசு ஊதியம் கிடையாது; அவர் செய்யும் குறிப்பிட்ட பணிகளுக்கு (மருத்துவமனை பிரசவத்திற்கு அழைத்து வருவது, குழந்தைகளுக்குத் தடுப்பூசி போடுவது) அரசு 'செயல்திறன் ஊக்கத்தொகை' மட்டுமே வழங்குகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அரசு பணிகளைச் செய்வதாலும், சீருடை அணிவதாலும் அவர்களை நிரந்தர அரசு ஊழியர்கள் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "JSY vs JSSK Entitlement Distinction Trap: Cash Incentive vs Cashless Entitlement",
+        "points": {
+          "en": [
+            "TRAP: Believing that Janani Shishu Suraksha Karyakram (JSSK) gives a direct cash grant to mothers.",
+            "CORRECT FACT: JSY provides a CONDITIONAL CASH TRANSFER (₹1,400 rural / ₹1,000 urban in LPS). JSSK provides ZERO CASH—instead, it guarantees completely CASHLESS AND FREE ENTITLEMENTS (free C-section, free medicines, free blood, free food, free transport) to eliminate all out-of-pocket expenses inside the hospital.",
+            "WHY CANDIDATES FAIL: Conflating the two maternal schemes because both start with 'Janani'."
+          ],
+          "ta": [
+            "பொறி: ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK) தாய்மார்களுக்கு நேரடி ரொக்கப் பணம் வழங்குகிறது என நினைப்பது.",
+            "சரியான உண்மை: JSY மட்டுமே 'நிபந்தனை ரொக்க உதவியை' வழங்குகிறது (கிராமத்திற்கு ₹1,400). JSSK திட்டத்தில் கையில் பணம் தரப்படுவதில்லை—மாறாக மருத்துவமனையில் மருந்து, ரத்தம், சிசேரியன் அறுவை சிகிச்சை, உணவு, ஆம்புலன்ஸ் ஆகிய அனைத்தும் 'முற்றிலும் இலவசம்' (Cashless) என உத்தரவாதம் அளிக்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டு திட்டங்களின் பெயர்களும் 'ஜனனி' என்று தொடங்குவதால் இரண்டையும் ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Bhore Committee User Fee Recommendation Trap: Recommended ZERO User Fees",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Bhore Committee (1946) recommended charging user fees to make public hospitals self-financing.",
+            "CORRECT FACT: The Joseph Bhore Committee EXPLICITLY ADVOCATED ZERO USER FEES! It asserted that health is a fundamental right of citizenship that should be provided entirely free of cost through state tax revenues. It was the later Mudaliar Committee (1962) that considered nominal user charges.",
+            "WHY CANDIDATES FAIL: Projecting modern cost-recovery hospital policies onto the historic 1946 socialist-oriented Bhore blueprint."
+          ],
+          "ta": [
+            "பொறி: அரசு மருத்துவமனைகள் சுயமாக இயங்க பயனர் கட்டணம் வசூலிக்க வேண்டும் என போரே குழு (1946) பரிந்துரைத்தது என நினைப்பது.",
+            "சரியான உண்மை: போரே குழு 'எவ்வித பயனர் கட்டணமும் வசூலிக்கக் கூடாது' என திட்டவட்டமாகப் பரிந்துரைத்தது! சுகாதாரம் குடிமக்களின் அடிப்படை உரிமை என்பதால் பொது வரி வருவாய் மூலம் அரசு இதனை முற்றிலும் இலவசமாகத் தர வேண்டும் என்றது. 1962-ல் வந்த முதலியார் குழுவே பெயரளவு கட்டணங்களை ஆதரித்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இன்றைய மருத்துவமனை கட்டணக் கொள்கைகளை வரலாற்றுச் சிறப்புமிக்க 1946 போரே குழுவின் மீது தவறாகப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "NRHM vs NUHM Launch Chronology Trap: 2005 vs 2013",
+        "points": {
+          "en": [
+            "TRAP: Believing the National Urban Health Mission (NUHM) was launched concurrently with the National Rural Health Mission in 2005.",
+            "CORRECT FACT: NRHM was launched in APRIL 2005. NUHM was approved and launched EIGHT YEARS LATER in MAY 2013, after which both were united under the overarching National Health Mission (NHM).",
+            "WHY CANDIDATES FAIL: Assuming the National Health Mission was launched as a unified urban-rural initiative from day one."
+          ],
+          "ta": [
+            "பொறி: தேசிய நகர்ப்புற சுகாதார இயக்கம் (NUHM) 2005-ல் கிராமப்புற இயக்கத்தோடு (NRHM) இணைந்தே தொடங்கப்பட்டது என நினைப்பது.",
+            "சரியான உண்மை: NRHM ஏப்ரல் 2005-ல் தொடங்கப்பட்டது. ஆனால் நகர்ப்புறங்களுக்கான NUHM எட்டு ஆண்டுகளுக்குப் பிறகு 'மே 2013-ல் தான்' தொடங்கப்பட்டது! அதன் பிறகே இரண்டும் தேசிய சுகாதார இயக்கம் (NHM) என ஒன்றிணைக்கப்பட்டன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தொடக்கத்திலிருந்தே கிராமம், நகரம் இரண்டும் சேர்ந்தே தொடங்கப்பட்டதாக தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Catastrophic Health Expenditure Threshold Trap: 10% or 25% of Consumption, NOT Merely Having Expenses",
+        "points": {
+          "en": [
+            "TRAP: Defining Catastrophic Health Expenditure as any medical bill paid by a poor family.",
+            "CORRECT FACT: In health economics, Catastrophic Health Expenditure is scientifically defined as Out-of-Pocket healthcare spending that EXCEEDS 10% OF TOTAL HOUSEHOLD CONSUMPTION EXPENDITURE, or 40% OF NON-FOOD CONSUMPTION (capacity to pay), forcing families to cut food/education or fall into destitution.",
+            "WHY CANDIDATES FAIL: Using the word 'catastrophic' loosely without understanding its rigorous mathematical consumption threshold."
+          ],
+          "ta": [
+            "பொறி: ஏழைக் குடும்பங்கள் மருத்துவத்திற்காகச் செய்யும் எந்தவொரு சாதாரண செலவையும் 'பேரழிவு சுகாதாரச் செலவு' எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: சுகாதாரப் பொருளாதாரத்தில் 'பேரழிவு சுகாதாரச் செலவு' (Catastrophic Health Expenditure) என்பது ஒரு குடும்பத்தின் 'மொத்த நுகர்வுச் செலவில் 10%-க்கு மேல்' அல்லது உணவு அல்லாத செலவில் 40%-க்கு மேல் மருத்துவத்திற்காக மட்டுமே செலவிடப்பட்டு, குடும்பத்தை வறுமையில் தள்ளும் நிலையாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'பேரழிவு' என்ற வார்த்தையை புள்ளிவிவர நுகர்வு வரம்போடு புரிந்து கொள்ளாமல் பொதுவான சொல்லாகப் பயன்படுத்துவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The Joseph Bhore Committee (1946) laid the foundation for India's comprehensive, free primary health infrastructure.",
+        "Mudaliar Committee (1962) recommended strengthening District Hospitals as specialized referral centers.",
+        "Kartar Singh Committee (1973) introduced Multi-Purpose Health Workers (MPWs) and designated ANMs.",
+        "National Health Policy 1983 committed India to the Alma-Ata Declaration target of 'Health for All by 2000'.",
+        "National Health Policy 2017 targets raising Government Health Expenditure to 2.5% of GDP by 2025.",
+        "NHP 2017 mandates allocating at least two-thirds (67%) of government health budgets to primary healthcare.",
+        "National Rural Health Mission (NRHM) was launched on April 12, 2005; NUHM was launched in 2013.",
+        "An ASHA worker is an honorary volunteer deployed at a norm of 1 per 1,000 population in rural areas.",
+        "Janani Suraksha Yojana (JSY, 2005) provides a conditional cash transfer to promote institutional deliveries.",
+        "Janani Shishu Suraksha Karyakram (JSSK, 2011) guarantees 100% cashless and free delivery and infant care.",
+        "Out-of-Pocket Expenditure (OOPE) historically accounted for 64% of Total Health Expenditure, dropping to 47.1% in 2019-20.",
+        "Catastrophic health spending historically pushed an estimated 5.5 crore Indians below the poverty line annually."
+      ],
+      "ta": [
+        "ஜோசப் போரே குழு (1946) இந்தியாவின் கட்டணமில்லா விரிவான ஆரம்ப சுகாதாரக் கட்டமைப்புக்கு அடித்தளமிட்டது.",
+        "முதலியார் குழு (1962) மாவட்ட மருத்துவமனைகளை சிறப்பு பரிந்துரை மையங்களாக வலுப்படுத்தப் பரிந்துரைத்தது.",
+        "கர்தார் சிங் குழு (1973) பல்நோக்கு சுகாதாரப் பணியாளர்களையும் (MPWs), கிராம செவிலியர்களையும் (ANMs) உருவாக்கியது.",
+        "தேசிய சுகாதாரக் கொள்கை 1983 அல்மா-அட்டா பிரகடனத்தின்படி '2000-க்குள் அனைவருக்கும் சுகாதாரம்' என்ற இலக்கை ஏற்றது.",
+        "தேசிய சுகாதாரக் கொள்கை 2017 அரசு சுகாதாரச் செலவை 2025-க்குள் GDP-யில் 2.5% ஆக உயர்த்த இலக்கு நிர்ணயித்துள்ளது.",
+        "NHP 2017 சுகாதார பட்ஜெட்டில் மூன்றில் இரண்டு பங்கை (67%) ஆரம்ப சுகாதாரத்திற்கு ஒதுக்க ஆணையிடுகிறது.",
+        "தேசிய ஊரக சுகாதார இயக்கம் (NRHM) ஏப்ரல் 12, 2005-ல் தொடங்கப்பட்டது; NUHM 2013-ல் தொடங்கப்பட்டது.",
+        "ஆஷா (ASHA) பணியாளர் என்பவர் கிராமப்புறங்களில் 1,000 மக்களுக்கு 1 என்ற விகிதத்தில் உள்ள கௌரவத் தன்னார்வலராவார்.",
+        "ஜனனி சுரக்ஷா யோஜனா (JSY, 2005) மருத்துவமனை பிரசவத்தை ஊக்குவிக்க நிபந்தனை பண உதவியை வழங்குகிறது.",
+        "ஜனனி சிசு சுரக்ஷா காரியக்ரம் (JSSK, 2011) 100% கட்டணமில்லா இலவச பிரசவம் மற்றும் குழந்தை சிகிச்சையை உத்தரவாதம் செய்கிறது.",
+        "மக்களின் சொந்த மருத்துவச் செலவு (OOPE) மொத்த செலவில் 64% ஆக இருந்து 2019-20-ல் 47.1% ஆகக் குறைந்துள்ளது.",
+        "அதிக மருத்துவச் செலவு ஆண்டுதோறும் சுமார் 5.5 கோடி இந்தியர்களை வறுமைக் கோட்டிற்கு கீழ் தள்ளுகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Bhore Committee (1946): Magna Carta of Indian health; proposed free tax-funded PHCs for 40,000 population with zero user fees.",
+        "Mudaliar (1962): Consolidate district hospitals; Kartar Singh (1973): Multi-Purpose Workers and ANMs; Shrivastav (1975): Village Guides.",
+        "NHP Evolution: 1983 (Alma-Ata Health for All 2000) -> 2002 (2% GDP target, decentralization) -> 2017 (2.5% GDP, UHC).",
+        "NHP 2017 Key Targets: 2.5% of GDP by 2025; 67% budget to primary care; life expectancy to 70; reduce OOPE.",
+        "NRHM (April 2005) + NUHM (May 2013) = National Health Mission (NHM); key tools: Rogi Kalyan Samitis and Untied Grants.",
+        "ASHA: 1 per 1,000 rural population; literate woman aged 25-45; honorary volunteer with incentive pay, NOT civil servant.",
+        "JSY (2005): Conditional Cash Transfer (₹1,400 rural in LPS) to incentivize hospital delivery over home delivery.",
+        "JSSK (2011): 100% Zero Out-of-Pocket Cashless Entitlements (free C-section, free drugs, tests, food, transport for mother & infant).",
+        "OOPE dropped from 64.2% (2013-14) to 47.1% (2019-20); Government Health Expenditure rose from 28.6% to 41.4% of THE.",
+        "GHE as % of GDP stands at ~1.35% to 1.84%, remaining below the NHP 2017 target of 2.5%."
+      ],
+      "ta": [
+        "போரே குழு (1946): சுகாதார மகாசாசனம்; கட்டணமின்றி வரிப்பணத்தில் இயங்கும் 40,000 பேருக்கான ஆரம்ப சுகாதார நிலையங்கள்.",
+        "முதலியார் (1962): மாவட்ட மருத்துவமனைகள்; கர்தார் சிங் (1973): பல்நோக்கு பணியாளர்கள் & ANM; ஸ்ரீவஸ்தவ் (1975): வழிகாட்டிகள்.",
+        "கொள்கை வளர்ச்சி: 1983 (அல்மா-அட்டா 2000 இலக்கு) -> 2002 (2% GDP இலக்கு) -> 2017 (2.5% GDP, அனைவருக்கும் சுகாதாரம்).",
+        "NHP 2017 இலக்குகள்: 2025-க்குள் GDP-யில் 2.5%; ஆரம்ப சுகாதாரத்திற்கு 67% நிதி; ஆயுட்காலம் 70 ஆண்டுகள்; சொந்த செலவைக் குறைப்பது.",
+        "NRHM (2005) + NUHM (2013) = தேசிய சுகாதார இயக்கம் (NHM); ரோகி கல்யாண் சமிதிகள் மற்றும் நிபந்தனையற்ற நிதி.",
+        "ஆஷா: 1,000 கிராம மக்களுக்கு 1 பெண் தன்னார்வலர்; செயல்திறன் ஊக்கத்தொகை மட்டுமே உண்டு, அரசு ஊழியர் அல்ல.",
+        "JSY (2005): மருத்துவமனை பிரசவங்களை ஊக்குவிக்க வழங்கப்படும் நிபந்தனை ரொக்க உதவி (கிராமத்திற்கு ₹1,400).",
+        "JSSK (2011): 100% கட்டணமில்லா பணமில்லா சேவை (இலவச சிசேரியன், மருந்துகள், ரத்தம், உணவு, ஆம்புலன்ஸ் வசதிகள்).",
+        "மக்களின் சொந்த செலவு (OOPE) 64.2%-லிருந்து 47.1% ஆகக் குறைந்தது; அரசு செலவு 28.6%-லிருந்து 41.4% ஆக உயர்ந்தது.",
+        "GDP-யில் அரசு சுகாதாரச் செலவு ~1.35% முதல் 1.84% ஆக உள்ளது; இது NHP 2017-ன் 2.5% இலக்கை விடக் குறைவாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_hlth_201",
+        "front_en": "Which landmark committee report submitted in 1946 serves as the foundational blueprint for India's public health system?",
+        "front_ta": "1946-ல் சமர்ப்பிக்கப்பட்டு இந்திய பொதுச் சுகாதாரக் கட்டமைப்பிற்கு அடித்தளமாக விளங்கும் வரலாற்று அறிக்கை எது?",
+        "back_en": "Sir Joseph Bhore Committee (Health Survey and Development Committee, 1946).",
+        "back_ta": "சர் ஜோசப் போரே குழு (சுகாதார கணக்கெடுப்பு மற்றும் வளர்ச்சிக் குழு, 1946)."
+      },
+      {
+        "id": "rc_hlth_202",
+        "front_en": "What public health spending target as a percentage of GDP was established by the National Health Policy 2017?",
+        "front_ta": "தேசிய சுகாதாரக் கொள்கை 2017 அரசு சுகாதாரச் செலவை GDP-யில் எத்தனை சதவீதமாக உயர்த்த இலக்கு நிர்ணயித்துள்ளது?",
+        "back_en": "2.5% of GDP by the year 2025.",
+        "back_ta": "2025-ஆம் ஆண்டிற்குள் GDP-யில் 2.5% ஆக."
+      },
+      {
+        "id": "rc_hlth_203",
+        "front_en": "What proportion of the total health budget does NHP 2017 mandate to be allocated to primary healthcare?",
+        "front_ta": "சுகாதார பட்ஜெட்டில் எத்தனை பங்கை ஆரம்ப சுகாதாரத்திற்கு ஒதுக்க வேண்டும் என NHP 2017 ஆணையிடுகிறது?",
+        "back_en": "At least two-thirds (67%) of the total health budget.",
+        "back_ta": "மொத்த சுகாதார பட்ஜெட்டில் குறைந்தது மூன்றில் இரண்டு பங்கு (67%)."
+      },
+      {
+        "id": "rc_hlth_204",
+        "front_en": "When was the National Rural Health Mission (NRHM) officially launched by the Government of India?",
+        "front_ta": "இந்திய அரசால் தேசிய ஊரக சுகாதார இயக்கம் (NRHM) அதிகாரப்பூர்வமாக எப்போது தொடங்கப்பட்டது?",
+        "back_en": "On April 12, 2005 (under Prime Minister Manmohan Singh).",
+        "back_ta": "ஏப்ரல் 12, 2005 அன்று (பிரதமர் மன்மோகன் சிங் ஆட்சியில்)."
+      },
+      {
+        "id": "rc_hlth_205",
+        "front_en": "What is the population norm for deploying an Accredited Social Health Activist (ASHA) in rural areas?",
+        "front_ta": "கிராமப்புறங்களில் ஒரு ஆஷா (ASHA) பணியாளரை நியமிப்பதற்கான மக்கள் தொகை வரம்பு என்ன?",
+        "back_en": "One ASHA volunteer per 1,000 rural population.",
+        "back_ta": "கிராமப்புறத்தில் 1,000 மக்கள் தொகைக்கு 1 ஆஷா தன்னார்வலர்."
+      },
+      {
+        "id": "rc_hlth_206",
+        "front_en": "Is an ASHA worker a permanent government servant with a fixed civil service salary?",
+        "front_ta": "ஆஷா பணியாளர் என்பவர் நிரந்தர மாத ஊதியம் பெறும் அரசு ஊழியரா?",
+        "back_en": "No, an ASHA is an honorary community health volunteer who receives performance-based outcome incentives.",
+        "back_ta": "இல்லை, ஆஷா என்பவர் கௌரவ சமூக தன்னார்வலர் மட்டுமே; அவர் செய்யும் பணிகளுக்கு ஏற்ப ஊக்கத்தொகை மட்டுமே வழங்கப்படுகிறது."
+      },
+      {
+        "id": "rc_hlth_207",
+        "front_en": "What is the primary operational difference between JSY (2005) and JSSK (2011)?",
+        "front_ta": "JSY (2005) மற்றும் JSSK (2011) திட்டங்களுக்கு இடையே உள்ள முதன்மை நடைமுறை வேறுபாடு என்ன?",
+        "back_en": "JSY is a conditional cash transfer to incentivize institutional delivery; JSSK is a 100% cashless entitlement guaranteeing zero hospital costs.",
+        "back_ta": "JSY என்பது மருத்துவமனை பிரசவத்திற்கான நிபந்தனை ரொக்க உதவி; JSSK என்பது மருத்துவமனையில் 100% எவ்வித கட்டணமும் இல்லாத இலவச சேவை."
+      },
+      {
+        "id": "rc_hlth_208",
+        "front_en": "Which committee recommended the creation of 'Multi-Purpose Workers' (MPWs) and designated ANMs in 1973?",
+        "front_ta": "1973-ல் 'பல்நோக்கு சுகாதாரப் பணியாளர்களையும்' (MPWs) கிராம செவிலியர்களையும் (ANMs) பரிந்துரைத்த குழு எது?",
+        "back_en": "Kartar Singh Committee (1973).",
+        "back_ta": "கர்தார் சிங் குழு (1973)."
+      },
+      {
+        "id": "rc_hlth_209",
+        "front_en": "According to National Health Accounts (2019-20), what was the share of Out-of-Pocket Expenditure (OOPE) in Total Health Expenditure?",
+        "front_ta": "தேசிய சுகாதாரக் கணக்குகள் (2019-20) படி, மொத்த சுகாதாரச் செலவில் மக்களின் நேரடி சொந்த செலவின் (OOPE) பங்கு என்ன?",
+        "back_en": "47.1% (down from 64.2% in 2013-14).",
+        "back_ta": "47.1% (2013-14-ல் இருந்த 64.2%-லிருந்து குறைந்தது)."
+      },
+      {
+        "id": "rc_hlth_210",
+        "front_en": "In health economics, when is household healthcare spending classified as 'Catastrophic Health Expenditure'?",
+        "front_ta": "சுகாதாரப் பொருளாதாரத்தில், ஒரு குடும்பத்தின் மருத்துவச் செலவு எப்போது 'பேரழிவு சுகாதாரச் செலவு' என வரையறுக்கப்படுகிறது?",
+        "back_en": "When out-of-pocket health spending exceeds 10% of total household consumption expenditure (or 40% of non-food capacity to pay).",
+        "back_ta": "குடும்பத்தின் மொத்த நுகர்வுச் செலவில் 10%-க்கு மேல் (அல்லது உணவு அல்லாத செலவில் 40%-க்கு மேல்) மருத்துவச் செலவு ஏற்படும் போது."
+      }
+    ]
+  }
+}

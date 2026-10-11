@@ -1,0 +1,292 @@
+{
+  "topic": "time_work_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Time & Work Part 2 — Joining & Leaving, Group Work, Wages & Alternate Days",
+  "title_ta": "காலம் மற்றும் வேலை பகுதி 2 — சேருதல்/விலகுதல், குழு வேலை, கூலி பகிர்வு மற்றும் மாற்று நாட்கள்",
+
+  "definition": {
+    "en": "Part 2 covers partial work scenarios where workers join or leave mid-way, group work equations involving men and women, wage division based on work contribution, and alternate day rotation schedules.",
+    "ta": "பகுதி 2-ல் இடையில் சேருதல் அல்லது விலகுதல் கணக்குகள், ஆண்கள் மற்றும் பெண்கள் சேர்ந்த குழு வேலை, வேலைப் பங்கிற்கு ஏற்ப கூலி பிரித்தளித்தல் மற்றும் மாற்று நாட்களில் வேலை செய்யும் கணக்குகள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1 and Group 2/2A standard questions. Topics such as A leaving mid-way, men vs women equivalent efficiency, wage distribution proportional to work done, and alternate day work cycles are frequently tested.",
+    "ta": "பகுதி 2-ல் TNPSC குரூப் 1 மற்றும் குரூப் 2/2A தேர்வுகளில் கேட்கப்படும் அதிக வினாக்கள் இடம்பெற்றுள்ளன. ஒருவர் இடையில் விலகுதல், ஆண்-பெண் சமமான வேலைத்திறன், கூலிப் பகிர்வு மற்றும் மாற்று நாள் கணக்குகள் இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Joining / Leaving Work Formula (சேருதல்/விலகுதல் சூத்திரம்)",
+      "formula": "\\text{Work Done} = (t_1 \\times \\text{Rate}_1) + (t_2 \\times \\text{Rate}_2) = 1 \\text{ (Total Work)}",
+      "explanation": {
+        "en": "Calculate the work units finished during the first period, subtract from total work, then calculate time for remaining work.",
+        "ta": "முதல் கட்டத்தில் முடிந்த வேலையைக் கணக்கிட்டு, மீதமுள்ள வேலையைத் தனியாகத் தீர்க்க வேண்டும்."
+      }
+    },
+    {
+      "title": "Wage Distribution Rule (கூலிப் பகிர்வு விதி)",
+      "formula": "Wage_A : Wage_B = \\text{Work Done by A} : \\text{Work Done by B}",
+      "explanation": {
+        "en": "Wages are distributed strictly proportional to the fraction of work completed by each individual (or 1-day work rates if working for equal days).",
+        "ta": "ஒவ்வொருவரும் செய்து முடித்த வேலைப் பங்கின் விகிதத்திலேயே கூலி பிரிக்கப்படும்."
+      }
+    },
+    {
+      "title": "Alternate Day Cycle Formula (மாற்று நாள் சுழற்சி சூத்திரம்)",
+      "formula": "1 \\text{ Cycle (2 Days)} = A\\text{'s 1-day work} + B\\text{'s 1-day work}",
+      "explanation": {
+        "en": "Find work done in one 2-day cycle, determine total complete cycles needed, and solve for any remaining fraction.",
+        "ta": "ஒரு சுழற்சிக்கான (2 நாட்கள்) வேலையைக் கணக்கிட்டு, எத்தனை சுழற்சிகள் தேவை என்பதைத் தீர்மானித்தல்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Men, Women & Boys Equivalent Work Logic (ஆண்கள், பெண்கள் சமச்சீர் வேலை)",
+      "points": {
+        "en": [
+          "Equate work equations: (m1 Men + w1 Women) × D1 = (m2 Men + w2 Women) × D2.",
+          "Solve for the efficiency relation: x Men = y Women (e.g. 1 Man = 2 Women).",
+          "Convert the entire target workforce into a single unit type (all Men or all Women) to apply simple chain rule."
+        ],
+        "ta": [
+          "வேலை சமன்பாடுகளைச் சமப்படுத்துக: (m1 ஆண்கள் + w1 பெண்கள்) × D1 = (m2 ஆண்கள் + w2 பெண்கள்) × D2.",
+          "திறன் தொடர்பைக் கண்டறிக: x ஆண்கள் = y பெண்கள் (எ.கா. 1 ஆண் = 2 பெண்கள்).",
+          "கேட்கப்பட்ட ஆட்களை ஒரே பிரிவாக (அனைத்தும் ஆண்கள் அல்லது அனைத்தும் பெண்கள்) மாற்றி சங்கிலிச் சூத்திரத்தைப் பயன்படுத்தவும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Equal Working Days Wage Distribution",
+      "points": {
+        "en": [
+          "If all workers work for the same total number of days: Wages are divided in the ratio of their 1-day work rates.",
+          "Ratio of Wages A : B = (1 / A) : (1 / B) = B : A."
+        ],
+        "ta": [
+          "அனைத்து தொழிலாளர்களும் ஒரே எண்ணிக்கையிலான நாட்கள் வேலை செய்தால்: கூலியானது அவர்களின் 1 நாள் வேலை விகிதத்தில் (திறன் விகிதத்தில்) பிரிக்கப்படும்.",
+          "கூலி விகிதம் A : B = (1 / A) : (1 / B) = B : A."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Dividing wages in ratio of days instead of efficiency/work done",
+      "explanation": {
+        "en": "If A takes 6 days and B takes 12 days, dividing wages as 6 : 12 = 1 : 2 is WRONG! A is faster, so A gets more money (ratio 12 : 6 = 2 : 1).",
+        "ta": "A 6 நாட்கள், B 12 நாட்கள் எனில் கூலியை 6 : 12 எனப் பிரிப்பது தவறாகும்! A வேகமானவர் என்பதால் A-க்கே அதிக கூலி கிடைக்கும் (விகிதம் 12 : 6 = 2 : 1)."
+      },
+      "avoidance": {
+        "en": "Wages ratio is INVERSE to days ratio when working equal days: Wage A : Wage B = 1/6 : 1/12 = 2 : 1.",
+        "ta": "கூலி விகிதம் நாட்களின் விகிதத்திற்கு எதிர்ப்பிகிதத்தில் அமையும்: கூலி A : B = 2 : 1."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "A can do a piece of work in 20 days and B in 30 days. A works alone for 5 days and then leaves. In how many days can B finish the remaining work?",
+      "method": "Work Units & Remaining Work Method",
+      "steps": [
+        "Step 1: Total Work = LCM(20, 30) = 60 units.",
+        "Step 2: Daily rates: A = \\(60 / 20 = 3\\) units/day; B = \\(60 / 30 = 2\\) units/day.",
+        "Step 3: Work completed by A in 5 days = \\(5 \\times 3 = 15\\) units.",
+        "Step 4: Remaining Work = \\(60 - 15 = 45\\) units.",
+        "Step 5: Time taken by B for remaining work = \\(\\frac{45}{2} = 22.5\\) days (or \\(22 \\frac{1}{2}\\) days)."
+      ],
+      "answer": "22 ½ days (22.5 days)"
+    },
+    {
+      "id": 2,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "If 4 men can complete a work in 3 days and 3 women can complete that work in 6 days, can 6 men and 8 women complete the work in one day?",
+      "method": "Group Work Efficiency Verification",
+      "steps": [
+        "Step 1: 4 Men in 3 days \\(\\implies\\) 1 Man's 1-day work = \\(\\frac{1}{4 \\times 3} = \\frac{1}{12}\\).",
+        "Step 2: 3 Women in 6 days \\(\\implies\\) 1 Woman's 1-day work = \\(\\frac{1}{3 \\times 6} = \\frac{1}{18}\\).",
+        "Step 3: Calculate 1-day work of 6 Men + 8 Women: \\(6 \\times \\frac{1}{12} + 8 \\times \\frac{1}{18} = \\frac{1}{2} + \\frac{4}{9} = \\frac{9 + 8}{18} = \\frac{17}{18}\\).",
+        "Step 4: Since \\(\\frac{17}{18} \\neq 1\\), they complete only 17/18 of the work in one day. So it is NOT complete."
+      ],
+      "answer": "No, they finish 17/18 of the work in 1 day (incomplete)"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "A and B undertake to do a piece of work for ₹1,200. A alone can do it in 8 days and B alone in 12 days. With the help of C, they finish it in 4 days. Find C's share of the wages.",
+      "method": "Wage Distribution by Work Done",
+      "steps": [
+        "Step 1: Combined rate of A, B, C = \\(\\frac{1}{4}\\). A's rate = \\(\\frac{1}{8}\\), B's rate = \\(\\frac{1}{12}\\).",
+        "Step 2: C's 1-day rate = \\(\\frac{1}{4} - \\left(\\frac{1}{8} + \\frac{1}{12}\\right) = \\frac{1}{4} - \\frac{5}{24} = \\frac{6 - 5}{24} = \\frac{1}{24}\\).",
+        "Step 3: Ratio of 1-day work A : B : C = \\(\\frac{1}{8} : \\frac{1}{12} : \\frac{1}{24} = 3 : 2 : 1\\).",
+        "Step 4: Total ratio parts = 3 + 2 + 1 = 6 parts.",
+        "Step 5: C's share = \\(\\frac{1}{6} \\times 1200 = ₹200\\)."
+      ],
+      "answer": "₹200"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "A can do a work in 10 days and B in 15 days. If they work on alternate days starting with A, in how many days will the work be completed?",
+      "method": "Alternate Day Cycle Method",
+      "steps": [
+        "Step 1: Total Work = LCM(10, 15) = 30 units.",
+        "Step 2: Daily rates: A = 3 units/day, B = 2 units/day.",
+        "Step 3: Work done in 1 cycle (2 days) = 3 + 2 = 5 units.",
+        "Step 4: Number of 2-day cycles needed = \\(30 / 5 = 6\\) cycles.",
+        "Step 5: Total days = \\(6 \\times 2 = 12\\) days."
+      ],
+      "answer": "12 days"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A and B can do a work in 12 days and 18 days respectively. They worked together for 4 days, then A left. How many more days will B take to finish the remaining work?",
+      "method": "Joint Work then Single Worker",
+      "steps": [
+        "Step 1: Total Work = LCM(12, 18) = 36 units.",
+        "Step 2: Daily rates: A = 3 units/day, B = 2 units/day.",
+        "Step 3: Combined 1-day work = 3 + 2 = 5 units.",
+        "Step 4: Work done together in 4 days = \\(4 \\times 5 = 20\\) units.",
+        "Step 5: Remaining Work = \\(36 - 20 = 16\\) units.",
+        "Step 6: Time taken by B alone = \\(\\frac{16}{2} = 8\\) days."
+      ],
+      "answer": "8 days"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "2 men and 3 boys can do a piece of work in 10 days, while 3 men and 2 boys can do the same work in 8 days. In how many days can 2 men and 1 boy do the work?",
+      "method": "Equating Work Equations Method",
+      "steps": [
+        "Step 1: Write work equivalence equation: \\((2M + 3B) \\times 10 = (3M + 2B) \\times 8\\).",
+        "Step 2: Expand: \\(20M + 30B = 24M + 16B \\implies 4M = 14B \\implies 2M = 7B\\) (1 Man = 3.5 Boys).",
+        "Step 3: Convert 1st team to Boys: \\(2M + 3B = 7B + 3B = 10\\) Boys. 10 Boys take 10 days \\(\\implies\\) Total Work = 100 Boy-days.",
+        "Step 4: Convert target team to Boys: \\(2M + 1B = 7B + 1B = 8\\) Boys.",
+        "Step 5: Time for 8 Boys = \\(\\frac{100}{8} = 12.5\\) days."
+      ],
+      "answer": "12 ½ days (12.5 days)"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "A takes 12 days and B takes 24 days. A works alone for 3 days and leaves. How many days will B take to finish the remaining work?",
+      "options": ["A) 15 days", "B) 18 days", "C) 20 days", "D) 21 days"],
+      "correct_option": "B) 18 days",
+      "explanation": "Total Work = 24 units. A rate = 2, B rate = 1. A in 3 days = 6 units. Rem = 18 units. B takes 18/1 = 18 days."
+    },
+    {
+      "id": 2,
+      "question": "A, B, and C undertake a work for ₹600. A takes 6 days, B takes 8 days, C takes 12 days. Find B's share of wages.",
+      "options": ["A) ₹150", "B) ₹200", "C) ₹250", "D) ₹300"],
+      "correct_option": "B) ₹200",
+      "explanation": "Work ratio = 1/6 : 1/8 : 1/12 = 4 : 3 : 2. B's share = (3/9) × 600 = ₹200."
+    },
+    {
+      "id": 3,
+      "question": "A can do a work in 6 days and B in 12 days. They work on alternate days starting with A. In how many days is it finished?",
+      "options": ["A) 6 days", "B) 8 days", "C) 9 days", "D) 10 days"],
+      "correct_option": "B) 8 days",
+      "explanation": "LCM = 12 units. A=2, B=1. 2-day cycle = 3 units. 4 cycles = 8 days."
+    },
+    {
+      "id": 4,
+      "question": "3 men or 6 women can do a work in 20 days. How many days will 1 man and 2 women take to complete it?",
+      "options": ["A) 15 days", "B) 20 days", "C) 30 days", "D) 40 days"],
+      "correct_option": "C) 30 days",
+      "explanation": "3M = 6W => 1M = 2W. Team = 1M + 2W = 4W. 6W take 20 days => 4W take (6 × 20) / 4 = 30 days."
+    },
+    {
+      "id": 5,
+      "question": "A and B together can do a work in 10 days. They work together for 4 days, then B leaves. A finishes remaining work in 9 days. How many days for A alone?",
+      "options": ["A) 12 days", "B) 15 days", "C) 18 days", "D) 20 days"],
+      "correct_option": "B) 15 days",
+      "explanation": "4 days combined work = 4/10 = 2/5. Remaining work = 3/5. A takes 9 days for 3/5 ⇒ A alone = 9 × (5/3) = 15 days."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Joining / Leaving Rule",
+      "back": "Calculate completed work fraction ⇒ Remaining Work = 1 - Completed Work"
+    },
+    {
+      "front": "Wage Distribution Rule",
+      "back": "Wages are divided in exact proportion to work done by each person"
+    },
+    {
+      "front": "Alternate Day Work Cycle",
+      "back": "1 Cycle (2 days) = Work A + Work B ⇒ Total Days = Cycles × 2"
+    },
+    {
+      "front": "Men & Women Equivalence",
+      "back": "Equate (M1 × D1 = M2 × D2) ⇒ Find 1 Man = x Women ratio"
+    },
+    {
+      "front": "Wage Ratio for Equal Days",
+      "back": "Wage A : Wage B = 1/Days_A : 1/Days_B = Days_B : Days_A"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Time & Work Part 2 — Joining, Groups & Wages Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Time & Work Part 2",
+        "children": ["join_leave", "men_women", "wage_dist", "alternate_days"]
+      },
+      {
+        "id": "join_leave",
+        "label": "Joining & Leaving Work",
+        "children": ["rem_work"]
+      },
+      {
+        "id": "rem_work",
+        "label": "Rem Work = 1 - Work Done",
+        "children": []
+      },
+      {
+        "id": "men_women",
+        "label": "Men & Women Group Work",
+        "children": ["eq_rate"]
+      },
+      {
+        "id": "eq_rate",
+        "label": "M1 D1 = M2 D2 ⇒ 1 Man = x Women",
+        "children": []
+      },
+      {
+        "id": "wage_dist",
+        "label": "Wage Distribution",
+        "children": ["wage_rule"]
+      },
+      {
+        "id": "wage_rule",
+        "label": "Wage Ratio = Work Done Ratio",
+        "children": []
+      },
+      {
+        "id": "alternate_days",
+        "label": "Alternate Day Rotation",
+        "children": ["cycle_rule"]
+      },
+      {
+        "id": "cycle_rule",
+        "label": "2-Day Cycle = Rate A + Rate B",
+        "children": []
+      }
+    ]
+  }
+}

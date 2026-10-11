@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "topic_id": "economy_reserve_bank_of_india_part_2",
+    "repository_id": "economy_reserve_bank_of_india",
+    "display_title": "Reserve Bank of India (RBI) – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Reserve Bank of India (RBI)",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Minimum Reserve System",
+    "Section 22 Currency Monopoly",
+    "One Rupee Note Finance Secretary",
+    "Lender of Last Resort Section 18",
+    "FEMA 1999",
+    "Forex Components",
+    "RTGS NEFT"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the legal mechanics of currency issuance and the Minimum Reserve System.",
+        "Comprehend the dual roles of the RBI as banker to governments and banker's bank."
+      ],
+      "ta": [
+        "நாணய வெளியீட்டு சட்ட வழிமுறைகள் மற்றும் குறைந்தபட்ச இருப்பு முறையைப் புரிந்து கொள்ளுதல்.",
+        "அரசாங்கங்களின் வங்கி மற்றும் வங்கிகளின் வங்கியாக ரிசர்வ் வங்கியின் இரட்டைப் பங்கை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the ₹200 crore MRS reserve division (₹115 cr gold, ₹85 cr foreign securities).",
+        "Recall the four components of India's foreign exchange reserves."
+      ],
+      "ta": [
+        "குறைந்தபட்ச இருப்பு முறையின் ₹200 கோடி ஒதுக்கீட்டை நினைவில் நிறுத்துதல் (₹115 கோடி தங்கம், ₹85 கோடி பத்திரங்கள்).",
+        "இந்தியாவின் அந்நியச் செலாவணி இருப்பின் நான்கு கூறுகளை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the historical transition from proportional reserve to the Minimum Reserve System.",
+        "Compare the gross real-time settlement of RTGS with deferred net batching of NEFT."
+      ],
+      "ta": [
+        "விகிதாசார இருப்பிலிருந்து குறைந்தபட்ச இருப்பு முறைக்கான வரலாற்று மாற்றத்தை ஆய்வு செய்தல்.",
+        "RTGS-ன் உடனடி தீர்வு முறையை NEFT-ன் தொகுதி தீர்வு முறையுடன் ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply statutory provisions to distinguish One Rupee notes from other currency notes.",
+        "Identify TNPSC exam traps regarding RTGS limits and currency minting authorities."
+      ],
+      "ta": [
+        "ஒரு ரூபாய் நோட்டை பிற நோட்டுகளிலிருந்து வேறுபடுத்த சட்டப்பூர்வ விதிகளைப் பயன்படுத்துதல்.",
+        "RTGS வரம்புகள் மற்றும் நாணய அச்சிடுதல் குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Reserve Bank of India (RBI) – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_currency_issuance",
+      "title_en": "Monopoly of Currency Issuance & Minimum Reserve System",
+      "title_ta": "நாணய வெளியீட்டுத் தனியுரிமை & குறைந்தபட்ச இருப்பு முறை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_banker_to_gov_and_banks",
+      "title_en": "Banker to Governments & Banker's Bank",
+      "title_ta": "அரசாங்கங்களின் வங்கி & வங்கிகளின் வங்கி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_forex_and_payment_systems",
+      "title_en": "Foreign Exchange Custody & Payment Systems Regulation",
+      "title_ta": "அந்நியச் செலாவணி பாதுகாப்பு & கட்டண முறை ஒழுங்குமுறை",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The core institutional functions of the Reserve Bank of India span currency issuance under the Minimum Reserve System, acting as banker and debt manager to governments, supervising the commercial banking system, serving as the lender of last resort, managing foreign exchange reserves under FEMA, and regulating national payment and settlement systems.",
+      "ta": "இந்திய ரிசர்வ் வங்கியின் முதன்மை நிறுவனப் பணிகள் என்பது குறைந்தபட்ச இருப்பு முறையின் கீழ் நாணய வெளியீடு, அரசுகளுக்கான வங்கி மற்றும் கடன் மேலாளராக செயல்படுதல், வணிக வங்கி அமைப்பை மேற்பார்வையிடுதல், இறுதி நிலை கடன் ஈவோனாக விளங்குதல், FEMA சட்டத்தின் கீழ் அந்நியச் செலாவணி கையிருப்பை நிர்வகித்தல் மற்றும் தேசிய கட்டண தீர்வு அமைப்புகளை ஒழுங்குபடுத்துதல் ஆகியவற்றை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "As India's supreme central bank, the RBI exercises both traditional central banking duties and unique developmental mandates. Under Section 22 of the RBI Act, it holds the monopoly on issuing legal tender currency notes (excluding the one-rupee note), backed since 1956 by the Minimum Reserve System. Simultaneously, under the Banking Regulation Act, 1949, the Foreign Exchange Management Act (FEMA), 1999, and the Payment and Settlement Systems Act, 2007, the RBI safeguards systemic solvency, external liquidity, and national digital financial rails.",
+      "ta": "இந்தியாவின் உச்ச மத்திய வங்கியான ரிசர்வ் வங்கி, பாரம்பரிய மத்திய வங்கிப் பணிகளுடன் தனித்துவமான வளர்ச்சிப் பணிகளையும் மேற்கொள்கிறது. ரிசர்வ் வங்கிச் சட்டம் பிரிவு 22-ன் கீழ், ஒரு ரூபாய் நோட்டு நீங்கலாக பிற நாணய நோட்டுகளை வெளியிடுவதற்கான முழுமையான தனியுரிமையைப் பெற்றுள்ளது; இது 1956 முதல் குறைந்தபட்ச இருப்பு முறையால் (Minimum Reserve System) நிர்வகிக்கப்படுகிறது. அதே நேரத்தில், வங்கி ஒழுங்குமுறைச் சட்டம் 1949, அந்நியச் செலாவணி மேலாண்மைச் சட்டம் (FEMA) 1999 மற்றும் கட்டண மற்றும் தீர்வு அமைப்புகள் சட்டம் 2007 ஆகியவற்றின் கீழ் நிதி அமைப்பின் ஸ்திரத்தன்மை, அந்நியச் செலாவணி மற்றும் டிஜிட்டல் பரிவர்த்தனை உள்கட்டமைப்பைப் பாதுகாக்கிறது."
+    },
+    "sec_currency_issuance": [
+      {
+        "title": "Currency Issuance Monopoly (Section 22)",
+        "title_ta": "நாணய வெளியீட்டுத் தனியுரிமை (பிரிவு 22)",
+        "points": {
+          "en": [
+            "Section 22 of the RBI Act gives the Reserve Bank the sole monopoly to issue banknotes in India.",
+            "Denominations: Banknotes may be issued in denominations of ₹2, ₹5, ₹10, ₹20, ₹50, ₹100, ₹200, ₹500, ₹2000, ₹5000, and ₹10,000, or other denominations specified by Central Government (max limit ₹10,000 under Section 24).",
+            "One Rupee Exception: The One Rupee note and all coins are issued directly by the Ministry of Finance, Government of India. The One Rupee note bears the signature of the Finance Secretary, not the RBI Governor.",
+            "Coins Distribution: Coins of denominations 50 paise, ₹1, ₹2, ₹5, ₹10, and ₹20 are minted by the Government under The Coinage Act, 2011 and distributed solely through the RBI."
+          ],
+          "ta": [
+            "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 22 இந்தியாவில் ரூபாய் நோட்டுகளை வெளியிடுவதற்கான முழுமையான தனியுரிமையை ரிசர்வ் வங்கிக்கு வழங்குகிறது.",
+            "மதிப்புகள்: ₹2, ₹5, ₹10, ₹20, ₹50, ₹100, ₹200, ₹500, ₹2000, ₹5000 மற்றும் ₹10,000 அல்லது அரசால் குறிப்பிடப்படும் பிற மதிப்புகளில் வெளியிடப்படலாம் (பிரிவு 24-ன் கீழ் அதிகபட்ச வரம்பு ₹10,000).",
+            "ஒரு ரூபாய் விதிவிலக்கு: ஒரு ரூபாய் நோட்டு மற்றும் அனைத்து நாணயங்களும் மத்திய நிதி அமைச்சகத்தால் நேரடியாக வெளியிடப்படுகின்றன. ஒரு ரூபாய் நோட்டில் ரிசர்வ் வங்கி ஆளுநரின் கையொப்பம் இருக்காது; மாறாக மத்திய நிதிச் செயலாளரின் கையொப்பம் இருக்கும்.",
+            "நாணயங்கள் விநியோகம்: 2011 நாணயச் சட்டத்தின் கீழ் மத்திய அரசால் அச்சிடப்படும் நாணயங்கள் ரிசர்வ் வங்கி மூலமாக மட்டுமே நாடு முழுவதும் புழக்கத்திற்கு விநியோகிக்கப்படுகின்றன."
+          ]
+        }
+      },
+      {
+        "title": "The Minimum Reserve System (MRS) - 1956",
+        "title_ta": "குறைந்தபட்ச இருப்பு முறை (MRS) - 1956",
+        "points": {
+          "en": [
+            "Proportional Reserve System (Pre-1956): Historically, RBI had to maintain at least 40% of currency backing in gold coin, gold bullion, and foreign securities.",
+            "Shift to MRS in 1956: To fund Second Five Year Plan industrial investments without artificial gold constraints, the Reserve Bank of India (Amendment) Act, 1956 instituted the Minimum Reserve System.",
+            "Statutory Requirement: The Issue Department of the RBI must maintain total backing assets of at least ₹200 crore at all times.",
+            "Asset Composition: Of the ₹200 crore, at least ₹115 crore must be in gold bullion and gold coins, while the remaining ₹85 crore can be in foreign securities.",
+            "Infinite Flexibility: Against this permanent statutory base of ₹200 crore, the RBI can issue an unlimited volume of currency banknotes to meet the expanding transaction needs of the economy."
+          ],
+          "ta": [
+            "விகிதாசார இருப்பு முறை (1956 வரை): வரலாற்று ரீதியாக, ரிசர்வ் வங்கி தான் வெளியிடும் நோட்டுகளுக்கு 40% அளவிற்கு தங்கம் மற்றும் வெளிநாட்டுப் பத்திரங்களை இருப்பாக வைத்திருக்க வேண்டும் என்ற விதி இருந்தது.",
+            "1956-ல் MRS முறைக்கு மாற்றம்: இரண்டாவது ஐந்தாண்டுத் திட்டத்தின் பெரும் தொழில் முதலீடுகளுக்கு நிதி தேவைப்பட்டதால், 1956 திருத்தச் சட்டம் மூலம் குறைந்தபட்ச இருப்பு முறை கொண்டுவரப்பட்டது.",
+            "சட்டப்பூர்வ இருப்பு: ரிசர்வ் வங்கியின் நாணய வெளியீட்டுத் துறை எப்போதும் குறைந்தபட்சம் ₹200 கோடி மதிப்புள்ள சொத்துக்களை இருப்பாக வைத்திருக்க வேண்டும்.",
+            "சொத்து அமைப்பு: இந்த ₹200 கோடியில், குறைந்தது ₹115 கோடி மதிப்புள்ள தங்கம் மற்றும் தங்கக் கட்டிகளாகவும், எஞ்சிய ₹85 கோடி வெளிநாட்டுப் பத்திரங்களாகவும் இருக்க வேண்டும்.",
+            "வரம்பற்ற நெகிழ்வுத்தன்மை: இந்த ₹200 கோடி நிலையான இருப்பை வைத்துக்கொண்டு, பொருளாதாரத்தின் வளர்ச்சித் தேவைக்கு ஏற்ப எவ்வளவு ரூபாய் நோட்டுகளை வேண்டுமானாலும் ரிசர்வ் வங்கியால் அச்சிட முடியும்."
+          ]
+        }
+      }
+    ],
+    "sec_banker_to_gov_and_banks": [
+      {
+        "title": "Banker, Agent and Advisor to Government",
+        "title_ta": "அரசாங்கத்தின் வங்கி, முகவர் மற்றும் ஆலோசகர்",
+        "points": {
+          "en": [
+            "Banker to Union Government: Under Sections 20 and 21 of the RBI Act, the RBI manages the banking transactions, accounts, receipts, and payments of the Central Government.",
+            "Banker to State Governments: Under Section 21A, the RBI transacts banking business for State Governments through mutual bilateral agreements (except historic temporary exceptions).",
+            "Public Debt Management: Floats market loans, Treasury Bills, and dated securities to finance fiscal deficits; manages sovereign domestic borrowing programmes.",
+            "Financial Advisor: Advises Union and State Governments on public finance, market loans, international economic agreements, and foreign exchange matters."
+          ],
+          "ta": [
+            "மத்திய அரசின் வங்கி: ரிசர்வ் வங்கிச் சட்டம் பிரிவுகள் 20 மற்றும் 21-ன் கீழ், மத்திய அரசின் வங்கிப் பரிவர்த்தனைகள், கணக்குகள் மற்றும் கொடுப்பனவுகளை நிர்வகிக்கிறது.",
+            "மாநில அரசுகளின் வங்கி: பிரிவு 21A-ன் கீழ், இருதரப்பு ஒப்பந்தங்களின் மூலம் மாநில அரசுகளின் வங்கிப் பரிவர்த்தனைகளை மேற்கொள்கிறது.",
+            "பொதுக்கடன் மேலாளர்: நிதிப் பற்றாக்குறைக்கு நிதியளிக்க சந்தைக் கடன்கள், கருவூலப் பத்திரங்கள் மற்றும் அரசுப் பத்திரங்களை வெளியிட்டு பொதுக்கடனை நிர்வகிக்கிறது.",
+            "நிதி ஆலோசகர்: பொது நிதி, உள்நாட்டுக் கடன்கள் மற்றும் சர்வதேச நிதி விவகாரங்கள் குறித்து மத்திய மற்றும் மாநில அரசுகளுக்கு ஆலோசனைகளை வழங்குகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Banker's Bank and Lender of Last Resort",
+        "title_ta": "வங்கிகளின் வங்கி மற்றும் இறுதி நிலை கடன் ஈவோன்",
+        "points": {
+          "en": [
+            "Custodian of Cash Reserves: Maintains statutory cash reserve accounts (CRR) of all scheduled commercial banks under Section 42.",
+            "Clearing House Facility: Operates inter-bank clearing houses, settling interbank financial claims and check clearings smoothly.",
+            "Lender of Last Resort (LLR): Provides emergency financial accommodation and liquidity under Section 18 against approved securities to solvent commercial banks facing unexpected liquidity crises, preventing bank runs and systemic financial collapse."
+          ],
+          "ta": [
+            "ரொக்க இருப்புப் பாதுகாவலர்: பிரிவு 42-ன் கீழ் அனைத்து வணிக வங்கிகளின் சட்டப்பூர்வ ரொக்க இருப்பு (CRR) கணக்குகளைப் பராமரிக்கிறது.",
+            "தீர்வு இல்ல வசதி (Clearing House): வங்கிகளுக்கு இடையேயான பணப் பரிவர்த்தனைகள் மற்றும் காசோலைத் தீர்வுகளை சுமூகமாக முடிக்க தீர்வு இல்லங்களை இயக்குகிறது.",
+            "இறுதி நிலை கடன் ஈவோன் (LLR): எதிர்பாராத பணப்புழக்க நெருக்கடியை சந்திக்கும் வணிக வங்கிகளுக்கு பிரிவு 18-ன் கீழ் அவசரகால கடன் வழங்கி, வங்கி அமைப்பில் பீதி மற்றும் முடக்கம் ஏற்படுவதைத் தடுக்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_forex_and_payment_systems": [
+      {
+        "title": "Custodian of Foreign Exchange Reserves (FEMA, 1999)",
+        "title_ta": "அந்நியச் செலாவணி கையிருப்புப் பாதுகாவலர் (FEMA, 1999)",
+        "points": {
+          "en": [
+            "Administers the Foreign Exchange Management Act (FEMA), 1999, which replaced the draconian FERA, 1973.",
+            "Four Components of India's Forex Reserves: (1) Foreign Currency Assets (FCAs - US Dollars, Euros, GBP), (2) Gold Reserves, (3) Special Drawing Rights (SDRs) with the IMF, and (4) Reserve Tranche Position (RTP) in the IMF.",
+            "Intervenes in the foreign exchange market to curb extreme volatility and speculation against the Indian Rupee without defending any predetermined exchange rate level."
+          ],
+          "ta": [
+            "கடுமையான FERA 1973 சட்டத்திற்குப் பதிலாக வந்த அந்நியச் செலாவணி மேலாண்மைச் சட்டத்தை (FEMA, 1999) நிர்வகிக்கிறது.",
+            "இந்தியாவின் அந்நியச் செலாவணி கையிருப்பின் நான்கு கூறுகள்: (1) அந்நிய நாணய சொத்துக்கள் (FCA), (2) தங்கம், (3) சர்வதேச நாணய நிதியத்தின் சிறப்பு எடுப்பு உரிமைகள் (SDR), மற்றும் (4) IMF-ல் உள்ள இருப்பு நிலை (RTP).",
+            "எந்தவொரு குறிப்பிட்ட மாற்று விகிதத்தையும் நிர்ணயிக்காமல், ரூபாய் மதிப்பில் ஏற்படும் அதீத ஊக வணிக வீழ்ச்சியைக் கட்டுப்படுத்த அந்நியச் செலாவணி சந்தையில் தலையிடுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Payment and Settlement Systems Act, 2007",
+        "title_ta": "கட்டண மற்றும் தீர்வு அமைப்புகள் சட்டம், 2007",
+        "points": {
+          "en": [
+            "The Payment and Settlement Systems Act, 2007 designated the RBI as the apex authority for regulating and supervising payment systems in India.",
+            "Owns and operates Real-Time Gross Settlement (RTGS) for high-value transactions and National Electronic Funds Transfer (NEFT) operational 24x7x365.",
+            "Supervises and catalyzed the creation of the National Payments Corporation of India (NPCI) in 2008, which created UPI, RuPay, IMPS, and AePS."
+          ],
+          "ta": [
+            "கட்டண மற்றும் தீர்வு அமைப்புகள் சட்டம் 2007, இந்தியாவில் உள்ள அனைத்து கட்டண அமைப்புகளையும் ஒழுங்குபடுத்தும் உச்ச அதிகார அமைப்பாக ரிசர்வ் வங்கியை நியமித்தது.",
+            "அதிக மதிப்பு பரிவர்த்தனைகளுக்கான RTGS மற்றும் ஆண்டு முழுவதும் 24 மணி நேரமும் இயங்கும் NEFT அமைப்புகளை நேரடியாக இயக்கி நிர்வகிக்கிறது.",
+            "UPI, ரூபே (RuPay), IMPS போன்ற புரட்சிகர கட்டண அமைப்புகளை உருவாக்கிய இந்திய தேசிய கட்டணக் கழகத்தை (NPCI - 2008) மேற்பார்வையிடுகிறது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_proportional_vs_minimum_reserve",
+        "title_en": "Table 1: Note Issuance Evolution: Proportional Reserve vs Minimum Reserve System",
+        "title_ta": "அட்டவணை 1: நாணய வெளியீட்டு முறை மாற்றம்: விகிதாசார இருப்பு vs குறைந்தபட்ச இருப்பு முறை",
+        "headers_en": [
+          "Feature",
+          "Proportional Reserve System (1935-1956)",
+          "Minimum Reserve System (1956-Present)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "விகிதாசார இருப்பு முறை (1935-1956)",
+          "குறைந்தபட்ச இருப்பு முறை (1956 முதல்)"
+        ],
+        "rows_en": [
+          [
+            "Legal Basis",
+            "Section 33 of original RBI Act, 1934",
+            "RBI (Amendment) Act, 1956"
+          ],
+          [
+            "Reserve Backing Rule",
+            "Minimum 40% of total currency notes issued had to be backed by gold and foreign securities",
+            "Fixed statutory reserve of ₹200 crore irrespective of the total volume of currency issued"
+          ],
+          [
+            "Gold Component",
+            "At least ₹40 crore worth of gold coin/bullion out of the 40% proportional backing",
+            "At least ₹115 crore worth of gold bullion/coins within the ₹200 crore permanent corpus"
+          ],
+          [
+            "Foreign Securities Component",
+            "Remained variable and tied proportionally to currency in circulation",
+            "Fixed at ₹85 crore in foreign securities within the permanent corpus"
+          ],
+          [
+            "Note Issuance Elasticity",
+            "Inelastic; currency expansion was constrained by the country's physical gold reserves",
+            "Completely elastic; unlimited currency expansion possible to fund rapid economic growth"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சட்டப்பூர்வ அடிப்படை",
+            "அசல் ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 33",
+            "ரிசர்வ் வங்கி (திருத்தச்) சட்டம், 1956"
+          ],
+          [
+            "இருப்பு விதி",
+            "வெளியிடப்படும் மொத்த நோட்டுகளுக்கு 40% தங்கம் மற்றும் வெளிநாட்டுப் பத்திரங்களை வைத்திருக்க வேண்டும்",
+            "வெளியிடப்படும் நோட்டுகளின் அளவைப் பொருட்படுத்தாமல் ₹200 கோடி நிலையான இருப்பு போதுமானது"
+          ],
+          [
+            "தங்கத்தின் பங்கு",
+            "40% விகிதாசார இருப்பில் குறைந்தது ₹40 கோடி மதிப்புள்ள தங்கம் இருக்க வேண்டும்",
+            "₹200 கோடி நிரந்தர இருப்பில் குறைந்தது ₹115 கோடி தங்கமாக இருக்க வேண்டும்"
+          ],
+          [
+            "வெளிநாட்டுப் பத்திரங்கள்",
+            "புழக்கத்தில் உள்ள பணத்திற்கு ஏற்ப விகிதாசாரமாக மாறிக்கொண்டே இருந்தது",
+            "நிரந்தர இருப்பில் ₹85 கோடி வெளிநாட்டுப் பத்திரங்களாக நிர்ணயிக்கப்பட்டுள்ளது"
+          ],
+          [
+            "பண வெளியீட்டு நெகிழ்வுத்தன்மை",
+            "நெகிழ்வற்றது; நாட்டின் தங்க இருப்பைப் பொறுத்தே புதிய பணத்தை அச்சிட முடிந்தது",
+            "முழுமையான நெகிழ்வுத்தன்மை; பொருளாதார வளர்ச்சிக்கு ஏற்ப வரம்பற்ற பணத்தை வெளியிட முடியும்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_issue_dept_vs_banking_dept",
+        "title_en": "Table 2: Operational Separation: Issue Department vs Banking Department of RBI",
+        "title_ta": "அட்டவணை 2: செயல்பாட்டுப் பிரிவு: நாணய வெளியீட்டுத் துறை vs வங்கித் துறை",
+        "headers_en": [
+          "Dimension",
+          "Issue Department (நாணய வெளியீட்டுத் துறை)",
+          "Banking Department (வங்கித் துறை)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "நாணய வெளியீட்டுத் துறை",
+          "வங்கித் துறை"
+        ],
+        "rows_en": [
+          [
+            "Core Mandate",
+            "Solely responsible for issuing and managing legal tender banknotes",
+            "Transacts general central banking, government accounts, and commercial bank deposits"
+          ],
+          [
+            "Statutory Separation",
+            "Section 23 of RBI Act mandates separate accounts and balance sheets",
+            "Operates separately from Issue Department to maintain strict monetary integrity"
+          ],
+          [
+            "Liabilities Profile",
+            "Total currency notes held by the public and in the Banking Department",
+            "Deposits of Central/State governments, commercial banks, and foreign central banks"
+          ],
+          [
+            "Assets Profile",
+            "Gold coin, gold bullion, foreign securities (min ₹200 cr), rupee securities",
+            "Cash balances, bills purchased/discounted, loans and advances to banks/governments"
+          ],
+          [
+            "Public Interaction",
+            "Manages currency chests and supply of banknotes through banks",
+            "Handles day-to-day fiscal banking disbursements and interbank clearing settlements"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை ஆணை",
+            "நாணய நோட்டுகளை அச்சிடுதல், வெளியிடுதல் மற்றும் மேலாண்மை செய்வதற்கு மட்டுமே பொறுப்பானது",
+            "அரசுகளின் கணக்குகள், பொதுக்கடன் மற்றும் வணிக வங்கிகளின் வைப்புகளை நிர்வகிக்கிறது"
+          ],
+          [
+            "சட்டப்பூர்வப் பிரிவு",
+            "பிரிவு 23 இரண்டு துறைகளுக்கும் தனித்தனி வரவு-செலவு கணக்குகளை கட்டாயமாக்குகிறது",
+            "நாணய வெளியீட்டுத் துறையிலிருந்து நிதித் தன்னாட்சியுடன் தனித்துப் பராமரிக்கப்படுகிறது"
+          ],
+          [
+            "பொறுப்புகள் (Liabilities)",
+            "பொதுமக்களிடமும் வங்கித் துறையிடமும் உள்ள மொத்த ரூபாய் நோட்டுகள்",
+            "மத்திய/மாநில அரசுகள், வணிக வங்கிகள் மற்றும் வெளிநாட்டு மத்திய வங்கிகளின் வைப்புகள்"
+          ],
+          [
+            "சொத்துக்கள் (Assets)",
+            "தங்கம், வெளிநாட்டுப் பத்திரங்கள் (குறைந்தது ₹200 கோடி), இந்திய அரசு கடன் பத்திரங்கள்",
+            "ரொக்க இருப்பு, மறுதள்ளுபடி செய்யப்பட்ட மாற்றுச் சீட்டுகள், அரசுகள் மற்றும் வங்கிகளுக்கு வழங்கிய கடன்கள்"
+          ],
+          [
+            "பொதுப் பரிவர்த்தனை",
+            "வங்கி கஜானாக்கள் (Currency Chests) மூலம் ரூபாய் நோட்டுகளை விநியோகிக்கிறது",
+            "அரசின் அன்றாட வரவு-செலவுகள் மற்றும் வங்கிகளுக்கு இடையேயான தீர்வுகளை மேற்கொள்கிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rtgs_vs_neft",
+        "title_en": "Table 3: Payment Infrastructure: Real-Time Gross Settlement (RTGS) vs NEFT",
+        "title_ta": "அட்டவணை 3: கட்டண உள்கட்டமைப்பு ஒப்பீடு: RTGS vs NEFT",
+        "headers_en": [
+          "Parameter",
+          "Real-Time Gross Settlement (RTGS)",
+          "National Electronic Funds Transfer (NEFT)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "நிகழ்நேர மொத்தத் தீர்வு (RTGS)",
+          "தேசிய மின்னணு நிதி பரிமாற்றம் (NEFT)"
+        ],
+        "rows_en": [
+          [
+            "Settlement Basis",
+            "Continuous order-by-order gross settlement without netting",
+            "Deferred Net Settlement (DNS) in half-hourly batches"
+          ],
+          [
+            "Transaction Value Focus",
+            "High-value transactions only; minimum limit ₹2,00,000",
+            "Retail and corporate transactions; zero minimum or maximum limit"
+          ],
+          [
+            "Operating Hours",
+            "24x7x365 continuous availability (operationalized in Dec 2020)",
+            "24x7x365 continuous availability (operationalized in Dec 2019)"
+          ],
+          [
+            "Governing Regulation",
+            "Payment and Settlement Systems Act, 2007 (RBI owned)",
+            "Payment and Settlement Systems Act, 2007 (RBI owned)"
+          ],
+          [
+            "Settlement Finality",
+            "Instantaneous and irrevocable central bank money settlement",
+            "Settled at the end of each designated 30-minute batch window"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தீர்வு அடிப்படை",
+            "தனித்தனி பரிவர்த்தனையாக உடனுக்குடன் நிகழும் நிகழ்நேர மொத்தத் தீர்வு",
+            "ஒவ்வொரு அரை மணி நேரத்திற்கு ஒருமுறை தொகுப்பாக (Batches) நிகழும் தீர்வு"
+          ],
+          [
+            "பரிவர்த்தனை மதிப்பு",
+            "அதிக மதிப்பு பரிவர்த்தனைகள்; குறைந்தபட்ச வரம்பு ₹2,00,000",
+            "அனைத்து விதமான பரிவர்த்தனைகள்; குறைந்தபட்ச அல்லது அதிகபட்ச வரம்புகள் இல்லை"
+          ],
+          [
+            "செயல்படும் நேரம்",
+            "ஆண்டு முழுவதும் 24 மணி நேரமும் இயங்குகிறது (டிசம்பர் 2020 முதல்)",
+            "ஆண்டு முழுவதும் 24 மணி நேரமும் இயங்குகிறது (டிசம்பர் 2019 முதல்)"
+          ],
+          [
+            "நிர்வகிக்கும் சட்டம்",
+            "கட்டண மற்றும் தீர்வு அமைப்புகள் சட்டம், 2007 (ரிசர்வ் வங்கி)",
+            "கட்டண மற்றும் தீர்வு அமைப்புகள் சட்டம், 2007 (ரிசர்வ் வங்கி)"
+          ],
+          [
+            "தீர்வு வேகம்",
+            "உடனடியானது மற்றும் மாற்ற முடியாத மத்திய வங்கி பணத் தீர்வு",
+            "ஒவ்வொரு 30 நிமிட தொகுதி முடிவிலும் கணக்கில் வரவு வைக்கப்படுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_forex_reserves_four_components",
+        "title_en": "Table 4: Composition Matrix of India's Foreign Exchange Reserves",
+        "title_ta": "அட்டவணை 4: இந்தியாவின் அந்நியச் செலாவணி கையிருப்பின் நான்கு கூறுகளின் ஒப்பீடு",
+        "headers_en": [
+          "Component",
+          "Legal / Institutional Custody",
+          "Nature of Assets",
+          "Share in Total Reserves"
+        ],
+        "headers_ta": [
+          "கூறு",
+          "சட்டப்பூர்வ / நிறுவனப் பாதுகாப்பு",
+          "சொத்துக்களின் தன்மை",
+          "மொத்த இருப்பில் பங்கு"
+        ],
+        "rows_en": [
+          [
+            "Foreign Currency Assets (FCA)",
+            "Held by RBI under Section 17 & 33 of RBI Act",
+            "Multi-currency assets: US Dollars, Euros, GBP, JPY, foreign sovereign bonds",
+            "Largest dominant component (~85% to 88% of total forex reserves)"
+          ],
+          [
+            "Gold Reserves",
+            "Held physically by RBI in domestic vaults and Bank of England",
+            "Physical gold bars, gold bullion, and sovereign gold coin reserves",
+            "Second largest component (~8% to 11% of total forex reserves)"
+          ],
+          [
+            "Special Drawing Rights (SDR)",
+            "Allocated by the International Monetary Fund (IMF)",
+            "International reserve asset based on basket of 5 currencies (USD, EUR, CNY, JPY, GBP)",
+            "Small supplementary component (~2% to 3% of total reserves)"
+          ],
+          [
+            "Reserve Tranche Position (RTP)",
+            "Maintained with the International Monetary Fund (IMF)",
+            "India's unconditional quota subscription reserve line in the IMF",
+            "Smallest component (~0.5% to 1% of total forex reserves)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அந்நிய நாணய சொத்துக்கள் (FCA)",
+            "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 17 & 33-ன் கீழ் ரிசர்வ் வங்கியிடம் உள்ளது",
+            "அமெரிக்க டாலர், யூரோ, பவுண்ட், யென் மற்றும் வெளிநாட்டு அரசுப் பத்திரங்கள்",
+            "மிகப்பெரிய ஆதிக்கக் கூறு (மொத்த அந்நியச் செலாவணியில் ~85% முதல் 88%)"
+          ],
+          [
+            "தங்க இருப்பு",
+            "ரிசர்வ் வங்கியின் சொந்த பெட்டகங்கள் மற்றும் பாங்க் ஆஃப் இங்கிலாந்தில் உள்ளது",
+            "இயற்பியல் தங்கக் கட்டிகள் மற்றும் சர்வதேச தங்கக் கையிருப்புகள்",
+            "இரண்டாவது பெரிய கூறு (மொத்த அந்நியச் செலாவணியில் ~8% முதல் 11%)"
+          ],
+          [
+            "சிறப்பு எடுப்பு உரிமைகள் (SDR)",
+            "சர்வதேச நாணய நிதியத்தால் (IMF) ஒதுக்கீடு செய்யப்படுகிறது",
+            "5 முக்கிய உலக நாணயங்களை (USD, EUR, CNY, JPY, GBP) அடிப்படையாகக் கொண்ட சர்வதேச இருப்பு",
+            "சிறிய துணை கூறு (மொத்த அந்நியச் செலாவணியில் ~2% முதல் 3%)"
+          ],
+          [
+            "இருப்பு நிலை (RTP)",
+            "சர்வதேச நாணய நிதியத்தில் (IMF) பராமரிக்கப்படுகிறது",
+            "IMF-ல் உள்ள இந்தியாவின் நிபந்தனையற்ற சொந்த ஒதுக்கீட்டு இருப்பு",
+            "மிகச்சிறிய கூறு (மொத்த அந்நியச் செலாவணியில் ~0.5% முதல் 1%)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Reserve Bank of India: Core Functions (Part 2)",
+        "short_label": "RBI Functions",
+        "children": [
+          {
+            "title": "Monopoly of Currency Issuance",
+            "short_label": "Currency Issuance",
+            "children": [
+              {
+                "title": "Section 22: Monopoly of Banknotes",
+                "short_label": "Section 22"
+              },
+              {
+                "title": "Minimum Reserve System: ₹200 Cr (₹115 Cr Gold)",
+                "short_label": "MRS 1956"
+              },
+              {
+                "title": "One Rupee Note: Signed by Finance Secretary",
+                "short_label": "One Rupee Note"
+              }
+            ]
+          },
+          {
+            "title": "Banker Roles",
+            "short_label": "Banker Roles",
+            "children": [
+              {
+                "title": "Banker to Union (Sec 20-21) & States (Sec 21A)",
+                "short_label": "Banker to Govt"
+              },
+              {
+                "title": "Banker's Bank & Clearing House",
+                "short_label": "Banker's Bank"
+              },
+              {
+                "title": "Lender of Last Resort (Section 18)",
+                "short_label": "Last Resort"
+              }
+            ]
+          },
+          {
+            "title": "External & Payment Infrastructure",
+            "short_label": "External & Payments",
+            "children": [
+              {
+                "title": "Forex Custody under FEMA 1999 (4 Components)",
+                "short_label": "FEMA Forex"
+              },
+              {
+                "title": "RTGS & NEFT (Payment Systems Act 2007)",
+                "short_label": "RTGS & NEFT"
+              },
+              {
+                "title": "NPCI Supervision (UPI, RuPay)",
+                "short_label": "NPCI"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "One Rupee Note Signature Trap (ஒரு ரூபாய் நோட்டு கையொப்பப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that the RBI Governor signs all currency notes in India including the One Rupee note.",
+            "CORRECT FACT: The One Rupee note is issued by the Ministry of Finance, Government of India, and bears the signature of the Finance Secretary; all other banknotes (₹2 to ₹2000) are signed by the RBI Governor.",
+            "WHY CANDIDATES FAIL: Candidates overgeneralize the Governor's currency signing authority across all paper currency."
+          ],
+          "ta": [
+            "பொறி: ஒரு ரூபாய் நோட்டு உட்பட இந்தியாவில் உள்ள அனைத்து நோட்டுகளிலும் ரிசர்வ் வங்கி ஆளுநர் கையொப்பமிடுகிறார் என நினைப்பது.",
+            "சரியான உண்மை: ஒரு ரூபாய் நோட்டு மத்திய நிதி அமைச்சகத்தால் வெளியிடப்படுகிறது, அதில் மத்திய நிதிச் செயலாளர் கையொப்பமிடுவார்; ₹2 முதல் ₹2000 வரையிலான நோட்டுகளில் மட்டுமே ரிசர்வ் வங்கி ஆளுநர் கையொப்பமிடுகிறார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து ரூபாய் நோட்டுகளையும் ரிசர்வ் வங்கி ஆளுநரே கையொப்பமிடுவார் என பொதுமைப்படுத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Minimum Reserve System Gold Quantum Trap (MRS தங்கத்தின் அளவுப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the ₹200 crore minimum reserve must be held entirely in gold bullion.",
+            "CORRECT FACT: Under the Minimum Reserve System (1956), out of ₹200 crore, at least ₹115 crore must be in gold, while the remaining ₹85 crore is held in foreign securities.",
+            "WHY CANDIDATES FAIL: Candidates recall the total ₹200 crore figure but forget the internal gold/foreign securities statutory division."
+          ],
+          "ta": [
+            "பொறி: குறைந்தபட்ச இருப்பு முறையின் ₹200 கோடி முழுவதுமே தங்கமாக வைத்திருக்க வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: ₹200 கோடியில் குறைந்தபட்சம் ₹115 கோடி தங்கமாகவும், எஞ்சிய ₹85 கோடி வெளிநாட்டுப் பத்திரங்களாகவும் பிரிக்கப்பட்டு பராமரிக்கப்பட வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ₹200 கோடி என்ற மொத்த எண்ணை மட்டும் நினைவில் வைத்துக்கொண்டு, தங்கம்-பத்திர உள் ஒதுக்கீட்டை மறப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Coins Issuance Authority Trap (நாணயங்கள் வெளியிடும் அதிகாரம்)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that the RBI mints and issues coins in India.",
+            "CORRECT FACT: Coins are minted by the Government of India under The Coinage Act, 2011; the RBI acts only as the distribution agency for coins.",
+            "WHY CANDIDATES FAIL: Because coins are supplied through bank branches, candidates assume the central bank mints them."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவில் நாணயங்களை அச்சிட்டு வெளியிடுவது ரிசர்வ் வங்கி என விடையளிப்பது.",
+            "சரியான உண்மை: நாணயங்கள் 2011 நாணயச் சட்டத்தின் கீழ் இந்திய அரசால் அச்சிடப்படுகின்றன; ரிசர்வ் வங்கி அவற்றை பொதுமக்களுக்கு விநியோகிக்கும் முகவராக மட்டுமே செயல்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நாணயங்கள் வங்கிகள் மூலம் புழக்கத்திற்கு வருவதால் ரிசர்வ் வங்கியே அச்சிடுவதாக தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Maximum Legal Denomination Banknote Trap (அதிகபட்ச சட்டப்பூர்வ நோட்டு மதிப்பு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that ₹2000 is the highest denomination banknote the RBI is legally empowered to issue.",
+            "CORRECT FACT: Under Section 24 of the RBI Act, 1934, the RBI can issue banknotes up to a maximum denomination of ₹10,000.",
+            "WHY CANDIDATES FAIL: Candidates confuse currently circulating denominations with the statutory ceiling permitted by law."
+          ],
+          "ta": [
+            "பொறி: சட்டப்படி ரிசர்வ் வங்கி வெளியிடக்கூடிய அதிகபட்ச ரூபாய் நோட்டு ₹2000 மட்டுமே என நினைப்பது.",
+            "சரியான உண்மை: ரிசர்வ் வங்கிச் சட்டம் பிரிவு 24-ன் கீழ், அதிகபட்சமாக ₹10,000 மதிப்புள்ள நோட்டுகளை வெளியிட ரிசர்வ் வங்கிக்கு சட்டப்பூர்வ அதிகாரம் உண்டு.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தற்போது புழக்கத்தில் இருந்த அதிகபட்ச நோட்டை சட்டப்பூர்வ அதிகபட்ச வரம்புடன் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "UPI Ownership Trap (UPI உரிமைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the Unified Payments Interface (UPI) is directly owned and operated by the Reserve Bank of India.",
+            "CORRECT FACT: UPI is owned and operated by the National Payments Corporation of India (NPCI); the RBI is the apex regulator, not the direct operational owner.",
+            "WHY CANDIDATES FAIL: The RBI created and licensed NPCI, leading candidates to conflate regulatory oversight with day-to-day operational ownership."
+          ],
+          "ta": [
+            "பொறி: ஒருங்கிணைந்த கட்டண இடைமுகம் (UPI) நேரடியாக ரிசர்வ் வங்கிக்குச் சொந்தமானது மற்றும் அதனால் இயக்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: UPI-ஐ இந்திய தேசிய கட்டணக் கழகம் (NPCI) சொந்தமாகக் கொண்டு இயக்குகிறது; ரிசர்வ் வங்கி அதன் உச்ச ஒழுங்குமுறை அமைப்பாக மட்டுமே செயல்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: NPCI-ஐ ரிசர்வ் வங்கி ஊக்குவித்ததால் தினசரி நிர்வாக உரிமையையும் ரிசர்வ் வங்கியே வைத்திருப்பதாக தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "RTGS Minimum Limit Trap (RTGS குறைந்தபட்ச வரம்புப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that RTGS can be used for any small amount just like NEFT or UPI.",
+            "CORRECT FACT: RTGS has a statutory minimum transaction floor of ₹2,00,000; transactions below ₹2 lakh must use NEFT or IMPS.",
+            "WHY CANDIDATES FAIL: Both RTGS and NEFT operate 24x7, leading candidates to assume identical transaction limit rules."
+          ],
+          "ta": [
+            "பொறி: NEFT அல்லது UPI போலவே எந்தவொரு சிறிய தொகைக்கும் RTGS-ஐப் பயன்படுத்தலாம் என நினைப்பது.",
+            "சரியான உண்மை: RTGS-ல் பரிவர்த்தனை செய்ய குறைந்தபட்சம் ₹2,00,000 இருக்க வேண்டும்; ₹2 லட்சத்திற்குக் குறைவான தொகைக்கு NEFT அல்லது IMPS பயன்படுத்த வேண்டும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டும் 24 மணி நேரமும் செயல்படுவதால் இரண்டிற்கும் வரம்புகள் ஒரே மாதிரியாக இருக்கும் என தவறாக யூகிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Section 22 of the RBI Act, 1934 grants the RBI the sole monopoly to issue banknotes in India.",
+        "The One Rupee note is issued by the Ministry of Finance and signed by the Finance Secretary of India.",
+        "Under Section 24 of the RBI Act, the highest denomination banknote that can be legally issued is ₹10,000.",
+        "The Minimum Reserve System (MRS) was adopted in 1956, replacing the proportional reserve system.",
+        "Under the MRS, the RBI must maintain a minimum reserve backing of ₹200 crore, of which at least ₹115 crore must be in gold.",
+        "Sections 20 and 21 of the RBI Act mandate the RBI to act as the banker and debt manager to the Central Government.",
+        "Section 21A enables the RBI to act as the banker to State Governments based on mutual bilateral agreements.",
+        "Section 18 of the RBI Act empowers the central bank to act as the 'Lender of Last Resort' to commercial banks.",
+        "The Foreign Exchange Management Act (FEMA), 1999 came into force on June 1, 2000, replacing FERA, 1973.",
+        "India's Foreign Exchange Reserves comprise four elements: Foreign Currency Assets (FCAs), Gold Reserves, SDRs, and RTP in the IMF.",
+        "Real-Time Gross Settlement (RTGS) has a minimum transaction threshold of ₹2,00,000 and became available 24x7x365 in December 2020.",
+        "National Electronic Funds Transfer (NEFT) has no minimum limit and operates 24x7 in half-hourly settlement batches."
+      ],
+      "ta": [
+        "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 22 இந்தியாவில் ரூபாய் நோட்டுகளை வெளியிடும் தனியுரிமையை ரிசர்வ் வங்கிக்கு வழங்குகிறது.",
+        "ஒரு ரூபாய் நோட்டு மத்திய நிதி அமைச்சகத்தால் வெளியிடப்பட்டு, இந்திய நிதிச் செயலாளரால் கையொப்பமிடப்படுகிறது.",
+        "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 24-ன் கீழ் சட்டப்பூர்வமாக வெளியிடக்கூடிய அதிகபட்ச நோட்டு மதிப்பு ₹10,000 ஆகும்.",
+        "விகிதாசார இருப்பு முறைக்கு பதிலாக 1956-ல் குறைந்தபட்ச இருப்பு முறை (MRS) அறிமுகப்படுத்தப்பட்டது.",
+        "MRS முறையின் கீழ் ரிசர்வ் வங்கி ₹200 கோடி இருப்பைப் பராமரிக்க வேண்டும், இதில் குறைந்தது ₹115 கோடி தங்கமாக இருக்க வேண்டும்.",
+        "ரிசர்வ் வங்கிச் சட்டம் பிரிவுகள் 20 மற்றும் 21 மத்திய அரசுக்கான வங்கி மற்றும் கடன் மேலாளராக ரிசர்வ் வங்கி செயல்பட பணிக்கிறது.",
+        "பிரிவு 21A இருதரப்பு ஒப்பந்தங்கள் மூலம் மாநில அரசுகளுக்கு வங்கியாளராக செயல்பட ரிசர்வ் வங்கிக்கு அதிகாரம் அளிக்கிறது.",
+        "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 18 வணிக வங்கிகளுக்கு 'இறுதி நிலை கடன் ஈவோனாக' செயல்பட ரிசர்வ் வங்கிக்கு அதிகாரம் வழங்குகிறது.",
+        "FERA 1973-க்கு பதிலாக அந்நியச் செலாவணி மேலாண்மைச் சட்டம் (FEMA) 1999 ஜூன் 1, 2000 முதல் நடைமுறைக்கு வந்தது.",
+        "இந்தியாவின் அந்நியச் செலாவணி கையிருப்பு நான்கு கூறுகளைக் கொண்டது: அந்நிய நாணய சொத்துக்கள் (FCA), தங்கம், SDR மற்றும் RTP.",
+        "நிகழ்நேர மொத்தத் தீர்வு (RTGS) குறைந்தபட்ச பரிவர்த்தனை வரம்பாக ₹2,00,000 கொண்டுள்ளது; டிசம்பர் 2020 முதல் 24 மணி நேரமும் செயல்படுகிறது.",
+        "தேசிய மின்னணு நிதி பரிமாற்றம் (NEFT) குறைந்தபட்ச வரம்பு ஏதுமின்றி அரை மணி நேரத் தொகுப்புகளாக 24 மணி நேரமும் செயல்படுகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Currency Monopoly (Section 22): RBI issues all banknotes; Government issues One Rupee note and coins.",
+        "One Rupee Note: Signed by Finance Secretary; coins minted under Coinage Act, 2011.",
+        "Maximum Note Denomination: ₹10,000 under Section 24 of the RBI Act.",
+        "Minimum Reserve System (1956): Total ₹200 crore backing; min ₹115 crore gold and ₹85 crore foreign securities.",
+        "Banker to Government: Section 20-21 (Union) and Section 21A (States); manages sovereign debt.",
+        "Lender of Last Resort: Section 18; provides emergency liquidity to solvent scheduled banks.",
+        "FEMA 1999: Replaced FERA 1973; governs civil foreign exchange management.",
+        "Four Forex Pillars: Foreign Currency Assets (FCAs), Gold, SDRs, and Reserve Tranche Position (RTP).",
+        "RTGS Settlement: Real-time gross settlement; minimum ₹2,00,000; 24x7 availability.",
+        "NEFT Settlement: Deferred net settlement in 30-minute batches; no minimum limit; 24x7 availability."
+      ],
+      "ta": [
+        "நாணய தனியுரிமை (பிரிவு 22): ரிசர்வ் வங்கி நோட்டுகளை வெளியிடுகிறது; அரசு 1 ரூபாய் நோட்டு மற்றும் நாணயங்களை வெளியிடுகிறது.",
+        "ஒரு ரூபாய் நோட்டு: நிதிச் செயலாளரால் கையொப்பமிடப்படுகிறது; 2011 நாணயச் சட்டத்தின் கீழ் நாணயங்கள் அச்சிடப்படுகின்றன.",
+        "அதிகபட்ச நோட்டு மதிப்பு: ரிசர்வ் வங்கிச் சட்டம் பிரிவு 24-ன் கீழ் ₹10,000 வரை வெளியிடலாம்.",
+        "குறைந்தபட்ச இருப்பு முறை (1956): ₹200 கோடி மொத்த இருப்பு; குறைந்தது ₹115 கோடி தங்கம், ₹85 கோடி வெளிநாட்டுப் பத்திரங்கள்.",
+        "அரசாங்கத்தின் வங்கி: பிரிவு 20-21 (மத்திய அரசு) மற்றும் பிரிவு 21A (மாநிலங்கள்); பொதுக்கடனை நிர்வகிக்கிறது.",
+        "இறுதி நிலை கடன் ஈவோன்: பிரிவு 18; வணிக வங்கிகளுக்கு அவசரகால பணப்புழக்க கடன் வழங்குகிறது.",
+        "FEMA 1999: FERA 1973-க்கு பதிலாக வந்தது; அந்நியச் செலாவணி மேலாண்மையை நிர்வகிக்கிறது.",
+        "அந்நியச் செலாவணி 4 தூண்கள்: அந்நிய நாணய சொத்துக்கள் (FCA), தங்கம், SDR மற்றும் இருப்பு நிலை (RTP).",
+        "RTGS தீர்வு: நிகழ்நேர மொத்தத் தீர்வு; குறைந்தபட்சம் ₹2,00,000; 24 மணி நேரமும் செயல்படுகிறது.",
+        "NEFT தீர்வு: 30 நிமிட தொகுப்பு தீர்வு; குறைந்தபட்ச வரம்பு இல்லை; 24 மணி நேரமும் செயல்படுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_rbi_201",
+        "front_en": "Whose signature appears on the One Rupee currency note in India?",
+        "front_ta": "இந்தியாவில் ஒரு ரூபாய் நோட்டில் யாருடைய கையொப்பம் இடம்பெற்றுள்ளது?",
+        "back_en": "The Finance Secretary, Ministry of Finance, Government of India.",
+        "back_ta": "மத்திய நிதி அமைச்சகத்தின் நிதிச் செயலாளர் (Finance Secretary)."
+      },
+      {
+        "id": "rc_rbi_202",
+        "front_en": "What is the statutory asset breakdown under the Minimum Reserve System (1956)?",
+        "front_ta": "குறைந்தபட்ச இருப்பு முறையில் (1956) உள்ள சட்டப்பூர்வ சொத்து ஒதுக்கீடு என்ன?",
+        "back_en": "Total ₹200 crore: at least ₹115 crore in gold bullion/coin and ₹85 crore in foreign securities.",
+        "back_ta": "மொத்தம் ₹200 கோடி: குறைந்தது ₹115 கோடி தங்கம் மற்றும் ₹85 கோடி வெளிநாட்டுப் பத்திரங்கள்."
+      },
+      {
+        "id": "rc_rbi_203",
+        "front_en": "What is the maximum legal denomination of a banknote permitted under Section 24 of the RBI Act?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 24-ன் கீழ் சட்டப்பூர்வமாக வெளியிடக்கூடிய அதிகபட்ச நோட்டு மதிப்பு என்ன?",
+        "back_en": "₹10,000.",
+        "back_ta": "₹10,000."
+      },
+      {
+        "id": "rc_rbi_204",
+        "front_en": "Under which section of the RBI Act does the RBI act as the Lender of Last Resort?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டத்தின் எந்தப் பிரிவின் கீழ் ரிசர்வ் வங்கி 'இறுதி நிலை கடன் ஈவோனாக' செயல்படுகிறது?",
+        "back_en": "Section 18 of the RBI Act, 1934.",
+        "back_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 18."
+      },
+      {
+        "id": "rc_rbi_205",
+        "front_en": "What is the minimum transaction threshold for using Real-Time Gross Settlement (RTGS)?",
+        "front_ta": "நிகழ்நேர மொத்தத் தீர்வைப் (RTGS) பயன்படுத்துவதற்கான குறைந்தபட்ச பரிவர்த்தனை வரம்பு என்ன?",
+        "back_en": "₹2,00,000.",
+        "back_ta": "₹2,00,000."
+      },
+      {
+        "id": "rc_rbi_206",
+        "front_en": "In which year was the Minimum Reserve System adopted by the RBI?",
+        "front_ta": "ரிசர்வ் வங்கியால் குறைந்தபட்ச இருப்பு முறை எந்த ஆண்டில் ஏற்றுக்கொள்ளப்பட்டது?",
+        "back_en": "1956 (replacing the proportional reserve system).",
+        "back_ta": "1956 (விகிதாசார இருப்பு முறைக்கு பதிலாக)."
+      },
+      {
+        "id": "rc_rbi_207",
+        "front_en": "Which statute empowers the RBI to manage foreign exchange reserves in India?",
+        "front_ta": "இந்தியாவில் அந்நியச் செலாவணி கையிருப்பை நிர்வகிக்க ரிசர்வ் வங்கிக்கு அதிகாரம் அளிக்கும் சட்டம் எது?",
+        "back_en": "Foreign Exchange Management Act (FEMA), 1999.",
+        "back_ta": "அந்நியச் செலாவணி மேலாண்மைச் சட்டம் (FEMA), 1999."
+      },
+      {
+        "id": "rc_rbi_208",
+        "front_en": "Name the four distinct components of India's Foreign Exchange Reserves.",
+        "front_ta": "இந்தியாவின் அந்நியச் செலாவணி கையிருப்பின் நான்கு தனித்துவமான கூறுகளைக் குறிப்பிடுக.",
+        "back_en": "(1) Foreign Currency Assets (FCAs), (2) Gold, (3) Special Drawing Rights (SDRs), and (4) Reserve Tranche Position (RTP).",
+        "back_ta": "(1) அந்நிய நாணய சொத்துக்கள் (FCA), (2) தங்கம், (3) சிறப்பு எடுப்பு உரிமைகள் (SDR), மற்றும் (4) இருப்பு நிலை (RTP)."
+      },
+      {
+        "id": "rc_rbi_209",
+        "front_en": "Under which section does the RBI act as the banker to State Governments?",
+        "front_ta": "ரிசர்வ் வங்கி எந்தப் பிரிவின் கீழ் மாநில அரசுகளுக்கான வங்கியாளராக செயல்படுகிறது?",
+        "back_en": "Section 21A of the RBI Act, 1934.",
+        "back_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 21A."
+      },
+      {
+        "id": "rc_rbi_210",
+        "front_en": "Under which act are coins minted in India?",
+        "front_ta": "இந்தியாவில் நாணயங்கள் எந்தச் சட்டத்தின் கீழ் அச்சிடப்படுகின்றன?",
+        "back_en": "The Coinage Act, 2011 (minted by the Government of India).",
+        "back_ta": "நாணயச் சட்டம், 2011 (மத்திய அரசால் அச்சிடப்படுகிறது)."
+      },
+      {
+        "id": "rc_rbi_211",
+        "front_en": "Which entity owns and operates the Unified Payments Interface (UPI)?",
+        "front_ta": "ஒருங்கிணைந்த கட்டண இடைமுகத்தை (UPI) சொந்தமாகக் கொண்டு இயக்குவது எந்த அமைப்பு?",
+        "back_en": "National Payments Corporation of India (NPCI).",
+        "back_ta": "இந்திய தேசிய கட்டணக் கழகம் (NPCI)."
+      },
+      {
+        "id": "rc_rbi_212",
+        "front_en": "What is the primary difference in batch processing between RTGS and NEFT?",
+        "front_ta": "RTGS மற்றும் NEFT பரிவர்த்தனை செயலாக்கத்தில் உள்ள முக்கிய வேறுபாடு என்ன?",
+        "back_en": "RTGS settles transactions individually in real-time; NEFT settles transactions in 30-minute deferred net batches.",
+        "back_ta": "RTGS உடனுக்குடன் தனித்தனியாகத் தீர்வு செய்கிறது; NEFT 30 நிமிட தொகுதி அடிப்படையில் தீர்வு செய்கிறது."
+      }
+    ]
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "meta": {
+    "topic_id": "economy_reserve_bank_of_india_part_3",
+    "repository_id": "economy_reserve_bank_of_india",
+    "display_title": "Reserve Bank of India (RBI) – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Reserve Bank of India (RBI)",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Banking Regulation Act Section 22",
+    "Section 36AAA Board Supersession",
+    "Prompt Corrective Action PCA",
+    "Section 7 RBI Act Autonomy",
+    "Bimal Jalan Committee",
+    "Economic Capital Framework",
+    "Board for Financial Supervision BFS"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the regulatory powers under the Banking Regulation Act (licensing, supersession, amalgamation).",
+        "Comprehend the economic rationale of the Prompt Corrective Action (PCA) framework."
+      ],
+      "ta": [
+        "வங்கி ஒழுங்குமுறைச் சட்டத்தின் கீழான அதிகாரங்களைப் புரிந்து கொள்ளுதல் (உரிமம், வாரியக் கலைப்பு, இணைப்பு).",
+        "உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பின் பொருளாதார காரணங்களை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize Section 7 of the RBI Act and the Bimal Jalan CRB range (5.5% to 6.5%).",
+        "Recall the three triggers of the 2021 PCA framework (CRAR, Net NPA, Leverage Ratio)."
+      ],
+      "ta": [
+        "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 7 மற்றும் பிமல் ஜலான் CRB வரம்பை (5.5% முதல் 6.5%) நினைவில் நிறுத்துதல்.",
+        "2021 PCA கட்டமைப்பின் மூன்று அளவுகோல்களை நினைவுகூருதல் (CRAR, Net NPA, Leverage Ratio)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the constitutional tension between central bank operational autonomy and Section 7 sovereign directives.",
+        "Evaluate the Bimal Jalan Economic Capital Framework for surplus dividend transfers."
+      ],
+      "ta": [
+        "மத்திய வங்கி தன்னாட்சிக்கும் பிரிவு 7 அரசாங்க உத்தரவுகளுக்கும் இடையிலான உறவை ஆய்வு செய்தல்.",
+        "உபரி மூலதனப் பகிர்வுக்கான பிமல் ஜலான் பொருளாதார மூலதனக் கட்டமைப்பை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply PCA rules to identify mandatory vs discretionary sanctions on distressed financial institutions.",
+        "Identify high-yield TNPSC traps regarding Section 7 history and RoA omission in PCA."
+      ],
+      "ta": [
+        "பாதிக்கப்பட்ட நிதி நிறுவனங்கள் மீதான கட்டாய மற்றும் விருப்பத் தடைகளை அடையாளம் காண PCA விதிகளைப் பயன்படுத்துதல்.",
+        "பிரிவு 7 வரலாறு மற்றும் PCA-ல் RoA நீக்கம் குறித்த TNPSC தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Reserve Bank of India (RBI) – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_regulatory_supervisory_powers",
+      "title_en": "Supervisory Powers under the Banking Regulation Act, 1949",
+      "title_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் கீழான மேற்பார்வை அதிகாரங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_pca_framework",
+      "title_en": "The Prompt Corrective Action (PCA) Framework",
+      "title_ta": "உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_section7_and_bimal_jalan",
+      "title_en": "Section 7 Controversy & Economic Capital Framework (Bimal Jalan Committee)",
+      "title_ta": "பிரிவு 7 சர்ச்சை & பொருளாதார மூலதனக் கட்டமைப்பு (பிமல் ஜலான் குழு)",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Advanced Central Banking examines the RBI's extensive regulatory oversight under the Banking Regulation Act, 1949, the Prompt Corrective Action (PCA) framework, central bank independence debates surrounding Section 7 of the RBI Act, the Economic Capital Framework (ECF) under the Bimal Jalan Committee, and comprehensive exam mastery.",
+      "ta": "மேம்பட்ட மத்திய வங்கிப் பொருளியல் என்பது வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் கீழான ரிசர்வ் வங்கியின் தீவிர கண்காணிப்பு அதிகாரங்கள், உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பு, ரிசர்வ் வங்கிச் சட்டம் பிரிவு 7 சார்ந்த மத்திய வங்கி தன்னாட்சி விவாதங்கள், பிமல் ஜலான் குழுவின் பொருளாதார மூலதனக் கட்டமைப்பு (ECF) மற்றும் தேர்வுக்கான முழுமையான உயர்-மதிப்பு அறிவை ஆராய்கிறது."
+    },
+    "introduction": {
+      "en": "In the TNPSC Group 1 syllabus, mastery of the RBI requires navigating the regulatory and constitutional interface between the central bank and the sovereign government. Key application domains include the board supersession and licensing powers under the Banking Regulation Act, the triggers and mandatory restrictions of the Prompt Corrective Action (PCA) framework, the contentious history of Section 7 directives, and the surplus capital transfer formulas established by the Bimal Jalan Committee in 2019 to balance sovereign fiscal needs with central bank balance sheet resilience.",
+      "ta": "TNPSC குரூப் 1 பாடத்திட்டத்தில், ரிசர்வ் வங்கியில் தேர்ச்சி பெறுவது என்பது மத்திய வங்கிக்கும் அரசாங்கத்திற்கும் இடையிலான ஒழுங்குமுறை மற்றும் அரசியலமைப்பு உறவைப் புரிந்து கொள்வதைக் கோருகிறது. வங்கி ஒழுங்குமுறைச் சட்டத்தின் கீழ் உரிமம் வழங்குதல் மற்றும் நிர்வாகக் குழுவைக் கலைக்கும் அதிகாரங்கள், உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பின் தூண்டுதல்கள் மற்றும் தடைகள், பிரிவு 7 உத்தரவுகளின் சர்ச்சை வரலாறு மற்றும் மத்திய வங்கியின் இருப்புநிலைப் பாதுகாப்போடு அரசின் நிதித் தேவையை சமன்படுத்திய 2019 பிமல் ஜலான் குழுவின் மூலதனப் பகிர்வு சூத்திரம் ஆகியவை இதில் முதன்மை பெறுகின்றன."
+    },
+    "sec_regulatory_supervisory_powers": [
+      {
+        "title": "Licensing and Branch Expansion (Section 22 & 23)",
+        "title_ta": "வங்கி உரிமம் மற்றும் கிளை விரிவாக்கம் (பிரிவுகள் 22 & 23)",
+        "points": {
+          "en": [
+            "Section 22 of the Banking Regulation Act, 1949: Mandatory for any entity to obtain a banking license from the RBI before commencing commercial banking operations in India.",
+            "Section 23: Prior permission of the RBI is required to open new branches, shift existing places of business, or expand banking presence overseas.",
+            "Fit and Proper Criteria: RBI vets the promoters and voting rights under the Banking Regulation Act to prevent corporate monopolies from hijacking commercial bank credit."
+          ],
+          "ta": [
+            "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 22: இந்தியாவில் வணிக வங்கிப் பணிகளைத் தொடங்குவதற்கு முன் ரிசர்வ் வங்கியிடமிருந்து உரிமம் பெறுவது கட்டாயமாகும்.",
+            "பிரிவு 23: புதிய கிளைகளைத் திறக்கவோ, வணிக இடத்தை மாற்றவோ அல்லது வெளிநாடுகளில் கிளைகளை விரிவாக்கவோ ரிசர்வ் வங்கியின் முன் அனுமதி தேவை.",
+            "தகுதி அளவுகோல்: கார்ப்பரேட் நிறுவனங்கள் வங்கி நிதியை தங்களது சொந்த நலனுக்குத் தவறாகப் பயன்படுத்துவதைத் தடுக்க நிர்வாகிகளின் தகுதியை ரிசர்வ் வங்கி தீவிரமாக ஆய்வு செய்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Management Removal and Board Supersession",
+        "title_ta": "நிர்வாக நீக்கம் மற்றும் வாரியக் கலைப்பு அதிகாரங்கள்",
+        "points": {
+          "en": [
+            "Section 36AA: Empowers the RBI to remove the Chairman, Managing Director, CEO, or any Director of a banking company if their conduct is detrimental to depositors' interests.",
+            "Section 36AAA: Empowers the RBI to supersede the entire Board of Directors of a commercial bank for up to 12 months (extendable) and appoint an Administrator (e.g., Yes Bank in 2020).",
+            "Compulsory Amalgamation (Section 45): The RBI can prepare a scheme of compulsory amalgamation or reconstruction of a failing bank in the public interest without requiring shareholder consent."
+          ],
+          "ta": [
+            "பிரிவு 36AA: வங்கியின் தலைவர், மேலாண் இயக்குநர், தலைமைச் செயல் அதிகாரி அல்லது இயக்குநர்களின் செயல்பாடு வைப்பாளர்களின் நலனுக்கு எதிராக இருந்தால் அவர்களைப் பதவியிலிருந்து நீக்க ரிசர்வ் வங்கிக்கு அதிகாரம் உண்டு.",
+            "பிரிவு 36AAA: ஒரு வங்கியின் ஒட்டுமொத்த இயக்குநர் குழுவையும் 12 மாதங்கள் வரை கலைத்துவிட்டு, நிர்வாக அதிகாரியை (Administrator) நியமிக்க அதிகாரம் அளிக்கிறது (எ.கா: 2020-ல் எஸ் வங்கி).",
+            "கட்டாய வங்கி இணைப்பு (பிரிவு 45): தோல்வியடையும் வங்கியைப் பொது நலன் கருதி மற்றொரு வங்கியுடன் கட்டாயமாக இணைக்கும் திட்டத்தை பங்குதாரர்களின் ஒப்புதல் இன்றியே ரிசர்வ் வங்கியால் செயல்படுத்த முடியும்."
+          ]
+        }
+      }
+    ],
+    "sec_pca_framework": [
+      {
+        "title": "Concept and Trigger Parameters",
+        "title_ta": "கருத்து மற்றும் கண்காணிப்பு அளவுகோல்கள்",
+        "points": {
+          "en": [
+            "Origin: Introduced by the RBI in December 2002 (based on US FDIC model) to intervene early when commercial banks breach safety thresholds.",
+            "Three Core Trigger Indicators: (1) Capital to Risk-weighted Assets Ratio (CRAR) / Common Equity Tier 1 (CET1), (2) Net Non-Performing Assets (Net NPA) ratio, and (3) Tier 1 Leverage Ratio.",
+            "Revision in 2021: Return on Assets (RoA) was removed as a primary trigger, and the framework was extended to Non-Banking Financial Companies (NBFCs) effective October 2022."
+          ],
+          "ta": [
+            "தோற்றம்: வங்கிகள் நிதிப் பாதுகாப்பு வரம்புகளை மீறும் போது ஆரம்ப நிலையிலேயே தலையிட டிசம்பர் 2002-ல் ரிசர்வ் வங்கியால் அறிமுகப்படுத்தப்பட்டது.",
+            "மூன்று முக்கிய அளவுகோல்கள்: (1) இடர்-எடையிடப்பட்ட சொத்துக்களின் மூலதன விகிதம் (CRAR) / CET1, (2) நிகர வாராக் கடன் விகிதம் (Net NPA), மற்றும் (3) அடுக்கு 1 அந்நியக் கடன் விகிதம் (Leverage Ratio).",
+            "2021 சீர்திருத்தம்: சொத்து மீதான வருவாய் (RoA) தூண்டுதல் பட்டியலிலிருந்து நீக்கப்பட்டது; அக்டோபர் 2022 முதல் NBFC நிறுவனங்களுக்கும் இக்கட்டமைப்பு விரிவுபடுத்தப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Mandatory and Discretionary Restrictions",
+        "title_ta": "கட்டாய மற்றும் விருப்பத் தடைகள்",
+        "points": {
+          "en": [
+            "Mandatory Restrictions: Banks under PCA are strictly prohibited from distributing dividends, remitting profits overseas, and expanding their domestic or international branch networks.",
+            "Discretionary Restrictions: RBI may impose caps on lending to high-risk sectors, restrict high-cost bulk deposits, mandate higher credit provisioning, or enforce staff recruitment freezes.",
+            "Exit Condition: A bank is removed from PCA only after demonstrating sustained improvement across all three parameters in four consecutive quarters."
+          ],
+          "ta": [
+            "கட்டாயத் தடைகள்: PCA-ன் கீழ் உள்ள வங்கிகள் பங்குதாரர்களுக்கு ஈவுத்தொகை வழங்கவோ, புதிய கிளைகளைத் திறக்கவோ, வெளிநாடுகளுக்கு லாபத்தை அனுப்பவோ முழுமையாகத் தடை செய்யப்படுகின்றன.",
+            "விருப்பத் தடைகள்: அதிக இடர் கொண்ட துறைகளுக்கு கடன் வழங்குவதைக் கட்டுப்படுத்துதல், அதிக வட்டி வைப்புகளைத் தடுத்தல் மற்றும் புதிய பணியாளர்கள் நியமனத்தை முடக்குதல்.",
+            "வெளியேறும் நிபந்தனை: தொடர்ச்சியாக நான்கு காலாண்டுகளுக்கு மூன்று அளவுகோல்களிலும் நிலையான முன்னேற்றத்தை நிரூபித்தால் மட்டுமே ஒரு வங்கி PCA-விலிருந்து விடுவிக்கப்படும்."
+          ]
+        }
+      }
+    ],
+    "sec_section7_and_bimal_jalan": [
+      {
+        "title": "Section 7 of the RBI Act, 1934 (Central Bank Autonomy)",
+        "title_ta": "ரிசர்வ் வங்கிச் சட்டம் பிரிவு 7 (மத்திய வங்கி தன்னாட்சி)",
+        "points": {
+          "en": [
+            "Text: Section 7(1) states that the Central Government may from time to time give such directions to the Bank as it may, after consultation with the Governor of the Bank, consider necessary in the public interest.",
+            "Historical Rarity: Never formally invoked in the first 84 years of the RBI's existence until threatened consultations in late 2018 over PCA norms, MSME loan restructuring, and transfer of surplus capital.",
+            "Constitutional Nuance: While the RBI enjoys operational autonomy, Section 7 proves that sovereign authority ultimately resides with the elected Parliament and Government."
+          ],
+          "ta": [
+            "விதி: பிரிவு 7(1)-ன் படி, மத்திய அரசு பொது நலன் கருதி அவசியமெனக் கருதினால், ரிசர்வ் வங்கி ஆளுநருடன் கலந்தாலோசித்த பிறகு அவ்வப்போது உத்தரவுகளைப் பிறப்பிக்கலாம்.",
+            "வரலாற்று அரிதான நிகழ்வு: 2018 வரை ரிசர்வ் வங்கியின் 84 ஆண்டு வரலாற்றில் இந்த அதிகாரம் ஒருமுறை கூடப் பயன்படுத்தப்படவில்லை; 2018-ல் PCA தளர்வு மற்றும் மூலதனப் பகிர்வு சர்ச்சையின் போது ஆலோசிக்கப்பட்டது.",
+            "அரசியலமைப்பு நுணுக்கம்: ரிசர்வ் வங்கி செயல்பாட்டு தன்னாட்சியை அனுபவித்தாலும், இறுதி இறையாண்மை அதிகாரம் மக்களால் தேர்ந்தெடுக்கப்பட்ட நாடாளுமன்றம் மற்றும் அரசிடமே உள்ளது என்பதை பிரிவு 7 காட்டுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Bimal Jalan Committee on Economic Capital Framework (2019)",
+        "title_ta": "பிமல் ஜலான் குழுவின் பொருளாதார மூலதனக் கட்டமைப்பு (2019)",
+        "points": {
+          "en": [
+            "Appointed in December 2018 under former RBI Governor Bimal Jalan to review the appropriate reserves and surplus capital the RBI should maintain.",
+            "Contingency Risk Buffer (CRB): Recommended that the CRB (to cover monetary, financial stability, and operational risks) should be maintained within a range of 5.5% to 6.5% of the RBI's balance sheet.",
+            "Surplus Capital Distribution: If realized equity exceeds the 6.5% upper limit, the entire excess must be transferred to the Government; if within 5.5% to 6.5%, the Central Board decides.",
+            "Historic Transfer: In August 2019, following Jalan's recommendations, the Central Board approved an unprecedented transfer of ₹1,76,051 crore to the Government of India."
+          ],
+          "ta": [
+            "ரிசர்வ் வங்கி வைத்திருக்க வேண்டிய உகந்த கையிருப்பு மற்றும் உபரி மூலதனத்தை மறுஆய்வு செய்ய டிசம்பர் 2018-ல் முன்னாள் ஆளுநர் பிமல் ஜலான் தலைமையில் அமைக்கப்பட்டது.",
+            "தற்செயல் இடர் தாங்கல் (CRB): சந்தை மற்றும் நிதி ஸ்திரத்தன்மை இடர்களைச் சமாளிக்க CRB இருப்பு ரிசர்வ் வங்கியின் வரவு-செலவு கணக்கில் 5.5% முதல் 6.5% வரை பராமரிக்கப்பட வேண்டும் எனப் பரிந்துரைத்தது.",
+            "உபரி மூலதனப் பகிர்வு: மூலதன இருப்பு 6.5% உச்சவரம்பை விட அதிகமாக இருந்தால், அந்த கூடுதல் உபரித் தொகை முழுவதும் மத்திய அரசுக்கு மாற்றப்பட வேண்டும்.",
+            "வரலாற்றுப் பகிர்வு: ஆகஸ்ட் 2019-ல், இக்குழுவின் பரிந்துரையை ஏற்று ₹1,76,051 கோடி உபரித் தொகையை மத்திய அரசுக்கு வழங்க ரிசர்வ் வங்கி ஒப்புதல் அளித்தது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_rbi_act_vs_banking_regulation_act",
+        "title_en": "Table 1: Dual Statutory Pillars: RBI Act, 1934 vs Banking Regulation Act, 1949",
+        "title_ta": "அட்டவணை 1: இரட்டைச் சட்டத் தூண்கள்: ரிசர்வ் வங்கிச் சட்டம், 1934 vs வங்கி ஒழுங்குமுறைச் சட்டம், 1949",
+        "headers_en": [
+          "Dimension",
+          "Reserve Bank of India Act, 1934",
+          "Banking Regulation Act, 1949"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "இந்திய ரிசர்வ் வங்கிச் சட்டம், 1934",
+          "வங்கி ஒழுங்குமுறைச் சட்டம், 1949"
+        ],
+        "rows_en": [
+          [
+            "Primary Purpose",
+            "Constitution, governance, currency issue, and monetary powers of the central bank",
+            "Regulation, licensing, supervision, and winding up of commercial and cooperative banks"
+          ],
+          [
+            "Reserve Requirement",
+            "Governs Cash Reserve Ratio (CRR) under Section 42(1)",
+            "Governs Statutory Liquidity Ratio (SLR) under Section 24"
+          ],
+          [
+            "Core Focus Entity",
+            "Directly governs the Reserve Bank of India as an apex statutory body",
+            "Directly governs commercial, public sector, private, and scheduled cooperative banks"
+          ],
+          [
+            "Supervisory Powers",
+            "Monetary authority, OMOs, currency monopoly, lender of last resort",
+            "Bank licensing, board supersession, management removal, merger, inspections"
+          ],
+          [
+            "Enactment Context",
+            "Colonial central bank setup following Hilton Young Commission in 1934",
+            "Post-independence framework enacted in 1949 to prevent rampant private bank failures"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "மத்திய வங்கியின் அமைப்பு, ஆளுகை, நாணய வெளியீடு மற்றும் பணவியல் அதிகாரங்கள்",
+            "வணிக மற்றும் கூட்டுறவு வங்கிகளின் ஒழுங்குமுறை, உரிமம், மேற்பார்வை மற்றும் இணைப்பு"
+          ],
+          [
+            "இருப்புத் தேவை",
+            "பிரிவு 42(1)-ன் கீழ் ரொக்க இருப்பு விகிதத்தை (CRR) நிர்வகிக்கிறது",
+            "பிரிவு 24-ன் கீழ் சட்டப்பூர்வ பணப்புழக்க விகிதத்தை (SLR) நிர்வகிக்கிறது"
+          ],
+          [
+            "கவன நிறுவனம்",
+            "உச்ச சட்டப்பூர்வ அமைப்பான இந்திய ரிசர்வ் வங்கியை நேரடியாக நிர்வகிக்கிறது",
+            "வணிக வங்கிகள், பொதுத்துறை, தனியார் மற்றும் கூட்டுறவு வங்கிகளை நேரடியாகக் கட்டுப்படுத்துகிறது"
+          ],
+          [
+            "மேற்பார்வை அதிகாரங்கள்",
+            "பணவியல் கொள்கை, OMO, நாணய தனியுரிமை, இறுதி நிலை கடன் ஈவோன்",
+            "வங்கி உரிமம், வாரியக் கலைப்பு, நிர்வாக நீக்கம், தணிக்கை மற்றும் கட்டாய இணைப்புகள்"
+          ],
+          [
+            "இயற்றப்பட்ட சூழல்",
+            "ஹில்டன் யங் கமிஷன் அறிக்கைக்குப் பின் 1934-ல் உருவாக்கப்பட்ட காலனித்துவ சட்டம்",
+            "சுதந்திரத்திற்குப் பின் 1949-ல் தனியார் வங்கிகள் திவளாவதைத் தடுக்க கொண்டுவரப்பட்ட சட்டம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pca_three_risk_thresholds",
+        "title_en": "Table 2: Prompt Corrective Action (PCA) Risk Threshold Matrix",
+        "title_ta": "அட்டவணை 2: உடனடி சீர்திருத்த நடவடிக்கை (PCA) இடர் வரம்புகளின் ஒப்பீடு",
+        "headers_en": [
+          "Risk Threshold Level",
+          "Capital Metric Trigger (CRAR / CET1)",
+          "Net NPA Ratio Trigger",
+          "Mandatory Sanctions Imposed"
+        ],
+        "headers_ta": [
+          "இடர் வரம்பு நிலை",
+          "மூலதன அளவுகோல் தூண்டுதல் (CRAR / CET1)",
+          "நிகர வாராக் கடன் விகிதம் (Net NPA)",
+          "விதிக்கப்படும் கட்டாயத் தடைகள்"
+        ],
+        "rows_en": [
+          [
+            "Threshold 1 (Mild Stress)",
+            "Breach of capital conservation buffer; CRAR below mandated floor",
+            "Net NPA ratio between 6.0% and 9.0%",
+            "Restriction on dividend distribution; domestic profit repatriation barred"
+          ],
+          [
+            "Threshold 2 (Moderate Stress)",
+            "CRAR falls further below minimum regulatory requirement",
+            "Net NPA ratio between 9.0% and 12.0%",
+            "Threshold 1 curbs PLUS complete freeze on branch expansion"
+          ],
+          [
+            "Threshold 3 (Severe Stress)",
+            "Severe capital erosion; significant breach of CET1 ratio",
+            "Net NPA ratio breaches 12.0%",
+            "Threshold 1 & 2 curbs PLUS caps on director compensation and management restrictions"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரம்பு 1 (குறைந்த அழுத்தம்)",
+            "மூலதன பாதுகாப்பு தாங்கல் மீறல்; CRAR தேவையான வரம்பிற்குக் கீழே செல்லுதல்",
+            "நிகர வாராக் கடன் விகிதம் 6.0% முதல் 9.0% வரை இருத்தல்",
+            "பங்குதாரர்களுக்கு ஈவுத்தொகை வழங்கத் தடை; வெளிநாட்டிற்கு லாபம் அனுப்பத் தடை"
+          ],
+          [
+            "வரம்பு 2 (மிதமான அழுத்தம்)",
+            "CRAR விகிதம் அனுமதிக்கப்பட்ட குறைந்தபட்ச ஒழுங்குமுறை அளவிற்கு கீழே சரிவு",
+            "நிகர வாராக் கடன் விகிதம் 9.0% முதல் 12.0% வரை இருத்தல்",
+            "வரம்பு 1 தடைகளுடன் புதிய கிளைகளைத் திறப்பதற்கு முழுமையான முடக்கம்"
+          ],
+          [
+            "வரம்பு 3 (கடுமையான அழுத்தம்)",
+            "கடுமையான மூலதன அரிப்பு; CET1 விகிதத்தில் மிகப்பெரிய வீழ்ச்சி",
+            "நிகர வாராக் கடன் விகிதம் 12.0%-ஐத் தாண்டுதல்",
+            "வரம்பு 1 & 2 தடைகளுடன் இயக்குநர்களின் ஊதியக் கட்டுப்பாடு மற்றும் மேலாண்மைத் தடைகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_committees_on_rbi_reforms",
+        "title_en": "Table 3: Milestone Expert Committees on RBI & Banking Governance",
+        "title_ta": "அட்டவணை 3: ரிசர்வ் வங்கி மற்றும் வங்கி ஆளுகை குறித்த முக்கிய நிபுணர் குழுக்கள்",
+        "headers_en": [
+          "Committee Name",
+          "Year",
+          "Chairman",
+          "Landmark Recommendation / Reform"
+        ],
+        "headers_ta": [
+          "குழுவின் பெயர்",
+          "ஆண்டு",
+          "தலைவர்",
+          "வரலாற்றுச் சிறப்புமிக்க பரிந்துரை / சீர்திருத்தம்"
+        ],
+        "rows_en": [
+          [
+            "Hilton Young Commission",
+            "1926",
+            "Edward Hilton Young",
+            "Creation of the Reserve Bank of India as a separate central bank"
+          ],
+          [
+            "Narasimham Committee I",
+            "1991",
+            "M. Narasimham",
+            "Reduction of high CRR and SLR, introduction of prudential asset classification and 8% CRAR"
+          ],
+          [
+            "Narasimham Committee II",
+            "1998",
+            "M. Narasimham",
+            "Banking sector consolidation, asset reconstruction companies (ARCs), and capital adequacy tightening"
+          ],
+          [
+            "Urjit Patel Committee",
+            "2014",
+            "Dr. Urjit Patel",
+            "Adoption of Flexible Inflation Targeting (FIT), headline CPI anchor, and creation of the MPC"
+          ],
+          [
+            "Bimal Jalan Committee",
+            "2019",
+            "Dr. Bimal Jalan",
+            "Revised Economic Capital Framework (ECF); Contingency Risk Buffer range of 5.5% to 6.5%"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஹில்டன் யங் கமிஷன்",
+            "1926",
+            "எட்வர்ட் ஹில்டன் யங்",
+            "இந்திய ரிசர்வ் வங்கியை ஒரு தனி மத்திய வங்கியாக உருவாக்கப் பரிந்துரை"
+          ],
+          [
+            "நரசிம்மம் குழு I",
+            "1991",
+            "எம். நரசிம்மம்",
+            "அதிகமாக இருந்த CRR, SLR குறைப்பு, வாராக் கடன் சொத்து வகைப்பாடு மற்றும் 8% மூலதனப் பாதுகாப்பு விகிதம்"
+          ],
+          [
+            "நரசிம்மம் குழு II",
+            "1998",
+            "எம். நரசிம்மம்",
+            "வங்கித் துறை இணைப்பு, சொத்து மறுசீரமைப்பு நிறுவனங்கள் (ARC) மற்றும் மூலதன வலுவூட்டல்"
+          ],
+          [
+            "உர்ஜித் படேல் குழு",
+            "2014",
+            "டாக்டர் உர்ஜித் படேல்",
+            "நெகிழ்வான பணவீக்க இலக்கு (FIT), தலைப்பு CPI குறியீடு மற்றும் பணவியல் கொள்கைக் குழு (MPC) அமைப்பு"
+          ],
+          [
+            "பிமல் ஜலான் குழு",
+            "2019",
+            "டாக்டர் பிமல் ஜலான்",
+            "பொருளாதார மூலதனக் கட்டமைப்பு (ECF) சீரமைப்பு; தற்செயல் இடர் தாங்கல் (CRB) வரம்பு 5.5% முதல் 6.5% வரை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_board_for_financial_supervision",
+        "title_en": "Table 4: Internal Governance: Central Board vs Board for Financial Supervision (BFS)",
+        "title_ta": "அட்டவணை 4: உள் ஆளுகை: மத்திய இயக்குநர் குழு vs நிதி மேற்பார்வை வாரியம் (BFS)",
+        "headers_en": [
+          "Parameter",
+          "Central Board of Directors",
+          "Board for Financial Supervision (BFS)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "மத்திய இயக்குநர் குழு",
+          "நிதி மேற்பார்வை வாரியம் (BFS)"
+        ],
+        "rows_en": [
+          [
+            "Establishment Year",
+            "1935 (under Section 8 of the original RBI Act, 1934)",
+            "November 1994 (pursuant to Padmanabhan Committee recommendations)"
+          ],
+          [
+            "Core Jurisdiction",
+            "Overall sovereign central banking policy, balance sheet, and general administration",
+            "Solely focused on comprehensive technical supervision of banks, NBFCs, and financial institutions"
+          ],
+          [
+            "Chairperson",
+            "Governor of the Reserve Bank of India",
+            "Governor of the Reserve Bank of India"
+          ],
+          [
+            "Composition",
+            "Governor, Deputy Governors, Local Board nominees, sectoral experts (up to 21)",
+            "Governor, four Deputy Governors, and two co-opted Central Board non-official directors"
+          ],
+          [
+            "Operational Arm",
+            "All administrative and policy departments of the RBI",
+            "Department of Supervision (DoS), which conducts CAMELS audits"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிறுவப்பட்ட ஆண்டு",
+            "1935 (ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 8-ன் கீழ்)",
+            "நவம்பர் 1994 (பத்மநாபன் குழுவின் பரிந்துரைகளின்படி)"
+          ],
+          [
+            "முதன்மை அதிகாரம்",
+            "ஒட்டுமொத்த மத்திய வங்கிக் கொள்கை, நிதிநிலை அறிக்கை மற்றும் பொது நிர்வாகம்",
+            "வணிக வங்கிகள், NBFC மற்றும் நிதி நிறுவனங்களின் தொழில்நுட்ப மேற்பார்வை மட்டுமே"
+          ],
+          [
+            "தலைவர்",
+            "இந்திய ரிசர்வ் வங்கியின் ஆளுநர்",
+            "இந்திய ரிசர்வ் வங்கியின் ஆளுநர்"
+          ],
+          [
+            "உறுப்பினர்கள்",
+            "ஆளுநர், துணை ஆளுநர்கள், உள்ளூர் வாரியப் பிரதிநிதிகள், நிபுணர்கள் (அதிகபட்சம் 21)",
+            "ஆளுநர், நான்கு துணை ஆளுநர்கள் மற்றும் மத்திய வாரியத்தின் இரண்டு இணைக்கப்பட்ட இயக்குநர்கள்"
+          ],
+          [
+            "செயல்பாட்டு அமைப்பு",
+            "ரிசர்வ் வங்கியின் அனைத்து நிர்வாக மற்றும் கொள்கைத் துறைகள்",
+            "CAMELS தணிக்கைகளை மேற்கொள்ளும் மேற்பார்வைத் துறை (DoS)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Reserve Bank of India: Regulatory Mastery (Part 3)",
+        "short_label": "RBI Regulatory",
+        "children": [
+          {
+            "title": "Supervisory Powers (BR Act 1949)",
+            "short_label": "BR Act Powers",
+            "children": [
+              {
+                "title": "Section 22: Mandatory Bank Licensing",
+                "short_label": "Sec 22 License"
+              },
+              {
+                "title": "Section 36AA/36AAA: Management Removal & Board Supersession",
+                "short_label": "Supersession"
+              },
+              {
+                "title": "Section 45: Compulsory Amalgamation",
+                "short_label": "Amalgamation"
+              }
+            ]
+          },
+          {
+            "title": "Prompt Corrective Action (PCA)",
+            "short_label": "PCA Framework",
+            "children": [
+              {
+                "title": "Core Triggers: CRAR, Net NPA, Leverage Ratio",
+                "short_label": "Triggers"
+              },
+              {
+                "title": "Mandatory Curbs: Dividend & Branch Expansion Freeze",
+                "short_label": "Curbs"
+              },
+              {
+                "title": "2022 Extension to NBFCs",
+                "short_label": "NBFC Scope"
+              }
+            ]
+          },
+          {
+            "title": "Autonomy & Capital Framework",
+            "short_label": "Autonomy & Capital",
+            "children": [
+              {
+                "title": "Section 7: Sovereign Directions in Public Interest",
+                "short_label": "Section 7"
+              },
+              {
+                "title": "Bimal Jalan ECF: CRB Range 5.5% to 6.5%",
+                "short_label": "Bimal Jalan"
+              },
+              {
+                "title": "Board for Financial Supervision (BFS - 1994)",
+                "short_label": "BFS 1994"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Section 7 Directive Invocation Trap (பிரிவு 7 உத்தரவு பிறப்பிப்பு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Section 7 of the RBI Act has been routinely invoked dozens of times since 1950 to order the RBI.",
+            "CORRECT FACT: Section 7 was NEVER formally invoked in independent India's history; only preliminary consultative letters were issued under it in late 2018.",
+            "WHY CANDIDATES FAIL: Heavy media coverage in 2018 gave the mistaken impression that Section 7 directives were formally issued."
+          ],
+          "ta": [
+            "பொறி: 1950 முதல் ரிசர்வ் வங்கிக்கு உத்தரவிட பிரிவு 7 டஜன் கணக்கான முறை அடிக்கடி பயன்படுத்தப்பட்டுள்ளது என நினைப்பது.",
+            "சரியான உண்மை: சுதந்திர இந்தியாவின் வரலாற்றில் பிரிவு 7 ஒருமுறை கூட அதிகாரப்பூர்வமாக உத்தரவாகப் பிறப்பிக்கப்படவில்லை; 2018-ல் அது தொடர்பான ஆலோசனைக் கடிதங்கள் மட்டுமே அனுப்பப்பட்டன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2018 ஊடகச் செய்திகளைப் படித்து உத்தரவே பிறப்பிக்கப்பட்டுவிட்டது என தவறாக யூகிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Bimal Jalan CRB Range Percentage Trap (பிமல் ஜலான் CRB வரம்புச் சதவீதம்)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Bimal Jalan Committee recommended a Contingency Risk Buffer (CRB) of 15% to 20% of GDP.",
+            "CORRECT FACT: The CRB was pegged at 5.5% to 6.5% of the RBI's BALANCE SHEET (not GDP).",
+            "WHY CANDIDATES FAIL: Candidates mix up total sovereign debt-to-GDP targets with central bank balance sheet reserve ratios."
+          ],
+          "ta": [
+            "பொறி: பிமல் ஜலான் குழு GDP-யில் 15% முதல் 20% வரை தற்செயல் இடர் தாங்கலை (CRB) வைத்திருக்கப் பரிந்துரைத்தது என நினைப்பது.",
+            "சரியான உண்மை: CRB என்பது ரிசர்வ் வங்கியின் வரவு-செலவு கணக்கில் 5.5% முதல் 6.5% வரம்பிற்குள் மட்டுமே இருக்க வேண்டும் (GDP-யில் அல்ல).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நாட்டின் GDP இலக்குகளையும் ரிசர்வ் வங்கியின் இருப்புநிலைக் குறிப்பு சதவீதத்தையும் ஒன்றாகக் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "PCA Application to NBFCs Trap (PCA கட்டமைப்பு NBFC-களுக்கு பொருந்துமா?)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Prompt Corrective Action (PCA) applies exclusively to Scheduled Commercial Banks and cannot touch NBFCs.",
+            "CORRECT FACT: In December 2021, the RBI formally extended the PCA framework to large Non-Banking Financial Companies (NBFCs), effective October 1, 2022.",
+            "WHY CANDIDATES FAIL: Outdated textbooks state that PCA applies solely to commercial banks."
+          ],
+          "ta": [
+            "பொறி: உடனடி சீர்திருத்த நடவடிக்கை (PCA) வணிக வங்கிகளுக்கு மட்டுமே பொருந்தும், NBFC நிறுவனங்களுக்குப் பொருந்தாது என நினைப்பது.",
+            "சரியான உண்மை: டிசம்பர் 2021-ல் ரிசர்வ் வங்கி வெளியிட்ட அறிவிப்பின்படி, அக்டோபர் 1, 2022 முதல் பெரிய NBFC நிறுவனங்களுக்கும் PCA கட்டமைப்பு விரிவுபடுத்தப்பட்டுள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய புத்தகங்களைப் படித்துவிட்டு சமீபத்திய விதி மாற்றங்களை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Board for Financial Supervision (BFS) Chairperson Trap (BFS வாரியத்தின் தலைவர் யார்?)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that the Board for Financial Supervision is chaired by the Finance Minister or an external retired judge.",
+            "CORRECT FACT: The Board for Financial Supervision (BFS) is an internal committee of the Central Board chaired by the Governor of the RBI.",
+            "WHY CANDIDATES FAIL: The specialized supervisory nature makes candidates assume it must be an external tribunal."
+          ],
+          "ta": [
+            "பொறி: நிதி மேற்பார்வை வாரியத்தின் (BFS) தலைவராக மத்திய நிதியமைச்சர் அல்லது ஓய்வுபெற்ற நீதிபதி இருப்பார் என நினைப்பது.",
+            "சரியான உண்மை: நிதி மேற்பார்வை வாரியம் என்பது ரிசர்வ் வங்கியின் மத்திய வாரியத்திற்கு உட்பட்ட ஒரு குழுவாகும்; இதன் தலைவராக ரிசர்வ் வங்கி ஆளுநரே செயல்படுகிறார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இதன் சிறப்புத் தன்மையைக் கண்டு இது ஒரு தனி நீதிமன்றம் அல்லது வெளியமைப்பாக இருக்கும் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Bank Board Supersession Tenure Limit Trap (வங்கி வாரியக் கலைப்பு கால வரம்பு)",
+        "points": {
+          "en": [
+            "TRAP: Believing that when the RBI supersedes a private bank's board under Section 36AAA, the bank is permanently nationalised.",
+            "CORRECT FACT: Board supersession is a temporary emergency measure for up to 12 months (extendable up to a maximum period of 5 years); an administrator is appointed until a reconstruction or new board takes over.",
+            "WHY CANDIDATES FAIL: Candidates equate temporary emergency regulatory supersession with sovereign socialist nationalisation."
+          ],
+          "ta": [
+            "பொறி: பிரிவு 36AAA-ன் கீழ் ஒரு தனியார் வங்கியின் வாரியத்தை ரிசர்வ் வங்கி கலைத்தால் அந்த வங்கி நிரந்தரமாக தேசியமயமாக்கப்பட்டுவிட்டது என நினைப்பது.",
+            "சரியான உண்மை: வாரியக் கலைப்பு என்பது 12 மாதங்களுக்கு மட்டுமே (அதிகபட்சம் 5 ஆண்டுகள் வரை நீட்டிக்கப்படலாம்) விதிக்கப்படும் தற்காலிக அவசர நடவடிக்கையாகும்; புதிய வாரியம் அல்லது மறுகட்டமைப்பு வரும் வரை மட்டுமே இது நீடிக்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தற்காலிக நிர்வாகக் கட்டுப்பாட்டை நிரந்தர தேசியமயமாக்கல் என தவறாகப் புரிந்துகொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "RoA Metric in PCA Framework Trap (PCA கட்டமைப்பில் RoA அளவுகோல்)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Return on Assets (RoA) is currently an active trigger under the revised 2021 PCA framework.",
+            "CORRECT FACT: Under the revised PCA framework notified in November 2021, Return on Assets (RoA) was explicitly dropped as a trigger; the framework now tracks CRAR, Net NPA, and Leverage Ratio.",
+            "WHY CANDIDATES FAIL: Older versions of the PCA framework (2002 and 2017) included RoA, leading candidates to mark outdated parameters."
+          ],
+          "ta": [
+            "பொறி: 2021-ல் திருத்தப்பட்ட தற்போதைய PCA கட்டமைப்பில் சொத்து மீதான வருவாய் (RoA) இன்னமும் ஒரு கண்காணிப்பு அளவுகோலாக உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: நவம்பர் 2021-ல் திருத்தப்பட்ட புதிய கட்டமைப்பில் RoA முழுமையாக நீக்கப்பட்டது; தற்போது CRAR, Net NPA மற்றும் Leverage Ratio ஆகிய மூன்று மட்டுமே கண்காணிக்கப்படுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய 2017 கட்டமைப்பில் RoA இருந்ததால் அதையே தற்போதும் இருப்பதாக நினைத்து தவறிழைப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Section 22 of the Banking Regulation Act, 1949 mandates that every banking company must obtain a license from the RBI to operate in India.",
+        "Section 36AA of the Banking Regulation Act empowers the RBI to remove managerial personnel of banks who act against depositors' interests.",
+        "Section 36AAA of the Banking Regulation Act allows the RBI to supersede the Board of Directors of a banking company for up to 12 months.",
+        "Section 45 of the Banking Regulation Act empowers the RBI to formulate schemes for the compulsory amalgamation or reconstruction of stressed banks.",
+        "The Prompt Corrective Action (PCA) framework was first introduced in December 2002 and revised in 2017 and 2021.",
+        "Under the 2021 revised PCA framework, the three core tracking metrics are: (1) Capital (CRAR/CET1), (2) Asset Quality (Net NPA), and (3) Leverage Ratio.",
+        "Return on Assets (RoA) was explicitly dropped from the PCA framework during the 2021 revision.",
+        "The PCA framework was officially extended to cover large Non-Banking Financial Companies (NBFCs) with effect from October 1, 2022.",
+        "Section 7(1) of the RBI Act, 1934 empowers the Central Government to issue directions to the RBI Governor in the public interest after consultation.",
+        "The Bimal Jalan Committee on Economic Capital Framework submitted its report in August 2019, fixing the Contingency Risk Buffer (CRB) between 5.5% and 6.5% of the RBI's balance sheet.",
+        "The Board for Financial Supervision (BFS) was constituted in November 1994 as a committee of the Central Board under the Padmanabhan Committee recommendations.",
+        "The Narasimham Committee I (1991) and Committee II (1998) established the foundational architecture for modern banking sector deregulation, capital adequacy, and prudential norms in India."
+      ],
+      "ta": [
+        "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 22 இந்தியாவில் செயல்பட ஒவ்வொரு வங்கியும் ரிசர்வ் வங்கியிடம் உரிமம் பெறுவதைக் கட்டாயமாக்குகிறது.",
+        "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 36AA வைப்பாளர்களின் நலனுக்கு எதிராகச் செயல்படும் வங்கி நிர்வாகிகளைப் பதவியிலிருந்து நீக்க ரிசர்வ் வங்கிக்கு அதிகாரம் அளிக்கிறது.",
+        "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 36AAA ஒரு வங்கியின் இயக்குநர் குழுவை 12 மாதங்கள் வரை கலைக்க ரிசர்வ் வங்கிக்கு அதிகாரம் வழங்குகிறது.",
+        "வங்கி ஒழுங்குமுறைச் சட்டம் பிரிவு 45 பலவீனமான வங்கிகளை பொது நலன் கருதி கட்டாயமாக இணைக்கும் திட்டத்தை வகுக்க ரிசர்வ் வங்கிக்கு அதிகாரம் அளிக்கிறது.",
+        "உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பு முதன்முதலில் டிசம்பர் 2002-ல் அறிமுகப்படுத்தப்பட்டு, 2017 மற்றும் 2021-ல் திருத்தப்பட்டது.",
+        "2021 திருத்தப்பட்ட PCA கட்டமைப்பின் கீழ் மூன்று முக்கிய அளவுகோல்கள்: (1) மூலதனம் (CRAR/CET1), (2) சொத்து தரம் (Net NPA), மற்றும் (3) அந்நியக் கடன் விகிதம் (Leverage Ratio).",
+        "2021 சீர்திருத்தத்தின் போது சொத்து மீதான வருவாய் (RoA) PCA கட்டமைப்பிலிருந்து வெளிப்படையாக நீக்கப்பட்டது.",
+        "PCA கட்டமைப்பு அக்டோபர் 1, 2022 முதல் பெரிய வங்கி சாரா நிதி நிறுவனங்களுக்கும் (NBFCs) அதிகாரப்பூர்வமாக விரிவுபடுத்தப்பட்டது.",
+        "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 7(1) பொது நலன் கருதி ஆளுநருடன் கலந்தாலோசித்து ரிசர்வ் வங்கிக்கு உத்தரவிட மத்திய அரசுக்கு அதிகாரம் அளிக்கிறது.",
+        "பொருளாதார மூலதனக் கட்டமைப்பு குறித்த பிமல் ஜலான் குழு ஆகஸ்ட் 2019-ல் அறிக்கை சமர்ப்பித்து, தற்செயல் இடர் தாங்கலை (CRB) ரிசர்வ் வங்கி இருப்புநிலைக் குறிப்பில் 5.5% முதல் 6.5% வரை நிர்ணயித்தது.",
+        "பத்மநாபன் குழுவின் பரிந்துரையின்படி மத்திய வாரியத்தின் சிறப்புக் குழுவாக நவம்பர் 1994-ல் நிதி மேற்பார்வை வாரியம் (BFS) அமைக்கப்பட்டது.",
+        "நரசிம்மம் குழு I (1991) மற்றும் குழு II (1998) இந்தியாவில் நவீன வங்கித் துறை தாராளமயமாக்கல், மூலதனப் பாதுகாப்பு மற்றும் விவேகமான நெறிமுறைகளுக்கான அடித்தளத்தை அமைத்தன."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Section 22 BR Act: Mandatory license required from RBI before commencing banking operations.",
+        "Section 36AA/36AAA: Powers to remove errant management and supersede entire bank boards.",
+        "Section 45 BR Act: Power to enforce compulsory amalgamation/reconstruction of failing banks.",
+        "Prompt Corrective Action (PCA): Early intervention tool tracking CRAR, Net NPA, and Leverage Ratio.",
+        "PCA Revision 2021: Dropped RoA as a metric; extended framework to NBFCs from October 2022.",
+        "Mandatory PCA Curbs: Total freeze on dividend distribution, profit repatriation, and branch expansion.",
+        "Section 7 RBI Act: Allows Central Government to issue binding directions in public interest after consultation.",
+        "Bimal Jalan Committee (2019): Established Contingency Risk Buffer (CRB) between 5.5% and 6.5% of balance sheet.",
+        "Historic 2019 Transfer: RBI transferred record ₹1,76,051 crore surplus capital to the Government.",
+        "Board for Financial Supervision (BFS): Set up in 1994 under Padmanabhan Committee to execute CAMELS audits."
+      ],
+      "ta": [
+        "பிரிவு 22 BR சட்டம்: வங்கிப் பணிகளைத் தொடங்க ரிசர்வ் வங்கியிடம் கட்டாயமாக உரிமம் பெற வேண்டும்.",
+        "பிரிவு 36AA/36AAA: முறைகேடான நிர்வாகிகளை நீக்கவும், மொத்த இயக்குநர் குழுவையும் கலைக்கவும் அதிகாரம்.",
+        "பிரிவு 45 BR சட்டம்: பலவீனமான வங்கிகளைக் கட்டாயமாக இணைக்கும் திட்டங்களை வகுக்க அதிகாரம்.",
+        "உடனடி சீர்திருத்த நடவடிக்கை (PCA): CRAR, Net NPA மற்றும் Leverage Ratio-வை கண்காணிக்கும் ஆரம்பகால தலையீட்டுக் கருவி.",
+        "PCA சீர்திருத்தம் 2021: RoA நீக்கப்பட்டது; அக்டோபர் 2022 முதல் NBFC நிறுவனங்களுக்கும் விரிவுபடுத்தப்பட்டது.",
+        "கட்டாய PCA தடைகள்: ஈவுத்தொகை வழங்கல், லாப இடமாற்றம் மற்றும் புதிய கிளைகள் திறப்பதற்கு முழு முடக்கம்.",
+        "பிரிவு 7 ரிசர்வ் வங்கிச் சட்டம்: பொது நலன் கருதி ஆளுநருடன் கலந்தாலோசித்து அரசு உத்தரவிட அனுமதிக்கும் அதிகாரம்.",
+        "பிமல் ஜலான் குழு (2019): தற்செயல் இடர் தாங்கலை (CRB) இருப்புநிலைக் குறிப்பில் 5.5% முதல் 6.5% வரை நிர்ணயித்தது.",
+        "வரலாற்றுப் பகிர்வு 2019: ரிசர்வ் வங்கி வரலாற்றுச் சாதனையாக ₹1,76,051 கோடி உபரித் தொகையை அரசுக்கு வழங்கியது.",
+        "நிதி மேற்பார்வை வாரியம் (BFS): CAMELS தணிக்கைகளை மேற்கொள்ள பத்மநாபன் குழுவின் கீழ் 1994-ல் அமைக்கப்பட்டது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_rbi_301",
+        "front_en": "Which section of the Banking Regulation Act, 1949 mandates that banks must obtain a license from the RBI?",
+        "front_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் எந்தப் பிரிவு வங்கிகள் ரிசர்வ் வங்கியிடம் உரிமம் பெறுவதைக் கட்டாயமாக்குகிறது?",
+        "back_en": "Section 22 of the Banking Regulation Act, 1949.",
+        "back_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 22."
+      },
+      {
+        "id": "rc_rbi_302",
+        "front_en": "What does Section 7(1) of the Reserve Bank of India Act, 1934 provide?",
+        "front_ta": "ரிசர்வ் வங்கிச் சட்டம் 1934-ன் பிரிவு 7(1) எதனை வழங்குகிறது?",
+        "back_en": "It empowers the Central Government to give directions to the RBI in the public interest after consultation with the Governor.",
+        "back_ta": "பொது நலன் கருதி ஆளுநருடன் கலந்தாலோசித்த பிறகு மத்திய அரசு ரிசர்வ் வங்கிக்கு உத்தரவுகளைப் பிறப்பிக்க அதிகாரம் அளிக்கிறது."
+      },
+      {
+        "id": "rc_rbi_303",
+        "front_en": "What target range did the Bimal Jalan Committee recommend for the Contingency Risk Buffer (CRB)?",
+        "front_ta": "பிமல் ஜலான் குழு தற்செயல் இடர் தாங்கலுக்கு (CRB) பரிந்துரைத்த வரம்பு என்ன?",
+        "back_en": "5.5% to 6.5% of the RBI's balance sheet.",
+        "back_ta": "ரிசர்வ் வங்கியின் வரவு-செலவு கணக்கில் 5.5% முதல் 6.5% வரை."
+      },
+      {
+        "id": "rc_rbi_304",
+        "front_en": "What are the three core tracking metrics in the revised Prompt Corrective Action (PCA) framework?",
+        "front_ta": "திருத்தப்பட்ட உடனடி சீர்திருத்த நடவடிக்கை (PCA) கட்டமைப்பின் மூன்று முக்கிய அளவுகோல்கள் யாவை?",
+        "back_en": "(1) Capital (CRAR/CET1), (2) Asset Quality (Net NPA), and (3) Leverage Ratio.",
+        "back_ta": "(1) மூலதனம் (CRAR/CET1), (2) சொத்து தரம் (Net NPA), மற்றும் (3) அந்நியக் கடன் விகிதம் (Leverage Ratio)."
+      },
+      {
+        "id": "rc_rbi_305",
+        "front_en": "Which parameter was dropped from the PCA framework during the 2021 revision?",
+        "front_ta": "2021 சீர்திருத்தத்தின் போது PCA கட்டமைப்பிலிருந்து நீக்கப்பட்ட அளவுகோல் எது?",
+        "back_en": "Return on Assets (RoA).",
+        "back_ta": "சொத்து மீதான வருவாய் (Return on Assets - RoA)."
+      },
+      {
+        "id": "rc_rbi_306",
+        "front_en": "From what date was the PCA framework officially extended to large NBFCs?",
+        "front_ta": "பெரிய NBFC நிறுவனங்களுக்கு PCA கட்டமைப்பு அதிகாரப்பூர்வமாக எந்தத் தேதியிலிருந்து விரிவுபடுத்தப்பட்டது?",
+        "back_en": "October 1, 2022.",
+        "back_ta": "அக்டோபர் 1, 2022."
+      },
+      {
+        "id": "rc_rbi_307",
+        "front_en": "Under which section can the RBI supersede the Board of Directors of a commercial bank?",
+        "front_ta": "எந்தப் பிரிவின் கீழ் வணிக வங்கியின் இயக்குநர் குழுவை ரிசர்வ் வங்கியால் கலைக்க முடியும்?",
+        "back_en": "Section 36AAA of the Banking Regulation Act, 1949.",
+        "back_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 36AAA."
+      },
+      {
+        "id": "rc_rbi_308",
+        "front_en": "In what year was the Board for Financial Supervision (BFS) constituted within the RBI?",
+        "front_ta": "ரிசர்வ் வங்கிக்குள் நிதி மேற்பார்வை வாரியம் (BFS) எந்த ஆண்டில் அமைக்கப்பட்டது?",
+        "back_en": "November 1994 (following Padmanabhan Committee recommendations).",
+        "back_ta": "நவம்பர் 1994 (பத்மநாபன் குழுவின் பரிந்துரைகளின்படி)."
+      },
+      {
+        "id": "rc_rbi_309",
+        "front_en": "What total surplus transfer did the RBI make to the Government in 2019 following the Bimal Jalan report?",
+        "front_ta": "பிமல் ஜலான் அறிக்கைக்குப் பிறகு 2019-ல் ரிசர்வ் வங்கி அரசுக்கு வழங்கிய மொத்த உபரித் தொகை எவ்வளவு?",
+        "back_en": "₹1,76,051 crore.",
+        "back_ta": "₹1,76,051 கோடி."
+      },
+      {
+        "id": "rc_rbi_310",
+        "front_en": "What is the mandatory restriction placed on all banks entering Prompt Corrective Action (PCA)?",
+        "front_ta": "PCA கட்டமைப்பிற்குள் வரும் அனைத்து வங்கிகளுக்கும் விதிக்கப்படும் முதன்மையான கட்டாயத் தடை என்ன?",
+        "back_en": "Strict ban on dividend distribution and freeze on overseas profit remittance.",
+        "back_ta": "பங்குதாரர்களுக்கு ஈவுத்தொகை வழங்குவதற்கும் வெளிநாடுகளுக்கு லாபத்தை அனுப்புவதற்கும் முழுமையான தடை."
+      },
+      {
+        "id": "rc_rbi_311",
+        "front_en": "Which section of the Banking Regulation Act governs compulsory amalgamations of failing banks?",
+        "front_ta": "பலவீனமான வங்கிகளைக் கட்டாயமாக இணைப்பதை நிர்வகிக்கும் வங்கி ஒழுங்குமுறைச் சட்டத்தின் பிரிவு எது?",
+        "back_en": "Section 45 of the Banking Regulation Act, 1949.",
+        "back_ta": "வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் பிரிவு 45."
+      },
+      {
+        "id": "rc_rbi_312",
+        "front_en": "Who chairs the Board for Financial Supervision (BFS)?",
+        "front_ta": "நிதி மேற்பார்வை வாரியத்தின் (BFS) தலைவராக செயல்படுபவர் யார்?",
+        "back_en": "The Governor of the Reserve Bank of India.",
+        "back_ta": "இந்திய ரிசர்வ் வங்கியின் ஆளுநர்."
+      }
+    ]
+  }
+}

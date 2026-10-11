@@ -1,0 +1,228 @@
+{
+  "topic": "dice_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Dice Part 2 — Open Dice Nets, 3/4 Views, Symbol Dice & Rotation Feasibility",
+  "title_ta": "பகடை பகுதி 2 — திறந்த பகடை (Nets), 3/4 நிலைகள், குறியீட்டு பகடை & சுழற்சி பகுப்பாய்வு",
+
+  "definition": {
+    "en": "Advanced dice reasoning focuses on unfolding 3D cubes into 2D nets, reconstructing opposite face pairs from multi-view projections, and validating rotational consistency for symbols, colors, and numbers.",
+    "ta": "மேம்பட்ட பகடைத் தர்க்கமானது 3D பகடைகளை 2D விரிபடங்களாக மாற்றுதல், பல கோணக் காட்சிகளிலிருந்து எதிர் பக்கங்களை அமைத்தல் மற்றும் குறியீடுகள், வண்ணங்களுக்கான சுழற்சிச் சரிபார்ப்பைக் கொண்டது."
+  },
+
+  "exam_importance": {
+    "en": "TNPSC Group 1, Group 2/2A, and Group 4 frequently present open dice nets and 4-view position questions. Master net unfolding rules to solve complex visual reasoning questions in under 45 seconds.",
+    "ta": "TNPSC குரூப் 1, 2/2A மற்றும் 4 தேர்வுகளில் திறந்த பகடை விரிபடங்கள் மற்றும் 4-நிலைகள் கொண்ட வினாக்கள் அடிக்கடி கேட்கப்படுகின்றன. விரிபட விதிகளை அறிவதன் மூலம் 45 வினாடிகளுக்குள் எளிதில் விடையளிக்கலாம்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 3: Open Dice Alternate Face Rule (திறந்த பகடை மாற்றுப் பக்க விதி)",
+      "formula": "\\text{In a straight strip of 3+ squares: } \\text{Face}_1 \\text{ is opposite to } \\text{Face}_3 \\implies \\text{Every alternate face is opposite}",
+      "explanation": {
+        "en": "In any open 2D net, faces lying in the same straight line with one face between them are strictly opposite each other.",
+        "ta": "திறந்த 2D பகடை விரிபடத்தில், ஒரே நேர்க்கோட்டில் ஒரு கட்டம் இடைவெளியில் உள்ள மாற்றுப் பக்கங்கள் எப்போதும் ஒன்றிற்கொன்று எதிர் பக்கங்களாகும்."
+      }
+    },
+    {
+      "title": "Rule 4: Z-Shape / Corner Opposite Rule (Z-வடிவ விளிம்பு விதி)",
+      "formula": "\\text{For offset faces not in a straight line: Use Z-pattern corners } \\implies \\text{End points of Z are opposite}",
+      "explanation": {
+        "en": "When faces do not form a straight 3-box strip, draw a Z-shape along grid lines. The start and end squares of the Z are opposite.",
+        "ta": "நேர்க்கோட்டில் அமையாத பக்கங்களுக்கு Z-வடிவப் பாதையை வரையும்போது, Z-ன் தொடக்க மற்றும் முடிவுப் புள்ளிகள் எதிர் பக்கங்களாகும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Open Dice Folding Rules (திறந்த பகடையை மடிக்கும் விதிகள்)",
+      "points": {
+        "en": [
+          "Alternate faces along any straight row or column are opposite to each other.",
+          "Once 2 pairs of opposite faces are identified via the alternate face rule, the remaining 2 faces MUST be opposite to each other.",
+          "Opposite pairs can NEVER appear adjacent in the folded 3D cube.",
+          "The relative orientation (clockwise order) of faces around any shared vertex must match between net and 3D cube."
+        ],
+        "ta": [
+          "ஒரு நேர் வரிசை அல்லது செங்குத்து வரிசையில் ஒரு கட்டம் தள்ளி அமைந்த மாற்றுப் பக்கங்கள் எதிர் பக்கங்களாகும்.",
+          "இரண்டு எதிர் பக்க ஜோடிகளைக் கண்டறிந்த பின், மீதமுள்ள 2 பக்கங்களும் கட்டாயம் எதிர் பக்கங்களாகும்.",
+          "மடிக்கப்பட்ட 3D பகடையில் எதிர் பக்கங்கள் ஒருபோதும் பக்கவாட்டில் ஒன்றாகத் தோன்றாது.",
+          "ஒரு முனையைச் சுற்றியுள்ள பக்கங்களின் சுழற்சித் திசை 2D விரிபடத்திலும் 3D பகடையிலும் ஒன்றாக இருக்க வேண்டும்."
+        ]
+      }
+    },
+    {
+      "title": "Multi-View Reconstruction (3 மற்றும் 4 பகடை நிலைகள் பகுப்பாய்வு)",
+      "points": {
+        "en": [
+          "With 3 or 4 views of the same die, choose the pair of views that share exactly 1 face for maximum information.",
+          "Eliminate options where calculated opposite faces appear together in a single view.",
+          "Check for consistent vertex rotation (clockwise order) to rule out mirrored/invalid dice."
+        ],
+        "ta": [
+          "ஒரே பகடையின் 3 அல்லது 4 நிலைகள் தரப்பட்டால், 1 பக்கம் மட்டும் பொதுவாக உள்ள இரு நிலைகளைத் தேர்ந்தெடுத்து சுழற்சி விதியைப் பயன்படுத்தவும்.",
+          "எதிர் பக்கங்கள் ஒன்றாகக் காணப்படும் விடைகளை உடனடியாக நீக்கவும்.",
+          "கடிகாரத் திசை சுழற்சியைச் சரிபார்த்து தவறான அல்லது பிரதிபலிக்கப்பட்ட பகடைகளை நீக்கவும்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Process of Elimination for Open Net Questions",
+      "explanation": {
+        "en": "Step 1: Find all 3 opposite pairs from the net. Step 2: Look at the 4 given 3D cube choices. Step 3: Any choice showing both members of an opposite pair is INVALID. Usually 3 choices fail this test, leaving the unique correct answer!",
+        "ta": "படி 1: விரிபடத்திலிருந்து 3 எதிர் பக்க ஜோடிகளையும் கண்டறியவும். படி 2: கொடுக்கப்பட்ட 4 விடைத் தேர்வுகளைப் பார்க்கவும். படி 3: ஏதேனும் ஒரு எதிர் ஜோடியின் இரு பக்கங்களும் ஒன்றாகத் தெரியும் தேர்வை நீக்கவும். 3 தேர்வுகள் நீக்கப்பட்டு ஒரே சரியான விடை கிடைக்கும்!"
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Open Dice Net Pair Identification",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "An open net of a die is given as a vertical line of 4 squares: A, B, C, D (top to bottom) with X attached to the left of B, and Y attached to the right of C. Which face is opposite to face B?",
+        "ta": "ஒரு திறந்த பகடை விரிபடத்தில் செங்குத்தாக A, B, C, D என 4 கட்டங்களும், B-ன் இடப்புறம் X-ம், C-ன் வலப்புறம் Y-ம் இணைக்கப்பட்டுள்ளன. B என்ற பக்கத்திற்கு எதிரான பக்கம் எது?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Identify alternate faces in vertical column (A-B-C-D).",
+        "Alternate face to A (1st) is C (3rd) -> A is opposite to C.",
+        "Alternate face to B (2nd) is D (4th) -> B is opposite to D.",
+        "Step 2: Remaining faces are X and Y -> X is opposite to Y.",
+        "Therefore, face B is strictly opposite to face D."
+      ],
+      "final_answer": "D",
+      "tnpsc_trap": {
+        "en": "Do not confuse adjacent side attachments (X and Y) with vertical column opposite faces.",
+        "ta": "பக்கவாட்டில் இணைக்கப்பட்டுள்ள X, Y கட்டங்களை செங்குத்து வரிசை எதிர் பக்கங்களுடன் குழப்பிக் கொள்ளக் கூடாது."
+      }
+    },
+    {
+      "model_name": "Model 2: Four Views Reconstruction with Symbols",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "Four views of a die with symbols (@, #, $, %, *, +) are shown:\nView 1: (@, #, $)\nView 2: (#, %, *)\nView 3: ($, %, +)\nView 4: (@, *, +)\nWhich symbol is opposite to '@'?",
+        "ta": "ஒரு பகடையின் 4 நிலைகளில் குறியீடுகள் (@, #, $, %, *, +) காட்டப்பட்டுள்ளன:\nநிலை 1: (@, #, $)\nநிலை 2: (#, %, *)\nநிலை 3: ($, %, +)\nநிலை 4: (@, *, +)\n'@' என்ற குறியீட்டிற்கு எதிரான குறியீடு எது?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Look at View 1 (@, #, $) and View 4 (@, *, +). Both share face '@'.",
+        "From View 1, faces adjacent to '@' are # and $.",
+        "From View 4, faces adjacent to '@' are * and +.",
+        "Step 2: The 4 adjacent faces of '@' are #, $, *, +.",
+        "Step 3: The only remaining 6th face is '%'.",
+        "Therefore, the face opposite to '@' is '%'."
+      ],
+      "final_answer": "%",
+      "tnpsc_trap": {
+        "en": "Adjacent face elimination is faster than clockwise rule when 4 views are available.",
+        "ta": "4 நிலைகள் கொடுக்கப்படும் போது, பக்கவாட்டுப் பக்கங்களை நீக்கும் முறையே கடிகார விதியை விட விரைவானது."
+      }
+    },
+    {
+      "model_name": "Model 3: Net Folding to 3D Cube Validation",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "A net contains numbers 1 to 6 where opposite pairs are (1,6), (2,5), and (3,4). Which of the following 3D views CANNOT be formed by folding this net?\nOption A: (1, 2, 3)\nOption B: (6, 5, 4)\nOption C: (1, 5, 4)\nOption D: (2, 5, 3)",
+        "ta": "எண்கள் 1 முதல் 6 வரை உள்ள விரிபடத்தில் எதிர் ஜோடிகள் (1,6), (2,5), (3,4). இந்த விரிபடத்தை மடிப்பதன் மூலம் கீழே உள்ள எந்த 3D பகடைக் காட்சியை உருவாக்க முடியாது?\nவிருப்பம் A: (1, 2, 3)\nவிருப்பம் B: (6, 5, 4)\nவிருப்பம் C: (1, 5, 4)\nவிருப்பம் D: (2, 5, 3)"
+      },
+      "step_by_step_solution": [
+        "Step 1: Check Option A (1, 2, 3): 1 (opp 6), 2 (opp 5), 3 (opp 4). No opposite pair appears together. VALID.",
+        "Step 2: Check Option B (6, 5, 4): 6 (opp 1), 5 (opp 2), 4 (opp 3). No opposite pair appears together. VALID.",
+        "Step 3: Check Option C (1, 5, 4): 1 (opp 6), 5 (opp 2), 4 (opp 3). No opposite pair appears together. VALID.",
+        "Step 4: Check Option D (2, 5, 3): Contains BOTH 2 and 5! Since 2 and 5 are opposite, they CANNOT appear together in a single view.",
+        "Therefore, Option D CANNOT be formed."
+      ],
+      "final_answer": "Option D",
+      "tnpsc_trap": {
+        "en": "Always check for opposite pair coexistence first before trying complex visual rotations.",
+        "ta": "சிக்கலான காட்சிச் சுழற்சிகளைச் செய்வதற்கு முன் எதிர் பக்கங்கள் ஒன்றாகத் தோன்றுகின்றனவா என்பதை முதலில் சரிபார்க்கவும்."
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "dice_p2_q1",
+      "question_en": "In a die with faces marked 1, 2, 3, 4, 5, 6, opposite pairs are (1-4), (2-5), and (3-6). Which face is opposite to 3?",
+      "question_ta": "1, 2, 3, 4, 5, 6 எண்கள் கொண்ட பகடையில் எதிர் ஜோடிகள் (1-4), (2-5), (3-6). எண் 3-க்கு எதிரான பக்கம் எது?",
+      "options": ["1", "4", "5", "6"],
+      "answer": "6",
+      "explanation_en": "Given directly in opposite pairs: 3 is opposite to 6.",
+      "explanation_ta": "தரப்பட்ட எதிர் ஜோடிகளின்படி: 3-க்கு எதிரான பக்கம் 6 ஆகும்."
+    },
+    {
+      "id": "dice_p2_q2",
+      "question_en": "An open net has row 1: [A, B, C] and below B is D, below D is E, below E is F. Opposite pairs are (A-C), (B-E), (D-F). Which face is opposite to B?",
+      "question_ta": "ஒரு விரிபடத்தில் வரிசை 1: [A, B, C], B-க்கு கீழ் D, D-க்கு கீழ் E, E-க்கு கீழ் F. எதிர் ஜோடிகள் (A-C), (B-E), (D-F). B-க்கு எதிரான பக்கம் எது?",
+      "options": ["C", "D", "E", "F"],
+      "answer": "E",
+      "explanation_en": "In the vertical column (B-D-E-F), alternate faces are B and E. So B is opposite to E.",
+      "explanation_ta": "செங்குத்து வரிசையில் (B-D-E-F) மாற்றுப் பக்கங்கள் B மற்றும் E. எனவே B-க்கு எதிரான பக்கம் E ஆகும்."
+    },
+    {
+      "id": "dice_p2_q3",
+      "question_en": "Four positions of a die are shown with dots 1 to 6. If dot 1 is at the bottom, which number of dots will be at the top if 1 is opposite to 6?",
+      "question_ta": "1 முதல் 6 புள்ளிகள் கொண்ட பகடையின் 4 நிலைகள் உள்ளன. 1 மற்றும் 6 எதிர் பக்கங்கள் எனில், 1 அடியில் இருந்தால் மேலே எத்தனை புள்ளிகள் இருக்கும்?",
+      "options": ["2", "4", "5", "6"],
+      "answer": "6",
+      "explanation_en": "Top and bottom faces are opposite. Since 1 is at the bottom and 1 is opposite to 6, the top face must be 6.",
+      "explanation_ta": "மேல் மற்றும் அடிப் பக்கங்கள் எதிர் பக்கங்களாகும். 1 அடியில் உள்ளதாலும் 1 மற்றும் 6 எதிர் பக்கங்கள் என்பதாலும் மேலே 6 இருக்கும்."
+    },
+    {
+      "id": "dice_p2_q4",
+      "question_en": "A die has red, blue, green, yellow, orange, white faces. If red is opposite to green, blue opposite to yellow, which face is opposite to white?",
+      "question_ta": "ஒரு பகடையில் சிவப்பு, நீலம், பச்சை, மஞ்சள், ஆரஞ்சு, வெள்ளை பக்கங்கள் உள்ளன. சிவப்பு-பச்சை, நீலம்-மஞ்சள் எதிர் பக்கங்கள் எனில், வெள்ளைக்கு எதிரான பக்கம் எது?",
+      "options": ["Red", "Blue", "Orange", "Yellow"],
+      "answer": "Orange",
+      "explanation_en": "Pairs formed: (Red, Green), (Blue, Yellow). Remaining 2 faces are White and Orange, which must be opposite.",
+      "explanation_ta": "ஜோடிகள்: (சிவப்பு, பச்சை), (நீலம், மஞ்சள்). மீதமுள்ள பக்கங்கள் வெள்ளை மற்றும் ஆரஞ்சு. எனவே அவை எதிர் பக்கங்களாகும்."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_dice_net",
+      "title_en": "Open Net Rule",
+      "title_ta": "விரிபட விதி",
+      "points_en": [
+        "Alternate boxes in straight line = Opposite faces.",
+        "Z-shaped corner ends = Opposite faces.",
+        "Opposite faces NEVER touch at any point or edge in 3D fold."
+      ],
+      "points_ta": [
+        "நேர்க்கோட்டில் உள்ள மாற்று கட்டங்கள் = எதிர் பக்கங்கள்.",
+        "Z-வடிவ விளிம்பின் முனைகள் = எதிர் பக்கங்கள்.",
+        "எதிர் பக்கங்கள் 3D மடிப்பில் ஒருபோதும் முனையிலோ விளிம்பிலோ தொடுவதில்லை."
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Dice Part 2",
+    "structure": [
+      {
+        "node": "Open Dice Nets",
+        "subnodes": [
+          "Alternate Box Rule",
+          "Z-Shape Method",
+          "Fold Elimination"
+        ]
+      },
+      {
+        "node": "Multi-View Dice",
+        "subnodes": [
+          "Adjacent Face Elimination",
+          "Clockwise Rotation Rule",
+          "Symbol / Color Mapping"
+        ]
+      }
+    ]
+  }
+}

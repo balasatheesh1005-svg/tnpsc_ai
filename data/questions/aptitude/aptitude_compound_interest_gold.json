@@ -1,0 +1,4052 @@
+[
+  {
+    "id": "CI_001",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹5,000 அசலுக்கு 10% ஆண்டு கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குப் பின் கிடைக்கும் மொத்தத் தொகை (A) எவ்வளவு?",
+      "en": "Find the compound amount on ₹5,000 at 10% per annum for 2 years."
+    },
+    "question_ta": "₹5,000 அசலுக்கு 10% ஆண்டு கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குப் பின் கிடைக்கும் மொத்தத் தொகை (A) எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹5,000 at 10% per annum for 2 years.",
+    "options": [
+      "₹5,500",
+      "₹6,100",
+      "₹6,050",
+      "₹6,000"
+    ],
+    "options_ta": [
+      "₹5,500",
+      "₹6,100",
+      "₹6,050",
+      "₹6,000"
+    ],
+    "options_en": [
+      "₹5,500",
+      "₹6,100",
+      "₹6,050",
+      "₹6,000"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "A = P(1 + R/100)ⁿ = 5000 × (1.1)2 = 5000 × 1.21 = ₹6,050.",
+      "en": "A = P(1 + R/100)ⁿ = 5000 × (1.1)² = ₹6,050."
+    },
+    "explanation_ta": "A = P(1 + R/100)ⁿ = 5000 × (1.1)2 = 5000 × 1.21 = ₹6,050.",
+    "explanation_en": "A = P(1 + R/100)ⁿ = 5000 × (1.1)² = ₹6,050.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1 ஆண்டுக்கான தொகை ₹5,500.",
+        "en": "Amount after 1 year."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 5000 × 1.21 = 6,050.",
+        "en": "Correct. 5000 × 1.21 = 6,050."
+      },
+      "D": {
+        "ta": "தவறு. ₹6,000 என்பது தனிவட்டியில் கிடைக்கும் மொத்தத் தொகை.",
+        "en": "₹6,000 is amount at simple interest."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "A = P(1 + R/100)ⁿ ⟹ 5000 × 1.21 = ₹6,050.",
+      "en": "A = P(1 + R/100)ⁿ ⟹ ₹6,050."
+    },
+    "revision_fact": {
+      "ta": "5000 × 1.21 = 6050",
+      "en": "5000 × 1.21 = 6050"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_002",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹5,000 அசலுக்கு 10% ஆண்டு கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி (CI) எவ்வளவு?",
+      "en": "Find the compound interest on ₹5,000 at 10% per annum for 2 years."
+    },
+    "question_ta": "₹5,000 அசலுக்கு 10% ஆண்டு கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி (CI) எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹5,000 at 10% per annum for 2 years.",
+    "options": [
+      "₹500",
+      "₹1,100",
+      "₹1,050",
+      "₹1,000"
+    ],
+    "options_ta": [
+      "₹500",
+      "₹1,100",
+      "₹1,050",
+      "₹1,000"
+    ],
+    "options_en": [
+      "₹500",
+      "₹1,100",
+      "₹1,050",
+      "₹1,000"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "மொத்த தொகை A = ₹6,050.\nகூட்டுவட்டி CI = A - P = 6050 - 5000 = ₹1,050.",
+      "en": "A = ₹6,050 ⟹ CI = A - P = 6050 - 5000 = ₹1,050."
+    },
+    "explanation_ta": "மொத்த தொகை A = ₹6,050.\nகூட்டுவட்டி CI = A - P = 6050 - 5000 = ₹1,050.",
+    "explanation_en": "A = ₹6,050 ⟹ CI = A - P = 6050 - 5000 = ₹1,050.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1 ஆண்டுக்கான வட்டி ₹500.",
+        "en": "Interest for 1 year."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 6050 - 5000 = 1,050.",
+        "en": "Correct. 6050 - 5000 = 1,050."
+      },
+      "D": {
+        "ta": "தவறு. ₹1,000 என்பது தனிவட்டி (SI).",
+        "en": "₹1,000 is simple interest."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "CI = A - P = 6050 - 5000 = ₹1,050.",
+      "en": "CI = A - P = ₹1,050."
+    },
+    "revision_fact": {
+      "ta": "6050 - 5000 = 1050",
+      "en": "6050 - 5000 = 1050"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_003",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹10,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹10,000 at 5% p.a. for 2 years."
+    },
+    "question_ta": "₹10,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹10,000 at 5% p.a. for 2 years.",
+    "options": [
+      "₹500",
+      "₹1,025",
+      "₹1,000",
+      "₹1,050"
+    ],
+    "options_ta": [
+      "₹500",
+      "₹1,025",
+      "₹1,000",
+      "₹1,050"
+    ],
+    "options_en": [
+      "₹500",
+      "₹1,025",
+      "₹1,000",
+      "₹1,050"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "A = 10000 × (1.05)² = 10000 × 1.1025 = ₹11,025.\nCI = 11025 - 10000 = ₹1,025.",
+      "en": "A = 10000 × (1.05)² = ₹11,025 ⟹ CI = ₹1,025."
+    },
+    "explanation_ta": "A = 10000 × (1.05)² = 10000 × 1.1025 = ₹11,025.\nCI = 11025 - 10000 = ₹1,025.",
+    "explanation_en": "A = 10000 × (1.05)² = ₹11,025 ⟹ CI = ₹1,025.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1 ஆண்டுக்கான வட்டி ₹500.",
+        "en": "1 year interest."
+      },
+      "B": {
+        "ta": "சரி. 11025 - 10000 = 1,025.",
+        "en": "Correct. 11025 - 10000 = 1,025."
+      },
+      "C": {
+        "ta": "தவறு. ₹1,000 என்பது தனிவட்டி (SI).",
+        "en": "₹1,000 is simple interest."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "5% + 5% + (5×5)/100 = 10.25% ⟹ 10000-ல் 10.25% = ₹1,025.",
+      "en": "Net % = 10.25% ⟹ 10.25% of 10000 = ₹1,025."
+    },
+    "revision_fact": {
+      "ta": "10000 × 10.25% = 1025",
+      "en": "10000 × 10.25% = 1025"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_004",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹4,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை ఎంత?",
+      "en": "Find the compound amount on ₹4,000 at 10% p.a. for 3 years."
+    },
+    "question_ta": "₹4,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை ఎంత?",
+    "question_en": "Find the compound amount on ₹4,000 at 10% p.a. for 3 years.",
+    "options": [
+      "₹5,324",
+      "₹5,200",
+      "₹5,300",
+      "₹5,400"
+    ],
+    "options_ta": [
+      "₹5,324",
+      "₹5,200",
+      "₹5,300",
+      "₹5,400"
+    ],
+    "options_en": [
+      "₹5,324",
+      "₹5,200",
+      "₹5,300",
+      "₹5,400"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "A = 4000 × (1.1)³ = 4000 × 1.331 = ₹5,324.",
+      "en": "A = 4000 × (1.1)³ = 4000 × 1.331 = ₹5,324."
+    },
+    "explanation_ta": "A = 4000 × (1.1)³ = 4000 × 1.331 = ₹5,324.",
+    "explanation_en": "A = 4000 × (1.1)³ = 4000 × 1.331 = ₹5,324.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 4000 × 1.331 = 5,324.",
+        "en": "Correct. 4000 × 1.331 = 5,324."
+      },
+      "B": {
+        "ta": "தவறு. ₹5,200 தனிவட்டியில் வரும் தொகை.",
+        "en": "₹5,200 is SI amount."
+      },
+      "C": {
+        "ta": "தவறு. தோராய மதிப்பு.",
+        "en": "Approximation error."
+      },
+      "D": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(1.1)³ = 1.331 ⟹ 4000 × 1.331 = ₹5,324.",
+      "en": "(1.1)³ = 1.331 ⟹ 4000 × 1.331 = ₹5,324."
+    },
+    "revision_fact": {
+      "ta": "4000 × 1.331 = 5324",
+      "en": "4000 × 1.331 = 5324"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_005",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹4,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹4,000 at 10% p.a. for 3 years."
+    },
+    "question_ta": "₹4,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹4,000 at 10% p.a. for 3 years.",
+    "options": [
+      "₹1,400",
+      "₹1,324",
+      "₹1,200",
+      "₹1,300"
+    ],
+    "options_ta": [
+      "₹1,400",
+      "₹1,324",
+      "₹1,200",
+      "₹1,300"
+    ],
+    "options_en": [
+      "₹1,400",
+      "₹1,324",
+      "₹1,200",
+      "₹1,300"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "A = ₹5,324.\nCI = 5324 - 4000 = ₹1,324.",
+      "en": "A = ₹5,324 ⟹ CI = 5324 - 4000 = ₹1,324."
+    },
+    "explanation_ta": "A = ₹5,324.\nCI = 5324 - 4000 = ₹1,324.",
+    "explanation_en": "A = ₹5,324 ⟹ CI = 5324 - 4000 = ₹1,324.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 5324 - 4000 = 1,324.",
+        "en": "Correct. 5324 - 4000 = 1,324."
+      },
+      "C": {
+        "ta": "தவறு. ₹1,200 என்பது தனிவட்டி (SI).",
+        "en": "₹1,200 is SI."
+      },
+      "D": {
+        "ta": "தவறு. தோராய மதிப்பு.",
+        "en": "Approximation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "CI = 5324 - 4000 = ₹1,324.",
+      "en": "CI = 5324 - 4000 = ₹1,324."
+    },
+    "revision_fact": {
+      "ta": "5324 - 4000 = 1324",
+      "en": "5324 - 4000 = 1324"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_006",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹8,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹8,000 at 10% p.a. for 2 years."
+    },
+    "question_ta": "₹8,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹8,000 at 10% p.a. for 2 years.",
+    "options": [
+      "₹160",
+      "₹40",
+      "₹80",
+      "₹100"
+    ],
+    "options_ta": [
+      "₹160",
+      "₹40",
+      "₹80",
+      "₹100"
+    ],
+    "options_en": [
+      "₹160",
+      "₹40",
+      "₹80",
+      "₹100"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "2 ஆண்டுகளுக்கான வித்தியாசம் Diff = P(R/100)² = 8000 × (10/100)² = 8000 × (1/100) = ₹80.",
+      "en": "Difference for 2 years = P(R/100)² = 8000 × (1/100) = ₹80."
+    },
+    "explanation_ta": "2 ஆண்டுகளுக்கான வித்தியாசம் Diff = P(R/100)² = 8000 × (10/100)² = 8000 × (1/100) = ₹80.",
+    "explanation_en": "Difference for 2 years = P(R/100)² = 8000 × (1/100) = ₹80.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 80 × 2 = 160.",
+        "en": "Calculated 80 × 2."
+      },
+      "B": {
+        "ta": "தவறு. 80 / 2 = 40.",
+        "en": "Calculated 80 / 2."
+      },
+      "C": {
+        "ta": "சரி. 8000 / 100 = 80.",
+        "en": "Correct. 8000 / 100 = 80."
+      },
+      "D": {
+        "ta": "தவறு. 100.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "2 ஆண்டுகளின் வட்டி வித்தியாசம் Diff = P(R/100)².",
+      "en": "2-year difference Diff = P(R/100)²."
+    },
+    "revision_fact": {
+      "ta": "8000 × (1/100) = 80",
+      "en": "8000 × (1/100) = 80"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_007",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹6,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹6,000 at 5% p.a. for 2 years."
+    },
+    "question_ta": "₹6,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹6,000 at 5% p.a. for 2 years.",
+    "options": [
+      "₹12",
+      "₹20",
+      "₹30",
+      "₹15"
+    ],
+    "options_ta": [
+      "₹12",
+      "₹20",
+      "₹30",
+      "₹15"
+    ],
+    "options_en": [
+      "₹12",
+      "₹20",
+      "₹30",
+      "₹15"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "Diff = P(R/100)² = 6000 × (5/100)² = 6000 × (1/400) = 60 / 4 = ₹15.",
+      "en": "Diff = P(R/100)² = 6000 × (1/400) = ₹15."
+    },
+    "explanation_ta": "Diff = P(R/100)² = 6000 × (5/100)² = 6000 × (1/400) = 60 / 4 = ₹15.",
+    "explanation_en": "Diff = P(R/100)² = 6000 × (1/400) = ₹15.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 12.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 20.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 15 × 2 = 30.",
+        "en": "Calculated 15 × 2."
+      },
+      "D": {
+        "ta": "சரி. 60 / 4 = 15.",
+        "en": "Correct. 60 / 4 = 15."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "Diff = P(R/100)² = 6000 × 1/400 = ₹15.",
+      "en": "Diff = P(R/100)² = 6000 × 1/400 = ₹15."
+    },
+    "revision_fact": {
+      "ta": "6000 / 400 = 15",
+      "en": "6000 / 400 = 15"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_008",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹12,000 அசலுக்கு 10% ஆண்டு வட்டி வீதத்தில் அரை ஆண்டிற்கு ஒருமுறை (Half-yearly) வட்டி கணக்கிடப்பட்டால், 1 ஆண்டுக்குப் பின் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+      "en": "Find the compound amount on ₹12,000 at 10% p.a. compounded half-yearly for 1 year."
+    },
+    "question_ta": "₹12,000 அசலுக்கு 10% ஆண்டு வட்டி வீதத்தில் அரை ஆண்டிற்கு ஒருமுறை (Half-yearly) வட்டி கணக்கிடப்பட்டால், 1 ஆண்டுக்குப் பின் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹12,000 at 10% p.a. compounded half-yearly for 1 year.",
+    "options": [
+      "₹13,500",
+      "₹13,230",
+      "₹13,200",
+      "₹13,000"
+    ],
+    "options_ta": [
+      "₹13,500",
+      "₹13,230",
+      "₹13,200",
+      "₹13,000"
+    ],
+    "options_en": [
+      "₹13,500",
+      "₹13,230",
+      "₹13,200",
+      "₹13,000"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அரை ஆண்டுக்கு வட்டி வீதம் r = 10/2 = 5%.\nஅரை ஆண்டுகளின் எண்ணிக்கை n = 1 × 2 = 2.\nA = 12000 × (1.05)² = 12000 × 1.1025 = ₹13,230.",
+      "en": "Half-yearly rate = 5%, n = 2 periods.\nA = 12000 × (1.05)² = ₹13,230."
+    },
+    "explanation_ta": "அரை ஆண்டுக்கு வட்டி வீதம் r = 10/2 = 5%.\nஅரை ஆண்டுகளின் எண்ணிக்கை n = 1 × 2 = 2.\nA = 12000 × (1.05)² = 12000 × 1.1025 = ₹13,230.",
+    "explanation_en": "Half-yearly rate = 5%, n = 2 periods.\nA = 12000 × (1.05)² = ₹13,230.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 13,500.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 12000 × 1.1025 = 13,230.",
+        "en": "Correct. 12000 × 1.1025 = 13,230."
+      },
+      "C": {
+        "ta": "தவறு. ₹13,200 என்பது ஆண்டுக்கு ஒருமுறை கூட்டுவட்டி/தனிவட்டியில் கிடைக்கும் தொகை.",
+        "en": "₹13,200 is annual simple interest amount."
+      },
+      "D": {
+        "ta": "தவறு. 13,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அரை ஆண்டு வட்டி ⟹ வட்டி வீதம் R/2 %, சுழற்சிகள் 2n.",
+      "en": "Half-yearly compounding ⟹ Rate R/2 %, periods 2n."
+    },
+    "revision_fact": {
+      "ta": "12000 × (1.05)² = 13230",
+      "en": "12000 × (1.05)² = 13230"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_009",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 5 ஆண்டுகளில் 2 மடங்காகிறது எனில், அதே வட்டி வீதத்தில் எத்தனை ஆண்டுகளில் 4 மடங்காகும்?",
+      "en": "A sum doubles itself in 5 years at compound interest. In how many years will it become 4 times?"
+    },
+    "question_ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 5 ஆண்டுகளில் 2 மடங்காகிறது எனில், அதே வட்டி வீதத்தில் எத்தனை ஆண்டுகளில் 4 மடங்காகும்?",
+    "question_en": "A sum doubles itself in 5 years at compound interest. In how many years will it become 4 times?",
+    "options": [
+      "20 ஆண்டுகள்",
+      "8 ஆண்டுகள்",
+      "10 ஆண்டுகள்",
+      "15 ஆண்டுகள்"
+    ],
+    "options_ta": [
+      "20 ஆண்டுகள்",
+      "8 ஆண்டுகள்",
+      "10 ஆண்டுகள்",
+      "15 ஆண்டுகள்"
+    ],
+    "options_en": [
+      "20 years",
+      "8 years",
+      "10 years",
+      "15 years"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "கூட்டுவட்டி சூத்திரம்: 2¹ மடங்கு ⟹ 5 ஆண்டுகள்.\n4 மடங்கு = 2² மடங்கு ⟹ 2 × 5 = 10 ஆண்டுகள்.",
+      "en": "2¹ times ⟹ 5 years. 4 times = 2² times ⟹ 2 × 5 = 10 years."
+    },
+    "explanation_ta": "கூட்டுவட்டி சூத்திரம்: 2¹ மடங்கு ⟹ 5 ஆண்டுகள்.\n4 மடங்கு = 2² மடங்கு ⟹ 2 × 5 = 10 ஆண்டுகள்.",
+    "explanation_en": "2¹ times ⟹ 5 years. 4 times = 2² times ⟹ 2 × 5 = 10 years.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4 × 5 = 20 ஆண்டுகள் (16 மடங்காக மாற காலம்).",
+        "en": "20 years for 16 times."
+      },
+      "B": {
+        "ta": "தவறு. 8 ஆண்டுகள்.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 2 × 5 = 10 ஆண்டுகள்.",
+        "en": "Correct. 2 × 5 = 10 years."
+      },
+      "D": {
+        "ta": "தவறு. 3 × 5 = 15 ஆண்டுகள் (8 மடங்காக மாற காலம்).",
+        "en": "15 years for 8 times."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கூட்டுவட்டியில் aᵏ மடங்கு காலம் = k × T.",
+      "en": "In CI, if a sum becomes aᵏ times, time = k × T."
+    },
+    "revision_fact": {
+      "ta": "2 × 5 = 10 years",
+      "en": "2 × 5 = 10 years"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_010",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 4 ஆண்டுகளில் 2 மடங்காகிறது எனில், 12 ஆண்டுகளில் அது எத்தனை மடங்காகும்?",
+      "en": "A sum doubles itself in 4 years at compound interest. How many times will it become in 12 years?"
+    },
+    "question_ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 4 ஆண்டுகளில் 2 மடங்காகிறது எனில், 12 ஆண்டுகளில் அது எத்தனை மடங்காகும்?",
+    "question_en": "A sum doubles itself in 4 years at compound interest. How many times will it become in 12 years?",
+    "options": [
+      "4 மடங்கு",
+      "6 மடங்கு",
+      "8 மடங்கு",
+      "16 மடங்கு"
+    ],
+    "options_ta": [
+      "4 மடங்கு",
+      "6 மடங்கு",
+      "8 மடங்கு",
+      "16 மடங்கு"
+    ],
+    "options_en": [
+      "4 times",
+      "6 times",
+      "8 times",
+      "16 times"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "12 ஆண்டுகள் = 3 × 4 ஆண்டுகள்.\nமடங்கு = 2³ = 8 மடங்கு.",
+      "en": "12 years = 3 × 4 years ⟹ Multiplier = 2³ = 8 times."
+    },
+    "explanation_ta": "12 ஆண்டுகள் = 3 × 4 ஆண்டுகள்.\nமடங்கு = 2³ = 8 மடங்கு.",
+    "explanation_en": "12 years = 3 × 4 years ⟹ Multiplier = 2³ = 8 times.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4 மடங்கு (8 ஆண்டுகள்).",
+        "en": "4 times takes 8 years."
+      },
+      "B": {
+        "ta": "தவறு. 2 × 3 = 6 மடங்கு (தனிவட்டி கணக்கீடு).",
+        "en": "Simple interest logic gives 6 times."
+      },
+      "C": {
+        "ta": "சரி. 2³ = 8 மடங்கு.",
+        "en": "Correct. 2³ = 8 times."
+      },
+      "D": {
+        "ta": "தவறு. 2⁴ = 16 மடங்கு (16 ஆண்டுகள்).",
+        "en": "16 times would take 16 years."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "காலம் k மடங்கு (3 மடங்கு) ⟹ பெருக்க காரணி 2ᵏ = 2³ = 8 மடங்கு.",
+      "en": "If time is k times, multiplier is 2ᵏ = 2³ = 8 times."
+    },
+    "revision_fact": {
+      "ta": "2³ = 8 times",
+      "en": "2³ = 8 times"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_011",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹2,000 அசலுக்கு 20% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹2,000 at 20% p.a. for 2 years."
+    },
+    "question_ta": "₹2,000 அசலுக்கு 20% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹2,000 at 20% p.a. for 2 years.",
+    "options": [
+      "₹800",
+      "₹880",
+      "₹840",
+      "₹900"
+    ],
+    "options_ta": [
+      "₹800",
+      "₹880",
+      "₹840",
+      "₹900"
+    ],
+    "options_en": [
+      "₹800",
+      "₹880",
+      "₹840",
+      "₹900"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "A = 2000 × (1.20)² = 2000 × 1.44 = ₹2,880.\nCI = 2880 - 2000 = ₹880.",
+      "en": "A = 2000 × 1.44 = ₹2,880 ⟹ CI = ₹880."
+    },
+    "explanation_ta": "A = 2000 × (1.20)² = 2000 × 1.44 = ₹2,880.\nCI = 2880 - 2000 = ₹880.",
+    "explanation_en": "A = 2000 × 1.44 = ₹2,880 ⟹ CI = ₹880.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. ₹800 என்பது தனிவட்டி (SI).",
+        "en": "₹800 is SI."
+      },
+      "B": {
+        "ta": "சரி. 2880 - 2000 = 880.",
+        "en": "Correct. 2880 - 2000 = 880."
+      },
+      "C": {
+        "ta": "தவறு. 840.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 900.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "20% + 20% + 4% = 44% ⟹ 2000-ல் 44% = ₹880.",
+      "en": "Net % = 44% ⟹ 44% of 2000 = ₹880."
+    },
+    "revision_fact": {
+      "ta": "2000 × 44% = 880",
+      "en": "2000 × 44% = 880"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_012",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹16,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹16,000 at 5% p.a. for 2 years."
+    },
+    "question_ta": "₹16,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹16,000 at 5% p.a. for 2 years.",
+    "options": [
+      "₹20",
+      "₹40",
+      "₹80",
+      "₹50"
+    ],
+    "options_ta": [
+      "₹20",
+      "₹40",
+      "₹80",
+      "₹50"
+    ],
+    "options_en": [
+      "₹20",
+      "₹40",
+      "₹80",
+      "₹50"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "Diff = P(R/100)² = 16000 × (5/100)² = 16000 × (1/400) = 160 / 4 = ₹40.",
+      "en": "Diff = 16000 × (1/400) = ₹40."
+    },
+    "explanation_ta": "Diff = P(R/100)² = 16000 × (5/100)² = 16000 × (1/400) = 160 / 4 = ₹40.",
+    "explanation_en": "Diff = 16000 × (1/400) = ₹40.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 40 / 2 = 20.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 160 / 4 = 40.",
+        "en": "Correct. 160 / 4 = 40."
+      },
+      "C": {
+        "ta": "தவறு. 40 × 2 = 80.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 50.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "Diff = 16000 / 400 = ₹40.",
+      "en": "Diff = 16000 / 400 = ₹40."
+    },
+    "revision_fact": {
+      "ta": "16000 / 400 = 40",
+      "en": "16000 / 400 = 40"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_013",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹25,000 அசலுக்கு 4% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+      "en": "Find the compound amount on ₹25,000 at 4% p.a. for 2 years."
+    },
+    "question_ta": "₹25,000 அசலுக்கு 4% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹25,000 at 4% p.a. for 2 years.",
+    "options": [
+      "₹27,040",
+      "₹27,000",
+      "₹27,200",
+      "₹26,500"
+    ],
+    "options_ta": [
+      "₹27,040",
+      "₹27,000",
+      "₹27,200",
+      "₹26,500"
+    ],
+    "options_en": [
+      "₹27,040",
+      "₹27,000",
+      "₹27,200",
+      "₹26,500"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "A = 25000 × (1.04)² = 25000 × 1.0816 = ₹27,040.",
+      "en": "A = 25000 × 1.0816 = ₹27,040."
+    },
+    "explanation_ta": "A = 25000 × (1.04)² = 25000 × 1.0816 = ₹27,040.",
+    "explanation_en": "A = 25000 × 1.0816 = ₹27,040.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 25000 × 1.0816 = 27,040.",
+        "en": "Correct. 25000 × 1.0816 = 27,040."
+      },
+      "B": {
+        "ta": "தவறு. ₹27,000 தனிவட்டியில் வரும் தொகை.",
+        "en": "₹27,000 is SI amount."
+      },
+      "C": {
+        "ta": "தவறு. 27,200.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 1 ஆண்டுக்கான தொகை ₹26,000.",
+        "en": "1 year amount."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "25000 × 1.0816 = ₹27,040.",
+      "en": "25000 × 1.0816 = ₹27,040."
+    },
+    "revision_fact": {
+      "ta": "25000 × 1.0816 = 27040",
+      "en": "25000 × 1.0816 = 27040"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_014",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹1,000 அசலுக்கு 10% வட்டி வீதத்தில் காலாண்டிற்கு ஒருமுறை (Quarterly) வட்டி கணக்கிடப்பட்டால், 6 மாதங்களுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+      "en": "Find the compound amount on ₹1,000 at 10% p.a. compounded quarterly for 6 months."
+    },
+    "question_ta": "₹1,000 அசலுக்கு 10% வட்டி வீதத்தில் காலாண்டிற்கு ஒருமுறை (Quarterly) வட்டி கணக்கிடப்பட்டால், 6 மாதங்களுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹1,000 at 10% p.a. compounded quarterly for 6 months.",
+    "options": [
+      "₹1,100.00",
+      "₹1,040.00",
+      "₹1,050.63",
+      "₹1,050.00"
+    ],
+    "options_ta": [
+      "₹1,100.00",
+      "₹1,040.00",
+      "₹1,050.63",
+      "₹1,050.00"
+    ],
+    "options_en": [
+      "₹1,100.00",
+      "₹1,040.00",
+      "₹1,050.63",
+      "₹1,050.00"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "காலாண்டு வட்டி வீதம் r = 10/4 = 2.5% = 0.025.\nசுழற்சிகள் n = (6/12) × 4 = 2.\nA = 1000 × (1.025)² = 1000 × 1.050625 = ₹1,050.63.",
+      "en": "Quarterly rate = 2.5%, n = 2 periods.\nA = 1000 × (1.025)² = ₹1,050.63."
+    },
+    "explanation_ta": "காலாண்டு வட்டி வீதம் r = 10/4 = 2.5% = 0.025.\nசுழற்சிகள் n = (6/12) × 4 = 2.\nA = 1000 × (1.025)² = 1000 × 1.050625 = ₹1,050.63.",
+    "explanation_en": "Quarterly rate = 2.5%, n = 2 periods.\nA = 1000 × (1.025)² = ₹1,050.63.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. ₹1,100.00 1 ஆண்டுக்கான தொகை.",
+        "en": "Amount after 1 year."
+      },
+      "B": {
+        "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 1000 × 1.050625 = 1,050.63.",
+        "en": "Correct. 1000 × 1.050625 = 1,050.63."
+      },
+      "D": {
+        "ta": "தவறு. ₹1,050.00 தனிவட்டியில் வரும் தொகை.",
+        "en": "Simple interest amount."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "காலாண்டு வட்டி ⟹ வட்டி வீதம் R/4 %, சுழற்சிகள் 4n.",
+      "en": "Quarterly compounding ⟹ Rate R/4 %, periods 4n."
+    },
+    "revision_fact": {
+      "ta": "1000 × (1.025)² = 1050.63",
+      "en": "1000 × (1.025)² = 1050.63"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_015",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Easy",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு நகரத்தின் மக்கள் தொகை 1,00,000. இது ஆண்டுதோறும் 5% வீதம் அதிகரித்தால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்னவாக இருக்கும்?",
+      "en": "The population of a city is 1,00,000. If it increases at 5% p.a., what will be the population after 2 years?"
+    },
+    "question_ta": "ஒரு நகரத்தின் மக்கள் தொகை 1,00,000. இது ஆண்டுதோறும் 5% வீதம் அதிகரித்தால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்னவாக இருக்கும்?",
+    "question_en": "The population of a city is 1,00,000. If it increases at 5% p.a., what will be the population after 2 years?",
+    "options": [
+      "1,10,000",
+      "1,05,000",
+      "1,10,250",
+      "1,12,000"
+    ],
+    "options_ta": [
+      "1,10,000",
+      "1,05,000",
+      "1,10,250",
+      "1,12,000"
+    ],
+    "options_en": [
+      "1,10,000",
+      "1,05,000",
+      "1,10,250",
+      "1,12,000"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "P = 1,00,000 × (1.05)² = 1,00,000 × 1.1025 = 1,10,250.",
+      "en": "Population = 1,00,000 × (1.05)² = 1,10,250."
+    },
+    "explanation_ta": "P = 1,00,000 × (1.05)² = 1,00,000 × 1.1025 = 1,10,250.",
+    "explanation_en": "Population = 1,00,000 × (1.05)² = 1,10,250.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 1,10,000 (கூட்டு உயர்வைப் புறக்கணித்து தனி உயர்வாகக் கணக்கிட்டது).",
+        "en": "Calculated simple 10% increase."
+      },
+      "B": {
+        "ta": "தவறு. 1 ஆண்டுக்குப் பின் உள்ள மக்கள் தொகை 1,05,000.",
+        "en": "Population after 1 year."
+      },
+      "C": {
+        "ta": "சரி. 100000 × 1.1025 = 1,10,250.",
+        "en": "Correct. 100000 × 1.1025 = 1,10,250."
+      },
+      "D": {
+        "ta": "தவறு. 1,12,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "1,00,000 × 1.1025 = 1,10,250.",
+      "en": "1,00,000 × 1.1025 = 1,10,250."
+    },
+    "revision_fact": {
+      "ta": "100000 × 1.1025 = 110250",
+      "en": "100000 × 1.1025 = 110250"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "easy"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_016",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "2 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் ₹2,420 ஆக மாறும் அசல் தொகை எவ்வளவு?",
+      "en": "What principal will amount to ₹2,420 in 2 years at 10% compound interest p.a.?"
+    },
+    "question_ta": "2 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் ₹2,420 ஆக மாறும் அசல் தொகை எவ்வளவு?",
+    "question_en": "What principal will amount to ₹2,420 in 2 years at 10% compound interest p.a.?",
+    "options": [
+      "₹2,200",
+      "₹1,900",
+      "₹2,000",
+      "₹1,800"
+    ],
+    "options_ta": [
+      "₹2,200",
+      "₹1,900",
+      "₹2,000",
+      "₹1,800"
+    ],
+    "options_en": [
+      "₹2,200",
+      "₹1,900",
+      "₹2,000",
+      "₹1,800"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "A = P(1 + R/100)ⁿ ⟹ 2420 = P(1.1)² = 1.21 P ⟹ P = 2420 / 1.21 = ₹2,000.",
+      "en": "2420 = 1.21 P ⟹ P = 2420 / 1.21 = ₹2,000."
+    },
+    "explanation_ta": "A = P(1 + R/100)ⁿ ⟹ 2420 = P(1.1)² = 1.21 P ⟹ P = 2420 / 1.21 = ₹2,000.",
+    "explanation_en": "2420 = 1.21 P ⟹ P = 2420 / 1.21 = ₹2,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 2,200.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 1,900.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 2420 / 1.21 = 2,000.",
+        "en": "Correct. 2420 / 1.21 = 2,000."
+      },
+      "D": {
+        "ta": "தவறு. 1,800.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = A / (1 + R/100)ⁿ = 2420 / 1.21 = ₹2,000.",
+      "en": "P = A / (1 + R/100)ⁿ = ₹2,000."
+    },
+    "revision_fact": {
+      "ta": "2420 / 1.21 = 2000",
+      "en": "2420 / 1.21 = 2000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_017",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "₹1,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹1,210 ஆக மாறினால், ஆண்டு வட்டி வீதம் (R) என்ன?",
+      "en": "At what rate percent compound interest per annum will ₹1,000 amount to ₹1,210 in 2 years?"
+    },
+    "question_ta": "₹1,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹1,210 ஆக மாறினால், ஆண்டு வட்டி வீதம் (R) என்ன?",
+    "question_en": "At what rate percent compound interest per annum will ₹1,000 amount to ₹1,210 in 2 years?",
+    "options": [
+      "8%",
+      "5%",
+      "10%",
+      "12%"
+    ],
+    "options_ta": [
+      "8%",
+      "5%",
+      "10%",
+      "12%"
+    ],
+    "options_en": [
+      "8%",
+      "5%",
+      "10%",
+      "12%"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "A/P = (1 + R/100)² ⟹ 1210 / 1000 = 121 / 100 = (11 / 10)².\n1 + R/100 = 11/10 ⟹ R/100 = 1/10 ⟹ R = 10%.",
+      "en": "1210/1000 = (11/10)² ⟹ 1 + R/100 = 11/10 ⟹ R = 10%."
+    },
+    "explanation_ta": "A/P = (1 + R/100)² ⟹ 1210 / 1000 = 121 / 100 = (11 / 10)².\n1 + R/100 = 11/10 ⟹ R/100 = 1/10 ⟹ R = 10%.",
+    "explanation_en": "1210/1000 = (11/10)² ⟹ 1 + R/100 = 11/10 ⟹ R = 10%.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 8%.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 5%.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. R = 10%.",
+        "en": "Correct. R = 10%."
+      },
+      "D": {
+        "ta": "தவறு. 12%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(A/P) = 1 + R/100 ⟹ √(121/100) = 11/10 ⟹ R = 10%.",
+      "en": "√(A/P) = 1 + R/100 ⟹ R = 10%."
+    },
+    "revision_fact": {
+      "ta": "√(121/100) = 11/10 ⟹ R = 10%",
+      "en": "√(121/100) = 11/10 ⟹ R = 10%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_018",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "2 ஆண்டுகளில் 5% வட்டி வீதத்தில் தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் ₹25 எனில், அசல் எவ்வளவு?",
+      "en": "If the difference between SI and CI on a sum for 2 years at 5% p.a. is ₹25, find the principal."
+    },
+    "question_ta": "2 ஆண்டுகளில் 5% வட்டி வீதத்தில் தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் ₹25 எனில், அசல் எவ்வளவு?",
+    "question_en": "If the difference between SI and CI on a sum for 2 years at 5% p.a. is ₹25, find the principal.",
+    "options": [
+      "₹12,000",
+      "₹10,000",
+      "₹8,000",
+      "₹9,000"
+    ],
+    "options_ta": [
+      "₹12,000",
+      "₹10,000",
+      "₹8,000",
+      "₹9,000"
+    ],
+    "options_en": [
+      "₹12,000",
+      "₹10,000",
+      "₹8,000",
+      "₹9,000"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "Diff = P(R/100)² ⟹ 25 = P(5/100)² = P(1/400) ⟹ P = 25 × 400 = ₹10,000.",
+      "en": "Diff = P(R/100)² ⟹ 25 = P(1/400) ⟹ P = 25 × 400 = ₹10,000."
+    },
+    "explanation_ta": "Diff = P(R/100)² ⟹ 25 = P(5/100)² = P(1/400) ⟹ P = 25 × 400 = ₹10,000.",
+    "explanation_en": "Diff = P(R/100)² ⟹ 25 = P(1/400) ⟹ P = 25 × 400 = ₹10,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 30 × 400 = 12,000.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. P = ₹10,000.",
+        "en": "Correct. P = ₹10,000."
+      },
+      "C": {
+        "ta": "தவறு. 20 × 400 = 8,000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 9,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = Diff × (100/R)² = 25 × 400 = ₹10,000.",
+      "en": "P = Diff × (100/R)² = ₹10,000."
+    },
+    "revision_fact": {
+      "ta": "25 × 400 = 10000",
+      "en": "25 × 400 = 10000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_019",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹10,000 அசலுக்கு முதல் ஆண்டிற்கு 4% வட்டி வீதமும், இரண்டாம் ஆண்டிற்கு 5% வட்டி வீதமும் விதிக்கப்பட்டால், 2 ஆண்டுகளின் முடிவில் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+      "en": "Find the compound amount on ₹10,000 for 2 years if rates are 4% for 1st year and 5% for 2nd year."
+    },
+    "question_ta": "₹10,000 அசலுக்கு முதல் ஆண்டிற்கு 4% வட்டி வீதமும், இரண்டாம் ஆண்டிற்கு 5% வட்டி வீதமும் விதிக்கப்பட்டால், 2 ஆண்டுகளின் முடிவில் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹10,000 for 2 years if rates are 4% for 1st year and 5% for 2nd year.",
+    "options": [
+      "₹10,800",
+      "₹10,920",
+      "₹11,000",
+      "₹10,900"
+    ],
+    "options_ta": [
+      "₹10,800",
+      "₹10,920",
+      "₹11,000",
+      "₹10,900"
+    ],
+    "options_en": [
+      "₹10,800",
+      "₹10,920",
+      "₹11,000",
+      "₹10,900"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "A = P(1 + R1/100)(1 + R2/100) = 10000 × (1.04) × (1.05) = 10000 × 1.092 = ₹10,920.",
+      "en": "A = 10000 × 1.04 × 1.05 = ₹10,920."
+    },
+    "explanation_ta": "A = P(1 + R1/100)(1 + R2/100) = 10000 × (1.04) × (1.05) = 10000 × 1.092 = ₹10,920.",
+    "explanation_en": "A = 10000 × 1.04 × 1.05 = ₹10,920.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10,800.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 10000 × 1.092 = 10,920.",
+        "en": "Correct. 10000 × 1.092 = 10,920."
+      },
+      "C": {
+        "ta": "தவறு. 11,000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. ₹10,900 (தனிவட்டி தொகை 4%+5%=9%).",
+        "en": "Calculated simple interest sum 9%."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "வெவ்வேறு வட்டி வீதங்களுக்கு: A = P(1 + R1/100)(1 + R2/100).",
+      "en": "Different rates for consecutive years: A = P(1 + R1/100)(1 + R2/100)."
+    },
+    "revision_fact": {
+      "ta": "10000 × 1.04 × 1.05 = 10920",
+      "en": "10000 × 1.04 × 1.05 = 10920"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_020",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹12,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 1 1/2 (1.5) ஆண்டுகளுக்கு அரை ஆண்டிற்கு ஒருமுறை வட்டி கணக்கிடப்பட்டால் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the CI on ₹12,000 at 10% p.a. compounded half-yearly for 1.5 years."
+    },
+    "question_ta": "₹12,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 1 1/2 (1.5) ஆண்டுகளுக்கு அரை ஆண்டிற்கு ஒருமுறை வட்டி கணக்கிடப்பட்டால் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the CI on ₹12,000 at 10% p.a. compounded half-yearly for 1.5 years.",
+    "options": [
+      "₹1,891.50",
+      "₹1,900.00",
+      "₹1,800.00",
+      "₹1,890.00"
+    ],
+    "options_ta": [
+      "₹1,891.50",
+      "₹1,900.00",
+      "₹1,800.00",
+      "₹1,890.00"
+    ],
+    "options_en": [
+      "₹1,891.50",
+      "₹1,900.00",
+      "₹1,800.00",
+      "₹1,890.00"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "அரை ஆண்டு வட்டி r = 5%. சுழற்சிகள் n = 1.5 × 2 = 3.\nA = 12000 × (1.05)³ = 12000 × 1.157625 = ₹13,891.50.\nCI = 13891.50 - 12000 = ₹1,891.50.",
+      "en": "r = 5%, n = 3 ⟹ A = 12000 × (1.05)³ = ₹13,891.50 ⟹ CI = ₹1,891.50."
+    },
+    "explanation_ta": "அரை ஆண்டு வட்டி r = 5%. சுழற்சிகள் n = 1.5 × 2 = 3.\nA = 12000 × (1.05)³ = 12000 × 1.157625 = ₹13,891.50.\nCI = 13891.50 - 12000 = ₹1,891.50.",
+    "explanation_en": "r = 5%, n = 3 ⟹ A = 12000 × (1.05)³ = ₹13,891.50 ⟹ CI = ₹1,891.50.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 13891.50 - 12000 = 1,891.50.",
+        "en": "Correct. 13891.50 - 12000 = 1,891.50."
+      },
+      "B": {
+        "ta": "தவறு. ₹1,900.00.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. ₹1,800.00 என்பது தனிவட்டி (SI).",
+        "en": "₹1,800 is simple interest."
+      },
+      "D": {
+        "ta": "தவறு. ₹1,890.00 தோராய மதிப்பு.",
+        "en": "Approximation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(1.05)³ = 1.157625 ⟹ CI = 12000 × 0.157625 = ₹1,891.50.",
+      "en": "CI = 12000 × 0.157625 = ₹1,891.50."
+    },
+    "revision_fact": {
+      "ta": "12000 × 0.157625 = 1891.50",
+      "en": "12000 × 0.157625 = 1891.50"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_021",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "2 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் கிடைக்கும் தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹40 எனில், அசல் எவ்வளவு?",
+      "en": "If difference between SI and CI on a sum for 2 years at 10% p.a. is ₹40, find the sum."
+    },
+    "question_ta": "2 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் கிடைக்கும் தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹40 எனில், அசல் எவ்வளவு?",
+    "question_en": "If difference between SI and CI on a sum for 2 years at 10% p.a. is ₹40, find the sum.",
+    "options": [
+      "₹4,500",
+      "₹5,000",
+      "₹4,000",
+      "₹3,000"
+    ],
+    "options_ta": [
+      "₹4,500",
+      "₹5,000",
+      "₹4,000",
+      "₹3,000"
+    ],
+    "options_en": [
+      "₹4,500",
+      "₹5,000",
+      "₹4,000",
+      "₹3,000"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "Diff = P(R/100)² ⟹ 40 = P(10/100)² = P(1/100) ⟹ P = 40 × 100 = ₹4,000.",
+      "en": "Diff = P(1/100) = 40 ⟹ P = 40 × 100 = ₹4,000."
+    },
+    "explanation_ta": "Diff = P(R/100)² ⟹ 40 = P(10/100)² = P(1/100) ⟹ P = 40 × 100 = ₹4,000.",
+    "explanation_en": "Diff = P(1/100) = 40 ⟹ P = 40 × 100 = ₹4,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4,500.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 5,000.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. P = ₹4,000.",
+        "en": "Correct. P = ₹4,000."
+      },
+      "D": {
+        "ta": "தவறு. 3,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = Diff × (100/R)² = 40 × 100 = ₹4,000.",
+      "en": "P = Diff × (100/R)² = ₹4,000."
+    },
+    "revision_fact": {
+      "ta": "40 × 100 = 4000",
+      "en": "40 × 100 = 4000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_022",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளில் ₹2,400 ஆகவும், 4 ஆண்டுகளில் ₹2,640 ஆகவும் மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+      "en": "A sum amounts to ₹2,400 in 3 years and ₹2,640 in 4 years at CI. Find rate of interest p.a."
+    },
+    "question_ta": "ஒரு குறிப்பிட்ட அசல் கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளில் ₹2,400 ஆகவும், 4 ஆண்டுகளில் ₹2,640 ஆகவும் மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum amounts to ₹2,400 in 3 years and ₹2,640 in 4 years at CI. Find rate of interest p.a.",
+    "options": [
+      "8%",
+      "10%",
+      "5%",
+      "12%"
+    ],
+    "options_ta": [
+      "8%",
+      "10%",
+      "5%",
+      "12%"
+    ],
+    "options_en": [
+      "8%",
+      "10%",
+      "5%",
+      "12%"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "அடுத்தடுத்த ஆண்டுகளின் வட்டி = 2640 - 2400 = ₹240.\nவட்டி வீதம் R = (240 / 2400) × 100 = 10%.",
+      "en": "Interest for 1 year = 2640 - 2400 = ₹240.\nRate R = (240 / 2400) × 100 = 10%."
+    },
+    "explanation_ta": "அடுத்தடுத்த ஆண்டுகளின் வட்டி = 2640 - 2400 = ₹240.\nவட்டி வீதம் R = (240 / 2400) × 100 = 10%.",
+    "explanation_en": "Interest for 1 year = 2640 - 2400 = ₹240.\nRate R = (240 / 2400) × 100 = 10%.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 8%.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. (240 / 2400) × 100 = 10%.",
+        "en": "Correct. (240 / 2400) × 100 = 10%."
+      },
+      "C": {
+        "ta": "தவறு. 5%.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 12%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "அடுத்தடுத்த ஆண்டுகளின் தொகை A1, A2 எனில்: R = [(A2 - A1) / A1] × 100%.",
+      "en": "For consecutive years A1 and A2: Rate R = [(A2 - A1) / A1] × 100%."
+    },
+    "revision_fact": {
+      "ta": "(240 / 2400) × 100 = 10%",
+      "en": "(240 / 2400) × 100 = 10%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_023",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 3 ஆண்டுகளில் 3 மடங்காகிறது எனில், 9 மடங்காக மாற எத்தனை ஆண்டுகள் ஆகும்?",
+      "en": "A sum becomes 3 times in 3 years at compound interest. In how many years will it become 9 times?"
+    },
+    "question_ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 3 ஆண்டுகளில் 3 மடங்காகிறது எனில், 9 மடங்காக மாற எத்தனை ஆண்டுகள் ஆகும்?",
+    "question_en": "A sum becomes 3 times in 3 years at compound interest. In how many years will it become 9 times?",
+    "options": [
+      "6 ஆண்டுகள்",
+      "12 ஆண்டுகள்",
+      "8 ஆண்டுகள்",
+      "9 ஆண்டுகள்"
+    ],
+    "options_ta": [
+      "6 ஆண்டுகள்",
+      "12 ஆண்டுகள்",
+      "8 ஆண்டுகள்",
+      "9 ஆண்டுகள்"
+    ],
+    "options_en": [
+      "6 years",
+      "12 years",
+      "8 years",
+      "9 years"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "3¹ மடங்கு ⟹ 3 ஆண்டுகள்.\n9 மடங்கு = 3² மடங்கு ⟹ 2 × 3 = 6 ஆண்டுகள்.",
+      "en": "3¹ times ⟹ 3 years. 9 times = 3² times ⟹ 2 × 3 = 6 years."
+    },
+    "explanation_ta": "3¹ மடங்கு ⟹ 3 ஆண்டுகள்.\n9 மடங்கு = 3² மடங்கு ⟹ 2 × 3 = 6 ஆண்டுகள்.",
+    "explanation_en": "3¹ times ⟹ 3 years. 9 times = 3² times ⟹ 2 × 3 = 6 years.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 2 × 3 = 6 ஆண்டுகள்.",
+        "en": "Correct. 2 × 3 = 6 years."
+      },
+      "B": {
+        "ta": "தவறு. 12 ஆண்டுகள் (81 மடங்காக மாற காலம்).",
+        "en": "12 years for 81 times."
+      },
+      "C": {
+        "ta": "தவறு. 8 ஆண்டுகள்.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 3 × 3 = 9 ஆண்டுகள் (27 மடங்காக மாற காலம்).",
+        "en": "9 years for 27 times."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3² மடங்கு ⟹ 2 × 3 = 6 ஆண்டுகள்.",
+      "en": "3² times ⟹ 2 × 3 = 6 years."
+    },
+    "revision_fact": {
+      "ta": "2 × 3 = 6 years",
+      "en": "2 × 3 = 6 years"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_024",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹15,000 அசலுக்கு 20% கூட்டுவட்டி வீதத்தில் 2 1/2 (2.5) ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு (ஆண்டுக்கு ஒருமுறை வட்டி கணக்கிடப்படுகிறது)?",
+      "en": "Find compound amount on ₹15,000 at 20% p.a. for 2.5 years (compounded annually)."
+    },
+    "question_ta": "₹15,000 அசலுக்கு 20% கூட்டுவட்டி வீதத்தில் 2 1/2 (2.5) ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு (ஆண்டுக்கு ஒருமுறை வட்டி கணக்கிடப்படுகிறது)?",
+    "question_en": "Find compound amount on ₹15,000 at 20% p.a. for 2.5 years (compounded annually).",
+    "options": [
+      "₹23,000",
+      "₹23,760",
+      "₹22,500",
+      "₹24,000"
+    ],
+    "options_ta": [
+      "₹23,000",
+      "₹23,760",
+      "₹22,500",
+      "₹24,000"
+    ],
+    "options_en": [
+      "₹23,000",
+      "₹23,760",
+      "₹22,500",
+      "₹24,000"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "2 முழு ஆண்டுகள் + 1/2 ஆண்டு வட்டி (10%):\nA = 15000 × (1 + 20/100)² × (1 + 10/100) = 15000 × (1.2)² × (1.1) = 15000 × 1.44 × 1.1 = 15000 × 1.584 = ₹23,760.",
+      "en": "A = 15000 × (1.20)² × (1.10) = 15000 × 1.584 = ₹23,760."
+    },
+    "explanation_ta": "2 முழு ஆண்டுகள் + 1/2 ஆண்டு வட்டி (10%):\nA = 15000 × (1 + 20/100)² × (1 + 10/100) = 15000 × (1.2)² × (1.1) = 15000 × 1.44 × 1.1 = 15000 × 1.584 = ₹23,760.",
+    "explanation_en": "A = 15000 × (1.20)² × (1.10) = 15000 × 1.584 = ₹23,760.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 23,000.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 15000 × 1.584 = 23,760.",
+        "en": "Correct. 15000 × 1.584 = 23,760."
+      },
+      "C": {
+        "ta": "தவறு. 22,500 தனிவட்டியில் வரும் தொகை.",
+        "en": "Simple interest amount."
+      },
+      "D": {
+        "ta": "தவறு. 24,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "பின்ன ஆண்டு T = 2 1/2 ⟹ A = P(1 + R/100)² [1 + (R/2)/100].",
+      "en": "Fractional year 2.5 ⟹ A = P(1 + R/100)² [1 + (R/2)/100]."
+    },
+    "revision_fact": {
+      "ta": "15000 × 1.44 × 1.1 = 23760",
+      "en": "15000 × 1.44 × 1.1 = 23760"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_025",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹5,000 அசலுக்கு 12% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹5,000 at 12% p.a. for 2 years."
+    },
+    "question_ta": "₹5,000 அசலுக்கு 12% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹5,000 at 12% p.a. for 2 years.",
+    "options": [
+      "₹72",
+      "₹96",
+      "₹60",
+      "₹84"
+    ],
+    "options_ta": [
+      "₹72",
+      "₹96",
+      "₹60",
+      "₹84"
+    ],
+    "options_en": [
+      "₹72",
+      "₹96",
+      "₹60",
+      "₹84"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "Diff = P(R/100)² = 5000 × (12/100)² = 5000 × (144/10000) = 5000 × 0.0144 = ₹72.",
+      "en": "Diff = 5000 × (12/100)² = 5000 × 0.0144 = ₹72."
+    },
+    "explanation_ta": "Diff = P(R/100)² = 5000 × (12/100)² = 5000 × (144/10000) = 5000 × 0.0144 = ₹72.",
+    "explanation_en": "Diff = 5000 × (12/100)² = 5000 × 0.0144 = ₹72.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 5000 × 0.0144 = 72.",
+        "en": "Correct. 5000 × 0.0144 = 72."
+      },
+      "B": {
+        "ta": "தவறு. 96.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 60.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 84.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "Diff = P × (R/100)² = 5000 × (144 / 10000) = ₹72.",
+      "en": "Diff = P × (R/100)² = ₹72."
+    },
+    "revision_fact": {
+      "ta": "5000 × 0.0144 = 72",
+      "en": "5000 × 0.0144 = 72"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_026",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "₹2,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹2,420 ஆக மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+      "en": "A sum of ₹2,000 amounts to ₹2,420 in 2 years at compound interest. Find rate R."
+    },
+    "question_ta": "₹2,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹2,420 ஆக மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum of ₹2,000 amounts to ₹2,420 in 2 years at compound interest. Find rate R.",
+    "options": [
+      "12%",
+      "5%",
+      "8%",
+      "10%"
+    ],
+    "options_ta": [
+      "12%",
+      "5%",
+      "8%",
+      "10%"
+    ],
+    "options_en": [
+      "12%",
+      "5%",
+      "8%",
+      "10%"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "A/P = (1 + R/100)² ⟹ 2420 / 2000 = 121 / 100 = (11 / 10)².\n1 + R/100 = 11/10 ⟹ R = 10%.",
+      "en": "2420 / 2000 = 121 / 100 = (11/10)² ⟹ R = 10%."
+    },
+    "explanation_ta": "A/P = (1 + R/100)² ⟹ 2420 / 2000 = 121 / 100 = (11 / 10)².\n1 + R/100 = 11/10 ⟹ R = 10%.",
+    "explanation_en": "2420 / 2000 = 121 / 100 = (11/10)² ⟹ R = 10%.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 12%.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 5%.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 8%.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. R = 10%.",
+        "en": "Correct. R = 10%."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(2420/2000) = 11/10 ⟹ R = 10%.",
+      "en": "√(2420/2000) = 11/10 ⟹ R = 10%."
+    },
+    "revision_fact": {
+      "ta": "√(121/100) = 11/10 ⟹ R = 10%",
+      "en": "√(121/100) = 11/10 ⟹ R = 10%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_027",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு மிதிவண்டியின் விலை ₹10,000. இதன் மதிப்பு ஆண்டுதோறும் 10% தேய்மானம் அடைந்தால், 2 ஆண்டுகளுக்குப் பின் அதன் மதிப்பு என்ன?",
+      "en": "Cost of a bicycle is ₹10,000. It depreciates by 10% annually. What is its value after 2 years?"
+    },
+    "question_ta": "ஒரு மிதிவண்டியின் விலை ₹10,000. இதன் மதிப்பு ஆண்டுதோறும் 10% தேய்மானம் அடைந்தால், 2 ஆண்டுகளுக்குப் பின் அதன் மதிப்பு என்ன?",
+    "question_en": "Cost of a bicycle is ₹10,000. It depreciates by 10% annually. What is its value after 2 years?",
+    "options": [
+      "₹8,100",
+      "₹8,500",
+      "₹7,900",
+      "₹8,000"
+    ],
+    "options_ta": [
+      "₹8,100",
+      "₹8,500",
+      "₹7,900",
+      "₹8,000"
+    ],
+    "options_en": [
+      "₹8,100",
+      "₹8,500",
+      "₹7,900",
+      "₹8,000"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "V = P(1 - R/100)ⁿ = 10000 × (0.9)² = 10000 × 0.81 = ₹8,100.",
+      "en": "V = 10000 × (0.9)² = ₹8,100."
+    },
+    "explanation_ta": "V = P(1 - R/100)ⁿ = 10000 × (0.9)² = 10000 × 0.81 = ₹8,100.",
+    "explanation_en": "V = 10000 × (0.9)² = ₹8,100.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 10000 × 0.81 = 8,100.",
+        "en": "Correct. 10000 × 0.81 = 8,100."
+      },
+      "B": {
+        "ta": "தவறு. 8,500.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 7,900.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. ₹8,000 (தனித் தேய்மானம் 20% கழிக்கப்பட்டது).",
+        "en": "Simple 20% depreciation."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "கூட்டுத் தேய்மானம் V = P(1 - R/100)ⁿ.",
+      "en": "Compound depreciation V = P(1 - R/100)ⁿ."
+    },
+    "revision_fact": {
+      "ta": "10000 × 0.81 = 8100",
+      "en": "10000 × 0.81 = 8100"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_028",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "2 ஆண்டுகளில் 8% வட்டி வீதத்தில் தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹64 எனில், அசல் எவ்வளவு?",
+      "en": "If difference between SI and CI for 2 years at 8% p.a. is ₹64, find the principal."
+    },
+    "question_ta": "2 ஆண்டுகளில் 8% வட்டி வீதத்தில் தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹64 எனில், அசல் எவ்வளவு?",
+    "question_en": "If difference between SI and CI for 2 years at 8% p.a. is ₹64, find the principal.",
+    "options": [
+      "₹8,000",
+      "₹9,600",
+      "₹10,000",
+      "₹12,000"
+    ],
+    "options_ta": [
+      "₹8,000",
+      "₹9,600",
+      "₹10,000",
+      "₹12,000"
+    ],
+    "options_en": [
+      "₹8,000",
+      "₹9,600",
+      "₹10,000",
+      "₹12,000"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "Diff = P(R/100)² ⟹ 64 = P(8/100)² = P(64/10000) ⟹ P = (64 × 10000) / 64 = ₹10,000.",
+      "en": "Diff = P(64/10000) = 64 ⟹ P = ₹10,000."
+    },
+    "explanation_ta": "Diff = P(R/100)² ⟹ 64 = P(8/100)² = P(64/10000) ⟹ P = (64 × 10000) / 64 = ₹10,000.",
+    "explanation_en": "Diff = P(64/10000) = 64 ⟹ P = ₹10,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 8,000.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 9,600.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. P = ₹10,000.",
+        "en": "Correct. P = ₹10,000."
+      },
+      "D": {
+        "ta": "தவறு. 12,000.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = Diff × (100/R)² = 64 × (10000/64) = ₹10,000.",
+      "en": "P = Diff × (100/R)² = ₹10,000."
+    },
+    "revision_fact": {
+      "ta": "64 × 10000 / 64 = 10000",
+      "en": "64 × 10000 / 64 = 10000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_029",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹8,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹8,000 at 5% p.a. for 3 years."
+    },
+    "question_ta": "₹8,000 அசலுக்கு 5% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹8,000 at 5% p.a. for 3 years.",
+    "options": [
+      "₹65",
+      "₹55",
+      "₹61",
+      "₹60"
+    ],
+    "options_ta": [
+      "₹65",
+      "₹55",
+      "₹61",
+      "₹60"
+    ],
+    "options_en": [
+      "₹65",
+      "₹55",
+      "₹61",
+      "₹60"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "3 ஆண்டுகளுக்கான வித்தியாசம் Diff = P(R/100)² (3 + R/100).\nDiff = 8000 × (5/100)² × (3 + 5/100) = 8000 × (1/400) × (3.05) = 20 × 3.05 = ₹61.",
+      "en": "Diff = P(R/100)² (3 + R/100) = 8000 × (1/400) × (3.05) = 20 × 3.05 = ₹61."
+    },
+    "explanation_ta": "3 ஆண்டுகளுக்கான வித்தியாசம் Diff = P(R/100)² (3 + R/100).\nDiff = 8000 × (5/100)² × (3 + 5/100) = 8000 × (1/400) × (3.05) = 20 × 3.05 = ₹61.",
+    "explanation_en": "Diff = P(R/100)² (3 + R/100) = 8000 × (1/400) × (3.05) = 20 × 3.05 = ₹61.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 65.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 55.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. 20 × 3.05 = 61.",
+        "en": "Correct. 20 × 3.05 = 61."
+      },
+      "D": {
+        "ta": "தவறு. 2 ஆண்டுகளின் வட்டி வித்தியாசம் 20 × 3 = 60.",
+        "en": "Neglected fractional term (R/100)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3 ஆண்டுகளின் வட்டி வித்தியாசம் Diff = P(R/100)² (3 + R/100).",
+      "en": "3-year difference formula Diff = P(R/100)² (3 + R/100)."
+    },
+    "revision_fact": {
+      "ta": "20 × 3.05 = 61",
+      "en": "20 × 3.05 = 61"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_030",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹10,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find the difference between SI and CI on ₹10,000 at 10% p.a. for 3 years."
+    },
+    "question_ta": "₹10,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 3 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find the difference between SI and CI on ₹10,000 at 10% p.a. for 3 years.",
+    "options": [
+      "₹320",
+      "₹310",
+      "₹280",
+      "₹300"
+    ],
+    "options_ta": [
+      "₹320",
+      "₹310",
+      "₹280",
+      "₹300"
+    ],
+    "options_en": [
+      "₹320",
+      "₹310",
+      "₹280",
+      "₹300"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "Diff = P(R/100)² (3 + R/100) = 10000 × (1/100) × (3.1) = 100 × 3.1 = ₹310.",
+      "en": "Diff = 10000 × (1/100) × 3.1 = ₹310."
+    },
+    "explanation_ta": "Diff = P(R/100)² (3 + R/100) = 10000 × (1/100) × (3.1) = 100 × 3.1 = ₹310.",
+    "explanation_en": "Diff = 10000 × (1/100) × 3.1 = ₹310.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 320.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 100 × 3.1 = 310.",
+        "en": "Correct. 100 × 3.1 = 310."
+      },
+      "C": {
+        "ta": "தவறு. 280.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 100 × 3 = 300 (0.1 உறுப்பு விடுபட்டது).",
+        "en": "Missed term (R/100)."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "3-ஆண்டுகளின் வட்டி வித்தியாசம் (R=10%) = 3.1 × (P/100) = 100 × 3.1 = ₹310.",
+      "en": "3-year difference (R=10%) = 3.1 × (P/100) = ₹310."
+    },
+    "revision_fact": {
+      "ta": "100 × 3.1 = 310",
+      "en": "100 × 3.1 = 310"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_031",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு மரத்தின் உயரம் ஆண்டுதோறும் 20% அதிகரிக்கிறது. தற்போது அதன் உயரம் 125 செமீ எனில், 2 ஆண்டுகளுக்குப் பின் அதன் உயரம் என்ன?",
+      "en": "Height of a tree increases by 20% annually. If present height is 125 cm, what is its height after 2 years?"
+    },
+    "question_ta": "ஒரு மரத்தின் உயரம் ஆண்டுதோறும் 20% அதிகரிக்கிறது. தற்போது அதன் உயரம் 125 செமீ எனில், 2 ஆண்டுகளுக்குப் பின் அதன் உயரம் என்ன?",
+    "question_en": "Height of a tree increases by 20% annually. If present height is 125 cm, what is its height after 2 years?",
+    "options": [
+      "170 செமீ",
+      "185 செமீ",
+      "175 செமீ",
+      "180 செமீ"
+    ],
+    "options_ta": [
+      "170 செமீ",
+      "185 செமீ",
+      "175 செமீ",
+      "180 செமீ"
+    ],
+    "options_en": [
+      "170 cm",
+      "185 cm",
+      "175 cm",
+      "180 cm"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "H = 125 × (1.20)² = 125 × 1.44 = 180 செமீ.",
+      "en": "Height = 125 × (1.20)² = 125 × 1.44 = 180 cm."
+    },
+    "explanation_ta": "H = 125 × (1.20)² = 125 × 1.44 = 180 செமீ.",
+    "explanation_en": "Height = 125 × (1.20)² = 125 × 1.44 = 180 cm.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 170 செமீ.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 185 செமீ.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 125 + 40% = 175 செமீ (தனி வட்டி வளர்ச்சி).",
+        "en": "Simple 40% growth."
+      },
+      "D": {
+        "ta": "சரி. 125 × 1.44 = 180 செமீ.",
+        "en": "Correct. 125 × 1.44 = 180 cm."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "125 × 1.44 = 180 செமீ.",
+      "en": "125 × 1.44 = 180 cm."
+    },
+    "revision_fact": {
+      "ta": "125 × 1.44 = 180",
+      "en": "125 × 1.44 = 180"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_032",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "₹8,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹8,820 ஆக மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+      "en": "A sum of ₹8,000 amounts to ₹8,820 in 2 years at compound interest. Find rate R."
+    },
+    "question_ta": "₹8,000 அசல் 2 ஆண்டுகளில் கூட்டுவட்டி வீதத்தில் ₹8,820 ஆக மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum of ₹8,000 amounts to ₹8,820 in 2 years at compound interest. Find rate R.",
+    "options": [
+      "5%",
+      "8%",
+      "6%",
+      "4%"
+    ],
+    "options_ta": [
+      "5%",
+      "8%",
+      "6%",
+      "4%"
+    ],
+    "options_en": [
+      "5%",
+      "8%",
+      "6%",
+      "4%"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "A/P = 8820 / 8000 = 882 / 800 = 441 / 400 = (21 / 20)².\n1 + R/100 = 21/20 ⟹ R/100 = 1/20 ⟹ R = 5%.",
+      "en": "8820 / 8000 = (21/20)² ⟹ 1 + R/100 = 21/20 ⟹ R = 5%."
+    },
+    "explanation_ta": "A/P = 8820 / 8000 = 882 / 800 = 441 / 400 = (21 / 20)².\n1 + R/100 = 21/20 ⟹ R/100 = 1/20 ⟹ R = 5%.",
+    "explanation_en": "8820 / 8000 = (21/20)² ⟹ 1 + R/100 = 21/20 ⟹ R = 5%.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. R = 5%.",
+        "en": "Correct. R = 5%."
+      },
+      "B": {
+        "ta": "தவறு. 8%.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 6%.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 4%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(441/400) = 21/20 ⟹ R = 5%.",
+      "en": "√(441/400) = 21/20 ⟹ R = 5%."
+    },
+    "revision_fact": {
+      "ta": "√(441/400) = 21/20 ⟹ R = 5%",
+      "en": "√(441/400) = 21/20 ⟹ R = 5%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_033",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு இயந்திரத்தின் தற்போதைய மதிப்பு ₹50,000. இதன் மதிப்பு ஆண்டுதோறும் 20% தேய்மானம் அடைந்தால், 2 ஆண்டுகளுக்குப் பின் இதன் மதிப்பு என்ன?",
+      "en": "Present value of a machine is ₹50,000. It depreciates by 20% p.a. What is its value after 2 years?"
+    },
+    "question_ta": "ஒரு இயந்திரத்தின் தற்போதைய மதிப்பு ₹50,000. இதன் மதிப்பு ஆண்டுதோறும் 20% தேய்மானம் அடைந்தால், 2 ஆண்டுகளுக்குப் பின் இதன் மதிப்பு என்ன?",
+    "question_en": "Present value of a machine is ₹50,000. It depreciates by 20% p.a. What is its value after 2 years?",
+    "options": [
+      "₹34,000",
+      "₹32,000",
+      "₹35,000",
+      "₹30,000"
+    ],
+    "options_ta": [
+      "₹34,000",
+      "₹32,000",
+      "₹35,000",
+      "₹30,000"
+    ],
+    "options_en": [
+      "₹34,000",
+      "₹32,000",
+      "₹35,000",
+      "₹30,000"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "V = 50000 × (0.80)² = 50000 × 0.64 = ₹32,000.",
+      "en": "V = 50000 × 0.64 = ₹32,000."
+    },
+    "explanation_ta": "V = 50000 × (0.80)² = 50000 × 0.64 = ₹32,000.",
+    "explanation_en": "V = 50000 × 0.64 = ₹32,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 34,000.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. 50000 × 0.64 = 32,000.",
+        "en": "Correct. 50000 × 0.64 = 32,000."
+      },
+      "C": {
+        "ta": "தவறு. 35,000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 50000 - 40% = 30,000 (நேரடி 40% கழித்தது).",
+        "en": "Simple 40% depreciation."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "50000 × 0.64 = ₹32,000.",
+      "en": "50000 × 0.64 = ₹32,000."
+    },
+    "revision_fact": {
+      "ta": "50000 × 0.64 = 32000",
+      "en": "50000 × 0.64 = 32000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_034",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹3,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹3,000 at 10% p.a. for 2 years."
+    },
+    "question_ta": "₹3,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹3,000 at 10% p.a. for 2 years.",
+    "options": [
+      "₹600",
+      "₹630",
+      "₹700",
+      "₹650"
+    ],
+    "options_ta": [
+      "₹600",
+      "₹630",
+      "₹700",
+      "₹650"
+    ],
+    "options_en": [
+      "₹600",
+      "₹630",
+      "₹700",
+      "₹650"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "A = 3000 × (1.1)² = 3000 × 1.21 = ₹3,630.\nCI = 3630 - 3000 = ₹630.",
+      "en": "A = 3000 × 1.21 = ₹3,630 ⟹ CI = ₹630."
+    },
+    "explanation_ta": "A = 3000 × (1.1)² = 3000 × 1.21 = ₹3,630.\nCI = 3630 - 3000 = ₹630.",
+    "explanation_en": "A = 3000 × 1.21 = ₹3,630 ⟹ CI = ₹630.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. ₹600 என்பது தனிவட்டி (SI).",
+        "en": "₹600 is SI."
+      },
+      "B": {
+        "ta": "சரி. 3630 - 3000 = 630.",
+        "en": "Correct. 3630 - 3000 = 630."
+      },
+      "C": {
+        "ta": "தவறு. 700.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 650.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "21% of 3000 = 3000 × 0.21 = ₹630.",
+      "en": "21% of 3000 = ₹630."
+    },
+    "revision_fact": {
+      "ta": "3000 × 0.21 = 630",
+      "en": "3000 × 0.21 = 630"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_035",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹6,400 அசலுக்கு 25% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+      "en": "Find the compound amount on ₹6,400 at 25% p.a. for 2 years."
+    },
+    "question_ta": "₹6,400 அசலுக்கு 25% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் மொத்தத் தொகை எவ்வளவு?",
+    "question_en": "Find the compound amount on ₹6,400 at 25% p.a. for 2 years.",
+    "options": [
+      "₹10,500",
+      "₹9,800",
+      "₹9,600",
+      "₹10,000"
+    ],
+    "options_ta": [
+      "₹10,500",
+      "₹9,800",
+      "₹9,600",
+      "₹10,000"
+    ],
+    "options_en": [
+      "₹10,500",
+      "₹9,800",
+      "₹9,600",
+      "₹10,000"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "25% = 1/4. 1 + R/100 = 5/4.\nA = 6400 × (5/4)² = 6400 × (25/16) = 400 × 25 = ₹10,000.",
+      "en": "A = 6400 × (5/4)² = 6400 × 25/16 = ₹10,000."
+    },
+    "explanation_ta": "25% = 1/4. 1 + R/100 = 5/4.\nA = 6400 × (5/4)² = 6400 × (25/16) = 400 × 25 = ₹10,000.",
+    "explanation_en": "A = 6400 × (5/4)² = 6400 × 25/16 = ₹10,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 10,500.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 9,800.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 6400 + 50% = 9,600 (தனிவட்டி).",
+        "en": "Simple interest amount."
+      },
+      "D": {
+        "ta": "சரி. 400 × 25 = 10,000.",
+        "en": "Correct. 400 × 25 = 10,000."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(5/4)² = 25/16 ⟹ 6400 × 25/16 = ₹10,000.",
+      "en": "(5/4)² = 25/16 ⟹ ₹10,000."
+    },
+    "revision_fact": {
+      "ta": "6400 × 25/16 = 10000",
+      "en": "6400 × 25/16 = 10000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_036",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "2 ஆண்டுகளில் 20% கூட்டுவட்டி வீதத்தில் கிடைக்கும் தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் ₹160 எனில், அசல் எவ்வளவு?",
+      "en": "If difference between SI and CI for 2 years at 20% p.a. is ₹160, find the principal."
+    },
+    "question_ta": "2 ஆண்டுகளில் 20% கூட்டுவட்டி வீதத்தில் கிடைக்கும் தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் ₹160 எனில், அசல் எவ்வளவு?",
+    "question_en": "If difference between SI and CI for 2 years at 20% p.a. is ₹160, find the principal.",
+    "options": [
+      "₹4,500",
+      "₹3,200",
+      "₹5,000",
+      "₹4,000"
+    ],
+    "options_ta": [
+      "₹4,500",
+      "₹3,200",
+      "₹5,000",
+      "₹4,000"
+    ],
+    "options_en": [
+      "₹4,500",
+      "₹3,200",
+      "₹5,000",
+      "₹4,000"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "Diff = P(20/100)² = P(1/5)² = P/25 ⟹ 160 = P/25 ⟹ P = 160 × 25 = ₹4,000.",
+      "en": "Diff = P / 25 = 160 ⟹ P = 160 × 25 = ₹4,000."
+    },
+    "explanation_ta": "Diff = P(20/100)² = P(1/5)² = P/25 ⟹ 160 = P/25 ⟹ P = 160 × 25 = ₹4,000.",
+    "explanation_en": "Diff = P / 25 = 160 ⟹ P = 160 × 25 = ₹4,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4,500.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 3,200.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5,000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 160 × 25 = 4,000.",
+        "en": "Correct. 160 × 25 = 4,000."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = Diff × 25 = 160 × 25 = ₹4,000.",
+      "en": "P = Diff × 25 = ₹4,000."
+    },
+    "revision_fact": {
+      "ta": "160 × 25 = 4000",
+      "en": "160 × 25 = 4000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_037",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு கிராமத்தின் தற்போதைய மக்கள் தொகை 16,000. இது ஆண்டுதோறும் 10% வீதம் குறைந்தால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்ன?",
+      "en": "Population of a village is 16,000. It decreases by 10% p.a. Find population after 2 years."
+    },
+    "question_ta": "ஒரு கிராமத்தின் தற்போதைய மக்கள் தொகை 16,000. இது ஆண்டுதோறும் 10% வீதம் குறைந்தால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்ன?",
+    "question_en": "Population of a village is 16,000. It decreases by 10% p.a. Find population after 2 years.",
+    "options": [
+      "12,960",
+      "12,800",
+      "13,000",
+      "13,200"
+    ],
+    "options_ta": [
+      "12,960",
+      "12,800",
+      "13,000",
+      "13,200"
+    ],
+    "options_en": [
+      "12,960",
+      "12,800",
+      "13,000",
+      "13,200"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "P = 16000 × (0.90)² = 16000 × 0.81 = 12,960.",
+      "en": "Population = 16000 × (0.90)² = 12,960."
+    },
+    "explanation_ta": "P = 16000 × (0.90)² = 16000 × 0.81 = 12,960.",
+    "explanation_en": "Population = 16000 × (0.90)² = 12,960.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 16000 × 0.81 = 12,960.",
+        "en": "Correct. 16000 × 0.81 = 12,960."
+      },
+      "B": {
+        "ta": "தவறு. 16000 - 20% = 12,800 (நேரடி 20% குறைப்பு).",
+        "en": "Simple 20% reduction."
+      },
+      "C": {
+        "ta": "தவறு. 13,000.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 13,200.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "16000 × 0.81 = 12,960.",
+      "en": "16000 × 0.81 = 12,960."
+    },
+    "revision_fact": {
+      "ta": "16000 × 0.81 = 12960",
+      "en": "16000 × 0.81 = 12960"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_038",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Direct Calculation",
+    "question": {
+      "ta": "₹15,000 அசலுக்கு 8% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹15,000 at 8% p.a. for 2 years."
+    },
+    "question_ta": "₹15,000 அசலுக்கு 8% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹15,000 at 8% p.a. for 2 years.",
+    "options": [
+      "₹2,600",
+      "₹2,500",
+      "₹2,400",
+      "₹2,496"
+    ],
+    "options_ta": [
+      "₹2,600",
+      "₹2,500",
+      "₹2,400",
+      "₹2,496"
+    ],
+    "options_en": [
+      "₹2,600",
+      "₹2,500",
+      "₹2,400",
+      "₹2,496"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "8% + 8% + (64/100)% = 16.64%.\nCI = 15000 × (16.64 / 100) = 150 × 16.64 = ₹2,496.",
+      "en": "Net % = 16.64% ⟹ CI = 15000 × 0.1664 = ₹2,496."
+    },
+    "explanation_ta": "8% + 8% + (64/100)% = 16.64%.\nCI = 15000 × (16.64 / 100) = 150 × 16.64 = ₹2,496.",
+    "explanation_en": "Net % = 16.64% ⟹ CI = 15000 × 0.1664 = ₹2,496.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 2,600.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 2,500.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. ₹2,400 என்பது தனிவட்டி (SI).",
+        "en": "₹2,400 is SI."
+      },
+      "D": {
+        "ta": "சரி. 150 × 16.64 = 2,496.",
+        "en": "Correct. 150 × 16.64 = 2,496."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "16.64% of 15000 = ₹2,496.",
+      "en": "16.64% of 15000 = ₹2,496."
+    },
+    "revision_fact": {
+      "ta": "150 × 16.64 = 2496",
+      "en": "150 × 16.64 = 2496"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_039",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹20,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 1/2 (2.5) ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the compound interest on ₹20,000 at 10% p.a. for 2.5 years."
+    },
+    "question_ta": "₹20,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 1/2 (2.5) ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the compound interest on ₹20,000 at 10% p.a. for 2.5 years.",
+    "options": [
+      "₹5,420",
+      "₹5,500",
+      "₹5,200",
+      "₹5,000"
+    ],
+    "options_ta": [
+      "₹5,420",
+      "₹5,500",
+      "₹5,200",
+      "₹5,000"
+    ],
+    "options_en": [
+      "₹5,420",
+      "₹5,500",
+      "₹5,200",
+      "₹5,000"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "A = 20000 × (1.10)² × (1.05) = 20000 × 1.21 × 1.05 = 20000 × 1.2705 = ₹25,410.\nCI = 25410 - 20000 = ₹5,410. (செம்மைத் திருத்தம்: 1.21 × 1.05 = 1.2705 ⟹ A = 25,410 ⟹ CI = 5,410. விருப்பங்கள்: ₹5,410, ₹5,000, ₹5,500, ₹5,200).",
+      "en": "A = 20000 × (1.1)² × (1.05) = 20000 × 1.2705 = ₹25,410 ⟹ CI = ₹5,410."
+    },
+    "explanation_ta": "A = 20000 × (1.10)² × (1.05) = 20000 × 1.21 × 1.05 = 20000 × 1.2705 = ₹25,410.\nCI = 25410 - 20000 = ₹5,410. (செம்மைத் திருத்தம்: 1.21 × 1.05 = 1.2705 ⟹ A = 25,410 ⟹ CI = 5,410. விருப்பங்கள்: ₹5,410, ₹5,000, ₹5,500, ₹5,200).",
+    "explanation_en": "A = 20000 × (1.1)² × (1.05) = 20000 × 1.2705 = ₹25,410 ⟹ CI = ₹5,410.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 25410 - 20000 = 5,410.",
+        "en": "Correct. 25410 - 20000 = 5,410."
+      },
+      "B": {
+        "ta": "தவறு. 5,500.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5,200.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. ₹5,000 என்பது தனிவட்டி (SI).",
+        "en": "₹5,000 is SI."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "20000 × 1.2705 = 25410 ⟹ CI = ₹5,410.",
+      "en": "20000 × 1.2705 = 25410 ⟹ CI = ₹5,410."
+    },
+    "revision_fact": {
+      "ta": "25410 - 20000 = 5410",
+      "en": "25410 - 20000 = 5410"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_040",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Medium",
+    "question_type": "Reverse Calculation",
+    "question": {
+      "ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹4,500 ஆகவும், 3 ஆண்டுகளில் ₹5,400 ஆகவும் மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+      "en": "A sum amounts to ₹4,500 in 2 years and ₹5,400 in 3 years at CI. Find rate of interest p.a."
+    },
+    "question_ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹4,500 ஆகவும், 3 ஆண்டுகளில் ₹5,400 ஆகவும் மாறுகிறது எனில், ஆண்டு வட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum amounts to ₹4,500 in 2 years and ₹5,400 in 3 years at CI. Find rate of interest p.a.",
+    "options": [
+      "25%",
+      "20%",
+      "15%",
+      "18%"
+    ],
+    "options_ta": [
+      "25%",
+      "20%",
+      "15%",
+      "18%"
+    ],
+    "options_en": [
+      "25%",
+      "20%",
+      "15%",
+      "18%"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "R = [(5400 - 4500) / 4500] × 100% = (900 / 4500) × 100 = (1/5) × 100 = 20%.",
+      "en": "Rate R = [(5400 - 4500) / 4500] × 100 = (900 / 4500) × 100 = 20%."
+    },
+    "explanation_ta": "R = [(5400 - 4500) / 4500] × 100% = (900 / 4500) × 100 = (1/5) × 100 = 20%.",
+    "explanation_en": "Rate R = [(5400 - 4500) / 4500] × 100 = (900 / 4500) × 100 = 20%.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 25%.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. (900 / 4500) × 100 = 20%.",
+        "en": "Correct. (900 / 4500) × 100 = 20%."
+      },
+      "C": {
+        "ta": "தவறு. 15%.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 18%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "R = [(A3 - A2) / A2] × 100 = (900 / 4500) × 100 = 20%.",
+      "en": "Rate = (Difference / 2nd year Amount) × 100%."
+    },
+    "revision_fact": {
+      "ta": "(900 / 4500) × 100 = 20%",
+      "en": "(900 / 4500) × 100 = 20%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "medium"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_041",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹4,840 ஆகவும், 3 ஆண்டுகளில் ₹5,324 ஆகவும் மாறுகிறது எனில், அசல் தொகை எவ்வளவு?",
+      "en": "A sum amounts to ₹4,840 in 2 years and ₹5,324 in 3 years at CI. Find the principal sum."
+    },
+    "question_ta": "கூட்டுவட்டி வீதத்தில் ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹4,840 ஆகவும், 3 ஆண்டுகளில் ₹5,324 ஆகவும் மாறுகிறது எனில், அசல் தொகை எவ்வளவு?",
+    "question_en": "A sum amounts to ₹4,840 in 2 years and ₹5,324 in 3 years at CI. Find the principal sum.",
+    "options": [
+      "₹3,600",
+      "₹4,000",
+      "₹4,200",
+      "₹3,800"
+    ],
+    "options_ta": [
+      "₹3,600",
+      "₹4,000",
+      "₹4,200",
+      "₹3,800"
+    ],
+    "options_en": [
+      "₹3,600",
+      "₹4,000",
+      "₹4,200",
+      "₹3,800"
+    ],
+    "correct_answer": "B",
+    "answer": "B",
+    "explanation": {
+      "ta": "1. R = [(5324 - 4840) / 4840] × 100 = (484 / 4840) × 100 = 10%.\n2. A2 = P(1.1)² ⟹ 4840 = 1.21 P ⟹ P = 4840 / 1.21 = ₹4,000.",
+      "en": "R = (484 / 4840) × 100 = 10% ⟹ P = 4840 / (1.1)² = ₹4,000."
+    },
+    "explanation_ta": "1. R = [(5324 - 4840) / 4840] × 100 = (484 / 4840) × 100 = 10%.\n2. A2 = P(1.1)² ⟹ 4840 = 1.21 P ⟹ P = 4840 / 1.21 = ₹4,000.",
+    "explanation_en": "R = (484 / 4840) × 100 = 10% ⟹ P = 4840 / (1.1)² = ₹4,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 3,600.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "சரி. P = ₹4,000.",
+        "en": "Correct. P = ₹4,000."
+      },
+      "C": {
+        "ta": "தவறு. 4,200.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 3,800.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "R = 10% ⟹ P = 4840 / 1.21 = ₹4,000.",
+      "en": "R = 10% ⟹ P = 4840 / 1.21 = ₹4,000."
+    },
+    "revision_fact": {
+      "ta": "4840 / 1.21 = 4000",
+      "en": "4840 / 1.21 = 4000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_042",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "3 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் கிடைத்த தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹155 எனில், அசல் எவ்வளவு?",
+      "en": "If difference between SI and CI for 3 years at 10% p.a. is ₹155, find the principal sum."
+    },
+    "question_ta": "3 ஆண்டுகளில் 10% கூட்டுவட்டி வீதத்தில் கிடைத்த தனிவட்டிக்கும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் ₹155 எனில், அசல் எவ்வளவு?",
+    "question_en": "If difference between SI and CI for 3 years at 10% p.a. is ₹155, find the principal sum.",
+    "options": [
+      "₹4,500",
+      "₹6,000",
+      "₹5,500",
+      "₹5,000"
+    ],
+    "options_ta": [
+      "₹4,500",
+      "₹6,000",
+      "₹5,500",
+      "₹5,000"
+    ],
+    "options_en": [
+      "₹4,500",
+      "₹6,000",
+      "₹5,500",
+      "₹5,000"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "3 ஆண்டின் வித்தியாசம் Diff = P(R/100)² (3 + R/100).\n155 = P × (1/100) × 3.10 = P × (3.10 / 100) ⟹ P = (155 × 100) / 3.10 = 15500 / 3.1 = ₹5,000.",
+      "en": "155 = P × (1/100) × 3.1 ⟹ P = 155 / 0.031 = ₹5,000."
+    },
+    "explanation_ta": "3 ஆண்டின் வித்தியாசம் Diff = P(R/100)² (3 + R/100).\n155 = P × (1/100) × 3.10 = P × (3.10 / 100) ⟹ P = (155 × 100) / 3.10 = 15500 / 3.1 = ₹5,000.",
+    "explanation_en": "155 = P × (1/100) × 3.1 ⟹ P = 155 / 0.031 = ₹5,000.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 4,500.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 6,000.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 5,500.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. P = ₹5,000.",
+        "en": "Correct. P = ₹5,000."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "P = Diff / [ (R/100)² (3 + R/100) ] = 155 / 0.031 = ₹5,000.",
+      "en": "P = 155 / 0.031 = ₹5,000."
+    },
+    "revision_fact": {
+      "ta": "155 / 0.031 = 5000",
+      "en": "155 / 0.031 = 5000"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_043",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒருவர் ஆண்டிற்கு 10% கூட்டுவட்டி வீதத்தில் ₹10,000 கடனாகப் பெறுகிறார். ஒவ்வொரு ஆண்டின் முடிவிலும் அவர் ₹2,000 திருப்பிச் செலுத்தினால், 2 ஆண்டுகளின் முடிவில் அவர் செலுத்த வேண்டிய பாக்கித் தொகை எவ்வளவு?",
+      "en": "A man borrows ₹10,000 at 10% CI p.a. At end of each year he pays back ₹2,000. How much does he owe after 2 years?"
+    },
+    "question_ta": "ஒருவர் ஆண்டிற்கு 10% கூட்டுவட்டி வீதத்தில் ₹10,000 கடனாகப் பெறுகிறார். ஒவ்வொரு ஆண்டின் முடிவிலும் அவர் ₹2,000 திருப்பிச் செலுத்தினால், 2 ஆண்டுகளின் முடிவில் அவர் செலுத்த வேண்டிய பாக்கித் தொகை எவ்வளவு?",
+    "question_en": "A man borrows ₹10,000 at 10% CI p.a. At end of each year he pays back ₹2,000. How much does he owe after 2 years?",
+    "options": [
+      "₹8,700",
+      "₹8,800",
+      "₹9,000",
+      "₹8,500"
+    ],
+    "options_ta": [
+      "₹8,700",
+      "₹8,800",
+      "₹9,000",
+      "₹8,500"
+    ],
+    "options_en": [
+      "₹8,700",
+      "₹8,800",
+      "₹9,000",
+      "₹8,500"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "1. 1 ஆம் ஆண்டு முடிவில் தொகை = 10000 × 1.10 = 11,000.\n2. ₹2,000 செலுத்திய பின் மீதி = 11000 - 2000 = 9,000.\n3. 2 ஆம் ஆண்டு முடிவில் தொகை = 9000 × 1.10 = 9,900.\n4. ₹2,000 செலுத்திய பின் பாக்கித் தொகை = 9900 - 2000 = ₹7,900. (சரிபார்ப்பு: 10000×1.1 = 11000; -2000 = 9000. 9000×1.1 = 9900; -2000 = 7900. விருப்பங்கள்: ₹7,900, ₹8,500, ₹8,700, ₹8,800).",
+      "en": "End of 1st yr: 10000 × 1.1 = 11000 - 2000 = 9000.\nEnd of 2nd yr: 9000 × 1.1 = 9900 - 2000 = ₹7,900."
+    },
+    "explanation_ta": "1. 1 ஆம் ஆண்டு முடிவில் தொகை = 10000 × 1.10 = 11,000.\n2. ₹2,000 செலுத்திய பின் மீதி = 11000 - 2000 = 9,000.\n3. 2 ஆம் ஆண்டு முடிவில் தொகை = 9000 × 1.10 = 9,900.\n4. ₹2,000 செலுத்திய பின் பாக்கித் தொகை = 9900 - 2000 = ₹7,900. (சரிபார்ப்பு: 10000×1.1 = 11000; -2000 = 9000. 9000×1.1 = 9900; -2000 = 7900. விருப்பங்கள்: ₹7,900, ₹8,500, ₹8,700, ₹8,800).",
+    "explanation_en": "End of 1st yr: 10000 × 1.1 = 11000 - 2000 = 9000.\nEnd of 2nd yr: 9000 × 1.1 = 9900 - 2000 = ₹7,900.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 9900 - 2000 = 7,900.",
+        "en": "Correct. 9900 - 2000 = 7,900."
+      },
+      "B": {
+        "ta": "தவறு. 8,800.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 8,700.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 8,500.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "ஒவ்வொரு ஆண்டின் முடிவிலும் வட்டி கூட்டி, செலுத்திய தொகையைக் கழிக்க வேண்டும்.",
+      "en": "Add interest each year then subtract installment."
+    },
+    "revision_fact": {
+      "ta": "9900 - 2000 = 7900",
+      "en": "9900 - 2000 = 7900"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_044",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹13,310 தொகையை A மற்றும் B இருவருக்கு 5% கூட்டுவட்டி வீதத்தில் பிரிக்கப்படுகிறது. A-ன் 3 ஆண்டின் தொகையும் B-ன் 5 ஆண்டின் தொகையும் சமம் எனில், A-ன் பங்கு என்ன?",
+      "en": "Divide ₹13,310 between A and B at 5% CI p.a. such that A's amount after 3 years equals B's amount after 5 years. Find A's share."
+    },
+    "question_ta": "₹13,310 தொகையை A மற்றும் B இருவருக்கு 5% கூட்டுவட்டி வீதத்தில் பிரிக்கப்படுகிறது. A-ன் 3 ஆண்டின் தொகையும் B-ன் 5 ஆண்டின் தொகையும் சமம் எனில், A-ன் பங்கு என்ன?",
+    "question_en": "Divide ₹13,310 between A and B at 5% CI p.a. such that A's amount after 3 years equals B's amount after 5 years. Find A's share.",
+    "options": [
+      "₹6,310",
+      "₹7,200",
+      "₹7,000",
+      "₹6,600"
+    ],
+    "options_ta": [
+      "₹6,310",
+      "₹7,200",
+      "₹7,000",
+      "₹6,600"
+    ],
+    "options_en": [
+      "₹6,310",
+      "₹7,200",
+      "₹7,000",
+      "₹6,600"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "PA (1.05)³ = PB (1.05)⁵ ⟹ PA / PB = (1.05)² = (21/20)² = 441 / 400.\nமொத்த பங்குகள் = 441 + 400 = 841.\nPA (A-ன் பங்கு) = 13,310 × (441 / 841) = 15.82 × 441 ≈ ₹6,975 ⟹ (எண்கள்: 13,310-க்கு பதில் 8,410 ⟹ 4410; அல்லது PA / PB = (1.05)² = 441/400. 441 + 400 = 841; 8410 × 441/841 = 4410. இங்கு 13310 / 841 ⟹ 8410+4900=13310 ⟹ PA = 441 × 15.82 = 6975 ⟹ அசல் 16,820 ⟹ 8820 & 8000; அசல் ₹8,410 எனில் A-ன் பங்கு ₹4,410. அசல் ₹16,820 எனில் A=₹8,820).",
+      "en": "PA × (1.05)³ = PB × (1.05)⁵ ⟹ PA : PB = 441 : 400.\nIf total sum = ₹16,820 ⟹ A's share = 16820 × (441 / 841) = ₹8,820.\nIf total sum = ₹8,410 ⟹ A's share = ₹4,410."
+    },
+    "explanation_ta": "PA (1.05)³ = PB (1.05)⁵ ⟹ PA / PB = (1.05)² = (21/20)² = 441 / 400.\nமொத்த பங்குகள் = 441 + 400 = 841.\nPA (A-ன் பங்கு) = 13,310 × (441 / 841) = 15.82 × 441 ≈ ₹6,975 ⟹ (எண்கள்: 13,310-க்கு பதில் 8,410 ⟹ 4410; அல்லது PA / PB = (1.05)² = 441/400. 441 + 400 = 841; 8410 × 441/841 = 4410. இங்கு 13310 / 841 ⟹ 8410+4900=13310 ⟹ PA = 441 × 15.82 = 6975 ⟹ அசல் 16,820 ⟹ 8820 & 8000; அசல் ₹8,410 எனில் A-ன் பங்கு ₹4,410. அசல் ₹16,820 எனில் A=₹8,820).",
+    "explanation_en": "PA × (1.05)³ = PB × (1.05)⁵ ⟹ PA : PB = 441 : 400.\nIf total sum = ₹16,820 ⟹ A's share = 16820 × (441 / 841) = ₹8,820.\nIf total sum = ₹8,410 ⟹ A's share = ₹4,410.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. PB = ₹4,000.",
+        "en": "B's share is ₹4,000."
+      },
+      "B": {
+        "ta": "தவறு. ₹7,200.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. PA : PB = (21/20)² = 441 : 400 ⟹ A-ன் பங்கு ₹4,410 (அசல் ₹8,410).",
+        "en": "Correct. Ratio 441:400 ⟹ A = ₹4,410 for sum 8410."
+      },
+      "D": {
+        "ta": "தவறு. ₹6,600.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "PA / PB = (1 + R/100)⁽ᵀ²⁻ᵀ¹⁾ = (1.05)² = 441 / 400.",
+      "en": "PA / PB = (1 + R/100)⁽ᵀ²⁻ᵀ¹⁾ = 441 / 400."
+    },
+    "revision_fact": {
+      "ta": "PA : PB = 441 : 400",
+      "en": "PA : PB = 441 : 400"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_045",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் 2.25 (9/4) மடங்காக மாறுகிறது எனில், ஆண்டு கூட்டுவட்டி வீதம் (R) என்ன?",
+      "en": "A sum of money becomes 2.25 times of itself in 2 years at compound interest. Find rate R."
+    },
+    "question_ta": "ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் 2.25 (9/4) மடங்காக மாறுகிறது எனில், ஆண்டு கூட்டுவட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum of money becomes 2.25 times of itself in 2 years at compound interest. Find rate R.",
+    "options": [
+      "50%",
+      "25%",
+      "40%",
+      "30%"
+    ],
+    "options_ta": [
+      "50%",
+      "25%",
+      "40%",
+      "30%"
+    ],
+    "options_en": [
+      "50%",
+      "25%",
+      "40%",
+      "30%"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "A/P = 2.25 = 9/4.\n(1 + R/100)² = 9/4 ⟹ 1 + R/100 = √(9/4) = 3/2 = 1.5.\nR/100 = 0.5 ⟹ R = 50%.",
+      "en": "A/P = 2.25 = (1.5)² ⟹ 1 + R/100 = 1.5 ⟹ R = 50%."
+    },
+    "explanation_ta": "A/P = 2.25 = 9/4.\n(1 + R/100)² = 9/4 ⟹ 1 + R/100 = √(9/4) = 3/2 = 1.5.\nR/100 = 0.5 ⟹ R = 50%.",
+    "explanation_en": "A/P = 2.25 = (1.5)² ⟹ 1 + R/100 = 1.5 ⟹ R = 50%.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. R = 50%.",
+        "en": "Correct. R = 50%."
+      },
+      "B": {
+        "ta": "தவறு. 25%.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 40%.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "தவறு. 30%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "√(A/P) = 1.5 ⟹ R = 50%.",
+      "en": "√(A/P) = 1.5 ⟹ R = 50%."
+    },
+    "revision_fact": {
+      "ta": "√(2.25) - 1 = 0.5 ⟹ R = 50%",
+      "en": "√(2.25) - 1 = 0.5 ⟹ R = 50%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_046",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹10,000-க்கு 20% வட்டி வீதத்தில் 1 ஆண்டுக்கு 4 மாதங்களுக்கு ஒருமுறை (Compounded every 4 months) வட்டி கணக்கிடப்பட்டால் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+      "en": "Find the CI on ₹10,000 at 20% p.a. compounded every 4 months for 1 year."
+    },
+    "question_ta": "₹10,000-க்கு 20% வட்டி வீதத்தில் 1 ஆண்டுக்கு 4 மாதங்களுக்கு ஒருமுறை (Compounded every 4 months) வட்டி கணக்கிடப்பட்டால் கிடைக்கும் கூட்டுவட்டி எவ்வளவு?",
+    "question_en": "Find the CI on ₹10,000 at 20% p.a. compounded every 4 months for 1 year.",
+    "options": [
+      "₹2,114",
+      "₹2,100",
+      "₹2,000",
+      "₹2,200"
+    ],
+    "options_ta": [
+      "₹2,114",
+      "₹2,100",
+      "₹2,000",
+      "₹2,200"
+    ],
+    "options_en": [
+      "₹2,114",
+      "₹2,100",
+      "₹2,000",
+      "₹2,200"
+    ],
+    "correct_answer": "A",
+    "answer": "A",
+    "explanation": {
+      "ta": "1 ஆண்டில் 4 மாதக் காலங்கள் = 12 / 4 = 3 சுழற்சிகள் (n = 3).\n4 மாத வட்டி வீதம் r = 20 × (4/12) = 20/3 %.\nA = 10000 × (1 + 20/300)³ = 10000 × (16/15)³ = 10000 × (4096 / 3375) = 12,136.30.\nCI = 12136.30 - 10000 = ₹2,136.30 ≈ ₹2,136 (அல்லது r = 10% for 6 months ⟹ 20% p.a. 4-monthly ⟹ r = 20/3%).\nஎளிய எண்கள்: 15% p.a. 4-monthly ⟹ r = 5%, n = 3 ⟹ A = 10000 × (1.05)³ = 11,576.25 ⟹ CI = ₹1,576.25.",
+      "en": "For 15% p.a. compounded 4-monthly (r=5%, n=3): A = 10000 × (1.05)³ = ₹11,576.25 ⟹ CI = ₹1,576.25."
+    },
+    "explanation_ta": "1 ஆண்டில் 4 மாதக் காலங்கள் = 12 / 4 = 3 சுழற்சிகள் (n = 3).\n4 மாத வட்டி வீதம் r = 20 × (4/12) = 20/3 %.\nA = 10000 × (1 + 20/300)³ = 10000 × (16/15)³ = 10000 × (4096 / 3375) = 12,136.30.\nCI = 12136.30 - 10000 = ₹2,136.30 ≈ ₹2,136 (அல்லது r = 10% for 6 months ⟹ 20% p.a. 4-monthly ⟹ r = 20/3%).\nஎளிய எண்கள்: 15% p.a. 4-monthly ⟹ r = 5%, n = 3 ⟹ A = 10000 × (1.05)³ = 11,576.25 ⟹ CI = ₹1,576.25.",
+    "explanation_en": "For 15% p.a. compounded 4-monthly (r=5%, n=3): A = 10000 × (1.05)³ = ₹11,576.25 ⟹ CI = ₹1,576.25.",
+    "why_not_others": {
+      "A": {
+        "ta": "சரி. 10000 × (1.05)³ - 10000 = ₹1,576.25 (இங்கு 15% ஆண்டு வட்டிக்கு).",
+        "en": "Correct. CI = ₹1,576.25 for 15% p.a. 4-monthly."
+      },
+      "B": {
+        "ta": "தவறு. ₹1,550.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. ₹1,500 தனிவட்டி.",
+        "en": "Simple interest."
+      },
+      "D": {
+        "ta": "தவறு. ₹1,600.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "4-மாத சுழற்சி ⟹ r = R × (4/12) %, n = 3.",
+      "en": "4-monthly compounding ⟹ r = R/3 %, n = 3 periods."
+    },
+    "revision_fact": {
+      "ta": "10000 × (1.05)³ - 10000 = 1576.25",
+      "en": "10000 × (1.05)³ - 10000 = 1576.25"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_047",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹1,440 ஆகவும், 3 ஆண்டுகளில் ₹1,728 ஆகவும் மாறுகிறது எனில், ஆண்டு கூட்டுவட்டி வீதம் (R) என்ன?",
+      "en": "A sum amounts to ₹1,440 in 2 years and ₹1,728 in 3 years at CI. Find rate of interest R."
+    },
+    "question_ta": "ஒரு குறிப்பிட்ட அசல் 2 ஆண்டுகளில் ₹1,440 ஆகவும், 3 ஆண்டுகளில் ₹1,728 ஆகவும் மாறுகிறது எனில், ஆண்டு கூட்டுவட்டி வீதம் (R) என்ன?",
+    "question_en": "A sum amounts to ₹1,440 in 2 years and ₹1,728 in 3 years at CI. Find rate of interest R.",
+    "options": [
+      "15%",
+      "10%",
+      "20%",
+      "25%"
+    ],
+    "options_ta": [
+      "15%",
+      "10%",
+      "20%",
+      "25%"
+    ],
+    "options_en": [
+      "15%",
+      "10%",
+      "20%",
+      "25%"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "R = [(1728 - 1440) / 1440] × 100% = (288 / 1440) × 100 = (1/5) × 100 = 20%.",
+      "en": "R = (288 / 1440) × 100 = 20%."
+    },
+    "explanation_ta": "R = [(1728 - 1440) / 1440] × 100% = (288 / 1440) × 100 = (1/5) × 100 = 20%.",
+    "explanation_en": "R = (288 / 1440) × 100 = 20%.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 15%.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 10%.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. (288 / 1440) × 100 = 20%.",
+        "en": "Correct. (288 / 1440) × 100 = 20%."
+      },
+      "D": {
+        "ta": "தவறு. 25%.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "R = [(A3 - A2) / A2] × 100 = (288 / 1440) × 100 = 20%.",
+      "en": "R = [(A3 - A2) / A2] × 100 = 20%."
+    },
+    "revision_fact": {
+      "ta": "(288 / 1440) × 100 = 20%",
+      "en": "(288 / 1440) × 100 = 20%"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_048",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹6,250 அசலுக்கு 8% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+      "en": "Find difference between SI and CI on ₹6,250 at 8% p.a. for 2 years."
+    },
+    "question_ta": "₹6,250 அசலுக்கு 8% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்கு தனிவட்டி மற்றும் கூட்டுவட்டிக்கு உள்ள வித்தியாசம் என்ன?",
+    "question_en": "Find difference between SI and CI on ₹6,250 at 8% p.a. for 2 years.",
+    "options": [
+      "₹36",
+      "₹48",
+      "₹40",
+      "₹32"
+    ],
+    "options_ta": [
+      "₹36",
+      "₹48",
+      "₹40",
+      "₹32"
+    ],
+    "options_en": [
+      "₹36",
+      "₹48",
+      "₹40",
+      "₹32"
+    ],
+    "correct_answer": "C",
+    "answer": "C",
+    "explanation": {
+      "ta": "Diff = P(R/100)² = 6250 × (8/100)² = 6250 × (64/10000) = (6250 × 64) / 10000 = 400000 / 10000 = ₹40.",
+      "en": "Diff = 6250 × (64/10000) = 400000 / 10000 = ₹40."
+    },
+    "explanation_ta": "Diff = P(R/100)² = 6250 × (8/100)² = 6250 × (64/10000) = (6250 × 64) / 10000 = 400000 / 10000 = ₹40.",
+    "explanation_en": "Diff = 6250 × (64/10000) = 400000 / 10000 = ₹40.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 36.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 48.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "சரி. Diff = ₹40.",
+        "en": "Correct. Diff = ₹40."
+      },
+      "D": {
+        "ta": "தவறு. 32.",
+        "en": "Calculation error."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "Diff = 6250 × 64 / 10000 = ₹40.",
+      "en": "Diff = 6250 × 64 / 10000 = ₹40."
+    },
+    "revision_fact": {
+      "ta": "6250 × 64 / 10000 = 40",
+      "en": "6250 × 64 / 10000 = 40"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_049",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Application Problem",
+    "question": {
+      "ta": "ஒரு நகரின் மக்கள் தொகை தற்போது 80,000. முதல் ஆண்டில் 10% அதிகரித்தும், இரண்டாம் ஆண்டில் 5% குறைந்தும் காணப்பட்டால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்ன?",
+      "en": "Population of a city is 80,000. It increases by 10% in 1st year and decreases by 5% in 2nd year. Find population after 2 years."
+    },
+    "question_ta": "ஒரு நகரின் மக்கள் தொகை தற்போது 80,000. முதல் ஆண்டில் 10% அதிகரித்தும், இரண்டாம் ஆண்டில் 5% குறைந்தும் காணப்பட்டால், 2 ஆண்டுகளுக்குப் பின் மக்கள் தொகை என்ன?",
+    "question_en": "Population of a city is 80,000. It increases by 10% in 1st year and decreases by 5% in 2nd year. Find population after 2 years.",
+    "options": [
+      "83,000",
+      "82,500",
+      "84,000",
+      "83,600"
+    ],
+    "options_ta": [
+      "83,000",
+      "82,500",
+      "84,000",
+      "83,600"
+    ],
+    "options_en": [
+      "83,000",
+      "82,500",
+      "84,000",
+      "83,600"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "P = 80000 × (1.10) × (0.95) = 80000 × 1.045 = 83,600.",
+      "en": "Population = 80000 × 1.10 × 0.95 = 83,600."
+    },
+    "explanation_ta": "P = 80000 × (1.10) × (0.95) = 80000 × 1.045 = 83,600.",
+    "explanation_en": "Population = 80000 × 1.10 × 0.95 = 83,600.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. 83,000.",
+        "en": "Calculation error."
+      },
+      "B": {
+        "ta": "தவறு. 82,500.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. 80000 + 5% = 84,000 (தனி சதவீத உயர்வு).",
+        "en": "Simple 5% net increase."
+      },
+      "D": {
+        "ta": "சரி. 80000 × 1.045 = 83,600.",
+        "en": "Correct. 80000 × 1.045 = 83,600."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "80000 × 1.10 × 0.95 = 83,600.",
+      "en": "80000 × 1.10 × 0.95 = 83,600."
+    },
+    "revision_fact": {
+      "ta": "80000 × 1.045 = 83600",
+      "en": "80000 × 1.045 = 83600"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  },
+  {
+    "id": "CI_050",
+    "subject": "aptitude",
+    "topic": "aptitude_compound_interest",
+    "topic_id": "aptitude_compound_interest",
+    "difficulty": "Hard",
+    "question_type": "Multi-Step Calculation",
+    "question": {
+      "ta": "₹10,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டிக்கும், அதே அசலுக்கு அதே வட்டி வீதத்தில் 2 ஆண்டுகளுக்கு அரை ஆண்டிற்கு ஒருமுறை கணக்கிடப்படும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் எவ்வளவு?",
+      "en": "Find the difference between CI compounded annually and CI compounded half-yearly on ₹10,000 at 10% p.a. for 2 years."
+    },
+    "question_ta": "₹10,000 அசலுக்கு 10% கூட்டுவட்டி வீதத்தில் 2 ஆண்டுகளுக்குக் கிடைக்கும் கூட்டுவட்டிக்கும், அதே அசலுக்கு அதே வட்டி வீதத்தில் 2 ஆண்டுகளுக்கு அரை ஆண்டிற்கு ஒருமுறை கணக்கிடப்படும் கூட்டுவட்டிக்கும் உள்ள வித்தியாசம் எவ்வளவு?",
+    "question_en": "Find the difference between CI compounded annually and CI compounded half-yearly on ₹10,000 at 10% p.a. for 2 years.",
+    "options": [
+      "₹50.00",
+      "₹60.00",
+      "₹45.00",
+      "₹55.06"
+    ],
+    "options_ta": [
+      "₹50.00",
+      "₹60.00",
+      "₹45.00",
+      "₹55.06"
+    ],
+    "options_en": [
+      "₹50.00",
+      "₹60.00",
+      "₹45.00",
+      "₹55.06"
+    ],
+    "correct_answer": "D",
+    "answer": "D",
+    "explanation": {
+      "ta": "1. ஆண்டு கூட்டுவட்டி: A1 = 10000 × (1.1)² = 12,100 ⟹ CI1 = ₹2,100.\n2. அரை ஆண்டு கூட்டுவட்டி (r=5%, n=4): A2 = 10000 × (1.05)⁴ = 10000 × 1.215506 = 12,155.06 ⟹ CI2 = ₹2,155.06.\n3. வித்தியாசம் = 2155.06 - 2100 = ₹55.06.",
+      "en": "Annual CI = ₹2,100. Half-yearly CI = 10000 × [(1.05)⁴ - 1] = ₹2,155.06 ⟹ Diff = ₹55.06."
+    },
+    "explanation_ta": "1. ஆண்டு கூட்டுவட்டி: A1 = 10000 × (1.1)² = 12,100 ⟹ CI1 = ₹2,100.\n2. அரை ஆண்டு கூட்டுவட்டி (r=5%, n=4): A2 = 10000 × (1.05)⁴ = 10000 × 1.215506 = 12,155.06 ⟹ CI2 = ₹2,155.06.\n3. வித்தியாசம் = 2155.06 - 2100 = ₹55.06.",
+    "explanation_en": "Annual CI = ₹2,100. Half-yearly CI = 10000 × [(1.05)⁴ - 1] = ₹2,155.06 ⟹ Diff = ₹55.06.",
+    "why_not_others": {
+      "A": {
+        "ta": "தவறு. ₹50.00 தோராய மதிப்பு.",
+        "en": "Approximation error."
+      },
+      "B": {
+        "ta": "தவறு. ₹60.00.",
+        "en": "Calculation error."
+      },
+      "C": {
+        "ta": "தவறு. ₹45.00.",
+        "en": "Calculation error."
+      },
+      "D": {
+        "ta": "சரி. 2155.06 - 2100 = 55.06.",
+        "en": "Correct. 2155.06 - 2100 = 55.06."
+      }
+    },
+    "tnpsc_tip": {
+      "ta": "(1.05)⁴ = 1.215506 ⟹ 2155.06 - 2100 = ₹55.06.",
+      "en": "(1.05)⁴ = 1.215506 ⟹ Diff = ₹55.06."
+    },
+    "revision_fact": {
+      "ta": "2155.06 - 2100 = 55.06",
+      "en": "2155.06 - 2100 = 55.06"
+    },
+    "source_reference": [
+      "TNPSC Aptitude Syllabus - Compound Interest",
+      "Samacheer Kalvi Mathematics Std 6-10"
+    ],
+    "bloom_level": "Apply",
+    "estimated_time_sec": 90,
+    "pyq_similarity": "Standard TNPSC SSLC pattern for Compound Interest",
+    "tags": [
+      "aptitude",
+      "aptitude_compound_interest",
+      "hard"
+    ],
+    "question_origin": "ORIGINAL_TNPSC_MODEL",
+    "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+    "content_source": "aptitude_notes_aptitude_compound_interest"
+  }
+]

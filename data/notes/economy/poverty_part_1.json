@@ -1,0 +1,845 @@
+{
+  "meta": {
+    "topic_id": "economy_poverty_part_1",
+    "repository_id": "economy_poverty",
+    "display_title": "Poverty – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Poverty",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Absolute Poverty",
+    "Relative Poverty",
+    "Headcount Ratio HCR",
+    "Poverty Gap Index PGI",
+    "Squared Poverty Gap FGT2",
+    "Sen Index of Poverty",
+    "Capabilities Deprivation Amartya Sen",
+    "Uniform Reference Period URP",
+    "Mixed Reference Period MRP",
+    "Modified Mixed Reference Period MMRP",
+    "Chronic Poor",
+    "Transient Poor Churning Poor",
+    "World Bank 2 Dollar 15 Cents",
+    "MPCE Consumption"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Distinguish clearly between Absolute Poverty (biological survival) and Relative Poverty (economic inequality).",
+        "Understand how household informality makes Monthly Per Capita Consumption Expenditure (MPCE) superior to income as a poverty benchmark."
+      ],
+      "ta": [
+        "முழுமையான வறுமை (உடலியல் உயிர்வாழ்வு) மற்றும் ஒப்பீட்டு வறுமை (பொருளாதார சமத்துவமின்மை) ஆகியவற்றிற்கு இடையேயான வேறுபாட்டைப் புரிந்துகொள்ளுதல்.",
+        "முறைசாரா தொழிலாளர்கள் அதிகம் இருப்பதால் வருமானத்தை விட மாதாந்திர தனிநபர் நுகர்வுச் செலவு (MPCE) எவ்வாறு சிறந்த அளவுகோலாகிறது என்பதை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the Headcount Ratio formula H = q / N and the World Bank extreme poverty threshold ($2.15/day at 2017 PPP).",
+        "Recall the three recall periods: URP (30 days), MRP (365/30 days), and MMRP (7/30/365 days)."
+      ],
+      "ta": [
+        "தலைக்கணக்கு விகித சூத்திரம் H = q / N மற்றும் உலக வங்கி தீவிர வறுமை வரம்பு ($2.15/நாள் 2017 PPP) ஆகியவற்றை நினைவில் நிறுத்துதல்.",
+        "மூன்று மதிப்பீட்டுக் காலங்களை நினைவுகூருதல்: URP (30 நாட்கள்), MRP (365/30 நாட்கள்), மற்றும் MMRP (7/30/365 நாட்கள்)."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why Headcount Ratio violates both Monotonicity and Transfer Axioms, necessitating PGI and Squared Poverty Gap.",
+        "Appraise how switching from URP to MRP and MMRP alters measured poverty percentages across NSSO survey rounds."
+      ],
+      "ta": [
+        "தலைக்கணக்கு விகிதம் ஏன் Monotonicity மற்றும் Transfer விதிகளுக்கு இணங்குவதில்லை என்பதையும், PGI மற்றும் SPG-ன் அவசியத்தையும் ஆய்வு செய்தல்.",
+        "URP முறையிலிருந்து MRP மற்றும் MMRP முறைகளுக்கு மாறுவது NSSO சுற்றுகளில் வறுமை புள்ளிவிவரங்களை எவ்வாறு மாற்றுகிறது என்பதை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge of poverty dynamics to classify households into Chronic, Churning, Occasionally, and Never Poor in exam questions."
+      ],
+      "ta": [
+        "தேர்வு வினாக்களில் குடும்பங்களை நாள்பட்ட, சுழலும், எப்போதாவது மற்றும் ஒருபோதும் ஏழையல்லாதோர் என சரியாக வகைப்படுத்துதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Poverty – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_poverty_concepts",
+      "title_en": "Absolute vs Relative Poverty: Conceptual Foundations",
+      "title_ta": "முழுமையான வறுமை vs ஒப்பீட்டு வறுமை: அடிப்படைக் கோட்பாடுகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_poverty_metrics",
+      "title_en": "Quantitative Poverty Indices: Measurement & Formulas",
+      "title_ta": "அளவியல் வறுமைக் குறியீடுகள்: மதிப்பீட்டு சூத்திரங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_reference_periods",
+      "title_en": "NSSO Consumption Recall Reference Periods: URP, MRP & MMRP",
+      "title_ta": "NSSO நுகர்வுச் செலவு மதிப்பீட்டுக் கால அளவுகள்: URP, MRP மற்றும் MMRP",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_poverty_dynamics",
+      "title_en": "Poverty Dynamics & Categorization of the Poor",
+      "title_ta": "வறுமையின் இயக்கவியல் & ஏழைகளின் வகைப்பாடுகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Poverty is a multidimensional socio-economic condition characterized by the severe deprivation of basic human needs, including food, safe drinking water, sanitation facilities, health, shelter, education, and information. In economic analysis, it is quantified via the poverty line—the minimum consumption expenditure necessary to maintain a basic standard of physical subsistence.",
+      "ta": "வறுமை என்பது உணவு, தூய குடிநீர், சுகாதார வசதிகள், மருத்துவம், உறைவிடம், கல்வி மற்றும் தகவல் உள்ளிட்ட அடிப்படை மனிதத் தேவைகள் தீவிரமாக மறுக்கப்படும் பலபரிமாண சமூக-பொருளாதார நிலையாகும். பொருளாதார ஆய்வில், இது வறுமைக் கோடு மூலம் அளவிடப்படுகிறது—அதாவது குறைந்தபட்ச உடலியல் வாழ்க்கைத் தேவைகளைப் பூர்த்தி செய்வதற்குத் தேவையான குறைந்தபட்ச நுகர்வுச் செலவாகும்."
+    },
+    "introduction": {
+      "en": "The conceptualization of poverty forms the analytical bedrock of development economics and social justice policy in India. While early economic paradigms viewed poverty strictly through the lens of nutritional deprivation and minimal caloric consumption, modern analytical frameworks recognize poverty as an interplay of income inadequacy, assetlessness, social exclusion, and structural capabilities deprivation. Measurement techniques have evolved from rudimentary Headcount Ratios to sophisticated distribution-sensitive measures such as the Poverty Gap Index and the Foster-Greer-Thorbecke (FGT) class of poverty metrics. Understanding these theoretical contours, reference periods, and statistical measurement tools is fundamental for mastering TNPSC Group 1 examination requirements.",
+      "ta": "வறுமை குறித்த கருத்தாக்கம் வளர்ச்சிப் பொருளாதாரம் மற்றும் சமூக நீதி கொள்கையின் அடித்தளமாக அமைகிறது. ஆரம்பகால பொருளாதாரக் கொள்கைகள் வறுமையை ஊட்டச்சத்துக் குறைபாடு மற்றும் குறைந்தபட்ச கலோரி நுகர்வு என்ற கண்ணோட்டத்தில் மட்டுமே பார்த்தன. ஆனால், நவீன பகுப்பாய்வு கட்டமைப்புகள் வறுமையை வருமானப் பற்றாக்குறை, சொத்தின்மை, சமூகப் புறக்கணிப்பு மற்றும் கட்டமைப்பு திறன் இழப்பு ஆகியவற்றின் கூட்டுப் பரிமாணமாகக் கருதுகின்றன. வறுமை அளவீட்டு முறைகள் எளிய 'தலைக்கணக்கு விகிதத்தில்' (Headcount Ratio) இருந்து வறுமை இடைவெளி குறியீடு மற்றும் ஃபாஸ்டர்-கிரீர்-தோர்பெக் (FGT) போன்ற நுட்பமான குறியீடுகளாக வளர்ச்சி பெற்றுள்ளன. இந்த கோட்பாடுகள், மதிப்பீட்டுக் கால அளவுகள் மற்றும் புள்ளிவிவரக் கருவிகளைப் புரிந்துகொள்வது TNPSC குரூப் 1 தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_poverty_concepts": [
+      {
+        "term_en": "Absolute Poverty",
+        "term_ta": "முழுமையான வறுமை (Absolute Poverty)",
+        "details_en": "A condition where household income or expenditure falls below a fixed, biologically defined threshold (poverty line) necessary to afford basic physical sustenance: minimum caloric food, clothing, and shelter. It is independent of the overall wealth distribution in society and is predominantly prevalent in developing nations like India, Sub-Saharan Africa, and parts of Latin America. The World Bank defines global absolute extreme poverty as living on less than $2.15 per person per day (2017 PPP).",
+        "details_ta": "குறைந்தபட்ச உணவு, உடை மற்றும் உறைவிடம் போன்ற அடிப்படை உடலியல் தேவைகளைப் பூர்த்தி செய்யத் தேவையான நிலையான, உயிரியல் ரீதியாக நிர்ணயிக்கப்பட்ட வரம்பை (வறுமைக் கோடு) விடக் குடும்ப வருமானம் அல்லது நுகர்வுச் செலவு குறைவாக இருக்கும் நிலை. இது சமூகத்தின் ஒட்டுமொத்த செல்வப் பகிர்விலிருந்து சுயாதீனமானது மற்றும் இந்தியா, ஆப்பிரிக்கா போன்ற வளரும் நாடுகளில் பிரதானமாக நிலவுகிறது. உலக வங்கி 2017 PPP அடிப்படையில் நபர் ஒருவருக்கு நாள் ஒன்றுக்கு $2.15-க்கு குறைவாக வாழ்வதை உலகளாவிய தீவிர முழுமையான வறுமை என வரையறுக்கிறது."
+      },
+      {
+        "term_en": "Relative Poverty",
+        "term_ta": "ஒப்பீட்டு வறுமை (Relative Poverty)",
+        "details_en": "A condition where an individual or household has substantially fewer resources, income, and living standards compared to the average or median standard of living in their society. It is inherently a measure of economic inequality and relative deprivation rather than physical survival. Common in developed OECD economies, it is typically quantified as having an income below 50% or 60% of the national median disposable income. Relative poverty can persist even if every citizen has abundant food and luxury shelter.",
+        "details_ta": "ஒரு குறிப்பிட்ட சமூகத்தின் சராசரி அல்லது நடுத்தர (Median) வாழ்க்கைத் தரத்துடன் ஒப்பிடும்போது, ஒரு தனிநபர் அல்லது குடும்பத்தின் வருமானம் மற்றும் வாழ்க்கைத்தரம் மிகவும் பின்தங்கியிருக்கும் நிலை. இது உயிர்வாழ்வதற்கான பற்றாக்குறை என்பதை விடப் பொருளாதார சமத்துவமின்மை மற்றும் ஒப்பீட்டு இழப்பீட்டின் அளவீடாகும். வளர்ந்த OECD நாடுகளில் பிரதானமாக உள்ள இது, பொதுவாக நாட்டின் நடுத்தர வருமானத்தில் 50% அல்லது 60%-க்கு கீழ் உள்ளவர்களைக் குறிக்கிறது. அனைத்து குடிமக்களுக்கும் உணவு மற்றும் ஆடம்பர வீடு இருந்தாலும் ஒப்பீட்டு வறுமை நீடிக்க வாய்ப்புண்டு."
+      },
+      {
+        "term_en": "Subjective Poverty",
+        "term_ta": "தனிநபர் உணர்வுசார் வறுமை (Subjective Poverty)",
+        "details_en": "Poverty assessed based on individuals' own self-perception of whether their current income and resources are adequate to meet their perceived essential needs, irrespective of statutory governmental thresholds.",
+        "details_ta": "அரசின் அதிகாரப்பூர்வ வறுமைக் கோட்டு வரம்புகளைப் பொருட்படுத்தாமல், தங்களது அத்தியாவசியத் தேவைகளைப் பூர்த்தி செய்யத் தங்கள் வருமானம் போதுமானதா என்பதை தனிநபர்கள் சுயமாக உணர்ந்து தெரிவிக்கும் வறுமை நிலையாகும்."
+      },
+      {
+        "term_en": "Capabilities Deprivation Approach",
+        "term_ta": "திறன் இழப்பு அணுகுமுறை (Capabilities Deprivation)",
+        "details_en": "Pioneered by Nobel Laureate Amartya Sen, this paradigm asserts that poverty is fundamentally the deprivation of basic human capabilities—such as health, literacy, longevity, and social participation—rather than mere lowness of monetary income.",
+        "details_ta": "நோபல் பரிசு பெற்ற அமர்த்தியா சென் முன்வைத்த இக்கோட்பாடு, வறுமை என்பது வெறும் பண வருமானக் குறைவு மட்டுமல்ல, மாறாக ஆரோக்கியம், கல்வி, நீண்ட ஆயுள் மற்றும் சமூகப் பங்கேற்பு போன்ற அடிப்படை மனிதத் திறன்கள் மறுக்கப்படுவதே ஆகும் என்று நிறுவுகிறது."
+      }
+    ],
+    "sec_poverty_metrics": [
+      {
+        "term_en": "Headcount Ratio (HCR)",
+        "term_ta": "தலைக்கணக்கு விகிதம் (Headcount Ratio - HCR)",
+        "details_en": "The proportion of the population living below the official poverty line. Formula: H = q / N, where 'q' is the number of individuals below the poverty line and 'N' is the total population. Expressed as a percentage: HCR = (q / N) x 100. While simple to calculate and interpret for policy allocations, HCR suffers from severe limitations: it is completely insensitive to the depth (how far below the line people live) and severity (distribution of income among the poor) of poverty.",
+        "details_ta": "அதிகாரப்பூர்வ வறுமைக் கோட்டிற்கு கீழ் வாழும் மக்கள் தொகையின் விகிதம். சூத்திரம்: H = q / N, இதில் 'q' என்பது வறுமைக் கோட்டிற்கு கீழ் உள்ள மக்களின் எண்ணிக்கை மற்றும் 'N' என்பது மொத்த மக்கள் தொகை. சதவீதமாக: HCR = (q / N) x 100. எளிமையான கணக்கீடு என்றாலும் இதில் பெரும் குறைபாடு உள்ளது: வறுமைக் கோட்டிற்கு கீழ் உள்ளவர்கள் எவ்வளவு ஆழமான பற்றாக்குறையில் உள்ளனர் என்பதையோ, அவர்களுக்கு இடையேயான வருமானப் பகிர்வையோ இது வெளிப்படுத்துவதில்லை."
+      },
+      {
+        "term_en": "Poverty Gap Index (PGI)",
+        "term_ta": "வறுமை இடைவெளி குறியீடு (Poverty Gap Index - PGI)",
+        "details_en": "Measures the depth or intensity of poverty by calculating the average shortfall of the poor population's income/expenditure from the poverty line, normalized as a ratio of the poverty line. Formula: PGI = (1/N) * SUM[(z - y_i) / z], where 'z' is the poverty line and 'y_i' is the income/expenditure of poor individual 'i'. It reflects the total per-capita budgetary transfer required to lift all poor individuals exactly to the poverty line under perfect targeting.",
+        "details_ta": "வறுமைக் கோட்டிலிருந்து ஏழைகளின் வருமானம் அல்லது செலவு எவ்வளவு தூரம் பின்தங்கியுள்ளது என்பதைக் கணக்கிட்டு வறுமையின் ஆழத்தை (Depth) அளவிடும் குறியீடு. சூத்திரம்: PGI = (1/N) * SUM[(z - y_i) / z], இதில் 'z' என்பது வறுமைக் கோடு மற்றும் 'y_i' என்பது ஏழை 'i'-ன் வருமானம்/செலவு. முறையான இலக்கு நிர்வாகத்தின் மூலம் அனைத்து ஏழைகளையும் சரியாக வறுமைக் கோட்டுக்கு உயர்த்தத் தேவையான தனிநபர் நிதி மாற்றத்தை இது காட்டுகிறது."
+      },
+      {
+        "term_en": "Squared Poverty Gap Index (Severity of Poverty)",
+        "term_ta": "வர்க்கப்படுத்தப்பட்ட வறுமை இடைவெளி குறியீடு (Severity Index)",
+        "details_en": "The FGT-2 (Foster-Greer-Thorbecke with alpha=2) metric that measures the severity of poverty by squaring the proportionate poverty gaps. By squaring the shortfall [(z - y_i)/z]^2, it places progressively higher mathematical weight on individuals who are furthest below the poverty line, thereby capturing inequality and suffering among the poorest of the poor.",
+        "details_ta": "வறுமை இடைவெளியை வர்க்கப்படுத்துவதன் மூலம் (alpha=2) வறுமையின் தீவிரத்தை (Severity) அளவிடும் ஃபாஸ்டர்-கிரீர்-தோர்பெக் குறியீடு. இடைவெளியை வர்க்கப்படுத்துவதால் [(z - y_i)/z]^2, வறுமைக் கோட்டிற்கு மிகவும் ஆழத்தில் உள்ள மிக ஏழைக் குடிமக்களுக்கு அதிக எடையளித்து, ஏழைகளுக்கு இடையே நிலவும் சமத்துவமின்மையை இது துல்லியமாகப் படம்பிடிக்கிறது."
+      },
+      {
+        "term_en": "Sen Index of Poverty",
+        "term_ta": "சென் வறுமைக் குறியீடு (Sen Index of Poverty)",
+        "details_en": "Pioneered by Amartya Sen, this composite index integrates Headcount Ratio (H), Poverty Gap Ratio (I), and the Gini Coefficient among the poor (G_p). Formula: P_s = H * [I + (1 - I) * G_p]. It satisfies both the Monotonicity Axiom (poverty rises if a poor person's income falls) and the Transfer Axiom (poverty rises if income is transferred from a poorer to a richer poor person).",
+        "details_ta": "அமர்த்தியா சென் உருவாக்கிய இந்த ஒருங்கிணைந்த குறியீடு, தலைக்கணக்கு விகிதம் (H), வருமான இடைவெளி விகிதம் (I) மற்றும் ஏழைகளுக்கு இடையேயான கினி குணகம் (G_p) ஆகியவற்றை ஒன்றிணைக்கிறது. சூத்திரம்: P_s = H * [I + (1 - I) * G_p]. இது ஏழையின் வருமானம் குறைந்தால் வறுமை அதிகரிக்க வேண்டும் (Monotonicity) மற்றும் ஏழையிடமிருந்து மற்றொருவருக்கு வருமானம் மாறினால் வறுமை மாற வேண்டும் (Transfer) ஆகிய இரு விதிகளையும் நிறைவு செய்கிறது."
+      }
+    ],
+    "sec_reference_periods": [
+      {
+        "term_en": "Uniform Reference Period (URP)",
+        "term_ta": "சீரான மதிப்பீட்டுக் காலம் (Uniform Reference Period - URP)",
+        "details_en": "The traditional NSSO methodology employed up to the 1990s where consumer expenditure data for ALL consumption items (food, non-food, durable goods, clothing) were collected using a single uniform recall period of 30 days prior to the date of survey. Criticized for recall error and under-reporting of low-frequency purchases like clothing and durables.",
+        "details_ta": "1990-கள் வரை NSSO பயன்படுத்திய பாரம்பரிய முறை. இதில் அனைத்து வகையான நுகர்வுப் பொருட்களுக்கான (உணவு, உணவு அல்லாதவை, ஆடைகள், நீடித்த நுகர்வுப் பொருட்கள்) செலவு விவரங்களும் ஆய்வு நாளுக்கு முந்தைய 30 நாட்கள் என்ற ஒரே சீரான கால அளவின் கீழ் பெறப்பட்டன. ஆடைகள் போன்ற அரிதாக வாங்கும் பொருட்களின் செலவை இதில் துல்லியமாக நினைவுகூர்ந்து கூற இயலாமை இதன் குறைபாடாகும்."
+      },
+      {
+        "term_en": "Mixed Reference Period (MRP)",
+        "term_ta": "கலப்பு மதிப்பீட்டுக் காலம் (Mixed Reference Period - MRP)",
+        "details_en": "Adopted by NSSO from the 55th Round (1999-2000) and endorsed by the Tendulkar Committee (2009). It measures consumption expenditure using two distinct recall windows: a 365-day recall period for five low-frequency non-food item categories (clothing, footwear, durable goods, education, and institutional medical expenses) and a 30-day recall period for all remaining items (including food).",
+        "details_ta": "55-வது சுற்றிலிருந்து (1999-2000) NSSO அறிமுகப்படுத்தி, டெண்டுல்கர் குழுவால் (2009) பரிந்துரைக்கப்பட்ட முறை. இதில் இரண்டு வெவ்வேறு கால அளவுகள் பயன்படுத்தப்படுகின்றன: குறைந்த அதிர்வெண் கொண்ட 5 உணவு அல்லாத பொருட்களுக்கு (ஆடை, காலணி, நீடித்த பொருட்கள், கல்வி, மருத்துவமனை செலவு) 365 நாட்கள் கால அளவும், உணவு உள்ளிட்ட இதர பொருட்களுக்கு 30 நாட்கள் கால அளவும் பயன்படுத்தப்படுகிறது."
+      },
+      {
+        "term_en": "Modified Mixed Reference Period (MMRP)",
+        "term_ta": "மாற்றியமைக்கப்பட்ட கலப்பு மதிப்பீட்டுக் காலம் (MMRP)",
+        "details_en": "Recommended by the Rangarajan Committee (2014) and currently utilized in NSSO household consumption surveys. It splits recall into three distinct windows: (1) 7-day recall for highly perishable, high-frequency food items (edible oil, egg, fish, meat, vegetables, fruits, spices, tea/coffee); (2) 30-day recall for remaining food items (cereals, pulses, milk, sugar) and fuel/light; (3) 365-day recall for low-frequency non-food items (clothing, footwear, education, institutional medical, durables).",
+        "details_ta": "ரங்கராஜன் குழுவால் (2014) பரிந்துரைக்கப்பட்டு, தற்போது NSSO நுகர்வு ஆய்வுகளில் பயன்படுத்தப்படும் முறை. இது மூன்று கால அளவுகளாகப் பிரிக்கப்படுகிறது: (1) எளிதில் அழுகக்கூடிய உணவுப் பொருட்களுக்கு (எண்ணெய், முட்டை, மீன், இறைச்சி, காய்கறிகள், பழங்கள்) 7 நாட்கள்; (2) தானியங்கள், பருப்பு, பால், சர்க்கரை, எரிபொருள் போன்ற இதர பொருட்களுக்கு 30 நாட்கள்; (3) ஆடை, காலணி, கல்வி, மருத்துவமனை சிகிச்சை, நீடித்த நுகர்வுப் பொருட்களுக்கு 365 நாட்கள்."
+      }
+    ],
+    "sec_poverty_dynamics": [
+      {
+        "term_en": "Always Poor & Usually Poor (Chronic Poor)",
+        "term_ta": "எப்போதும் ஏழைகள் & பொதுவாக ஏழைகள் (நாள்பட்ட ஏழைகள்)",
+        "details_en": "Individuals who persistently reside below the poverty line. 'Always Poor' remain perpetually destitute with zero assets (e.g., bonded or landless destitute labor). 'Usually Poor' occasionally rise slightly above the poverty line during favorable seasonal cycles but spend the majority of their lives below it. Together, they constitute the Chronic Poor.",
+        "details_ta": "எப்போதும் வறுமைக் கோட்டிற்கு கீழேயே வாழ்பவர்கள். 'எப்போதும் ஏழைகள்' (Always Poor) எவ்வித சொத்தும் இன்றி தொடர் ஏழ்மையில் வாடுபவர்கள். 'பொதுவாக ஏழைகள்' (Usually Poor) சாதகமான பருவ காலங்களில் சில காலம் மட்டுமே வறுமைக் கோட்டிற்கு சற்று மேலே உயர்ந்து, வாழ்நாளின் பெரும்பகுதி கீழே வாழ்பவர்கள். இவ்விரு பிரிவினரும் 'நாள்பட்ட ஏழைகள்' (Chronic Poor) எனப்படுகின்றனர்."
+      },
+      {
+        "term_en": "Churning Poor & Occasionally Poor (Transient Poor)",
+        "term_ta": "சுழலும் ஏழைகள் & எப்போதாவது ஏழைகள் (தற்காலிக ஏழைகள்)",
+        "details_en": "'Churning Poor' regularly move in and out of poverty due to seasonal employment cycles (e.g., small farmers, seasonal construction labor). 'Occasionally Poor' spend most of their time above the poverty line but dip below it temporarily during severe exogenous shocks (illness, bereavement, crop failure). Together, they form the Transient Poor.",
+        "details_ta": "'சுழலும் ஏழைகள்' (Churning Poor) பருவ கால வேலைவாய்ப்புகளுக்கு ஏற்ப அடிக்கடி வறுமைக் கோட்டிற்கு உள்ளேயும் வெளியேயும் மாறிக்கொண்டே இருப்பவர்கள் (எ.கா. குறு விவசாயிகள், கட்டுமானத் தொழிலாளர்கள்). 'எப்போதாவது ஏழைகள்' பொதுவாக வறுமைக் கோட்டிற்கு மேலே இருந்துவிட்டு, மருத்துவச் செலவு, பயிர் இழப்பு போன்ற திடீர் அதிர்ச்சிகளால் தற்காலிகமாக வறுமையில் விழுபவர்கள். இவர்கள் 'தற்காலிக ஏழைகள்' (Transient Poor) எனப்படுகின்றனர்."
+      },
+      {
+        "term_en": "Non-Poor (Never Poor)",
+        "term_ta": "ஏழைகள் அல்லாதோர் (ஒருபோதும் ஏழையல்லாதோர்)",
+        "details_en": "Individuals and households endowed with secure assets, salaried employment, or substantial human capital who remain consistently and comfortably above the poverty line at all times.",
+        "details_ta": "நிலையான சொத்துக்கள், நிரந்தர ஊதிய வேலைவாய்ப்பு மற்றும் திறன் மூலதனம் கொண்டு எப்போதும் வறுமைக் கோட்டிற்கு வெகு மேலே பாதுகாப்பாக வாழும் குடும்பங்கள்."
+      },
+      {
+        "term_en": "Vulnerability to Poverty",
+        "term_ta": "வறுமைக்கு ஆளாகும் பாதிப்புத்திறன் (Vulnerability)",
+        "details_en": "The forward-looking probability that a household, currently non-poor, will fall below the poverty line in the near future due to uninsured exposure to idiosyncratic risks (illness, disability) or covariate shocks (natural calamities, pandemics, macroeconomic recessions).",
+        "details_ta": "தற்போது வறுமைக் கோட்டிற்கு மேலே இருக்கும் ஒரு குடும்பம், நோய், விபத்து, இயற்கை பேரிடர் அல்லது பொருளாதார மந்தநிலை போன்ற திடீர் அதிர்ச்சிகளால் எதிர்காலத்தில் வறுமைக் கோட்டிற்கு கீழ் சரிந்துவிடக்கூடிய சாத்தியக்கூறாகும்."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_absolute_vs_relative_poverty",
+        "title_en": "Absolute Poverty vs Relative Poverty Comparison",
+        "title_ta": "முழுமையான வறுமை vs ஒப்பீட்டு வறுமை விரிவான ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Absolute Poverty",
+          "Relative Poverty"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "முழுமையான வறுமை",
+          "ஒப்பீட்டு வறுமை"
+        ],
+        "rows_en": [
+          [
+            "Core Definition",
+            "Severe deprivation of basic physiological survival needs (food, water, shelter)",
+            "Standard of living substantially below the prevailing average/median in society"
+          ],
+          [
+            "Anchor Mechanism",
+            "Fixed biological/physical consumption basket (calories, minimum clothing)",
+            "Variable income distribution threshold (e.g., <50% or <60% of national median)"
+          ],
+          [
+            "Geographic Preponderance",
+            "Dominant in developing and low-income countries (India, Sub-Saharan Africa)",
+            "Dominant in developed and high-income OECD economies (UK, Germany, USA)"
+          ],
+          [
+            "Eradication Potential",
+            "Can theoretically be 100% eliminated through rapid economic growth and redistribution",
+            "Cannot be completely eliminated unless absolute economic equality (Gini = 0) is achieved"
+          ],
+          [
+            "Policy Response",
+            "Direct basic food provisioning, subsidized rationing (NFSA), minimum wage guarantees",
+            "Progressive taxation, wealth redistribution, social safety nets, wage compression"
+          ],
+          [
+            "Global Benchmark",
+            "World Bank Extreme Poverty Line: $2.15 per capita per day (2017 PPP)",
+            "Eurostat at-risk-of-poverty rate: 60% of national median equivalised disposable income"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை வரையறை",
+            "அடிப்படை உடலியல் உயிர்வாழ்வுத் தேவைகளின் கடுமையான பற்றாக்குறை (உணவு, குடிநீர், உறைவிடம்)",
+            "சமூகத்தின் சராசரி வாழ்க்கைத்தரத்தை விட கணிசமாகக் குறைந்த வருமானம் கொண்ட நிலை"
+          ],
+          [
+            "அடிப்படை அளவுகோல்",
+            "நிலையான உயிரியல்/இயற்பியல் நுகர்வு கூடை (கலோரிகள், குறைந்தபட்ச உடைகள்)",
+            "மாறும் வருமானப் பகிர்வு வரம்பு (எ.கா. தேசிய நடுத்தர வருமானத்தில் <50% அல்லது <60%)"
+          ],
+          [
+            "புவியியல் ஆதிக்கம்",
+            "வளரும் மற்றும் குறைந்த வருமானம் கொண்ட நாடுகளில் பிரதானம் (இந்தியா, ஆப்பிரிக்கா)",
+            "வளர்ந்த மற்றும் அதிக வருமானம் கொண்ட OECD நாடுகளில் பிரதானம் (பிரிட்டன், அமெரிக்கா)"
+          ],
+          [
+            "ஒழிப்பதற்கான சாத்தியம்",
+            "பொருளாதார வளர்ச்சி மற்றும் சரியான பகிர்வு மூலம் 100% முற்றிலுமாக ஒழிக்க முடியும்",
+            "முழுமையான சமத்துவம் (Gini = 0) ஏற்பட்டால் அன்றி இதனை முற்றிலும் ஒழிக்க முடியாது"
+          ],
+          [
+            "கொள்கை நடவடிக்கைகள்",
+            "உணவு தானிய விநியோகம், மானிய PDS, அடிப்படை ஊதிய உத்தரவாதத் திட்டங்கள்",
+            "முற்போக்கு வரிவிதிப்பு, செல்வப் பகிர்வு, சமூகப் பாதுகாப்பு, சமத்துவக் கொள்கைகள்"
+          ],
+          [
+            "உலகளாவிய அளவீடு",
+            "உலக வங்கி தீவிர வறுமைக் கோடு: நபர் ஒருவருக்கு நாள் ஒன்றுக்கு $2.15 (2017 PPP)",
+            "ஐரோப்பிய யூனியன் வறுமை ஆபத்து வரம்பு: நடுத்தர வருமானத்தில் 60%"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_poverty_indices_comparison",
+        "title_en": "Quantitative Poverty Indices: HCR vs PGI vs Squared Poverty Gap",
+        "title_ta": "அளவியல் வறுமைக் குறியீடுகள் ஒப்பீடு: HCR vs PGI vs வர்க்க இடைவெளி",
+        "headers_en": [
+          "Metric Attribute",
+          "Headcount Ratio (HCR / FGT-0)",
+          "Poverty Gap Index (PGI / FGT-1)",
+          "Squared Poverty Gap (FGT-2)"
+        ],
+        "headers_ta": [
+          "குறியீட்டு அம்சம்",
+          "தலைக்கணக்கு விகிதம் (HCR)",
+          "வறுமை இடைவெளி குறியீடு (PGI)",
+          "வர்க்க இடைவெளி குறியீடு (FGT-2)"
+        ],
+        "rows_en": [
+          [
+            "What It Measures",
+            "Incidence of poverty: proportion of population below poverty line",
+            "Depth of poverty: average distance of the poor below the poverty line",
+            "Severity of poverty: inequality and depth of deprivation among the poorest"
+          ],
+          [
+            "Mathematical Weighting",
+            "Binary (1 if poor, 0 if non-poor); treats all poor equally",
+            "Linear weighting proportional to individual poverty shortfall (z - y_i)",
+            "Quadratic weighting [(z - y_i)/z]^2; higher weight to the poorest individuals"
+          ],
+          [
+            "Axiom Compliance",
+            "Violates both Monotonicity Axiom and Transfer Axiom",
+            "Satisfies Monotonicity Axiom; violates Transfer Axiom",
+            "Satisfies both Monotonicity Axiom and Transfer Axiom"
+          ],
+          [
+            "Perverse Incentive",
+            "Governments incentivize lifting individuals just below the line, ignoring the ultra-poor",
+            "Focuses on narrowing average deficit without accounting for internal disparity",
+            "Incentivizes targeting scarce fiscal resources to the most destitute segments"
+          ],
+          [
+            "Formula Structure",
+            "H = q / N",
+            "PGI = (1/N) * SUM[(z - y_i) / z]",
+            "SPG = (1/N) * SUM[((z - y_i) / z)^2]"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அளவிடும் தன்மை",
+            "வறுமையின் பரவல்: வறுமைக் கோட்டிற்கு கீழ் உள்ள மக்கள் தொகை விகிதம்",
+            "வறுமையின் ஆழம்: வறுமைக் கோட்டிலிருந்து ஏழைகளின் சராசரி பின்தங்கிய இடைவெளி",
+            "வறுமையின் தீவிரம்: மிக ஏழைகளுக்கு இடையே நிலவும் சமத்துவமின்மை மற்றும் ஆழம்"
+          ],
+          [
+            "கணித எடையிடல் முறை",
+            "இருமை முறை (ஏழை என்றால் 1, இல்லையெனில் 0); அனைத்து ஏழைகளையும் சமமாக நடத்தும்",
+            "தனிநபர் இடைவெளிக்கு (z - y_i) நேர்விகித எடையிடல் முறை",
+            "வர்க்க எடையிடல் [(z - y_i)/z]^2; மிகவும் ஏழ்மையில் உள்ளவர்களுக்கு அதிக முக்கியத்துவம்"
+          ],
+          [
+            "விதிகளுக்கு இணங்குதல்",
+            "Monotonicity மற்றும் Transfer ஆகிய இரண்டு விதிகளையும் பூர்த்தி செய்யாது",
+            "Monotonicity விதியை பூர்த்தி செய்யும்; Transfer விதியை மீறும்",
+            "Monotonicity மற்றும் Transfer ஆகிய இரண்டு விதிகளையும் முழுமையாகப் பூர்த்தி செய்யும்"
+          ],
+          [
+            "அரசு கொள்கை விளைவு",
+            "வறுமைக் கோட்டிற்கு மிக அருகில் உள்ளவர்களை மட்டும் மேலே உயர்த்த அரசு முயலும் அபாயம்",
+            "உள் சமத்துவமின்மையைக் கவனிக்காமல் சராசரி இடைவெளியை மட்டும் குறைக்கும் நோக்கு",
+            "மிகவும் ஏழ்மையில் உள்ள அடித்தட்டு மக்களுக்கு முன்னுரிமை அளிக்கத் தூண்டுகிறது"
+          ],
+          [
+            "சூத்திர வடிவம்",
+            "H = q / N",
+            "PGI = (1/N) * SUM[(z - y_i) / z]",
+            "SPG = (1/N) * SUM[((z - y_i) / z)^2]"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_reference_periods_comparison",
+        "title_en": "NSSO Consumption Recall Methodologies: URP vs MRP vs MMRP",
+        "title_ta": "NSSO நுகர்வுச் செலவு மதிப்பீட்டு முறைகள்: URP vs MRP vs MMRP ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "Uniform Reference Period (URP)",
+          "Mixed Reference Period (MRP)",
+          "Modified Mixed Reference Period (MMRP)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "சீரான மதிப்பீட்டுக் காலம் (URP)",
+          "கலப்பு மதிப்பீட்டுக் காலம் (MRP)",
+          "மாற்றியமைக்கப்பட்ட கலப்பு காலம் (MMRP)"
+        ],
+        "rows_en": [
+          [
+            "Historical Period",
+            "Standard NSSO method up to 1999-2000 (Lakdawala Committee baseline)",
+            "Introduced in 55th Round (1999-2000); Tendulkar Committee baseline (2009)",
+            "Introduced in 66th/68th Round; Rangarajan Committee baseline (2014)"
+          ],
+          [
+            "Food Items Recall",
+            "Uniform 30 days for all food and beverage consumption",
+            "Uniform 30 days for all food items",
+            "Split: 7 days for perishables (veggies, milk, meat); 30 days for staples"
+          ],
+          [
+            "Low-Frequency Durables",
+            "30 days (leads to severe recall under-reporting and volatility)",
+            "365 days for 5 items: clothing, footwear, durables, education, health",
+            "365 days for clothing, footwear, durables, education, and hospital health"
+          ],
+          [
+            "High-Frequency Perishables",
+            "30 days",
+            "30 days",
+            "7-day recall (substantially reduces recall memory lapse for daily perishables)"
+          ],
+          [
+            "Impact on Poverty Rate",
+            "Yields higher measured poverty due to recall under-reporting of durables",
+            "Yields lower measured poverty than URP (Tendulkar poverty: 21.9% in 2011-12)",
+            "Captures higher nutritional expenditure; Rangarajan poverty: 29.5% in 2011-12"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரலாற்றுக் காலம்",
+            "1999-2000 வரை நிலையான முறை (லக்டவாலா குழு பயன்படுத்திய அடிப்படை)",
+            "55-வது சுற்றில் அறிமுகம்; டெண்டுல்கர் குழு (2009) ஏற்றுக்கொண்ட முறை",
+            "68-வது சுற்றில் முழு பயன்பாடு; ரங்கராஜன் குழு (2014) பயன்படுத்திய முறை"
+          ],
+          [
+            "உணவுப் பொருட்கள் கால அளவு",
+            "அனைத்து உணவு மற்றும் பானங்களுக்கும் சீரான 30 நாட்கள்",
+            "அனைத்து உணவுப் பொருட்களுக்கும் சீரான 30 நாட்கள்",
+            "பிரிப்பு: எளிதில் அழுகும் பொருட்களுக்கு 7 நாட்கள்; தானியங்களுக்கு 30 நாட்கள்"
+          ],
+          [
+            "நீடித்த நுகர்வுப் பொருட்கள்",
+            "30 நாட்கள் (நினைவுகூர்தல் பிழையால் குறைவான செலவாகப் பதிவாகும்)",
+            "365 நாட்கள்: ஆடை, காலணி, நீடித்த பொருட்கள், கல்வி, மருத்துவமனை செலவு",
+            "365 நாட்கள்: ஆடை, காலணி, நீடித்த பொருட்கள், கல்வி, மருத்துவமனை செலவு"
+          ],
+          [
+            "அழுகும் உணவுப் பொருட்கள்",
+            "30 நாட்கள்",
+            "30 நாட்கள்",
+            "7 நாட்கள் (தினசரி அழுகும் உணவுப் பொருட்களின் செலவை மிகத் துல்லியமாகப் படம்பிடிக்கிறது)"
+          ],
+          [
+            "வறுமை விகிதத்தின் மீதான தாக்கம்",
+            "நீடித்த செலவுகள் குறைவாகப் பதிவாவதால் அதிக வறுமை விகிதத்தைக் காட்டும்",
+            "URP-ஐ விடக் குறைவான வறுமையைக் காட்டும் (டெண்டுல்கர் முறை: 2011-12ல் 21.9%)",
+            "உணவுச் செலவை துல்லியமாகக் கணக்கிடுவதால் அதிக வறுமையைக் காட்டும் (ரங்கராஜன்: 29.5%)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_categories_of_poor",
+        "title_en": "Taxonomy of Poverty: Categorization of Households Over Time",
+        "title_ta": "வறுமையின் வகைப்பாடுகள்: காலப்போக்கில் குடும்பங்களின் வாழ்க்கைநிலை",
+        "headers_en": [
+          "Category Group",
+          "Sub-Classification",
+          "Movement Around Poverty Line",
+          "Typical Demographics / Occupations"
+        ],
+        "headers_ta": [
+          "வகைப்பாட்டுக் குழு",
+          "உட்பிரிவு",
+          "வறுமைக் கோட்டை நோக்கிய நகர்வு",
+          "பிரதிநிதித்துவ மக்கள் / தொழில்கள்"
+        ],
+        "rows_en": [
+          [
+            "Chronic Poor",
+            "Always Poor",
+            "Permanently below poverty line; zero upward movement",
+            "Destitute, bonded labor, disabled without support, extreme landless"
+          ],
+          [
+            "Chronic Poor",
+            "Usually Poor",
+            "Predominantly below; briefly rises above during harvest booms",
+            "Marginal agricultural tenants, traditional artisans, casual wage labor"
+          ],
+          [
+            "Transient Poor",
+            "Churning Poor",
+            "Regularly oscillates above and below poverty line cyclically",
+            "Small and marginal farmers, seasonal construction workers, informal vendors"
+          ],
+          [
+            "Transient Poor",
+            "Occasionally Poor",
+            "Usually above poverty line; falls below during severe external shocks",
+            "Salaried workers hit by illness, accident, enterprise collapse, or drought"
+          ],
+          [
+            "Non-Poor",
+            "Never Poor",
+            "Permanently and safely above poverty line under all normal conditions",
+            "Organized sector employees, substantial landowners, professionals, entrepreneurs"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நாள்பட்ட ஏழைகள்",
+            "எப்போதும் ஏழைகள் (Always Poor)",
+            "வறுமைக் கோட்டிற்கு கீழேயே நிலையாக இருப்பவர்கள்; முன்னேற்றமின்மை",
+            "ஆதரவற்றோர், கொத்தடிமைகள், ஊனமுற்றோர், முற்றிலும் நிலமற்ற தொழிலாளர்கள்"
+          ],
+          [
+            "நாள்பட்ட ஏழைகள்",
+            "பொதுவாக ஏழைகள் (Usually Poor)",
+            "பெரும்பாலும் கீழே இருப்பவர்கள்; அறுவடை காலத்தில் மட்டும் சற்று மேலே எழுபவர்கள்",
+            "குத்தகை விவசாயிகள், பாரம்பரிய கைவினைஞர்கள், கிராமப்புற முறைசாரா கூலிகள்"
+          ],
+          [
+            "தற்காலிக ஏழைகள்",
+            "சுழலும் ஏழைகள் (Churning Poor)",
+            "வறுமைக் கோட்டிற்கு மேலேயும் கீழேயும் தொடர்ந்து சுழன்று கொண்டே இருப்பவர்கள்",
+            "சிறு குறு விவசாயிகள், பருவ கால கட்டுமானத் தொழிலாளர்கள், தெருவோர வியாபாரிகள்"
+          ],
+          [
+            "தற்காலிக ஏழைகள்",
+            "எப்போதாவது ஏழைகள் (Occasionally Poor)",
+            "பொதுவாக மேலே இருப்பவர்கள்; திடீர் பேரிடர், விபத்து, நோயால் கீழே சரிபவர்கள்",
+            "மருத்துவச் செலவால் பாதிக்கப்படும் குடும்பங்கள், சிறு தொழில் நலிவடைந்தவர்கள்"
+          ],
+          [
+            "ஏழைகள் அல்லாதோர்",
+            "ஒருபோதும் ஏழையல்லாதோர் (Never Poor)",
+            "எல்லா காலங்களிலும் வறுமைக் கோட்டிற்கு வெகு மேலே பாதுகாப்பாக வாழ்பவர்கள்",
+            "ஒழுங்கமைக்கப்பட்ட துறை ஊழியர்கள், பெரு நில உரிமையாளர்கள், தொழில் வல்லுநர்கள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Poverty Part 1: Concepts, Measurement & Indicators",
+        "short_label": "Poverty Concepts",
+        "children": [
+          {
+            "title": "Conceptual Classifications",
+            "short_label": "Classifications",
+            "children": [
+              {
+                "title": "Absolute Poverty (Basic Survival Threshold, World Bank $2.15)",
+                "short_label": "Absolute"
+              },
+              {
+                "title": "Relative Poverty (Inequality Metric, <50% Median Income)",
+                "short_label": "Relative"
+              },
+              {
+                "title": "Capabilities Deprivation (Amartya Sen: Freedoms & Functionings)",
+                "short_label": "Capabilities"
+              }
+            ]
+          },
+          {
+            "title": "Quantitative Measurement Metrics",
+            "short_label": "Metrics",
+            "children": [
+              {
+                "title": "Headcount Ratio (HCR: Incidence, q/N)",
+                "short_label": "HCR"
+              },
+              {
+                "title": "Poverty Gap Index (PGI: Depth/Intensity)",
+                "short_label": "PGI"
+              },
+              {
+                "title": "Squared Poverty Gap (FGT-2: Severity, Inequality among Poor)",
+                "short_label": "SPG"
+              },
+              {
+                "title": "Sen Index (Composite: H, I, Gini)",
+                "short_label": "Sen Index"
+              }
+            ]
+          },
+          {
+            "title": "NSSO Reference Periods",
+            "short_label": "Reference Periods",
+            "children": [
+              {
+                "title": "URP (Uniform 30 Days for all items)",
+                "short_label": "URP"
+              },
+              {
+                "title": "MRP (365 Days for 5 Durables, 30 Days for Food - Tendulkar)",
+                "short_label": "MRP"
+              },
+              {
+                "title": "MMRP (7 Days Perishables, 30 Days Food, 365 Days Durables - Rangarajan)",
+                "short_label": "MMRP"
+              }
+            ]
+          },
+          {
+            "title": "Poverty Dynamics Taxonomy",
+            "short_label": "Dynamics",
+            "children": [
+              {
+                "title": "Chronic Poor (Always Poor + Usually Poor)",
+                "short_label": "Chronic"
+              },
+              {
+                "title": "Transient Poor (Churning Poor + Occasionally Poor)",
+                "short_label": "Transient"
+              },
+              {
+                "title": "Non-Poor (Never Poor)",
+                "short_label": "Non-Poor"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Absolute vs Relative Poverty Metric Trap: Survival vs Inequality",
+        "points": {
+          "en": [
+            "TRAP: Confusing Relative Poverty with extreme physical starvation, or assuming developing nations measure only relative poverty.",
+            "CORRECT FACT: Absolute Poverty measures the physical inability to meet basic biological survival needs (food, clothing, shelter) against a fixed poverty line. Relative Poverty measures economic inequality and income dispersion relative to societal median living standards. India officially measures ABSOLUTE poverty; developed OECD countries measure RELATIVE poverty.",
+            "WHY CANDIDATES FAIL: Equating the word 'Poverty' universally with caloric starvation, failing to realize that high-income nations like Norway still report 10-12% relative poverty despite zero absolute starvation."
+          ],
+          "ta": [
+            "பொறி: ஒப்பீட்டு வறுமை என்பதை கடுமையான பட்டினியுடன் குழப்பிக் கொள்வது, அல்லது இந்தியா போன்ற நாடுகள் ஒப்பீட்டு வறுமையை மட்டுமே அளவிடுகின்றன என நினைப்பது.",
+            "சரியான உண்மை: முழுமையான வறுமை என்பது நிலையான வறுமைக் கோட்டின் மூலம் அடிப்படை உடலியல் உயிர்வாழ்வுத் தேவைகளை பூர்த்தி செய்ய இயலாத நிலையைக் குறிக்கிறது. ஒப்பீட்டு வறுமை என்பது சமூக நடுத்தர வாழ்க்கைத்தரத்துடன் ஒப்பிடப்படும் 'வருமான சமத்துவமின்மையின்' அளவீடாகும். இந்தியா அதிகாரப்பூர்வமாக 'முழுமையான வறுமையை' அளவிடுகிறது; OECD வளர்ந்த நாடுகள் 'ஒப்பீட்டு வறுமையை' அளவிடுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வறுமை என்றாலே பசி பட்டினி மட்டுமே என நினைப்பது; நார்வே போன்ற பணக்கார நாடுகளில் பசி இல்லாதபோதும் 10-12% ஒப்பீட்டு வறுமை இருப்பதை உணராமை."
+          ]
+        }
+      },
+      {
+        "title": "Headcount Ratio (HCR) Limitation Trap: Insensitive to Severity",
+        "points": {
+          "en": [
+            "TRAP: Assuming that a policy which reduces the Headcount Ratio has unquestionably helped the poorest and most destitute citizens.",
+            "CORRECT FACT: The Headcount Ratio (HCR) is mathematically BLIND to the depth and distribution of poverty. If an intervention lifts an individual sitting 50 paise below the poverty line to 50 paise above it, HCR drops by 1 unit. But if the government transfers ₹5,000 to a starving citizen at the absolute bottom (lifting them from ₹100 to ₹600, while the poverty line is ₹800), HCR DOES NOT CHANGE AT ALL.",
+            "WHY CANDIDATES FAIL: Failing to understand why economists insist on using the Poverty Gap Index (PGI) and Squared Poverty Gap (SPG) alongside HCR."
+          ],
+          "ta": [
+            "பொறி: தலைக்கணக்கு விகிதத்தைக் (HCR) குறைக்கும் ஒரு அரசுத் திட்டம் மிக அடித்தட்டு ஏழைகளுக்கு நிச்சயம் உதவியுள்ளது என நினைப்பது.",
+            "சரியான உண்மை: தலைக்கணக்கு விகிதம் (HCR) வறுமையின் ஆழத்தையோ தீவிரத்தையோ கண்டறிய இயலாது. வறுமைக் கோட்டிற்கு வெறும் 50 காசுகள் கீழே உள்ள ஒருவரை மேலே உயர்த்தினால் HCR உடனே குறையும். ஆனால், வறுமையின் அடித்தட்டில் வாடும் ஒருவருக்கு ₹5,000 உதவி வழங்கி அவரது நிலையை உயர்த்தினாலும் (அவர் வறுமைக் கோட்டைத் தாண்டாத வரை) HCR-ல் எவ்வித மாற்றமும் ஏற்படாது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பொருளாதார வல்லுநர்கள் ஏன் HCR உடன் வறுமை இடைவெளி குறியீட்டையும் (PGI) வர்க்க இடைவெளி குறியீட்டையும் (SPG) பயன்படுத்துகின்றனர் என்பதைப் புரிந்து கொள்ளாமை."
+          ]
+        }
+      },
+      {
+        "title": "Reference Periods Recall Window Trap: URP vs MRP vs MMRP",
+        "points": {
+          "en": [
+            "TRAP: Confusing the recall windows used in Tendulkar Committee (MRP) and Rangarajan Committee (MMRP).",
+            "CORRECT FACT: MRP uses 365 days for 5 durable non-food categories and 30 days for everything else (including food). MMRP introduced a 7-DAY recall specifically for high-frequency perishables (edible oil, vegetables, fruits, eggs, fish, meat), kept 30 days for cereals/pulses, and 365 days for durables.",
+            "WHY CANDIDATES FAIL: Assuming MMRP abolished the 365-day and 30-day recall windows entirely, rather than creating a three-tiered layered framework."
+          ],
+          "ta": [
+            "பொறி: டெண்டுல்கர் குழுவின் MRP முறைக்கும் ரங்கராஜன் குழுவின் MMRP முறைக்கும் இடையேயான நுகர்வு நாட்களை மாற்றிப் புரிந்துகொள்வது.",
+            "சரியான உண்மை: MRP முறை 5 நீடித்த பொருட்களுக்கு 365 நாட்களையும், உணவு உள்ளிட்ட மற்ற அனைத்திற்கும் 30 நாட்களையும் பயன்படுத்துகிறது. ஆனால் MMRP முறை எளிதில் அழுகக்கூடிய பொருட்களுக்கு (எண்ணெய், காய்கறிகள், இறைச்சி) '7 நாட்கள்' கால அளவையும், தானியங்களுக்கு 30 நாட்களையும், நீடித்த பொருட்களுக்கு 365 நாட்களையும் என மூன்று அடுக்குகளாகப் பயன்படுத்துகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: MMRP முறை பழைய 365 மற்றும் 30 நாட்கள் முறையை முற்றிலுமாக ரத்து செய்துவிட்டது என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Poverty Line Measurement Unit Trap: Consumption Expenditure vs Income",
+        "points": {
+          "en": [
+            "TRAP: Believing that India's official poverty line is based on Monthly Per Capita Income.",
+            "CORRECT FACT: Official poverty lines in India (NSSO, Planning Commission, NITI Aayog) are strictly calculated based on MONTHLY PER CAPITA CONSUMPTION EXPENDITURE (MPCE), NOT INCOME. Household income in India is notoriously unreliable and fluctuating due to massive informality (over 80% informal labor) and agricultural seasonality.",
+            "WHY CANDIDATES FAIL: Everyday language uses 'income' and 'expenditure' interchangeably, leading students to mark 'per capita income' as the poverty line base in exams."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவின் அதிகாரப்பூர்வ வறுமைக் கோடு 'மாதாந்திர தனிநபர் வருமானத்தின்' அடிப்படையில் கணக்கிடப்படுகிறது என நம்புவது.",
+            "சரியான உண்மை: இந்தியாவில் வறுமைக் கோடு என்பது 'மாதாந்திர தனிநபர் நுகர்வுச் செலவின்' (Monthly Per Capita Consumption Expenditure - MPCE) அடிப்படையிலேயே கணக்கிடப்படுகிறது, வருமானத்தின் அடிப்படையில் அல்ல! 80%-க்கும் அதிகமான முறைசாரா தொழிலாளர்கள் உள்ள நாட்டில் வருமானத்தைக் கணக்கிடுவது கடினம் மற்றும் நம்பகமற்றது என்பதால் நுகர்வுச் செலவே அளவுகோலாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அன்றாடப் பேச்சில் வருமானம் மற்றும் செலவு இரண்டையும் ஒன்றாகக் கருதி, தேர்வில் 'தனிநபர் வருமானம்' என்ற விருப்பத்தைத் தேர்வு செய்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "Poverty Gap vs Squared Poverty Gap Trap: Depth vs Severity",
+        "points": {
+          "en": [
+            "TRAP: Treating the Poverty Gap Index (PGI) and Squared Poverty Gap Index (SPGI) as identical measures of poverty depth.",
+            "CORRECT FACT: PGI measures the DEPTH of poverty (average distance of the poor below the line). SPGI measures the SEVERITY of poverty (inequality among the poor themselves) by squaring individual shortfalls. PGI satisfies the Monotonicity axiom but FAILS the Transfer axiom; SPGI satisfies BOTH axioms.",
+            "WHY CANDIDATES FAIL: Missing the mathematical distinction: squaring the shortfall penalizes extreme destitution disproportionately."
+          ],
+          "ta": [
+            "பொறி: வறுமை இடைவெளி குறியீடும் (PGI) வர்க்க இடைவெளி குறியீடும் (SPGI) வறுமையின் ஆழத்தைக் குறிக்கும் ஒரே அளவீடு என நினைப்பது.",
+            "சரியான உண்மை: PGI வறுமையின் 'ஆழத்தை' (சராசரி பின்தங்கிய இடைவெளி) மட்டுமே அளவிடுகிறது. SPGI இடைவெளியை வர்க்கப்படுத்துவதன் மூலம் ஏழைகளுக்குள் நிலவும் சமத்துவமின்மையை, அதாவது வறுமையின் 'தீவிரத்தை' (Severity) அளவிடுகிறது. PGI மாறும் விதியை நிறைவு செய்தாலும் பகிர்வு விதியை (Transfer axiom) மீறுகிறது; ஆனால் SPGI இரண்டு விதிகளையும் நிறைவு செய்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கணித ரீதியாக வர்க்கப்படுத்துவது மிக அடித்தட்டு ஏழைகளின் துயரத்திற்கு கூடுதல் முக்கியத்துவம் அளிக்கிறது என்பதை உணராமை."
+          ]
+        }
+      },
+      {
+        "title": "Churning Poor vs Occasionally Poor Trap: Direction of Movement",
+        "points": {
+          "en": [
+            "TRAP: Reversing the definitions of Churning Poor and Occasionally Poor.",
+            "CORRECT FACT: 'Churning Poor' spend significant time BOTH above and below the line, regularly fluctuating due to seasonal factors (e.g., marginal farmers). 'Occasionally Poor' are usually ABOVE the poverty line and only drop below it during sudden catastrophe (unemployment, medical crisis, drought).",
+            "WHY CANDIDATES FAIL: Failing to recognize that Occasionally Poor are structurally non-poor who suffer temporary transient distress."
+          ],
+          "ta": [
+            "பொறி: சுழலும் ஏழைகள் (Churning Poor) மற்றும் எப்போதாவது ஏழைகள் (Occasionally Poor) ஆகியோரின் விளக்கங்களை மாற்றிப் புரிந்துகொள்வது.",
+            "சரியான உண்மை: 'சுழலும் ஏழைகள்' பருவ கால மாற்றங்களால் வறுமைக் கோட்டிற்கு மேலேயும் கீழேயும் தொடர்ந்து மாறிக்கொண்டே இருப்பவர்கள் (சிறு விவசாயிகள்). ஆனால் 'எப்போதாவது ஏழைகள்' எப்போதும் வறுமைக் கோட்டிற்கு மேலே இருப்பவர்கள்; திடீர் நோய் அல்லது பேரிடர் காலத்தில் மட்டுமே தற்காலிகமாக கீழே சரிபவர்கள்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: எப்போதாவது ஏழைகள் என்பவர்கள் அடிப்படையில் வறுமையில் இல்லாதவர்கள், திடீர் அதிர்ச்சியால் மட்டுமே பாதிக்கப்படுகின்றனர் என்பதை அறியாமை."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Official poverty estimation in India is based on Monthly Per Capita Consumption Expenditure (MPCE), not income.",
+        "Absolute poverty measures deprivation against a fixed biological threshold, whereas relative poverty measures income inequality.",
+        "The World Bank defines extreme international absolute poverty as living on less than $2.15 per day (2017 PPP).",
+        "Headcount Ratio (HCR) formula is H = q / N, where q is the number of poor and N is the total population.",
+        "Headcount Ratio satisfies neither the Monotonicity Axiom nor the Transfer Axiom of poverty measurement.",
+        "Poverty Gap Index (PGI) reflects the total financial transfer needed to bring all poor people exactly to the poverty line.",
+        "Squared Poverty Gap Index (FGT-2) squares individual deficits to capture inequality among the poorest of the poor.",
+        "The Sen Index combines Headcount Ratio, Poverty Gap Ratio, and the Gini coefficient of the poor.",
+        "Uniform Reference Period (URP) used a single 30-day recall period for all consumption goods.",
+        "Mixed Reference Period (MRP) introduced a 365-day recall for 5 durable categories and 30 days for other items.",
+        "Modified Mixed Reference Period (MMRP) introduced a 7-day recall for perishable food items.",
+        "The Chronic Poor category comprises the 'Always Poor' and the 'Usually Poor'."
+      ],
+      "ta": [
+        "இந்தியாவில் அதிகாரப்பூர்வ வறுமை மதிப்பீடு வருமானத்தின் அடிப்படையில் அல்லாமல் மாதாந்திர தனிநபர் நுகர்வுச் செலவின் (MPCE) அடிப்படையில் அமைகிறது.",
+        "முழுமையான வறுமை நிலையான உயிரியல் தேவைகளின் பற்றாக்குறையை அளவிடுகிறது; ஒப்பீட்டு வறுமை வருமான சமத்துவமின்மையை அளவிடுகிறது.",
+        "உலக வங்கி நபர் ஒருவருக்கு நாள் ஒன்றுக்கு $2.15-க்கு (2017 PPP) கீழ் வாழ்வதை உலகளாவிய தீவிர வறுமையாக வரையறுக்கிறது.",
+        "தலைக்கணக்கு விகிதத்தின் (HCR) சூத்திரம் H = q / N ஆகும்; இதில் q என்பது ஏழைகளின் எண்ணிக்கை, N என்பது மொத்த மக்கள் தொகை.",
+        "தலைக்கணக்கு விகிதம் Monotonicity மற்றும் Transfer ஆகிய இரண்டு வறுமை அளவீட்டு விதிகளையும் பூர்த்தி செய்வதில்லை.",
+        "வறுமை இடைவெளி குறியீடு (PGI) அனைத்து ஏழைகளையும் வறுமைக் கோட்டிற்கு உயர்த்தத் தேவையான மொத்த நிதி மாற்றத்தைக் காட்டுகிறது.",
+        "வர்க்க இடைவெளி குறியீடு (FGT-2) ஏழைகளுக்கு இடையே நிலவும் சமத்துவமின்மையை அளவிட இடைவெளிகளை வர்க்கப்படுத்துகிறது.",
+        "சென் வறுமைக் குறியீடு தலைக்கணக்கு விகிதம், வறுமை இடைவெளி விகிதம் மற்றும் ஏழைகளின் கினி குணகம் ஆகியவற்றை ஒன்றிணைக்கிறது.",
+        "சீரான மதிப்பீட்டுக் காலம் (URP) அனைத்து நுகர்வுப் பொருட்களுக்கும் ஒரே மாதிரியான 30 நாட்கள் கால அளவைப் பயன்படுத்தியது.",
+        "கலப்பு மதிப்பீட்டுக் காலம் (MRP) 5 நீடித்த பொருட்களுக்கு 365 நாட்களையும் இதர பொருட்களுக்கு 30 நாட்களையும் பயன்படுத்தியது.",
+        "மாற்றியமைக்கப்பட்ட கலப்பு காலம் (MMRP) எளிதில் அழுகும் உணவுப் பொருட்களுக்கு 7 நாட்கள் கால அளவை அறிமுகப்படுத்தியது.",
+        "நாள்பட்ட ஏழைகள் (Chronic Poor) என்பதில் 'எப்போதும் ஏழைகள்' மற்றும் 'பொதுவாக ஏழைகள்' ஆகிய இரு பிரிவினரும் அடங்குவர்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Absolute Poverty = inability to afford biological survival basket; Relative Poverty = income < 50-60% of societal median.",
+        "Amartya Sen: Poverty is fundamentally capabilities deprivation rather than mere inadequacy of financial income.",
+        "Headcount Ratio measures poverty incidence; Poverty Gap Index measures depth; Squared Poverty Gap measures severity.",
+        "HCR = (q / N) x 100; it creates a perverse policy incentive to assist only those poor hovering immediately below the line.",
+        "Poverty Gap Index (FGT-1) satisfies monotonicity but violates the transfer axiom.",
+        "Squared Poverty Gap (FGT-2) weights the poorest individuals more heavily by squaring their proportionate shortfalls.",
+        "URP = 30-day recall for all items; MRP = 365-day recall for 5 durables + 30-day for food.",
+        "MMRP = 7-day recall for perishables + 30-day for cereals/fuel + 365-day for durables/education/health.",
+        "Chronic Poor = Always Poor + Usually Poor; Transient Poor = Churning Poor + Occasionally Poor.",
+        "Vulnerability to poverty measures the forward-looking probability of a non-poor household falling into poverty."
+      ],
+      "ta": [
+        "முழுமையான வறுமை = உயிரியல் உயிர்வாழ்வுக் கூடையை பெற இயலாமை; ஒப்பீட்டு வறுமை = சமூக நடுத்தர வருமானத்தில் 50-60%-க்கு கீழ் இருத்தல்.",
+        "அமர்த்தியா சென்: வறுமை என்பது வெறும் பண வருமானக் குறைவல்ல, மாறாக மனித அடிப்படைத் திறன்கள் மறுக்கப்படுவதே ஆகும்.",
+        "தலைக்கணக்கு விகிதம் பரவலையும், வறுமை இடைவெளி ஆழத்தையும், வர்க்க இடைவெளி தீவிரத்தையும் அளவிடுகின்றன.",
+        "HCR = (q / N) x 100; இது வறுமைக் கோட்டிற்கு மிக அருகில் உள்ளவர்களை மட்டும் காப்பாற்றும் தவறான கொள்கைத் தூண்டுதலை உருவாக்குகிறது.",
+        "வறுமை இடைவெளி குறியீடு (FGT-1) Monotonicity விதியை நிறைவு செய்தாலும் Transfer விதியை மீறுகிறது.",
+        "வர்க்க இடைவெளி குறியீடு (FGT-2) பற்றாக்குறையை வர்க்கப்படுத்துவதன் மூலம் மிக ஏழைகளுக்கு அதிக எடையளிக்கிறது.",
+        "URP = அனைத்துப் பொருட்களுக்கும் 30 நாட்கள்; MRP = 5 நீடித்த பொருட்களுக்கு 365 நாட்கள் + உணவுக்கு 30 நாட்கள்.",
+        "MMRP = அழுகும் உணவுக்கு 7 நாட்கள் + தானியங்களுக்கு 30 நாட்கள் + நீடித்த பொருட்கள்/கல்விக்கு 365 நாட்கள்.",
+        "நாள்பட்ட ஏழைகள் = எப்போதும் ஏழைகள் + பொதுவாக ஏழைகள்; தற்காலிக ஏழைகள் = சுழலும் ஏழைகள் + எப்போதாவது ஏழைகள்.",
+        "பாதிப்புத்திறன் (Vulnerability) என்பது தற்போது ஏழையாக இல்லாத குடும்பம் எதிர்காலத்தில் வறுமையில் விழக்கூடிய சாத்தியக்கூறாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pov_101",
+        "front_en": "What is the primary conceptual difference between Absolute Poverty and Relative Poverty?",
+        "front_ta": "முழுமையான வறுமைக்கும் ஒப்பீட்டு வறுமைக்கும் இடையே உள்ள முதன்மையான கருத்தியல் வேறுபாடு என்ன?",
+        "back_en": "Absolute Poverty is deprivation measured against a fixed biological survival threshold. Relative Poverty is an inequality metric measured against prevailing societal median living standards.",
+        "back_ta": "முழுமையான வறுமை என்பது நிலையான உடலியல் உயிர்வாழ்வுத் தேவைகளின் பற்றாக்குறையாகும். ஒப்பீட்டு வறுமை என்பது சமூகத்தின் நடுத்தர வாழ்க்கைத்தரத்துடன் ஒப்பிடப்படும் சமத்துவமின்மையின் அளவீடாகும்."
+      },
+      {
+        "id": "rc_pov_102",
+        "front_en": "What is the formula for the Headcount Ratio (HCR) in poverty estimation?",
+        "front_ta": "வறுமை மதிப்பீட்டில் தலைக்கணக்கு விகிதத்தின் (HCR) சூத்திரம் என்ன?",
+        "back_en": "HCR = q / N (or as a percentage: (q / N) x 100), where 'q' is the number of people below the poverty line and 'N' is total population.",
+        "back_ta": "HCR = q / N (சதவீதமாக: (q / N) x 100), இதில் 'q' என்பது வறுமைக் கோட்டிற்கு கீழ் உள்ளவர்களின் எண்ணிக்கை மற்றும் 'N' என்பது மொத்த மக்கள் தொகை."
+      },
+      {
+        "id": "rc_pov_103",
+        "front_en": "Why is the Headcount Ratio considered insensitive to the severity of poverty?",
+        "front_ta": "தலைக்கணக்கு விகிதம் (HCR) வறுமையின் தீவிரத்தை வெளிப்படுத்தாதது ஏன்?",
+        "back_en": "Because it only counts how many people are poor, without considering how far below the poverty line they live or the distribution of income among the poor.",
+        "back_ta": "ஏனெனில் இது எத்தனை பேர் ஏழைகளாக உள்ளனர் என்பதை மட்டுமே கணக்கிடுகிறது; அவர்கள் எவ்வளவு ஆழமான வறுமையில் உள்ளனர் என்பதையோ ஏழைகளுக்கு இடையேயான வருமானப் பகிர்வையோ கணக்கில் கொள்வதில்லை."
+      },
+      {
+        "id": "rc_pov_104",
+        "front_en": "What does the Poverty Gap Index (PGI) measure?",
+        "front_ta": "வறுமை இடைவெளி குறியீடு (PGI) எதை அளவிடுகிறது?",
+        "back_en": "It measures the depth of poverty by calculating the average shortfall of poor individuals' expenditure from the poverty line.",
+        "back_ta": "வறுமைக் கோட்டிலிருந்து ஏழைகளின் நுகர்வுச் செலவு எவ்வளவு தூரம் பின்தங்கியுள்ளது என்ற சராசரி இடைவெளியைக் கணக்கிட்டு வறுமையின் ஆழத்தை அளவிடுகிறது."
+      },
+      {
+        "id": "rc_pov_105",
+        "front_en": "How does the Squared Poverty Gap Index (FGT-2) capture inequality among the poor?",
+        "front_ta": "வர்க்க இடைவெளி குறியீடு (FGT-2) ஏழைகளுக்கு இடையேயான சமத்துவமின்மையை எவ்வாறு படம்பிடிக்கிறது?",
+        "back_en": "By squaring individual proportionate shortfalls, placing exponentially greater mathematical weight on the poorest of the poor.",
+        "back_ta": "தனிநபர் இடைவெளிகளை வர்க்கப்படுத்துவதன் மூலம், மிகவும் ஏழ்மை நிலையில் உள்ளவர்களுக்கு அதிவேக கூடுதல் கணித எடையை அளிக்கிறது."
+      },
+      {
+        "id": "rc_pov_106",
+        "front_en": "What is the core economic premise of Amartya Sen's Capabilities Deprivation approach to poverty?",
+        "front_ta": "அமர்த்தியா சென்னின் 'திறன் இழப்பு அணுகுமுறையின்' அடிப்படைப் பொருளாதாரக் கருத்து என்ன?",
+        "back_en": "Poverty is fundamentally the deprivation of basic substantive human capabilities and freedoms, rather than mere lowness of monetary income.",
+        "back_ta": "வறுமை என்பது வெறும் பண வருமானக் குறைவு அல்ல, மாறாக அடிப்படை மனிதத் திறன்களும் சுதந்திரங்களும் மறுக்கப்படுவதே ஆகும்."
+      },
+      {
+        "id": "rc_pov_107",
+        "front_en": "What recall periods are used in the Mixed Reference Period (MRP) adopted by the Tendulkar Committee?",
+        "front_ta": "டெண்டுல்கர் குழு ஏற்றுக்கொண்ட கலப்பு மதிப்பீட்டுக் காலத்தில் (MRP) பயன்படுத்தப்படும் நுகர்வு நாட்கள் யாவை?",
+        "back_en": "365-day recall for 5 durable non-food categories (clothing, footwear, durables, education, institutional health) and 30-day recall for all other items.",
+        "back_ta": "5 நீடித்த உணவு அல்லாத பொருட்களுக்கு (ஆடை, காலணி, நீடித்த பொருட்கள், கல்வி, மருத்துவமனை செலவு) 365 நாட்களும், இதர அனைத்து பொருட்களுக்கும் 30 நாட்களும் ஆகும்."
+      },
+      {
+        "id": "rc_pov_108",
+        "front_en": "What distinct recall window was introduced under Modified Mixed Reference Period (MMRP) for perishable foods?",
+        "front_ta": "மாற்றியமைக்கப்பட்ட கலப்பு காலத்தில் (MMRP) எளிதில் அழுகும் உணவுப் பொருட்களுக்காக அறிமுகப்படுத்தப்பட்ட கால அளவு என்ன?",
+        "back_en": "A 7-day recall period for high-frequency perishable food items (edible oils, vegetables, fruits, eggs, fish, meat).",
+        "back_ta": "அதிக பயன்பாடு கொண்ட அழுகும் உணவுப் பொருட்களுக்கு (எண்ணெய், காய்கறிகள், பழங்கள், முட்டை, மீன், இறைச்சி) '7 நாட்கள்' கால அளவு."
+      },
+      {
+        "id": "rc_pov_109",
+        "front_en": "Who are the 'Churning Poor' in poverty dynamics taxonomy?",
+        "front_ta": "வறுமையின் இயக்கவியலில் 'சுழலும் ஏழைகள்' (Churning Poor) என்பவர்கள் யார்?",
+        "back_en": "Households that cyclically move in and out of poverty on a regular basis due to seasonal employment cycles (e.g., small farmers, seasonal laborers).",
+        "back_ta": "பருவ கால வேலைவாய்ப்பு மாற்றங்களால் வறுமைக் கோட்டிற்கு மேலேயும் கீழேயும் தொடர்ந்து மாறிக்கொண்டே இருக்கும் குடும்பங்கள் (எ.கா. சிறு விவசாயிகள், பருவ காலத் தொழிலாளர்கள்)."
+      },
+      {
+        "id": "rc_pov_110",
+        "front_en": "What is the global extreme poverty line established by the World Bank based on 2017 PPP?",
+        "front_ta": "2017 PPP அடிப்படையில் உலக வங்கியால் நிர்ணயிக்கப்பட்ட சர்வதேச தீவிர வறுமைக் கோடு என்ன?",
+        "back_en": "$2.15 per person per day.",
+        "back_ta": "நபர் ஒருவருக்கு நாள் ஒன்றுக்கு $2.15 ஆகும்."
+      }
+    ]
+  }
+}

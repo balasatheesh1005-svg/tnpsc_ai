@@ -1,0 +1,220 @@
+{
+  "topic": "visual_reasoning_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Visual Reasoning Part 1 — Counting Figures (Triangles, Squares, Rectangles & Lines)",
+  "title_ta": "காட்சித் தர்க்கம் பகுதி 1 — வடிவங்களை எண்ணுதல் (முக்கோணங்கள், சதுரங்கள், செவ்வகங்கள் & கோடுகள்)",
+
+  "definition": {
+    "en": "Counting figures evaluates visual spatial analysis and systematic grouping to find the total number of triangles, squares, rectangles, or straight lines in complex geometric diagrams.",
+    "ta": "வடிவங்களை எண்ணுதல் என்பது கூட்டு வடிவியல் அமைப்புகளில் உள்ள மொத்த முக்கோணங்கள், சதுரங்கள், செவ்வகங்கள் அல்லது நேர்க்கோடுகளின் எண்ணிக்கையை முறைப்படி கணக்கிடும் திறனைக் குறிக்கிறது."
+  },
+
+  "exam_importance": {
+    "en": "Counting triangles and squares is one of the most frequently asked visual reasoning topics in TNPSC Group 1, Group 2/2A, and Group 4 exams. Shortcuts enable solving complex grid patterns in under 30 seconds.",
+    "ta": "TNPSC குரூப் 1, 2/2A மற்றும் 4 தேர்வுகளில் முக்கோணங்கள் மற்றும் சதுரங்களை எண்ணும் வினாக்கள் அடிக்கடி கேட்கப்படுகின்றன. குறுக்குவழிகள் மூலம் 30 வினாடிகளுக்குள் எளிதில் விடையளிக்கலாம்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Formula 1: Triangles inside a Divided Triangle (அடிப்பக்கம் பிரிக்கப்பட்ட முக்கோணம்)",
+      "formula": "N_{\\text{triangles}} = 1 + 2 + 3 + \\dots + n = \\frac{n(n+1)}{2}",
+      "explanation": {
+        "en": "When a triangle's base is divided into n small base divisions, sum the division numbers from 1 to n.",
+        "ta": "ஒரு முக்கோணத்தின் அடிப்பக்கம் n சிறு பிரிவுகளாகப் பிரிக்கப்பட்டால், 1 முதல் n வரையிலான எண்களின் கூடுதலே மொத்த முக்கோணங்களாகும்."
+      }
+    },
+    {
+      "title": "Formula 2: Triangles inside a Square / Rectangle with Diagonals (சதுர விட்டம் கொண்ட முக்கோணங்கள்)",
+      "formula": "N_{\\text{triangles}} = 2 \\times n \\quad (n = \\text{number of smallest triangular compartments})",
+      "explanation": {
+        "en": "Count the number of small compartments inside a square divided by diagonals and horizontal/vertical lines, then multiply by 2.",
+        "ta": "விட்டங்கள் மற்றும் குறுக்குக் கோடுகளால் பிரிக்கப்பட்ட சதுரத்திலுள்ள சிறிய முக்கோணக் அறைகளின் எண்ணிக்கையைக் கணக்கிட்டு 2-ஆல் பெருக்கவும்."
+      }
+    },
+    {
+      "title": "Formula 3: Squares in an m × n Grid (m × n கட்டத்திலுள்ள சதுரங்கள்)",
+      "formula": "N_{\\text{squares}} = (m \\times n) + ((m-1) \\times (n-1)) + ((m-2) \\times (n-2)) + \\dots \\text{ until one factor becomes 1}",
+      "explanation": {
+        "en": "Multiply grid dimensions iteratively reducing both by 1 until reaching 1.",
+        "ta": "வரிசை மற்றும் பத்தி எண்ணிக்கையை ஒவ்வொன்றாகக் குறைத்துப் பெருக்கிக் கூட்ட வேண்டும்."
+      }
+    },
+    {
+      "title": "Formula 4: Rectangles in an m × n Grid (m × n கட்டத்திலுள்ள செவ்வகங்கள்)",
+      "formula": "N_{\\text{rectangles}} = \\left(\\frac{m(m+1)}{2}\\right) \\times \\left(\\frac{n(n+1)}{2}\\right)",
+      "explanation": {
+        "en": "Multiply the sum of row numbers by the sum of column numbers.",
+        "ta": "வரிசைகளின் கூடுதலையும் பத்திகளின் கூடுதலையும் பெருக்கினால் மொத்த செவ்வகங்கள் கிடைக்கும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Systematic Counting Methodology (வடிவங்களை எண்ணும் நிலைகள்)",
+      "points": {
+        "en": [
+          "Single-unit shapes: Count all basic indivisible 1-unit triangles/squares first.",
+          "Combination shapes: Combine 2 adjacent units, then 3 units, 4 units, up to the full diagram.",
+          "Symmetry reduction: Use vertical or horizontal symmetry to count one side and double/adjust.",
+          "Straight lines count: Count horizontal lines (H), vertical lines (V), and slanting lines (S) separately: Total = H + V + S."
+        ],
+        "ta": [
+          "ஒற்றைப் பிரிவு வடிவங்கள்: முதலில் அடிப்படை 1-பிரிவு முக்கோணங்கள்/சதுரங்களை எண்ணவும்.",
+          "இணைப்பு வடிவங்கள்: 2 அண்டை பிரிவுகள், 3 பிரிவுகள், 4 பிரிவுகள் சேர்ந்த கூட்டு வடிவங்களை எண்ணவும்.",
+          "சமச்சீர் முறை: சமச்சீர் அமைப்புகளில் ஒரு பாதியை எண்ணி இரண்டால் பெருக்கிச் சரிசெய்யலாம்.",
+          "நேர்க்கோடுகள்: கிடைமட்டக் கோடுகள் (H), செங்குத்துக் கோடுகள் (V), சாய்வுக் கோடுகள் (S) எனத் தனித்தனியாக எண்ணி கூட்டவும்: மொத்தம் = H + V + S."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Star Triangle Formula (நட்சத்திர வடிவில் உள்ள முக்கோணங்கள்)",
+      "explanation": {
+        "en": "1. 5-pointed star: Total triangles = 10 (5 outer points + 5 inner large triangles).\n2. 6-pointed star (David star / 2 overlapping triangles): Total triangles = 8 (6 small + 2 large overlapping).",
+        "ta": "1. 5-முனை நட்சத்திரம்: மொத்த முக்கோணங்கள் = 10 (5 சிறிய வெளி முனைகள் + 5 பெரிய உள்ளக முக்கோணங்கள்).\n2. 6-முனை நட்சத்திரம் (இரண்டு முக்கோணங்கள் ஒன்றுடன் ஒன்று இணைந்தது): மொத்த முக்கோணங்கள் = 8 (6 சிறிய + 2 பெரிய)."
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Counting Triangles in Divided Triangle",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "A large triangle ABC has its base BC divided into 4 equal segments by 3 lines drawn from vertex A to base BC. How many total triangles are in the figure?",
+        "ta": "ஒரு பெரிய முக்கோணம் ABC-யின் அடிப்பக்கம் BC, உச்சி A-விலிருந்து வரையப்பட்ட 3 கோடுகளால் 4 சமப் பிரிவுகளாகப் பிரிக்கப்பட்டுள்ளது. இப்படத்தில் உள்ள மொத்த முக்கோணங்கள் எத்தனை?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Identify the number of base divisions n = 4.",
+        "Step 2: Apply Formula N = 1 + 2 + 3 + 4 = 10.",
+        "Step 3: Alternatively use n(n+1)/2 = (4 × 5) / 2 = 10.",
+        "Total triangles = 10."
+      ],
+      "final_answer": "10",
+      "tnpsc_trap": {
+        "en": "Do not count only the 4 small visible inner triangles. Count composite triangles formed by joining adjacent divisions.",
+        "ta": "4 சிறிய முக்கோணங்களை மட்டும் எண்ணி நிறுத்தக் கூடாது. இணைக்கப்பட்ட கூட்டு முக்கோணங்களையும் எண்ண வேண்டும்."
+      }
+    },
+    {
+      "model_name": "Model 2: Counting Triangles inside Square with Diagonals",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "A square is divided by both main diagonals and vertical/horizontal center bisectors into 8 small triangular compartments. Find the total number of triangles formed.",
+        "ta": "ஒரு சதுரம் அதன் இரு விட்டங்கள் மற்றும் மையம் வழியே செல்லும் குறுக்குக் கோடுகளால் 8 சிறிய முக்கோண அறைகளாகப் பிரிக்கப்பட்டுள்ளது. இதில் உள்ள மொத்த முக்கோணங்களின் எண்ணிக்கையைக் காண்க."
+      },
+      "step_by_step_solution": [
+        "Step 1: Count smallest triangular compartments n = 8.",
+        "Step 2: Apply Square Diagonal Formula: N = 2 × n.",
+        "Step 3: Total Triangles = 2 × 8 = 16.",
+        "Proof breakdown: 8 single-unit + 4 two-unit (half square) + 4 four-unit (large corner) = 16."
+      ],
+      "final_answer": "16",
+      "tnpsc_trap": {
+        "en": "Remember to multiply by 2 for all full diagonal intersection square configurations.",
+        "ta": "விட்டங்கள் முழுமையாக வெட்டும் சதுர அமைப்புகளுக்கு எப்போதும் 2-ஆல் பெருக்க வேண்டும்."
+      }
+    },
+    {
+      "model_name": "Model 3: Counting Squares in a 3 × 3 Grid",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "Find the total number of squares in a 3 × 3 chess-like square grid.",
+        "ta": "ஒரு 3 × 3 சதுரக் கட்டத்தில் உள்ள மொத்த சதுரங்களின் எண்ணிக்கையைக் காண்க."
+      },
+      "step_by_step_solution": [
+        "Step 1: Apply Grid Square Formula for m = 3, n = 3.",
+        "N = (3 × 3) + (2 × 2) + (1 × 1).",
+        "Step 2: N = 9 + 4 + 1 = 14.",
+        "Breakdown: 9 (1×1 squares) + 4 (2×2 squares) + 1 (3×3 outer square) = 14."
+      ],
+      "final_answer": "14",
+      "tnpsc_trap": {
+        "en": "Squares require equal width and height. Do not include non-square rectangles in square counts!",
+        "ta": "சதுரங்களுக்கு நீளமும் அகலமும் சமமாக இருக்க வேண்டும். செவ்வகங்களை சதுரக் கணக்கில் சேர்க்கக் கூடாது!"
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "vis_p1_q1",
+      "question_en": "How many triangles are there in a 5-pointed star?",
+      "question_ta": "ஒரு 5-முனை நட்சத்திரத்தில் உள்ள மொத்த முக்கோணங்களின் எண்ணிக்கை எத்தனை?",
+      "options": ["5", "8", "10", "12"],
+      "answer": "10",
+      "explanation_en": "A 5-pointed star contains 5 small outer triangles + 5 large interior composite triangles = 10 triangles.",
+      "explanation_ta": "5-முனை நட்சத்திரத்தில் 5 சிறிய வெளி முக்கோணங்கள் + 5 பெரிய உள்ளக முக்கோணங்கள் = 10 முக்கோணங்கள் உள்ளன."
+    },
+    {
+      "id": "vis_p1_q2",
+      "question_en": "A triangle ABC has base BC divided into 3 equal parts. In addition, a horizontal line bisects the triangle into an upper and lower half. How many total triangles are in the figure?",
+      "question_ta": "முக்கோணம் ABC-யின் அடிப்பக்கம் BC 3 சமப் பிரிவுகளாகப் பிரிக்கப்பட்டுள்ளது. மேலும் ஒரு கிடைமட்டக் கோடு முக்கோணத்தை மேல் மற்றும் கீழ் பாதியாகப் பிரிக்கிறது. மொத்த முக்கோணங்கள் எத்தனை?",
+      "options": ["6", "9", "12", "15"],
+      "answer": "12",
+      "explanation_en": "Base divisions n = 3 gives (1+2+3) = 6 triangles for main base. With 2 horizontal levels, total = 6 × 2 = 12 triangles.",
+      "explanation_ta": "அடிப்பக்கம் n=3 என்பதால் 1+2+3 = 6 முக்கோணங்கள். 2 கிடைமட்ட நிலைகள் உள்ளதால் மொத்தம் 6 × 2 = 12 முக்கோணங்கள்."
+    },
+    {
+      "id": "vis_p1_q3",
+      "question_en": "Find the total number of squares in a 4 × 4 grid.",
+      "question_ta": "ஒரு 4 × 4 சதுரக் கட்டத்தில் உள்ள மொத்த சதுரங்களின் எண்ணிக்கையைக் காண்க.",
+      "options": ["16", "24", "30", "36"],
+      "answer": "30",
+      "explanation_en": "Total squares = 4² + 3² + 2² + 1² = 16 + 9 + 4 + 1 = 30.",
+      "explanation_ta": "மொத்த சதுரங்கள் = 4² + 3² + 2² + 1² = 16 + 9 + 4 + 1 = 30."
+    },
+    {
+      "id": "vis_p1_q4",
+      "question_en": "Find the minimum number of straight lines required to make a simple cube frame outlined by 12 edges.",
+      "question_ta": "12 விளிம்புகள் கொண்ட ஒரு கனசதுரக் கூட்டின் சட்டகத்தை உருவாக்கத் தேவைப்படும் குறைந்தபட்ச நேர்க்கோடுகளின் எண்ணிக்கை யாது?",
+      "options": ["8", "10", "12", "16"],
+      "answer": "12",
+      "explanation_en": "A 3D cube skeleton has 12 distinct straight line segment edges (4 horizontal, 4 vertical, 4 depth).",
+      "explanation_ta": "ஒரு 3D கனசதுரச் சட்டகத்தில் 12 தனித்துவமான விளிம்பு நேர்க்கோடுகள் (4 கிடைமட்டம், 4 செங்குத்து, 4 ஆழம்) தேவைப்படும்."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_count_figures",
+      "title_en": "Counting Figures Rules",
+      "title_ta": "வடிவங்களை எண்ணும் விதிகள்",
+      "points_en": [
+        "Triangle base split n divisions = n(n+1)/2 triangles.",
+        "Square with diagonals (n small triangles) = 2n triangles.",
+        "m × n Grid Squares = (m×n) + (m-1)(n-1) + ...",
+        "5-Point Star = 10 triangles; 6-Point Star = 8 triangles."
+      ],
+      "points_ta": [
+        "முக்கோண அடிப்பக்கம் n பிரிவுகள் = n(n+1)/2 முக்கோணங்கள்.",
+        "விட்டங்கள் கொண்ட சதுரம் (n சிறிய முக்கோணங்கள்) = 2n முக்கோணங்கள்.",
+        "m × n சதுரங்கள் = (m×n) + (m-1)(n-1) + ...",
+        "5-முனை நட்சத்திரம் = 10 முக்கோணங்கள்; 6-முனை நட்சத்திரம் = 8 முக்கோணங்கள்."
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Visual Reasoning Part 1",
+    "structure": [
+      {
+        "node": "Counting Figures",
+        "subnodes": [
+          "Triangles in Triangle Split",
+          "Triangles in Diagonal Square",
+          "Squares & Rectangles in Grid",
+          "Straight Lines Count (H+V+S)"
+        ]
+      }
+    ]
+  }
+}

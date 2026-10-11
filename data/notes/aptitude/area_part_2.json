@@ -1,0 +1,316 @@
+{
+  "topic": "area_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Area Part 2 — Circles, Semicircles, Paths, Cost & Percentage Change Models",
+  "title_ta": "பரப்பளவு பகுதி 2 — வட்டம், அரைவட்டம், பாதைகள், செலவு மற்றும் சதவீத மாற்ற மாதிரிகள்",
+
+  "definition": {
+    "en": "Part 2 covers circular shapes, shape transformations (wire bending), pathway border areas, fencing/flooring cost calculations, and percentage variations in 2D dimensions and area.",
+    "ta": "பகுதி 2-ல் வட்டம், அரைவட்டம், வடிவ மாற்றங்கள் (கம்பி வளைத்தல்), பாதை பரப்பளவு, வேலி/தரை செலவுகள் மற்றும் பரிமாணங்கள்/பரப்பளவில் ஏற்படும் சதவீத மாற்றங்கள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1 and Group 2/2A standard questions. Topics such as circle radius change, wire re-bending (square to circle), inner/outer paths, fencing vs flooring cost applications, and percentage area changes are frequently tested.",
+    "ta": "பகுதி 2-ல் TNPSC குரூப் 1 மற்றும் குரூப் 2/2A தேர்வுகளில் கேட்கப்படும் அதிக வினாக்கள் இடம்பெற்றுள்ளன. வட்டத்தின் ஆரம் மாறுபாடு, கம்பியை மறுவளைத்தல் (சதுரம் → வட்டம்), பாதை பரப்பளவு, வேலி/தரை செலவு மற்றும் சதவீதப் பரப்பளவு மாற்றம் ஆகியவை இதில் அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Circle & Semicircle Formulas (வட்டம் & அரைவட்டச் சூத்திரங்கள்)",
+      "formula": "\\text{Circle: } Area = \\pi r^2, \\quad Circumference = 2\\pi r \\\\ \\text{Semicircle: } Area = \\frac{1}{2}\\pi r^2, \\quad Perimeter = \\pi r + 2r = r\\left(\\frac{22}{7} + 2\\right) = \\frac{36}{7}r",
+      "explanation": {
+        "en": "r = radius of circle (π ≈ 22/7). Note: Semicircle perimeter includes straight diameter 2r!",
+        "ta": "r = வட்டத்தின் ஆரம் (π ≈ 22/7). அரைவட்டத்தின் சுற்றளவில் நேர் விட்டம் 2r அடங்கும் என்பதில் கவனமாக இருக்க வேண்டும்!"
+      }
+    },
+    {
+      "title": "Wire Bending Transformation Rule (வடிவ மாற்ற விதி)",
+      "formula": "\\text{Perimeter before} = \\text{Perimeter after} \\implies 4a_{\\text{square}} = 2\\pi r_{\\text{circle}}",
+      "explanation": {
+        "en": "When a wire of length L is re-bent from one shape to another, its perimeter remains strictly conserved.",
+        "ta": "L நீளமுள்ள கம்பியை ஒரு வடிவத்திலிருந்து மற்றொரு வடிவத்திற்கு வளைக்கும் போது, அதன் சுற்றளவு மாறாமல் சமமாக இருக்கும்."
+      }
+    },
+    {
+      "title": "Inner / Outer Pathway Area (பாதை பரப்பளவு சூத்திரங்கள்)",
+      "formula": "\\text{Outer Path: } Area = (l + 2w)(b + 2w) - lb \\\\ \\text{Inner Path: } Area = lb - (l - 2w)(b - 2w)",
+      "explanation": {
+        "en": "w = uniform width of path built outside or inside a rectangle of length l and breadth b.",
+        "ta": "w = l நீளமும் b அகலமும் கொண்ட செவ்வகத்தின் வெளியே அல்லது உள்ளே அமைக்கப்பட்ட பாதையின் சீரான அகலம்."
+      }
+    },
+    {
+      "title": "Percentage Change in Area (சதவீதப் பரப்பளவு மாற்றச் சூத்திரம்)",
+      "formula": "\\% \\text{ Change in Area} = x + y + \\frac{x \\times y}{100}",
+      "explanation": {
+        "en": "For rectangular dimensions changing by x% and y%, or circle radius changing by x% (where x = y).",
+        "ta": "செவ்வகத்தின் பரிமாணங்கள் x% மற்றும் y% மாறினாலும், வட்டத்தின் ஆரம் x% மாறினாலும் பரப்பளவில் ஏற்படும் சதவீத மாற்றம்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Cost Application Logic (செலவுக் கணக்கீடுகளின் தத்துவம்)",
+      "points": {
+        "en": [
+          "Fencing / Boundary Wire Cost = Total Perimeter × Rate per linear metre.",
+          "Flooring / Turfing / Painting Cost = Total Area × Rate per square metre.",
+          "If Total Fencing Cost and Rate are given: Perimeter = Total Cost / Rate.",
+          "If Total Flooring Cost and Rate are given: Area = Total Cost / Rate."
+        ],
+        "ta": [
+          "வேலி அமைத்தல் / எல்லைக் கம்பி செலவு = மொத்த சுற்றளவு × மீட்டருக்கான கட்டணம்.",
+          "தரை அமைத்தல் / வண்ணம் பூசுதல் செலவு = மொத்த பரப்பளவு × சதுர மீட்டருக்கான கட்டணம்.",
+          "மொத்த வேலி செலவும் கட்டணமும் தரப்பட்டால்: சுற்றளவு = மொத்த செலவு / கட்டணம்.",
+          "மொத்த தரை செலவும் கட்டணமும் தரப்பட்டால்: பரப்பளவு = மொத்த செலவு / கட்டணம்."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Circle Radius & Circumference / Area Shortcut",
+      "points": {
+        "en": [
+          "Standard Circle Radius r = 7 cm → Circumference = 44 cm → Area = 154 cm².",
+          "If radius is multiplied by k: Circumference is multiplied by k, Area is multiplied by k².",
+          "Example: If r = 14 (2 × 7): Circumference = 2 × 44 = 88 cm; Area = 2² × 154 = 616 cm²."
+        ],
+        "ta": [
+          "ஆரம் r = 7 செ.மீ கொண்ட நிலையான வட்டம் → சுற்றளவு = 44 செ.மீ → பரப்பளவு = 154 செ.மீ².",
+          "ஆரம் k மடங்கு அதிகமானால்: சுற்றளவு k மடங்கும், பரப்பளவு k² மடங்கும் அதிகரிக்கும்.",
+          "எ.கா: r = 14 (2 × 7) எனில்: சுற்றளவு = 88 செ.மீ; பரப்பளவு = 4 × 154 = 616 செ.மீ²."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Forgetting diameter 2r in semicircle perimeter",
+      "explanation": {
+        "en": "Taking semicircle perimeter as just πr (arc length) instead of πr + 2r causes severe calculation errors.",
+        "ta": "அரைவட்டத்தின் சுற்றளவை πr (வில்லின் நீளம்) என மட்டும் எடுத்துக்கொண்டு, 2r-ஐக் கூட்ட மறந்துவிடுவது தவறாகும்."
+      },
+      "avoidance": {
+        "en": "Semicircle Perimeter = (22/7)r + 2r = (36/7)r. Use 36/7 × r directly for quick solving.",
+        "ta": "அரைவட்ட சுற்றளவு = (36/7)r என்ற நேரடிச் சூத்திரத்தைப் பயன்படுத்தவும்."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the circumference and area of a circle whose radius is 7 cm.",
+      "method": "Direct Circle Formulas",
+      "steps": [
+        "Step 1: Given radius r = 7 cm.",
+        "Step 2: Calculate Circumference: \\(2\\pi r = 2 \\times \\frac{22}{7} \\times 7 = 44\\) cm.",
+        "Step 3: Calculate Area: \\(\\pi r^2 = \\frac{22}{7} \\times 7^2 = \\frac{22}{7} \\times 49 = 154\\) cm²."
+      ],
+      "answer": "Circumference = 44 cm, Area = 154 cm²"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The length of a chain used as the boundary of a semicircular park is 72 m. What is the area of the park?",
+      "method": "Semicircle Perimeter & Area Derivation",
+      "steps": [
+        "Step 1: Given boundary length (Perimeter) = 72 m.",
+        "Step 2: Semicircle Perimeter formula: \\(P = \\frac{36}{7} r = 72\\).",
+        "Step 3: Solve for radius r: \\(r = \\frac{72 \\times 7}{36} = 2 \\times 7 = 14\\) m.",
+        "Step 4: Calculate Area: \\(Area = \\frac{1}{2} \\pi r^2 = \\frac{1}{2} \\times \\frac{22}{7} \\times 14^2 = 11 \\times 28 = 308\\) m²."
+      ],
+      "answer": "308 m²"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "A silver wire when bent in the form of a square encloses an area of 484 sq.m. If the same wire is bent in the form of a circle, find the diameter of the circle.",
+      "method": "Wire Bending Perimeter Conservation",
+      "steps": [
+        "Step 1: Given area of square = 484 m².",
+        "Step 2: Side of square: \\(a = \\sqrt{484} = 22\\) m.",
+        "Step 3: Perimeter of square (Wire length): \\(L = 4a = 4 \\times 22 = 88\\) m.",
+        "Step 4: Equate wire length to circle circumference: \\(2 \\pi r = 88 \\implies 2 \\times \\frac{22}{7} \\times r = 88\\).",
+        "Step 5: Solve for r: \\(\\frac{44}{7} r = 88 \\implies r = 14\\) m.",
+        "Step 6: Calculate Diameter: \\(d = 2r = 2 \\times 14 = 28\\) m."
+      ],
+      "answer": "28 m"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The radius of a circle is increased so that its circumference is increased by 5%. Find the percentage of increase in its area.",
+      "method": "Successive Percentage Change Method",
+      "steps": [
+        "Step 1: Since circumference is directly proportional to radius (C = 2πr), a 5% increase in C implies a 5% increase in radius r.",
+        "Step 2: Area is proportional to r² (Area = πr²).",
+        "Step 3: Apply successive percentage formula: \\(x + y + \\frac{xy}{100} = 5 + 5 + \\frac{5 \\times 5}{100}\\).",
+        "Step 4: Calculate: \\(10 + 0.25 = 10.25\\%\\)."
+      ],
+      "answer": "10.25%"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "The cost of fencing a rectangular field at ₹15 per metre is ₹1,500. If the length of the field is 30 m, find the cost of turfing the field at ₹10 per sq.m.",
+      "method": "Combined Cost Application (Perimeter & Area)",
+      "steps": [
+        "Step 1: Calculate Perimeter from fencing cost: \\(Perimeter = \\frac{\\text{Total Cost}}{\\text{Rate}} = \\frac{1500}{15} = 100\\) m.",
+        "Step 2: Rectangle Perimeter formula: \\(2(l + b) = 100 \\implies 2(30 + b) = 100\\).",
+        "Step 3: Solve for breadth b: \\(30 + b = 50 \\implies b = 20\\) m.",
+        "Step 4: Calculate Area: \\(Area = l \\times b = 30 \\times 20 = 600\\) m².",
+        "Step 5: Calculate Turfing Cost: \\(Cost = 600 \\times 10 = ₹6,000\\)."
+      ],
+      "answer": "₹6,000"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A rectangular park 50 m long and 30 m wide has a 2 m wide path built all around inside it. Find the area of the path.",
+      "method": "Inner Pathway Area Method",
+      "steps": [
+        "Step 1: Outer rectangle dimensions: L1 = 50 m, B1 = 30 m.",
+        "Step 2: Outer Area: \\(A_1 = 50 \\times 30 = 1500\\) m².",
+        "Step 3: Inner rectangle dimensions (subtracting 2m width from both ends): \\(L_2 = 50 - 2(2) = 46\\) m, \\(B_2 = 30 - 2(2) = 26\\) m.",
+        "Step 4: Inner Area: \\(A_2 = 46 \\times 26 = 1196\\) m².",
+        "Step 5: Area of path: \\(Path Area = A_1 - A_2 = 1500 - 1196 = 304\\) m²."
+      ],
+      "answer": "304 m²"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the area of a circle whose radius is 14 cm.",
+      "options": ["A) 308 cm²", "B) 616 cm²", "C) 1232 cm²", "D) 154 cm²"],
+      "correct_option": "B) 616 cm²",
+      "explanation": "Area = (22/7) × 14^2 = (22/7) × 196 = 616 cm²."
+    },
+    {
+      "id": 2,
+      "question": "Find the area of a semicircle of radius 7 cm.",
+      "options": ["A) 77 cm²", "B) 154 cm²", "C) 308 cm²", "D) 44 cm²"],
+      "correct_option": "A) 77 cm²",
+      "explanation": "Area = (1/2) × (22/7) × 49 = 77 cm²."
+    },
+    {
+      "id": 3,
+      "question": "A wire when bent into a circle encloses an area of 154 cm². If the same wire is bent into a square, find the area of the square.",
+      "options": ["A) 100 cm²", "B) 121 cm²", "C) 144 cm²", "D) 169 cm²"],
+      "correct_option": "B) 121 cm²",
+      "explanation": "Circle Area 154 => r = 7 cm => Circumference = 44 cm. Square side = 44/4 = 11 cm => Square Area = 11^2 = 121 cm²."
+    },
+    {
+      "id": 4,
+      "question": "If the length of a rectangle is increased by 10% and breadth is increased by 20%, find the percentage increase in its area.",
+      "options": ["A) 30%", "B) 32%", "C) 35%", "D) 40%"],
+      "correct_option": "B) 32%",
+      "explanation": "% Change = 10 + 20 + (10 × 20 / 100) = 30 + 2 = 32%."
+    },
+    {
+      "id": 5,
+      "question": "The cost of fencing a square field at ₹20 per metre is ₹1,600. Find the cost of flooring the field at ₹5 per sq.m.",
+      "options": ["A) ₹1,500", "B) ₹2,000", "C) ₹2,500", "D) ₹3,000"],
+      "correct_option": "B) ₹2,000",
+      "explanation": "Perimeter = 1600/20 = 80 m => Side = 20 m => Area = 400 m². Flooring Cost = 400 × 5 = ₹2,000."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Circle Area & Circumference",
+      "back": "Area = πr² | Circumference = 2πr"
+    },
+    {
+      "front": "Semicircle Perimeter",
+      "back": "Perimeter = πr + 2r = (36/7)r"
+    },
+    {
+      "front": "Wire Bending Rule",
+      "back": "Perimeter before = Perimeter after (Length of wire remains constant)"
+    },
+    {
+      "front": "Fencing vs Flooring Cost",
+      "back": "Fencing = Perimeter × Rate | Flooring/Painting = Area × Rate"
+    },
+    {
+      "front": "Percentage Change in Area",
+      "back": "% Change = x + y + (xy / 100)"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Area Part 2 — Circles, Paths & Applications Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Area Part 2 (Circles & Applications)",
+        "children": ["circles_semicircles", "wire_bending", "paths_borders", "cost_perc"]
+      },
+      {
+        "id": "circles_semicircles",
+        "label": "Circles & Semicircles",
+        "children": ["circle_f", "semicircle_f"]
+      },
+      {
+        "id": "circle_f",
+        "label": "Circle: A = πr², C = 2πr",
+        "children": []
+      },
+      {
+        "id": "semicircle_f",
+        "label": "Semicircle: A = (1/2)πr², P = (36/7)r",
+        "children": []
+      },
+      {
+        "id": "wire_bending",
+        "label": "Wire Bending Transformations",
+        "children": ["wire_rule"]
+      },
+      {
+        "id": "wire_rule",
+        "label": "Wire Length L = Perimeter 1 = Perimeter 2",
+        "children": []
+      },
+      {
+        "id": "paths_borders",
+        "label": "Inner/Outer Paths",
+        "children": ["inner_p", "outer_p"]
+      },
+      {
+        "id": "inner_p",
+        "label": "Inner: Outer A - Inner A",
+        "children": []
+      },
+      {
+        "id": "outer_p",
+        "label": "Outer: Outer A - Inner A",
+        "children": []
+      },
+      {
+        "id": "cost_perc",
+        "label": "Cost & Percentage Applications",
+        "children": ["fencing_floor", "perc_area"]
+      },
+      {
+        "id": "fencing_floor",
+        "label": "Fencing: Perimeter×Rate | Flooring: Area×Rate",
+        "children": []
+      },
+      {
+        "id": "perc_area",
+        "label": "% Area Change = x + y + xy/100",
+        "children": []
+      }
+    ]
+  }
+}

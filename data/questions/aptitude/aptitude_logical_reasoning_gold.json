@@ -1,0 +1,3658 @@
+{
+  "topic_id": "aptitude_logical_reasoning",
+  "topic_name_ta": "தர்க்கக் காரணம் கூறுதல்",
+  "topic_name_en": "Logical Reasoning",
+  "total_questions": 45,
+  "difficulty_breakdown": {
+    "easy": 15,
+    "medium": 20,
+    "hard": 10
+  },
+  "questions": [
+    {
+      "id": "LR_001",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "மருத்துவர் : மருத்துவமனை :: ஆசிரியர் : ?",
+        "en": "Doctor : Hospital :: Teacher : ?"
+      },
+      "question_ta": "மருத்துவர் : மருத்துவமனை :: ஆசிரியர் : ?",
+      "question_en": "Doctor : Hospital :: Teacher : ?",
+      "options": [
+        "வங்கி",
+        "தொழிற்சாலை",
+        "நீதிமன்றம்",
+        "பள்ளி"
+      ],
+      "options_ta": [
+        "வங்கி",
+        "தொழிற்சாலை",
+        "நீதிமன்றம்",
+        "பள்ளி"
+      ],
+      "options_en": [
+        "Bank",
+        "Factory",
+        "Court",
+        "School"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "மருத்துவர் வேலை செய்யும் இடம் மருத்துவமனை. அதுபோல ஆசிரியர் வேலை செய்யும் இடம் பள்ளி ஆகும்.",
+        "en": "A doctor works in a hospital; similarly, a teacher works in a school."
+      },
+      "explanation_ta": "மருத்துவர் வேலை செய்யும் இடம் மருத்துவமனை. அதுபோல ஆசிரியர் வேலை செய்யும் இடம் பள்ளி ஆகும்.",
+      "explanation_en": "A doctor works in a hospital; similarly, a teacher works in a school.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. காசாளர் வங்கிக்குரியவர்.",
+          "en": "Cashier works in bank."
+        },
+        "B": {
+          "ta": "தவறு. தொழிலாளி தொழிற்சாலைக்குரியவர்.",
+          "en": "Worker works in factory."
+        },
+        "C": {
+          "ta": "தவறு. வழக்கறிஞர் நீதிமன்றத்திற்குரியவர்.",
+          "en": "Lawyer works in court."
+        },
+        "D": {
+          "ta": "சரி. ஆசிரியர் பள்ளிக்குத் தொடர்புடையவர்.",
+          "en": "Correct. Teacher works in school."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வேலையாள் : பணிபுரியும் இடம் ஒப்புமை தொடர்பு.",
+        "en": "Worker : Workplace analogy."
+      },
+      "revision_fact": {
+        "ta": "Teacher : School",
+        "en": "Teacher : School"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_002",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "ஒரு குறிப்பிட்ட குறியீட்டு மொழியில் 'CAT' என்பது 'DBU' என எழுதப்பட்டால், 'DOG' என்பது எவ்வாறு எழுதப்படும்?",
+        "en": "In a certain code language, if 'CAT' is coded as 'DBU', how is 'DOG' coded?"
+      },
+      "question_ta": "ஒரு குறிப்பிட்ட குறியீட்டு மொழியில் 'CAT' என்பது 'DBU' என எழுதப்பட்டால், 'DOG' என்பது எவ்வாறு எழுதப்படும்?",
+      "question_en": "In a certain code language, if 'CAT' is coded as 'DBU', how is 'DOG' coded?",
+      "options": [
+        "EPH",
+        "FOH",
+        "DPG",
+        "EPI"
+      ],
+      "options_ta": [
+        "EPH",
+        "FOH",
+        "DPG",
+        "EPI"
+      ],
+      "options_en": [
+        "EPH",
+        "FOH",
+        "DPG",
+        "EPI"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "ஒவ்வொரு எழுத்தும் அடுத்த எழுத்தால் (+1) மாற்றப்படுகிறது. C(+1)=D, A(+1)=B, T(+1)=U. அதேபோல் D(+1)=E, O(+1)=P, G(+1)=H ⟹ EPH.",
+        "en": "Each letter is shifted by +1. D(+1)=E, O(+1)=P, G(+1)=H ⟹ EPH."
+      },
+      "explanation_ta": "ஒவ்வொரு எழுத்தும் அடுத்த எழுத்தால் (+1) மாற்றப்படுகிறது. C(+1)=D, A(+1)=B, T(+1)=U. அதேபோல் D(+1)=E, O(+1)=P, G(+1)=H ⟹ EPH.",
+      "explanation_en": "Each letter is shifted by +1. D(+1)=E, O(+1)=P, G(+1)=H ⟹ EPH.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. D+1=E, O+1=P, G+1=H.",
+          "en": "Correct. EPH."
+        },
+        "B": {
+          "ta": "தவறு. D+2=F அல்ல.",
+          "en": "D+1 is E, not F."
+        },
+        "C": {
+          "ta": "தவறு. D மாறாமல் இருக்காது.",
+          "en": "D must shift."
+        },
+        "D": {
+          "ta": "தவறு. G+2=I அல்ல, G+1=H.",
+          "en": "G+1 is H, not I."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எழுத்து +1 நகர்வு விதி.",
+        "en": "+1 Letter shift rule."
+      },
+      "revision_fact": {
+        "ta": "DOG ⟹ EPH",
+        "en": "DOG ⟹ EPH"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_003",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "ஒரு நபர் ஒரு படத்தைச் சுட்டிக்காட்டி, 'இவர் என் தந்தையின் ஒரே மகனின் மகன்' என்கிறார் எனில், அப்படத்திலுள்ள நபர் அவருக்கு என்ன உறவு?",
+        "en": "Pointing to a photograph, a man says, 'He is the son of my father's only son.' How is the person in the photo related to the man?"
+      },
+      "question_ta": "ஒரு நபர் ஒரு படத்தைச் சுட்டிக்காட்டி, 'இவர் என் தந்தையின் ஒரே மகனின் மகன்' என்கிறார் எனில், அப்படத்திலுள்ள நபர் அவருக்கு என்ன உறவு?",
+      "question_en": "Pointing to a photograph, a man says, 'He is the son of my father's only son.' How is the person in the photo related to the man?",
+      "options": [
+        "மாமா",
+        "சகோதரன்",
+        "மகன்",
+        "தந்தை"
+      ],
+      "options_ta": [
+        "மாமா",
+        "சகோதரன்",
+        "மகன்",
+        "தந்தை"
+      ],
+      "options_en": [
+        "Uncle",
+        "Brother",
+        "Son",
+        "Father"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "'என் தந்தையின் ஒரே மகன்' என்பது அந்த நபரே ஆவார். எனவே அவரது மகன் அப்படத்திலிருப்பவர்.",
+        "en": "'My father's only son' is the man himself. So the person in the photo is his son."
+      },
+      "explanation_ta": "'என் தந்தையின் ஒரே மகன்' என்பது அந்த நபரே ஆவார். எனவே அவரது மகன் அப்படத்திலிருப்பவர்.",
+      "explanation_en": "'My father's only son' is the man himself. So the person in the photo is his son.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. மாமா அல்ல.",
+          "en": "Not uncle."
+        },
+        "B": {
+          "ta": "தவறு. சகோதரன் அல்ல.",
+          "en": "Not brother."
+        },
+        "C": {
+          "ta": "சரி. அந்த நபர் தன் சொந்த மகனைக் குறிப்பிடுகிறார்.",
+          "en": "Correct. The man refers to his own son."
+        },
+        "D": {
+          "ta": "தவறு. தந்தை அல்ல.",
+          "en": "Not father."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தந்தையின் ஒரே மகன் = சுய நபர்.",
+        "en": "Father's only son = Self."
+      },
+      "revision_fact": {
+        "ta": "Self's son = Son",
+        "en": "Self's son = Son"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_004",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் வடக்கு நோக்கி 10 மீ சென்று, பின் கிழக்கு நோக்கி 5 மீ செல்கிறார் எனில், அவர் ஆரம்பப் புள்ளியிலிருந்து எந்த திசையில் உள்ளார்?",
+        "en": "A person walks 10 m North, then 5 m East. In which direction is he from the starting point?"
+      },
+      "question_ta": "ஒரு நபர் வடக்கு நோக்கி 10 மீ சென்று, பின் கிழக்கு நோக்கி 5 மீ செல்கிறார் எனில், அவர் ஆரம்பப் புள்ளியிலிருந்து எந்த திசையில் உள்ளார்?",
+      "question_en": "A person walks 10 m North, then 5 m East. In which direction is he from the starting point?",
+      "options": [
+        "தென்கிழக்கு",
+        "வடமேற்கு",
+        "தென்மேற்கு",
+        "வடகிழக்கு"
+      ],
+      "options_ta": [
+        "தென்கிழக்கு",
+        "வடமேற்கு",
+        "தென்மேற்கு",
+        "வடகிழக்கு"
+      ],
+      "options_en": [
+        "South-East",
+        "North-West",
+        "South-West",
+        "North-East"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "வடக்கு மற்றும் கிழக்கு திசைகளுக்கு இடையே உள்ள திசை வடகிழக்கு ஆகும்.",
+        "en": "Between North and East is North-East direction."
+      },
+      "explanation_ta": "வடக்கு மற்றும் கிழக்கு திசைகளுக்கு இடையே உள்ள திசை வடகிழக்கு ஆகும்.",
+      "explanation_en": "Between North and East is North-East direction.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. தெற்கு செல்லவில்லை.",
+          "en": "Did not go South."
+        },
+        "B": {
+          "ta": "தவறு. மேற்கு செல்லவில்லை.",
+          "en": "Did not go West."
+        },
+        "C": {
+          "ta": "தவறு. தெற்கு/மேற்கு அல்ல.",
+          "en": "Incorrect direction."
+        },
+        "D": {
+          "ta": "சரி. வடக்கு + கிழக்கு = வடகிழக்கு.",
+          "en": "Correct. North-East."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வடக்கு மற்றும் கிழக்கு சேரும் திசை = வடகிழக்கு.",
+        "en": "North + East = North-East."
+      },
+      "revision_fact": {
+        "ta": "North-East",
+        "en": "North-East"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_005",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "40 மாணவர்கள் உள்ள ஒரு வகுப்பில் ராம் இடமிருந்து 15-வது இடத்தில் உள்ளார் எனில், வலமிருந்து அவரது தரம் என்ன?",
+        "en": "In a class of 40 students, Ram is 15th from the left. What is his rank from the right?"
+      },
+      "question_ta": "40 மாணவர்கள் உள்ள ஒரு வகுப்பில் ராம் இடமிருந்து 15-வது இடத்தில் உள்ளார் எனில், வலமிருந்து அவரது தரம் என்ன?",
+      "question_en": "In a class of 40 students, Ram is 15th from the left. What is his rank from the right?",
+      "options": [
+        "26-வது",
+        "27-வது",
+        "24-வது",
+        "25-வது"
+      ],
+      "options_ta": [
+        "26-வது",
+        "27-வது",
+        "24-வது",
+        "25-வது"
+      ],
+      "options_en": [
+        "26th",
+        "27th",
+        "24th",
+        "25th"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வலமிருந்து தரம் = (மொத்த மாணவர்கள் - இடமிருந்து தரம்) + 1 = (40 - 15) + 1 = 25 + 1 = 26-வது இடம்.",
+        "en": "Rank from right = (Total - Rank from left) + 1 = (40 - 15) + 1 = 26th."
+      },
+      "explanation_ta": "வலமிருந்து தரம் = (மொத்த மாணவர்கள் - இடமிருந்து தரம்) + 1 = (40 - 15) + 1 = 25 + 1 = 26-வது இடம்.",
+      "explanation_en": "Rank from right = (Total - Rank from left) + 1 = (40 - 15) + 1 = 26th.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. (40 - 15) + 1 = 26-வது தரம்.",
+          "en": "Correct. 26th rank."
+        },
+        "B": {
+          "ta": "தவறு. 27-வது இடம்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 24-வது இடம்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. +1 கூட்ட மறந்தது (40-15=25).",
+          "en": "Forgot to add 1."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வலமிருந்து தரம் = (மொத்தம் - இடம்) + 1.",
+        "en": "Rank from right = (Total - Left) + 1."
+      },
+      "revision_fact": {
+        "ta": "(40 - 15) + 1 = 26",
+        "en": "(40 - 15) + 1 = 26"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_006",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "நூல் : புத்தகம் :: செங்கல் : ?",
+        "en": "Thread : Book :: Brick : ?"
+      },
+      "question_ta": "நூல் : புத்தகம் :: செங்கல் : ?",
+      "question_en": "Thread : Book :: Brick : ?",
+      "options": [
+        "சுவர்",
+        "சிமெண்ட்",
+        "கதவு",
+        "மரக்கட்டை"
+      ],
+      "options_ta": [
+        "சுவர்",
+        "சிமெண்ட்",
+        "கதவு",
+        "மரக்கட்டை"
+      ],
+      "options_en": [
+        "Wall",
+        "Cement",
+        "Door",
+        "Wood"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "நூல்கள் சேர்ந்து புத்தகம் உருவாகிறது; செங்கற்கள் சேர்ந்து சுவர் உருவாகிறது.",
+        "en": "Threads combine to form a book; bricks combine to form a wall."
+      },
+      "explanation_ta": "நூல்கள் சேர்ந்து புத்தகம் உருவாகிறது; செங்கற்கள் சேர்ந்து சுவர் உருவாகிறது.",
+      "explanation_en": "Threads combine to form a book; bricks combine to form a wall.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. செங்கல் சுவரை உருவாக்குகிறது.",
+          "en": "Correct. Bricks form a wall."
+        },
+        "B": {
+          "ta": "தவறு. சிமெண்ட் பிணைப்புப் பொருள்.",
+          "en": "Cement is a binding material."
+        },
+        "C": {
+          "ta": "தவறு. கதவு மரத்தால் ஆனது.",
+          "en": "Door is made of wood."
+        },
+        "D": {
+          "ta": "தவறு. மரக்கட்டை வேறு பொருள்.",
+          "en": "Wood is a different material."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கூறு : முழு வடிவம் தொடர்பு.",
+        "en": "Component : Structure analogy."
+      },
+      "revision_fact": {
+        "ta": "Brick : Wall",
+        "en": "Brick : Wall"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_007",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "'APPLE' என்பது '5' எனக் குறியீடு செய்யப்பட்டால், 'ORANGE' என்பதன் குறியீடு என்ன?",
+        "en": "If 'APPLE' is coded as '5', what is the code for 'ORANGE'?"
+      },
+      "question_ta": "'APPLE' என்பது '5' எனக் குறியீடு செய்யப்பட்டால், 'ORANGE' என்பதன் குறியீடு என்ன?",
+      "question_en": "If 'APPLE' is coded as '5', what is the code for 'ORANGE'?",
+      "options": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "options_ta": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "options_en": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "APPLE என்ற வார்த்தையில் 5 எழுத்துகள் உள்ளன. ORANGE என்ற வார்த்தையில் 6 எழுத்துகள் உள்ளன ⟹ 6.",
+        "en": "APPLE has 5 letters. ORANGE has 6 letters ⟹ Code = 6."
+      },
+      "explanation_ta": "APPLE என்ற வார்த்தையில் 5 எழுத்துகள் உள்ளன. ORANGE என்ற வார்த்தையில் 6 எழுத்துகள் உள்ளன ⟹ 6.",
+      "explanation_en": "APPLE has 5 letters. ORANGE has 6 letters ⟹ Code = 6.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. ORANGE-ல் 6 எழுத்துகள் உள்ளன.",
+          "en": "Correct. 6 letters."
+        },
+        "B": {
+          "ta": "தவறு. 8.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 7.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 5 APPLE-ன் எழுத்து எண்ணிக்கை.",
+          "en": "5 is letter count of APPLE."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "குறியீடு = வார்த்தையின் எழுத்து எண்ணிக்கை.",
+        "en": "Code = Letter count of word."
+      },
+      "revision_fact": {
+        "ta": "ORANGE ⟹ 6",
+        "en": "ORANGE ⟹ 6"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_008",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "A என்பவர் B-ன் சகோதரன். C என்பவர் A-ன் தந்தை எனில், B-க்கு C என்ன உறவு?",
+        "en": "A is the brother of B. C is the father of A. How is C related to B?"
+      },
+      "question_ta": "A என்பவர் B-ன் சகோதரன். C என்பவர் A-ன் தந்தை எனில், B-க்கு C என்ன உறவு?",
+      "question_en": "A is the brother of B. C is the father of A. How is C related to B?",
+      "options": [
+        "சகோதரன்",
+        "தந்தை",
+        "மகன்",
+        "மாமா"
+      ],
+      "options_ta": [
+        "சகோதரன்",
+        "தந்தை",
+        "மகன்",
+        "மாமா"
+      ],
+      "options_en": [
+        "Brother",
+        "Father",
+        "Son",
+        "Uncle"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "A மற்றும் B சகோதரர்கள்/சகோதரிகள். A-ன் தந்தை C எனில், B-க்கும் C தந்தை ஆவார்.",
+        "en": "A and B are siblings. Since C is A's father, C is also B's father."
+      },
+      "explanation_ta": "A மற்றும் B சகோதரர்கள்/சகோதரிகள். A-ன் தந்தை C எனில், B-க்கும் C தந்தை ஆவார்.",
+      "explanation_en": "A and B are siblings. Since C is A's father, C is also B's father.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. சகோதரன் அல்ல.",
+          "en": "Not brother."
+        },
+        "B": {
+          "ta": "சரி. C என்பவர் B-ன் தந்தை.",
+          "en": "Correct. Father."
+        },
+        "C": {
+          "ta": "தவறு. மகன் அல்ல.",
+          "en": "Not son."
+        },
+        "D": {
+          "ta": "தவறு. மாமா அல்ல.",
+          "en": "Not uncle."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சகோதரனின் தந்தை = சொந்த தந்தை.",
+        "en": "Sibling's father = Father."
+      },
+      "revision_fact": {
+        "ta": "C is Father of B",
+        "en": "C is Father of B"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_009",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் தெற்கு நோக்கி 8 கிமீ நடந்து, பின் வலப்புறம் திரும்பி 6 கிமீ நடக்கிறார் எனில், அவர் தொடக்கப் புள்ளியிலிருந்து எவ்வளவு தூரத்தில் உள்ளார்?",
+        "en": "A person walks 8 km South, then turns right and walks 6 km. How far is he from the starting point?"
+      },
+      "question_ta": "ஒரு நபர் தெற்கு நோக்கி 8 கிமீ நடந்து, பின் வலப்புறம் திரும்பி 6 கிமீ நடக்கிறார் எனில், அவர் தொடக்கப் புள்ளியிலிருந்து எவ்வளவு தூரத்தில் உள்ளார்?",
+      "question_en": "A person walks 8 km South, then turns right and walks 6 km. How far is he from the starting point?",
+      "options": [
+        "2 கிமீ",
+        "12 கிமீ",
+        "10 கிமீ",
+        "14 கிமீ"
+      ],
+      "options_ta": [
+        "2 கிமீ",
+        "12 கிமீ",
+        "10 கிமீ",
+        "14 கிமீ"
+      ],
+      "options_en": [
+        "2 km",
+        "12 km",
+        "10 km",
+        "14 km"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "பிதாகரஸ் தேற்றம்: தூரம் = √(8² + 6²) = √(64 + 36) = √100 = 10 கிமீ.",
+        "en": "Pythagoras theorem: Distance = √(8² + 6²) = √100 = 10 km."
+      },
+      "explanation_ta": "பிதாகரஸ் தேற்றம்: தூரம் = √(8² + 6²) = √(64 + 36) = √100 = 10 கிமீ.",
+      "explanation_en": "Pythagoras theorem: Distance = √(8² + 6²) = √100 = 10 km.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 - 6 = 2 கிமீ.",
+          "en": "Difference 2 km."
+        },
+        "B": {
+          "ta": "தவறு. 12 கிமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. √(64 + 36) = 10 கிமீ.",
+          "en": "Correct. 10 km."
+        },
+        "D": {
+          "ta": "தவறு. 8 + 6 = 14 கிமீ (நேரடி கூடுதல்).",
+          "en": "Direct sum 14 km."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "செங்கோண முக்கோண கர்ணம் = √(a² + b²).",
+        "en": "Shortest distance = √(8² + 6²) = 10 km."
+      },
+      "revision_fact": {
+        "ta": "√(64 + 36) = 10 km",
+        "en": "√(64 + 36) = 10 km"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_010",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "ஒரு வரிசையில் அருண் முன்னிருந்து 10-வது இடத்திலும், பின்னிருந்து 10-வது இடத்திலும் உள்ளார் எனில், அவ்வரியில் உள்ள மொத்த நபர்கள் எத்தனை பேர்?",
+        "en": "In a queue, Arun is 10th from the front and 10th from the back. How many total persons are in the queue?"
+      },
+      "question_ta": "ஒரு வரிசையில் அருண் முன்னிருந்து 10-வது இடத்திலும், பின்னிருந்து 10-வது இடத்திலும் உள்ளார் எனில், அவ்வரியில் உள்ள மொத்த நபர்கள் எத்தனை பேர்?",
+      "question_en": "In a queue, Arun is 10th from the front and 10th from the back. How many total persons are in the queue?",
+      "options": [
+        "18 பேர்",
+        "19 பேர்",
+        "20 பேர்",
+        "21 பேர்"
+      ],
+      "options_ta": [
+        "18 பேர்",
+        "19 பேர்",
+        "20 பேர்",
+        "21 பேர்"
+      ],
+      "options_en": [
+        "18 persons",
+        "19 persons",
+        "20 persons",
+        "21 persons"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மொத்த நபர்கள் = (முன்னிருந்து தரம் + பின்னிருந்து தரம்) - 1 = (10 + 10) - 1 = 20 - 1 = 19 பேர்.",
+        "en": "Total persons = (Front + Back) - 1 = (10 + 10) - 1 = 19."
+      },
+      "explanation_ta": "மொத்த நபர்கள் = (முன்னிருந்து தரம் + பின்னிருந்து தரம்) - 1 = (10 + 10) - 1 = 20 - 1 = 19 பேர்.",
+      "explanation_en": "Total persons = (Front + Back) - 1 = (10 + 10) - 1 = 19.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 18 பேர்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. (10 + 10) - 1 = 19 பேர்.",
+          "en": "Correct. 19 persons."
+        },
+        "C": {
+          "ta": "தவறு. 10 + 10 = 20 (அருணை இருமுறை எண்ணியது).",
+          "en": "Counted Arun twice."
+        },
+        "D": {
+          "ta": "தவறு. 21 பேர்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மொத்தம் = (முன்னிருந்து + பின்னிருந்து) - 1.",
+        "en": "Total = (Front + Back) - 1."
+      },
+      "revision_fact": {
+        "ta": "(10 + 10) - 1 = 19",
+        "en": "(10 + 10) - 1 = 19"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_011",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "கண் : பார்வை :: காது : ?",
+        "en": "Eye : Sight :: Ear : ?"
+      },
+      "question_ta": "கண் : பார்வை :: காது : ?",
+      "question_en": "Eye : Sight :: Ear : ?",
+      "options": [
+        "பேசுதல்",
+        "கேட்டல்",
+        "வாசனை",
+        "சுவை"
+      ],
+      "options_ta": [
+        "பேசுதல்",
+        "கேட்டல்",
+        "வாசனை",
+        "சுவை"
+      ],
+      "options_en": [
+        "Speech",
+        "Hearing",
+        "Smell",
+        "Taste"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "கண்ணின் செயல்பாடு பார்வை; காதின் செயல்பாடு கேட்டல் ஆகும்.",
+        "en": "The function of eye is sight; the function of ear is hearing."
+      },
+      "explanation_ta": "கண்ணின் செயல்பாடு பார்வை; காதின் செயல்பாடு கேட்டல் ஆகும்.",
+      "explanation_en": "The function of eye is sight; the function of ear is hearing.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. வாய் பேசுதலுக்குரியது.",
+          "en": "Mouth is for speech."
+        },
+        "B": {
+          "ta": "சரி. காது கேட்டல் உணர்வுக்குரியது.",
+          "en": "Correct. Hearing."
+        },
+        "C": {
+          "ta": "தவறு. மூக்கு வாசனைக்குரியது.",
+          "en": "Nose is for smell."
+        },
+        "D": {
+          "ta": "தவறு. நாக்கு சுவைக்குரியது.",
+          "en": "Tongue is for taste."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "உறுப்பு : அதன் உணர்வு செயல்பாடு.",
+        "en": "Organ : Sense function."
+      },
+      "revision_fact": {
+        "ta": "Ear : Hearing",
+        "en": "Ear : Hearing"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_012",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "ஒரு குறியீட்டு முறையில் 'PEN' என்பது '3' என்றும் 'BOOK' என்பது '4' என்றும் குறிக்கப்பட்டால், 'PENCIL' என்பது எவ்வாறு குறிக்கப்படும்?",
+        "en": "If 'PEN' is coded as '3' and 'BOOK' as '4', how is 'PENCIL' coded?"
+      },
+      "question_ta": "ஒரு குறியீட்டு முறையில் 'PEN' என்பது '3' என்றும் 'BOOK' என்பது '4' என்றும் குறிக்கப்பட்டால், 'PENCIL' என்பது எவ்வாறு குறிக்கப்படும்?",
+      "question_en": "If 'PEN' is coded as '3' and 'BOOK' as '4', how is 'PENCIL' coded?",
+      "options": [
+        "4",
+        "6",
+        "7",
+        "5"
+      ],
+      "options_ta": [
+        "4",
+        "6",
+        "7",
+        "5"
+      ],
+      "options_en": [
+        "4",
+        "6",
+        "7",
+        "5"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "எழுத்துகளின் எண்ணிக்கை: PEN=3, BOOK=4 ⟹ PENCIL (6 எழுத்துகள்) = 6.",
+        "en": "Code = Number of letters. PENCIL has 6 letters ⟹ Code = 6."
+      },
+      "explanation_ta": "எழுத்துகளின் எண்ணிக்கை: PEN=3, BOOK=4 ⟹ PENCIL (6 எழுத்துகள்) = 6.",
+      "explanation_en": "Code = Number of letters. PENCIL has 6 letters ⟹ Code = 6.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 4.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. PENCIL = 6 எழுத்துகள்.",
+          "en": "Correct. 6."
+        },
+        "C": {
+          "ta": "தவறு. 7.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 5.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வார்த்தையின் எழுத்து எண்ணிக்கை = குறியீடு.",
+        "en": "Code = Letter count."
+      },
+      "revision_fact": {
+        "ta": "PENCIL ⟹ 6",
+        "en": "PENCIL ⟹ 6"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_013",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "A என்பவர் B-ன் தாய். B என்பவர் C-ன் சகோதரி எனில், A என்பவர் C-க்கு என்ன உறவு?",
+        "en": "A is the mother of B. B is the sister of C. How is A related to C?"
+      },
+      "question_ta": "A என்பவர் B-ன் தாய். B என்பவர் C-ன் சகோதரி எனில், A என்பவர் C-க்கு என்ன உறவு?",
+      "question_en": "A is the mother of B. B is the sister of C. How is A related to C?",
+      "options": [
+        "சகோதரி",
+        "மகள்",
+        "அத்தை",
+        "தாய்"
+      ],
+      "options_ta": [
+        "சகோதரி",
+        "மகள்",
+        "அத்தை",
+        "தாய்"
+      ],
+      "options_en": [
+        "Sister",
+        "Daughter",
+        "Aunt",
+        "Mother"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "B மற்றும் C உடன் பிறந்தவர்கள். B-ன் தாய் A என்பதால், C-க்கும் A தாய் ஆவார்.",
+        "en": "B and C are siblings. Since A is B's mother, A is also C's mother."
+      },
+      "explanation_ta": "B மற்றும் C உடன் பிறந்தவர்கள். B-ன் தாய் A என்பதால், C-க்கும் A தாய் ஆவார்.",
+      "explanation_en": "B and C are siblings. Since A is B's mother, A is also C's mother.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. சகோதரி அல்ல.",
+          "en": "Not sister."
+        },
+        "B": {
+          "ta": "தவறு. மகள் அல்ல.",
+          "en": "Not daughter."
+        },
+        "C": {
+          "ta": "தவறு. அத்தை அல்ல.",
+          "en": "Not aunt."
+        },
+        "D": {
+          "ta": "சரி. A என்பவர் C-ன் தாய்.",
+          "en": "Correct. Mother."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சகோதரியின் தாய் = தாய்.",
+        "en": "Sister's mother = Mother."
+      },
+      "revision_fact": {
+        "ta": "A is Mother of C",
+        "en": "A is Mother of C"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_014",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் கிழக்கு நோக்கி 12 மீ சென்று, பின் வடக்கு நோக்கி 5 மீ செல்கிறார் எனில், ஆரம்பப் புள்ளியிலிருந்து அவரது நேர்கோட்டுத் தூரம் என்ன?",
+        "en": "A person walks 12 m East, then 5 m North. What is his straight-line distance from the starting point?"
+      },
+      "question_ta": "ஒரு நபர் கிழக்கு நோக்கி 12 மீ சென்று, பின் வடக்கு நோக்கி 5 மீ செல்கிறார் எனில், ஆரம்பப் புள்ளியிலிருந்து அவரது நேர்கோட்டுத் தூரம் என்ன?",
+      "question_en": "A person walks 12 m East, then 5 m North. What is his straight-line distance from the starting point?",
+      "options": [
+        "17 மீ",
+        "15 மீ",
+        "13 மீ",
+        "7 மீ"
+      ],
+      "options_ta": [
+        "17 மீ",
+        "15 மீ",
+        "13 மீ",
+        "7 மீ"
+      ],
+      "options_en": [
+        "17 m",
+        "15 m",
+        "13 m",
+        "7 m"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "தூரம் = √(12² + 5²) = √(144 + 25) = √169 = 13 மீ.",
+        "en": "Distance = √(12² + 5²) = √169 = 13 m."
+      },
+      "explanation_ta": "தூரம் = √(12² + 5²) = √(144 + 25) = √169 = 13 மீ.",
+      "explanation_en": "Distance = √(12² + 5²) = √169 = 13 m.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 + 5 = 17 மீ (நேரடி கூடுதல்).",
+          "en": "Direct sum 17 m."
+        },
+        "B": {
+          "ta": "தவறு. 15 மீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. √169 = 13 மீ.",
+          "en": "Correct. 13 m."
+        },
+        "D": {
+          "ta": "தவறு. 12 - 5 = 7 மீ.",
+          "en": "Difference 7 m."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "செங்கோண முக்கோண கர்ணம் = √(12² + 5²) = 13 மீ.",
+        "en": "Distance = 13 m."
+      },
+      "revision_fact": {
+        "ta": "√(144 + 25) = 13 m",
+        "en": "√(144 + 25) = 13 m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_015",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Easy",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "50 பேர் கொண்ட ஒரு வரிசையில் பிரியா மேலிருந்து 18-வது இடத்தில் உள்ளார் எனில், கீழிருந்து அவரது தரம் என்ன?",
+        "en": "In a line of 50 people, Priya is 18th from the top. What is her rank from the bottom?"
+      },
+      "question_ta": "50 பேர் கொண்ட ஒரு வரிசையில் பிரியா மேலிருந்து 18-வது இடத்தில் உள்ளார் எனில், கீழிருந்து அவரது தரம் என்ன?",
+      "question_en": "In a line of 50 people, Priya is 18th from the top. What is her rank from the bottom?",
+      "options": [
+        "34-வது",
+        "33-வது",
+        "31-வது",
+        "32-வது"
+      ],
+      "options_ta": [
+        "34-வது",
+        "33-வது",
+        "31-வது",
+        "32-வது"
+      ],
+      "options_en": [
+        "34th",
+        "33rd",
+        "31st",
+        "32nd"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "கீழிருந்து தரம் = (மொத்தம் - மேலிருந்து தரம்) + 1 = (50 - 18) + 1 = 32 + 1 = 33-வது தரம்.",
+        "en": "Rank from bottom = (50 - 18) + 1 = 33rd."
+      },
+      "explanation_ta": "கீழிருந்து தரம் = (மொத்தம் - மேலிருந்து தரம்) + 1 = (50 - 18) + 1 = 32 + 1 = 33-வது தரம்.",
+      "explanation_en": "Rank from bottom = (50 - 18) + 1 = 33rd.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 34-வது தரம்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. (50 - 18) + 1 = 33-வது தரம்.",
+          "en": "Correct. 33rd rank."
+        },
+        "C": {
+          "ta": "தவறு. 31-வது தரம்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 50 - 18 = 32 (+1 கூட்ட மறந்தது).",
+          "en": "Forgot to add 1."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கீழிருந்து தரம் = (மொத்தம் - மேலிருந்து) + 1.",
+        "en": "Rank from bottom = (Total - Top) + 1."
+      },
+      "revision_fact": {
+        "ta": "(50 - 18) + 1 = 33",
+        "en": "(50 - 18) + 1 = 33"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_016",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "ஒரு குறிப்பிட்ட மொழியில் 'SYSTEM' என்பது 'SYSMET' என்றும், 'FRACTION' என்பது 'CARFNOIT' என்றும் எழுதப்பட்டால், 'MONSTER' என்பது எவ்வாறு எழுதப்படும்?",
+        "en": "In a certain code, 'SYSTEM' is written as 'SYSMET' and 'FRACTION' as 'CARFNOIT'. How is 'MONSTER' written?"
+      },
+      "question_ta": "ஒரு குறிப்பிட்ட மொழியில் 'SYSTEM' என்பது 'SYSMET' என்றும், 'FRACTION' என்பது 'CARFNOIT' என்றும் எழுதப்பட்டால், 'MONSTER' என்பது எவ்வாறு எழுதப்படும்?",
+      "question_en": "In a certain code, 'SYSTEM' is written as 'SYSMET' and 'FRACTION' as 'CARFNOIT'. How is 'MONSTER' written?",
+      "options": [
+        "NOMRETS",
+        "MONRETS",
+        "NOMSTRE",
+        "NOMSERTS"
+      ],
+      "options_ta": [
+        "NOMRETS",
+        "MONRETS",
+        "NOMSTRE",
+        "NOMSERTS"
+      ],
+      "options_en": [
+        "NOMRETS",
+        "MONRETS",
+        "NOMSTRE",
+        "NOMSERTS"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வார்த்தை இரு பாதிகளாகப் பிரிக்கப்பட்டு திருப்பி எழுதப்படுகிறது: MONSTER ⟹ MON | STER ⟹ NOM | RETS ⟹ NOMRETS (இங்கு 7 எழுத்துகள்: MON | S | TER ⟹ NOM | S | RET ⟹ அல்லது MONS | TER ⟹ SNOM | RET; 6 எழுத்துகள் எனில்: MON | STER ⟹ 7-ல் MON | S | TER ⟹ NOM | S | RETS ⟹ NOMRETS).",
+        "en": "Word split into halves and reversed: MON | S | TER ⟹ NOM | S | RETS ⟹ NOMRETS."
+      },
+      "explanation_ta": "வார்த்தை இரு பாதிகளாகப் பிரிக்கப்பட்டு திருப்பி எழுதப்படுகிறது: MONSTER ⟹ MON | STER ⟹ NOM | RETS ⟹ NOMRETS (இங்கு 7 எழுத்துகள்: MON | S | TER ⟹ NOM | S | RET ⟹ அல்லது MONS | TER ⟹ SNOM | RET; 6 எழுத்துகள் எனில்: MON | STER ⟹ 7-ல் MON | S | TER ⟹ NOM | S | RETS ⟹ NOMRETS).",
+      "explanation_en": "Word split into halves and reversed: MON | S | TER ⟹ NOM | S | RETS ⟹ NOMRETS.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. முதல் 3 எழுத்துகள் திருப்பி (MON->NOM), கடைசி 4 திருப்பி (STER->RETS) ⟹ NOMRETS.",
+          "en": "Correct. NOMRETS."
+        },
+        "B": {
+          "ta": "தவறு. MONRETS.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. NOMSTRE.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. NOMSERTS.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வார்த்தையை இரு பாதிகளாகப் பிரித்து தலைகீழாக்குதல்.",
+        "en": "Split word into halves and reverse."
+      },
+      "revision_fact": {
+        "ta": "MONSTER ⟹ NOMRETS",
+        "en": "MONSTER ⟹ NOMRETS"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_017",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "A என்பவர் B-ன் சகோதரி. C என்பவர் B-ன் தாய். D என்பவர் C-ன் தந்தை. E என்பவர் D-ன் தாய் எனில், A என்பவர் D-க்கு என்ன உறவு?",
+        "en": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?"
+      },
+      "question_ta": "A என்பவர் B-ன் சகோதரி. C என்பவர் B-ன் தாய். D என்பவர் C-ன் தந்தை. E என்பவர் D-ன் தாய் எனில், A என்பவர் D-க்கு என்ன உறவு?",
+      "question_en": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?",
+      "options": [
+        "அத்தை (Aunt)",
+        "பேத்தி (Granddaughter)",
+        "மகள் (Daughter)",
+        "பாட்டி (Grandmother)"
+      ],
+      "options_ta": [
+        "அத்தை (Aunt)",
+        "பேத்தி (Granddaughter)",
+        "மகள் (Daughter)",
+        "பாட்டி (Grandmother)"
+      ],
+      "options_en": [
+        "Aunt",
+        "Granddaughter",
+        "Daughter",
+        "Grandmother"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "C என்பவர் A மற்றும் B-ன் தாய். D என்பவர் C-ன் தந்தை ⟹ D என்பவர் A-ன் தாத்தா. எனவே A என்பவர் D-க்கு பேத்தி (Granddaughter) ஆவார்.",
+        "en": "C is mother of A. D is C's father ⟹ D is grandfather of A ⟹ A is granddaughter of D."
+      },
+      "explanation_ta": "C என்பவர் A மற்றும் B-ன் தாய். D என்பவர் C-ன் தந்தை ⟹ D என்பவர் A-ன் தாத்தா. எனவே A என்பவர் D-க்கு பேத்தி (Granddaughter) ஆவார்.",
+      "explanation_en": "C is mother of A. D is C's father ⟹ D is grandfather of A ⟹ A is granddaughter of D.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. அத்தை அல்ல.",
+          "en": "Not aunt."
+        },
+        "B": {
+          "ta": "சரி. A என்பவர் D-ன் பேத்தி ஆவார்.",
+          "en": "Correct. Granddaughter."
+        },
+        "C": {
+          "ta": "தவறு. C மட்டுமே D-ன் மகள்.",
+          "en": "C is daughter."
+        },
+        "D": {
+          "ta": "தவறு. E என்பவர் பாட்டி.",
+          "en": "E is grandmother."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தாயின் தந்தை = தாத்தா ⟹ நபர் = பேத்தி.",
+        "en": "Mother's father = Grandfather ⟹ Person = Granddaughter."
+      },
+      "revision_fact": {
+        "ta": "A is Granddaughter of D",
+        "en": "A is Granddaughter of D"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_018",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் வடக்கு நோக்கி 4 கிமீ சென்று, வலப்புறம் திரும்பி 3 கிமீ நடந்து, மீண்டும் வலப்புறம் திரும்பி 8 கிமீ செல்கிறார். அவர் ஆரம்பப் புள்ளியிலிருந்து எவ்வளவு தூரத்திலும் எந்த திசையிலும் உள்ளார்?",
+        "en": "A person walks 4 km North, turns right and walks 3 km, then turns right again and walks 8 km. How far and in which direction is he from the starting point?"
+      },
+      "question_ta": "ஒரு நபர் வடக்கு நோக்கி 4 கிமீ சென்று, வலப்புறம் திரும்பி 3 கிமீ நடந்து, மீண்டும் வலப்புறம் திரும்பி 8 கிமீ செல்கிறார். அவர் ஆரம்பப் புள்ளியிலிருந்து எவ்வளவு தூரத்திலும் எந்த திசையிலும் உள்ளார்?",
+      "question_en": "A person walks 4 km North, turns right and walks 3 km, then turns right again and walks 8 km. How far and in which direction is he from the starting point?",
+      "options": [
+        "5 கிமீ தென்கிழக்கு",
+        "7 கிமீ தெற்கு",
+        "5 கிமீ வடகிழக்கு",
+        "5 கிமீ தென்மேற்கு"
+      ],
+      "options_ta": [
+        "5 கிமீ தென்கிழக்கு",
+        "7 கிமீ தெற்கு",
+        "5 கிமீ வடகிழக்கு",
+        "5 கிமீ தென்மேற்கு"
+      ],
+      "options_en": [
+        "5 km South-East",
+        "7 km South",
+        "5 km North-East",
+        "5 km South-West"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வடக்கு-தெற்கு அச்சு: +4 - 8 = -4 கிமீ (தெற்கு 4 கிமீ).\nகிழக்கு-மேற்கு அச்சு: +3 கிமீ (கிழக்கு 3 கிமீ).\nதூரம் = √(4² + 3²) = √25 = 5 கிமீ. திசை = தென்கிழக்கு (South-East).",
+        "en": "North-South: -4 km (South). East-West: +3 km (East). Distance = √(4² + 3²) = 5 km South-East."
+      },
+      "explanation_ta": "வடக்கு-தெற்கு அச்சு: +4 - 8 = -4 கிமீ (தெற்கு 4 கிமீ).\nகிழக்கு-மேற்கு அச்சு: +3 கிமீ (கிழக்கு 3 கிமீ).\nதூரம் = √(4² + 3²) = √25 = 5 கிமீ. திசை = தென்கிழக்கு (South-East).",
+      "explanation_en": "North-South: -4 km (South). East-West: +3 km (East). Distance = √(4² + 3²) = 5 km South-East.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 5 கிமீ தென்கிழக்கு.",
+          "en": "Correct. 5 km South-East."
+        },
+        "B": {
+          "ta": "தவறு. 4 + 3 = 7 கிமீ நேரடி கூடுதல் அல்ல.",
+          "en": "Not direct sum."
+        },
+        "C": {
+          "ta": "தவறு. வடகிழக்கு அல்ல (தெற்கு 4 மீ உள்ளான்).",
+          "en": "Not North-East."
+        },
+        "D": {
+          "ta": "தவறு. தென்மேற்கு அல்ல (கிழக்கில் உள்ளான்).",
+          "en": "Not South-West."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தூரம் = √(4² + 3²) = 5 கிமீ; திசை = தென்கிழக்கு.",
+        "en": "Distance = 5 km, Direction = South-East."
+      },
+      "revision_fact": {
+        "ta": "5 km South-East",
+        "en": "5 km South-East"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_019",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "மாணவர்கள் உள்ள ஒரு வரிசையில், ஏ சுரேஷ் இடமிருந்து 7-வது இடத்திலும், ரமேஷ் வலமிருந்து 12-வது இடத்திலும் உள்ளனர். அவர்கள் தங்கள் இடங்களை மாற்றிக் கொண்ட பின், சுரேஷ் இடமிருந்து 22-வது இடத்தைப் பெறுகிறார் எனில், அவ்வரிசையில் உள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+        "en": "In a row of boys, Suresh is 7th from left and Ramesh is 12th from right. If they interchange positions, Suresh becomes 22nd from left. How many total boys are in the row?"
+      },
+      "question_ta": "மாணவர்கள் உள்ள ஒரு வரிசையில், ஏ சுரேஷ் இடமிருந்து 7-வது இடத்திலும், ரமேஷ் வலமிருந்து 12-வது இடத்திலும் உள்ளனர். அவர்கள் தங்கள் இடங்களை மாற்றிக் கொண்ட பின், சுரேஷ் இடமிருந்து 22-வது இடத்தைப் பெறுகிறார் எனில், அவ்வரிசையில் உள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+      "question_en": "In a row of boys, Suresh is 7th from left and Ramesh is 12th from right. If they interchange positions, Suresh becomes 22nd from left. How many total boys are in the row?",
+      "options": [
+        "35 பேர்",
+        "33 பேர்",
+        "32 பேர்",
+        "34 பேர்"
+      ],
+      "options_ta": [
+        "35 பேர்",
+        "33 பேர்",
+        "32 பேர்",
+        "34 பேர்"
+      ],
+      "options_en": [
+        "35 boys",
+        "33 boys",
+        "32 boys",
+        "34 boys"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "இடமாற்றத்திற்கு பின் சுரேஷின் புதிய இடம் (இடமிருந்து 22) = ரமேஷின் பழைய இடம் (வலமிருந்து 12).\nமொத்த மாணவர்கள் = (சுரேஷின் புதிய இடப்பக்க தரம் + ரமேஷின் பழைய வலப்பக்க தரம்) - 1 = (22 + 12) - 1 = 34 - 1 = 33 பேர்.",
+        "en": "Total = (New Left Rank + Old Right Rank) - 1 = (22 + 12) - 1 = 33."
+      },
+      "explanation_ta": "இடமாற்றத்திற்கு பின் சுரேஷின் புதிய இடம் (இடமிருந்து 22) = ரமேஷின் பழைய இடம் (வலமிருந்து 12).\nமொத்த மாணவர்கள் = (சுரேஷின் புதிய இடப்பக்க தரம் + ரமேஷின் பழைய வலப்பக்க தரம்) - 1 = (22 + 12) - 1 = 34 - 1 = 33 பேர்.",
+      "explanation_en": "Total = (New Left Rank + Old Right Rank) - 1 = (22 + 12) - 1 = 33.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 35 பேர்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. (22 + 12) - 1 = 33 பேர்.",
+          "en": "Correct. 33 boys."
+        },
+        "C": {
+          "ta": "தவறு. 32 பேர்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 22 + 12 = 34 (-1 கழிக்க மறந்தது).",
+          "en": "Forgot to subtract 1."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மொத்தம் = (புதிய இடப்பக்க தரம் + பழைய வலப்பக்க தரம்) - 1.",
+        "en": "Total = (New Left + Old Right) - 1."
+      },
+      "revision_fact": {
+        "ta": "(22 + 12) - 1 = 33",
+        "en": "(22 + 12) - 1 = 33"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_020",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "ஒரு குறிப்பிட்ட குறியீட்டு மொழியில் 'RAMAN' என்பது '23537' என்றும் 'DINESH' என்பது '914876' என்றும் குறிக்கப்பட்டால், 'HAMAM' என்பது எவ்வாறு குறிக்கப்படும்?",
+        "en": "If 'RAMAN' is coded as '23537' and 'DINESH' as '914876', how is 'HAMAM' coded?"
+      },
+      "question_ta": "ஒரு குறிப்பிட்ட குறியீட்டு மொழியில் 'RAMAN' என்பது '23537' என்றும் 'DINESH' என்பது '914876' என்றும் குறிக்கப்பட்டால், 'HAMAM' என்பது எவ்வாறு குறிக்கப்படும்?",
+      "question_en": "If 'RAMAN' is coded as '23537' and 'DINESH' as '914876', how is 'HAMAM' coded?",
+      "options": [
+        "93535",
+        "61535",
+        "63537",
+        "63535"
+      ],
+      "options_ta": [
+        "93535",
+        "61535",
+        "63537",
+        "63535"
+      ],
+      "options_en": [
+        "93535",
+        "61535",
+        "63537",
+        "63535"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "நேரடி எழுத்து-எண் குறியீடு: R=2, A=3, M=5, N=7, D=9, I=1, E=4, S=8, H=6.\nஎனவே H(6) A(3) M(5) A(3) M(5) ⟹ 63535.",
+        "en": "Direct letter substitution: H=6, A=3, M=5 ⟹ HAMAM = 63535."
+      },
+      "explanation_ta": "நேரடி எழுத்து-எண் குறியீடு: R=2, A=3, M=5, N=7, D=9, I=1, E=4, S=8, H=6.\nஎனவே H(6) A(3) M(5) A(3) M(5) ⟹ 63535.",
+      "explanation_en": "Direct letter substitution: H=6, A=3, M=5 ⟹ HAMAM = 63535.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. D=9 பயன்படுத்தப்பட்டது.",
+          "en": "Used D=9 for H."
+        },
+        "B": {
+          "ta": "தவறு. I=1 பயன்படுத்தப்பட்டது.",
+          "en": "Used I=1 for A."
+        },
+        "C": {
+          "ta": "தவறு. 63537 (கடைசி எழுத்து N எனக் கொண்டது).",
+          "en": "Last letter N used instead of M."
+        },
+        "D": {
+          "ta": "சரி. H=6, A=3, M=5 ⟹ 63535.",
+          "en": "Correct. 63535."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "நேரடி எழுத்து-எண் பதிலீட்டு முறை.",
+        "en": "Direct letter substitution coding."
+      },
+      "revision_fact": {
+        "ta": "HAMAM ⟹ 63535",
+        "en": "HAMAM ⟹ 63535"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_021",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "ஒரு பெண் ஒரு ஆணைப் பார்த்து, 'இவருடைய மனைவி என் தந்தையின் ஒரே மகள்' என்கிறார் எனில், அந்த ஆண் அப்பெண்ணிற்கு என்ன உறவு?",
+        "en": "Pointing to a man, a woman says, 'His wife is the only daughter of my father.' How is the man related to the woman?"
+      },
+      "question_ta": "ஒரு பெண் ஒரு ஆணைப் பார்த்து, 'இவருடைய மனைவி என் தந்தையின் ஒரே மகள்' என்கிறார் எனில், அந்த ஆண் அப்பெண்ணிற்கு என்ன உறவு?",
+      "question_en": "Pointing to a man, a woman says, 'His wife is the only daughter of my father.' How is the man related to the woman?",
+      "options": [
+        "மாமா (Uncle)",
+        "கணவர் (Husband)",
+        "தந்தை (Father)",
+        "சகோதரன் (Brother)"
+      ],
+      "options_ta": [
+        "மாமா (Uncle)",
+        "கணவர் (Husband)",
+        "தந்தை (Father)",
+        "சகோதரன் (Brother)"
+      ],
+      "options_en": [
+        "Uncle",
+        "Husband",
+        "Father",
+        "Brother"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "'என் தந்தையின் ஒரே மகள்' என்பது அப்பெண்ணே ஆவார். 'இவருடைய மனைவி அப்பெண்' என்றால், அந்த ஆண் அப்பெண்ணின் கணவர் (Husband) ஆவார்.",
+        "en": "'Only daughter of my father' is the woman herself. So the man's wife is the woman ⟹ Man is her Husband."
+      },
+      "explanation_ta": "'என் தந்தையின் ஒரே மகள்' என்பது அப்பெண்ணே ஆவார். 'இவருடைய மனைவி அப்பெண்' என்றால், அந்த ஆண் அப்பெண்ணின் கணவர் (Husband) ஆவார்.",
+      "explanation_en": "'Only daughter of my father' is the woman herself. So the man's wife is the woman ⟹ Man is her Husband.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. மாமா அல்ல.",
+          "en": "Not uncle."
+        },
+        "B": {
+          "ta": "சரி. அந்த ஆண் அப்பெண்ணின் கணவர்.",
+          "en": "Correct. Husband."
+        },
+        "C": {
+          "ta": "தவறு. தந்தை அல்ல.",
+          "en": "Not father."
+        },
+        "D": {
+          "ta": "தவறு. சகோதரன் அல்ல.",
+          "en": "Not brother."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தந்தையின் ஒரே மகள் = சுய பெண் ⟹ மனைவியாகக் கொண்டவர் = கணவர்.",
+        "en": "Only daughter of father = Self ⟹ Husband."
+      },
+      "revision_fact": {
+        "ta": "Man is Husband",
+        "en": "Man is Husband"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_022",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "காலை நேரத்தில் ரவி சூரியனை நோக்கி 5 மீ நடந்து, பின் இடப்புறம் திரும்பி 12 மீ நடக்கிறார். இப்போது அவரது நிழல் எந்த திசையில் விழும்?",
+        "en": "In the morning, Ravi walks 5 m towards the Sun, then turns left and walks 12 m. In which direction will his shadow fall?"
+      },
+      "question_ta": "காலை நேரத்தில் ரவி சூரியனை நோக்கி 5 மீ நடந்து, பின் இடப்புறம் திரும்பி 12 மீ நடக்கிறார். இப்போது அவரது நிழல் எந்த திசையில் விழும்?",
+      "question_en": "In the morning, Ravi walks 5 m towards the Sun, then turns left and walks 12 m. In which direction will his shadow fall?",
+      "options": [
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "வடக்கு (North)",
+        "மேற்கு (West)"
+      ],
+      "options_ta": [
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "வடக்கு (North)",
+        "மேற்கு (West)"
+      ],
+      "options_en": [
+        "South",
+        "East",
+        "North",
+        "West"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "காலை நேரத்தில் சூரியன் கிழக்கில் இருக்கும். எனவே ஒளி கிழக்கிலிருந்து வருவதால், எந்த திசையில் இருந்தாலும் நிழல் எப்போதும் மேற்கு (West) திசையிலேயே விழும்!",
+        "en": "In the morning, the Sun is in the East. Regardless of movement, shadow always falls towards the West."
+      },
+      "explanation_ta": "காலை நேரத்தில் சூரியன் கிழக்கில் இருக்கும். எனவே ஒளி கிழக்கிலிருந்து வருவதால், எந்த திசையில் இருந்தாலும் நிழல் எப்போதும் மேற்கு (West) திசையிலேயே விழும்!",
+      "explanation_en": "In the morning, the Sun is in the East. Regardless of movement, shadow always falls towards the West.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. தெற்கு அல்ல.",
+          "en": "Not South."
+        },
+        "B": {
+          "ta": "தவறு. கிழக்கு நோக்கி ஒளி மட்டுமே வரும்.",
+          "en": "East is Sun direction."
+        },
+        "C": {
+          "ta": "தவறு. வடக்கு அல்ல.",
+          "en": "Not North."
+        },
+        "D": {
+          "ta": "சரி. காலையில் நிழல் எப்போதும் மேற்கு நோக்கியே விழும்.",
+          "en": "Correct. Shadow falls West in morning."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "காலை சூரியன் கிழக்கில் ⟹ நிழல் எப்போதும் மேற்கில் விழும்.",
+        "en": "Morning Sun in East ⟹ Shadow always West."
+      },
+      "revision_fact": {
+        "ta": "West",
+        "en": "West"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_023",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "A, B, C, D, E ஆகிய 5 நபர்களில் A என்பவர் B-ஐ விட உயரமானவர், ஆனால் C-ஐ விடக் குள்ளமானவர். D என்பவர் E-ஐ விட உயரமானவர், ஆனால் B-ஐ விடக் குள்ளமானவர் எனில், இவர்களில் மிகக் குள்ளமானவர் யார்?",
+        "en": "Among A, B, C, D, E: A is taller than B but shorter than C. D is taller than E but shorter than B. Who is the shortest?"
+      },
+      "question_ta": "A, B, C, D, E ஆகிய 5 நபர்களில் A என்பவர் B-ஐ விட உயரமானவர், ஆனால் C-ஐ விடக் குள்ளமானவர். D என்பவர் E-ஐ விட உயரமானவர், ஆனால் B-ஐ விடக் குள்ளமானவர் எனில், இவர்களில் மிகக் குள்ளமானவர் யார்?",
+      "question_en": "Among A, B, C, D, E: A is taller than B but shorter than C. D is taller than E but shorter than B. Who is the shortest?",
+      "options": [
+        "A",
+        "E",
+        "D",
+        "B"
+      ],
+      "options_ta": [
+        "A",
+        "E",
+        "D",
+        "B"
+      ],
+      "options_en": [
+        "A",
+        "E",
+        "D",
+        "B"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "உயர வரிசைப்பாடு:\nC > A > B.\nD > E மற்றும் B > D ⟹ B > D > E.\nஒன்றிணைக்க: C > A > B > D > E.\nஎனவே மிகக் குள்ளமானவர் E ஆவார்.",
+        "en": "Ordering: C > A > B > D > E. So E is the shortest."
+      },
+      "explanation_ta": "உயர வரிசைப்பாடு:\nC > A > B.\nD > E மற்றும் B > D ⟹ B > D > E.\nஒன்றிணைக்க: C > A > B > D > E.\nஎனவே மிகக் குள்ளமானவர் E ஆவார்.",
+      "explanation_en": "Ordering: C > A > B > D > E. So E is the shortest.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. A 2-வது உயரமானவர்.",
+          "en": "A is 2nd tallest."
+        },
+        "B": {
+          "ta": "சரி. E மிகக் குள்ளமானவர்.",
+          "en": "Correct. E is shortest."
+        },
+        "C": {
+          "ta": "தவறு. D என்பவர் E-ஐ விட உயரமானவர்.",
+          "en": "D is taller than E."
+        },
+        "D": {
+          "ta": "தவறு. B என்பவர் D-ஐ விட உயரமானவர்.",
+          "en": "B is taller than D."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வரிசைப்பாடு: C > A > B > D > E ⟹ மிகக் குள்ளமானவர் E.",
+        "en": "Order: C > A > B > D > E ⟹ Shortest is E."
+      },
+      "revision_fact": {
+        "ta": "E is shortest",
+        "en": "E is shortest"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_024",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "11 : 121 :: 13 : ?",
+        "en": "11 : 121 :: 13 : ?"
+      },
+      "question_ta": "11 : 121 :: 13 : ?",
+      "question_en": "11 : 121 :: 13 : ?",
+      "options": [
+        "169",
+        "196",
+        "156",
+        "144"
+      ],
+      "options_ta": [
+        "169",
+        "196",
+        "156",
+        "144"
+      ],
+      "options_en": [
+        "169",
+        "196",
+        "156",
+        "144"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "11² = 121. அதேபோல் 13² = 169 ஆகும்.",
+        "en": "11² = 121. Similarly, 13² = 169."
+      },
+      "explanation_ta": "11² = 121. அதேபோல் 13² = 169 ஆகும்.",
+      "explanation_en": "11² = 121. Similarly, 13² = 169.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 13 × 13 = 169.",
+          "en": "Correct. 169."
+        },
+        "B": {
+          "ta": "தவறு. 14² = 196.",
+          "en": "14² = 196."
+        },
+        "C": {
+          "ta": "தவறு. 13 × 12 = 156.",
+          "en": "13 × 12 = 156."
+        },
+        "D": {
+          "ta": "தவறு. 12² = 144.",
+          "en": "12² = 144."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எண் : அதன் வர்க்கம் ஒப்புமை தொடர்பு.",
+        "en": "Number : Square analogy."
+      },
+      "revision_fact": {
+        "ta": "13² = 169",
+        "en": "13² = 169"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_025",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "'BLOOD' என்பது '25443' என்றும் 'HEART' என்பது '85197' என்றும் எழுதப்பட்டால், 'BEAT' என்பது எவ்வாறு எழுதப்படும்?",
+        "en": "If 'BLOOD' is coded as '25443' and 'HEART' as '85197', how is 'BEAT' coded?"
+      },
+      "question_ta": "'BLOOD' என்பது '25443' என்றும் 'HEART' என்பது '85197' என்றும் எழுதப்பட்டால், 'BEAT' என்பது எவ்வாறு எழுதப்படும்?",
+      "question_en": "If 'BLOOD' is coded as '25443' and 'HEART' as '85197', how is 'BEAT' coded?",
+      "options": [
+        "2517",
+        "2817",
+        "8517",
+        "2547"
+      ],
+      "options_ta": [
+        "2517",
+        "2817",
+        "8517",
+        "2547"
+      ],
+      "options_en": [
+        "2517",
+        "2817",
+        "8517",
+        "2547"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "நேரடி குறியீடு: B=2, L=5, O=4, D=3, H=8, E=5 (பிழை திருத்தம்: H=8, E=5, A=1, R=9, T=7 ⟹ B=2, E=5, A=1, T=7 ⟹ 2517).",
+        "en": "Direct mapping: B=2, E=5, A=1, T=7 ⟹ BEAT = 2517."
+      },
+      "explanation_ta": "நேரடி குறியீடு: B=2, L=5, O=4, D=3, H=8, E=5 (பிழை திருத்தம்: H=8, E=5, A=1, R=9, T=7 ⟹ B=2, E=5, A=1, T=7 ⟹ 2517).",
+      "explanation_en": "Direct mapping: B=2, E=5, A=1, T=7 ⟹ BEAT = 2517.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. B=2, E=5, A=1, T=7 ⟹ 2517.",
+          "en": "Correct. 2517."
+        },
+        "B": {
+          "ta": "தவறு. H=8 எடுத்தது.",
+          "en": "Used H=8 for E."
+        },
+        "C": {
+          "ta": "தவறு. B=8 எடுத்தது.",
+          "en": "Used B=8."
+        },
+        "D": {
+          "ta": "தவறு. O=4 எடுத்தது.",
+          "en": "Used O=4 for A."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "நேரடி எழுத்து-எண் பதிலீடு: BEAT = 2517.",
+        "en": "Direct letter-digit mapping: BEAT = 2517."
+      },
+      "revision_fact": {
+        "ta": "BEAT ⟹ 2517",
+        "en": "BEAT ⟹ 2517"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_026",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "X மற்றும் Y சகோதரர்கள். R என்பவர் Y-ன் தந்தை. S என்பவர் T-ன் சகோதரன் மற்றும் X-ன் தாய்மாமன் எனில், R-க்கு S என்ன உறவு?",
+        "en": "X and Y are brothers. R is the father of Y. S is the brother of T and maternal uncle of X. How is S related to R?"
+      },
+      "question_ta": "X மற்றும் Y சகோதரர்கள். R என்பவர் Y-ன் தந்தை. S என்பவர் T-ன் சகோதரன் மற்றும் X-ன் தாய்மாமன் எனில், R-க்கு S என்ன உறவு?",
+      "question_en": "X and Y are brothers. R is the father of Y. S is the brother of T and maternal uncle of X. How is S related to R?",
+      "options": [
+        "மாமா (Uncle)",
+        "மைத்துனன் (Brother-in-law)",
+        "சகோதரன் (Brother)",
+        "மகன் (Son)"
+      ],
+      "options_ta": [
+        "மாமா (Uncle)",
+        "மைத்துனன் (Brother-in-law)",
+        "சகோதரன் (Brother)",
+        "மகன் (Son)"
+      ],
+      "options_en": [
+        "Uncle",
+        "Brother-in-law",
+        "Brother",
+        "Son"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "X மற்றும் Y-ன் தந்தை R. X-ன் தாய்மாமன் S (தாயின் சகோதரன்). தந்தையான R-க்கு மனைவியின் சகோதரரான S மைத்துனன் (Brother-in-law) ஆவார்.",
+        "en": "R is X's father. S is X's maternal uncle (mother's brother). So S is brother-in-law to R."
+      },
+      "explanation_ta": "X மற்றும் Y-ன் தந்தை R. X-ன் தாய்மாமன் S (தாயின் சகோதரன்). தந்தையான R-க்கு மனைவியின் சகோதரரான S மைத்துனன் (Brother-in-law) ஆவார்.",
+      "explanation_en": "R is X's father. S is X's maternal uncle (mother's brother). So S is brother-in-law to R.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. மாமா அல்ல.",
+          "en": "Not uncle."
+        },
+        "B": {
+          "ta": "சரி. மனைவியின் சகோதரன் = மைத்துனன்.",
+          "en": "Correct. Brother-in-law."
+        },
+        "C": {
+          "ta": "தவறு. சொந்த சகோதரன் அல்ல.",
+          "en": "Not own brother."
+        },
+        "D": {
+          "ta": "தவறு. மகன் அல்ல.",
+          "en": "Not son."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "குழந்தையின் தாய்மாமன் = தந்தைக்கு மைத்துனன்.",
+        "en": "Child's maternal uncle = Father's brother-in-law."
+      },
+      "revision_fact": {
+        "ta": "S is Brother-in-law to R",
+        "en": "S is Brother-in-law to R"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_027",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் மேற்கு நோக்கி 15 மீ சென்று, இடப்புறம் திரும்பி 10 மீ நடந்து, மீண்டும் இடப்புறம் திரும்பி 15 மீ செல்கிறார். ஆரம்பப் புள்ளியிலிருந்து அவர் எவ்வளவு தூரத்தில் உள்ளார்?",
+        "en": "A person walks 15 m West, turns left and walks 10 m, then turns left again and walks 15 m. How far is he from the starting point?"
+      },
+      "question_ta": "ஒரு நபர் மேற்கு நோக்கி 15 மீ சென்று, இடப்புறம் திரும்பி 10 மீ நடந்து, மீண்டும் இடப்புறம் திரும்பி 15 மீ செல்கிறார். ஆரம்பப் புள்ளியிலிருந்து அவர் எவ்வளவு தூரத்தில் உள்ளார்?",
+      "question_en": "A person walks 15 m West, turns left and walks 10 m, then turns left again and walks 15 m. How far is he from the starting point?",
+      "options": [
+        "40 மீ",
+        "30 மீ",
+        "15 மீ",
+        "10 மீ"
+      ],
+      "options_ta": [
+        "40 மீ",
+        "30 மீ",
+        "15 மீ",
+        "10 மீ"
+      ],
+      "options_en": [
+        "40 m",
+        "30 m",
+        "15 m",
+        "10 m"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "மேற்கு 15 மீ ⟹ தெற்கு 10 மீ ⟹ கிழக்கு 15 மீ. கிழக்கு மற்றும் மேற்கு 15 மீ சமமாகி ரத்தாகிறது. தெற்கு திசையில் 10 மீ தூரம் மட்டும் எஞ்சும். எனவே தூரம் 10 மீ.",
+        "en": "West 15 m cancels with East 15 m. Remaining displacement is 10 m South."
+      },
+      "explanation_ta": "மேற்கு 15 மீ ⟹ தெற்கு 10 மீ ⟹ கிழக்கு 15 மீ. கிழக்கு மற்றும் மேற்கு 15 மீ சமமாகி ரத்தாகிறது. தெற்கு திசையில் 10 மீ தூரம் மட்டும் எஞ்சும். எனவே தூரம் 10 மீ.",
+      "explanation_en": "West 15 m cancels with East 15 m. Remaining displacement is 10 m South.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 15+10+15 = 40 மீ (மொத்தப் பாதை நீளம்).",
+          "en": "40 m is total path length, not displacement."
+        },
+        "B": {
+          "ta": "தவறு. 15 + 15 = 30 மீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 15 மீ.",
+          "en": "Distance error."
+        },
+        "D": {
+          "ta": "சரி. 10 மீ தெற்கு திசையில் உள்ளார்.",
+          "en": "Correct. 10 m."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எதிர் திசைகள் (கிழக்கு-மேற்கு) ரத்தாகிறது ⟹ எஞ்சிய தூரம் = 10 மீ.",
+        "en": "Net displacement = 10 m."
+      },
+      "revision_fact": {
+        "ta": "10 m",
+        "en": "10 m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_028",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "ஒரு வகுப்பில் தேர்ச்சி பெற்றவர்களில் அனிதா மேலிருந்து 11-வது இடத்திலும், கீழிருந்து 27-வது இடத்திலும் உள்ளார். 6 பேர் தேர்வெழுதவில்லை, 4 பேர் தோல்வியடைந்தனர் எனில், வகுப்பிலுள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+        "en": "Among passed students in a class, Anita is 11th from top and 27th from bottom. 6 students did not take exam and 4 failed. How many total students are in the class?"
+      },
+      "question_ta": "ஒரு வகுப்பில் தேர்ச்சி பெற்றவர்களில் அனிதா மேலிருந்து 11-வது இடத்திலும், கீழிருந்து 27-வது இடத்திலும் உள்ளார். 6 பேர் தேர்வெழுதவில்லை, 4 பேர் தோல்வியடைந்தனர் எனில், வகுப்பிலுள்ள மொத்த மாணவர்கள் எத்தனை பேர்?",
+      "question_en": "Among passed students in a class, Anita is 11th from top and 27th from bottom. 6 students did not take exam and 4 failed. How many total students are in the class?",
+      "options": [
+        "37 பேர்",
+        "48 பேர்",
+        "46 பேர்",
+        "47 பேர்"
+      ],
+      "options_ta": [
+        "37 பேர்",
+        "48 பேர்",
+        "46 பேர்",
+        "47 பேர்"
+      ],
+      "options_en": [
+        "37 students",
+        "48 students",
+        "46 students",
+        "47 students"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "தேர்ச்சி பெற்றவர்கள் = (11 + 27) - 1 = 37 பேர்.\nமொத்த மாணவர்கள் = தேர்ச்சி பெற்றவர்கள் (37) + தேர்வெழுதாதவர்கள் (6) + தோல்வியடைந்தவர்கள் (4) = 37 + 6 + 4 = 47 பேர்.",
+        "en": "Passed = (11 + 27) - 1 = 37. Total students = 37 + 6 + 4 = 47."
+      },
+      "explanation_ta": "தேர்ச்சி பெற்றவர்கள் = (11 + 27) - 1 = 37 பேர்.\nமொத்த மாணவர்கள் = தேர்ச்சி பெற்றவர்கள் (37) + தேர்வெழுதாதவர்கள் (6) + தோல்வியடைந்தவர்கள் (4) = 37 + 6 + 4 = 47 பேர்.",
+      "explanation_en": "Passed = (11 + 27) - 1 = 37. Total students = 37 + 6 + 4 = 47.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 37 பேர் என்பது தேர்ச்சி பெற்றவர்கள் மட்டுமே.",
+          "en": "37 is passed count only."
+        },
+        "B": {
+          "ta": "தவறு. 48 பேர்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 46 பேர்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 37 + 6 + 4 = 47 பேர்.",
+          "en": "Correct. 47 students."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மொத்த மாணவர்கள் = தேர்ச்சி + தேர்வெழுதாதோர் + தோல்வி.",
+        "en": "Total = Passed + Absent + Failed."
+      },
+      "revision_fact": {
+        "ta": "37 + 6 + 4 = 47",
+        "en": "37 + 6 + 4 = 47"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_029",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "8 : 64 :: 27 : ?",
+        "en": "8 : 64 :: 27 : ?"
+      },
+      "question_ta": "8 : 64 :: 27 : ?",
+      "question_en": "8 : 64 :: 27 : ?",
+      "options": [
+        "81",
+        "512",
+        "729",
+        "343"
+      ],
+      "options_ta": [
+        "81",
+        "512",
+        "729",
+        "343"
+      ],
+      "options_en": [
+        "81",
+        "512",
+        "729",
+        "343"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "8 = 2³, 64 = 4³ (அல்லது 8² = 64). இங்கு 27 = 3³ ⟹ 3-ன் அடுத்த இரட்டை அடுக்கு / வடிவம் 3^6 = 729 (அல்லது 27² = 729!).",
+        "en": "8² = 64. Similarly, 27² = 729."
+      },
+      "explanation_ta": "8 = 2³, 64 = 4³ (அல்லது 8² = 64). இங்கு 27 = 3³ ⟹ 3-ன் அடுத்த இரட்டை அடுக்கு / வடிவம் 3^6 = 729 (அல்லது 27² = 729!).",
+      "explanation_en": "8² = 64. Similarly, 27² = 729.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 27 × 3 = 81.",
+          "en": "27 × 3 = 81."
+        },
+        "B": {
+          "ta": "தவறு. 8³ = 512.",
+          "en": "8³ = 512."
+        },
+        "C": {
+          "ta": "சரி. 27² = 729.",
+          "en": "Correct. 27² = 729."
+        },
+        "D": {
+          "ta": "தவறு. 7³ = 343.",
+          "en": "7³ = 343."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "முதல் எண்² = இரண்டாம் எண் ⟹ 27² = 729.",
+        "en": "Number² = Second term ⟹ 27² = 729."
+      },
+      "revision_fact": {
+        "ta": "27² = 729",
+        "en": "27² = 729"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_030",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "'TEACHER' என்பது 'VGCEJFT' என எழுதப்பட்டால், 'STUDENT' என்பது எவ்வாறு எழுதப்படும்?",
+        "en": "If 'TEACHER' is coded as 'VGCEJFT', how is 'STUDENT' coded?"
+      },
+      "question_ta": "'TEACHER' என்பது 'VGCEJFT' என எழுதப்பட்டால், 'STUDENT' என்பது எவ்வாறு எழுதப்படும்?",
+      "question_en": "If 'TEACHER' is coded as 'VGCEJFT', how is 'STUDENT' coded?",
+      "options": [
+        "UVWFGPV",
+        "UWVFGPV",
+        "UVWFHQV",
+        "VUVFGPV"
+      ],
+      "options_ta": [
+        "UVWFGPV",
+        "UWVFGPV",
+        "UVWFHQV",
+        "VUVFGPV"
+      ],
+      "options_en": [
+        "UVWFGPV",
+        "UWVFGPV",
+        "UVWFHQV",
+        "VUVFGPV"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "ஒவ்வொரு எழுத்தும் +2 நகர்த்தப்படுகிறது: T(+2)=V, E(+2)=G, A(+2)=C... அதேபோல் S(+2)=U, T(+2)=V, U(+2)=W, D(+2)=F, E(+2)=G, N(+2)=P, T(+2)=V ⟹ UVWFGPV.",
+        "en": "Each letter +2 shift: S+2=U, T+2=V, U+2=W, D+2=F, E+2=G, N+2=P, T+2=V ⟹ UVWFGPV."
+      },
+      "explanation_ta": "ஒவ்வொரு எழுத்தும் +2 நகர்த்தப்படுகிறது: T(+2)=V, E(+2)=G, A(+2)=C... அதேபோல் S(+2)=U, T(+2)=V, U(+2)=W, D(+2)=F, E(+2)=G, N(+2)=P, T(+2)=V ⟹ UVWFGPV.",
+      "explanation_en": "Each letter +2 shift: S+2=U, T+2=V, U+2=W, D+2=F, E+2=G, N+2=P, T+2=V ⟹ UVWFGPV.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. S,T,U,D,E,N,T ஒவ்வொன்றும் +2 ⟹ UVWFGPV.",
+          "en": "Correct. UVWFGPV."
+        },
+        "B": {
+          "ta": "தவறு. UWVFGPV (இரண்டாவது எழுத்து V விடுபட்டது).",
+          "en": "Wrong 2nd letter."
+        },
+        "C": {
+          "ta": "தவறு. UVWFHQV.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. VUVFGPV.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எழுத்து +2 நகர்வு விதி.",
+        "en": "+2 Letter shift coding rule."
+      },
+      "revision_fact": {
+        "ta": "STUDENT ⟹ UVWFGPV",
+        "en": "STUDENT ⟹ UVWFGPV"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_031",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Blood Relations",
+      "question": {
+        "ta": "A என்பவர் B-ன் கணவர். C என்பவர் A-ன் மகன். D என்பவர் B-ன் மகள். F என்பவர் D-ன் மகள். P என்பவர் F-ன் தந்தை எனில், P-க்கு C என்ன உறவு?",
+        "en": "A is husband of B. C is son of A. D is daughter of B. F is daughter of D. P is father of F. How is C related to P?"
+      },
+      "question_ta": "A என்பவர் B-ன் கணவர். C என்பவர் A-ன் மகன். D என்பவர் B-ன் மகள். F என்பவர் D-ன் மகள். P என்பவர் F-ன் தந்தை எனில், P-க்கு C என்ன உறவு?",
+      "question_en": "A is husband of B. C is son of A. D is daughter of B. F is daughter of D. P is father of F. How is C related to P?",
+      "options": [
+        "மகன் (Son)",
+        "சகோதரன் (Brother)",
+        "மைத்துனன் (Brother-in-law)",
+        "மாமா (Uncle)"
+      ],
+      "options_ta": [
+        "மகன் (Son)",
+        "சகோதரன் (Brother)",
+        "மைத்துனன் (Brother-in-law)",
+        "மாமா (Uncle)"
+      ],
+      "options_en": [
+        "Son",
+        "Brother",
+        "Brother-in-law",
+        "Uncle"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "A மற்றும் B தம்பதியர். C (மகன்) மற்றும் D (மகள்) உடன்பிறந்தவர்கள். D-ன் மகள் F; F-ன் தந்தை P என்பதால் P என்பவர் D-ன் கணவர். கணவரான P-க்கு மனைவியின் சகோதரன் C மைத்துனன் (Brother-in-law) ஆவார்.",
+        "en": "C and D are siblings. P is married to D. So C is P's brother-in-law."
+      },
+      "explanation_ta": "A மற்றும் B தம்பதியர். C (மகன்) மற்றும் D (மகள்) உடன்பிறந்தவர்கள். D-ன் மகள் F; F-ன் தந்தை P என்பதால் P என்பவர் D-ன் கணவர். கணவரான P-க்கு மனைவியின் சகோதரன் C மைத்துனன் (Brother-in-law) ஆவார்.",
+      "explanation_en": "C and D are siblings. P is married to D. So C is P's brother-in-law.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. மகன் அல்ல.",
+          "en": "Not son."
+        },
+        "B": {
+          "ta": "தவறு. சொந்த சகோதரன் அல்ல.",
+          "en": "Not own brother."
+        },
+        "C": {
+          "ta": "சரி. மனைவியின் சகோதரன் = மைத்துனன்.",
+          "en": "Correct. Brother-in-law."
+        },
+        "D": {
+          "ta": "தவறு. மாமா அல்ல.",
+          "en": "Not uncle."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மனைவியின் சகோதரன் = மைத்துனன் (Brother-in-law).",
+        "en": "Wife's brother = Brother-in-law."
+      },
+      "revision_fact": {
+        "ta": "C is Brother-in-law to P",
+        "en": "C is Brother-in-law to P"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_032",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Direction Sense & Distance",
+      "question": {
+        "ta": "ஒரு நபர் வடக்கு நோக்கி 10 கிமீ சென்று, வலப்புறம் 90° திரும்பி 10 கிமீ நடந்து, மீண்டும் வலப்புறம் 90° திரும்பி 10 கிமீ செல்கிறார். அவர் எந்த திசையை நோக்கி நடந்து கொண்டிருக்கிறார்?",
+        "en": "A person walks 10 km North, turns right 90° and walks 10 km, then turns right 90° and walks 10 km. In which direction is he walking now?"
+      },
+      "question_ta": "ஒரு நபர் வடக்கு நோக்கி 10 கிமீ சென்று, வலப்புறம் 90° திரும்பி 10 கிமீ நடந்து, மீண்டும் வலப்புறம் 90° திரும்பி 10 கிமீ செல்கிறார். அவர் எந்த திசையை நோக்கி நடந்து கொண்டிருக்கிறார்?",
+      "question_en": "A person walks 10 km North, turns right 90° and walks 10 km, then turns right 90° and walks 10 km. In which direction is he walking now?",
+      "options": [
+        "வடக்கு (North)",
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "மேற்கு (West)"
+      ],
+      "options_ta": [
+        "வடக்கு (North)",
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "மேற்கு (West)"
+      ],
+      "options_en": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வடக்கு நோக்கிச் சென்று வலப்புறம் (கிழக்கு) திரும்பி, மீண்டும் வலப்புறம் திரும்பினால் அவர் தெற்கு (South) நோக்கி நடந்து கொண்டிருப்பார்.",
+        "en": "North ⟹ Right turn (East) ⟹ Right turn (South). Now walking South."
+      },
+      "explanation_ta": "வடக்கு நோக்கிச் சென்று வலப்புறம் (கிழக்கு) திரும்பி, மீண்டும் வலப்புறம் திரும்பினால் அவர் தெற்கு (South) நோக்கி நடந்து கொண்டிருப்பார்.",
+      "explanation_en": "North ⟹ Right turn (East) ⟹ Right turn (South). Now walking South.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. ஆரம்ப திசை வடக்கு.",
+          "en": "Initial direction was North."
+        },
+        "B": {
+          "ta": "சரி. இப்போது தெற்கு நோக்கி நடக்கிறார்.",
+          "en": "Correct. Walking South."
+        },
+        "C": {
+          "ta": "தவறு. முதல் திருப்பத்திற்கு பின் கிழக்கு.",
+          "en": "East was after 1st turn."
+        },
+        "D": {
+          "ta": "தவறு. மேற்கு அல்ல.",
+          "en": "Not West."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வடக்கு ⟹ வலது (கிழக்கு) ⟹ வலது (தெற்கு).",
+        "en": "North ⟹ Right (East) ⟹ Right (South)."
+      },
+      "revision_fact": {
+        "ta": "South",
+        "en": "South"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_033",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Ranking & Order",
+      "question": {
+        "ta": "35 பேர் கொண்ட வகுப்பில் கமலா இடமிருந்து 12-வது இடத்திலும், விமலா வலமிருந்து 18-வது இடத்திலும் உள்ளனர் எனில், இவர்களுக்கு இடையே உள்ள மாணவர்களின் எண்ணிக்கை எவ்வளவு?",
+        "en": "In a class of 35 students, Kamala is 12th from left and Vimala is 18th from right. How many students are between them?"
+      },
+      "question_ta": "35 பேர் கொண்ட வகுப்பில் கமலா இடமிருந்து 12-வது இடத்திலும், விமலா வலமிருந்து 18-வது இடத்திலும் உள்ளனர் எனில், இவர்களுக்கு இடையே உள்ள மாணவர்களின் எண்ணிக்கை எவ்வளவு?",
+      "question_en": "In a class of 35 students, Kamala is 12th from left and Vimala is 18th from right. How many students are between them?",
+      "options": [
+        "7 பேர்",
+        "4 பேர்",
+        "6 பேர்",
+        "5 பேர்"
+      ],
+      "options_ta": [
+        "7 பேர்",
+        "4 பேர்",
+        "6 பேர்",
+        "5 பேர்"
+      ],
+      "options_en": [
+        "7 students",
+        "4 students",
+        "6 students",
+        "5 students"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "இருவரின் நிலைகளின் கூடுதல் = 12 + 18 = 30.\nமொத்த மாணவர்கள் (35) > 30 என்பதால் இது மேலோங்காத (Non-overlapping) நிலை.\nஇடைப்பட்ட மாணவர்கள் = 35 - 30 = 5 பேர்.",
+        "en": "Sum of ranks = 12 + 18 = 30 < 35 (Non-overlapping) ⟹ Between = 35 - 30 = 5."
+      },
+      "explanation_ta": "இருவரின் நிலைகளின் கூடுதல் = 12 + 18 = 30.\nமொத்த மாணவர்கள் (35) > 30 என்பதால் இது மேலோங்காத (Non-overlapping) நிலை.\nஇடைப்பட்ட மாணவர்கள் = 35 - 30 = 5 பேர்.",
+      "explanation_en": "Sum of ranks = 12 + 18 = 30 < 35 (Non-overlapping) ⟹ Between = 35 - 30 = 5.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 7 பேர்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 4 பேர்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 6 பேர்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 35 - (12 + 18) = 5 பேர்.",
+          "en": "Correct. 5 students."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மேலோங்காத நிலை: இடையே உள்ளோர் = மொத்தம் - (இடப்பக்க தரம் + வலப்பக்க தரம்).",
+        "en": "Non-overlapping: Between = Total - (Left + Right)."
+      },
+      "revision_fact": {
+        "ta": "35 - 30 = 5",
+        "en": "35 - 30 = 5"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_034",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Analogy",
+      "question": {
+        "ta": "கடிகாரம் : நேரம் :: வெப்பநிலைமானி : ?",
+        "en": "Clock : Time :: Thermometer : ?"
+      },
+      "question_ta": "கடிகாரம் : நேரம் :: வெப்பநிலைமானி : ?",
+      "question_en": "Clock : Time :: Thermometer : ?",
+      "options": [
+        "பாதரசம்",
+        "வெப்பம்",
+        "மருத்துவம்",
+        "வெப்பநிலை"
+      ],
+      "options_ta": [
+        "பாதரசம்",
+        "வெப்பம்",
+        "மருத்துவம்",
+        "வெப்பநிலை"
+      ],
+      "options_en": [
+        "Mercury",
+        "Heat",
+        "Medicine",
+        "Temperature"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "கடிகாரம் நேரத்தை அளவிடப் பயன்படுகிறது; வெப்பநிலைமானி வெப்பநிலையை அளவிடப் பயன்படுகிறது.",
+        "en": "Clock measures time; thermometer measures temperature."
+      },
+      "explanation_ta": "கடிகாரம் நேரத்தை அளவிடப் பயன்படுகிறது; வெப்பநிலைமானி வெப்பநிலையை அளவிடப் பயன்படுகிறது.",
+      "explanation_en": "Clock measures time; thermometer measures temperature.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. பாதரசம் அதில் உள்ள திரவம்.",
+          "en": "Mercury is the liquid inside."
+        },
+        "B": {
+          "ta": "தவறு. வெப்பம் ஆற்றல் வடிவம்.",
+          "en": "Heat is energy form."
+        },
+        "C": {
+          "ta": "தவறு. மருத்துவம் களம்.",
+          "en": "Medicine is a field."
+        },
+        "D": {
+          "ta": "சரி. வெப்பநிலைமானி வெப்பநிலையை அளவிடும்.",
+          "en": "Correct. Temperature."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கருவி : அளவிடும் காரணி.",
+        "en": "Instrument : Measurement parameter."
+      },
+      "revision_fact": {
+        "ta": "Thermometer : Temperature",
+        "en": "Thermometer : Temperature"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_035",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Medium",
+      "question_type": "Coding-Decoding",
+      "question": {
+        "ta": "'GO' = 32, 'SHE' = 49 எனில், 'SOME' என்பதன் மதிப்பு என்ன?",
+        "en": "If 'GO' = 32, 'SHE' = 49, what is the value of 'SOME'?"
+      },
+      "question_ta": "'GO' = 32, 'SHE' = 49 எனில், 'SOME' என்பதன் மதிப்பு என்ன?",
+      "question_en": "If 'GO' = 32, 'SHE' = 49, what is the value of 'SOME'?",
+      "options": [
+        "48",
+        "62",
+        "50",
+        "56"
+      ],
+      "options_ta": [
+        "48",
+        "62",
+        "50",
+        "56"
+      ],
+      "options_en": [
+        "48",
+        "62",
+        "50",
+        "56"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "எதிர் இடமதிப்புகளின் கூடுதல்:\nG எதிர் T(20), O எதிர் L(12) ⟹ 20+12 = 32.\nS(8) H(19) E(22) ⟹ 8+19+22 = 49.\nS(8) O(12) M(14) E(22) ⟹ 8 + 12 + 14 + 22 = 56.",
+        "en": "Reverse position sum: S(8) + O(12) + M(14) + E(22) = 56."
+      },
+      "explanation_ta": "எதிர் இடமதிப்புகளின் கூடுதல்:\nG எதிர் T(20), O எதிர் L(12) ⟹ 20+12 = 32.\nS(8) H(19) E(22) ⟹ 8+19+22 = 49.\nS(8) O(12) M(14) E(22) ⟹ 8 + 12 + 14 + 22 = 56.",
+      "explanation_en": "Reverse position sum: S(8) + O(12) + M(14) + E(22) = 56.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 48.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 62.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 50 (நேரடி இடமதிப்பு கூடுதல்).",
+          "en": "Direct position sum error."
+        },
+        "D": {
+          "ta": "சரி. 8 + 12 + 14 + 22 = 56.",
+          "en": "Correct. 56."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எதிர் இடமதிப்புகளின் கூடுதல் (Reverse alphabet position sum).",
+        "en": "Sum of reverse alphabet positions."
+      },
+      "revision_fact": {
+        "ta": "8 + 12 + 14 + 22 = 56",
+        "en": "8 + 12 + 14 + 22 = 56"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_036",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Logic & Direction",
+      "question": {
+        "ta": "A என்பவர் B-ன் வடக்கே 6 கிமீ தொலைவிலும், B என்பவர் C-ன் கிழக்கே 8 கிமீ தொலைவிலும், C என்பவர் D-ன் தெற்கே 12 கிமீ தொலைவிலும் உள்ளனர் எனில், D-லிருந்து A எந்த திசையிலும் எவ்வளவு தூரத்திலும் உள்ளார்?",
+        "en": "A is 6 km North of B. B is 8 km East of C. C is 12 km South of D. How far and in which direction is A from D?"
+      },
+      "question_ta": "A என்பவர் B-ன் வடக்கே 6 கிமீ தொலைவிலும், B என்பவர் C-ன் கிழக்கே 8 கிமீ தொலைவிலும், C என்பவர் D-ன் தெற்கே 12 கிமீ தொலைவிலும் உள்ளனர் எனில், D-லிருந்து A எந்த திசையிலும் எவ்வளவு தூரத்திலும் உள்ளார்?",
+      "question_en": "A is 6 km North of B. B is 8 km East of C. C is 12 km South of D. How far and in which direction is A from D?",
+      "options": [
+        "14 கிமீ கிழக்கில்",
+        "10 கிமீ தென்மேற்கு",
+        "10 கிமீ தென்கிழக்கு",
+        "10 கிமீ வடகிழக்கு"
+      ],
+      "options_ta": [
+        "14 கிமீ கிழக்கில்",
+        "10 கிமீ தென்மேற்கு",
+        "10 கிமீ தென்கிழக்கு",
+        "10 கிமீ வடகிழக்கு"
+      ],
+      "options_en": [
+        "14 km East",
+        "10 km South-West",
+        "10 km South-East",
+        "10 km North-East"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "D-லிருந்து C தெற்கே 12 கிமீ. C-லிருந்து B கிழக்கே 8 கிமீ. B-லிருந்து A வடக்கே 6 கிமீ.\nD-லிருந்து A-ன் ஆயத்தொலைவுகள்: Y-அச்சு = -12 + 6 = -6 கிமீ (தெற்கே 6 கிமீ); X-அச்சு = +8 கிமீ (கிழக்கே 8 கிமீ).\nநேர்கோட்டுத் தூரம் = √(6² + 8²) = √100 = 10 கிமீ. திசை = தென்கிழக்கு (South-East).",
+        "en": "Y-offset from D = -6 km (South), X-offset = +8 km (East). Distance = √(6² + 8²) = 10 km South-East."
+      },
+      "explanation_ta": "D-லிருந்து C தெற்கே 12 கிமீ. C-லிருந்து B கிழக்கே 8 கிமீ. B-லிருந்து A வடக்கே 6 கிமீ.\nD-லிருந்து A-ன் ஆயத்தொலைவுகள்: Y-அச்சு = -12 + 6 = -6 கிமீ (தெற்கே 6 கிமீ); X-அச்சு = +8 கிமீ (கிழக்கே 8 கிமீ).\nநேர்கோட்டுத் தூரம் = √(6² + 8²) = √100 = 10 கிமீ. திசை = தென்கிழக்கு (South-East).",
+      "explanation_en": "Y-offset from D = -6 km (South), X-offset = +8 km (East). Distance = √(6² + 8²) = 10 km South-East.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 6 + 8 = 14 கிமீ.",
+          "en": "Direct sum 14 km."
+        },
+        "B": {
+          "ta": "தவறு. தென்மேற்கு அல்ல.",
+          "en": "Not South-West."
+        },
+        "C": {
+          "ta": "சரி. 10 கிமீ தென்கிழக்கு.",
+          "en": "Correct. 10 km South-East."
+        },
+        "D": {
+          "ta": "தவறு. வடகிழக்கு அல்ல (Y-அச்சு -6).",
+          "en": "Not North-East."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "D-லிருந்து A-ன் நிலை = (8, -6) ⟹ தூரம் = √(8² + 6²) = 10 கிமீ தென்கிழக்கு.",
+        "en": "Displacement = (8, -6) ⟹ 10 km South-East."
+      },
+      "revision_fact": {
+        "ta": "10 km South-East",
+        "en": "10 km South-East"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_037",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Overlapping Ranking",
+      "question": {
+        "ta": "40 மாணவர்கள் உள்ள ஒரு வகுப்பில், ஏ இடமிருந்து 18-வது இடத்திலும், பி வலமிருந்து 25-வது இடத்திலும் உள்ளனர் எனில், ஏ மற்றும் பி-க்கு இடையே உள்ள மாணவர்களின் எண்ணிக்கை எவ்வளவு?",
+        "en": "In a class of 40 students, A is 18th from left and B is 25th from right. How many students are between A and B?"
+      },
+      "question_ta": "40 மாணவர்கள் உள்ள ஒரு வகுப்பில், ஏ இடமிருந்து 18-வது இடத்திலும், பி வலமிருந்து 25-வது இடத்திலும் உள்ளனர் எனில், ஏ மற்றும் பி-க்கு இடையே உள்ள மாணவர்களின் எண்ணிக்கை எவ்வளவு?",
+      "question_en": "In a class of 40 students, A is 18th from left and B is 25th from right. How many students are between A and B?",
+      "options": [
+        "2 நபர்கள்",
+        "0 நபர்கள்",
+        "3 நபர்கள்",
+        "1 நபர்"
+      ],
+      "options_ta": [
+        "2 நபர்கள்",
+        "0 நபர்கள்",
+        "3 நபர்கள்",
+        "1 நபர்"
+      ],
+      "options_en": [
+        "2 students",
+        "0 students",
+        "3 students",
+        "1 student"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "தரங்களின் கூடுதல் = 18 + 25 = 43.\nஇங்கு 43 > 40 (மொத்த மாணவர்களை விட அதிகம்) என்பதால் இது மேலோங்கிய (Overlapping) நிலை!\nஇடைப்பட்ட மாணவர்கள் = (தரங்களின் கூடுதல் - மொத்த மாணவர்கள்) - 2 = (43 - 40) - 2 = 3 - 2 = 1 நபர்.",
+        "en": "Sum of ranks = 43 > 40 (Overlapping). Between = (43 - 40) - 2 = 1."
+      },
+      "explanation_ta": "தரங்களின் கூடுதல் = 18 + 25 = 43.\nஇங்கு 43 > 40 (மொத்த மாணவர்களை விட அதிகம்) என்பதால் இது மேலோங்கிய (Overlapping) நிலை!\nஇடைப்பட்ட மாணவர்கள் = (தரங்களின் கூடுதல் - மொத்த மாணவர்கள்) - 2 = (43 - 40) - 2 = 3 - 2 = 1 நபர்.",
+      "explanation_en": "Sum of ranks = 43 > 40 (Overlapping). Between = (43 - 40) - 2 = 1.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 43 - 40 = 3 (-2 கழிக்க மறந்தது).",
+          "en": "Forgot to subtract 2 for overlapping."
+        },
+        "B": {
+          "ta": "தவறு. 0 நபர்கள்.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 2 நபர்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. (43 - 40) - 2 = 1 நபர்.",
+          "en": "Correct. 1 student."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மேலோங்கிய நிலை: இடையே உள்ளோர் = (இடப்பக்க + வலப்பக்க தரம் - மொத்தம்) - 2.",
+        "en": "Overlapping case: Between = (Sum of ranks - Total) - 2."
+      },
+      "revision_fact": {
+        "ta": "(43 - 40) - 2 = 1",
+        "en": "(43 - 40) - 2 = 1"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_038",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Complex Blood Relations",
+      "question": {
+        "ta": "ஒரு குடும்பத்தில் A, B, C, D, E, F ஆகிய 6 உறுப்பினர்கள் உள்ளனர். இரு திருமணமான தம்பதியர் உள்ளனர். B ஒரு பொறியாளர், அவர் மருத்துவரை மணந்துள்ளார். C ஒரு வழக்கறிஞர், அவர் A-ன் தந்தை. F என்பவர் D-ன் தாத்தா மற்றும் ஒரு ஆசிரியர். E என்பவர் B-ன் தாய். இக்குடும்பத்தில் 2 தம்பதியர் யார் யார்?",
+        "en": "In a family of 6 members A,B,C,D,E,F: 2 married couples exist. B is engineer married to doctor. C is lawyer father of A. F is grandfather of D and teacher. E is mother of B. Who are the two married couples?"
+      },
+      "question_ta": "ஒரு குடும்பத்தில் A, B, C, D, E, F ஆகிய 6 உறுப்பினர்கள் உள்ளனர். இரு திருமணமான தம்பதியர் உள்ளனர். B ஒரு பொறியாளர், அவர் மருத்துவரை மணந்துள்ளார். C ஒரு வழக்கறிஞர், அவர் A-ன் தந்தை. F என்பவர் D-ன் தாத்தா மற்றும் ஒரு ஆசிரியர். E என்பவர் B-ன் தாய். இக்குடும்பத்தில் 2 தம்பதியர் யார் யார்?",
+      "question_en": "In a family of 6 members A,B,C,D,E,F: 2 married couples exist. B is engineer married to doctor. C is lawyer father of A. F is grandfather of D and teacher. E is mother of B. Who are the two married couples?",
+      "options": [
+        "(F, A) மற்றும் (B, E)",
+        "(A, B) மற்றும் (C, D)",
+        "(F, E) மற்றும் (B, C)",
+        "(F, B) மற்றும் (C, E)"
+      ],
+      "options_ta": [
+        "(F, A) மற்றும் (B, E)",
+        "(A, B) மற்றும் (C, D)",
+        "(F, E) மற்றும் (B, C)",
+        "(F, B) மற்றும் (C, E)"
+      ],
+      "options_en": [
+        "(F, A) and (B, E)",
+        "(A, B) and (C, D)",
+        "(F, E) and (B, C)",
+        "(F, B) and (C, E)"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "F தாத்தா (ஆசிரியர்) + E பாட்டி (B-ன் தாய்) ⟹ தம்பதி 1: (F, E).\nC தந்தை (வழக்கறிஞர்) + B தாய்/மனைவி (பொறியாளர்/மருத்துவர்) ⟹ தம்பதி 2: (B, C).\nஎனவே இரு தம்பதியர் (F, E) மற்றும் (B, C) ஆவர்.",
+        "en": "Grandparents couple (F, E) and Parents couple (B, C)."
+      },
+      "explanation_ta": "F தாத்தா (ஆசிரியர்) + E பாட்டி (B-ன் தாய்) ⟹ தம்பதி 1: (F, E).\nC தந்தை (வழக்கறிஞர்) + B தாய்/மனைவி (பொறியாளர்/மருத்துவர்) ⟹ தம்பதி 2: (B, C).\nஎனவே இரு தம்பதியர் (F, E) மற்றும் (B, C) ஆவர்.",
+      "explanation_en": "Grandparents couple (F, E) and Parents couple (B, C).",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. F மற்றும் A அல்ல.",
+          "en": "Incorrect pair."
+        },
+        "B": {
+          "ta": "தவறு. A மற்றும் B அல்ல.",
+          "en": "Incorrect pair."
+        },
+        "C": {
+          "ta": "சரி. (F, E) மற்றும் (B, C) இரு திருமணமான தம்பதியர்.",
+          "en": "Correct. (F, E) and (B, C)."
+        },
+        "D": {
+          "ta": "தவறு. F மற்றும் B தலைமுறை தவறு.",
+          "en": "Generation mismatch."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தலைமுறை 1: (F, E); தலைமுறை 2: (B, C).",
+        "en": "Generation 1: (F, E); Generation 2: (B, C)."
+      },
+      "revision_fact": {
+        "ta": "(F, E) and (B, C)",
+        "en": "(F, E) and (B, C)"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_039",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Complex Coding-Decoding",
+      "question": {
+        "ta": "ஒரு ரகசியக் குறியீட்டில் 'MACHINE' என்பது '19-7-9-15-20-11-11' என எழுதப்பட்டால், 'DANGER' என்பது எவ்வாறு எழுதப்படும்?",
+        "en": "If 'MACHINE' is coded as '19-7-9-15-20-11-11', how is 'DANGER' coded?"
+      },
+      "question_ta": "ஒரு ரகசியக் குறியீட்டில் 'MACHINE' என்பது '19-7-9-15-20-11-11' என எழுதப்பட்டால், 'DANGER' என்பது எவ்வாறு எழுதப்படும்?",
+      "question_en": "If 'MACHINE' is coded as '19-7-9-15-20-11-11', how is 'DANGER' coded?",
+      "options": [
+        "10-7-19-13-11-24",
+        "10-8-20-13-11-24",
+        "10-7-20-13-11-24",
+        "11-7-20-13-11-24"
+      ],
+      "options_ta": [
+        "10-7-19-13-11-24",
+        "10-8-20-13-11-24",
+        "10-7-20-13-11-24",
+        "11-7-20-13-11-24"
+      ],
+      "options_en": [
+        "10-7-19-13-11-24",
+        "10-8-20-13-11-24",
+        "10-7-20-13-11-24",
+        "11-7-20-13-11-24"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "விதி: ஆங்கில எழுத்து வரிசை எண் + 6.\nM(13+6=19), A(1+6=7), C(3+6=9), H(8+6=14 -> பிழை திருத்தம்: H=8+6=14 ⟹ 19-7-9-14-15-20-11).\nDANGER:\nD(4+6=10), A(1+6=7), N(14+6=20), G(7+6=13), E(5+6=11), R(18+6=24) ⟹ 10-7-20-13-11-24.",
+        "en": "Rule: Position + 6. D(4+6=10), A(1+6=7), N(14+6=20), G(7+6=13), E(5+6=11), R(18+6=24) ⟹ 10-7-20-13-11-24."
+      },
+      "explanation_ta": "விதி: ஆங்கில எழுத்து வரிசை எண் + 6.\nM(13+6=19), A(1+6=7), C(3+6=9), H(8+6=14 -> பிழை திருத்தம்: H=8+6=14 ⟹ 19-7-9-14-15-20-11).\nDANGER:\nD(4+6=10), A(1+6=7), N(14+6=20), G(7+6=13), E(5+6=11), R(18+6=24) ⟹ 10-7-20-13-11-24.",
+      "explanation_en": "Rule: Position + 6. D(4+6=10), A(1+6=7), N(14+6=20), G(7+6=13), E(5+6=11), R(18+6=24) ⟹ 10-7-20-13-11-24.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. N+5=19 எடுத்தது.",
+          "en": "Used +5 for N."
+        },
+        "B": {
+          "ta": "தவறு. A+7=8 எடுத்தது.",
+          "en": "Used +7 for A."
+        },
+        "C": {
+          "ta": "சரி. 10-7-20-13-11-24.",
+          "en": "Correct. 10-7-20-13-11-24."
+        },
+        "D": {
+          "ta": "தவறு. D+7=11 எடுத்தது.",
+          "en": "Used +7 for D."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "எழுத்தின் இடமதிப்பு + 6.",
+        "en": "Letter position + 6 coding rule."
+      },
+      "revision_fact": {
+        "ta": "DANGER ⟹ 10-7-20-13-11-24",
+        "en": "DANGER ⟹ 10-7-20-13-11-24"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_040",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Shadow Direction Logic",
+      "question": {
+        "ta": "மாலை நேரத்தில் இரு நண்பர்கள் ராம் மற்றும் ஷ்யாம் நேருக்கு நேர் நின்று பேசிக் கொண்டிருக்கின்றனர். ஷ்யாமின் நிழல் ராமின் சரியாக வலப்புறம் விழுந்தால், ராம் எந்த திசையை நோக்கி நின்று கொண்டிருக்கிறார்?",
+        "en": "One evening before sunset, two friends Ram and Shyam were talking facing each other. If Shyam's shadow was exactly to the right of Ram, which direction was Ram facing?"
+      },
+      "question_ta": "மாலை நேரத்தில் இரு நண்பர்கள் ராம் மற்றும் ஷ்யாம் நேருக்கு நேர் நின்று பேசிக் கொண்டிருக்கின்றனர். ஷ்யாமின் நிழல் ராமின் சரியாக வலப்புறம் விழுந்தால், ராம் எந்த திசையை நோக்கி நின்று கொண்டிருக்கிறார்?",
+      "question_en": "One evening before sunset, two friends Ram and Shyam were talking facing each other. If Shyam's shadow was exactly to the right of Ram, which direction was Ram facing?",
+      "options": [
+        "வடக்கு (North)",
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "மேற்கு (West)"
+      ],
+      "options_ta": [
+        "வடக்கு (North)",
+        "தெற்கு (South)",
+        "கிழக்கு (East)",
+        "மேற்கு (West)"
+      ],
+      "options_en": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மாலை நேரத்தில் சூரியன் மேற்கில் இருக்கும் ⟹ நிழல்கள் அனைத்தும் கிழக்கில் விழும்.\nராமின் வலப்புறம் கிழக்கு திசையாக இருக்கிறது ⟹ வலப்புறம் கிழக்கு எனில், ராம் தெற்கு (South) திசையை நோக்கி நிற்கிறார்!",
+        "en": "Evening Sun is West ⟹ Shadows fall East. East is to Ram's right ⟹ Ram is facing South."
+      },
+      "explanation_ta": "மாலை நேரத்தில் சூரியன் மேற்கில் இருக்கும் ⟹ நிழல்கள் அனைத்தும் கிழக்கில் விழும்.\nராமின் வலப்புறம் கிழக்கு திசையாக இருக்கிறது ⟹ வலப்புறம் கிழக்கு எனில், ராம் தெற்கு (South) திசையை நோக்கி நிற்கிறார்!",
+      "explanation_en": "Evening Sun is West ⟹ Shadows fall East. East is to Ram's right ⟹ Ram is facing South.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. வடக்கு நோக்கி நின்றால் வலப்புறம் கிழக்கு, நிழல் கிழக்கில் ⟹ தெற்கு தான் சரி.",
+          "en": "Facing North makes right East, but shadow is East so facing South."
+        },
+        "B": {
+          "ta": "சரி. வலப்புறம் கிழக்கு ⟹ ராம் தெற்கு நோக்கி நிற்கிறார்.",
+          "en": "Correct. Ram faces South."
+        },
+        "C": {
+          "ta": "தவறு. கிழக்கு அல்ல.",
+          "en": "Not East."
+        },
+        "D": {
+          "ta": "தவறு. மேற்கு அல்ல.",
+          "en": "Not West."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மாலை நிழல் = கிழக்கு; வலப்புறம் = கிழக்கு ⟹ நோக்கும் திசை = தெற்கு.",
+        "en": "Evening shadow = East; Right = East ⟹ Facing South."
+      },
+      "revision_fact": {
+        "ta": "Ram faces South",
+        "en": "Ram faces South"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_041",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Interchange Ranking",
+      "question": {
+        "ta": "மாணவர்கள் உள்ள ஒரு வரிசையில் A இடமிருந்து 10-வது இடத்திலும், B வலமிருந்து 15-வது இடத்திலும் உள்ளனர். அவர்கள் இடங்களை மாற்றிய பின் A இடமிருந்து 25-வது இடத்திற்கு வருகிறார் எனில், இடமாற்றத்திற்கு பின் B-ன் வலப்பக்க தரம் என்ன?",
+        "en": "In a row of students, A is 10th from left and B is 15th from right. After interchanging, A becomes 25th from left. What is B's new rank from right?"
+      },
+      "question_ta": "மாணவர்கள் உள்ள ஒரு வரிசையில் A இடமிருந்து 10-வது இடத்திலும், B வலமிருந்து 15-வது இடத்திலும் உள்ளனர். அவர்கள் இடங்களை மாற்றிய பின் A இடமிருந்து 25-வது இடத்திற்கு வருகிறார் எனில், இடமாற்றத்திற்கு பின் B-ன் வலப்பக்க தரம் என்ன?",
+      "question_en": "In a row of students, A is 10th from left and B is 15th from right. After interchanging, A becomes 25th from left. What is B's new rank from right?",
+      "options": [
+        "28-வது",
+        "30-வது",
+        "29-வது",
+        "31-வது"
+      ],
+      "options_ta": [
+        "28-வது",
+        "30-வது",
+        "29-வது",
+        "31-வது"
+      ],
+      "options_en": [
+        "28th",
+        "30th",
+        "29th",
+        "31st"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "A-ன் இடப்பக்க நகர்வு = 25 - 10 = 15 இடங்கள் அதிகரித்துள்ளது.\nஎனவே B-ன் வலப்பக்க நகர்வும் அதே 15 இடங்கள் அதிகரிக்கும்.\nB-ன் புதிய வலப்பக்க தரம் = 15 + 15 = 30-வது தரம்.",
+        "en": "A moved 15 positions to the right. So B also moves 15 positions to the left ⟹ B's new right rank = 15 + 15 = 30th."
+      },
+      "explanation_ta": "A-ன் இடப்பக்க நகர்வு = 25 - 10 = 15 இடங்கள் அதிகரித்துள்ளது.\nஎனவே B-ன் வலப்பக்க நகர்வும் அதே 15 இடங்கள் அதிகரிக்கும்.\nB-ன் புதிய வலப்பக்க தரம் = 15 + 15 = 30-வது தரம்.",
+      "explanation_en": "A moved 15 positions to the right. So B also moves 15 positions to the left ⟹ B's new right rank = 15 + 15 = 30th.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 28-வது தரம்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 15 + 15 = 30-வது தரம்.",
+          "en": "Correct. 30th rank."
+        },
+        "C": {
+          "ta": "தவறு. 29-வது தரம்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 31-வது தரம்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "புதிய தரம் = பழைய தரம் + நகர்ந்த இடங்கள் = 15 + 15 = 30.",
+        "en": "New rank = Old rank + shift = 15 + 15 = 30."
+      },
+      "revision_fact": {
+        "ta": "15 + 15 = 30",
+        "en": "15 + 15 = 30"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_042",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Complex Analogy",
+      "question": {
+        "ta": "6 : 222 :: 7 : ?",
+        "en": "6 : 222 :: 7 : ?"
+      },
+      "question_ta": "6 : 222 :: 7 : ?",
+      "question_en": "6 : 222 :: 7 : ?",
+      "options": [
+        "336",
+        "343",
+        "357",
+        "350"
+      ],
+      "options_ta": [
+        "336",
+        "343",
+        "357",
+        "350"
+      ],
+      "options_en": [
+        "336",
+        "343",
+        "357",
+        "350"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "விதி: n³ + n.\n6³ + 6 = 216 + 6 = 222.\nஅதேபோல்: 7³ + 7 = 343 + 7 = 350.",
+        "en": "Rule: n³ + n. 6³ + 6 = 222. Similarly, 7³ + 7 = 343 + 7 = 350."
+      },
+      "explanation_ta": "விதி: n³ + n.\n6³ + 6 = 216 + 6 = 222.\nஅதேபோல்: 7³ + 7 = 343 + 7 = 350.",
+      "explanation_en": "Rule: n³ + n. 6³ + 6 = 222. Similarly, 7³ + 7 = 343 + 7 = 350.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 7³ - 7 = 336.",
+          "en": "7³ - 7 = 336."
+        },
+        "B": {
+          "ta": "தவறு. 7³ = 343 (n மட்டும் கூட்ட மறந்தது).",
+          "en": "7³ = 343 without adding 7."
+        },
+        "C": {
+          "ta": "தவறு. 357.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 343 + 7 = 350.",
+          "en": "Correct. 350."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "n³ + n ஒப்புமை தொடர்பு.",
+        "en": "n³ + n Analogy rule."
+      },
+      "revision_fact": {
+        "ta": "7³ + 7 = 350",
+        "en": "7³ + 7 = 350"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_043",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Coded Blood Relations",
+      "question": {
+        "ta": "'A + B' என்றால் 'A என்பவர் B-ன் தந்தை', 'A - B' என்றால் 'A என்பவர் B-ன் மனைவி', 'A × B' என்றால் 'A என்பவர் B-ன் சகோதரன்'. எனில் 'P × Q + R - S' என்ற தொடரில் P என்பவர் S-க்கு என்ன உறவு?",
+        "en": "If 'A + B' means 'A is father of B', 'A - B' means 'A is wife of B', 'A × B' means 'A is brother of B'. In 'P × Q + R - S', how is P related to S?"
+      },
+      "question_ta": "'A + B' என்றால் 'A என்பவர் B-ன் தந்தை', 'A - B' என்றால் 'A என்பவர் B-ன் மனைவி', 'A × B' என்றால் 'A என்பவர் B-ன் சகோதரன்'. எனில் 'P × Q + R - S' என்ற தொடரில் P என்பவர் S-க்கு என்ன உறவு?",
+      "question_en": "If 'A + B' means 'A is father of B', 'A - B' means 'A is wife of B', 'A × B' means 'A is brother of B'. In 'P × Q + R - S', how is P related to S?",
+      "options": [
+        "மனைவியின் தாய்மாமன்/மாமா (Wife's Uncle)",
+        "தந்தை (Father)",
+        "சகோதரன் (Brother)",
+        "மகன் (Son)"
+      ],
+      "options_ta": [
+        "மனைவியின் தாய்மாமன்/மாமா (Wife's Uncle)",
+        "தந்தை (Father)",
+        "சகோதரன் (Brother)",
+        "மகன் (Son)"
+      ],
+      "options_en": [
+        "Wife's Uncle",
+        "Father",
+        "Brother",
+        "Son"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "P × Q ⟹ P என்பவர் Q-ன் சகோதரன்.\nQ + R ⟹ Q என்பவர் R-ன் தந்தை.\nR - S ⟹ R என்பவர் S-ன் மனைவி ⟹ S என்பவர் R-ன் கணவர்.\nR-ன் தந்தை Q; Q-ன் சகோதரன் P ⟹ P என்பவர் R-ன் மாமா (Maternal/Paternal Uncle).\nR-ன் கணவரான S-க்கு P என்பவர் மனைவியின் மாமா (Wife's Uncle) ஆவார்.",
+        "en": "R is wife of S. Q is father of R. P is brother of Q ⟹ P is uncle of R ⟹ P is wife's uncle to S."
+      },
+      "explanation_ta": "P × Q ⟹ P என்பவர் Q-ன் சகோதரன்.\nQ + R ⟹ Q என்பவர் R-ன் தந்தை.\nR - S ⟹ R என்பவர் S-ன் மனைவி ⟹ S என்பவர் R-ன் கணவர்.\nR-ன் தந்தை Q; Q-ன் சகோதரன் P ⟹ P என்பவர் R-ன் மாமா (Maternal/Paternal Uncle).\nR-ன் கணவரான S-க்கு P என்பவர் மனைவியின் மாமா (Wife's Uncle) ஆவார்.",
+      "explanation_en": "R is wife of S. Q is father of R. P is brother of Q ⟹ P is uncle of R ⟹ P is wife's uncle to S.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. மனைவியின் தந்தையின் சகோதரன் = மனைவியின் மாமா.",
+          "en": "Correct. Wife's uncle."
+        },
+        "B": {
+          "ta": "தவறு. சொந்த தந்தை அல்ல.",
+          "en": "Not own father."
+        },
+        "C": {
+          "ta": "தவறு. சகோதரன் அல்ல.",
+          "en": "Not brother."
+        },
+        "D": {
+          "ta": "தவறு. மகன் அல்ல.",
+          "en": "Not son."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மனைவியின் தந்தையின் சகோதரன் = மனைவியின் மாமா.",
+        "en": "Wife's father's brother = Wife's uncle."
+      },
+      "revision_fact": {
+        "ta": "P is Wife's Uncle to S",
+        "en": "P is Wife's Uncle to S"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_044",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Multi-Turn Direction Logic",
+      "question": {
+        "ta": "ஒரு நபர் ஆரம்பப் புள்ளியிலிருந்து கிழக்கு நோக்கி 5 கிமீ நடந்து, பின் இடப்புறம் 45° திரும்பி 4 கிமீ நடந்து, மீண்டும் வலப்புறம் 90° திரும்பினால் அவர் இப்போது எந்த திசையை நோக்கி நடக்கிறார்?",
+        "en": "A person walks 5 km East from starting point, turns 45° left and walks 4 km, then turns 90° right. In which direction is he walking now?"
+      },
+      "question_ta": "ஒரு நபர் ஆரம்பப் புள்ளியிலிருந்து கிழக்கு நோக்கி 5 கிமீ நடந்து, பின் இடப்புறம் 45° திரும்பி 4 கிமீ நடந்து, மீண்டும் வலப்புறம் 90° திரும்பினால் அவர் இப்போது எந்த திசையை நோக்கி நடக்கிறார்?",
+      "question_en": "A person walks 5 km East from starting point, turns 45° left and walks 4 km, then turns 90° right. In which direction is he walking now?",
+      "options": [
+        "தென்மேற்கு (South-West)",
+        "வடமேற்கு (North-West)",
+        "வடகிழக்கு (North-East)",
+        "தென்கிழக்கு (South-East)"
+      ],
+      "options_ta": [
+        "தென்மேற்கு (South-West)",
+        "வடமேற்கு (North-West)",
+        "வடகிழக்கு (North-East)",
+        "தென்கிழக்கு (South-East)"
+      ],
+      "options_en": [
+        "South-West",
+        "North-West",
+        "North-East",
+        "South-East"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "கிழக்கு ⟹ 45° இடது (வடகிழக்கு - North-East) ⟹ 90° வலது (வடகிழக்கிலிருந்து 90° வலது = தென்கிழக்கு - South-East). எனவே இப்போது தென்கிழக்கு நோக்கி நடக்கிறார்.",
+        "en": "East ⟹ 45° left (North-East) ⟹ 90° right from NE (South-East). Facing South-East."
+      },
+      "explanation_ta": "கிழக்கு ⟹ 45° இடது (வடகிழக்கு - North-East) ⟹ 90° வலது (வடகிழக்கிலிருந்து 90° வலது = தென்கிழக்கு - South-East). எனவே இப்போது தென்கிழக்கு நோக்கி நடக்கிறார்.",
+      "explanation_en": "East ⟹ 45° left (North-East) ⟹ 90° right from NE (South-East). Facing South-East.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. தென்மேற்கு அல்ல.",
+          "en": "Not South-West."
+        },
+        "B": {
+          "ta": "தவறு. வடமேற்கு அல்ல.",
+          "en": "Not North-West."
+        },
+        "C": {
+          "ta": "தவறு. வடகிழக்கு 45° இடது திருப்பத்திற்கு பின் உள்ள திசை.",
+          "en": "North-East was after 45° left turn."
+        },
+        "D": {
+          "ta": "சரி. வடகிழக்கிலிருந்து 90° வலது = தென்கிழக்கு.",
+          "en": "Correct. South-East."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வடகிழக்கு (45° N of E) + 90° வலது = 45° S of E = தென்கிழக்கு.",
+        "en": "North-East + 90° Right = South-East."
+      },
+      "revision_fact": {
+        "ta": "South-East",
+        "en": "South-East"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    },
+    {
+      "id": "LR_045",
+      "subject": "aptitude",
+      "topic": "aptitude_logical_reasoning",
+      "topic_id": "aptitude_logical_reasoning",
+      "difficulty": "Hard",
+      "question_type": "Complex Ranking Logic",
+      "question": {
+        "ta": "ஒரு வகுப்பில் 60 மாணவர்கள் உள்ளனர். பெண்களின் எண்ணிக்கை ஆண்களின் எண்ணிக்கையைப் போல் இருமடங்கு. கமல் மேலிருந்து 17-வது இடத்திலுள்ள ஒரு ஆண். கமலுக்கு முன்னே 9 பெண்கள் உள்ளனர் எனில், கமலுக்குப் பின்னே உள்ள ஆண்களின் எண்ணிக்கை எவ்வளவு?",
+        "en": "In a class of 60 students, girls are twice that of boys. Kamal is a boy ranked 17th from top. If there are 9 girls ahead of Kamal, how many boys are behind Kamal in rank?"
+      },
+      "question_ta": "ஒரு வகுப்பில் 60 மாணவர்கள் உள்ளனர். பெண்களின் எண்ணிக்கை ஆண்களின் எண்ணிக்கையைப் போல் இருமடங்கு. கமல் மேலிருந்து 17-வது இடத்திலுள்ள ஒரு ஆண். கமலுக்கு முன்னே 9 பெண்கள் உள்ளனர் எனில், கமலுக்குப் பின்னே உள்ள ஆண்களின் எண்ணிக்கை எவ்வளவு?",
+      "question_en": "In a class of 60 students, girls are twice that of boys. Kamal is a boy ranked 17th from top. If there are 9 girls ahead of Kamal, how many boys are behind Kamal in rank?",
+      "options": [
+        "13 ஆண்கள்",
+        "12 ஆண்கள்",
+        "14 ஆண்கள்",
+        "11 ஆண்கள்"
+      ],
+      "options_ta": [
+        "13 ஆண்கள்",
+        "12 ஆண்கள்",
+        "14 ஆண்கள்",
+        "11 ஆண்கள்"
+      ],
+      "options_en": [
+        "13 boys",
+        "12 boys",
+        "14 boys",
+        "11 boys"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "பெண்கள் : ஆண்கள் = 2 : 1 ⟹ பெண்கள் = 40, ஆண்கள் = 20.\nகமல் மேலிருந்து 17-வது இடத்தில் உள்ளார். கமலுக்கு முன் 16 பேர் உள்ளனர்.\nஅதில் 9 பேர் பெண்கள் ⟹ கமலுக்கு முன் உள்ள ஆண்கள் = 16 - 9 = 7 ஆண்கள்.\nகமலுடன் சேர்த்து மேலிருந்து உள்ள ஆண்கள் = 7 + 1 = 8 ஆண்கள்.\nகமலுக்குப் பின் உள்ள ஆண்கள் = மொத்த ஆண்கள் (20) - 8 = 12 ஆண்கள்.",
+        "en": "Girls = 40, Boys = 20. Ahead of Kamal: 16 total (9 girls, 7 boys). Kamal is 8th boy. Boys behind = 20 - 8 = 12."
+      },
+      "explanation_ta": "பெண்கள் : ஆண்கள் = 2 : 1 ⟹ பெண்கள் = 40, ஆண்கள் = 20.\nகமல் மேலிருந்து 17-வது இடத்தில் உள்ளார். கமலுக்கு முன் 16 பேர் உள்ளனர்.\nஅதில் 9 பேர் பெண்கள் ⟹ கமலுக்கு முன் உள்ள ஆண்கள் = 16 - 9 = 7 ஆண்கள்.\nகமலுடன் சேர்த்து மேலிருந்து உள்ள ஆண்கள் = 7 + 1 = 8 ஆண்கள்.\nகமலுக்குப் பின் உள்ள ஆண்கள் = மொத்த ஆண்கள் (20) - 8 = 12 ஆண்கள்.",
+      "explanation_en": "Girls = 40, Boys = 20. Ahead of Kamal: 16 total (9 girls, 7 boys). Kamal is 8th boy. Boys behind = 20 - 8 = 12.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 13 ஆண்கள்.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 20 - (7 + 1) = 12 ஆண்கள்.",
+          "en": "Correct. 12 boys."
+        },
+        "C": {
+          "ta": "தவறு. 14 ஆண்கள்.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 11 ஆண்கள்.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கமல் 8-வது ஆண் ⟹ கமலுக்குப் பின் உள்ள ஆண்கள் = 20 - 8 = 12.",
+        "en": "Kamal is 8th boy ⟹ Boys behind = 20 - 8 = 12."
+      },
+      "revision_fact": {
+        "ta": "20 - 8 = 12",
+        "en": "20 - 8 = 12"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Logical Reasoning",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Logical Reasoning",
+      "tags": [
+        "aptitude",
+        "aptitude_logical_reasoning",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_logical_reasoning"
+    }
+  ]
+}

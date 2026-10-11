@@ -1,0 +1,787 @@
+{
+  "meta": {
+    "topic_id": "economy_education_part_2",
+    "repository_id": "economy_education",
+    "display_title": "Education – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Education",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "intermediate",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Article 21A Fundamental Right",
+    "86th Constitutional Amendment 2002",
+    "RTE Act 2009 April 1 2010",
+    "RTE Section 12 1 c 25 Percent",
+    "Article 45 ECCE Age 6",
+    "Article 51A k Duty of Parent",
+    "Mohini Jain Capitation Case",
+    "Unni Krishnan Judgment 1993",
+    "Pramati Trust Minority Exemption",
+    "NEP 2020 5 3 3 4 Structure",
+    "Kasturirangan Committee NEP",
+    "Samagra Shiksha NIPUN Bharat FLN"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the constitutional journey of education from Article 45 to Article 21A via the 86th CAA 2002.",
+        "Examine the core mandates of the RTE Act 2009 including Section 12(1)(c) 25% reservation."
+      ],
+      "ta": [
+        "86-வது திருத்தம் 2002 மூலம் பிரிவு 45-லிருந்து பிரிவு 21A வரை கல்வியின் அரசியலமைப்புப் பயணத்தைப் புரிந்துகொள்ளுதல்.",
+        "பிரிவு 12(1)(c) 25% இடஒதுக்கீடு உள்ளிட்ட RTE சட்டம் 2009-ன் முக்கிய விதிகளை ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key milestones: 42nd CAA 1976 (Concurrent List), 86th CAA 2002, RTE enforced 1st April 2010.",
+        "Recall that the Kasturirangan Committee drafted NEP 2020 introducing the 5+3+3+4 model."
+      ],
+      "ta": [
+        "முக்கிய மைல்கற்களை நினைவில் நிறுத்துதல்: 1976-ன் 42-வது திருத்தம், 2002-ன் 86-வது திருத்தம், 2010 ஏப்ரல் 1 RTE அமல்.",
+        "கஸ்தூரிரங்கன் குழு NEP 2020-ஐ வரைவு செய்து 5+3+3+4 முறையை அறிமுகப்படுத்தியது என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze judicial rulings in Mohini Jain, Unni Krishnan, and Pramati Trust regarding educational rights.",
+        "Appraise the structural consolidation of SSA, RMSA, and TE into the Samagra Shiksha framework."
+      ],
+      "ta": [
+        "கல்வி உரிமை தொடர்பான மோகினி ஜெயின், உன்னிகிருஷ்ணன் மற்றும் பிரமதி அறக்கட்டளை தீர்ப்புகளை ஆய்வு செய்தல்.",
+        "SSA, RMSA மற்றும் ஆசிரியர் கல்வியை சமக்ர சிக்ஷா திட்டமாக இணைத்ததை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps regarding 86th CAA vs RTE implementation years and minority exemptions."
+      ],
+      "ta": [
+        "86-வது திருத்தம் vs RTE அமலாக்க ஆண்டுகள் மற்றும் சிறுபான்மையினர் விலக்கு தொடர்பான தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Education – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_constitutional_evolution_education",
+      "title_en": "Constitutional Evolution & Landmark Judicial Precedents",
+      "title_ta": "அரசியலமைப்பு பரிணாமம் & வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_rte_act_2009_architecture",
+      "title_en": "Right to Education (RTE) Act, 2009: Statutory Provisions",
+      "title_ta": "இலவச கட்டாயக் கல்வி உரிமைச் சட்டம், 2009: சட்ட விதிகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_nep_2020_overhaul",
+      "title_en": "National Education Policy (NEP 2020) Structural Architecture",
+      "title_ta": "தேசிய கல்விக் கொள்கை (NEP 2020) கட்டமைப்பு மாற்றங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_national_missions_education",
+      "title_en": "National Flagship Schemes: Samagra Shiksha & NIPUN Bharat",
+      "title_ta": "தேசிய முதன்மைத் திட்டங்கள்: சமக்ர சிக்ஷா & நிபுண் பாரத்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The constitutional and legislative architecture of education in India represents the legal foundation guaranteeing learning opportunities, transformed by the 86th Constitutional Amendment Act, 2002 which established free and compulsory elementary education as a Fundamental Right under Article 21A, operationalised through the Right of Children to Free and Compulsory Education (RTE) Act, 2009, and structurally modernised by the National Education Policy (NEP) 2020.",
+      "ta": "இந்தியாவில் கல்விக்கான அரசியலமைப்பு மற்றும் சட்டக் கட்டமைப்பு என்பது கற்றல் வாய்ப்புகளுக்கு சட்டப்பூர்வ உத்தரவாதம் அளிக்கும் அடித்தளமாகும்; 2002-ஆம் ஆண்டின் 86-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் பிரிவு 21A-ன் கீழ் தொடக்கக் கல்வி அடிப்படை உரிமையாக்கப்பட்டது; இது 2009-ஆம் ஆண்டின் இலவச கட்டாயக் கல்வி உரிமைச் சட்டம் (RTE Act) மூலம் செயல்படுத்தப்பட்டு, 2020-ஆம் ஆண்டின் புதிய தேசிய கல்விக் கொள்கை (NEP 2020) மூலம் கட்டமைப்பு ரீதியாக நவீனமயமாக்கப்பட்டுள்ளது."
+    },
+    "introduction": {
+      "en": "Education occupied a contested place in Indian constitutionalism, transitioning from an unenforceable Directive Principle (Article 45) in 1950 to an enforceable Fundamental Right (Article 21A) in 2002 following landmark Supreme Court judgments (Mohini Jain 1992, Unni Krishnan 1993). Legislative jurisdiction was transformed by the 42nd Constitutional Amendment Act 1976, which moved Education from the State List to the Concurrent List (Entry 25). The enactment of the RTE Act 2009 (in force from 1st April 2010) established statutory benchmarks for neighborhood schools, outlawed corporal punishment and capitation fees, and instituted a revolutionary 25% quota in private schools under Section 12(1)(c). In 2020, the Union Cabinet approved NEP 2020, replacing the 1986 NPE after 34 years with a 5+3+3+4 school structure, a 6% GDP public investment target, and the NIPUN Bharat Mission for Foundational Literacy and Numeracy (FLN). This part explores the legal, institutional, and policy frameworks governing Indian education.",
+      "ta": "இந்திய அரசியலமைப்பில் கல்வி ஒரு தீவிர விவாதத்திற்குரிய களமாக இருந்து வந்துள்ளது; 1950-ல் நீதிமன்றங்களால் செயல்படுத்த முடியாத அரசு வழிகாட்டு நெறிமுறையாக (பிரிவு 45) இருந்த கல்வி, உச்சநீதிமன்றத்தின் வரலாற்றுத் தீர்ப்புகளுக்குப் பிறகு (மோகினி ஜெயின் 1992, உன்னிகிருஷ்ணன் 1993), 2002-ல் பிரிவு 21A-ன் கீழ் அடிப்படை உரிமையாக உருமாற்றம் பெற்றது. 1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் கல்வி மாநிலப் பட்டியலில் இருந்து பொதுப் பட்டியலுக்கு (வரிசை 25) மாற்றப்பட்டது. 2009-ல் இயற்றப்பட்டு 2010 ஏப்ரல் 1 முதல் அமலுக்கு வந்த RTE சட்டம், அருகமைப் பள்ளிகள், உடல் தண்டனை மற்றும் தலைவரித் தடை, மற்றும் பிரிவு 12(1)(c)-ன் கீழ் தனியார் பள்ளிகளில் 25% இடஒதுக்கீடு போன்ற புரட்சிகர விதிகளை நடைமுறைப்படுத்தியது. 2020-ல் புதிய கல்விக் கொள்கை (NEP 2020) 34 ஆண்டுகளுக்குப் பிறகு NPE 1986-ஐ மாற்றி, 5+3+3+4 பாடத்திட்ட முறை, ஜிடிபியில் 6% கல்விச் செலவின இலக்கு மற்றும் அடிப்படை எழுத்தறிவுக்கான நிபுண் பாரத் இயக்கத்தை அறிமுகப்படுத்தியது. இப்பகுதி இந்திய கல்வியை வழிநடத்தும் சட்ட, நிறுவன மற்றும் கொள்கைக் கட்டமைப்புகளை விரிவாக அலசுகிறது."
+    },
+    "sec_constitutional_evolution_education": [
+      {
+        "term_en": "42nd CAA 1976 & Concurrent Jurisdiction",
+        "term_ta": "1976-ன் 42-வது திருத்தம் & பொதுப் பட்டியல் அதிகாரம்",
+        "details_en": "Originally placed in the State List (List II, Entry 11), Education was transferred to the Concurrent List (List III, Entry 25) by the 42nd Constitutional Amendment Act, 1976 under Prime Minister Indira Gandhi. This enabled Parliament to enact nationwide overarching legislations like the RTE Act, with Union legislation prevailing over conflicting State enactments under Article 254.",
+        "details_ta": "தொடக்கத்தில் மாநிலப் பட்டியலில் (வரிசை 11) இருந்த கல்வி, 1976-ல் இந்திரா காந்தி அரசால் கொண்டுவரப்பட்ட 42-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் பொதுப் பட்டியலுக்கு (வரிசை 25) மாற்றப்பட்டது. இது நாடாளுமன்றம் நாடு தழுவிய சட்டங்களை (RTE சட்டம் போன்றவை) இயற்ற வழிசெய்தது; பிரிவு 254-ன் படி முரண்பாட்டின் போது மத்திய சட்டமே மேலோங்கும்."
+      },
+      {
+        "term_en": "86th CAA 2002: The Tri-Part Educational Architecture",
+        "term_ta": "86-வது திருத்தம் 2002: முத்தரப்பு கல்வி கட்டமைப்பு",
+        "details_en": "The 86th Constitutional Amendment Act, 2002 transformed Indian education across three parts: (1) Inserted Article 21A making free and compulsory education for children aged 6 to 14 a Fundamental Right; (2) Substituted Article 45 (DPSP) directing the State to provide Early Childhood Care and Education (ECCE) for children up to age 6; (3) Added Article 51A(k) creating a Fundamental Duty for parents/guardians to provide educational opportunities.",
+        "details_ta": "2002-ன் 86-வது அரசியலமைப்பு திருத்தச் சட்டம் மூன்று நிலைகளில் மாற்றத்தை ஏற்படுத்தியது: (1) 6 முதல் 14 வயது குழந்தைகளுக்கு இலவச கட்டாயக் கல்வியை அடிப்படை உரிமையாக்கும் பிரிவு 21A சேர்க்கப்பட்டது; (2) 0-6 வயது குழந்தைகளுக்கு முன்பருவக் கல்வி வழங்க அரசு முயல வேண்டும் என பிரிவு 45 மாற்றியமைக்கப்பட்டது; (3) பெற்றோர் தங்கள் குழந்தைகளுக்கு கல்வி வாய்ப்புகளை வழங்க வேண்டும் என்ற 11-வது அடிப்படைக் கடமை பிரிவு 51A(k) சேர்க்கப்பட்டது."
+      },
+      {
+        "term_en": "Judicial Precedents: Mohini Jain & Unni Krishnan",
+        "term_ta": "நீதிமன்றத் தீர்ப்புகள்: மோகினி ஜெயின் & உன்னிகிருஷ்ணன்",
+        "details_en": "In Mohini Jain v. State of Karnataka (1992), the Supreme Court held that the Right to Life under Article 21 encompasses the Right to Education. In Unni Krishnan v. State of A.P. (1993), the Court refined this by declaring education fundamental up to age 14, after which it is contingent on state economic capacity. In Pramati Educational Trust (2014), the Court exempted minority schools (Article 30) from the RTE Act.",
+        "details_ta": "மோகினி ஜெயின் வழக்கில் (1992) கல்வி உரிமை என்பது பிரிவு 21-ன் வாழ்வுரிமையுடன் பிரிக்க முடியாதது என உச்சநீதிமன்றம் தீர்ப்பளித்தது. உன்னிகிருஷ்ணன் வழக்கில் (1993) 14 வயது வரையிலான கல்வி அடிப்படை உரிமை என்றும், அதற்குப் பின் அரசின் பொருளாதார நிலைக்கு உட்பட்டது என்றும் தெளிவுபடுத்தப்பட்டது. பிரமதி அறக்கட்டளை வழக்கில் (2014) பிரிவு 30-ன் கீழான சிறுபான்மையினர் பள்ளிகளுக்கு RTE சட்டத்திலிருந்து விலக்கு அளிக்கப்பட்டது."
+      }
+    ],
+    "sec_rte_act_2009_architecture": [
+      {
+        "term_en": "Enactment, Enforcement & Scope (Sections 3 & 4)",
+        "term_ta": "சட்ட அமலாக்கம் & வரம்பு (பிரிவுகள் 3 & 4)",
+        "details_en": "Enacted in August 2009, the RTE Act came into force on 1st April 2010. Section 3 guarantees every child aged 6 to 14 the right to free and compulsory elementary education (Classes 1 to 8) in a neighborhood school. Section 4 provides for special training and age-appropriate admission for out-of-school or dropped-out children.",
+        "details_ta": "ஆகஸ்ட் 2009-ல் நிறைவேற்றப்பட்டு 2010 ஏப்ரல் 1 அன்று அமலுக்கு வந்தது. பிரிவு 3, 6 முதல் 14 வயதுக்குட்பட்ட ஒவ்வொரு குழந்தைக்கும் அருகில் உள்ள பள்ளியில் 1 முதல் 8-ம் வகுப்பு வரை இலவச மற்றும் கட்டாயக் கல்வியை உத்தரவாதம் செய்கிறது. பிரிவு 4, பள்ளியில் சேராத குழந்தைகளுக்கு வயதுக்கேற்ற வகுப்பில் சேர்க்க சிறப்புப் பயிற்சி வழங்க வழிகோலுகிறது."
+      },
+      {
+        "term_en": "Section 12(1)(c): 25% Private School EWS Quota",
+        "term_ta": "பிரிவு 12(1)(c): தனியார் பள்ளிகளில் 25% இடஒதுக்கீடு",
+        "details_en": "Section 12(1)(c) mandates that private unaided non-minority schools reserve at least 25% of their entry-level seats (Pre-KG/LKG or Class 1) for children belonging to Economically Weaker Sections (EWS) and Disadvantaged Groups (SC, ST, OBC, differently abled), with tuition fees reimbursed by the State at government per-child expenditure rates.",
+        "details_ta": "பிரிவு 12(1)(c) சிறுபான்மையற்ற தனியார் சுயநிதிப் பள்ளிகள் தங்களின் ஆரம்ப வகுப்புகளில் (LKG அல்லது 1-ம் வகுப்பு) குறைந்தபட்சம் 25% இடங்களை நலிவடைந்த பிரிவினர் (EWS) மற்றும் விளிம்புநிலைக் குழந்தைகளுக்கு (SC, ST, OBC, மாற்றுத்திறனாளிகள்) ஒதுக்க வேண்டும் என கட்டாயமாக்குகிறது; இச்செலவை அரசே திருப்பிச் செலுத்துகிறது."
+      },
+      {
+        "term_en": "Section 16 (No-Detention & 2019 Amendment)",
+        "term_ta": "பிரிவு 16 (தோல்வியின்மை கொள்கை & 2019 திருத்தம்)",
+        "details_en": "Section 16 originally prohibited failing or expelling any student until completion of elementary education (Class 8). To address learning deficiencies, Parliament passed the RTE Amendment Act 2019, permitting states to conduct regular examinations in Classes 5 and 8 and detain students who fail a re-examination, ending automatic promotion.",
+        "details_ta": "தொடக்கத்தில் 8-ம் வகுப்பு வரை எந்த மாணவரையும் பெயில் செய்யவோ பள்ளியை விட்டு நீக்கவோ கூடாது என பிரிவு 16 தடை விதித்தது. கற்றல் குறைபாடுகளைக் களைய, 2019 திருத்தச் சட்டம் மூலம் 5 மற்றும் 8-ம் வகுப்புகளில் தேர்வு நடத்தவும், மறுதேர்வில் தோல்வியடைந்தால் மாணவர்களை அதே வகுப்பில் நிறுத்தி வைக்கவும் மாநில அரசுகளுக்கு அதிகாரம் வழங்கப்பட்டது."
+      }
+    ],
+    "sec_nep_2020_overhaul": [
+      {
+        "term_en": "Kasturirangan Committee & 5+3+3+4 Model",
+        "term_ta": "கஸ்தூரிரங்கன் குழு & 5+3+3+4 பாடத்திட்ட கட்டமைப்பு",
+        "details_en": "Approved on 29th July 2020 based on the Dr. K. Kasturirangan Committee Report, NEP 2020 replaced the 10+2 system with the 5+3+3+4 structure covering ages 3 to 18: Foundational Stage (5 yrs, ages 3-8, ECCE + Gr 1-2); Preparatory Stage (3 yrs, ages 8-11, Gr 3-5); Middle Stage (3 yrs, ages 11-14, Gr 6-8); and Secondary Stage (4 yrs, ages 14-18, Gr 9-12 multidisciplinary).",
+        "details_ta": "டாக்டர் கே. கஸ்தூரிரங்கன் குழுவின் அறிக்கையின் அடிப்படையில் 2020 ஜூலை 29 அன்று மத்திய அரசால் ஏற்கப்பட்டது; பழைய 10+2 முறைக்குப் பதிலாக 3 முதல் 18 வயது வரையிலான 5+3+3+4 கட்டமைப்பு உருவாக்கப்பட்டது: அடிப்படை நிலை (5 ஆண்டு, வயது 3-8); தயாரிப்பு நிலை (3 ஆண்டு, வயது 8-11); நடுநிலை (3 ஆண்டு, வயது 11-14); மற்றும் இடைநிலை (4 ஆண்டு, வயது 14-18 பல்துறைப் படிப்பு)."
+      },
+      {
+        "term_en": "Public Investment Target & Institutional Restructuring",
+        "term_ta": "பொது முதலீட்டு இலக்கு & நிறுவன மறுசீரமைப்பு",
+        "details_en": "NEP 2020 reaffirms the long-standing goal of spending 6% of GDP on public education (originally proposed by the Kothari Commission 1964-66). In higher education, it proposes setting up the Higher Education Commission of India (HECI) with four distinct verticals: NHERC (regulation), NAC (accreditation), HEGC (funding), and GEC (standard-setting), alongside the Academic Bank of Credits (ABC).",
+        "details_ta": "கல்விக்கு ஜிடிபியில் 6% பொது நிதி ஒதுக்க வேண்டும் என்ற கோத்தாரி குழுவின் (1964-66) பரிந்துரையை NEP 2020 மீண்டும் வலியுறுத்தியது. உயர்கல்வியில் இந்திய உயர்கல்வி ஆணையத்தை (HECI) 4 பிரிவுகளுடன் அமைக்க முன்மொழிந்துள்ளது: ஒழுங்குமுறை (NHERC), அங்கீகாரம் (NAC), நிதி வழங்கல் (HEGC), மற்றும் தர நிர்ணயம் (GEC); மேலும் அகாடமிக் பேங்க் ஆஃப் கிரெடிட்ஸ் (ABC) அறிமுகப்படுத்தப்பட்டது."
+      }
+    ],
+    "sec_national_missions_education": [
+      {
+        "term_en": "Samagra Shiksha Abhiyan (Launched 2018)",
+        "term_ta": "சமக்ர சிக்ஷா அபியான் (2018-ல் தொடக்கம்)",
+        "details_en": "Launched in 2018, Samagra Shiksha subsumed three earlier centrally sponsored schemes: Sarva Shiksha Abhiyan (SSA, 2001), Rashtriya Madhyamik Shiksha Abhiyan (RMSA, 2009), and Teacher Education (TE, 1987). It treats school education holistically as a single continuum from pre-school (Balvatika) to senior secondary (Class 12).",
+        "details_ta": "2018-ல் தொடங்கப்பட்ட சமக்ர சிக்ஷா, மூன்று முந்தைய திட்டங்களை (SSA, RMSA மற்றும் ஆசிரியர் கல்வி) இணைத்து உருவானது. இது முன்பள்ளி முதல் 12-ம் வகுப்பு வரை பள்ளிக் கல்வியை தடையற்ற ஒரே தொடர்ச்சியாகக் கருதி நிதியுதவி மற்றும் உள்கட்டமைப்பை வழங்குகிறது."
+      },
+      {
+        "term_en": "NIPUN Bharat Mission & PM POSHAN Scheme",
+        "term_ta": "நிபுண் பாரத் இயக்கம் & பிஎம் போஷன் திட்டம்",
+        "details_en": "Launched in July 2021, NIPUN Bharat (National Initiative for Proficiency in Reading with Understanding and Numeracy) targets universal Foundational Literacy and Numeracy (FLN) for every child by Grade 3 by 2026-27. PM POSHAN (rechristened from National Mid-Day Meal Scheme) provides hot cooked meals to ~12 crore children across Classes 1-8, extending coverage to pre-primary Balvatikas.",
+        "details_ta": "ஜூலை 2021-ல் தொடங்கப்பட்ட நிபுண் பாரத் இயக்கம், 2026-27-க்குள் 3-ம் வகுப்பு வரை உள்ள அனைத்துக் குழந்தைகளும் அடிப்படை எழுத்தறிவு மற்றும் கணித அறிவைப் (FLN) பெறுவதை உறுதி செய்கிறது. பிஎம் போஷன் திட்டம் (முந்தைய மதிய உணவுத் திட்டம்) 1 முதல் 8-ம் வகுப்பு வரை பயிலும் 12 கோடி மாணவர்களுக்கு சமைத்த உணவை வழங்குகிறது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_article_21a_vs_45_vs_51ak",
+        "title_en": "Constitutional Matrix: Article 21A vs Article 45 vs Article 51A(k)",
+        "title_ta": "அரசியலமைப்பு முத்தரப்பு ஒப்பீடு: பிரிவு 21A vs பிரிவு 45 vs பிரிவு 51A(k)",
+        "headers_en": [
+          "Constitutional Attribute",
+          "Article 21A",
+          "Article 45",
+          "Article 51A(k)"
+        ],
+        "headers_ta": [
+          "அரசியலமைப்புப் பண்பு",
+          "பிரிவு 21A (அடிப்படை உரிமை)",
+          "பிரிவு 45 (வழிகாட்டு நெறிமுறை)",
+          "பிரிவு 51A(k) (அடிப்படைக் கடமை)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Part",
+            "Part III (Fundamental Rights)",
+            "Part IV (Directive Principles of State Policy)",
+            "Part IVA (Fundamental Duties)"
+          ],
+          [
+            "Legal Enforceability",
+            "Justiciable; directly enforceable via writ jurisdiction (Arts 32 & 226)",
+            "Non-justiciable; fundamental in governance but unenforceable in court",
+            "Non-justiciable civic/moral obligation without penal sanctions"
+          ],
+          [
+            "Beneficiary Age Cohort",
+            "Children of the age of 6 to 14 years",
+            "All children until they complete the age of 6 years (ECCE)",
+            "Children of the age of 6 to 14 years"
+          ],
+          [
+            "Responsible Entity",
+            "The State (Union and State Governments)",
+            "The State (State to endeavor to provide early care)",
+            "Parent or legal guardian of the child/ward"
+          ],
+          [
+            "Enactment Origin",
+            "Inserted by 86th Constitutional Amendment Act, 2002",
+            "Substituted by 86th Constitutional Amendment Act, 2002",
+            "Added as 11th Fundamental Duty by 86th Amendment, 2002"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு பகுதி",
+            "பகுதி III (அடிப்படை உரிமைகள்)",
+            "பகுதி IV (அரசு வழிகாட்டு நெறிமுறைகள்)",
+            "பகுதி IVA (அடிப்படைக் கடமைகள்)"
+          ],
+          [
+            "சட்ட அமலாக்கத் தன்மை",
+            "நீதிமன்றத்தால் கட்டாயப்படுத்தக்கூடியது (பிரிவுகள் 32 & 226 பேராணை)",
+            "நீதிமன்றத்தால் செயல்படுத்த முடியாது; கொள்கை வழிகாட்டுதல் மட்டுமே",
+            "நீதிமன்றத்தால் தண்டிக்க முடியாத தார்மீக/குடிமைக் கடமை"
+          ],
+          [
+            "பயனாளி வயது வரம்பு",
+            "6 முதல் 14 வயது வரை உள்ள குழந்தைகள்",
+            "6 வயது பூர்த்தியாகும் வரை உள்ள குழந்தைகள் (முன்பருவக் கல்வி)",
+            "6 முதல் 14 வயது வரை உள்ள குழந்தைகள்"
+          ],
+          [
+            "பொறுப்பான தரப்பு",
+            "அரசு (மத்திய மற்றும் மாநில அரசுகள்)",
+            "அரசு (முன்பருவக் குழந்தை பராமரிப்பை வழங்க அரசு முயல வேண்டும்)",
+            "குழந்தையின் பெற்றோர் அல்லது சட்டப்பூர்வ பாதுகாவலர்"
+          ],
+          [
+            "அரசியலமைப்புத் தோற்றம்",
+            "2002-ன் 86-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் சேர்க்கப்பட்டது",
+            "2002-ன் 86-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் மாற்றியமைக்கப்பட்டது",
+            "2002-ன் 86-வது திருத்தம் மூலம் 11-வது கடமையாகச் சேர்க்கப்பட்டது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_old_10_plus_2_vs_nep_5_3_3_4",
+        "title_en": "Old 10+2 System vs NEP 2020 5+3+3+4 System",
+        "title_ta": "பழைய 10+2 கல்வி முறை vs புதிய NEP 5+3+3+4 கல்வி முறை",
+        "headers_en": [
+          "Pedagogical Dimension",
+          "Old 10+2 School Structure",
+          "NEP 2020 5+3+3+4 Curricular Model"
+        ],
+        "headers_ta": [
+          "கற்பித்தல் பரிமாணம்",
+          "பழைய 10+2 பள்ளி முறை",
+          "புதிய 5+3+3+4 பாடத்திட்ட கட்டமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "Age Coverage Span",
+            "Ages 6 to 18 years (Classes 1 to 12)",
+            "Ages 3 to 18 years (incorporating 3 years of pre-school Anganwadi)"
+          ],
+          [
+            "Early Childhood Care (ECCE)",
+            "Pre-school (ages 3-6) was outside formal school curriculum",
+            "3 years of Anganwadi/Balvatika institutionalised in Foundational Stage"
+          ],
+          [
+            "Stream Rigidity",
+            "Strict compartmentalisation into Science, Arts, and Commerce streams",
+            "Multidisciplinary flexibility; no hard separation of curricular/vocational streams"
+          ],
+          [
+            "Board Examinations",
+            "High-stakes rote examination determining university entry",
+            "Redesigned to test core concepts and application; offered twice a year"
+          ],
+          [
+            "Vocational Exposure",
+            "Isolated in separate technical streams/polytechnics after Class 10",
+            "Integrated vocational crafts with 10 bagless days from Class 6 onwards"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வயது வரம்பு இடைவெளி",
+            "6 முதல் 18 வயது வரை (1 முதல் 12 வகுப்புகள்)",
+            "3 முதல் 18 வயது வரை (3 ஆண்டுகள் பாலர் பள்ளி அங்கன்வாடி உட்பட)"
+          ],
+          [
+            "முன்பருவக் கல்வி (ECCE)",
+            "3-6 வயது முன்பள்ளி கல்வி முறைசார் பாடத்திட்டத்தில் இல்லை",
+            "3 ஆண்டுகள் பாலர் பள்ளி அடிப்படை நிலையில் முறைசார் கல்வியாக இணைக்கப்பட்டது"
+          ],
+          [
+            "பிரிவு நெகிழ்வுத்தன்மை",
+            "அறிவியல், கலை, வணிகவியல் என கடினமான தனித்தனி பிரிவுகள்",
+            "கலை-அறிவியல் பிரிவுகள் இன்றி பல்துறைப் பாடங்களை விருப்பப்படி தேர்வு செய்யலாம்"
+          ],
+          [
+            "பொதுத் தேர்வுகள்",
+            "மனப்பாடத்தை அடிப்படையாகக் கொண்ட கடுமையான ஆண்டுப் பொதுத் தேர்வுகள்",
+            "அடிப்படைக் கருத்துக்களை சோதிக்கும் வகையில் மறுசீரமைப்பு; ஆண்டில் இருமுறை தேர்வு"
+          ],
+          [
+            "தொழிற்கல்வி அறிமுகம்",
+            "10-ம் வகுப்பிற்குப் பின்னரே பாலிடெக்னிக் அல்லது தொழிற்பயிற்சி",
+            "6-ம் வகுப்பு முதலே பாடத்திட்டத்துடன் தொழிற்கல்வி இணைப்பு (10 புத்தகமில்லா நாட்கள்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ssa_vs_rmsa_vs_samagra_shiksha",
+        "title_en": "Sarva Shiksha Abhiyan vs RMSA vs Samagra Shiksha",
+        "title_ta": "சர்வா சிக்ஷா அபியான் vs RMSA vs சமக்ர சிக்ஷா ஒப்பீடு",
+        "headers_en": [
+          "Programmatic Attribute",
+          "Sarva Shiksha Abhiyan (SSA)",
+          "Rashtriya Madhyamik Shiksha (RMSA)",
+          "Samagra Shiksha Abhiyan"
+        ],
+        "headers_ta": [
+          "திட்ட பண்புக்கூறு",
+          "சர்வா சிக்ஷா அபியான் (SSA)",
+          "ராஷ்டிரிய மத்யமிக் சிக்ஷா (RMSA)",
+          "சமக்ர சிக்ஷா அபியான்"
+        ],
+        "rows_en": [
+          [
+            "Launch Year & Era",
+            "2001 (Prime Minister Atal Bihari Vajpayee)",
+            "2009 (Prime Minister Manmohan Singh)",
+            "2018 (Integrated Umbrella Scheme under MoE)"
+          ],
+          [
+            "Educational Level",
+            "Elementary Education (Classes 1 to 8)",
+            "Secondary Education (Classes 9 and 10)",
+            "Pre-School to Senior Secondary (Balvatika to Class 12)"
+          ],
+          [
+            "Primary Mandate",
+            "Universal elementary enrolment, bridge social gaps, RTE delivery",
+            "Secondary school within 5km, science labs, improve secondary GER",
+            "Single administrative window, holistic schooling continuum, NEP delivery"
+          ],
+          [
+            "Institutional Mergers",
+            "Implemented as standalone elementary mission",
+            "Implemented as standalone secondary mission",
+            "Subsumed SSA, RMSA, and Teacher Education (TE) into single fund"
+          ],
+          [
+            "Digital & FLN Focus",
+            "Basic computer literacy labs (CAL)",
+            "ICT @ Schools scheme infrastructure",
+            "NIPUN Bharat (FLN by Gr 3), DIKSHA portal integration, smart boards"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொடங்கப்பட்ட ஆண்டு & காலம்",
+            "2001 (பிரதமர் அடல் பிகாரி வாஜ்பாய் காலம்)",
+            "2009 (பிரதமர் மன்மோகன் சிங் காலம்)",
+            "2018 (ஒருங்கிணைந்த குடைத் திட்டம்)"
+          ],
+          [
+            "கல்வி நிலை",
+            "தொடக்கக் கல்வி (1 முதல் 8 வகுப்புகள்)",
+            "இடைநிலைக் கல்வி (9 மற்றும் 10 வகுப்புகள்)",
+            "முன்பள்ளி முதல் மேல்நிலை வரை (பாலர் பள்ளி முதல் 12-ம் வகுப்பு வரை)"
+          ],
+          [
+            "முதன்மை நோக்கம்",
+            "அனைவருக்கும் தொடக்கக் கல்வி, சமூக இடைவெளிகளைக் களைதல், RTE",
+            "5 கி.மீ-க்குள் இடைநிலைப் பள்ளி, அறிவியல் ஆய்வகங்கள், சேர்க்கை உயர்வு",
+            "ஒற்றை நிர்வாக அமைப்பு, தடையற்ற கல்வித் தொடர்ச்சி, NEP அமலாக்கம்"
+          ],
+          [
+            "நிறுவன இணைப்பு",
+            "தனித்துவமான தொடக்கக் கல்வி இயக்கமாகச் செயல்பட்டது",
+            "தனித்துவமான இடைநிலைக் கல்வி இயக்கமாகச் செயல்பட்டது",
+            "SSA, RMSA மற்றும் ஆசிரியர் கல்வி ஆகிய மூன்றையும் ஒரே திட்டமாக இணைத்தது"
+          ],
+          [
+            "டிஜிட்டல் & FLN கவனம்",
+            "அடிப்படை கணினி வழிக் கற்றல் (CAL)",
+            "பள்ளிகளில் ICT உள்கட்டமைப்பு உருவாக்கம்",
+            "நிபுண் பாரத் (FLN இலக்கு), தீக்ஷா தளம், ஸ்மார்ட் வகுப்பறைகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rte_2009_statutory_matrix",
+        "title_en": "Pre-RTE vs Post-RTE Statutory Education Architecture",
+        "title_ta": "RTE சட்டத்திற்கு முன் vs பின் சட்டக் கட்டமைப்பு ஒப்பீடு",
+        "headers_en": [
+          "Legal Dimension",
+          "Pre-RTE Architecture (Before 2010)",
+          "RTE Act 2009 Mandate (In force 1st April 2010)"
+        ],
+        "headers_ta": [
+          "சட்டப் பரிமாணம்",
+          "RTE-க்கு முந்தைய கட்டமைப்பு (2010 வரை)",
+          "RTE சட்டம் 2009-ன் சட்டப்பூர்வ கட்டமைப்பு (2010 முதல்)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Status",
+            "Moral aspiration under Directive Principle (Article 45)",
+            "Legally enforceable Fundamental Right under Article 21A"
+          ],
+          [
+            "Private School Inclusivity",
+            "Unregulated admissions; no reservation for economically weak",
+            "Section 12(1)(c): Mandatory 25% seats reserved for EWS children"
+          ],
+          [
+            "Screening & Capitation Fees",
+            "Widespread screening interviews of parents and capitation fees",
+            "Strictly prohibited under Section 13 with severe monetary penalties"
+          ],
+          [
+            "Corporal Punishment",
+            "Commonplace in practice; lack of specific penal provisions",
+            "Strictly prohibited under Section 17; mental/physical harassment banned"
+          ],
+          [
+            "Teacher Private Tuition",
+            "Unrestricted private tutoring by school teachers",
+            "Absolute statutory bar on private tuition by teachers under Section 28"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு அந்தஸ்து",
+            "வழிகாட்டு நெறிமுறை (பிரிவு 45) கீழ் வெறும் தார்மீக வழிகாட்டுதல்",
+            "பிரிவு 21A-ன் கீழ் நீதிமன்றத்தால் நிலைநாட்டக்கூடிய அடிப்படை உரிமை"
+          ],
+          [
+            "தனியார் பள்ளி ஒதுக்கீடு",
+            "கட்டுப்பாடற்ற சேர்க்கை; ஏழை மாணவர்களுக்கு எவ்வித இடஒதுக்கீடும் இல்லை",
+            "பிரிவு 12(1)(c): நலிவடைந்த பிரிவினருக்கு 25% கட்டாய இடஒதுக்கீடு"
+          ],
+          [
+            "நேர்காணல் & தலைவரி வசூல்",
+            "பெற்றோருக்கு நேர்காணல் மற்றும் நன்கொடை வசூலிப்பது பரவலாக இருந்தது",
+            "பிரிவு 13-ன் கீழ் கடுமையாகத் தடை செய்யப்பட்டு கடுமையான அபராதம்"
+          ],
+          [
+            "உடல் ரீதியான தண்டனை",
+            "பள்ளிகளில் குழந்தைகளை அடிப்பது வழக்கமாக இருந்தது",
+            "பிரிவு 17-ன் கீழ் உடல் ரீதியான மற்றும் மன ரீதியான தண்டனை முற்றிலும் தடை"
+          ],
+          [
+            "ஆசிரியர்களின் பிரைவேட் டியூஷன்",
+            "பள்ளி ஆசிரியர்கள் தனியாக டியூஷன் எடுப்பது பரவலாக இருந்தது",
+            "பிரிவு 28-ன் கீழ் ஆசிரியர்கள் தனியாக டியூஷன் எடுப்பது சட்டப்பூர்வமாகத் தடை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Education Part 2: Constitutional Mandates, RTE & NEP 2020",
+        "short_label": "Education Frameworks",
+        "children": [
+          {
+            "title": "Constitutional Evolution",
+            "short_label": "Constitutional Evolution",
+            "children": [
+              {
+                "title": "42nd CAA 1976: Concurrent List Entry 25",
+                "short_label": "42nd CAA"
+              },
+              {
+                "title": "86th CAA 2002: Art 21A, Art 45, Art 51A(k)",
+                "short_label": "86th CAA"
+              },
+              {
+                "title": "Mohini Jain (1992) & Unni Krishnan (1993)",
+                "short_label": "Judicial Rulings"
+              }
+            ]
+          },
+          {
+            "title": "RTE Act 2009 Framework",
+            "short_label": "RTE Act 2009",
+            "children": [
+              {
+                "title": "In force 1st April 2010 (Ages 6-14)",
+                "short_label": "Enforcement"
+              },
+              {
+                "title": "Sec 12(1)(c): 25% Quota for EWS in Private Schools",
+                "short_label": "25% Quota"
+              },
+              {
+                "title": "2019 Amendment: Abolished automatic no-detention",
+                "short_label": "2019 Amendment"
+              }
+            ]
+          },
+          {
+            "title": "NEP 2020 Architecture",
+            "short_label": "NEP 2020",
+            "children": [
+              {
+                "title": "Kasturirangan Committee (replaces NPE 1986)",
+                "short_label": "Kasturirangan"
+              },
+              {
+                "title": "5+3+3+4 Structural Overhaul (Ages 3-18)",
+                "short_label": "5+3+3+4 Structure"
+              },
+              {
+                "title": "6% GDP Target & 50% Higher Ed GER by 2035",
+                "short_label": "6% Target"
+              }
+            ]
+          },
+          {
+            "title": "National Flagship Schemes",
+            "short_label": "National Schemes",
+            "children": [
+              {
+                "title": "Samagra Shiksha (2018: SSA + RMSA + TE)",
+                "short_label": "Samagra Shiksha"
+              },
+              {
+                "title": "NIPUN Bharat (FLN by Grade 3 by 2026-27)",
+                "short_label": "NIPUN Bharat"
+              },
+              {
+                "title": "PM POSHAN (formerly Mid-Day Meal Scheme)",
+                "short_label": "PM POSHAN"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "86th CAA vs RTE Act Year Trap: 2002 vs 2009/2010 Lag",
+        "points": {
+          "en": [
+            "TRAP: Conflating the enactment year of the 86th Constitutional Amendment Act with the operationalisation of the RTE Act.",
+            "CORRECT FACT: The 86th Amendment was passed in 2002 inserting Article 21A, but Parliament passed the operationalising RTE Act only in AUGUST 2009, and it came into force on 1ST APRIL 2010 (an 8-year legislative gap).",
+            "WHY CANDIDATES FAIL: Assuming the fundamental right and statutory enforcement happened in the same year."
+          ],
+          "ta": [
+            "பொறி: 86-வது அரசியலமைப்பு திருத்தம் இயற்றப்பட்ட ஆண்டையும், RTE சட்டம் அமலுக்கு வந்த ஆண்டையும் ஒன்றாகக் கருதுவது.",
+            "சரியான உண்மை: 86-வது அரசியலமைப்பு திருத்தம் 2002-ல் இயற்றப்பட்டு பிரிவு 21A சேர்க்கப்பட்டது; ஆனால் அதைச் செயல்படுத்தும் RTE சட்டம் 2009 ஆகஸ்டில் நிறைவேற்றப்பட்டு '2010 ஏப்ரல் 1' அன்றுதான் அமலுக்கு வந்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அரசியலமைப்பு திருத்தமும் சட்டப்பூர்வ விதிகளும் ஒரே ஆண்டில் நடைமுறைக்கு வந்ததாக தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "RTE 25% Quota Minority Exemption Trap: Pramati Trust Ruling (2014)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the 25% EWS reservation under Section 12(1)(c) of the RTE Act applies uniformly to all private schools.",
+            "CORRECT FACT: In Pramati Educational Trust v. Union of India (2014), a 5-judge Constitution Bench held that the RTE Act 2009 does NOT apply to aided or unaided minority educational institutions protected under Article 30(1).",
+            "WHY CANDIDATES FAIL: Overlooking the constitutional protection granted to religious and linguistic minority schools under Article 30."
+          ],
+          "ta": [
+            "பொறி: RTE சட்டத்தின் பிரிவு 12(1)(c)-ன் கீழான 25% இடஒதுக்கீடு அனைத்து தனியார் பள்ளிகளுக்கும் பொருந்தும் என நினைப்பது.",
+            "சரியான உண்மை: பிரமதி கல்வி அறக்கட்டளை வழக்கில் (2014), அரசியலமைப்பு பிரிவு 30(1)-ன் கீழ் பாதுகாக்கப்படும் சிறுபான்மையினர் கல்வி நிறுவனங்களுக்கு (அரசு உதவிபெறும் / சுயநிதி) RTE சட்டம் பொருந்தாது என உச்சநீதிமன்றம் தீர்ப்பளித்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பிரிவு 30-ன் கீழ் சிறுபான்மையினர் பள்ளிகளுக்கு அரசியலமைப்பு அளித்துள்ள சிறப்புப் பாதுகாப்பை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Legislative Subject Allocation Trap: Education is Concurrent List (List III Entry 25)",
+        "points": {
+          "en": [
+            "TRAP: Classifying Education as a State List subject in contemporary India.",
+            "CORRECT FACT: Education was transferred from the State List (List II, Entry 11) to the Concurrent List (List III, Entry 25) by the 42nd Constitutional Amendment Act, 1976. Both Centre and States can legislate on it.",
+            "WHY CANDIDATES FAIL: Confusing Education with Public Health (which remains strictly on the State List under Entry 6)."
+          ],
+          "ta": [
+            "பொறி: தற்கால இந்தியாவில் கல்வி என்பது மாநிலப் பட்டியல் விவகாரம் எனக் கருதுவது.",
+            "சரியான உண்மை: 1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் கல்வி மாநிலப் பட்டியலில் இருந்து 'பொதுப் பட்டியலுக்கு' (பட்டியல் III, உள்ளீடு 25) மாற்றப்பட்டது. மத்திய மற்றும் மாநில அரசுகள் இரண்டும் சட்டம் இயற்றலாம்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கல்வியை பொதுச் சுகாதாரத்துடன் (பொதுச் சுகாதாரம் இன்றும் மாநிலப் பட்டியலில் உள்ளது) குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "NEP Drafting Committee Leadership Trap: Kasturirangan, NOT Subramanian",
+        "points": {
+          "en": [
+            "TRAP: Marking T.S.R. Subramanian as the Chairman of the committee that produced the final NEP 2020 policy.",
+            "CORRECT FACT: While late Cabinet Secretary T.S.R. Subramanian headed a committee that submitted a report in 2016, the National Education Policy 2020 was drafted and finalised by the committee chaired by former ISRO Chief Dr. K. Kasturirangan (submitted 2019).",
+            "WHY CANDIDATES FAIL: Confusing the preliminary committee of 2016 with the final drafting committee."
+          ],
+          "ta": [
+            "பொறி: NEP 2020 கல்விக் கொள்கையை இறுதி செய்த வரைவுக் குழுவின் தலைவராக டி.எஸ்.ஆர். சுப்பிரமணியனைக் குறிப்பிடுவது.",
+            "சரியான உண்மை: டி.எஸ்.ஆர். சுப்பிரமணியன் குழு 2016-ல் அறிக்கை அளித்தது; ஆனால் NEP 2020-ஐ முழுமையாக வரைவு செய்து இறுதி அறிக்கையை சமர்ப்பித்த குழுவின் தலைவர் முன்னாள் இஸ்ரோ தலைவர் 'டாக்டர் கே. கஸ்தூரிரங்கன்' ஆவார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2016-ல் அமைக்கப்பட்ட ஆரம்பக் குழுவையும் இறுதி வரைவுக் குழுவையும் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "NEP Foundational Stage Age Span Trap: Ages 3 to 8, NOT 6 to 11",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Foundational Stage in the NEP 5+3+3+4 model begins at age 6 like primary school.",
+            "CORRECT FACT: The Foundational Stage covers 5 YEARS spanning AGES 3 TO 8: consisting of 3 years of Anganwadi/pre-school (ages 3-6) followed by Classes 1 and 2 (ages 6-8).",
+            "WHY CANDIDATES FAIL: Assuming formal school entry age (6) corresponds to the start of the new 4-stage model."
+          ],
+          "ta": [
+            "பொறி: NEP 2020-ன் 'அடிப்படை நிலை' (Foundational Stage) பழைய பள்ளி முறை போல 6 வயதில் தொடங்குகிறது என நினைப்பது.",
+            "சரியான உண்மை: அடிப்படை நிலை என்பது '3 முதல் 8 வயது வரையிலான 5 ஆண்டுகளைக்' குறிக்கும்: இதில் 3 ஆண்டுகள் அங்கன்வாடி/பாலர் பள்ளி (3-6 வயது) மற்றும் 1, 2-ம் வகுப்புகள் (6-8 வயது) அடங்கும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய 1-ம் வகுப்பு தொடக்க வயதான 6 வயதையே புதிய முறையின் தொடக்கமாகவும் தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "6% of GDP Education Target Trap: Kothari Commission 1964-66 Origin",
+        "points": {
+          "en": [
+            "TRAP: Believing the recommendation to spend 6% of GDP on education was newly invented by NEP 2020.",
+            "CORRECT FACT: The 6% of GDP public education expenditure target was first recommended by the landmark Kothari Commission (1964-66), adopted in the National Policy on Education (NPE 1968), and merely reaffirmed by NPE 1986 and NEP 2020.",
+            "WHY CANDIDATES FAIL: Crediting modern policy documents for recommendations formulated six decades earlier."
+          ],
+          "ta": [
+            "பொறி: கல்விக்கு ஜிடிபியில் 6% செலவிட வேண்டும் என்ற இலக்கு NEP 2020-ல் புதிதாக உருவாக்கப்பட்ட ஒன்று என நம்புவது.",
+            "சரியான உண்மை: கல்விக்கான 6% ஜிடிபி செலவின இலக்கை முதன்முதலில் பரிந்துரைத்தது 'கோத்தாரி குழு (1964-66)' ஆகும்; இது 1968 மற்றும் 1986 கல்விக் கொள்கைகளிலும் பின்னர் NEP 2020-லும் மீண்டும் வலியுறுத்தப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 60 ஆண்டுகளுக்கு முந்தைய வரலாற்றுப் பரிந்துரையை நவீன கல்விக் கொள்கையின் புதிய அம்சமாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Education was transferred from the State List to the Concurrent List (Entry 25) by the 42nd Constitutional Amendment Act, 1976.",
+        "The 86th Constitutional Amendment Act 2002 inserted Article 21A, substituted Article 45, and added Article 51A(k).",
+        "The Right to Education (RTE) Act was passed in 2009 and came into legal effect on 1st April 2010.",
+        "Section 12(1)(c) of the RTE Act mandates 25% reservation for children from economically weaker and disadvantaged sections in private unaided schools.",
+        "In Mohini Jain v. State of Karnataka (1992), the Supreme Court ruled that the right to education is directly integrated with the Right to Life under Article 21.",
+        "In Unni Krishnan v. State of A.P. (1993), the Supreme Court held that the right to education is fundamental up to 14 years of age.",
+        "In Pramati Educational Trust v. Union of India (2014), the Supreme Court held that minority schools under Article 30(1) are exempt from the RTE Act.",
+        "The Kothari Commission (1964-66) was the first official body to recommend allocating at least 6% of India's GDP to education.",
+        "The National Education Policy 2020 was formulated based on the recommendations of the Dr. K. Kasturirangan Committee.",
+        "NEP 2020 replaces the 10+2 structure with a 5+3+3+4 curricular model covering ages 3 to 18.",
+        "NIPUN Bharat Mission was launched in July 2021 with the objective of achieving universal foundational literacy and numeracy (FLN) by Grade 3 by 2026-27.",
+        "Samagra Shiksha Abhiyan was launched in 2018, integrating Sarva Shiksha Abhiyan (SSA), RMSA, and Teacher Education into a unified framework."
+      ],
+      "ta": [
+        "1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் கல்வி மாநிலப் பட்டியலில் இருந்து பொதுப் பட்டியலுக்கு (வரிசை 25) மாற்றப்பட்டது.",
+        "2002-ன் 86-வது அரசியலமைப்பு திருத்தம் பிரிவு 21A-ஐச் சேர்த்தது, பிரிவு 45-ஐ மாற்றியது, மற்றும் பிரிவு 51A(k)-ஐச் சேர்த்தது.",
+        "இலவச கட்டாயக் கல்வி உரிமைச் சட்டம் 2009-ல் நிறைவேற்றப்பட்டு 2010 ஏப்ரல் 1 அன்று சட்டப்பூர்வமாக அமலுக்கு வந்தது.",
+        "RTE சட்டத்தின் பிரிவு 12(1)(c) தனியார் சுயநிதிப் பள்ளிகளில் நலிவடைந்த மற்றும் விளிம்புநிலைக் குழந்தைகளுக்கு 25% இடஒதுக்கீட்டை கட்டாயமாக்குகிறது.",
+        "மோகினி ஜெயின் வழக்கில் (1992) கல்வி உரிமை என்பது பிரிவு 21-ன் வாழ்வுரிமையுடன் பிரிக்க முடியாதது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "உன்னிகிருஷ்ணன் வழக்கில் (1993) 14 வயது வரையிலான கல்வி அடிப்படை உரிமை என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "பிரமதி கல்வி அறக்கட்டளை வழக்கில் (2014) சிறுபான்மையினர் கல்வி நிறுவனங்களுக்கு RTE சட்டம் பொருந்தாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "கோத்தாரி குழு (1964-66) முதன்முதலில் இந்தியாவின் கல்விச் செலவினத்திற்கு ஜிடிபியில் குறைந்தபட்சம் 6% ஒதுக்க பரிந்துரைத்தது.",
+        "டாக்டர் கே. கஸ்தூரிரங்கன் குழுவின் பரிந்துரைகளின் அடிப்படையில் தேசிய கல்விக் கொள்கை 2020 உருவாக்கப்பட்டது.",
+        "NEP 2020 பழைய 10+2 கல்வி முறைக்குப் பதிலாக 3 முதல் 18 வயது வரையிலான 5+3+3+4 பாடத்திட்ட முறையை அறிமுகப்படுத்தியது.",
+        "நிபுண் பாரத் இயக்கம் 2021 ஜூலையில் தொடங்கப்பட்டது; 2026-27-க்குள் 3-ம் வகுப்பு வரை அடிப்படை எழுத்தறிவு மற்றும் கணித அறிவை எட்டுவதே இதன் இலக்கு.",
+        "சமக்ர சிக்ஷா அபியான் 2018-ல் SSA, RMSA மற்றும் ஆசிரியர் கல்வி ஆகியவற்றை இணைத்து தொடங்கப்பட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "42nd CAA 1976 moved education from State List (Entry 11) to Concurrent List (Entry 25).",
+        "86th CAA 2002 created Article 21A (Fundamental Right for ages 6-14 to free and compulsory education).",
+        "RTE Act 2009 enacted under Article 21A; came into force on 1st April 2010.",
+        "RTE Section 12(1)(c) mandates 25% seats in entry-level classes for EWS in private unaided non-minority schools.",
+        "Pramati Trust (2014) exempted minority institutions under Article 30 from the RTE 25% mandate.",
+        "NEP 2020 drafted by Dr. K. Kasturirangan Committee; replaced NPE 1986 after 34 years.",
+        "NEP 2020 introduces 5+3+3+4 structure (Foundational, Preparatory, Middle, Secondary) covering ages 3-18.",
+        "Target public expenditure on education: 6% of GDP (first suggested by Kothari Commission 1964-66).",
+        "Samagra Shiksha (2018) unified SSA (2001), RMSA (2009), and Teacher Education (1987) from pre-school to Class 12.",
+        "NIPUN Bharat targets universal Foundational Literacy and Numeracy (FLN) by Grade 3 by 2026-27."
+      ],
+      "ta": [
+        "1976-ன் 42-வது திருத்தச் சட்டம் கல்வியை மாநிலப் பட்டியலில் இருந்து பொதுப் பட்டியலுக்கு (வரிசை 25) மாற்றியது.",
+        "86-வது திருத்தம் 2002 பிரிவு 21A-ஐ உருவாக்கியது (6-14 வயது குழந்தைகளுக்கு இலவச கட்டாயக் கல்வி அடிப்படை உரிமை).",
+        "பிரிவு 21A-ன் கீழ் உருவான RTE சட்டம் 2009; 2010 ஏப்ரல் 1 அன்று அமலுக்கு வந்தது.",
+        "RTE பிரிவு 12(1)(c) தனியார் பள்ளிகளில் நலிவடைந்த பிரிவினருக்கு 25% இடஒதுக்கீட்டை கட்டாயமாக்குகிறது.",
+        "பிரமதி அறக்கட்டளை தீர்ப்பு (2014) சிறுபான்மையினர் பள்ளிகளுக்கு RTE 25% ஒதுக்கீட்டில் இருந்து விலக்கு அளித்தது.",
+        "டாக்டர் கே. கஸ்தூரிரங்கன் குழுவால் NEP 2020 உருவாக்கப்பட்டது; 34 ஆண்டுகளுக்குப் பிறகு NPE 1986 மாற்றப்பட்டது.",
+        "NEP 2020 5+3+3+4 கட்டமைப்பை அறிமுகப்படுத்தியது (அடிப்படை, தயாரிப்பு, நடுநிலை, இடைநிலை - வயது 3-18).",
+        "கல்விக்கான பொதுச் செலவின இலக்கு: ஜிடிபியில் 6% (முதலில் கோத்தாரி குழுவால் பரிந்துரைக்கப்பட்டது).",
+        "சமக்ர சிக்ஷா (2018) SSA, RMSA மற்றும் ஆசிரியர் கல்வியை ஒருங்கிணைத்து உருவானது.",
+        "நிபுண் பாரத் இயக்கம் 2026-27-க்குள் 3-ம் வகுப்பு வரை அடிப்படை எழுத்தறிவு மற்றும் எண்ணறிவை (FLN) இலக்காகக் கொண்டுள்ளது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_edu_201",
+        "front_en": "By which Constitutional Amendment was Education transferred to the Concurrent List?",
+        "front_ta": "எந்த அரசியலமைப்பு திருத்தச் சட்டம் மூலம் கல்வி பொதுப் பட்டியலுக்கு மாற்றப்பட்டது?",
+        "back_en": "42nd Constitutional Amendment Act, 1976 (placed under Entry 25 of List III).",
+        "back_ta": "1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்பு திருத்தச் சட்டம் (பொதுப் பட்டியல் வரிசை 25)."
+      },
+      {
+        "id": "rc_edu_202",
+        "front_en": "What did the 86th Constitutional Amendment Act, 2002 accomplish in education?",
+        "front_ta": "2002-ன் 86-வது அரசியலமைப்பு திருத்தச் சட்டம் கல்வியில் என்னென்ன மாற்றங்களைச் செய்தது?",
+        "back_en": "Inserted Article 21A (Fundamental Right, ages 6-14), substituted Article 45 (ECCE, ages 0-6), and added Article 51A(k) (Fundamental Duty).",
+        "back_ta": "பிரிவு 21A (அடிப்படை உரிமை, வயது 6-14), திருத்தப்பட்ட பிரிவு 45 (முன்பருவக் கல்வி, வயது 0-6), மற்றும் பிரிவு 51A(k) (அடிப்படைக் கடமை) ஆகியவற்றைச் சேர்த்தது."
+      },
+      {
+        "id": "rc_edu_203",
+        "front_en": "When did the Right to Education (RTE) Act come into legal force across India?",
+        "front_ta": "இலவச கட்டாயக் கல்வி உரிமைச் சட்டம் (RTE Act) இந்தியா முழுவதும் எப்போது சட்டப்பூர்வமாக அமலுக்கு வந்தது?",
+        "back_en": "1st April 2010 (passed by Parliament in August 2009).",
+        "back_ta": "2010 ஏப்ரல் 1 (நாடாளுமன்றத்தால் நிறைவேற்றப்பட்டது ஆகஸ்ட் 2009)."
+      },
+      {
+        "id": "rc_edu_204",
+        "front_en": "What does Section 12(1)(c) of the RTE Act 2009 mandate for private schools?",
+        "front_ta": "RTE சட்டம் 2009-ன் பிரிவு 12(1)(c) தனியார் பள்ளிகளுக்கு எதை கட்டாயமாக்குகிறது?",
+        "back_en": "Mandates 25% reservation of seats at entry level for children from economically weaker and disadvantaged sections.",
+        "back_ta": "ஆரம்ப வகுப்புகளில் 25% இடங்களை நலிவடைந்த பிரிவினர் மற்றும் விளிம்புநிலைக் குழந்தைகளுக்கு ஒதுக்குவதைக் கட்டாயமாக்குகிறது."
+      },
+      {
+        "id": "rc_edu_205",
+        "front_en": "Are minority educational institutions bound by the 25% reservation quota under RTE Act?",
+        "front_ta": "சிறுபான்மையினர் கல்வி நிறுவனங்கள் RTE சட்டத்தின் 25% இடஒதுக்கீட்டை செயல்படுத்த வேண்டுமா?",
+        "back_en": "No. The Supreme Court in Pramati Educational Trust (2014) ruled minority schools under Article 30(1) are exempt from RTE.",
+        "back_ta": "இல்லை. பிரமதி கல்வி அறக்கட்டளை வழக்கில் (2014) பிரிவு 30(1)-ன் கீழான சிறுபான்மையினர் பள்ளிகளுக்கு இதிலிருந்து உச்சநீதிமன்றம் விலக்கு அளித்துள்ளது."
+      },
+      {
+        "id": "rc_edu_206",
+        "front_en": "Who headed the drafting committee for the National Education Policy (NEP) 2020?",
+        "front_ta": "தேசிய கல்விக் கொள்கை (NEP) 2020-ஐ வரைவு செய்த குழுவின் தலைவர் யார்?",
+        "back_en": "Dr. K. Kasturirangan, former Chairman of ISRO (approved July 2020).",
+        "back_ta": "டாக்டர் கே. கஸ்தூரிரங்கன், முன்னாள் இஸ்ரோ தலைவர் (ஜூலை 2020-ல் ஒப்புதல் அளிக்கப்பட்டது)."
+      },
+      {
+        "id": "rc_edu_207",
+        "front_en": "Explain the 5+3+3+4 structure introduced by NEP 2020.",
+        "front_ta": "NEP 2020 அறிமுகப்படுத்திய 5+3+3+4 பள்ளி கட்டமைப்பை விளக்குக.",
+        "back_en": "Foundational (5 yrs, ages 3-8: Pre-school + Gr 1-2), Preparatory (3 yrs, ages 8-11: Gr 3-5), Middle (3 yrs, ages 11-14: Gr 6-8), Secondary (4 yrs, ages 14-18: Gr 9-12).",
+        "back_ta": "அடிப்படை நிலை (5 ஆண்டு, வயது 3-8: பாலர் பள்ளி + 1-2 வகுப்புகள்), தயாரிப்பு (3 ஆண்டு, வயது 8-11: 3-5 வகுப்புகள்), நடுநிலை (3 ஆண்டு, வயது 11-14: 6-8 வகுப்புகள்), இடைநிலை (4 ஆண்டு, வயது 14-18: 9-12 வகுப்புகள்)."
+      },
+      {
+        "id": "rc_edu_208",
+        "front_en": "What is the public investment target for education set in NEP 2020 and who originally proposed it?",
+        "front_ta": "NEP 2020-ல் கல்விக்கான பொது முதலீட்டு இலக்கு என்ன, அதை முதலில் பரிந்துரைத்தது யார்?",
+        "back_en": "6% of GDP. Originally recommended by the Kothari Commission (1964-66) and reaffirmed by NEP 2020.",
+        "back_ta": "ஜிடிபியில் 6%. முதலில் கோத்தாரி குழு (1964-66) பரிந்துரைத்தது, பின்னர் NEP 2020-ல் மீண்டும் வலியுறுத்தப்பட்டது."
+      },
+      {
+        "id": "rc_edu_209",
+        "front_en": "Which three centrally sponsored schemes were merged into Samagra Shiksha in 2018?",
+        "front_ta": "2018-ல் சமக்ர சிக்ஷா திட்டத்தில் இணைக்கப்பட்ட மூன்று மத்திய திட்டங்கள் எவை?",
+        "back_en": "Sarva Shiksha Abhiyan (SSA), Rashtriya Madhyamik Shiksha Abhiyan (RMSA), and Teacher Education (TE).",
+        "back_ta": "சர்வா சிக்ஷா அபியான் (SSA), ராஷ்டிரிய மத்யமிக் சிக்ஷா அபியான் (RMSA), மற்றும் ஆசிரியர் கல்வி (TE)."
+      },
+      {
+        "id": "rc_edu_210",
+        "front_en": "What is the goal and timeline of the NIPUN Bharat Mission?",
+        "front_ta": "நிபுண் பாரத் இயக்கத்தின் இலக்கு மற்றும் காலக்கெடு என்ன?",
+        "back_en": "Universal acquisition of Foundational Literacy and Numeracy (FLN) by Grade 3 for every child by 2026-27.",
+        "back_ta": "2026-27-க்குள் 3-ம் வகுப்பு வரை உள்ள அனைத்துக் குழந்தைகளுக்கும் அடிப்படை எழுத்தறிவு மற்றும் கணித அறிவை (FLN) உறுதி செய்தல்."
+      }
+    ]
+  }
+}

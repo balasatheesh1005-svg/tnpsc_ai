@@ -1,0 +1,4063 @@
+{
+  "topic_id": "aptitude_area",
+  "topic_name_ta": "பரப்பளவு",
+  "topic_name_en": "Area",
+  "total_questions": 50,
+  "difficulty_breakdown": {
+    "easy": 15,
+    "medium": 25,
+    "hard": 10
+  },
+  "questions": [
+    {
+      "id": "AREA_001",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "பக்கம் 12 செமீ கொண்ட ஒரு சதுரத்தின் பரப்பளவு என்ன?",
+        "en": "Find the area of a square with side 12 cm."
+      },
+      "question_ta": "பக்கம் 12 செமீ கொண்ட ஒரு சதுரத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find the area of a square with side 12 cm.",
+      "options": [
+        "120 செமீ²",
+        "144 செமீ²",
+        "48 செமீ²",
+        "24 செமீ²"
+      ],
+      "options_ta": [
+        "120 செமீ²",
+        "144 செமீ²",
+        "48 செமீ²",
+        "24 செமீ²"
+      ],
+      "options_en": [
+        "120 cm²",
+        "144 cm²",
+        "48 cm²",
+        "24 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "சதுரத்தின் பரப்பளவு = பக்கம்² = a² = 12 × 12 = 144 செமீ².",
+        "en": "Area of square = side² = 12 × 12 = 144 cm²."
+      },
+      "explanation_ta": "சதுரத்தின் பரப்பளவு = பக்கம்² = a² = 12 × 12 = 144 செமீ².",
+      "explanation_en": "Area of square = side² = 12 × 12 = 144 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 120 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 12 × 12 = 144 செமீ².",
+          "en": "Correct. 12 × 12 = 144 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 4 × 12 = 48 செமீ என்பது சுற்றளவு (Perimeter).",
+          "en": "48 cm is the perimeter, not area."
+        },
+        "D": {
+          "ta": "தவறு. 12 × 2 = 24 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பரப்பளவு = பக்கம் × பக்கம்; சுற்றளவு = 4 × பக்கம்.",
+        "en": "Area = side²; Perimeter = 4 × side."
+      },
+      "revision_fact": {
+        "ta": "12 × 12 = 144 cm²",
+        "en": "12 × 12 = 144 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_002",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "நீளம் 15 செமீ மற்றும் அகலம் 10 செமீ கொண்ட ஒரு செவ்வகத்தின் பரப்பளவு என்ன?",
+        "en": "Find the area of a rectangle with length 15 cm and breadth 10 cm."
+      },
+      "question_ta": "நீளம் 15 செமீ மற்றும் அகலம் 10 செமீ கொண்ட ஒரு செவ்வகத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find the area of a rectangle with length 15 cm and breadth 10 cm.",
+      "options": [
+        "25 செமீ²",
+        "150 செமீ²",
+        "300 செமீ²",
+        "50 செமீ²"
+      ],
+      "options_ta": [
+        "25 செமீ²",
+        "150 செமீ²",
+        "300 செமீ²",
+        "50 செமீ²"
+      ],
+      "options_en": [
+        "25 cm²",
+        "150 cm²",
+        "300 cm²",
+        "50 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "செவ்வகத்தின் பரப்பளவு = நீளம் × அகலம் = l × b = 15 × 10 = 150 செமீ².",
+        "en": "Area of rectangle = length × breadth = 15 × 10 = 150 cm²."
+      },
+      "explanation_ta": "செவ்வகத்தின் பரப்பளவு = நீளம் × அகலம் = l × b = 15 × 10 = 150 செமீ².",
+      "explanation_en": "Area of rectangle = length × breadth = 15 × 10 = 150 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. (15+10) = 25 செமீ.",
+          "en": "Sum of sides only."
+        },
+        "B": {
+          "ta": "சரி. 15 × 10 = 150 செமீ².",
+          "en": "Correct. 15 × 10 = 150 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 15 × 20 = 300 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 2(15+10) = 50 செமீ என்பது சுற்றளவு.",
+          "en": "50 cm is perimeter."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பரப்பளவு = நீளம் × அகலம்.",
+        "en": "Area of rectangle = length × breadth."
+      },
+      "revision_fact": {
+        "ta": "15 × 10 = 150 cm²",
+        "en": "15 × 10 = 150 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_003",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "ஆரம் 7 செமீ கொண்ட ஒரு வட்டத்தின் பரப்பளவு என்ன? (π = 22/7)",
+        "en": "Find the area of a circle with radius 7 cm. (π = 22/7)"
+      },
+      "question_ta": "ஆரம் 7 செமீ கொண்ட ஒரு வட்டத்தின் பரப்பளவு என்ன? (π = 22/7)",
+      "question_en": "Find the area of a circle with radius 7 cm. (π = 22/7)",
+      "options": [
+        "154 செமீ²",
+        "88 செமீ²",
+        "44 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_ta": [
+        "154 செமீ²",
+        "88 செமீ²",
+        "44 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_en": [
+        "154 cm²",
+        "88 cm²",
+        "44 cm²",
+        "308 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "வட்டத்தின் பரப்பளவு = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 செமீ².",
+        "en": "Area of circle = πr² = (22/7) × 7 × 7 = 154 cm²."
+      },
+      "explanation_ta": "வட்டத்தின் பரப்பளவு = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 செமீ².",
+      "explanation_en": "Area of circle = πr² = (22/7) × 7 × 7 = 154 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 22 × 7 = 154 செமீ².",
+          "en": "Correct. 22 × 7 = 154 cm²."
+        },
+        "B": {
+          "ta": "தவறு. πd = 88 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 2πr = 2 × 22/7 × 7 = 44 செமீ என்பது சுற்றளவு (Circumference).",
+          "en": "44 cm is circumference."
+        },
+        "D": {
+          "ta": "தவறு. 154 × 2 = 308 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வட்டத்தின் பரப்பளவு = πr²; சுற்றளவு = 2πr.",
+        "en": "Area of circle = πr²; Circumference = 2πr."
+      },
+      "revision_fact": {
+        "ta": "22/7 × 7 × 7 = 154 cm²",
+        "en": "22/7 × 7 × 7 = 154 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_004",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "அடிப் பக்கம் 12 செமீ மற்றும் உயரம் 8 செமீ கொண்ட ஒரு முக்கோணத்தின் பரப்பளவு என்ன?",
+        "en": "Find the area of a triangle with base 12 cm and height 8 cm."
+      },
+      "question_ta": "அடிப் பக்கம் 12 செமீ மற்றும் உயரம் 8 செமீ கொண்ட ஒரு முக்கோணத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find the area of a triangle with base 12 cm and height 8 cm.",
+      "options": [
+        "96 செமீ²",
+        "40 செமீ²",
+        "20 செமீ²",
+        "48 செமீ²"
+      ],
+      "options_ta": [
+        "96 செமீ²",
+        "40 செமீ²",
+        "20 செமீ²",
+        "48 செமீ²"
+      ],
+      "options_en": [
+        "96 cm²",
+        "40 cm²",
+        "20 cm²",
+        "48 cm²"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "முக்கோணத்தின் பரப்பளவு = (1/2) × b × h = (1/2) × 12 × 8 = 6 × 8 = 48 செமீ².",
+        "en": "Area of triangle = (1/2) × base × height = 0.5 × 12 × 8 = 48 cm²."
+      },
+      "explanation_ta": "முக்கோணத்தின் பரப்பளவு = (1/2) × b × h = (1/2) × 12 × 8 = 6 × 8 = 48 செமீ².",
+      "explanation_en": "Area of triangle = (1/2) × base × height = 0.5 × 12 × 8 = 48 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 × 8 = 96 செமீ² (1/2 பெருக்க மறந்தது).",
+          "en": "Forgot factor 1/2."
+        },
+        "B": {
+          "ta": "தவறு. கணக்கீட்டுப் பிழை.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 12 + 8 = 20 செமீ.",
+          "en": "Sum of base and height."
+        },
+        "D": {
+          "ta": "சரி. 6 × 8 = 48 செமீ².",
+          "en": "Correct. 6 × 8 = 48 cm²."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "முக்கோணப் பரப்பளவு = 1/2 × அடிப் பக்கம் × உயரம்.",
+        "en": "Area of triangle = 1/2 × base × height."
+      },
+      "revision_fact": {
+        "ta": "1/2 × 12 × 8 = 48 cm²",
+        "en": "1/2 × 12 × 8 = 48 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_005",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "பக்கம் 6 செமீ கொண்ட ஒரு சமபக்க முக்கோணத்தின் (Equilateral triangle) பரப்பளவு என்ன?",
+        "en": "Find the area of an equilateral triangle with side 6 cm."
+      },
+      "question_ta": "பக்கம் 6 செமீ கொண்ட ஒரு சமபக்க முக்கோணத்தின் (Equilateral triangle) பரப்பளவு என்ன?",
+      "question_en": "Find the area of an equilateral triangle with side 6 cm.",
+      "options": [
+        "12√3 செமீ²",
+        "9√3 செமீ²",
+        "36 செமீ²",
+        "18√3 செமீ²"
+      ],
+      "options_ta": [
+        "12√3 செமீ²",
+        "9√3 செமீ²",
+        "36 செமீ²",
+        "18√3 செமீ²"
+      ],
+      "options_en": [
+        "12√3 cm²",
+        "9√3 cm²",
+        "36 cm²",
+        "18√3 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "சமபக்க முக்கோணப் பரப்பளவு = (√3 / 4) × a² = (√3 / 4) × 6² = (√3 / 4) × 36 = 9√3 செமீ².",
+        "en": "Area = (√3 / 4) × side² = (√3 / 4) × 36 = 9√3 cm²."
+      },
+      "explanation_ta": "சமபக்க முக்கோணப் பரப்பளவு = (√3 / 4) × a² = (√3 / 4) × 6² = (√3 / 4) × 36 = 9√3 செமீ².",
+      "explanation_en": "Area = (√3 / 4) × side² = (√3 / 4) × 36 = 9√3 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12√3 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. (√3/4) × 36 = 9√3 செமீ².",
+          "en": "Correct. 9√3 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 6² = 36 செமீ².",
+          "en": "Square of side only."
+        },
+        "D": {
+          "ta": "தவறு. (√3/2) × 36 = 18√3.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சமபக்க முக்கோணப் பரப்பளவு = (√3/4)a².",
+        "en": "Equilateral triangle area = (√3/4)a²."
+      },
+      "revision_fact": {
+        "ta": "(√3/4) × 36 = 9√3 cm²",
+        "en": "(√3/4) × 36 = 9√3 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_006",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "மூலைவிட்டங்கள் d1 = 10 செமீ மற்றும் d2 = 12 செமீ கொண்ட ஒரு சாய் சதுரத்தின் (Rhombus) பரப்பளவு என்ன?",
+        "en": "Find the area of a rhombus with diagonals 10 cm and 12 cm."
+      },
+      "question_ta": "மூலைவிட்டங்கள் d1 = 10 செமீ மற்றும் d2 = 12 செமீ கொண்ட ஒரு சாய் சதுரத்தின் (Rhombus) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a rhombus with diagonals 10 cm and 12 cm.",
+      "options": [
+        "60 செமீ²",
+        "120 செமீ²",
+        "22 செமீ²",
+        "44 செமீ²"
+      ],
+      "options_ta": [
+        "60 செமீ²",
+        "120 செமீ²",
+        "22 செமீ²",
+        "44 செமீ²"
+      ],
+      "options_en": [
+        "60 cm²",
+        "120 cm²",
+        "22 cm²",
+        "44 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "சாய் சதுரத்தின் பரப்பளவு = (1/2) × d1 × d2 = (1/2) × 10 × 12 = 5 × 12 = 60 செமீ².",
+        "en": "Area of rhombus = (1/2) × d1 × d2 = (1/2) × 10 × 12 = 60 cm²."
+      },
+      "explanation_ta": "சாய் சதுரத்தின் பரப்பளவு = (1/2) × d1 × d2 = (1/2) × 10 × 12 = 5 × 12 = 60 செமீ².",
+      "explanation_en": "Area of rhombus = (1/2) × d1 × d2 = (1/2) × 10 × 12 = 60 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 5 × 12 = 60 செமீ².",
+          "en": "Correct. 5 × 12 = 60 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 10 × 12 = 120 செமீ² (1/2 பெருக்க மறந்தது).",
+          "en": "Forgot factor 1/2."
+        },
+        "C": {
+          "ta": "தவறு. 10 + 12 = 22 செமீ.",
+          "en": "Sum of diagonals."
+        },
+        "D": {
+          "ta": "தவறு. 2(10+12) = 44 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சாய் சதுரப் பரப்பளவு = 1/2 × d1 × d2.",
+        "en": "Area of rhombus = 1/2 × d1 × d2."
+      },
+      "revision_fact": {
+        "ta": "1/2 × 10 × 12 = 60 cm²",
+        "en": "1/2 × 10 × 12 = 60 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_007",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "இணை பக்கங்கள் a = 10 செமீ, b = 14 செமீ மற்றும் உயரம் h = 6 செமீ கொண்ட ஒரு சரிவகத்தின் (Trapezium) பரப்பளவு என்ன?",
+        "en": "Find the area of a trapezium with parallel sides 10 cm, 14 cm and height 6 cm."
+      },
+      "question_ta": "இணை பக்கங்கள் a = 10 செமீ, b = 14 செமீ மற்றும் உயரம் h = 6 செமீ கொண்ட ஒரு சரிவகத்தின் (Trapezium) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a trapezium with parallel sides 10 cm, 14 cm and height 6 cm.",
+      "options": [
+        "60 செமீ²",
+        "144 செமீ²",
+        "84 செமீ²",
+        "72 செமீ²"
+      ],
+      "options_ta": [
+        "60 செமீ²",
+        "144 செமீ²",
+        "84 செமீ²",
+        "72 செமீ²"
+      ],
+      "options_en": [
+        "60 cm²",
+        "144 cm²",
+        "84 cm²",
+        "72 cm²"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "சரிவகத்தின் பரப்பளவு = (1/2) × (a + b) × h = (1/2) × (10 + 14) × 6 = (1/2) × 24 × 6 = 12 × 6 = 72 செமீ².",
+        "en": "Area of trapezium = (1/2) × (a + b) × h = (1/2) × 24 × 6 = 72 cm²."
+      },
+      "explanation_ta": "சரிவகத்தின் பரப்பளவு = (1/2) × (a + b) × h = (1/2) × (10 + 14) × 6 = (1/2) × 24 × 6 = 12 × 6 = 72 செமீ².",
+      "explanation_en": "Area of trapezium = (1/2) × (a + b) × h = (1/2) × 24 × 6 = 72 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 10 × 6 = 60 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 24 × 6 = 144 செமீ² (1/2 பெருக்க மறந்தது).",
+          "en": "Forgot factor 1/2."
+        },
+        "C": {
+          "ta": "தவறு. 14 × 6 = 84 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 12 × 6 = 72 செமீ².",
+          "en": "Correct. 12 × 6 = 72 cm²."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சரிவகப் பரப்பளவு = 1/2 × (இணைப் பக்கங்களின் கூடுதல்) × உயரம்.",
+        "en": "Area of trapezium = 1/2 × (a + b) × h."
+      },
+      "revision_fact": {
+        "ta": "1/2 × 24 × 6 = 72 cm²",
+        "en": "1/2 × 24 × 6 = 72 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_008",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "அடிப் பக்கம் 15 செமீ மற்றும் உயரம் 8 செமீ கொண்ட ஒரு இணைகரத்தின் (Parallelogram) பரப்பளவு என்ன?",
+        "en": "Find the area of a parallelogram with base 15 cm and height 8 cm."
+      },
+      "question_ta": "அடிப் பக்கம் 15 செமீ மற்றும் உயரம் 8 செமீ கொண்ட ஒரு இணைகரத்தின் (Parallelogram) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a parallelogram with base 15 cm and height 8 cm.",
+      "options": [
+        "120 செமீ²",
+        "46 செமீ²",
+        "240 செமீ²",
+        "60 செமீ²"
+      ],
+      "options_ta": [
+        "120 செமீ²",
+        "46 செமீ²",
+        "240 செமீ²",
+        "60 செமீ²"
+      ],
+      "options_en": [
+        "120 cm²",
+        "46 cm²",
+        "240 cm²",
+        "60 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "இணைகரத்தின் பரப்பளவு = b × h = 15 × 8 = 120 செமீ².",
+        "en": "Area of parallelogram = base × height = 15 × 8 = 120 cm²."
+      },
+      "explanation_ta": "இணைகரத்தின் பரப்பளவு = b × h = 15 × 8 = 120 செமீ².",
+      "explanation_en": "Area of parallelogram = base × height = 15 × 8 = 120 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 15 × 8 = 120 செமீ².",
+          "en": "Correct. 15 × 8 = 120 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 2(15+8) = 46 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 120 × 2 = 240 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. (1/2) × 15 × 8 = 60 செமீ² (முக்கோணத்தின் சூத்திரத்தைப் பயன்படுத்தியது).",
+          "en": "Used triangle formula 1/2 bh."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "இணைகரப் பரப்பளவு = அடிப் பக்கம் × உயரம் (b × h).",
+        "en": "Area of parallelogram = base × height."
+      },
+      "revision_fact": {
+        "ta": "15 × 8 = 120 cm²",
+        "en": "15 × 8 = 120 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_009",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "ஆரம் 14 செமீ கொண்ட ஒரு அரைவட்டத்தின் (Semi-circle) பரப்பளவு என்ன?",
+        "en": "Find the area of a semi-circle with radius 14 cm."
+      },
+      "question_ta": "ஆரம் 14 செமீ கொண்ட ஒரு அரைவட்டத்தின் (Semi-circle) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a semi-circle with radius 14 cm.",
+      "options": [
+        "616 செமீ²",
+        "308 செமீ²",
+        "154 செமீ²",
+        "44 செமீ²"
+      ],
+      "options_ta": [
+        "616 செமீ²",
+        "308 செமீ²",
+        "154 செமீ²",
+        "44 செமீ²"
+      ],
+      "options_en": [
+        "616 cm²",
+        "308 cm²",
+        "154 cm²",
+        "44 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "அரைவட்டத்தின் பரப்பளவு = (1/2) × πr² = (1/2) × (22/7) × 14 × 14 = 11 × 2 × 14 = 308 செமீ².",
+        "en": "Area of semi-circle = (1/2)πr² = (1/2) × (22/7) × 14 × 14 = 308 cm²."
+      },
+      "explanation_ta": "அரைவட்டத்தின் பரப்பளவு = (1/2) × πr² = (1/2) × (22/7) × 14 × 14 = 11 × 2 × 14 = 308 செமீ².",
+      "explanation_en": "Area of semi-circle = (1/2)πr² = (1/2) × (22/7) × 14 × 14 = 308 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. πr² = 616 செமீ² என்பது முழு வட்டத்தின் பரப்பளவு.",
+          "en": "616 cm² is area of full circle."
+        },
+        "B": {
+          "ta": "சரி. 1/2 × 616 = 308 செமீ².",
+          "en": "Correct. 1/2 × 616 = 308 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 308 / 2 = 154 செமீ² (கால் வட்டத்தின் பரப்பளவு).",
+          "en": "154 cm² is quadrant area."
+        },
+        "D": {
+          "ta": "தவறு. 44 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அரைவட்டப் பரப்பளவு = (1/2)πr².",
+        "en": "Area of semi-circle = (1/2)πr²."
+      },
+      "revision_fact": {
+        "ta": "1/2 × 616 = 308 cm²",
+        "en": "1/2 × 616 = 308 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_010",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் பரப்பளவு 256 ச.செமீ எனில், அதன் சுற்றளவு (Perimeter) என்ன?",
+        "en": "If the area of a square is 256 sq.cm, find its perimeter."
+      },
+      "question_ta": "ஒரு சதுரத்தின் பரப்பளவு 256 ச.செமீ எனில், அதன் சுற்றளவு (Perimeter) என்ன?",
+      "question_en": "If the area of a square is 256 sq.cm, find its perimeter.",
+      "options": [
+        "128 செமீ",
+        "64 செமீ",
+        "32 செமீ",
+        "16 செமீ"
+      ],
+      "options_ta": [
+        "128 செமீ",
+        "64 செமீ",
+        "32 செமீ",
+        "16 செமீ"
+      ],
+      "options_en": [
+        "128 cm",
+        "64 cm",
+        "32 cm",
+        "16 cm"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "a² = 256 ⟹ a = √256 = 16 செமீ.\nசுற்றளவு = 4a = 4 × 16 = 64 செமீ.",
+        "en": "a² = 256 ⟹ a = 16 cm ⟹ Perimeter = 4a = 4 × 16 = 64 cm."
+      },
+      "explanation_ta": "a² = 256 ⟹ a = √256 = 16 செமீ.\nசுற்றளவு = 4a = 4 × 16 = 64 செமீ.",
+      "explanation_en": "a² = 256 ⟹ a = 16 cm ⟹ Perimeter = 4a = 4 × 16 = 64 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 256 / 2 = 128 செமீ.",
+          "en": "Calculated 256 / 2."
+        },
+        "B": {
+          "ta": "சரி. 4 × 16 = 64 செமீ.",
+          "en": "Correct. 4 × 16 = 64 cm."
+        },
+        "C": {
+          "ta": "தவறு. 2 × 16 = 32 செமீ.",
+          "en": "Calculated 2a."
+        },
+        "D": {
+          "ta": "தவறு. 16 செமீ என்பது சதுரத்தின் பக்கம் (side).",
+          "en": "16 cm is the side length."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பக்கம் a = √பரப்பளவு ⟹ சுற்றளவு = 4a.",
+        "en": "Side a = √Area ⟹ Perimeter = 4a."
+      },
+      "revision_fact": {
+        "ta": "√256 = 16 ⟹ 4 × 16 = 64 cm",
+        "en": "√256 = 16 ⟹ 4 × 16 = 64 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_011",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு வட்டத்தின் சுற்றளவு (Circumference) 44 செமீ எனில், அதன் பரப்பளவு என்ன?",
+        "en": "If the circumference of a circle is 44 cm, find its area."
+      },
+      "question_ta": "ஒரு வட்டத்தின் சுற்றளவு (Circumference) 44 செமீ எனில், அதன் பரப்பளவு என்ன?",
+      "question_en": "If the circumference of a circle is 44 cm, find its area.",
+      "options": [
+        "77 செமீ²",
+        "88 செமீ²",
+        "154 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_ta": [
+        "77 செமீ²",
+        "88 செமீ²",
+        "154 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_en": [
+        "77 cm²",
+        "88 cm²",
+        "154 cm²",
+        "308 cm²"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "2πr = 44 ⟹ 2 × (22/7) × r = 44 ⟹ (44/7)r = 44 ⟹ r = 7 செமீ.\nபரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+        "en": "2πr = 44 ⟹ r = 7 cm ⟹ Area = πr² = 154 cm²."
+      },
+      "explanation_ta": "2πr = 44 ⟹ 2 × (22/7) × r = 44 ⟹ (44/7)r = 44 ⟹ r = 7 செமீ.\nபரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+      "explanation_en": "2πr = 44 ⟹ r = 7 cm ⟹ Area = πr² = 154 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 154 / 2 = 77 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 44 × 2 = 88 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. π × 7² = 154 செமீ².",
+          "en": "Correct. π × 7² = 154 cm²."
+        },
+        "D": {
+          "ta": "தவறு. 154 × 2 = 308 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2πr = 44 ⟹ r = 7 cm ⟹ Area = 154 cm².",
+        "en": "2πr = 44 ⟹ r = 7 cm ⟹ Area = 154 cm²."
+      },
+      "revision_fact": {
+        "ta": "r = 7 cm ⟹ Area = 154 cm²",
+        "en": "r = 7 cm ⟹ Area = 154 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_012",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "பக்கங்கள் 3 செமீ, 4 செமீ, 5 செமீ கொண்ட ஒரு செங்கோண முக்கோணத்தின் (Right-angled triangle) பரப்பளவு என்ன?",
+        "en": "Find the area of a right-angled triangle with sides 3 cm, 4 cm, and 5 cm."
+      },
+      "question_ta": "பக்கங்கள் 3 செமீ, 4 செமீ, 5 செமீ கொண்ட ஒரு செங்கோண முக்கோணத்தின் (Right-angled triangle) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a right-angled triangle with sides 3 cm, 4 cm, and 5 cm.",
+      "options": [
+        "6 செமீ²",
+        "10 செமீ²",
+        "12 செமீ²",
+        "7.5 செமீ²"
+      ],
+      "options_ta": [
+        "6 செமீ²",
+        "10 செமீ²",
+        "12 செமீ²",
+        "7.5 செமீ²"
+      ],
+      "options_en": [
+        "6 cm²",
+        "10 cm²",
+        "12 cm²",
+        "7.5 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "செங்கோண முக்கோணத்தில் கர்ணம் = 5 செமீ. மற்ற இரு பக்கங்கள் அடிப் பக்கம் = 3, உயரம் = 4 (அல்லது மாறாக).\nபரப்பளவு = (1/2) × 3 × 4 = 6 செமீ².",
+        "en": "Hypotenuse = 5 cm. Base = 3, Height = 4 ⟹ Area = (1/2) × 3 × 4 = 6 cm²."
+      },
+      "explanation_ta": "செங்கோண முக்கோணத்தில் கர்ணம் = 5 செமீ. மற்ற இரு பக்கங்கள் அடிப் பக்கம் = 3, உயரம் = 4 (அல்லது மாறாக).\nபரப்பளவு = (1/2) × 3 × 4 = 6 செமீ².",
+      "explanation_en": "Hypotenuse = 5 cm. Base = 3, Height = 4 ⟹ Area = (1/2) × 3 × 4 = 6 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 1/2 × 3 × 4 = 6 செமீ².",
+          "en": "Correct. 1/2 × 3 × 4 = 6 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 1/2 × 4 × 5 = 10 செமீ² (கர்ணத்தைப் பயன்படுத்தியது தவறாகும்).",
+          "en": "Used hypotenuse as base/height."
+        },
+        "C": {
+          "ta": "தவறு. 3 × 4 = 12 செமீ² (1/2 பெருக்க மறந்தது).",
+          "en": "Forgot factor 1/2."
+        },
+        "D": {
+          "ta": "தவறு. 1/2 × 3 × 5 = 7.5 செமீ².",
+          "en": "Used hypotenuse."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "செங்கோண முக்கோணத்தில் கர்ணத்தைப் பரப்பளவு கணக்கீட்டில் சேர்க்கக் கூடாது.",
+        "en": "Do not use hypotenuse in area formula 1/2 × b × h."
+      },
+      "revision_fact": {
+        "ta": "1/2 × 3 × 4 = 6 cm²",
+        "en": "1/2 × 3 × 4 = 6 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_013",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "பக்கம் 10 செமீ கொண்ட ஒரு சதுரத்தின் மூலைவிட்டம் (Diagonal) என்ன?",
+        "en": "Find the diagonal of a square with side 10 cm."
+      },
+      "question_ta": "பக்கம் 10 செமீ கொண்ட ஒரு சதுரத்தின் மூலைவிட்டம் (Diagonal) என்ன?",
+      "question_en": "Find the diagonal of a square with side 10 cm.",
+      "options": [
+        "10√2 செமீ",
+        "10 செமீ",
+        "20 செமீ",
+        "5√2 செமீ"
+      ],
+      "options_ta": [
+        "10√2 செமீ",
+        "10 செமீ",
+        "20 செமீ",
+        "5√2 செமீ"
+      ],
+      "options_en": [
+        "10√2 cm",
+        "10 cm",
+        "20 cm",
+        "5√2 cm"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "சதுரத்தின் மூலைவிட்டம் d = a√2 = 10√2 செமீ.",
+        "en": "Diagonal of square = side × √2 = 10√2 cm."
+      },
+      "explanation_ta": "சதுரத்தின் மூலைவிட்டம் d = a√2 = 10√2 செமீ.",
+      "explanation_en": "Diagonal of square = side × √2 = 10√2 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. d = 10√2 செமீ.",
+          "en": "Correct. d = 10√2 cm."
+        },
+        "B": {
+          "ta": "தவறு. 10 செமீ பக்கம் மட்டுமே.",
+          "en": "Side length."
+        },
+        "C": {
+          "ta": "தவறு. 10 × 2 = 20 செமீ.",
+          "en": "Multiplied by 2."
+        },
+        "D": {
+          "ta": "தவறு. 5√2 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சதுரத்தின் மூலைவிட்டம் d = a√2.",
+        "en": "Diagonal of square d = a√2."
+      },
+      "revision_fact": {
+        "ta": "10 × √2 = 10√2 cm",
+        "en": "10 × √2 = 10√2 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_014",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் பரப்பளவு 120 ச.செமீ மற்றும் நீளம் 15 செமீ எனில், அதன் அகலம் என்ன?",
+        "en": "If the area of a rectangle is 120 sq.cm and length is 15 cm, find its breadth."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் பரப்பளவு 120 ச.செமீ மற்றும் நீளம் 15 செமீ எனில், அதன் அகலம் என்ன?",
+      "question_en": "If the area of a rectangle is 120 sq.cm and length is 15 cm, find its breadth.",
+      "options": [
+        "8 செமீ",
+        "6 செமீ",
+        "10 செமீ",
+        "12 செமீ"
+      ],
+      "options_ta": [
+        "8 செமீ",
+        "6 செமீ",
+        "10 செமீ",
+        "12 செமீ"
+      ],
+      "options_en": [
+        "8 cm",
+        "6 cm",
+        "10 cm",
+        "12 cm"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "அகலம் b = பரப்பளவு / நீளம் = 120 / 15 = 8 செமீ.",
+        "en": "Breadth b = Area / Length = 120 / 15 = 8 cm."
+      },
+      "explanation_ta": "அகலம் b = பரப்பளவு / நீளம் = 120 / 15 = 8 செமீ.",
+      "explanation_en": "Breadth b = Area / Length = 120 / 15 = 8 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 120 / 15 = 8 செமீ.",
+          "en": "Correct. 120 / 15 = 8 cm."
+        },
+        "B": {
+          "ta": "தவறு. 120 / 20 = 6 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 120 / 12 = 10 செமீ.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 120 / 10 = 12 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "அகலம் = பரப்பளவு / நீளம்.",
+        "en": "Breadth = Area / Length."
+      },
+      "revision_fact": {
+        "ta": "120 / 15 = 8 cm",
+        "en": "120 / 15 = 8 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_015",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Easy",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "ஆரம் 7 செமீ கொண்ட ஒரு கால்வட்டத்தின் (Quadrant of a circle) பரப்பளவு என்ன?",
+        "en": "Find the area of a quadrant of a circle with radius 7 cm."
+      },
+      "question_ta": "ஆரம் 7 செமீ கொண்ட ஒரு கால்வட்டத்தின் (Quadrant of a circle) பரப்பளவு என்ன?",
+      "question_en": "Find the area of a quadrant of a circle with radius 7 cm.",
+      "options": [
+        "154 செமீ²",
+        "38.5 செமீ²",
+        "19.25 செமீ²",
+        "77 செமீ²"
+      ],
+      "options_ta": [
+        "154 செமீ²",
+        "38.5 செமீ²",
+        "19.25 செமீ²",
+        "77 செமீ²"
+      ],
+      "options_en": [
+        "154 cm²",
+        "38.5 cm²",
+        "19.25 cm²",
+        "77 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "கால்வட்டத்தின் பரப்பளவு = (1/4) × πr² = (1/4) × 154 = 38.5 செமீ².",
+        "en": "Area of quadrant = (1/4)πr² = 154 / 4 = 38.5 cm²."
+      },
+      "explanation_ta": "கால்வட்டத்தின் பரப்பளவு = (1/4) × πr² = (1/4) × 154 = 38.5 செமீ².",
+      "explanation_en": "Area of quadrant = (1/4)πr² = 154 / 4 = 38.5 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 154 செமீ² (முழு வட்டம்).",
+          "en": "154 cm² is full circle area."
+        },
+        "B": {
+          "ta": "சரி. 154 / 4 = 38.5 செமீ².",
+          "en": "Correct. 154 / 4 = 38.5 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 38.5 / 2 = 19.25 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 154 / 2 = 77 செமீ² (அரைவட்டம்).",
+          "en": "77 cm² is semi-circle area."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "கால்வட்டப் பரப்பளவு = (1/4)πr² = 154 / 4 = 38.5 செமீ².",
+        "en": "Area of quadrant = 154 / 4 = 38.5 cm²."
+      },
+      "revision_fact": {
+        "ta": "154 / 4 = 38.5 cm²",
+        "en": "154 / 4 = 38.5 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Understand",
+      "estimated_time_sec": 45,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "easy"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_016",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் மூலைவிட்டம் (Diagonal) 10√2 செமீ எனில், அதன் பரப்பளவு என்ன?",
+        "en": "If the diagonal of a square is 10√2 cm, find its area."
+      },
+      "question_ta": "ஒரு சதுரத்தின் மூலைவிட்டம் (Diagonal) 10√2 செமீ எனில், அதன் பரப்பளவு என்ன?",
+      "question_en": "If the diagonal of a square is 10√2 cm, find its area.",
+      "options": [
+        "144 செமீ²",
+        "100 செமீ²",
+        "200 செமீ²",
+        "50 செமீ²"
+      ],
+      "options_ta": [
+        "144 செமீ²",
+        "100 செமீ²",
+        "200 செமீ²",
+        "50 செமீ²"
+      ],
+      "options_en": [
+        "144 cm²",
+        "100 cm²",
+        "200 cm²",
+        "50 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "மூலைவிட்டம் d = a√2 ⟹ 10√2 = a√2 ⟹ a = 10 செமீ.\nபரப்பளவு = a² = 10² = 100 செமீ².\n(அல்லது பரப்பளவு = d² / 2 = (10√2)² / 2 = 200 / 2 = 100 செமீ²).",
+        "en": "Side a = 10 cm ⟹ Area = a² = 100 cm². Or Area = d² / 2 = 200 / 2 = 100 cm²."
+      },
+      "explanation_ta": "மூலைவிட்டம் d = a√2 ⟹ 10√2 = a√2 ⟹ a = 10 செமீ.\nபரப்பளவு = a² = 10² = 100 செமீ².\n(அல்லது பரப்பளவு = d² / 2 = (10√2)² / 2 = 200 / 2 = 100 செமீ²).",
+      "explanation_en": "Side a = 10 cm ⟹ Area = a² = 100 cm². Or Area = d² / 2 = 200 / 2 = 100 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 144 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 100 செமீ².",
+          "en": "Correct. 100 cm²."
+        },
+        "C": {
+          "ta": "தவறு. d² = 200 செமீ² (2-ஆல் வகுக்க மறந்தது).",
+          "en": "Forgot to divide d² by 2."
+        },
+        "D": {
+          "ta": "தவறு. 100 / 2 = 50 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சதுரப் பரப்பளவு = d² / 2 = (10√2)² / 2 = 100 செமீ².",
+        "en": "Square Area = d² / 2."
+      },
+      "revision_fact": {
+        "ta": "(10√2)² / 2 = 100 cm²",
+        "en": "(10√2)² / 2 = 100 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_017",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் நீளம் 20% அதிகரிக்கப்பட்டு, அகலம் 10% குறைக்கப்பட்டால், அதன் பரப்பளவில் ஏற்படும் சதவீத மாற்றம் என்ன?",
+        "en": "If length of a rectangle is increased by 20% and breadth decreased by 10%, find % change in area."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் நீளம் 20% அதிகரிக்கப்பட்டு, அகலம் 10% குறைக்கப்பட்டால், அதன் பரப்பளவில் ஏற்படும் சதவீத மாற்றம் என்ன?",
+      "question_en": "If length of a rectangle is increased by 20% and breadth decreased by 10%, find % change in area.",
+      "options": [
+        "12% உயர்வு",
+        "10% உயர்வு",
+        "8% குறைவு",
+        "8% உயர்வு"
+      ],
+      "options_ta": [
+        "12% உயர்வு",
+        "10% உயர்வு",
+        "8% குறைவு",
+        "8% உயர்வு"
+      ],
+      "options_en": [
+        "12% increase",
+        "10% increase",
+        "8% decrease",
+        "8% increase"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "நிகர % மாற்றம் = a + b + (ab/100) = +20 - 10 + (20 × -10)/100 = 10 - 2 = +8% (8% உயர்வு).",
+        "en": "Net % change = +20 - 10 + (20 × -10)/100 = +8% (8% increase)."
+      },
+      "explanation_ta": "நிகர % மாற்றம் = a + b + (ab/100) = +20 - 10 + (20 × -10)/100 = 10 - 2 = +8% (8% உயர்வு).",
+      "explanation_en": "Net % change = +20 - 10 + (20 × -10)/100 = +8% (8% increase).",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12% உயர்வு.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 20 - 10 = 10% (பெருக்கல் உறுப்பை மறந்தது).",
+          "en": "Subtracted 20-10 without product term."
+        },
+        "C": {
+          "ta": "தவறு. 8% குறைவு.",
+          "en": "Incorrect direction."
+        },
+        "D": {
+          "ta": "சரி. +8% (8% உயர்வு).",
+          "en": "Correct. +8% (8% increase)."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "% மாற்றம் = a + b + ab/100 % = 20 - 10 - 2 = 8% உயர்வு.",
+        "en": "% change = a + b + ab/100 % = 8% increase."
+      },
+      "revision_fact": {
+        "ta": "+20 - 10 - 2 = +8%",
+        "en": "+20 - 10 - 2 = +8%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_018",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "20 மீ நீளமும் 15 மீ அகலமும் கொண்ட ஒரு செவ்வக வடிவப் பூங்காவைச் சுற்றி வெளிப்புறத்தில் 2 மீ அகலமுள்ள பாதை அமைக்கப்படுகிறது. பாதையின் பரப்பளவு என்ன?",
+        "en": "A rectangular park of 20 m × 15 m has a 2 m wide path outside around it. Find area of the path."
+      },
+      "question_ta": "20 மீ நீளமும் 15 மீ அகலமும் கொண்ட ஒரு செவ்வக வடிவப் பூங்காவைச் சுற்றி வெளிப்புறத்தில் 2 மீ அகலமுள்ள பாதை அமைக்கப்படுகிறது. பாதையின் பரப்பளவு என்ன?",
+      "question_en": "A rectangular park of 20 m × 15 m has a 2 m wide path outside around it. Find area of the path.",
+      "options": [
+        "160 சதுர மீட்டர்",
+        "140 சதுர மீட்டர்",
+        "156 சதுர மீட்டர்",
+        "148 சதுர மீட்டர்"
+      ],
+      "options_ta": [
+        "160 சதுர மீட்டர்",
+        "140 சதுர மீட்டர்",
+        "156 சதுர மீட்டர்",
+        "148 சதுர மீட்டர்"
+      ],
+      "options_en": [
+        "160 sq.m",
+        "140 sq.m",
+        "156 sq.m",
+        "148 sq.m"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "உள் பரப்பளவு = 20 × 15 = 300 ச.மீ.\nவெளிப்புற நீளம் = 20 + 2(2) = 24 மீ, அகலம் = 15 + 2(2) = 19 மீ.\nவெளிப் பரப்பளவு = 24 × 19 = 456 ச.மீ.\nபாதையின் பரப்பளவு = 456 - 300 = 156 ச.மீ.",
+        "en": "Inner area = 300 m². Outer dimensions = 24 m × 19 m ⟹ Outer area = 456 m².\nPath area = 456 - 300 = 156 m²."
+      },
+      "explanation_ta": "உள் பரப்பளவு = 20 × 15 = 300 ச.மீ.\nவெளிப்புற நீளம் = 20 + 2(2) = 24 மீ, அகலம் = 15 + 2(2) = 19 மீ.\nவெளிப் பரப்பளவு = 24 × 19 = 456 ச.மீ.\nபாதையின் பரப்பளவு = 456 - 300 = 156 ச.மீ.",
+      "explanation_en": "Inner area = 300 m². Outer dimensions = 24 m × 19 m ⟹ Outer area = 456 m².\nPath area = 456 - 300 = 156 m².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 160 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 140 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 456 - 300 = 156 ச.மீ.",
+          "en": "Correct. 456 - 300 = 156 sq.m."
+        },
+        "D": {
+          "ta": "தவறு. 148 ச.மீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பாதையின் பரப்பளவு = வெளிப் பரப்பளவு - உள் பரப்பளவு.",
+        "en": "Path area = Outer Area - Inner Area."
+      },
+      "revision_fact": {
+        "ta": "456 - 300 = 156 sq.m",
+        "en": "456 - 300 = 156 sq.m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_019",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு சதுரம் மற்றும் ஒரு வட்டத்தின் சுற்றளவுகள் சமம். சதுரத்தின் பக்கம் 11 செமீ எனில், வட்டத்தின் பரப்பளவு என்ன?",
+        "en": "Perimeters of a square and a circle are equal. If side of square is 11 cm, find area of circle."
+      },
+      "question_ta": "ஒரு சதுரம் மற்றும் ஒரு வட்டத்தின் சுற்றளவுகள் சமம். சதுரத்தின் பக்கம் 11 செமீ எனில், வட்டத்தின் பரப்பளவு என்ன?",
+      "question_en": "Perimeters of a square and a circle are equal. If side of square is 11 cm, find area of circle.",
+      "options": [
+        "154 செமீ²",
+        "121 செமீ²",
+        "176 செமீ²",
+        "144 செமீ²"
+      ],
+      "options_ta": [
+        "154 செமீ²",
+        "121 செமீ²",
+        "176 செமீ²",
+        "144 செமீ²"
+      ],
+      "options_en": [
+        "154 cm²",
+        "121 cm²",
+        "176 cm²",
+        "144 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "1. சதுர சுற்றளவு = 4 × 11 = 44 செமீ.\n2. வட்டச் சுற்றளவு 2πr = 44 ⟹ r = 7 செமீ.\n3. வட்டப் பரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+        "en": "Square Perimeter = 44 cm = 2πr ⟹ r = 7 cm ⟹ Circle Area = πr² = 154 cm²."
+      },
+      "explanation_ta": "1. சதுர சுற்றளவு = 4 × 11 = 44 செமீ.\n2. வட்டச் சுற்றளவு 2πr = 44 ⟹ r = 7 செமீ.\n3. வட்டப் பரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+      "explanation_en": "Square Perimeter = 44 cm = 2πr ⟹ r = 7 cm ⟹ Circle Area = πr² = 154 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 154 செமீ².",
+          "en": "Correct. 154 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 11² = 121 செமீ² (சதுரத்தின் பரப்பளவு).",
+          "en": "121 cm² is area of square."
+        },
+        "C": {
+          "ta": "தவறு. 176 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 144 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2πr = 44 ⟹ r = 7 cm ⟹ பரப்பளவு = 154 செமீ².",
+        "en": "2πr = 44 ⟹ r = 7 cm ⟹ Area = 154 cm²."
+      },
+      "revision_fact": {
+        "ta": "r = 7 cm ⟹ Area = 154 cm²",
+        "en": "r = 7 cm ⟹ Area = 154 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_020",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "பக்கங்கள் 13 செமீ, 14 செமீ, 15 செமீ கொண்ட ஒரு முக்கோணத்தின் பரப்பளவு என்ன?",
+        "en": "Find the area of a triangle with sides 13 cm, 14 cm, and 15 cm."
+      },
+      "question_ta": "பக்கங்கள் 13 செமீ, 14 செமீ, 15 செமீ கொண்ட ஒரு முக்கோணத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find the area of a triangle with sides 13 cm, 14 cm, and 15 cm.",
+      "options": [
+        "72 செமீ²",
+        "96 செமீ²",
+        "84 செமீ²",
+        "90 செமீ²"
+      ],
+      "options_ta": [
+        "72 செமீ²",
+        "96 செமீ²",
+        "84 செமீ²",
+        "90 செமீ²"
+      ],
+      "options_en": [
+        "72 cm²",
+        "96 cm²",
+        "84 cm²",
+        "90 cm²"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "ஹெரான் சூத்திரம் (Heron's formula):\ns = (13 + 14 + 15)/2 = 42/2 = 21 செமீ.\nபரப்பளவு = √[s(s-a)(s-b)(s-c)] = √[21 × (21-13) × (21-14) × (21-15)]\n= √[21 × 8 × 7 × 6] = √[7 × 3 × 4 × 2 × 7 × 3 × 2] = √[7² × 3² × 4²] = 7 × 3 × 4 = 84 செமீ².",
+        "en": "s = 21. Area = √[21 × 8 × 7 × 6] = 84 cm²."
+      },
+      "explanation_ta": "ஹெரான் சூத்திரம் (Heron's formula):\ns = (13 + 14 + 15)/2 = 42/2 = 21 செமீ.\nபரப்பளவு = √[s(s-a)(s-b)(s-c)] = √[21 × (21-13) × (21-14) × (21-15)]\n= √[21 × 8 × 7 × 6] = √[7 × 3 × 4 × 2 × 7 × 3 × 2] = √[7² × 3² × 4²] = 7 × 3 × 4 = 84 செமீ².",
+      "explanation_en": "s = 21. Area = √[21 × 8 × 7 × 6] = 84 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 72 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 96 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 84 செமீ².",
+          "en": "Correct. 84 cm²."
+        },
+        "D": {
+          "ta": "தவறு. 90 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "ஹெரான் சூத்திரம் A = √[s(s-a)(s-b)(s-c)].",
+        "en": "Heron's formula A = √[s(s-a)(s-b)(s-c)]."
+      },
+      "revision_fact": {
+        "ta": "√[21 × 8 × 7 × 6] = 84 cm²",
+        "en": "√[21 × 8 × 7 × 6] = 84 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_021",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் நீளம் மற்றும் அகலத்தின் விகிதம் 5 : 3. அதன் பரப்பளவு 135 ச.செமீ எனில், அதன் சுற்றளவு என்ன?",
+        "en": "Ratio of length and breadth of a rectangle is 5 : 3. If area is 135 sq.cm, find its perimeter."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் நீளம் மற்றும் அகலத்தின் விகிதம் 5 : 3. அதன் பரப்பளவு 135 ச.செமீ எனில், அதன் சுற்றளவு என்ன?",
+      "question_en": "Ratio of length and breadth of a rectangle is 5 : 3. If area is 135 sq.cm, find its perimeter.",
+      "options": [
+        "40 செமீ",
+        "60 செமீ",
+        "48 செமீ",
+        "32 செமீ"
+      ],
+      "options_ta": [
+        "40 செமீ",
+        "60 செமீ",
+        "48 செமீ",
+        "32 செமீ"
+      ],
+      "options_en": [
+        "40 cm",
+        "60 cm",
+        "48 cm",
+        "32 cm"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "நீளம் = 5x, அகலம் = 3x.\nபரப்பளவு = 5x × 3x = 15x² = 135 ⟹ x² = 9 ⟹ x = 3.\nநீளம் = 15 செமீ, அகலம் = 9 செமீ.\nசுற்றளவு = 2(l + b) = 2(15 + 9) = 2 × 24 = 48 செமீ.",
+        "en": "15x² = 135 ⟹ x = 3 ⟹ l = 15, b = 9 ⟹ Perimeter = 2(15 + 9) = 48 cm."
+      },
+      "explanation_ta": "நீளம் = 5x, அகலம் = 3x.\nபரப்பளவு = 5x × 3x = 15x² = 135 ⟹ x² = 9 ⟹ x = 3.\nநீளம் = 15 செமீ, அகலம் = 9 செமீ.\nசுற்றளவு = 2(l + b) = 2(15 + 9) = 2 × 24 = 48 செமீ.",
+      "explanation_en": "15x² = 135 ⟹ x = 3 ⟹ l = 15, b = 9 ⟹ Perimeter = 2(15 + 9) = 48 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 40 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 60 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 2(15 + 9) = 48 செமீ.",
+          "en": "Correct. 2(15 + 9) = 48 cm."
+        },
+        "D": {
+          "ta": "தவறு. (15 + 9) = 24 × 1.33 = 32.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "15x² = 135 ⟹ x = 3 ⟹ நீளம்=15, அகலம்=9 ⟹ சுற்றளவு = 48 செமீ.",
+        "en": "15x² = 135 ⟹ x = 3 ⟹ Perimeter = 48 cm."
+      },
+      "revision_fact": {
+        "ta": "2(15 + 9) = 48 cm",
+        "en": "2(15 + 9) = 48 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_022",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் பக்கம் 50% அதிகரிக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+        "en": "If the side of a square is increased by 50%, by what percentage does its area increase?"
+      },
+      "question_ta": "ஒரு சதுரத்தின் பக்கம் 50% அதிகரிக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+      "question_en": "If the side of a square is increased by 50%, by what percentage does its area increase?",
+      "options": [
+        "125%",
+        "100%",
+        "50%",
+        "150%"
+      ],
+      "options_ta": [
+        "125%",
+        "100%",
+        "50%",
+        "150%"
+      ],
+      "options_en": [
+        "125%",
+        "100%",
+        "50%",
+        "150%"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "பரப்பளவு % மாற்றம் = 50 + 50 + (50 × 50)/100 = 100 + 25 = 125%.",
+        "en": "Area % increase = 50 + 50 + (50 × 50)/100 = 125%."
+      },
+      "explanation_ta": "பரப்பளவு % மாற்றம் = 50 + 50 + (50 × 50)/100 = 100 + 25 = 125%.",
+      "explanation_en": "Area % increase = 50 + 50 + (50 × 50)/100 = 125%.",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 100 + 25 = 125%.",
+          "en": "Correct. 100 + 25 = 125%."
+        },
+        "B": {
+          "ta": "தவறு. 50 + 50 = 100% (பெருக்கல் காரணியை மறந்தது).",
+          "en": "Added 50+50 without product term."
+        },
+        "C": {
+          "ta": "தவறு. 50% பக்கத்தின் உயர்வு மட்டும்.",
+          "en": "Side increase percentage."
+        },
+        "D": {
+          "ta": "தவறு. 150% தவறான கணக்கீடு.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "a + b + ab/100 % ⟹ 50 + 50 + 25 = 125%.",
+        "en": "a + b + ab/100 % ⟹ 50 + 50 + 25 = 125%."
+      },
+      "revision_fact": {
+        "ta": "50 + 50 + 25 = 125%",
+        "en": "50 + 50 + 25 = 125%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_023",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு வட்டத்தின் ஆரம் 10% குறைக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் குறையும்?",
+        "en": "If the radius of a circle is decreased by 10%, by what percentage does its area decrease?"
+      },
+      "question_ta": "ஒரு வட்டத்தின் ஆரம் 10% குறைக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் குறையும்?",
+      "question_en": "If the radius of a circle is decreased by 10%, by what percentage does its area decrease?",
+      "options": [
+        "20%",
+        "21%",
+        "19%",
+        "10%"
+      ],
+      "options_ta": [
+        "20%",
+        "21%",
+        "19%",
+        "10%"
+      ],
+      "options_en": [
+        "20%",
+        "21%",
+        "19%",
+        "10%"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "% மாற்றம் = -10 - 10 + (-10 × -10)/100 = -20 + 1 = -19% (19% குறைவு).",
+        "en": "Net % change = -10 - 10 + 1 = -19% (19% decrease)."
+      },
+      "explanation_ta": "% மாற்றம் = -10 - 10 + (-10 × -10)/100 = -20 + 1 = -19% (19% குறைவு).",
+      "explanation_en": "Net % change = -10 - 10 + 1 = -19% (19% decrease).",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 20% (நேரடி 10+10 கூட்டியது).",
+          "en": "Directly added 10%+10%."
+        },
+        "B": {
+          "ta": "தவறு. 21% உயர்வுக்கான மதிப்பு.",
+          "en": "Increase value."
+        },
+        "C": {
+          "ta": "சரி. 19% குறைவு.",
+          "en": "Correct. 19% decrease."
+        },
+        "D": {
+          "ta": "தவறு. ஆரத்தின் குறைவு 10% மட்டும்.",
+          "en": "Radius decrease %."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "-10 - 10 + 1 = -19% ⟹ 19% குறைவு.",
+        "en": "-10 - 10 + 1 = -19% ⟹ 19% decrease."
+      },
+      "revision_fact": {
+        "ta": "-10 - 10 + 1 = -19%",
+        "en": "-10 - 10 + 1 = -19%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_024",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு செவ்வக வடிவ நிலத்தின் நீளம் 40 மீ மற்றும் அகலம் 30 மீ. அந்நிலத்தை சுற்றிலும் வேலி அமைக்க மீட்டருக்கு ₹15 வீதம் ஆகும் மொத்தச் செலவு என்ன?",
+        "en": "A rectangular plot is 40 m × 30 m. Find total cost of fencing it at ₹15 per meter."
+      },
+      "question_ta": "ஒரு செவ்வக வடிவ நிலத்தின் நீளம் 40 மீ மற்றும் அகலம் 30 மீ. அந்நிலத்தை சுற்றிலும் வேலி அமைக்க மீட்டருக்கு ₹15 வீதம் ஆகும் மொத்தச் செலவு என்ன?",
+      "question_en": "A rectangular plot is 40 m × 30 m. Find total cost of fencing it at ₹15 per meter.",
+      "options": [
+        "₹1,050",
+        "₹2,100",
+        "₹18,000",
+        "₹2,400"
+      ],
+      "options_ta": [
+        "₹1,050",
+        "₹2,100",
+        "₹18,000",
+        "₹2,400"
+      ],
+      "options_en": [
+        "₹1,050",
+        "₹2,100",
+        "₹18,000",
+        "₹2,400"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வேலி அமைக்க சுற்றளவு தேவை.\nசுற்றளவு = 2(l + b) = 2(40 + 30) = 2 × 70 = 140 மீ.\nமொத்த செலவு = 140 × ₹15 = ₹2,100.",
+        "en": "Perimeter = 2(40 + 30) = 140 m ⟹ Total cost = 140 × 15 = ₹2,100."
+      },
+      "explanation_ta": "வேலி அமைக்க சுற்றளவு தேவை.\nசுற்றளவு = 2(l + b) = 2(40 + 30) = 2 × 70 = 140 மீ.\nமொத்த செலவு = 140 × ₹15 = ₹2,100.",
+      "explanation_en": "Perimeter = 2(40 + 30) = 140 m ⟹ Total cost = 140 × 15 = ₹2,100.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 70 × 15 = 1,050.",
+          "en": "Half perimeter used."
+        },
+        "B": {
+          "ta": "சரி. 140 × 15 = 2,100.",
+          "en": "Correct. 140 × 15 = 2,100."
+        },
+        "C": {
+          "ta": "தவறு. பரப்பளவு 1200 × 15 = ₹18,000 (வேலி அமைப்பதற்குப் பதிலாக தரைத்தளம் அமைத்தது).",
+          "en": "Used area instead of perimeter."
+        },
+        "D": {
+          "ta": "தவறு. 2,400.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வேலி அமைப்பது சுற்றளவைச் சார்ந்தது (Perimeter); தரைத்தளம் அமைப்பது பரப்பளவைச் சார்ந்தது (Area).",
+        "en": "Fencing depends on perimeter, paving depends on area."
+      },
+      "revision_fact": {
+        "ta": "140 × 15 = 2100",
+        "en": "140 × 15 = 2100"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_025",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "40 மீ × 30 மீ செவ்வக நிலத்தில் சிமெண்ட் தரைத்தளம் அமைக்க சதுர மீட்டருக்கு ₹15 வீதம் ஆகும் மொத்தச் செலவு என்ன?",
+        "en": "Find the cost of paving a rectangular floor of 40 m × 30 m at ₹15 per square meter."
+      },
+      "question_ta": "40 மீ × 30 மீ செவ்வக நிலத்தில் சிமெண்ட் தரைத்தளம் அமைக்க சதுர மீட்டருக்கு ₹15 வீதம் ஆகும் மொத்தச் செலவு என்ன?",
+      "question_en": "Find the cost of paving a rectangular floor of 40 m × 30 m at ₹15 per square meter.",
+      "options": [
+        "₹20,000",
+        "₹15,000",
+        "₹2,100",
+        "₹18,000"
+      ],
+      "options_ta": [
+        "₹20,000",
+        "₹15,000",
+        "₹2,100",
+        "₹18,000"
+      ],
+      "options_en": [
+        "₹20,000",
+        "₹15,000",
+        "₹2,100",
+        "₹18,000"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "தரைத்தளம் அமைக்க பரப்பளவு தேவை.\nபரப்பளவு = 40 × 30 = 1200 ச.மீ.\nமொத்த செலவு = 1200 × 15 = ₹18,000.",
+        "en": "Area = 40 × 30 = 1200 sq.m ⟹ Total cost = 1200 × 15 = ₹18,000."
+      },
+      "explanation_ta": "தரைத்தளம் அமைக்க பரப்பளவு தேவை.\nபரப்பளவு = 40 × 30 = 1200 ச.மீ.\nமொத்த செலவு = 1200 × 15 = ₹18,000.",
+      "explanation_en": "Area = 40 × 30 = 1200 sq.m ⟹ Total cost = 1200 × 15 = ₹18,000.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 20,000.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15,000.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. ₹2,100 என்பது வேலி அமைக்கும் செலவு (சுற்றளவு).",
+          "en": "₹2,100 is fencing cost."
+        },
+        "D": {
+          "ta": "சரி. 1200 × 15 = 18,000.",
+          "en": "Correct. 1200 × 15 = 18,000."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "தரைத்தளச் செலவு = பரப்பளவு × சதுர மீட்டர் வீதம்.",
+        "en": "Paving cost = Area × Rate per sq.m."
+      },
+      "revision_fact": {
+        "ta": "1200 × 15 = 18000",
+        "en": "1200 × 15 = 18000"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_026",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "இரு வட்டங்களின் ஆரங்களின் விகிதம் 2 : 3 எனில், அவற்றின் பரப்பளவுகளின் விகிதம் என்ன?",
+        "en": "The ratio of radii of two circles is 2 : 3. What is the ratio of their areas?"
+      },
+      "question_ta": "இரு வட்டங்களின் ஆரங்களின் விகிதம் 2 : 3 எனில், அவற்றின் பரப்பளவுகளின் விகிதம் என்ன?",
+      "question_en": "The ratio of radii of two circles is 2 : 3. What is the ratio of their areas?",
+      "options": [
+        "8 : 27",
+        "2 : 3",
+        "4 : 9",
+        "16 : 81"
+      ],
+      "options_ta": [
+        "8 : 27",
+        "2 : 3",
+        "4 : 9",
+        "16 : 81"
+      ],
+      "options_en": [
+        "8 : 27",
+        "2 : 3",
+        "4 : 9",
+        "16 : 81"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "பரப்பளவுகளின் விகிதம் = r1² : r2² = 2² : 3² = 4 : 9.",
+        "en": "Ratio of areas = r1² : r2² = 2² : 3² = 4 : 9."
+      },
+      "explanation_ta": "பரப்பளவுகளின் விகிதம் = r1² : r2² = 2² : 3² = 4 : 9.",
+      "explanation_en": "Ratio of areas = r1² : r2² = 2² : 3² = 4 : 9.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 2³ : 3³ = 8 : 27 (கனஅளவு விகிதம்).",
+          "en": "8:27 is volume ratio."
+        },
+        "B": {
+          "ta": "தவறு. 2 : 3 ஆரங்களின் விகிதம் மட்டுமே.",
+          "en": "2:3 is radius ratio."
+        },
+        "C": {
+          "ta": "சரி. 2² : 3² = 4 : 9.",
+          "en": "Correct. 2² : 3² = 4 : 9."
+        },
+        "D": {
+          "ta": "தவறு. 2⁴ : 3⁴ = 16 : 81.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பரப்பளவு விகிதம் = (ஆரங்களின் விகிதம்)². Area ratio = (r1/r2)².",
+        "en": "Area ratio = (r1/r2)²."
+      },
+      "revision_fact": {
+        "ta": "2² : 3² = 4 : 9",
+        "en": "2² : 3² = 4 : 9"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_027",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "இரு சதுரங்களின் பரப்பளவுகளின் விகிதம் 16 : 25 எனில், அவற்றின் சுற்றளவுகளின் விகிதம் என்ன?",
+        "en": "The ratio of areas of two squares is 16 : 25. What is the ratio of their perimeters?"
+      },
+      "question_ta": "இரு சதுரங்களின் பரப்பளவுகளின் விகிதம் 16 : 25 எனில், அவற்றின் சுற்றளவுகளின் விகிதம் என்ன?",
+      "question_en": "The ratio of areas of two squares is 16 : 25. What is the ratio of their perimeters?",
+      "options": [
+        "2 : 5",
+        "256 : 625",
+        "16 : 25",
+        "4 : 5"
+      ],
+      "options_ta": [
+        "2 : 5",
+        "256 : 625",
+        "16 : 25",
+        "4 : 5"
+      ],
+      "options_en": [
+        "2 : 5",
+        "256 : 625",
+        "16 : 25",
+        "4 : 5"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "பக்கங்களின் விகிதம் a1 : a2 = √16 : √25 = 4 : 5.\nசுற்றளவுகளின் விகிதம் = 4a1 : 4a2 = a1 : a2 = 4 : 5.",
+        "en": "Ratio of sides = √16 : √25 = 4 : 5 ⟹ Ratio of perimeters = 4 : 5."
+      },
+      "explanation_ta": "பக்கங்களின் விகிதம் a1 : a2 = √16 : √25 = 4 : 5.\nசுற்றளவுகளின் விகிதம் = 4a1 : 4a2 = a1 : a2 = 4 : 5.",
+      "explanation_en": "Ratio of sides = √16 : √25 = 4 : 5 ⟹ Ratio of perimeters = 4 : 5.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 2 : 5.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 16² : 25² = 256 : 625.",
+          "en": "Squared ratio."
+        },
+        "C": {
+          "ta": "தவறு. 16 : 25 பரப்பளவு விகிதம்.",
+          "en": "16:25 is area ratio."
+        },
+        "D": {
+          "ta": "சரி. √16 : √25 = 4 : 5.",
+          "en": "Correct. √16 : √25 = 4 : 5."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "சுற்றளவு விகிதம் = பக்கங்களின் விகிதம் = √(பரப்பளவு விகிதம்).",
+        "en": "Perimeter ratio = Side ratio = √(Area ratio)."
+      },
+      "revision_fact": {
+        "ta": "√16 : √25 = 4 : 5",
+        "en": "√16 : √25 = 4 : 5"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_028",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் பக்கமும் மூலைவிட்டமும் முறையே 10 செமீ மற்றும் 10√2 செமீ. மூலைவிட்டத்தை பக்கமாகக் கொண்ட புதிய சதுரத்தின் பரப்பளவு என்ன?",
+        "en": "Side of a square is 10 cm and its diagonal is 10√2 cm. What is the area of a square constructed on its diagonal?"
+      },
+      "question_ta": "ஒரு சதுரத்தின் பக்கமும் மூலைவிட்டமும் முறையே 10 செமீ மற்றும் 10√2 செமீ. மூலைவிட்டத்தை பக்கமாகக் கொண்ட புதிய சதுரத்தின் பரப்பளவு என்ன?",
+      "question_en": "Side of a square is 10 cm and its diagonal is 10√2 cm. What is the area of a square constructed on its diagonal?",
+      "options": [
+        "400 செமீ²",
+        "100 செமீ²",
+        "200 செமீ²",
+        "150 செமீ²"
+      ],
+      "options_ta": [
+        "400 செமீ²",
+        "100 செமீ²",
+        "200 செமீ²",
+        "150 செமீ²"
+      ],
+      "options_en": [
+        "400 cm²",
+        "100 cm²",
+        "200 cm²",
+        "150 cm²"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "புதிய சதுரத்தின் பக்கம் A = 10√2 செமீ.\nபுதிய சதுரப் பரப்பளவு = A² = (10√2)² = 100 × 2 = 200 செமீ².",
+        "en": "Side of new square = 10√2 cm ⟹ Area = (10√2)² = 200 cm²."
+      },
+      "explanation_ta": "புதிய சதுரத்தின் பக்கம் A = 10√2 செமீ.\nபுதிய சதுரப் பரப்பளவு = A² = (10√2)² = 100 × 2 = 200 செமீ².",
+      "explanation_en": "Side of new square = 10√2 cm ⟹ Area = (10√2)² = 200 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 400 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 10² = 100 செமீ² (முதல் சதுரத்தின் பரப்பளவு).",
+          "en": "100 cm² is original square area."
+        },
+        "C": {
+          "ta": "சரி. (10√2)² = 200 செமீ².",
+          "en": "Correct. (10√2)² = 200 cm²."
+        },
+        "D": {
+          "ta": "தவறு. 150 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மூலைவிட்டத்தின் மீது வரையப்படும் சதுரத்தின் பரப்பளவு = மூலச் சதுரப் பரப்பளவின் 2 மடங்கு (200 cm²).",
+        "en": "Area of square on diagonal = 2 × original square area."
+      },
+      "revision_fact": {
+        "ta": "(10√2)² = 200 cm²",
+        "en": "(10√2)² = 200 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_029",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு வட்டத்தின் பரப்பளவு 616 ச.செமீ எனில், அதன் விட்டம் (Diameter) என்ன? (π = 22/7)",
+        "en": "If area of a circle is 616 sq.cm, find its diameter."
+      },
+      "question_ta": "ஒரு வட்டத்தின் பரப்பளவு 616 ச.செமீ எனில், அதன் விட்டம் (Diameter) என்ன? (π = 22/7)",
+      "question_en": "If area of a circle is 616 sq.cm, find its diameter.",
+      "options": [
+        "56 செமீ",
+        "14 செமீ",
+        "28 செமீ",
+        "42 செமீ"
+      ],
+      "options_ta": [
+        "56 செமீ",
+        "14 செமீ",
+        "28 செமீ",
+        "42 செமீ"
+      ],
+      "options_en": [
+        "56 cm",
+        "14 cm",
+        "28 cm",
+        "42 cm"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "πr² = 616 ⟹ (22/7) × r² = 616 ⟹ r² = (616 × 7) / 22 = 28 × 7 = 196 ⟹ r = √196 = 14 செமீ.\nவிட்டம் d = 2r = 2 × 14 = 28 செமீ.",
+        "en": "πr² = 616 ⟹ r² = 196 ⟹ r = 14 cm ⟹ Diameter d = 2 × 14 = 28 cm."
+      },
+      "explanation_ta": "πr² = 616 ⟹ (22/7) × r² = 616 ⟹ r² = (616 × 7) / 22 = 28 × 7 = 196 ⟹ r = √196 = 14 செமீ.\nவிட்டம் d = 2r = 2 × 14 = 28 செமீ.",
+      "explanation_en": "πr² = 616 ⟹ r² = 196 ⟹ r = 14 cm ⟹ Diameter d = 2 × 14 = 28 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 56 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 14 செமீ என்பது ஆரம் (Radius) மட்டுமே.",
+          "en": "14 cm is radius, not diameter."
+        },
+        "C": {
+          "ta": "சரி. d = 2 × 14 = 28 செமீ.",
+          "en": "Correct. d = 2 × 14 = 28 cm."
+        },
+        "D": {
+          "ta": "தவறு. 42 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "விட்டம் d = 2 × ஆரம் = 2 × 14 = 28 செமீ.",
+        "en": "Diameter = 2 × Radius = 28 cm."
+      },
+      "revision_fact": {
+        "ta": "2 × 14 = 28 cm",
+        "en": "2 × 14 = 28 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_030",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்திலிருந்து வெட்டி எடுக்கக்கூடிய மிகப்பெரிய வட்டத்தின் பரப்பளவு என்ன?",
+        "en": "Find the area of the largest circle that can be inscribed in a square of side 14 cm."
+      },
+      "question_ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்திலிருந்து வெட்டி எடுக்கக்கூடிய மிகப்பெரிய வட்டத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find the area of the largest circle that can be inscribed in a square of side 14 cm.",
+      "options": [
+        "154 செமீ²",
+        "77 செமீ²",
+        "196 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_ta": [
+        "154 செமீ²",
+        "77 செமீ²",
+        "196 செமீ²",
+        "308 செமீ²"
+      ],
+      "options_en": [
+        "154 cm²",
+        "77 cm²",
+        "196 cm²",
+        "308 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "சதுரத்தில் வெட்டப்படும் மிகப்பெரிய வட்டத்தின் விட்டம் = சதுரத்தின் பக்கம் = 14 செமீ.\nவட்டத்தின் ஆரம் r = 14 / 2 = 7 செமீ.\nவட்டப் பரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+        "en": "Diameter of inscribed circle = side = 14 cm ⟹ r = 7 cm ⟹ Area = 154 cm²."
+      },
+      "explanation_ta": "சதுரத்தில் வெட்டப்படும் மிகப்பெரிய வட்டத்தின் விட்டம் = சதுரத்தின் பக்கம் = 14 செமீ.\nவட்டத்தின் ஆரம் r = 14 / 2 = 7 செமீ.\nவட்டப் பரப்பளவு = πr² = (22/7) × 7 × 7 = 154 செமீ².",
+      "explanation_en": "Diameter of inscribed circle = side = 14 cm ⟹ r = 7 cm ⟹ Area = 154 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. π × 7² = 154 செமீ².",
+          "en": "Correct. π × 7² = 154 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 77 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 14² = 196 செமீ² (சதுரத்தின் பரப்பளவு).",
+          "en": "196 cm² is area of square."
+        },
+        "D": {
+          "ta": "தவறு. 308 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "உள்வட்ட ஆரம் r = (சதுரப் பக்கம்) / 2 = 14 / 2 = 7 செமீ.",
+        "en": "Inscribed circle radius = Side / 2 = 7 cm."
+      },
+      "revision_fact": {
+        "ta": "r = 7 cm ⟹ Area = 154 cm²",
+        "en": "r = 7 cm ⟹ Area = 154 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_031",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்தின் நான்கு மூலைகளிலும் 7 செமீ ஆரம் கொண்ட 4 கால்வட்டங்கள் வெட்டி எடுக்கப்பட்டால், மீதமுள்ள பகுதியின் பரப்பளவு என்ன?",
+        "en": "Four quadrants of 7 cm radius are cut from the 4 corners of a square of side 14 cm. Find area of remaining part."
+      },
+      "question_ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்தின் நான்கு மூலைகளிலும் 7 செமீ ஆரம் கொண்ட 4 கால்வட்டங்கள் வெட்டி எடுக்கப்பட்டால், மீதமுள்ள பகுதியின் பரப்பளவு என்ன?",
+      "question_en": "Four quadrants of 7 cm radius are cut from the 4 corners of a square of side 14 cm. Find area of remaining part.",
+      "options": [
+        "154 செமீ²",
+        "42 செமீ²",
+        "196 செமீ²",
+        "56 செமீ²"
+      ],
+      "options_ta": [
+        "154 செமீ²",
+        "42 செமீ²",
+        "196 செமீ²",
+        "56 செமீ²"
+      ],
+      "options_en": [
+        "154 cm²",
+        "42 cm²",
+        "196 cm²",
+        "56 cm²"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "சதுரப் பரப்பளவு = 14 × 14 = 196 செமீ².\n4 கால்வட்டங்கள் = 1 முழு வட்டம் (r = 7 செமீ).\nவட்டப் பரப்பளவு = (22/7) × 7 × 7 = 154 செமீ².\nமீதமுள்ள பரப்பளவு = 196 - 154 = 42 செமீ².",
+        "en": "Square area = 196. 4 quadrants = 1 full circle of r=7 ⟹ Area = 154.\nRemaining area = 196 - 154 = 42 cm²."
+      },
+      "explanation_ta": "சதுரப் பரப்பளவு = 14 × 14 = 196 செமீ².\n4 கால்வட்டங்கள் = 1 முழு வட்டம் (r = 7 செமீ).\nவட்டப் பரப்பளவு = (22/7) × 7 × 7 = 154 செமீ².\nமீதமுள்ள பரப்பளவு = 196 - 154 = 42 செமீ².",
+      "explanation_en": "Square area = 196. 4 quadrants = 1 full circle of r=7 ⟹ Area = 154.\nRemaining area = 196 - 154 = 42 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 154 செமீ² 4 கால்வட்டங்களின் பரப்பளவு.",
+          "en": "154 cm² is circle area."
+        },
+        "B": {
+          "ta": "சரி. 196 - 154 = 42 செமீ².",
+          "en": "Correct. 196 - 154 = 42 cm²."
+        },
+        "C": {
+          "ta": "தவறு. 196 செமீ² சதுரப் பரப்பளவு.",
+          "en": "196 cm² is square area."
+        },
+        "D": {
+          "ta": "தவறு. 56 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "மீதமுள்ள பரப்பளவு = சதுரப் பரப்பளவு - (4 × கால்வட்டப் பரப்பளவு).",
+        "en": "Remaining Area = Square Area - Circle Area."
+      },
+      "revision_fact": {
+        "ta": "196 - 154 = 42 cm²",
+        "en": "196 - 154 = 42 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_032",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் நீளம் 30% அதிகரிக்கப்பட்டு, அகலம் 20% அதிகரிக்கப்பட்டால், பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+        "en": "If length of a rectangle is increased by 30% and breadth by 20%, find % increase in area."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் நீளம் 30% அதிகரிக்கப்பட்டு, அகலம் 20% அதிகரிக்கப்பட்டால், பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+      "question_en": "If length of a rectangle is increased by 30% and breadth by 20%, find % increase in area.",
+      "options": [
+        "52%",
+        "56%",
+        "50%",
+        "60%"
+      ],
+      "options_ta": [
+        "52%",
+        "56%",
+        "50%",
+        "60%"
+      ],
+      "options_en": [
+        "52%",
+        "56%",
+        "50%",
+        "60%"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "பரப்பளவு % உயர்வு = 30 + 20 + (30 × 20)/100 = 50 + 6 = 56%.",
+        "en": "Area % increase = 30 + 20 + (30 × 20)/100 = 56%."
+      },
+      "explanation_ta": "பரப்பளவு % உயர்வு = 30 + 20 + (30 × 20)/100 = 50 + 6 = 56%.",
+      "explanation_en": "Area % increase = 30 + 20 + (30 × 20)/100 = 56%.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 52%.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 50 + 6 = 56%.",
+          "en": "Correct. 50 + 6 = 56%."
+        },
+        "C": {
+          "ta": "தவறு. 30 + 20 = 50% (பெருக்கல் காரணியைப் புறக்கணித்தது).",
+          "en": "Added 30+20 without product term."
+        },
+        "D": {
+          "ta": "தவறு. 60%.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "30 + 20 + 6 = 56%.",
+        "en": "30 + 20 + 6 = 56%."
+      },
+      "revision_fact": {
+        "ta": "30 + 20 + 6 = 56%",
+        "en": "30 + 20 + 6 = 56%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_033",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு சமபக்க முக்கோணத்தின் பரப்பளவு 16√3 ச.செமீ எனில், அதன் சுற்றளவு என்ன?",
+        "en": "If area of an equilateral triangle is 16√3 sq.cm, find its perimeter."
+      },
+      "question_ta": "ஒரு சமபக்க முக்கோணத்தின் பரப்பளவு 16√3 ச.செமீ எனில், அதன் சுற்றளவு என்ன?",
+      "question_en": "If area of an equilateral triangle is 16√3 sq.cm, find its perimeter.",
+      "options": [
+        "12 செமீ",
+        "24 செமீ",
+        "8 செமீ",
+        "36 செமீ"
+      ],
+      "options_ta": [
+        "12 செமீ",
+        "24 செமீ",
+        "8 செமீ",
+        "36 செமீ"
+      ],
+      "options_en": [
+        "12 cm",
+        "24 cm",
+        "8 cm",
+        "36 cm"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "(√3/4) a² = 16√3 ⟹ a² / 4 = 16 ⟹ a² = 64 ⟹ a = 8 செமீ.\nசுற்றளவு = 3a = 3 × 8 = 24 செமீ.",
+        "en": "(√3/4) a² = 16√3 ⟹ a² = 64 ⟹ a = 8 cm ⟹ Perimeter = 3a = 24 cm."
+      },
+      "explanation_ta": "(√3/4) a² = 16√3 ⟹ a² / 4 = 16 ⟹ a² = 64 ⟹ a = 8 செமீ.\nசுற்றளவு = 3a = 3 × 8 = 24 செமீ.",
+      "explanation_en": "(√3/4) a² = 16√3 ⟹ a² = 64 ⟹ a = 8 cm ⟹ Perimeter = 3a = 24 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 3 × 8 = 24 செமீ.",
+          "en": "Correct. 3 × 8 = 24 cm."
+        },
+        "C": {
+          "ta": "தவறு. 8 செமீ என்பது ஒரு பக்கத்தின் நீளம் மட்டுமே.",
+          "en": "8 cm is side length."
+        },
+        "D": {
+          "ta": "தவறு. 36 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "a² = 64 ⟹ a = 8 cm ⟹ சுற்றளவு = 3a = 24 செமீ.",
+        "en": "a² = 64 ⟹ a = 8 cm ⟹ Perimeter = 3a = 24 cm."
+      },
+      "revision_fact": {
+        "ta": "3 × 8 = 24 cm",
+        "en": "3 × 8 = 24 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_034",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "28 மீ ஆரம் கொண்ட ஒரு வட்ட வடிவப் பூங்காவைச் சுற்றி 7 மீ அகலமுள்ள சாலை அமைக்கப்படுகிறது. சாலையின் பரப்பளவு என்ன?",
+        "en": "A circular park of radius 28 m has a 7 m wide road around it. Find area of the road."
+      },
+      "question_ta": "28 மீ ஆரம் கொண்ட ஒரு வட்ட வடிவப் பூங்காவைச் சுற்றி 7 மீ அகலமுள்ள சாலை அமைக்கப்படுகிறது. சாலையின் பரப்பளவு என்ன?",
+      "question_en": "A circular park of radius 28 m has a 7 m wide road around it. Find area of the road.",
+      "options": [
+        "1386 சதுர மீட்டர்",
+        "1232 சதுர மீட்டர்",
+        "1400 சதுர மீட்டர்",
+        "1540 சதுர மீட்டர்"
+      ],
+      "options_ta": [
+        "1386 சதுர மீட்டர்",
+        "1232 சதுர மீட்டர்",
+        "1400 சதுர மீட்டர்",
+        "1540 சதுர மீட்டர்"
+      ],
+      "options_en": [
+        "1386 sq.m",
+        "1232 sq.m",
+        "1400 sq.m",
+        "1540 sq.m"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "உள் ஆரம் r = 28 மீ, வெளி ஆரம் R = 28 + 7 = 35 மீ.\nசாலையின் பரப்பளவு = π(R² - r²) = (22/7) × (35² - 28²)\n= (22/7) × (35 - 28)(35 + 28) = (22/7) × 7 × 63 = 22 × 63 = 1386 ச.மீ.",
+        "en": "Inner r = 28, Outer R = 35. Road Area = π(35² - 28²) = 22 × 63 = 1386 m²."
+      },
+      "explanation_ta": "உள் ஆரம் r = 28 மீ, வெளி ஆரம் R = 28 + 7 = 35 மீ.\nசாலையின் பரப்பளவு = π(R² - r²) = (22/7) × (35² - 28²)\n= (22/7) × (35 - 28)(35 + 28) = (22/7) × 7 × 63 = 22 × 63 = 1386 ச.மீ.",
+      "explanation_en": "Inner r = 28, Outer R = 35. Road Area = π(35² - 28²) = 22 × 63 = 1386 m².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 22 × 63 = 1386 ச.மீ.",
+          "en": "Correct. 22 × 63 = 1386 sq.m."
+        },
+        "B": {
+          "ta": "தவறு. 1232 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 1400 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 1540 ச.மீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "வட்டப் பாதை பரப்பளவு = π(R + r)(R - r).",
+        "en": "Circular ring area = π(R + r)(R - r)."
+      },
+      "revision_fact": {
+        "ta": "22 × 63 = 1386 sq.m",
+        "en": "22 × 63 = 1386 sq.m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_035",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு சாய் சதுரத்தின் பரப்பளவு 96 ச.செமீ மற்றும் ஒரு மூலைவிட்டம் 12 செமீ எனில், மற்றொரு மூலைவிட்டம் என்ன?",
+        "en": "Area of a rhombus is 96 sq.cm and one diagonal is 12 cm. Find the other diagonal."
+      },
+      "question_ta": "ஒரு சாய் சதுரத்தின் பரப்பளவு 96 ச.செமீ மற்றும் ஒரு மூலைவிட்டம் 12 செமீ எனில், மற்றொரு மூலைவிட்டம் என்ன?",
+      "question_en": "Area of a rhombus is 96 sq.cm and one diagonal is 12 cm. Find the other diagonal.",
+      "options": [
+        "24 செமீ",
+        "16 செமீ",
+        "8 செமீ",
+        "12 செமீ"
+      ],
+      "options_ta": [
+        "24 செமீ",
+        "16 செமீ",
+        "8 செமீ",
+        "12 செமீ"
+      ],
+      "options_en": [
+        "24 cm",
+        "16 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "(1/2) × d1 × d2 = 96 ⟹ (1/2) × 12 × d2 = 96 ⟹ 6 × d2 = 96 ⟹ d2 = 96 / 6 = 16 செமீ.",
+        "en": "(1/2) × 12 × d2 = 96 ⟹ 6 d2 = 96 ⟹ d2 = 16 cm."
+      },
+      "explanation_ta": "(1/2) × d1 × d2 = 96 ⟹ (1/2) × 12 × d2 = 96 ⟹ 6 × d2 = 96 ⟹ d2 = 96 / 6 = 16 செமீ.",
+      "explanation_en": "(1/2) × 12 × d2 = 96 ⟹ 6 d2 = 96 ⟹ d2 = 16 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 24 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 96 / 6 = 16 செமீ.",
+          "en": "Correct. 96 / 6 = 16 cm."
+        },
+        "C": {
+          "ta": "தவறு. 96 / 12 = 8 செமீ (1/2 பெருக்க மறந்தது).",
+          "en": "Forgot factor 1/2."
+        },
+        "D": {
+          "ta": "தவறு. 12 செமீ முதல் மூலைவிட்டம்.",
+          "en": "First diagonal value."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "d2 = (2 × பரப்பளவு) / d1 = (2 × 96) / 12 = 16 செமீ.",
+        "en": "d2 = (2 × Area) / d1 = 16 cm."
+      },
+      "revision_fact": {
+        "ta": "192 / 12 = 16 cm",
+        "en": "192 / 12 = 16 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_036",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் சுற்றளவு 56 செமீ மற்றும் நீளம் 16 செமீ எனில், அதன் பரப்பளவு என்ன?",
+        "en": "Perimeter of a rectangle is 56 cm and length is 16 cm. Find its area."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் சுற்றளவு 56 செமீ மற்றும் நீளம் 16 செமீ எனில், அதன் பரப்பளவு என்ன?",
+      "question_en": "Perimeter of a rectangle is 56 cm and length is 16 cm. Find its area.",
+      "options": [
+        "192 செமீ²",
+        "180 செமீ²",
+        "160 செமீ²",
+        "144 செமீ²"
+      ],
+      "options_ta": [
+        "192 செமீ²",
+        "180 செமீ²",
+        "160 செமீ²",
+        "144 செமீ²"
+      ],
+      "options_en": [
+        "192 cm²",
+        "180 cm²",
+        "160 cm²",
+        "144 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "2(l + b) = 56 ⟹ 16 + b = 28 ⟹ b = 12 செமீ.\nபரப்பளவு = 16 × 12 = 192 செமீ².",
+        "en": "2(16 + b) = 56 ⟹ 16 + b = 28 ⟹ b = 12 cm.\nArea = 16 × 12 = 192 cm²."
+      },
+      "explanation_ta": "2(l + b) = 56 ⟹ 16 + b = 28 ⟹ b = 12 செமீ.\nபரப்பளவு = 16 × 12 = 192 செமீ².",
+      "explanation_en": "2(16 + b) = 56 ⟹ 16 + b = 28 ⟹ b = 12 cm.\nArea = 16 × 12 = 192 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 16 × 12 = 192 செமீ².",
+          "en": "Correct. 16 × 12 = 192 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 180 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 160 செமீ² (அகலம் 10 எனக் கொண்டது).",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 144 செமீ².",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2(l + b) = 56 ⟹ b = 12 ⟹ பரப்பளவு = 16 × 12 = 192 செமீ².",
+        "en": "2(l + b) = 56 ⟹ b = 12 ⟹ Area = 192 cm²."
+      },
+      "revision_fact": {
+        "ta": "16 × 12 = 192 cm²",
+        "en": "16 × 12 = 192 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_037",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Reverse Calculation",
+      "question": {
+        "ta": "ஒரு சதுரம் மற்றும் செவ்வகத்தின் பரப்பளவுகள் சமம். செவ்வகத்தின் நீளம் 36 செமீ மற்றும் அகலம் 9 செமீ எனில், சதுரத்தின் சுற்றளவு என்ன?",
+        "en": "A square and rectangle have equal area. Length and breadth of rectangle are 36 cm and 9 cm. Find perimeter of square."
+      },
+      "question_ta": "ஒரு சதுரம் மற்றும் செவ்வகத்தின் பரப்பளவுகள் சமம். செவ்வகத்தின் நீளம் 36 செமீ மற்றும் அகலம் 9 செமீ எனில், சதுரத்தின் சுற்றளவு என்ன?",
+      "question_en": "A square and rectangle have equal area. Length and breadth of rectangle are 36 cm and 9 cm. Find perimeter of square.",
+      "options": [
+        "18 செமீ",
+        "36 செமீ",
+        "72 செமீ",
+        "90 செமீ"
+      ],
+      "options_ta": [
+        "18 செமீ",
+        "36 செமீ",
+        "72 செமீ",
+        "90 செமீ"
+      ],
+      "options_en": [
+        "18 cm",
+        "36 cm",
+        "72 cm",
+        "90 cm"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "1. செவ்வகப் பரப்பளவு = 36 × 9 = 324 செமீ².\n2. சதுரப் பரப்பளவு a² = 324 ⟹ a = √324 = 18 செமீ.\n3. சதுர சுற்றளவு = 4a = 4 × 18 = 72 செமீ.",
+        "en": "Area = 36 × 9 = 324 cm² ⟹ Side a = 18 cm ⟹ Perimeter = 4 × 18 = 72 cm."
+      },
+      "explanation_ta": "1. செவ்வகப் பரப்பளவு = 36 × 9 = 324 செமீ².\n2. சதுரப் பரப்பளவு a² = 324 ⟹ a = √324 = 18 செமீ.\n3. சதுர சுற்றளவு = 4a = 4 × 18 = 72 செமீ.",
+      "explanation_en": "Area = 36 × 9 = 324 cm² ⟹ Side a = 18 cm ⟹ Perimeter = 4 × 18 = 72 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 18 செமீ சதுரத்தின் பக்கம் மட்டுமே.",
+          "en": "18 cm is side length only."
+        },
+        "B": {
+          "ta": "தவறு. 36 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. 4 × 18 = 72 செமீ.",
+          "en": "Correct. 4 × 18 = 72 cm."
+        },
+        "D": {
+          "ta": "தவறு. 2(36+9) = 90 செமீ (செவ்வகத்தின் சுற்றளவு).",
+          "en": "90 cm is rectangle perimeter."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "a² = 324 ⟹ a = 18 cm ⟹ சுற்றளவு = 4 × 18 = 72 செமீ.",
+        "en": "a² = 324 ⟹ a = 18 cm ⟹ Perimeter = 72 cm."
+      },
+      "revision_fact": {
+        "ta": "4 × 18 = 72 cm",
+        "en": "4 × 18 = 72 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_038",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Direct Calculation",
+      "question": {
+        "ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்திற்குள் வரையப்படக்கூடிய மிகப்பெரிய வட்டத்தின் சுற்றளவு என்ன?",
+        "en": "Find the circumference of the largest circle inscribed in a square of side 14 cm."
+      },
+      "question_ta": "பக்கம் 14 செமீ கொண்ட ஒரு சதுரத்திற்குள் வரையப்படக்கூடிய மிகப்பெரிய வட்டத்தின் சுற்றளவு என்ன?",
+      "question_en": "Find the circumference of the largest circle inscribed in a square of side 14 cm.",
+      "options": [
+        "154 செமீ",
+        "44 செமீ",
+        "88 செமீ",
+        "22 செமீ"
+      ],
+      "options_ta": [
+        "154 செமீ",
+        "44 செமீ",
+        "88 செமீ",
+        "22 செமீ"
+      ],
+      "options_en": [
+        "154 cm",
+        "44 cm",
+        "88 cm",
+        "22 cm"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வட்டத்தின் விட்டம் = சதுரத்தின் பக்கம் = 14 செமீ ⟹ ஆரம் r = 7 செமீ.\nசுற்றளவு = 2πr = 2 × (22/7) × 7 = 44 செமீ.",
+        "en": "Diameter = 14 cm ⟹ r = 7 cm ⟹ Circumference = 2πr = 44 cm."
+      },
+      "explanation_ta": "வட்டத்தின் விட்டம் = சதுரத்தின் பக்கம் = 14 செமீ ⟹ ஆரம் r = 7 செமீ.\nசுற்றளவு = 2πr = 2 × (22/7) × 7 = 44 செமீ.",
+      "explanation_en": "Diameter = 14 cm ⟹ r = 7 cm ⟹ Circumference = 2πr = 44 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 154 செமீ² என்பது பரப்பளவு.",
+          "en": "154 cm² is area."
+        },
+        "B": {
+          "ta": "சரி. 2 × 22 = 44 செமீ.",
+          "en": "Correct. 2 × 22 = 44 cm."
+        },
+        "C": {
+          "ta": "தவறு. 88 செமீ (விட்டம் 28 எனக் கொண்டது).",
+          "en": "Calculated with diameter 28."
+        },
+        "D": {
+          "ta": "தவறு. 22 செமீ அரைவட்ட சுற்றளவு பகுதி.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "2πr = 2 × (22/7) × 7 = 44 செமீ.",
+        "en": "2πr = 2 × (22/7) × 7 = 44 cm."
+      },
+      "revision_fact": {
+        "ta": "2 × 22 = 44 cm",
+        "en": "2 × 22 = 44 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_039",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு நிலத்தின் நீளம் 60 மீ மற்றும் அகலம் 40 மீ. அந்நிலத்திற்குள் 2 மீ அகலமுள்ள குறுக்குச் சாலைகள் (Cross paths) நீளத்திற்கும் அகலத்திற்கும் இணையாக ஒன்றைய ஒன்று வெட்டுமாறு அமைக்கப்பட்டால், சாலைகளின் மொத்தப் பரப்பளவு என்ன?",
+        "en": "A plot of 60 m × 40 m has two cross paths of 2 m width running in the middle parallel to length and breadth. Find total area of paths."
+      },
+      "question_ta": "ஒரு நிலத்தின் நீளம் 60 மீ மற்றும் அகலம் 40 மீ. அந்நிலத்திற்குள் 2 மீ அகலமுள்ள குறுக்குச் சாலைகள் (Cross paths) நீளத்திற்கும் அகலத்திற்கும் இணையாக ஒன்றைய ஒன்று வெட்டுமாறு அமைக்கப்பட்டால், சாலைகளின் மொத்தப் பரப்பளவு என்ன?",
+      "question_en": "A plot of 60 m × 40 m has two cross paths of 2 m width running in the middle parallel to length and breadth. Find total area of paths.",
+      "options": [
+        "192 சதுர மீட்டர்",
+        "196 சதுர மீட்டர்",
+        "184 சதுர மீட்டர்",
+        "200 சதுர மீட்டர்"
+      ],
+      "options_ta": [
+        "192 சதுர மீட்டர்",
+        "196 சதுர மீட்டர்",
+        "184 சதுர மீட்டர்",
+        "200 சதுர மீட்டர்"
+      ],
+      "options_en": [
+        "192 sq.m",
+        "196 sq.m",
+        "184 sq.m",
+        "200 sq.m"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "நீளச் சாலைப் பரப்பளவு = 60 × 2 = 120 ச.மீ.\nஅகலச் சாலைப் பரப்பளவு = 40 × 2 = 80 ச.மீ.\nமய்யத்தில் இருமுறை கூடும் பகுதி = 2 × 2 = 4 ச.மீ.\nசாலைகளின் பரப்பளவு = 120 + 80 - 4 = 196 ச.மீ.",
+        "en": "Path Area = (60 × 2) + (40 × 2) - (2 × 2) = 120 + 80 - 4 = 196 sq.m."
+      },
+      "explanation_ta": "நீளச் சாலைப் பரப்பளவு = 60 × 2 = 120 ச.மீ.\nஅகலச் சாலைப் பரப்பளவு = 40 × 2 = 80 ச.மீ.\nமய்யத்தில் இருமுறை கூடும் பகுதி = 2 × 2 = 4 ச.மீ.\nசாலைகளின் பரப்பளவு = 120 + 80 - 4 = 196 ச.மீ.",
+      "explanation_en": "Path Area = (60 × 2) + (40 × 2) - (2 × 2) = 120 + 80 - 4 = 196 sq.m.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 192 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 120 + 80 - 4 = 196 ச.மீ.",
+          "en": "Correct. 120 + 80 - 4 = 196 sq.m."
+        },
+        "C": {
+          "ta": "தவறு. 184 ச.மீ.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 120 + 80 = 200 ச.மீ (மய்யச் சதுரத்தைக் கழிக்க மறந்தது).",
+          "en": "Forgot to subtract common central square."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "குறுக்குச் சாலைகளின் பரப்பளவு = w(l + b - w) = 2(60 + 40 - 2) = 2(98) = 196 ச.மீ.",
+        "en": "Formula: Area of cross paths = w(l + b - w)."
+      },
+      "revision_fact": {
+        "ta": "2 × (60 + 40 - 2) = 196 sq.m",
+        "en": "2 × (60 + 40 - 2) = 196 sq.m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_040",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Medium",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு இணைகரத்தின் பக்கங்கள் 12 செமீ மற்றும் 8 செமீ. 12 செமீ பக்கங்களுக்கு இடைப்பட்ட தூரம் 6 செமீ எனில், 8 செமீ பக்கங்களுக்கு இடைப்பட்ட தூரம் என்ன?",
+        "en": "Sides of a parallelogram are 12 cm and 8 cm. Distance between 12 cm sides is 6 cm. Find distance between 8 cm sides."
+      },
+      "question_ta": "ஒரு இணைகரத்தின் பக்கங்கள் 12 செமீ மற்றும் 8 செமீ. 12 செமீ பக்கங்களுக்கு இடைப்பட்ட தூரம் 6 செமீ எனில், 8 செமீ பக்கங்களுக்கு இடைப்பட்ட தூரம் என்ன?",
+      "question_en": "Sides of a parallelogram are 12 cm and 8 cm. Distance between 12 cm sides is 6 cm. Find distance between 8 cm sides.",
+      "options": [
+        "8 செமீ",
+        "4 செமீ",
+        "10 செமீ",
+        "9 செமீ"
+      ],
+      "options_ta": [
+        "8 செமீ",
+        "4 செமீ",
+        "10 செமீ",
+        "9 செமீ"
+      ],
+      "options_en": [
+        "8 cm",
+        "4 cm",
+        "10 cm",
+        "9 cm"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "இணைகரப் பரப்பளவு = b1 × h1 = b2 × h2.\n12 × 6 = 8 × h2 ⟹ 72 = 8 h2 ⟹ h2 = 72 / 8 = 9 செமீ.",
+        "en": "b1 × h1 = b2 × h2 ⟹ 12 × 6 = 8 × h2 ⟹ h2 = 72 / 8 = 9 cm."
+      },
+      "explanation_ta": "இணைகரப் பரப்பளவு = b1 × h1 = b2 × h2.\n12 × 6 = 8 × h2 ⟹ 72 = 8 h2 ⟹ h2 = 72 / 8 = 9 செமீ.",
+      "explanation_en": "b1 × h1 = b2 × h2 ⟹ 12 × 6 = 8 × h2 ⟹ h2 = 72 / 8 = 9 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 4 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 10 செமீ.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 72 / 8 = 9 செமீ.",
+          "en": "Correct. 72 / 8 = 9 cm."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "b1 × h1 = b2 × h2 ⟹ 12 × 6 = 8 × h2 ⟹ h2 = 9 செமீ.",
+        "en": "b1 × h1 = b2 × h2 ⟹ h2 = 9 cm."
+      },
+      "revision_fact": {
+        "ta": "12 × 6 / 8 = 9 cm",
+        "en": "12 × 6 / 8 = 9 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 60,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "medium"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_041",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் பக்கத்தை 20% உயர்த்தினால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+        "en": "If side of a square is increased by 20%, by what percentage does its area increase?"
+      },
+      "question_ta": "ஒரு சதுரத்தின் பக்கத்தை 20% உயர்த்தினால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+      "question_en": "If side of a square is increased by 20%, by what percentage does its area increase?",
+      "options": [
+        "48%",
+        "40%",
+        "20%",
+        "44%"
+      ],
+      "options_ta": [
+        "48%",
+        "40%",
+        "20%",
+        "44%"
+      ],
+      "options_en": [
+        "48%",
+        "40%",
+        "20%",
+        "44%"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "% உயர்வு = 20 + 20 + (20 × 20)/100 = 40 + 4 = 44%.",
+        "en": "Area % increase = 20 + 20 + (20 × 20)/100 = 44%."
+      },
+      "explanation_ta": "% உயர்வு = 20 + 20 + (20 × 20)/100 = 40 + 4 = 44%.",
+      "explanation_en": "Area % increase = 20 + 20 + (20 × 20)/100 = 44%.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 48%.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 20 + 20 = 40% (பெருக்கல் காரணியை மறந்தது).",
+          "en": "Added 20+20 directly."
+        },
+        "C": {
+          "ta": "தவறு. 20% பக்கம் உயர்வு.",
+          "en": "Side increase %."
+        },
+        "D": {
+          "ta": "சரி. 40 + 4 = 44%.",
+          "en": "Correct. 40 + 4 = 44%."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "20 + 20 + 4 = 44%.",
+        "en": "20 + 20 + 4 = 44%."
+      },
+      "revision_fact": {
+        "ta": "20 + 20 + 4 = 44%",
+        "en": "20 + 20 + 4 = 44%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_042",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வக வடிவ நிலத்தின் சுற்றளவு 80 மீ மற்றும் அதன் பரப்பளவு 375 ச.மீ எனில், நீளத்திற்கும் அகலத்திற்கும் உள்ள வித்தியாசம் என்ன?",
+        "en": "Perimeter of a rectangular plot is 80 m and area is 375 sq.m. Find difference between length and breadth."
+      },
+      "question_ta": "ஒரு செவ்வக வடிவ நிலத்தின் சுற்றளவு 80 மீ மற்றும் அதன் பரப்பளவு 375 ச.மீ எனில், நீளத்திற்கும் அகலத்திற்கும் உள்ள வித்தியாசம் என்ன?",
+      "question_en": "Perimeter of a rectangular plot is 80 m and area is 375 sq.m. Find difference between length and breadth.",
+      "options": [
+        "8 மீட்டர்",
+        "15 மீட்டர்",
+        "10 மீட்டர்",
+        "5 மீட்டர்"
+      ],
+      "options_ta": [
+        "8 மீட்டர்",
+        "15 மீட்டர்",
+        "10 மீட்டர்",
+        "5 மீட்டர்"
+      ],
+      "options_en": [
+        "8 meters",
+        "15 meters",
+        "10 meters",
+        "5 meters"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "2(l + b) = 80 ⟹ l + b = 40.\nl × b = 375.\n(l - b)² = (l + b)² - 4lb = 40² - 4(375) = 1600 - 1500 = 100.\nl - b = √100 = 10 மீ. (எண்கள் l=25, b=15 ⟹ 25 - 15 = 10 மீ).",
+        "en": "l + b = 40, l × b = 375 ⟹ (l - b)² = 40² - 4(375) = 100 ⟹ l - b = 10 m."
+      },
+      "explanation_ta": "2(l + b) = 80 ⟹ l + b = 40.\nl × b = 375.\n(l - b)² = (l + b)² - 4lb = 40² - 4(375) = 1600 - 1500 = 100.\nl - b = √100 = 10 மீ. (எண்கள் l=25, b=15 ⟹ 25 - 15 = 10 மீ).",
+      "explanation_en": "l + b = 40, l × b = 375 ⟹ (l - b)² = 40² - 4(375) = 100 ⟹ l - b = 10 m.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 8 மீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 15 மீ அகலத்தின் மதிப்பு.",
+          "en": "Breadth value."
+        },
+        "C": {
+          "ta": "சரி. l = 25, b = 15 ⟹ 25 - 15 = 10 மீ.",
+          "en": "Correct. l = 25, b = 15 ⟹ Difference = 10 m."
+        },
+        "D": {
+          "ta": "தவறு. 5 மீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "(l - b)² = (l + b)² - 4lb = 1600 - 1500 = 100 ⟹ l - b = 10 மீ.",
+        "en": "(l - b)² = (l + b)² - 4lb ⟹ l - b = 10 m."
+      },
+      "revision_fact": {
+        "ta": "25 - 15 = 10 m",
+        "en": "25 - 15 = 10 m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_043",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு வட்டத்தின் ஆரம் 50% குறைக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் குறையும்?",
+        "en": "If the radius of a circle is decreased by 50%, by what percentage does its area decrease?"
+      },
+      "question_ta": "ஒரு வட்டத்தின் ஆரம் 50% குறைக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் குறையும்?",
+      "question_en": "If the radius of a circle is decreased by 50%, by what percentage does its area decrease?",
+      "options": [
+        "50%",
+        "25%",
+        "60%",
+        "75%"
+      ],
+      "options_ta": [
+        "50%",
+        "25%",
+        "60%",
+        "75%"
+      ],
+      "options_en": [
+        "50%",
+        "25%",
+        "60%",
+        "75%"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "புதிய ஆரம் = 0.5r.\nபுதிய பரப்பளவு = π(0.5r)² = 0.25 πr².\nகுறைவு % = (1 - 0.25) × 100 = 75%.",
+        "en": "New Area = 0.25 πr² ⟹ Decrease = 75%."
+      },
+      "explanation_ta": "புதிய ஆரம் = 0.5r.\nபுதிய பரப்பளவு = π(0.5r)² = 0.25 πr².\nகுறைவு % = (1 - 0.25) × 100 = 75%.",
+      "explanation_en": "New Area = 0.25 πr² ⟹ Decrease = 75%.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 50% ஆரத்தின் குறைவு.",
+          "en": "Radius decrease %."
+        },
+        "B": {
+          "ta": "தவறு. 25% மீதமுள்ள பரப்பளவு பங்கு.",
+          "en": "25% is remaining area percentage."
+        },
+        "C": {
+          "ta": "தவறு. 60%.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 100% - 25% = 75% குறைவு.",
+          "en": "Correct. 100% - 25% = 75% decrease."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "r ⟹ 0.5r ⟹ பரப்பளவு 0.25 மடங்கு ⟹ 75% குறைவு.",
+        "en": "Area becomes 0.25 ⟹ 75% decrease."
+      },
+      "revision_fact": {
+        "ta": "100% - 25% = 75%",
+        "en": "100% - 25% = 75%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_044",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "பக்கம் 28 செமீ கொண்ட ஒரு சதுரத்திற்குள் வரையப்பட்ட மிகப்பெரிய வட்டத்தினுள் வரையப்பட்ட சதுரத்தின் பரப்பளவு என்ன?",
+        "en": "Find area of square inscribed in largest circle inscribed in a square of side 28 cm."
+      },
+      "question_ta": "பக்கம் 28 செமீ கொண்ட ஒரு சதுரத்திற்குள் வரையப்பட்ட மிகப்பெரிய வட்டத்தினுள் வரையப்பட்ட சதுரத்தின் பரப்பளவு என்ன?",
+      "question_en": "Find area of square inscribed in largest circle inscribed in a square of side 28 cm.",
+      "options": [
+        "314 செமீ²",
+        "196 செமீ²",
+        "784 செமீ²",
+        "392 செமீ²"
+      ],
+      "options_ta": [
+        "314 செமீ²",
+        "196 செமீ²",
+        "784 செமீ²",
+        "392 செமீ²"
+      ],
+      "options_en": [
+        "314 cm²",
+        "196 cm²",
+        "784 cm²",
+        "392 cm²"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "1. வெளி சதுரப் பக்கம் = 28 செமீ.\n2. உள்வட்ட விட்டம் d = 28 செமீ ⟹ ஆரம் r = 14 செமீ.\n3. உள் சதுரத்தின் மூலைவிட்டம் = வட்டத்தின் விட்டம் d = 28 செமீ.\n4. உள் சதுரப் பரப்பளவு = d² / 2 = 28² / 2 = 784 / 2 = 392 செமீ².",
+        "en": "Inner square diagonal d = 28 cm ⟹ Area = d² / 2 = 784 / 2 = 392 cm²."
+      },
+      "explanation_ta": "1. வெளி சதுரப் பக்கம் = 28 செமீ.\n2. உள்வட்ட விட்டம் d = 28 செமீ ⟹ ஆரம் r = 14 செமீ.\n3. உள் சதுரத்தின் மூலைவிட்டம் = வட்டத்தின் விட்டம் d = 28 செமீ.\n4. உள் சதுரப் பரப்பளவு = d² / 2 = 28² / 2 = 784 / 2 = 392 செமீ².",
+      "explanation_en": "Inner square diagonal d = 28 cm ⟹ Area = d² / 2 = 784 / 2 = 392 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 314 செமீ².",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 196 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 28² = 784 செமீ² (வெளிச் சதுரப் பரப்பளவு).",
+          "en": "784 cm² is outer square area."
+        },
+        "D": {
+          "ta": "சரி. 784 / 2 = 392 செமீ².",
+          "en": "Correct. 784 / 2 = 392 cm²."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "உள் சதுரப் பரப்பளவு = வெளி சதுரப் பரப்பளவில் பாதி = 784 / 2 = 392 செமீ².",
+        "en": "Inscribed square area = Half of outer square area."
+      },
+      "revision_fact": {
+        "ta": "784 / 2 = 392 cm²",
+        "en": "784 / 2 = 392 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_045",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு செவ்வக வடிவப் பாதையின் வெளிப்புற மற்றும் உட்புறச் சுற்றளவுகளின் விகிதம் 5 : 4. பாதை முழுவதும் ஒரே அகலம் கொண்டது எனில், வெளி மற்றும் உள் நீளங்களின் வித்தியாசம் 10 மீ எனில், பாதையின் அகலம் என்ன?",
+        "en": "Ratio of outer to inner perimeter of a rectangular path is 5 : 4. If difference between outer and inner length is 10 m, find width of path."
+      },
+      "question_ta": "ஒரு செவ்வக வடிவப் பாதையின் வெளிப்புற மற்றும் உட்புறச் சுற்றளவுகளின் விகிதம் 5 : 4. பாதை முழுவதும் ஒரே அகலம் கொண்டது எனில், வெளி மற்றும் உள் நீளங்களின் வித்தியாசம் 10 மீ எனில், பாதையின் அகலம் என்ன?",
+      "question_en": "Ratio of outer to inner perimeter of a rectangular path is 5 : 4. If difference between outer and inner length is 10 m, find width of path.",
+      "options": [
+        "5.0 மீட்டர்",
+        "2.5 மீட்டர்",
+        "3.0 மீட்டர்",
+        "2.0 மீட்டர்"
+      ],
+      "options_ta": [
+        "5.0 மீட்டர்",
+        "2.5 மீட்டர்",
+        "3.0 மீட்டர்",
+        "2.0 மீட்டர்"
+      ],
+      "options_en": [
+        "5.0 meters",
+        "2.5 meters",
+        "3.0 meters",
+        "2.0 meters"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "வெளி நீளம் L = l + 2w ⟹ L - l = 2w = 10 மீ.\nபாதையின் அகலம் w = 10 / 2 = 2.5/5 ⟹ 2w = 5 ⟹ w = 2.5 மீ. (அல்லது L - l = 2w ⟹ 2w = 5 மீ ⟹ w = 2.5 மீ).",
+        "en": "Difference between outer and inner length = 2w = 5 m ⟹ w = 2.5 meters."
+      },
+      "explanation_ta": "வெளி நீளம் L = l + 2w ⟹ L - l = 2w = 10 மீ.\nபாதையின் அகலம் w = 10 / 2 = 2.5/5 ⟹ 2w = 5 ⟹ w = 2.5 மீ. (அல்லது L - l = 2w ⟹ 2w = 5 மீ ⟹ w = 2.5 மீ).",
+      "explanation_en": "Difference between outer and inner length = 2w = 5 m ⟹ w = 2.5 meters.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 2w = 5.0 மீ (இரு பக்க அகலத்தின் கூடுதல்).",
+          "en": "5.0 m is 2w."
+        },
+        "B": {
+          "ta": "சரி. 2w = 5 ⟹ w = 2.5 மீ.",
+          "en": "Correct. 2w = 5 ⟹ w = 2.5 m."
+        },
+        "C": {
+          "ta": "தவறு. 3.0 மீ.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 2.0 மீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "நீளங்களின் வித்தியாசம் = 2 × (பாதையின் அகலம் w) ⟹ 2w = 5 ⟹ w = 2.5 மீ.",
+        "en": "Length difference = 2w ⟹ w = 2.5 m."
+      },
+      "revision_fact": {
+        "ta": "5 / 2 = 2.5 m",
+        "en": "5 / 2 = 2.5 m"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_046",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு முக்கோணத்தின் பக்கங்கள் 5 செமீ, 12 செமீ, 13 செமீ. அதன் செங்கோண உச்சியில் இருந்து 13 செமீ கர்ணத்திற்கு வரையப்படும் குத்துக்கோட்டின் (Height to hypotenuse) நீளம் என்ன?",
+        "en": "Sides of a right triangle are 5 cm, 12 cm, 13 cm. Find length of perpendicular dropped from right angle to hypotenuse."
+      },
+      "question_ta": "ஒரு முக்கோணத்தின் பக்கங்கள் 5 செமீ, 12 செமீ, 13 செமீ. அதன் செங்கோண உச்சியில் இருந்து 13 செமீ கர்ணத்திற்கு வரையப்படும் குத்துக்கோட்டின் (Height to hypotenuse) நீளம் என்ன?",
+      "question_en": "Sides of a right triangle are 5 cm, 12 cm, 13 cm. Find length of perpendicular dropped from right angle to hypotenuse.",
+      "options": [
+        "12/5 செமீ",
+        "5/12 செமீ",
+        "60/13 செமீ",
+        "13/6 செமீ"
+      ],
+      "options_ta": [
+        "12/5 செமீ",
+        "5/12 செமீ",
+        "60/13 செமீ",
+        "13/6 செமீ"
+      ],
+      "options_en": [
+        "12/5 cm",
+        "5/12 cm",
+        "60/13 cm",
+        "13/6 cm"
+      ],
+      "correct_answer": "C",
+      "answer": "C",
+      "explanation": {
+        "ta": "பரப்பளவு = (1/2) × 5 × 12 = 30 செமீ².\nகர்ணத்தை அடிப்பக்கமாகக் கொண்ட பரப்பளவு = (1/2) × 13 × h = 30 ⟹ 13h = 60 ⟹ h = 60 / 13 செமீ.",
+        "en": "Area = (1/2) × 5 × 12 = 30 cm² = (1/2) × 13 × h ⟹ h = 60 / 13 cm."
+      },
+      "explanation_ta": "பரப்பளவு = (1/2) × 5 × 12 = 30 செமீ².\nகர்ணத்தை அடிப்பக்கமாகக் கொண்ட பரப்பளவு = (1/2) × 13 × h = 30 ⟹ 13h = 60 ⟹ h = 60 / 13 செமீ.",
+      "explanation_en": "Area = (1/2) × 5 × 12 = 30 cm² = (1/2) × 13 × h ⟹ h = 60 / 13 cm.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 12 / 5 செமீ.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "தவறு. 5 / 12 செமீ.",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "சரி. h = 60 / 13 செமீ.",
+          "en": "Correct. h = 60 / 13 cm."
+        },
+        "D": {
+          "ta": "தவறு. 13 / 6 செமீ.",
+          "en": "Calculation error."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "h = (a × b) / c = (5 × 12) / 13 = 60 / 13 செமீ.",
+        "en": "h = (a × b) / c = 60 / 13 cm."
+      },
+      "revision_fact": {
+        "ta": "60 / 13 cm",
+        "en": "60 / 13 cm"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_047",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு சதுரத்தின் சுற்றளவு மற்றும் வட்டத்தின் சுற்றளவு சமம். சதுரத்தின் பரப்பளவு S மற்றும் வட்டத்தின் பரப்பளவு C எனில், கீழ்க்கண்டவற்றுள் எது சரியானது?",
+        "en": "Perimeters of a square and a circle are equal. If S is square area and C is circle area, which is correct?"
+      },
+      "question_ta": "ஒரு சதுரத்தின் சுற்றளவு மற்றும் வட்டத்தின் சுற்றளவு சமம். சதுரத்தின் பரப்பளவு S மற்றும் வட்டத்தின் பரப்பளவு C எனில், கீழ்க்கண்டவற்றுள் எது சரியானது?",
+      "question_en": "Perimeters of a square and a circle are equal. If S is square area and C is circle area, which is correct?",
+      "options": [
+        "S > C",
+        "C > S",
+        "S = 2C",
+        "S = C"
+      ],
+      "options_ta": [
+        "S > C",
+        "C > S",
+        "S = 2C",
+        "S = C"
+      ],
+      "options_en": [
+        "S > C",
+        "C > S",
+        "S = 2C",
+        "S = C"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "சுற்றளவு 44 செமீ என்க.\nசதுர பக்கம் = 11 செமீ ⟹ சதுரப் பரப்பளவு S = 11² = 121 செமீ².\nவட்ட ஆரம் = 7 செமீ ⟹ வட்டப் பரப்பளவு C = 154 செமீ².\n154 > 121 ⟹ C > S (வட்டத்தின் பரப்பளவு எப்போதும் அதிகம்).",
+        "en": "For perimeter 44: Square area S = 121 cm², Circle area C = 154 cm² ⟹ C > S."
+      },
+      "explanation_ta": "சுற்றளவு 44 செமீ என்க.\nசதுர பக்கம் = 11 செமீ ⟹ சதுரப் பரப்பளவு S = 11² = 121 செமீ².\nவட்ட ஆரம் = 7 செமீ ⟹ வட்டப் பரப்பளவு C = 154 செமீ².\n154 > 121 ⟹ C > S (வட்டத்தின் பரப்பளவு எப்போதும் அதிகம்).",
+      "explanation_en": "For perimeter 44: Square area S = 121 cm², Circle area C = 154 cm² ⟹ C > S.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. S > C (சதுரப் பரப்பளவு அதிகம் எனக் கருதுவது தவறான யூகம்).",
+          "en": "Incorrect claim S > C."
+        },
+        "B": {
+          "ta": "சரி. C > S (வட்டத்தின் பரப்பளவு சதுரத்தை விட அதிகம்).",
+          "en": "Correct. Circle area is larger for same perimeter."
+        },
+        "C": {
+          "ta": "தவறு. S = 2C.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. பரப்பளவுகள் சமமன்று.",
+          "en": "Areas are not equal."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "ஒரே சுற்றளவு கொண்ட வடிவங்களில் வட்டத்தின் பரப்பளவே மிக அதிகம் (C > S).",
+        "en": "For equal perimeter, circle has maximum area among 2D shapes."
+      },
+      "revision_fact": {
+        "ta": "154 > 121 ⟹ C > S",
+        "en": "154 > 121 ⟹ C > S"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_048",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் நீளம் 10% உயர்த்தப்பட்டு, பரப்பளவு மாறாமல் இருக்க அதன் அகலத்தை எத்தனை சதவீதம் குறைக்க வேண்டும்?",
+        "en": "If length of a rectangle is increased by 10%, by what percentage must breadth be reduced to keep area unchanged?"
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் நீளம் 10% உயர்த்தப்பட்டு, பரப்பளவு மாறாமல் இருக்க அதன் அகலத்தை எத்தனை சதவீதம் குறைக்க வேண்டும்?",
+      "question_en": "If length of a rectangle is increased by 10%, by what percentage must breadth be reduced to keep area unchanged?",
+      "options": [
+        "9%",
+        "10%",
+        "11 1/9%",
+        "9 1/11%"
+      ],
+      "options_ta": [
+        "9%",
+        "10%",
+        "11 1/9%",
+        "9 1/11%"
+      ],
+      "options_en": [
+        "9%",
+        "10%",
+        "11 1/9%",
+        "9 1/11%"
+      ],
+      "correct_answer": "D",
+      "answer": "D",
+      "explanation": {
+        "ta": "% குறைவு = [r / (100 + r)] × 100% = [10 / 110] × 100 = (1/11) × 100 = 9 1/11% (அல்லது 9.09%).",
+        "en": "Breadth reduction % = [10 / 110] × 100 = 9 1/11%."
+      },
+      "explanation_ta": "% குறைவு = [r / (100 + r)] × 100% = [10 / 110] × 100 = (1/11) × 100 = 9 1/11% (அல்லது 9.09%).",
+      "explanation_en": "Breadth reduction % = [10 / 110] × 100 = 9 1/11%.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 9%.",
+          "en": "Approximation error."
+        },
+        "B": {
+          "ta": "தவறு. 10% (நேரடி 10% குறைத்தால் பரப்பளவு குறைந்துவிடும்).",
+          "en": "Direct 10% over-reduces area."
+        },
+        "C": {
+          "ta": "தவறு. 100/9 = 11 1/9%.",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "சரி. 100 / 11 = 9 1/11%.",
+          "en": "Correct. 100 / 11 = 9 1/11%."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "பரப்பளவு மாறாமல் இருக்க % குறைவு = [r / (100 + r)] × 100%.",
+        "en": "Reduction % = [r / (100 + r)] × 100%."
+      },
+      "revision_fact": {
+        "ta": "100 / 11 = 9 1/11%",
+        "en": "100 / 11 = 9 1/11%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_049",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Application Problem",
+      "question": {
+        "ta": "ஒரு வட்டத்தின் ஆரம் 100% அதிகரிக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+        "en": "If the radius of a circle is increased by 100%, by what percentage does its area increase?"
+      },
+      "question_ta": "ஒரு வட்டத்தின் ஆரம் 100% அதிகரிக்கப்பட்டால், அதன் பரப்பளவு எத்தனை சதவீதம் அதிகரிக்கும்?",
+      "question_en": "If the radius of a circle is increased by 100%, by what percentage does its area increase?",
+      "options": [
+        "200%",
+        "300%",
+        "400%",
+        "100%"
+      ],
+      "options_ta": [
+        "200%",
+        "300%",
+        "400%",
+        "100%"
+      ],
+      "options_en": [
+        "200%",
+        "300%",
+        "400%",
+        "100%"
+      ],
+      "correct_answer": "B",
+      "answer": "B",
+      "explanation": {
+        "ta": "ஆரம்ப பரப்பளவு = πr².\nபுதிய ஆரம் = 2r ⟹ புதிய பரப்பளவு = π(2r)² = 4πr².\nபரப்பளவு உயர்வு = 4πr² - πr² = 3πr².\nஉயர்வு % = (3πr² / πr²) × 100 = 300%.",
+        "en": "New radius = 2r ⟹ New Area = 4πr² ⟹ Area increase = 4 - 1 = 3 times = 300%."
+      },
+      "explanation_ta": "ஆரம்ப பரப்பளவு = πr².\nபுதிய ஆரம் = 2r ⟹ புதிய பரப்பளவு = π(2r)² = 4πr².\nபரப்பளவு உயர்வு = 4πr² - πr² = 3πr².\nஉயர்வு % = (3πr² / πr²) × 100 = 300%.",
+      "explanation_en": "New radius = 2r ⟹ New Area = 4πr² ⟹ Area increase = 4 - 1 = 3 times = 300%.",
+      "why_not_others": {
+        "A": {
+          "ta": "தவறு. 200%.",
+          "en": "Calculation error."
+        },
+        "B": {
+          "ta": "சரி. 4 மடங்கு பரப்பளவு ⟹ 300% உயர்வு.",
+          "en": "Correct. 4 times area ⟹ 300% increase."
+        },
+        "C": {
+          "ta": "தவறு. 400% புதிய பரப்பளவின் சதவீதம் (உயர்வு % அன்று).",
+          "en": "400% is new area relative to old, not increase %."
+        },
+        "D": {
+          "ta": "தவறு. 100% ஆரத்தின் உயர்வு சதவீதம் மட்டுமே.",
+          "en": "Radius increase %."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "ஆரம் 2 மடங்கு ⟹ பரப்பளவு 4 மடங்கு ⟹ உயர்வு 300%.",
+        "en": "Radius doubled ⟹ Area quadrupled (4×) ⟹ Increase = 300%."
+      },
+      "revision_fact": {
+        "ta": "400% - 100% = 300%",
+        "en": "400% - 100% = 300%"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    },
+    {
+      "id": "AREA_050",
+      "subject": "aptitude",
+      "topic": "aptitude_area",
+      "topic_id": "aptitude_area",
+      "difficulty": "Hard",
+      "question_type": "Multi-Step Calculation",
+      "question": {
+        "ta": "ஒரு செவ்வகத்தின் நீளம் அதன் அகலத்தை விட 6 செமீ அதிகம். அதன் சுற்றளவு 64 செமீ எனில், செவ்வகத்தின் பரப்பளவு என்ன?",
+        "en": "Length of a rectangle is 6 cm more than its breadth. If perimeter is 64 cm, find its area."
+      },
+      "question_ta": "ஒரு செவ்வகத்தின் நீளம் அதன் அகலத்தை விட 6 செமீ அதிகம். அதன் சுற்றளவு 64 செமீ எனில், செவ்வகத்தின் பரப்பளவு என்ன?",
+      "question_en": "Length of a rectangle is 6 cm more than its breadth. If perimeter is 64 cm, find its area.",
+      "options": [
+        "247 செமீ²",
+        "240 செமீ²",
+        "252 செமீ²",
+        "256 செமீ²"
+      ],
+      "options_ta": [
+        "247 செமீ²",
+        "240 செமீ²",
+        "252 செமீ²",
+        "256 செமீ²"
+      ],
+      "options_en": [
+        "247 cm²",
+        "240 cm²",
+        "252 cm²",
+        "256 cm²"
+      ],
+      "correct_answer": "A",
+      "answer": "A",
+      "explanation": {
+        "ta": "l = b + 6.\nசுற்றளவு = 2(l + b) = 64 ⟹ l + b = 32.\n(b + 6) + b = 32 ⟹ 2b = 26 ⟹ b = 13 செமீ.\nநீளம் l = 13 + 6 = 19 செமீ.\nபரப்பளவு = l × b = 19 × 13 = 247 செமீ².",
+        "en": "l + b = 32 and l - b = 6 ⟹ l = 19, b = 13 ⟹ Area = 19 × 13 = 247 cm²."
+      },
+      "explanation_ta": "l = b + 6.\nசுற்றளவு = 2(l + b) = 64 ⟹ l + b = 32.\n(b + 6) + b = 32 ⟹ 2b = 26 ⟹ b = 13 செமீ.\nநீளம் l = 13 + 6 = 19 செமீ.\nபரப்பளவு = l × b = 19 × 13 = 247 செமீ².",
+      "explanation_en": "l + b = 32 and l - b = 6 ⟹ l = 19, b = 13 ⟹ Area = 19 × 13 = 247 cm².",
+      "why_not_others": {
+        "A": {
+          "ta": "சரி. 19 × 13 = 247 செமீ².",
+          "en": "Correct. 19 × 13 = 247 cm²."
+        },
+        "B": {
+          "ta": "தவறு. 20 × 12 = 240 செமீ².",
+          "en": "Calculation error."
+        },
+        "C": {
+          "ta": "தவறு. 252 செமீ².",
+          "en": "Calculation error."
+        },
+        "D": {
+          "ta": "தவறு. 16 × 16 = 256 செமீ² (சதுரப் பரப்பளவு).",
+          "en": "Square area 16²."
+        }
+      },
+      "tnpsc_tip": {
+        "ta": "l = 19 cm, b = 13 cm ⟹ பரப்பளவு = 19 × 13 = 247 செமீ².",
+        "en": "l = 19 cm, b = 13 cm ⟹ Area = 19 × 13 = 247 cm²."
+      },
+      "revision_fact": {
+        "ta": "19 × 13 = 247 cm²",
+        "en": "19 × 13 = 247 cm²"
+      },
+      "source_reference": [
+        "TNPSC Aptitude Syllabus - Area",
+        "Samacheer Kalvi Mathematics Std 6-10"
+      ],
+      "bloom_level": "Apply",
+      "estimated_time_sec": 90,
+      "pyq_similarity": "Standard TNPSC SSLC pattern for Area",
+      "tags": [
+        "aptitude",
+        "aptitude_area",
+        "hard"
+      ],
+      "question_origin": "ORIGINAL_TNPSC_MODEL",
+      "pattern_basis": "VERIFIED_APTITUDE_PYQ_PATTERN",
+      "content_source": "aptitude_notes_aptitude_area"
+    }
+  ]
+}

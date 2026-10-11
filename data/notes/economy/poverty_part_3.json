@@ -1,0 +1,820 @@
+{
+  "meta": {
+    "topic_id": "economy_poverty_part_3",
+    "repository_id": "economy_poverty",
+    "display_title": "Poverty – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Poverty",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "exam_mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Garibi Hatao Fifth Plan",
+    "Jawahar Rozgar Yojana JRY",
+    "Sampoorna Grameen Rozgar SGRY",
+    "MGNREGA 2005 Demand Driven 100 Days",
+    "Integrated Rural Development IRDP 1980",
+    "Swarnajayanti Gram Swarozgar SGSY 1999",
+    "DAY NRLM Aajeevika 2011",
+    "National Social Assistance NSAP 1995",
+    "Article 41 IGNOAPS 200 Rupees",
+    "PMAY Gramin 1.20 Lakh",
+    "Pudhu Vaazhvu PIP Gram Sabha",
+    "Kalaignar Magalir Urimai Thogai 1000",
+    "Universal Basic Income UBI"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Examine the strategic transition from trickle-down growth to direct targeted alleviation and legal wage rights.",
+        "Understand the structural shift in self-employment from individual asset subsidies (IRDP) to women SHG federations (DAY-NRLM)."
+      ],
+      "ta": [
+        "கசிந்து வரும் வளர்ச்சிக் கோட்பாட்டிலிருந்து நேரடி வறுமை ஒழிப்பு மற்றும் சட்டப்பூர்வ வேலை உரிமைகளுக்கான கொள்கை மாற்றத்தைப் புரிந்து கொள்ளுதல்.",
+        "சுயதொழில் திட்டங்களில் தனிநபர் மானிய முறையிலிருந்து (IRDP) மகளிர் சுயஉதவிக் குழுக்களாக (DAY-NRLM) மாறிய கட்டமைப்பு மாற்றத்தை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Recall founding dates of key schemes: JRY (1989), SGSY (1999), MGNREGA (2005), NRLM (2011), NSAP (1995).",
+        "Memorize statutory entitlement norms: MGNREGA 100 days, PMAY-G ₹1.20L, NSAP IGNOAPS ₹200 central share, and TN Magalir Urimai ₹1000/month."
+      ],
+      "ta": [
+        "முக்கிய திட்டங்களின் தொடக்க ஆண்டுகளை நினைவுகூருதல்: JRY (1989), SGSY (1999), MGNREGA (2005), NRLM (2011), NSAP (1995).",
+        "சட்டப்பூர்வ உதவி அளவுகளை நினைவில் நிறுத்துதல்: MGNREGA 100 நாட்கள், PMAY-G ₹1.20 லட்சம், NSAP முதியோர் ஓய்வூதிய மத்திய பங்கு ₹200, தமிழக மகளிர் உரிமைத் தொகை மாதம் ₹1000."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why the Universal Basic Income (UBI) model provides zero exclusion error but creates massive fiscal challenges compared to targeted transfers.",
+        "Appraise the impact of Tamil Nadu's participatory models (Pudhu Vaazhvu PIP and Magalir Urimai Thogai) on women's empowerment and extreme poverty eradication."
+      ],
+      "ta": [
+        "உலகளாவிய அடிப்படை வருமான மாதிரி (UBI) ஏன் விடுபடுதல் பிழையற்றது என்பதையும், ஆனால் இலக்குத் திட்டங்களுடன் ஒப்பிடும்போது அதிக நிதிச் சுமை கொண்டது என்பதையும் ஆய்வு செய்தல்.",
+        "பெண்கள் அதிகாரம் மற்றும் தீவிர வறுமை ஒழிப்பில் தமிழ்நாட்டின் முன்னோடி மாதிரிகளின் (புது வாழ்வு PIP மற்றும் மகளிர் உரிமைத் தொகை) தாக்கத்தை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply programmatic knowledge to solve complex Group 1 match-the-following and chronology questions regarding poverty alleviation schemes."
+      ],
+      "ta": [
+        "வறுமை ஒழிப்புத் திட்டங்களின் காலவரிசை மற்றும் பொருத்துக வினாக்களுக்கு துல்லியமாக விடையளித்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Poverty – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_wage_employment",
+      "title_en": "Evolution of Wage Employment Schemes: RLEGP to MGNREGA",
+      "title_ta": "கூலி வேலைவாய்ப்புத் திட்டங்களின் பரிணாமம்: RLEGP முதல் MGNREGA வரை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_self_employment",
+      "title_en": "Evolution of Self-Employment: IRDP -> SGSY -> DAY-NRLM",
+      "title_ta": "சுயதொழில் திட்டங்களின் பரிணாமம்: IRDP -> SGSY -> DAY-NRLM",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_social_security_transfers",
+      "title_en": "Direct Social Security Transfers: NSAP, PMAY & Basic Income",
+      "title_ta": "நேரடி சமூகப் பாதுகாப்பு மாற்றங்கள்: NSAP, PMAY & அடிப்படை வருமானம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_poverty_models",
+      "title_en": "Tamil Nadu Pioneer Models: Pudhu Vaazhvu & Basic Income",
+      "title_ta": "தமிழ்நாட்டின் முன்னோடி மாதிரிகள்: புது வாழ்வு திட்டம் & மகளிர் உரிமைத் தொகை",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Poverty alleviation programmes in India represent state-directed policy interventions designed to eliminate structural deprivation and vulnerability through three synergistic pillars: wage employment creation, self-employment and micro-enterprise development (SHG-bank linkage), and targeted social safety transfers (pensions, housing, and basic income support).",
+      "ta": "இந்தியாவில் வறுமை ஒழிப்புத் திட்டங்கள் என்பது மூன்று ஒருங்கிணைந்த தூண்கள் மூலம் கட்டமைப்பு வறுமையையும் பாதிப்புத்திறனையும் ஒழிக்க வடிவமைக்கப்பட்ட அரசு தலையீடுகளாகும்: கூலி வேலைவாய்ப்பை உருவாக்குதல், சுயதொழில் மற்றும் குறுந்தொழில் மேம்பாடு (சுயஉதவிக் குழு-வங்கி இணைப்பு), மற்றும் இலக்கு வைக்கப்பட்ட சமூகப் பாதுகாப்பு நிதி மாற்றங்கள் (ஓய்வூதியங்கள், வீடமைப்பு மற்றும் அடிப்படை வருமான ஆதரவு)."
+    },
+    "introduction": {
+      "en": "The philosophy of poverty alleviation in independent India has undergone profound ideological transitions. Early Five Year Plans relied on the 'trickle-down hypothesis', assuming that rapid capital-intensive growth would automatically uplift the poor. However, persistent poverty and structural inequalities compelled a strategic pivot in the 1970s toward direct targeted poverty alleviation encapsulated in Indira Gandhi's historic 'Garibi Hatao' slogan during the Fifth Five Year Plan. Subsequent decades witnessed a shift from fragmented, top-down subsidy schemes (like IRDP) to community-led microfinance federations (DAY-NRLM / SHGs) and legally guaranteed, demand-driven wage entitlements under MGNREGA (2005). Concurrently, social security floors have been erected via the National Social Assistance Programme (NSAP), subsidized housing (PMAY), and pioneering state-level basic income guarantees like Tamil Nadu's Kalaignar Magalir Urimai Thogai. Mastering these programme architectures, institutional shifts, and policy debates is vital for TNPSC Group 1 examination mastery.",
+      "ta": "சுதந்திர இந்தியாவில் வறுமை ஒழிப்புக் கொள்கை ஆழமான கருத்தியல் மாற்றங்களைக் கண்டுள்ளது. ஆரம்பகால ஐந்தாண்டுத் திட்டங்கள் 'கசிந்து வரும் வளர்ச்சி கோட்பாட்டை' (Trickle-down hypothesis) நம்பியிருந்தன; அதாவது மூலதனம் சார்ந்த வேகமான பொருளாதார வளர்ச்சி தானாகவே ஏழைகளை சென்றடையும் என கருதப்பட்டது. ஆனால் தொடர்ந்த வறுமை மற்றும் கட்டமைப்பு சமத்துவமின்மை 1970-களில் ஐந்தாவது ஐந்தாண்டுத் திட்டத்தின் போது இந்திரா காந்தியின் 'வறுமையே வெளியேறு' (Garibi Hatao) என்ற முழக்கத்துடன் நேரடி வறுமை ஒழிப்புத் திட்டங்களை நோக்கி கொள்கையை மாற்றியது. அடுத்தடுத்த தசாப்தங்கள் துண்டுதுண்டான மானியத் திட்டங்களிலிருந்து (IRDP போன்றவை) சமூக வழிநடத்தும் குறுநிதி கூட்டமைப்புகளாகவும் (DAY-NRLM / சுயஉதவிக் குழுக்கள்) மற்றும் மகாத்மா காந்தி ஊரக வேலைவாய்ப்புச் சட்டம் (MGNREGA 2005) மூலம் சட்டப்பூர்வ வேலைவாய்ப்பு உரிமையாகவும் மலர்ந்தன. அதே நேரத்தில் தேசிய சமூக உதவித் திட்டம் (NSAP), பிரதம மந்திரி ஆவாஸ் யோஜனா (PMAY) மற்றும் தமிழ்நாட்டின் கலைஞர் மகளிர் உரிமைத் தொகை போன்ற அடிப்படை வருமானத் திட்டங்கள் மூலம் விரிவான சமூகப் பாதுகாப்பு வழங்கப்படுகிறது. இத்திட்டங்களை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_wage_employment": [
+      {
+        "term_en": "Precursor Schemes: NREP, RLEGP & JRY",
+        "term_ta": "முந்தைய திட்டங்கள்: NREP, RLEGP & ஜவஹர் ரோஜ்கார் யோஜனா",
+        "details_en": "Early wage employment initiatives launched in the 1970s and 1980s: (1) National Rural Employment Programme (NREP, 1980) and Rural Landless Employment Guarantee Programme (RLEGP, 1983) were merged in April 1989 to form Jawahar Rozgar Yojana (JRY), executed directly by Village Panchayats to provide off-season unskilled wage employment; (2) Employment Assurance Scheme (EAS, 1993) targeted drought-prone and tribal blocks; (3) In September 2001, JRY and EAS were amalgamated into Sampoorna Grameen Rozgar Yojana (SGRY), providing wage employment alongside foodgrain compensation.",
+        "details_ta": "1970 மற்றும் 1980-களில் தொடங்கப்பட்ட ஆரம்பகால கூலித் திட்டங்கள்: (1) தேசிய ஊரக வேலைவாய்ப்புத் திட்டம் (NREP, 1980) மற்றும் ஊரக நிலமற்றோர் வேலைவாய்ப்பு உறுதித் திட்டம் (RLEGP, 1983) ஆகியவை 1989 ஏப்ரலில் இணைக்கப்பட்டு ஜவஹர் ரோஜ்கார் யோஜனா (JRY) உருவானது; இது கிராம பஞ்சாயத்துகள் மூலம் நேரடி கூலி வேலை வழங்கியது; (2) வேலைவாய்ப்பு உறுதித் திட்டம் (EAS, 1993) வறட்சி மற்றும் பழங்குடிப் பகுதிகளில் செயல்படுத்தப்பட்டது; (3) செப்டம்பர் 2001-ல் JRY மற்றும் EAS இணைக்கப்பட்டு சம்பூர்ண கிராமீன் ரோஜ்கார் யோஜனா (SGRY) என்ற விரிவான திட்டமாக மாற்றப்பட்டது."
+      },
+      {
+        "term_en": "National Food for Work Programme (NFFWP, 2004)",
+        "term_ta": "வேலைக்கு உணவு தேசியத் திட்டம் (NFFWP, 2004)",
+        "details_en": "Launched in November 2004 across 150 most backward districts as a 100% centrally sponsored scheme providing supplementary wage employment and food security, serving as the immediate pilot laboratory for the nationwide MGNREGA statute.",
+        "details_ta": "நவம்பர் 2004-ல் நாட்டின் 150 மிகவும் பின்தங்கிய மாவட்டங்களில் 100% மத்திய நிதியுதவியுடன் தொடங்கப்பட்டது. இது ஊரகப் பகுதிகளில் கூடுதல் வேலைவாய்ப்பையும் உணவுப் பாதுகாப்பையும் வழங்கி, தேசிய MGNREGA சட்டம் உருவாவதற்கான முன்னோடி ஆய்வகமாகத் திகழ்ந்தது."
+      },
+      {
+        "term_en": "MGNREGA 2005: The Paradigm Shift to Rights-Based Employment",
+        "term_ta": "MGNREGA 2005: சட்டப்பூர்வ வேலைவாய்ப்பு உரிமைக்கான பெரும் மாற்றம்",
+        "details_en": "Enacted in September 2005 and rolled out in February 2006, MGNREGA fundamentally revolutionized rural poverty alleviation by legally guaranteeing 100 days of unskilled manual wage employment per fiscal year to every rural household whose adult members volunteer to do manual work. It transformed discretionary state welfare into a justiciable statutory economic entitlement backed by unemployment allowance mandates.",
+        "details_ta": "செப்டம்பர் 2005-ல் இயற்றப்பட்டு பிப்ரவரி 2006-ல் அமல்படுத்தப்பட்டது. கிராமப்புற குடும்பங்களைச் சேர்ந்த விருப்பமுள்ள வயதுவந்த நபர்களுக்கு நிதியாண்டில் 100 நாட்கள் உடலுழைப்பு சார்ந்த கூலி வேலைவாய்ப்பை சட்டப்பூர்வமாக உறுதி செய்வதன் மூலம் ஊரக வறுமை ஒழிப்பில் பெரும் புரட்சியை ஏற்படுத்தியது. அரசின் கருணைத் திட்டமாக இருந்த வேலைவாய்ப்பை, வேலை தராவிடில் வேலையின்மை உதவித்தொகை பெறக்கூடிய சட்டப்பூர்வ உரிமையாக இது மாற்றியது."
+      }
+    ],
+    "sec_self_employment": [
+      {
+        "term_en": "Integrated Rural Development Programme (IRDP, 1978/1980)",
+        "term_ta": "ஒருங்கிணைந்த ஊரக வளர்ச்சித் திட்டம் (IRDP, 1978/1980)",
+        "details_en": "Piloted in 1978-79 and expanded nationwide on October 2, 1980. IRDP was the flagship self-employment scheme of the Sixth Five Year Plan. It aimed to raise BPL families above the poverty line by providing subsidized credit and income-generating assets (milch cattle, sewing machines, pumpsets). Flaws: heavy bureaucratic corruption, high loan default rates, misallocation of unviable assets, lack of market linkages, and failure to organize the poor collectively.",
+        "details_ta": "1978-79-ல் சோதனை முறையில் தொடங்கப்பட்டு அக்டோபர் 2, 1980-ல் நாடு முழுவதும் விரிவுபடுத்தப்பட்டது. 6-வது ஐந்தாண்டுத் திட்டத்தின் முன்னணி சுயதொழில் திட்டமான இது, வறுமைக் கோட்டிற்கு கீழ் உள்ள குடும்பங்களுக்கு மானியக் கடன் மற்றும் வருமானம் ஈட்டும் சொத்துக்களை (கறவை மாடுகள், தையல் இயந்திரங்கள்) வழங்கி வறுமையிலிருந்து மீட்க முயன்றது. குறைபாடுகள்: அதிகாரத்துவ ஊழல், வாராக்கடன், சந்தை வாய்ப்பின்மை மற்றும் ஏழைகளை குழுக்களாக ஒருங்கிணைக்கத் தவறியமை."
+      },
+      {
+        "term_en": "Allied Allied Programmes: TRYSEM & DWCRA",
+        "term_ta": "துணைத் திட்டங்கள்: TRYSEM மற்றும் DWCRA",
+        "details_en": "(1) TRYSEM (Training of Rural Youth for Self-Employment, 1979): Provided technical skills to rural BPL youth aged 18-35; (2) DWCRA (Development of Women and Children in Rural Areas, 1982-83): Pioneered organizing rural women into groups of 10-15 for collective income generation and child welfare.",
+        "details_ta": "(1) TRYSEM (சுயவேலைவாய்ப்பிற்கான ஊரக இளைஞர் பயிற்சித் திட்டம், 1979): 18-35 வயதுடைய வறுமைக் கோட்டிற்கு கீழ் உள்ள இளைஞர்களுக்கு தொழில்நுட்பத் திறன் பயிற்சி அளித்தது; (2) DWCRA (ஊரகப் பெண்கள் மற்றும் குழந்தைகள் மேம்பாட்டுத் திட்டம், 1982-83): ஊரகப் பெண்களை 10-15 பேர் கொண்ட குழுக்களாக ஒருங்கிணைத்து கூட்டு வருமானம் ஈட்ட வழிகோலியது."
+      },
+      {
+        "term_en": "Swarnajayanti Gram Swarozgar Yojana (SGSY, 1999)",
+        "term_ta": "ஸ்வர்ணஜெயந்தி கிராம சுவராஜ்கார் யோஜனா (SGSY, 1999)",
+        "details_en": "Launched on April 1, 1999, by restructuring and merging six earlier schemes: IRDP, TRYSEM, DWCRA, SITRA (Toolkits), GKY (Ganga Kalyan Yojana), and MWS (Million Wells Scheme). SGSY shifted focus from individual beneficiaries to SELF-HELP GROUPS (SHGs), emphasizing social mobilization, group savings, micro-credit linkage, training, and micro-enterprises.",
+        "details_ta": "ஏப்ரல் 1, 1999 அன்று 6 முந்தைய திட்டங்களை (IRDP, TRYSEM, DWCRA, SITRA, GKY, MWS) ஒன்றிணைத்து தொடங்கப்பட்டது. தனிநபர் பயனாளிகளுக்கு மானியம் வழங்குவதைக் கைவிட்டு, 'சுயஉதவிக் குழுக்கள்' (SHGs) மூலம் சமூக ஒருங்கிணைப்பு, சேமிப்பு, வங்கிக் கடன் இணைப்பு மற்றும் குறுந்தொழில் மேம்பாட்டை மையமாகக் கொண்டது."
+      },
+      {
+        "term_en": "Deendayal Antyodaya Yojana - NRLM (Aajeevika, 2011)",
+        "term_ta": "தீன்தயாள் அந்தியோதயா யோஜனா - NRLM (ஆஜீவிகா, 2011)",
+        "details_en": "Launched in June 2011 by restructuring SGSY following recommendations of the Radhakrishna Committee. Assisted by the World Bank, DAY-NRLM is the world's largest poverty reduction initiative. It organizes at least one woman from every rural poor household into Self-Help Groups (SHGs), federates them at village (VVO) and cluster (CLF) levels, provides Revolving Funds (RF) and Community Investment Funds (CIF), and connects them to universal bank credit at subsidized subvented interest rates (7% with prompt repayment rebate to 4%). Over 10 crore rural women have been organized into 90+ lakh SHGs.",
+        "details_ta": "ராதாகிருஷ்ணா குழுவின் பரிந்துரைகளின்படி SGSY திட்டத்தை மறுசீரமைத்து ஜூன் 2011-ல் உலக வங்கி உதவியுடன் தொடங்கப்பட்டது. இது உலகின் மிகப்பெரிய சமூக வறுமை ஒழிப்புத் திட்டமாகும். ஒவ்வொரு ஊரக ஏழைக் குடும்பத்திலிருந்தும் குறைந்தது ஒரு பெண்ணை சுயஉதவிக் குழுவில் இணைத்து, கிராம மற்றும் வட்டார அளவில் கூட்டமைப்புகளை அமைத்து, சுழல் நிதி மற்றும் சமூக முதலீட்டு நிதி வழங்கி, குறைந்த வட்டியில் (வட்டி மானியத்துடன் 7%, சரியான திருப்பிச் செலுத்தலில் 4%) வங்கிக் கடன்களைப் பெறச் செய்கிறது. 10 கோடிக்கும் மேற்பட்ட ஊரகப் பெண்கள் 90 லட்சத்திற்கும் அதிகமான சுயஉதவிக் குழுக்களில் இணைக்கப்பட்டுள்ளனர்."
+      }
+    ],
+    "sec_social_security_transfers": [
+      {
+        "term_en": "National Social Assistance Programme (NSAP, 1995)",
+        "term_ta": "தேசிய சமூக உதவித் திட்டம் (NSAP, 1995)",
+        "details_en": "Launched on August 15, 1995, representing a significant step towards fulfilling Article 41 of the Directive Principles (Right to Public Assistance in old age, sickness, and disablement). It is a 100% centrally funded welfare scheme comprising 5 sub-schemes: (1) IGNOAPS: Indira Gandhi National Old Age Pension Scheme (₹200/month for age 60-79 BPL; ₹500/month for 80+); (2) IGNWPS: Widow Pension Scheme (for BPL widows aged 40-79); (3) IGNDPS: Disability Pension Scheme (for severe/multiple disability 80%+ aged 18-79); (4) NFBS: National Family Benefit Scheme (one-time ₹20,000 grant upon death of primary BPL breadwinner); (5) Annapurna Scheme: 10 kg free foodgrains per month for senior citizens eligible under IGNOAPS but not receiving cash pension.",
+        "details_ta": "ஆகஸ்ட் 15, 1995-ல் தொடங்கப்பட்டது. அரசு நெறிமுறைக் கோட்பாடுகளின் உறுப்பு 41-ஐ (முதுமை, நோய் மற்றும் ஊனமுற்றோருக்கான அரசு உதவி உரிமை) நிறைவேற்றும் முக்கிய மைல்கல்லாகும். 5 உட்பிரிவுகளைக் கொண்ட 100% மத்திய நிதித் திட்டம்: (1) இந்திரா காந்தி தேசிய முதியோர் ஓய்வூதியம் (IGNOAPS: 60-79 வயது BPL முதியோருக்கு ₹200/மாதம்; 80+ வயதுக்கு ₹500/மாதம்); (2) விதவை ஓய்வூதியம் (IGNWPS: 40-79 வயது BPL விதவைகளுக்கு); (3) ஊனமுற்றோர் ஓய்வூதியம் (IGNDPS: 18-79 வயது 80%+ தீவிர ஊனம்); (4) தேசிய குடும்ப நலத் திட்டம் (NFBS: BPL குடும்ப முதன்மை உழைப்பாளி இறந்தால் ₹20,000 ஒருமுறை உதவி); (5) அன்னபூர்ணா திட்டம்: ஓய்வூதியம் பெறாத தகுதியுள்ள முதியோருக்கு மாதம் 10 கிலோ இலவச உணவு தானியம்."
+      },
+      {
+        "term_en": "Pradhan Mantri Awas Yojana (PMAY-Gramin & Urban)",
+        "term_ta": "பிரதம மந்திரி ஆவாஸ் யோஜனா (PMAY-கிராமப்புறம் & நகர்ப்புறம்)",
+        "details_en": "Restructured from the earlier Indira Awaas Yojana (IAY, 1985) in 2016. PMAY-G provides financial assistance of ₹1.20 lakh in plain areas and ₹1.30 lakh in hilly/difficult/Himalayan states to houseless BPL families identified via SECC 2011, integrated with 90/95 days of unskilled labor wages under MGNREGA and ₹12,000 toilet grant under Swachh Bharat Mission.",
+        "details_ta": "1985-ல் தொடங்கப்பட்ட இந்திரா ஆவாஸ் யோஜனா (IAY) திட்டத்தை மறுசீரமைத்து 2016-ல் தொடங்கப்பட்டது. SECC 2011 கணக்கெடுப்பின்படி வீடற்ற BPL குடும்பங்களுக்கு சமவெளிப் பகுதியில் ₹1.20 லட்சமும், மலைப் பகுதிகளில் ₹1.30 லட்சமும் வழங்குகிறது. இத்துடன் MGNREGA கீழ் 90-95 நாட்கள் கூலி வேலை மற்றும் தூய்மை பாரதத்தின் கீழ் ₹12,000 கழிப்பறை நிதியும் ஒருங்கிணைக்கப்படுகிறது."
+      },
+      {
+        "term_en": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+        "term_ta": "பிஎம்-கிசான் (பிரதம மந்திரி கிசான் சம்மான் நிதி)",
+        "details_en": "Launched in February 2019 (effective December 2018), providing unconditional direct income support of ₹6,000 per year in three equal installments of ₹2,000 directly into the Aadhaar-seeded bank accounts of all landholding farmer families.",
+        "details_ta": "பிப்ரவரி 2019-ல் தொடங்கப்பட்டது. நிலம் வைத்துள்ள அனைத்து விவசாயக் குடும்பங்களுக்கும் ஆண்டுக்கு ₹6,000 நேரடி வருமான ஆதரவாக தலா ₹2,000 வீதம் 3 சம தவணைகளில் ஆதார் இணைக்கப்பட்ட வங்கிக் கணக்குகளில் நேரடியாக வழங்குகிறது."
+      }
+    ],
+    "sec_tamil_nadu_poverty_models": [
+      {
+        "term_en": "Pudhu Vaazhvu Project & TNSRLM (Tamil Nadu State Rural Livelihoods Mission)",
+        "term_ta": "புது வாழ்வு திட்டம் & தமிழ்நாடு மாநில ஊரக வாழ்வாதார இயக்கம் (TNSRLM)",
+        "details_en": "Pioneered by Tamil Nadu with World Bank assistance in 2005 across 26 districts, the Pudhu Vaazhvu Project revolutionized participatory identification of the poorest of the poor through 'Participatory Identification of the Poor' (PIP) by Gram Sabhas, bypassing corrupt bureaucratic lists. It focused on target groups traditionally excluded from microfinance: the disabled, widows, destitute women, and tribal communities. Institutionalized into TNSRLM (Mathi SHG brand), Tamil Nadu leads the country in SHG credit linkage and micro-enterprise sustainability.",
+        "details_ta": "2005-ல் உலக வங்கி உதவியுடன் தமிழ்நாட்டில் 26 மாவட்டங்களில் தொடங்கப்பட்ட புது வாழ்வு திட்டம், ஊழல் நிறைந்த அதிகாரத்துவப் பட்டியல்களைத் தவிர்த்து, கிராம சபைகள் மூலம் 'ஏழைகளை மக்களே அடையாளம் காணும் முறையை' (PIP) வெற்றிகரமாக நடைமுறைப்படுத்தியது. மாற்றுத்திறனாளிகள், ஆதரவற்ற பெண்கள், விதவைகள் மற்றும் பழங்குடியினர் போன்றோரைக் குறிவைத்து அவர்களுக்கான வாழ்வாதாரத்தை உருவாக்கியது. பின்னர் TNSRLM ('மதி' பிராண்ட்) என ஒருங்கிணைக்கப்பட்டு, சுயஉதவிக் குழு வங்கிக் கடன் மற்றும் தொழில்கள் அமைப்பதில் தமிழ்நாடு தேசிய அளவில் முதன்மை மாநிலமாகத் திகழ்கிறது."
+      },
+      {
+        "term_en": "Kalaignar Magalir Urimai Thogai Thittam (Basic Income Model)",
+        "term_ta": "கலைஞர் மகளிர் உரிமைத் தொகைத் திட்டம் (அடிப்படை வருமான மாதிரி)",
+        "details_en": "Launched on September 15, 2023 (Birth Anniversary of C.N. Annadurai), this pioneering social entitlement provides a monthly unconditional basic income of ₹1,000 directly to over 1.15 crore eligible women heads of households across Tamil Nadu. Recognized globally by welfare economists as an empirical realization of Quasi-Universal Basic Income (UBI), it directly empowers women, eliminates extreme poverty, mitigates inflationary distress, and enhances household nutrition and human capital investments.",
+        "details_ta": "பேரறிஞர் அண்ணாவின் பிறந்தநாளான செப்டம்பர் 15, 2023 அன்று தொடங்கப்பட்டது. தமிழ்நாட்டில் உள்ள 1.15 கோடிக்கும் மேற்பட்ட தகுதியுள்ள குடும்பத் தலைவிகளுக்கு மாதம் ₹1,000 நேரடி அடிப்படை வருமானமாக வங்கிக் கணக்கில் வழங்கப்படுகிறது. உலகளாவிய நலப் பொருளாதார வல்லுநர்களால் 'அடிப்படை வருமானக் கொள்கையின்' (UBI) நடைமுறை வெற்றியாகப் போற்றப்படும் இத்திட்டம், பெண்களை அதிகாரப்படுத்துவதோடு, தீவிர வறுமையை ஒழித்து குடும்ப ஊட்டச்சத்து மற்றும் கல்வி முதலீடுகளை உயர்த்துகிறது."
+      },
+      {
+        "term_en": "Kalaignar Kanavu Illam & Special Social Safety Nets",
+        "term_ta": "கலைஞர் கனவு இல்லம் & பிரத்யேக சமூகப் பாதுகாப்பு வலைகள்",
+        "details_en": "A flagship Tamil Nadu state initiative launched in 2024 to construct 8 lakh concrete houses with an allocation of ₹3.50 lakh per unit (substantially higher than central PMAY allocations), aiming to make rural Tamil Nadu completely free of hut dwellings by 2030, alongside Universal PDS (free rice) and the Chief Minister's Breakfast Scheme in primary schools.",
+        "details_ta": "ஊரகத் தமிழ்நாட்டை 2030-க்குள் குடிசைகளற்ற மாநிலமாக மாற்றும் நோக்கில் 8 லட்சம் கான்கிரீட் வீடுகளைக் கட்ட அலகு ஒன்றுக்கு ₹3.50 லட்சம் ஒதுக்கீட்டுடன் (மத்திய PMAY தொகையை விட அதிகம்) 2024-ல் தொடங்கப்பட்ட முன்னணித் திட்டமாகும். இத்துடன் அனைத்து மக்களுக்கும் இலவச அரிசி வழங்கும் உலகளாவிய PDS மற்றும் தொடக்கப் பள்ளிகளில் முதலமைச்சரின் காலை உணவுத் திட்டம் ஆகியவை தமிழ்நாட்டின் சமூகப் பாதுகாப்பை வலுப்படுத்துகின்றன."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_wage_vs_self_employment",
+        "title_en": "Wage Employment (MGNREGA) vs Self-Employment (DAY-NRLM)",
+        "title_ta": "கூலி வேலைவாய்ப்பு (MGNREGA) vs சுயதொழில் வாழ்வாதாரம் (DAY-NRLM) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Wage Employment Programmes (e.g., MGNREGA)",
+          "Self-Employment Programmes (e.g., DAY-NRLM)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "கூலி வேலைவாய்ப்புத் திட்டங்கள் (MGNREGA)",
+          "சுயதொழில் வாழ்வாதாரத் திட்டங்கள் (DAY-NRLM)"
+        ],
+        "rows_en": [
+          [
+            "Core Economic Mechanism",
+            "Direct cash transfer via statutory wage payment for manual physical labor",
+            "Capacity building, collective microfinance, and asset creation via SHG federations"
+          ],
+          [
+            "Target Beneficiary",
+            "Unskilled casual manual labor lacking assets and alternative employment",
+            "Poor households with latent entrepreneurial/labor capability organized into SHGs"
+          ],
+          [
+            "Nature of Entitlement",
+            "Legally guaranteed, justiciable, demand-driven statutory right (100 days)",
+            "Programme-driven target-oriented capacity building and credit facilitation"
+          ],
+          [
+            "Short-Term vs Long-Term",
+            "Immediate short-term consumption smoothing and distress alleviation",
+            "Long-term sustainable self-employment, asset accumulation, and enterprise growth"
+          ],
+          [
+            "Gender Participation",
+            "Over 57% nationally (over 85% in Tamil Nadu)",
+            "Exclusively targeted at women (100% women SHG membership)"
+          ],
+          [
+            "Asset Creation Type",
+            "Community rural infrastructure (water conservation, percolation tanks, roads)",
+            "Household and group micro-enterprises (poultry, tailoring, dairy, retail shops)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை பொருளாதார வழிமுறை",
+            "உடலுழைப்பு வேலைக்கான சட்டப்பூர்வ ஊதியம் மூலம் நேரடி பணப் பரிமாற்றம்",
+            "சுயஉதவிக் குழுக்கள் மூலம் திறன் மேம்பாடு, சேமிப்பு, கடன் மற்றும் சொத்து உருவாக்கம்"
+          ],
+          [
+            "இலக்கு பயனாளிகள்",
+            "சொத்துக்கள் மற்றும் பிற வேலைவாய்ப்பற்ற திறனற்ற கிராமப்புற கூலித் தொழிலாளர்கள்",
+            "சுயதொழில் செய்யும் திறன் கொண்ட ஊரக ஏழைக் குடும்பப் பெண்கள்"
+          ],
+          [
+            "உரிமையின் தன்மை",
+            "சட்டப்பூர்வ உத்தரவாதம் அளிக்கப்பட்ட, கேட்கும்போது தரவேண்டிய உரிமை (100 நாட்கள்)",
+            "திட்ட அடிப்படையிலான திறன் வளர்ப்பு மற்றும் வங்கிக் கடன் வசதி முறை"
+          ],
+          [
+            "குறுகிய vs நீண்டகால பயன்",
+            "உடனடி குறுகிய கால நுகர்வுப் பாதுகாப்பு மற்றும் வறுமைத் துயர் தணிப்பு",
+            "நீண்டகால நிலையான சுயதொழில், சொத்து சேர்ப்பு மற்றும் தொழில்முனைவு வளர்ச்சி"
+          ],
+          [
+            "பெண்கள் பங்கேற்பு விகிதம்",
+            "தேசிய அளவில் 57%-க்கு மேல் (தமிழ்நாட்டில் 85%-க்கு மேல்)",
+            "முழுமையாக பெண்களை மட்டுமே மையமாகக் கொண்டது (100% பெண்கள் குழுக்கள்)"
+          ],
+          [
+            "உருவாக்கப்படும் சொத்து வகை",
+            "ஊரகப் பொதுக் கட்டமைப்புகள் (நீர்நிலைகள், தடுப்பணைகள், ஊரகச் சாலைகள்)",
+            "குடும்ப மற்றும் குழு சார்ந்த குறுந்தொழில்கள் (தையல், பால் பண்ணை, சிறு வணிகம்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_irdp_sgsy_nrlm_evolution",
+        "title_en": "Evolutionary Trajectory: IRDP (1980) vs SGSY (1999) vs DAY-NRLM (2011)",
+        "title_ta": "சுயதொழில் பரிணாம வளர்ச்சி: IRDP (1980) vs SGSY (1999) vs DAY-NRLM (2011)",
+        "headers_en": [
+          "Parameter",
+          "IRDP (1980)",
+          "SGSY (1999)",
+          "DAY-NRLM / Aajeevika (2011)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "IRDP (1980)",
+          "SGSY (1999)",
+          "DAY-NRLM / ஆஜீவிகா (2011)"
+        ],
+        "rows_en": [
+          [
+            "Targeting Architecture",
+            "Individual BPL families identified by block bureaucracy",
+            "Group approach through Self-Help Groups (SHGs)",
+            "Universal social mobilization: all poor households federated into SHGs"
+          ],
+          [
+            "Financial Strategy",
+            "Direct capital subsidy tied to commercial bank credit",
+            "Mix of capital subsidy (up to ₹1.25 lakh) and bank credit",
+            "NO capital asset subsidy; Revolving Funds (RF), CIF, and interest subvention"
+          ],
+          [
+            "Institutional Structure",
+            "Fragmented, scheme-based top-down DRDA administration",
+            "DRDA administered; loose informal SHG clusters",
+            "Professional dedicated autonomous mission structure (SRLM) from state to block"
+          ],
+          [
+            "Primary Failure / Limitation",
+            "Massive asset misallocation, loan defaults, leakage of subsidies",
+            "Uneven SHG quality, inadequate federation structure, rigid subsidy caps",
+            "Overcoming regional disparities, ensuring transition from subsistence to viable MSME"
+          ],
+          [
+            "Global Partner / Backing",
+            "None (purely domestic budget funding)",
+            "None",
+            "World Bank financial assistance and global technical partnerships"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "இலக்கு வைக்கும் முறை",
+            "அரசு அதிகாரிகளால் அடையாளம் காணப்பட்ட தனிநபர் BPL குடும்பங்கள்",
+            "சுயஉதவிக் குழுக்கள் (SHGs) அடிப்படையிலான குழு அணுகுமுறை",
+            "அனைத்து ஏழைக் குடும்பங்களையும் உள்ளடக்கும் உலகளாவிய சமூக ஒருங்கிணைப்பு"
+          ],
+          [
+            "நிதி உத்தி",
+            "வங்கிக் கடனுடன் இணைக்கப்பட்ட நேரடி மூலதன மானியங்கள்",
+            "மூலதன மானியம் (₹1.25 லட்சம் வரை) மற்றும் வங்கிக் கடனின் கலவை",
+            "மூலதன மானியம் கிடையாது; சுழல் நிதி (RF), சமூக முதலீட்டு நிதி (CIF) மற்றும் வட்டி மானியம்"
+          ],
+          [
+            "நிறுவன கட்டமைப்பு",
+            "துண்டுதுண்டான, அரசுத் துறை சார்ந்த DRDA நிர்வாகம்",
+            "DRDA நிர்வாகம்; முறையான கூட்டமைப்பு கட்டமைப்பு இன்மை",
+            "மாநிலம் முதல் வட்டாரம் வரை அர்ப்பணிக்கப்பட்ட தன்னாட்சி இயக்க அமைப்பு (SRLM)"
+          ],
+          [
+            "முதன்மை குறைபாடு",
+            "தவறான சொத்து ஒதுக்கீடு, வாராக்கடன், மானியங்கள் கள்ளச்சந்தைக்குச் செல்லுதல்",
+            "சுயஉதவிக் குழுக்களின் தரமின்மை, பலவீனமான கூட்டமைப்பு, மானியக் கட்டுப்பாடுகள்",
+            "மாநிலங்களுக்கிடையேயான இடைவெளி, வெறும் கூலியிலிருந்து தொழில்முனைவோராக மாற்றுதல்"
+          ],
+          [
+            "சர்வதேசக் கூட்டாளர்",
+            "எதுவுமில்லை (முழுமையான உள்நாட்டு நிதி)",
+            "எதுவுமில்லை",
+            "உலக வங்கி நிதியுதவி மற்றும் சர்வதேச தொழில்நுட்ப ஒத்துழைப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_universal_vs_targeted_assistance",
+        "title_en": "Universal Basic Income (UBI) vs Targeted Cash Transfers",
+        "title_ta": "உலகளாவிய அடிப்படை வருமானம் (UBI) vs இலக்கு நேரடி பணப் பரிமாற்றம் ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Universal Basic Income (UBI)",
+          "Targeted Cash Transfers (e.g., BPL Transfers)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "உலகளாவிய அடிப்படை வருமானம் (UBI)",
+          "இலக்கு நேரடி பணப் பரிமாற்றம் (BPL திட்டங்கள்)"
+        ],
+        "rows_en": [
+          [
+            "Core Principle",
+            "Universal unconditional transfer to every citizen irrespective of wealth",
+            "Transfers restricted strictly to households falling below a defined poverty threshold"
+          ],
+          [
+            "Targeting Errors",
+            "Zero Inclusion and Exclusion errors; everyone receives the floor",
+            "Prone to high Type I (Exclusion of genuine poor) and Type II (Inclusion of rich) errors"
+          ],
+          [
+            "Administrative Cost",
+            "Extremely low; simple direct transfer based on biometric identity",
+            "High administrative burden: beneficiary surveys, verification, grievance redressal"
+          ],
+          [
+            "Fiscal Burden",
+            "Massive fiscal cost (estimated 8-10% of GDP in Economic Survey 2016-17)",
+            "Substantially lower fiscal outgo due to targeted restricted beneficiary pool"
+          ],
+          [
+            "Work Disincentive Risk",
+            "Theoretical risk of discouraging low-wage manual labor participation",
+            "Low risk, but creates a poverty trap disincentivizing crossing the poverty line"
+          ],
+          [
+            "Indian Realization",
+            "Quasi-UBI pilots (e.g., MP pilot 2011; TN Magalir Urimai Thogai 2023)",
+            "NSAP pensions, PM-KISAN, NFSA food rations, subsidized cooking gas (Ujjwala)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை கோட்பாடு",
+            "செல்வத்தைப் பொருட்படுத்தாமல் நாட்டின் அனைத்து குடிமக்களுக்கும் நிபந்தனையற்ற வருமானம்",
+            "வறுமைக் கோட்டிற்கு கீழ் உள்ள தகுதியான குடும்பங்களுக்கு மட்டுமே வழங்கப்படும் உதவி"
+          ],
+          [
+            "இலக்கு பிழைகள்",
+            "விலக்கு மற்றும் சேர்த்தல் பிழைகள் பூஜ்ஜியம்; அனைவருக்கும் தானாகவே கிடைத்துவிடும்",
+            "தகுதியான ஏழைகள் விடுபடுதல் (Type I) மற்றும் தகுதியற்ற பணக்காரர்கள் சேருதல் (Type II) பிழைகள் அதிகம்"
+          ],
+          [
+            "நிர்வாகச் செலவு",
+            "மிகவும் குறைவு; பயோமெட்ரிக் அடையாள அடிப்படையில் நேரடி பணப் பரிமாற்றம்",
+            "அதிக நிர்வாகச் சுமை: பயனாளிகள் கணக்கெடுப்பு, சரிபார்ப்பு, புகார்தீர்வு அமைப்புகள்"
+          ],
+          [
+            "அரசின் நிதிச் சுமை",
+            "மிகப்பெரிய நிதிச் சுமை (பொருளாதார ஆய்வறிக்கை 2016-17 படி GDP-யில் 8-10%)",
+            "குறிப்பிட்ட பயனாளிகள் மட்டுமே என்பதால் அரசின் நிதிச் செலவு குறைவாக இருக்கும்"
+          ],
+          [
+            "வேலை செய்யத் தூண்டாமை",
+            "குறைந்த ஊதிய கூலி வேலைகளுக்கு மக்கள் செல்வதை தடுக்கும் என்ற கருத்து அபாயம் உண்டு",
+            "குறைவு; ஆனால் வறுமைக் கோட்டைத் தாண்டினால் உதவி பறிபோய்விடும் என்ற தயக்கம் வரலாம்"
+          ],
+          [
+            "இந்தியாவில் உதாரணம்",
+            "அரைகுறை UBI (மத்தியப் பிரதேச சோதனைத் திட்டம் 2011; தமிழக மகளிர் உரிமைத் தொகை)",
+            "NSAP ஓய்வூதியங்கள், பிஎம்-கிசான், NFSA இலவச ரேஷன், உஜ்வாலா கேஸ் மானியம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rural_vs_urban_poverty_schemes",
+        "title_en": "Rural vs Urban Poverty Interventions",
+        "title_ta": "கிராமப்புற vs நகர்ப்புற வறுமை ஒழிப்புத் திட்டங்கள் ஒப்பீடு",
+        "headers_en": [
+          "Aspect",
+          "Rural Poverty Interventions",
+          "Urban Poverty Interventions"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "கிராமப்புற வறுமைத் திட்டங்கள்",
+          "நகர்ப்புற வறுமைத் திட்டங்கள்"
+        ],
+        "rows_en": [
+          [
+            "Livelihood Nature",
+            "Agrarian seasonality, landlessness, disguised unemployment, migration",
+            "Informal gig/casual labor, slum habitation, lack of social security, high living costs"
+          ],
+          [
+            "Flagship Livelihood Scheme",
+            "DAY-NRLM (Deendayal Antyodaya Yojana - Rural Livelihoods Mission)",
+            "DAY-NULM (National Urban Livelihoods Mission)"
+          ],
+          [
+            "Wage Employment Guarantee",
+            "MGNREGA legally guarantees 100 days of manual wage employment",
+            "NO nationwide legal urban employment guarantee (state pilots: Rajasthan, Odisha)"
+          ],
+          [
+            "Housing Initiative",
+            "PMAY-Gramin: ₹1.20L (plain) / ₹1.30L (hilly) + MGNREGA labor",
+            "PMAY-Urban: In-situ slum redevelopment, Credit Linked Subsidy Scheme (CLSS)"
+          ],
+          [
+            "Vulnerability Factor",
+            "Monsoon failure, drought, seasonal starvation, indebtedness",
+            "Eviction threats, occupational health hazards, unorganized sector layoffs"
+          ],
+          [
+            "Street Vendors Support",
+            "Handled via agricultural and rural credit societies",
+            "PM SVANidhi: Micro-credit working capital loan (₹10k, ₹20k, ₹50k) for street vendors"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வாழ்வாதாரத் தன்மை",
+            "பருவமழை சார்ந்த விவசாயம், நிலமின்மை, மறைமுக வேலையின்மை, புலம்பெயர்வு",
+            "முறைசாரா தினக்கூலி, சேரி வாழ்விடம், சமூகப் பாதுகாப்பின்மை, அதிக வாழ்க்கைச் செலவு"
+          ],
+          [
+            "முன்னணி வாழ்வாதாரத் திட்டம்",
+            "DAY-NRLM (தீன்தயாள் அந்தியோதயா ஊரக வாழ்வாதார இயக்கம்)",
+            "DAY-NULM (தேசிய நகர்ப்புற வாழ்வாதார இயக்கம்)"
+          ],
+          [
+            "கூலி வேலைவாய்ப்பு உத்தரவாதம்",
+            "MGNREGA சட்டம் 100 நாட்கள் கூலி வேலையை சட்டப்பூர்வமாக உறுதி செய்கிறது",
+            "தேசிய அளவில் நகர்ப்புற வேலைவாய்ப்புச் சட்டம் இல்லை (ராஜஸ்தான், ஒடிசா முன்னோடி முயற்சிகள்)"
+          ],
+          [
+            "வீடமைப்புத் திட்டம்",
+            "PMAY-கிராமப்புறம்: ₹1.20 லட்சம் / ₹1.30 லட்சம் + MGNREGA கூலி வேலை",
+            "PMAY-நகர்ப்புறம்: சேரி மறுமேம்பாடு, வட்டி மானியத்துடன் கூடிய வங்கிக் கடன் (CLSS)"
+          ],
+          [
+            "பாதிப்புக் காரணிகள்",
+            "பருவமழை பொய்த்தல், வறட்சி, பருவ கால பசி பட்டினி, கந்துவட்டிக் கடன்",
+            "சேரி காலி செய்யப்படுதல், தொழில் அபாயங்கள், பணிநீக்கம், திடீர் பணவீக்கம்"
+          ],
+          [
+            "தெருவோர வியாபாரிகள் ஆதரவு",
+            "விவசாய மற்றும் ஊரகக் கடன் சங்கங்கள் மூலம் கையாளப்படுகிறது",
+            "PM ஸ்வாநிதி திட்டம்: தெருவோர வியாபாரிகளுக்கான மூலதனக் கடன் (₹10k, ₹20k, ₹50k)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Poverty Part 3: Poverty Alleviation Programmes & Strategies",
+        "short_label": "Alleviation Strategy",
+        "children": [
+          {
+            "title": "Wage Employment Schemes",
+            "short_label": "Wage Schemes",
+            "children": [
+              {
+                "title": "Historical Precursors (NREP, RLEGP, JRY 1989, SGRY 2001)",
+                "short_label": "Precursors"
+              },
+              {
+                "title": "NFFWP (2004: 150 backward districts)",
+                "short_label": "NFFWP 2004"
+              },
+              {
+                "title": "MGNREGA (2005: 100 Days Legal Right, Justiciable)",
+                "short_label": "MGNREGA 2005"
+              }
+            ]
+          },
+          {
+            "title": "Self-Employment & Livelihoods",
+            "short_label": "Self-Employment",
+            "children": [
+              {
+                "title": "IRDP (1980: Asset subsidy, high leakage/default)",
+                "short_label": "IRDP 1980"
+              },
+              {
+                "title": "SGSY (1999: Shift to SHGs, 6 schemes merged)",
+                "short_label": "SGSY 1999"
+              },
+              {
+                "title": "DAY-NRLM (2011: Universal SHGs, RF, CIF, 10 Cr Women)",
+                "short_label": "DAY-NRLM"
+              }
+            ]
+          },
+          {
+            "title": "Social Security & Cash Transfers",
+            "short_label": "Social Transfers",
+            "children": [
+              {
+                "title": "NSAP (1995: Article 41, IGNOAPS, IGNWPS, IGNDPS, NFBS, Annapurna)",
+                "short_label": "NSAP 1995"
+              },
+              {
+                "title": "PMAY (Gramin ₹1.2L & Urban) and PM-KISAN (₹6,000/year)",
+                "short_label": "PMAY & KISAN"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu Pioneer Models",
+            "short_label": "Tamil Nadu Models",
+            "children": [
+              {
+                "title": "Pudhu Vaazhvu Project (2005: Participatory Identification by Gram Sabha)",
+                "short_label": "Pudhu Vaazhvu"
+              },
+              {
+                "title": "Kalaignar Magalir Urimai Thogai (2023: ₹1000 Basic Income, 1.15 Cr Women)",
+                "short_label": "Magalir Urimai"
+              },
+              {
+                "title": "Kalaignar Kanavu Illam (2024: Hut-free TN by 2030, ₹3.5L)",
+                "short_label": "Kanavu Illam"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Garibi Hatao Plan Association Trap: Slogan vs Formal Plan Document",
+        "points": {
+          "en": [
+            "TRAP: Misidentifying the Five Year Plan associated with the 'Garibi Hatao' (Eradicate Poverty) initiative.",
+            "CORRECT FACT: The political slogan 'Garibi Hatao' was coined by Prime Minister Indira Gandhi during the 1971 parliamentary election campaign (during the Fourth Plan period). However, it was formally incorporated as an EXPLICIT NATIONAL PLANNING OBJECTIVE in the FIFTH FIVE YEAR PLAN (1974-1979) alongside 'Growth with Social Justice'.",
+            "WHY CANDIDATES FAIL: Conflating the 1971 election slogan date with the formal 5th FYP plan objective adoption."
+          ],
+          "ta": [
+            "பொறி: 'வறுமையே வெளியேறு' (Garibi Hatao) முழக்கம் எந்த ஐந்தாண்டுத் திட்டத்துடன் தொடர்புடையது என்பதில் தவறான விடையைத் தேர்வு செய்வது.",
+            "சரியான உண்மை: 'Garibi Hatao' என்ற தேர்தல் முழக்கம் இந்திரா காந்தியால் 1971 நாடாளுமன்றத் தேர்தலின் போது (4-வது ஐந்தாண்டுத் திட்ட காலம்) முன்வைக்கப்பட்டது. ஆனால் அது திட்ட ஆவணத்தில் அதிகாரப்பூர்வ தேசியக் குறிக்கோளாக ஏற்றுக்கொள்ளப்பட்டது 'ஐந்தாவது ஐந்தாண்டுத் திட்டத்தில்' (1974-1979) ஆகும் ('சமூக நீதியுடன் கூடிய வளர்ச்சி').",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1971-ல் முழக்கம் முன்வைக்கப்பட்ட ஆண்டையும், 5-வது திட்டத்தில் அது குறிக்கோளாக சேர்க்கப்பட்டதையும் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "IRDP vs SGSY vs DAY-NRLM Restructuring Sequence Trap",
+        "points": {
+          "en": [
+            "TRAP: Assuming SGSY and DAY-NRLM are independent parallel schemes currently operating concurrently.",
+            "CORRECT FACT: They represent a LINEAR EVOLUTIONARY SUCCESSION. IRDP (1980) was merged and replaced by SGSY in April 1999 (merging 6 schemes). In June 2011, SGSY was fundamentally restructured and renamed National Rural Livelihoods Mission (NRLM / Aajeevika), which was later re-christened DAY-NRLM. SGSY and IRDP DO NOT EXIST TODAY.",
+            "WHY CANDIDATES FAIL: Treating historical predecessor schemes as currently existing separate programmes."
+          ],
+          "ta": [
+            "பொறி: IRDP, SGSY மற்றும் DAY-NRLM ஆகியவை தற்போது ஒரே நேரத்தில் செயல்படும் தனித்தனி திட்டங்கள் என நினைப்பது.",
+            "சரியான உண்மை: இவை ஒன்றன்பின் ஒன்றாக உருவான தொடர் பரிணாம வளர்ச்சியாகும்! IRDP (1980) உள்ளிட்ட 6 திட்டங்களை இணைத்து ஏப்ரல் 1999-ல் SGSY உருவாக்கப்பட்டது. ஜூன் 2011-ல் SGSY மறுசீரமைக்கப்பட்டு NRLM (ஆஜீவிகா / DAY-NRLM) எனப் பெயர் மாற்றம் செய்யப்பட்டது. இன்று IRDP அல்லது SGSY என்ற திட்டங்கள் செயல்பாட்டில் இல்லை!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: முந்தைய திட்டங்களின் பெயர்கள் இன்றும் தனித்தனியாக இயங்குவதாக தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "NSAP Pension Age & Central Amount Trap: ₹200 vs State Top-Ups",
+        "points": {
+          "en": [
+            "TRAP: Believing the Central Government directly pays ₹1000 or ₹1500 per month under Indira Gandhi National Old Age Pension (IGNOAPS).",
+            "CORRECT FACT: The Central Government's statutory contribution under IGNOAPS is ONLY ₹200 per month for BPL seniors aged 60-79, and ₹500 per month for seniors aged 80+. Any higher amount received by beneficiaries (e.g., ₹1,000 or ₹1,200 in Tamil Nadu) is funded through STATE GOVERNMENT TOP-UPS, not central funds.",
+            "WHY CANDIDATES FAIL: Confusing their own state's generous monthly disbursement with the statutory central NSAP contribution."
+          ],
+          "ta": [
+            "பொறி: இந்திரா காந்தி தேசிய முதியோர் ஓய்வூதியத் திட்டத்தின் (IGNOAPS) கீழ் மத்திய அரசு மாதம் ₹1000 அல்லது ₹1500 நேரடியாக வழங்குகிறது என நினைப்பது.",
+            "சரியான உண்மை: IGNOAPS கீழ் மத்திய அரசின் சட்டப்பூர்வ மானியப் பங்கு 60-79 வயதுடைய BPL முதியோருக்கு மாதம் வெறும் '₹200' மட்டுமே; 80 வயதுக்கு மேற்பட்டோருக்கு '₹500' மட்டுமே! தமிழ்நாட்டில் முதியோர்கள் பெறும் ₹1,000 அல்லது ₹1,200 என்பது 'மாநில அரசு தனது சொந்த நிதியிலிருந்து வழங்கும் கூடுதல் தொகையாகும்'.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தங்கள் மாநிலத்தில் வழங்கப்படும் முழுத் தொகையையும் மத்திய அரசே வழங்குவதாகத் தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "MGNREGA Demand-Driven Legal Guarantee Trap: Rights-Based vs Discretionary Allocation",
+        "points": {
+          "en": [
+            "TRAP: Treating MGNREGA as a typical government grant scheme where work is distributed according to bureaucratic targets.",
+            "CORRECT FACT: MGNREGA is a DEMAND-DRIVEN STATUTORY RIGHT. The government cannot refuse work. If a registered job card holder applies for work, the Gram Panchayat is legally obligated to provide employment within 15 days within a 5 km radius. If the state fails to provide work within 15 days, it is legally bound to pay an UNEMPLOYMENT ALLOWANCE under Section 7 of the Act.",
+            "WHY CANDIDATES FAIL: Overlooking the justiciable, rights-based architecture of MGNREGA which separates it from all pre-2005 schemes."
+          ],
+          "ta": [
+            "பொறி: MGNREGA-வை அரசு அதிகாரிகள் தங்கள் விருப்பப்படி வேலை தரும் வழக்கமான மானியத் திட்டம் என நினைப்பது.",
+            "சரியான உண்மை: MGNREGA என்பது 'கேட்கும்போது தரவேண்டிய சட்டப்பூர்வ உரிமை' (Demand-driven statutory right). வேலை அட்டை வைத்துள்ள ஒருவர் வேலை கேட்டால், கிராம பஞ்சாயத்து 15 நாட்களுக்குள் 5 கி.மீ சுற்றளவிற்குள் வேலை தர வேண்டும். அவ்வாறு 15 நாட்களுக்குள் வேலை தராவிட்டால் சட்டப்பிரிவு 7-ன் கீழ் அரசு 'வேலையின்மை உதவித்தொகை' வழங்க வேண்டும்!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2005-க்கு முந்தைய திட்டங்களுக்கும் MGNREGA-வின் சட்டப்பூர்வ உரிமைக்கும் உள்ள அடிப்படை வேறுபாட்டை அறியாமை."
+          ]
+        }
+      },
+      {
+        "title": "Tamil Nadu PIP Methodology Trap: Gram Sabha vs Bureaucratic Survey",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Pudhu Vaazhvu Project in Tamil Nadu relied on standard BPL ration card survey lists.",
+            "CORRECT FACT: Pudhu Vaazhvu completely discarded government BPL lists due to rampant exclusion and inclusion errors. It introduced 'Participatory Identification of the Poor' (PIP), a community-driven exercise where the ENTIRE VILLAGE GRAM SABHA collectively ranks and validates households into Very Poor, Poor, Middle, and Rich in public meetings.",
+            "WHY CANDIDATES FAIL: Underestimating Tamil Nadu's institutional innovation in decentralized community wealth ranking."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாட்டின் புது வாழ்வு திட்டம் வழக்கமான அரசு BPL குடும்ப அட்டை பட்டியல்களை அடிப்படையாகக் கொண்டது என நினைப்பது.",
+            "சரியான உண்மை: அரசு BPL பட்டியல்களில் உள்ள தவறுகளை நீக்க புது வாழ்வு திட்டம் அவற்றை முற்றிலுமாக நிராகரித்தது. அதற்குப் பதிலாக 'மக்களே ஏழைகளை அடையாளம் காணும் முறையை' (PIP) அறிமுகப்படுத்தியது. இதில் ஒட்டுமொத்த கிராம சபையும் கூடி, பொதுவெளியில் குடும்பங்களை மிக ஏழைகள், ஏழைகள், நடுத்தர வர்க்கம் என வெளிப்படையாக வகைப்படுத்தியது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தமிழ்நாட்டின் சமூகத் திட்டங்களில் கிராம சபை மேற்கொண்ட இந்த முன்னோடிப் புரட்சியை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Universal Basic Income (UBI) vs Targeted Transfers Trap: Unconditionality and Universality",
+        "points": {
+          "en": [
+            "TRAP: Defining Universal Basic Income (UBI) as a cash transfer made only to families living below the poverty line.",
+            "CORRECT FACT: By scientific definition, UBI possesses THREE NON-NEGOTIABLE ATTRIBUTES: (1) Universality (paid to EVERY citizen regardless of income or wealth); (2) Unconditionality (no work requirements or spending conditions); (3) Individuality (paid to individual citizens, not to households). A transfer given only to BPL families is a TARGETED CASH TRANSFER, NOT UBI.",
+            "WHY CANDIDATES FAIL: Using the prestigious acronym 'UBI' loosely for any targeted social cash transfer program."
+          ],
+          "ta": [
+            "பொறி: உலகளாவிய அடிப்படை வருமானம் (UBI) என்பது வறுமைக் கோட்டிற்கு கீழ் உள்ள ஏழைக் குடும்பங்களுக்கு மட்டுமே தரப்படும் பண உதவி என நினைப்பது.",
+            "சரியான உண்மை: அறிவியல் வரையறைப்படி UBI மூன்று கட்டாயக் கூறுகளைக் கொண்டது: (1) உலகளாவிய தன்மை (வருமானத்தைப் பொருட்படுத்தாமல் அனைத்து குடிமக்களுக்கும்); (2) நிபந்தனையற்ற தன்மை (எந்த வேலையையோ செலவையோ கட்டாயப்படுத்தக் கூடாது); (3) தனிநபர் தன்மை (குடும்பத்திற்கு அல்லாமல் தனிநபருக்குத் தருவது). BPL குடும்பங்களுக்கு மட்டுமே தரப்படும் உதவி என்பது 'இலக்கு வைக்கப்பட்ட பண உதவி' மட்டுமே, UBI அல்ல!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஏழைகளுக்கு வழங்கப்படும் எந்தவொரு பண உதவியையும் தவறாக 'UBI' எனப் பெயரிட்டுக் குறிப்பிடுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Indira Gandhi coined the political slogan 'Garibi Hatao' in 1971; it became an explicit objective in the 5th FYP (1974-79).",
+        "Jawahar Rozgar Yojana (JRY) was formed in April 1989 by merging NREP (1980) and RLEGP (1983).",
+        "Sampoorna Grameen Rozgar Yojana (SGRY) was formed in September 2001 by merging JRY and EAS.",
+        "MGNREGA was enacted in September 2005 and rolled out in February 2006, guaranteeing 100 days of wage labor.",
+        "Integrated Rural Development Programme (IRDP) was launched nationwide on October 2, 1980 (Sixth Plan).",
+        "Swarnajayanti Gram Swarozgar Yojana (SGSY) was launched on April 1, 1999, restructuring 6 earlier self-employment schemes.",
+        "DAY-NRLM (Aajeevika) was launched in June 2011 to organize rural women into Self-Help Groups (SHGs).",
+        "National Social Assistance Programme (NSAP) was launched on August 15, 1995, under Article 41 of the Constitution.",
+        "Under NSAP IGNOAPS, Central Government provides ₹200/month (age 60-79) and ₹500/month (age 80+) to BPL seniors.",
+        "PMAY-Gramin provides ₹1.20 lakh in plain areas and ₹1.30 lakh in hilly areas, restructured from Indira Awaas Yojana in 2016.",
+        "Tamil Nadu launched the Pudhu Vaazhvu Project in 2005 pioneering Participatory Identification of the Poor (PIP).",
+        "Kalaignar Magalir Urimai Thogai Thittam was launched on September 15, 2023, providing ₹1,000 monthly basic income to 1.15+ crore women."
+      ],
+      "ta": [
+        "இந்திரா காந்தி 'Garibi Hatao' முழக்கத்தை 1971-ல் முன்வைத்தார்; இது 5-வது ஐந்தாண்டுத் திட்டத்தில் (1974-79) குறிக்கோளாக ஏற்கப்பட்டது.",
+        "ஜவஹர் ரோஜ்கார் யோஜனா (JRY) NREP (1980) மற்றும் RLEGP (1983) ஆகியவற்றை இணைத்து 1989 ஏப்ரலில் உருவானது.",
+        "சம்பூர்ண கிராமீன் ரோஜ்கார் யோஜனா (SGRY) 2001 செப்டம்பரில் JRY மற்றும் EAS-ஐ இணைத்து தொடங்கப்பட்டது.",
+        "MGNREGA சட்டம் செப்டம்பர் 2005-ல் இயற்றப்பட்டு பிப்ரவரி 2006-ல் 100 நாட்கள் சட்டப்பூர்வ வேலை உரிமையுடன் நடைமுறைக்கு வந்தது.",
+        "ஒருங்கிணைந்த ஊரக வளர்ச்சித் திட்டம் (IRDP) அக்டோபர் 2, 1980-ல் 6-வது திட்டத்தின் போது நாடு முழுவதும் தொடங்கப்பட்டது.",
+        "ஸ்வர்ணஜெயந்தி கிராம சுவராஜ்கார் யோஜனா (SGSY) 6 முந்தைய திட்டங்களை இணைத்து ஏப்ரல் 1, 1999 அன்று தொடங்கப்பட்டது.",
+        "DAY-NRLM (ஆஜீவிகா) ஊரகப் பெண்களை சுயஉதவிக் குழுக்களில் இணைக்க ஜூன் 2011-ல் தொடங்கப்பட்டது.",
+        "தேசிய சமூக உதவித் திட்டம் (NSAP) அரசியலமைப்பு உறுப்பு 41-ன் கீழ் ஆகஸ்ட் 15, 1995 அன்று தொடங்கப்பட்டது.",
+        "NSAP முதியோர் ஓய்வூதியத்தில் மத்திய அரசு 60-79 வயதுக்கு ₹200 மற்றும் 80+ வயதுக்கு ₹500 வழங்குகிறது.",
+        "PMAY-கிராமப்புறம் திட்டம் சமவெளிப் பகுதிக்கு ₹1.20 லட்சமும் மலைப் பகுதிக்கு ₹1.30 லட்சமும் வழங்குகிறது (2016-ல் IAY மாற்றப்பட்டது).",
+        "தமிழ்நாடு 2005-ல் புது வாழ்வு திட்டத்தைத் தொடங்கி 'மக்களே ஏழைகளை அடையாளம் காணும் முறையை' (PIP) உருவாக்கியது.",
+        "கலைஞர் மகளிர் உரிமைத் தொகை செப்டம்பர் 15, 2023-ல் தொடங்கப்பட்டு 1.15 கோடிக்கும் மேற்பட்ட பெண்களுக்கு மாதம் ₹1,000 வழங்குகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Poverty strategy shift: Trickle-Down (1st-3rd FYP) -> Direct Targeted Intervention (Garibi Hatao, 5th FYP) -> Rights-Based Entitlements (MGNREGA).",
+        "Wage trajectory: NREP (1980) + RLEGP (1983) -> JRY (1989) -> SGRY (2001) -> MGNREGA (2005).",
+        "MGNREGA guarantees 100 days of unskilled work per rural household per year, backed by statutory unemployment allowance.",
+        "Self-employment trajectory: IRDP (1980) -> SGSY (1999) -> DAY-NRLM / Aajeevika (2011).",
+        "DAY-NRLM focuses on women's SHGs, Revolving Funds, Community Investment Funds, and 7% interest subvention (4% on prompt repayment).",
+        "NSAP (1995) operationalizes Article 41: IGNOAPS (old age), IGNWPS (widow), IGNDPS (disability), NFBS (family benefit), Annapurna (free foodgrain).",
+        "Central IGNOAPS contribution is ₹200 (60-79) and ₹500 (80+); remaining pension amount is funded by State Government top-ups.",
+        "PMAY provides ₹1.20L / ₹1.30L linked with MGNREGA labor wages and SBM toilet grants.",
+        "Tamil Nadu's Pudhu Vaazhvu Project (2005) pioneered Participatory Identification of the Poor (PIP) by Gram Sabhas.",
+        "Kalaignar Magalir Urimai Thogai (2023) provides ₹1000/month basic income to 1.15 crore women, functioning as Quasi-UBI."
+      ],
+      "ta": [
+        "வறுமை ஒழிப்பு மாற்றம்: கசிந்து வரும் கோட்பாடு (1-3 திட்டங்கள்) -> நேரடி தலையீடு (Garibi Hatao, 5-வது திட்டம்) -> சட்டப்பூர்வ உரிமைகள் (MGNREGA).",
+        "கூலி வேலை வளர்ச்சி: NREP (1980) + RLEGP (1983) -> JRY (1989) -> SGRY (2001) -> MGNREGA (2005).",
+        "MGNREGA நிதியாண்டில் 100 நாட்கள் ஊரகக் கூலி வேலையை சட்டப்பூர்வமாக உறுதி செய்கிறது; வேலை தராவிடில் வேலையின்மை உதவித்தொகை உண்டு.",
+        "சுயதொழில் வளர்ச்சி: IRDP (1980) -> SGSY (1999) -> DAY-NRLM / ஆஜீவிகா (2011).",
+        "DAY-NRLM பெண்கள் சுயஉதவிக் குழுக்கள், சுழல் நிதி, சமூக முதலீட்டு நிதி மற்றும் 7% வட்டி மானியத்தை (சரியாக செலுத்தினால் 4%) வழங்குகிறது.",
+        "NSAP (1995) உறுப்பு 41-ஐ செயல்படுத்துகிறது: IGNOAPS (முதியோர்), IGNWPS (விதவை), IGNDPS (ஊனம்), NFBS (குடும்ப நலன்), அன்னபூர்ணா.",
+        "மத்திய அரசின் முதியோர் ஓய்வூதியப் பங்கு ₹200 மற்றும் ₹500 மட்டுமே; எஞ்சிய தொகையை மாநில அரசுகளே கூடுதல் நிதியாக வழங்குகின்றன.",
+        "PMAY திட்டம் ₹1.20 லட்சம் / ₹1.30 லட்சம் வீடமைப்பு நிதியை MGNREGA கூலி மற்றும் தூய்மை பாரத கழிப்பறை நிதியுடன் இணைக்கிறது.",
+        "தமிழ்நாட்டின் புது வாழ்வு திட்டம் (2005) கிராம சபை மூலம் மக்களே ஏழைகளை அடையாளம் காணும் முறையை (PIP) உருவாக்கியது.",
+        "கலைஞர் மகளிர் உரிமைத் தொகை (2023) 1.15 கோடி பெண்களுக்கு மாதம் ₹1000 அடிப்படை வருமானம் வழங்கி அரைகுறை UBI-யாக செயல்படுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pov_301",
+        "front_en": "During which Five Year Plan was the eradication of poverty formally incorporated as an explicit national planning objective?",
+        "front_ta": "எந்த ஐந்தாண்டுத் திட்டத்தின் போது வறுமை ஒழிப்பு அதிகாரப்பூர்வ தேசியக் குறிக்கோளாக சேர்க்கப்பட்டது?",
+        "back_en": "Fifth Five Year Plan (1974-1979) under the objective of 'Garibi Hatao' (Removal of Poverty) and Growth with Social Justice.",
+        "back_ta": "ஐந்தாவது ஐந்தாண்டுத் திட்டம் (1974-1979) 'வறுமையே வெளியேறு' (Garibi Hatao) மற்றும் சமூக நீதியுடன் கூடிய வளர்ச்சி என்ற குறிக்கோளின் கீழ்."
+      },
+      {
+        "id": "rc_pov_302",
+        "front_en": "Which two precursor rural employment programs were merged in April 1989 to form Jawahar Rozgar Yojana (JRY)?",
+        "front_ta": "1989 ஏப்ரலில் ஜவஹர் ரோஜ்கார் யோஜனா (JRY) உருவாவதற்கு இணைக்கப்பட்ட இரண்டு முந்தைய திட்டங்கள் யாவை?",
+        "back_en": "National Rural Employment Programme (NREP, 1980) and Rural Landless Employment Guarantee Programme (RLEGP, 1983).",
+        "back_ta": "தேசிய ஊரக வேலைவாய்ப்புத் திட்டம் (NREP, 1980) மற்றும் ஊரக நிலமற்றோர் வேலைவாய்ப்பு உறுதித் திட்டம் (RLEGP, 1983)."
+      },
+      {
+        "id": "rc_pov_303",
+        "front_en": "Under MGNREGA, within how many days must employment be provided to an applicant, failing which unemployment allowance is due?",
+        "front_ta": "MGNREGA சட்டத்தின் கீழ் விண்ணப்பித்த எத்தனை நாட்களுக்குள் வேலை தர வேண்டும், தவறினால் வேலையின்மை உதவித்தொகை வழங்கப்பட வேண்டும்?",
+        "back_en": "Within 15 days of application, within a 5 km radius of the applicant's residence.",
+        "back_ta": "விண்ணப்பித்த 15 நாட்களுக்குள், விண்ணப்பதாரரின் குடியிருப்புக்கு 5 கி.மீ சுற்றளவிற்குள்."
+      },
+      {
+        "id": "rc_pov_304",
+        "front_en": "What was the flagship self-employment scheme of the Sixth Plan launched nationwide on October 2, 1980?",
+        "front_ta": "6-வது திட்டத்தில் அக்டோபர் 2, 1980 அன்று நாடு முழுவதும் தொடங்கப்பட்ட முதன்மை சுயதொழில் திட்டம் எது?",
+        "back_en": "Integrated Rural Development Programme (IRDP).",
+        "back_ta": "ஒருங்கிணைந்த ஊரக வளர்ச்சித் திட்டம் (IRDP)."
+      },
+      {
+        "id": "rc_pov_305",
+        "front_en": "Which major scheme restructured and replaced SGSY in June 2011 following the Radhakrishna Committee recommendations?",
+        "front_ta": "ராதாகிருஷ்ணா குழு பரிந்துரைகளின்படி ஜூன் 2011-ல் SGSY திட்டத்தை மறுசீரமைத்து உருவான முதன்மை திட்டம் எது?",
+        "back_en": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM / Aajeevika).",
+        "back_ta": "தீன்தயாள் அந்தியோதயா யோஜனா - தேசிய ஊரக வாழ்வாதார இயக்கம் (DAY-NRLM / ஆஜீவிகா)."
+      },
+      {
+        "id": "rc_pov_306",
+        "front_en": "Which constitutional directive does the National Social Assistance Programme (NSAP, 1995) operationalize?",
+        "front_ta": "தேசிய சமூக உதவித் திட்டம் (NSAP, 1995) அரசியலமைப்பின் எந்த வழிகாட்டு நெறிமுறையைச் செயல்படுத்துகிறது?",
+        "back_en": "Article 41 of the Directive Principles of State Policy (Right to public assistance in old age, sickness, and disablement).",
+        "back_ta": "அரசு நெறிமுறைக் கோட்பாடுகளின் உறுப்பு 41 (முதுமை, நோய் மற்றும் ஊனமுற்ற நிலைகளில் அரசு உதவி உரிமை)."
+      },
+      {
+        "id": "rc_pov_307",
+        "front_en": "What is the Central Government's statutory monthly contribution under IGNOAPS for BPL elderly aged 60-79?",
+        "front_ta": "60-79 வயதுடைய BPL முதியோருக்கு IGNOAPS கீழ் மத்திய அரசின் சட்டப்பூர்வ மாதாந்திர பங்கு என்ன?",
+        "back_en": "₹200 per month (increased to ₹500 per month for individuals aged 80 years and above).",
+        "back_ta": "மாதம் ₹200 (80 வயது மற்றும் அதற்கு மேற்பட்டோருக்கு மாதம் ₹500 ஆக உயர்த்தப்படுகிறது)."
+      },
+      {
+        "id": "rc_pov_308",
+        "front_en": "What is the financial grant provided per unit under Pradhan Mantri Awas Yojana - Gramin (PMAY-G) in plain areas?",
+        "front_ta": "PMAY-கிராமப்புறம் திட்டத்தின் கீழ் சமவெளிப் பகுதிகளில் வீடு கட்டுவதற்கு வழங்கப்படும் நிதி உதவி என்ன?",
+        "back_en": "₹1.20 lakh per unit (₹1.30 lakh in hilly/difficult/Himalayan states).",
+        "back_ta": "வீடு ஒன்றுக்கு ₹1.20 லட்சம் (மலைப் பகுதிகளில் ₹1.30 லட்சம்)."
+      },
+      {
+        "id": "rc_pov_309",
+        "front_en": "What decentralized methodology did Tamil Nadu's Pudhu Vaazhvu Project pioneer to identify the poor?",
+        "front_ta": "ஏழைகளை அடையாளம் காண தமிழ்நாட்டின் புது வாழ்வு திட்டம் உருவாக்கிய பரவலாக்கப்பட்ட முறை எது?",
+        "back_en": "Participatory Identification of the Poor (PIP) conducted directly and validated by the village Gram Sabha.",
+        "back_ta": "கிராம சபை மூலம் மக்களே நேரடியாக பங்கேற்று சரிபார்க்கும் 'ஏழைகளை அடையாளம் காணும் முறை' (PIP)."
+      },
+      {
+        "id": "rc_pov_310",
+        "front_en": "When was Tamil Nadu's flagship Kalaignar Magalir Urimai Thogai Thittam launched and what is the monthly entitlement?",
+        "front_ta": "தமிழ்நாட்டின் கலைஞர் மகளிர் உரிமைத் தொகைத் திட்டம் எப்போது தொடங்கப்பட்டது மற்றும் மாதாந்திர உதவித்தொகை என்ன?",
+        "back_en": "Launched on September 15, 2023, providing an unconditional monthly basic income of ₹1,000 to over 1.15 crore women.",
+        "back_ta": "செப்டம்பர் 15, 2023 அன்று தொடங்கப்பட்டது; 1.15 கோடிக்கும் மேற்பட்ட பெண்களுக்கு மாதம் ₹1,000 அடிப்படை வருமானம் வழங்கப்படுகிறது."
+      }
+    ]
+  }
+}

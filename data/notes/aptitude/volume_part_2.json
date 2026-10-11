@@ -1,0 +1,280 @@
+{
+  "topic": "volume_part_2",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Volume Part 2 — Sphere, Hemisphere, Recasting, Capacity & Ratios",
+  "title_ta": "கனஅளவு பகுதி 2 — கோளம், அரைக்கோளம், உருக்குதல், கொள்ளளவு மற்றும் விகிதங்கள்",
+
+  "definition": {
+    "en": "Part 2 covers spherical shapes, volume conservation during melting and recasting, liquid capacity conversions (litres vs cm³/m³), ratio of volumes, and volume percentage changes.",
+    "ta": "பகுதி 2-ல் கோளம், அரைக்கோளம், உருக்கி புதிய வடிவம் அமைத்தல், திரவக் கொள்ளளவு (லிட்டர் ↔ கன செ.மீ/கன மீ), கனஅளவுகளின் விகிதம் மற்றும் சதவீத மாற்றங்கள் ஆகியவை அடங்கும்."
+  },
+
+  "exam_importance": {
+    "en": "Part 2 covers high-yield TNPSC Group 1, Group 2/2A, and Group 4 questions. Topics such as sphere volume, carved-out hemispheres, recasting a large solid into small spheres/cubes, and liquid tank capacity in litres are frequently tested.",
+    "ta": "பகுதி 2-ல் TNPSC தேர்வுகளில் அதிகம் கேட்கப்படும் கோளத்தின் கனஅளவு, செதுக்கப்பட்ட அரைக்கோளம், உருக்கி சிறிய கோளங்களாக மாற்றுதல் மற்றும் தொட்டியின் கொள்ளளவை லிட்டரில் காணும் கணக்குகள் ஆகியவை அடங்கும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Sphere & Hemisphere Formulas (கோளம் & அரைக்கோளச் சூத்திரங்கள்)",
+      "formula": "\\text{Sphere: } Volume = \\frac{4}{3}\\pi r^3, \\quad Surface Area = 4\\pi r^2 \\\\ \\text{Hemisphere: } Volume = \\frac{2}{3}\\pi r^3, \\quad CSA = 2\\pi r^2, \\quad TSA = 3\\pi r^2",
+      "explanation": {
+        "en": "Hemisphere Total Surface Area includes circular base area πr², making TSA = 3πr².",
+        "ta": "அரைக்கோளத்தின் மொத்தப் புறப்பரப்பில் அதன் வட்ட வடிவ அடிப்பரப்பு πr² அடங்கும்; எனவே TSA = 3πr²."
+      }
+    },
+    {
+      "title": "Recasting & Volume Conservation Rule (உருக்குதல் மற்றும் கனஅளவு மாறா விதி)",
+      "formula": "Volume_{\\text{before}} = Volume_{\\text{after}} \\implies N \\times Volume_{\\text{small}} = Volume_{\\text{large}}",
+      "explanation": {
+        "en": "When a solid is melted and recast into other shape(s), total volume remains strictly conserved.",
+        "ta": "ஒரு திண்மப் பொருளை உருக்கி வேறு வடிவங்களாக மாற்றும் போது, அதன் மொத்த கனஅளவு மாறாமல் சமமாக இருக்கும்."
+      }
+    },
+    {
+      "title": "Liquid Capacity Units (திரவக் கொள்ளளவு அலகுகள்)",
+      "formula": "1 \\text{ litre} = 1000 \\text{ cm}^3, \\quad 1 \\text{ m}^3 = 1000 \\text{ litres}",
+      "explanation": {
+        "en": "Essential conversions for water tank and container capacity problems.",
+        "ta": "நீர் தொட்டி மற்றும் பாத்திரங்களின் கொள்ளளவைக் கணக்கிடத் தேவையான முக்கிய அலகு மாற்றங்கள்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Recasting Number of Small Solids Formula (சிறிய திண்மங்களின் எண்ணிக்கை)",
+      "points": {
+        "en": [
+          "Number of small solids formed N = Volume of large solid / Volume of one small solid.",
+          "Example: Spheres formed by melting a large sphere: N = (R / r)³.",
+          "Example: Cubes formed by melting a large cube: N = (A / a)³."
+        ],
+        "ta": [
+          "உருவாக்கப்படும் சிறிய திண்மங்களின் எண்ணிக்கை N = பெரிய திண்மத்தின் கனஅளவு / ஒரு சிறிய திண்மத்தின் கனஅளவு.",
+          "எ.கா: பெரிய கோளத்தை உருக்கி செய்யப்படும் சிறிய கோளங்கள்: N = (R / r)³.",
+          "எ.கா: பெரிய கனசதுரத்தை உருக்கி செய்யப்படும் சிறிய கனசதுரங்கள்: N = (A / a)³."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Spherical Volume Ratio Shortcut",
+      "points": {
+        "en": [
+          "If ratio of radii of two spheres is r1 : r2, then ratio of their surface areas is r1² : r2², and ratio of their volumes is r1³ : r2³.",
+          "Example: If radius increases 3 times (from 3 to 9), volume increases 3³ = 27 times (ratio 1 : 27)."
+        ],
+        "ta": [
+          "இரு கோளங்களின் ஆரங்களின் விகிதம் r1 : r2 எனில், புறப்பரப்புகளின் விகிதம் r1² : r2², கனஅளவுகளின் விகிதம் r1³ : r2³.",
+          "எ.கா: ஆரம் 3 மடங்கு அதிகரித்தால் (3 முதல் 9 வரை), கனஅளவு 3³ = 27 மடங்கு அதிகரிக்கும் (விகிதம் 1 : 27)."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "trap": "Confusing Hemisphere CSA (2πr²) with TSA (3πr²)",
+      "explanation": {
+        "en": "TSA of a solid hemisphere includes the flat circular base area πr², so TSA = 3πr², NOT 2πr²!",
+        "ta": "திண்ம அரைக்கோளத்தின் மொத்தப் புறப்பரப்பு (TSA) 3πr² ஆகும்; வளைபரப்பு (CSA) மட்டுமே 2πr² ஆகும்."
+      },
+      "avoidance": {
+        "en": "Remember: CSA = 2πr², TSA = 3πr² for a solid hemisphere.",
+        "ta": "திண்ம அரைக்கோளம்: வளைபரப்பு = 2πr², மொத்தப் புறப்பரப்பு = 3πr² என நினைவில் கொள்க."
+      }
+    }
+  ],
+
+  "solved_examples": [
+    {
+      "id": 1,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "Find the volume and surface area of a sphere whose radius is 21 cm.",
+      "method": "Direct Sphere Formulas",
+      "steps": [
+        "Step 1: Given radius r = 21 cm.",
+        "Step 2: Calculate Volume: \\(V = \\frac{4}{3} \\pi r^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{88}{21} \\times 9261 = 88 \\times 441 = 38808\\) cm³.",
+        "Step 3: Calculate Surface Area: \\(SA = 4 \\pi r^2 = 4 \\times \\frac{22}{7} \\times 21^2 = 4 \\times 22 \\times 63 = 5544\\) cm²."
+      ],
+      "answer": "Volume = 38,808 cm³, Surface Area = 5,544 cm²"
+    },
+    {
+      "id": 2,
+      "level": "Level 1 — Foundation (Group IV)",
+      "question": "The volume of a solid hemisphere is 29,106 cm³. Another hemisphere whose volume is two-third of the above is carved out. Find the radius of the new hemisphere.",
+      "method": "Hemisphere Volume Derivation",
+      "steps": [
+        "Step 1: Given initial volume V1 = 29,106 cm³.",
+        "Step 2: Volume of new hemisphere: \\(V_2 = \\frac{2}{3} \\times 29106 = 19404\\) cm³.",
+        "Step 3: Apply formula: \\(\\frac{2}{3} \\pi r^3 = 19404 \\implies \\frac{2}{3} \\times \\frac{22}{7} \\times r^3 = 19404\\).",
+        "Step 4: Solve for r³: \\(\\frac{44}{21} r^3 = 19404 \\implies r^3 = 19404 \\times \\frac{21}{44} = 441 \\times 21 = 9261\\).",
+        "Step 5: Take cube root: \\(r = \\sqrt[3]{9261} = 21\\) cm."
+      ],
+      "answer": "21 cm"
+    },
+    {
+      "id": 3,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "The radius of a spherical balloon increases from 3 cm to 9 cm as air is pumped into it. Find the ratio of volumes of the balloon in the two cases.",
+      "method": "Spherical Volume Ratio Method",
+      "steps": [
+        "Step 1: Given radii r1 = 3 cm, r2 = 9 cm.",
+        "Step 2: Ratio of radii: \\(\\frac{r_1}{r_2} = \\frac{3}{9} = \\frac{1}{3}\\).",
+        "Step 3: Volume ratio formula: \\(\\frac{V_1}{V_2} = \\left(\\frac{r_1}{r_2}\\right)^3 = \\left(\\frac{1}{3}\\right)^3 = \\frac{1}{27}\\).",
+        "Step 4: Ratio = 1 : 27."
+      ],
+      "answer": "1 : 27"
+    },
+    {
+      "id": 4,
+      "level": "Level 2 — Standard (Group II/IIA)",
+      "question": "How many solid metallic spheres of radius 2 cm can be made by melting a solid sphere of radius 8 cm?",
+      "method": "Solid Recasting Number Formula",
+      "steps": [
+        "Step 1: Given radius of large sphere R = 8 cm, small sphere r = 2 cm.",
+        "Step 2: Apply recasting formula: \\(N = \\frac{V_{\\text{large}}}{V_{\\text{small}}} = \\frac{\\frac{4}{3}\\pi R^3}{\\frac{4}{3}\\pi r^3} = \\left(\\frac{R}{r}\\right)^3\\).",
+        "Step 3: Substitute: \\(N = \\left(\\frac{8}{2}\\right)^3 = 4^3 = 64\\) spheres."
+      ],
+      "answer": "64 spheres"
+    },
+    {
+      "id": 5,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A rectangular water tank is 6 m long, 5 m wide, and 4 m deep. How many litres of water can it hold?",
+      "method": "Capacity Unit Conversion Method",
+      "steps": [
+        "Step 1: Given dimensions l = 6 m, b = 5 m, h = 4 m.",
+        "Step 2: Calculate Volume: \\(V = l \\times b \\times h = 6 \\times 5 \\times 4 = 120\\) m³.",
+        "Step 3: Apply conversion \\(1 \\text{ m}^3 = 1000\\) litres.",
+        "Step 4: Calculate Capacity: \\(Capacity = 120 \\times 1000 = 1,20,000\\) litres."
+      ],
+      "answer": "1,20,000 litres"
+    },
+    {
+      "id": 6,
+      "level": "Level 3 — Advanced (Group I)",
+      "question": "A metallic solid cone of base radius 6 cm and height 24 cm is melted and recast into a solid sphere. Find the radius of the sphere.",
+      "method": "Shape Recasting Volume Conservation",
+      "steps": [
+        "Step 1: Volume of cone: \\(V_{\\text{cone}} = \\frac{1}{3} \\pi r^2 h = \\frac{1}{3} \\pi (6^2) (24) = 288 \\pi\\) cm³.",
+        "Step 2: Equate to volume of sphere: \\(\\frac{4}{3} \\pi R^3 = 288 \\pi\\).",
+        "Step 3: Cancel π from both sides: \\(\\frac{4}{3} R^3 = 288 \\implies R^3 = 288 \\times \\frac{3}{4} = 216\\).",
+        "Step 4: Take cube root: \\(R = \\sqrt[3]{216} = 6\\) cm."
+      ],
+      "answer": "6 cm"
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": 1,
+      "question": "Find the volume of a sphere of radius 7 cm.",
+      "options": ["A) 1437.33 cm³", "B) 616 cm³", "C) 308 cm³", "D) 154 cm³"],
+      "correct_option": "A) 1437.33 cm³",
+      "explanation": "Volume = (4/3) × (22/7) × 7^3 = 4312 / 3 = 1437.33 cm³."
+    },
+    {
+      "id": 2,
+      "question": "Find the total surface area of a solid hemisphere of radius 7 cm.",
+      "options": ["A) 154 cm²", "B) 308 cm²", "C) 462 cm²", "D) 616 cm²"],
+      "correct_option": "C) 462 cm²",
+      "explanation": "TSA = 3πr² = 3 × (22/7) × 49 = 3 × 154 = 462 cm²."
+    },
+    {
+      "id": 3,
+      "question": "The radius of a spherical balloon increases from 2 cm to 6 cm. Find the ratio of their volumes.",
+      "options": ["A) 1 : 3", "B) 1 : 9", "C) 1 : 27", "D) 1 : 81"],
+      "correct_option": "C) 1 : 27",
+      "explanation": "Ratio of volumes = (2/6)^3 = (1/3)^3 = 1 : 27."
+    },
+    {
+      "id": 4,
+      "question": "A solid metallic cube of side 12 cm is melted to form small cubes of side 3 cm. How many small cubes are formed?",
+      "options": ["A) 16", "B) 32", "C) 64", "D) 128"],
+      "correct_option": "C) 64",
+      "explanation": "N = (12/3)^3 = 4^3 = 64 cubes."
+    },
+    {
+      "id": 5,
+      "question": "A rectangular water tank of dimensions 4 m × 3 m × 2 m is filled with water. How many litres of water does it contain?",
+      "options": ["A) 12,000 litres", "B) 24,000 litres", "C) 36,000 litres", "D) 48,000 litres"],
+      "correct_option": "B) 24,000 litres",
+      "explanation": "Volume = 4 × 3 × 2 = 24 m³. Capacity = 24 × 1000 = 24,000 litres."
+    }
+  ],
+
+  "quick_revision_cards": [
+    {
+      "front": "Sphere Formulas",
+      "back": "Volume = (4/3)πr³ | Surface Area = 4πr²"
+    },
+    {
+      "front": "Hemisphere Formulas",
+      "back": "Volume = (2/3)πr³ | CSA = 2πr² | TSA = 3πr²"
+    },
+    {
+      "front": "Recasting Number Formula",
+      "back": "N = Volume of Large Solid / Volume of Small Solid"
+    },
+    {
+      "front": "Liquid Capacity Conversions",
+      "back": "1 m³ = 1000 Litres | 1 Litre = 1000 cm³"
+    },
+    {
+      "front": "Spherical Volume Ratio",
+      "back": "V1 : V2 = (r1 : r2)³"
+    }
+  ],
+
+  "mind_map": {
+    "title": "Volume Part 2 — Spheres, Recasting & Capacity Mind Map",
+    "nodes": [
+      {
+        "id": "root",
+        "label": "Volume Part 2 (Spheres & Recasting)",
+        "children": ["spheres_hemispheres", "recasting_rule", "capacity_units"]
+      },
+      {
+        "id": "spheres_hemispheres",
+        "label": "Spheres & Hemispheres",
+        "children": ["sphere_f", "hemisphere_f"]
+      },
+      {
+        "id": "sphere_f",
+        "label": "Sphere: V = (4/3)πr³, SA = 4πr²",
+        "children": []
+      },
+      {
+        "id": "hemisphere_f",
+        "label": "Hemisphere: V = (2/3)πr³, TSA = 3πr²",
+        "children": []
+      },
+      {
+        "id": "recasting_rule",
+        "label": "Recasting & Melting",
+        "children": ["recast_formula"]
+      },
+      {
+        "id": "recast_formula",
+        "label": "Volume Before = Volume After (N = V_large / V_small)",
+        "children": []
+      },
+      {
+        "id": "capacity_units",
+        "label": "Capacity Unit Conversions",
+        "children": ["litre_m3"]
+      },
+      {
+        "id": "litre_m3",
+        "label": "1 m³ = 1000 Litres | 1 Litre = 1000 cm³",
+        "children": []
+      }
+    ]
+  }
+}

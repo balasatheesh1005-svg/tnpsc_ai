@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "topic_id": "economy_population_part_2",
+    "repository_id": "economy_population",
+    "display_title": "Population – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Population",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "analytical",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Mayo Census 1872",
+    "Ripon Census 1881 Synchronous",
+    "Census Act 1948 MHA RGCCI",
+    "Year of Great Divide 1921 Negative Growth",
+    "First Independent Census 1951",
+    "Peak Growth 1961 to 1971 24.80",
+    "First Family Planning Program 1952",
+    "NPP 1976 42nd Amendment Freeze",
+    "NPP 2000 MS Swaminathan Stable 2045",
+    "Census 2011 121 Crore 17.70 Growth",
+    "Literacy 74.04 Sex Ratio 943",
+    "Nagaland Negative Growth Minus 0.58"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Trace the legislative and administrative trajectory of the Census of India from Mayo and Ripon to the Census Act 1948.",
+        "Understand why 1921 is designated the 'Year of the Great Divide' and why 1961-71 represents the peak explosion decade."
+      ],
+      "ta": [
+        "மாயோ மற்றும் ரிப்பன் காலம் முதல் 1948 சட்டம் வரையிலான இந்திய மக்கள் தொகைக் கணக்கெடுப்பின் நிர்வாக வரலாற்றைப் புரிந்து கொள்ளுதல்.",
+        "1921 ஏன் 'பெரும் பிரிவினை ஆண்டு' என அழைக்கப்படுகிறது என்பதையும், 1961-71 ஏன் உச்ச வளர்ச்சிப் பத்தாண்டாக அமைந்தது என்பதையும் அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize core Census 2011 aggregates: Population (121.08 Cr), Growth (17.70%), Sex Ratio (943), CSR (919), Literacy (74.04%), Density (382).",
+        "Recall that Nagaland was the sole negative-growth state (-0.58%) and Bihar had the highest density (1,106)."
+      ],
+      "ta": [
+        "2011 கணக்கெடுப்பின் முக்கிய எண்களை நினைவில் நிறுத்துதல்: மக்கள் தொகை (121.08 கோடி), வளர்ச்சி (17.70%), பாலின விகிதம் (943), கல்வியறிவு (74.04%), அடர்த்தி (382).",
+        "நாகாலாந்து மட்டுமே எதிர்மறை வளர்ச்சி கண்ட மாநிலம் (-0.58%) மற்றும் பீகார் அதிக அடர்த்தி கொண்டது (1,106) என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the philosophical shift from the coercive sterilization quotas of NPP 1976 to the voluntary, rights-based NPP 2000.",
+        "Appraise the demographic reasons behind the deceleration of India's decadal growth from 21.54% to 17.70%."
+      ],
+      "ta": [
+        "1976-ன் கட்டாய குடும்பக் கட்டுப்பாட்டுக் கொள்கையிலிருந்து NPP 2000-ன் தன்னார்வ மனித உரிமை அணுகுமுறைக்கு மாறியதை ஆய்வு செய்தல்.",
+        "இந்தியாவின் பத்தாண்டு வளர்ச்சி 21.54%-லிருந்து 17.70% ஆகக் குறைந்ததற்குப் பின்னணியில் உள்ள காரணங்களை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Avoid exam traps regarding synchronous vs non-synchronous censuses, the administrative ministry of RGCCI, and target dates in NPP 2000."
+      ],
+      "ta": [
+        "ஒருங்கிணைந்த கணக்கெடுப்பு, RGCCI இயங்கும் அமைச்சகம் மற்றும் NPP 2000 இலக்கு ஆண்டுகள் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Population – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_census_history_statute",
+      "title_en": "Census History: Mayo (1872), Ripon (1881) & Census Act 1948",
+      "title_ta": "மக்கள் தொகைக் கணக்கெடுப்பு வரலாறு: மாயோ (1872), ரிப்பன் (1881) & 1948 சட்டம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_decadal_inflection_points",
+      "title_en": "Decadal Growth Trends: 1921 Great Divide & 1961-71 Peak",
+      "title_ta": "பத்தாண்டு வளர்ச்சிப் போக்குகள்: 1921 பெரும் பிரிவினை & 1961-71 உச்ச வளர்ச்சி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_census_2011_key_metrics",
+      "title_en": "Census 2011: The 15th National Census Key Findings",
+      "title_ta": "2011 மக்கள் தொகைக் கணக்கெடுப்பு: 15-வது தேசிய கணக்கெடுப்பின் முக்கிய முடிவுகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_population_policies_evolution",
+      "title_en": "National Population Policies: 1952, 1976 & NPP 2000",
+      "title_ta": "தேசிய மக்கள் தொகைக் கொள்கைகள்: 1952, 1976 & NPP 2000",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Census history and population policy in India document the institutional evolution of decennial demographic enumeration under the Census Act 1948 and state-directed demographic management—from early post-independence family planning in 1952 to the landmark National Population Policy (NPP) 2000 promoting voluntary fertility stabilization.",
+      "ta": "இந்தியாவில் மக்கள் தொகைக் கணக்கெடுப்பு வரலாறும் மக்கள் கொள்கையும் என்பது 1948-ஆம் ஆண்டின் மக்கள் தொகைக் கணக்கெடுப்புச் சட்டத்தின் கீழ் பத்தாண்டு கணக்கெடுப்பின் நிறுவன பரிணாமத்தையும், 1952-ல் தொடங்கிய குடும்ப நலத் திட்டம் முதல் தானாக முன்வந்து குடும்பத்தைக் கட்டுப்படுத்தும் 2000-ஆம் ஆண்டின் தேசிய மக்கள் தொகைக் கொள்கை (NPP 2000) வரையிலான அரசு வழிகாட்டுதல் நடவடிக்கைகளையும் ஆவணப்படுத்துவதாகும்."
+    },
+    "introduction": {
+      "en": "The institutional apparatus of population enumeration and demographic policy in India represents one of the world's most extensive administrative exercises. Beginning with the non-synchronous provincial counts under Viceroy Lord Mayo in 1872 and culminating in the first synchronous all-India decennial census under Lord Ripon in 1881, the Census has tracked seismic demographic shifts. Most notably, the 1921 Census stands immortalized as 'The Year of the Great Divide'—the only decadal census in Indian history to record negative population growth (-0.31%) due to the catastrophic 1918 Spanish Flu pandemic, plague, and famines. Post-independence, India pioneered global population policy by becoming the first country in the world to launch an official National Family Planning Programme in 1952. Following the coercive excesses of the 1976 Emergency policy, demographic governance pivoted towards human-rights-centered voluntary stabilization under the National Population Policy 2000 (NPP 2000). Census 2011 (the 15th National Census) provides the official benchmark data for India's 1.21 billion population. Mastering these historical milestones, decadal growth inflection points, and policy frameworks is essential for TNPSC Group 1 aspirants.",
+      "ta": "இந்தியாவில் மக்கள் தொகைக் கணக்கெடுப்பு மற்றும் மக்கள் கொள்கையின் நிறுவனக் கட்டமைப்பு உலகிலேயே மிகப்பெரிய நிர்வாகப் பணிகளில் ஒன்றாகும். 1872-ல் மாயோ பிரபுவின் கீழ் ஒருங்கிணைக்கப்படாத கணக்கெடுப்பாகத் தொடங்கி, 1881-ல் ரிப்பன் பிரபுவின் கீழ் இந்தியாவின் முதல் முழுமையான ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பாக மலர்ந்தது. வரலாற்றில் 1921-ஆம் ஆண்டு 'பெரும் பிரிவினை ஆண்டு' (The Year of the Great Divide) என அழைக்கப்படுகிறது; ஏனெனில் 1918 ஸ்பானிஷ் காய்ச்சல், பிளேக் மற்றும் பஞ்சங்களால் இந்திய வரலாற்றிலேயே எதிர்மறை மக்கள் தொகை வளர்ச்சியைப் (-0.31%) பதிவு செய்த ஒரே பத்தாண்டு இதுவேயாகும். சுதந்திரத்திற்குப் பின், 1952-ல் உலகிலேயே முதன்முறையாக அதிகாரப்பூர்வ தேசிய குடும்பக் கட்டுப்பாடு திட்டத்தைத் தொடங்கிய நாடாக இந்தியா திகழ்கிறது. 1976 அவசரநிலைக் கால கட்டாய நடவடிக்கைகளுக்குப் பிறகு, 2000-ஆம் ஆண்டின் தேசிய மக்கள் தொகைக் கொள்கை (NPP 2000) மூலம் மனித உரிமை சார்ந்த தானியங்கு உறுதிப்பாட்டு முறைக்கு இந்தியா மாறியது. 2011 கணக்கெடுப்பு 121.08 கோடி மக்களுக்கான அதிகாரப்பூர்வ அடிப்படைத் தரவுகளை வழங்குகிறது. இக்காலவரிசை மற்றும் கொள்கைகளை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_census_history_statute": [
+      {
+        "term_en": "First Non-Synchronous Census (1872 - Lord Mayo)",
+        "term_ta": "முதல் ஒருங்கிணைக்கப்படாத கணக்கெடுப்பு (1872 - மாயோ பிரபு)",
+        "details_en": "The first systematic population enumeration in British India was conducted between 1867 and 1872 under Viceroy Lord Mayo. However, it was NON-SYNCHRONOUS—conducted at different dates across different provinces—and omitted several princely states. It is treated as the starting point of Indian census history.",
+        "details_ta": "பிரிட்டிஷ் இந்தியாவில் முதல் முறையான மக்கள் தொகைக் கணக்கெடுப்பு 1867 முதல் 1872 வரை மாயோ பிரபுவின் ஆட்சியில் நடத்தப்பட்டது. ஆனால் இது 'ஒருங்கிணைக்கப்படாதது' (Non-synchronous); அதாவது பல்வேறு மாகாணங்களில் வெவ்வேறு தேதிகளில் நடத்தப்பட்டது மற்றும் பல சுதேச சமஸ்தானங்கள் விடுபட்டன. இதுவே இந்திய கணக்கெடுப்பு வரலாற்றின் தொடக்கப் புள்ளியாகும்."
+      },
+      {
+        "term_en": "First Synchronous Decennial Census (1881 - Lord Ripon)",
+        "term_ta": "முதல் முழுமையான பத்தாண்டு கணக்கெடுப்பு (1881 - ரிப்பன் பிரபு)",
+        "details_en": "On February 17, 1881, under Viceroy Lord Ripon, India conducted its FIRST SYNCHRONOUS DECENNIAL CENSUS across the entire country simultaneously under the direction of Census Commissioner W.C. Plowden. This established the unbroken 10-year decennial tradition (1881, 1891, 1901... 2011).",
+        "details_ta": "பிப்ரவரி 17, 1881 அன்று ரிப்பன் பிரபுவின் ஆட்சியில், கணக்கெடுப்பு ஆணையர் டபிள்யூ.சி. ப்ளோடன் தலைமையில் நாடு முழுவதும் ஒரே நாளில் 'முதல் ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பு' நடத்தப்பட்டது. இதுவே பத்தாண்டுகளுக்கு ஒருமுறை கணக்கெடுப்பு நடத்தும் வரலாற்றுத் தொடக்கமாகும் (1881, 1891... 2011)."
+      },
+      {
+        "term_en": "Census Act 1948 & Institutional Framework",
+        "term_ta": "மக்கள் தொகைக் கணக்கெடுப்புச் சட்டம் 1948 & நிறுவனக் கட்டமைப்பு",
+        "details_en": "Drafted under the guidance of Home Minister Sardar Vallabhbhai Patel, the Census Act of 1948 provides the permanent statutory legal framework for conducting decennial censuses in independent India. The Census is placed under the Union List (Entry 69 of the Seventh Schedule) and executed by the Office of the Registrar General and Census Commissioner of India (RGCCI) under the Ministry of Home Affairs (MHA), NOT the Ministry of Health or MoSPI.",
+        "details_ta": "உள்துறை அமைச்சர் சர்தார் வல்லபாய் படேலின் வழிகாட்டுதலின்படி இயற்றப்பட்ட 1948-ஆம் ஆண்டின் மக்கள் தொகைக் கணக்கெடுப்புச் சட்டம், சுதந்திர இந்தியாவில் கணக்கெடுப்பு நடத்துவதற்கான நிரந்தர சட்டப்பூர்வ அதிகாரத்தை அளிக்கிறது. கணக்கெடுப்பு என்பது அரசியலமைப்பின் ஏழாவது அட்டவணையில் மத்தியப் பட்டியலில் (உள்ளீடு 69) உள்ளது; இது மத்திய உள்துறை அமைச்சகத்தின் (MHA) கீழ் உள்ள 'இந்தியப் பதிவாளர் ஜெனரல் மற்றும் கணக்கெடுப்பு ஆணையர்' (RGCCI) அலுவலகத்தால் நடத்தப்படுகிறது."
+      }
+    ],
+    "sec_decadal_inflection_points": [
+      {
+        "term_en": "1921: 'The Year of the Great Divide'",
+        "term_ta": "1921: 'பெரும் பிரிவினை ஆண்டு' (The Year of the Great Divide)",
+        "details_en": "The Census decade 1911–1921 recorded a NEGATIVE population growth rate of -0.31% (a net population drop of ~7.7 lakh people), caused by the catastrophic 1918 Spanish Influenza pandemic (killing an estimated 12-14 million Indians), severe plague, cholera, and widespread wartime famines. In demographic analysis, 1921 marks the 'Great Divide' because prior to 1921, India's population was stagnant and fluctuating in Stage 1; AFTER 1921, INDIA'S POPULATION HAS NEVER DECLINED and began its relentless upward expansion in Stage 2.",
+        "details_ta": "1911-1921 பத்தாண்டு கணக்கெடுப்பு வரலாற்றிலேயே 'எதிர்மறை வளர்ச்சி விகிதத்தைப்' (-0.31%) பதிவு செய்தது (மக்கள் தொகையில் சுமார் 7.7 லட்சம் சரிவு). 1918 ஸ்பானிஷ் காய்ச்சல் பெருந்தொற்று (1.2 கோடிக்கும் அதிகமான இந்தியர்கள் மரணம்), பிளேக் மற்றும் முதல் உலகப்போர் கால பஞ்சங்கள் இதற்குக் காரணமாகும். 1921-க்கு முன்பு இந்தியாவின் மக்கள் தொகை வளர்ச்சியடையாமல் தேக்கமடைந்திருந்தது; ஆனால் '1921-க்குப் பிறகு இந்தியாவின் மக்கள் தொகை ஒருபோதும் குறைந்ததே இல்லை', அது தொடர்ந்து ஏறுமுகமாகவே இருந்து வருகிறது. எனவே 1921 'பெரும் பிரிவினை ஆண்டு' என அழைக்கப்படுகிறது."
+      },
+      {
+        "term_en": "1951 Census: First Census of Independent India",
+        "term_ta": "1951 கணக்கெடுப்பு: சுதந்திர இந்தியாவின் முதல் கணக்கெடுப்பு",
+        "details_en": "Conducted in 1951 under Census Commissioner R.A. Gopalaswami, recording a total population of 36.11 crore (361 million) with a decadal growth rate of 13.31%.",
+        "details_ta": "கணக்கெடுப்பு ஆணையர் ஆர்.ஏ. கோபாலசுவாமி தலைமையில் நடத்தப்பட்ட சுதந்திர இந்தியாவின் முதல் கணக்கெடுப்பு. நாட்டின் மொத்த மக்கள் தொகை 36.11 கோடி என்றும், பத்தாண்டு வளர்ச்சி 13.31% என்றும் பதிவு செய்தது."
+      },
+      {
+        "term_en": "1961–1971: Peak Population Growth in Indian History",
+        "term_ta": "1961–1971: இந்திய வரலாற்றின் உச்சபட்ச வளர்ச்சிப் பத்தாண்டு",
+        "details_en": "The decade 1961–1971 recorded the HIGHEST decadal population growth rate in Indian history at 24.80%, representing the peak of Stage 2 population explosion as death rates collapsed while birth rates remained near 40 per 1,000.",
+        "details_ta": "1961-1971 பத்தாண்டில் இந்திய வரலாற்றிலேயே 'அதிகபட்ச பத்தாண்டு வளர்ச்சி விகிதமான 24.80%' பதிவானது. நவீன மருத்துவத்தால் இறப்பு விகிதம் சரிய, பிறப்பு விகிதம் தொடர்ந்து உச்சத்தில் இருந்ததால் இது மக்கள் தொகை வெடிப்பின் உச்சபட்ச கட்டமாக அமைந்தது."
+      }
+    ],
+    "sec_census_2011_key_metrics": [
+      {
+        "term_en": "National Aggregates & Decadal Deceleration",
+        "term_ta": "தேசிய ஒட்டுமொத்த அளவுகள் & வளர்ச்சி மந்தநிலை",
+        "details_en": "Slogan: 'Our Census, Our Future' (Mascot: Female Enumerator; Registrar General: C. Chandramouli). Total Population: 1,210,854,977 (1.21 billion / 121.08 crore: 62.32 crore males, 58.75 crore females). India accounted for 17.5% of world population with only 2.4% of world surface area. Decadal Growth Rate (2001-2011): 17.70% (sharp drop from 21.54% in 1991-2001, proving accelerating demographic deceleration).",
+        "details_ta": "முழக்கம்: 'நமது கணக்கெடுப்பு, நமது எதிர்காலம்' (அடையாள சின்னம்: பெண் கணக்கெடுப்பாளர்; பதிவாளர் ஜெனரல்: சி. சந்திரமௌலி). மொத்த மக்கள் தொகை: 121.08 கோடி (1,21,08,54,977). உலகின் 2.4% நிலப்பரப்பைக் கொண்ட இந்தியா உலகின் 17.5% மக்கள் தொகையைக் கொண்டிருந்தது. பத்தாண்டு வளர்ச்சி விகிதம்: 17.70% (1991-2001-ல் இருந்த 21.54%-லிருந்து கணிசமாக சரிந்தது)."
+      },
+      {
+        "term_en": "Literacy & Sex Ratio Benchmarks",
+        "term_ta": "கல்வியறிவு & பாலின விகித அளவீடுகள்",
+        "details_en": "National Literacy Rate: 74.04% (Male: 82.14%, Female: 65.46%; Gender Gap in Literacy: 16.68%). Overall Sex Ratio: 943 females per 1,000 males (up by 10 from 933 in 2001). Child Sex Ratio (0-6): 919 (dropped by 8 from 927 in 2001). Population Density: 382 persons per square kilometer (up from 325 in 2001).",
+        "details_ta": "தேசிய கல்வியறிவு விகிதம்: 74.04% (ஆண்கள்: 82.14%, பெண்கள்: 65.46%; கல்வியறிவில் பாலின இடைவெளி: 16.68%). ஒட்டுமொத்த பாலின விகிதம்: 1,000 ஆண்களுக்கு 943 பெண்கள் (2001-ல் 933). குழந்தை பாலின விகிதம் (0-6): 919 (2001-ல் 927). மக்கள் தொகை அடர்த்தி: சதுர கி.மீட்டருக்கு 382 நபர்கள் (2001-ல் 325)."
+      },
+      {
+        "term_en": "State-Level Extremes & Rankings",
+        "term_ta": "மாநில அளவிலான முதன்மை & கடைசி இடங்கள்",
+        "details_en": "(1) Population: Most populous state = Uttar Pradesh (19.98 crore, ~16.5% of India); Least populous state = Sikkim (6.10 lakh); (2) Growth: Highest decadal growth = Meghalaya (27.95%); Only state with NEGATIVE growth = Nagaland (-0.58%); (3) Density: Highest density = Bihar (1,106 persons/sq km); Lowest density = Arunachal Pradesh (17 persons/sq km); (4) Sex Ratio: Highest sex ratio = Kerala (1,084); Lowest sex ratio = Haryana (879); (5) Literacy: Highest literacy = Kerala (94.00%); Lowest literacy = Bihar (61.80%).",
+        "details_ta": "(1) மக்கள் தொகை: முதலிடம் = உத்தரப் பிரதேசம் (19.98 கோடி); கடைசி இடம் = சிக்கிம் (6.10 லட்சம்); (2) வளர்ச்சி: அதிக பத்தாண்டு வளர்ச்சி = மேகாலயா (27.95%); எதிர்மறை வளர்ச்சி கண்ட ஒரே மாநிலம் = நாகாலாந்து (-0.58%); (3) அடர்த்தி: அதிக அடர்த்தி = பீகார் (1,106 நபர்கள்/ச.கி.மீ); குறைந்த அடர்த்தி = அருணாச்சலப் பிரதேசம் (17 நபர்கள்/ச.கி.மீ); (4) பாலின விகிதம்: முதலிடம் = கேரளா (1,084); கடைசி இடம் = ஹரியானா (879); (5) கல்வியறிவு: முதலிடம் = கேரளா (94.00%); கடைசி இடம் = பீகார் (61.80%)."
+      }
+    ],
+    "sec_population_policies_evolution": [
+      {
+        "term_en": "First National Family Planning Programme (1952)",
+        "term_ta": "முதல் தேசிய குடும்ப நலத் திட்டம் (1952)",
+        "details_en": "Launched in 1952 during the First Five Year Plan, making India the FIRST COUNTRY IN THE WORLD to adopt an official state-sponsored national family planning policy. Initially clinical and target-driven.",
+        "details_ta": "முதல் ஐந்தாண்டுத் திட்டத்தின் போது 1952-ல் தொடங்கப்பட்டது. இதன் மூலம் அரசு ஆதரவுடன் கூடிய அதிகாரப்பூர்வ குடும்பக் கட்டுப்பாடு கொள்கையை அமல்படுத்திய 'உலகின் முதல் நாடாக' இந்தியா உருவானது."
+      },
+      {
+        "term_en": "National Population Policy 1976 (Emergency Excesses)",
+        "term_ta": "தேசிய மக்கள் தொகைக் கொள்கை 1976 (அவசரநிலைக் கால நடவடிக்கைகள்)",
+        "details_en": "Announced by Health Minister Karan Singh in April 1976 during the Emergency. It raised the legal marriage age (18 for females, 21 for males - later enacted in Child Marriage Restraint Act 1978), froze parliamentary representation at the 1971 Census level until 2001 (42nd Amendment), and authorized compulsory sterilization quotas, sparking massive public backlash.",
+        "details_ta": "அவசரநிலையின் போது ஏப்ரல் 1976-ல் அறிவிக்கப்பட்டது. திருமண வயதை உயர்த்தியது (பெண்களுக்கு 18, ஆண்களுக்கு 21 - 1978 சட்டத்தில் கொண்டுவரப்பட்டது), நாடாளுமன்றத் தொகுதி இடங்களை 1971 கணக்கெடுப்பு அளவில் 2001 வரை முடக்கியது (42-வது திருத்தம்) மற்றும் கட்டாய குடும்பக் கட்டுப்பாடு இலக்குகளை நிர்ணயித்து பெரும் மக்கள் எதிர்ப்பைச் சந்தித்தது."
+      },
+      {
+        "term_en": "National Population Policy 2000 (NPP 2000 - Swaminathan Draft)",
+        "term_ta": "தேசிய மக்கள் தொகைக் கொள்கை 2000 (NPP 2000 - சுவாமிநாதன் வரைவு)",
+        "details_en": "Formulated based on the draft submitted by Dr. M.S. Swaminathan Committee (1994) and approved in February 2000. Core philosophy: Target-free, voluntary informed consent, holistic reproductive health. Three-tiered objectives: (1) Immediate Objective: meet unmet needs for contraception, health infrastructure, and integrated service delivery; (2) Medium-Term Objective: bring TFR to replacement level (2.1) by 2010; (3) Long-Term Objective: achieve STABLE POPULATION BY 2045 (at a level consistent with sustainable economic growth). Institutionalized the National Commission on Population chaired by the Prime Minister.",
+        "details_ta": "டாக்டர் எம்.எஸ். சுவாமிநாதன் குழு (1994) அளித்த வரைவின் அடிப்படையில் பிப்ரவரி 2000-ல் அங்கீகரிக்கப்பட்டது. கட்டாயப்படுத்துதல் இல்லாத, தன்னார்வ ஒப்புதல் மற்றும் முழுமையான இனப்பெருக்க ஆரோக்கியத்தை மையமாகக் கொண்டது. மூன்று அடுக்கு இலக்குகள்: (1) உடனடி இலக்கு: கருத்தடை சாதனங்கள், சுகாதார உட்கட்டமைப்பு பற்றாக்குறையைப் போக்குவது; (2) நடுத்தர கால இலக்கு: 2010-க்குள் கருவுறுதல் விகிதத்தை (TFR) 2.1 ஆகக் குறைப்பது; (3) நீண்டகால இலக்கு: 2045-க்குள் மக்கள் தொகையை 'நிலையான சமநிலைக்கு' (Stable Population) கொண்டு வருவது. பிரதமரின் தலைமையில் இயங்கும் 'தேசிய மக்கள் தொகைக் குழுவை' இது நிறுவியது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_mayo_vs_ripon_census",
+        "title_en": "Mayo's 1872 Census vs Ripon's 1881 Synchronous Census",
+        "title_ta": "மாயோ பிரபுவின் 1872 கணக்கெடுப்பு vs ரிப்பன் பிரபுவின் 1881 கணக்கெடுப்பு ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "1872 Census (Lord Mayo)",
+          "1881 Census (Lord Ripon)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "1872 கணக்கெடுப்பு (மாயோ பிரபு)",
+          "1881 கணக்கெடுப்பு (ரிப்பன் பிரபு)"
+        ],
+        "rows_en": [
+          [
+            "Viceroy of India",
+            "Lord Mayo (1869-1872)",
+            "Lord Ripon (1880-1884)"
+          ],
+          [
+            "Synchronous Nature",
+            "Non-synchronous; conducted across provinces at disparate dates (1867-1872)",
+            "First SYNCHRONOUS census; conducted simultaneously on February 17, 1881"
+          ],
+          [
+            "Geographic Coverage",
+            "Incomplete; omitted several princely states and tribal tracts",
+            "Comprehensive; covered British provinces and princely states uniformly"
+          ],
+          [
+            "Census Leadership",
+            "Decentralized provincial statistical officers",
+            "W.C. Plowden (First Census Commissioner of India)"
+          ],
+          [
+            "Historical Significance",
+            "Pioneered modern demographic enumeration in India",
+            "Inaugurated the unbroken decennial (10-yearly) census series"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "இந்திய வைஸ்ராய்",
+            "மாயோ பிரபு (1869-1872)",
+            "ரிப்பன் பிரபு (1880-1884)"
+          ],
+          [
+            "ஒருங்கிணைந்த தன்மை",
+            "ஒருங்கிணைக்கப்படாதது; வெவ்வேறு மாகாணங்களில் வெவ்வேறு தேதிகளில் (1867-1872)",
+            "முதல் ஒருங்கிணைந்த கணக்கெடுப்பு; நாடு முழுவதும் ஒரே நாளில் (பிப்ரவரி 17, 1881)"
+          ],
+          [
+            "புவியியல் வரம்பு",
+            "முழுமையற்றது; பல சுதேச சமஸ்தானங்கள் விடுபட்டன",
+            "முழுமையானது; பிரிட்டிஷ் மாகாணங்கள் மற்றும் சமஸ்தானங்களை உள்ளடக்கியது"
+          ],
+          [
+            "தலைமை ஆணையர்",
+            "மாகாண அளவிலான புள்ளியியல் அதிகாரிகள்",
+            "டபிள்யூ.சி. ப்ளோடன் (இந்தியாவின் முதல் கணக்கெடுப்பு ஆணையர்)"
+          ],
+          [
+            "வரலாற்று முக்கியத்துவம்",
+            "இந்தியாவில் நவீன மக்கள் தொகைக் கணக்கெடுப்பிற்கு வித்திட்டது",
+            "தொடர்ச்சியான பத்தாண்டு கணக்கெடுப்பு மரபைத் தொடங்கி வைத்தது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_census_2001_vs_2011",
+        "title_en": "Census 2001 vs Census 2011 National Benchmarks",
+        "title_ta": "2001 vs 2011 மக்கள் தொகைக் கணக்கெடுப்பு முக்கிய குறிகாட்டிகள் ஒப்பீடு",
+        "headers_en": [
+          "Metric Indicator",
+          "Census 2001 Benchmark",
+          "Census 2011 Benchmark",
+          "Net Decadal Direction"
+        ],
+        "headers_ta": [
+          "குறிகாட்டி",
+          "2001 கணக்கெடுப்பு அளவு",
+          "2011 கணக்கெடுப்பு அளவு",
+          "பத்தாண்டு மாற்றம்"
+        ],
+        "rows_en": [
+          [
+            "Total Population",
+            "102.87 crore (1.028 billion)",
+            "121.08 crore (1.210 billion)",
+            "+18.21 crore absolute increase"
+          ],
+          [
+            "Decadal Growth Rate",
+            "21.54% (1991-2001)",
+            "17.70% (2001-2011)",
+            "Decelerated by -3.84 percentage points"
+          ],
+          [
+            "Overall Sex Ratio",
+            "933 females per 1,000 males",
+            "943 females per 1,000 males",
+            "Improved by +10 points"
+          ],
+          [
+            "Child Sex Ratio (0-6)",
+            "927 females per 1,000 males",
+            "919 females per 1,000 males",
+            "Alarming deterioration by -8 points"
+          ],
+          [
+            "Literacy Rate",
+            "64.83% (Male: 75.26%, Female: 53.67%)",
+            "74.04% (Male: 82.14%, Female: 65.46%)",
+            "Improved by +9.21 percentage points"
+          ],
+          [
+            "Population Density",
+            "325 persons per sq km",
+            "382 persons per sq km",
+            "Increased by +57 persons per sq km"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்த மக்கள் தொகை",
+            "102.87 கோடி (1.028 பில்லியன்)",
+            "121.08 கோடி (1.210 பில்லியன்)",
+            "+18.21 கோடி மக்கள் அதிகரிப்பு"
+          ],
+          [
+            "பத்தாண்டு வளர்ச்சி விகிதம்",
+            "21.54% (1991-2001)",
+            "17.70% (2001-2011)",
+            "-3.84% வளர்ச்சி வேகம் தணிந்தது"
+          ],
+          [
+            "ஒட்டுமொத்த பாலின விகிதம்",
+            "1,000 ஆண்களுக்கு 933 பெண்கள்",
+            "1,000 ஆண்களுக்கு 943 பெண்கள்",
+            "+10 புள்ளிகள் முன்னேற்றம்"
+          ],
+          [
+            "குழந்தை பாலின விகிதம் (0-6)",
+            "1,000 ஆண் குழந்தைகளுக்கு 927 பெண்கள்",
+            "1,000 ஆண் குழந்தைகளுக்கு 919 பெண்கள்",
+            "-8 புள்ளிகள் ஆபத்தான சரிவு"
+          ],
+          [
+            "கல்வியறிவு விகிதம்",
+            "64.83% (ஆண்கள்: 75.26%, பெண்கள்: 53.67%)",
+            "74.04% (ஆண்கள்: 82.14%, பெண்கள்: 65.46%)",
+            "+9.21% முன்னேற்றம் கண்டது"
+          ],
+          [
+            "மக்கள் தொகை அடர்த்தி",
+            "சதுர கி.மீ-க்கு 325 நபர்கள்",
+            "சதுர கி.மீ-க்கு 382 நபர்கள்",
+            "சதுர கி.மீ-க்கு +57 நபர்கள் அதிகரிப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_npp_1976_vs_2000",
+        "title_en": "National Population Policy 1976 vs National Population Policy 2000",
+        "title_ta": "தேசிய மக்கள் தொகைக் கொள்கை 1976 vs 2000 ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "National Population Policy 1976",
+          "National Population Policy 2000 (NPP 2000)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "தேசிய மக்கள் தொகைக் கொள்கை 1976",
+          "தேசிய மக்கள் தொகைக் கொள்கை 2000"
+        ],
+        "rows_en": [
+          [
+            "Drafting Context",
+            "Emergency regime under Health Minister Karan Singh",
+            "Democratic coalition under Dr. M.S. Swaminathan draft committee"
+          ],
+          [
+            "Underlying Philosophy",
+            "Top-down, coercive, bureaucratic sterilization targets",
+            "Target-free, human rights based, voluntary informed consent"
+          ],
+          [
+            "Methods Emphasized",
+            "Mass male vasectomy sterilization camps with quota enforcement",
+            "Holistic reproductive and child health (RCH), spacing methods"
+          ],
+          [
+            "Constitutional Impact",
+            "Froze Lok Sabha seats at 1971 level till 2001 (42nd CAA 1976)",
+            "Extended Lok Sabha freeze till 2026 (84th CAA 2001)"
+          ],
+          [
+            "Long-Term Objective",
+            "No formal year target for population stabilization",
+            "Achieve a STABLE POPULATION BY 2045"
+          ],
+          [
+            "Public Reaction",
+            "Violent public backlash, political defeat of government in 1977",
+            "Widely accepted by civil society and state governments"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உருவான சூழல்",
+            "அவசரநிலைக் காலத்தில் சுகாதார அமைச்சர் கரண் சிங் தலைமையில்",
+            "டாக்டர் எம்.எஸ். சுவாமிநாதன் வரைவுக் குழுவின் ஜனநாயகப் பரிந்துரை"
+          ],
+          [
+            "அடிப்படை தத்துவம்",
+            "மேலிருந்து கீழ் திணிக்கப்பட்ட, கட்டாய குடும்பக் கட்டுப்பாடு இலக்குகள்",
+            "இலக்குகளற்ற, மனித உரிமை மற்றும் தன்னார்வ ஒப்புதல் சார்ந்த அணுகுமுறை"
+          ],
+          [
+            "பயன்படுத்தப்பட்ட முறைகள்",
+            "அதிகாரிகளுக்கு கட்டாய இலக்குகளுடன் கூடிய வாசக்டமி முகாம்கள்",
+            "தாய்-சேய் நலம் (RCH), கருத்தடை இடைவெளி சாதனங்கள், கவுன்சிலிங்"
+          ],
+          [
+            "அரசியலமைப்புத் தாக்கம்",
+            "மக்களவைத் தொகுதிகளை 1971 கணக்கெடுப்பில் 2001 வரை முடக்கியது (42-வது திருத்தம்)",
+            "மக்களவைத் தொகுதி முடக்கத்தை 2026 வரை நீட்டித்தது (84-வது திருத்தம்)"
+          ],
+          [
+            "நீண்டகால இலக்கு",
+            "மக்கள் தொகை நிலைத்தன்மைக்கு குறிப்பிட்ட ஆண்டு நிர்ணயிக்கப்படவில்லை",
+            "2045-க்குள் மக்கள் தொகையை 'நிலையான சமநிலைக்கு' கொண்டு வருதல்"
+          ],
+          [
+            "மக்கள் வரவேற்பு",
+            "கடும் எதிர்ப்பு; 1977 பொதுத் தேர்தலில் அரசு தோல்வியடைய வழிவகுத்தது",
+            "சமூக அமைப்புகள் மற்றும் மாநில அரசுகளால் பரவலாக ஏற்கப்பட்டது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_top_bottom_states_census_2011",
+        "title_en": "Top vs Bottom Indian States by Demographic Metrics (Census 2011)",
+        "title_ta": "மக்கள் தொகைக் குறிகாட்டிகளில் முதன்மை vs கடைசி மாநிலங்கள் (2011 கணக்கெடுப்பு)",
+        "headers_en": [
+          "Demographic Indicator",
+          "Highest Ranked State (Top)",
+          "Lowest Ranked State (Bottom)"
+        ],
+        "headers_ta": [
+          "மக்கள் தொகைக் குறிகாட்டி",
+          "முதலிடம் பிடித்த மாநிலம்",
+          "கடைசி இடம் பிடித்த மாநிலம்"
+        ],
+        "rows_en": [
+          [
+            "Total Population",
+            "Uttar Pradesh (19.98 crore)",
+            "Sikkim (6.10 lakh)"
+          ],
+          [
+            "Decadal Growth Rate (2001-11)",
+            "Meghalaya (27.95%)",
+            "Nagaland (-0.58% — only negative growth)"
+          ],
+          [
+            "Population Density",
+            "Bihar (1,106 persons per sq km)",
+            "Arunachal Pradesh (17 persons per sq km)"
+          ],
+          [
+            "Overall Sex Ratio",
+            "Kerala (1,084 females per 1,000 males)",
+            "Haryana (879 females per 1,000 males)"
+          ],
+          [
+            "Child Sex Ratio (0-6 Years)",
+            "Mizoram (971 females per 1,000 males)",
+            "Haryana (834 females per 1,000 males)"
+          ],
+          [
+            "Overall Literacy Rate",
+            "Kerala (94.00%)",
+            "Bihar (61.80%)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்த மக்கள் தொகை",
+            "உத்தரப் பிரதேசம் (19.98 கோடி)",
+            "சிக்கிம் (6.10 லட்சம்)"
+          ],
+          [
+            "பத்தாண்டு வளர்ச்சி விகிதம்",
+            "மேகாலயா (27.95%)",
+            "நாகாலாந்து (-0.58% — ஒரே எதிர்மறை வளர்ச்சி)"
+          ],
+          [
+            "மக்கள் தொகை அடர்த்தி",
+            "பீகார் (சதுர கி.மீ-க்கு 1,106 நபர்கள்)",
+            "அருணாச்சலப் பிரதேசம் (சதுர கி.மீ-க்கு 17 நபர்கள்)"
+          ],
+          [
+            "ஒட்டுமொத்த பாலின விகிதம்",
+            "கேரளா (1,000 ஆண்களுக்கு 1,084 பெண்கள்)",
+            "ஹரியானா (1,000 ஆண்களுக்கு 879 பெண்கள்)"
+          ],
+          [
+            "குழந்தை பாலின விகிதம் (0-6)",
+            "மிசோரம் (1,000 சிறுவர்களுக்கு 971 சிறுமிகள்)",
+            "ஹரியானா (1,000 சிறுவர்களுக்கு 834 சிறுமிகள்)"
+          ],
+          [
+            "ஒட்டுமொத்த கல்வியறிவு",
+            "கேரளா (94.00%)",
+            "பீகார் (61.80%)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Population Part 2: Census History, Decadal Trends & Policies",
+        "short_label": "Census & Policies",
+        "children": [
+          {
+            "title": "Census History & Legal Base",
+            "short_label": "Census History",
+            "children": [
+              {
+                "title": "1872 Mayo (First Non-Synchronous Count)",
+                "short_label": "Mayo 1872"
+              },
+              {
+                "title": "1881 Ripon (First Synchronous Decennial, Plowden)",
+                "short_label": "Ripon 1881"
+              },
+              {
+                "title": "Census Act 1948 (Union List, MHA / RGCCI)",
+                "short_label": "Act 1948"
+              }
+            ]
+          },
+          {
+            "title": "Decadal Growth Milestones",
+            "short_label": "Decadal Milestones",
+            "children": [
+              {
+                "title": "1921 Year of Great Divide (-0.31% Negative Growth)",
+                "short_label": "1921 Divide"
+              },
+              {
+                "title": "1951 First Census of Independent India (36.11 Cr)",
+                "short_label": "1951 Census"
+              },
+              {
+                "title": "1961-71 Peak Growth Decade in History (24.80%)",
+                "short_label": "1961-71 Peak"
+              }
+            ]
+          },
+          {
+            "title": "Census 2011 Key Findings",
+            "short_label": "Census 2011",
+            "children": [
+              {
+                "title": "121.08 Crore Pop (17.70% Decadal Growth)",
+                "short_label": "Population"
+              },
+              {
+                "title": "Sex Ratio 943 vs Child Sex Ratio 919 (Plunge)",
+                "short_label": "Sex Ratios"
+              },
+              {
+                "title": "Density 382/sq km; Literacy 74.04% (M: 82%, F: 65%)",
+                "short_label": "Literacy/Density"
+              }
+            ]
+          },
+          {
+            "title": "National Population Policies",
+            "short_label": "Policies",
+            "children": [
+              {
+                "title": "1952 First Family Planning Program in the World",
+                "short_label": "1952 Program"
+              },
+              {
+                "title": "1976 Policy (Emergency, Coercion, 42nd Amendment)",
+                "short_label": "1976 Policy"
+              },
+              {
+                "title": "NPP 2000 (Swaminathan, Target-Free, Stable by 2045)",
+                "short_label": "NPP 2000"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "First Census Distinction Trap: 1872 Mayo vs 1881 Ripon",
+        "points": {
+          "en": [
+            "TRAP: Confusing the first census under Lord Mayo (1872) with the first synchronous decennial census under Lord Ripon (1881).",
+            "CORRECT FACT: If a question asks for the FIRST CENSUS in India, the answer is 1872 (under Viceroy Lord Mayo). But if it asks for the FIRST COMPLETE SYNCHRONOUS DECENNIAL CENSUS, the answer is strictly 1881 (under Viceroy Lord Ripon and Commissioner W.C. Plowden).",
+            "WHY CANDIDATES FAIL: Missing the qualifying adjective 'synchronous' in preliminary exam questions."
+          ],
+          "ta": [
+            "பொறி: மாயோ பிரபுவின் கீழ் நடைபெற்ற முதல் கணக்கெடுப்பையும் (1872), ரிப்பன் பிரபுவின் முதல் முழுமையான பத்தாண்டு கணக்கெடுப்பையும் (1881) குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: இந்தியாவில் 'முதல் மக்கள் தொகைக் கணக்கெடுப்பு' என்று பொதுவாகக் கேட்டால் விடை 1872 (மாயோ பிரபு). ஆனால் 'முதல் முழுமையான ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பு' என்று கேட்டால் விடை '1881' (ரிப்பன் பிரபு மற்றும் ஆணையர் டபிள்யூ.சி. ப்ளோடன்) மட்டுமே ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: வினாவில் 'ஒருங்கிணைந்த' (Synchronous) என்ற முக்கிய வார்த்தையைக் கவனிக்காமல் அவசரத்தில் விடையளிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Year of the Great Divide Trap: 1921, NOT 1947 or 1951",
+        "points": {
+          "en": [
+            "TRAP: Believing that 'The Year of the Great Divide' in Indian demography is 1947 (Independence) or 1951 (First Independent Census).",
+            "CORRECT FACT: In Indian economic demography, 'The Year of the Great Divide' is STRICTLY 1921! In the 1911-1921 census decade, India recorded a negative growth rate (-0.31%) due to the Spanish Flu pandemic and famines. After 1921, India entered Stage 2 and population growth never experienced a decline again.",
+            "WHY CANDIDATES FAIL: Assuming 'Great Divide' refers to the geopolitical partition of India in 1947."
+          ],
+          "ta": [
+            "பொறி: இந்திய மக்கள் தொகையியலில் 'பெரும் பிரிவினை ஆண்டு' என்பது 1947 (சுதந்திரம்) அல்லது 1951 (முதல் சுதந்திர கணக்கெடுப்பு) என நினைப்பது.",
+            "சரியான உண்மை: மக்கள் தொகையியலில் 'பெரும் பிரிவினை ஆண்டு' என்பது '1921' மட்டுமே! 1911-1921 பத்தாண்டில் ஸ்பானிஷ் காய்ச்சல் மற்றும் பஞ்சங்களால் மக்கள் தொகை வளர்ச்சி எதிர்மறையாகச் (-0.31%) சரிந்தது. 1921-க்குப் பிறகு இந்தியாவின் மக்கள் தொகை ஒருபோதும் குறையாமல் தொடர்ந்து வளர்ந்து வருகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'பெரும் பிரிவினை' என்ற வார்த்தையை 1947-ல் நிகழ்ந்த தேசப் பிரிவினையோடு தவறாகப் பொருத்திப் பார்ப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Highest Growth Decade Trap: 1961-71 (24.80%), NOT 1981-91",
+        "points": {
+          "en": [
+            "TRAP: Assuming the decade of peak population growth rate was 1971-81 or 1981-91.",
+            "CORRECT FACT: The highest decadal growth rate in Indian census history occurred in the 1961–1971 DECADE at 24.80%. Decadal growth dropped to 24.66% in 1971-81, 21.54% in 1991-2001, and 17.70% in 2001-2011.",
+            "WHY CANDIDATES FAIL: Believing population growth rates accelerated constantly until recent years, rather than peaking in 1961-71."
+          ],
+          "ta": [
+            "பொறி: இந்திய வரலாற்றில் அதிகபட்ச மக்கள் தொகை வளர்ச்சி விகிதம் பதிவான பத்தாண்டு 1971-81 அல்லது 1981-91 என நினைப்பது.",
+            "சரியான உண்மை: இந்திய வரலாற்றிலேயே உச்சபட்ச பத்தாண்டு வளர்ச்சி விகிதம் பதிவானது '1961-1971 பத்தாண்டில்' ஆகும் (24.80%). அதன்பிறகு வளர்ச்சி விகிதம் படிப்படியாகக் குறைந்தது: 1971-81ல் 24.66%, 1991-2001ல் 21.54%, மற்றும் 2001-2011ல் 17.70%.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மக்கள் தொகை வளர்ச்சி விகிதம் அண்மைக்காலம் வரை தொடர்ந்து அதிகரித்துக்கொண்டே இருந்ததாக தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Census Administrative Authority Trap: Ministry of Home Affairs, NOT Health or MoSPI",
+        "points": {
+          "en": [
+            "TRAP: Believing the decennial population census is conducted by the Ministry of Health & Family Welfare or MoSPI.",
+            "CORRECT FACT: The Census of India is statutorily conducted by the Office of the Registrar General and Census Commissioner of India (RGCCI) under the MINISTRY OF HOME AFFAIRS (MHA). MoSPI conducts NSSO/PLFS sample surveys, while Health conducts NFHS surveys.",
+            "WHY CANDIDATES FAIL: Associating population policies with the Ministry of Health, incorrectly deducing that Health conducts the census."
+          ],
+          "ta": [
+            "பொறி: பத்தாண்டு மக்கள் தொகைக் கணக்கெடுப்பை மத்திய சுகாதார அமைச்சகம் அல்லது புள்ளியியல் அமைச்சகம் (MoSPI) நடத்துகிறது என நினைப்பது.",
+            "சரியான உண்மை: மக்கள் தொகைக் கணக்கெடுப்பு என்பது மத்திய உள்துறை அமைச்சகத்தின் (Ministry of Home Affairs - MHA) கீழ் உள்ள 'இந்தியப் பதிவாளர் ஜெனரல் மற்றும் கணக்கெடுப்பு ஆணையர்' (RGCCI) அலுவலகத்தால் நடத்தப்படுகிறது! MoSPI புள்ளியியல் மாதிரி கணக்கெடுப்புகளை மட்டுமே நடத்துகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மக்கள் தொகை திட்டங்கள் சுகாதார அமைச்சகத்துடன் தொடர்புடையவை என்பதால் கணக்கெடுப்பையும் அவர்களே நடத்துவார்கள் என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Negative Growth State in Census 2011 Trap: Nagaland Alone",
+        "points": {
+          "en": [
+            "TRAP: Believing that all Indian states recorded positive population growth in the 2011 Census.",
+            "CORRECT FACT: NAGALAND was the ONLY state in India that recorded a NEGATIVE decadal growth rate (-0.58%) in Census 2011, caused by anomalous over-reporting in Census 2001 which was corrected in 2011.",
+            "WHY CANDIDATES FAIL: Assuming natural fertility prevents any modern Indian state from recording negative growth."
+          ],
+          "ta": [
+            "பொறி: 2011 கணக்கெடுப்பில் இந்தியாவின் அனைத்து மாநிலங்களும் நேர்மறை மக்கள் தொகை வளர்ச்சியைப் பதிவு செய்தன என நினைப்பது.",
+            "சரியான உண்மை: 2011 கணக்கெடுப்பில் எதிர்மறை வளர்ச்சி விகிதத்தைப் (-0.58%) பதிவு செய்த 'ஒரே இந்திய மாநிலம் நாகாலாந்து' மட்டுமே ஆகும்! 2001 கணக்கெடுப்பில் அதிகப்படியாகத் தவறாகப் பதிவு செய்யப்பட்ட புள்ளிவிவரங்கள் 2011-ல் சரிசெய்யப்பட்டதால் இது நிகழ்ந்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நவீன இந்தியாவில் எந்த மாநிலத்திலும் மக்கள் தொகை குறைய வாய்ப்பில்லை என்ற பொதுவான தவறான எண்ணம்."
+          ]
+        }
+      },
+      {
+        "title": "NPP 2000 Long-Term Stabilization Year Trap: 2045, NOT 2020 or 2030",
+        "points": {
+          "en": [
+            "TRAP: Conflating the medium-term target year (2010 for TFR 2.1) with the long-term stable population target year in NPP 2000.",
+            "CORRECT FACT: In the National Population Policy 2000, the LONG-TERM OBJECTIVE is explicitly defined as achieving a STABLE POPULATION BY 2045. The medium-term target was achieving replacement TFR (2.1) by 2010.",
+            "WHY CANDIDATES FAIL: Mixing up the medium-term target date (2010) with the long-term population stabilization target date (2045)."
+          ],
+          "ta": [
+            "பொறி: NPP 2000 கொள்கையின் நடுத்தர கால இலக்கையும் (2010-ல் TFR 2.1) நீண்டகால மக்கள் தொகை நிலைத்தன்மை இலக்கு ஆண்டையும் குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: தேசிய மக்கள் தொகைக் கொள்கை 2000-ன் நீண்டகால இலக்கு என்பது '2045-க்குள் மக்கள் தொகையை நிலையான சமநிலைக்குக் கொண்டுவருதல்' (Stable Population by 2045) ஆகும்! 2010 என்பது மாற்று நிலை TFR (2.1) அடைவதற்கான நடுத்தர கால இலக்காகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நடுத்தர கால இலக்கு ஆண்டான 2010 மற்றும் நீண்டகால இலக்கு ஆண்டான 2045 ஆகிய இரண்டையும் மாற்றி விடையளிப்பது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The first population census in India was conducted in 1872 under Viceroy Lord Mayo.",
+        "The first complete synchronous decennial census was conducted on February 17, 1881 under Lord Ripon (W.C. Plowden as Commissioner).",
+        "The Census Act of 1948 provides the permanent legal basis for decennial censuses under Ministry of Home Affairs.",
+        "The 1921 Census is known as 'The Year of the Great Divide' because it recorded negative growth (-0.31%).",
+        "The decade 1961–1971 recorded the highest decadal population growth rate in Indian history at 24.80%.",
+        "In 1952, India became the first country in the world to launch an official National Family Planning Programme.",
+        "National Population Policy 1976 froze parliamentary seats at the 1971 level via the 42nd Constitutional Amendment.",
+        "National Population Policy 2000 was drafted by Dr. M.S. Swaminathan Committee and approved in February 2000.",
+        "NPP 2000 set the long-term objective of achieving a stable population by 2045.",
+        "Census 2011 recorded India's total population at 121.08 crore (1.21 billion) with 17.70% decadal growth.",
+        "Census 2011 recorded national literacy at 74.04% (Male: 82.14%, Female: 65.46%) and sex ratio at 943.",
+        "Nagaland was the only Indian state to record a negative decadal population growth rate (-0.58%) in Census 2011."
+      ],
+      "ta": [
+        "இந்தியாவில் முதல் மக்கள் தொகைக் கணக்கெடுப்பு 1872-ல் மாயோ பிரபுவின் ஆட்சியில் நடத்தப்பட்டது.",
+        "முதல் ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பு பிப்ரவரி 17, 1881 அன்று ரிப்பன் பிரபுவின் ஆட்சியில் நடத்தப்பட்டது (டபிள்யூ.சி. ப்ளோடன் ஆணையர்).",
+        "1948-ஆம் ஆண்டின் கணக்கெடுப்புச் சட்டம் மத்திய உள்துறை அமைச்சகத்தின் கீழ் கணக்கெடுப்புக்கான சட்டப்பூர்வ அதிகாரத்தை அளிக்கிறது.",
+        "1921 கணக்கெடுப்பு எதிர்மறை வளர்ச்சியைப் (-0.31%) பதிவு செய்ததால் 'பெரும் பிரிவினை ஆண்டு' என அழைக்கப்படுகிறது.",
+        "1961-1971 பத்தாண்டில் இந்திய வரலாற்றிலேயே உச்சபட்ச மக்கள் தொகை வளர்ச்சி விகிதம் (24.80%) பதிவானது.",
+        "1952-ல் அதிகாரப்பூர்வ தேசிய குடும்பக் கட்டுப்பாடு திட்டத்தைத் தொடங்கிய உலகின் முதல் நாடாக இந்தியா திகழ்கிறது.",
+        "1976 மக்கள் கொள்கை 42-வது அரசியலமைப்புத் திருத்தம் மூலம் நாடாளுமன்றத் தொகுதிகளை 1971 அளவில் முடக்கியது.",
+        "தேசிய மக்கள் தொகைக் கொள்கை 2000 டாக்டர் எம்.எஸ். சுவாமிநாதன் வரைவுக் குழுவால் உருவாக்கப்பட்டு பிப்ரவரி 2000-ல் ஏற்கப்பட்டது.",
+        "NPP 2000 கொள்கை 2045-க்குள் மக்கள் தொகையை நிலையான சமநிலைக்குக் கொண்டுவருவதை நீண்டகால இலக்காகக் கொண்டது.",
+        "2011 கணக்கெடுப்பு இந்தியாவின் மொத்த மக்கள் தொகையை 121.08 கோடி என்றும் பத்தாண்டு வளர்ச்சியை 17.70% என்றும் பதிவு செய்தது.",
+        "2011 கணக்கெடுப்பில் தேசிய கல்வியறிவு 74.04% (ஆண்கள்: 82.14%, பெண்கள்: 65.46%) மற்றும் பாலின விகிதம் 943 ஆகப் பதிவானது.",
+        "2011 கணக்கெடுப்பில் எதிர்மறை வளர்ச்சி விகிதத்தைப் (-0.58%) பதிவு செய்த ஒரே மாநிலம் நாகாலாந்து ஆகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "1872 (Mayo): First census; 1881 (Ripon & Plowden): First synchronous decennial census (unbroken 10-year cycle).",
+        "Census Act 1948 provides statutory basis; conducted by Registrar General & Census Commissioner under Ministry of Home Affairs.",
+        "1921 is 'The Year of the Great Divide' (-0.31% drop due to 1918 Spanish Flu and famines); population never fell after 1921.",
+        "Peak decadal growth in Indian history was 24.80% in the 1961-1971 decade; growth has decelerated to 17.70% in 2001-2011.",
+        "First Family Planning Program in the world was launched by India in 1952 during the First Plan.",
+        "NPP 1976 froze parliamentary seats at 1971 census (42nd Amendment); 84th Amendment (2001) extended freeze till 2026.",
+        "NPP 2000 (M.S. Swaminathan Committee): Target-free, voluntary approach; stable population by 2045; PM-chaired Population Commission.",
+        "Census 2011: Pop = 121.08 Cr (17.5% of world); Literacy = 74.04%; Sex Ratio = 943; Child Sex Ratio = 919 (plunge).",
+        "State Extremes 2011: Most populous = UP (19.98 Cr); Least = Sikkim (6.1L); Highest density = Bihar (1,106); Lowest = Arunachal (17).",
+        "Highest Sex Ratio = Kerala (1,084); Lowest = Haryana (879); Only state with negative decadal growth = Nagaland (-0.58%)."
+      ],
+      "ta": [
+        "1872 (மாயோ): முதல் கணக்கெடுப்பு; 1881 (ரிப்பன் & ப்ளோடன்): முதல் ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பு.",
+        "1948 சட்டம் நிரந்தர அதிகாரம் அளிக்கிறது; மத்திய உள்துறை அமைச்சகத்தின் கீழ் உள்ள பதிவாளர் ஜெனரல் அலுவலகம் நடத்துகிறது.",
+        "1921 'பெரும் பிரிவினை ஆண்டு' (ஸ்பானிஷ் காய்ச்சலால் -0.31% சரிவு); 1921-க்குப் பிறகு மக்கள் தொகை ஒருபோதும் குறையவில்லை.",
+        "இந்திய வரலாற்றின் உச்சபட்ச வளர்ச்சி 1961-1971 பத்தாண்டில் 24.80% ஆகும்; 2001-2011-ல் இது 17.70% ஆகக் குறைந்தது.",
+        "உலகிலேயே முதன்முறையாக தேசிய குடும்ப நலத் திட்டத்தை 1952-ல் முதல் திட்டத்தின் போது இந்தியா தொடங்கியது.",
+        "1976 கொள்கை நாடாளுமன்ற இடங்களை 1971 அளவில் முடக்கியது (42-வது திருத்தம்); 84-வது திருத்தம் (2001) இதனை 2026 வரை நீட்டித்தது.",
+        "NPP 2000 (சுவாமிநாதன் வரைவு): கட்டாயமற்ற தன்னார்வ முறை; 2045-க்குள் நிலையான மக்கள் தொகை; பிரதமர் தலைமையில் மக்கள் தொகைக் குழு.",
+        "2011 கணக்கெடுப்பு: மக்கள் தொகை = 121.08 கோடி; கல்வியறிவு = 74.04%; பாலின விகிதம் = 943; குழந்தை பாலின விகிதம் = 919 (சரிவு).",
+        "மாநிலங்கள்: அதிக மக்கள் தொகை = UP (19.98 கோடி); குறைந்த = சிக்கிம் (6.1 லட்சம்); அதிக அடர்த்தி = பீகார் (1,106); குறைந்த = அருணாச்சல் (17).",
+        "அதிக பாலின விகிதம் = கேரளா (1,084); குறைந்த = ஹரியானா (879); எதிர்மறை வளர்ச்சி கண்ட ஒரே மாநிலம் = நாகாலாந்து (-0.58%)."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pop_201",
+        "front_en": "Under which Viceroy was the first complete synchronous decennial census conducted in India in 1881?",
+        "front_ta": "1881-ல் எந்த வைஸ்ராயின் ஆட்சியில் இந்தியாவில் முதல் முழுமையான ஒருங்கிணைந்த பத்தாண்டு கணக்கெடுப்பு நடத்தப்பட்டது?",
+        "back_en": "Lord Ripon (with W.C. Plowden as Census Commissioner).",
+        "back_ta": "ரிப்பன் பிரபு (டபிள்யூ.சி. ப்ளோடன் கணக்கெடுப்பு ஆணையராக இருந்தார்)."
+      },
+      {
+        "id": "rc_pop_202",
+        "front_en": "Which year is celebrated as 'The Year of the Great Divide' in Indian demography and why?",
+        "front_ta": "இந்திய மக்கள் தொகையியலில் 'பெரும் பிரிவினை ஆண்டு' என அழைக்கப்படும் ஆண்டு எது மற்றும் ஏன்?",
+        "back_en": "1921, because the 1911-1921 census recorded a negative growth rate (-0.31%) due to the Spanish Flu, after which India's population never declined.",
+        "back_ta": "1921, ஏனெனில் ஸ்பானிஷ் காய்ச்சல் காரணமாக 1911-1921 கணக்கெடுப்பு எதிர்மறை வளர்ச்சியைப் (-0.31%) பதிவு செய்தது; 1921-க்குப் பிறகு மக்கள் தொகை ஒருபோதும் குறையவில்லை."
+      },
+      {
+        "id": "rc_pop_203",
+        "front_en": "Under which Union Ministry is the Office of the Registrar General and Census Commissioner of India (RGCCI) situated?",
+        "front_ta": "இந்தியப் பதிவாளர் ஜெனரல் மற்றும் கணக்கெடுப்பு ஆணையர் அலுவலகம் (RGCCI) எந்த மத்திய அமைச்சகத்தின் கீழ் இயங்குகிறது?",
+        "back_en": "Ministry of Home Affairs (MHA).",
+        "back_ta": "மத்திய உள்துறை அமைச்சகம் (Ministry of Home Affairs)."
+      },
+      {
+        "id": "rc_pop_204",
+        "front_en": "Which decade recorded the highest population growth rate in Indian census history?",
+        "front_ta": "இந்திய கணக்கெடுப்பு வரலாற்றில் உச்சபட்ச மக்கள் தொகை வளர்ச்சி விகிதம் பதிவான பத்தாண்டு எது?",
+        "back_en": "1961–1971 (with a peak growth rate of 24.80%).",
+        "back_ta": "1961–1971 (உச்சபட்ச வளர்ச்சி விகிதம் 24.80%)."
+      },
+      {
+        "id": "rc_pop_205",
+        "front_en": "When did India become the first country in the world to launch an official national family planning program?",
+        "front_ta": "அதிகாரப்பூர்வ தேசிய குடும்பக் கட்டுப்பாடு திட்டத்தைத் தொடங்கிய உலகின் முதல் நாடாக இந்தியா உருவான ஆண்டு எது?",
+        "back_en": "1952 (during the First Five Year Plan).",
+        "back_ta": "1952 (முதல் ஐந்தாண்டுத் திட்டத்தின் போது)."
+      },
+      {
+        "id": "rc_pop_206",
+        "front_en": "Who chaired the expert committee that drafted the National Population Policy 2000 (NPP 2000)?",
+        "front_ta": "தேசிய மக்கள் தொகைக் கொள்கை 2000-ன் (NPP 2000) வரைவை உருவாக்கிய நிபுணர் குழுவின் தலைவர் யார்?",
+        "back_en": "Dr. M.S. Swaminathan (submitted in 1994, approved in 2000).",
+        "back_ta": "டாக்டர் எம்.எஸ். சுவாமிநாதன் (1994-ல் சமர்ப்பிக்கப்பட்டு 2000-ல் ஏற்கப்பட்டது)."
+      },
+      {
+        "id": "rc_pop_207",
+        "front_en": "What is the long-term target year for achieving a stable population under NPP 2000?",
+        "front_ta": "NPP 2000 கொள்கையின் கீழ் நிலையான மக்கள் தொகையை எட்டுவதற்கான நீண்டகால இலக்கு ஆண்டு எது?",
+        "back_en": "By the year 2045.",
+        "back_ta": "2045-ஆம் ஆண்டிற்குள்."
+      },
+      {
+        "id": "rc_pop_208",
+        "front_en": "What was India's decadal population growth rate during 2001-2011 as recorded in Census 2011?",
+        "front_ta": "2011 கணக்கெடுப்பில் பதிவான 2001-2011 பத்தாண்டின் இந்திய மக்கள் தொகை வளர்ச்சி விகிதம் என்ன?",
+        "back_en": "17.70% (down from 21.54% in 1991-2001).",
+        "back_ta": "17.70% (1991-2001-ல் இருந்த 21.54%-லிருந்து குறைந்தது)."
+      },
+      {
+        "id": "rc_pop_209",
+        "front_en": "Which single Indian state recorded a negative population growth rate in Census 2011?",
+        "front_ta": "2011 கணக்கெடுப்பில் எதிர்மறை மக்கள் தொகை வளர்ச்சி விகிதத்தைப் பதிவு செய்த ஒரே இந்திய மாநிலம் எது?",
+        "back_en": "Nagaland (-0.58%).",
+        "back_ta": "நாகாலாந்து (-0.58%)."
+      },
+      {
+        "id": "rc_pop_210",
+        "front_en": "Which state recorded the highest population density in Census 2011?",
+        "front_ta": "2011 கணக்கெடுப்பில் அதிக மக்கள் தொகை அடர்த்தியைக் கொண்ட மாநிலம் எது?",
+        "back_en": "Bihar (1,106 persons per square kilometer).",
+        "back_ta": "பீகார் (சதுர கிலோமீட்டருக்கு 1,106 நபர்கள்)."
+      }
+    ]
+  }
+}

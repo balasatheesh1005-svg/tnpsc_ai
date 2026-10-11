@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "topic_id": "economy_poverty_part_2",
+    "repository_id": "economy_poverty",
+    "display_title": "Poverty – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Poverty",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "analytical",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Dadabhai Naoroji Jail Cost of Living",
+    "National Planning Committee 1938",
+    "Bombay Plan 1944",
+    "YK Alagh Task Force 1979",
+    "2400 kcal Rural 2100 Urban",
+    "Lakdawala Committee 1993",
+    "CPI AL CPI IW State Specific",
+    "Tendulkar Committee 2009",
+    "Uniform PLB Abandoned Calories",
+    "816 Rural 1000 Urban 21.9 Percent",
+    "Rangarajan Committee 2014",
+    "972 Rural 1407 Urban",
+    "Multidimensional Poverty Index MPI",
+    "NITI Aayog 12 Indicators",
+    "Alkire Foster Dual Cutoff",
+    "13.5 Crore Exited Poverty"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Trace the historical evolution of poverty measurement from colonial subsistence budgets to modern multidimensional deprivation.",
+        "Understand why Tendulkar Committee abandoned nutritional calorie norms and how NITI Aayog's MPI complements monetary poverty."
+      ],
+      "ta": [
+        "காலனித்துவ கால பட்ஜெட்டுகள் முதல் நவீன பலபரிமாண இழப்பு வரையிலான வறுமை அளவீட்டு வரலாற்றைப் புரிந்து கொள்ளுதல்.",
+        "டெண்டுல்கர் குழு ஏன் கலோரி முறையைக் கைவிட்டது என்பதையும், நிதி ஆயோக்கின் MPI பண வறுமையை எவ்வாறு முழுமைப்படுத்துகிறது என்பதையும் அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key committee thresholds: Alagh (2400/2100 kcal, ₹49/₹56), Tendulkar (₹816/₹1000, 21.9%), Rangarajan (₹972/₹1407, 29.5%).",
+        "Recall the 12 indicators of NITI Aayog's National MPI and the two added national indicators."
+      ],
+      "ta": [
+        "முக்கிய குழு வரம்புகளை நினைவில் நிறுத்துதல்: அலக் (2400/2100 kcal, ₹49/₹56), டெண்டுல்கர் (₹816/₹1000, 21.9%), ரங்கராஜன் (₹972/₹1407, 29.5%).",
+        "நிதி ஆயோக்கின் தேசிய MPI-ன் 12 குறிகாட்டிகளையும், புதிதாக சேர்க்கப்பட்ட இரு தேசிய குறிகாட்டிகளையும் நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the policy debate between Tendulkar's ₹27/₹33 poverty line and Rangarajan's revised standard.",
+        "Compare Global MPI vs National MPI in terms of weights, indicators, and methodology."
+      ],
+      "ta": [
+        "டெண்டுல்கர் குழுவின் ₹27/₹33 வறுமைக் கோட்டிற்கும் ரங்கராஜன் குழுவின் திருத்தப்பட்ட தரத்திற்கும் இடையேயான கொள்கை விவாதங்களை ஆய்வு செய்தல்.",
+        "உலகளாவிய MPI மற்றும் தேசிய MPI-ஐ எடைகள், குறிகாட்டிகள் மற்றும் முறையியல் ரீதியாக ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Avoid exam traps regarding official adoption status, committee inflation deflators, and MPI dual cut-offs."
+      ],
+      "ta": [
+        "அதிகாரப்பூர்வ ஏற்பு நிலை, குழுக்களின் விலைக் குறியீடுகள் மற்றும் MPI இரட்டை வரம்புகள் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Poverty – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_historical_estimation",
+      "title_en": "Pre-Independence Pioneers: Naoroji, NPC & Bombay Plan",
+      "title_ta": "சுதந்திரத்திற்கு முந்தைய முன்னோடிகள்: நௌரோஜி, NPC & பம்பாய் திட்டம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_post_independence_committees",
+      "title_en": "Post-Independence Expert Committees: Alagh & Lakdawala",
+      "title_ta": "சுதந்திரத்திற்குப் பிந்தைய நிபுணர் குழுக்கள்: அலக் & லக்டவாலா",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tendulkar_rangarajan",
+      "title_en": "The Great Transition: Tendulkar (2009) vs Rangarajan (2014)",
+      "title_ta": "பெரும் மாற்றம்: டெண்டுல்கர் குழு (2009) vs ரங்கராஜன் குழு (2014)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_multidimensional_poverty",
+      "title_en": "National Multidimensional Poverty Index (MPI): NITI Aayog",
+      "title_ta": "தேசிய பலபரிமாண வறுமைக் குறியீடு (MPI): நிதி ஆயோக்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Poverty line estimation in India is the institutional methodology of establishing minimum expenditure thresholds to define deprivation. Historically anchored to nutritional norms (calories), estimation has evolved through landmark expert committees—from Dadabhai Naoroji's Jail Cost of Living to the Alagh, Lakdawala, Tendulkar, and Rangarajan Committees—and culminated in NITI Aayog's Multidimensional Poverty Index (MPI) measuring overlapping deprivations across health, education, and living standards.",
+      "ta": "இந்தியாவில் வறுமைக் கோடு மதிப்பீடு என்பது வறுமையை வரையறுக்க குறைந்தபட்ச செலவு வரம்புகளை நிர்ணயிக்கும் நிறுவன ரீதியான நடைமுறையாகும். வரலாற்று ரீதியாக ஊட்டச்சத்து விதிகளுடன் (கலோரிகள்) பிணைக்கப்பட்ட இந்த மதிப்பீடு, தாதாபாய் நௌரோஜியின் சிறை வாழ்க்கைச் செலவு முதல் அலக், லக்டவாலா, டெண்டுல்கர் மற்றும் ரங்கராஜன் குழுக்கள் வழியாக வளர்ச்சி பெற்று, தற்போது ஆரோக்கியம், கல்வி மற்றும் வாழ்க்கைத்தரம் ஆகிய பலபரிமாண இழப்புகளை அளவிடும் நிதி ஆயோக்கின் பலபரிமாண வறுமைக் குறியீடாக (MPI) மலர்ந்துள்ளது."
+    },
+    "introduction": {
+      "en": "The trajectory of official poverty estimation in India reflects the evolving consensus on welfare economics, statistical methodology, and social realities. In pre-independence India, pioneering thinkers like Dadabhai Naoroji in 1867-68 utilized rigorous subsistence calculations to expose colonial economic drain. Post-independence planning initially adopted calorie-consumption anchors under the Alagh Task Force (1979) and Lakdawala Committee (1993). However, structural transformations compelled the Suresh Tendulkar Committee (2009) to abandon nutritional calorie anchoring in favor of an all-inclusive consumption basket incorporating health and education expenses. Later, the Rangarajan Committee (2014) proposed higher nutritional and behavioral norms. In the contemporary era, NITI Aayog's National Multidimensional Poverty Index (MPI) utilizes 12 indicators based on the Alkire-Foster methodology. Mastering this chronology, committee parameters, and statistical findings is vital for TNPSC Group 1 success.",
+      "ta": "இந்தியாவில் அதிகாரப்பூர்வ வறுமை மதிப்பீட்டின் வரலாறு என்பது நலப் பொருளாதாரம், புள்ளிவிவர முறைகள் மற்றும் சமூக யதார்த்தங்களின் பரிணாம வளர்ச்சியைப் பிரதிபலிக்கிறது. சுதந்திரத்திற்கு முந்தைய இந்தியாவில், 1867-68-ல் தாதாபாய் நௌரோஜி பிரிட்டிஷ் காலனித்துவ பொருளாதாரச் சுரண்டலை வெளிக்கொணர 'சிறை வாழ்க்கைச் செலவு' என்ற கருத்தாக்கத்தைப் பயன்படுத்தினார். சுதந்திரத்திற்குப் பிந்தைய திட்டமிடுதல் அலக் பணிக்குழு (1979) மற்றும் லக்டவாலா குழு (1993) மூலம் கலோரி நுகர்வு அளவீட்டை அடிப்படையாகக் கொண்டது. ஆனால், சமூக மாற்றங்கள் சுரேஷ் டெண்டுல்கர் குழுவை (2009) கலோரி முறையைக் கைவிட்டு, மருத்துவம் மற்றும் கல்விச் செலவுகளை உள்ளடக்கிய முழுமையான நுகர்வு கூடைக்கு மாறத் தூண்டியது. பின்னர் ரங்கராஜன் குழு (2014) திருத்தப்பட்ட நெறிமுறைகளை முன்வைத்தது. தற்காலத்தில் நிதி ஆயோக் 12 குறிகாட்டிகளைக் கொண்ட தேசிய பலபரிமாண வறுமைக் குறியீட்டை (MPI) அல்கைர்-ஃபாஸ்டர் முறையில் வெளியிடுகிறது. இக்குழுக்களின் காலவரிசை, அளவுகோல்கள் மற்றும் கண்டுபிடிப்புகளை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_historical_estimation": [
+      {
+        "term_en": "Dadabhai Naoroji: Jail Cost of Living (1867-68)",
+        "term_ta": "தாதாபாய் நௌரோஜி: சிறை வாழ்க்கைச் செலவு (1867-68)",
+        "details_en": "In his seminal work 'Poverty and Un-British Rule in India', the 'Grand Old Man of India' made the first systematic estimation of a poverty line in India. Using the subsistence diet prescribed for prisoners in colonial jails (rice/flour, dhal, mutton, vegetables, ghee, salt), he calculated a 'jail cost of living' of ₹16 to ₹35 per capita per year at 1867-68 prices. He then adjusted this prisoner diet for the general free population (accounting for children who consume less and don't require adult prisoner diets), deriving an adjusted subsistence threshold.",
+        "details_ta": "'வறுமையும் இந்தியாவில் பிரிட்டிஷ் தன்மையற்ற ஆட்சியும்' என்ற வரலாற்று நூலில், 'இந்தியாவின் பெருங்கிழார்' தாதாபாய் நௌரோஜி இந்தியாவின் முதல் முறையான வறுமைக் கோட்டை உருவாக்கினார். பிரிட்டிஷ் சிறைக் கைதிகளுக்கு வழங்கப்பட்ட அடிப்படை உணவை (அரிசி/மாவு, பருப்பு, இறைச்சி, காய்கறி, நெய், உப்பு) அடிப்படையாகக் கொண்டு 1867-68 விலையில் ஆண்டுக்கு நபர் ஒருவருக்கு ₹16 முதல் ₹35 வரை 'சிறை வாழ்க்கைச் செலவாக' கணக்கிட்டார். பின்னர் சிறையில் இல்லாத பொது மக்கள் தொகைக்கு ஏற்ப (குழந்தைகளின் குறைந்த நுகர்வைக் கணக்கில் கொண்டு) இதனைத் திருத்தியமைத்தார்."
+      },
+      {
+        "term_en": "National Planning Committee (NPC, 1938)",
+        "term_ta": "தேசிய திட்டக் குழு (NPC, 1938)",
+        "details_en": "Formed by Congress President Subhas Chandra Bose and chaired by Jawaharlal Nehru. The NPC formulated a minimum standard of living ranging between ₹15 and ₹25 per capita per month at pre-war prices, encompassing nutritional adequacy (2400-2800 kcal), housing (100 sq ft per capita), clothing (30 yards per capita per year), and state medical services.",
+        "details_ta": "காங்கிரஸ் தலைவர் சுபாஷ் சந்திர போஸால் அமைக்கப்பட்டு, ஜவஹர்லால் நேரு தலைமையில் இயங்கியது. போருக்கு முந்தைய விலைகளின்படி தனிநபர் ஒருவருக்கு மாதம் ₹15 முதல் ₹25 வரை குறைந்தபட்ச வாழ்க்கைத்தரமாக நிர்ணயித்தது. இதில் கலோரி உணவு (2400-2800 kcal), உறைவிடம் (நபர் ஒருவருக்கு 100 சதுர அடி), ஆடை (ஆண்டுக்கு 30 கெஜம்) மற்றும் மருத்துவ சேவைகள் உள்ளடக்கப்பட்டன."
+      },
+      {
+        "term_en": "The Bombay Plan (1944)",
+        "term_ta": "பம்பாய் திட்டம் (1944)",
+        "details_en": "Authored by eight leading industrial titans (JRD Tata, GD Birla, etc.), the Bombay Plan proposed a targeted minimum per capita consumption expenditure of ₹75 per year at 1938-39 prices, emphasizing food (2800 calories), 30 yards of clothing, and 100 sq ft housing.",
+        "details_ta": "ஜே.ஆர்.டி. டாடா, ஜி.டி. பிர்லா உள்ளிட்ட 8 முன்னணி இந்திய தொழில் அதிபர்களால் முன்வைக்கப்பட்ட திட்டம். 1938-39 விலையில் நபர் ஒருவருக்கு ஆண்டுக்கு ₹75 குறைந்தபட்ச நுகர்வுச் செலவை நிர்ணயித்தது. இதில் 2800 கலோரி உணவு, 30 கெஜம் ஆடை மற்றும் 100 சதுர அடி வீடு பரிந்துரைக்கப்பட்டது."
+      }
+    ],
+    "sec_post_independence_committees": [
+      {
+        "term_en": "Y.K. Alagh Task Force (1979)",
+        "term_ta": "ஒய்.கே. அலக் பணிக்குழு (1979)",
+        "details_en": "The Planning Commission Task Force on 'Projections of Minimum Needs and Effective Consumption Demand' chaired by Dr. Y.K. Alagh established India's first official nutritional calorie norms: 2400 kcal per person per day in rural areas (reflecting heavier manual labor) and 2100 kcal in urban areas. Mapping these calorie requirements to the 1973-74 NSSO consumption basket (28th Round), the poverty line was fixed at ₹49.09 per capita per month for rural areas and ₹56.64 per capita per month for urban areas.",
+        "details_ta": "டாக்டர் ஒய்.கே. அலக் தலைமையில் திட்டக் குழு அமைத்த பணிக்குழு, இந்தியாவின் முதல் அதிகாரப்பூர்வ ஊட்டச்சத்து கலோரி வரம்புகளை நிர்ணயித்தது: கடின உழைப்பைக் கருத்தில் கொண்டு கிராமப்புறத்திற்கு 2400 kcal மற்றும் நகர்ப்புறத்திற்கு 2100 kcal. இந்த கலோரி அளவை 1973-74 NSSO நுகர்வு கூடையுடன் ஒப்பிட்டு, வறுமைக் கோடு மாதாந்திர தனிநபர் செலவாக கிராமப்புறத்திற்கு ₹49.09 மற்றும் நகர்ப்புறத்திற்கு ₹56.64 என நிர்ணயிக்கப்பட்டது."
+      },
+      {
+        "term_en": "D.T. Lakdawala Expert Group (1993)",
+        "term_ta": "டி.டி. லக்டவாலா நிபுணர் குழு (1993)",
+        "details_en": "Chaired by Prof. D.T. Lakdawala, this expert group submitted its report in 1993 (accepted by Planning Commission in 1997). Key innovations: (1) Retained the 2400 kcal rural / 2100 kcal urban nutritional norms; (2) Abolished the uniform national price deflator, disaggregating poverty estimation into STATE-SPECIFIC poverty lines to reflect interstate cost-of-living differentials; (3) Used Consumer Price Index for Agricultural Labourers (CPI-AL) for updating rural poverty lines and Consumer Price Index for Industrial Workers (CPI-IW) for urban poverty lines; (4) Retained the URP methodology based on NSSO consumption data.",
+        "details_ta": "பேராசிரியர் டி.டி. லக்டவாலா தலைமையிலான இக்குழு 1993-ல் அறிக்கை சமர்ப்பித்தது (1997-ல் திட்டக் குழுவால் ஏற்கப்பட்டது). முக்கிய பரிந்துரைகள்: (1) கிராமப்புறத்திற்கு 2400 kcal மற்றும் நகர்ப்புறத்திற்கு 2100 kcal கலோரி வரம்பைத் தொடர்ந்தது; (2) மாநிலங்களுக்கு இடையேயான விலை வேறுபாடுகளைக் கருத்தில் கொண்டு தேசிய அளவிலான பொது விலைக் குறியீட்டை நீக்கிவிட்டு 'மாநில அளவிலான தனித்துவ வறுமைக் கோடுகளை' உருவாக்கியது; (3) கிராமப்புற வறுமைக் கோட்டைப் புதுப்பிக்க விவசாயத் தொழிலாளர்களுக்கான நுகர்வோர் விலைக் குறியீட்டையும் (CPI-AL), நகர்ப்புறத்திற்கு தொழில்துறை தொழிலாளர்களுக்கான விலைக் குறியீட்டையும் (CPI-IW) பயன்படுத்தியது; (4) NSSO-ன் URP நுகர்வு முறையைப் பயன்படுத்தியது."
+      }
+    ],
+    "sec_tendulkar_rangarajan": [
+      {
+        "term_en": "Suresh Tendulkar Committee (2009)",
+        "term_ta": "சுரேஷ் டெண்டுல்கர் குழு (2009)",
+        "details_en": "Constituted by Planning Commission in 2005, submitted report in December 2009. Paradigm shifts: (1) Explicitly MOVED AWAY from caloric anchors, noting that malnutrition did not track calories due to shifting dietary patterns; (2) Adopted a UNIFORM poverty line basket (PLB) across rural and urban India based on the urban consumption pattern; (3) Incorporate private expenditure on HEALTH and EDUCATION alongside food; (4) Shifted from URP to Mixed Reference Period (MRP); (5) Used Fisher price indices for updating. Poverty line at 2004-05 prices: ₹446.68 (rural) and ₹578.80 (urban). At 2011-12 prices: ₹816 per month (rural - ₹27.20/day) and ₹1000 per month (urban - ₹33.33/day). National poverty rate in 2011-12: 21.9% (25.7% rural, 13.7% urban), down from 37.2% in 2004-05.",
+        "details_ta": "2005-ல் அமைக்கப்பட்டு டிசம்பர் 2009-ல் அறிக்கை சமர்ப்பித்தது. புரட்சிகர மாற்றங்கள்: (1) கலோரி அடிப்படையிலான முறையை முற்றிலுமாக கைவிட்டது; (2) நகர்ப்புற நுகர்வு முறையை அடிப்படையாகக் கொண்டு கிராமம் மற்றும் நகர்ப்புறம் இரண்டிற்கும் 'ஒரே மாதிரியான நுகர்வு கூடையை' (Uniform PLB) ஏற்றுக்கொண்டது; (3) உணவோடு சேர்த்து தனியார் கல்வி மற்றும் மருத்துவச் செலவுகளையும் உள்ளடக்கக் கோரியது; (4) URP முறையிலிருந்து கலப்பு மதிப்பீட்டுக் காலத்திற்கு (MRP) மாறியது; (5) விலைகளைப் புதுப்பிக்க ஃபிஷர் குறியீட்டைப் பயன்படுத்தியது. 2011-12 விலையில் வறுமைக் கோடு: கிராமப்புறத்திற்கு மாதம் ₹816 (நாள் ஒன்றுக்கு ₹27.20) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1000 (நாள் ஒன்றுக்கு ₹33.33). 2011-12-ல் தேசிய வறுமை விகிதம்: 21.9% (கிராமப்புறம் 25.7%, நகர்ப்புறம் 13.7%). இது அதிகாரப்பூர்வ அடிப்படை அளவீடாகும்."
+      },
+      {
+        "term_en": "C. Rangarajan Expert Group (2014)",
+        "term_ta": "சி. ரங்கராஜன் நிபுணர் குழு (2014)",
+        "details_en": "Constituted in 2012 following widespread public criticism of Tendulkar's 'low' ₹27/₹33 poverty line; submitted report in June 2014. Key recommendations: (1) Reintroduced nutritional norms based on ICMR recommendations: 2155 kcal rural / 2090 kcal urban, PLUS protein norms (48g rural / 50g urban) and fat norms (28g rural / 26g urban); (2) Separated non-food component into essential non-food and other non-food; (3) Adopted Modified Mixed Reference Period (MMRP); (4) Fixed 2011-12 poverty line at ₹972 per month for rural (₹32.40/day) and ₹1407 per month for urban (₹46.90/day). Resulting poverty rate in 2011-12: 29.5% (30.9% rural, 26.4% urban)—identifying 363 million poor compared to Tendulkar's 269 million. Note: Rangarajan report was NOT officially adopted by the government, leaving Tendulkar as the official NSSO baseline.",
+        "details_ta": "டெண்டுல்கர் குழுவின் குறைந்தபட்ச ₹27/₹33 வறுமைக் கோட்டின் மீதான மக்கள் விமர்சனங்களை அடுத்து 2012-ல் அமைக்கப்பட்டு ஜூன் 2014-ல் அறிக்கை சமர்ப்பித்தது. முக்கிய அம்சங்கள்: (1) ICMR பரிந்துரைகளின்படி ஊட்டச்சத்து விதிகளை மீண்டும் இணைத்தது: கிராமப்புறத்திற்கு 2155 kcal / நகர்ப்புறத்திற்கு 2090 kcal, மற்றும் புரதம் (கிராமம் 48g / நகர்ப்புறம் 50g), கொழுப்பு (கிராமம் 28g / நகர்ப்புறம் 26g); (2) உணவு அல்லாத செலவுகளை அவசியமானது மற்றும் இதர எனப் பிரித்தது; (3) MMRP முறையைப் பயன்படுத்தியது; (4) 2011-12 விலையில் வறுமைக் கோட்டை கிராமப்புறத்திற்கு மாதம் ₹972 (நாள் ஒன்றுக்கு ₹32.40) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1407 (நாள் ஒன்றுக்கு ₹46.90) என நிர்ணயித்தது. இதன்படி 2011-12 தேசிய வறுமை விகிதம்: 29.5% (கிராமம் 30.9%, நகர்ப்புறம் 26.4%) - அதாவது 36.3 கோடி ஏழைகள். குறிப்பு: ரங்கராஜன் அறிக்கை அரசால் அதிகாரப்பூர்வமாக ஏற்றுக்கொள்ளப்படவில்லை, எனவே டெண்டுல்கர் அறிக்கையே அதிகாரப்பூர்வ அடிப்படையாக நீடிக்கிறது."
+      }
+    ],
+    "sec_multidimensional_poverty": [
+      {
+        "term_en": "Global MPI vs National MPI Framework",
+        "term_ta": "உலகளாவிய MPI vs தேசிய MPI கட்டமைப்பு",
+        "details_en": "The Global MPI is developed by the Oxford Poverty and Human Development Initiative (OPHI) and UNDP, utilizing 10 indicators across 3 equally weighted dimensions (Health, Education, Standard of Living). In 2021, NITI Aayog developed India's National MPI, retaining the 3 dimensions and 10 global indicators while adding TWO INDIA-SPECIFIC INDICATORS: 'Antenatal Care' (under Health) and 'Bank Account' (under Standard of Living), bringing the total to 12 indicators. Weights: Health (1/3), Education (1/3), Standard of Living (1/3).",
+        "details_ta": "உலகளாவிய MPI ஆக்ஸ்போர்டு பல்கலைக்கழகத்தின் OPHI மற்றும் UNDP அமைப்பால் 3 பரிமாணங்கள் (சுகாதாரம், கல்வி, வாழ்க்கைத்தரம்) மற்றும் 10 குறிகாட்டிகளைக் கொண்டு உருவாக்கப்பட்டது. 2021-ல் நிதி ஆயோக் இந்தியாவின் தேசிய MPI-ஐ உருவாக்கியது. இதில் உலகளாவிய 10 குறிகாட்டிகளோடு இந்திய சூழலுக்கேற்ப மேலும் இரு குறிகாட்டிகள் சேர்க்கப்பட்டன: 'மகப்பேறுக்கு முந்தைய பராமரிப்பு' (சுகாதாரத்தின் கீழ்) மற்றும் 'வங்கி கணக்கு' (வாழ்க்கைத்தரத்தின் கீழ்), ஆக மொத்தம் 12 குறிகாட்டிகள். எடைகள்: சுகாதாரம் (1/3), கல்வி (1/3), வாழ்க்கைத்தரம் (1/3)."
+      },
+      {
+        "term_en": "Alkire-Foster Dual-Cutoff Methodology",
+        "term_ta": "அல்கைர்-ஃபாஸ்டர் இரட்டை-வரம்பு முறை",
+        "details_en": "National MPI employs the Alkire-Foster methodology using two cut-offs: (1) Deprivation Cut-off (z_i): determines whether a household is deprived in each specific indicator; (2) Poverty Cut-off (k): determines whether a person is multidimensionally poor. Under MPI, k is set at 33.33% (1/3). If a person's weighted deprivation score is >= 33.33%, they are identified as Multidimensionally Poor. MPI = Headcount Ratio (H) x Intensity of Poverty (A).",
+        "details_ta": "தேசிய MPI அல்கைர்-ஃபாஸ்டர் இரட்டை-வரம்பு முறையைப் பயன்படுத்துகிறது: (1) பற்றாக்குறை வரம்பு (Deprivation cut-off): ஒரு குடும்பம் குறிப்பிட்ட குறிகாட்டியில் பின்தங்கியுள்ளதா என தீர்மானிப்பது; (2) வறுமை வரம்பு (Poverty cut-off - k): ஒருவர் பலபரிமாண ஏழையா என தீர்மானிப்பது. இதில் 'k' என்பது 33.33% (1/3) ஆக நிர்ணயிக்கப்பட்டுள்ளது. ஒருவரின் எடையிடப்பட்ட இழப்பு மதிப்பு 33.33%-க்கு மேல் இருந்தால் அவர் பலபரிமாண ஏழையாகக் கருதப்படுகிறார். MPI = தலைக்கணக்கு விகிதம் (H) x வறுமையின் செறிவு (A)."
+      },
+      {
+        "term_en": "Key Findings of NITI Aayog MPI Report (2023)",
+        "term_ta": "நிதி ஆயோக் MPI அறிக்கை முக்கிய கண்டுபிடிப்புகள் (2023)",
+        "details_en": "Based on NFHS-4 (2015-16) and NFHS-5 (2019-21) data: (1) Multidimensional poverty in India declined steeply from 24.85% in 2015-16 to 14.96% in 2019-21; (2) A historic 13.5 crore individuals exited multidimensional poverty in this 5-year period; (3) Rural poverty recorded the fastest decline from 32.59% to 19.28%; (4) Uttar Pradesh, Bihar, Madhya Pradesh, and Odisha recorded the fastest exit from poverty; (5) Bihar remains the state with the highest multidimensional poverty (33.76%), while Kerala has the lowest (0.55%). Tamil Nadu boasts one of the lowest multidimensional poverty rates in India (2.20%).",
+        "details_ta": "NFHS-4 (2015-16) மற்றும் NFHS-5 (2019-21) தரவுகளின்படி: (1) இந்தியாவின் பலபரிமாண வறுமை 2015-16-ல் இருந்த 24.85%-லிருந்து 2019-21-ல் 14.96% ஆகக் கணிசமாகக் குறைந்தது; (2) இந்த 5 ஆண்டு காலத்தில் வரலாற்றுச் சாதனையாக 13.5 கோடி மக்கள் பலபரிமாண வறுமையிலிருந்து மீண்டுள்ளனர்; (3) கிராமப்புற வறுமை 32.59%-லிருந்து 19.28% ஆக அதிவேக சரிவைக் கண்டது; (4) உத்தரப் பிரதேசம், பீகார், மத்தியப் பிரதேசம் ஆகியவை வறுமை ஒழிப்பில் வேகமான முன்னேற்றத்தைக் காட்டின; (5) பீகார் அதிகபட்ச பலபரிமாண வறுமையைக் கொண்டுள்ளது (33.76%), கேரளா மிகக் குறைந்த வறுமையைக் கொண்டுள்ளது (0.55%). தமிழ்நாடு மிகக் குறைந்த வறுமை கொண்ட முன்னணி மாநிலங்களில் ஒன்றாகத் திகழ்கிறது (2.20%)."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_tendulkar_vs_rangarajan",
+        "title_en": "Tendulkar Committee (2009) vs Rangarajan Committee (2014)",
+        "title_ta": "டெண்டுல்கர் குழு (2009) vs ரங்கராஜன் குழு (2014) விரிவான ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Suresh Tendulkar Committee (2009)",
+          "C. Rangarajan Committee (2014)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "சுரேஷ் டெண்டுல்கர் குழு (2009)",
+          "சி. ரங்கராஜன் குழு (2014)"
+        ],
+        "rows_en": [
+          [
+            "Nutritional Calorie Stance",
+            "Explicitly ABANDONED calorie anchoring; delinked from calorie consumption",
+            "REINTRODUCED ICMR norms: 2155 kcal rural, 2090 kcal urban + protein/fat"
+          ],
+          [
+            "Consumption Recall Method",
+            "Mixed Reference Period (MRP: 365-day for 5 durables, 30-day for food)",
+            "Modified Mixed Reference Period (MMRP: 7-day, 30-day, 365-day)"
+          ],
+          [
+            "Rural Poverty Line (2011-12)",
+            "₹816 per capita per month (₹27.20 per day)",
+            "₹972 per capita per month (₹32.40 per day)"
+          ],
+          [
+            "Urban Poverty Line (2011-12)",
+            "₹1,000 per capita per month (₹33.33 per day)",
+            "₹1,407 per capita per month (₹46.90 per day)"
+          ],
+          [
+            "National Poverty Rate (2011-12)",
+            "21.9% (Rural: 25.7%, Urban: 13.7%) — 269.8 million poor",
+            "29.5% (Rural: 30.9%, Urban: 26.4%) — 363.0 million poor"
+          ],
+          [
+            "Official Adoption Status",
+            "Officially ACCEPTED and remains government baseline benchmark",
+            "Report submitted in 2014 but NOT officially adopted by Union Government"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கலோரி குறித்த நிலைப்பாடு",
+            "கலோரி முறையை முற்றிலுமாக கைவிட்டது; ஊட்டச்சத்திலிருந்து செலவைத் துண்டித்தது",
+            "ICMR விதிகளை மீண்டும் சேர்த்தது: கிராமம் 2155 kcal, நகர்ப்புறம் 2090 kcal + புரதம்/கொழுப்பு"
+          ],
+          [
+            "நுகர்வு மதிப்பீட்டு முறை",
+            "கலப்பு முறை (MRP: 5 நீடித்த பொருட்களுக்கு 365 நாட்கள், உணவுக்கு 30 நாட்கள்)",
+            "மாற்றியமைக்கப்பட்ட முறை (MMRP: 7 நாட்கள், 30 நாட்கள், 365 நாட்கள்)"
+          ],
+          [
+            "கிராமப்புற வறுமைக் கோடு (2011-12)",
+            "மாதம் ₹816 (நாள் ஒன்றுக்கு ₹27.20)",
+            "மாதம் ₹972 (நாள் ஒன்றுக்கு ₹32.40)"
+          ],
+          [
+            "நகர்ப்புற வறுமைக் கோடு (2011-12)",
+            "மாதம் ₹1,000 (நாள் ஒன்றுக்கு ₹33.33)",
+            "மாதம் ₹1,407 (நாள் ஒன்றுக்கு ₹46.90)"
+          ],
+          [
+            "தேசிய வறுமை விகிதம் (2011-12)",
+            "21.9% (கிராமம்: 25.7%, நகர்ப்புறம்: 13.7%) — 26.98 கோடி ஏழைகள்",
+            "29.5% (கிராமம்: 30.9%, நகர்ப்புறம்: 26.4%) — 36.30 கோடி ஏழைகள்"
+          ],
+          [
+            "அதிகாரப்பூர்வ ஏற்பு நிலை",
+            "அரசால் ஏற்றுக்கொள்ளப்பட்டு அதிகாரப்பூர்வ அளவீடாக நீடிக்கிறது",
+            "2014-ல் அறிக்கை அளிக்கப்பட்டது, ஆனால் அரசால் அதிகாரப்பூர்வமாக ஏற்கப்படவில்லை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_alagh_vs_lakdawala",
+        "title_en": "Alagh Task Force (1979) vs Lakdawala Committee (1993)",
+        "title_ta": "அலக் பணிக்குழு (1979) vs லக்டவாலா குழு (1993) ஒப்பீடு",
+        "headers_en": [
+          "Comparison Attribute",
+          "Y.K. Alagh Task Force (1979)",
+          "D.T. Lakdawala Committee (1993)"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டு அம்சம்",
+          "ஒய்.கே. அலக் பணிக்குழு (1979)",
+          "டி.டி. லக்டவாலா குழு (1993)"
+        ],
+        "rows_en": [
+          [
+            "Caloric Benchmark",
+            "Established 2400 kcal (rural) and 2100 kcal (urban) daily norms",
+            "Retained the exact 2400 kcal (rural) and 2100 kcal (urban) norms"
+          ],
+          [
+            "Price Deflator Mechanism",
+            "Uniform all-India price index based on CSO National Accounts deflator",
+            "Disaggregated into STATE-SPECIFIC price indices reflecting local living costs"
+          ],
+          [
+            "Price Indices Employed",
+            "CSO National Accounts Private Consumption Expenditure deflator",
+            "CPI-AL for rural poverty updates; CPI-IW for urban poverty updates"
+          ],
+          [
+            "Poverty Line Base (1973-74)",
+            "Rural: ₹49.09 per capita/month; Urban: ₹56.64 per capita/month",
+            "Re-anchored state-specific poverty lines using 1973-74 price structure"
+          ],
+          [
+            "NSSO Methodology Used",
+            "Uniform Reference Period (URP: 30 days for all goods)",
+            "Uniform Reference Period (URP: 30 days for all goods)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கலோரி அளவுகோல்",
+            "கிராமப்புறத்திற்கு 2400 kcal மற்றும் நகர்ப்புறத்திற்கு 2100 kcal தினசரி அளவை உருவாக்கியது",
+            "அலக் குழுவின் அதே 2400 kcal (கிராமம்) மற்றும் 2100 kcal (நகர்ப்புறம்) அளவைத் தொடர்ந்தது"
+          ],
+          [
+            "விலைக் குறியீட்டு முறை",
+            "தேசிய கணக்குகள் அடிப்படையிலான ஒற்றை அகில இந்திய விலைக் குறியீடு",
+            "உள்ளூர் வாழ்க்கைச் செலவை வெளிப்படுத்தும் 'மாநில அளவிலான விலைக் குறியீடுகள்'"
+          ],
+          [
+            "பயன்படுத்தப்பட்ட குறியீடுகள்",
+            "CSO தேசிய கணக்குகள் நுகர்வுச் செலவு குறியீடு",
+            "கிராமத்திற்கு CPI-AL (விவசாய கூலிகள்); நகர்ப்புறத்திற்கு CPI-IW (தொழில்துறை தொழிலாளர்கள்)"
+          ],
+          [
+            "அடிப்படை வறுமைக் கோடு (1973-74)",
+            "கிராமப்புறம்: மாதம் ₹49.09; நகர்ப்புறம்: மாதம் ₹56.64",
+            "1973-74 விலைக் கட்டமைப்பின் அடிப்படையில் மாநில வறுமைக் கோடுகள்"
+          ],
+          [
+            "NSSO ஆய்வு முறை",
+            "சீரான மதிப்பீட்டுக் காலம் (URP: அனைத்துப் பொருட்களுக்கும் 30 நாட்கள்)",
+            "சீரான மதிப்பீட்டுக் காலம் (URP: அனைத்துப் பொருட்களுக்கும் 30 நாட்கள்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_global_vs_national_mpi",
+        "title_en": "Global MPI (UNDP/OPHI) vs National MPI (NITI Aayog)",
+        "title_ta": "உலகளாவிய MPI vs தேசிய MPI (நிதி ஆயோக்) கட்டமைப்பு ஒப்பீடு",
+        "headers_en": [
+          "Structural Feature",
+          "Global MPI (UNDP & OPHI)",
+          "National MPI (NITI Aayog, India)"
+        ],
+        "headers_ta": [
+          "கட்டமைப்பு அம்சம்",
+          "உலகளாவிய MPI (UNDP/OPHI)",
+          "தேசிய MPI (நிதி ஆயோக்)"
+        ],
+        "rows_en": [
+          [
+            "Number of Indicators",
+            "10 indicators across 3 dimensions",
+            "12 indicators across 3 dimensions (10 global + 2 national additions)"
+          ],
+          [
+            "Three Dimensions",
+            "Health (1/3), Education (1/3), Standard of Living (1/3)",
+            "Health (1/3), Education (1/3), Standard of Living (1/3)"
+          ],
+          [
+            "India-Specific Indicators",
+            "None (standard cross-country harmonized indicators)",
+            "(1) Antenatal Care (Health dimension), (2) Bank Account (Living Standards)"
+          ],
+          [
+            "Health Dimension Indicators",
+            "Nutrition (1/6), Child Mortality (1/6)",
+            "Nutrition (1/6), Child & Adolescent Mortality (1/12), Antenatal Care (1/12)"
+          ],
+          [
+            "Education Dimension Indicators",
+            "Years of Schooling (1/6), School Attendance (1/6)",
+            "Years of Schooling (1/6), School Attendance (1/6)"
+          ],
+          [
+            "Living Standard Indicators",
+            "Cooking Fuel, Sanitation, Drinking Water, Electricity, Housing, Assets (each 1/18)",
+            "Cooking Fuel, Sanitation, Drinking Water, Electricity, Housing, Assets, Bank Account (each 1/21)"
+          ],
+          [
+            "Data Source in India",
+            "National Family Health Survey (NFHS)",
+            "National Family Health Survey (NFHS-4 and NFHS-5)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "குறிகாட்டிகளின் எண்ணிக்கை",
+            "3 பரிமாணங்களின் கீழ் 10 குறிகாட்டிகள்",
+            "3 பரிமாணங்களின் கீழ் 12 குறிகாட்டிகள் (10 உலகளாவியவை + 2 தேசிய சேர்த்தல்கள்)"
+          ],
+          [
+            "மூன்று பரிமாணங்கள்",
+            "சுகாதாரம் (1/3), கல்வி (1/3), வாழ்க்கைத்தரம் (1/3)",
+            "சுகாதாரம் (1/3), கல்வி (1/3), வாழ்க்கைத்தரம் (1/3)"
+          ],
+          [
+            "இந்திய பிரத்யேக குறிகாட்டிகள்",
+            "எதுவுமில்லை (உலக நாடுகள் அனைத்திற்கும் பொதுவானது)",
+            "(1) மகப்பேறுக்கு முந்தைய பராமரிப்பு (சுகாதாரம்), (2) வங்கி கணக்கு (வாழ்க்கைத்தரம்)"
+          ],
+          [
+            "சுகாதாரப் பரிமாண குறிகாட்டிகள்",
+            "ஊட்டச்சத்து (1/6), குழந்தை இறப்பு (1/6)",
+            "ஊட்டச்சத்து (1/6), குழந்தை/இளம் பருவத்தினர் இறப்பு (1/12), தாய்வழி பராமரிப்பு (1/12)"
+          ],
+          [
+            "கல்விப் பரிமாண குறிகாட்டிகள்",
+            "பள்ளிக் கல்வி ஆண்டுகள் (1/6), பள்ளி வருகை (1/6)",
+            "பள்ளிக் கல்வி ஆண்டுகள் (1/6), பள்ளி வருகை (1/6)"
+          ],
+          [
+            "வாழ்க்கைத்தர குறிகாட்டிகள்",
+            "சமையல் எரிபொருள், கழிப்பறை, குடிநீர், மின்சாரம், உறைவிடம், சொத்துக்கள் (ஒவ்வொன்றும் 1/18)",
+            "சமையல் எரிபொருள், கழிப்பறை, குடிநீர், மின்சாரம், உறைவிடம், சொத்து, வங்கி கணக்கு (ஒவ்வொன்றும் 1/21)"
+          ],
+          [
+            "இந்திய தரவு மூலம்",
+            "தேசிய குடும்ப நலக் கணக்கெடுப்பு (NFHS)",
+            "தேசிய குடும்ப நலக் கணக்கெடுப்பு (NFHS-4 மற்றும் NFHS-5)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_income_poverty_vs_mpi",
+        "title_en": "Monetary Consumption Poverty Line vs Multidimensional Poverty Index (MPI)",
+        "title_ta": "பண நுகர்வு வறுமைக் கோடு vs பலபரிமாண வறுமைக் குறியீடு (MPI) ஒப்பீடு",
+        "headers_en": [
+          "Analytical Aspect",
+          "Monetary Poverty Line (Tendulkar/Rangarajan)",
+          "Multidimensional Poverty Index (NITI Aayog MPI)"
+        ],
+        "headers_ta": [
+          "பகுப்பாய்வு அம்சம்",
+          "பண நுகர்வு வறுமைக் கோடு (டெண்டுல்கர்)",
+          "பலபரிமாண வறுமைக் குறியீடு (நிதி ஆயோக் MPI)"
+        ],
+        "rows_en": [
+          [
+            "Primary Focus",
+            "Monetary purchasing power and private consumption spending (MPCE)",
+            "Overlapping, non-monetary deprivations in human capabilities and assets"
+          ],
+          [
+            "Public Goods Capture",
+            "Fails to capture free public services (subsidized water, schools, PDS, vaccines)",
+            "Explicitly captures access to public goods (electricity, sanitation, tap water)"
+          ],
+          [
+            "Aggregation Method",
+            "Headcount of individuals spending below ₹816 (rural) / ₹1000 (urban)",
+            "Alkire-Foster dual cut-off: MPI = Headcount (H) x Intensity of Deprivation (A)"
+          ],
+          [
+            "Policy Diagnostic Power",
+            "Identifies aggregate purchasing shortfall but cannot specify deprivations",
+            "Pinpoints exact sectors (e.g., cooking fuel, anemia) needing budget interventions"
+          ],
+          [
+            "Sensitivity to Free Welfare",
+            "Under-reports welfare gains if households get free ration/welfare transfers",
+            "Directly reflects welfare gains when households acquire toilets, LPG, or bank accounts"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை கவனம்",
+            "பண ரீதியான வாங்கும் சக்தி மற்றும் நுகர்வுச் செலவு (MPCE)",
+            "மனிதத் திறன்கள் மற்றும் சொத்துக்களில் ஏற்படும் ஒன்றிணைந்த பற்றாக்குறைகள்"
+          ],
+          [
+            "பொது சேவைகளை அளவிடுதல்",
+            "அரசு இலவசமாகத் தரும் சேவைகளை (குடிநீர், அரசுப் பள்ளி, ரேஷன்) கணக்கில் கொள்வதில்லை",
+            "அரசு பொதுச் சேவைகளின் நன்மைகளை (மின்சாரம், கழிப்பறை, குடிநீர் குழாய்) நேரடியாக அளவிடுகிறது"
+          ],
+          [
+            "தொகுப்பு முறை",
+            "மாதம் ₹816 / ₹1000-க்கு கீழ் செலவு செய்பவர்களின் தலைக்கணக்கு மட்டுமே",
+            "அல்கைர்-ஃபாஸ்டர் இரட்டை வரம்பு: MPI = தலைக்கணக்கு விகிதம் (H) x இழப்பின் செறிவு (A)"
+          ],
+          [
+            "கொள்கை வழிகாட்டும் சக்தி",
+            "பணப் பற்றாக்குறையை மட்டுமே காட்டும்; எந்தத் துறை பின்தங்கியுள்ளது என கூற முடியாது",
+            "சமையல் எரிபொருள், இரத்த சோகை என எந்தத் துறையில் நிதி ஒதுக்க வேண்டும் என துல்லியமாகக் காட்டும்"
+          ],
+          [
+            "இலவச நலத்திட்டங்களின் தாக்கம்",
+            "இலவச ரேஷன், மருத்துவம் கிடைத்தாலும் பணச் செலவு மாறாவிடில் வறுமை குறையாது",
+            "இலவச கழிப்பறை, LPG இணைப்பு, வங்கிக் கணக்கு கிடைத்தவுடன் வறுமை குறைவது துல்லியமாகப் பதிவாகும்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Poverty Part 2: Historical Estimation, Committees & MPI",
+        "short_label": "Committees & MPI",
+        "children": [
+          {
+            "title": "Pre-Independence Milestones",
+            "short_label": "Pre-Independence",
+            "children": [
+              {
+                "title": "Dadabhai Naoroji (1867-68: Jail Cost of Living ₹16-35/yr)",
+                "short_label": "Naoroji"
+              },
+              {
+                "title": "National Planning Committee (1938: Nehru, ₹15-25/month)",
+                "short_label": "NPC 1938"
+              },
+              {
+                "title": "Bombay Plan (1944: 8 Industrialists, ₹75/year)",
+                "short_label": "Bombay Plan"
+              }
+            ]
+          },
+          {
+            "title": "Early Calorie Committees",
+            "short_label": "Calorie Era",
+            "children": [
+              {
+                "title": "Alagh Task Force (1979: 2400 kcal Rural / 2100 Urban; ₹49/₹56)",
+                "short_label": "Alagh 1979"
+              },
+              {
+                "title": "Lakdawala Committee (1993: State-Specific Lines, CPI-AL & CPI-IW)",
+                "short_label": "Lakdawala 1993"
+              }
+            ]
+          },
+          {
+            "title": "Consumption Shift Committees",
+            "short_label": "Modern Committees",
+            "children": [
+              {
+                "title": "Tendulkar Committee (2009: Abandoned Calories, MRP, ₹27/₹33, 21.9%)",
+                "short_label": "Tendulkar 2009"
+              },
+              {
+                "title": "Rangarajan Committee (2014: MMRP, Calorie+Protein, ₹32/₹47, 29.5%)",
+                "short_label": "Rangarajan 2014"
+              }
+            ]
+          },
+          {
+            "title": "National MPI (NITI Aayog)",
+            "short_label": "National MPI",
+            "children": [
+              {
+                "title": "Alkire-Foster Method (H x A; Deprivation >= 33.33%)",
+                "short_label": "Alkire-Foster"
+              },
+              {
+                "title": "12 Indicators across Health, Education & Living Standards",
+                "short_label": "12 Indicators"
+              },
+              {
+                "title": "2023 Report: 14.96% MPI, 13.5 Crore exited poverty; TN = 2.20%",
+                "short_label": "2023 Findings"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Tendulkar Caloric Myth Trap: Abandoned Calories, NOT Calorie-Anchored",
+        "points": {
+          "en": [
+            "TRAP: Believing that the Tendulkar Committee based its poverty line on 2400 rural / 2100 urban calorie intake.",
+            "CORRECT FACT: The Tendulkar Committee EXPLICITLY ABANDONED caloric anchoring! It observed that actual calorie intake was declining even among affluent deciles due to lower physical labor and changing dietary preferences. Instead, Tendulkar validated an all-inclusive consumption basket (urban-based) covering food, education, and health.",
+            "WHY CANDIDATES FAIL: Assuming all Planning Commission poverty committees used 2400/2100 kcal norms, conflating Alagh/Lakdawala with Tendulkar."
+          ],
+          "ta": [
+            "பொறி: டெண்டுல்கர் குழு தனது வறுமைக் கோட்டை 2400 கிராமப்புற / 2100 நகர்ப்புற கலோரி நுகர்வின் அடிப்படையில் அமைத்தது என நினைப்பது.",
+            "சரியான உண்மை: டெண்டுல்கர் குழு கலோரி அடிப்படையிலான முறையை 'முற்றிலுமாக கைவிட்டது'! கடின உழைப்புக் குறைவு மற்றும் உணவுப் பழக்க மாற்றங்களால் பணக்காரர்களிடமும் கலோரி உட்கொள்ளல் குறைவதைக் கண்டறிந்த அக்குழு, ஊட்டச்சத்து கலோரிக்கு பதிலாக நகர்ப்புற நுகர்வு முறையை அடிப்படையாகக் கொண்டு கல்வி, மருத்துவச் செலவுகளை உள்ளடக்கிய விரிவான கூடையைப் பயன்படுத்தியது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: திட்டக் குழுவின் அனைத்துக் குழுக்களும் 2400/2100 கலோரி விதியையே பயன்படுத்தின என நினைத்து, அலக்/லக்டவாலா குழுவுடன் டெண்டுல்கர் குழுவை குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Daily Expenditure Figures Trap: Tendulkar ₹27/₹33 vs Rangarajan ₹32/₹47",
+        "points": {
+          "en": [
+            "TRAP: Mixing up the daily per capita poverty line spending figures of Tendulkar and Rangarajan.",
+            "CORRECT FACT: At 2011-12 prices: Tendulkar fixed ₹816/month (₹27.20/day) for rural and ₹1000/month (₹33.33/day) for urban. Rangarajan fixed ₹972/month (₹32.40/day) for rural and ₹1407/month (₹46.90/day) for urban.",
+            "WHY CANDIDATES FAIL: Remembering the numbers ₹27, ₹33, ₹32, and ₹47 loosely and interchanging rural/urban or Tendulkar/Rangarajan attributions."
+          ],
+          "ta": [
+            "பொறி: டெண்டுல்கர் மற்றும் ரங்கராஜன் குழுக்களின் தினசரி தனிநபர் செலவு எண்களை மாற்றிப் புரிந்துகொள்வது.",
+            "சரியான உண்மை: 2011-12 விலைகளின்படி: டெண்டுல்கர் குழு கிராமத்திற்கு மாதம் ₹816 (நாள் ஒன்றுக்கு ₹27.20) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1000 (நாள் ஒன்றுக்கு ₹33.33) என நிர்ணயித்தது. ரங்கராஜன் குழு கிராமத்திற்கு மாதம் ₹972 (நாள் ஒன்றுக்கு ₹32.40) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1407 (நாள் ஒன்றுக்கு ₹46.90) என நிர்ணயித்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ₹27, ₹33, ₹32, ₹47 ஆகிய எண்களை நினைவில் வைத்திருந்தாலும், கிராமம்/நகரம் அல்லது குழுக்களைத் தேர்வில் மாற்றிப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Official Poverty Baseline Trap: Tendulkar 21.9%, NOT Rangarajan 29.5%",
+        "points": {
+          "en": [
+            "TRAP: Stating that India's current official poverty rate under the Planning Commission baseline is 29.5%.",
+            "CORRECT FACT: Although the Rangarajan Committee submitted its report in 2014 estimating poverty at 29.5%, its recommendations were NEVER OFFICIALLY ADOPTED by the government. The official baseline poverty rate for 2011-12 remains TENDULKAR'S ESTIMATE OF 21.9% (269.8 million poor).",
+            "WHY CANDIDATES FAIL: Assuming the most recent committee report automatically supersedes preceding official baselines without formal cabinet/government adoption."
+          ],
+          "ta": [
+            "பொறி: திட்டக் குழுவின் அதிகாரப்பூர்வ வறுமை விகித அடிப்படையாக இந்தியாவின் தற்போதைய வறுமை 29.5% எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: ரங்கராஜன் குழு 2014-ல் 29.5% என அறிக்கை அளித்திருந்தாலும், அந்த அறிக்கை மத்திய அரசால் 'அதிகாரப்பூர்வமாக ஏற்றுக்கொள்ளப்படவில்லை'! எனவே 2011-12-க்கான அதிகாரப்பூர்வ அடிப்படை வறுமை விகிதம் டெண்டுல்கர் குழுவின் '21.9%' (26.98 கோடி ஏழைகள்) மட்டுமே ஆகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அண்மையில் வந்த குழுவின் அறிக்கை அரசால் ஏற்கப்பட்டதா இல்லையா என்பதை ஆராயாமல் அதுவே அதிகாரப்பூர்வமானது என தவறாக முடிவெடுப்பது."
+          ]
+        }
+      },
+      {
+        "title": "National MPI Indicator Count Trap: 12 Indicators, NOT 10",
+        "points": {
+          "en": [
+            "TRAP: Marking 10 indicators for NITI Aayog's National Multidimensional Poverty Index.",
+            "CORRECT FACT: The GLOBAL MPI (UNDP/OPHI) uses 10 indicators. But NITI Aayog's NATIONAL MPI uses 12 INDICATORS across the same 3 dimensions. NITI Aayog added 'Antenatal Care' (Health) and 'Bank Account' (Standard of Living) to tailor the metric to India's national priorities.",
+            "WHY CANDIDATES FAIL: Reading international GK material that covers UNDP's 10 indicators and assuming NITI Aayog simply adopted it without modification."
+          ],
+          "ta": [
+            "பொறி: நிதி ஆயோக்கின் தேசிய பலபரிமாண வறுமைக் குறியீட்டிற்கு 10 குறிகாட்டிகள் என விடையளிப்பது.",
+            "சரியான உண்மை: சர்வதேச உலகளாவிய MPI (UNDP/OPHI) 10 குறிகாட்டிகளைக் கொண்டது. ஆனால் நிதி ஆயோக்கின் 'தேசிய MPI' 12 குறிகாட்டிகளைக் கொண்டது! இந்தியாவின் முன்னுரிமைகளுக்கு ஏற்ப 'மகப்பேறுக்கு முந்தைய பராமரிப்பு' மற்றும் 'வங்கி கணக்கு' ஆகிய இரண்டு புதிய குறிகாட்டிகளை நிதி ஆயோக் இணைத்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சர்வதேச பொது அறிவுப் புத்தகங்களில் உள்ள UNDP-ன் 10 குறிகாட்டிகளைப் படித்துவிட்டு, நிதி ஆயோக்கும் அதையே பின்பற்றியதாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Lakdawala Inflation Deflator Trap: CPI-AL and CPI-IW, NOT CPI-Combined or WPI",
+        "points": {
+          "en": [
+            "TRAP: Believing the Lakdawala Committee used Wholesale Price Index (WPI) or CPI-Combined to update poverty lines.",
+            "CORRECT FACT: Lakdawala explicitly rejected WPI and uniform national deflators. It mandated state-specific price updating using the Consumer Price Index for Agricultural Labourers (CPI-AL) for rural areas and the Consumer Price Index for Industrial Workers (CPI-IW) for urban areas.",
+            "WHY CANDIDATES FAIL: Overlooking the specific historical indices used prior to the creation of the modern CPI-Combined (2012)."
+          ],
+          "ta": [
+            "பொறி: லக்டவாலா குழு வறுமைக் கோட்டைப் புதுப்பிக்க மொத்த விற்பனை விலைக் குறியீட்டை (WPI) அல்லது CPI-Combined குறியீட்டைப் பயன்படுத்தியது என நினைப்பது.",
+            "சரியான உண்மை: லக்டவாலா குழு WPI குறியீட்டை நிராகரித்தது. அது மாநில வறுமைக் கோடுகளைப் புதுப்பிக்க கிராமப்புறத்திற்கு 'விவசாயத் தொழிலாளர்களுக்கான நுகர்வோர் விலைக் குறியீட்டையும்' (CPI-AL), நகர்ப்புறத்திற்கு 'தொழில்துறை தொழிலாளர்களுக்கான நுகர்வோர் விலைக் குறியீட்டையும்' (CPI-IW) பயன்படுத்தியது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2012-ல் அறிமுகமான நவீன CPI-Combined வருவதற்கு முன்பு எந்தக் குறியீடுகள் பயன்படுத்தப்பட்டன என்பதை கவனிக்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "Dadabhai Naoroji Jail Diet Trap: Adjusted for Free Population, NOT Raw Prisoner Diet",
+        "points": {
+          "en": [
+            "TRAP: Assuming Naoroji used the exact unmodified adult prisoner diet as the national poverty line for all Indians.",
+            "CORRECT FACT: Naoroji recognized that while all prisoners are adults, a significant proportion of the free population consists of children who consume far less. He applied a mathematical adjustment: assuming one-third of the population were children consuming half an adult diet, he scaled down the raw jail cost of living to derive a realistic per capita poverty line.",
+            "WHY CANDIDATES FAIL: Overlooking Naoroji's sophisticated demographic adjustment for children and non-working population."
+          ],
+          "ta": [
+            "பொறி: நௌரோஜி சிறைக் கைதிகளின் உணவுச் செலவை எவ்வித மாற்றமும் இன்றி அப்படியே ஒட்டுமொத்த இந்திய மக்களுக்கான வறுமைக் கோடாகப் பயன்படுத்தினார் என நினைப்பது.",
+            "சரியான உண்மை: சிறைக் கைதிகள் அனைவரும் பெரியவர்கள், ஆனால் நாட்டின் சுதந்திர மக்கள் தொகையில் குழந்தைகளும் உள்ளனர்; குழந்தைகள் பெரியவர்களை விடக் குறைவாக உண்பார்கள் என்பதை நௌரோஜி கவனித்தார். எனவே மக்கள் தொகையில் மூன்றில் ஒரு பங்கு குழந்தைகள் என எடுத்துக்கொண்டு சிறைச் செலவை சரிசெய்து, யதார்த்தமான தனிநபர் வறுமைக் கோட்டை உருவாக்கினார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நௌரோஜி மேற்கொண்ட நுட்பமான மக்கள் தொகை சரிசெய்தல் முறையை மேலோட்டமாகப் படித்துவிட்டு மறந்துவிடுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Dadabhai Naoroji estimated the first poverty line (₹16-₹35/year) in 1867-68 using jail cost of living.",
+        "The National Planning Committee (1938) chaired by Nehru recommended ₹15-₹25 per capita per month.",
+        "The Bombay Plan (1944) proposed an annual minimum consumption target of ₹75 at 1938-39 prices.",
+        "Y.K. Alagh Task Force (1979) established the 2400 kcal rural and 2100 kcal urban daily nutritional norms.",
+        "Lakdawala Committee (1993) introduced state-specific poverty lines using CPI-AL (rural) and CPI-IW (urban).",
+        "Tendulkar Committee (2009) explicitly moved away from caloric anchoring to a comprehensive consumption basket.",
+        "Tendulkar fixed the 2011-12 poverty line at ₹816/month (rural - ₹27.20/day) and ₹1000/month (urban - ₹33.33/day).",
+        "Under Tendulkar methodology, India's official 2011-12 poverty rate was 21.9% (269.8 million people).",
+        "Rangarajan Committee (2014) proposed ₹972/month rural (₹32.40/day) and ₹1407/month urban (₹46.90/day).",
+        "National MPI developed by NITI Aayog comprises 12 indicators across Health, Education, and Living Standards.",
+        "NITI Aayog added two India-specific indicators to MPI: Antenatal Care (Health) and Bank Account (Living Standards).",
+        "NITI Aayog 2023 MPI report showed multidimensional poverty fell from 24.85% (2015-16) to 14.96% (2019-21), lifting 13.5 crore people."
+      ],
+      "ta": [
+        "தாதாபாய் நௌரோஜி 1867-68-ல் சிறை வாழ்க்கைச் செலவைப் பயன்படுத்தி இந்தியாவின் முதல் வறுமைக் கோட்டை (ஆண்டுக்கு ₹16-₹35) மதிப்பிட்டார்.",
+        "நேரு தலைமையிலான தேசிய திட்டக் குழு (1938) நபர் ஒருவருக்கு மாதம் ₹15-₹25 வரை பரிந்துரைத்தது.",
+        "பம்பாய் திட்டம் (1944) 1938-39 விலையில் ஆண்டுக்கு ₹75 குறைந்தபட்ச நுகர்வு இலக்கை முன்வைத்தது.",
+        "ஒய்.கே. அலக் பணிக்குழு (1979) கிராமத்திற்கு 2400 kcal மற்றும் நகர்ப்புறத்திற்கு 2100 kcal தினசரி கலோரி அளவை உருவாக்கியது.",
+        "லக்டவாலா குழு (1993) CPI-AL (கிராமம்) மற்றும் CPI-IW (நகர்ப்புறம்) மூலம் மாநில அளவிலான வறுமைக் கோடுகளை அறிமுகப்படுத்தியது.",
+        "டெண்டுல்கர் குழு (2009) கலோரி முறையை முற்றிலுமாக கைவிட்டு விரிவான நுகர்வு கூடைக்கு மாறியது.",
+        "டெண்டுல்கர் குழு 2011-12 வறுமைக் கோட்டை கிராமத்திற்கு மாதம் ₹816 (நாள் ஒன்றுக்கு ₹27.20) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1000 (நாள் ஒன்றுக்கு ₹33.33) என நிர்ணயித்தது.",
+        "டெண்டுல்கர் முறையின்படி இந்தியாவின் அதிகாரப்பூர்வ 2011-12 வறுமை விகிதம் 21.9% (26.98 கோடி மக்கள்) ஆகும்.",
+        "ரங்கராஜன் குழு (2014) கிராமத்திற்கு மாதம் ₹972 (நாள் ஒன்றுக்கு ₹32.40) மற்றும் நகர்ப்புறத்திற்கு மாதம் ₹1407 (நாள் ஒன்றுக்கு ₹46.90) என பரிந்துரைத்தது.",
+        "நிதி ஆயோக்கின் தேசிய MPI சுகாதாரம், கல்வி, வாழ்க்கைத்தரம் ஆகிய 3 பரிமாணங்களில் 12 குறிகாட்டிகளைக் கொண்டுள்ளது.",
+        "தேசிய MPI-ல் மகப்பேறுக்கு முந்தைய பராமரிப்பு (சுகாதாரம்) மற்றும் வங்கி கணக்கு (வாழ்க்கைத்தரம்) ஆகிய இரு புதிய குறிகாட்டிகள் சேர்க்கப்பட்டன.",
+        "நிதி ஆயோக் 2023 அறிக்கைப்படி பலபரிமாண வறுமை 24.85%-லிருந்து (2015-16) 14.96% ஆக (2019-21) குறைந்து, 13.5 கோடி மக்கள் மீண்டுள்ளனர்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Dadabhai Naoroji (1867-68) used the prisoner diet (Jail Cost of Living) adjusted for child demographics.",
+        "National Planning Committee (1938) under Nehru framed a ₹15-₹25/month standard covering 2400-2800 kcal.",
+        "Alagh Task Force (1979) established the 2400 kcal rural / 2100 kcal urban baseline anchored to 1973-74 NSSO data.",
+        "Lakdawala (1993) introduced state-specific lines updated via CPI-AL (rural) and CPI-IW (urban) using URP.",
+        "Tendulkar (2009) abandoned calorie anchoring, used MRP, included health/education, and derived 21.9% poverty in 2011-12.",
+        "Tendulkar thresholds (2011-12): ₹816/month (rural) and ₹1000/month (urban) — the official baseline.",
+        "Rangarajan (2014) proposed MMRP, re-anchored calories/protein, and estimated 29.5% poverty (not officially adopted).",
+        "National MPI by NITI Aayog: Alkire-Foster method, 3 dimensions, 12 indicators (added Antenatal Care & Bank Account).",
+        "MPI Poverty Cut-off: Deprivation score >= 33.33% (1/3 of weighted indicators) defines multidimensional poverty.",
+        "MPI declined from 24.85% to 14.96% between 2015-16 and 2019-21; Tamil Nadu MPI stands exceptionally low at 2.20%."
+      ],
+      "ta": [
+        "தாதாபாய் நௌரோஜி (1867-68) குழந்தைகள் மக்கள் தொகைக்கு ஏற்ப திருத்திய சிறை வாழ்க்கைச் செலவைப் பயன்படுத்தினார்.",
+        "நேருவின் கீழ் தேசிய திட்டக் குழு (1938) 2400-2800 கலோரி உணவை உள்ளடக்கிய மாதம் ₹15-₹25 அளவை உருவாக்கியது.",
+        "அலக் பணிக்குழு (1979) 1973-74 NSSO தரவுகளின்படி 2400 kcal கிராமப்புறம் / 2100 kcal நகர்ப்புற அடிப்படையை அமைத்தது.",
+        "லக்டவாலா (1993) URP முறையில் CPI-AL மற்றும் CPI-IW மூலம் புதுப்பிக்கப்படும் மாநில அளவிலான வறுமைக் கோடுகளைக் கொண்டுவந்தது.",
+        "டெண்டுல்கர் (2009) கலோரி முறையைக் கைவிட்டு, MRP-ஐப் பயன்படுத்தி, கல்வி/மருத்துவத்தை இணைத்து 2011-12-ல் 21.9% வறுமையைக் கணக்கிட்டது.",
+        "டெண்டுல்கர் வரம்புகள் (2011-12): கிராமம் ₹816/மாதம் மற்றும் நகர்ப்புறம் ₹1000/மாதம் — இதுவே அதிகாரப்பூர்வ அளவீடு.",
+        "ரங்கராஜன் (2014) MMRP முறையில் 29.5% வறுமையைக் கணக்கிட்டது (அரசால் அதிகாரப்பூர்வமாக ஏற்கப்படவில்லை).",
+        "நிதி ஆயோக் தேசிய MPI: அல்கைர்-ஃபாஸ்டர் முறை, 3 பரிமாணங்கள், 12 குறிகாட்டிகள் (மகப்பேறு பராமரிப்பு மற்றும் வங்கிக் கணக்கு சேர்க்கப்பட்டது).",
+        "MPI வறுமை வரம்பு: எடையிடப்பட்ட இழப்பு மதிப்பு >= 33.33% (1/3) ஆக இருந்தால் பலபரிமாண ஏழையாக வரையறுக்கப்படுகிறார்.",
+        "பலபரிமாண வறுமை 2015-16 முதல் 2019-21 வரை 24.85%-லிருந்து 14.96% ஆகக் குறைந்தது; தமிழ்நாட்டின் MPI மிகக் குறைவாக 2.20% ஆக உள்ளது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pov_201",
+        "front_en": "Who formulated the concept of 'Jail Cost of Living' to estimate poverty in colonial India?",
+        "front_ta": "காலனித்துவ இந்தியாவில் வறுமையை மதிப்பிட 'சிறை வாழ்க்கைச் செலவு' என்ற கருத்தாக்கத்தை உருவாக்கியவர் யார்?",
+        "back_en": "Dadabhai Naoroji in 1867-68 in his book 'Poverty and Un-British Rule in India'.",
+        "back_ta": "தாதாபாய் நௌரோஜி 1867-68-ல் தனது 'வறுமையும் இந்தியாவில் பிரிட்டிஷ் தன்மையற்ற ஆட்சியும்' என்ற நூலில் உருவாக்கினார்."
+      },
+      {
+        "id": "rc_pov_202",
+        "front_en": "What daily caloric consumption norms were established by the Y.K. Alagh Task Force in 1979?",
+        "front_ta": "1979-ல் ஒய்.கே. அலக் பணிக்குழு நிர்ணயித்த தினசரி கலோரி நுகர்வு அளவுகள் யாவை?",
+        "back_en": "2400 kcal per person per day for rural areas and 2100 kcal for urban areas.",
+        "back_ta": "கிராமப்புற மக்களுக்கு நபர் ஒருவருக்கு நாள் ஒன்றுக்கு 2400 கலோரி மற்றும் நகர்ப்புற மக்களுக்கு 2100 கலோரி."
+      },
+      {
+        "id": "rc_pov_203",
+        "front_en": "Which two price indices were used by the Lakdawala Committee (1993) to update state-specific poverty lines?",
+        "front_ta": "மாநில வறுமைக் கோடுகளைப் புதுப்பிக்க லக்டவாலா குழு (1993) பயன்படுத்திய இரண்டு விலைக் குறியீடுகள் யாவை?",
+        "back_en": "CPI for Agricultural Labourers (CPI-AL) for rural poverty and CPI for Industrial Workers (CPI-IW) for urban poverty.",
+        "back_ta": "கிராமப்புற வறுமைக்கு விவசாயத் தொழிலாளர்களுக்கான நுகர்வோர் விலைக் குறியீடு (CPI-AL) மற்றும் நகர்ப்புறத்திற்கு தொழில்துறை தொழிலாளர்களுக்கான விலைக் குறியீடு (CPI-IW)."
+      },
+      {
+        "id": "rc_pov_204",
+        "front_en": "What major methodological departure did the Suresh Tendulkar Committee (2009) make regarding nutritional calories?",
+        "front_ta": "ஊட்டச்சத்து கலோரிகள் தொடர்பாக சுரேஷ் டெண்டுல்கர் குழு (2009) மேற்கொண்ட முக்கிய முறைசார் மாற்றம் என்ன?",
+        "back_en": "It explicitly moved away from and abandoned calorie consumption anchoring, adopting an all-inclusive consumption basket with private health and education expenses.",
+        "back_ta": "கலோரி நுகர்வு அடிப்படையிலான முறையை முற்றிலுமாக கைவிட்டு, தனியார் கல்வி மற்றும் மருத்துவச் செலவுகளை உள்ளடக்கிய முழுமையான நுகர்வு கூடைக்கு மாறியது."
+      },
+      {
+        "id": "rc_pov_205",
+        "front_en": "What were the monthly per capita poverty lines fixed by the Tendulkar Committee for 2011-12?",
+        "front_ta": "2011-12 ஆண்டிற்கு டெண்டுல்கர் குழு நிர்ணயித்த மாதாந்திர தனிநபர் வறுமைக் கோட்டு அளவுகள் என்ன?",
+        "back_en": "₹816 per month for rural areas (₹27.20/day) and ₹1000 per month for urban areas (₹33.33/day).",
+        "back_ta": "கிராமப்புறங்களுக்கு மாதம் ₹816 (நாள் ஒன்றுக்கு ₹27.20) மற்றும் நகர்ப்புறங்களுக்கு மாதம் ₹1000 (நாள் ஒன்றுக்கு ₹33.33)."
+      },
+      {
+        "id": "rc_pov_206",
+        "front_en": "What was the national poverty rate for India in 2011-12 according to the officially accepted Tendulkar methodology?",
+        "front_ta": "அதிகாரப்பூர்வமாக ஏற்றுக்கொள்ளப்பட்ட டெண்டுல்கர் முறையின்படி 2011-12-ல் இந்தியாவின் தேசிய வறுமை விகிதம் என்ன?",
+        "back_en": "21.9% of the population (25.7% rural, 13.7% urban), accounting for 269.8 million poor.",
+        "back_ta": "மக்கள் தொகையில் 21.9% (கிராமப்புறம் 25.7%, நகர்ப்புறம் 13.7%), அதாவது 26.98 கோடி ஏழைகள்."
+      },
+      {
+        "id": "rc_pov_207",
+        "front_en": "What consumption recall method was recommended by the C. Rangarajan Committee (2014)?",
+        "front_ta": "சி. ரங்கராஜன் குழுவால் (2014) பரிந்துரைக்கப்பட்ட நுகர்வு மதிப்பீட்டு முறை எது?",
+        "back_en": "Modified Mixed Reference Period (MMRP): 7-day recall for perishables, 30-day for staples/fuel, and 365-day for durables.",
+        "back_ta": "மாற்றியமைக்கப்பட்ட கலப்பு காலம் (MMRP): அழுகும் உணவுப் பொருட்களுக்கு 7 நாட்கள், தானியங்களுக்கு 30 நாட்கள், நீடித்த பொருட்களுக்கு 365 நாட்கள்."
+      },
+      {
+        "id": "rc_pov_208",
+        "front_en": "How many indicators are used in NITI Aayog's National Multidimensional Poverty Index (MPI)?",
+        "front_ta": "நிதி ஆயோக்கின் தேசிய பலபரிமாண வறுமைக் குறியீட்டில் (MPI) எத்தனை குறிகாட்டிகள் பயன்படுத்தப்படுகின்றன?",
+        "back_en": "12 indicators across 3 dimensions (Health, Education, and Standard of Living).",
+        "back_ta": "3 பரிமாணங்களின் கீழ் (சுகாதாரம், கல்வி, வாழ்க்கைத்தரம்) 12 குறிகாட்டிகள் பயன்படுத்தப்படுகின்றன."
+      },
+      {
+        "id": "rc_pov_209",
+        "front_en": "Which two India-specific indicators were added by NITI Aayog to the National MPI beyond the Global MPI?",
+        "front_ta": "உலகளாவிய MPI-க்கு அப்பால் நிதி ஆயோக் தேசிய MPI-ல் சேர்த்த இரண்டு பிரத்யேக இந்தியக் குறிகாட்டிகள் யாவை?",
+        "back_en": "(1) Antenatal Care (under Health dimension) and (2) Bank Account (under Standard of Living dimension).",
+        "back_ta": "(1) மகப்பேறுக்கு முந்தைய பராமரிப்பு (சுகாதாரப் பரிமாணம்) மற்றும் (2) வங்கி கணக்கு (வாழ்க்கைத்தரப் பரிமாணம்)."
+      },
+      {
+        "id": "rc_pov_210",
+        "front_en": "According to NITI Aayog's 2023 MPI report, how many people exited multidimensional poverty between 2015-16 and 2019-21?",
+        "front_ta": "நிதி ஆயோக்கின் 2023 MPI அறிக்கைப்படி, 2015-16 முதல் 2019-21 வரை எத்தனை மக்கள் பலபரிமாண வறுமையிலிருந்து மீண்டுள்ளனர்?",
+        "back_en": "13.5 crore (135 million) people, with national multidimensional poverty dropping from 24.85% to 14.96%.",
+        "back_ta": "13.5 கோடி மக்கள்; இதன் மூலம் தேசிய பலபரிமாண வறுமை 24.85%-லிருந்து 14.96% ஆகக் குறைந்தது."
+      }
+    ]
+  }
+}

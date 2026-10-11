@@ -1,7 +1,7 @@
 import re
 import textwrap
 import streamlit as st
-from ui.notes.layout import section_anchor
+from ui.notes.layout import localized_section_title, section_anchor
 
 
 def validate_mind_map(mind_map_data) -> bool:
@@ -44,19 +44,19 @@ def _extract_title(node) -> str:
     if isinstance(node, (int, float)):
         return str(node)
     if isinstance(node, dict):
-        for key in ["title", "label", "name", "short_label", "concept", "heading", "id"]:
+        for key in ["title", "label", "name", "short_label", "concept", "heading", "topic", "id"]:
             val = node.get(key)
             if val is not None:
                 if isinstance(val, dict):
                     res = val.get("en") or val.get("ta") or (list(val.values())[0] if val.values() else "")
-                    if res and str(res).strip().lower() not in ["children", "nodes", "points", "items", "subtopics", "details"]:
+                    if res and str(res).strip().lower() not in ["children", "nodes", "points", "items", "subtopics", "details", "structure"]:
                         return _clean_text(str(res))
-                elif isinstance(val, str) and val.strip().lower() not in ["children", "nodes", "points", "items", "subtopics", "details"]:
+                elif isinstance(val, str) and val.strip().lower() not in ["children", "nodes", "points", "items", "subtopics", "details", "structure"]:
                     return _clean_text(val)
                 elif isinstance(val, (int, float)):
                     return str(val)
         for k, v in node.items():
-            if k.lower() not in ["children", "nodes", "points", "items", "subtopics", "details", "parent_id", "id"]:
+            if k.lower() not in ["children", "nodes", "points", "items", "subtopics", "details", "structure", "parent_id", "id"]:
                 if isinstance(v, str) and v.strip():
                     return _clean_text(v)
     return ""
@@ -65,7 +65,7 @@ def _extract_title(node) -> str:
 def _extract_children(node) -> list:
     """Extracts list of child nodes from a node dictionary or list."""
     if isinstance(node, dict):
-        for key in ["children", "nodes", "points", "items", "subtopics", "details"]:
+        for key in ["children", "nodes", "points", "items", "subtopics", "details", "structure"]:
             val = node.get(key)
             if isinstance(val, list):
                 return val
@@ -458,15 +458,17 @@ def _normalize_mind_map_input(mind_map_data) -> list:
         return []
 
     if isinstance(mind_map_data, list):
+        if all(isinstance(x, str) for x in mind_map_data):
+            return [{"title": "Concept Mind Map", "children": mind_map_data}]
         return _build_tree_from_flat_list(mind_map_data)
 
     if isinstance(mind_map_data, dict):
-        if "title" in mind_map_data or "label" in mind_map_data or "name" in mind_map_data or "id" in mind_map_data:
+        if any(k in mind_map_data for k in ["title", "label", "name", "topic", "structure", "id"]):
             return [mind_map_data]
 
         roots = []
         for key, val in mind_map_data.items():
-            if key.lower() in ["content", "metadata", "sections", "title", "children"]:
+            if key.lower() in ["content", "metadata", "sections", "title", "children", "structure"]:
                 continue
             children_list = val if isinstance(val, list) else [val]
             roots.append({
@@ -510,7 +512,7 @@ def render_mind_map(mind_map_data):
             primary_title = extracted
 
     st.markdown(_clean_html_string('<div class="nova-card animate-fade-in" style="background-color: #F8FAFC; border-left: 5px solid #0D9488;">'), unsafe_allow_html=True)
-    st.markdown("### 🗺️ **TNPSC Nova AI Smart Mind Map**")
+    st.markdown(f"### 🗺️ **{localized_section_title('Mind Map')}**")
 
     root_card_html = f"""
     <div class="nova-mm-root-card">

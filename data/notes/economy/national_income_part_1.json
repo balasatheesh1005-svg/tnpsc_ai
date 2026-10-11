@@ -1,0 +1,838 @@
+{
+  "meta": {
+    "topic_id": "economy_national_income_part_1",
+    "repository_id": "economy_national_income",
+    "display_title": "National Income – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "National Income",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundation",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [],
+      "ta": []
+    },
+    "Remember": {
+      "en": [],
+      "ta": []
+    },
+    "Analyze": {
+      "en": [],
+      "ta": []
+    },
+    "Apply": {
+      "en": [],
+      "ta": []
+    }
+  },
+  "subject": "Economy",
+  "topic": "National Income – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_historical_evolution_estimates",
+      "title_en": "1. Historical Evolution of National Income Estimation in India",
+      "title_ta": "1. இந்தியாவில் தேசிய வருமான மதிப்பீட்டின் வரலாற்றுப் பரிணாமம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_circular_flow_of_income",
+      "title_en": "2. Circular Flow of Income & Macroeconomic Identity",
+      "title_ta": "2. வருமானத்தின் சுழல் ஓட்டம் & பேரியல் பொருளாதார அடையாளம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_core_national_income_aggregates",
+      "title_en": "3. Core National Income Aggregates (GDP, GNP, NDP, NNP)",
+      "title_ta": "3. தேசிய வருமானத்தின் முக்கிய திரட்டுகள் (GDP, GNP, NDP, NNP)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_valuation_methods_and_prices",
+      "title_en": "4. Valuation Metrics: Factor Cost, Basic Prices, and Market Prices",
+      "title_ta": "4. மதிப்பீட்டு முறைகள்: காரணி விலை, அடிப்படை விலை மற்றும் சந்தை விலை",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "National Income is the total monetary value of all final goods and services produced by the normal residents of a country during a given financial year, after allowing for depreciation. Technically defined as Net National Product at Factor Cost (NNP_FC), it reflects the net aggregate earning of all factors of production.",
+      "ta": "தேசிய வருமானம் என்பது ஒரு நாட்டின் இயல்பான குடிமக்களால் ஒரு குறிப்பிட்ட நிதியாண்டில் தேய்மானத்தைக் கழித்த பிறகு உற்பத்தி செய்யப்பட்ட அனைத்து இறுதிப் பொருட்கள் மற்றும் பணிகளின் மொத்த பண மதிப்பாகும். தொழில்நுட்ப ரீதியாக இது காரணி விலையிலான நிகர தேசிய உற்பத்தி (NNP_FC) என வரையறுக்கப்படுகிறது; இது அனைத்து உற்பத்தி காரணிகளின் நிகர மொத்த வருவாயை பிரதிபலிக்கிறது."
+    },
+    "introduction": {
+      "en": "The measurement of National Income is central to macroeconomics as it measures the overall economic pulse, standard of living, and productive capacity of a nation. In India, the first historical estimate was made by Dadabhai Naoroji for 1867-68 in his pioneering work 'Poverty and Un-British Rule in India' (estimating per capita income at ₹20). The first scientific estimate was formulated by Dr. V.K.R.V. Rao in 1931-32. Following independence, the Government established the National Income Committee in 1949 chaired by Prof. P.C. Mahalanobis (with D.R. Gadgil and V.K.R.V. Rao as members), leading to the creation of the Central Statistics Office (now National Statistical Office - NSO under MoSPI).",
+      "ta": "தேசிய வருமானத்தை கணக்கிடுதல் என்பது ஒரு நாட்டின் ஒட்டுமொத்த பொருளாதார இயக்கம், வாழ்க்கைத் தரம் மற்றும் உற்பத்தித் திறனை அளவிடுவதால் பேரியல் பொருளாதாரத்தின் மையமாக விளங்குகிறது. இந்தியாவில் முதல் வரலாற்று மதிப்பீடு தாதாபாய் நௌரோஜியால் 1867-68 ஆம் ஆண்டிற்கு 'இந்தியாவில் வறுமையும் பிரிட்டிஷ் தன்மையற்ற ஆட்சியும்' என்ற நூலில் மேற்கொள்ளப்பட்டது (தலா வருமானம் ₹20 என மதிப்பிடப்பட்டது). முதல் அறிவியல் பூர்வமான மதிப்பீட்டை 1931-32-ல் டாக்டர் வி.கே.ஆர்.வி. ராவ் உருவாக்கினார். சுதந்திரத்திற்குப் பின், பேராசிரியர் பி.சி. மகாலநோபிஸ் தலைமையில் 1949-ல் தேசிய வருமானக் குழு அமைக்கப்பட்டது (டி.ஆர். காட்கில் மற்றும் வி.கே.ஆர்.வி. ராவ் உறுப்பினர்கள்); இது மத்திய புள்ளியியல் அலுவலகம் (தற்போது புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் கீழ் இயங்கும் NSO) உருவாக வழிவகுத்தது."
+    },
+    "sec_historical_evolution_estimates": [
+      {
+        "title": "Pre-Independence Estimates (Pioneering Efforts)",
+        "title_ta": "சுதந்திரத்திற்கு முந்தைய மதிப்பீடுகள் (முன்னோடி முயற்சிகள்)",
+        "points": {
+          "en": [
+            "Dadabhai Naoroji (1867-68): First attempt using non-statistical agricultural estimation; published in 'Poverty and Un-British Rule in India' (₹20 per capita income; total national income ₹340 crore).",
+            "William Digby (1899) & Findlay Shirras (1911, 1921): Colonial administrators estimating significantly lower incomes reflecting agrarian extraction.",
+            "Dr. V.K.R.V. Rao (1931-32): First scientific estimation using dual methodology (output method for agriculture and income method for corporate/service sectors); calculated per capita income at ₹62."
+          ],
+          "ta": [
+            "தாதாபாய் நௌரோஜி (1867-68): வேளாண்மை உற்பத்தியை அடிப்படையாகக் கொண்டு முதல் முயற்சியை மேற்கொண்டார்; 'இந்தியாவில் வறுமையும் பிரிட்டிஷ் தன்மையற்ற ஆட்சியும்' நூலில் வெளியிட்டார் (தலா வருமானம் ₹20; தேசிய வருமானம் ₹340 கோடி).",
+            "வில்லியம் டிக்பி (1899) & பின்ட்லே ஷிராஸ் (1911, 1921): காலனித்துவ அதிகாரிகள் வேளாண் சுரண்டலை வெளிப்படுத்தும் வகையில் கணிசமான குறைந்த வருமானத்தை மதிப்பிட்டனர்.",
+            "டாக்டர் வி.கே.ஆர்.வி. ராவ் (1931-32): இரட்டை முறையியலைப் (வேளாண்மைக்கு உற்பத்தி முறை மற்றும் பெருநிறுவன/சேவைக்கு வருமான முறை) பயன்படுத்தி முதல் அறிவியல் பூர்வ மதிப்பீட்டை உருவாக்கினார்; தலா வருமானம் ₹62 எனக் கணக்கிட்டார்."
+          ]
+        }
+      },
+      {
+        "title": "Post-Independence Institutional Setup",
+        "title_ta": "சுதந்திரத்திற்குப் பிந்தைய நிறுவனக் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "National Income Committee (1949): Chaired by Prof. P.C. Mahalanobis; submitted first report in 1951 and final report in 1954; established systematic framework for national accounts.",
+            "Central Statistical Organisation (CSO): Formed in May 1951; tasked with compiling National Accounts Statistics (NAS) published annually as the 'White Paper on National Accounts'.",
+            "National Statistical Office (NSO): Created in May 2019 by merging CSO and National Sample Survey Office (NSSO) under the Ministry of Statistics and Programme Implementation (MoSPI)."
+          ],
+          "ta": [
+            "தேசிய வருமானக் குழு (1949): பேராசிரியர் பி.சி. மகாலநோபிஸ் தலைமையில் அமைக்கப்பட்டது; முதல் அறிக்கையை 1951-லும் இறுதி அறிக்கையை 1954-லும் சமர்ப்பித்தது; தேசிய கணக்குகளுக்கான முறையான கட்டமைப்பை உருவாக்கியது.",
+            "மத்திய புள்ளியியல் அமைப்பு (CSO): மே 1951-ல் உருவாக்கப்பட்டது; ஆண்டுதோறும் 'வெள்ளை அறிக்கை' (White Paper) என வெளியிடப்படும் தேசிய கணக்கு புள்ளியியலைத் தொகுக்கும் பொறுப்பைப் பெற்றது.",
+            "தேசிய புள்ளியியல் அலுவலகம் (NSO): மே 2019-ல் சிஎஸ்ஓ மற்றும் தேசிய மாதிரி கணக்கெடுப்பு அலுவலகம் (NSSO) ஆகியவற்றை இணைத்து புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் கீழ் உருவாக்கப்பட்டது."
+          ]
+        }
+      }
+    ],
+    "sec_circular_flow_of_income": [
+      {
+        "title": "Two-Sector Model (Households and Firms)",
+        "title_ta": "இரு-துறை மாதிரி (குடும்பங்கள் மற்றும் நிறுவனங்கள்)",
+        "points": {
+          "en": [
+            "Real Flow (Product Flow): Flow of factor services (land, labor, capital, enterprise) from households to firms, and corresponding flow of goods and services from firms to households.",
+            "Money Flow (Income Flow): Flow of factor payments (rent, wages, interest, profit) from firms to households, and flow of consumption expenditure from households to firms.",
+            "Macroeconomic Identity: Total Output Produced ≡ Total Factor Income Generated ≡ Total Expenditure Incurred (Production = Income = Expenditure)."
+          ],
+          "ta": [
+            "பொருள்சார் ஓட்டம் (Real Flow): குடும்பங்களிலிருந்து நிறுவனங்களுக்கு உற்பத்தி காரணிகள் (நிலம், உழைப்பு, மூலதனம், தொழில் முனைவு) செல்வதும், நிறுவனங்களிலிருந்து குடும்பங்களுக்கு பொருட்கள் மற்றும் பணிகள் செல்வதும் ஆகும்.",
+            "பண ஓட்டம் (Money Flow): நிறுவனங்களிலிருந்து குடும்பங்களுக்கு காரணிக் கொடுப்பனவுகளும் (வாரம், கூலி, வட்டி, லாபம்), குடும்பங்களிலிருந்து நிறுவனங்களுக்கு நுகர்வுச் செலவுகளும் பாய்வதாகும்.",
+            "பேரியல் பொருளாதார சமன்பாடு: மொத்த உற்பத்தி ≡ மொத்த காரணி வருமானம் ≡ மொத்த செலவினம் (உற்பத்தி = வருமானம் = செலவு)."
+          ]
+        }
+      },
+      {
+        "title": "Leakages and Injections in Open Economy",
+        "title_ta": "கசிவுகள் மற்றும் உட்பாய்ச்சல்கள் (திறந்த பொருளாதாரத்தில்)",
+        "points": {
+          "en": [
+            "Leakages (Withdrawals): Income generated but not spent on domestic goods; reduces the circular flow. Includes Savings (S), Taxes (T), and Imports (M).",
+            "Injections (Additions): Non-consumption spending injected into the circular flow; increases income generation. Includes Investment (I), Government Expenditure (G), and Exports (X).",
+            "Equilibrium Condition: In an open macroeconomic system, macroeconomic equilibrium requires Total Leakages = Total Injections (S + T + M = I + G + X)."
+          ],
+          "ta": [
+            "கசிவுகள் (Leakages): உருவாக்கப்பட்டு உள்நாட்டுப் பொருட்களுக்கு செலவிடப்படாத வருமானம்; சுழல் ஓட்டத்தை சுருக்குகிறது. சேமிப்பு (S), வரிகள் (T) மற்றும் இறக்குமதிகள் (M) ஆகியவை இதில் அடங்கும்.",
+            "உட்பாய்ச்சல்கள் (Injections): நுகர்வு அல்லாத செலவினங்கள் சுழல் ஓட்டத்திற்குள் புகுத்தப்படுவது; வருமான உருவாக்கத்தை அதிகரிக்கிறது. முதலீடு (I), அரசு செலவு (G) மற்றும் ஏற்றுமதிகள் (X) இதில் அடங்கும்.",
+            "சமநிலை நிபந்தனை: ஒரு திறந்த பேரியல் பொருளாதார அமைப்பில் சமநிலைக்கு மொத்த கசிவுகள் = மொத்த உட்பாய்ச்சல்கள் (S + T + M = I + G + X) பூர்த்தியாக வேண்டும்."
+          ]
+        }
+      }
+    ],
+    "sec_core_national_income_aggregates": [
+      {
+        "title": "Gross Domestic Product (GDP) & Net Domestic Product (NDP)",
+        "title_ta": "மொத்த உள்நாட்டு உற்பத்தி (GDP) & நிகர உள்நாட்டு உற்பத்தி (NDP)",
+        "points": {
+          "en": [
+            "Gross Domestic Product (GDP): Total money value of all final goods and services produced within the domestic geographical territory of a country during a year, regardless of whether produced by citizens or foreign residents.",
+            "Depreciation (Consumption of Fixed Capital): The loss in value of physical capital assets due to normal wear and tear, obsolescence, or accidental damage during production.",
+            "Net Domestic Product (NDP): GDP minus Depreciation (NDP = GDP - Depreciation). Represents the true net additions to domestic productive assets."
+          ],
+          "ta": [
+            "மொத்த உள்நாட்டு உற்பத்தி (GDP): ஒரு ஆண்டுக் காலத்தில் ஒரு நாட்டின் புவியியல் எல்லைக்குள் உள்நாட்டு மற்றும் வெளிநாட்டு குடிமக்களால் உற்பத்தி செய்யப்பட்ட அனைத்து இறுதிப் பொருட்கள் மற்றும் பணிகளின் மொத்த பண மதிப்பு.",
+            "தேய்மானம் (மூலதனத் தேய்மானச் செலவு): உற்பத்தி செயல்பாட்டின் போது இயந்திரங்கள் மற்றும் சொத்துக்களின் சாதாரண தேய்மானம், பழுதடைதல் அல்லது பயன்பாட்டின்மை காரணமாக ஏற்படும் மதிப்பு இழப்பு.",
+            "நிகர உள்நாட்டு உற்பத்தி (NDP): மொத்த உள்நாட்டு உற்பத்தியிலிருந்து தேய்மானத்தைக் கழித்த பின் கிடைக்கும் மதிப்பு (NDP = GDP - தேய்மானம்). இது உள்நாட்டு சொத்துக்களின் உண்மையான நிகர உயர்வாகும்."
+          ]
+        }
+      },
+      {
+        "title": "Gross National Product (GNP) & Net National Product (NNP)",
+        "title_ta": "மொத்த தேசிய உற்பத்தி (GNP) & நிகர தேசிய உற்பத்தி (NNP)",
+        "points": {
+          "en": [
+            "Gross National Product (GNP): Total market value of all final goods and services produced by normal residents of a country, irrespective of geographic location (GNP = GDP + NFIA).",
+            "Net Factor Income from Abroad (NFIA): Factor income earned by domestic residents working abroad minus factor income earned by foreign residents working within the domestic economy.",
+            "Net National Product (NNP): GNP minus Depreciation (NNP = GNP - Depreciation). When evaluated at Factor Cost, it constitutes National Income (NI = NNP_FC)."
+          ],
+          "ta": [
+            "மொத்த தேசிய உற்பத்தி (GNP): ஒரு நாட்டின் இயல்பான குடிமக்கள் அவர்கள் உள்நாட்டிலோ அல்லது வெளிநாட்டிலோ எங்கு இருந்தாலும் உற்பத்தி செய்த இறுதிப் பொருட்கள் மற்றும் பணிகளின் மொத்த மதிப்பு (GNP = GDP + வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானம்).",
+            "வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானம் (NFIA): வெளிநாட்டில் உள்ள நமது குடிமக்கள் ஈட்டிய காரணி வருமானத்திற்கும், நமது நாட்டில் உள்ள வெளிநாட்டினர் ஈட்டிய காரணி வருமானத்திற்கும் இடையேயான வித்தியாசம்.",
+            "நிகர தேசிய உற்பத்தி (NNP): மொத்த தேசிய உற்பத்தியிலிருந்து தேய்மானத்தைக் கழித்த பின் கிடைப்பது (NNP = GNP - தேய்மானம்). இது காரணி விலையில் கணக்கிடப்படும் போது அதிகாரப்பூர்வ தேசிய வருமானமாகிறது (NI = NNP_FC)."
+          ]
+        }
+      }
+    ],
+    "sec_valuation_methods_and_prices": [
+      {
+        "title": "Factor Cost vs Basic Prices vs Market Prices",
+        "title_ta": "காரணி விலை vs அடிப்படை விலை vs சந்தை விலை",
+        "points": {
+          "en": [
+            "Factor Cost (FC): Total cost of production factors (rent + wages + interest + profit) incurred by the producer, entirely excluding taxes and subsidies.",
+            "Basic Prices: Value of output received by producer per unit; includes Production Taxes (stamp duty, land revenue) minus Production Subsidies (subsidies to railways/farmers), but excludes Product Taxes/Subsidies.",
+            "Market Prices (MP): Final price paid by the consumer in the retail market; derived by adding Product Taxes (GST, excise, customs) and subtracting Product Subsidies (food, fertilizer, LPG subsidies) to Basic Prices."
+          ],
+          "ta": [
+            "காரணி விலை (Factor Cost): உற்பத்தியாளரால் நிலம், உழைப்பு, மூலதனம் மற்றும் தொழில்முனைவுக்கு வழங்கப்பட்ட மொத்த செலவு (வாரம் + கூலி + வட்டி + லாபம்); இதில் வரிகளும் மானியங்களும் சேராது.",
+            "அடிப்படை விலை (Basic Prices): உற்பத்தியாளர் பெறும் விலை; உற்பத்தி வரிகளை (முத்திரைத்தாள், நில வருவாய்) கூட்டி உற்பத்தி மானியங்களை கழித்த பின் கிடைக்கும் மதிப்பு; இதில் தயாரிப்பு வரிகள் சேராது.",
+            "சந்தை விலை (Market Prices): நுகர்வோர் சந்தையில் செலுத்தும் இறுதி விலை; அடிப்படை விலையுடன் தயாரிப்பு வரிகளை (ஜிஎஸ்டி, சுங்க வரி) கூட்டி தயாரிப்பு மானியங்களை (உணவு, உர மானியம்) கழித்து பெறப்படுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Nominal GDP vs Real GDP & GDP Deflator",
+        "title_ta": "பெயரளவு GDP vs உண்மை GDP & GDP விலைக் குறைப்பான்",
+        "points": {
+          "en": [
+            "Nominal GDP (Current Prices): Value of goods and services evaluated at current prevailing market prices; reflects changes in both actual physical output and inflation.",
+            "Real GDP (Constant Prices): Value of goods and services evaluated at fixed base-year prices (currently 2011-12 in India); eliminates inflation to measure genuine physical volume growth.",
+            "GDP Deflator: Ratio of Nominal GDP to Real GDP multiplied by 100 [GDP Deflator = (Nominal GDP / Real GDP) * 100]; acts as a comprehensive measure of overall price inflation."
+          ],
+          "ta": [
+            "பெயரளவு GDP (நடப்பு விலை): நடப்பு சந்தை விலைகளில் கணக்கிடப்படும் உற்பத்தி மதிப்பு; இது உண்மையான உற்பத்தி அளவு மற்றும் பணவீக்கம் இரண்டின் தாக்கத்தையும் காட்டுகிறது.",
+            "உண்மை GDP (நிலையான விலை): நிலையான அடிப்படைக் கால விலைகளில் (இந்தியாவில் தற்போது 2011-12) கணக்கிடப்படும் மதிப்பு; பணவீக்கத்தை நீக்கி உண்மையான உற்பத்தி உயர்வை மட்டும் அளவிடுகிறது.",
+            "GDP விலைக் குறைப்பான் (Deflator): பெயரளவு GDP-க்கும் உண்மை GDP-க்கும் இடையேயான விகிதம் பெருக்கல் 100 [GDP Deflator = (Nominal GDP / Real GDP) * 100]; இது பொருளாதாரத்தின் விரிவான பணவீக்க அளவீடாகும்."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "comp_domestic_vs_national",
+        "title_en": "Domestic Concepts vs National Concepts (GDP vs GNP / NDP vs NNP)",
+        "title_ta": "உள்நாட்டு கருத்துக்கள் vs தேசிய கருத்துக்கள் (GDP vs GNP / NDP vs NNP)",
+        "headers_en": [
+          "Parameter",
+          "Domestic Aggregates (GDP / NDP)",
+          "National Aggregates (GNP / NNP)"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "உள்நாட்டு திரட்டுகள் (GDP / NDP)",
+          "தேசிய திரட்டுகள் (GNP / NNP)"
+        ],
+        "rows_en": [
+          [
+            "Geographic Focus",
+            "Production confined to domestic geographical borders",
+            "Production by normal citizens regardless of location"
+          ],
+          [
+            "Treatment of Foreigners",
+            "Includes output produced by foreigners inside India",
+            "Excludes foreign earnings inside domestic territory"
+          ],
+          [
+            "Treatment of Residents Abroad",
+            "Excludes earnings of Indian citizens working abroad",
+            "Includes earnings of Indian residents working abroad"
+          ],
+          [
+            "Connecting Component",
+            "GDP = GNP - NFIA",
+            "GNP = GDP + NFIA (Net Factor Income from Abroad)"
+          ],
+          [
+            "Policy Significance",
+            "Measures domestic economic activity and employment",
+            "Measures total purchasing power and income of citizens"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "புவியியல் எல்லை",
+            "நாட்டின் உள்நாட்டு எல்லைக்குள் மட்டுமே உற்பத்தி கணக்கிடப்படுகிறது",
+            "குடிமக்கள் உலகின் எந்தப் பகுதியில் உற்பத்தி செய்தாலும் கணக்கிடப்படுகிறது"
+          ],
+          [
+            "வெளிநாட்டினர் பங்களிப்பு",
+            "இந்திய எல்லைக்குள் வெளிநாட்டினர் உற்பத்தி செய்ததும் அடங்கும்",
+            "உள்நாட்டு எல்லைக்குள் வெளிநாட்டினர் ஈட்டிய வருமானம் நீக்கப்படுகிறது"
+          ],
+          [
+            "வெளிநாட்டிலுள்ள குடிமக்கள்",
+            "வெளிநாட்டில் பணிபுரியும் இந்தியர்களின் வருமானம் சேர்க்கப்படாது",
+            "வெளிநாட்டில் பணிபுரியும் இந்தியர்களின் வருமானம் முழுமையாகச் சேர்க்கப்படுகிறது"
+          ],
+          [
+            "இணைக்கும் காரணி",
+            "GDP = GNP - NFIA",
+            "GNP = GDP + NFIA (வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானம்)"
+          ],
+          [
+            "கொள்கை முக்கியத்துவம்",
+            "உள்நாட்டு உற்பத்தித் திறன் மற்றும் வேலைவாய்ப்பை அளவிடுகிறது",
+            "குடிமக்களின் மொத்த வாங்கும் திறன் மற்றும் வருவாயை அளவிடுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "comp_factor_cost_vs_market_price",
+        "title_en": "Factor Cost vs Basic Prices vs Market Prices Matrix",
+        "title_ta": "காரணி விலை vs அடிப்படை விலை vs சந்தை விலை ஒப்பீட்டு அணி",
+        "headers_en": [
+          "Dimension",
+          "Factor Cost (FC)",
+          "Basic Prices",
+          "Market Prices (MP)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "காரணி விலை (FC)",
+          "அடிப்படை விலை",
+          "சந்தை விலை (MP)"
+        ],
+        "rows_en": [
+          [
+            "Definition",
+            "Total payments made to factors of production",
+            "Price received by producer including production taxes/subsidies",
+            "Final retail price paid by end consumer"
+          ],
+          [
+            "Tax Component",
+            "Zero taxes included",
+            "Includes Production Taxes (land revenue, stamp duty)",
+            "Includes Product Taxes (GST, customs, excise)"
+          ],
+          [
+            "Subsidy Component",
+            "Zero subsidies adjusted",
+            "Deducts Production Subsidies (railway, input subsidies)",
+            "Deducts Product Subsidies (food, fertilizer, LPG)"
+          ],
+          [
+            "Mathematical Formula",
+            "FC = Basic Price - Production Taxes + Production Subsidies",
+            "Basic Price = Factor Cost + Production Tax - Production Subsidy",
+            "Market Price = Basic Price + Product Tax - Product Subsidy"
+          ],
+          [
+            "National Accounts Role",
+            "Historical benchmark (pre-2015 methodology)",
+            "Official GVA benchmark since 2015 base revision",
+            "Official headline GDP benchmark (GDP at Market Prices)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வரையறை",
+            "உற்பத்தி காரணிகளுக்கு வழங்கப்பட்ட மொத்த கட்டணங்கள்",
+            "உற்பத்தி வரிகள்/மானியங்கள் சேர்க்கப்பட்டு உற்பத்தியாளர் பெறும் விலை",
+            "இறுதி நுகர்வோர் சில்லறை சந்தையில் செலுத்தும் விலை"
+          ],
+          [
+            "வரி உள்ளடக்கம்",
+            "வரிகள் எதுவும் சேர்க்கப்படுவதில்லை",
+            "உற்பத்தி வரிகள் (நில வருவாய், முத்திரைத்தாள்) அடங்கும்",
+            "தயாரிப்பு வரிகள் (ஜிஎஸ்டி, சுங்கவரி, கலால் வரி) அடங்கும்"
+          ],
+          [
+            "மானிய உள்ளடக்கம்",
+            "மானியங்கள் எதுவும் சரிசெய்யப்படுவதில்லை",
+            "உற்பத்தி மானியங்கள் (உள்ளீட்டு மானியம்) கழிக்கப்படுகிறது",
+            "தயாரிப்பு மானியங்கள் (உணவு, உரம், எரிவாயு மானியம்) கழிக்கப்படுகிறது"
+          ],
+          [
+            "கணித சமன்பாடு",
+            "FC = அடிப்படை விலை - உற்பத்தி வரிகள் + உற்பத்தி மானியங்கள்",
+            "அடிப்படை விலை = காரணி விலை + உற்பத்தி வரி - உற்பத்தி மானியம்",
+            "சந்தை விலை = அடிப்படை விலை + தயாரிப்பு வரி - தயாரிப்பு மானியம்"
+          ],
+          [
+            "தேசிய கணக்கு பங்கு",
+            "வரலாற்று மதிப்பீடு (2015-க்கு முந்தைய முறையீடு)",
+            "2015 முதல் அதிகாரப்பூர்வ GVA அளவீட்டு முறையாக உள்ளது",
+            "அதிகாரப்பூர்வ முதன்மை GDP அளவீடு (சந்தை விலையிலான GDP)"
+          ]
+        ]
+      },
+      {
+        "id": "comp_nominal_vs_real_gdp",
+        "title_en": "Nominal GDP vs Real GDP Comparison",
+        "title_ta": "பெயரளவு GDP vs உண்மை GDP ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Nominal GDP",
+          "Real GDP"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "பெயரளவு GDP",
+          "உண்மை GDP"
+        ],
+        "rows_en": [
+          [
+            "Price Basis",
+            "Valued at current year market prices",
+            "Valued at constant base year prices (2011-12)"
+          ],
+          [
+            "Inflation Impact",
+            "Distorted by price changes and inflation",
+            "Inflation-adjusted; isolates pure volume growth"
+          ],
+          [
+            "Economic Indicator",
+            "Can rise purely due to inflation without higher output",
+            "Rises only when physical volume of goods increases"
+          ],
+          [
+            "International Comparison",
+            "Used for sizing economies (e.g., India as 5th largest)",
+            "Used for real growth rate reporting (e.g., 7% GDP growth)"
+          ],
+          [
+            "Deflator Connection",
+            "Numerator in GDP Deflator formula",
+            "Denominator in GDP Deflator formula"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "விலை அடிப்படை",
+            "நடப்பு ஆண்டு சந்தை விலைகளில் கணக்கிடப்படுகிறது",
+            "நிலையான அடிப்படை ஆண்டு விலைகளில் கணக்கிடப்படுகிறது (2011-12)"
+          ],
+          [
+            "பணவீக்க தாக்கம்",
+            "விலை மாற்றங்கள் மற்றும் பணவீக்கத்தால் பாதிக்கப்படுகிறது",
+            "பணவீக்கம் நீக்கப்பட்டது; உண்மையான உற்பத்தி அளவை மட்டுமே காட்டும்"
+          ],
+          [
+            "பொருளாதார சுட்டிக்காட்டி",
+            "உற்பத்தி கூடாமலேயே பணவீக்கத்தால் மட்டுமே உயரக்கூடும்",
+            "பொருட்களின் பௌதிக உற்பத்தி கூடும் போது மட்டுமே உயரும்"
+          ],
+          [
+            "சர்வதேச ஒப்பீடு",
+            "பொருளாதாரத்தின் அளவை ஒப்பிட பயன்படுகிறது (5-வது பெரிய நாடு)",
+            "உண்மையான வளர்ச்சி விகிதத்தை ஒப்பிட பயன்படுகிறது (7% வளர்ச்சி)"
+          ],
+          [
+            "Deflator தொடர்பு",
+            "GDP விலைக் குறைப்பான் சூத்திரத்தில் தொகுதி (Numerator)",
+            "GDP விலைக் குறைப்பான் சூத்திரத்தில் பகுதி (Denominator)"
+          ]
+        ]
+      },
+      {
+        "id": "comp_circular_flow_dimensions",
+        "title_en": "Circular Flow: Real Flow vs Money Flow",
+        "title_ta": "சுழல் ஓட்டம்: பொருள்சார் ஓட்டம் vs பண ஓட்டம்",
+        "headers_en": [
+          "Criterion",
+          "Real Flow (Physical Flow)",
+          "Money Flow (Nominal Flow)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "பொருள்சார் ஓட்டம் (Real Flow)",
+          "பண ஓட்டம் (Money Flow)"
+        ],
+        "rows_en": [
+          [
+            "Flow Entity",
+            "Exchange of factor services and finished goods/services",
+            "Exchange of monetary payments and currency values"
+          ],
+          [
+            "Direction of Movement",
+            "Households to firms (factors) and firms to households (goods)",
+            "Firms to households (income) and households to firms (spending)"
+          ],
+          [
+            "Market Nature",
+            "Operates in factor market and commodity product market",
+            "Operates in financial payment channels"
+          ],
+          [
+            "Measurement Units",
+            "Measured in physical quantities (tons, hours, units)",
+            "Measured in monetary currency (Rupees)"
+          ],
+          [
+            "Barter vs Monetary",
+            "Can exist in barter economies without currency",
+            "Requires a legal tender monetary medium of exchange"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஓட்டத்தின் தன்மை",
+            "காரணி சேவைகள் மற்றும் முடிவுற்ற பொருட்கள் பரிமாற்றம்",
+            "பணக் கொடுப்பனவுகள் மற்றும் நாணய மதிப்புகளின் பரிமாற்றம்"
+          ],
+          [
+            "இயங்கும் திசை",
+            "குடும்பங்கள் to நிறுவனங்கள் (காரணி) & நிறுவனங்கள் to குடும்பங்கள் (பொருள்)",
+            "நிறுவனங்கள் to குடும்பங்கள் (வருமானம்) & குடும்பங்கள் to நிறுவனங்கள் (செலவு)"
+          ],
+          [
+            "சந்தை வகை",
+            "காரணி சந்தை மற்றும் உற்பத்திப் பண்ட சந்தைகளில் நிகழ்கிறது",
+            "நிதி மற்றும் பணப்பரிவர்த்தனை வழிகளில் இயங்குகிறது"
+          ],
+          [
+            "அளவீட்டு அலகு",
+            "பௌதிக அலகுகளில் அளவிடப்படுகிறது (டன்கள், மணிநேரம், அலகுகள்)",
+            "பண அலகுகளில் அளவிடப்படுகிறது (ரூபாய்)"
+          ],
+          [
+            "பண்டமாற்று vs நாணயம்",
+            "பணம் இல்லாத பண்டமாற்று முறையிலும் சாத்தியமாகும்",
+            "சட்டப்பூர்வ நாணயப் பரிமாற்ற ஊடகம் கட்டாயம் தேவை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "National Income Foundations (Part 1)",
+        "short_label": "NI Foundations",
+        "children": [
+          {
+            "title": "Historical Evolution",
+            "short_label": "History",
+            "children": [
+              {
+                "title": "Dadabhai Naoroji (1867-68, ₹20)",
+                "short_label": "Naoroji"
+              },
+              {
+                "title": "Dr. V.K.R.V. Rao (1931-32 Scientific, ₹62)",
+                "short_label": "Rao"
+              },
+              {
+                "title": "National Income Committee (1949, Mahalanobis)",
+                "short_label": "NIC 1949"
+              },
+              {
+                "title": "CSO (1951) & NSO Merger (2019 under MoSPI)",
+                "short_label": "CSO/NSO"
+              }
+            ]
+          },
+          {
+            "title": "Circular Flow of Income",
+            "short_label": "Circular Flow",
+            "children": [
+              {
+                "title": "Two-Sector Model (Households & Firms)",
+                "short_label": "Two-Sector"
+              },
+              {
+                "title": "Real Flow (Factor Services & Goods)",
+                "short_label": "Real Flow"
+              },
+              {
+                "title": "Money Flow (Factor Income & Consumption)",
+                "short_label": "Money Flow"
+              },
+              {
+                "title": "Leakages (S+T+M) vs Injections (I+G+X)",
+                "short_label": "Leakages/Injections"
+              }
+            ]
+          },
+          {
+            "title": "Core Aggregates",
+            "short_label": "Aggregates",
+            "children": [
+              {
+                "title": "GDP (Domestic Territory, Gross)",
+                "short_label": "GDP"
+              },
+              {
+                "title": "NDP = GDP - Depreciation",
+                "short_label": "NDP"
+              },
+              {
+                "title": "GNP = GDP + NFIA",
+                "short_label": "GNP"
+              },
+              {
+                "title": "NNP_FC = National Income",
+                "short_label": "NNP_FC"
+              }
+            ]
+          },
+          {
+            "title": "Valuation & Prices",
+            "short_label": "Valuation",
+            "children": [
+              {
+                "title": "Factor Cost (Factor payments)",
+                "short_label": "Factor Cost"
+              },
+              {
+                "title": "Basic Prices (+ Production Tax - Subsidy)",
+                "short_label": "Basic Prices"
+              },
+              {
+                "title": "Market Prices (+ Product Tax - Subsidy)",
+                "short_label": "Market Prices"
+              },
+              {
+                "title": "Nominal vs Real GDP (Base 2011-12)",
+                "short_label": "Nominal/Real"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "First Estimation vs First Scientific Estimation Trap",
+        "points": {
+          "en": [
+            "Trap: Confusing the first historical estimator with the first scientific estimator of National Income in India.",
+            "Correct Understanding: Dadabhai Naoroji made the first non-statistical estimate for 1867-68 (₹20); Dr. V.K.R.V. Rao made the first scientific estimate using statistical sampling and dual-sector methodology in 1931-32 (₹62).",
+            "Exam Tip: If question asks 'first person to estimate', answer is Dadabhai Naoroji. If it asks 'first scientific estimate', answer is Dr. V.K.R.V. Rao."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவின் முதல் வரலாற்று தேசிய வருமான மதிப்பீட்டாளரையும் முதல் அறிவியல் பூர்வ மதிப்பீட்டாளரையும் குழப்பிக் கொள்வது.",
+            "சரியான புரிதல்: தாதாபாய் நௌரோஜி 1867-68 ஆம் ஆண்டிற்கு முதல் மதிப்பீட்டை செய்தார் (தலா வருமானம் ₹20); டாக்டர் வி.கே.ஆர்.வி. ராவ் 1931-32-ல் முதல் அறிவியல் பூர்வ மதிப்பீட்டை செய்தார் (தலா வருமானம் ₹62).",
+            "தேர்வு குறிப்பு: 'முதல் மதிப்பீடு' எனில் தாதாபாய் நௌரோஜி; 'முதல் அறிவியல் பூர்வ மதிப்பீடு' எனில் டாக்டர் வி.கே.ஆர்.வி. ராவ்."
+          ]
+        }
+      },
+      {
+        "title": "National Income Technical Definition Trap (NNP_FC vs GDP_MP)",
+        "points": {
+          "en": [
+            "Trap: Assuming GDP at Market Prices is identical to National Income.",
+            "Correct Understanding: In macroeconomic theory and official statistics, 'National Income' strictly refers to Net National Product at Factor Cost (NNP_FC), NOT GDP at Market Prices.",
+            "Exam Tip: GDP_MP includes depreciation and net indirect taxes, whereas National Income excludes depreciation and net indirect taxes."
+          ],
+          "ta": [
+            "பொறி: சந்தை விலையிலான மொத்த உள்நாட்டு உற்பத்தி (GDP_MP) தான் தேசிய வருமானம் என தவறாகக் கருதுவது.",
+            "சரியான புரிதல்: பொருளாதாரக் கோட்பாடு மற்றும் அதிகாரப்பூர்வ புள்ளிவிவரங்களில் 'தேசிய வருமானம்' என்பது காரணி விலையிலான நிகர தேசிய உற்பத்தியை (NNP_FC) மட்டுமே குறிக்கும்.",
+            "தேர்வு குறிப்பு: GDP_MP என்பது தேய்மானம் மற்றும் நிகர மறைமுக வரிகளை உள்ளடக்கியது; தேசிய வருமானத்தில் தேய்மானமும் மறைமுக வரிகளும் இருக்காது."
+          ]
+        }
+      },
+      {
+        "title": "Domestic Territory vs National Citizenship Trap",
+        "points": {
+          "en": [
+            "Trap: Believing that GDP only counts output produced by Indian citizens.",
+            "Correct Understanding: GDP measures output produced within India's domestic territory, regardless of whether produced by Indian citizens or foreign multinationals (e.g., Apple factory in Tamil Nadu). GNP measures output by Indian citizens regardless of global location.",
+            "Exam Tip: 'Domestic' = Location of production; 'National' = Citizenship/residence of producer."
+          ],
+          "ta": [
+            "பொறி: உள்நாட்டு உற்பத்தி (GDP) என்பது இந்தியக் குடிமக்கள் உற்பத்தி செய்வதை மட்டுமே குறிக்கும் என நினைப்பது.",
+            "சரியான புரிதல்: GDP என்பது நாட்டின் எல்லைக்குள் யார் உற்பத்தி செய்தாலும் (இந்தியரோ அல்லது பன்னாட்டு நிறுவனமோ) அதைக் கணக்கிடும். GNP என்பது இந்தியக் குடிமக்கள் எங்கு உற்பத்தி செய்தாலும் அதைக் கணக்கிடும்.",
+            "தேர்வு குறிப்பு: 'உள்நாட்டு' = உற்பத்தியின் இருப்பிடம்; 'தேசிய' = உற்பத்தியாளரின் குடியுரிமை."
+          ]
+        }
+      },
+      {
+        "title": "Intermediate Goods vs Final Goods Double Counting Trap",
+        "points": {
+          "en": [
+            "Trap: Adding the value of wheat, flour, and bread together in GDP.",
+            "Correct Understanding: Only the value of 'final goods' (bread) or the 'value added' at each stage is included. Adding intermediate goods (wheat + flour + bread) leads to the error of double counting.",
+            "Exam Tip: Value of Final Goods = Sum of Value Added by all production stages."
+          ],
+          "ta": [
+            "பொறி: கோதுமை, மாவு மற்றும் ரொட்டி ஆகியவற்றின் மதிப்புகளை தனித்தனியாக கூட்டி GDP-ல் சேர்ப்பது.",
+            "சரியான புரிதல்: இறுதிப் பண்டத்தின் (ரொட்டி) மதிப்பு அல்லது ஒவ்வொரு கட்டத்திலும் சேர்க்கப்பட்ட மதிப்பு (Value Added) மட்டுமே கணக்கில் கொள்ளப்படும். அனைத்தையும் கூட்டினால் இரட்டை கணக்கீட்டுப் பிழை ஏற்படும்.",
+            "தேர்வு குறிப்பு: இறுதிப் பண்டத்தின் மதிப்பு = அனைத்து உற்பத்திக் கட்டங்களிலும் கூட்டப்பட்ட நிகர மதிப்புகளின் கூட்டுத்தொகை."
+          ]
+        }
+      },
+      {
+        "title": "Transfer Payments Exclusion Trap",
+        "points": {
+          "en": [
+            "Trap: Including old-age pensions, scholarships, and unemployment allowances in National Income.",
+            "Correct Understanding: Transfer payments are unilateral payments without any corresponding production of goods or services; they are excluded from National Income. Only 'Factor Payments' (wages, rent, interest, profit) are included.",
+            "Exam Tip: Retirement pensions (earned factor payment for past services) ARE included, but social welfare old-age pensions are EXCLUDED."
+          ],
+          "ta": [
+            "பொறி: முதியோர் உதவித்தொகை, கல்வி உதவித்தொகை மற்றும் வேலையின்மை படிகளை தேசிய வருமானத்தில் சேர்ப்பது.",
+            "சரியான புரிதல்: மாற்றுச் செலுத்துதல்கள் (Transfer Payments) உற்பத்தி செயல்பாடுகள் ஏதுமின்றி ஒருதலைப்பட்சமாக வழங்கப்படுபவை; இவை தேசிய வருமானத்தில் சேர்க்கப்படாது. காரணி ஊதியங்கள் மட்டுமே சேர்க்கப்படும்.",
+            "தேர்வு குறிப்பு: அரசு ஊழியர் ஓய்வூதியம் (முந்தைய பணிக்கான காரணி ஊதியம்) சேர்க்கப்படும்; ஆனால் சமூக நல முதியோர் உதவித்தொகை சேர்க்கப்படாது."
+          ]
+        }
+      },
+      {
+        "title": "Base Year 2011-12 Shift to GVA at Basic Prices Trap",
+        "points": {
+          "en": [
+            "Trap: Thinking India still measures headline sector growth at Factor Cost.",
+            "Correct Understanding: In January 2015, CSO revised the base year from 2004-05 to 2011-12 and adopted GVA at Basic Prices (instead of GVA at Factor Cost) for sectoral growth, aligning with UN SNA 2008.",
+            "Exam Tip: Headline economic growth is reported as GDP at Market Prices; sectoral economic performance is reported as GVA at Basic Prices."
+          ],
+          "ta": [
+            "பொறி: இந்தியா இப்போதும் காரணி விலையிலேயே துறைசார் வளர்ச்சியை அளவிடுகிறது என நினைப்பது.",
+            "சரியான புரிதல்: ஜனவரி 2015-ல் சிஎஸ்ஓ அடிப்படை ஆண்டை 2004-05 லிருந்து 2011-12 ஆக மாற்றியது; UN SNA 2008 பரிந்துரைப்படி காரணி விலைக்கு பதிலாக அடிப்படை விலையிலான GVA முறையை ஏற்றுக்கொண்டது.",
+            "தேர்வு குறிப்பு: முதன்மைப் பொருளாதார வளர்ச்சி என்பது சந்தை விலையிலான GDP; துறைசார் வளர்ச்சி என்பது அடிப்படை விலையிலான GVA."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "First estimate of National Income in India was prepared by Dadabhai Naoroji for 1867-68 (PCI = ₹20).",
+        "First scientific estimate was formulated by Dr. V.K.R.V. Rao for 1931-32 (PCI = ₹62).",
+        "National Income Committee was appointed in August 1949 chaired by Prof. P.C. Mahalanobis.",
+        "Central Statistical Organisation (CSO) was established on 2 May 1951.",
+        "In May 2019, CSO and NSSO were merged to form the National Statistical Office (NSO) under MoSPI.",
+        "National Income is technically defined as Net National Product at Factor Cost (NNP_FC).",
+        "GDP formula: GDP = Total Value of Final Goods and Services produced within domestic territory in a year.",
+        "GNP formula: GNP = GDP + Net Factor Income from Abroad (NFIA).",
+        "NDP formula: NDP = GDP - Depreciation (Consumption of Fixed Capital).",
+        "NNP formula: NNP = GNP - Depreciation.",
+        "Current Base Year for India's National Accounts is 2011-12 (adopted in January 2015).",
+        "GDP Deflator = (Nominal GDP / Real GDP) * 100."
+      ],
+      "ta": [
+        "இந்தியாவில் தேசிய வருமானத்தின் முதல் மதிப்பீட்டை 1867-68 ஆம் ஆண்டிற்கு தாதாபாய் நௌரோஜி உருவாக்கினார் (தலா வருமானம் = ₹20).",
+        "முதல் அறிவியல் பூர்வ மதிப்பீட்டை 1931-32 ஆம் ஆண்டிற்கு டாக்டர் வி.கே.ஆர்.வி. ராவ் உருவாக்கினார் (தலா வருமானம் = ₹62).",
+        "பேராசிரியர் பி.சி. மகாலநோபிஸ் தலைமையில் ஆகஸ்ட் 1949-ல் தேசிய வருமானக் குழு நியமிக்கப்பட்டது.",
+        "மத்திய புள்ளியியல் அமைப்பு (CSO) மே 2, 1951 அன்று நிறுவப்பட்டது.",
+        "மே 2019-ல் சிஎஸ்ஓ மற்றும் என்எஸ்எஸ்ஓ ஆகியவற்றை இணைத்து என்எஸ்ஓ (NSO) உருவாக்கப்பட்டது.",
+        "தொழில்நுட்ப ரீதியாக தேசிய வருமானம் என்பது காரணி விலையிலான நிகர தேசிய உற்பத்தி (NNP_FC) ஆகும்.",
+        "GDP சூத்திரம்: GDP = ஒரு ஆண்டில் நாட்டின் புவியியல் எல்லைக்குள் உற்பத்தி செய்யப்பட்ட இறுதிப் பண்டங்கள் மற்றும் பணிகளின் மொத்த மதிப்பு.",
+        "GNP சூத்திரம்: GNP = GDP + வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானம் (NFIA).",
+        "NDP சூத்திரம்: NDP = GDP - தேய்மானம் (மூலதனத் தேய்மானச் செலவு).",
+        "NNP சூத்திரம்: NNP = GNP - தேய்மானம்.",
+        "இந்திய தேசிய கணக்குகளின் நடப்பு அடிப்படை ஆண்டு 2011-12 (ஜனவரி 2015-ல் ஏற்றுக்கொள்ளப்பட்டது).",
+        "GDP விலைக் குறைப்பான் = (பெயரளவு GDP / உண்மை GDP) * 100."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "National Income reflects the net aggregate earnings of all factors of production in an economy.",
+        "Dadabhai Naoroji was the pioneer of Indian national income accounting in 1867-68.",
+        "Dr. V.K.R.V. Rao pioneered the scientific dual-methodology approach in 1931-32.",
+        "Circular Flow of Income establishes that Total Production ≡ Total Income ≡ Total Expenditure.",
+        "Leakages from circular flow include Savings, Taxes, and Imports (S + T + M).",
+        "Injections into circular flow include Investment, Government Spending, and Exports (I + G + X).",
+        "GDP measures production within domestic territory regardless of nationality.",
+        "GNP adjusts GDP by adding Net Factor Income from Abroad (NFIA).",
+        "Depreciation represents consumption of fixed capital; deducting it yields Net aggregates (NDP, NNP).",
+        "Real GDP is inflation-adjusted at 2011-12 constant prices, whereas Nominal GDP is at current prices."
+      ],
+      "ta": [
+        "தேசிய வருமானம் என்பது பொருளாதாரத்தில் அனைத்து உற்பத்தி காரணிகளின் நிகர மொத்த வருவாயைப் பிரதிபலிக்கிறது.",
+        "1867-68-ல் தாதாபாய் நௌரோஜி இந்திய தேசிய வருமானக் கணக்கீட்டின் முன்னோடியாக விளங்கினார்.",
+        "1931-32-ல் டாக்டர் வி.கே.ஆர்.வி. ராவ் அறிவியல் பூர்வ இரட்டை முறையியலை உருவாக்கினார்.",
+        "வருமான சுழல் ஓட்டம் என்பது மொத்த உற்பத்தி ≡ மொத்த வருமானம் ≡ மொத்த செலவு என்ற சமன்பாட்டை நிறுவுகிறது.",
+        "சுழல் ஓட்டத்தின் கசிவுகளில் சேமிப்பு, வரிகள் மற்றும் இறக்குமதிகள் (S + T + M) அடங்கும்.",
+        "சுழல் ஓட்டத்தின் உட்பாய்ச்சல்களில் முதலீடு, அரசு செலவினம் மற்றும் ஏற்றுமதிகள் (I + G + X) அடங்கும்.",
+        "GDP என்பது குடியுரிமையைப் பொருட்படுத்தாமல் உள்நாட்டு எல்லைக்குள் உற்பத்தியானதை அளவிடுகிறது.",
+        "GNP என்பது GDP-யுடன் வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானத்தை (NFIA) கூட்டிப் பெறப்படுகிறது.",
+        "தேய்மானம் என்பது மூலதனச் சொத்துக்களின் இழப்பு; அதைக் கழித்தால் நிகர மதிப்புகள் (NDP, NNP) கிடைக்கும்.",
+        "உண்மை GDP என்பது 2011-12 நிலையான விலையில் பணவீக்கம் நீக்கப்பட்டதாகும்; பெயரளவு GDP நடப்பு விலையிலானது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "card_ni1_1",
+        "front_en": "Who prepared the first estimate of National Income in India and in which year?",
+        "front_ta": "இந்தியாவில் தேசிய வருமானத்தை முதலில் மதிப்பிட்டவர் யார், எந்த ஆண்டு?",
+        "back_en": "Dadabhai Naoroji for the year 1867-68 (published in 'Poverty and Un-British Rule in India').",
+        "back_ta": "1867-68 ஆம் ஆண்டிற்கு தாதாபாய் நௌரோஜி ('இந்தியாவில் வறுமையும் பிரிட்டிஷ் தன்மையற்ற ஆட்சியும்' நூலில்)."
+      },
+      {
+        "id": "card_ni1_2",
+        "front_en": "What was the per capita income calculated by Dadabhai Naoroji in 1867-68?",
+        "front_ta": "1867-68-ல் தாதாபாய் நௌரோஜியால் கணக்கிடப்பட்ட தலா வருமானம் எவ்வளவு?",
+        "back_en": "₹20 per annum (total national income was estimated at ₹340 crore).",
+        "back_ta": "ஆண்டுக்கு ₹20 (மொத்த தேசிய வருமானம் ₹340 கோடி என மதிப்பிடப்பட்டது)."
+      },
+      {
+        "id": "card_ni1_3",
+        "front_en": "Who formulated the first scientific estimation of National Income in India?",
+        "front_ta": "இந்தியாவில் தேசிய வருமானத்தின் முதல் அறிவியல் பூர்வ மதிப்பீட்டை உருவாக்கியவர் யார்?",
+        "back_en": "Dr. V.K.R.V. Rao for 1931-32 (calculated per capita income at ₹62).",
+        "back_ta": "1931-32 ஆம் ஆண்டிற்கு டாக்டர் வி.கே.ஆர்.வி. ராவ் (தலா வருமானம் ₹62 எனக் கணக்கிட்டார்)."
+      },
+      {
+        "id": "card_ni1_4",
+        "front_en": "Who chaired the National Income Committee appointed by the Government of India in 1949?",
+        "front_ta": "1949-ல் இந்திய அரசால் நியமிக்கப்பட்ட தேசிய வருமானக் குழுவின் தலைவர் யார்?",
+        "back_en": "Prof. P.C. Mahalanobis (with D.R. Gadgil and V.K.R.V. Rao as members).",
+        "back_ta": "பேராசிரியர் பி.சி. மகாலநோபிஸ் (டி.ஆர். காட்கில் மற்றும் வி.கே.ஆர்.வி. ராவ் உறுப்பினர்களாக இருந்தனர்)."
+      },
+      {
+        "id": "card_ni1_5",
+        "front_en": "What is the official technical definition of National Income?",
+        "front_ta": "தேசிய வருமானத்தின் அதிகாரப்பூர்வ தொழில்நுட்ப வரையறை என்ன?",
+        "back_en": "Net National Product at Factor Cost (NNP_FC).",
+        "back_ta": "காரணி விலையிலான நிகர தேசிய உற்பத்தி (NNP_FC)."
+      },
+      {
+        "id": "card_ni1_6",
+        "front_en": "What is the formula connecting Gross Domestic Product (GDP) and Gross National Product (GNP)?",
+        "front_ta": "மொத்த உள்நாட்டு உற்பத்தி (GDP) மற்றும் மொத்த தேசிய உற்பத்தியை (GNP) இணைக்கும் சூத்திரம் என்ன?",
+        "back_en": "GNP = GDP + Net Factor Income from Abroad (NFIA).",
+        "back_ta": "GNP = GDP + வெளிநாட்டிலிருந்து வரும் நிகர காரணி வருமானம் (NFIA)."
+      },
+      {
+        "id": "card_ni1_7",
+        "front_en": "How is Net Domestic Product (NDP) derived from GDP?",
+        "front_ta": "GDP-யிலிருந்து நிகர உள்நாட்டு உற்பத்தி (NDP) எவ்வாறு பெறப்படுகிறது?",
+        "back_en": "NDP = GDP - Depreciation (Consumption of Fixed Capital).",
+        "back_ta": "NDP = GDP - தேய்மானம் (மூலதனத் தேய்மானச் செலவு)."
+      },
+      {
+        "id": "card_ni1_8",
+        "front_en": "What are the three leakages in the circular flow of income in an open economy?",
+        "front_ta": "திறந்த பொருளாதாரத்தில் வருமான சுழல் ஓட்டத்தின் மூன்று கசிவுகள் யாவை?",
+        "back_en": "Savings (S), Taxes (T), and Imports (M).",
+        "back_ta": "சேமிப்பு (S), வரிகள் (T) மற்றும் இறக்குமதிகள் (M)."
+      },
+      {
+        "id": "card_ni1_9",
+        "front_en": "What are the three injections in the circular flow of income in an open economy?",
+        "front_ta": "திறந்த பொருளாதாரத்தில் வருமான சுழல் ஓட்டத்தின் மூன்று உட்பாய்ச்சல்கள் யாவை?",
+        "back_en": "Investment (I), Government Expenditure (G), and Exports (X).",
+        "back_ta": "முதலீடு (I), அரசு செலவு (G) மற்றும் ஏற்றுமதிகள் (X)."
+      },
+      {
+        "id": "card_ni1_10",
+        "front_en": "What is the mathematical formula for the GDP Deflator?",
+        "front_ta": "GDP விலைக் குறைப்பானின் (Deflator) கணித சூத்திரம் என்ன?",
+        "back_en": "GDP Deflator = (Nominal GDP / Real GDP) * 100.",
+        "back_ta": "GDP விலைக் குறைப்பான் = (பெயரளவு GDP / உண்மை GDP) * 100."
+      },
+      {
+        "id": "card_ni1_11",
+        "front_en": "What is the current base year used for calculating Real GDP in India?",
+        "front_ta": "இந்தியாவில் உண்மை GDP கணக்கிட தற்போது பயன்படுத்தப்படும் அடிப்படை ஆண்டு எது?",
+        "back_en": "2011-12 (adopted in January 2015, replacing 2004-05).",
+        "back_ta": "2011-12 (2004-05-க்கு பதிலாக ஜனவரி 2015-ல் ஏற்றுக்கொள்ளப்பட்டது)."
+      },
+      {
+        "id": "card_ni1_12",
+        "front_en": "Which agency was created in May 2019 by merging the CSO and NSSO?",
+        "front_ta": "மே 2019-ல் CSO மற்றும் NSSO ஆகியவற்றை இணைத்து உருவாக்கப்பட்ட அமைப்பு எது?",
+        "back_en": "National Statistical Office (NSO) under the Ministry of Statistics and Programme Implementation (MoSPI).",
+        "back_ta": "புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் (MoSPI) கீழ் இயங்கும் தேசிய புள்ளியியல் அலுவலகம் (NSO)."
+      }
+    ]
+  }
+}

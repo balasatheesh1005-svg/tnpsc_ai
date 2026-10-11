@@ -1,0 +1,810 @@
+{
+  "meta": {
+    "topic_id": "economy_unemployment_part_1",
+    "repository_id": "economy_unemployment",
+    "display_title": "Unemployment – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Unemployment",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Working Age Population 15 to 59",
+    "Labour Force LF",
+    "Workforce WF",
+    "Out of Labour Force",
+    "Labour Force Participation Rate LFPR",
+    "Worker Population Ratio WPR",
+    "Unemployment Rate UR",
+    "Usual Principal and Subsidiary Status UPSS",
+    "Current Weekly Status CWS",
+    "Current Daily Status CDS",
+    "Periodic Labour Force Survey PLFS 2017",
+    "Amitabh Kundu Committee",
+    "CAPI Rotating Panel"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Distinguish clearly between Labour Force (supply), Workforce (employed), and Out of Labour Force (inactive).",
+        "Understand how UPSS subsidiary thresholds mask open unemployment compared to Current Weekly Status."
+      ],
+      "ta": [
+        "உழைப்பாளர் சக்தி (விநியோகம்), பணியாளர் படை (வேலை செய்வோர்) மற்றும் உழைப்பாளர் சக்திக்கு வெளியே உள்ளோர் ஆகியவற்றை வேறுபடுத்தி அறிதல்.",
+        "வாராந்திர நிலையுடன் ஒப்பிடுகையில் UPSS துணை வேலை வரம்பு எவ்வாறு வேலையின்மையை மறைக்கிறது என்பதைப் புரிந்து கொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the three core ratios: LFPR = (LF/Pop)*100, WPR = (WF/Pop)*100, and UR = (Unemployed/LF)*100.",
+        "Recall the launch year of PLFS (April 2017) and the Amitabh Kundu Committee."
+      ],
+      "ta": [
+        "மூன்று முக்கிய விகிதங்களை நினைவில் நிறுத்துதல்: LFPR = (LF/Pop)*100, WPR = (WF/Pop)*100, மற்றும் UR = (வேலையற்றோர்/LF)*100.",
+        "PLFS தொடங்கப்பட்ட ஆண்டு (ஏப்ரல் 2017) மற்றும் அமிதாப் குந்து குழுவை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why the Unemployment Rate has the Labour Force in its denominator rather than the total population.",
+        "Appraise the advantages of PLFS's computer-assisted rotating panel design over traditional 5-yearly NSSO surveys."
+      ],
+      "ta": [
+        "வேலையின்மை விகிதத்தின் பகுதியில் மொத்த மக்கள் தொகைக்கு பதிலாக ஏன் உழைப்பாளர் சக்தி இடம்பெறுகிறது என்பதை ஆய்வு செய்தல்.",
+        "பழைய ஐந்தாண்டு NSSO முறையை விட PLFS கணினிமய சுழலும் குழு மாதிரியின் மேன்மைகளை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid exam traps regarding homemakers/students categorization and the 1-hour CWS rule in MCQs."
+      ],
+      "ta": [
+        "இல்லத்தரசிகள்/மாணவர்கள் வகைப்பாடு மற்றும் CWS 1 மணி நேர விதி குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Unemployment – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_labour_force_concepts",
+      "title_en": "Foundational Concepts: Working Age, Labour Force & Workforce",
+      "title_ta": "அடிப்படை வேலைவாய்ப்புக் கோட்பாடுகள்: உழைக்கும் வயது, உழைப்பாளர் சக்தி & பணியாளர் படை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_unemployment_formulas",
+      "title_en": "Core Statistical Indicators & Mathematical Formulas",
+      "title_ta": "முக்கிய புள்ளிவிவரக் குறிகாட்டிகள் & கணிதச் சூத்திரங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_activity_status_approaches",
+      "title_en": "Temporal Measurement Approaches: UPSS, CWS & CDS",
+      "title_ta": "கால அளவீட்டு முறைகள்: வழக்கமான நிலை (UPSS), வாராந்திர நிலை (CWS) & தினசரி நிலை (CDS)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_plfs_architecture",
+      "title_en": "Periodic Labour Force Survey (PLFS): Institutional Framework",
+      "title_ta": "சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS): நிறுவனக் கட்டமைப்பு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Unemployment is an economic phenomenon where individuals belonging to the working-age population (15–59 years), who are actively willing, able, and seeking gainful work at prevailing wage rates, fail to obtain suitable employment. The Unemployment Rate (UR) is formally defined as the percentage of unemployed persons in the total labour force.",
+      "ta": "வேலையின்மை என்பது உழைக்கும் வயது வரம்பிற்குள் (15–59 வயது) இருக்கும் நபர்கள், நிலவும் ஊதிய விகிதத்தில் தீவிரமாக வேலை செய்ய விருப்பமும், திறனும் கொண்டு வேலை தேடியும் அவர்களுக்கு பொருத்தமான ஊதியம் தரும் வேலைவாய்ப்பு கிடைக்காமல் இருக்கும் பொருளாதார நிலையாகும். வேலையின்மை விகிதம் (Unemployment Rate - UR) என்பது மொத்த உழைப்பாளர் சக்தியில் வேலையற்ற நபர்களின் சதவீதமாக அதிகாரப்பூர்வமாக வரையறுக்கப்படுகிறது."
+    },
+    "introduction": {
+      "en": "The analytical framework of employment and unemployment constitutes a primary pillar of macroeconomic health and social stability. In India, labour statistics distinguish between the Working-Age Population, the Labour Force (those working or actively seeking work), the Workforce (those actually engaged in economic activity), and individuals Out of the Labour Force (students, unpaid domestic caregivers, and the incapacitated). Measuring unemployment in an economy dominated by an unorganized and informal workforce requires sophisticated temporal lenses. The National Statistical Office (NSO) utilizes distinct activity statuses: Usual Principal and Subsidiary Status (UPSS) for chronic long-term unemployment, Current Weekly Status (CWS) for medium-term shocks, and previously Current Daily Status (CDS) for seasonal underemployment. Understanding these statistical ratios, measurement concepts, and the transition from quinquennial NSSO surveys to the annual/quarterly Periodic Labour Force Survey (PLFS) is vital for TNPSC Group 1 aspirants.",
+      "ta": "வேலைவாய்ப்பு மற்றும் வேலையின்மை குறித்த பகுப்பாய்வுக் கட்டமைப்பு நாட்டின் பொருளாதார ஆரோக்கியம் மற்றும் சமூக ஸ்திரத்தன்மையின் முதன்மைத் தூணாக விளங்குகிறது. இந்தியாவில் தொழிலாளர் புள்ளிவிவரங்கள் உழைக்கும் வயதுடைய மக்கள், உழைப்பாளர் சக்தி (வேலை செய்பவர்கள் அல்லது வேலை தேடுபவர்கள்), பணியாளர் சக்தி (உண்மையில் பொருளாதாரப் பணியில் ஈடுபட்டுள்ளவர்கள்) மற்றும் உழைப்பாளர் சக்திக்கு வெளியே உள்ளவர்கள் (மாணவர்கள், ஊதியமற்ற வீட்டுப் பராமரிப்பாளர்கள், இயலாதவர்கள்) என துல்லியமாக வகைப்படுத்தப்படுகின்றன. முறைசாரா தொழிலாளர்கள் அதிகம் உள்ள ஒரு நாட்டில் வேலையின்மையை அளவிடுவதற்கு நுட்பமான கால அளவீடுகள் தேவைப்படுகின்றன. தேசிய புள்ளியியல் அலுவலகம் (NSO) வெவ்வேறு கால நிலைகளைப் பயன்படுத்துகிறது: நாள்பட்ட நீண்டகால வேலையின்மைக்கு வழக்கமான முதன்மை மற்றும் துணை நிலை (UPSS), வாராந்திர மாற்றங்களுக்கு தற்போதைய வாராந்திர நிலை (CWS) மற்றும் முன்னர் தற்போதைய தினசரி நிலை (CDS). இந்த விகிதங்கள், சூத்திரங்கள் மற்றும் ஐந்தாண்டு NSSO முறையிலிருந்து சுழற்சி தொழிலாளர் கணக்கெடுப்புக்கு (PLFS) மாறிய வரலாற்றை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_labour_force_concepts": [
+      {
+        "term_en": "Working-Age Population (15–59 Years)",
+        "term_ta": "உழைக்கும் வயது மக்கள் தொகை (15–59 வயது)",
+        "details_en": "The segment of the total population legally and demographically capable of economic production. In India, official statistical conventions define working age strictly as 15 to 59 years (while international ILO/OECD conventions frequently use 15 to 64 years). Children below 15 (child labor prohibited under Article 24) and elderly individuals aged 60+ are excluded from the potential domestic labor supply denominator.",
+        "details_ta": "சட்டப்படியும் மக்கள் தொகை அடிப்படையிலும் பொருளாதார உற்பத்தியில் ஈடுபடத் தகுதியான மக்கள் தொகைப் பிரிவு. இந்தியாவில் அதிகாரப்பூர்வ புள்ளிவிவர மரபுப்படி இது 15 முதல் 59 வயது என வரையறுக்கப்படுகிறது (சர்வதேச ILO வழக்கத்தில் 15 முதல் 64 வயது). 15 வயதுக்குட்பட்ட குழந்தைகள் (உறுப்பு 24-ன் கீழ் தடைசெய்யப்பட்டவர்கள்) மற்றும் 60 வயதுக்கு மேற்பட்ட முதியவர்கள் வழக்கமான உழைப்பாளர் கணக்கீட்டில் சேர்க்கப்படுவதில்லை."
+      },
+      {
+        "term_en": "Labour Force (LF = Employed + Unemployed)",
+        "term_ta": "உழைப்பாளர் சக்தி (Labour Force - LF)",
+        "details_en": "The total economic supply of labor seeking or engaged in the production of economic goods and services. It is the sum of: (1) Employed individuals actively working, PLUS (2) Unemployed individuals who are actively seeking or available for work. It EXCLUDES persons unwilling or unable to work (full-time students, unpaid family homemakers, retired persons, and the permanently incapacitated).",
+        "details_ta": "பொருட்கள் மற்றும் சேவைகளை உற்பத்தி செய்யத் தயாராக உள்ள அல்லது ஈடுபட்டுள்ள மொத்த மனித உழைப்பு விநியோகம். இது: (1) பணிபுரியும் நபர்கள் மற்றும் (2) வேலை செய்யத் தயாராக தீவிரமாக வேலை தேடும் வேலையற்ற நபர்கள் ஆகிய இரு பிரிவினரின் கூட்டுத்தொகையாகும். வேலை செய்ய விரும்பாத அல்லது இயலாதவர்கள் (முழுநேர மாணவர்கள், ஊதியமற்ற குடும்பப் பெண்கள், ஓய்வுபெற்றோர்) இதில் சேர்க்கப்பட மாட்டார்கள்."
+      },
+      {
+        "term_en": "Workforce (WF = Actually Employed)",
+        "term_ta": "பணியாளர் படை (Workforce - WF)",
+        "details_en": "The subset of the labour force that is ACTUALLY GAINFULLY ENGAGED in economic activities during the reference period. Formula: Workforce = Labour Force MINUS Unemployed Persons (WF = LF - U).",
+        "details_ta": "குறிப்பிட்ட ஆய்வுக் காலத்தில் உண்மையில் ஊதியம் தரும் பொருளாதாரப் பணிகளில் ஈடுபட்டுள்ள உழைப்பாளர் சக்தியின் பகுதியாகும். சூத்திரம்: பணியாளர் படை = உழைப்பாளர் சக்தி - வேலையற்ற நபர்கள் (WF = LF - U)."
+      },
+      {
+        "term_en": "Out of the Labour Force",
+        "term_ta": "உழைப்பாளர் சக்திக்கு வெளியே உள்ளோர்",
+        "details_en": "Persons who are neither employed nor available/seeking work during the reference period. Crucially, they are NOT categorized as unemployed. Major components in India include full-time students in higher education, unpaid household caregivers (predominantly women), disabled persons, and persons living on rent/pension/remittances.",
+        "details_ta": "ஆய்வுக் காலத்தில் வேலையில் ஈடுபடாத மற்றும் வேலை செய்ய விரும்பாத/தேடாத நபர்கள். மிக முக்கியமாக, இவர்கள் வேலையற்றவர்களாகக் கருதப்பட மாட்டார்கள்! இதில் உயர்கல்வி பயிலும் மாணவர்கள், குடும்பப் பணிகளை மட்டுமே கவனிக்கும் ஊதியமற்ற இல்லத்தரசிகள், முதியவர்கள் மற்றும் ஊனமுற்றோர் அடங்குவர்."
+      }
+    ],
+    "sec_unemployment_formulas": [
+      {
+        "term_en": "Labour Force Participation Rate (LFPR)",
+        "term_ta": "உழைப்பாளர் சக்தி பங்கேற்பு விகிதம் (LFPR)",
+        "details_en": "The percentage of the total population (or working-age population) that is in the labour force (either working or seeking work). Formula: LFPR = [Total Labour Force / Total Population] x 100. It measures the societal willingness and demographic mobilization to supply economic labor.",
+        "details_ta": "மொத்த மக்கள் தொகையில் (அல்லது உழைக்கும் வயது மக்களில்) உழைப்பாளர் சக்தியாக (வேலை செய்பவர்கள் அல்லது வேலை தேடுபவர்கள்) உள்ளவர்களின் சதவீதமாகும். சூத்திரம்: LFPR = [மொத்த உழைப்பாளர் சக்தி / மொத்த மக்கள் தொகை] x 100. இது நாட்டின் மனித உழைப்பு விநியோக விருப்பத்தை அளவிடுகிறது."
+      },
+      {
+        "term_en": "Worker Population Ratio (WPR)",
+        "term_ta": "தொழிலாளர் மக்கள் தொகை விகிதம் (WPR)",
+        "details_en": "Also known as the Employment-to-Population Ratio, it represents the percentage of total population that is actively employed. Formula: WPR = [Total Workforce / Total Population] x 100. WPR is the cleanest macro indicator of actual employment generation in the economy.",
+        "details_ta": "வேலைவாய்ப்பு-மக்கள் தொகை விகிதம் என்றும் அழைக்கப்படும் இது, மொத்த மக்கள் தொகையில் உண்மையில் வேலைவாய்ப்பைப் பெற்றுள்ள மக்களின் சதவீதத்தைக் குறிக்கிறது. சூத்திரம்: WPR = [மொத்த பணியாளர் படை / மொத்த மக்கள் தொகை] x 100. இது நாட்டின் உண்மையான வேலைவாய்ப்பு உருவாக்கத்தின் மிகத் துல்லியமான குறிகாட்டியாகும்."
+      },
+      {
+        "term_en": "Unemployment Rate (UR)",
+        "term_ta": "வேலையின்மை விகிதம் (Unemployment Rate - UR)",
+        "details_en": "The percentage of persons unemployed among the total labour force. Formula: UR = [Number of Unemployed Persons / Total Labour Force] x 100. CRITICAL: The denominator is the LABOUR FORCE, NEVER the total population! A country with a small labour force can have a high UR even if a tiny percentage of the total population is openly unemployed.",
+        "details_ta": "மொத்த உழைப்பாளர் சக்தியில் வேலையற்ற நபர்களின் சதவீதமாகும். சூத்திரம்: UR = [வேலையற்ற நபர்களின் எண்ணிக்கை / மொத்த உழைப்பாளர் சக்தி] x 100. மிக முக்கியப் பொறி: இதன் பகுதி (Denominator) 'உழைப்பாளர் சக்தி' மட்டுமே, மொத்த மக்கள் தொகை அல்ல! உழைப்பாளர் சக்தி குறைவாக உள்ள நாட்டில் குறைந்த எண்ணிக்கையிலான மக்கள் வேலை தேடினாலும் வேலையின்மை விகிதம் அதிகமாகத் தோன்றும்."
+      }
+    ],
+    "sec_activity_status_approaches": [
+      {
+        "term_en": "Usual Principal and Subsidiary Status (UPSS)",
+        "term_ta": "வழக்கமான முதன்மை மற்றும் துணை நிலை (UPSS)",
+        "details_en": "Measures chronic, long-term employment status using a 365-day reference period. An individual's activity status is determined by what they did for the relatively longer time (major time criterion: >183 days) as Usual Principal Status (UPS). If an individual is unemployed under UPS but worked in a subsidiary capacity for 30 days or more during the year, they are classified as employed under UPSS. UPSS yields the LOWEST measured unemployment rate because occasional subsidiary work counts as employment.",
+        "details_ta": "365 நாட்கள் என்ற ஆண்டுக் கால அளவைப் பயன்படுத்தி நாள்பட்ட நீண்டகால வேலைவாய்ப்பை அளவிடும் முறை. ஒருவர் ஆண்டின் பெரும்பகுதி (183 நாட்களுக்கு மேல்) செய்த பணியின் அடிப்படையில் முதன்மை நிலை (UPS) தீர்மானிக்கப்படுகிறது. முதன்மை நிலையில் வேலையற்றவராக இருந்தாலும், ஆண்டில் 30 நாட்கள் அல்லது அதற்கு மேல் ஏதேனும் ஒரு துணைப் பணியில் ஈடுபட்டிருந்தால் அவர் UPSS முறையில் 'வேலை செய்பவராகவே' கருதப்படுவார்! எனவே UPSS முறை எப்போதும் குறைந்த வேலையின்மை விகிதத்தையே காட்டுகிறது."
+      },
+      {
+        "term_en": "Current Weekly Status (CWS)",
+        "term_ta": "தற்போதைய வாராந்திர நிலை (Current Weekly Status - CWS)",
+        "details_en": "Measures short-to-medium term employment using a 7-day recall window preceding the survey date. Under the ILO convention, a person is classified as employed if they pursued any economic activity for AT LEAST ONE HOUR on ANY SINGLE DAY during the 7-day reference week. A person is unemployed under CWS if they did not work even 1 hour and were actively seeking or available for work throughout the week.",
+        "details_ta": "ஆய்வு நாளுக்கு முந்தைய 7 நாட்கள் கால அளவைப் பயன்படுத்தி குறுகிய கால வேலைவாய்ப்பை அளவிடும் முறை. ILO விதிகளின்படி, ஆய்வு வாரத்தில் ஏதேனும் ஒரு நாளில் 'குறைந்தது 1 மணி நேரம்' ஏதேனும் ஒரு பொருளாதார வேலையைச் செய்திருந்தாலும் அவர் வேலை செய்பவராகவே கருதப்படுகிறார்! வாரத்தில் ஒரு மணி நேரம் கூட வேலை கிடைக்காமல் முழுமையாக வேலை தேடியவர்கள் மட்டுமே CWS முறையில் வேலையற்றவர்களாகக் கருதப்படுவர்."
+      },
+      {
+        "term_en": "Current Daily Status (CDS)",
+        "term_ta": "தற்போதைய தினசரி நிலை (Current Daily Status - CDS)",
+        "details_en": "The most sensitive and comprehensive measure of open plus underemployment historically used by NSSO up to 2011-12. It recorded activity status for each of the 7 days divided into half-day units: 4 hours or more = 1 full person-day employed; 1 to 4 hours = 0.5 person-day employed; less than 1 hour = unemployed or out of labor force. CDS captured seasonal and disguised underemployment. NOTE: Discontinued under the Periodic Labour Force Survey (PLFS) to streamline field operations.",
+        "details_ta": "NSSO அமைப்பால் 2011-12 வரை பயன்படுத்தப்பட்ட மிகவும் நுட்பமான மற்றும் முழுமையான அளவீடு. வாரத்தின் ஒவ்வொரு நாளையும் அரை நாள் அலகுகளாகப் பிரித்து அளவிட்டது: 4 மணி நேரம் அல்லது அதற்கு மேல் = 1 முழு மனித நாள் வேலை; 1 முதல் 4 மணி நேரம் = 0.5 மனித நாள் வேலை; 1 மணி நேரத்திற்கு கீழ் = வேலையின்மை. இது பருவ கால மற்றும் மறைமுக குறைவேலைவாய்ப்பைத் துல்லியமாகப் படம்பிடித்தது. குறிப்பு: களப்பணி எளிமைக்காக தற்போதைய PLFS கணக்கெடுப்பில் CDS முறை கைவிடப்பட்டுவிட்டது."
+      }
+    ],
+    "sec_plfs_architecture": [
+      {
+        "term_en": "Genesis & Launch (April 2017)",
+        "term_ta": "தோற்றம் & தொடக்கம் (ஏப்ரல் 2017)",
+        "details_en": "Prior to 2017, official employment-unemployment data were collected via NSSO Quinquennial (5-yearly) Rounds, causing severe data lag. Following the Amitabh Kundu Committee recommendations, the National Statistical Office (NSO) under MoSPI launched the Periodic Labour Force Survey (PLFS) in April 2017 to provide high-frequency labour market dynamics.",
+        "details_ta": "2017-க்கு முன்பு வேலைவாய்ப்பு புள்ளிவிவரங்கள் NSSO ஐந்தாண்டு சுற்றுகள் மூலம் மட்டுமே சேகரிக்கப்பட்டு வந்ததால் பெரும் தகவல் தாமதம் ஏற்பட்டது. அமிதாப் குந்து குழுவின் பரிந்துரைகளின்படி, மத்திய புள்ளியியல் அமைச்சகத்தின் (MoSPI) கீழ் உள்ள NSO அமைப்பு ஏப்ரல் 2017-ல் சுழற்சி தொழிலாளர் கணக்கெடுப்பை (PLFS) தொடங்கியது."
+      },
+      {
+        "term_en": "Dual Survey Frequency Architecture",
+        "term_ta": "இரட்டை அதிர்வெண் கணக்கெடுப்பு கட்டமைப்பு",
+        "details_en": "PLFS operates with two distinct reporting cycles: (1) QUARTERLY BULLETINS: for URBAN areas only, measuring short-term dynamics using Current Weekly Status (CWS); (2) ANNUAL REPORTS: covering BOTH RURAL AND URBAN areas, measuring both UPSS and CWS for the agricultural survey year (July to June).",
+        "details_ta": "PLFS இரண்டு வெவ்வேறு கால இடைவெளிகளில் அறிக்கைகளை வெளியிடுகிறது: (1) காலாண்டு அறிக்கைகள் (Quarterly): நகர்ப்புறங்களுக்கு மட்டுமே, தற்போதைய வாராந்திர நிலை (CWS) மூலம் குறுகிய கால மாற்றங்களை அளவிடுகிறது; (2) வருடாந்திர அறிக்கைகள் (Annual): கிராமம் மற்றும் நகர்ப்புறம் ஆகிய இரண்டையும் உள்ளடக்கி, விவசாய ஆண்டின்படி (ஜூலை முதல் ஜூன்) UPSS மற்றும் CWS இரண்டையும் வெளியிடுகிறது."
+      },
+      {
+        "term_en": "Rotating Panel Design",
+        "term_ta": "சுழலும் குழு வடிவமைப்பு (Rotating Panel Design)",
+        "details_en": "In urban areas, PLFS uses a rotating panel sampling design where selected urban households are visited four times (once every quarter) over a 2-year window, allowing economists to track labor transitions and churn across quarters.",
+        "details_ta": "நகர்ப்புறங்களில் PLFS சுழலும் குழு மாதிரியைப் பயன்படுத்துகிறது. இதில் தேர்ந்தெடுக்கப்பட்ட நகர்ப்புற குடும்பங்கள் 2 ஆண்டு காலத்தில் நான்கு முறை (காலாண்டிற்கு ஒருமுறை) ஆய்வு செய்யப்பட்டு, தொழிலாளர்கள் வேலை மாறுவது மற்றும் வேலையின்மை மாற்றங்கள் கண்காணிக்கப்படுகின்றன."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_labour_force_workforce_comparison",
+        "title_en": "Labour Force (LF) vs Workforce (WF) vs Out of Labour Force",
+        "title_ta": "உழைப்பாளர் சக்தி vs பணியாளர் படை vs உழைப்பாளர் சக்திக்கு வெளியே உள்ளோர்",
+        "headers_en": [
+          "Conceptual Dimension",
+          "Labour Force (LF)",
+          "Workforce (WF)",
+          "Out of Labour Force"
+        ],
+        "headers_ta": [
+          "கருத்தியல் பரிமாணம்",
+          "உழைப்பாளர் சக்தி (LF)",
+          "பணியாளர் படை (WF)",
+          "உழைப்பாளர் சக்திக்கு வெளியே"
+        ],
+        "rows_en": [
+          [
+            "Fundamental Definition",
+            "Total labor supply: actively employed PLUS actively seeking work",
+            "The employed segment actively producing economic goods/services",
+            "Persons not working and NOT available/seeking work"
+          ],
+          [
+            "Constituent Segments",
+            "Employed workers (WF) + Unemployed individuals (U)",
+            "Self-employed + Regular salaried + Casual wage laborers",
+            "Full-time students, unpaid homemakers, pensioners, disabled"
+          ],
+          [
+            "Economic Status",
+            "Economically active population",
+            "Actually engaged gainful economic producers",
+            "Economically inactive population"
+          ],
+          [
+            "Mathematical Relationship",
+            "LF = Workforce + Unemployed",
+            "WF = Labour Force - Unemployed",
+            "Population = Labour Force + Out of Labour Force"
+          ],
+          [
+            "Exam Pitfall",
+            "Assuming LF includes all working-age citizens",
+            "Assuming WF includes job seekers",
+            "Treating homemakers or students as 'unemployed'"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடிப்படை வரையறை",
+            "மொத்த உழைப்பு விநியோகம்: பணிபுரிபவர்கள் மற்றும் வேலை தேடுபவர்களின் கூட்டு",
+            "உண்மையில் பொருளாதாரப் பணியில் ஈடுபட்டுள்ள தொழிலாளர்கள்",
+            "வேலை செய்யாத மற்றும் வேலை தேடாத/விரும்பாத நபர்கள்"
+          ],
+          [
+            "உள்ளடங்கிய பிரிவுகள்",
+            "பணியாளர்கள் (WF) + வேலையற்ற நபர்கள் (U)",
+            "சுயதொழில் செய்பவர்கள் + மாத ஊதியதாரர்கள் + தினக்கூலிகள்",
+            "முழுநேர மாணவர்கள், குடும்பப் பெண்கள், ஓய்வுபெற்றோர், மாற்றுத்திறனாளிகள்"
+          ],
+          [
+            "பொருளாதார நிலை",
+            "பொருளாதார ரீதியாக இயங்கும் மக்கள் தொகை",
+            "உண்மையான உற்பத்தியில் ஈடுபட்டுள்ள மக்கள்",
+            "பொருளாதார ரீதியாக இயங்காத மக்கள் தொகை"
+          ],
+          [
+            "கணிதத் தொடர்பு",
+            "LF = பணியாளர் படை + வேலையற்றோர்",
+            "WF = உழைப்பாளர் சக்தி - வேலையற்றோர்",
+            "மக்கள் தொகை = உழைப்பாளர் சக்தி + வெளியே உள்ளோர்"
+          ],
+          [
+            "தேர்வுப் பொறி",
+            "உழைக்கும் வயதுடைய அனைவரும் LF-ல் உள்ளனர் என நினைப்பது",
+            "வேலை தேடுபவர்களும் WF-ல் உள்ளனர் என நினைப்பது",
+            "மாணவர்களையும் இல்லத்தரசிகளையும் 'வேலையற்றோர்' என தவறாக எண்ணுவது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_upss_vs_cws_vs_cds",
+        "title_en": "NSSO Activity Status Approaches: UPSS vs CWS vs CDS",
+        "title_ta": "NSSO வேலைவாய்ப்பு அளவீட்டு முறைகள்: UPSS vs CWS vs CDS ஒப்பீடு",
+        "headers_en": [
+          "Attribute",
+          "Usual Status (UPSS)",
+          "Current Weekly Status (CWS)",
+          "Current Daily Status (CDS)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "வழக்கமான நிலை (UPSS)",
+          "தற்போதைய வாராந்திர நிலை (CWS)",
+          "தற்போதைய தினசரி நிலை (CDS)"
+        ],
+        "rows_en": [
+          [
+            "Reference Time Period",
+            "365 days preceding the date of survey",
+            "7 days preceding the date of survey",
+            "Each of the 7 days preceding the survey (half-day units)"
+          ],
+          [
+            "Employment Threshold",
+            "Worked for >=30 days as subsidiary or major time criterion (>183 days)",
+            "Worked for AT LEAST 1 HOUR on ANY 1 DAY during the week",
+            ">=4 hours = 1 person-day; 1 to 4 hours = 0.5 person-day"
+          ],
+          [
+            "Type of Unemployment Captured",
+            "Chronic, open, long-term, structural unemployment",
+            "Short-term frictional, cyclical, seasonal unemployment",
+            "Seasonal underemployment, intermittent disguised unemployment"
+          ],
+          [
+            "Magnitude of Measured Rate",
+            "LOWEST measured rate (subsidiary work masks unemployment)",
+            "INTERMEDIATE rate (higher than UPSS)",
+            "HIGHEST measured rate (captures every idle half-day)"
+          ],
+          [
+            "PLFS Status",
+            "Reported annually (rural + urban)",
+            "Reported quarterly (urban) and annually (both)",
+            "DISCONTINUED under modern PLFS surveys"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஆய்வுக் கால அளவு",
+            "ஆய்வு நாளுக்கு முந்தைய 365 நாட்கள் (1 ஆண்டு)",
+            "ஆய்வு நாளுக்கு முந்தைய 7 நாட்கள் (1 வாரம்)",
+            "ஆய்வு நாளுக்கு முந்தைய 7 நாட்களில் ஒவ்வொரு நாளும் (அரை நாள் அலகு)"
+          ],
+          [
+            "வேலைவாய்ப்பு வரம்பு",
+            "ஆண்டில் >=30 நாட்கள் துணைப் பணி அல்லது பெரும்பகுதி பணி (>183 நாட்கள்)",
+            "ஆய்வு வாரத்தில் ஏதேனும் ஒரு நாளில் 'குறைந்தது 1 மணி நேரம்' பணி",
+            ">=4 மணி நேரம் = 1 முழு மனித நாள்; 1-4 மணி நேரம் = 0.5 மனித நாள்"
+          ],
+          [
+            "அளவிடப்படும் வேலையின்மை வகை",
+            "நாள்பட்ட, வெளிப்படையான, நீண்டகால கட்டமைப்பு வேலையின்மை",
+            "குறுகிய கால பருவ மற்றும் தற்காலிக வேலையின்மை",
+            "பருவ கால குறைவேலைவாய்ப்பு, நாள் வாரியான வேலையின்மை"
+          ],
+          [
+            "வேலையின்மை விகித அளவு",
+            "மிகக் குறைந்த விகிதம் (30 நாள் துணை வேலையும் சேர்க்கப்படுவதால்)",
+            "இடைநிலை விகிதம் (UPSS-ஐ விட எப்போதும் அதிகம்)",
+            "மிக அதிக விகிதம் (வேலையற்ற ஒவ்வொரு அரை நாளையும் கணக்கிடுவதால்)"
+          ],
+          [
+            "PLFS பயன்பாட்டு நிலை",
+            "ஆண்டுதோறும் வெளியிடப்படுகிறது (கிராமம் + நகரம்)",
+            "காலாண்டுதோறும் (நகரம்) மற்றும் ஆண்டுதோறும் (இரண்டும்)",
+            "நவீன PLFS கணக்கெடுப்பில் முற்றிலுமாக கைவிடப்பட்டுவிட்டது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_core_labour_ratios",
+        "title_en": "Core Labour Market Ratios: Formula, Denominator & Policy Meaning",
+        "title_ta": "முக்கிய தொழிலாளர் சந்தை விகிதங்கள்: சூத்திரம், பகுதி & கொள்கை முக்கியத்துவம்",
+        "headers_en": [
+          "Ratio Name",
+          "Mathematical Formula",
+          "Denominator Used",
+          "Primary Analytical Function"
+        ],
+        "headers_ta": [
+          "விகிதத்தின் பெயர்",
+          "கணிதச் சூத்திரம்",
+          "பயன்படுத்தப்படும் பகுதி",
+          "முதன்மை பகுப்பாய்வுப் பணி"
+        ],
+        "rows_en": [
+          [
+            "Labour Force Participation Rate (LFPR)",
+            "[Labour Force / Total Population] x 100",
+            "Total Population (or Working Age Pop)",
+            "Measures willingness to work and human capital mobilization"
+          ],
+          [
+            "Worker Population Ratio (WPR)",
+            "[Workforce / Total Population] x 100",
+            "Total Population (or Working Age Pop)",
+            "Pure measure of actual job generation capacity of the economy"
+          ],
+          [
+            "Unemployment Rate (UR)",
+            "[Unemployed / Labour Force] x 100",
+            "LABOUR FORCE (Employed + Unemployed)",
+            "Measures inability of job seekers to secure gainful work"
+          ],
+          [
+            "Proportion Unemployed (PU)",
+            "[Unemployed / Total Population] x 100",
+            "Total Population",
+            "Rarely used; shows unemployed share of overall population"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உழைப்பாளர் சக்தி பங்கேற்பு விகிதம் (LFPR)",
+            "[உழைப்பாளர் சக்தி / மொத்த மக்கள் தொகை] x 100",
+            "மொத்த மக்கள் தொகை (அல்லது உழைக்கும் வயது மக்கள்)",
+            "வேலை செய்ய விரும்பும் மக்களின் விநியோகத்தை அளவிடுகிறது"
+          ],
+          [
+            "தொழிலாளர் மக்கள் தொகை விகிதம் (WPR)",
+            "[பணியாளர் படை / மொத்த மக்கள் தொகை] x 100",
+            "மொத்த மக்கள் தொகை (அல்லது உழைக்கும் வயது மக்கள்)",
+            "பொருளாதாரத்தின் உண்மையான வேலைவாய்ப்பு உருவாக்க திறனைக் காட்டுகிறது"
+          ],
+          [
+            "வேலையின்மை விகிதம் (UR)",
+            "[வேலையற்ற நபர்கள் / உழைப்பாளர் சக்தி] x 100",
+            "உழைப்பாளர் சக்தி மட்டுமே (வேலை செய்வோர் + தேடுவோர்)",
+            "வேலை தேடுபவர்களில் எத்தனை பேருக்கு வேலை கிடைக்கவில்லை என்பதைக் காட்டுகிறது"
+          ],
+          [
+            "மக்கள் தொகையில் வேலையற்றோர் விகிதம் (PU)",
+            "[வேலையற்றோர் / மொத்த மக்கள் தொகை] x 100",
+            "மொத்த மக்கள் தொகை",
+            "அரிதாகப் பயன்படுவது; நாட்டின் ஒட்டுமொத்த மக்கள் தொகையில் ஏழைகளின் பங்கு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nsso_quinquennial_vs_plfs",
+        "title_en": "NSSO Quinquennial Surveys vs Periodic Labour Force Survey (PLFS)",
+        "title_ta": "NSSO ஐந்தாண்டு கணக்கெடுப்பு vs சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "NSSO Quinquennial Surveys (Pre-2017)",
+          "Periodic Labour Force Survey (PLFS, Post-2017)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "NSSO ஐந்தாண்டு கணக்கெடுப்பு (2017 வரை)",
+          "சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS, 2017 முதல்)"
+        ],
+        "rows_en": [
+          [
+            "Survey Frequency",
+            "Conducted once every 5 years (e.g., 61st Round 2004-05, 68th Round 2011-12)",
+            "Continuous annual reports + quarterly bulletins for urban areas"
+          ],
+          [
+            "Sampling Technology",
+            "Paper-and-pencil manual schedules; months of manual data entry",
+            "Computer-Assisted Personal Interviewing (CAPI) on digital tablets"
+          ],
+          [
+            "Urban Tracking",
+            "No high-frequency quarterly urban tracking",
+            "Rotating panel design (4 visits per household over 2 years)"
+          ],
+          [
+            "Metrics Published",
+            "UPSS, CWS, and CDS",
+            "UPSS and CWS (CDS dropped)"
+          ],
+          [
+            "Nodal Ministry",
+            "Ministry of Statistics and Programme Implementation (MoSPI)",
+            "Ministry of Statistics and Programme Implementation (MoSPI / NSO)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கணக்கெடுப்பு அதிர்வெண்",
+            "5 ஆண்டுகளுக்கு ஒருமுறை மட்டுமே (எ.கா. 61-வது சுற்று 2004-05, 68-வது சுற்று 2011-12)",
+            "தொடர்ச்சியான வருடாந்திர அறிக்கைகள் + நகர்ப்புற காலாண்டு அறிக்கைகள்"
+          ],
+          [
+            "தொழில்நுட்ப பயன்பாடு",
+            "காகித படிவங்கள்; பல மாதங்கள் நீடிக்கும் மனித கணினி பதிவுகள்",
+            "டிஜிட்டல் டேப்லெட்களில் CAPI மூலம் நிகழ்நேர தரவு உள்ளீடு"
+          ],
+          [
+            "நகர்ப்புற கண்காணிப்பு",
+            "அதிவேக காலாண்டு நகர்ப்புற கண்காணிப்பு கிடையாது",
+            "சுழலும் குழு மாதிரி (2 ஆண்டுகளில் ஒரு குடும்பத்தை 4 முறை ஆய்வு செய்தல்)"
+          ],
+          [
+            "வெளியிடப்பட்ட அளவீடுகள்",
+            "UPSS, CWS மற்றும் CDS ஆகிய மூன்று நிலைகள்",
+            "UPSS மற்றும் CWS மட்டுமே (CDS கைவிடப்பட்டது)"
+          ],
+          [
+            "பொறுப்பு அமைச்சகம்",
+            "புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகம் (MoSPI)",
+            "புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகம் (MoSPI / NSO)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Unemployment Part 1: Concepts, Formulas & Measurement",
+        "short_label": "Measurement Concepts",
+        "children": [
+          {
+            "title": "Demographic & Labour Aggregates",
+            "short_label": "Aggregates",
+            "children": [
+              {
+                "title": "Working-Age Population (15-59 years)",
+                "short_label": "Working Age"
+              },
+              {
+                "title": "Labour Force (LF = Employed + Unemployed Seeking)",
+                "short_label": "Labour Force"
+              },
+              {
+                "title": "Workforce (WF = Actually Employed)",
+                "short_label": "Workforce"
+              },
+              {
+                "title": "Out of Labour Force (Students, Homemakers, Incapacitated)",
+                "short_label": "Out of LF"
+              }
+            ]
+          },
+          {
+            "title": "Core Mathematical Indicators",
+            "short_label": "Formulas",
+            "children": [
+              {
+                "title": "LFPR = (Labour Force / Total Population) x 100",
+                "short_label": "LFPR"
+              },
+              {
+                "title": "WPR = (Workforce / Total Population) x 100",
+                "short_label": "WPR"
+              },
+              {
+                "title": "UR = (Unemployed / Labour Force) x 100 [NOT Population]",
+                "short_label": "UR"
+              }
+            ]
+          },
+          {
+            "title": "NSSO Activity Status Approaches",
+            "short_label": "Activity Approaches",
+            "children": [
+              {
+                "title": "UPSS (365 Days, Subsidiary 30+ days, Lowest Rate)",
+                "short_label": "UPSS"
+              },
+              {
+                "title": "CWS (7 Days, 1 Hour Threshold, Intermediate Rate)",
+                "short_label": "CWS"
+              },
+              {
+                "title": "CDS (Daily Half-Day Units, Discontinued in PLFS)",
+                "short_label": "CDS"
+              }
+            ]
+          },
+          {
+            "title": "Periodic Labour Force Survey (PLFS)",
+            "short_label": "PLFS Framework",
+            "children": [
+              {
+                "title": "Launched April 2017 (Amitabh Kundu Committee)",
+                "short_label": "Genesis"
+              },
+              {
+                "title": "Quarterly Urban CWS + Annual Rural/Urban UPSS",
+                "short_label": "Frequency"
+              },
+              {
+                "title": "CAPI Digital Tablets + Rotating Panel Design",
+                "short_label": "Design"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Unemployment Rate Denominator Trap: Labour Force, NOT Total Population",
+        "points": {
+          "en": [
+            "TRAP: Defining the Unemployment Rate as the ratio of unemployed individuals to the total population.",
+            "CORRECT FACT: The Unemployment Rate (UR) is strictly calculated as: UR = (Unemployed / LABOUR FORCE) x 100. The denominator is ONLY the Labour Force (those working plus those actively seeking work), NEVER the total population or working-age population.",
+            "WHY CANDIDATES FAIL: Equating 'Unemployment Rate' with 'Unemployed Population Share' in rapid MCQs, missing the critical economic distinction."
+          ],
+          "ta": [
+            "பொறி: வேலையின்மை விகிதம் என்பதை 'மொத்த மக்கள் தொகையில் வேலையற்றோரின் விகிதம்' என வரையறுப்பது.",
+            "சரியான உண்மை: வேலையின்மை விகிதம் (UR) என்பது: UR = (வேலையற்ற நபர்கள் / உழைப்பாளர் சக்தி) x 100 ஆகும். இதன் பகுதி (Denominator) 'உழைப்பாளர் சக்தி' (வேலை செய்வோர் + வேலை தேடுவோர்) மட்டுமே, நாட்டின் மொத்த மக்கள் தொகை அல்ல!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அவசரத்தில் 'வேலையின்மை விகிதம்' மற்றும் 'மக்கள் தொகையில் வேலையற்றோர் பங்கு' ஆகிய இரண்டிற்கும் உள்ள வேறுபாட்டை கவனிக்காமல் போவது."
+          ]
+        }
+      },
+      {
+        "title": "Homemakers & Students Categorization Trap: Out of Labour Force, NOT Unemployed",
+        "points": {
+          "en": [
+            "TRAP: Classifying full-time college students or unpaid household homemakers as 'unemployed'.",
+            "CORRECT FACT: To be economically classified as 'unemployed', an individual must satisfy TWO SIMULTANEOUS CONDITIONS: (1) currently without work, AND (2) actively seeking or available for work at market wages. Students and homemakers not seeking work are categorized as OUT OF THE LABOUR FORCE (economically inactive), NOT unemployed.",
+            "WHY CANDIDATES FAIL: Assuming anyone who does not draw a monthly salary must be officially unemployed."
+          ],
+          "ta": [
+            "பொறி: முழுநேர கல்லூரி மாணவர்கள் அல்லது ஊதியமற்ற குடும்பப் பெண்களை 'வேலையற்றோர்' என வகைப்படுத்துவது.",
+            "சரியான உண்மை: பொருளாதார ரீதியாக 'வேலையற்றோர்' என அழைக்கப்பட ஒருவர் இரண்டு நிபந்தனைகளை ஒரே நேரத்தில் பூர்த்தி செய்ய வேண்டும்: (1) வேலை இல்லாமல் இருக்க வேண்டும், மற்றும் (2) நிலவும் ஊதியத்தில் வேலை செய்ய தீவிரமாக வேலை தேட வேண்டும்! வேலை தேடாத மாணவர்கள் மற்றும் இல்லத்தரசிகள் 'உழைப்பாளர் சக்திக்கு வெளியே உள்ளவர்கள்', அவர்கள் வேலையற்றவர்கள் அல்ல!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஊதியம் பெறும் வேலை இல்லாத அனைவரும் வேலையற்றவர்களே என்ற பொதுவான தவறான எண்ணம்."
+          ]
+        }
+      },
+      {
+        "title": "UPSS Subsidiary Activity Trap: Why UPSS Measures the Lowest Unemployment",
+        "points": {
+          "en": [
+            "TRAP: Assuming Usual Principal and Subsidiary Status (UPSS) yields a higher unemployment rate than Usual Principal Status (UPS).",
+            "CORRECT FACT: UPSS ALWAYS yields a LOWER unemployment rate than UPS! Under UPS, if someone spent 200 days unemployed and only 25 days working, they are unemployed. But under UPSS, if that person worked in any subsidiary economic role for 30 DAYS OR MORE during the entire 365-day year, they are re-classified as EMPLOYED, masking open unemployment.",
+            "WHY CANDIDATES FAIL: Assuming that adding 'Subsidiary Status' broadens the net to capture more unemployed people, when in reality it captures more marginally employed people."
+          ],
+          "ta": [
+            "பொறி: வழக்கமான முதன்மை மற்றும் துணை நிலை (UPSS) முதன்மை நிலையை (UPS) விட அதிக வேலையின்மை விகிதத்தைக் காட்டும் என நினைப்பது.",
+            "சரியான உண்மை: UPSS முறை எப்போதும் UPS முறையை விடக் 'குறைவான வேலையின்மை விகிதத்தையே' காட்டும்! UPS-ல் ஆண்டின் பெரும்பகுதி வேலையில்லாத ஒருவர் வேலையற்றவராகக் கருதப்படுவார். ஆனால் UPSS முறையில், அவர் ஆண்டில் வெறும் 30 நாட்கள் ஏதேனும் ஒரு சிறிய துணை வேலை செய்திருந்தாலும் 'வேலை செய்பவராகவே' மாற்றப்படுகிறார்; இதனால் வேலையின்மை மறைக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'துணை நிலை' என்பது கூடுதல் வேலையற்றவர்களைக் கண்டுபிடிக்கும் என தவறாகக் கருதுவது; உண்மையில் அது சிறு வேலை செய்தோரையும் உழைப்பாளராகக் காட்டுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "CWS One-Hour Employment Rule Trap: Minimalist Employment Threshold",
+        "points": {
+          "en": [
+            "TRAP: Believing that a person must work full-time (8 hours/day for 5 days) to be classified as employed under Current Weekly Status.",
+            "CORRECT FACT: Under the ILO standard used in CWS, if an individual performs economic labor for AS LITTLE AS ONE HOUR ON ANY SINGLE DAY during the 7-day reference week, they are statutorily counted as EMPLOYED for the entire week.",
+            "WHY CANDIDATES FAIL: Applying intuitive everyday standards of full-time employment to international statistical accounting rules."
+          ],
+          "ta": [
+            "பொறி: தற்போதைய வாராந்திர நிலையில் (CWS) வேலை செய்பவராகக் கருதப்பட ஒருவர் வாரம் முழுவதும் முழுநேர வேலை (தினமும் 8 மணி நேரம்) செய்ய வேண்டும் என நினைப்பது.",
+            "சரியான உண்மை: CWS முறையில் பயன்படுத்தப்படும் சர்வதேச ILO விதிகளின்படி, ஆய்வு வாரத்தில் ஏதேனும் ஒரு நாளில் 'வெறும் 1 மணி நேரம்' ஒருவர் பொருளாதார வேலை செய்திருந்தாலும், அவர் அந்த வாரம் முழுவதும் 'வேலை செய்பவராகவே' கணக்கிடப்படுவார்!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அன்றாட வாழ்வில் நாம் கருதும் முழுநேர வேலைவாய்ப்பை, சர்வதேச புள்ளிவிவர விதிகளுடன் பொருத்திப் பார்க்கத் தவறுவது."
+          ]
+        }
+      },
+      {
+        "title": "CDS Discontinuation Trap: CDS is NOT in Current PLFS Reports",
+        "points": {
+          "en": [
+            "TRAP: Assuming Current Daily Status (CDS) is still actively collected and reported in annual PLFS releases.",
+            "CORRECT FACT: Current Daily Status (CDS) was OFFICIALLY DISCONTINUED with the launch of the Periodic Labour Force Survey (PLFS) in 2017. PLFS strictly collects and reports data using UPSS and CWS. Questions stating 'CDS is the primary metric of the latest PLFS' are fundamentally incorrect.",
+            "WHY CANDIDATES FAIL: Relying on outdated Indian economy textbooks written prior to 2017 that teach CDS as an active NSSO metric."
+          ],
+          "ta": [
+            "பொறி: தற்போதைய PLFS அறிக்கைகளில் 'தற்போதைய தினசரி நிலை' (CDS) இன்றும் தொடர்ந்து வெளியிடப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: ஏப்ரல் 2017-ல் சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS) தொடங்கப்பட்டபோது 'தற்போதைய தினசரி நிலை' (CDS) அதிகாரப்பூர்வமாகக் கைவிடப்பட்டது! PLFS கணக்கெடுப்பு UPSS மற்றும் CWS ஆகிய இரு முறைகளை மட்டுமே வெளியிடுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2017-க்கு முந்தைய பழைய பொருளாதாரப் புத்தகங்களைப் படித்துவிட்டு CDS இன்றும் நடைமுறையில் இருப்பதாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Working-Age Bracket Definition Trap: India 15-59 vs International 15-64",
+        "points": {
+          "en": [
+            "TRAP: Marking 15–64 years as the official domestic working-age demographic bracket for Indian national surveys.",
+            "CORRECT FACT: Official Indian statistical bodies (NSSO, NSO, Census of India, Planning Commission) define the working-age population strictly as 15 TO 59 YEARS (reflecting standard retirement at 60). The 15 TO 64 YEARS bracket is an international ILO/OECD/World Bank standard.",
+            "WHY CANDIDATES FAIL: Conflating international demographic definitions with domestic Indian statistical standards."
+          ],
+          "ta": [
+            "பொறி: இந்திய தேசிய கணக்கெடுப்புகளில் உழைக்கும் வயது வரம்பு '15 முதல் 64 வயது வரை' எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: இந்தியாவின் அதிகாரப்பூர்வ அமைப்புகள் (NSO, மக்கள் தொகைக் கணக்கெடுப்பு) உழைக்கும் வயதை '15 முதல் 59 வயது வரை' என்றே வரையறுக்கின்றன (60 வயதில் ஓய்வுபெறுவதைக் கருத்தில் கொண்டு). '15 முதல் 64 வயது' என்பது உலக வங்கி மற்றும் ILO பயன்படுத்தும் சர்வதேச அளவீடாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சர்வதேச பொது அறிவுத் தகவல்களை இந்திய தேசிய புள்ளிவிவர விதிகளோடு குழப்பிக் கொள்வது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Official domestic working-age population in India is defined as individuals aged 15 to 59 years.",
+        "Labour Force represents the sum of employed persons and unemployed persons actively seeking work.",
+        "Workforce represents only those persons who are actually gainfully engaged in economic activity.",
+        "Labour Force Participation Rate formula is (Labour Force / Total Population) x 100.",
+        "Worker Population Ratio formula is (Workforce / Total Population) x 100.",
+        "Unemployment Rate formula is (Unemployed Persons / Labour Force) x 100.",
+        "Usual Principal Status uses a major time criterion of more than 183 days during the 365-day reference year.",
+        "UPSS includes individuals who worked for 30 days or more in a subsidiary capacity, yielding the lowest unemployment rate.",
+        "Current Weekly Status classifies anyone working for at least 1 hour on any 1 day of the reference week as employed.",
+        "Current Daily Status recorded activity in half-day units but was discontinued under PLFS.",
+        "Periodic Labour Force Survey (PLFS) was launched in April 2017 based on Amitabh Kundu Committee recommendations.",
+        "PLFS publishes quarterly bulletins for urban areas and annual reports for both rural and urban areas."
+      ],
+      "ta": [
+        "இந்தியாவில் அதிகாரப்பூர்வ உள்நாட்டு உழைக்கும் வயதுடைய மக்கள் தொகை 15 முதல் 59 வயது வரை என வரையறுக்கப்படுகிறது.",
+        "உழைப்பாளர் சக்தி என்பது பணிபுரிபவர்கள் மற்றும் தீவிரமாக வேலை தேடும் வேலையற்றோரின் கூட்டுத்தொகையாகும்.",
+        "பணியாளர் படை என்பது உண்மையில் பொருளாதாரப் பணிகளில் ஈடுபட்டுள்ள நபர்களை மட்டுமே குறிக்கிறது.",
+        "உழைப்பாளர் சக்தி பங்கேற்பு விகிதத்தின் சூத்திரம் (உழைப்பாளர் சக்தி / மொத்த மக்கள் தொகை) x 100.",
+        "தொழிலாளர் மக்கள் தொகை விகிதத்தின் சூத்திரம் (பணியாளர் படை / மொத்த மக்கள் தொகை) x 100.",
+        "வேலையின்மை விகிதத்தின் சூத்திரம் (வேலையற்ற நபர்கள் / உழைப்பாளர் சக்தி) x 100.",
+        "வழக்கமான முதன்மை நிலை (UPS) 365 நாட்களில் 183 நாட்களுக்கு மேல் பணிபுரிந்த பெரும்பான்மை நேர விதியைப் பயன்படுத்துகிறது.",
+        "UPSS முறையில் ஆண்டில் 30 நாட்கள் அல்லது அதற்கு மேல் துணை வேலை செய்தோரும் சேர்க்கப்படுவதால் மிகக் குறைந்த வேலையின்மை விகிதம் பதிவாகிறது.",
+        "தற்போதைய வாராந்திர நிலை (CWS) ஆய்வு வாரத்தில் ஏதேனும் ஒரு நாளில் 1 மணி நேரம் வேலை செய்தோரையும் வேலை செய்பவராகக் கருதுகிறது.",
+        "தற்போதைய தினசரி நிலை (CDS) அரை நாள் அலகுகளில் அளவிட்டது; ஆனால் PLFS கணக்கெடுப்பில் இது கைவிடப்பட்டுவிட்டது.",
+        "அமிதாப் குந்து குழு பரிந்துரைகளின்படி ஏப்ரல் 2017-ல் சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS) தொடங்கப்பட்டது.",
+        "PLFS நகர்ப்புறங்களுக்கு காலாண்டு அறிக்கைகளையும், கிராமம் மற்றும் நகர்ப்புறம் இரண்டிற்கும் சேர்த்து வருடாந்திர அறிக்கைகளையும் வெளியிடுகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Working-Age Population = 15–59 years in India; Labour Force = Employed + Unemployed seeking work.",
+        "Workforce = Actually employed; Out of Labour Force = Students, unpaid homemakers, and retirees.",
+        "LFPR = (LF / Pop) x 100; WPR = (WF / Pop) x 100; UR = (Unemployed / LF) x 100.",
+        "CRITICAL: Unemployment Rate has LABOUR FORCE in its denominator, NEVER the total population.",
+        "UPSS uses 365-day recall; classifies anyone working >=30 days in subsidiary role as employed (lowest rate).",
+        "CWS uses 7-day recall; working 1 hour on any 1 day counts as employed (intermediate rate).",
+        "CDS measured person-days in half-day units (highest rate); discontinued in PLFS since 2017.",
+        "PLFS replaced 5-yearly NSSO rounds in April 2017 based on Amitabh Kundu Committee recommendations.",
+        "PLFS uses CAPI digital tablets and a 4-visit rotating panel design for urban tracking.",
+        "Urban PLFS is released quarterly (CWS); National rural+urban PLFS is released annually (UPSS & CWS)."
+      ],
+      "ta": [
+        "உழைக்கும் வயது மக்கள் = இந்தியாவில் 15–59 வயது; உழைப்பாளர் சக்தி = வேலை செய்வோர் + வேலை தேடுவோர்.",
+        "பணியாளர் படை = உண்மையில் வேலை செய்வோர்; உழைப்பாளர் சக்திக்கு வெளியே = மாணவர்கள், குடும்பப் பெண்கள், ஓய்வுபெற்றோர்.",
+        "LFPR = (LF / Pop) x 100; WPR = (WF / Pop) x 100; UR = (வேலையற்றோர் / LF) x 100.",
+        "மிக முக்கியம்: வேலையின்மை விகிதத்தின் பகுதியில் 'உழைப்பாளர் சக்தி' மட்டுமே வரும், மொத்த மக்கள் தொகை அல்ல.",
+        "UPSS 365 நாட்கள் கால அளவைப் பயன்படுத்துகிறது; 30 நாட்கள் துணை வேலை செய்தவரையும் தொழிலாளியாகக் காட்டுகிறது.",
+        "CWS 7 நாட்கள் கால அளவைப் பயன்படுத்துகிறது; வாரத்தில் 1 மணி நேரம் வேலை செய்தாலும் தொழிலாளியே.",
+        "CDS அரை நாள் அலகுகளில் மனித நாட்களை அளவிட்டது (அதிக வேலையின்மை); 2017-ல் PLFS-ல் கைவிடப்பட்டது.",
+        "அமிதாப் குந்து குழுவின்படி 2017 ஏப்ரலில் ஐந்தாண்டு NSSO கணக்கெடுப்புகளுக்குப் பதிலாக PLFS வந்தது.",
+        "PLFS டிஜிட்டல் டேப்லெட்கள் மற்றும் நகர்ப்புறங்களில் 4 முறை ஆய்வு செய்யும் சுழலும் குழு மாதிரியைப் பயன்படுத்துகிறது.",
+        "நகர்ப்புற PLFS காலாண்டுதோறும் (CWS) மற்றும் தேசிய PLFS ஆண்டுதோறும் (UPSS & CWS) வெளியிடப்படுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_unemp_101",
+        "front_en": "What is the official demographic age bracket defining the Working-Age Population in India?",
+        "front_ta": "இந்தியாவில் உழைக்கும் வயதுடைய மக்கள் தொகையை வரையறுக்கும் அதிகாரப்பூர்வ வயது வரம்பு என்ன?",
+        "back_en": "15 to 59 years (compared to 15 to 64 years in international ILO/OECD conventions).",
+        "back_ta": "15 முதல் 59 வயது வரை (சர்வதேச ILO வழக்கத்தில் 15 முதல் 64 வயது)."
+      },
+      {
+        "id": "rc_unemp_102",
+        "front_en": "What is the mathematical formula for the Unemployment Rate (UR)?",
+        "front_ta": "வேலையின்மை விகிதத்தின் (UR) கணிதச் சூத்திரம் என்ன?",
+        "back_en": "UR = (Number of Unemployed Persons / Total Labour Force) x 100.",
+        "back_ta": "UR = (வேலையற்ற நபர்களின் எண்ணிக்கை / மொத்த உழைப்பாளர் சக்தி) x 100."
+      },
+      {
+        "id": "rc_unemp_103",
+        "front_en": "What constitutes the denominator in the Unemployment Rate formula?",
+        "front_ta": "வேலையின்மை விகித சூத்திரத்தில் பகுதி (Denominator) எதைக் குறிக்கிறது?",
+        "back_en": "The Labour Force (Employed + Unemployed actively seeking work), NOT the total population.",
+        "back_ta": "உழைப்பாளர் சக்தி மட்டுமே (வேலை செய்வோர் + வேலை தேடுவோர்), மொத்த மக்கள் தொகை அல்ல."
+      },
+      {
+        "id": "rc_unemp_104",
+        "front_en": "Why are full-time college students and unpaid homemakers excluded from unemployment numbers?",
+        "front_ta": "முழுநேரக் கல்லூரி மாணவர்களும் இல்லத்தரசிகளும் வேலையின்மைக் கணக்கீட்டில் சேர்க்கப்படாதது ஏன்?",
+        "back_en": "Because they are not actively seeking or available for market wage work, classifying them as 'Out of the Labour Force'.",
+        "back_ta": "ஏனெனில் அவர்கள் சந்தை ஊதியத்தில் வேலை செய்யத் தயாராகவோ தீவிரமாக வேலை தேடவோ இல்லை; எனவே அவர்கள் 'உழைப்பாளர் சக்திக்கு வெளியே உள்ளவர்களாக' வகைப்படுத்தப்படுகின்றனர்."
+      },
+      {
+        "id": "rc_unemp_105",
+        "front_en": "What is the reference period used in the Usual Principal and Subsidiary Status (UPSS) approach?",
+        "front_ta": "வழக்கமான முதன்மை மற்றும் துணை நிலை (UPSS) முறையில் பயன்படுத்தப்படும் ஆய்வுக் கால அளவு என்ன?",
+        "back_en": "365 days (one full year) preceding the date of survey.",
+        "back_ta": "ஆய்வு நாளுக்கு முந்தைய 365 நாட்கள் (ஒரு முழு ஆண்டு)."
+      },
+      {
+        "id": "rc_unemp_106",
+        "front_en": "Under UPSS, how many days of subsidiary economic activity re-classifies an otherwise unemployed person as employed?",
+        "front_ta": "UPSS முறையில், வேலையற்ற ஒருவர் எத்தனை நாட்கள் துணை வேலை செய்திருந்தால் வேலை செய்பவராக மாற்றப்படுகிறார்?",
+        "back_en": "30 days or more of economic activity during the 365-day reference year.",
+        "back_ta": "365 நாட்கள் ஆய்வு ஆண்டில் 30 நாட்கள் அல்லது அதற்கு மேற்பட்ட பொருளாதார வேலை."
+      },
+      {
+        "id": "rc_unemp_107",
+        "front_en": "What is the minimum threshold of work required to be classified as employed under Current Weekly Status (CWS)?",
+        "front_ta": "தற்போதைய வாராந்திர நிலையில் (CWS) வேலை செய்பவராகக் கருதப்படத் தேவையான குறைந்தபட்ச வேலை அளவு என்ன?",
+        "back_en": "At least 1 hour of economic work on ANY SINGLE DAY during the 7-day reference week.",
+        "back_ta": "7 நாட்கள் ஆய்வு வாரத்தில் ஏதேனும் ஒரு நாளில் 'குறைந்தது 1 மணி நேரம்' பொருளாதார வேலை செய்தல்."
+      },
+      {
+        "id": "rc_unemp_108",
+        "front_en": "Which historical NSSO employment measurement approach was officially discontinued under PLFS?",
+        "front_ta": "PLFS கணக்கெடுப்பில் அதிகாரப்பூர்வமாகக் கைவிடப்பட்ட முந்தைய NSSO வேலைவாய்ப்பு அளவீட்டு முறை எது?",
+        "back_en": "Current Daily Status (CDS).",
+        "back_ta": "தற்போதைய தினசரி நிலை (Current Daily Status - CDS)."
+      },
+      {
+        "id": "rc_unemp_109",
+        "front_en": "When was the Periodic Labour Force Survey (PLFS) launched and which committee recommended it?",
+        "front_ta": "சுழற்சி தொழிலாளர் கணக்கெடுப்பு (PLFS) எப்போது தொடங்கப்பட்டது மற்றும் எந்தக் குழு அதனைப் பரிந்துரைத்தது?",
+        "back_en": "Launched in April 2017 based on the recommendations of the Amitabh Kundu Committee.",
+        "back_ta": "அமிதாப் குந்து குழுவின் பரிந்துரைகளின்படி ஏப்ரல் 2017-ல் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_unemp_110",
+        "front_en": "What is the reporting frequency of PLFS bulletins for urban areas?",
+        "front_ta": "நகர்ப்புறங்களுக்கான PLFS அறிக்கைகள் எந்த கால இடைவெளியில் வெளியிடப்படுகின்றன?",
+        "back_en": "Quarterly bulletins (every 3 months) measuring Current Weekly Status (CWS).",
+        "back_ta": "தற்போதைய வாராந்திர நிலையை (CWS) அளவிடும் காலாண்டு அறிக்கைகளாக (3 மாதங்களுக்கு ஒருமுறை)."
+      }
+    ]
+  }
+}

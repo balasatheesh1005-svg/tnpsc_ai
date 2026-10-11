@@ -1,0 +1,763 @@
+{
+  "meta": {
+    "topic_id": "economy_education_part_1",
+    "repository_id": "economy_education",
+    "display_title": "Education – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Education",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Human Capital Formation",
+    "Schultz Becker Theory",
+    "Census 2011 Literacy Rate",
+    "Effective Literacy Rate 7 Plus",
+    "Gross Enrolment Ratio GER",
+    "Net Enrolment Ratio NER",
+    "Higher Education GER AISHE",
+    "Tamil Nadu GER 51 Point 3",
+    "Pupil Teacher Ratio RTE Norms",
+    "Gender Parity Index GPI",
+    "Kanyakumari Highest Literacy",
+    "Education as Merit Good"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand Human Capital Formation theories and education's role as a merit good.",
+        "Differentiate between Crude Literacy Rate and Effective Literacy Rate in Census methodology."
+      ],
+      "ta": [
+        "மனித மூலதனக் கோட்பாடுகள் மற்றும் கல்வி ஒரு தகுதி வாய்ந்த நன்மை (Merit Good) என்பதைப் புரிந்துகொள்ளுதல்.",
+        "மக்கள் தொகை கணக்கெடுப்பில் மொத்த எழுத்தறிவு மற்றும் விளைவுசார் எழுத்தறிவு வேறுபாட்டை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize Census 2011 benchmarks: India 74.04% (gap 16.68%), TN 80.09% (gap 13.33%).",
+        "Recall that Kanyakumari has highest literacy in TN (91.75%) and Dharmapuri lowest (68.54%)."
+      ],
+      "ta": [
+        "2011 கணக்கெடுப்பு புள்ளிவிவரங்களை நினைவில் நிறுத்துதல்: இந்தியா 74.04%, தமிழ்நாடு 80.09%.",
+        "தமிழ்நாட்டில் கன்னியாகுமரி முதலிடம் (91.75%) மற்றும் தருமபுரி கடைசி (68.54%) என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why GER can exceed 100% due to age distortions while NER is mathematically capped.",
+        "Appraise Tamil Nadu's exceptional Higher Education GER of 51.3% against the national average of 28.4%."
+      ],
+      "ta": [
+        "வயது முரண்பாடுகளால் GER 100%-ஐ தாண்டலாம், NER ஏன் தாண்ட முடியாது என ஆய்வு செய்தல்.",
+        "இந்தியாவின் 28.4% சராசரியுடன் ஒப்பிடும்போது தமிழ்நாட்டின் 51.3% உயர்கல்வி GER சாதனையை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid exam traps regarding Census literacy age thresholds and statutory PTR norms."
+      ],
+      "ta": [
+        "மக்கள் தொகை கணக்கெடுப்பு வயது வரம்புகள் மற்றும் சட்டப்பூர்வ PTR விதிகள் தொடர்பான தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Education – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_human_capital_foundations",
+      "title_en": "Human Capital Theory & Education as Economic Investment",
+      "title_ta": "மனித மூலதனக் கோட்பாடு & பொருளாதார முதலீடாகக் கல்வி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_literacy_measurement_census",
+      "title_en": "Literacy Metrics, Definitions & Census 2011 Benchmarks",
+      "title_ta": "எழுத்தறிவு அளவீடுகள், வரைமுறைகள் & 2011 மக்கள் தொகை கணக்கெடுப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_literacy_profile",
+      "title_en": "Tamil Nadu Literacy Landscape & District Disparities",
+      "title_ta": "தமிழ்நாட்டின் எழுத்தறிவு விவரங்கள் & மாவட்ட ஏற்றத்தாழ்வுகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_school_and_higher_ed_indicators",
+      "title_en": "Key Educational Indicators: GER, NER, PTR & Dropout Rates",
+      "title_ta": "முக்கிய கல்வி குறிகாட்டிகள்: GER, NER, PTR & இடைநிற்றல் விகிதங்கள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Education in economic analysis is defined as the systematic process of acquiring knowledge, skills, values, and cognitive competencies that enhance individual capabilities and productivity. In development economics, education constitutes the core foundation of Human Capital Formation (Schultz & Becker), functioning both as a consumption merit good generating profound positive social externalities and an indispensable investment good driving long-term macroeconomic growth.",
+      "ta": "பொருளாதார ஆய்வில் கல்வி என்பது தனிநபர் திறன்கள் மற்றும் உற்பத்தித்திறனை மேம்படுத்தும் அறிவு, திறன்கள், விழுமியங்கள் மற்றும் அறிவாற்றல் தகுதிகளை முறையாகப் பெறும் செயல்முறையாக வரையறுக்கப்படுகிறது. வளர்ச்சிப் பொருளாதாரத்தில், கல்வி என்பது மனித மூலதன உருவாக்கத்தின் (ஷுல்ட்ஸ் & பெக்கர்) மைய அடித்தளமாக அமைகிறது; இது அதிக நேர்மறை சமூகப் புறவிளைவுகளை உருவாக்கும் தகுதி வாய்ந்த நுகர்வுப் பொருளாகவும் (Merit Good), நீண்டகால பொருளாதார வளர்ச்சியை உந்தித் தள்ளும் இன்றியமையாத முதலீட்டுப் பண்டமாகவும் இரட்டைப் பங்கு வகிக்கிறது."
+    },
+    "introduction": {
+      "en": "Education is the primary catalyst for structural transformation and social mobility in modern economies. Unlike physical capital which depreciates with usage, human capital appreciates through learning and continuous application. In India, the measurement of educational progress is tracked through critical demographic and institutional metrics: Literacy Rate as determined by the decennial Census (with the official standard benchmark of Effective Literacy Rate for ages 7 and above adopted since 1991); Gross Enrolment Ratio (GER) and Net Enrolment Ratio (NER) across primary, secondary, and tertiary stages; Pupil-Teacher Ratio (PTR); and Gender Parity Index (GPI). Tamil Nadu stands as an undisputed national leader in educational indicators, recording a phenomenal Higher Education GER of 51.3% (AISHE 2021-22), virtually double the national average of 28.4% and achieving the NEP 2020 national target more than a decade in advance. This module examines the foundational concepts of human capital, statistical measurement of literacy, school intake indicators, and comparative demographic performances.",
+      "ta": "நவீன பொருளாதாரங்களில் கட்டமைப்பு மாற்றம் மற்றும் சமூக இயக்கத்திற்கான முதன்மை உந்துசக்தியாகக் கல்வி விளங்குகிறது. பயன்பாட்டினால் தேய்மானம் அடையும் பௌதிக மூலதனம் போலல்லாமல், மனித மூலதனமானது தொடர் கற்றல் மற்றும் பயன்பாட்டின் மூலம் மதிப்பு கூடுகிறது. இந்தியாவில் கல்வி முன்னேற்றம் முக்கிய மக்கள் தொகையியல் மற்றும் நிறுவன குறிகாட்டிகள் மூலம் கண்காணிக்கப்படுகிறது: பத்தாண்டு மக்கள் தொகை கணக்கெடுப்பால் கணக்கிடப்படும் எழுத்தறிவு விகிதம் (1991 முதல் 7 வயது மற்றும் அதற்கு மேற்பட்ட வயதினருக்கான விளைவுசார் எழுத்தறிவு விகிதம் அதிகாரப்பூர்வ அளவீடாக உள்ளது); தொடக்க, இடைநிலை மற்றும் உயர்கல்வி நிலைகளில் மொத்த சேர்க்கை விகிதம் (GER) மற்றும் நிகர சேர்க்கை விகிதம் (NER); மாணவர்-ஆசிரியர் விகிதம் (PTR); மற்றும் பாலின சமத்துவக் குறியீடு (GPI). உயர்கல்வி சேர்க்கையில் தமிழ்நாடு தேசிய அளவில் முன்னோடியாகத் திகழ்கிறது; அகில இந்திய உயர்கல்வி கணக்கெடுப்பின்படி (AISHE 2021-22) தமிழ்நாட்டின் உயர்கல்வி GER 51.3% ஆக உள்ளது. இது தேசிய சராசரியான 28.4%-ஐ விட இருமடங்கு அதிகம் என்பதோடு, NEP 2020 தேசிய அளவில் நிர்ணயித்த 50% இலக்கை 10 ஆண்டுகளுக்கு முன்பே எட்டியுள்ளது. இப்பகுதி மனித மூலதனக் கருத்துக்கள், எழுத்தறிவு அளவீட்டு முறைகள், பள்ளி சேர்க்கை குறிகாட்டிகள் மற்றும் ஒப்பீட்டு நிலைகளை விரிவாக ஆராய்கிறது."
+    },
+    "sec_human_capital_foundations": [
+      {
+        "term_en": "Schultz-Becker Human Capital Paradigm",
+        "term_ta": "ஷுல்ட்ஸ்-பெக்கர் மனித மூலதன அணுகுமுறை",
+        "details_en": "Theodore W. Schultz (1961) demonstrated that qualitative improvements in human resources (knowledge, health, skills) account for the major portion of economic growth in advanced nations, far outstripping physical capital inputs. Gary S. Becker (1964) modeled formal schooling and on-the-job training as rational capital investments where individuals incur direct costs and forgone earnings in exchange for higher lifetime wage premiums.",
+        "details_ta": "தியோடர் டபிள்யூ. ஷுல்ட்ஸ் (1961), பௌதிக மூலதனத்தை விட மனித வளங்களின் தர மேம்பாடே (அறிவு, சுகாதாரம், திறன்) நாடுகளின் பொருளாதார வளர்ச்சியில் பெரும் பங்கை வகிக்கிறது என்பதை நிருபித்தார். கேரி எஸ். பெக்கர் (1964), முறைசார் பள்ளிக்கல்வி மற்றும் பணிசார் பயிற்சியை ஒரு மூலதன முதலீடாக மாதிரியாக்கினார்; இதன் மூலம் தனிநபர்கள் செய்யும் தற்போதைய செலவு பிற்காலத்தில் அதிக வாழ்நாள் வருமானத்தை ஈட்டித் தருகிறது."
+      },
+      {
+        "term_en": "Endogenous Growth & Social Externalities",
+        "term_ta": "உள்முக வளர்ச்சி & சமூக நேர்மறை புறவிளைவுகள்",
+        "details_en": "Endogenous growth models (Paul Romer, Robert Lucas) position education as the driver of technological innovations and productivity spillovers. Because educated individuals enhance civic governance, lower fertility rates, improve community child health, and reduce crime rates, education functions as a classic Merit Good where social benefits exceed private returns, necessitating universal state provisioning.",
+        "details_ta": "உள்முக வளர்ச்சி மாதிரிகள் (பால் ரோமர், ராபர்ட் லூகாஸ்), கல்வியே தொழில்நுட்ப கண்டுபிடிப்புகள் மற்றும் உற்பத்தித்திறன் பெருக்கத்தின் உந்துசக்தி என்று கூறுகின்றன. படித்த குடிமக்கள் சமூக ஆளுகையை மேம்படுத்துதல், கருவுறுதல் விகிதத்தைக் குறைத்தல், சமூகக் குழந்தைகள் நலம் மற்றும் குற்றங்களைக் குறைத்தல் போன்ற பல நன்மைகளை உருவாக்குவதால், கல்வி என்பது அரசின் இலவச பொது முதலீடு தேவைப்படும் ஒரு தகுதி வாய்ந்த நன்மையாக (Merit Good) திகழ்கிறது."
+      }
+    ],
+    "sec_literacy_measurement_census": [
+      {
+        "term_en": "Census Definition & Effective Literacy Rate",
+        "term_ta": "மக்கள் தொகை கணக்கெடுப்பு வரையறை & விளைவுசார் எழுத்தறிவு",
+        "details_en": "In the Census of India, a person aged 7 years and above who can both read and write with understanding in any language is treated as literate. A person who can only read but cannot write is classified as illiterate. Since the 1991 Census, the official benchmark is the Effective Literacy Rate, which strictly excludes infants and children aged 0-6 years from the denominator, unlike the historical Crude Literacy Rate.",
+        "details_ta": "இந்திய மக்கள் தொகை கணக்கெடுப்பின்படி, 7 வயது மற்றும் அதற்கு மேற்பட்ட ஒருவர் ஏதேனும் ஒரு மொழியில் புரிதலுடன் படிக்கவும் எழுதவும் இயன்றால் அவர் எழுத்தறிவு பெற்றவராகக் கருதப்படுகிறார். படிக்க மட்டுமே தெரிந்த ஆனால் எழுதத் தெரியாதவர் எழுத்தறிவற்றவராகவே கருதப்படுவர். 1991 கணக்கெடுப்பு முதல், 0-6 வயது குழந்தைகளை பகுதி எண்ணிலிருந்து தவிர்த்து 7+ வயதினரை மட்டுமே கணக்கிடும் விளைவுசார் எழுத்தறிவு விகிதமே (Effective Literacy Rate) அதிகாரப்பூர்வ அளவீடாக உள்ளது."
+      },
+      {
+        "term_en": "National Literacy Trajectory & Gender Gap (1951 - 2011)",
+        "term_ta": "தேசிய எழுத்தறிவு வளர்ச்சிப் போக்கு & பாலின இடைவெளி",
+        "details_en": "India's literacy rose from 18.33% in 1951 (Male: 27.16%, Female: 8.86%) to 74.04% in 2011 (Male: 82.14%, Female: 65.46%). Over this six-decade period, the gender gap narrowed from 18.30% in 1951 to 16.68% in 2011. Among major states, Kerala ranked highest at 94.00%, followed by Mizoram (91.33%), while Bihar recorded the lowest overall literacy at 61.80% (Female literacy: 51.50%).",
+        "details_ta": "இந்தியாவின் எழுத்தறிவு விகிதம் 1951-ல் 18.33%-ஆக (ஆண்கள்: 27.16%, பெண்கள்: 8.86%) இருந்து, 2011-ல் 74.04%-ஆக (ஆண்கள்: 82.14%, பெண்கள்: 65.46%) உயர்ந்தது. பாலின இடைவெளி 18.30%-லிருந்து 16.68%-ஆகக் குறைந்தது. பெரிய மாநிலங்களில் கேரளா 94.00% எழுத்தறிவுடன் முதலிடத்திலும், பீகார் 61.80% எழுத்தறிவுடன் கடைசி இடத்திலும் உள்ளன."
+      }
+    ],
+    "sec_tamil_nadu_literacy_profile": [
+      {
+        "term_en": "State-Level Literacy & Narrow Gender Gap",
+        "term_ta": "மாநில எழுத்தறிவு & குறுகிய பாலின இடைவெளி",
+        "details_en": "Tamil Nadu recorded an overall literacy rate of 80.09% in Census 2011 (Male: 86.77%, Female: 73.44%), outperforming the national average by over 6 percentage points. The gender gap in Tamil Nadu stood at 13.33 percentage points, markedly narrower than the national gap of 16.68 percentage points, driven by sustained social justice movements and universal school access.",
+        "details_ta": "2011 மக்கள் தொகை கணக்கெடுப்பில் தமிழ்நாடு 80.09% எழுத்தறிவு விகிதத்தைப் பதிவு செய்தது (ஆண்கள்: 86.77%, பெண்கள்: 73.44%). இது தேசிய சராசரியை விட 6% அதிகம். தமிழ்நாட்டின் பாலின இடைவெளி 13.33% மட்டுமே; இது தேசிய இடைவெளியான 16.68%-ஐ விட மிகக் குறைவு ஆகும்."
+      },
+      {
+        "term_en": "District Extremes: Kanyakumari vs Dharmapuri",
+        "term_ta": "மாவட்ட அளவிலான வேறுபாடுகள்: கன்னியாகுமரி vs தருமபுரி",
+        "details_en": "Kanyakumari district recorded the highest literacy in Tamil Nadu at 91.75% (Male: 93.65%, Female: 89.90%), followed closely by Chennai (90.18%) and Thoothukudi (86.16%). Conversely, Dharmapuri district registered the lowest literacy rate at 68.54%, followed by Ariyalur (71.34%) and Krishnagiri (71.46%), highlighting regional socio-economic variations within the state.",
+        "details_ta": "தமிழ்நாட்டில் கன்னியாகுமரி மாவட்டம் 91.75% எழுத்தறிவுடன் முதலிடம் பிடித்தது (ஆண்கள்: 93.65%, பெண்கள்: 89.90%); சென்னை 90.18% எழுத்தறிவுடன் இரண்டாமிடம் பிடித்தது. மாறாக, தருமபுரி மாவட்டம் 68.54% எழுத்தறிவுடன் கடைசி இடத்திலும், தொடர்ந்து அரியலூர் (71.34%) மற்றும் கிருஷ்ணகிரி (71.46%) ஆகியவையும் உள்ளன."
+      }
+    ],
+    "sec_school_and_higher_ed_indicators": [
+      {
+        "term_en": "GER vs NER Dynamics Across School Stages",
+        "term_ta": "பள்ளி நிலைகளில் GER மற்றும் NER இயக்கவியல்",
+        "details_en": "Gross Enrolment Ratio (GER) measures total enrolment in a specific grade band regardless of age as a percentage of the official age cohort, allowing GER to exceed 100% due to underage/overage admissions. In contrast, Net Enrolment Ratio (NER) is strictly bounded at 100%, measuring only age-appropriate enrolment. While primary GER across India exceeds 100%, secondary GER drops to ~79%, exposing transition friction.",
+        "details_ta": "மொத்த சேர்க்கை விகிதம் (GER) வயது வரம்பின்றி குறிப்பிட்ட கல்வி நிலையில் சேர்ந்த மொத்த மாணவர்களை அந்நிலைக்குரிய அதிகாரப்பூர்வ வயது மக்கள் தொகையின் சதவீதமாக அளவிடுகிறது; இதனால் GER 100%-ஐ தாண்டலாம். ஆனால் நிகர சேர்க்கை விகிதம் (NER) குறிப்பிட்ட வயது மாணவர்களை மட்டுமே கணக்கிடுவதால் எப்போதுமே 100%-க்குள் மட்டுமே இருக்கும். இந்தியாவில் தொடக்கக் கல்வி GER 100%-க்கு மேல் இருந்தாலும், இடைநிலைக் கல்வியில் அது சுமார் 79% ஆகக் குறைகிறது."
+      },
+      {
+        "term_en": "Higher Education GER: Tamil Nadu vs All-India (AISHE 2021-22)",
+        "term_ta": "உயர்கல்வி GER: தமிழ்நாடு vs அகில இந்தியா (AISHE 2021-22)",
+        "details_en": "According to the All India Survey on Higher Education (AISHE 2021-22), India's national Higher Education GER for the 18-23 age group is 28.4% (Male: 28.3%, Female: 28.5%). Tamil Nadu leads all major states with an extraordinary GER of 51.3% (Male: ~50.2%, Female: ~52.5%), with female college participation yielding a Gender Parity Index (GPI) of 1.05.",
+        "details_ta": "அகில இந்திய உயர்கல்வி கணக்கெடுப்பின்படி (AISHE 2021-22), 18-23 வயதுப் பிரிவினருக்கான இந்தியாவின் உயர்கல்வி GER 28.4% ஆகும் (ஆண்கள்: 28.3%, பெண்கள்: 28.5%). ஆனால் தமிழ்நாடு 51.3% GER பெற்று பெரிய மாநிலங்களில் முதலிடத்தில் உள்ளது (ஆண்கள்: ~50.2%, பெண்கள்: ~52.5%); மேலும் கல்லூரிகளில் பெண்களின் சேர்க்கை அதிகரித்து பாலின சமத்துவக் குறியீடு (GPI) 1.05 ஆக உயர்ந்துள்ளது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_crude_vs_effective_literacy",
+        "title_en": "Crude Literacy Rate vs Effective Literacy Rate",
+        "title_ta": "மொத்த எழுத்தறிவு விகிதம் vs விளைவுசார் எழுத்தறிவு விகிதம்",
+        "headers_en": [
+          "Parameter",
+          "Crude Literacy Rate",
+          "Effective Literacy Rate"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "மொத்த (செப்பனிடப்படாத) எழுத்தறிவு விகிதம்",
+          "விளைவுசார் எழுத்தறிவு விகிதம்"
+        ],
+        "rows_en": [
+          [
+            "Formula Definition",
+            "(Total Literate Persons / Total Population) × 100",
+            "(Literates Aged 7+ / Population Aged 7+) × 100"
+          ],
+          [
+            "Denominator Population",
+            "Includes entire population including infants aged 0 to 6 years",
+            "Strictly restricted to population aged 7 years and above"
+          ],
+          [
+            "Census Adoption",
+            "Official metric in Indian Censuses from 1881 up to 1981",
+            "Standard official metric adopted from Census 1991 onwards"
+          ],
+          [
+            "Statistical Bias",
+            "Depresses measured literacy by counting non-schoolable infants in denominator",
+            "Eliminates age distortion; provides accurate literacy benchmark"
+          ],
+          [
+            "Census 2011 Figure",
+            "Approximately 64.8% (crude estimate for entire population)",
+            "74.04% (official national effective literacy benchmark)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சமன்பாடு வரைமுறை",
+            "(எழுத்தறிவு பெற்ற மொத்த நபர்கள் / மொத்த மக்கள் தொகை) × 100",
+            "(7+ வயதுடைய எழுத்தறிவு பெற்றவர்கள் / 7+ வயதுடைய மக்கள் தொகை) × 100"
+          ],
+          [
+            "பகுதி (Denominator)",
+            "0 முதல் 6 வயது வரையிலான குழந்தைகள் உட்பட மொத்த மக்கள் தொகை",
+            "7 வயது மற்றும் அதற்கு மேற்பட்ட மக்கள் தொகை மட்டுமே"
+          ],
+          [
+            "மக்கள் தொகை பயன்பாடு",
+            "1881 முதல் 1981 கணக்கெடுப்பு வரை வழக்கிலிருந்த முறை",
+            "1991 மக்கள் தொகை கணக்கெடுப்பு முதல் அதிகாரப்பூர்வ அளவீடு"
+          ],
+          [
+            "புள்ளியியல் குறைபாடு",
+            "பள்ளிக்குச் செல்ல முடியாத பச்சிளங்குழந்தைகளைச் சேர்ப்பதால் எழுத்தறிவு குறைவாகக் காட்டும்",
+            "வயது திரிபை நீக்கி, உண்மையான கல்வித் திறனைத் துல்லியமாக வெளிப்படுத்துகிறது"
+          ],
+          [
+            "2011 கணக்கெடுப்பு அளவு",
+            "சுமார் 64.8% (மொத்த மக்கள் தொகைக்கான தோராய அளவு)",
+            "74.04% (அதிகாரப்பூர்வ தேசிய விளைவுசார் எழுத்தறிவு விகிதம்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ger_vs_ner_methodology",
+        "title_en": "Gross Enrolment Ratio (GER) vs Net Enrolment Ratio (NER)",
+        "title_ta": "மொத்த சேர்க்கை விகிதம் (GER) vs நிகர சேர்க்கை விகிதம் (NER)",
+        "headers_en": [
+          "Dimension",
+          "Gross Enrolment Ratio (GER)",
+          "Net Enrolment Ratio (NER)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "மொத்த சேர்க்கை விகிதம் (GER)",
+          "நிகர சேர்க்கை விகிதம் (NER)"
+        ],
+        "rows_en": [
+          [
+            "Age Cohort In Numerator",
+            "Total enrolled students in level, regardless of chronological age",
+            "Strictly enrolled students who belong to the official age group"
+          ],
+          [
+            "Upper Theoretical Limit",
+            "Can exceed 100% due to early entry, late entry, or grade repetition",
+            "Mathematically capped at 100%; can never exceed 100%"
+          ],
+          [
+            "System Capacity Indicator",
+            "Measures total physical capacity and absorption capacity of school tier",
+            "Measures the exact coverage of the intended target age group"
+          ],
+          [
+            "Policy Diagnostic",
+            "Identifies grade repetition and age-grade distortion in classes",
+            "Identifies the exact proportion of children out-of-school or off-track"
+          ],
+          [
+            "Tamil Nadu Higher Education",
+            "51.3% in AISHE 2021-22 (National target: 50% by 2035 under NEP)",
+            "High transition rate from secondary to tertiary institutions"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொகுதி (Numerator) வயது வரம்பு",
+            "வயதைக் கருத்தில் கொள்ளாமல் அந்நிலைப் பள்ளியில் சேர்ந்த அனைத்து மாணவர்கள்",
+            "அந்நிலைக்குரிய அதிகாரப்பூர்வ வயது வரம்பிற்குள் உள்ள மாணவர்கள் மட்டுமே"
+          ],
+          [
+            "அதிகபட்ச கோட்பாட்டு வரம்பு",
+            "100%-ஐ தாண்டலாம் (கூடுதல் வயது அல்லது குறைந்த வயது மாணவர்களால்)",
+            "கணித ரீதியாக 100%-க்குள் மட்டுமே இருக்கும்; 100%-ஐ தாண்ட முடியாது"
+          ],
+          [
+            "கட்டமைப்பு கொள்ளளவு",
+            "பள்ளிக் கட்டமைப்பின் ஒட்டுமொத்த சேர்க்கும் திறனை அளவிடுகிறது",
+            "குறிப்பிட்ட வயதுடைய குழந்தைகளின் உண்மையான பள்ளிப் பங்கேற்பை அளவிடுகிறது"
+          ],
+          [
+            "கொள்கை பயன்பாடு",
+            "வகுப்பில் வயது முரண்பாடுகள் மற்றும் மீண்டும் படித்தலை கண்டறிய உதவுகிறது",
+            "பள்ளிக்கு வெளியே உள்ள குழந்தைகளை துல்லியமாக அடையாளம் காட்டுகிறது"
+          ],
+          [
+            "தமிழ்நாடு உயர்கல்வி நிலை",
+            "AISHE 2021-22-ல் 51.3% (NEP 2020-ன் 50% தேசிய இலக்கை ஏற்கனவே கடந்துள்ளது)",
+            "பள்ளியிலிருந்து கல்லூரிக்குச் செல்லும் மாணவர் விகிதத்தில் முன்னிலை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_india_vs_tamil_nadu_education_metrics",
+        "title_en": "Comparative Educational Indicators: India vs Tamil Nadu",
+        "title_ta": "கல்வி குறிகாட்டிகள் ஒப்பீடு: இந்தியா vs தமிழ்நாடு",
+        "headers_en": [
+          "Indicator",
+          "All-India Benchmark",
+          "Tamil Nadu Performance",
+          "Developmental Significance"
+        ],
+        "headers_ta": [
+          "குறிகாட்டி",
+          "அகில இந்திய சராசரி",
+          "தமிழ்நாடு சாதனை நிலை",
+          "வளர்ச்சி முக்கியத்துவம்"
+        ],
+        "rows_en": [
+          [
+            "Total Literacy (Census 2011)",
+            "74.04%",
+            "80.09%",
+            "TN leads national average by ~6.05 percentage points"
+          ],
+          [
+            "Female Literacy (Census 2011)",
+            "65.46%",
+            "73.44%",
+            "TN female literacy is ~8 percentage points higher than national rate"
+          ],
+          [
+            "Gender Literacy Gap (2011)",
+            "16.68%",
+            "13.33%",
+            "Significantly narrower gender gap reflecting inclusive schooling access"
+          ],
+          [
+            "Higher Education GER (AISHE 2021-22)",
+            "28.4%",
+            "51.3%",
+            "TN Higher Ed GER is nearly double the national average"
+          ],
+          [
+            "Higher Education GPI (AISHE)",
+            "1.01",
+            "1.05",
+            "Female college enrolment outnumbers male college enrolment in TN"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மொத்த எழுத்தறிவு (2011 கணக்கெடுப்பு)",
+            "74.04%",
+            "80.09%",
+            "தமிழ்நாடு தேசிய சராசரியை விட 6.05% முன்னணியில் உள்ளது"
+          ],
+          [
+            "பெண்கள் எழுத்தறிவு (2011)",
+            "65.46%",
+            "73.44%",
+            "தமிழ்நாடு தேசிய அளவை விட சுமார் 8% அதிக பெண் எழுத்தறிவு கொண்டுள்ளது"
+          ],
+          [
+            "பாலின எழுத்தறிவு இடைவெளி (2011)",
+            "16.68%",
+            "13.33%",
+            "அனைவருக்கும் கல்வி வாய்ப்பு கிடைத்ததால் குறைந்த பாலின இடைவெளி"
+          ],
+          [
+            "உயர்கல்வி GER (AISHE 2021-22)",
+            "28.4%",
+            "51.3%",
+            "தமிழ்நாட்டின் உயர்கல்வி GER தேசிய சராசரியை விட இருமடங்கு அதிகம்"
+          ],
+          [
+            "உயர்கல்வி GPI (AISHE)",
+            "1.01",
+            "1.05",
+            "தமிழ்நாட்டின் கல்லூரிகளில் மாணவர்களை விட மாணவிகள் சேர்க்கை அதிகம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_general_vs_vocational_education",
+        "title_en": "General Academic Education vs Technical & Vocational Education (TVET)",
+        "title_ta": "பொதுக் கல்வி vs தொழில்நுட்ப தொழிற்கல்வி (TVET) ஒப்பீடு",
+        "headers_en": [
+          "Core Characteristic",
+          "General Academic Education",
+          "Technical & Vocational Education (TVET)"
+        ],
+        "headers_ta": [
+          "முக்கிய பண்புக்கூறு",
+          "பொதுக் கல்வி (Academic)",
+          "தொழில்நுட்ப தொழிற்கல்வி (TVET)"
+        ],
+        "rows_en": [
+          [
+            "Pedagogical Focus",
+            "Abstract theory, scientific principles, humanities, and critical inquiry",
+            "Practical skills, manual dexterity, occupational competency, machinery usage"
+          ],
+          [
+            "Institutional Units",
+            "Secondary schools, degree arts and science colleges, universities",
+            "Industrial Training Institutes (ITIs), Polytechnics, skill training centres"
+          ],
+          [
+            "Employability Horizon",
+            "Prepares for managerial, administrative, research, and civil professions",
+            "Enables direct shop-floor factory employment, self-employment, and trades"
+          ],
+          [
+            "National Participation",
+            "Accounts for >85% of secondary and higher secondary student enrolment",
+            "Historically low in India (<5% formal TVET vs >50% in Germany/South Korea)"
+          ],
+          [
+            "NEP 2020 Mandate",
+            "Integration of vocational crafts into general curriculum from Grade 6",
+            "Target that at least 50% of learners have vocational exposure by 2025"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கற்பித்தல் நோக்கம்",
+            "கோட்பாட்டு அறிவு, அறிவியல் கொள்கைகள், கலைப்பாடங்கள் மற்றும் சிந்தனை முறை",
+            "நடைமுறைத் திறன், இயந்திரப் பயன்பாடு, குறிப்பிட்ட தொழில் நிபுணத்துவம்"
+          ],
+          [
+            "நிறுவன அமைப்புகள்",
+            "மேல்நிலைப் பள்ளிகள், கலை மற்றும் அறிவியல் கல்லூரிகள், பல்கலைக்கழகங்கள்",
+            "தொழிற்பயிற்சி நிலையங்கள் (ITI), பாலிடெக்னிக்குகள், திறன் மேம்பாட்டு மையங்கள்"
+          ],
+          [
+            "வேலைவாய்ப்புத் தன்மை",
+            "நிர்வாகப் பணிகள், சிவில் தேர்வுகள், ஆராய்ச்சிப் பணிகளுக்கு வழிவகுக்கிறது",
+            "தொழிற்சாலைப் பணிகள், சுயதொழில் மற்றும் உடனடித் தொழில் வேலைவாய்ப்பு"
+          ],
+          [
+            "இந்திய மாணவர் சேர்க்கை",
+            "மேல்நிலைக் கல்வியில் 85%-க்கும் அதிகமான மாணவர்கள் பொதுக் கல்வியையே தேர்வு செய்கின்றனர்",
+            "இந்தியாவில் மிகக் குறைவு (<5% மட்டுமே; ஜெர்மனி/தென்கொரியாவில் >50%)"
+          ],
+          [
+            "NEP 2020 இலக்கு",
+            "6-ம் வகுப்பு முதலே பொதுப் பாடத்திட்டத்துடன் தொழிற்கல்வியை இணைத்தல்",
+            "2025-க்குள் குறைந்தபட்சம் 50% மாணவர்கள் தொழிற்கல்வி பயிற்சி பெறுவதை உறுதிசெய்தல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Education Part 1: Concepts, Human Capital & Indicators",
+        "short_label": "Education Concepts",
+        "children": [
+          {
+            "title": "Human Capital Formation",
+            "short_label": "Human Capital",
+            "children": [
+              {
+                "title": "Theodore Schultz (1961) - Nobel 1979",
+                "short_label": "Schultz"
+              },
+              {
+                "title": "Gary Becker (1964) - Human Capital Theory",
+                "short_label": "Becker"
+              },
+              {
+                "title": "Education as Economic Merit Good",
+                "short_label": "Merit Good"
+              }
+            ]
+          },
+          {
+            "title": "Census Literacy Measurement",
+            "short_label": "Census Literacy",
+            "children": [
+              {
+                "title": "Census Definition: Age 7+ Read & Write",
+                "short_label": "Age 7+ Rule"
+              },
+              {
+                "title": "Crude vs Effective Literacy (1991 standard)",
+                "short_label": "Effective Rate"
+              },
+              {
+                "title": "Census 2011: India 74.04% | Gap 16.68%",
+                "short_label": "National 2011"
+              }
+            ]
+          },
+          {
+            "title": "State & Tamil Nadu Benchmarks",
+            "short_label": "State Profiles",
+            "children": [
+              {
+                "title": "Kerala Top (94.0%) | Bihar Lowest (61.8%)",
+                "short_label": "Kerala vs Bihar"
+              },
+              {
+                "title": "TN Literacy: 80.09% (M: 86.77%, F: 73.44%)",
+                "short_label": "TN Literacy"
+              },
+              {
+                "title": "TN Districts: Kanyakumari 91.75% | Dharmapuri 68.54%",
+                "short_label": "TN Districts"
+              }
+            ]
+          },
+          {
+            "title": "Key Educational Indicators",
+            "short_label": "Key Indicators",
+            "children": [
+              {
+                "title": "GER (>100% possible) vs NER (capped 100%)",
+                "short_label": "GER vs NER"
+              },
+              {
+                "title": "AISHE Higher Ed GER: India 28.4% vs TN 51.3%",
+                "short_label": "Higher Ed GER"
+              },
+              {
+                "title": "PTR: RTE Primary 30:1 | Upper Primary 35:1",
+                "short_label": "PTR Norms"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Census Literacy Age Threshold Trap: Age 7 and Above, NOT Formal Schooling",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Census defines literacy based on school completion certificates or passing examinations.",
+            "CORRECT FACT: Census of India defines a literate person strictly as anyone aged 7 YEARS AND ABOVE who can both read and write with understanding in any language. No formal degree or school certificate is required.",
+            "WHY CANDIDATES FAIL: Conflating formal educational qualification with functional literacy under Census methodology."
+          ],
+          "ta": [
+            "பொறி: மக்கள் தொகை கணக்கெடுப்பில் எழுத்தறிவு என்பது பள்ளிச் சான்றிதழ் அல்லது தேர்ச்சி பெறுவதை அடிப்படையாகக் கொண்டது என எண்ணுவது.",
+            "சரியான உண்மை: மக்கள் தொகை கணக்கெடுப்பின்படி '7 வயது மற்றும் அதற்கு மேற்பட்ட' ஒருவர் ஏதேனும் ஒரு மொழியில் புரிதலுடன் எழுதவும் படிக்கவும் தெரிந்தாலே அவர் எழுத்தறிவு பெற்றவர்; பள்ளிச் சான்றிதழ் தேவையில்லை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பள்ளிச் சான்றிதழையும் கணக்கெடுப்பின் எழுத்தறிவு வரைமுறையையும் ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "GER Exceeding 100% Trap: GER Can Exceed 100%, NER Cannot",
+        "points": {
+          "en": [
+            "TRAP: Believing that neither GER nor NER can ever exceed 100%.",
+            "CORRECT FACT: Gross Enrolment Ratio (GER) can easily exceed 100% (e.g., Primary GER is often 102%-115%) because the numerator includes over-aged and under-aged children. Net Enrolment Ratio (NER) can NEVER mathematically exceed 100%.",
+            "WHY CANDIDATES FAIL: Treating all percentage enrollment metrics as capped at 100%."
+          ],
+          "ta": [
+            "பொறி: GER மற்றும் NER ஆகிய இரண்டுமே 100%-ஐ தாண்ட முடியாது என நினைப்பது.",
+            "சரியான உண்மை: மொத்த சேர்க்கை விகிதம் (GER) கூடுதல் வயது மற்றும் குறைந்த வயது மாணவர்களால் 100%-ஐத் தாண்டலாம் (தொடக்கப்பள்ளியில் 105%-115% கூட வரும்). ஆனால் நிகர சேர்க்கை விகிதம் (NER) ஒருபோதும் 100%-ஐ தாண்ட முடியாது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து சேர்க்கை விகிதங்களும் 100%-க்குள் மட்டுமே இருக்கும் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Highest Literacy District in Tamil Nadu Trap: Kanyakumari, NOT Chennai",
+        "points": {
+          "en": [
+            "TRAP: Selecting Chennai as the district with the highest literacy rate in Tamil Nadu.",
+            "CORRECT FACT: In Census 2011, KANYAKUMARI recorded the highest literacy rate in Tamil Nadu at 91.75%, while Chennai was second at 90.18%. Dharmapuri recorded the lowest at 68.54%.",
+            "WHY CANDIDATES FAIL: Presuming the state capital and metropolitan hub must automatically possess the highest literacy rate."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாட்டில் அதிக எழுத்தறிவு பெற்ற மாவட்டமாக சென்னையைத் தேர்வு செய்வது.",
+            "சரியான உண்மை: 2011 கணக்கெடுப்பின்படி தமிழ்நாட்டில் அதிக எழுத்தறிவு பெற்ற மாவட்டம் 'கன்னியாகுமரி' (91.75%) ஆகும்; சென்னை இரண்டாம் இடத்தையே (90.18%) பிடித்தது. குறைந்த எழுத்தறிவு மாவட்டம் தருமபுரி (68.54%).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தலைநகரமான சென்னை பெருநகரமே முதலிடத்தில் இருக்கும் என அனுமானிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Child Population Default Trap: Ages 0-6 are Treated as Illiterate by Definition",
+        "points": {
+          "en": [
+            "TRAP: Believing a 5-year-old child who can read and write fluently is counted as literate in Census statistics.",
+            "CORRECT FACT: In Census of India, ALL children aged 0 to 6 years are classified as illiterate BY DEFAULT, regardless of their actual intellectual capability. Effective Literacy Rate strictly evaluates the population aged 7+.",
+            "WHY CANDIDATES FAIL: Overlooking the rigid methodological convention of the Census."
+          ],
+          "ta": [
+            "பொறி: 5 வயதுக் குழந்தை சரளமாக எழுதப் படிக்கத் தெரிந்தால் கணக்கெடுப்பில் எழுத்தறிவு பெற்றவராகச் சேர்க்கப்படுவார் என எண்ணுவது.",
+            "சரியான உண்மை: மக்கள் தொகை கணக்கெடுப்பின் நெறிமுறைப்படி '0 முதல் 6 வயதுடைய அனைத்துக் குழந்தைகளும் இயல்பாகவே எழுத்தறிவற்றவர்களாகவே' வகைப்படுத்தப்படுகின்றனர். 7+ வயதினரே எழுத்தறிவு கணக்கில் வருவர்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: கணக்கெடுப்பின் கடுமையான வயது வரம்பு விதியை கவனிக்காமல் விடுவது."
+          ]
+        }
+      },
+      {
+        "title": "NEP 2020 Higher Education Target Trap: Tamil Nadu Has ALREADY Exceeded the 2035 Goal",
+        "points": {
+          "en": [
+            "TRAP: Assuming the NEP 2020 national target of 50% Higher Education GER by 2035 is an unachieved dream across all Indian states.",
+            "CORRECT FACT: Tamil Nadu has ALREADY surpassed this target with a Higher Education GER of 51.3% in AISHE 2021-22, achieving the national 2035 milestone more than a decade ahead of schedule.",
+            "WHY CANDIDATES FAIL: Missing Tamil Nadu's dramatic structural lead in collegiate and technical education."
+          ],
+          "ta": [
+            "பொறி: NEP 2020 கல்விக் கொள்கை 2035-க்குள் நிர்ணயித்துள்ள 50% உயர்கல்வி GER இலக்கை இந்தியாவில் எந்த மாநிலமும் இன்னும் எட்டவில்லை என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாடு ஏற்கனவே 51.3% உயர்கல்வி GER (AISHE 2021-22) அடைந்து, தேசிய இலக்கை 10 ஆண்டுகளுக்கு முன்பே கடந்து சாதனை படைத்துள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: உயர்கல்வியில் தமிழ்நாட்டின் அசாதாரண முன்னேற்றத்தை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "RTE Statutory PTR Mandate Trap: 30:1 for Primary, NOT 20:1 or 40:1",
+        "points": {
+          "en": [
+            "TRAP: Marking 20:1 or 40:1 as the statutory Pupil-Teacher Ratio (PTR) mandated for primary schools under the RTE Act 2009.",
+            "CORRECT FACT: The RTE Act 2009 strictly mandates a PTR of 30:1 for Primary Schools (Classes 1-5) and 35:1 for Upper Primary Schools (Classes 6-8). (20:1 is Tamil Nadu's operational reality, not the statutory national floor).",
+            "WHY CANDIDATES FAIL: Conflating state-specific operational ratios with statutory national norms."
+          ],
+          "ta": [
+            "பொறி: RTE சட்டம் 2009-ன் கீழ் தொடக்கப் பள்ளிகளுக்குரிய சட்டப்பூர்வ மாணவர்-ஆசிரியர் விகிதம் 20:1 அல்லது 40:1 எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: RTE சட்டம் 2009-ன் படி தொடக்கப் பள்ளிக்கு (1-5 வகுப்புகள்) 30:1 மற்றும் நடுநிலைப் பள்ளிக்கு (6-8 வகுப்புகள்) 35:1 என்பதே சட்டப்பூர்வ விதிமுறையாகும். (20:1 என்பது தமிழ்நாட்டின் சாதனை நிலை).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தமிழ்நாட்டின் நடைமுறை அளவையும் மத்திய சட்டத்தின் விதியையும் குழப்புவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Theodore W. Schultz was awarded the Nobel Memorial Prize in Economic Sciences in 1979 for pioneering human capital research in economic development.",
+        "Gary S. Becker published his seminal work 'Human Capital: A Theoretical and Empirical Analysis' in 1964.",
+        "India's literacy rate at Independence in 1947 was approximately 12%, rising to 18.33% in the 1951 Census.",
+        "Census 2011 recorded India's overall literacy rate at 74.04% (Male: 82.14%, Female: 65.46%), with a gender gap of 16.68 percentage points.",
+        "Kerala had the highest literacy rate among Indian states in Census 2011 at 94.00%, followed by Mizoram at 91.33%.",
+        "Bihar recorded the lowest literacy rate in India in Census 2011 at 61.80% (Female literacy: 51.50%).",
+        "Lakshadweep was the most literate Union Territory in Census 2011 with a literacy rate of 91.85%.",
+        "Tamil Nadu recorded an 80.09% literacy rate in Census 2011, with male literacy at 86.77% and female literacy at 73.44%.",
+        "Kanyakumari is the most literate district in Tamil Nadu (91.75%), while Dharmapuri has the lowest literacy (68.54%).",
+        "According to AISHE 2021-22, India's national Higher Education GER is 28.4%, while Tamil Nadu leads large states at 51.3%.",
+        "The Gender Parity Index (GPI) in higher education in Tamil Nadu stands at 1.05, indicating female college enrolment exceeds male enrolment.",
+        "The RTE Act 2009 mandates a Pupil-Teacher Ratio (PTR) of 30:1 for primary schools and 35:1 for upper primary schools."
+      ],
+      "ta": [
+        "தியோடர் டபிள்யூ. ஷுல்ட்ஸ் பொருளாதார வளர்ச்சியில் மனித மூலதன முன்னோடி ஆராய்ச்சிக்காக 1979-ல் பொருளாதாரத்திற்கான நோபல் பரிசைப் பெற்றார்.",
+        "கேரி எஸ். பெக்கர் 1964-ல் 'Human Capital' என்ற புகழ்பெற்ற ஆராய்ச்சி நூலை வெளியிட்டார்.",
+        "1947 சுதந்திரத்தின் போது இந்தியாவின் எழுத்தறிவு விகிதம் சுமார் 12% ஆகவும், 1951 முதல் மக்கள் தொகை கணக்கெடுப்பில் 18.33% ஆகவும் இருந்தது.",
+        "2011 கணக்கெடுப்பில் இந்தியாவின் எழுத்தறிவு 74.04% (ஆண்கள்: 82.14%, பெண்கள்: 65.46%), பாலின இடைவெளி 16.68% ஆகும்.",
+        "2011 கணக்கெடுப்பில் கேரளா 94.00% எழுத்தறிவுடன் முதலிடத்திலும், மிசோரம் 91.33% எழுத்தறிவுடன் இரண்டாமிடத்திலும் உள்ளன.",
+        "2011 கணக்கெடுப்பில் பீகார் 61.80% எழுத்தறிவுடன் இந்தியாவின் மிகக் குறைந்த எழுத்தறிவு கொண்ட மாநிலமாக உள்ளது (பெண்கள்: 51.50%).",
+        "யூனியன் பிரதேசங்களில் லட்சத்தீவு 91.85% எழுத்தறிவுடன் 2011 கணக்கெடுப்பில் முதலிடம் பிடித்தது.",
+        "2011 கணக்கெடுப்பில் தமிழ்நாடு 80.09% எழுத்தறிவு விகிதத்தைப் பதிவு செய்தது (ஆண்கள்: 86.77%, பெண்கள்: 73.44%).",
+        "தமிழ்நாட்டில் கன்னியாகுமரி அதிக எழுத்தறிவு கொண்ட மாவட்டமாகவும் (91.75%), தருமபுரி குறைந்த எழுத்தறிவு கொண்ட மாவட்டமாகவும் (68.54%) உள்ளன.",
+        "AISHE 2021-22 அறிக்கையின்படி, இந்தியாவின் உயர்கல்வி GER 28.4% ஆகவும், தமிழ்நாடு 51.3% பெற்று முன்னணியில் உள்ளது.",
+        "தமிழ்நாட்டின் உயர்கல்வியில் பாலின சமத்துவக் குறியீடு (GPI) 1.05 ஆக உள்ளது, இது ஆண்களை விட பெண்களின் கல்லூரி சேர்க்கை அதிகம் என்பதைக் காட்டுகிறது.",
+        "RTE சட்டம் 2009 தொடக்கப் பள்ளிகளுக்கு 30:1 மற்றும் நடுநிலைப் பள்ளிகளுக்கு 35:1 மாணவர்-ஆசிரியர் விகிதத்தை நிர்ணயிக்கிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Human Capital Theory pioneered by Schultz (1961) and Becker (1964) proves education enhances worker marginal productivity.",
+        "Census literate = Individual aged 7+ who can read and write with understanding in any language; no degree required.",
+        "Effective Literacy Rate excludes children aged 0-6; has been the official Census metric since 1991.",
+        "Census 2011: National literacy 74.04% (Male: 82.14%, Female: 65.46%); Gender gap narrowed to 16.68%.",
+        "Kerala ranked highest in 2011 literacy (94.00%), Bihar lowest (61.80%), Lakshadweep highest UT (91.85%).",
+        "Tamil Nadu 2011 literacy: 80.09% (Male: 86.77%, Female: 73.44%); Gender gap 13.33% (well below national gap).",
+        "TN District rankings: Kanyakumari highest (91.75%), Chennai second (90.18%), Dharmapuri lowest (68.54%).",
+        "GER can exceed 100% due to under/over-aged students; NER is strictly capped at 100%.",
+        "AISHE 2021-22: All-India Higher Education GER is 28.4%; Tamil Nadu leads large states at 51.3% (NEP target was 50% by 2035).",
+        "RTE Act 2009 PTR norms: 30:1 for Primary (Classes 1-5) and 35:1 for Upper Primary (Classes 6-8)."
+      ],
+      "ta": [
+        "மனித மூலதனக் கோட்பாடு ஷுல்ட்ஸ் (1961) மற்றும் பெக்கர் (1964) ஆகியோரால் நிறுவப்பட்டது; கல்வி தொழிலாளர் உற்பத்தித்திறனை உயர்த்துகிறது.",
+        "மக்கள் தொகை எழுத்தறிவு = 7+ வயது, ஏதேனும் ஒரு மொழியில் புரிதலுடன் படிக்கவும் எழுதவும் தெரிந்தவர்; சான்றிதழ் தேவையில்லை.",
+        "விளைவுசார் எழுத்தறிவு விகிதம் 0-6 வயது குழந்தைகளைத் தவிர்த்து 7+ வயதினரை மட்டுமே கணக்கிடுகிறது; 1991 முதல் வழக்கிலுள்ளது.",
+        "2011 கணக்கெடுப்பு: தேசிய எழுத்தறிவு 74.04% (ஆ: 82.14%, பெண்: 65.46%); பாலின இடைவெளி 16.68%.",
+        "கேரளா முதலிடம் (94.00%), பீகார் கடைசி (61.80%), லட்சத்தீவு யூனியன் பிரதேசங்களில் முதலிடம் (91.85%).",
+        "தமிழ்நாடு 2011 எழுத்தறிவு: 80.09% (ஆ: 86.77%, பெண்: 73.44%); தமிழ்நாட்டின் பாலின இடைவெளி 13.33% மட்டுமே.",
+        "தமிழக மாவட்டங்கள்: கன்னியாகுமரி முதலிடம் (91.75%), சென்னை இரண்டாமிடம் (90.18%), தருமபுரி கடைசி (68.54%).",
+        "GER 100%-ஐ தாண்டலாம்; ஆனால் NER எப்போதுமே 100%-க்குள் மட்டுமே இருக்கும்.",
+        "AISHE 2021-22: தேசிய உயர்கல்வி GER 28.4%; தமிழ்நாடு 51.3% பெற்று முன்னணியில் உள்ளது (NEP இலக்கு 2035-ல் 50%).",
+        "RTE சட்டம் 2009 மாணவர் ஆசிரியர் விகிதம்: தொடக்கப்பள்ளி 30:1, நடுநிலைப்பள்ளி 35:1."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_edu_101",
+        "front_en": "Who formulated the Human Capital Theory demonstrating that education raises worker productivity and economic growth?",
+        "front_ta": "கல்வி தொழிலாளர்களின் உற்பத்தித்திறனையும் பொருளாதார வளர்ச்சியையும் உயர்த்துகிறது என்ற மனித மூலதனக் கோட்பாட்டை முன்வைத்தவர்கள் யார்?",
+        "back_en": "Theodore W. Schultz (1961) and Gary S. Becker (1964).",
+        "back_ta": "தியோடர் டபிள்யூ. ஷுல்ட்ஸ் (1961) மற்றும் கேரி எஸ். பெக்கர் (1964)."
+      },
+      {
+        "id": "rc_edu_102",
+        "front_en": "What is the minimum age criterion to be classified as literate in the Census of India?",
+        "front_ta": "இந்திய மக்கள் தொகை கணக்கெடுப்பில் எழுத்தறிவு பெற்றவராகக் கருதப்படுவதற்கான குறைந்தபட்ச வயது வரம்பு என்ன?",
+        "back_en": "Age 7 years and above (children aged 0-6 years are classified as illiterate by default).",
+        "back_ta": "7 வயது மற்றும் அதற்கு மேல் (0-6 வயது வரையிலான குழந்தைகள் இயல்பாக எழுத்தறிவற்றவர்களாகவே கருதப்படுவர்)."
+      },
+      {
+        "id": "rc_edu_103",
+        "front_en": "What is the mathematical difference between Crude Literacy Rate and Effective Literacy Rate?",
+        "front_ta": "மொத்த எழுத்தறிவு விகிதத்திற்கும் விளைவுசார் எழுத்தறிவு விகிதத்திற்கும் உள்ள கணித ரீதியான வேறுபாடு என்ன?",
+        "back_en": "Crude divides literates by the total population; Effective divides literates aged 7+ by the population aged 7+ (official since 1991).",
+        "back_ta": "மொத்த விகிதம் மொத்த மக்கள்தொகையைக் கொண்டு கணக்கிடுகிறது; விளைவுசார் விகிதம் 7+ வயதினரை மட்டுமே கொண்டு கணக்கிடுகிறது (1991 முதல் வழக்கிலுள்ளது)."
+      },
+      {
+        "id": "rc_edu_104",
+        "front_en": "What was India's national literacy rate and gender gap in Census 2011?",
+        "front_ta": "2011 மக்கள் தொகை கணக்கெடுப்பில் இந்தியாவின் எழுத்தறிவு விகிதம் மற்றும் பாலின இடைவெளி என்ன?",
+        "back_en": "Literacy: 74.04% (Male: 82.14%, Female: 65.46%); Gender gap: 16.68 percentage points.",
+        "back_ta": "எழுத்தறிவு: 74.04% (ஆண்கள்: 82.14%, பெண்கள்: 65.46%); பாலின இடைவெளி: 16.68%."
+      },
+      {
+        "id": "rc_edu_105",
+        "front_en": "Which states had the highest and lowest literacy rates in Census 2011?",
+        "front_ta": "2011 கணக்கெடுப்பில் அதிக மற்றும் குறைந்த எழுத்தறிவு பெற்ற மாநிலங்கள் எவை?",
+        "back_en": "Highest: Kerala (94.00%). Lowest: Bihar (61.80%).",
+        "back_ta": "அதிகம்: கேரளா (94.00%). குறைவு: பீகார் (61.80%)."
+      },
+      {
+        "id": "rc_edu_106",
+        "front_en": "What was Tamil Nadu's total literacy rate and the top/bottom districts in Census 2011?",
+        "front_ta": "2011-ல் தமிழ்நாட்டின் எழுத்தறிவு விகிதம் மற்றும் முதன்மை/கடைசி மாவட்டங்கள் எவை?",
+        "back_en": "Total: 80.09% (Male: 86.77%, Female: 73.44%). Highest: Kanyakumari (91.75%); Lowest: Dharmapuri (68.54%).",
+        "back_ta": "மொத்தம்: 80.09% (ஆண்கள்: 86.77%, பெண்கள்: 73.44%). முதலிடம்: கன்னியாகுமரி (91.75%); கடைசி: தருமபுரி (68.54%)."
+      },
+      {
+        "id": "rc_edu_107",
+        "front_en": "Why can Gross Enrolment Ratio (GER) exceed 100% while Net Enrolment Ratio (NER) cannot?",
+        "front_ta": "GER ஏன் 100%-ஐ தாண்டலாம், NER ஏன் ஒருபோதும் 100%-ஐ தாண்ட முடியாது?",
+        "back_en": "GER includes all enrolled students regardless of age (including underage/overage); NER strictly counts only students belonging to the official age group.",
+        "back_ta": "GER அனைத்து வயது மாணவர்களையும் சேர்க்கிறது (கூடுதல்/குறைந்த வயது உட்பட); NER குறிப்பிட்ட அதிகாரப்பூர்வ வயது மாணவர்களை மட்டுமே சேர்க்கிறது."
+      },
+      {
+        "id": "rc_edu_108",
+        "front_en": "What is the Higher Education GER of India vs Tamil Nadu according to AISHE 2021-22?",
+        "front_ta": "AISHE 2021-22 கணக்கெடுப்பின்படி இந்தியா மற்றும் தமிழ்நாட்டின் உயர்கல்வி GER என்ன?",
+        "back_en": "All-India: 28.4%. Tamil Nadu: 51.3% (surpassing the NEP 2020 national target of 50% by 2035).",
+        "back_ta": "அகில இந்திய சராசரி: 28.4%. தமிழ்நாடு: 51.3% (NEP 2020 தேசிய இலக்கான 50%-ஐ ஏற்கனவே கடந்துவிட்டது)."
+      },
+      {
+        "id": "rc_edu_109",
+        "front_en": "What are the statutory Pupil-Teacher Ratio (PTR) norms under the RTE Act 2009 for primary and upper primary schools?",
+        "front_ta": "RTE சட்டம் 2009-ன் கீழ் தொடக்க மற்றும் நடுநிலைப் பள்ளிகளுக்குரிய சட்டப்பூர்வ மாணவர்-ஆசிரியர் விகிதம் (PTR) என்ன?",
+        "back_en": "Primary (Classes 1-5): 30:1. Upper Primary (Classes 6-8): 35:1.",
+        "back_ta": "தொடக்கப்பள்ளி (1-5 வகுப்புகள்): 30:1. நடுநிலைப்பள்ளி (6-8 வகுப்புகள்): 35:1."
+      },
+      {
+        "id": "rc_edu_110",
+        "front_en": "What does a Gender Parity Index (GPI) of 1.05 in Tamil Nadu higher education signify?",
+        "front_ta": "தமிழ்நாட்டு உயர்கல்வியில் 1.05 என்ற பாலின சமத்துவக் குறியீடு (GPI) எதைக் குறிக்கிறது?",
+        "back_en": "It indicates that female college enrolment exceeds male college enrolment (1.05 females per 1.00 male).",
+        "back_ta": "கல்லூரி கல்வியில் ஆண்களை விட பெண்களின் சேர்க்கை அதிகம் (100 மாணவர்களுக்கு 105 மாணவிகள்) என்பதைக் குறிக்கிறது."
+      }
+    ]
+  }
+}

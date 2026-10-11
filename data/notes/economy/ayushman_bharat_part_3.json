@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "topic_id": "economy_ayushman_bharat_part_3",
+    "repository_id": "economy_ayushman_bharat",
+    "display_title": "Ayushman Bharat – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Ayushman Bharat",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Catastrophic Out of Pocket Expenditure OOPE",
+    "National Health Accounts 47 Percent",
+    "Tamil Nadu CMCHIS 2009 Pioneer",
+    "Kalaignar Kaappeettu Thittam July 2009",
+    "CMCHIS PMJAY Co Branding 1 Point 44 Crore",
+    "State Corpus Fund Organ Transplants 25 Lakh",
+    "Ayushman Bharat Digital Mission ABDM Sept 2021",
+    "ABHA ID 14 Digit Health Number",
+    "Unified Health Interface UHI Protocol",
+    "National Anti Fraud Unit NAFU AI ML",
+    "ICMR Standard Treatment Guidelines STGs",
+    "Cashless Paperless Delivery Healthcare"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand how public health assurance reduced catastrophic Out-of-Pocket Expenditure (OOPE) to 47.1%.",
+        "Examine Tamil Nadu's pioneering CMCHIS model and its seamless convergence with PM-JAY."
+      ],
+      "ta": [
+        "அரசு சுகாதார உத்தரவாதம் மக்களின் சொந்த மருத்துவச் செலவை (OOPE) எவ்வாறு 47.1%-ஆகக் குறைத்தது என்பதைப் புரிந்துகொள்ளுதல்.",
+        "தமிழ்நாட்டின் முன்னோடி CMCHIS மாதிரி மற்றும் PM-JAY உடனான அதன் ஒருங்கிணைப்பை ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key milestones: CMCHIS launched July 2009, ABDM launched 27th Sept 2021, ABHA is 14 digits.",
+        "Recall that Tamil Nadu covers 1.44 crore families and funds organ transplants up to ₹25 lakh."
+      ],
+      "ta": [
+        "முக்கிய மைல்கற்கள்: CMCHIS ஜூலை 2009, ABDM செப் 27, 2021, ABHA என்பது 14 இலக்கங்கள்.",
+        "தமிழ்நாடு 1.44 கோடி குடும்பங்களை உள்ளடக்கியுள்ளது மற்றும் உறுப்பு மாற்றுக்கு ₹25 லட்சம் வரை தருகிறது என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the anti-fraud architecture (NAFU/SAFU) preventing private hospital profiteering and ghost surgeries.",
+        "Appraise the digital infrastructure of ABDM linking electronic health records through UHI open protocols."
+      ],
+      "ta": [
+        "தனியார் மருத்துவமனை முறைகேடுகள் மற்றும் போலி அறுவை சிகிச்சைகளைத் தடுக்கும் NAFU மோசடி தடுப்பு அமைப்பை ஆய்வு செய்தல்.",
+        "UHI திறந்த கட்டமைப்பு மூலம் மருத்துவ அறிக்கைகளை இணைக்கும் ABDM டிஜிட்டல் அமைப்பை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps regarding CMCHIS launch year, 14-digit ABHA IDs, and cashless mechanics."
+      ],
+      "ta": [
+        "CMCHIS தொடங்கிய ஆண்டு, 14 இலக்க ABHA எண் மற்றும் ரொக்கமில்லா சிகிச்சை முறை குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Ayushman Bharat – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_catastrophic_oope_reduction",
+      "title_en": "Reduction in Catastrophic Out-of-Pocket Expenditure (OOPE)",
+      "title_ta": "பேரழிவு மருத்துவச் சொந்தச் செலவுகள் (OOPE) குறைப்பு & பொருளாதாரத் தாக்கம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tamil_nadu_cmchis_convergence",
+      "title_en": "Tamil Nadu Model: CMCHIS Genesis & Seamless Convergence",
+      "title_ta": "தமிழ்நாடு மாதிரி: முதலமைச்சரின் காப்பீட்டுத் திட்டம் (CMCHIS) & ஒருங்கிணைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_abdm_digital_health_mission",
+      "title_en": "Ayushman Bharat Digital Mission (ABDM) & 14-Digit ABHA Health IDs",
+      "title_ta": "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) & 14 இலக்க ABHA அடையாள அட்டை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_anti_fraud_and_quality_assurance",
+      "title_en": "Anti-Fraud Ecosystem & Quality Assurance Mechanisms",
+      "title_ta": "மோசடி தடுப்பு கட்டமைப்பு & மருத்துவ தர உத்தரவாத வழிமுறைகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The systemic impact, sub-national convergence, and digital health transformation of Ayushman Bharat encompasses the reduction of catastrophic Out-of-Pocket Expenditure (OOPE), seamless convergence with state insurance schemes—exemplified by Tamil Nadu's pioneering Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS-PMJAY co-branding)—and the nationwide digital integration powered by the Ayushman Bharat Digital Mission (ABDM) through 14-digit ABHA IDs, unified health registries, and stringent anti-fraud architectures.",
+      "ta": "ஆயுஷ்மான் பாரத்தின் முறையான தாக்கம், மாநில அளவிலான ஒருங்கிணைப்பு மற்றும் டிஜிட்டல் சுகாதார உருமாற்றம் என்பது ஏழைக் குடும்பங்களின் பேரழிவு மருத்துவச் சொந்தச் செலவுகளை (OOPE) குறைத்தல், முன்னோடி மாநில திட்டங்களுடன் இணைத்தல் (தமிழ்நாட்டின் முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம் CMCHIS-PMJAY கூட்டு மாதிரி), மற்றும் 14 இலக்க ABHA அடையாள அட்டை, ஒருங்கிணைந்த சுகாதாரப் பதிவேடுகள் மற்றும் கடுமையான மோசடி தடுப்பு வழிமுறைகளைக் கொண்ட ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) மூலம் நாடு தழுவிய டிஜிட்டல் சுகாதார கட்டமைப்பை உருவாக்குதல் ஆகியவற்றை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "Historically, healthcare financing in India was plagued by catastrophic Out-of-Pocket Expenditure (OOPE)—which accounted for over 64% of total health expenditure in 2013-14, dragging approximately 5 to 6 crore Indians below the poverty line every year due to single hospitalization events. Over six years of Ayushman Bharat and converged state schemes, OOPE has steadily declined to 47.1% (National Health Accounts 2019-20), marking a structural breakthrough in health protection. At the sub-national level, Tamil Nadu pioneered state-funded social health insurance a decade before PM-JAY: the Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS, originally Kalaignar Kaappeettu Thittam) was launched on 23rd July 2009 by Chief Minister Dr. M. Karunanidhi. When PM-JAY launched in 2018, Tamil Nadu adopted a sophisticated convergence model, co-branding the scheme as CMCHIS-PMJAY and expanding coverage to approximately 1.44 crore families—vastly exceeding the central SECC quota of ~77 lakh families by funding the difference entirely from the State Exchequer, while covering high-end tertiary procedures like organ transplants. Concurrently, the Ayushman Bharat Digital Mission (ABDM, launched September 2021) is building India's digital health highways through 14-digit ABHA health IDs, the Unified Health Interface (UHI), and National Anti-Fraud Units (NAFU). This final module examines catastrophic expenditure reduction, the Tamil Nadu CMCHIS convergence model, ABDM digital health systems, and fraud prevention mechanisms.",
+      "ta": "வரலாற்று ரீதியாக இந்தியாவில் சுகாதார நிதியளிப்பு பெருமளவிலான சொந்தச் செலவுகளால் (Out-of-Pocket Expenditure - OOPE) பாதிக்கப்பட்டது; 2013-14-ல் மொத்த மருத்துவச் செலவில் 64%-க்கும் மேல் மக்கள் தங்கள் சொந்தக் கைகளிலிருந்தே செலவழித்தனர். இதனால் ஆண்டுதோறும் சுமார் 5 முதல் 6 கோடி இந்தியர்கள் கடுமையான மருத்துவச் செலவுகளால் வறுமைக் கோட்டிற்குள் தள்ளப்பட்டனர். ஆயுஷ்மான் பாரத் மற்றும் மாநில காப்பீட்டுத் திட்டங்களின் விளைவாக, இந்த சொந்தச் செலவு 47.1%-ஆகக் குறைந்துள்ளது (தேசிய சுகாதார கணக்கு 2019-20). மாநில அளவில், PM-JAY தொடங்குவதற்கு 10 ஆண்டுகளுக்கு முன்பே தமிழ்நாடு முன்னோடி திட்டத்தைத் தொடங்கியது: 2009 ஜூலை 23 அன்று முதலமைச்சர் மு. கருணாநிதியால் 'கலைஞர் காப்பீட்டுத் திட்டம்' (தற்போது முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம் - CMCHIS) தொடங்கப்பட்டது. 2018-ல் PM-JAY வந்தபோது, தமிழ்நாடு இதனை 'CMCHIS-PMJAY' என இணைத்து, மத்திய அரசின் SECC வரம்பான 77 லட்சம் குடும்பங்களைத் தாண்டி, சுமார் 1.44 கோடி குடும்பங்களுக்கு மாநில அரசின் சொந்த நிதியிலிருந்து காப்பீட்டை விரிவுபடுத்தியது; மேலும் உறுப்பு மாற்று அறுவை சிகிச்சைகள் போன்ற உயர் சிகிச்சைகளையும் இணைத்தது. அதே நேரத்தில், செப்டம்பர் 2021-ல் தொடங்கப்பட்ட ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) 14 இலக்க ABHA அடையாள அட்டை மற்றும் தேசிய மோசடி தடுப்பு பிரிவுகள் (NAFU) மூலம் சுகாதாரத் துறையை டிஜிட்டல் மயமாக்கி வருகிறது. இப்பகுதி மருத்துவச் செலவு குறைப்பு, தமிழ்நாட்டின் CMCHIS மாதிரி மற்றும் டிஜிட்டல் சுகாதார அமைப்புகளை ஆராய்கிறது."
+    },
+    "sec_catastrophic_oope_reduction": [
+      {
+        "term_en": "Out-of-Pocket Expenditure (OOPE) Trajectory",
+        "term_ta": "சொந்தச் செலவு (OOPE) வளர்ச்சிப் போக்கு",
+        "details_en": "Out-of-Pocket Expenditure (OOPE) refers to direct outlays made by households at the point of receiving healthcare. According to National Health Accounts (NHA) data, OOPE as a share of Total Health Expenditure (THE) declined from a peak of 64.2% in 2013-14 to 47.1% in 2019-20, while Government Health Expenditure (GHE) rose from 28.6% to 41.4%, proving the cushioning impact of public assurance.",
+        "details_ta": "சொந்தச் செலவு (OOPE) என்பது மருத்துவ சிகிச்சையின் போது மக்கள் தங்கள் சொந்தப் பணத்திலிருந்து நேரடியாகச் செய்யும் செலவைக் குறிக்கிறது. தேசிய சுகாதார கணக்கு (NHA) புள்ளிவிவரங்களின்படி, மொத்த மருத்துவச் செலவில் மக்களின் சொந்தச் செலவு பங்கு 2013-14-ல் 64.2% ஆக இருந்து, 2019-20-ல் 47.1% ஆகக் குறைந்துள்ளது; அதே நேரத்தில் அரசின் சுகாதாரச் செலவு 28.6%-லிருந்து 41.4%-ஆக உயர்ந்துள்ளது."
+      },
+      {
+        "term_en": "Mitigation of Medical Impoverishment",
+        "term_ta": "மருத்துவச் செலவால் ஏற்படும் வறுமை ஒழிப்பு",
+        "details_en": "Empirical studies established that before 2018, hospitalization was a leading trigger of household indebtedness and land alienation in rural India, causing 50-60 million people to fall below the poverty line annually. Independent evaluations show PM-JAY and state insurance schemes have prevented catastrophic financial ruin for over 7 crore hospitalized poor patients.",
+        "details_ta": "2018-க்கு முன், குடும்பத்தில் ஒருவருக்கு ஏற்படும் தீவிர மருத்துவச் செலவே கிராமப்புறங்களில் கடன் வாங்குவதற்கும், நிலங்களை விற்பதற்கும், ஆண்டுதோறும் 5 முதல் 6 கோடி மக்கள் வறுமையில் சிக்குவதற்கும் முதன்மைக் காரணியாக இருந்தது. PM-JAY மற்றும் மாநில காப்பீட்டுத் திட்டங்கள் மூலம் 7 கோடிக்கும் மேற்பட்ட ஏழை நோயாளிகள் மருத்துவக் கடன் வலையிலிருந்து பாதுகாக்கப்பட்டுள்ளனர்."
+      }
+    ],
+    "sec_tamil_nadu_cmchis_convergence": [
+      {
+        "term_en": "Genesis of CMCHIS (2009) & Universal Coverage Ambition",
+        "term_ta": "CMCHIS தோற்றம் (2009) & உலகளாவிய பாதுகாப்பு இலக்கு",
+        "details_en": "Tamil Nadu launched the historic 'Kalaignar Kaappeettu Thittam' on 23rd July 2009 under Chief Minister M. Karunanidhi, providing ₹1 lakh cover (with ₹1.5 lakh for specialized surgeries), pioneering state health insurance in India a decade before PM-JAY. Rebranded as the Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS) in 2012, it covers all households in Tamil Nadu with an annual family income below ₹1,20,000.",
+        "details_ta": "மத்திய அரசின் PM-JAY தொடங்குவதற்கு 10 ஆண்டுகளுக்கு முன்பே, 2009 ஜூலை 23 அன்று முதலமைச்சர் மு. கருணாநிதியால் 'கலைஞர் காப்பீட்டுத் திட்டம்' ₹1 லட்சம் காப்பீட்டுடன் (சிறப்பு அறுவை சிகிச்சைக்கு ₹1.5 லட்சம்) தொடங்கப்பட்டது. 2012-ல் 'முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம்' (CMCHIS) எனப் பெயர் மாற்றப்பட்டு, ஆண்டு வருமானம் ₹1,20,000-க்கு கீழ் உள்ள அனைத்து தமிழக குடும்பங்களுக்கும் விரிவுபடுத்தப்பட்டது."
+      },
+      {
+        "term_en": "Convergence with PM-JAY & State Corpus Expansion",
+        "term_ta": "PM-JAY உடன் ஒருங்கிணைப்பு & கூடுதல் குடும்பங்களுக்கு மாநில நிதி",
+        "details_en": "In 2018, Tamil Nadu converged CMCHIS with PM-JAY under the co-branded name 'CMCHIS-PMJAY', raising coverage to ₹5,00,000 per family. Crucially, while the Central SECC quota covers only ~77 lakh families, the Government of Tamil Nadu funds the difference from the State budget to cover ~1.44 crore families. Furthermore, TN created a dedicated State Corpus Fund covering high-cost specialized procedures (bone marrow, liver, renal, and heart transplants up to ₹25 lakh).",
+        "details_ta": "2018-ல் தமிழ்நாடு தனது CMCHIS திட்டத்தை PM-JAY உடன் இணைத்து 'CMCHIS-PMJAY' என நடைமுறைப்படுத்தியது; காப்பீட்டுத் தொகை ₹5 லட்சமாக உயர்த்தப்பட்டது. மத்திய அரசின் SECC ஒதுக்கீடு சுமார் 77 லட்சம் குடும்பங்களை மட்டுமே உள்ளடக்கிய நிலையில், தமிழ்நாடு அரசு தனது சொந்த நிதியிலிருந்து மீதமுள்ள செலவை ஏற்று சுமார் 1.44 கோடி குடும்பங்களுக்கு காப்பீட்டை வழங்குகிறது; மேலும் சிறப்பு நிதியம் மூலம் உறுப்பு மாற்று சிகிச்சைகளுக்கு ₹25 லட்சம் வரை வழங்குகிறது."
+      }
+    ],
+    "sec_abdm_digital_health_mission": [
+      {
+        "term_en": "Launch of ABDM & The 14-Digit ABHA Identifier",
+        "term_ta": "ABDM தொடக்கம் & 14 இலக்க ABHA சுகாதார அடையாள எண்",
+        "details_en": "Launched on 27th September 2021 by Prime Minister Narendra Modi, the Ayushman Bharat Digital Mission (ABDM) creates an open digital health ecosystem. Its foundational anchor is the Ayushman Bharat Health Account (ABHA)—a unique 14-digit random health identifier issued to citizens to securely link and share digital health records across diagnostic labs, hospitals, and pharmacies nationwide with explicit patient consent.",
+        "details_ta": "2021 செப்டம்பர் 27 அன்று பிரதமர் நரேந்திர மோடியால் தொடங்கப்பட்ட ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM), திறந்த டிஜிட்டல் சுகாதார சூழலை உருவாக்குகிறது. இதன் அடித்தளம் 'ஆயுஷ்மான் பாரத் ஹெல்த் அக்கவுண்ட்' (ABHA) ஆகும்; இது குடிமக்களுக்கு வழங்கப்படும் தனித்துவமான 14 இலக்க சுகாதார அடையாள எண்ணாகும். இதன் மூலம் நோயாளியின் ஒப்புதலுடன் மருத்துவ அறிக்கைகள், மருந்துச் சீட்டுகள் மற்றும் பரிசோதனை முடிவுகள் டிஜிட்டல் முறையில் நாடு முழுவதும் பகிரப்படுகின்றன."
+      },
+      {
+        "term_en": "Core ABDM Registries: HFR, HPR & Unified Health Interface (UHI)",
+        "term_ta": "முக்கிய ABDM பதிவேடுகள்: HFR, HPR & ஒருங்கிணைந்த சுகாதார இடைமுகம் (UHI)",
+        "details_en": "ABDM encompasses three key structural pillars: (1) Health Facility Registry (HFR) listing all certified public and private hospitals, clinics, and labs; (2) Healthcare Professionals Registry (HPR) verifying verified doctors, nurses, and paramedics across all systems of medicine; and (3) Unified Health Interface (UHI)—an open protocol akin to UPI that enables interoperable teleconsultation and appointment booking across diverse digital health apps.",
+        "details_ta": "ABDM மூன்று முக்கிய தூண்களைக் கொண்டுள்ளது: (1) சுகாதார வசதிகள் பதிவேடு (HFR): அங்கீகரிக்கப்பட்ட அனைத்து அரசு மற்றும் தனியார் மருத்துவமனைகள் மற்றும் ஆய்வகங்களின் பட்டியல்; (2) சுகாதார வல்லுநர்கள் பதிவேடு (HPR): சரிபார்க்கப்பட்ட மருத்துவர்கள் மற்றும் செவிலியர்களின் பட்டியல்; (3) ஒருங்கிணைந்த சுகாதார இடைமுகம் (UHI): UPI பணப் பரிமாற்றம் போல, பல்வேறு மருத்துவ செயலிகள் மூலம் மருத்துவர்களைத் தொடர்புகொள்ள உதவும் திறந்த டிஜிட்டல் கட்டமைப்பு."
+      }
+    ],
+    "sec_anti_fraud_and_quality_assurance": [
+      {
+        "term_en": "National Anti-Fraud Unit (NAFU) & SAFU Protocols",
+        "term_ta": "தேசிய மோசடி தடுப்பு பிரிவு (NAFU) & மாநில SAFU நெறிமுறைகள்",
+        "details_en": "To prevent phantom hospital admissions, fake billing, and unnecessary surgeries (e.g., unwarranted hysterectomies), NHA established the National Anti-Fraud Unit (NAFU) supported by State Anti-Fraud Units (SAFUs). Leveraging artificial intelligence, machine learning, and biometric mismatch algorithms, NAFU analyzes claims in real time, leading to the de-empanelment and penal blacklisting of fraudulent private hospitals.",
+        "details_ta": "போலி மருத்துவமனை சேர்க்கைகள், தேவையற்ற அறுவை சிகிச்சைகள் (எ.கா: தேவையின்றி கருப்பை அகற்றுதல்) மற்றும் போலி பில்களைத் தடுக்க, NHA தேசிய மோசடி தடுப்புப் பிரிவையும் (NAFU), மாநிலங்களில் SAFU பிரிவுகளையும் நிறுவியுள்ளது. செயற்கை நுண்ணறிவு (AI) மற்றும் இயந்திரக் கற்றல் அல்காரிதம்களைப் பயன்படுத்தி கோப்புகள் ஆய்வு செய்யப்பட்டு, முறைகேடு செய்யும் தனியார் மருத்துவமனைகள் மீது கடும் நடவடிக்கை எடுக்கப்பட்டு அங்கீகாரம் ரத்து செய்யப்படுகிறது."
+      },
+      {
+        "term_en": "Standard Treatment Guidelines (STGs) & Quality Audits",
+        "term_ta": "நிலையான சிகிச்சை வழிகாட்டுதல்கள் (STGs) & தரத் தணிக்கைகள்",
+        "details_en": "PM-JAY enforces clinical accountability through Standard Treatment Guidelines (STGs) drafted with the Indian Council of Medical Research (ICMR). Hospitals must comply with mandated treatment pathways, pre-authorization protocols, and hospital quality audits, while beneficiaries receive direct automated SMS alerts confirming treatments charged to their Ayushman account.",
+        "details_ta": "இந்திய மருத்துவ ஆராய்ச்சிக் குழுமத்துடன் (ICMR) இணைந்து உருவாக்கப்பட்ட நிலையான சிகிச்சை வழிகாட்டுதல்களை (STGs) அனைத்து மருத்துவமனைகளும் கட்டாயம் பின்பற்ற வேண்டும். அறுவை சிகிச்சைக்கு முன்கூட்டியே அனுமதி பெற வேண்டும்; மேலும் சிகிச்சை பெற்ற விவரங்கள் மற்றும் கணக்கில் பிடித்தம் செய்யப்பட்ட தொகை பற்றிய விவரங்கள் உடனுக்குடன் நோயாளியின் மொபைலுக்கு SMS மூலம் அனுப்பப்பட்டு வெளிப்படைத்தன்மை உறுதி செய்யப்படுகிறது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_ayushman_pmjay_vs_tamil_nadu_cmchis",
+        "title_en": "Ayushman Bharat PM-JAY vs Tamil Nadu CMCHIS",
+        "title_ta": "ஆயுஷ்மான் பாரத் PM-JAY vs தமிழ்நாடு CMCHIS ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Ayushman Bharat PM-JAY (Central Scheme)",
+          "Tamil Nadu CMCHIS (State Scheme)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "ஆயுஷ்மான் பாரத் PM-JAY (மத்திய அரசு)",
+          "தமிழ்நாடு முதலமைச்சரின் காப்பீட்டுத் திட்டம் (CMCHIS)"
+        ],
+        "rows_en": [
+          [
+            "Launch Year & Pioneer",
+            "September 2018 by Prime Minister Narendra Modi",
+            "July 2009 (Kalaignar Kaappeettu Thittam) by CM M. Karunanidhi"
+          ],
+          [
+            "Beneficiary Universe in TN",
+            "Restricted strictly to ~77 lakh families identified by SECC 2011",
+            "Expanded universally to ~1.44 crore families (annual income < ₹1.2 Lakh)"
+          ],
+          [
+            "State Financial Subsidy",
+            "Funded 60% Centre : 40% State for the 77 lakh SECC quota",
+            "State Government funds 100% of premium for the additional 67 lakh families"
+          ],
+          [
+            "Specialized Organ Transplants",
+            "Standard surgical packages capped within ₹5 lakh limit",
+            "Special State Corpus Fund covering heart, lung, liver, bone marrow up to ₹25 lakh"
+          ],
+          [
+            "Current Operational Branding",
+            "Co-branded across Tamil Nadu hospitals as 'CMCHIS-PMJAY'",
+            "Administered seamlessly by Tamil Nadu State Health Society (TNSHS)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொடங்கப்பட்ட ஆண்டு & முன்னோடி",
+            "செப்டம்பர் 2018, பிரதமர் நரேந்திர மோடியால் தொடங்கப்பட்டது",
+            "ஜூலை 2009 (கலைஞர் காப்பீட்டுத் திட்டம்), முதலமைச்சர் மு. கருணாநிதியால்"
+          ],
+          [
+            "தமிழ்நாட்டு பயனாளிகள் வரம்பு",
+            "SECC 2011 கணக்கெடுப்பின்படி தேர்வு செய்யப்பட்ட சுமார் 77 லட்சம் குடும்பங்கள்",
+            "மாநிலம் தழுவிய அளவில் சுமார் 1.44 கோடி குடும்பங்கள் (ஆண்டு வருமானம் < ₹1.2 லட்சம்)"
+          ],
+          [
+            "மாநில அரசின் கூடுதல் நிதி",
+            "மத்திய அரசு 77 லட்சம் குடும்பங்களுக்கு மட்டுமே 60% நிதி வழங்குகிறது",
+            "மீதமுள்ள 67 லட்சம் குடும்பங்களுக்கான முழு பிரீமியத்தையும் மாநில அரசே ஏற்கிறது"
+          ],
+          [
+            "உறுப்பு மாற்று அறுவை சிகிச்சைகள்",
+            "நிலையான தொகுப்புகளின் கீழ் ₹5 லட்சம் வரம்பிற்குள் மட்டுமே",
+            "மாநில சிறப்பு நிதியம் மூலம் கல்லீரல், இதயம், மஜ்ஜை மாற்று அறுவை சிகிச்சைக்கு ₹25 லட்சம் வரை"
+          ],
+          [
+            "தற்போதைய பெயரிடல் முறை",
+            "தமிழ்நாடு மருத்துவமனைகளில் 'CMCHIS-PMJAY' என்ற கூட்டுப் பெயரில் செயல்படுகிறது",
+            "தமிழ்நாடு மாநில சுகாதார சங்கம் (TNSHS) மூலம் சிறப்பாக நிர்வகிக்கப்படுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_commercial_health_insurance_vs_pmjay",
+        "title_en": "Commercial Private Health Insurance vs Ayushman Bharat PM-JAY Assurance",
+        "title_ta": "வணிக ரீதியான தனியார் காப்பீடு vs PM-JAY சுகாதார உத்தரவாதம் ஒப்பீடு",
+        "headers_en": [
+          "Insurance Dimension",
+          "Commercial Private Health Insurance",
+          "Ayushman Bharat PM-JAY"
+        ],
+        "headers_ta": [
+          "காப்பீட்டுப் பரிமாணம்",
+          "வணிக ரீதியான தனியார் காப்பீடு (Commercial)",
+          "ஆயுஷ்மான் பாரத் PM-JAY உத்தரவாதம்"
+        ],
+        "rows_en": [
+          [
+            "Premium Burden",
+            "Borne entirely by individual policyholder (steep annual premiums)",
+            "Completely FREE for beneficiaries; premium paid by Central & State Govts"
+          ],
+          [
+            "Pre-Existing Disease Waiting",
+            "Mandatory waiting periods of 2 to 4 years before claims are honored",
+            "Zero waiting period; full pre-existing disease coverage from Day 1"
+          ],
+          [
+            "Rejection of Claims",
+            "High claims rejection rates on technical grounds and policy fine-print",
+            "Regulated by Standard Treatment Guidelines with minimal dispute rejection"
+          ],
+          [
+            "Cashless Integrity",
+            "Often forces partial reimbursement; out-of-pocket room rent co-pays",
+            "Strictly 100% cashless and paperless with zero co-payment at empanelled units"
+          ],
+          [
+            "Inclusivity & Exclusions",
+            "Excludes elderly and high-risk patients or charges prohibitive premiums",
+            "Universal inclusion of bottom 40% poor and all senior citizens aged 70+"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிரீமியம் சுமை",
+            "தனிநபரே ஆண்டுதோறும் பெரும் தொகையை பிரீமியமாகச் செலுத்த வேண்டும்",
+            "பயனாளிகளுக்கு முற்றிலும் இலவசம்; மத்திய-மாநில அரசுகளே பிரீமியத்தை ஏற்கின்றன"
+          ],
+          [
+            "ஏற்கனவே உள்ள நோய்கள்",
+            "2 முதல் 4 ஆண்டுகள் வரை கடுமையான காத்திருப்புக் காலம் உண்டு",
+            "எந்த காத்திருப்புக் காலமும் இன்றி முதல் நாளிலிருந்தே முழு சிகிச்சை பாதுகாப்பு"
+          ],
+          [
+            "கோரிக்கைகள் நிராகரிப்பு",
+            "பல்வேறு தொழில்நுட்ப காரணங்களைக் கூறி கோரிக்கைகள் நிராகரிக்கப்படும் ஆபத்து",
+            "அரசின் நிலையான சிகிச்சை விதிகளால் கட்டுப்படுத்தப்பட்டு நிராகரிப்பு தடுக்கப்படுகிறது"
+          ],
+          [
+            "ரொக்கமில்லா சிகிச்சை",
+            "பெரும்பாலும் சில செலவுகளை நோயாளி கையிலிருந்து செலுத்தும் மறைமுக நிபந்தனைகள்",
+            "எந்தவித மறைமுக கட்டணமும் இன்றி 100% முழுமையான ரொக்கமில்லா சிகிச்சை"
+          ],
+          [
+            "முதியோர் மற்றும் விளிம்புநிலை",
+            "முதியோரை சேர்ப்பதில்லை அல்லது மிக அதிக பிரீமியம் வசூலிக்கப்படுகிறது",
+            "ஏழை 40% மக்கள் மற்றும் 70+ முதியவர்கள் அனைவரும் பாகுபாடின்றி சேர்க்கப்படுகின்றனர்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_abha_card_vs_ayushman_golden_card",
+        "title_en": "ABHA Card (Digital Health ID) vs Physical Ayushman Golden Card",
+        "title_ta": "ABHA அட்டை (டிஜிட்டல் அடையாள எண்) vs ஆயுஷ்மான் கோல்டன் அட்டை ஒப்பீடு",
+        "headers_en": [
+          "Attribute",
+          "Ayushman Bharat Health Account (ABHA)",
+          "Ayushman Bharat Golden Card (PM-JAY)"
+        ],
+        "headers_ta": [
+          "பண்புக்கூறு",
+          "ஆயுஷ்மான் பாரத் ஹெல்த் அக்கவுண்ட் (ABHA ID)",
+          "ஆயுஷ்மான் கோல்டன் அட்டை (PM-JAY Card)"
+        ],
+        "rows_en": [
+          [
+            "Identifier Structure",
+            "14-digit unique random alphanumeric digital health number",
+            "Family-linked PVC card with PM-JAY identification QR code"
+          ],
+          [
+            "Primary Function",
+            "Digital locker linking personal health records across all doctors and labs",
+            "Instrument proving eligibility to claim ₹5 lakh cashless hospitalization"
+          ],
+          [
+            "Universal Eligibility",
+            "Open to ALL Indian citizens regardless of income, caste, or wealth",
+            "Restricted to eligible SECC 2011 families, state converged lists, and 70+ seniors"
+          ],
+          [
+            "Governing Program",
+            "Administered under Ayushman Bharat Digital Mission (ABDM)",
+            "Administered under Pradhan Mantri Jan Arogya Yojana (PM-JAY)"
+          ],
+          [
+            "Consent Architecture",
+            "Strict electronic consent-driven sharing of health data by patient",
+            "Administrative authentication by Arogya Mitra at hospital helpdesk"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அடையாள எண் வடிவம்",
+            "14 இலக்க தனித்துவமான டிஜிட்டல் சுகாதார அடையாள எண்",
+            "PM-JAY குடும்ப குறியீட்டுடன் கூடிய பிளாஸ்டிக் (PVC) அடையாள அட்டை"
+          ],
+          [
+            "முதன்மைச் செயல்பாடு",
+            "மருத்துவ அறிக்கைகள் மற்றும் சோதனைகளை பாதுகாப்பாக சேமிக்கும் டிஜிட்டல் பெட்டகம்",
+            "மருத்துவமனையில் ₹5 லட்சம் வரை இலவச சிகிச்சை பெற தகுதியை நிரூபிக்கும் அட்டை"
+          ],
+          [
+            "யாருக்குக் கிடைக்கும்?",
+            "வருமான வரம்பின்றி அனைத்து இந்திய குடிமக்களும் சுயமாக உருவாக்கிக் கொள்ளலாம்",
+            "SECC 2011 பட்டியலில் உள்ள ஏழைக் குடும்பங்கள் மற்றும் 70+ முதியவர்களுக்கு மட்டுமே"
+          ],
+          [
+            "நிர்வகிக்கும் இயக்கம்",
+            "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) கீழ் செயல்படுகிறது",
+            "பிரதான் மந்திரி ஜன் ஆரோக்கிய யோஜனா (PM-JAY) கீழ் செயல்படுகிறது"
+          ],
+          [
+            "தரவு பகிர்வு முறை",
+            "நோயாளி தனது மொபைல் மூலம் அனுமதி (Consent) அளித்தால் மட்டுமே தகவல்கள் பகிரப்படும்",
+            "மருத்துவமனையில் உள்ள ஆரோக்கிய மித்ராவால் சரிபார்க்கப்பட்டு அனுமதி அளிக்கப்படும்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nha_vs_sha_governance",
+        "title_en": "National Health Authority (NHA) vs State Health Agencies (SHAs)",
+        "title_ta": "தேசிய சுகாதார ஆணையம் (NHA) vs மாநில சுகாதார முகமைகள் (SHAs) ஒப்பீடு",
+        "headers_en": [
+          "Governance Domain",
+          "National Health Authority (NHA)",
+          "State Health Agencies (SHAs)"
+        ],
+        "headers_ta": [
+          "ஆளுகைப் பகுதி",
+          "தேசிய சுகாதார ஆணையம் (NHA)",
+          "மாநில சுகாதார முகமைகள் (SHAs)"
+        ],
+        "rows_en": [
+          [
+            "Jurisdictional Level",
+            "Central apex body governing PM-JAY and ABDM for all of India",
+            "State-level operational implementation agency in respective State/UT"
+          ],
+          [
+            "Administrative Head",
+            "Union Minister of Health (Board Chair) & CEO of Secretary rank",
+            "State Health Minister, Principal Secretary (Health), & Mission Director"
+          ],
+          [
+            "Policy & IT Design",
+            "Designs national IT architecture (NREGAsoft equivalent, BIS, TMS), rates packages",
+            "Empanels local hospitals, conducts local district fraud audits, manages SHGs"
+          ],
+          [
+            "Portability Settlement",
+            "Settles inter-state financial transfers when patients travel across states",
+            "Receives portability claims and authorizes hospital reimbursements locally"
+          ],
+          [
+            "Anti-Fraud Operations",
+            "Maintains National Anti-Fraud Unit (NAFU) running machine learning models",
+            "Maintains State Anti-Fraud Unit (SAFU) conducting physical hospital raids"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அதிகார வரம்பு",
+            "இந்தியா முழுமைக்குமான PM-JAY மற்றும் ABDM-ன் மத்திய தலைமை அமைப்பு",
+            "அந்தந்த மாநிலம் மற்றும் யூனியன் பிரதேசத்தில் திட்டத்தை செயல்படுத்தும் அமைப்பு"
+          ],
+          [
+            "நிர்வாகத் தலைமை",
+            "மத்திய சுகாதார அமைச்சர் (ஆளுகை தலைவர்) & இந்திய அரசு செயலாளர் அந்தஸ்து CEO",
+            "மாநில சுகாதார அமைச்சர், முதன்மைச் செயலாளர் மற்றும் திட்ட இயக்குநர்"
+          ],
+          [
+            "கொள்கை & மென்பொருள்",
+            "தேசிய மென்பொருள் கட்டமைப்பு, மருத்துவ தொகுப்பு விலைகளை நிர்ணயித்தல்",
+            "உள்ளூர் மருத்துவமனைகளை அங்கீகரித்தல், மாவட்ட அளவில் கண்காணிப்பு"
+          ],
+          [
+            "போர்ட்டபிலிட்டி தீர்வு",
+            "நோயாளிகள் வெளிமாநிலங்களில் சிகிச்சை பெறும்போது மாநிலங்களுக்கு இடையே நிதிப் பகிர்வு",
+            "உள்ளூர் மருத்துவமனைகளுக்கு உரிய சிகிச்சைக் கட்டணங்களை விடுவித்தல்"
+          ],
+          [
+            "மோசடி தடுப்பு நடவடிக்கை",
+            "செயற்கை நுண்ணறிவு மூலம் தேசிய மோசடி தடுப்புப் பிரிவை (NAFU) இயக்குதல்",
+            "மாநில மோசடி தடுப்புப் பிரிவு (SAFU) மூலம் மருத்துவமனைகளில் நேரடி சோதனைகள்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Ayushman Bharat Part 3: Impacts, TN CMCHIS Model & Digital Health",
+        "short_label": "Impacts & TN Model",
+        "children": [
+          {
+            "title": "Catastrophic OOPE Reduction",
+            "short_label": "OOPE Reduction",
+            "children": [
+              {
+                "title": "OOPE declined from 64.2% (2013-14) to 47.1% (2019-20)",
+                "short_label": "OOPE Drop"
+              },
+              {
+                "title": "Government Health Expenditure rose to 41.4%",
+                "short_label": "Govt Share"
+              },
+              {
+                "title": "Halted annual medical impoverishment of 5-6 crore people",
+                "short_label": "Anti-Poverty"
+              }
+            ]
+          },
+          {
+            "title": "Tamil Nadu CMCHIS Model",
+            "short_label": "TN CMCHIS",
+            "children": [
+              {
+                "title": "Launched July 2009 (Kalaignar Kaappeettu Thittam)",
+                "short_label": "2009 Pioneer"
+              },
+              {
+                "title": "CMCHIS-PMJAY co-branded expansion to 1.44 Crore families",
+                "short_label": "1.44 Cr Homes"
+              },
+              {
+                "title": "State Corpus Fund covers organ transplants up to ₹25 Lakh",
+                "short_label": "Transplants"
+              }
+            ]
+          },
+          {
+            "title": "Ayushman Bharat Digital Mission",
+            "short_label": "ABDM Digital",
+            "children": [
+              {
+                "title": "Launched Sept 2021 by Prime Minister Modi",
+                "short_label": "ABDM Launch"
+              },
+              {
+                "title": "14-digit ABHA ID links health records nationwide",
+                "short_label": "ABHA 14-Digit"
+              },
+              {
+                "title": "HFR, HPR, and Unified Health Interface (UHI)",
+                "short_label": "Registries"
+              }
+            ]
+          },
+          {
+            "title": "Anti-Fraud & Quality Systems",
+            "short_label": "Anti-Fraud",
+            "children": [
+              {
+                "title": "National Anti-Fraud Unit (NAFU) uses AI/ML",
+                "short_label": "NAFU AI"
+              },
+              {
+                "title": "ICMR Standard Treatment Guidelines (STGs)",
+                "short_label": "ICMR STGs"
+              },
+              {
+                "title": "Strict hospital de-empanelment for false claims",
+                "short_label": "De-empanelment"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "CMCHIS Origin Date Trap: Tamil Nadu Launched Scheme in 2009, A Decade BEFORE PM-JAY",
+        "points": {
+          "en": [
+            "TRAP: Assuming Tamil Nadu created its comprehensive health insurance scheme only after the Central Government launched PM-JAY in 2018.",
+            "CORRECT FACT: Tamil Nadu launched the scheme nearly a decade earlier on 23RD JULY 2009 as 'Kalaignar Kaappeettu Thittam' under Chief Minister M. Karunanidhi, later renamed CMCHIS in 2012 and converged with PM-JAY in 2018.",
+            "WHY CANDIDATES FAIL: Assuming all large-scale state social health assurance schemes originated from central initiatives."
+          ],
+          "ta": [
+            "பொறி: மத்திய அரசு 2018-ல் PM-JAY திட்டத்தைத் தொடங்கிய பின்னரே தமிழ்நாடு தனது மருத்துவக் காப்பீட்டுத் திட்டத்தை உருவாக்கியது என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாடு இத்திட்டத்தை 10 ஆண்டுகளுக்கு முன்பே '2009 ஜூலை 23' அன்று 'கலைஞர் காப்பீட்டுத் திட்டம்' என்ற பெயரில் தொடங்கியது; 2012-ல் CMCHIS என மாற்றப்பட்டு 2018-ல் PM-JAY உடன் இணைக்கப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து மாநில சுகாதாரத் திட்டங்களும் மத்திய திட்டத்திற்கு பின்னரே தொடங்கப்பட்டன என தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "CMCHIS Coverage Number Trap: Tamil Nadu Covers ~1.44 Crore Families, NOT Just the 77 Lakh SECC Quota",
+        "points": {
+          "en": [
+            "TRAP: Believing Tamil Nadu provides insurance coverage only to the ~77 lakh families identified under the Central SECC 2011 list.",
+            "CORRECT FACT: Tamil Nadu covers approximately 1.44 CRORE FAMILIES under CMCHIS. The Central Government subsidizes ~77 lakh families under PM-JAY, while the Government of Tamil Nadu funds the premium for the remaining ~67 lakh families entirely from the State Exchequer.",
+            "WHY CANDIDATES FAIL: Confusing central subsidized beneficiary numbers with the actual universal coverage provided by the state."
+          ],
+          "ta": [
+            "பொறி: மத்திய அரசின் SECC 2011 பட்டியலில் உள்ள 77 லட்சம் குடும்பங்களுக்கு மட்டுமே தமிழ்நாட்டில் காப்பீடு வழங்கப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: தமிழ்நாடு CMCHIS திட்டத்தின் கீழ் சுமார் '1.44 கோடி குடும்பங்களுக்கு' காப்பீடு வழங்குகிறது! மத்திய அரசு 77 லட்சம் குடும்பங்களுக்கு மட்டுமே நிதி தருகிறது; மீதமுள்ள 67 லட்சம் குடும்பங்களுக்கான முழுச் செலவையும் தமிழ்நாடு அரசே ஏற்கிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய அரசின் 77 லட்சம் ஒதுக்கீட்டு வரம்பையும் மாநிலத்தின் 1.44 கோடி உண்மையான பயனாளிகளையும் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "ABHA Digital Health ID Digit Length Trap: Exactly 14 DIGITS, NOT 12 or 16",
+        "points": {
+          "en": [
+            "TRAP: Marking 12 digits (like Aadhaar) or 10 digits (like PAN) as the length of the ABHA digital health identifier.",
+            "CORRECT FACT: The Ayushman Bharat Health Account (ABHA) number is strictly a 14-DIGIT random number (e.g., 14-1234-5678-9012) issued by the National Health Authority under ABDM.",
+            "WHY CANDIDATES FAIL: Conflating the 12-digit Aadhaar number with the 14-digit ABHA identifier."
+          ],
+          "ta": [
+            "பொறி: ABHA டிஜிட்டல் சுகாதார அடையாள அட்டை 12 இலக்கங்கள் (ஆதார் போல) அல்லது 10 இலக்கங்கள் (PAN போல) கொண்டது எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: ஆயுஷ்மான் பாரத் ஹெல்த் அக்கவுண்ட் (ABHA) அடையாள எண் துல்லியமாக '14 இலக்கங்களைக்' (14 Digits) கொண்ட தனித்துவமான எண்ணாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 12 இலக்க ஆதார் எண்ணையும் 14 இலக்க ABHA எண்ணையும் ஒன்றாகக் குழப்பிக் கொள்வது."
+          ]
+        }
+      },
+      {
+        "title": "Cashless vs Reimbursement Trap: Strictly CASHLESS at Point of Care, No Direct Cash Reclaim",
+        "points": {
+          "en": [
+            "TRAP: Assuming an Ayushman Bharat or CMCHIS patient pays hospital bills in cash and submits medical receipts to the government for reimbursement.",
+            "CORRECT FACT: PM-JAY and CMCHIS are strictly CASHLESS AND PAPERLESS at the point of care. The hospital is paid directly by the State Health Agency or insurer; the patient pays zero cash at the hospital counter.",
+            "WHY CANDIDATES FAIL: Conflating commercial indemnity insurance reimbursement with public social health assurance."
+          ],
+          "ta": [
+            "பொறி: நோயாளி மருத்துவமனையில் பணத்தை கட்டிவிட்டு, பின்னர் ரசீதுகளை அரசிடம் கொடுத்து பணத்தை திரும்பப் பெற்றுக் கொள்ளலாம் (Reimbursement) என நினைப்பது.",
+            "சரியான உண்மை: PM-JAY மற்றும் CMCHIS திட்டங்கள் மருத்துவமனையில் 'முற்றிலும் ரொக்கமில்லா மற்றும் காகிதமில்லா' (Cashless & Paperless) முறையில் செயல்படுகின்றன; நோயாளி ஒரு பைசா கூட செலுத்தத் தேவையில்லை; அரசு மருத்துவமனைக்கே நேரடியாக நிதியை வழங்குகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தனியார் மருத்துவக் காப்பீட்டின் பணம் திரும்பப் பெறும் முறையையும் இந்த இலவச திட்டத்தையும் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Organ Transplant Coverage Trap: Tamil Nadu CMCHIS Corpus Covers Up to ₹25 Lakh",
+        "points": {
+          "en": [
+            "TRAP: Assuming high-cost heart, lung, and liver transplants are capped strictly at ₹5 lakh under Tamil Nadu's scheme.",
+            "CORRECT FACT: While the standard PM-JAY cap is ₹5 lakh, Tamil Nadu established a dedicated State Corpus Fund within CMCHIS covering specialized organ transplants (heart, lung, liver, and bone marrow) up to ₹20-25 lakh.",
+            "WHY CANDIDATES FAIL: Missing Tamil Nadu's state-specific corpus fund that provides enhanced coverage for critical life-saving transplants."
+          ],
+          "ta": [
+            "பொறி: தமிழ்நாட்டின் காப்பீட்டுத் திட்டத்திலும் உறுப்பு மாற்று அறுவை சிகிச்சைகளுக்கு ₹5 லட்சம் மட்டுமே கிடைக்கும் என நினைப்பது.",
+            "சரியான உண்மை: வழக்கமான PM-JAY வரம்பு ₹5 லட்சம் என்றாலும், தமிழ்நாடு CMCHIS திட்டத்தில் பிரத்யேக 'மாநில சிறப்பு நிதியம்' (Corpus Fund) மூலம் கல்லீரல், இதயம், நுரையீரல் மாற்று சிகிச்சைகளுக்கு ₹20 முதல் 25 லட்சம் வரை வழங்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தமிழ்நாட்டின் சிறப்பு நிதியத்தின் ₹25 லட்சம் வரம்பை அறியாமல் ₹5 லட்சம் என்ற பொது வரம்பை நினைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "ABDM Universal Coverage Trap: Open to ALL Citizens, NOT Restricted to Poor",
+        "points": {
+          "en": [
+            "TRAP: Believing that an ABHA health ID can be generated only by poor BPL citizens enrolled in PM-JAY.",
+            "CORRECT FACT: While PM-JAY insurance is means-tested (bottom 40% and 70+ seniors), the Ayushman Bharat Digital Mission (ABDM) and ABHA IDs are UNIVERSAL and can be created voluntarily by ANY citizen of India regardless of wealth or income.",
+            "WHY CANDIDATES FAIL: Conflating the targeted insurance entitlement (PM-JAY) with the universal digital infrastructure (ABDM)."
+          ],
+          "ta": [
+            "பொறி: ABHA டிஜிட்டல் சுகாதார அடையாள அட்டையை PM-JAY திட்டத்தில் உள்ள ஏழை மக்கள் மட்டுமே பெற முடியும் என நினைப்பது.",
+            "சரியான உண்மை: PM-JAY காப்பீடு ஏழை 40% மக்களுக்கானது என்றாலும், ABDM இயக்கம் மற்றும் 14 இலக்க ABHA அட்டை என்பது 'அனைத்து இந்திய குடிமக்களுக்குமானது' (Universal); யார் வேண்டுமானாலும் இலவசமாக சுயமாக உருவாக்கிக் கொள்ளலாம்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: குறிப்பிட்ட ஏழைகளுக்கான காப்பீட்டுத் திட்டத்தையும், அனைவருக்கும் பொதுவான டிஜிட்டல் தளத்தையும் குழப்பிக் கொள்வது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Out-of-Pocket Expenditure (OOPE) in India declined from 64.2% of Total Health Expenditure in 2013-14 to 47.1% in 2019-20.",
+        "Government Health Expenditure (GHE) rose from 28.6% of Total Health Expenditure in 2013-14 to 41.4% in 2019-20.",
+        "Tamil Nadu launched the Chief Minister's Health Insurance Scheme on 23rd July 2009 (Kalaignar Kaappeettu Thittam) under Chief Minister M. Karunanidhi.",
+        "Tamil Nadu converged CMCHIS with PM-JAY in 2018 under the co-branded name 'CMCHIS-PMJAY', providing ₹5 lakh annual coverage.",
+        "While the Central SECC quota covers ~77 lakh families in Tamil Nadu, the State Government funds the premium to cover ~1.44 crore families.",
+        "Tamil Nadu created a dedicated State Corpus Fund covering specialized organ transplants (heart, lung, liver, bone marrow) up to ₹25 lakh.",
+        "The Ayushman Bharat Digital Mission (ABDM) was launched on 27th September 2021 by Prime Minister Narendra Modi.",
+        "The Ayushman Bharat Health Account (ABHA) is a unique 14-digit digital health identification number.",
+        "ABDM features three foundational registries: Health Facility Registry (HFR), Healthcare Professionals Registry (HPR), and Unified Health Interface (UHI).",
+        "The National Anti-Fraud Unit (NAFU) uses AI, machine learning, and biometric algorithms to detect and penalize fraudulent hospital claims.",
+        "Standard Treatment Guidelines (STGs) drafted with ICMR govern the clinical pathways and pre-authorizations in PM-JAY.",
+        "PM-JAY and CMCHIS are strictly cashless and paperless at the point of care for all empanelled secondary and tertiary treatments."
+      ],
+      "ta": [
+        "இந்தியாவில் மக்களின் சொந்த மருத்துவச் செலவு (OOPE) 2013-14-ல் 64.2%-லிருந்து 2019-20-ல் 47.1%-ஆகக் குறைந்துள்ளது.",
+        "அரசின் சுகாதாரச் செலவு (GHE) 2013-14-ல் 28.6%-லிருந்து 2019-20-ல் 41.4%-ஆக உயர்ந்துள்ளது.",
+        "தமிழ்நாடு முதலமைச்சரின் காப்பீட்டுத் திட்டம் 2009 ஜூலை 23 அன்று (கலைஞர் காப்பீட்டுத் திட்டம்) முதலமைச்சர் மு. கருணாநிதியால் தொடங்கப்பட்டது.",
+        "2018-ல் தமிழ்நாடு தனது CMCHIS திட்டத்தை PM-JAY உடன் இணைத்து 'CMCHIS-PMJAY' என்ற பெயரில் ₹5 லட்சம் காப்பீடாக உயர்த்தியது.",
+        "மத்திய அரசின் SECC ஒதுக்கீடு 77 லட்சம் குடும்பங்களை மட்டுமே உள்ளடக்கிய நிலையில், தமிழ்நாடு அரசு தனது நிதியில் 1.44 கோடி குடும்பங்களுக்கு காப்பீடு தருகிறது.",
+        "தமிழ்நாடு சிறப்பு நிதியம் மூலம் உறுப்பு மாற்று அறுவை சிகிச்சைகளுக்கு (இதயம், நுரையீரல், கல்லீரல்) ₹25 லட்சம் வரை நிதி வழங்குகிறது.",
+        "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) 2021 செப்டம்பர் 27 அன்று பிரதமர் நரேந்திர மோடியால் தொடங்கப்பட்டது.",
+        "ஆயுஷ்மான் பாரத் ஹெல்த் அக்கவுண்ட் (ABHA) என்பது தனித்துவமான 14 இலக்க டிஜிட்டல் சுகாதார அடையாள எண்ணாகும்.",
+        "ABDM இயக்கம் மருத்துவ வசதிகள் பதிவேடு (HFR), சுகாதார வல்லுநர்கள் பதிவேடு (HPR) மற்றும் UHI இடைமுகத்தைக் கொண்டுள்ளது.",
+        "தேசிய மோசடி தடுப்புப் பிரிவு (NAFU) செயற்கை நுண்ணறிவு (AI) மூலம் போலி பில்களைக் கண்டறிந்து மருத்துவமனைகள் மீது நடவடிக்கை எடுக்கிறது.",
+        "ICMR வழிகாட்டுதலின் கீழ் உருவாக்கப்பட்ட நிலையான சிகிச்சை விதிகள் (STGs) PM-JAY சிகிச்சைகளைக் கட்டுப்படுத்துகின்றன.",
+        "PM-JAY மற்றும் CMCHIS இரண்டும் அங்கீகரிக்கப்பட்ட மருத்துவமனைகளில் 100% ரொக்கமில்லா மற்றும் காகிதமில்லா சிகிச்சையை வழங்குகின்றன."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Out-of-Pocket Expenditure (OOPE) plummeted from 64.2% (2013-14) to 47.1% (2019-20), curbing medical impoverishment.",
+        "Government Health Expenditure (GHE) expanded from 28.6% to 41.4% of Total Health Expenditure in India.",
+        "Tamil Nadu pioneered state health insurance on 23rd July 2009 (Kalaignar Kaappeettu Thittam) under CM M. Karunanidhi.",
+        "Converged as CMCHIS-PMJAY in 2018; covers ~1.44 crore families in TN (well beyond the 77L Central SECC quota).",
+        "Tamil Nadu State Corpus Fund covers high-end organ transplants (heart, liver, bone marrow) up to ₹25 Lakh.",
+        "Ayushman Bharat Digital Mission (ABDM) launched 27th September 2021 to build India's digital health infrastructure.",
+        "ABHA is a 14-digit unique random health ID; enables secure digital health record sharing with patient consent.",
+        "ABDM core registries: Health Facility Registry (HFR), Healthcare Professionals Registry (HPR), & UHI open protocol.",
+        "National Anti-Fraud Unit (NAFU) deploys AI and machine learning to detect phantom admissions and blacklist fraud hospitals.",
+        "Standard Treatment Guidelines (STGs) with ICMR ensure evidence-based care and prevent unnecessary surgical procedures."
+      ],
+      "ta": [
+        "சொந்த மருத்துவச் செலவு (OOPE) 64.2%-லிருந்து (2013-14) 47.1%-ஆகக் (2019-20) குறைந்து ஏழைகளை வறுமையிலிருந்து மீட்டது.",
+        "அரசின் சுகாதாரச் செலவு பங்கு (GHE) 28.6%-லிருந்து 41.4%-ஆக கணிசமாக உயர்ந்துள்ளது.",
+        "2009 ஜூலை 23 அன்று கலைஞர் காப்பீட்டுத் திட்டம் மூலம் தமிழ்நாடு இந்தியாவிற்கே மருத்துவக் காப்பீட்டில் முன்னோடியானது.",
+        "2018-ல் CMCHIS-PMJAY என இணைக்கப்பட்டு, தமிழ்நாட்டில் 1.44 கோடி குடும்பங்களுக்கு விரிவுபடுத்தப்பட்டது (மத்திய ஒதுக்கீடு 77L மட்டுமே).",
+        "மாநில சிறப்பு நிதியம் மூலம் உறுப்பு மாற்று சிகிச்சைகளுக்கு (இதயம், கல்லீரல், மஜ்ஜை) ₹25 லட்சம் வரை காப்பீடு.",
+        "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) 2021 செப்டம்பர் 27 அன்று தொடங்கப்பட்டது.",
+        "ABHA என்பது 14 இலக்க டிஜிட்டல் சுகாதார அடையாள எண்; நோயாளியின் அனுமதியுடன் மருத்துவ அறிக்கைகளைப் பகிர உதவுகிறது.",
+        "ABDM அமைப்புகள்: சுகாதார வசதிகள் பதிவேடு (HFR), வல்லுநர்கள் பதிவேடு (HPR) மற்றும் UHI இடைமுகம்.",
+        "தேசிய மோசடி தடுப்பு பிரிவு (NAFU) AI தொழில்நுட்பம் மூலம் போலி சிகிச்சைகளைக் கண்டறிந்து மருத்துவமனைகளை நீக்குகிறது.",
+        "ICMR-ன் நிலையான சிகிச்சை வழிகாட்டுதல்கள் (STGs) தேவையற்ற அறுவை சிகிச்சைகளைத் தடுத்து தரமான சிகிச்சையை உறுதி செய்கின்றன."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_ab_301",
+        "front_en": "To what percentage did Out-of-Pocket Expenditure (OOPE) decline in India according to National Health Accounts 2019-20?",
+        "front_ta": "தேசிய சுகாதார கணக்கு 2019-20 படி இந்தியாவில் சொந்த மருத்துவச் செலவு (OOPE) எத்தனை சதவீதமாகக் குறைந்துள்ளது?",
+        "back_en": "Declined from 64.2% in 2013-14 to 47.1% in 2019-20.",
+        "back_ta": "2013-14-ல் இருந்த 64.2%-லிருந்து 47.1%-ஆகக் குறைந்துள்ளது."
+      },
+      {
+        "id": "rc_ab_302",
+        "front_en": "When and under what name was Tamil Nadu's pioneering health insurance scheme first launched?",
+        "front_ta": "தமிழ்நாட்டின் முன்னோடி மருத்துவக் காப்பீட்டுத் திட்டம் முதன்முதலில் எப்போது, என்ன பெயரில் தொடங்கப்பட்டது?",
+        "back_en": "23rd July 2009 as 'Kalaignar Kaappeettu Thittam' by Chief Minister Dr. M. Karunanidhi.",
+        "back_ta": "2009 ஜூலை 23 அன்று முதலமைச்சர் மு. கருணாநிதியால் 'கலைஞர் காப்பீட்டுத் திட்டம்' என்ற பெயரில் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_ab_303",
+        "front_en": "How many families are covered under Tamil Nadu's CMCHIS compared to the Central PM-JAY SECC quota?",
+        "front_ta": "மத்திய அரசின் PM-JAY ஒதுக்கீட்டுடன் ஒப்பிடும்போது தமிழ்நாட்டின் CMCHIS திட்டத்தில் எத்தனை குடும்பங்கள் பயன்பெறுகின்றன?",
+        "back_en": "Tamil Nadu covers ~1.44 crore families, whereas the Central SECC quota covers only ~77 lakh families (State funds the gap).",
+        "back_ta": "தமிழ்நாடு சுமார் 1.44 கோடி குடும்பங்களை உள்ளடக்கியுள்ளது; மத்திய அரசின் ஒதுக்கீடு 77 லட்சம் மட்டுமே (மீதமுள்ள செலவை மாநில அரசே ஏற்கிறது)."
+      },
+      {
+        "id": "rc_ab_304",
+        "front_en": "What is the enhanced coverage limit provided under Tamil Nadu's Special State Corpus Fund for organ transplants?",
+        "front_ta": "தமிழ்நாட்டின் சிறப்பு நிதியம் மூலம் உறுப்பு மாற்று அறுவை சிகிச்சைகளுக்கு வழங்கப்படும் கூடுதல் காப்பீட்டு வரம்பு என்ன?",
+        "back_en": "Up to ₹20-25 lakh for specialized heart, lung, liver, and bone marrow transplants.",
+        "back_ta": "இதயம், நுரையீரல், கல்லீரல், மஜ்ஜை மாற்று அறுவை சிகிச்சைகளுக்கு ₹20 முதல் 25 லட்சம் வரை."
+      },
+      {
+        "id": "rc_ab_305",
+        "front_en": "When was the Ayushman Bharat Digital Mission (ABDM) officially launched across India?",
+        "front_ta": "ஆயுஷ்மான் பாரத் டிஜிட்டல் இயக்கம் (ABDM) இந்தியா முழுவதும் எப்போது முறைப்படி தொடங்கப்பட்டது?",
+        "back_en": "27th September 2021 by Prime Minister Narendra Modi.",
+        "back_ta": "2021 செப்டம்பர் 27 அன்று பிரதமர் நரேந்திர மோடியால் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_ab_306",
+        "front_en": "How many digits comprise an Ayushman Bharat Health Account (ABHA) identification number?",
+        "front_ta": "ஆயுஷ்மான் பாரத் ஹெல்த் அக்கவுண்ட் (ABHA) அடையாள அட்டை எத்தனை இலக்கங்களைக் கொண்டது?",
+        "back_en": "Strictly 14 digits (randomly generated unique digital health number).",
+        "back_ta": "துல்லியமாக 14 இலக்கங்கள் (14 Digits)."
+      },
+      {
+        "id": "rc_ab_307",
+        "front_en": "What is the Unified Health Interface (UHI) developed under ABDM?",
+        "front_ta": "ABDM-ன் கீழ் உருவாக்கப்பட்ட ஒருங்கிணைந்த சுகாதார இடைமுகம் (UHI) என்றால் என்ன?",
+        "back_en": "An open protocol (analogous to UPI in digital payments) enabling interoperable telemedicine, teleconsultations, and lab booking across apps.",
+        "back_ta": "UPI பணப் பரிவர்த்தனை போல, எந்தவொரு மொபைல் செயலி மூலமும் மருத்துவர்களை அணுக உதவும் திறந்த டிஜிட்டல் கட்டமைப்பு."
+      },
+      {
+        "id": "rc_ab_308",
+        "front_en": "What is the role of the National Anti-Fraud Unit (NAFU) under the National Health Authority?",
+        "front_ta": "தேசிய சுகாதார ஆணையத்தின் கீழ் உள்ள தேசிய மோசடி தடுப்பு பிரிவின் (NAFU) பணி என்ன?",
+        "back_en": "Uses artificial intelligence, machine learning, and data analytics to detect fraudulent claims, fake admissions, and blacklist hospitals.",
+        "back_ta": "செயற்கை நுண்ணறிவு (AI) மூலம் போலி பில்கள் மற்றும் தேவையற்ற சிகிச்சைகளைக் கண்டறிந்து மோசடி மருத்துவமனைகளை நீக்குதல்."
+      },
+      {
+        "id": "rc_ab_309",
+        "front_en": "Which premier medical research body drafts the Standard Treatment Guidelines (STGs) used in PM-JAY?",
+        "front_ta": "PM-JAY திட்டத்தில் பயன்படுத்தப்படும் நிலையான சிகிச்சை வழிகாட்டுதல்களை (STGs) தயாரிக்கும் முதன்மை மருத்துவ ஆராய்ச்சி அமைப்பு எது?",
+        "back_en": "Indian Council of Medical Research (ICMR).",
+        "back_ta": "இந்திய மருத்துவ ஆராய்ச்சிக் குழுமம் (ICMR - Indian Council of Medical Research)."
+      },
+      {
+        "id": "rc_ab_310",
+        "front_en": "Under what co-branded nomenclature is the converged scheme implemented in Tamil Nadu?",
+        "front_ta": "தமிழ்நாட்டில் மத்திய-மாநில திட்டங்களின் ஒருங்கிணைப்பு என்ன கூட்டுப் பெயரில் செயல்படுத்தப்படுகிறது?",
+        "back_en": "'Chief Minister's Comprehensive Health Insurance Scheme - Pradhan Mantri Jan Arogya Yojana' (CMCHIS-PMJAY).",
+        "back_ta": "'முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம் - பிரதான் மந்திரி ஜன் ஆரோக்கிய யோஜனா' (CMCHIS-PMJAY)."
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 import streamlit as st
-from ui.notes.layout import section_anchor
+from ui.notes.layout import bilingual_panels, section_anchor
 
 
 def render_introduction(intro_data):
@@ -16,12 +16,9 @@ def render_introduction(intro_data):
     if isinstance(intro_data, dict):
         en = intro_data.get("en")
         ta = intro_data.get("ta")
-        if en or ta:
-            tab1, tab2 = st.tabs(["🇬🇧 English", "🇮🇳 தமிழ்"])
-            with tab1:
-                st.write(en if en else "")
-            with tab2:
-                st.write(ta if ta else "")
+        for language, panel in bilingual_panels(en, ta):
+            with panel:
+                st.write(en if language == "en" else ta)
     elif isinstance(intro_data, list):
         for item in intro_data:
             if isinstance(item, dict):
@@ -29,13 +26,12 @@ def render_introduction(intro_data):
                 st.subheader(f"📌 {title}")
                 points = item.get("points", {})
                 if isinstance(points, dict):
-                    tab1, tab2 = st.tabs(["EN", "TA"])
-                    with tab1:
-                        for p in points.get("en", []):
-                            st.write(f"• {p}")
-                    with tab2:
-                        for p in points.get("ta", []):
-                            st.write(f"• {p}")
+                    en_points = points.get("en", [])
+                    ta_points = points.get("ta", [])
+                    for language, panel in bilingual_panels(en_points, ta_points, "EN", "TA"):
+                        with panel:
+                            for point in en_points if language == "en" else ta_points:
+                                st.write(f"• {point}")
             elif isinstance(item, str):
                 st.write(f"• {item}")
     elif isinstance(intro_data, str):

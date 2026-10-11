@@ -1,0 +1,224 @@
+{
+  "topic": "alpha_numeric_reasoning_part_1",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "title_en": "Alpha-Numeric Reasoning Part 1 — Alphabet Positions, Shifts, Letter Series & Word Ordering",
+  "title_ta": "எழுத்து-எண் தர்க்கம் பகுதி 1 — ஆங்கில எழுத்து நிலைகள், தொடர்கள் & அகரவரிசை அமைத்தல்",
+
+  "definition": {
+    "en": "Alpha-numeric reasoning evaluates pattern recognition using English alphabet positional values (A=1 to Z=26), reverse positional values (Z=1 to A=26), letter shift sequences, and dictionary ordering.",
+    "ta": "எழுத்து-எண் தர்க்கம் என்பது ஆங்கில எழுத்துகளின் இடமதிப்புகள் (A=1 முதல் Z=26 வரை), தலைகீழ் இடமதிப்புகள் (Z=1 முதல் A=26 வரை), எழுத்து நகர்வுகள் மற்றும் அகரவரிசை அமைப்புகளைக் கொண்டு விடையளிக்கும் திறனாகும்."
+  },
+
+  "exam_importance": {
+    "en": "Alphabet position values and shift series form a core component of TNPSC Group 1, Group 2/2A, and Group 4 exams. Memorizing positional shortcuts saves time in coding-decoding and letter series questions.",
+    "ta": "எழுத்து நிலைகள் மற்றும் தொடர் வினாக்கள் TNPSC தேர்வுகளில் அடிக்கடி கேட்கப்படும் பகுதியாகும். இடமதிப்பு நினைவூட்டும் குறுக்குவழிகள் நேரத்தை வெகுவாக மிச்சப்படுத்தும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Rule 1: EJOTY Positional Shortcut (5-ன் மடங்குகள் இடமதிப்பு)",
+      "formula": "\\text{E} = 5, \\quad \\text{J} = 10, \\quad \\text{O} = 15, \\quad \\text{T} = 20, \\quad \\text{Y} = 25",
+      "explanation": {
+        "en": "Memorize 'EJOTY' to quickly find any letter's forward position in the 26-letter English alphabet.",
+        "ta": "'EJOTY' என்ற வார்த்தையை நினைவில் கொண்டால் எந்தவொரு ஆங்கில எழுத்தின் இடமதிப்பையும் 5-ன் மடங்குகளைக் கொண்டு நொடியில் கண்டுபிடிக்கலாம்."
+      }
+    },
+    {
+      "title": "Rule 2: Reverse Position Formula (தலைகீழ் இடமதிப்புச் சூத்திரம்)",
+      "formula": "\\text{Reverse Position} = 27 - \\text{Forward Position}",
+      "explanation": {
+        "en": "Sum of forward and reverse position of any letter is always 27. (e.g. A: 1 + 26 = 27, Z: 26 + 1 = 27).",
+        "ta": "எந்தவொரு எழுத்தின் நேர் மற்றும் தலைகீழ் இடமதிப்புகளின் கூடுதல் எப்போதும் 27 ஆகும். (எ.கா: A: 1 + 26 = 27)."
+      }
+    },
+    {
+      "title": "Rule 3: Opposite Letter Pairs (எதிர் எழுத்து ஜோடிகள்)",
+      "formula": "\\text{Pair } (X, Y) \\implies \\text{Pos}(X) + \\text{Pos}(Y) = 27",
+      "explanation": {
+        "en": "Opposite letter pairs from front and back: A-Z, B-Y, C-X, D-W, E-V, F-U, G-T, H-S, I-R, J-Q, K-P, L-O, M-N.",
+        "ta": "முன்னிருந்து பின்னிருந்தான எதிர் ஜோடிகள்: A-Z, B-Y, C-X, D-W, E-V, F-U, G-T, H-S, I-R, J-Q, K-P, L-O, M-N."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Alphabet Positional Reference Table (எழுத்து இடமதிப்பு அட்டவணை)",
+      "points": {
+        "en": [
+          "Forward: A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10, K=11, L=12, M=13, N=14, O=15, P=16, Q=17, R=18, S=19, T=20, U=21, V=22, W=23, X=24, Y=25, Z=26.",
+          "Reverse: Z=1, Y=2, X=3, W=4, V=5, U=6, T=7, S=8, R=9, Q=10, P=11, O=12, N=13, M=14, L=15, K=16, J=17, I=18, H=19, G=20, F=21, E=22, D=23, C=24, B=25, A=26.",
+          "Alphabet Wrap-Around: Moving forward past Z wraps around back to A (Z + 1 = A). Moving backward past A wraps around to Z (A - 1 = Z)."
+        ],
+        "ta": [
+          "நேர் வரிசை: A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10, K=11, L=12, M=13, N=14, O=15, P=16, Q=17, R=18, S=19, T=20, U=21, V=22, W=23, X=24, Y=25, Z=26.",
+          "தலைகீழ் வரிசை: Z=1, Y=2, X=3, W=4, V=5, U=6, T=7, S=8, R=9, Q=10, P=11, O=12, N=13, M=14, L=15, K=16, J=17, I=18, H=19, G=20, F=21, E=22, D=23, C=24, B=25, A=26.",
+          "சுழற்சி நகர்வு: Z-க்கு அடுத்து தொடரும் எழுத்து A ஆகும் (Z + 1 = A). A-க்கு முன்னதாக வரும் எழுத்து Z ஆகும் (A - 1 = Z)."
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "CFLORUX 3-Table Shortcut",
+      "explanation": {
+        "en": "Memorize 'CFLORUX' for multiples of 3:\nC=3, F=6, I=9, L=12, O=15, R=18, U=21, X=24.",
+        "ta": "3-ன் மடங்கு எழுத்துகளுக்கு 'CFLORUX' வார்த்தையைப் பயன்படுத்தவும்:\nC=3, F=6, I=9, L=12, O=15, R=18, U=21, X=24."
+      }
+    }
+  ],
+
+  "model_examples": [
+    {
+      "model_name": "Model 1: Letter Series Shift Progression",
+      "difficulty_level": "Foundation",
+      "exam_relevance": "Group IV & Group II",
+      "problem_statement": {
+        "en": "Find the next term in the series: A, C, F, J, O, ?",
+        "ta": "தொடரின் அடுத்த எழுத்தைக் காண்க: A, C, F, J, O, ?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Write down position numbers for given letters:",
+        "A = 1, C = 3, F = 6, J = 10, O = 15.",
+        "Step 2: Find the difference between consecutive position numbers:",
+        "3 - 1 = +2",
+        "6 - 3 = +3",
+        "10 - 6 = +4",
+        "15 - 10 = +5",
+        "Step 3: The next difference must be +6.",
+        "Position = 15 + 6 = 21.",
+        "Step 4: The 21st letter is U."
+      ],
+      "final_answer": "U",
+      "tnpsc_trap": {
+        "en": "Do not assume constant difference without calculating position numbers.",
+        "ta": "எழுத்துகளின் எண்களை எழுதாமல் நிலையான இடைவெளி எனக் கருதக் கூடாது."
+      }
+    },
+    {
+      "model_name": "Model 2: Opposite Letter Pair Series",
+      "difficulty_level": "Standard",
+      "exam_relevance": "Group II & Group I",
+      "problem_statement": {
+        "en": "Find the missing term in the pair series: AZ, CX, EV, GT, ?",
+        "ta": "ஜோடித் தொடரின் விடுபட்ட உறுப்பைக் காண்க: AZ, CX, EV, GT, ?"
+      },
+      "step_by_step_solution": [
+        "Step 1: Analyze first letters of each pair: A (1), C (3), E (5), G (7).",
+        "Sequence of first letters increases by +2 -> Next first letter is 7 + 2 = 9 (I).",
+        "Step 2: Analyze second letters: Z (26), X (24), V (22), T (20).",
+        "Sequence of second letters decreases by -2 -> Next second letter is 20 - 2 = 18 (R).",
+        "Step 3: Alternatively, each pair sums to 27 (A+Z=27, C+X=27, E+V=27, G+T=27). The opposite letter of I is R.",
+        "Missing term = IR."
+      ],
+      "final_answer": "IR",
+      "tnpsc_trap": {
+        "en": "Ensure both first and second letter progression rules are satisfied.",
+        "ta": "முதல் மற்றும் இரண்டாம் எழுத்துகளின் இரு நகர்வு விதிகளையும் சரிபார்க்க வேண்டும்."
+      }
+    },
+    {
+      "model_name": "Model 3: Dictionary Order Ranking",
+      "difficulty_level": "Advanced",
+      "exam_relevance": "Group I",
+      "problem_statement": {
+        "en": "Arrange the following words in English dictionary order and identify the 3rd word:\n1. Nature  2. Native  3. Narrate  4. Natural  5. Naughty",
+        "ta": "பின்வரும் வார்த்தைகளை ஆங்கில அகராதி வரிசையில் அமைத்து 3-வது வார்த்தையைக் கண்டறிக:\n1. Nature  2. Native  3. Narrate  4. Natural  5. Naughty"
+      },
+      "step_by_step_solution": [
+        "Step 1: All words start with 'Na'. Compare 3rd letters:",
+        "Narrate (3rd letter 'r'), Native ('t'), Natural ('t'), Nature ('t'), Naughty ('u').",
+        "1st word in dictionary is Narrate ('r' comes first).",
+        "Step 2: Compare remaining 't' words: Native ('t-i'), Natural ('t-u-r-a'), Nature ('t-u-r-e').",
+        "2nd word is Native ('t-i' before 't-u').",
+        "3rd word is Natural ('t-u-r-a' comes before 't-u-r-e').",
+        "4th word is Nature ('t-u-r-e').",
+        "5th word is Naughty ('u').",
+        "Final Dictionary Order: Narrate (3) -> Native (2) -> Natural (4) -> Nature (1) -> Naughty (5).",
+        "The 3rd word is Natural."
+      ],
+      "final_answer": "Natural",
+      "tnpsc_trap": {
+        "en": "Carefully compare letter-by-letter after identical initial prefixes like 'Natur-'.",
+        "ta": "'Natur-' போன்ற ஒத்த தொடக்கப்Prefix-களுக்குப் பின் உள்ள எழுத்துகளைக் கவனமாக ஒப்பிட வேண்டும்."
+      }
+    }
+  ],
+
+  "practice_questions": [
+    {
+      "id": "alpha_p1_q1",
+      "question_en": "What is the 19th letter from the beginning of the English alphabet?",
+      "question_ta": "ஆங்கில அகரவரிசையின் தொடக்கத்திலிருந்து 19-வது எழுத்து எது?",
+      "options": ["Q", "R", "S", "T"],
+      "answer": "S",
+      "explanation_en": "Using EJOTY (T=20), the letter before T is 19th letter S.",
+      "explanation_ta": "EJOTY (T=20) விதியைப் பயன்படுத்தி T-க்கு முந்தைய 19-வது எழுத்து S ஆகும்."
+    },
+    {
+      "id": "alpha_p1_q2",
+      "question_en": "If Z = 26, NET = 39, what is the value of NUT?",
+      "question_ta": "Z = 26, NET = 39 எனில், NUT-ன் மதிப்பு என்ன?",
+      "options": ["45", "50", "55", "60"],
+      "answer": "55",
+      "explanation_en": "NET = N(14) + E(5) + T(20) = 39. NUT = N(14) + U(21) + T(20) = 55.",
+      "explanation_ta": "NET = N(14) + E(5) + T(20) = 39. NUT = N(14) + U(21) + T(20) = 55."
+    },
+    {
+      "id": "alpha_p1_q3",
+      "question_en": "Find the missing term: B, E, H, K, N, ?",
+      "question_ta": "விடுபட்ட எழுத்தைக் காண்க: B, E, H, K, N, ?",
+      "options": ["P", "Q", "R", "S"],
+      "answer": "Q",
+      "explanation_en": "Positional values: 2, 5, 8, 11, 14 (+3 shift). Next is 14 + 3 = 17 (Q).",
+      "explanation_ta": "இடமதிப்புகள்: 2, 5, 8, 11, 14 (+3 நகர்வு). அடுத்தது 14 + 3 = 17 (Q)."
+    },
+    {
+      "id": "alpha_p1_q4",
+      "question_en": "What is the reverse positional value of letter H in the English alphabet?",
+      "question_ta": "ஆங்கில அகரவரிசையில் H என்ற எழுத்தின் தலைகீழ் இடமதிப்பு என்ன?",
+      "options": ["17", "18", "19", "20"],
+      "answer": "19",
+      "explanation_en": "Forward position of H = 8. Reverse position = 27 - 8 = 19.",
+      "explanation_ta": "H-ன் நேர் இடமதிப்பு = 8. தலைகீழ் இடமதிப்பு = 27 - 8 = 19."
+    }
+  ],
+
+  "revision_cards": [
+    {
+      "id": "rev_alpha_pos",
+      "title_en": "Alphabet Position Rules",
+      "title_ta": "எழுத்து இடமதிப்பு விதிகள்",
+      "points_en": [
+        "EJOTY = 5, 10, 15, 20, 25.",
+        "CFLORUX = 3, 6, 9, 12, 15, 18, 21, 24.",
+        "Reverse Position = 27 - Forward Position.",
+        "Opposite Pair Sum = 27 (A-Z, B-Y, C-X...)"
+      ],
+      "points_ta": [
+        "EJOTY = 5, 10, 15, 20, 25.",
+        "CFLORUX = 3, 6, 9, 12, 15, 18, 21, 24.",
+        "தலைகீழ் இடமதிப்பு = 27 - நேர் இடமதிப்பு.",
+        "எதிர் ஜோடி கூடுதல் = 27 (A-Z, B-Y, C-X...)"
+      ]
+    }
+  ],
+
+  "mind_map": {
+    "topic": "Alpha-Numeric Reasoning Part 1",
+    "structure": [
+      {
+        "node": "Alphabet Positions",
+        "subnodes": [
+          "EJOTY & CFLORUX Shortcuts",
+          "Reverse Position (27 - Pos)",
+          "Opposite Letter Pairs",
+          "Letter Shift Series"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "topic_id": "tna_egovernance_in_tamil_nadu_part_1",
+    "repository_id": "tna_egovernance_in_tamil_nadu",
+    "display_title": "e-Governance in TN — Part 1: Framework & Core Institutions",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "tn_administration",
+    "chapter": "e-Governance & Digital Administration in Tamil Nadu",
+    "language": "bilingual"
+  },
+  "metadata": {
+    "version": "1.0",
+    "status": "validated",
+    "review_status": "peer_reviewed",
+    "difficulty": "advanced",
+    "estimated_study_time": "45 mins"
+  },
+  "keywords": [
+    "TNeGA",
+    "State Data Centre SDC",
+    "TNSWAN",
+    "e-Sevai Network",
+    "SMART Governance"
+  ],
+  "learning_outcomes": [
+    "Understand e-governance framework and SMART principles.",
+    "Examine nodal institutions (TNeGA, SDC, TNSWAN).",
+    "Analyze e-Sevai delivery network."
+  ],
+  "subject": "tn_administration",
+  "topic": "e-Governance in TN — Part 1: Framework & Core Institutions",
+  "language": "bilingual",
+  "ui_type": "standard_note",
+  "sections": [
+    "e-Governance Framework & SMART Principles",
+    "Tamil Nadu e-Governance Agency (TNeGA)",
+    "State Data Centre (SDC) & Disaster Recovery",
+    "Tamil Nadu State Wide Area Network (TNSWAN)",
+    "e-Sevai Common Service Delivery Network"
+  ],
+  "content": {
+    "definition": {
+      "en": "e-Governance Framework of Tamil Nadu encompasses the administrative policies, institutional mechanisms (TNeGA, SDC, TNSWAN), and common service delivery networks (e-Sevai) that transition government services to transparent digital platforms.",
+      "ta": "தமிழ்நாட்டின் மின் ஆளுகைக் கட்டமைப்பு என்பது அரசுச் சேவைகளை வெளிப்படையான டிஜிட்டல் தளங்களுக்கு மாற்றும் நிர்வாகக் கொள்கைகள், நிறுவன அமைப்புகள் (TNeGA, SDC, TNSWAN) மற்றும் சேவை விநியோக வலையமைப்புகளை (இ-சேவை) உள்ளடக்கியது."
+    },
+    "comparison_tables": [
+      {
+        "id": "table_tn_egov_institutions",
+        "title_en": "Core e-Governance Institutions",
+        "title_ta": "முதன்மை மின் ஆளுகை நிறுவனங்கள்",
+        "headers_en": [
+          "Institution / Platform",
+          "Establishment Year",
+          "Core Administrative Function",
+          "Key Infrastructure"
+        ],
+        "headers_ta": [
+          "நிறுவனம் / தளம்",
+          "தொடக்க ஆண்டு",
+          "முதன்மை நிர்வாகப் பணி",
+          "நிர்வகிக்கப்படும் உள்கட்டமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "TNeGA (TN e-Governance Agency)",
+            "Estd. 2007 (IT & Digital Services Dept)",
+            "Nodal agency for digital transformation & e-Sevai portal",
+            "e-Sevai portal, AI analytics hub, Nambikkai Inaiyam"
+          ],
+          [
+            "State Data Centre (SDC)",
+            "National e-Governance Plan (NeGP)",
+            "Central cloud repository hosting state department databases",
+            "High-security servers, DRS Trichy, G2C/G2G cloud"
+          ],
+          [
+            "TNSWAN (TN State Wide Area Network)",
+            "IT Department Nodal Network",
+            "High-speed intranet linking Secretariat to District & Taluk offices",
+            "Fiber optic CUG network for secure inter-dept data traffic"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "TNeGA (தமிழ்நாடு மின் ஆளுகை முகமை)",
+            "2007 (IT & டிஜிட்டல் சேவைகள் துறை)",
+            "டிஜிட்டல் மாற்றம் & இ-சேவை மேலாண்மை முதன்மை முகமை",
+            "இ-சேவை தளம், AI பகுப்பாய்வு, நம்பிக்கை இணையம்"
+          ],
+          [
+            "மாநிலத் தரவு மையம் (SDC)",
+            "தேசிய மின் ஆளுகைத் திட்டம் (NeGP)",
+            "அரசுத் துறைகளின் தரவுகளைப் பராமரிக்கும் மேகக்கணி மையம்",
+            "உயர் பாதுகாப்பு சர்வர்கள், திருச்சி பேரிடர் மீட்பு மையம்"
+          ],
+          [
+            "TNSWAN (மாநில விரிந்த பரப்பு வலையமைப்பு)",
+            "IT துறை முதன்மை வலையமைப்பு",
+            "செயலகம் முதல் தாலுகா வரை இணைக்கும் அதிவேக இன்ட்ராநெட்",
+            "பாதுகாப்பான G2G தகவல் பரிமாற்ற ஃபைபர் வலையமைப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "table_tn_egov_pillars",
+        "title_en": "Pillars of SMART Governance",
+        "title_ta": "ஸ்மார்ட் ஆளுகையின் தூண்கள்",
+        "headers_en": [
+          "e-Governance Pillar",
+          "Administrative Dimension",
+          "TN Digital Implementation",
+          "Expected Outcome"
+        ],
+        "headers_ta": [
+          "மின் ஆளுகைத் தூண்",
+          "நிர்வாகப் பரிமாணம்",
+          "தமிழ்நாட்டின் டிஜிட்டல் அமலாக்கம்",
+          "எதிர்பார்க்கப்படும் விளைவு"
+        ],
+        "rows_en": [
+          [
+            "Transparency & Speed",
+            "Elimination of physical file delays and discretion",
+            "e-Office workflow across Secretariat & Collectorates",
+            "Real-time tracking of file movement; faster approvals"
+          ],
+          [
+            "Accessibility & Inclusion",
+            "Delivering services at citizen doorsteps",
+            "10,000+ Common Service Centres (e-Sevai) & online portal",
+            "Removal of middleman exploitation; statutory e-certificates"
+          ],
+          [
+            "Accountability & Redressal",
+            "Time-bound service delivery with tracked redressal",
+            "Mudhalvarin Mugavari (1100 CM Helpline), E-District SLA",
+            "Enforced accountability on field revenue officers"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வெளிப்படைத்தன்மை & வேகம்",
+            "காகிதக் கோப்பு தாமதங்கள் மற்றும் முறைகேடுகள் ஒழிப்பு",
+            "செயலகம் மற்றும் ஆட்சியரகங்களில் இ-ஆஃபீஸ் பயன்பாடு",
+            "கோப்பு நகர்வை நிகழ்நேரத்தில் கண்காணித்தல்; விரைவான ஒப்புதல்"
+          ],
+          [
+            "அணுகல்தன்மை & உள்ளடக்கம்",
+            "குடிமக்களின் இருப்பிடத்திற்கே சேவை விநியோகம்",
+            "10,000+ இ-சேவை மையங்கள் மற்றும் ஆன்லைன் தளம்",
+            "இடைத்தரகர்கள் சுரண்டல் ஒழிப்பு; அதிகாரப்பூர்வ சான்றிதழ்கள்"
+          ],
+          [
+            "பொறுப்புக்கூறல் & குறைகேட்டல்",
+            "காலவரையறை சேவை விநியோகம் மற்றும் குறைகேட்டல்",
+            "முதல்வரின் முகவரி (1100 CM உதவி மையம்), E-District SLA",
+            "வருவாய்த்துறை அலுவலர்களுக்குக் காலக்கெடுக் கட்டுப்பாடு"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "node_en": "TN e-Governance Architecture",
+        "node_ta": "தமிழ்நாடு மின் ஆளுகைக் கட்டமைப்பு",
+        "children": [
+          {
+            "node_en": "Nodal Agencies & Infra",
+            "node_ta": "முதன்மை முகமைகள் & உள்கட்டமைப்பு",
+            "children": [
+              {
+                "node_en": "TNeGA (Estd. 2007)",
+                "node_ta": "TNeGA (2007 இல் தொடக்கம்)"
+              },
+              {
+                "node_en": "SDC (Chennai & DRS Trichy)",
+                "node_ta": "SDC (சென்னை & திருச்சி DRS)"
+              },
+              {
+                "node_en": "TNSWAN (Intranet Backbone)",
+                "node_ta": "TNSWAN (இன்ட்ராநெட் அடித்தளம்)"
+              }
+            ]
+          },
+          {
+            "node_en": "Service Delivery Network",
+            "node_ta": "சேவை விநியோக வலையமைப்பு",
+            "children": [
+              {
+                "node_en": "10,000+ e-Sevai Centres",
+                "node_ta": "10,000+ இ-சேவை மையங்கள்"
+              },
+              {
+                "node_en": "SMART Governance Model",
+                "node_ta": "ஸ்மார்ட் (SMART) ஆளுகை மாதிரி"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Tamil Nadu e-Governance Agency (TNeGA) was established in 2007 as a registered society under the IT Department.",
+        "State Data Centre (SDC) in Chennai is supported by a Disaster Recovery Site (DRS) established in Trichy.",
+        "TNSWAN (Tamil Nadu State Wide Area Network) connects State Secretariat down to Collectorates and Taluk offices via secure intranet.",
+        "Over 10,000+ e-Sevai physical centres (managed by TACTV, PACCS, VLEs) provide citizen-assisted digital service delivery.",
+        "SMART governance framework stands for Simple, Moral, Accountable, Responsive, and Transparent administration."
+      ],
+      "ta": [
+        "தமிழ்நாடு மின் ஆளுகை முகமை (TNeGA) 2007 ஆம் ஆண்டில் IT துறையின் கீழ் பதிவுசெய்யப்பட்ட சங்கமாக உருவாக்கப்பட்டது.",
+        "சென்னையிலுள்ள மாநிலத் தரவு மையத்திற்குத் (SDC) துணையாக பேரிடர் மீட்பு மையம் (DRS) திருச்சியில் அமைக்கப்பட்டுள்ளது.",
+        "TNSWAN என்பது செயலகம் முதல் மாவட்ட ஆட்சியரகங்கள் மற்றும் தாலுகா அலுவலகங்களை இணைக்கும் பாதுகாப்பான அரசாங்க இன்ட்ராநெட் ஆகும்.",
+        "10,000-க்கும் மேற்பட்ட இ-சேவை மையங்கள் (TACTV, கூட்டுறவுச் சங்கங்கள் மூலம்) பொதுமக்களுக்குச் சேவை வழங்குகின்றன.",
+        "ஸ்மார்ட் (SMART) ஆளுகை என்பது எளிய, ஒழுக்கமான, பொறுப்பான, விரைந்து స్పందించும் மற்றும் வெளிப்படையான நிர்வாகத்தைக் குறிக்கும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "TNeGA (Estd. 2007) is the nodal agency for state-wide e-governance implementation.",
+        "SDC hosted in Chennai with DRS in Trichy to guarantee data continuity during coastal cyclones.",
+        "TNSWAN provides exclusive secure G2G connectivity across state government offices.",
+        "e-Sevai network bridges the digital divide for citizens lacking smartphones or internet access."
+      ],
+      "ta": [
+        "TNeGA (2007) மாநில அளவிலான மின் ஆளுகைத் திட்டங்களை அமல்படுத்தும் முதன்மை முகமையாகும்.",
+        "பேரிடர்களின் போது தரவு அழியாமல் இருக்க சென்னை SDC-க்கு துணையாக திருச்சியில் DRS மீட்பு மையம் இயங்குகிறது.",
+        "TNSWAN அரசு அலுவலகங்களுக்கு இடையே பாதுகாப்பான G2G இன்ட்ராநெட் இணைப்பை வழங்குகிறது.",
+        "இ-சேவை மையங்கள் டிஜிட்டல் வசதி இல்லாத கிராமப்புற மக்களுக்கு உதவி சேவைகளை வழங்குகின்றன."
+      ]
+    },
+    "tnpsc_traps": [
+      {
+        "trap_id": "trap_tnega_estd_year",
+        "title_en": "Establishment Year & Nodal Dept of TNeGA",
+        "title_ta": "TNeGA அமைக்கப்பட்ட ஆண்டு & தாய் துறை",
+        "points": {
+          "en": [
+            "TRAP: Confusing TNeGA's establishment year with ELCOT (1977) or placing it under Finance Department.",
+            "CORRECT FACT: TNeGA was registered in 2007 under the Information Technology & Digital Services Department as the nodal e-governance agency."
+          ],
+          "ta": [
+            "ஏமாற்று: TNeGA அமைக்கப்பட்ட ஆண்டை எல்காட் (ELCOT - 1977) நிறுவனத்துடன் குழப்புவது.",
+            "சரியான உண்மை: TNeGA 2007 ஆம் ஆண்டில் தகவல் தொழில்நுட்பத் துறையின் கீழ் பதிவுசெய்யப்பட்டது."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_esevai_operator",
+        "title_en": "e-Sevai Operations & Nodal Agency",
+        "title_ta": "இ-சேவை மையங்களின் இயக்கம் & முகமை",
+        "points": {
+          "en": [
+            "TRAP: Believing e-Sevai centres are run independently by private commercial internet cafes without government oversight.",
+            "CORRECT FACT: e-Sevai centres are regulated by TNeGA and operated through designated institutional partners like TACTV, PACCS, and registered VLEs."
+          ],
+          "ta": [
+            "ஏமாற்று: இ-சேவை மையங்கள் அரசு அங்கீகாரமின்றி தனியாரால் சுயாதீனமாக நடத்தப்படும் இணைய மையங்கள் என நினைப்பது.",
+            "சரியான உண்மை: இ-சேவை மையங்கள் TNeGA முகமையால் நெறிமுறைப்படுத்தப்பட்டு TACTV மற்றும் கூட்டுறவுச் சங்கங்கள் மூலம் இயக்கப்படுகின்றன."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_tnswan_fullform",
+        "title_en": "TNSWAN Functionality vs Public Wi-Fi",
+        "title_ta": "TNSWAN இன்ட்ராநெட் vs பொது வைஃபை",
+        "points": {
+          "en": [
+            "TRAP: Assuming TNSWAN is a public Wi-Fi network provided free for citizens.",
+            "CORRECT FACT: TNSWAN (TN State Wide Area Network) is an exclusive, secure intranet communication backbone connecting government offices across the state."
+          ],
+          "ta": [
+            "ஏமாற்று: TNSWAN என்பது பொதுமக்களுக்கு இலவசமாக வழங்கப்படும் வைஃபை (Wi-Fi) வலையமைப்பு என நினைப்பது.",
+            "சரியான உண்மை: TNSWAN என்பது அரசு அலுவலகங்களை மட்டுமே இணைக்கும் பிரத்யேக, பாதுகாப்பான அரசாங்க உள்-வலையமைப்பாகும் (Intranet)."
+          ]
+        }
+      },
+      {
+        "trap_id": "trap_sdc_drs_location",
+        "title_en": "State Data Centre & DRS Location",
+        "title_ta": "மாநிலத் தரவு மையம் & DRS அமைவிடம்",
+        "points": {
+          "en": [
+            "TRAP: Assuming the State Data Centre and its Disaster Recovery Site are located in the same building in Chennai.",
+            "CORRECT FACT: The primary State Data Centre is in Chennai, while its Disaster Recovery Site (DRS) is geographically separated in Trichy."
+          ],
+          "ta": [
+            "ஏமாற்று: மாநிலத் தரவு மையமும் (SDC) அதன் பேரிடர் மீட்பு மையமும் (DRS) ஒரே கட்டிடத்தில் அமைந்துள்ளன எனக் கருதுவது.",
+            "சரியான உண்மை: முதன்மை மாநிலத் தரவு மையம் சென்னையிலுள்ளது; அதன் பேரிடர் மீட்பு மையம் (DRS) திருச்சியில் அமைக்கப்பட்டுள்ளது."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "front_en": "Establishment Year of TNeGA",
+        "front_ta": "TNeGA தொடங்கப்பட்ட ஆண்டு",
+        "back_en": "Registered in 2007 under IT & Digital Services Department.",
+        "back_ta": "2007 ஆம் ஆண்டில் IT துறையின் கீழ் பதிவு செய்யப்பட்டது."
+      },
+      {
+        "front_en": "Parent Dept of TNeGA",
+        "front_ta": "TNeGA அமைப்பின் தாய் துறை",
+        "back_en": "Information Technology and Digital Services Department, Govt of TN.",
+        "back_ta": "தகவல் தொழில்நுட்பம் மற்றும் டிஜிட்டல் சேவைகள் துறை."
+      },
+      {
+        "front_en": "Location of State Disaster Recovery Site (DRS)",
+        "front_ta": "மாநில பேரிடர் மீட்பு மைய (DRS) அமைவிடம்",
+        "back_en": "Trichy (supporting primary State Data Centre in Chennai).",
+        "back_ta": "திருச்சி (சென்னையிலுள்ள முதன்மை SDC-க்கு துணையாக இயங்குகிறது)."
+      },
+      {
+        "front_en": "Purpose of TNSWAN Intranet",
+        "front_ta": "TNSWAN இன்ட்ராநெட் அமைப்பின் நோக்கம்",
+        "back_en": "Exclusive secure connectivity linking Secretariat to Collectorates and Taluks.",
+        "back_ta": "செயலகத்தை ஆட்சியரகங்கள் மற்றும் தாலுகாக்களுடன் இணைக்கும் G2G வலையமைப்பு."
+      },
+      {
+        "front_en": "Number of Physical e-Sevai Centres",
+        "front_ta": "இ-சேவை மையங்களின் எண்ணிக்கை",
+        "back_en": "Over 10,000+ physical centres state-wide.",
+        "back_ta": "மாநிலம் முழுவதும் 10,000-க்கும் மேற்பட்ட மையங்கள்."
+      },
+      {
+        "front_en": "What does S stand for in SMART Governance?",
+        "front_ta": "SMART ஆளுகையில் S என்பது எதனைக் குறிக்கும்?",
+        "back_en": "Simple (simplified procedures).",
+        "back_ta": "Simple (எளிமையான நடைமுறைகள்)."
+      },
+      {
+        "front_en": "What does M stand for in SMART Governance?",
+        "front_ta": "SMART ஆளுகையில் M என்பது எதனைக் குறிக்கும்?",
+        "back_en": "Moral (ethical administrative conduct).",
+        "back_ta": "Moral (நேர்மையான ஒழுக்கமான நடவடிக்கை)."
+      },
+      {
+        "front_en": "Primary Agency for e-Sevai Regulation",
+        "front_ta": "இ-சேவையை நெறிமுறைப்படுத்தும் முதன்மை முகமை",
+        "back_en": "Tamil Nadu e-Governance Agency (TNeGA).",
+        "back_ta": "தமிழ்நாடு மின் ஆளுகை முகமை (TNeGA)."
+      }
+    ]
+  }
+}

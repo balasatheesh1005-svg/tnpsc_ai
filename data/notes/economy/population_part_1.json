@@ -1,0 +1,811 @@
+{
+  "meta": {
+    "topic_id": "economy_population_part_1",
+    "repository_id": "economy_population",
+    "display_title": "Population – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Population",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Demography Vital Rates",
+    "Crude Birth Rate CBR",
+    "Crude Death Rate CDR",
+    "Total Fertility Rate TFR",
+    "Replacement Level Fertility 2.1",
+    "NFHS-5 TFR 2.0",
+    "Infant Mortality Rate IMR",
+    "Maternal Mortality Ratio MMR",
+    "Sex Ratio 943 Census 2011",
+    "Child Sex Ratio 919 CSR",
+    "Dependency Ratio 15 to 59",
+    "Demographic Transition Theory Stage 3",
+    "Malthusian Catastrophe Geometric Arithmetic",
+    "Optimum Population Edwin Cannan"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand key vital demographic formulas (CBR, CDR, TFR, IMR, MMR) and their correct population multiplier bases.",
+        "Trace the five stages of Demographic Transition Theory and recognize why India is currently in Stage 3."
+      ],
+      "ta": [
+        "முக்கிய மக்கள் தொகைக் குறிகாட்டிகளையும் (CBR, CDR, TFR, IMR, MMR) அவற்றின் பகுதி பெருக்கல் அளவுகளையும் புரிந்து கொள்ளுதல்.",
+        "மக்கள் தொகை மாற்றக் கோட்பாட்டின் 5 கட்டங்களையும், இந்தியா ஏன் 3-வது கட்டத்தில் உள்ளது என்பதையும் அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key threshold values: Replacement TFR = 2.1, India NFHS-5 TFR = 2.0, Census 2011 Sex Ratio = 943, and Child Sex Ratio = 919.",
+        "Recall that MMR is calculated per 100,000 live births while IMR is calculated per 1,000 live births."
+      ],
+      "ta": [
+        "முக்கிய புள்ளிவிவரங்களை நினைவில் நிறுத்துதல்: மாற்று TFR = 2.1, NFHS-5 TFR = 2.0, 2011 பாலின விகிதம் = 943, குழந்தை பாலின விகிதம் = 919.",
+        "MMR 1,00,000 பிறப்புகளுக்கும் IMR 1,000 பிறப்புகளுக்கும் கணக்கிடப்படுகிறது என்பதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the paradox between the rising overall adult sex ratio (+10) and the declining child sex ratio (-8) in Census 2011.",
+        "Compare the biological pessimism of Malthusian catastrophe with the productivity focus of Optimum Population Theory."
+      ],
+      "ta": [
+        "2011 கணக்கெடுப்பில் ஒட்டுமொத்த பாலின விகிதம் உயர்ந்தபோதும் குழந்தை பாலின விகிதம் சரிந்த முரண்பாட்டை ஆய்வு செய்தல்.",
+        "மால்தூசியன் அவநம்பிக்கைக் கோட்பாட்டையும் உகந்த மக்கள் தொகைக் கோட்பாட்டையும் ஒப்பிட்டு பகுப்பாய்வு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid common exam traps regarding MMR denominator bases and Indian vs Western sex ratio definitions."
+      ],
+      "ta": [
+        "MMR பகுதி அளவீடு மற்றும் இந்திய vs சர்வதேச பாலின விகித வரையறைகள் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Population – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_vital_demographic_metrics",
+      "title_en": "Vital Demographic Rates: Definitions & Standard Formulas",
+      "title_ta": "முக்கிய மக்கள் தொகைக் குறிகாட்டிகள்: வரையறைகள் & நிலையான சூத்திரங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sex_ratio_dependency",
+      "title_en": "Sex Ratio & Demographic Dependency Ratios",
+      "title_ta": "பாலின விகிதம் & மக்கள் தொகை சார்பு விகிதங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_demographic_transition_theory",
+      "title_en": "Theory of Demographic Transition: Stages & Drivers",
+      "title_ta": "மக்கள் தொகை மாற்றக் கோட்பாடு: கட்டங்கள் & உந்துசக்திகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_malthusian_theory",
+      "title_en": "Malthusian Theory vs Optimum Population Theory",
+      "title_ta": "மால்தூசியன் கோட்பாடு vs உகந்த மக்கள் தொகைக் கோட்பாடு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Demography is the scientific study of human populations, their size, territorial distribution, composition, and changes resulting from fertility, mortality, and migration. In economic development, population dynamics determine labor supply, dependency burdens, per capita capital accumulation, and long-term macroeconomic sustainability.",
+      "ta": "மக்கள் தொகையியல் (Demography) என்பது மனித மக்கள் தொகையின் அளவு, புவியியல் பரவல், கட்டமைப்பு மற்றும் பிறப்பு, இறப்பு, இடப்பெயர்வு ஆகியவற்றால் ஏற்படும் மாற்றங்கள் பற்றிய அறிவியல் ஆய்வாகும். பொருளாதார வளர்ச்சியில், மக்கள் தொகை இயக்கவியல் நாட்டின் உழைப்பு விநியோகம், சார்புச் சுமை, தனிநபர் மூலதன திரட்சி மற்றும் நீண்டகால பொருளாதார நிலைத்தன்மையை நேரடியாகத் தீர்மானிக்கிறது."
+    },
+    "introduction": {
+      "en": "Demographic indicators and theoretical transition models form the core analytical foundation for understanding socioeconomic development in India. While classic Malthusian perspectives posited catastrophic food shortages resulting from geometric population growth, modern demographic science analyzes the structured multi-stage transition from high fertility and high mortality to low fertility and low mortality. In India, key indicators such as Crude Birth Rate (CBR), Crude Death Rate (CDR), Total Fertility Rate (TFR), Infant Mortality Rate (IMR), and Maternal Mortality Ratio (MMR) provide critical insights into human development. India has progressed through the explosive phase of population growth and entered Stage 3 of demographic transition, with the National Family Health Survey (NFHS-5) recording a national Total Fertility Rate of 2.0—dropping below the biological replacement level of 2.1. Mastering these formulas, transition stages, and demographic ratios is essential for TNPSC Group 1 examination success.",
+      "ta": "மக்கள் தொகைக் குறிகாட்டிகளும் கோட்பாட்டு மாற்ற மாதிரிகளும் இந்தியாவின் சமூக-பொருளாதார வளர்ச்சியைப் புரிந்துகொள்வதற்கான அடித்தளத்தை அமைக்கின்றன. பெருகிவரும் மக்கள் தொகையால் உணவுப் பற்றாக்குறை ஏற்படும் என்ற மால்தூசியன் கண்ணோட்டங்களைத் தாண்டி, நவீன அறிவியல் அதிக பிறப்பு-இறப்பு நிலையிலிருந்து குறைந்த பிறப்பு-இறப்பு நிலைக்கு மாறும் 'மக்கள் தொகை மாற்றக் கோட்பாட்டை' (Demographic Transition Theory) முன்வைக்கிறது. இந்தியாவில் செப்பனிடா பிறப்பு விகிதம் (CBR), செப்பனிடா இறப்பு விகிதம் (CDR), மொத்தக் கருவுறுதல் விகிதம் (TFR), பச்சிளங்குழந்தை இறப்பு விகிதம் (IMR) மற்றும் தாய் இறப்பு விகிதம் (MMR) ஆகியவை மனித வளர்ச்சியின் முக்கிய குறிகாட்டிகளாக உள்ளன. இந்தியா மக்கள் தொகை வெடிப்பு நிலையைக் கடந்து தற்போது 3-வது கட்ட மாற்றத்தில் உள்ளது; தேசிய குடும்ப நலக் கணக்கெடுப்பு (NFHS-5) நாட்டின் மொத்தக் கருவுறுதல் விகிதம் 2.0 ஆகக் குறைந்துள்ளதை உறுதி செய்துள்ளது—இது மாற்று நிலை வரம்பான 2.1-க்கு கீழ் குறைந்துள்ளது. இக்கோட்பாடுகள், சூத்திரங்கள் மற்றும் விகிதங்களை அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_vital_demographic_metrics": [
+      {
+        "term_en": "Crude Birth Rate (CBR) & Crude Death Rate (CDR)",
+        "term_ta": "செப்பனிடா பிறப்பு விகிதம் (CBR) & செப்பனிடா இறப்பு விகிதம் (CDR)",
+        "details_en": "CBR is the number of live births per 1,000 mid-year population in a given geographical area during a year. Formula: CBR = (Live Births in Year / Estimated Mid-Year Population) x 1,000. CDR is the number of deaths per 1,000 mid-year population during a year. Formula: CDR = (Total Deaths in Year / Estimated Mid-Year Population) x 1,000. The Natural Growth Rate of population equals (CBR - CDR) expressed as a percentage.",
+        "details_ta": "CBR என்பது ஒரு குறிப்பிட்ட ஆண்டில் ஒரு பகுதியில் உள்ள 1,000 ஆண்டு-நடுத்தர மக்கள் தொகைக்கு நிகழும் நேரடி உயிருள்ள பிறப்புகளின் எண்ணிக்கையாகும். சூத்திரம்: CBR = (ஆண்டின் உயிருள்ள பிறப்புகள் / நடுத்தர மக்கள் தொகை) x 1,000. CDR என்பது 1,000 நடுத்தர மக்கள் தொகைக்கு நிகழும் மொத்த இறப்புகளின் எண்ணிக்கையாகும். சூத்திரம்: CDR = (ஆண்டின் மொத்த இறப்புகள் / நடுத்தர மக்கள் தொகை) x 1,000. மக்கள் தொகையின் இயற்கை வளர்ச்சி விகிதம் = (CBR - CDR) சதவீதமாகும்."
+      },
+      {
+        "term_en": "Total Fertility Rate (TFR)",
+        "term_ta": "மொத்தக் கருவுறுதல் விகிதம் (Total Fertility Rate - TFR)",
+        "details_en": "The average number of children that would be born alive to a woman during her entire reproductive lifespan (15 to 49 years) if she were to pass through all her childbearing years conforming to the age-specific fertility rates of a given year. TFR is independent of the age structure of the population, making it the purest measure of fertility.",
+        "details_ta": "ஒரு பெண் தனது ஒட்டுமொத்த இனப்பெருக்கக் காலத்தில் (15 முதல் 49 வயது வரை) குறிப்பிட்ட ஆண்டின் வயது சார்ந்த கருவுறுதல் விகிதங்களுக்கு ஏற்ப எத்தனை உயிருள்ள குழந்தைகளைப் பெறுவார் என்பதைக் குறிக்கும் சராசரி எண்ணிக்கையாகும். TFR மக்கள் தொகையின் வயதுக் கட்டமைப்பால் பாதிக்கப்படாத மிகத் தூய்மையான கருவுறுதல் அளவீடாகும்."
+      },
+      {
+        "term_en": "Replacement Level Fertility (2.1 TFR)",
+        "term_ta": "தலைமுறை மாற்று நிலை கருவுறுதல் (2.1 TFR)",
+        "details_en": "The total fertility rate at which a population exactly replaces itself from one generation to the next without migration. Statistically pegged at 2.1 children per woman (not 2.0) to account for natural excess male births at birth (105 boys per 100 girls) and infant/child mortality before reproductive age.",
+        "details_ta": "இடப்பெயர்வு இல்லாத சூழலில் ஒரு நாட்டின் மக்கள் தொகை ஒரு தலைமுறையிலிருந்து அடுத்த தலைமுறைக்கு குறையாமல் அதே அளவில் நீடிப்பதற்குத் தேவையான கருவுறுதல் வரம்பாகும். இயற்கையான பாலின பிறப்பு விகித ஏற்றத்தாழ்வு (100 பெண் குழந்தைகளுக்கு 105 ஆண் குழந்தைகள் பிறப்பது) மற்றும் குழந்தைப் பருவ இறப்புகளை ஈடுசெய்வதற்காக இது 2.0 என இல்லாமல் சரியாக '2.1' என புள்ளிவிவர ரீதியாக நிர்ணயிக்கப்பட்டுள்ளது."
+      },
+      {
+        "term_en": "Infant Mortality Rate (IMR) vs Maternal Mortality Ratio (MMR)",
+        "term_ta": "குழந்தை இறப்பு விகிதம் (IMR) vs தாய் இறப்பு விகிதம் (MMR)",
+        "details_en": "IMR is the number of deaths of infants under one year of age per 1,000 live births in a given year. Formula: IMR = (Infant Deaths < 1 yr / Live Births) x 1,000. MMR is the number of maternal deaths during pregnancy, childbirth, or within 42 days of termination per 100,000 live births. CRITICAL: The denominator for MMR is ONE HUNDRED THOUSAND (100,000), NEVER 1,000!",
+        "details_ta": "IMR என்பது ஒரு குறிப்பிட்ட ஆண்டில் பிறக்கும் 1,000 உயிருள்ள குழந்தைகளுக்கு 1 வயதுக்குட்பட்ட இறக்கும் பச்சிளங்குழந்தைகளின் எண்ணிக்கையாகும். சூத்திரம்: IMR = (1 வயதுக்குட்பட்ட இறப்புகள் / உயிருள்ள பிறப்புகள்) x 1,000. MMR என்பது கர்ப்பம், பிரசவம் அல்லது பிரசவித்த 42 நாட்களுக்குள் தாய் இறக்கும் எண்ணிக்கையாகும்; இது '1,00,000 உயிருள்ள பிறப்புகளுக்குக்' கணக்கிடப்படுகிறது. மிக முக்கியப் பொறி: MMR-ன் பகுதி 'ஒரு லட்சம்' (1,00,000) ஆகும், 1,000 அல்ல!"
+      }
+    ],
+    "sec_sex_ratio_dependency": [
+      {
+        "term_en": "Sex Ratio (Indian Definition vs Western Standard)",
+        "term_ta": "பாலின விகிதம் (இந்திய வரையறை vs சர்வதேச வழக்கம்)",
+        "details_en": "In India (Census, SRS), Sex Ratio is defined strictly as the NUMBER OF FEMALES PER 1,000 MALES. Formula: Sex Ratio = (Number of Females / Number of Males) x 1,000. (As per Census 2011: India = 943; Tamil Nadu = 996; Kerala = 1084; Haryana = 879). In contrast, the international UN/Western definition defines sex ratio as the NUMBER OF MALES PER 100 FEMALES.",
+        "details_ta": "இந்தியாவில் (மக்கள்தொகை கணக்கெடுப்பு, SRS) பாலின விகிதம் என்பது '1,000 ஆண்களுக்கு உள்ள பெண்களின் எண்ணிக்கை' என அதிகாரப்பூர்வமாக வரையறுக்கப்படுகிறது. சூத்திரம்: பாலின விகிதம் = (பெண்களின் எண்ணிக்கை / ஆண்களின் எண்ணிக்கை) x 1,000. (2011 கணக்கெடுப்பு: இந்தியா = 943; தமிழ்நாடு = 996; கேரளா = 1084; ஹரியானா = 879). ஆனால் சர்வதேச UN வழக்கத்தில் இது '100 பெண்களுக்கு உள்ள ஆண்களின் எண்ணிக்கை' என அளவிடப்படுகிறது."
+      },
+      {
+        "term_en": "Child Sex Ratio (CSR: 0 to 6 Years)",
+        "term_ta": "குழந்தை பாலின விகிதம் (Child Sex Ratio - CSR: 0 முதல் 6 வயது)",
+        "details_en": "The number of females aged 0 to 6 years per 1,000 males in the same age bracket. It serves as the most sensitive barometer of female feticide, sex-selective abortions, and deep-seated son meta-preference. In Census 2011, India's CSR plummeted to a historic low of 919 (from 927 in 2001), triggering national panic and prompting the launch of 'Beti Bachao Beti Padhao' in 2015.",
+        "details_ta": "0 முதல் 6 வயதுக்குட்பட்ட 1,000 ஆண் குழந்தைகளுக்கு உள்ள பெண் குழந்தைகளின் எண்ணிக்கையாகும். இது பெண் சிசுக்கொலை, கருக்கலைப்பு மற்றும் ஆண் குழந்தை விருப்பத்தின் தீவிரத்தை அளவிடும் உணர்திறன் மிக்க அளவீடாகும். 2011 கணக்கெடுப்பில் இந்தியாவின் CSR 919 ஆகக் குறைந்து பெரும் அதிர்ச்சியை ஏற்படுத்தியது (2001-ல் 927); இது 2015-ல் 'பெண் குழந்தையைக் காப்போம், பெண் குழந்தைக்குக் கற்பிப்போம்' திட்டம் உருவாகக் காரணமானது."
+      },
+      {
+        "term_en": "Demographic Dependency Ratio",
+        "term_ta": "மக்கள் தொகை சார்பு விகிதம் (Dependency Ratio)",
+        "details_en": "The ratio of dependents (people who are too young or too old to work) to the working-age population. Formula: Dependency Ratio = [(Population aged 0-14 + Population aged 60+) / Population aged 15-59] x 100. It is composed of the Young Dependency Ratio (0-14) and Old-Age Dependency Ratio (60+). A falling dependency ratio signals the opening of the Demographic Dividend.",
+        "details_ta": "உழைக்க இயலாத சார்புடைய மக்கள் தொகைக்கும் (குழந்தைகள் மற்றும் முதியவர்கள்) உழைக்கும் வயதுடைய மக்கள் தொகைக்கும் உள்ள விகிதமாகும். சூத்திரம்: சார்பு விகிதம் = [(0-14 வயது குழந்தைகள் + 60+ வயது முதியவர்கள்) / 15-59 வயது உழைப்பாளர்கள்] x 100. சார்பு விகிதம் குறைவது நாட்டின் மக்கள் தொகை நன்மை (Demographic Dividend) மலர்வதைக் குறிக்கிறது."
+      }
+    ],
+    "sec_demographic_transition_theory": [
+      {
+        "term_en": "Foundations: Warren Thompson & Frank Notestein",
+        "term_ta": "அடிப்படைகள்: வாரன் தாம்சன் & பிராங்க் நோட்ஸ்டீன்",
+        "details_en": "Formulated by Warren Thompson (1929) and modernized by Frank Notestein (1945), this theory models the historical transition that societies undergo from high birth and death rates to low birth and death rates as they evolve from traditional agrarian to modern industrial economies.",
+        "details_ta": "1929-ல் வாரன் தாம்சனால் உருவாக்கப்பட்டு 1945-ல் பிராங்க் நோட்ஸ்டீனால் மேம்படுத்தப்பட்டது. ஒரு பாரம்பரிய விவசாய சமுதாயம் நவீன தொழில் சமுதாயமாக மாறும்போது, அதிக பிறப்பு-இறப்பு நிலையிலிருந்து எவ்வாறு குறைந்த பிறப்பு-இறப்பு நிலைக்கு மாறுகிறது என்பதை இக்கோட்பாடு விளக்குகிறது."
+      },
+      {
+        "term_en": "Stage 1: High Stationary Stage (Pre-Modern)",
+        "term_ta": "கட்டம் 1: அதிக நிலையான கட்டம் (முன்-நவீன காலம்)",
+        "details_en": "Characterized by both High Birth Rate and High Death Rate (~35-40 per 1,000). Population growth is virtually stagnant or fluctuating due to severe famines, epidemics, and lack of medicine. In India, Stage 1 persisted until 1921 (the Year of the Great Divide).",
+        "details_ta": "அதிக பிறப்பு விகிதம் மற்றும் அதிக இறப்பு விகிதம் (~35-40) ஆகிய இரண்டையும் கொண்ட கட்டம். பஞ்சம், கொள்ளை நோய்கள் மற்றும் மருத்துவ வசதியின்மையால் மக்கள் தொகை வளர்ச்சி தேக்கமடைந்திருக்கும். இந்தியாவில் 1921 வரை (பெரும் பிரிவினை ஆண்டு) இக்கட்டமே நீடித்தது."
+      },
+      {
+        "term_en": "Stage 2: Early Expanding / Population Explosion",
+        "term_ta": "கட்டம் 2: மக்கள் தொகை வெடிப்பு கட்டம் (வேகமான வளர்ச்சி)",
+        "details_en": "Death rates PLUMMET dramatically due to modern medicine, vaccines, sanitation, and famine relief, while Birth Rates REMAIN HIGH due to cultural inertia, early marriage, and illiteracy. The widening gap between births and deaths triggers a massive POPULATION EXPLOSION. India traversed Stage 2 between 1921 and 1981 (peaking in 1961-71 with 24.8% decadal growth).",
+        "details_ta": "நவீன மருத்துவம், தடுப்பூசி மற்றும் பஞ்ச நிவாரணத்தால் இறப்பு விகிதம் 'கடுமையாகச் சரியும்'; ஆனால் மூடநம்பிக்கை மற்றும் கல்வியறிவின்மையால் பிறப்பு விகிதம் 'அதிகமாகவே நீடிக்கும்'. பிறப்புக்கும் இறப்புக்கும் இடையேயான இந்த இடைவெளி 'மக்கள் தொகை வெடிப்பை' (Population Explosion) உருவாக்குகிறது. இந்தியா 1921 முதல் 1981 வரை இக்கட்டத்தைக் கடந்தது (1961-71-ல் உச்சபட்ச 24.8% வளர்ச்சி)."
+      },
+      {
+        "term_en": "Stage 3: Late Expanding (Declining Fertility - India's Current Stage)",
+        "term_ta": "கட்டம் 3: பிறப்பு விகிதம் குறையும் கட்டம் (இந்தியாவின் தற்போதைய நிலை)",
+        "details_en": "Birth rates begin to FALL SHARPLY due to female education, urbanization, family planning, and rising cost of child rearing, while death rates remain low. Population growth decelerates. India is CURRENTLY FIRMLY IN STAGE 3, with national TFR reaching 2.0 in NFHS-5.",
+        "details_ta": "பெண்கள் கல்வி, நகரமயமாதல், குடும்பக் கட்டுப்பாடு மற்றும் குழந்தைகள் வளர்ப்புச் செலவு உயர்வால் பிறப்பு விகிதம் 'வேகமாகக் குறையத் தொடங்கும்'; இறப்பு விகிதம் தொடர்ந்து குறைவாகவே இருக்கும். மக்கள் தொகை வளர்ச்சி வேகம் குறைகிறது. இந்தியா தற்போது உறுதியாக '3-வது கட்டத்தில்' உள்ளது (NFHS-5-ல் தேசிய TFR 2.0 ஆனது)."
+      },
+      {
+        "term_en": "Stage 4 & Stage 5: Low Stationary & Contracting",
+        "term_ta": "கட்டம் 4 & 5: குறைந்த நிலையான கட்டம் & மக்கள் தொகை சுருங்குதல்",
+        "details_en": "Stage 4 (Low Stationary): Low Birth Rate and Low Death Rate equalize; population stabilizes (USA, China). Stage 5 (Contracting): Birth rates fall below death rates, resulting in natural population decline, shrinking labor force, and acute geriatric ageing (Japan, Germany, Italy).",
+        "details_ta": "கட்டம் 4: குறைந்த பிறப்பு விகிதமும் குறைந்த இறப்பு விகிதமும் சமநிலையை அடைந்து மக்கள் தொகை நிலையாகிறது (அமெரிக்கா, சீனா). கட்டம் 5: பிறப்பு விகிதம் இறப்பு விகிதத்தை விடக் குறைந்து மக்கள் தொகை சுருங்கத் தொடங்குகிறது (ஜப்பான், ஜெர்மனி, இத்தாலி)."
+      }
+    ],
+    "sec_malthusian_theory": [
+      {
+        "term_en": "Malthusian Population Theory (Thomas Malthus, 1798)",
+        "term_ta": "மால்தூசியன் மக்கள் தொகைக் கோட்பாடு (தாமஸ் மால்தூஸ், 1798)",
+        "details_en": "In 'An Essay on the Principle of Population', Malthus posited that: (1) Human population, when unchecked, grows GEOMETRICALLY (1, 2, 4, 8, 16, 32, 64...); (2) Food supply increases only ARITHMETICALLY (1, 2, 3, 4, 5, 6, 7...) due to diminishing returns to land. This leads to a severe Malthusian Catastrophe. To restore balance, Malthus identified: (a) Preventive Checks: voluntary restraint, late marriage, celibacy; (b) Positive Checks: natural disasters, famines, wars, and pestilence.",
+        "details_ta": "1798-ல் தாமஸ் மால்தூஸ் முன்வைத்த கோட்பாடு: (1) மக்கள் தொகை 'பெருக்கல் விகிதத்தில்' (1, 2, 4, 8, 16, 32...) வேகமாக வளரும்; (2) உணவு உற்பத்தி நிலத்தின் குறைந்துசெல் விளைவு விதியால் 'கூட்டல் விகிதத்தில்' (1, 2, 3, 4, 5...) மட்டுமே மெதுவாக வளரும். இது கடுமையான உணவுப் பற்றாக்குறையை உருவாக்கும். சமநிலையை ஏற்படுத்த மால்தூஸ் இரு வழிகளைக் கூறினார்: (அ) தடுப்பு வழிகள் (தாமத திருமணம், சுயக்கட்டுப்பாடு); (ஆ) இயற்கை வழிகள் (பஞ்சம், நோய்கள், போர்கள், இயற்கை சீற்றங்கள்)."
+      },
+      {
+        "term_en": "Optimum Population Theory (Edwin Cannan & Dalton)",
+        "term_ta": "உகந்த மக்கள் தொகைக் கோட்பாடு (எட்வின் கேனன் & டால்டன்)",
+        "details_en": "Contrasting Malthusian biological pessimism, this theory links population size to economic productivity. Optimum Population is that size of population which, when combined with available capital, natural resources, and technology, yields the MAXIMUM PER CAPITA INCOME (Output per head). Below optimum = Under-populated; Above optimum = Over-populated. Dalton's Maladjustment Formula: M = (A - O) / O, where A = Actual population, O = Optimum population. If M > 0, over-population exists.",
+        "details_ta": "மால்தூஸின் அவநம்பிக்கையை மறுத்து, மக்கள் தொகையை உற்பத்தித்திறனுடன் இணைக்கும் கோட்பாடு. நாட்டில் உள்ள இயற்கை வளங்கள், மூலதனம் மற்றும் தொழில்நுட்பத்தைக் கொண்டு தனிநபர் வருமானத்தை (Per Capita Income) உச்சபட்ச அளவுக்கு உயர்த்தக்கூடிய மக்கள் தொகை அளவே 'உகந்த மக்கள் தொகை' (Optimum Population) ஆகும். டால்டனின் சூத்திரம்: M = (A - O) / O (A = உண்மையான மக்கள் தொகை, O = உகந்த மக்கள் தொகை). M நேர்மறையாக இருந்தால் அது அதிக மக்கள் தொகையைக் குறிக்கும்."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_vital_rates_comparison",
+        "title_en": "Vital Demographic Indicators: Definition, Formula & Base",
+        "title_ta": "முக்கிய மக்கள் தொகைக் குறிகாட்டிகள் ஒப்பீடு: வரையறை, சூத்திரம் & பகுதி",
+        "headers_en": [
+          "Metric Name",
+          "Standard Formula",
+          "Denominator Multiplier Base",
+          "India Latest Trend (NFHS-5 / SRS)"
+        ],
+        "headers_ta": [
+          "குறிகாட்டியின் பெயர்",
+          "நிலையான சூத்திரம்",
+          "பகுதி பெருக்கல் அளவு",
+          "இந்தியாவின் அண்மைப் போக்கு"
+        ],
+        "rows_en": [
+          [
+            "Crude Birth Rate (CBR)",
+            "(Live Births in Year / Mid-Year Pop) x 1,000",
+            "Per 1,000 population",
+            "Declined to ~19.5 per 1,000"
+          ],
+          [
+            "Crude Death Rate (CDR)",
+            "(Deaths in Year / Mid-Year Pop) x 1,000",
+            "Per 1,000 population",
+            "Declined to ~6.0 per 1,000"
+          ],
+          [
+            "Total Fertility Rate (TFR)",
+            "Sum of Age-Specific Fertility Rates (ASFR x 5)",
+            "Average children per woman",
+            "2.0 in NFHS-5 (below replacement level 2.1)"
+          ],
+          [
+            "Infant Mortality Rate (IMR)",
+            "(Deaths < 1 Year / Live Births) x 1,000",
+            "Per 1,000 LIVE BIRTHS",
+            "Declined to ~28-35 per 1,000 live births"
+          ],
+          [
+            "Maternal Mortality Ratio (MMR)",
+            "(Maternal Deaths / Live Births) x 100,000",
+            "Per 100,000 LIVE BIRTHS (NOT 1,000)",
+            "Declined to 97 per 100,000 live births (SRS 2018-20)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "செப்பனிடா பிறப்பு விகிதம் (CBR)",
+            "(ஆண்டின் பிறப்புகள் / நடுத்தர மக்கள் தொகை) x 1,000",
+            "1,000 மக்கள் தொகைக்கு",
+            "~19.5 ஆகக் குறைந்துள்ளது"
+          ],
+          [
+            "செப்பனிடா இறப்பு விகிதம் (CDR)",
+            "(ஆண்டின் இறப்புகள் / நடுத்தர மக்கள் தொகை) x 1,000",
+            "1,000 மக்கள் தொகைக்கு",
+            "~6.0 ஆகக் குறைந்துள்ளது"
+          ],
+          [
+            "மொத்தக் கருவுறுதல் விகிதம் (TFR)",
+            "வயது சார்ந்த கருவுறுதல் விகிதங்களின் கூட்டுத்தொகை",
+            "பெண் ஒருவருக்கு சராசரி குழந்தைகள்",
+            "NFHS-5-ல் 2.0 (மாற்று வரம்பு 2.1-க்கு கீழ்)"
+          ],
+          [
+            "குழந்தை இறப்பு விகிதம் (IMR)",
+            "(1 வயதுக்குட்பட்ட இறப்புகள் / பிறப்புகள்) x 1,000",
+            "1,000 உயிருள்ள பிறப்புகளுக்கு",
+            "~28-35 ஆகக் குறைந்துள்ளது"
+          ],
+          [
+            "தாய் இறப்பு விகிதம் (MMR)",
+            "(தாய் மரணங்கள் / பிறப்புகள்) x 1,00,000",
+            "1,00,000 உயிருள்ள பிறப்புகளுக்கு (1,000 அல்ல)",
+            "97 ஆகக் குறைந்துள்ளது (SRS 2018-20 அறிக்கை)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_demographic_transition_stages",
+        "title_en": "Four Stages of Demographic Transition: Characteristics & Indian Timeline",
+        "title_ta": "மக்கள் தொகை மாற்றத்தின் நான்கு கட்டங்கள்: பண்புகள் & இந்திய காலவரிசை",
+        "headers_en": [
+          "Stage",
+          "Birth Rate",
+          "Death Rate",
+          "Population Growth Dynamic",
+          "Indian Historical Phase"
+        ],
+        "headers_ta": [
+          "கட்டம்",
+          "பிறப்பு விகிதம்",
+          "இறப்பு விகிதம்",
+          "மக்கள் தொகை வளர்ச்சித் தன்மை",
+          "இந்திய வரலாற்றுப் பருவம்"
+        ],
+        "rows_en": [
+          [
+            "Stage 1: High Stationary",
+            "High (~40/1000)",
+            "High (~40/1000)",
+            "Stagnant, fluctuating; near-zero net growth",
+            "Before 1921 (famines, plague, 1918 flu pandemic)"
+          ],
+          [
+            "Stage 2: Early Expanding",
+            "High (~35-40/1000)",
+            "Plummeting rapidly",
+            "POPULATION EXPLOSION; massive natural increase",
+            "1921 to 1981 (peaked during 1961-71 decade at 24.8%)"
+          ],
+          [
+            "Stage 3: Late Expanding",
+            "Falling sharply",
+            "Low and stable",
+            "Growth decelerates; fertility approaches replacement",
+            "1981 to Present (India currently in Stage 3; TFR = 2.0)"
+          ],
+          [
+            "Stage 4: Low Stationary",
+            "Low (~10/1000)",
+            "Low (~10/1000)",
+            "Stationary; zero growth; stable aged population",
+            "Expected for India around 2045-2050 (already in Kerala/TN)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கட்டம் 1: அதிக நிலையானது",
+            "அதிகம் (~40/1000)",
+            "அதிகம் (~40/1000)",
+            "தேக்கமடைந்த வளர்ச்சி; பஞ்சம் மற்றும் கொள்ளை நோய்கள்",
+            "1921 வரை (பஞ்சம், பிளேக், 1918 ஸ்பானிஷ் காய்ச்சல்)"
+          ],
+          [
+            "கட்டம் 2: விரைவான வளர்ச்சி",
+            "அதிகம் (~35-40/1000)",
+            "வேகமாகச் சரியும்",
+            "மக்கள் தொகை வெடிப்பு; அதிவேக வளர்ச்சி",
+            "1921 முதல் 1981 வரை (1961-71-ல் உச்ச வளர்ச்சி 24.8%)"
+          ],
+          [
+            "கட்டம் 3: பிறப்பு குறையும் நிலை",
+            "வேகமாகச் சரியும்",
+            "குறைந்து நிலையாக இருக்கும்",
+            "வளர்ச்சி வேகம் தணியும்; கருவுறுதல் மாற்று நிலையை எட்டும்",
+            "1981 முதல் தற்போது வரை (இந்தியா 3-வது கட்டத்தில்; TFR = 2.0)"
+          ],
+          [
+            "கட்டம் 4: குறைந்த நிலையானது",
+            "குறைவு (~10/1000)",
+            "குறைவு (~10/1000)",
+            "நிலையான மக்கள் தொகை; சமநிலை; முதியோர் அதிகரிப்பு",
+            "இந்தியா 2045-2050-ல் எட்டும் (தமிழ்நாடு, கேரளா ஏற்கனவே எட்டிவிட்டது)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_malthusian_vs_optimum_theory",
+        "title_en": "Malthusian Theory vs Optimum Population Theory",
+        "title_ta": "மால்தூசியன் கோட்பாடு vs உகந்த மக்கள் தொகைக் கோட்பாடு ஒப்பீடு",
+        "headers_en": [
+          "Comparison Attribute",
+          "Malthusian Theory (Thomas Malthus, 1798)",
+          "Optimum Population Theory (Edwin Cannan / Dalton)"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டு அம்சம்",
+          "மால்தூசியன் கோட்பாடு (மால்தூஸ், 1798)",
+          "உகந்த மக்கள் தொகைக் கோட்பாடு (எட்வின் கேனன்)"
+        ],
+        "rows_en": [
+          [
+            "Core Benchmark",
+            "Physical food supply (arithmetic progression)",
+            "Per Capita Income / Output per head (maximum economic welfare)"
+          ],
+          [
+            "Population Growth Mode",
+            "Geometric Progression (1, 2, 4, 8, 16...)",
+            "Dynamic adjustment based on capital, land, and technology"
+          ],
+          [
+            "Core Philosophy",
+            "Biological pessimism: inevitable catastrophe and starvation",
+            "Economic optimism: human labor is a productive asset when skilled"
+          ],
+          [
+            "Corrective Mechanism",
+            "Preventive checks (celibacy) and Positive checks (famines, war)",
+            "Capital accumulation, technical progress, and demographic adjustment"
+          ],
+          [
+            "Empirical Validity",
+            "Disproven by modern Green Revolution and agricultural technology",
+            "Widely accepted benchmark in development planning and optimum resource use"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை அளவுகோல்",
+            "உணவு உற்பத்தி விநியோகம் (கூட்டல் விகித வளர்ச்சி)",
+            "தனிநபர் வருமானம் / தனிநபர் உற்பத்தி (அதிகபட்ச பொருளாதார நலன்)"
+          ],
+          [
+            "வளர்ச்சி முறை",
+            "பெருக்கல் விகித வளர்ச்சி (1, 2, 4, 8, 16, 32...)",
+            "மூலதனம், நிலம் மற்றும் தொழில்நுட்பத்திற்கு ஏற்ப மாறும் முறை"
+          ],
+          [
+            "அடிப்படை தத்துவம்",
+            "உயிரியல் அவநம்பிக்கை: தவிர்க்க முடியாத பஞ்சம் மற்றும் பேரழிவு",
+            "பொருளாதார நம்பிக்கை: மனித உழைப்பு உற்பத்தித் திறன் கொண்ட சொத்து"
+          ],
+          [
+            "சரிசெய்யும் வழிகள்",
+            "தடுப்பு வழிகள் (சுயக்கட்டுப்பாடு) மற்றும் இயற்கை வழிகள் (பஞ்சம், போர்)",
+            "மூலதனத் திரட்சி, தொழில்நுட்ப வளர்ச்சி மற்றும் மக்கள் தொகை சரிசெய்தல்"
+          ],
+          [
+            "நடைமுறை உண்மை",
+            "பசுமைப் புரட்சி மற்றும் நவீன விவசாயத் தொழில்நுட்பங்களால் பொய்யானது",
+            "பொருளாதாரத் திட்டமிடல் மற்றும் வளப் பகிர்வில் ஏற்றுக்கொள்ளப்பட்ட தத்துவம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_adult_vs_child_sex_ratio",
+        "title_en": "Overall Sex Ratio vs Child Sex Ratio (0-6 Years) in India",
+        "title_ta": "ஒட்டுமொத்த பாலின விகிதம் vs குழந்தை பாலின விகிதம் (0-6 வயது) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Overall Sex Ratio (All Ages)",
+          "Child Sex Ratio (CSR: 0-6 Years)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "ஒட்டுமொத்த பாலின விகிதம் (அனைத்து வயது)",
+          "குழந்தை பாலின விகிதம் (CSR: 0-6 வயது)"
+        ],
+        "rows_en": [
+          [
+            "Age Demarcation",
+            "Total population of all age groups (0 to 100+ years)",
+            "Strictly children aged 0 to 6 completed years"
+          ],
+          [
+            "Census 2001 Value",
+            "933 females per 1,000 males",
+            "927 females per 1,000 males"
+          ],
+          [
+            "Census 2011 Value",
+            "943 females per 1,000 males (IMPROVED by +10)",
+            "919 females per 1,000 males (DETERIORATED by -8)"
+          ],
+          [
+            "Key Socio-Cultural Driver",
+            "Higher female life expectancy in adult/geriatric cohorts",
+            "Sex-selective abortions, illegal fetal sex determination, female feticide"
+          ],
+          [
+            "Leading National Program",
+            "Gender budgeting, maternity benefits (PMMVY)",
+            "Beti Bachao Beti Padhao (2015), strict enforcement of PC-PNDT Act 1994"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வயது வரம்பு",
+            "அனைத்து வயதுடைய மொத்த மக்கள் தொகை (0 முதல் 100+ வயது வரை)",
+            "சரியாக 0 முதல் 6 வயது வரையிலான குழந்தைகள் மட்டுமே"
+          ],
+          [
+            "2001 கணக்கெடுப்பு மதிப்பு",
+            "1,000 ஆண்களுக்கு 933 பெண்கள்",
+            "1,000 ஆண் குழந்தைகளுக்கு 927 பெண் குழந்தைகள்"
+          ],
+          [
+            "2011 கணக்கெடுப்பு மதிப்பு",
+            "1,000 ஆண்களுக்கு 943 பெண்கள் (+10 முன்னேறியது)",
+            "1,000 ஆண் குழந்தைகளுக்கு 919 பெண் குழந்தைகள் (-8 சரிந்தது)"
+          ],
+          [
+            "முதன்மைக் காரணம்",
+            "முதியோர் பருவத்தில் ஆண்களை விடப் பெண்களின் அதிக ஆயுட்காலம்",
+            "பாலினத் தேர்வு கருக்கலைப்பு, பெண் சிசுக்கொலை, ஆண் குழந்தை விருப்பம்"
+          ],
+          [
+            "முன்னணி அரசுத் திட்டம்",
+            "பாலின பட்ஜெட், மகப்பேறு உதவித் திட்டங்கள் (PMMVY)",
+            "பெண் குழந்தையைக் காப்போம், கற்பிப்போம் (2015), PC-PNDT சட்டம் 1994"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Population Part 1: Concepts, Rates & Demographic Transition",
+        "short_label": "Demographic Concepts",
+        "children": [
+          {
+            "title": "Vital Rates & Formulas",
+            "short_label": "Vital Rates",
+            "children": [
+              {
+                "title": "CBR & CDR (per 1,000 population)",
+                "short_label": "CBR & CDR"
+              },
+              {
+                "title": "TFR (Total Fertility Rate; Replacement Level = 2.1)",
+                "short_label": "TFR"
+              },
+              {
+                "title": "IMR (per 1,000 Live Births) vs MMR (per 100,000 Live Births)",
+                "short_label": "IMR & MMR"
+              }
+            ]
+          },
+          {
+            "title": "Sex & Dependency Ratios",
+            "short_label": "Ratios",
+            "children": [
+              {
+                "title": "Sex Ratio (Females per 1,000 Males; India 2011 = 943)",
+                "short_label": "Sex Ratio"
+              },
+              {
+                "title": "Child Sex Ratio (0-6 Years; India 2011 = 919)",
+                "short_label": "Child Sex Ratio"
+              },
+              {
+                "title": "Dependency Ratio = [(0-14 + 60+) / (15-59)] x 100",
+                "short_label": "Dependency Ratio"
+              }
+            ]
+          },
+          {
+            "title": "Demographic Transition Theory",
+            "short_label": "Transition Theory",
+            "children": [
+              {
+                "title": "Stage 1: High CBR, High CDR (Pre-1921 India)",
+                "short_label": "Stage 1"
+              },
+              {
+                "title": "Stage 2: High CBR, Falling CDR (Explosion 1921-1981)",
+                "short_label": "Stage 2"
+              },
+              {
+                "title": "Stage 3: Falling CBR, Low CDR (Current India, TFR=2.0)",
+                "short_label": "Stage 3"
+              },
+              {
+                "title": "Stage 4 & 5: Low Stationary & Contracting (Ageing)",
+                "short_label": "Stage 4 & 5"
+              }
+            ]
+          },
+          {
+            "title": "Classical Theories",
+            "short_label": "Theories",
+            "children": [
+              {
+                "title": "Malthusian Catastrophe (Geometric Pop vs Arithmetic Food)",
+                "short_label": "Malthus"
+              },
+              {
+                "title": "Optimum Population (Maximum Per Capita Income, Dalton)",
+                "short_label": "Optimum Pop"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Maternal Mortality Ratio (MMR) Denominator Trap: 100,000, NOT 1,000",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Maternal Mortality Ratio (MMR) is measured per 1,000 live births like Infant Mortality Rate (IMR) or Crude Birth Rate (CBR).",
+            "CORRECT FACT: MMR is the ONLY standard vital demographic metric calculated per ONE HUNDRED THOUSAND (100,000) LIVE BIRTHS! All other vital rates (CBR, CDR, IMR) are calculated per 1,000.",
+            "WHY CANDIDATES FAIL: Memorizing formulas without paying attention to the magnitude multiplier of the denominator."
+          ],
+          "ta": [
+            "பொறி: குழந்தை இறப்பு விகிதம் (IMR) போன்றே தாய் இறப்பு விகிதமும் (MMR) 1,000 பிறப்புகளுக்கு அளவிடப்படுகிறது என நினைப்பது.",
+            "சரியான உண்மை: தாய் இறப்பு விகிதம் (MMR) மட்டுமே '1,00,000 உயிருள்ள பிறப்புகளுக்கு' (ஒரு லட்சம்) கணக்கிடப்படும் ஒரே மக்கள் தொகைக் குறிகாட்டியாகும்! மற்ற அனைத்து குறிகாட்டிகளும் (CBR, CDR, IMR) 1,000-க்கு மட்டுமே கணக்கிடப்படுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சூத்திரங்களைப் படிக்கும் போது பகுதியின் பெருக்கல் எண்ணைக் கவனிக்காமல் போவது."
+          ]
+        }
+      },
+      {
+        "title": "Replacement Level Fertility Value Trap: 2.1, NOT 2.0",
+        "points": {
+          "en": [
+            "TRAP: Stating that replacement level fertility is exactly 2.0 children per woman (one to replace the mother, one to replace the father).",
+            "CORRECT FACT: Replacement Level Fertility is statistically established at 2.1 CHILDREN PER WOMAN. The extra 0.1 accounts for: (1) natural excess male births (approx. 105 boys born for every 100 girls), and (2) mortality of female infants and girls before reaching reproductive maturity.",
+            "WHY CANDIDATES FAIL: Applying simplistic arithmetic (1 mother + 1 father = 2 children) and forgetting mortality and biological sex ratio at birth."
+          ],
+          "ta": [
+            "பொறி: தலைமுறை மாற்று நிலை கருவுறுதல் என்பது தாய், தந்தை இருவருக்குப் பதிலாக சரியாக '2.0' குழந்தைகள் என நினைப்பது.",
+            "சரியான உண்மை: தலைமுறை மாற்று நிலை கருவுறுதல் புள்ளிவிவர ரீதியாக '2.1 குழந்தைகள்' என நிர்ணயிக்கப்பட்டுள்ளது. அந்த கூடுதல் 0.1 என்பது: (1) பிறப்பின் போது இயற்கையாகவே பெண் குழந்தைகளை விட ஆண் குழந்தைகள் சற்று அதிகமாகப் பிறப்பது (100 பெண்களுக்கு 105 ஆண்கள்); மற்றும் (2) பெண் குழந்தைகள் இனப்பெருக்க வயதை அடையும் முன் நிகழும் குழந்தை இறப்புகளை ஈடுசெய்வதாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1 தந்தை + 1 தாய் = 2 குழந்தைகள் என்ற எளிய கூட்டலை மட்டும் மனதில் கொண்டு உயிரியல் எதார்த்தங்களை மறந்துவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "India's Current Demographic Transition Stage Trap: Stage 3, NOT Stage 2",
+        "points": {
+          "en": [
+            "TRAP: Believing that India is currently in Stage 2 (Population Explosion) of the demographic transition.",
+            "CORRECT FACT: India has COMPLETED Stage 2 and is currently firmly in STAGE 3 (Late Expanding / Declining Fertility). In Stage 3, birth rates fall rapidly and approach replacement levels (NFHS-5 national TFR = 2.0). India's population growth rate is decelerating.",
+            "WHY CANDIDATES FAIL: Relying on obsolete 1970s/1980s textbooks that taught India as the textbook example of Stage 2 population explosion."
+          ],
+          "ta": [
+            "பொறி: இந்தியா தற்போதும் மக்கள் தொகை மாற்றத்தின் 2-வது கட்டமான 'மக்கள் தொகை வெடிப்பு' கட்டத்தில் உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: இந்தியா 2-வது கட்டத்தைத் தாண்டி தற்போது உறுதியாக '3-வது கட்டத்தில்' (பிறப்பு விகிதம் குறையும் கட்டம்) உள்ளது! இக்கட்டத்தில் பிறப்பு விகிதம் வேகமாகச் சரிந்து மாற்று நிலை வரம்பை எட்டுகிறது (NFHS-5-ல் இந்தியாவின் TFR 2.0). இந்தியாவின் மக்கள் தொகை வளர்ச்சி வேகம் குறைந்து வருகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 1970-களில் எழுதப்பட்ட பழைய புத்தகங்களைப் படித்துவிட்டு இந்தியா இன்றும் மக்கள் தொகை வெடிப்பில் இருப்பதாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Sex Ratio Definition Convention Trap: Females per 1000 Males in India",
+        "points": {
+          "en": [
+            "TRAP: Assuming that India's sex ratio follows the international United Nations convention of males per 100 females.",
+            "CORRECT FACT: India's official statistical convention (Census, Sample Registration System) strictly defines Sex Ratio as the NUMBER OF FEMALES PER 1,000 MALES. Therefore, a sex ratio of 943 means 943 females per 1,000 males. In international UN statistics, sex ratio is defined as males per 100 females (where a value >100 means excess males).",
+            "WHY CANDIDATES FAIL: Mixing up the domestic Indian formula with international demographic literature."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவின் பாலின விகிதம் என்பது ஐக்கிய நாடுகள் சபையின் 100 பெண்களுக்கு உள்ள ஆண்கள் என்ற சர்வதேச விதியைப் பின்பற்றுகிறது என நினைப்பது.",
+            "சரியான உண்மை: இந்தியாவின் அதிகாரப்பூர்வ முறைப்படி பாலின விகிதம் என்பது '1,000 ஆண்களுக்கு உள்ள பெண்களின் எண்ணிக்கை' ஆகும். எனவே 943 என்றால் 1,000 ஆண்களுக்கு 943 பெண்கள் மட்டுமே உள்ளனர் என்று பொருள். சர்வதேச அளவில் இது '100 பெண்களுக்கு உள்ள ஆண்கள்' என கணக்கிடப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இந்திய புள்ளிவிவர முறையையும் சர்வதேச முறையையும் தேர்வில் மாற்றிப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Malthusian Progression Series Trap: Geometric for Population, Arithmetic for Food",
+        "points": {
+          "en": [
+            "TRAP: Reversing the mathematical progressions in Malthusian theory (attributing geometric growth to food and arithmetic to population).",
+            "CORRECT FACT: Malthus strictly asserted that POPULATION grows GEOMETRICALLY (1, 2, 4, 8, 16, 32...) while FOOD PRODUCTION increases only ARITHMETICALLY (1, 2, 3, 4, 5, 6...) due to the law of diminishing returns to agricultural land.",
+            "WHY CANDIDATES FAIL: Inverting the mathematical terms 'Geometric' and 'Arithmetic' in rapid exam recall."
+          ],
+          "ta": [
+            "பொறி: மால்தூசியன் கோட்பாட்டின் கணிதத் தொடர்களை மாற்றி நினைவுகூருவது (உணவு உற்பத்தி பெருக்கல் தொடர், மக்கள் தொகை கூட்டல் தொடர் என தவறாக எண்ணுவது).",
+            "சரியான உண்மை: மால்தூஸ் திட்டவட்டமாக 'மக்கள் தொகை பெருக்கல் தொடரிலும்' (Geometric: 1, 2, 4, 8, 16...), 'உணவு உற்பத்தி கூட்டல் தொடரிலும்' (Arithmetic: 1, 2, 3, 4, 5...) வளர்கிறது என்று கூறினார்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தேர்வில் பெருக்கல் மற்றும் கூட்டல் என்ற வார்த்தைகளை மக்கள் தொகை மற்றும் உணவுடன் மாற்றிப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "Child Sex Ratio Age Cohort Trap: 0 to 6 Years, NOT 0 to 14 Years",
+        "points": {
+          "en": [
+            "TRAP: Defining the Child Sex Ratio (CSR) in Indian census operations as the sex ratio of population aged 0 to 14 years.",
+            "CORRECT FACT: Child Sex Ratio (CSR) in the Census of India is strictly calculated for children aged ZERO TO SIX (0–6) YEARS. The 0 to 14 bracket defines the broader demographic child dependency cohort, NOT the Child Sex Ratio.",
+            "WHY CANDIDATES FAIL: Conflating the child dependency demographic bracket (0-14) with the Child Sex Ratio indicator (0-6)."
+          ],
+          "ta": [
+            "பொறி: இந்திய மக்கள் தொகைக் கணக்கெடுப்பில் குழந்தை பாலின விகிதம் (CSR) என்பது '0 முதல் 14 வயது வரையிலான' சிறுவர்களைக் குறிக்கிறது என நினைப்பது.",
+            "சரியான உண்மை: குழந்தை பாலின விகிதம் (CSR) என்பது மிகத் துல்லியமாக '0 முதல் 6 வயதுக்குட்பட்ட' குழந்தைகளுக்கான பாலின விகிதமாகும்! '0 முதல் 14 வயது' என்பது சார்பு மக்கள் தொகையைக் குறிக்கும் பொதுவான வரம்பு மட்டுமே தவிர, குழந்தை பாலின விகிதம் அல்ல.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 0-14 என்ற சார்புடையோர் வயது வரம்பையும், 0-6 என்ற குழந்தை பாலின விகித வயது வரம்பையும் குழப்பிக் கொள்வது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Crude Birth Rate (CBR) and Crude Death Rate (CDR) are calculated per 1,000 mid-year population.",
+        "Total Fertility Rate (TFR) measures the average number of live children a woman bears over her reproductive lifespan (15-49).",
+        "Replacement level fertility is statistically established at 2.1 children per woman.",
+        "According to NFHS-5 (2019-21), India's national Total Fertility Rate declined to 2.0 (below replacement level).",
+        "Infant Mortality Rate (IMR) measures infant deaths under age 1 per 1,000 live births.",
+        "Maternal Mortality Ratio (MMR) is strictly calculated per 100,000 live births.",
+        "Sex Ratio in India is defined as the number of females per 1,000 males (Census 2011 national average was 943).",
+        "Child Sex Ratio (CSR) in India is strictly measured for the age group 0 to 6 years (Census 2011 was 919).",
+        "Dependency Ratio formula is [(Pop 0-14 + Pop 60+) / Pop 15-59] x 100.",
+        "India is currently in Stage 3 (Late Expanding / Declining Fertility) of the Demographic Transition.",
+        "Stage 1 of Demographic Transition in India ended in 1921 (the Year of the Great Divide).",
+        "Thomas Malthus posited geometric population growth against arithmetic food production growth in 1798."
+      ],
+      "ta": [
+        "செப்பனிடா பிறப்பு விகிதம் (CBR) மற்றும் செப்பனிடா இறப்பு விகிதம் (CDR) 1,000 நடுத்தர மக்கள் தொகைக்கு கணக்கிடப்படுகின்றன.",
+        "மொத்தக் கருவுறுதல் விகிதம் (TFR) ஒரு பெண் தனது இனப்பெருக்கக் காலத்தில் (15-49) பெறும் சராசரி உயிருள்ள குழந்தைகளைக் குறிக்கிறது.",
+        "தலைமுறை மாற்று நிலை கருவுறுதல் என்பது பெண் ஒருவருக்கு 2.1 குழந்தைகள் என நிர்ணயிக்கப்பட்டுள்ளது.",
+        "NFHS-5 (2019-21) கணக்கெடுப்பின்படி இந்தியாவின் தேசிய கருவுறுதல் விகிதம் 2.0 ஆகக் குறைந்துள்ளது (மாற்று வரம்பிற்கு கீழ்).",
+        "குழந்தை இறப்பு விகிதம் (IMR) 1,000 உயிருள்ள பிறப்புகளுக்கு 1 வயதுக்குட்பட்ட இறப்புகளை அளவிடுகிறது.",
+        "தாய் இறப்பு விகிதம் (MMR) 1,00,000 உயிருள்ள பிறப்புகளுக்குக் கணக்கிடப்படுகிறது.",
+        "இந்தியாவில் பாலின விகிதம் என்பது 1,000 ஆண்களுக்கு உள்ள பெண்களின் எண்ணிக்கையாகும் (2011 கணக்கெடுப்பில் 943).",
+        "குழந்தை பாலின விகிதம் (CSR) என்பது 0 முதல் 6 வயது வரையிலான குழந்தைகளுக்கு அளவிடப்படுகிறது (2011-ல் 919).",
+        "சார்பு விகிதத்தின் சூத்திரம்: [(0-14 வயது + 60+ வயது) / 15-59 வயது உழைப்பாளர்கள்] x 100.",
+        "இந்தியா தற்போது மக்கள் தொகை மாற்றக் கோட்பாட்டின் 3-வது கட்டத்தில் (பிறப்பு குறையும் நிலை) உள்ளது.",
+        "இந்தியாவில் மக்கள் தொகை மாற்றத்தின் முதல் கட்டம் 1921-ல் (பெரும் பிரிவினை ஆண்டு) முடிவடைந்தது.",
+        "1798-ல் தாமஸ் மால்தூஸ் மக்கள் தொகை பெருக்கல் தொடரிலும் உணவு உற்பத்தி கூட்டல் தொடரிலும் வளர்கிறது எனக் கூறினார்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "CBR and CDR are per 1,000 mid-year population; Natural Growth Rate = (CBR - CDR) as a percentage.",
+        "TFR is children per woman (15-49 years); Replacement level = 2.1 (accounting for sex ratio at birth and mortality).",
+        "India achieved national below-replacement fertility (TFR = 2.0) in NFHS-5 (2019-21).",
+        "IMR is per 1,000 live births; MMR is strictly per 100,000 live births (never 1,000).",
+        "Sex Ratio = Females per 1,000 Males in India (2011: India = 943; Kerala = 1084; Haryana = 879).",
+        "Child Sex Ratio (CSR) = Females per 1,000 Males aged 0-6 years; declined from 927 (2001) to 919 (2011).",
+        "Dependency Ratio = [(Pop 0-14 + Pop 60+) / Pop 15-59] x 100; its decline creates the Demographic Dividend.",
+        "Demographic Transition: Stage 1 (Pre-1921), Stage 2 (Explosion 1921-1981), Stage 3 (Declining 1981-Present, Current).",
+        "Malthusian Theory: Population grows geometrically (1, 2, 4, 8...); food supply increases arithmetically (1, 2, 3, 4...).",
+        "Optimum Population Theory (Cannan/Dalton): Population size maximizing Per Capita Income (Output per head)."
+      ],
+      "ta": [
+        "CBR மற்றும் CDR 1,000 மக்களுக்கு கணக்கிடப்படுகிறது; இயற்கை வளர்ச்சி விகிதம் = (CBR - CDR) சதவீதமாகும்.",
+        "TFR என்பது பெண் ஒருவருக்கான குழந்தைகள் (15-49 வயது); மாற்று நிலை = 2.1 (பாலின ஏற்றத்தாழ்வு மற்றும் இறப்பை ஈடுசெய்ய).",
+        "NFHS-5 (2019-21) கணக்கெடுப்பில் இந்தியா மாற்று நிலைக்குக் குறைவான தேசிய கருவுறுதல் விகிதத்தை (TFR = 2.0) எட்டியது.",
+        "IMR என்பது 1,000 உயிருள்ள பிறப்புகளுக்கு; MMR என்பது 1,00,000 உயிருள்ள பிறப்புகளுக்கு மட்டுமே.",
+        "பாலின விகிதம் = 1,000 ஆண்களுக்கு உள்ள பெண்கள் (2011: இந்தியா = 943; கேரளா = 1084; ஹரியானா = 879).",
+        "குழந்தை பாலின விகிதம் (CSR) = 0-6 வயதுள்ள 1,000 சிறுவர்களுக்கு உள்ள சிறுமிகள்; 2001-ல் 927-லிருந்து 2011-ல் 919 ஆகச் சரிந்தது.",
+        "சார்பு விகிதம் = [(0-14 + 60+) / 15-59] x 100; இது குறைவது மக்கள் தொகை நன்மையை உருவாக்குகிறது.",
+        "மக்கள் தொகை மாற்றம்: கட்டம் 1 (1921 வரை), கட்டம் 2 (வெடிப்பு 1921-1981), கட்டம் 3 (தற்போதைய நிலை 1981 முதல்).",
+        "மால்தூசியன் கோட்பாடு: மக்கள் தொகை பெருக்கல் தொடரிலும் (1, 2, 4, 8...), உணவு உற்பத்தி கூட்டல் தொடரிலும் (1, 2, 3, 4...) வளரும்.",
+        "உகந்த மக்கள் தொகைக் கோட்பாடு: தனிநபர் வருமானத்தை உச்சபட்ச அளவுக்கு உயர்த்தும் உகந்த மக்கள் தொகை அளவு."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_pop_101",
+        "front_en": "What is the statistical multiplier base used in the denominator of Maternal Mortality Ratio (MMR)?",
+        "front_ta": "தாய் இறப்பு விகிதத்தின் (MMR) பகுதியில் பயன்படுத்தப்படும் பெருக்கல் அளவு என்ன?",
+        "back_en": "Per 100,000 (one hundred thousand) live births.",
+        "back_ta": "1,00,000 (ஒரு லட்சம்) உயிருள்ள பிறப்புகளுக்கு."
+      },
+      {
+        "id": "rc_pop_102",
+        "front_en": "What is the exact statistical value of Replacement Level Fertility and why is it not 2.0?",
+        "front_ta": "தலைமுறை மாற்று நிலை கருவுறுதலின் துல்லியமான மதிப்பு என்ன மற்றும் அது ஏன் 2.0 அல்ல?",
+        "back_en": "2.1 children per woman. The extra 0.1 accounts for excess male births at birth and female childhood mortality before reproductive age.",
+        "back_ta": "பெண் ஒருவருக்கு 2.1 குழந்தைகள். அந்த 0.1 என்பது பிறப்பில் ஆண் குழந்தை கூடுதல் விகிதத்தையும், பெண்கள் பருவமடையும் முன் நிகழும் குழந்தை இறப்பையும் ஈடுசெய்கிறது."
+      },
+      {
+        "id": "rc_pop_103",
+        "front_en": "What was India's national Total Fertility Rate (TFR) recorded in the National Family Health Survey (NFHS-5)?",
+        "front_ta": "தேசிய குடும்ப நலக் கணக்கெடுப்பில் (NFHS-5) பதிவான இந்தியாவின் தேசிய மொத்தக் கருவுறுதல் விகிதம் (TFR) என்ன?",
+        "back_en": "2.0 children per woman (dropping below the replacement level of 2.1).",
+        "back_ta": "பெண் ஒருவருக்கு 2.0 குழந்தைகள் (மாற்று நிலை வரம்பான 2.1-க்கு கீழ் குறைந்தது)."
+      },
+      {
+        "id": "rc_pop_104",
+        "front_en": "In which stage of the Demographic Transition is India currently placed?",
+        "front_ta": "மக்கள் தொகை மாற்றக் கோட்பாட்டின் எந்தக் கட்டத்தில் இந்தியா தற்போது உள்ளது?",
+        "back_en": "Stage 3 (Late Expanding Stage characterized by rapidly declining birth rates and low death rates).",
+        "back_ta": "3-வது கட்டம் (வேகமாகச் சரியும் பிறப்பு விகிதம் மற்றும் குறைந்த இறப்பு விகிதம் கொண்ட கட்டம்)."
+      },
+      {
+        "id": "rc_pop_105",
+        "front_en": "How is Sex Ratio defined in Indian census operations?",
+        "front_ta": "இந்திய மக்கள் தொகைக் கணக்கெடுப்பில் பாலின விகிதம் எவ்வாறு வரையறுக்கப்படுகிறது?",
+        "back_en": "The number of females per 1,000 males in the population.",
+        "back_ta": "மக்கள் தொகையில் 1,000 ஆண்களுக்கு உள்ள பெண்களின் எண்ணிக்கை."
+      },
+      {
+        "id": "rc_pop_106",
+        "front_en": "What was the national Child Sex Ratio (0-6 years) in Census 2011 compared to Census 2001?",
+        "front_ta": "2001 கணக்கெடுப்புடன் ஒப்பிடுகையில் 2011 கணக்கெடுப்பில் தேசிய குழந்தை பாலின விகிதம் (0-6 வயது) என்னவாக இருந்தது?",
+        "back_en": "It dropped from 927 (in 2001) to 919 females per 1,000 males (in 2011).",
+        "back_ta": "2001-ல் 927 ஆக இருந்தது 2011-ல் 1,000 சிறுவர்களுக்கு 919 சிறுமிகள் எனச் சரிந்தது."
+      },
+      {
+        "id": "rc_pop_107",
+        "front_en": "What is the mathematical formula for the Demographic Dependency Ratio?",
+        "front_ta": "மக்கள் தொகை சார்பு விகிதத்தின் கணிதச் சூத்திரம் என்ன?",
+        "back_en": "Dependency Ratio = [(Population aged 0-14 + Population aged 60+) / Population aged 15-59] x 100.",
+        "back_ta": "சார்பு விகிதம் = [(0-14 வயது மக்கள் + 60+ வயது மக்கள்) / 15-59 வயது உழைப்பாளர்கள்] x 100."
+      },
+      {
+        "id": "rc_pop_108",
+        "front_en": "According to Thomas Malthus, at what mathematical progression rates do population and food supply grow?",
+        "front_ta": "தாமஸ் மால்தூஸின் கூற்றுப்படி, மக்கள் தொகையும் உணவு உற்பத்தியும் எந்த கணித விகிதங்களில் வளர்கின்றன?",
+        "back_en": "Population grows Geometrically (1, 2, 4, 8, 16...); Food supply grows Arithmetically (1, 2, 3, 4, 5...).",
+        "back_ta": "மக்கள் தொகை பெருக்கல் தொடரிலும் (1, 2, 4, 8, 16...); உணவு உற்பத்தி கூட்டல் தொடரிலும் (1, 2, 3, 4, 5...) வளர்கின்றன."
+      },
+      {
+        "id": "rc_pop_109",
+        "front_en": "What is the core economic criterion defining the 'Optimum Population' according to Edwin Cannan?",
+        "front_ta": "எட்வின் கேனனின் கூற்றுப்படி 'உகந்த மக்கள் தொகையை' வரையறுக்கும் முதன்மைப் பொருளாதார அளவுகோல் என்ன?",
+        "back_en": "The size of population that maximizes Per Capita Income (Output per head) given available resources and technology.",
+        "back_ta": "கிடைக்கக்கூடிய வளங்கள் மற்றும் தொழில்நுட்பத்தைக் கொண்டு தனிநபர் வருமானத்தை (உற்பத்தியை) உச்சபட்ச நிலைக்குக் கொண்டுசெல்லும் மக்கள் தொகை அளவு."
+      },
+      {
+        "id": "rc_pop_110",
+        "front_en": "What is the Natural Growth Rate of population and how is it calculated?",
+        "front_ta": "மக்கள் தொகையின் இயற்கை வளர்ச்சி விகிதம் என்றால் என்ன மற்றும் அது எவ்வாறு கணக்கிடப்படுகிறது?",
+        "back_en": "The difference between Crude Birth Rate and Crude Death Rate: Natural Growth Rate = (CBR - CDR), expressed as a percentage.",
+        "back_ta": "செப்பனிடா பிறப்பு விகிதத்திற்கும் செப்பனிடா இறப்பு விகிதத்திற்கும் உள்ள வித்தியாசம்: இயற்கை வளர்ச்சி = (CBR - CDR) சதவீதமாகும்."
+      }
+    ]
+  }
+}

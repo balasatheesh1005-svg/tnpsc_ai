@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "topic_id": "economy_ayushman_bharat_part_1",
+    "repository_id": "economy_ayushman_bharat",
+    "display_title": "Ayushman Bharat – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Ayushman Bharat",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Ayushman Bharat NHP 2017",
+    "Two Pillar Health Model",
+    "Ayushman Arogya Mandirs HWCs",
+    "First HWC Bijapur Chhattisgarh 2018",
+    "Community Health Officer CHO",
+    "12 CPHC Service Packages",
+    "Universal NCD Screening Hypertension Diabetes",
+    "105 Free Medicines 14 Diagnostics",
+    "eSanjeevani Telemedicine Hub and Spoke",
+    "November 2023 Rebranding Arogya Mandir",
+    "PM JAY Launch Ranchi September 2018",
+    "Subsumed RSBY 30000 Cover"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the strategic shift from selective healthcare to Universal Health Coverage (NHP 2017).",
+        "Examine the complementary two-pillar architecture of Ayushman Bharat (HWCs and PM-JAY)."
+      ],
+      "ta": [
+        "தேர்ந்தெடுக்கப்பட்ட சிகிச்சையிலிருந்து உலகளாவிய சுகாதாரப் பாதுகாப்பை (NHP 2017) நோக்கிய மாற்றத்தைப் புரிந்துகொள்ளுதல்.",
+        "ஆயுஷ்மான் பாரத்தின் இரு தூண் கட்டமைப்பை (HWCs மற்றும் PM-JAY) ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize key launch dates: 14th April 2018 (First HWC Bijapur) and 23rd September 2018 (PM-JAY Ranchi).",
+        "Recall the 12 CPHC service packages, CHO qualifications, and eSanjeevani telemedicine integration."
+      ],
+      "ta": [
+        "முக்கிய தொடக்க தேதிகளை நினைவில் நிறுத்துதல்: 2018 ஏப்ரல் 14 (முதல் HWC பீஜப்பூர்) மற்றும் 2018 செப்டம்பர் 23 (PM-JAY ராஞ்சி).",
+        "12 CPHC சேவைகள், CHO தகுதிகள் மற்றும் இ-சஞ்சீவனி தொலைதூர மருத்துவத்தை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how Ayushman Arogya Mandirs address the epidemiological transition via universal NCD screening.",
+        "Appraise the advantages of hub-and-spoke telemedicine in delivering specialist care to remote hamlets."
+      ],
+      "ta": [
+        "தொற்றா நோய் பரிசோதனைகள் மூலம் ஆயுஷ்மான் மையங்கள் நோயியல் மாற்றத்தை எவ்வாறு எதிர்கொள்கின்றன என ஆய்வு செய்தல்.",
+        "தொலைதூர கிராமங்களுக்கு சிறப்பு மருத்துவ சிகிச்சையை வழங்க தொலைதூர மருத்துவம் எவ்வாறு உதவுகிறது என்பதை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid traps regarding HWC vs PM-JAY launch sites, outpatient exclusions, and CHO qualifications."
+      ],
+      "ta": [
+        "HWC vs PM-JAY தொடக்க இடங்கள், வெளிநோயாளி வரம்புகள் மற்றும் CHO தகுதிகள் குறித்த தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Ayushman Bharat – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_strategic_genesis_ayushman",
+      "title_en": "Strategic Genesis & National Health Policy (NHP) 2017 Shift",
+      "title_ta": "திட்டத்தின் தோற்றம் & தேசிய சுகாதாரக் கொள்கை (NHP 2017) மாற்றங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_pillar_1_hwc_ayushman_mandirs",
+      "title_en": "Pillar 1: Ayushman Arogya Mandirs (Health & Wellness Centres)",
+      "title_ta": "தூண் 1: ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் (நலவாழ்வு மையங்கள் - HWCs)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_comprehensive_primary_care_packages",
+      "title_en": "Comprehensive Primary Health Care (CPHC): The 12 Service Packages",
+      "title_ta": "விரிவான முதன்மைச் சுகாதாரம் (CPHC): 12 சேவை தொகுப்புகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_digital_telemedicine_esanjeevani",
+      "title_en": "Telemedicine Integration: eSanjeevani Ecosystem & Wellness",
+      "title_ta": "தொலைதூர மருத்துவ இணைப்பு: இ-சஞ்சீவனி தளம் & யோகா நல்வாழ்வு",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Ayushman Bharat is India's flagship national health initiative launched in 2018 based on the National Health Policy (NHP) 2017 recommendations to achieve Universal Health Coverage (UHC) and UN Sustainable Development Goal (SDG) Target 3.8, structurally organized into two inter-locking pillars: (1) Ayushman Arogya Mandirs (Health & Wellness Centres - HWCs) delivering Comprehensive Primary Health Care (CPHC), and (2) Pradhan Mantri Jan Arogya Yojana (PM-JAY) providing secondary and tertiary inpatient health assurance.",
+      "ta": "ஆயுஷ்மான் பாரத் திட்டம் என்பது உலகளாவிய சுகாதாரப் பாதுகாப்பை (UHC) அடைவதற்கும், ஐக்கிய நாடுகள் சபையின் நிலையான வளர்ச்சி இலக்கு (SDG) 3.8-ஐ எட்டுவதற்கும் தேசிய சுகாதாரக் கொள்கை (NHP) 2017-ன் பரிந்துரைகளின் அடிப்படையில் 2018-ல் தொடங்கப்பட்ட இந்தியாவின் முதன்மையான தேசிய சுகாதார முன்முயற்சியாகும்; இது இரண்டு ஒன்றோடொன்று இணைந்த தூண்களாக கட்டமைக்கப்பட்டுள்ளது: (1) விரிவான முதன்மைச் சுகாதாரத்தை (CPHC) வழங்கும் ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் (நலவாழ்வு மையங்கள் - HWCs), மற்றும் (2) இரண்டாம் மற்றும் மூன்றாம் நிலை மருத்துவமனை சிகிச்சைகளுக்கான பிரதான் மந்திரி ஜன் ஆரோக்கிய யோஜனா (PM-JAY)."
+    },
+    "introduction": {
+      "en": "Historically, India's public healthcare architecture suffered from fragmented, disease-specific vertical schemes and an overwhelming concentration of resources on urban tertiary hospitals, leaving primary care neglected and rural families burdened by catastrophic Out-of-Pocket Expenditure (OOPE). In response, the Union Budget 2018-19 announced the Ayushman Bharat mission. The first pillar targets upgrading 1.5 lakh rural and urban Sub-Centres and Primary Health Centres (PHCs) into Ayushman Arogya Mandirs (formerly Health & Wellness Centres - HWCs). The very first HWC was inaugurated on 14th April 2018 (Dr. B.R. Ambedkar Jayanti) at Bijapur, Chhattisgarh by Prime Minister Narendra Modi. These centres expand public primary care beyond selective maternal-child health to 12 Comprehensive Primary Health Care (CPHC) packages, including universal screening for hypertension, diabetes, and cancers, led by Community Health Officers (CHOs) and linked to medical colleges via eSanjeevani telemedicine. The second pillar, PM-JAY, was launched on 23rd September 2018 in Ranchi, Jharkhand, offering inpatient hospitalization cover. This module examines the strategic genesis of Ayushman Bharat, its two-pillar paradigm, Comprehensive Primary Health Care (CPHC), and the operational network of Ayushman Arogya Mandirs.",
+      "ta": "வரலாற்று ரீதியாக, இந்தியாவின் பொதுச் சுகாதாரக் கட்டமைப்பு குறிப்பிட்ட நோய்களுக்கான தனித்தனி திட்டங்களாகவும், நகர்ப்புற மூன்றாம் நிலை மருத்துவமனைகளில் மட்டுமே நிதி குவிந்த நிலையிலும் இருந்தது; இதனால் கிராமப்புற முதன்மைச் சுகாதாரம் புறக்கணிக்கப்பட்டு, ஏழைக் குடும்பங்கள் பெருமளவிலான சொந்தச் செலவுகளால் (OOPE) வறுமையில் தள்ளப்பட்டனர். இதற்கு தீர்வாக, 2018-19 மத்திய பட்ஜெட்டில் 'ஆயுஷ்மான் பாரத்' இயக்கம் அறிவிக்கப்பட்டது. இதன் முதல் தூண், நாடு முழுவதும் உள்ள 1.5 லட்சம் கிராமப்புற மற்றும் நகர்ப்புற துணை சுகாதார நிலையங்கள் மற்றும் ஆரம்ப சுகாதார நிலையங்களை (PHC) 'ஆயுஷ்மான் ஆரோக்கிய மந்திரங்களாக' (முன்பு நலவாழ்வு மையங்கள் - HWCs) தரம் உயர்த்துவதை நோக்கமாகக் கொண்டது. முதல் நலவாழ்வு மையம் 2018 ஏப்ரல் 14 அன்று (அம்பேத்கர் ஜெயந்தி) சத்தீஸ்கரின் பீஜப்பூரில் பிரதமர் நரேந்திர மோடியால் திறந்து வைக்கப்பட்டது. இம்மையங்கள் தாய்-சேய் நலனைத் தாண்டி நீரிழிவு, இரத்த அழுத்தம் மற்றும் புற்றுநோய் பரிசோதனைகள் உள்ளிட்ட 12 விரிவான முதன்மைச் சுகாதாரப் பணிகளை (CPHC) சமூக சுகாதார அலுவலர்கள் (CHO) மற்றும் இ-சஞ்சீவனி (eSanjeevani) தொலைதூர மருத்துவ சேவை மூலம் வழங்குகின்றன. இரண்டாம் தூணான PM-JAY 2018 செப்டம்பர் 23 அன்று ஜார்க்கண்ட் மாநிலம் ராஞ்சியில் தொடங்கப்பட்டது. இப்பகுதி ஆயுஷ்மான் பாரத்தின் தோற்றம், இரண்டு தூண் மாதிரி மற்றும் முதன்மைச் சுகாதாரக் கட்டமைப்பை ஆராய்கிறது."
+    },
+    "sec_strategic_genesis_ayushman": [
+      {
+        "term_en": "National Health Policy 2017 & UHC Imperative",
+        "term_ta": "தேசிய சுகாதாரக் கொள்கை 2017 & உலகளாவிய சுகாதாரப் பாதுகாப்பு (UHC)",
+        "details_en": "The National Health Policy (NHP) 2017 formulated under the Ministry of Health and Family Welfare advocated a paradigm shift from selective healthcare to 'comprehensive primary healthcare' alongside robust secondary/tertiary financial protection. It aligned with UN Sustainable Development Goal (SDG Target 3.8) aiming for Universal Health Coverage (UHC), prevention of catastrophic medical impoverishment, and public health spending of 2.5% of GDP.",
+        "details_ta": "தேசிய சுகாதாரக் கொள்கை (NHP) 2017, குறிப்பிட்ட நோய்களுக்கான சிகிச்சை என்ற நிலையிலிருந்து 'விரிவான முதன்மைச் சுகாதாரம்' மற்றும் உயர் மருத்துவ நிதிப் பாதுகாப்பு என்ற முழுமையான அணுகுமுறையை முன்வைத்தது. இது ஐ.நா-வின் நிலையான வளர்ச்சி இலக்கு (SDG 3.8: உலகளாவிய சுகாதாரப் பாதுகாப்பு - UHC) மற்றும் பொதுச் சுகாதாரச் செலவினத்தை ஜிடிபியில் 2.5%-ஆக உயர்த்தும் தொலைநோக்குடன் ஒருங்கிணைக்கப்பட்டது."
+      },
+      {
+        "term_en": "The Two-Pillar Integrated Delivery Architecture",
+        "term_ta": "இரண்டு தூண்கள் கொண்ட ஒருங்கிணைந்த விநியோகக் கட்டமைப்பு",
+        "details_en": "Ayushman Bharat was constructed as a dual-architecture healthcare system: Pillar 1 builds health resilience from below through 1.5 lakh Ayushman Arogya Mandirs (HWCs) delivering promotive, preventive, and primary clinical care; Pillar 2 protects families from above through PM-JAY by providing ₹5 lakh annual inpatient assurance against financial catastrophe.",
+        "details_ta": "ஆயுஷ்மான் பாரத் இரு பரிமாண அமைப்பாக வடிவமைக்கப்பட்டது: முதல் தூண் என்பது 1.5 லட்சம் ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் (HWCs) மூலம் அடிமட்டத்தில் தடுப்பு மற்றும் ஆரம்ப சிகிச்சையை உறுதி செய்கிறது; இரண்டாம் தூண் என்பது PM-JAY திட்டத்தின் மூலம் தீவிர மருத்துவமனை சிகிச்சைகளுக்கு ஆண்டுக்கு ₹5 லட்சம் வழங்கி ஏழைக் குடும்பங்களை கடன் வலையிலிருந்து பாதுகாக்கிறது."
+      }
+    ],
+    "sec_pillar_1_hwc_ayushman_mandirs": [
+      {
+        "term_en": "Mandate, Upgradation Target & Inauguration",
+        "term_ta": "இலக்கு, தரம் உயர்த்துதல் & தொடக்க மைல்கல்",
+        "details_en": "Under Pillar 1, existing Sub-Centres (serving 5,000 in plains / 3,000 in hills) and Primary Health Centres (serving 30,000 in plains / 20,000 in hills) are upgraded into Ayushman Arogya Mandirs. The first centre was inaugurated on 14th April 2018 in Bijapur, Chhattisgarh. In November 2023, the Ministry rebranded all HWCs as 'Ayushman Arogya Mandirs' with the tagline 'Arogyam Paramam Dhanam'.",
+        "details_ta": "முதல் தூணின் கீழ், ஏற்கனவே உள்ள துணை சுகாதார நிலையங்கள் மற்றும் ஆரம்ப சுகாதார நிலையங்கள் (PHC) ஆயுஷ்மான் ஆரோக்கிய மந்திரங்களாக தரம் உயர்த்தப்படுகின்றன (இலக்கு: 1.5 லட்சம் மையங்கள்). முதல் மையம் 2018 ஏப்ரல் 14 அன்று சத்தீஸ்கரின் பீஜப்பூரில் தொடங்கப்பட்டது. நவம்பர் 2023-ல் மத்திய அரசு இவற்றை 'ஆயுஷ்மான் ஆரோக்கிய மந்திர்' எனப் பெயர் மாற்றியது ('ஆரோக்கியம் பரமம் தனம்' என்ற முழக்கத்துடன்)."
+      },
+      {
+        "term_en": "Community Health Officer (CHO) & Multi-Skilled Team",
+        "term_ta": "சமூக சுகாதார அலுவலர் (CHO) & பல்திறன் மருத்துவக் குழு",
+        "details_en": "Each upgraded Sub-Centre level Ayushman Arogya Mandir is led by a Community Health Officer (CHO)—a B.Sc Nursing or Ayurvedic practitioner trained through a 6-month Bridge Program in Community Health (BPCCH) conducted with IGNOU. The CHO works alongside Auxiliary Nurse Midwives (ANMs), Male Multi-Purpose Workers (MPWs), and Accredited Social Health Activists (ASHAs).",
+        "details_ta": "ஒவ்வொரு துணை சுகாதார நிலைய அளவிலான மையமும் ஒரு 'சமூக சுகாதார அலுவலரால்' (CHO - Community Health Officer) வழிநடத்தப்படுகிறது; இவர் B.Sc நர்சிங் அல்லது ஆயுர்வேத மருத்துவப் பட்டம் பெற்று, IGNOU மூலம் 6 மாத சமூக சுகாதார சான்றிதழ் பயிற்சி பெற்றவராவார். இவர் கிராம செவிலியர்கள் (ANM) மற்றும் ஆஷா (ASHA) பணியாளர்களுடன் இணைந்து செயல்படுகிறார்."
+      }
+    ],
+    "sec_comprehensive_primary_care_packages": [
+      {
+        "term_en": "Transition from Selective RCH to Universal CPHC",
+        "term_ta": "தேர்ந்தெடுக்கப்பட்ட RCH-லிருந்து விரிவான CPHC நோக்கிய மாற்றம்",
+        "details_en": "Earlier sub-centres delivered only selective care: Reproductive, Maternal, Newborn, and Child Health (RMNCH) and basic vector control. Ayushman Arogya Mandirs expanded this to Comprehensive Primary Health Care (CPHC) covering 12 service packages, notably introducing early population-level screening and management for Non-Communicable Diseases (NCDs) like hypertension, diabetes, oral, breast, and cervical cancers.",
+        "details_ta": "முந்தைய துணை நிலையங்கள் வெறும் தாய்-சேய் நலன் (RCH) மற்றும் மலேரியா தடுப்பு போன்ற தேர்ந்தெடுக்கப்பட்ட பணிகளை மட்டுமே செய்தன. ஆயுஷ்மான் மையங்கள் இதனை 12 விரிவான முதன்மைச் சுகாதாரப் பணிகளாக (CPHC) விரிவுபடுத்தின; குறிப்பாக இரத்த அழுத்தம், நீரிழிவு, வாய், மார்பக மற்றும் கர்ப்பப்பை வாய்ப் புற்றுநோய் போன்ற தொற்றா நோய்களை ஆரம்பத்திலேயே கண்டறியும் பரிசோதனைகள் இணைக்கப்பட்டன."
+      },
+      {
+        "term_en": "Full Spectrum of 12 CPHC Services",
+        "term_ta": "12 விரிவான CPHC சேவைகளின் முழுமையான விவரம்",
+        "details_en": "The 12 service packages comprise: (1) Care in pregnancy and childbirth; (2) Neonatal and infant care; (3) Childhood and adolescent health; (4) Family planning and reproductive health; (5) Management of communicable diseases (TB, leprosy, vector-borne); (6) Outpatient care for acute minor ailments; (7) Screening and management of NCDs; (8) Mental health care; (9) Care for ophthalmic and ENT conditions; (10) Oral health care; (11) Elderly and palliative health care; and (12) Emergency medical services and trauma care.",
+        "details_ta": "12 சேவை தொகுப்புகள்: (1) கர்ப்பம் மற்றும் பிரசவ கால பராமரிப்பு; (2) பச்சிளங்குழந்தை பராமரிப்பு; (3) குழந்தைகள் மற்றும் வளரிளம்பருவத்தினர் சுகாதாரம்; (4) குடும்பக் கட்டுப்பாடு; (5) தொற்று நோய்கள் மேலாண்மை (காசநோய், தொழுநோய்); (6) வெளிநோயாளி ஆரம்ப சிகிச்சை; (7) தொற்றா நோய்கள் (NCDs) பரிசோதனை; (8) மனநலப் பராமரிப்பு; (9) கண் மற்றும் காது, மூக்கு, தொண்டை பராமரிப்பு; (10) பல் மற்றும் வாய் சுகாதாரம்; (11) முதியோர் மற்றும் வலி நிவாரண பராமரிப்பு; (12) அவசர முதலுதவி சிகிச்சை."
+      }
+    ],
+    "sec_digital_telemedicine_esanjeevani": [
+      {
+        "term_en": "eSanjeevani AB-HWC Hub-and-Spoke Teleconsultation",
+        "term_ta": "இ-சஞ்சீவனி மைய-ஆர முறை தொலைதூர மருத்துவ ஆலோசனை",
+        "details_en": "eSanjeevani operates on a hub-and-spoke model connecting Ayushman Arogya Mandirs (spokes) to specialist medical officers in District Hospitals and Medical Colleges (hubs). Patients in remote villages consult MBBS doctors and super-specialists via video call guided by the CHO, who receives digital prescriptions for free essential drugs (105 free medicines and 14 free diagnostics available at the centre).",
+        "details_ta": "இ-சஞ்சீவனி (eSanjeevani) தளம் 'மைய-ஆர' (Hub-and-Spoke) அமைப்பில் செயல்படுகிறது; இதில் கிராமப்புற ஆயுஷ்மான் மையங்கள் மாவட்ட மருத்துவமனைகள் மற்றும் மருத்துவக் கல்லூரிகளுடன் வீடியோ மூலம் இணைக்கப்படுகின்றன. நோயாளிகளுக்கு கிராமத்திலேயே உயர் மருத்துவர்களின் ஆலோசனை கிடைக்கிறது; மருத்துவர் அனுப்பும் டிஜிட்டல் மருந்துக் குறிப்பின்படி CHO அத்தியாவசிய மருந்துகளை (105 இலவச மருந்துகள், 14 இலவச பரிசோதனைகள்) வழங்குகிறார்."
+      },
+      {
+        "term_en": "Wellness Promotion: Yoga & Lifestyle Modifications",
+        "term_ta": "நல்வாழ்வு மேம்பாடு: யோகா மற்றும் வாழ்க்கைமுறை மாற்றங்கள்",
+        "details_en": "Going beyond clinical medicines, Ayushman Arogya Mandirs institutionalize promotive health. Each centre conducts mandatory weekly community Yoga sessions, promotes healthy diet and physical activity, organizes wellness walks, and celebrates annual Health Melas to shift focus from curative illness to holistic wellness.",
+        "details_ta": "மருத்துவ சிகிச்சைக்கு அப்பால், ஆயுஷ்மான் மையங்கள் ஆரோக்கிய வாழ்வை ஊக்குவிக்கின்றன. ஒவ்வொரு மையத்திலும் வாரந்தோறும் யோகா வகுப்புகள், ஆரோக்கிய உணவு மற்றும் உடற்பயிற்சி வழிகாட்டுதல்கள் வழங்கப்படுகின்றன; நோய்களை குணப்படுத்துவதைத் தாண்டி முழுமையான ஆரோக்கியத்தை உருவாக்குவதே இதன் நோக்கமாகும்."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_traditional_subcentre_vs_ayushman_mandir",
+        "title_en": "Traditional Sub-Centres vs Ayushman Arogya Mandirs (Health & Wellness Centres)",
+        "title_ta": "பாரம்பரிய துணை சுகாதார நிலையம் vs ஆயுஷ்மான் ஆரோக்கிய மந்திர் (HWC) ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Traditional Sub-Centre (Pre-2018)",
+          "Ayushman Arogya Mandir (HWC)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "பாரம்பரிய துணை நிலையம் (2018 வரை)",
+          "ஆயுஷ்மான் ஆரோக்கிய மந்திர் (HWC)"
+        ],
+        "rows_en": [
+          [
+            "Clinical Mandate",
+            "Selective Primary Care (RMNCH maternal, infant vaccines, basic sanitation)",
+            "Comprehensive Primary Health Care (12 broad service packages)"
+          ],
+          [
+            "Staffing Leadership",
+            "Auxiliary Nurse Midwife (ANM) and Male Multi-Purpose Worker",
+            "Mid-Level Health Provider: Community Health Officer (CHO) + ANMs"
+          ],
+          [
+            "NCD Screening",
+            "Zero facility for population-level screening for hypertension or cancers",
+            "Mandatory screening for diabetes, hypertension, oral, breast, & cervical cancers"
+          ],
+          [
+            "Diagnostics & Medicines",
+            "Bare minimum kit (~5-10 medicines; zero lab testing capacity)",
+            "Point-of-care diagnostics (14 free tests) and 105 free essential medicines"
+          ],
+          [
+            "Telemedicine Access",
+            "Non-existent; patients compelled to travel to distant district hospitals",
+            "Real-time specialist video consultations via eSanjeevani hub-and-spoke"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சிகிச்சை வரம்பு",
+            "தேர்ந்தெடுக்கப்பட்ட முதன்மைச் சிகிச்சை (தாய்-சேய் நலம், தடுப்பூசி மட்டுமே)",
+            "12 சேவை தொகுப்புகள் கொண்ட விரிவான முதன்மைச் சுகாதாரம் (CPHC)"
+          ],
+          [
+            "தலைமைப் பணியாளர்",
+            "துணை கிராம செவிலியர் (ANM) மற்றும் பல்நோக்கு ஆண் பணியாளர்",
+            "இடைநிலை சுகாதார வழங்குநர்: சமூக சுகாதார அலுவலர் (CHO) + ANMs"
+          ],
+          [
+            "தொற்றா நோய் பரிசோதனை",
+            "நீரிழிவு, இரத்த அழுத்தம், புற்றுநோய் பரிசோதனைக்கான எந்த வசதியும் இல்லை",
+            "நீரிழிவு, இரத்த அழுத்தம், 3 வகை புற்றுநோய்களைக் கண்டறியும் கட்டாயப் பரிசோதனை"
+          ],
+          [
+            "மருந்துகள் & ஆய்வகம்",
+            "மிகக் குறைந்த மருந்துகள் (~5-10 மருந்துகள்; பரிசோதனை வசதிகள் இல்லை)",
+            "14 வகையான உடனடி ஆய்வகப் பரிசோதனைகள் மற்றும் 105 அத்தியாவசிய இலவச மருந்துகள்"
+          ],
+          [
+            "தொலைதூர மருத்துவம்",
+            "எந்த தொலைதூர மருத்துவ வசதியும் இல்லை; மாவட்ட மருத்துவமனைக்கு அலைய வேண்டும்",
+            "இ-சஞ்சீவனி (eSanjeevani) மூலம் மாவட்ட சிறப்பு மருத்துவர்களுடன் வீடியோ ஆலோசனை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pillar1_hwc_vs_pillar2_pmjay",
+        "title_en": "Ayushman Bharat Pillar 1 (HWCs) vs Pillar 2 (PM-JAY)",
+        "title_ta": "ஆயுஷ்மான் பாரத் தூண் 1 (HWCs) vs தூண் 2 (PM-JAY) ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Pillar 1: Ayushman Arogya Mandirs (HWCs)",
+          "Pillar 2: PM-JAY Inpatient Assurance"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "தூண் 1: ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் (HWCs)",
+          "தூண் 2: பிரதான் மந்திரி ஜன் ஆரோக்கிய யோஜனா (PM-JAY)"
+        ],
+        "rows_en": [
+          [
+            "Tier of Healthcare",
+            "Comprehensive Primary Care (Promotive, preventive, diagnostic, outpatient)",
+            "Secondary and Tertiary Care (Inpatient surgical and medical hospitalization)"
+          ],
+          [
+            "Financial Mechanism",
+            "Supply-side direct public infrastructure and human resource funding",
+            "Demand-side health assurance providing up to ₹5 lakh per family per year"
+          ],
+          [
+            "Inauguration Milestone",
+            "14th April 2018 (Bijapur, Chhattisgarh) on Ambedkar Jayanti",
+            "23rd September 2018 (Ranchi, Jharkhand) by PM Narendra Modi"
+          ],
+          [
+            "Target Catchment",
+            "Universal population in catchment area (3,000 to 30,000 residents per centre)",
+            "Bottom 40% vulnerable population identified by SECC 2011 + Age 70+ seniors"
+          ],
+          [
+            "Institutional Units",
+            "1.5 lakh upgraded Sub-Centres and Primary Health Centres",
+            "Network of empanelled public and private hospitals across India (EHCPs)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சுகாதார அடுக்கு",
+            "விரிவான முதன்மைச் சுகாதாரம் (தடுப்பு, ஆரம்ப சிகிச்சை, வெளிநோயாளி பிரிவு)",
+            "இரண்டாம் மற்றும் மூன்றாம் நிலைச் சுகாதாரம் (உள்நோயாளி அறுவை சிகிச்சைகள்)"
+          ],
+          [
+            "நிதி முறை",
+            "அரசு மருத்துவக் கட்டமைப்பை தரம் உயர்த்தும் நேரடி பொது முதலீடு",
+            "குடும்பத்திற்கு ஆண்டுக்கு ₹5 லட்சம் மருத்துவக் காப்பீடு வழங்கும் முறை"
+          ],
+          [
+            "தொடங்கப்பட்ட நாள் & இடம்",
+            "2018 ஏப்ரல் 14 (பீஜப்பூர், சத்தீஸ்கர்) அம்பேத்கர் ஜெயந்தி அன்று",
+            "2018 செப்டம்பர் 23 (ராஞ்சி, ஜார்க்கண்ட்) பிரதமர் நரேந்திர மோடியால்"
+          ],
+          [
+            "இலக்கு மக்கள்",
+            "மையத்தின் எல்லைக்குள் வாழும் அனைத்து மக்களுக்கும் இலவச சேவை",
+            "SECC 2011 அடிப்படையில் அடையாளம் காணப்பட்ட ஏழை 40% மக்கள் + 70+ முதியவர்கள்"
+          ],
+          [
+            "நிறுவன அமைப்புகள்",
+            "1.5 லட்சம் தரம் உயர்த்தப்பட்ட துணை நிலையங்கள் மற்றும் ஆரம்ப சுகாதார நிலையங்கள்",
+            "நாடு முழுவதும் உள்ள அங்கீகரிக்கப்பட்ட அரசு மற்றும் தனியார் மருத்துவமனைகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_cho_vs_anm_cadre_roles",
+        "title_en": "Community Health Officer (CHO) vs Auxiliary Nurse Midwife (ANM)",
+        "title_ta": "சமூக சுகாதார அலுவலர் (CHO) vs துணை கிராம செவிலியர் (ANM) பணி ஒப்பீடு",
+        "headers_en": [
+          "Professional Role",
+          "Community Health Officer (CHO)",
+          "Auxiliary Nurse Midwife (ANM)"
+        ],
+        "headers_ta": [
+          "பணிப் பண்புக்கூறு",
+          "சமூக சுகாதார அலுவலர் (CHO)",
+          "துணை கிராம செவிலியர் (ANM)"
+        ],
+        "rows_en": [
+          [
+            "Educational Qualification",
+            "B.Sc Nursing or BAMS + 6-month Bridge Program (BPCCH) from IGNOU",
+            "Diploma in Auxiliary Nursing Midwifery (ANM / GNM diploma)"
+          ],
+          [
+            "Clinical Responsibility",
+            "Outpatient clinical consultation, NCD management, teleconsultation coordination",
+            "Immunization, antenatal/postnatal care, institutional delivery assistance"
+          ],
+          [
+            "Prescription Authority",
+            "Dispenses identified essential drugs under Standard Treatment Guidelines",
+            "Administers basic vaccines, iron tablets, oral rehydration, and basic first aid"
+          ],
+          [
+            "Managerial Position",
+            "Heads the Ayushman Arogya Mandir team; supervises ANMs, MPWs, and ASHAs",
+            "Field-level grassroots worker responsible for village health registers"
+          ],
+          [
+            "Telemedicine Function",
+            "Presents clinical cases to specialist physicians on eSanjeevani platform",
+            "Mobilizes village patients and operates maternal-child tracking registries"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கல்வித் தகுதி",
+            "B.Sc செவிலியர் அல்லது BAMS ஆயுர்வேதம் + IGNOU-ன் 6 மாத BPCCH சான்றிதழ்",
+            "ANM அல்லது GNM செவிலியர் பட்டயப் படிப்பு"
+          ],
+          [
+            "மருத்துவப் பொறுப்பு",
+            "வெளிநோயாளி ஆரம்ப சிகிச்சை, தொற்றா நோய் மேலாண்மை, இ-சஞ்சீவனி ஆலோசனை",
+            "தடுப்பூசி போடுதல், கர்ப்பிணிகள் பராமரிப்பு, பிரசவ உதவி"
+          ],
+          [
+            "மருந்து வழங்கும் அதிகாரம்",
+            "அரசு வழிகாட்டுதலின்படி 105 அத்தியாவசிய மருந்துகளை வழங்கும் அதிகாரம்",
+            "அடிப்படை தடுப்பூசிகள், இரும்புச்சத்து மாத்திரைகள், ஓ.ஆர்.எஸ் பாக்கெட்டுகள் வழங்கல்"
+          ],
+          [
+            "நிர்வாகப் பொறுப்பு",
+            "ஆயுஷ்மான் ஆரோக்கிய மந்திரத்தின் தலைவர்; ANM மற்றும் ஆஷாக்களை வழிநடத்துபவர்",
+            "களப்பணியாளர்; கிராம சுகாதார பதிவேடுகள் மற்றும் புள்ளிவிவரங்களை நிர்வகிப்பவர்"
+          ],
+          [
+            "தொலைதூர மருத்துவப் பணி",
+            "இ-சஞ்சீவனி வீடியோ மூலம் மாவட்ட சிறப்பு மருத்துவரிடம் நோயாளியை அறிமுகப்படுத்துதல்",
+            "கிராமத்தில் தாய்மார்கள் மற்றும் குழந்தைகளை கணக்கெடுத்து மையத்திற்கு அழைத்து வருதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nhp_2002_vs_nhp_2017",
+        "title_en": "National Health Policy 2002 vs National Health Policy 2017",
+        "title_ta": "தேசிய சுகாதாரக் கொள்கை 2002 vs தேசிய சுகாதாரக் கொள்கை 2017 ஒப்பீடு",
+        "headers_en": [
+          "Policy Dimension",
+          "National Health Policy (NHP) 2002",
+          "National Health Policy (NHP) 2017"
+        ],
+        "headers_ta": [
+          "கொள்கை பரிமாணம்",
+          "தேசிய சுகாதாரக் கொள்கை 2002",
+          "தேசிய சுகாதாரக் கொள்கை 2017"
+        ],
+        "rows_en": [
+          [
+            "Primary Focus",
+            "Selective vertical disease eradication (polio, leprosy, vector-borne)",
+            "Comprehensive primary healthcare and Universal Health Coverage (UHC)"
+          ],
+          [
+            "Public Health Expenditure Target",
+            "Increase public expenditure to 2.0% of GDP by 2010",
+            "Increase public health expenditure to 2.5% of GDP in a time-bound manner"
+          ],
+          [
+            "Financial Protection Mechanism",
+            "Micro-insurance pilots and localized fragmented schemes",
+            "Ayushman Bharat: Two-pillar comprehensive assurance model"
+          ],
+          [
+            "Non-Communicable Diseases (NCDs)",
+            "Low policy priority; focused primarily on communicable infections",
+            "Mandatory population-level screening and management for NCDs (65% burden)"
+          ],
+          [
+            "Digital Health Vision",
+            "Basic health management information systems (HMIS)",
+            "Ayushman Bharat Digital Mission (ABDM), ABHA IDs, and electronic health records"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "குறிப்பிட்ட நோய்களை ஒழிக்கும் திட்டம் (போலியோ, தொழுநோய், மலேரியா)",
+            "விரிவான முதன்மைச் சுகாதாரம் மற்றும் உலகளாவிய சுகாதாரப் பாதுகாப்பு (UHC)"
+          ],
+          [
+            "பொதுச் செலவின இலக்கு",
+            "2010-க்குள் சுகாதாரச் செலவை ஜிடிபியில் 2.0%-ஆக உயர்த்துவது",
+            "சுகாதாரச் செலவினத்தை ஜிடிபியில் 2.5%-ஆக காலக்கெடுவிற்குள் உயர்த்துவது"
+          ],
+          [
+            "நிதிப் பாதுகாப்பு முறை",
+            "சிறு காப்பீட்டு சோதனைகள் மற்றும் துண்டு துண்டான திட்டங்கள்",
+            "ஆயுஷ்மான் பாரத்: இரண்டு தூண்கள் கொண்ட முழுமையான உத்தரவாத மாதிரி"
+          ],
+          [
+            "தொற்றா நோய்கள் (NCDs)",
+            "குறைந்த முன்னுரிமை; தொற்று நோய்களுக்கே முழு கவனமும் செலுத்தப்பட்டது",
+            "65% நோய்ச் சுமையைக் கொண்ட தொற்றா நோய்களை ஆரம்பத்திலேயே பரிசோதிக்கும் கட்டாயம்"
+          ],
+          [
+            "டிஜிட்டல் பார்வை",
+            "அடிப்படை கணினி பதிவுகள் (HMIS)",
+            "ABDM டிஜிட்டல் இயக்கம், 14 இலக்க ABHA சுகாதார அடையாள அட்டை"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Ayushman Bharat Part 1: Genesis, Two Pillars & Comprehensive Primary Care",
+        "short_label": "Ayushman Genesis",
+        "children": [
+          {
+            "title": "Strategic Origins",
+            "short_label": "Origins",
+            "children": [
+              {
+                "title": "NHP 2017 & SDG Target 3.8 (Universal Health Coverage)",
+                "short_label": "NHP 2017"
+              },
+              {
+                "title": "Budget 2018-19 Announcement (Arun Jaitley)",
+                "short_label": "Budget 2018"
+              },
+              {
+                "title": "Shift from Selective Care to Comprehensive Care",
+                "short_label": "CPHC Shift"
+              }
+            ]
+          },
+          {
+            "title": "The Two Pillars",
+            "short_label": "Two Pillars",
+            "children": [
+              {
+                "title": "Pillar 1: Ayushman Arogya Mandirs (1.5 Lakh HWCs)",
+                "short_label": "Pillar 1 HWCs"
+              },
+              {
+                "title": "Pillar 2: PM-JAY ₹5 Lakh Inpatient Hospital Assurance",
+                "short_label": "Pillar 2 PM-JAY"
+              },
+              {
+                "title": "First HWC: 14th April 2018 (Bijapur, Chhattisgarh)",
+                "short_label": "First HWC"
+              }
+            ]
+          },
+          {
+            "title": "CPHC Architecture",
+            "short_label": "CPHC Services",
+            "children": [
+              {
+                "title": "12 Comprehensive Service Packages (NCDs, Mental, Palliative)",
+                "short_label": "12 Packages"
+              },
+              {
+                "title": "Community Health Officer (CHO) & Team (ANM, ASHA)",
+                "short_label": "CHO Cadre"
+              },
+              {
+                "title": "105 Free Medicines & 14 Free Diagnostics",
+                "short_label": "Diagnostics"
+              }
+            ]
+          },
+          {
+            "title": "Digital Telemedicine & Wellness",
+            "short_label": "Telemedicine",
+            "children": [
+              {
+                "title": "eSanjeevani Hub-and-Spoke Teleconsultations",
+                "short_label": "eSanjeevani"
+              },
+              {
+                "title": "Yoga, Wellness Walks, & Health Melas",
+                "short_label": "Yoga Sessions"
+              },
+              {
+                "title": "November 2023 Rebranding to Ayushman Arogya Mandirs",
+                "short_label": "Rebranding"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Two-Pillar Structure Trap: Ayushman Bharat is NOT Merely Health Insurance",
+        "points": {
+          "en": [
+            "TRAP: Defining Ayushman Bharat solely as a ₹5 lakh health insurance scheme for hospitalisation.",
+            "CORRECT FACT: Ayushman Bharat comprises TWO COMPLEMENTARY PILLARS: Pillar 1 is Comprehensive Primary Health Care via 1.5 lakh Ayushman Arogya Mandirs (HWCs); Pillar 2 is PM-JAY secondary/tertiary hospitalisation assurance. Describing it solely as an insurance scheme ignores Pillar 1.",
+            "WHY CANDIDATES FAIL: Equating the entire Ayushman Bharat umbrella scheme solely with PM-JAY."
+          ],
+          "ta": [
+            "பொறி: ஆயுஷ்மான் பாரத் என்பது வெறும் ₹5 லட்சம் மருத்துவக் காப்பீட்டுத் திட்டம் மட்டுமே என வரையறுப்பது.",
+            "சரியான உண்மை: ஆயுஷ்மான் பாரத் இரண்டு முழுமையான தூண்களைக் கொண்டது: தூண் 1 என்பது 1.5 லட்சம் நலவாழ்வு மையங்கள் (HWCs) வழங்கும் முதன்மைச் சுகாதாரம்; தூண் 2 என்பது PM-JAY மருத்துவமனை காப்பீடு. வெறும் காப்பீடு என மட்டும் கூறுவது தவறு.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஆயுஷ்மான் பாரத் முழுத் திட்டத்தையும் PM-JAY காப்பீட்டுடன் மட்டுமே தொடர்புபடுத்திப் பார்ப்பது."
+          ]
+        }
+      },
+      {
+        "title": "HWC Inauguration Date & Place Trap: 14th April 2018 (Bijapur), NOT Ranchi",
+        "points": {
+          "en": [
+            "TRAP: Marking Ranchi, Jharkhand as the launch site for the first Health & Wellness Centre (HWC).",
+            "CORRECT FACT: The very first HWC was inaugurated on 14TH APRIL 2018 (Ambedkar Jayanti) at BIJAPUR in CHHATTISGARH. Ranchi was the launch site for Pillar 2 (PM-JAY) on 23rd September 2018.",
+            "WHY CANDIDATES FAIL: Conflating the launch dates and geographic locations of Pillar 1 and Pillar 2."
+          ],
+          "ta": [
+            "பொறி: முதல் நலவாழ்வு மையம் (HWC) தொடங்கப்பட்ட இடமாக ராஞ்சியைக் குறிப்பிடுவது.",
+            "சரியான உண்மை: முதல் நலவாழ்வு மையம் '2018 ஏப்ரல் 14' (அம்பேத்கர் ஜெயந்தி) அன்று சத்தீஸ்கரின் 'பீஜப்பூர்' மாவட்டத்தில் தொடங்கப்பட்டது! ராஞ்சியில் தொடங்கப்பட்டது இரண்டாம் தூணான PM-JAY ஆகும் (2018 செப்டம்பர் 23).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தூண் 1 மற்றும் தூண் 2 தொடங்கப்பட்ட இடங்களையும் தேதிகளையும் ஒன்றாகக் குழப்புவது."
+          ]
+        }
+      },
+      {
+        "title": "Outpatient vs Inpatient Coverage Trap: PM-JAY Covers INPATIENT Hospitalisation Only",
+        "points": {
+          "en": [
+            "TRAP: Believing PM-JAY covers routine outpatient consultations, paracetamol tablets, and doctor OPD visit fees.",
+            "CORRECT FACT: PM-JAY is strictly an INPATIENT secondary and tertiary hospitalisation scheme (covering admission, surgeries, ICU, 3-day pre- and 15-day post-hospitalisation). Routine outpatient OPD care is provided free under Pillar 1 (Ayushman Arogya Mandirs), NOT via PM-JAY insurance.",
+            "WHY CANDIDATES FAIL: Assuming comprehensive insurance covers routine clinic OPD visits."
+          ],
+          "ta": [
+            "பொறி: PM-JAY காப்பீடானது வெளிநோயாளி பிரிவு (OPD) மற்றும் வழக்கமான மருந்துச் சீட்டு மாத்திரைகளுக்கும் பொருந்தும் என நினைப்பது.",
+            "சரியான உண்மை: PM-JAY என்பது 'உள்நோயாளி' (Inpatient) மருத்துவமனை சேர்க்கை மற்றும் அறுவை சிகிச்சைகளுக்கு மட்டுமே பொருந்தும்! வெளிநோயாளி OPD சிகிச்சைகள் முதல் தூணான ஆயுஷ்மான் நலவாழ்வு மையங்கள் (HWCs) மூலமே இலவசமாக வழங்கப்படுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மருத்துவக் காப்பீடு வெளிநோயாளி சிகிச்சையையும் உள்ளடக்கியது என மேலோட்டமாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Community Health Officer (CHO) Status Trap: Mid-Level Provider, NOT Post-Graduate Doctor",
+        "points": {
+          "en": [
+            "TRAP: Classifying the CHO heading an Ayushman Arogya Mandir as a specialist post-graduate medical doctor (MD/MS).",
+            "CORRECT FACT: A Community Health Officer (CHO) is a Mid-Level Health Provider—specifically a B.Sc Nursing graduate or Ayurvedic (BAMS) practitioner who completed a 6-month Bridge Course in Community Health (BPCCH). They are not MBBS doctors.",
+            "WHY CANDIDATES FAIL: Overestimating the medical specialization required to head a Sub-Centre level facility."
+          ],
+          "ta": [
+            "பொறி: நலவாழ்வு மையத்தை வழிநடத்தும் சமூக சுகாதார அலுவலர் (CHO) ஒரு முதுநிலை மருத்துவ நிபுணர் (MD/MS) என எண்ணுவது.",
+            "சரியான உண்மை: சமூக சுகாதார அலுவலர் (CHO) என்பவர் B.Sc செவிலியர் அல்லது BAMS ஆயுர்வேத மருத்துவர் ஆவார்; இவர் 6 மாத சமூக சுகாதார சான்றிதழ் பயிற்சி பெற்ற 'இடைநிலை சுகாதார வழங்குநர்' (Mid-Level Provider) ஆவார்; இவர் MBBS மருத்துவர் அல்ல.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: துணை நிலைய தலைமைப் பொறுப்பில் உள்ளவரை சிறப்பு மருத்துவர் என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "eSanjeevani Variant Trap: eSanjeevani AB-HWC (Doctor-to-Doctor) vs eSanjeevani OPD (Patient-to-Doctor)",
+        "points": {
+          "en": [
+            "TRAP: Confusing the two operational modalities of the national eSanjeevani telemedicine platform.",
+            "CORRECT FACT: eSanjeevani operates in two variants: (1) eSanjeevani AB-HWC (a Doctor-to-Doctor / CHO-to-Doctor telemedicine portal connecting HWCs with hubs); and (2) eSanjeevani OPD (a Patient-to-Doctor direct teleconsultation mobile application for citizens at home).",
+            "WHY CANDIDATES FAIL: Failing to distinguish the assisted clinical facility model from the direct home mobile model."
+          ],
+          "ta": [
+            "பொறி: இ-சஞ்சீவனி தளத்தின் இரண்டு மாறுபட்ட பயன்பாட்டு முறைகளைக் குழப்பிக் கொள்வது.",
+            "சரியான உண்மை: இ-சஞ்சீவனி இரண்டு வகைகளில் செயல்படுகிறது: (1) eSanjeevani AB-HWC என்பது மையத்தில் உள்ள CHO சிறப்பு மருத்துவருடன் தொடர்பு கொள்ளும் 'மருத்துவர்-மருத்துவர்' முறை; (2) eSanjeevani OPD என்பது பொதுமக்கள் வீட்டிலிருந்தே மொபைல் மூலம் மருத்துவரை அணுகும் முறை.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மைய வழி மாதிரிக்கும் நேரடி மொபைல் மாதிரிக்கும் உள்ள வேறுபாட்டை அறியாமல் இருப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Subsumed Health Insurance Scheme Trap: Replaced RSBY (₹30,000 Cover), NOT ESI or CGHS",
+        "points": {
+          "en": [
+            "TRAP: Believing Ayushman Bharat PM-JAY subsumed the Central Government Health Scheme (CGHS) or Employees' State Insurance (ESI).",
+            "CORRECT FACT: PM-JAY subsumed the Rashtriya Swasthya Bima Yojana (RSBY - which offered a paltry ₹30,000 cover) and the Senior Citizen Health Insurance Scheme (SCHIS). CGHS (for central employees) and ESIC (for formal factory workers) remain separate operational entities.",
+            "WHY CANDIDATES FAIL: Assuming PM-JAY consolidated all pre-existing public healthcare schemes in India."
+          ],
+          "ta": [
+            "பொறி: PM-JAY திட்டம் CGHS அல்லது ESI திட்டங்களை தன்னுள் இணைத்துக் கொண்டது என நினைப்பது.",
+            "சரியான உண்மை: PM-JAY திட்டம் முந்தைய 'ராஷ்டிரிய ஸ்வஸ்திய பீமா யோஜனா' (RSBY - வெறும் ₹30,000 காப்பீடு) திட்டத்தையே இணைத்துக் கொண்டது. மத்திய அரசு ஊழியர்களுக்கான CGHS மற்றும் தொழிற்சாலை தொழிலாளர்களுக்கான ESI ஆகியவை தனித்தனி அமைப்புகளாக இன்றும் இயங்குகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து முந்தைய சுகாதாரத் திட்டங்களும் இதில் இணைந்துவிட்டன என தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Ayushman Bharat was recommended by the National Health Policy (NHP) 2017 and announced in the Union Budget 2018-19.",
+        "The program is structured into two pillars: (1) Health & Wellness Centres (HWCs) and (2) PM-JAY inpatient health assurance.",
+        "The target for Pillar 1 was to upgrade 1.5 lakh existing Sub-Centres and PHCs into Comprehensive Primary Care centres.",
+        "The first Health & Wellness Centre was inaugurated on 14th April 2018 (Ambedkar Jayanti) at Bijapur, Chhattisgarh by Prime Minister Modi.",
+        "In November 2023, the Union Ministry of Health rebranded all HWCs as 'Ayushman Arogya Mandirs' with the tagline 'Arogyam Paramam Dhanam'.",
+        "Each Sub-Centre level Ayushman Arogya Mandir is headed by a Community Health Officer (CHO) trained through a 6-month Bridge Course (BPCCH).",
+        "Ayushman Arogya Mandirs expanded primary care from selective RMNCH to 12 Comprehensive Primary Health Care (CPHC) service packages.",
+        "The 12 CPHC packages include population-level screening and management for hypertension, diabetes, and oral, breast, and cervical cancers.",
+        "Ayushman Arogya Mandirs provide 105 free essential medicines and 14 point-of-care diagnostic tests.",
+        "eSanjeevani AB-HWC provides real-time hub-and-spoke teleconsultations connecting rural HWCs with specialist doctors in Medical Colleges.",
+        "PM-JAY (Pillar 2) was launched on 23rd September 2018 at Ranchi, Jharkhand and became operational on 25th September 2018.",
+        "National Health Policy 2017 targets increasing public health expenditure to 2.5% of GDP."
+      ],
+      "ta": [
+        "ஆயுஷ்மான் பாரத் திட்டம் தேசிய சுகாதாரக் கொள்கை 2017-ன் பரிந்துரையின்படி 2018-19 மத்திய பட்ஜெட்டில் அறிவிக்கப்பட்டது.",
+        "இத்திட்டம் இரண்டு தூண்களாக கட்டமைக்கப்பட்டுள்ளது: (1) நலவாழ்வு மையங்கள் (HWCs) மற்றும் (2) PM-JAY மருத்துவமனை காப்பீடு.",
+        "முதல் தூணின் கீழ் 1.5 லட்சம் துணை நிலையங்கள் மற்றும் ஆரம்ப சுகாதார நிலையங்களை தரம் உயர்த்த இலக்கு நிர்ணயிக்கப்பட்டது.",
+        "முதல் நலவாழ்வு மையம் 2018 ஏப்ரல் 14 (அம்பேத்கர் ஜெயந்தி) அன்று சத்தீஸ்கரின் பீஜப்பூரில் பிரதமர் நரேந்திர மோடியால் திறந்து வைக்கப்பட்டது.",
+        "நவம்பர் 2023-ல் மத்திய அரசு அனைத்து HWCs மையங்களையும் 'ஆயுஷ்மான் ஆரோக்கிய மந்திர்' எனப் பெயர் மாற்றியது.",
+        "துணை நிலைய அளவிலான ஒவ்வொரு மையமும் 6 மாத பயிற்சி பெற்ற சமூக சுகாதார அலுவலரால் (CHO) வழிநடத்தப்படுகிறது.",
+        "இம்மையங்கள் தாய்-சேய் நலனைத் தாண்டி 12 விரிவான முதன்மைச் சுகாதாரப் பணிகளை (CPHC) வழங்குகின்றன.",
+        "12 பணிகளில் இரத்த அழுத்தம், நீரிழிவு, வாய், மார்பக மற்றும் கர்ப்பப்பை வாய்ப் புற்றுநோய் பரிசோதனைகள் முக்கியமானவை.",
+        "இம்மையங்களில் 105 இலவச அத்தியாவசிய மருந்துகளும், 14 வகையான மருத்துவப் பரிசோதனைகளும் வழங்கப்படுகின்றன.",
+        "இ-சஞ்சீவனி தளம் மூலம் கிராமப்புற மையங்கள் மருத்துவக் கல்லூரி சிறப்பு மருத்துவர்களுடன் வீடியோ ஆலோசனை பெறுகின்றன.",
+        "இரண்டாம் தூணான PM-JAY 2018 செப்டம்பர் 23 அன்று ஜார்க்கண்ட் மாநிலம் ராஞ்சியில் தொடங்கப்பட்டு செப்டம்பர் 25 முதல் அமலானது.",
+        "தேசிய சுகாதாரக் கொள்கை 2017 பொதுச் சுகாதாரச் செலவினத்தை ஜிடிபியில் 2.5%-ஆக உயர்த்த இலக்கு நிர்ணயித்துள்ளது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Ayushman Bharat born from NHP 2017; twin pillars: Pillar 1 (1.5 Lakh HWCs) & Pillar 2 (PM-JAY ₹5L cover).",
+        "First HWC opened 14th April 2018 (Bijapur, Chhattisgarh); PM-JAY launched 23rd Sept 2018 (Ranchi, Jharkhand).",
+        "Rebranded to 'Ayushman Arogya Mandirs' in Nov 2023 with motto 'Arogyam Paramam Dhanam'.",
+        "Headed by Community Health Officer (CHO - B.Sc Nursing/BAMS with 6-month IGNOU bridge course).",
+        "Delivers 12 Comprehensive Primary Health Care (CPHC) packages, replacing selective maternal-child care.",
+        "Universal screening for non-communicable diseases: hypertension, diabetes, oral, breast, & cervical cancers.",
+        "Centres stock 105 free essential medicines and conduct 14 point-of-care diagnostic tests.",
+        "eSanjeevani hub-and-spoke telemedicine links village HWCs directly with Medical College specialists.",
+        "Weekly Yoga and wellness sessions institutionalized to promote preventive and holistic lifestyle health.",
+        "PM-JAY subsumed Rashtriya Swasthya Bima Yojana (RSBY - ₹30,000 cover); CGHS and ESIC remain separate."
+      ],
+      "ta": [
+        "NHP 2017 கொள்கையிலிருந்து உருவானது; இரு தூண்கள்: தூண் 1 (1.5 லட்சம் HWCs) & தூண் 2 (PM-JAY ₹5 லட்சம் காப்பீடு).",
+        "முதல் HWC 2018 ஏப்ரல் 14 (பீஜப்பூர், சத்தீஸ்கர்); PM-JAY 2018 செப்டம்பர் 23 (ராஞ்சி, ஜார்க்கண்ட்).",
+        "நவம்பர் 2023-ல் 'ஆயுஷ்மான் ஆரோக்கிய மந்திர்' என பெயர் மாற்றம் ('ஆரோக்கியம் பரமம் தனம்').",
+        "சமூக சுகாதார அலுவலர் (CHO) தலைமை தாங்குகிறார் (நர்சிங்/BAMS + 6 மாத IGNOU பயிற்சி).",
+        "தேர்ந்தெடுக்கப்பட்ட சிகிச்சைக்குப் பதிலாக 12 விரிவான முதன்மைச் சுகாதாரப் பணிகளை (CPHC) வழங்குகிறது.",
+        "இரத்த அழுத்தம், நீரிழிவு, வாய், மார்பக, கர்ப்பப்பை வாய்ப் புற்றுநோய்களுக்கான ஆரம்ப பரிசோதனை.",
+        "மையங்களில் 105 இலவச அத்தியாவசிய மருந்துகளும் 14 வகையான மருத்துவப் பரிசோதனைகளும் உண்டு.",
+        "இ-சஞ்சீவனி தளம் மூலம் கிராமப்புற மையங்கள் மருத்துவக் கல்லூரி பேராசிரியர்களுடன் வீடியோ ஆலோசனை.",
+        "நோய் தடுப்பு மற்றும் நல்வாழ்விற்காக வாராந்திர யோகா வகுப்புகள் மற்றும் வாழ்க்கைமுறை வழிகாட்டுதல்.",
+        "RSBY (பழைய ₹30,000 காப்பீடு) திட்டத்தை PM-JAY இணைத்துக் கொண்டது; ESI மற்றும் CGHS தனித்தனியானவை."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_ab_101",
+        "front_en": "What are the two foundational pillars of the Ayushman Bharat scheme?",
+        "front_ta": "ஆயுஷ்மான் பாரத் திட்டத்தின் இரண்டு அடிப்படைத் தூண்கள் எவை?",
+        "back_en": "Pillar 1: Ayushman Arogya Mandirs (1.5 lakh HWCs for Comprehensive Primary Care); Pillar 2: PM-JAY (₹5 lakh secondary/tertiary hospitalisation assurance).",
+        "back_ta": "தூண் 1: ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் (1.5 லட்சம் HWCs முதன்மைச் சுகாதாரம்); தூண் 2: PM-JAY (ஆண்டுக்கு ₹5 லட்சம் மருத்துவமனை காப்பீடு)."
+      },
+      {
+        "id": "rc_ab_102",
+        "front_en": "When and where was the very first Health & Wellness Centre (HWC) inaugurated in India?",
+        "front_ta": "இந்தியாவில் முதல் நலவாழ்வு மையம் (HWC) எப்போது, எங்கு திறந்து வைக்கப்பட்டது?",
+        "back_en": "14th April 2018 (Dr. B.R. Ambedkar Jayanti) at Bijapur, Chhattisgarh by Prime Minister Narendra Modi.",
+        "back_ta": "2018 ஏப்ரல் 14 (அம்பேத்கர் ஜெயந்தி) அன்று சத்தீஸ்கர் மாநிலம் பீஜப்பூரில் பிரதமர் நரேந்திர மோடியால் திறந்து வைக்கப்பட்டது."
+      },
+      {
+        "id": "rc_ab_103",
+        "front_en": "What new name was assigned to Health & Wellness Centres (HWCs) in November 2023?",
+        "front_ta": "நவம்பர் 2023-ல் நலவாழ்வு மையங்களுக்கு (HWCs) சூட்டப்பட்ட புதிய பெயர் என்ன?",
+        "back_en": "'Ayushman Arogya Mandirs' with the tagline 'Arogyam Paramam Dhanam'.",
+        "back_ta": "'ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள்' ('ஆரோக்கியம் பரமம் தனம்' என்ற முழக்கத்துடன்)."
+      },
+      {
+        "id": "rc_ab_104",
+        "front_en": "Who leads the primary healthcare team at an upgraded Sub-Centre level Ayushman Arogya Mandir?",
+        "front_ta": "தரம் உயர்த்தப்பட்ட துணை நிலைய அளவிலான ஆயுஷ்மான் ஆரோக்கிய மந்திரத்தை வழிநடத்துபவர் யார்?",
+        "back_en": "Community Health Officer (CHO), a B.Sc Nursing or Ayurvedic graduate certified via a 6-month Bridge Course (BPCCH).",
+        "back_ta": "சமூக சுகாதார அலுவலர் (CHO); இவர் நர்சிங் அல்லது BAMS ஆயுர்வேதப் பட்டம் பெற்று 6 மாத பயிற்சி பெற்றவராவார்."
+      },
+      {
+        "id": "rc_ab_105",
+        "front_en": "How many Comprehensive Primary Health Care (CPHC) service packages are delivered by Ayushman Arogya Mandirs?",
+        "front_ta": "ஆயுஷ்மான் ஆரோக்கிய மந்திரங்கள் மூலம் எத்தனை விரிவான முதன்மைச் சுகாதார (CPHC) சேவை தொகுப்புகள் வழங்கப்படுகின்றன?",
+        "back_en": "12 Comprehensive Primary Health Care (CPHC) service packages.",
+        "back_ta": "12 விரிவான முதன்மைச் சுகாதார (CPHC) சேவை தொகுப்புகள்."
+      },
+      {
+        "id": "rc_ab_106",
+        "front_en": "Which major chronic non-communicable diseases are screened at the population level in Ayushman Arogya Mandirs?",
+        "front_ta": "ஆயுஷ்மான் ஆரோக்கிய மந்திரங்களில் ஆரம்ப நிலையிலேயே பரிசோதிக்கப்படும் முக்கிய தொற்றா நோய்கள் (NCDs) எவை?",
+        "back_en": "Hypertension, Diabetes, and three common cancers (Oral, Breast, and Cervical cancer).",
+        "back_ta": "இரத்த அழுத்தம், நீரிழிவு மற்றும் 3 பொதுவான புற்றுநோய்கள் (வாய், மார்பகம் மற்றும் கர்ப்பப்பை வாய்ப் புற்றுநோய்)."
+      },
+      {
+        "id": "rc_ab_107",
+        "front_en": "How many free essential medicines and diagnostic tests are available at Ayushman Arogya Mandirs?",
+        "front_ta": "ஆயுஷ்மான் ஆரோக்கிய மந்திரங்களில் எத்தனை இலவச மருந்துகளும் பரிசோதனைகளும் கிடைக்கின்றன?",
+        "back_en": "105 free essential medicines and 14 free point-of-care diagnostic tests.",
+        "back_ta": "105 வகையான இலவச அத்தியாவசிய மருந்துகள் மற்றும் 14 வகையான ஆய்வகப் பரிசோதனைகள்."
+      },
+      {
+        "id": "rc_ab_108",
+        "front_en": "What is the role of eSanjeevani AB-HWC in the Ayushman Bharat architecture?",
+        "front_ta": "ஆயுஷ்மான் பாரத் கட்டமைப்பில் eSanjeevani AB-HWC தளத்தின் பங்கு என்ன?",
+        "back_en": "Operates as a hub-and-spoke telemedicine platform linking rural HWCs (spokes) with Medical College specialists (hubs) for video teleconsultations.",
+        "back_ta": "மைய-ஆர அமைப்பில் கிராமப்புற மையங்களை மருத்துவக் கல்லூரி சிறப்பு மருத்துவர்களுடன் இணைத்து வீடியோ தொலைதூர மருத்துவ ஆலோசனையை வழங்குகிறது."
+      },
+      {
+        "id": "rc_ab_109",
+        "front_en": "When and where was Pillar 2 (Pradhan Mantri Jan Arogya Yojana - PM-JAY) officially launched?",
+        "front_ta": "இரண்டாம் தூணான PM-JAY திட்டம் அதிகாரப்பூர்வமாக எப்போது, எங்கு தொடங்கப்பட்டது?",
+        "back_en": "23rd September 2018 at Ranchi, Jharkhand by Prime Minister Narendra Modi.",
+        "back_ta": "2018 செப்டம்பர் 23 அன்று ஜார்க்கண்ட் மாநிலம் ராஞ்சியில் பிரதமர் நரேந்திர மோடியால் தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_ab_110",
+        "front_en": "Which earlier central health insurance scheme was subsumed into PM-JAY?",
+        "front_ta": "PM-JAY திட்டத்தில் இணைக்கப்பட்ட முந்தைய மத்திய மருத்துவக் காப்பீட்டுத் திட்டம் எது?",
+        "back_en": "Rashtriya Swasthya Bima Yojana (RSBY), which had provided an annual cover of only ₹30,000 per family.",
+        "back_ta": "ராஷ்டிரிய ஸ்வஸ்திய பீமா யோஜனா (RSBY); இது குடும்பத்திற்கு ஆண்டுக்கு ₹30,000 மட்டுமே காப்பீடு வழங்கியது."
+      }
+    ]
+  }
+}

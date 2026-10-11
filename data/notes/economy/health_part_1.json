@@ -1,0 +1,791 @@
+{
+  "meta": {
+    "topic_id": "economy_health_part_1",
+    "repository_id": "economy_health",
+    "display_title": "Health – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Health",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "foundational",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Public Health State List Entry 6",
+    "Article 21 Right to Health Paschim Banga",
+    "Article 47 DPSP Primary Duty",
+    "Three Tier Healthcare Sub Centre PHC CHC",
+    "IPHS Population Norms 5k 30k 120k",
+    "Infant Mortality Rate IMR",
+    "Neonatal Mortality Rate NMR 28 Days",
+    "Maternal Mortality Ratio MMR 100000",
+    "SDG 3.1 MMR Target 70",
+    "Epidemiological Transition Abdel Omran",
+    "Non Communicable Diseases NCDs 65 Percent",
+    "Double Burden of Malnutrition"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the three-tiered delivery architecture of Indian public healthcare from Sub-Centres to apex institutions.",
+        "Examine the epidemiological transition shifting India's disease burden from infectious diseases to chronic NCDs."
+      ],
+      "ta": [
+        "துணை நிலையங்கள் முதல் உயர் சிறப்பு மருத்துவமனைகள் வரையிலான இந்தியாவின் மூன்று அடுக்கு சுகாதாரக் கட்டமைப்பைப் புரிந்துகொள்ளுதல்.",
+        "இந்தியாவின் நோய்ச் சுமை தொற்று நோய்களிலிருந்து தொற்றா நோய்களுக்கு மாறிய நோயியல் மாற்றத்தை ஆய்வு செய்தல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize exact IPHS norms: Sub-Centre (5k/3k), PHC (30k/20k), and CHC (120k/80k) with staffing requirements.",
+        "Recall that MMR is calculated per 100,000 live births and NMR accounts for ~65-70% of infant mortality."
+      ],
+      "ta": [
+        "IPHS விதிமுறைகளை நினைவில் நிறுத்துதல்: துணை நிலையம் (5k/3k), PHC (30k/20k), CHC (120k/80k) மற்றும் பணியாளர்கள்.",
+        "MMR 1,00,000 பிறப்புகளுக்கு கணக்கிடப்படுகிறது என்பதையும், NMR குழந்தை இறப்பில் 65-70% பங்கு வகிக்கிறது என்பதையும் நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why the Supreme Court derived the Fundamental Right to Health from the Article 21 Right to Life.",
+        "Appraise the clinical reasons why the first 28 days of life (neonatal phase) represent the critical window for child survival."
+      ],
+      "ta": [
+        "உச்சநீதிமன்றம் ஏன் உறுப்பு 21-ன் வாழ்வுரிமையிலிருந்து சுகாதார உரிமையை அடிப்படை உரிமையாக உருவாக்கியது என ஆய்வு செய்தல்.",
+        "குழந்தையின் வாழ்வாதாரத்திற்கு முதல் 28 நாட்கள் (பச்சிளங்குழந்தைப் பருவம்) ஏன் மிக முக்கியமான மருத்துவக் கட்டமாக உள்ளது என்பதை மதிப்பீடு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply knowledge to avoid exam traps regarding MMR denominator bases and Seventh Schedule legislative entries."
+      ],
+      "ta": [
+        "MMR பெருக்கல் அடிப்படை மற்றும் ஏழாவது அட்டவணை அதிகாரப் பகிர்வு தொடர்பான தேர்வுப் பொறிகளைத் தவிர்த்தல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Health – Part 1",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_three_tier_architecture",
+      "title_en": "Three-Tiered Healthcare Infrastructure: IPHS Population Norms",
+      "title_ta": "மூன்று அடுக்கு சுகாதாரக் கட்டமைப்பு: IPHS மக்கள் தொகை விதிமுறைகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_vital_health_metrics",
+      "title_en": "Core Health & Mortality Metrics: Formulas & Denominators",
+      "title_ta": "முக்கிய சுகாதார & இறப்பு விகிதக் குறிகாட்டிகள்: சூத்திரங்கள் & அளவீடுகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_epidemiological_transition",
+      "title_en": "Epidemiological Transition & Disease Burden in India",
+      "title_ta": "நோயியல் மாற்றம் & இந்தியாவில் நோய்ச் சுமை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_constitutional_provisions_health",
+      "title_en": "Constitutional Mandates on Public Health",
+      "title_ta": "சுகாதாரம் தொடர்பான அரசியலமைப்பு விதிகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Health is defined by the World Health Organization (WHO) as 'a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.' In development economics, health is an essential human capability and foundational component of human capital that directly determines labor productivity, cognitive development, and economic growth.",
+      "ta": "சுகாதாரம் என்பது உலக சுகாதார அமைப்பின் (WHO) கூற்றுப்படி 'வெறும் நோய் அல்லது பலவீனமின்மை மட்டுமல்லாமல், முழுமையான உடல், மன மற்றும் சமூக நல்வாழ்வு நிலையாகும்.' வளர்ச்சிப் பொருளாதாரத்தில், சுகாதாரம் என்பது அடிப்படை மனிதத் திறனாகவும், மனித மூலதனத்தின் அத்தியாவசியத் தூணாகவும் விளங்குகிறது; இது தொழிலாளர்களின் உற்பத்தித்திறன், அறிவாற்றல் மற்றும் நாட்டின் பொருளாதார வளர்ச்சியை நேரடியாகத் தீர்மானிக்கிறது."
+    },
+    "introduction": {
+      "en": "The architecture of public health constitutes the bedrock of human capital formation and social justice in India. Under the Indian Constitution, Public Health and Sanitation is assigned to the State List (Entry 6 of List II), while Medical Education and Profession reside on the Concurrent List (Entry 26 of List III), establishing a federal division of responsibility. India's healthcare delivery system is organized in a three-tiered pyramid: primary care delivered via Sub-Centres and Primary Health Centres (PHCs); secondary care via Community Health Centres (CHCs) and Taluk Hospitals; and tertiary care via District Hospitals and apex Medical Colleges. Concurrently, India is traversing a critical epidemiological transition from infectious and maternal diseases to chronic Non-Communicable Diseases (NCDs) like cardiovascular diseases and diabetes. Core demographic metrics such as Infant Mortality Rate (IMR), Under-5 Mortality Rate (U5MR), and Maternal Mortality Ratio (MMR) provide rigorous empirical benchmarks. Mastering this structural hierarchy, Indian Public Health Standards (IPHS), and vital rates is vital for TNPSC Group 1 aspirants.",
+      "ta": "பொதுச் சுகாதாரக் கட்டமைப்பு என்பது இந்தியாவில் மனித மூலதன உருவாக்கம் மற்றும் சமூக நீதியின் அடித்தளமாக அமைகிறது. இந்திய அரசியலமைப்பின்படி, பொதுச் சுகாதாரம் மற்றும் துப்புரவு என்பது மாநிலப் பட்டியலில் (பட்டியல் II, உள்ளீடு 6) உள்ளது; அதே நேரத்தில் மருத்துவக் கல்வி மற்றும் தொழில் பொதுப் பட்டியலில் (பட்டியல் III, உள்ளீடு 26) உள்ளது. இந்தியாவின் சுகாதார விநியோகக் கட்டமைப்பு மூன்று அடுக்கு பிரமிடாக அமைக்கப்பட்டுள்ளது: துணை நிலையங்கள் மற்றும் ஆரம்ப சுகாதார நிலையங்கள் (PHC) மூலம் முதன்மைச் சிகிச்சை; சமூக சுகாதார நிலையங்கள் (CHC) மூலம் இரண்டாம் நிலைச் சிகிச்சை; மற்றும் மாவட்ட மருத்துவமனைகள், மருத்துவக் கல்லூரிகள் மூலம் மூன்றாம் நிலை சிறப்பு சிகிச்சை. அதே நேரத்தில், இந்தியா தொற்று நோய்களிலிருந்து தொற்றா நோய்களை (NCDs: நீரிழிவு, இதய நோய்கள்) நோக்கிய நோயியல் மாற்றத்தை எதிர்கொள்கிறது. குழந்தை இறப்பு விகிதம் (IMR), 5 வயதுக்குட்பட்ட குழந்தை இறப்பு விகிதம் (U5MR) மற்றும் தாய் இறப்பு விகிதம் (MMR) ஆகியவை முக்கிய சுகாதாரக் குறிகாட்டிகளாக உள்ளன. இந்த அதிகார அடுக்குகள் மற்றும் இந்திய பொதுச் சுகாதார தரநிலைகளை (IPHS) அறிவது TNPSC தேர்வுக்கு இன்றியமையாததாகும்."
+    },
+    "sec_three_tier_architecture": [
+      {
+        "term_en": "Primary Tier: Sub-Centres & Primary Health Centres (PHCs)",
+        "term_ta": "முதன்மை அடுக்கு: துணை நிலையங்கள் & ஆரம்ப சுகாதார நிலையங்கள் (PHCs)",
+        "details_en": "The first contact point between the community and the public healthcare system: (1) Sub-Centres (SC): Established for a population of 5,000 in plain areas and 3,000 in hilly/tribal/desert areas. Staffed by Auxiliary Nurse Midwives (ANMs) and Multi-Purpose Workers (MPWs), providing basic maternal, child, and immunization services. Under Ayushman Bharat, Sub-Centres are upgraded to Ayushman Arogya Mandirs (Health & Wellness Centres); (2) Primary Health Centres (PHC): Established for 30,000 population in plains and 20,000 in hilly/tribal areas. Headed by a Medical Officer (MBBS doctor) supported by 14 paramedical staff, with 4-6 inpatient beds, referral services, and 24x7 institutional deliveries.",
+        "details_ta": "மக்களுக்கும் அரசு சுகாதாரக் கட்டமைப்புக்கும் இடையேயான முதல் தொடர்பு மையம்: (1) துணை நிலையங்கள் (Sub-Centres): சமவெளிப் பகுதியில் 5,000 மக்கள் தொகைக்கும், மலை/பழங்குடிப் பகுதிகளில் 3,000 மக்கள் தொகைக்கும் அமைக்கப்படுகிறது. கிராம சுகாதார செவிலியர்கள் (ANM) மூலம் தாய்-சேய் நலம், தடுப்பூசி சேவைகளை வழங்குகிறது. இவை தற்போது ஆயுஷ்மான் ஆரோக்கிய மந்திரங்களாக மேம்படுத்தப்படுகின்றன; (2) ஆரம்ப சுகாதார நிலையங்கள் (PHC): சமவெளியில் 30,000 மற்றும் மலைப்பகுதியில் 20,000 மக்கள் தொகைக்கு அமைக்கப்படுகிறது. ஒரு மருத்துவ அதிகாரி (MBBS மருத்துவர்) தலைமையில் 14 பணியாளர்களுடன், 4-6 படுக்கைகள் மற்றும் 24 மணி நேர பிரசவ சேவைகளை வழங்குகிறது."
+      },
+      {
+        "term_en": "Secondary Tier: Community Health Centres (CHCs) & First Referral Units",
+        "term_ta": "இரண்டாம் நிலை அடுக்கு: சமூக சுகாதார நிலையங்கள் (CHCs) & முதல் பரிந்துரை மையங்கள்",
+        "details_en": "Community Health Centres (CHCs) serve as First Referral Units (FRUs) for 4 Primary Health Centres. Population norm: 120,000 in plain areas and 80,000 in hilly/tribal areas. CHCs have 30 inpatient beds, operation theaters, X-ray facilities, labor rooms, and four medical specialists (Surgeon, Physician, Gynecologist, and Pediatrician).",
+        "details_ta": "4 ஆரம்ப சுகாதார நிலையங்களுக்கு முதல் பரிந்துரை மையமாக (FRU) சமூக சுகாதார நிலையங்கள் (CHCs) செயல்படுகின்றன. மக்கள் தொகை வரம்பு: சமவெளிப் பகுதியில் 1,20,000 மற்றும் மலை/பழங்குடிப் பகுதியில் 80,000 ஆகும். 30 படுக்கைகள், அறுவை சிகிச்சை அரங்கம், எக்ஸ்-ரே, பிரசவ அறை மற்றும் 4 சிறப்பு மருத்துவர்களைக் (அறுவை சிகிச்சை, பொது மருத்துவர், மகப்பேறு மருத்துவர், குழந்தைகள் நல மருத்துவர்) கொண்டிருக்கும்."
+      },
+      {
+        "term_en": "Tertiary Tier: District Hospitals & Apex Medical Colleges",
+        "term_ta": "மூன்றாம் நிலை அடுக்கு: மாவட்ட மருத்துவமனைகள் & உயர் சிறப்பு மருத்துவக் கல்லூரிகள்",
+        "details_en": "Comprises fully equipped District Hospitals (100 to 500 beds) offering comprehensive secondary and tertiary specialty care, State Government Medical Colleges, and National Apex Institutes of Excellence like AIIMS. They handle complex multi-organ surgeries, advanced oncology, neurosurgery, intensive critical care, and medical research.",
+        "details_ta": "100 முதல் 500 படுக்கைகள் கொண்ட மாவட்ட மருத்துவமனைகள், அரசு மருத்துவக் கல்லூரிகள் மற்றும் AIIMS போன்ற தேசிய உயர் ஆராய்ச்சி நிறுவனங்களை உள்ளடக்கியது. புற்றுநோய், நரம்பியல், உறுப்பு மாற்று அறுவை சிகிச்சைகள், அவசர தீவிர சிகிச்சைப் பிரிவுகள் மற்றும் மருத்துவ ஆராய்ச்சிகளை மேற்கொள்கிறது."
+      }
+    ],
+    "sec_vital_health_metrics": [
+      {
+        "term_en": "Infant Mortality Rate (IMR) vs Neonatal Mortality Rate (NMR)",
+        "term_ta": "குழந்தை இறப்பு விகிதம் (IMR) vs பிறந்த குழந்தை இறப்பு விகிதம் (NMR)",
+        "details_en": "IMR is the number of deaths of children under ONE YEAR of age per 1,000 live births in a given year. Formula: IMR = (Deaths < 1 Year / Total Live Births) x 1,000. NMR is a subset measuring deaths occurring within the FIRST 28 DAYS of life per 1,000 live births. In India, NMR accounts for over 65-70% of total infant deaths, primarily caused by prematurity, low birth weight, and birth asphyxia.",
+        "details_ta": "IMR என்பது ஒரு குறிப்பிட்ட ஆண்டில் 1,000 உயிருள்ள பிறப்புகளுக்கு இறக்கும் 1 வயதுக்குட்பட்ட குழந்தைகளின் எண்ணிக்கையாகும். சூத்திரம்: IMR = (1 வயதுக்குட்பட்ட இறப்புகள் / உயிருள்ள பிறப்புகள்) x 1,000. NMR என்பது பிறந்து முதல் 28 நாட்களுக்குள் இறக்கும் பச்சிளங்குழந்தைகளின் எண்ணிக்கையாகும் (1,000 பிறப்புகளுக்கு). இந்தியாவில் மொத்த குழந்தை இறப்புகளில் 65-70% இறப்புகள் இந்த முதல் 28 நாட்களுக்குள்ளேயே (குறைபிரசவம், எடைக்குறைவு) நிகழ்கின்றன."
+      },
+      {
+        "term_en": "Under-Five Mortality Rate (U5MR)",
+        "term_ta": "ஐந்து வயதுக்குட்பட்ட குழந்தை இறப்பு விகிதம் (U5MR)",
+        "details_en": "The probability of a child dying between birth and exactly 5 years of age, expressed per 1,000 live births. It captures the combined effects of nutritional deprivation, infectious diarrheal diseases, pneumonia, and healthcare access.",
+        "details_ta": "ஒரு குழந்தை பிறந்தது முதல் சரியாக 5 வயதை எட்டுவதற்குள் இறந்துபோகக்கூடிய நிகழ்தகவாகும்; இது 1,000 உயிருள்ள பிறப்புகளுக்குக் கணக்கிடப்படுகிறது. ஊட்டச்சத்துக் குறைபாடு, நிமோனியா, வயிற்றுப்போக்கு மற்றும் சுகாதார வசதியின்மையின் கூட்டு விளைவை இது பிரதிபலிக்கிறது."
+      },
+      {
+        "term_en": "Maternal Mortality Ratio (MMR)",
+        "term_ta": "தாய் இறப்பு விகிதம் (Maternal Mortality Ratio - MMR)",
+        "details_en": "The number of maternal deaths during pregnancy, delivery, or within 42 days of termination of pregnancy from any cause related to or aggravated by pregnancy, calculated per 100,000 LIVE BIRTHS. The UN Sustainable Development Goal (SDG Target 3.1) mandates reducing global MMR to less than 70 per 100,000 live births by 2030 (India reached 97 in SRS 2018-20; Tamil Nadu achieved 54, already beating the SDG target).",
+        "details_ta": "கர்ப்பம், பிரசவம் அல்லது பிரசவித்த 42 நாட்களுக்குள் கர்ப்பம் தொடர்பான காரணங்களால் நிகழும் தாய்மார்களின் மரணங்களின் எண்ணிக்கையாகும்; இது '1,00,000 உயிருள்ள பிறப்புகளுக்கு' (ஒரு லட்சம்) கணக்கிடப்படுகிறது. ஐக்கிய நாடுகளின் நீடித்த வளர்ச்சி இலக்கு (SDG 3.1) 2030-க்குள் MMR-ஐ 70-க்கு கீழ் குறைக்க இலக்கு நிர்ணயித்துள்ளது (இந்தியா 97; தமிழ்நாடு 54 என ஏற்கனவே SDG இலக்கை விஞ்சிவிட்டது)."
+      }
+    ],
+    "sec_epidemiological_transition": [
+      {
+        "term_en": "The Epidemiological Transition Paradigm",
+        "term_ta": "நோயியல் மாற்றக் கோட்பாடு (Epidemiological Transition)",
+        "details_en": "Formulated by Abdel Omran (1971), it describes the long-term shift in mortality and disease patterns where pandemics of infectious communicable diseases (malaria, cholera, plague, tuberculosis) are gradually displaced by chronic, degenerative Non-Communicable Diseases (NCDs) like cardiovascular diseases, diabetes, hypertension, and cancer.",
+        "details_ta": "1971-ல் அப்தெல் ஓம்ரான் என்பவரால் முன்வைக்கப்பட்டது. ஒரு நாட்டின் வளர்ச்சியின் போது காலரா, பிளேக், மலேரியா, காசநோய் போன்ற தொற்று நோய்களால் ஏற்படும் மரணங்கள் குறைந்து, அதற்குப் பதிலாக இதய நோய், நீரிழிவு, உயர் இரத்த அழுத்தம், புற்றுநோய் போன்ற நாள்பட்ட தொற்றா நோய்களால் (NCDs) ஏற்படும் மரணங்கள் அதிகரிப்பதை இது விவரிக்கிறது."
+      },
+      {
+        "term_en": "Rising Dominance of Non-Communicable Diseases (NCDs)",
+        "term_ta": "தொற்றா நோய்களின் (NCDs) ஆதிக்கம்",
+        "details_en": "In India, the share of total disease burden (measured in Disability-Adjusted Life Years - DALYs) caused by NCDs surged from approximately 30% in 1990 to over 65% in recent years. Cardiovascular diseases alone account for over 28% of all deaths in India. Concurrently, metabolic risk factors (diabetes, hypertension) have expanded from urban elites into rural and lower-income populations.",
+        "details_ta": "இந்தியாவில் மொத்த நோய்ச் சுமையில் (DALYs அளவீடு) தொற்றா நோய்களின் பங்கு 1990-ல் இருந்த 30%-லிருந்து சமீபத்திய ஆண்டுகளில் 65%-க்கும் அதிகமாக உயர்ந்துள்ளது. இந்தியாவில் நிகழும் மொத்த மரணங்களில் 28%-க்கும் அதிகமானவை இதய நோய்களாலேயே ஏற்படுகின்றன. நீரிழிவு மற்றும் இரத்த அழுத்தம் நகரங்களைத் தாண்டி கிராமப்புற ஏழை மக்களிடமும் தீவிரமாகப் பரவி வருகிறது."
+      },
+      {
+        "term_en": "Double Burden of Malnutrition",
+        "term_ta": "ஊட்டச்சத்துக் குறைபாட்டின் இரட்டைச் சுமை",
+        "details_en": "The coexistence of undernutrition (stunting, wasting, micronutrient anemia) alongside overnutrition, overweight, and obesity within the same population, community, or even the same household, creating severe metabolic and economic vulnerabilities across life stages.",
+        "details_ta": "ஒரே சமூகம் அல்லது ஒரே குடும்பத்திற்குள் ஒருபுறம் ஊட்டச்சத்துக் குறைபாடு (வளர்ச்சிக் குன்றல், உடல் மெலிவு, இரத்த சோகை) இருப்பதும், மற்றொருபுறம் அதிக எடை, உடல் பருமன் மற்றும் அதனால் ஏற்படும் நோய்கள் இணைந்திருப்பதுமாகும்."
+      }
+    ],
+    "sec_constitutional_provisions_health": [
+      {
+        "term_en": "Article 21: Right to Health as Fundamental Right",
+        "term_ta": "உறுப்பு 21: சுகாதார உரிமை ஒரு அடிப்படை உரிமை",
+        "details_en": "The Supreme Court of India in landmark judgments (e.g., Paschim Banga Khet Mazdoor Samity v. State of West Bengal, 1996) ruled that the 'Right to Life' guaranteed under Article 21 includes the Fundamental Right to Health, emergency medical treatment, and preservation of human life by state hospitals without procedural delay.",
+        "details_ta": "உச்சநீதிமன்றம் வரலாற்றுத் தீர்ப்புகளில் (மேற்கு வங்க கேத் மஜ்தூர் சமிதி வழக்கு, 1996), உறுப்பு 21-ன் கீழான 'வாழ்வுரிமை' என்பது சுகாதார உரிமை, அவசர மருத்துவ சிகிச்சை பெறுதல் மற்றும் அரசு மருத்துவமனைகளில் தாமதமின்றி உயிரைக் காப்பாற்றும் உரிமையை உள்ளடக்கிய அடிப்படை உரிமை எனத் தீர்ப்பளித்துள்ளது."
+      },
+      {
+        "term_en": "Directive Principles: Articles 39(e), 42 & 47",
+        "term_ta": "வழிகாட்டு நெறிமுறைகள்: உறுப்புகள் 39(e), 42 & 47",
+        "details_en": "Key DPSP mandates: (1) Article 39(e): Protection of the health and strength of workers and tender age of children; (2) Article 42: Provision for just and humane conditions of work and maternity relief; (3) Article 47: Duty of the State to raise the level of nutrition and the standard of living of its people and the IMPROVEMENT OF PUBLIC HEALTH as among its primary duties.",
+        "details_ta": "அரசு நெறிமுறைக் கோட்பாடுகள்: (1) உறுப்பு 39(e): தொழிலாளர்களின் ஆரோக்கியம் மற்றும் குழந்தைகளின் இளமைப் பருவத்தைப் பாதுகாத்தல்; (2) உறுப்பு 42: நியாயமான பணிச்சூழல் மற்றும் மகப்பேறு நிவாரணங்களை வழங்குதல்; (3) உறுப்பு 47: ஊட்டச்சத்து அளவை உயர்த்துவது மற்றும் 'பொதுச் சுகாதாரத்தை மேம்படுத்துவது அரசின் முதன்மைக் கடமை' என ஆணையிடுகிறது."
+      },
+      {
+        "term_en": "Seventh Schedule Legislative Allocation",
+        "term_ta": "ஏழாவது அட்டவணை அதிகாரப் பகிர்வு",
+        "details_en": "Entry 6 of List II (State List) vests 'Public health and sanitation; hospitals and dispensaries' primarily with State Governments. Entry 26 of List III (Concurrent List) covers 'Legal, medical and other professions', and Entry 25 covers 'Education, including technical and medical education'.",
+        "details_ta": "பட்டியல் II (மாநிலப் பட்டியல்) உள்ளீடு 6 'பொதுச் சுகாதாரம் மற்றும் துப்புரவு; மருத்துவமனைகள் மற்றும் மருந்தகங்களை' மாநில அரசின் பொறுப்பாகக் குறிப்பிடுகிறது. பட்டியல் III (பொதுப் பட்டியல்) உள்ளீடு 26 'மருத்துவத் தொழில்' மற்றும் உள்ளீடு 25 'மருத்துவக் கல்வியை' உள்ளடக்கியுள்ளது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_primary_vs_secondary_vs_tertiary",
+        "title_en": "Primary vs Secondary vs Tertiary Healthcare Systems",
+        "title_ta": "முதன்மை vs இரண்டாம் நிலை vs மூன்றாம் நிலை சுகாதார அமைப்புகள் ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Primary Healthcare",
+          "Secondary Healthcare",
+          "Tertiary Healthcare"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "முதன்மைச் சுகாதாரம்",
+          "இரண்டாம் நிலைச் சுகாதாரம்",
+          "மூன்றாம் நிலைச் சுகாதாரம்"
+        ],
+        "rows_en": [
+          [
+            "Institutional Units",
+            "Sub-Centres (SC), Health & Wellness Centres, PHCs",
+            "Community Health Centres (CHCs), Sub-District Hospitals",
+            "District Hospitals, Govt Medical Colleges, Apex AIIMS"
+          ],
+          [
+            "Core Clinical Focus",
+            "Promotive, preventive, basic diagnostic, outpatient care",
+            "Specialist curative consultation, emergency obstetrics, inpatient",
+            "Advanced multi-organ super-specialty surgeries, oncology, ICU"
+          ],
+          [
+            "Medical Specialists",
+            "General duty MBBS doctors, ANMs, Staff Nurses",
+            "4 Specialists: Surgeon, Physician, Gynecologist, Pediatrician",
+            "Cardiologists, Neurosurgeons, Oncologists, Nephrologists"
+          ],
+          [
+            "Bed Capacity",
+            "0 (Sub-Centre) to 6 beds (PHC)",
+            "30 to 50 beds (CHC)",
+            "100 to 1,500+ beds (District/Medical College)"
+          ],
+          [
+            "Target Catchment",
+            "Village, hamlet, and panchayat level (3,000 to 30,000)",
+            "Block and taluk level (80,000 to 120,000)",
+            "District and inter-district state level (1 to 3 million)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிறுவன அமைப்புகள்",
+            "துணை நிலையங்கள், நலவாழ்வு மையங்கள், ஆரம்ப சுகாதார நிலையங்கள் (PHCs)",
+            "சமூக சுகாதார நிலையங்கள் (CHCs), தாலுகா மருத்துவமனைகள்",
+            "மாவட்ட மருத்துவமனைகள், அரசு மருத்துவக் கல்லூரிகள், AIIMS"
+          ],
+          [
+            "முதன்மை மருத்துவக் கவனம்",
+            "தடுப்பு முறைகள், விழிப்புணர்வு, ஆரம்ப நோயறிதல், வெளிநோயாளி பிரிவு",
+            "சிறப்பு மருத்துவர் ஆலோசனை, அவசர பிரசவம், உள்நோயாளி பிரிவு",
+            "உயர் சிறப்பு அறுவை சிகிச்சைகள், புற்றுநோய் சிகிச்சை, தீவிர சிகிச்சைப் பிரிவு"
+          ],
+          [
+            "மருத்துவ நிபுணர்கள்",
+            "பொது MBBS மருத்துவர்கள், செவிலியர்கள் (ANM)",
+            "4 நிபுணர்கள்: அறுவை சிகிச்சை, பொது மருத்துவர், மகப்பேறு, குழந்தைகள் நலம்",
+            "இதய அறுவை சிகிச்சை நிபுணர், நரம்பியல் நிபுணர், புற்றுநோய் மருத்துவர்"
+          ],
+          [
+            "படுக்கை வசதி",
+            "0 (துணை நிலையம்) முதல் 6 படுக்கைகள் (PHC)",
+            "30 முதல் 50 படுக்கைகள் (CHC)",
+            "100 முதல் 1,500+ படுக்கைகள் (மாவட்ட/கல்லூரி மருத்துவமனை)"
+          ],
+          [
+            "மக்கள் தொகை வரம்பு",
+            "கிராமம் மற்றும் ஊராட்சி அளவு (3,000 முதல் 30,000)",
+            "வட்டார அளவு (80,000 முதல் 1,20,000)",
+            "மாவட்டம் மற்றும் மாநில அளவு (10 முதல் 30 லட்சம்)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_sc_vs_phc_vs_chc_iphs",
+        "title_en": "Sub-Centre vs PHC vs CHC Indian Public Health Standards (IPHS) Norms",
+        "title_ta": "துணை நிலையம் vs PHC vs CHC IPHS மக்கள் தொகை & கட்டமைப்பு விதிமுறைகள்",
+        "headers_en": [
+          "Facility Tier",
+          "Population Norm (Plain Areas)",
+          "Population Norm (Hilly/Tribal)",
+          "Bed Strength",
+          "Key Healthcare Personnel"
+        ],
+        "headers_ta": [
+          "மையத்தின் வகை",
+          "மக்கள் தொகை (சமவெளிப் பகுதி)",
+          "மக்கள் தொகை (மலை/பழங்குடி)",
+          "படுக்கை எண்ணிக்கை",
+          "முக்கிய மருத்துவப் பணியாளர்கள்"
+        ],
+        "rows_en": [
+          [
+            "Sub-Centre (SC)",
+            "5,000 population",
+            "3,000 population",
+            "Zero beds (outpatient/delivery only)",
+            "1-2 Female Health Workers (ANM) + 1 Male MPW"
+          ],
+          [
+            "Primary Health Centre (PHC)",
+            "30,000 population",
+            "20,000 population",
+            "4 to 6 inpatient beds",
+            "1 Medical Officer (MBBS) + Staff Nurses + Pharmacist (14 staff)"
+          ],
+          [
+            "Community Health Centre (CHC)",
+            "120,000 population",
+            "80,000 population",
+            "30 inpatient beds",
+            "4 Medical Specialists (Surgeon, Physician, Gyn, Ped) + 25+ staff"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "துணை நிலையம் (SC)",
+            "5,000 மக்கள் தொகை",
+            "3,000 மக்கள் தொகை",
+            "படுக்கை இல்லை (வெளிநோயாளி/பிரசவம்)",
+            "1-2 பெண் கிராம செவிலியர்கள் (ANM) + 1 ஆண் பணியாளர்"
+          ],
+          [
+            "ஆரம்ப சுகாதார நிலையம் (PHC)",
+            "30,000 மக்கள் தொகை",
+            "20,000 மக்கள் தொகை",
+            "4 முதல் 6 படுக்கைகள்",
+            "1 MBBS மருத்துவர் + செவிலியர்கள் + மருந்தாளுநர் (14 பணியாளர்கள்)"
+          ],
+          [
+            "சமூக சுகாதார நிலையம் (CHC)",
+            "1,20,000 மக்கள் தொகை",
+            "80,000 மக்கள் தொகை",
+            "30 படுக்கைகள்",
+            "4 சிறப்பு மருத்துவர்கள் (அறுவை, பொது, மகப்பேறு, குழந்தைகள்) + 25+ பணியாளர்கள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_communicable_vs_ncds",
+        "title_en": "Communicable Diseases vs Non-Communicable Diseases (NCDs)",
+        "title_ta": "தொற்று நோய்கள் vs தொற்றா நோய்கள் (NCDs) ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Communicable Diseases (Infectious)",
+          "Non-Communicable Diseases (NCDs)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "தொற்று நோய்கள் (Communicable)",
+          "தொற்றா நோய்கள் (NCDs)"
+        ],
+        "rows_en": [
+          [
+            "Primary Causative Agent",
+            "Pathogenic microorganisms: bacteria, viruses, parasites, fungi",
+            "Complex interaction of genetics, lifestyle, diet, tobacco, and physical inactivity"
+          ],
+          [
+            "Transmission Mode",
+            "Direct person-to-person, airborne droplets, contaminated water, vectors",
+            "Non-infectious; cannot be transmitted between individuals"
+          ],
+          [
+            "Classic Examples",
+            "Tuberculosis, Malaria, Cholera, Dengue, HIV/AIDS, Hepatitis",
+            "Cardiovascular disease (CVD), Type-2 Diabetes, Hypertension, Cancer"
+          ],
+          [
+            "Course of Disease",
+            "Acute onset; can be cured completely with antimicrobials/vaccines",
+            "Chronic, long-term duration; requires lifelong management and monitoring"
+          ],
+          [
+            "National Burden Share",
+            "Steadily declining: accounts for ~25-30% of total disease burden",
+            "Surging: accounts for over 65% of all deaths and disease burden in India"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோய்க்காரணி",
+            "நுண்ணுயிரிகள்: பாக்டீரியா, வைரஸ், ஒட்டுண்ணிகள், பூஞ்சைகள்",
+            "மரபியல், உணவுமுறை, புகையிலை, உடற்பயிற்சியின்மை மற்றும் வாழ்க்கைமுறை"
+          ],
+          [
+            "பரவும் முறை",
+            "நேரடித் தொடர்பு, காற்றுத் திவலைகள், அசுத்தமான குடிநீர், கொசுக்கள்",
+            "தொற்றாதது; ஒருவரிடமிருந்து மற்றொருவருக்கு நேரடியாகப் பரவாது"
+          ],
+          [
+            "முக்கிய உதாரணங்கள்",
+            "காசநோய், மலேரியா, காலரா, டெங்கு, எய்ட்ஸ், ஹெபடைடிஸ்",
+            "இதய நோய்கள், வகை-2 நீரிழிவு, உயர் இரத்த அழுத்தம், புற்றுநோய்"
+          ],
+          [
+            "நோயின் தன்மை",
+            "திடீரெனத் தோன்றும்; நுண்ணுயிர் மருந்துகள் மற்றும் தடுப்பூசி மூலம் முழுமையாகக் குணப்படுத்தலாம்",
+            "நாள்பட்ட நீண்டகாலத் தன்மை; வாழ்நாள் முழுவதும் மருந்துகளால் கட்டுப்படுத்த வேண்டியது"
+          ],
+          [
+            "இந்திய நோய்ச் சும பங்களிப்பு",
+            "படிப்படியாகச் சரிந்து வருகிறது: மொத்த நோய்ச் சுமயில் ~25-30% மட்டுமே",
+            "தீவிரமாக உயர்ந்து வருகிறது: இந்தியாவில் நிகழும் மொத்த மரணங்களில் 65%-க்கும் மேல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mortality_metrics_comparison",
+        "title_en": "Key Child and Maternal Mortality Metrics Compared",
+        "title_ta": "முக்கிய குழந்தை மற்றும் தாய் இறப்பு விகிதங்கள் ஒப்பீடு",
+        "headers_en": [
+          "Metric Name",
+          "Age Window Measured",
+          "Denominator Multiplier Base",
+          "India Latest Trend (SRS / NFHS-5)"
+        ],
+        "headers_ta": [
+          "குறிகாட்டியின் பெயர்",
+          "அளவிடப்படும் வயது வரம்பு",
+          "பகுதி பெருக்கல் அளவு",
+          "இந்தியாவின் அண்மைப் போக்கு"
+        ],
+        "rows_en": [
+          [
+            "Neonatal Mortality Rate (NMR)",
+            "First 28 days of life (0 to 28 completed days)",
+            "Per 1,000 Live Births",
+            "~20-22 per 1,000 live births (65% of infant deaths)"
+          ],
+          [
+            "Infant Mortality Rate (IMR)",
+            "Under 1 year of age (0 to 365 days)",
+            "Per 1,000 Live Births",
+            "~28-32 per 1,000 live births"
+          ],
+          [
+            "Under-5 Mortality Rate (U5MR)",
+            "Under 5 years of age (0 to 5 completed years)",
+            "Per 1,000 Live Births",
+            "~32-35 per 1,000 live births"
+          ],
+          [
+            "Maternal Mortality Ratio (MMR)",
+            "Pregnancy to 42 days post-delivery",
+            "Per 100,000 LIVE BIRTHS (NOT 1,000)",
+            "97 per 100,000 live births (SRS 2018-20)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிறந்த குழந்தை இறப்பு விகிதம் (NMR)",
+            "பிறந்து முதல் 28 நாட்கள் மட்டுமே (0-28 நாட்கள்)",
+            "1,000 உயிருள்ள பிறப்புகளுக்கு",
+            "1,000 பிறப்புகளுக்கு ~20-22 (குழந்தை இறப்பில் 65%)"
+          ],
+          [
+            "குழந்தை இறப்பு விகிதம் (IMR)",
+            "1 வயதுக்குட்பட்ட காலம் (0 முதல் 365 நாட்கள்)",
+            "1,000 உயிருள்ள பிறப்புகளுக்கு",
+            "1,000 பிறப்புகளுக்கு ~28-32"
+          ],
+          [
+            "ஐந்து வயதுக்குட்பட்ட இறப்பு (U5MR)",
+            "5 வயதுக்குட்பட்ட காலம் (0 முதல் 5 ஆண்டுகள்)",
+            "1,000 உயிருள்ள பிறப்புகளுக்கு",
+            "1,000 பிறப்புகளுக்கு ~32-35"
+          ],
+          [
+            "தாய் இறப்பு விகிதம் (MMR)",
+            "கர்ப்ப காலம் முதல் பிரசவித்த 42 நாட்கள் வரை",
+            "1,00,000 உயிருள்ள பிறப்புகளுக்கு (1,000 அல்ல)",
+            "1,00,000 பிறப்புகளுக்கு 97 (SRS 2018-20)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Health Part 1: Architecture, Metrics & Epidemiological Transition",
+        "short_label": "Health Architecture",
+        "children": [
+          {
+            "title": "Constitutional Framework",
+            "short_label": "Constitution",
+            "children": [
+              {
+                "title": "State List (List II Entry 6: Public Health & Sanitation)",
+                "short_label": "State List"
+              },
+              {
+                "title": "Article 21 (Right to Health under Right to Life)",
+                "short_label": "Article 21"
+              },
+              {
+                "title": "Article 47 (Duty of State to improve public health)",
+                "short_label": "Article 47"
+              }
+            ]
+          },
+          {
+            "title": "Three-Tiered Healthcare Infrastructure",
+            "short_label": "Infrastructure",
+            "children": [
+              {
+                "title": "Sub-Centres (5k plains / 3k hills; ANMs)",
+                "short_label": "Sub-Centres"
+              },
+              {
+                "title": "PHCs (30k plains / 20k hills; MBBS Doctor, 4-6 Beds)",
+                "short_label": "PHCs"
+              },
+              {
+                "title": "CHCs (120k plains / 80k hills; 30 Beds, 4 Specialists)",
+                "short_label": "CHCs"
+              },
+              {
+                "title": "Tertiary (District Hospitals & Medical Colleges)",
+                "short_label": "Tertiary"
+              }
+            ]
+          },
+          {
+            "title": "Core Mortality Metrics",
+            "short_label": "Mortality Metrics",
+            "children": [
+              {
+                "title": "IMR (per 1,000 Live Births, <1 year)",
+                "short_label": "IMR"
+              },
+              {
+                "title": "NMR (per 1,000 Live Births, <28 days; 65% of IMR)",
+                "short_label": "NMR"
+              },
+              {
+                "title": "U5MR (per 1,000 Live Births, <5 years)",
+                "short_label": "U5MR"
+              },
+              {
+                "title": "MMR (per 100,000 Live Births, SDG Target <70)",
+                "short_label": "MMR"
+              }
+            ]
+          },
+          {
+            "title": "Epidemiological Transition",
+            "short_label": "Epidemiology",
+            "children": [
+              {
+                "title": "Omran Model (Infectious to Chronic Diseases)",
+                "short_label": "Omran Model"
+              },
+              {
+                "title": "Surge of NCDs (>65% of deaths in India)",
+                "short_label": "NCD Surge"
+              },
+              {
+                "title": "Double Burden of Malnutrition",
+                "short_label": "Double Burden"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "IPHS Population Norms Identification Trap: SC vs PHC vs CHC",
+        "points": {
+          "en": [
+            "TRAP: Confusing the population coverage thresholds of Sub-Centres, PHCs, and CHCs in plain vs hilly/tribal areas.",
+            "CORRECT FACT: Memorize the exact dual matrix: Sub-Centres cover 5,000 (plains) and 3,000 (hilly/tribal); PHCs cover 30,000 (plains) and 20,000 (hilly/tribal); CHCs cover 120,000 (plains) and 80,000 (hilly/tribal).",
+            "WHY CANDIDATES FAIL: Transposing the plain area population norm with the hilly/tribal norm under exam pressure."
+          ],
+          "ta": [
+            "பொறி: துணை நிலையம், ஆரம்ப சுகாதார நிலையம் (PHC) மற்றும் சமூக சுகாதார நிலையம் (CHC) ஆகியவற்றின் சமவெளி மற்றும் மலைப்பகுதி மக்கள் தொகை வரம்புகளை மாற்றி அமைப்பது.",
+            "சரியான உண்மை: துல்லியமாக நினைவில் கொள்க: துணை நிலையம் = 5,000 (சமவெளி) / 3,000 (மலை); ஆரம்ப சுகாதார நிலையம் (PHC) = 30,000 (சமவெளி) / 20,000 (மலை); சமூக சுகாதார நிலையம் (CHC) = 1,20,000 (சமவெளி) / 80,000 (மலை).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சமவெளிப் பகுதிக்கான அளவையும் மலைப்பகுதிக்கான அளவையும் தேர்வில் அவசரத்தில் மாற்றிப் பொருத்துவது."
+          ]
+        }
+      },
+      {
+        "title": "MMR Denominator Base Trap: 100,000, NOT 1,000 Live Births",
+        "points": {
+          "en": [
+            "TRAP: Marking 1,000 as the multiplier denominator for the Maternal Mortality Ratio (MMR).",
+            "CORRECT FACT: MMR is calculated strictly per 100,000 (ONE HUNDRED THOUSAND) LIVE BIRTHS. All infant and child mortality rates (NMR, IMR, U5MR) are calculated per 1,000 live births.",
+            "WHY CANDIDATES FAIL: Assuming all mortality rates share a uniform denominator base of 1,000."
+          ],
+          "ta": [
+            "பொறி: தாய் இறப்பு விகிதத்தின் (MMR) பெருக்கல் அடிப்படையாக 1,000 எனக் குறிப்பிடுவது.",
+            "சரியான உண்மை: தாய் இறப்பு விகிதம் (MMR) என்பது '1,00,000 உயிருள்ள பிறப்புகளுக்கு' (ஒரு லட்சம்) மட்டுமே கணக்கிடப்படுகிறது. குழந்தை இறப்பு விகிதங்கள் (NMR, IMR, U5MR) மட்டுமே 1,000 பிறப்புகளுக்குக் கணக்கிடப்படுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அனைத்து இறப்பு விகிதங்களுக்கும் 1,000 என்பதே பகுதி என்று மேலோட்டமாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Constitutional Subject Allocation Trap: Public Health is State List (List II Entry 6)",
+        "points": {
+          "en": [
+            "TRAP: Classifying 'Public Health and Sanitation' as a Concurrent List subject.",
+            "CORRECT FACT: 'Public health and sanitation; hospitals and dispensaries' is strictly a STATE SUBJECT under Entry 6 of List II (State List). Only 'Medical education' and 'Medical professions' reside on the Concurrent List (List III, Entry 25 & 26).",
+            "WHY CANDIDATES FAIL: Because national health programs (NHM, Ayushman Bharat) are funded heavily by the Union, candidates misattribute public health to the Concurrent or Union List."
+          ],
+          "ta": [
+            "பொறி: 'பொதுச் சுகாதாரம் மற்றும் துப்புரவை' பொதுப் பட்டியல் (Concurrent List) விவகாரம் எனக் கருதுவது.",
+            "சரியான உண்மை: 'பொதுச் சுகாதாரம் மற்றும் துப்புரவு; மருத்துவமனைகள்' என்பது அரசியலமைப்பு ஏழாவது அட்டவணையில் பட்டியல் II-ன் (மாநிலப் பட்டியல்) உள்ளீடு 6-ன் கீழ் உள்ள 'மாநில விவகாரமாகும்'! மருத்துவக் கல்வி மட்டுமே பொதுப் பட்டியலில் உள்ளது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: மத்திய அரசு NHM, ஆயுஷ்மான் பாரத் போன்ற பெரும் திட்டங்களுக்கு நிதி தருவதால் பொதுச் சுகாதாரம் பொதுப் பட்டியலில் இருப்பதாகத் தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Epidemiological Transition Reality Trap: NCDs are the Major Killer, NOT Infections",
+        "points": {
+          "en": [
+            "TRAP: Believing that infectious communicable diseases (malaria, cholera, TB) remain the leading cause of death in contemporary India.",
+            "CORRECT FACT: Non-Communicable Diseases (NCDs)—primarily cardiovascular diseases, cancer, chronic respiratory diseases, and diabetes—now cause over 65% of all deaths in India. Infectious, maternal, and nutritional causes have fallen to under 25-30% of total disease burden.",
+            "WHY CANDIDATES FAIL: Relying on historical perceptions of India as an infectious-disease-dominated society."
+          ],
+          "ta": [
+            "பொறி: தற்கால இந்தியாவில் தொற்று நோய்களே (மலேரியா, காலரா, காசநோய்) அதிக மரணங்களை ஏற்படுத்துகின்றன என நம்புவது.",
+            "சரியான உண்மை: தற்காலத்தில் இந்தியாவில் நிகழும் மொத்த மரணங்களில் 65%-க்கும் அதிகமானவை 'தொற்றா நோய்களாலேயே' (NCDs: இதய நோய், புற்றுநோய், நீரிழிவு, பக்கவாதம்) ஏற்படுகின்றன! தொற்று நோய்களால் ஏற்படும் மரணங்கள் 25-30% ஆகக் குறைந்துவிட்டன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பழைய நினைப்பில் இந்தியா இன்னும் தொற்று நோய்களால் மட்டுமே அதிகம் பாதிக்கப்படுகிறது என தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "Neonatal Mortality Share Trap: First 28 Days Account for 65-70% of IMR",
+        "points": {
+          "en": [
+            "TRAP: Assuming infant deaths are evenly distributed across the 12 months of infancy.",
+            "CORRECT FACT: Over 65% to 70% of all infant deaths occur during the NEONATAL PERIOD (first 28 days of life), with the vast majority occurring in the first 48 hours post-delivery due to prematurity and birth asphyxia.",
+            "WHY CANDIDATES FAIL: Missing the disproportionate clinical concentration of infant mortality in the first 4 weeks of life."
+          ],
+          "ta": [
+            "பொறி: குழந்தை இறப்புகள் 1 வயது வரையிலான 12 மாதங்களிலும் சீராகப் பரவி நிகழ்கின்றன என நினைப்பது.",
+            "சரியான உண்மை: மொத்த குழந்தை இறப்புகளில் 65% முதல் 70% இறப்புகள் குழந்தை பிறந்த 'முதல் 28 நாட்களுக்குள்ளேயே' (Neonatal period) நிகழ்கின்றன; அதிலும் குறிப்பாக முதல் 48 மணி நேரத்தில் குறைபிரசவம் மற்றும் மூச்சுத்திணறலால் ஏற்படுகின்றன.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: முதல் 4 வார பச்சிளங்குழந்தைப் பருவமே மிக ஆபத்தான பருவம் என்பதை உணராமை."
+          ]
+        }
+      },
+      {
+        "title": "Primary Care Scope Trap: Promotive & Preventive, NOT Merely Curative",
+        "points": {
+          "en": [
+            "TRAP: Defining Primary Healthcare strictly as the dispensing of curative pills and injections.",
+            "CORRECT FACT: Primary Healthcare is fundamentally PROMOTIVE AND PREVENTIVE in nature (clean drinking water, maternal nutrition, immunization, sanitation, health education). Curative treatment at the primary level is restricted to minor ailments; complicated curative cases are referred upward to secondary and tertiary centers.",
+            "WHY CANDIDATES FAIL: Equating all healthcare exclusively with hospital curative treatment."
+          ],
+          "ta": [
+            "பொறி: ஆரம்ப சுகாதார நிலையங்களின் பணி என்பது வெறும் மாத்திரைகள், ஊசிகள் தந்து நோயைக் குணப்படுத்துவது மட்டுமே என நினைப்பது.",
+            "சரியான உண்மை: ஆரம்ப சுகாதாரம் என்பது அடிப்படையில் 'நோய் தடுப்பு மற்றும் விழிப்புணர்வு' (Preventive & Promotive) சார்ந்ததாகும் (தூய குடிநீர், தடுப்பூசி, தாய்-சேய் ஊட்டச்சத்து, சுகாதாரம்). தீவிர நோய்களைக் குணப்படுத்தும் பணி இரண்டாம் மற்றும் மூன்றாம் நிலை மருத்துவமனைகளுக்குப் பரிந்துரைக்கப்படுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சுகாதாரம் என்றாலே மருத்துவமனையில் சிகிச்சை பெறுவது மட்டுமே என தவறாக எண்ணுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Public Health and Sanitation is assigned to the State List under Entry 6 of the Seventh Schedule.",
+        "The Supreme Court declared the Right to Health as part of Article 21 (Right to Life) in Paschim Banga Khet Mazdoor Samity (1996).",
+        "Article 47 mandates the improvement of public health as among the primary duties of the State.",
+        "Sub-Centres are established for 5,000 population in plain areas and 3,000 in hilly/tribal areas.",
+        "Primary Health Centres (PHCs) cover 30,000 population in plains and 20,000 in hilly/tribal areas.",
+        "Community Health Centres (CHCs) cover 120,000 population in plains and 80,000 in hilly/tribal areas.",
+        "A CHC has 30 beds and four core specialists: Surgeon, Physician, Gynecologist, and Pediatrician.",
+        "Infant Mortality Rate (IMR) is measured per 1,000 live births; Neonatal Mortality Rate (NMR) measures deaths in first 28 days.",
+        "Neonatal deaths account for 65% to 70% of total infant mortality in India.",
+        "Maternal Mortality Ratio (MMR) is strictly calculated per 100,000 live births.",
+        "Non-Communicable Diseases (NCDs) now cause over 65% of all deaths in India, led by cardiovascular diseases.",
+        "UN SDG Target 3.1 mandates reducing global MMR to less than 70 per 100,000 live births by 2030."
+      ],
+      "ta": [
+        "பொதுச் சுகாதாரம் மற்றும் துப்புரவு அரசியலமைப்பின் ஏழாவது அட்டவணையில் மாநிலப் பட்டியல் உள்ளீடு 6-ன் கீழ் உள்ளது.",
+        "உச்சநீதிமன்றம் மேற்கு வங்க கேத் மஜ்தூர் சமிதி வழக்கில் (1996) சுகாதார உரிமையை உறுப்பு 21-ன் கீழ் வாழ்வுரிமையின் பகுதி என அறிவித்தது.",
+        "அரசியலமைப்பு உறுப்பு 47 பொதுச் சுகாதாரத்தை மேம்படுத்துவதை அரசின் முதன்மைக் கடமைகளில் ஒன்றாகக் குறிப்பிடுகிறது.",
+        "துணை நிலையங்கள் சமவெளியில் 5,000 மக்கள் தொகைக்கும், மலைப்பகுதியில் 3,000 மக்கள் தொகைக்கும் அமைக்கப்படுகின்றன.",
+        "ஆரம்ப சுகாதார நிலையங்கள் (PHC) சமவெளியில் 30,000 மற்றும் மலைப்பகுதியில் 20,000 மக்கள் தொகைக்கு அமைக்கப்படுகின்றன.",
+        "சமூக சுகாதார நிலையங்கள் (CHC) சமவெளியில் 1,20,000 மற்றும் மலைப்பகுதியில் 80,000 மக்கள் தொகைக்கு அமைக்கப்படுகின்றன.",
+        "CHC 30 படுக்கைகள் மற்றும் 4 சிறப்பு மருத்துவர்களைக் (அறுவை, பொது, மகப்பேறு, குழந்தைகள் நலம்) கொண்டிருக்கும்.",
+        "IMR 1,000 பிறப்புகளுக்கு அளவிடப்படுகிறது; NMR என்பது முதல் 28 நாட்களில் நிகழும் பச்சிளங்குழந்தை மரணங்களாகும்.",
+        "இந்தியாவில் மொத்த குழந்தை இறப்புகளில் 65% முதல் 70% இறப்புகள் இந்த முதல் 28 நாட்களுக்குள்ளேயே நிகழ்கின்றன.",
+        "தாய் இறப்பு விகிதம் (MMR) 1,00,000 உயிருள்ள பிறப்புகளுக்கு மட்டுமே கணக்கிடப்படுகிறது.",
+        "இந்தியாவில் நிகழும் மொத்த மரணங்களில் 65%-க்கும் அதிகமானவை தொற்றா நோய்களாலேயே (NCDs) ஏற்படுகின்றன.",
+        "ஐ.நா-வின் SDG இலக்கு 3.1 2030-க்குள் உலகளாவிய MMR-ஐ 70-க்கு கீழ் குறைக்க வேண்டும் என ஆணையிடுகிறது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Public Health is Entry 6 of List II (State List); Medical Education is Entry 25 of List III (Concurrent List).",
+        "Article 21 includes the Fundamental Right to Health; Article 47 establishes public health improvement as a primary state duty.",
+        "IPHS Population Norms: Sub-Centre (5k/3k), PHC (30k/20k), CHC (120k/80k) across plain vs hilly/tribal tracts.",
+        "Sub-Centres are staffed by ANMs; PHCs are headed by an MBBS doctor with 4-6 beds; CHCs have 30 beds and 4 specialists.",
+        "IMR is deaths <1 year per 1,000 live births; NMR is deaths <28 days per 1,000 live births (NMR = ~65-70% of IMR).",
+        "U5MR measures probability of dying before age 5 per 1,000 live births.",
+        "MMR is maternal deaths per 100,000 live births (never 1,000); SDG target is <70 by 2030.",
+        "Epidemiological Transition: Shift from infectious communicable diseases to chronic Non-Communicable Diseases (NCDs).",
+        "NCDs (cardiovascular, diabetes, cancer, chronic respiratory) account for >65% of all deaths in India.",
+        "Double Burden of Malnutrition: Simultaneous coexistence of undernutrition (stunting/wasting) and overnutrition/obesity."
+      ],
+      "ta": [
+        "பொதுச் சுகாதாரம் மாநிலப் பட்டியல் உள்ளீடு 6; மருத்துவக் கல்வி பொதுப் பட்டியல் உள்ளீடு 25.",
+        "உறுப்பு 21 சுகாதார உரிமையை அடிப்படை உரிமையாக்குகிறது; உறுப்பு 47 பொதுச் சுகாதாரத்தை அரசின் முதன்மைக் கடமையாக்குகிறது.",
+        "IPHS மக்கள் தொகை வரம்புகள்: துணை நிலையம் (5k/3k), ஆரம்ப சுகாதார நிலையம் (30k/20k), சமூக சுகாதார மையம் (120k/80k).",
+        "துணை நிலையத்தில் ANM செவிலியர்; PHC-ல் MBBS மருத்துவர் மற்றும் 4-6 படுக்கைகள்; CHC-ல் 30 படுக்கைகள் மற்றும் 4 நிபுணர்கள்.",
+        "IMR என்பது 1 வயதுக்குட்பட்ட இறப்பு (1,000 பிறப்புகளுக்கு); NMR என்பது முதல் 28 நாள் இறப்பு (IMR-ல் 65-70%).",
+        "U5MR என்பது 5 வயதுக்குட்பட்ட குழந்தை இறப்பு நிகழ்தகவு (1,000 பிறப்புகளுக்கு).",
+        "MMR என்பது 1,00,000 உயிருள்ள பிறப்புகளுக்கு கணக்கிடப்படும் தாய் மரணங்கள்; SDG இலக்கு 70-க்கு கீழ் குறைப்பது.",
+        "நோயியல் மாற்றம்: தொற்று நோய்களிலிருந்து தொற்றா நோய்களை (NCDs) நோக்கிய நீண்டகால மாற்றம்.",
+        "தொற்றா நோய்கள் (இதய நோய், நீரிழிவு, புற்றுநோய்) இந்தியாவில் நிகழும் மொத்த மரணங்களில் 65%-க்கும் அதிகமாக உள்ளன.",
+        "ஊட்டச்சத்து இரட்டைச் சுமை: ஒரே சமூகத்தில் ஊட்டச்சத்துக் குறைபாடும் உடல் பருமனும் ஒரே நேரத்தில் நிலவுவது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_hlth_101",
+        "front_en": "Under which Schedule and List of the Indian Constitution is 'Public Health and Sanitation' placed?",
+        "front_ta": "இந்திய அரசியலமைப்பின் எந்த அட்டவணை மற்றும் பட்டியலில் 'பொதுச் சுகாதாரம் மற்றும் துப்புரவு' வைக்கப்பட்டுள்ளது?",
+        "back_en": "Seventh Schedule, List II (State List), Entry 6.",
+        "back_ta": "ஏழாவது அட்டவணை, பட்டியல் II (மாநிலப் பட்டியல்), உள்ளீடு 6."
+      },
+      {
+        "id": "rc_hlth_102",
+        "front_en": "In which landmark 1996 case did the Supreme Court rule that the Right to Health is part of Article 21?",
+        "front_ta": "எந்த வரலாற்றுச் சிறப்புமிக்க 1996 வழக்கில் சுகாதார உரிமை உறுப்பு 21-ன் கீழ் வாழ்வுரிமையின் பகுதி என உச்சநீதிமன்றம் தீர்ப்பளித்தது?",
+        "back_en": "Paschim Banga Khet Mazdoor Samity v. State of West Bengal (1996).",
+        "back_ta": "மேற்கு வங்க கேத் மஜ்தூர் சமிதி எதிர் மேற்கு வங்க அரசு வழக்கு (1996)."
+      },
+      {
+        "id": "rc_hlth_103",
+        "front_en": "What are the IPHS population norms for establishing a Primary Health Centre (PHC)?",
+        "front_ta": "ஆரம்ப சுகாதார நிலையம் (PHC) அமைப்பதற்கான IPHS மக்கள் தொகை விதிமுறைகள் என்ன?",
+        "back_en": "30,000 population in plain areas and 20,000 population in hilly/tribal/desert areas.",
+        "back_ta": "சமவெளிப் பகுதியில் 30,000 மக்கள் தொகை மற்றும் மலை/பழங்குடிப் பகுதிகளில் 20,000 மக்கள் தொகை."
+      },
+      {
+        "id": "rc_hlth_104",
+        "front_en": "What are the population and bed capacity norms for a Community Health Centre (CHC)?",
+        "front_ta": "சமூக சுகாதார நிலையத்திற்கான (CHC) மக்கள் தொகை மற்றும் படுக்கை வசதி விதிமுறைகள் என்ன?",
+        "back_en": "120,000 population in plains (80,000 in hills/tribal) with 30 inpatient beds and 4 specialists.",
+        "back_ta": "சமவெளியில் 1,20,000 (மலையில் 80,000) மக்கள் தொகை, 30 படுக்கைகள் மற்றும் 4 சிறப்பு மருத்துவர்கள்."
+      },
+      {
+        "id": "rc_hlth_105",
+        "front_en": "What percentage of total infant mortality (IMR) in India occurs during the neonatal period (first 28 days)?",
+        "front_ta": "இந்தியாவில் மொத்த குழந்தை இறப்பில் எத்தனை சதவீதம் முதல் 28 நாட்களுக்குள் (Neonatal period) நிகழ்கிறது?",
+        "back_en": "Approximately 65% to 70% of all infant deaths.",
+        "back_ta": "மொத்த குழந்தை இறப்புகளில் சுமார் 65% முதல் 70% வரை."
+      },
+      {
+        "id": "rc_hlth_106",
+        "front_en": "What is the denominator multiplier base for calculating the Maternal Mortality Ratio (MMR)?",
+        "front_ta": "தாய் இறப்பு விகிதத்தைக் (MMR) கணக்கிடுவதற்கான பகுதி பெருக்கல் அடிப்படை என்ன?",
+        "back_en": "Per 100,000 (one hundred thousand) live births.",
+        "back_ta": "1,00,000 (ஒரு லட்சம்) உயிருள்ள பிறப்புகளுக்கு."
+      },
+      {
+        "id": "rc_hlth_107",
+        "front_en": "What is the United Nations Sustainable Development Goal (SDG Target 3.1) for Maternal Mortality Ratio by 2030?",
+        "front_ta": "2030-க்குள் தாய் இறப்பு விகிதத்திற்கான (MMR) ஐக்கிய நாடுகள் சபையின் SDG இலக்கு (3.1) என்ன?",
+        "back_en": "To reduce the global MMR to less than 70 per 100,000 live births.",
+        "back_ta": "1,00,000 உயிருள்ள பிறப்புகளுக்கு 70-க்கு கீழ் குறைப்பது."
+      },
+      {
+        "id": "rc_hlth_108",
+        "front_en": "Who formulated the Theory of Epidemiological Transition in 1971?",
+        "front_ta": "1971-ல் நோயியல் மாற்றக் கோட்பாட்டை (Epidemiological Transition) உருவாக்கியவர் யார்?",
+        "back_en": "Abdel Omran.",
+        "back_ta": "அப்தெல் ஓம்ரான் (Abdel Omran)."
+      },
+      {
+        "id": "rc_hlth_109",
+        "front_en": "What proportion of all deaths in contemporary India is caused by Non-Communicable Diseases (NCDs)?",
+        "front_ta": "தற்கால இந்தியாவில் நிகழும் மொத்த மரணங்களில் எத்தனை சதவீதம் தொற்றா நோய்களால் (NCDs) ஏற்படுகின்றன?",
+        "back_en": "Over 65% of all deaths (with cardiovascular diseases being the leading single cause).",
+        "back_ta": "மொத்த மரணங்களில் 65%-க்கும் அதிகமாக (இதய நோய்கள் முதன்மையான ஒற்றைக் காரணியாக உள்ளன)."
+      },
+      {
+        "id": "rc_hlth_110",
+        "front_en": "Which Directive Principle of State Policy mandates the improvement of public health as among the primary duties of the State?",
+        "front_ta": "பொதுச் சுகாதாரத்தை மேம்படுத்துவதை அரசின் முதன்மைக் கடமையாக ஆணையிடும் அரசு நெறிமுறைக் கோட்பாடு எது?",
+        "back_en": "Article 47 of the Constitution of India.",
+        "back_ta": "இந்திய அரசியலமைப்பின் உறுப்பு 47."
+      }
+    ]
+  }
+}

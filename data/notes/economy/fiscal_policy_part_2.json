@@ -1,0 +1,822 @@
+{
+  "meta": {
+    "topic_id": "economy_fiscal_policy_part_2",
+    "repository_id": "economy_fiscal_policy",
+    "display_title": "Fiscal Policy – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "Fiscal Policy",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "Fiscal Deficit",
+    "Revenue Deficit",
+    "Primary Deficit",
+    "FRBM Act 2003",
+    "N.K. Singh Committee",
+    "Automatic Stabilizers",
+    "Expansionary Fiscal Policy"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the arithmetic and significance of Fiscal, Revenue, and Primary Deficits.",
+        "Comprehend the macroeconomic mechanism of expansionary vs contractionary fiscal policy."
+      ],
+      "ta": [
+        "நிதி, வருவாய் மற்றும் முதன்மைப் பற்றாக்குறைகளின் கணக்கீடு மற்றும் முக்கியத்துவத்தைப் புரிந்துகொள்ளுதல்.",
+        "விரிவாக்க மற்றும் சுருக்க நிதிக் கொள்கைகளின் பேரியல் பொருளாதார வழிமுறைகளை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the N.K. Singh Committee's 60% combined debt target (40% Centre, 20% States).",
+        "Recall the 0.5% escape clause buffer under FRBM."
+      ],
+      "ta": [
+        "என்.கே. சிங் குழுவின் 60% கடன் இலக்கை நினைவில் நிறுத்துதல் (மத்திய அரசு 40%, மாநிலங்கள் 20%).",
+        "FRBM சட்டத்தின் கீழான 0.5% தப்பிக்கும் விதியை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze the economic message of a zero primary deficit.",
+        "Compare the original 2003 FRBM architecture with the 2017 N.K. Singh framework."
+      ],
+      "ta": [
+        "பூஜ்ஜிய முதன்மைப் பற்றாக்குறையின் பொருளாதார அர்த்தத்தை ஆய்வு செய்தல்.",
+        "அசல் 2003 FRBM கட்டமைப்பை 2017 என்.கே. சிங் பரிந்துரைகளுடன் ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply deficit formulas to calculate budget gaps from given economic data.",
+        "Identify exam traps regarding internal vs external sovereign debt risks."
+      ],
+      "ta": [
+        "கொடுக்கப்பட்ட பொருளாதார தரவுகளிலிருந்து பற்றாக்குறைகளைக் கணக்கிட சூத்திரங்களைப் பயன்படுத்துதல்.",
+        "உள்நாட்டு vs வெளிநாட்டு பொதுக்கடன் அபாயங்கள் குறித்த தேர்வுப் பொறிகளை கண்டறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "Fiscal Policy – Part 2",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_fiscal_stances",
+      "title_en": "Fiscal Policy Stances and Automatic Stabilizers",
+      "title_ta": "நிதிக் கொள்கை நிலைகள் மற்றும் தானியங்கி நிலைப்படுத்திகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_deficit_metrics",
+      "title_en": "Deficit Concepts and Mathematical Formulations",
+      "title_ta": "பற்றாக்குறை கருத்துக்கள் மற்றும் கணித சூத்திரங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_frbm_framework",
+      "title_en": "The FRBM Act, 2003 and N.K. Singh Committee (2017)",
+      "title_ta": "FRBM சட்டம், 2003 மற்றும் என்.கே. சிங் குழு (2017)",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The operational structure of Fiscal Policy encompasses the deliberate counter-cyclical deployment of spending and taxation (expansionary or contractionary), the arithmetic calculation of budgetary deficits (Fiscal, Revenue, and Primary Deficit), and rule-based fiscal discipline under the FRBM framework.",
+      "ta": "நிதிக் கொள்கையின் செயல்பாட்டுக் கட்டமைப்பு என்பது பொருளாதார சுழற்சிக்கு எதிரான (சுருக்கம் அல்லது விரிவாக்க) செலவினம் மற்றும் வரிவிதிப்பு பயன்பாடு, பட்ஜெட் பற்றாக்குறைகளின் கணக்கீடுகள் (நிதி, வருவாய் மற்றும் முதன்மைப் பற்றாக்குறை) மற்றும் FRBM சட்டத்தின் கீழான விதிமுறை சார்ந்த நிதி ஒழுக்கத்தை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "Fiscal mechanisms govern how governments manage economic booms and recessions. Automatic stabilizers, such as progressive tax revenues that naturally decline during downturns, operate alongside discretionary fiscal measures such as capital infrastructure stimulus. In India, persistent deficits led to the enactment of the Fiscal Responsibility and Budget Management (FRBM) Act, 2003, later refined by the N.K. Singh Committee (2017), which instituted debt-to-GDP targets and escape clause architecture.",
+      "ta": "பொருளாதார ஏற்றங்கள் மற்றும் மந்தநிலைகளை அரசாங்கங்கள் எவ்வாறு கையாள்கின்றன என்பதை நிதி வழிமுறைகள் தீர்மானிக்கின்றன. பொருளாதார வீழ்ச்சியின் போது இயல்பாகவே குறையும் முற்போக்கு வரி வருவாய் போன்ற தானியங்கி நிலைப்படுத்திகள் (Automatic Stabilizers), உள்கட்டமைப்பு ஊக்கத்தொகை போன்ற தன்னிச்சையான நிதிக் கொள்கைகளுடன் இணைந்து செயல்படுகின்றன. இந்தியாவில் தொடர் பற்றாக்குறைகள் நிதிப் பொறுப்பு மற்றும் பட்ஜெட் மேலாண்மை (FRBM) சட்டம், 2003 இயற்ற வழிவகுத்தது; பின்னர் இது என்.கே. சிங் குழுவால் (2017) கடன்-ஜிடிபி இலக்குகள் மற்றும் தப்பிக்கும் விதிகளுடன் மறுசீரமைக்கப்பட்டது."
+    },
+    "sec_fiscal_stances": [
+      {
+        "title": "Expansionary Fiscal Policy",
+        "title_ta": "விரிவாக்க நிதிக் கொள்கை",
+        "points": {
+          "en": [
+            "Deployed during economic slowdowns, recessions, or depressionary deflation.",
+            "Involves increasing government spending (capex, welfare transfers) and cutting taxes to boost disposable income and aggregate demand.",
+            "Results in deliberate expansion of the fiscal deficit to crowd-in private investments and create employment."
+          ],
+          "ta": [
+            "பொருளாதார மந்தநிலை அல்லது பணவாட்டத்தின் போது செயல்படுத்தப்படுகிறது.",
+            "செலவிடத்தக்க வருமானம் மற்றும் ஒட்டுமொத்த தேவையை அதிகரிக்க அரசு செலவினங்களை உயர்த்துவது மற்றும் வரிகளைக் குறைப்பதை உள்ளடக்கியது.",
+            "தனியார் முதலீடுகளை ஈர்க்கவும் வேலைவாய்ப்பை உருவாக்கவும் வேண்டுமென்றே நிதிப் பற்றாக்குறையை விரிவுபடுத்துகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Contractionary Fiscal Policy",
+        "title_ta": "சுருக்க நிதிக் கொள்கை",
+        "points": {
+          "en": [
+            "Deployed when the economy is overheating and experiencing severe demand-pull inflation.",
+            "Involves curtailing public expenditure (especially unproductive consumption spending) and raising taxes to mop up excess purchasing power.",
+            "Aims to achieve a fiscal surplus or minimize the fiscal deficit to cool down inflationary pressures."
+          ],
+          "ta": [
+            "பொருளாதாரம் அதீத வளர்ச்சியடைந்து கடுமையான தேவை-இழுப்பு பணவீக்கம் ஏற்படும் போது செயல்படுத்தப்படுகிறது.",
+            "அதிகப்படியான வாங்கும் சக்தியைக் குறைக்க பொதுச் செலவினங்களைக் குறைப்பது மற்றும் வரிகளை உயர்த்துவதை உள்ளடக்கியது.",
+            "பணவீக்க அழுத்தங்களைத் தணிக்க நிதி உபரியை அடைய அல்லது நிதிப் பற்றாக்குறையைக் குறைக்க முயல்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Automatic Stabilizers vs Discretionary Measures",
+        "title_ta": "தானியங்கி நிலைப்படுத்திகள் vs தன்னிச்சையான நடவடிக்கைகள்",
+        "points": {
+          "en": [
+            "Automatic Stabilizers: Fiscal mechanisms built into the tax-benefit system that automatically cushion economic shocks without fresh legislative action (e.g., progressive income tax revenues fall automatically during recessions; welfare payout claims rise).",
+            "Discretionary Fiscal Policy: Explicit, deliberate legislative actions taken by the government through Finance Acts, supplementary grants, or special stimulus packages (e.g., Atmanirbhar Bharat package)."
+          ],
+          "ta": [
+            "தானியங்கி நிலைப்படுத்திகள்: புதிய சட்டமியற்றல் ஏதுமின்றி பொருளாதார அதிர்ச்சிகளைத் தானாகவே குறைக்கும் அமைப்புகள் (எ.கா: மந்தநிலையின் போது முற்போக்கு வரி வருவாய் தானாகவே குறைதல், நலத்திட்ட கோரிக்கைகள் அதிகரித்தல்).",
+            "தன்னிச்சையான நிதிக் கொள்கை: நிதிச் சட்டங்கள், துணை மானியங்கள் அல்லது சிறப்பு ஊக்கப் பொதிகள் மூலம் அரசாங்கத்தால் எடுக்கப்படும் நேரடித் திட்டமிட்ட நடவடிக்கைகள் (எ.கா: ஆத்மநிர்பார் பாரத் திட்டம்)."
+          ]
+        }
+      }
+    ],
+    "sec_deficit_metrics": [
+      {
+        "title": "Fiscal Deficit (நிதிப் பற்றாக்குறை)",
+        "title_ta": "நிதிப் பற்றாக்குறை (Fiscal Deficit)",
+        "points": {
+          "en": [
+            "Definition: The excess of total government expenditure over total non-debt receipts.",
+            "Formula: Fiscal Deficit = Total Expenditure - (Revenue Receipts + Recoveries of Loans + Other Non-debt Capital Receipts).",
+            "Significance: Indicates the total sovereign borrowing requirement of the government from all sources in that financial year.",
+            "Equivalent to: Net Market Borrowings + Borrowings from RBI + External Borrowings + Public Account balances."
+          ],
+          "ta": [
+            "வரையறை: கடனல்லாத மொத்த வருவாயை விட அரசின் மொத்த செலவினம் அதிகமாக இருக்கும் நிலை.",
+            "சூத்திரம்: நிதிப் பற்றாக்குறை = மொத்த செலவினம் - (வருவாய் வரவுகள் + கடன் மீட்டெடுப்பு + பிற கடனல்லா மூலதன வரவுகள்).",
+            "முக்கியத்துவம்: அந்த நிதி ஆண்டில் அரசு அனைத்து வழிகளிலும் திரட்ட வேண்டிய மொத்தக் கடன் தேவையை இது காட்டுகிறது.",
+            "இதற்கு சமமானது: சந்தைக் கடன்கள் + ரிசர்வ் வங்கி கடன்கள் + வெளிநாட்டுக் கடன்கள் + பொதுக் கணக்கு கடன்கள்."
+          ]
+        }
+      },
+      {
+        "title": "Revenue Deficit & Effective Revenue Deficit",
+        "title_ta": "வருவாய்ப் பற்றாக்குறை & பயனுள்ள வருவாய்ப் பற்றாக்குறை",
+        "points": {
+          "en": [
+            "Revenue Deficit Formula: Revenue Expenditure - Revenue Receipts.",
+            "Significance: Reflects government dissaving; indicates that current regular income is inadequate to finance regular administrative operational overheads.",
+            "Effective Revenue Deficit (ERD): Introduced in the Union Budget 2011-12 based on the 13th Finance Commission recommendation; ERD = Revenue Deficit - Grants for Creation of Capital Assets (given to States/local bodies).",
+            "Amendment: Removed as a formal statutory target in the Finance Act 2018 following the N.K. Singh Committee recommendations."
+          ],
+          "ta": [
+            "வருவாய்ப் பற்றாக்குறை சூத்திரம்: வருவாய் செலவினம் - வருவாய் வரவுகள்.",
+            "முக்கியத்துவம்: அரசின் அன்றாட நிர்வாக செலவினங்களை ஈடுசெய்ய தற்போதைய வருமானம் போதவில்லை என்பதைக் காட்டுகிறது.",
+            "பயனுள்ள வருவாய்ப் பற்றாக்குறை (ERD): 13வது நிதி ஆணையத்தின் பரிந்துரையின்படி 2011-12 பட்ஜெட்டில் அறிமுகப்படுத்தப்பட்டது; ERD = வருவாய்ப் பற்றாக்குறை - மூலதனச் சொத்துக்களை உருவாக்குவதற்காக மாநிலங்களுக்கு வழங்கப்படும் மானியங்கள்.",
+            "சட்டத் திருத்தம்: என்.கே. சிங் குழுவின் பரிந்துரைப்படி 2018 நிதிச் சட்டத்தில் இது சட்டப்பூர்வ இலக்கிலிருந்து நீக்கப்பட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Primary Deficit (முதன்மைப் பற்றாக்குறை)",
+        "title_ta": "முதன்மைப் பற்றாக்குறை (Primary Deficit)",
+        "points": {
+          "en": [
+            "Formula: Primary Deficit = Fiscal Deficit - Net Interest Payments.",
+            "Significance: Isolates the current fiscal year's policy stance from the historical debt burden accumulated by past governments.",
+            "Zero Primary Deficit: If Primary Deficit is zero, it implies that the government is borrowing exclusively to service interest on past debts, not to fund current operations."
+          ],
+          "ta": [
+            "சூத்திரம்: முதன்மைப் பற்றாக்குறை = நிதிப் பற்றாக்குறை - நிகர வட்டி கொடுப்பனவுகள்.",
+            "முக்கியத்துவம்: கடந்த கால அரசாங்கங்கள் வாங்கிய கடன்களின் சுமையை நீக்கி, நடப்பு நிதி ஆண்டின் உண்மையான நிதி நிலையை தனித்துக் காட்டுகிறது.",
+            "பூஜ்ஜிய முதன்மைப் பற்றாக்குறை: முதன்மைப் பற்றாக்குறை பூஜ்ஜியமாக இருந்தால், அரசு நடப்புச் செலவுகளுக்கு கடன் வாங்கவில்லை; மாறாக கடந்த கால வட்டி செலுத்த மட்டுமே கடன் வாங்குகிறது என்பதை உணர்த்துகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_frbm_framework": [
+      {
+        "title": "Original FRBM Act, 2003 Provisions",
+        "title_ta": "அசல் FRBM சட்டம், 2003 விதிகள்",
+        "points": {
+          "en": [
+            "Enacted in August 2003 during the Atal Bihari Vajpayee government to institutionalize fiscal discipline.",
+            "Original Target: Eliminate Revenue Deficit completely by March 31, 2008 (later extended to 2009) and reduce Fiscal Deficit to 3% of GDP.",
+            "Mandated tabling of three key fiscal documents with the Budget: Macroeconomic Framework Statement, Medium-Term Fiscal Policy Statement, and Fiscal Policy Strategy Statement."
+          ],
+          "ta": [
+            "அடல் பிகாரி வாஜ்பாய் அரசாங்கத்தின் போது நிதி ஒழுங்கை நிலைநிறுத்த ஆகஸ்ட் 2003-ல் இயற்றப்பட்டது.",
+            "அசல் இலக்கு: மார்ச் 31, 2008-க்குள் வருவாய்ப் பற்றாக்குறையை முற்றிலும் ஒழிப்பது மற்றும் நிதிப் பற்றாக்குறையை GDP-யில் 3% ஆகக் குறைப்பது.",
+            "பட்ஜெட்டுடன் 3 முக்கிய நிதி ஆவணங்களைத் தாக்கல் செய்வதை கட்டாயமாக்கியது: பேரியல் பொருளாதார கட்டமைப்பு அறிக்கை, இடைக்கால நிதிக் கொள்கை அறிக்கை மற்றும் நிதிக் கொள்கை உத்தி அறிக்கை."
+          ]
+        }
+      },
+      {
+        "title": "N.K. Singh FRBM Review Committee (2017)",
+        "title_ta": "என்.கே. சிங் FRBM மறுஆய்வுக் குழு (2017)",
+        "points": {
+          "en": [
+            "Appointed in May 2016 under N.K. Singh (later Chairman of the 15th Finance Commission) to review the FRBM roadmap.",
+            "Debt-to-GDP as Anchor: Recommended shifting focus from mere annual deficits to overall Public Debt-to-GDP ratio.",
+            "Target: Combined Debt-to-GDP ratio of 60% by 2022-23 (40% for the Central Government and 20% for State Governments).",
+            "Fiscal Deficit Target: Glide path to 3% of GDP by FY 2017-18 to FY 2019-20.",
+            "Escape Clause (சரத்து விலக்கு): Allowed deviations up to 0.5% of GDP in the fiscal deficit for overarching national emergencies: war, national calamity, collapse of agriculture, and far-reaching structural economic reforms (invoked during GST and COVID-19)."
+          ],
+          "ta": [
+            "FRBM பாதையை மறுஆய்வு செய்ய மே 2016-ல் என்.கே. சிங் தலைமையில் அமைக்கப்பட்டது.",
+            "கடன்-ஜிடிபி முதன்மை இலக்கு: வெறும் பற்றாக்குறையை விட மொத்த பொதுக்கடன்-ஜிடிபி விகிதத்தை முதன்மை இலக்காக மாற்ற பரிந்துரைத்தது.",
+            "இலக்கு: 2022-23-க்குள் ஒருங்கிணைந்த பொதுக்கடன்-ஜிடிபி 60% (மத்திய அரசுக்கு 40% மற்றும் மாநில அரசுகளுக்கு 20%).",
+            "நிதிப் பற்றாக்குறை இலக்கு: 3% GDP என்ற இலக்கை அடைவதற்கான படிநிலை பாதை.",
+            "தப்பிக்கும் விதி (Escape Clause): போர், தேசிய பேரிடர், விவசாய வீழ்ச்சி மற்றும் தீவிர கட்டமைப்பு சீர்திருத்தங்கள் போன்ற அவசர நிலைகளில் நிதிப் பற்றாக்குறை இலக்கிலிருந்து 0.5% வரை விலக அனுமதித்தது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_deficit_types_comparison",
+        "title_en": "Table 1: Comparative Matrix of Budgetary Deficit Measures",
+        "title_ta": "அட்டவணை 1: பட்ஜெட் பற்றாக்குறை அளவீடுகளின் ஒப்பீட்டு அட்டவணை",
+        "headers_en": [
+          "Deficit Indicator",
+          "Exact Formula",
+          "Economic Meaning",
+          "Primary Policy Utility"
+        ],
+        "headers_ta": [
+          "பற்றாக்குறை குறிகாட்டி",
+          "கணித சூத்திரம்",
+          "பொருளாதார அர்த்தம்",
+          "முதன்மை கொள்கைப் பயன்பாடு"
+        ],
+        "rows_en": [
+          [
+            "Fiscal Deficit (FD)",
+            "Total Expenditure - (Revenue Receipts + Non-debt Capital Receipts)",
+            "Total net sovereign borrowing requirement from all sources",
+            "Determines government borrowing and impact on interest rates"
+          ],
+          [
+            "Revenue Deficit (RD)",
+            "Revenue Expenditure - Revenue Receipts",
+            "Deficit in running day-to-day administrative operations",
+            "Measures government dissaving; using borrowed funds for consumption"
+          ],
+          [
+            "Effective Revenue Deficit (ERD)",
+            "Revenue Deficit - Grants for Creation of Capital Assets",
+            "Adjusted revenue deficit that excludes capital-forming grants to States",
+            "Refines operational deficit to reward capital formation at state level"
+          ],
+          [
+            "Primary Deficit (PD)",
+            "Fiscal Deficit - Net Interest Payments",
+            "Current fiscal year's net borrowing excluding past interest liabilities",
+            "Evaluates current administration's fiscal discipline independent of past debt"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நிதிப் பற்றாக்குறை (FD)",
+            "மொத்த செலவு - (வருவாய் வரவுகள் + கடனல்லா மூலதன வரவுகள்)",
+            "அரசு அனைத்து வழிகளிலும் திரட்ட வேண்டிய மொத்தக் கடன் தேவை",
+            "அரசு கடன் வாங்குதலையும் வட்டி விகிதங்களில் அதன் தாக்கத்தையும் தீர்மானிக்கிறது"
+          ],
+          [
+            "வருவாய்ப் பற்றாக்குறை (RD)",
+            "வருவாய் செலவினம் - வருவாய் வரவுகள்",
+            "அரசாங்கத்தின் அன்றாட நிர்வாக செயல்பாடுகளில் உள்ள பற்றாக்குறை",
+            "அரசு நுகர்வு செலவுகளுக்கு கடன் வாங்குவதைக் காட்டுகிறது"
+          ],
+          [
+            "பயனுள்ள வருவாய்ப் பற்றாக்குறை (ERD)",
+            "வருவாய்ப் பற்றாக்குறை - மூலதன சொத்து உருவாக்கும் மானியங்கள்",
+            "மாநிலங்களுக்கு மூலதன சொத்துக்களுக்காக வழங்கிய மானியங்களை கழித்த பற்றாக்குறை",
+            "மாநில அளவில் மூலதன சொத்து உருவாவதை ஊக்குவிக்க உதவுகிறது"
+          ],
+          [
+            "முதன்மைப் பற்றாக்குறை (PD)",
+            "நிதிப் பற்றாக்குறை - நிகர வட்டி கொடுப்பனவுகள்",
+            "கடந்த கால வட்டிப் பொறுப்புகளைத் தவிர்த்து நடப்பு ஆண்டின் நிகரக் கடன்",
+            "கடந்த கால கடனைத் தவிர்த்து நடப்பு அரசின் நிதி ஒழுக்கத்தை அளவிடுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_expansionary_vs_contractionary",
+        "title_en": "Table 2: Policy Stance Matrix: Expansionary vs Contractionary Fiscal Policy",
+        "title_ta": "அட்டவணை 2: நிதிக் கொள்கை நிலைகள்: விரிவாக்க vs சுருக்க நிதிக் கொள்கை",
+        "headers_en": [
+          "Dimension",
+          "Expansionary Fiscal Policy (விரிவாக்க கொள்கை)",
+          "Contractionary Fiscal Policy (சுருக்க கொள்கை)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "விரிவாக்க நிதிக் கொள்கை",
+          "சுருக்க நிதிக் கொள்கை"
+        ],
+        "rows_en": [
+          [
+            "Economic Environment",
+            "Recession, deflation, high unemployment, low private investment",
+            "Economic overheating, asset bubbles, high demand-pull inflation"
+          ],
+          [
+            "Spending Stance",
+            "Aggressively increased (high capex, welfare, infrastructure)",
+            "Pruned and curtailed (cutbacks in non-essential public spending)"
+          ],
+          [
+            "Taxation Stance",
+            "Reduced (corporate tax cuts, higher exemption slabs)",
+            "Increased (tax hikes, removal of exemptions, additional surcharges)"
+          ],
+          [
+            "Fiscal Deficit Impact",
+            "Fiscal deficit widens deliberately to inject aggregate demand",
+            "Fiscal deficit contracts; moves towards surplus or consolidation"
+          ],
+          [
+            "Real World Example",
+            "Post-2008 Lehman crisis stimulus & Post-COVID Atmanirbhar Bharat",
+            "Post-inflationary stabilization packages under structural adjustment"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பொருளாதார சூழல்",
+            "மந்தநிலை, பணவாட்டம், வேலையின்மை, குறைவான தனியார் முதலீடு",
+            "அதீத வளர்ச்சி, சொத்துக் குமிழ்கள், அதிக தேவை-இழுப்பு பணவீக்கம்"
+          ],
+          [
+            "செலவின நிலை",
+            "ஆக்கிரமிப்பு ரீதியாக உயர்த்தப்படுகிறது (உள்கட்டமைப்பு, நலத்திட்டங்கள்)",
+            "குறைக்கப்படுகிறது (அவசியமற்ற பொது நுகர்வுச் செலவுகள் நிறுத்தம்)"
+          ],
+          [
+            "வரிவிதிப்பு நிலை",
+            "குறைக்கப்படுகிறது (நிறுவன வரி குறைப்பு, வரி வரம்பு உயர்வு)",
+            "அதிகரிக்கப்படுகிறது (வரி விகித உயர்வு, கூடுதல் வரிகள் விதிப்பு)"
+          ],
+          [
+            "பற்றாக்குறை தாக்கம்",
+            "தேவையைத் தூண்ட நிதிப் பற்றாக்குறை வேண்டுமென்றே அதிகரிக்கப்படுகிறது",
+            "நிதிப் பற்றாக்குறை சுருங்குகிறது; உபரி அல்லது நிதி நிலைப்படுத்தலை நோக்கிய நகர்வு"
+          ],
+          [
+            "நடைமுறை உதாரணம்",
+            "2008 உலக நிதி நெருக்கடி ஊக்கத்தொகை & கோவிட் கால ஆத்மநிர்பார் பாரத்",
+            "கட்டமைப்பு சீர்திருத்தங்களின் கீழான பணவீக்க கட்டுப்பாடு பட்ஜெட்டுகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_frbm_original_vs_nksingh",
+        "title_en": "Table 3: Institutional Evolution: Original FRBM (2003) vs N.K. Singh Framework (2017)",
+        "title_ta": "அட்டவணை 3: நிறுவன பரிணாமம்: அசல் FRBM (2003) vs என்.கே. சிங் கட்டமைப்பு (2017)",
+        "headers_en": [
+          "Parameter",
+          "Original FRBM Act, 2003",
+          "N.K. Singh Committee Recommendations (2017)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "அசல் FRBM சட்டம், 2003",
+          "என்.கே. சிங் குழு பரிந்துரைகள் (2017)"
+        ],
+        "rows_en": [
+          [
+            "Core Fiscal Anchor",
+            "Annual Fiscal Deficit and Revenue Deficit elimination",
+            "Overall Debt-to-GDP ratio as primary anchor"
+          ],
+          [
+            "Target Debt-to-GDP Ratio",
+            "Not explicitly specified as a quantified ratio",
+            "Combined 60% of GDP (40% Central Government, 20% States) by 2023"
+          ],
+          [
+            "Revenue Deficit Goal",
+            "Complete elimination of Revenue Deficit by 2008-09",
+            "Glide path to 0.8% of GDP; abolished Effective Revenue Deficit"
+          ],
+          [
+            "Fiscal Deficit Target",
+            "Reduction to 3.0% of GDP",
+            "Maintain 3.0% of GDP with explicit 0.5% deviation escape clause"
+          ],
+          [
+            "Institutional Recommendation",
+            "Ministry of Finance self-monitoring",
+            "Proposed an autonomous Fiscal Council to oversee compliance independently"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை இலக்கு",
+            "ஆண்டு நிதிப் பற்றாக்குறை குறைப்பு மற்றும் வருவாய்ப் பற்றாக்குறை ஒழிப்பு",
+            "மொத்த பொதுக்கடன்-ஜிடிபி விகிதமே முதன்மை இலக்கு"
+          ],
+          [
+            "கடன்-ஜிடிபி இலக்கு",
+            "குறிப்பிட்ட சதவீதமாக வெளிப்படையாக நிர்ணயிக்கப்படவில்லை",
+            "ஒருங்கிணைந்த 60% GDP (மத்திய அரசு 40%, மாநிலங்கள் 20%)"
+          ],
+          [
+            "வருவாய்ப் பற்றாக்குறை இலக்கு",
+            "2008-09-க்குள் வருவாய்ப் பற்றாக்குறையை பூஜ்ஜியமாக்குவது",
+            "GDP-யில் 0.8% ஆகக் குறைத்தல்; பயனுள்ள வருவாய்ப் பற்றாக்குறை இலக்கு நீக்கம்"
+          ],
+          [
+            "நிதிப் பற்றாக்குறை இலக்கு",
+            "GDP-யில் 3.0% ஆகக் குறைப்பது",
+            "3.0% GDP-யைப் பராமரித்தல் மற்றும் 0.5% விலகலுக்கான தப்பிக்கும் விதி"
+          ],
+          [
+            "நிறுவனப் பரிந்துரை",
+            "நிதி அமைச்சகத்தின் சுய கண்காணிப்பு",
+            "கண்காணிக்க ஒரு தன்னாட்சி பெற்ற நிதிக் குழுவை (Fiscal Council) அமைக்க பரிந்துரை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_internal_vs_external_debt",
+        "title_en": "Table 4: Sovereign Debt Structure: Internal Debt vs External Debt",
+        "title_ta": "அட்டவணை 4: பொதுக்கடன் கட்டமைப்பு: உள்நாட்டுக் கடன் vs வெளிநாட்டுக் கடன்",
+        "headers_en": [
+          "Dimension",
+          "Internal Debt (உள்நாட்டுக் கடன்)",
+          "External Debt (வெளிநாட்டுக் கடன்)"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "உள்நாட்டுக் கடன்",
+          "வெளிநாட்டுக் கடன்"
+        ],
+        "rows_en": [
+          [
+            "Lending Entities",
+            "Domestic citizens, commercial banks, insurance firms, RBI",
+            "Multilateral institutions (World Bank, ADB), foreign governments"
+          ],
+          [
+            "Currency Denomination",
+            "Denominated entirely in Indian Rupees (INR)",
+            "Denominated in foreign currencies (USD, EUR, JPY)"
+          ],
+          [
+            "Currency / Exchange Risk",
+            "Zero foreign exchange risk; immune to rupee depreciation",
+            "Exposed to exchange rate depreciation risk on interest/repayments"
+          ],
+          [
+            "Share in Total Central Debt",
+            "Overwhelmingly dominant (~95% of total public debt of India)",
+            "Very modest (~5% of total public debt of India)"
+          ],
+          [
+            "Macroeconomic Implication",
+            "Constitutes transfer of purchasing power within the domestic economy",
+            "Constitutes actual net outflow of real resources abroad upon repayment"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கடன் வழங்கும் அமைப்புகள்",
+            "உள்நாட்டு குடிமக்கள், வணிக வங்கிகள், காப்பீட்டு நிறுவனங்கள், ரிசர்வ் வங்கி",
+            "உலக வங்கி, ஆசிய வளர்ச்சி வங்கி, வெளிநாட்டு அரசாங்கங்கள்"
+          ],
+          [
+            "நாணய மதிப்பு",
+            "முழுமையாக இந்திய ரூபாயில் (INR) வெளியிடப்படுகிறது",
+            "அந்நியச் செலாவணியில் (USD, EUR, JPY) வெளியிடப்படுகிறது"
+          ],
+          [
+            "செலாவணி மாற்று இடர்",
+            "செலாவணி இடர் இல்லை; ரூபாய் மதிப்பு வீழ்ச்சியால் பாதிப்பில்லை",
+            "ரூபாய் மதிப்பு வீழ்ச்சியடையும் போது கடன் சுமை அதிகரிக்கும் அபாயம் உண்டு"
+          ],
+          [
+            "மத்திய அரசு கடனில் பங்கு",
+            "மிகப்பெரும் பங்கு (இந்தியாவின் மொத்த பொதுக்கடனில் சுமார் 95%)",
+            "மிகக் குறைந்த பங்கு (இந்தியாவின் மொத்த பொதுக்கடனில் சுமார் 5%)"
+          ],
+          [
+            "பேரியல் பொருளாதார தாக்கம்",
+            "உள்நாட்டு பொருளாதாரத்திற்குள் வாங்கும் சக்தியை இடமாற்றம் செய்கிறது",
+            "திருப்பிச் செலுத்தும் போது வெளிநாட்டிற்கு உண்மையான வளங்கள் வெளியேறும்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Fiscal Policy Structure & Mechanisms (Part 2)",
+        "short_label": "Fiscal Structure",
+        "children": [
+          {
+            "title": "Deficit Arithmetic",
+            "short_label": "Deficits",
+            "children": [
+              {
+                "title": "Fiscal Deficit (Total Borrowing Requirement)",
+                "short_label": "Fiscal Deficit"
+              },
+              {
+                "title": "Revenue Deficit (Operating Gap)",
+                "short_label": "Revenue Deficit"
+              },
+              {
+                "title": "Primary Deficit (Excluding Past Interest)",
+                "short_label": "Primary Deficit"
+              }
+            ]
+          },
+          {
+            "title": "Counter-Cyclical Mechanisms",
+            "short_label": "Mechanisms",
+            "children": [
+              {
+                "title": "Expansionary Stance (Recession Relief)",
+                "short_label": "Expansionary"
+              },
+              {
+                "title": "Contractionary Stance (Inflation Cooling)",
+                "short_label": "Contractionary"
+              },
+              {
+                "title": "Automatic Stabilizers (Built-in Cushion)",
+                "short_label": "Stabilizers"
+              }
+            ]
+          },
+          {
+            "title": "FRBM Architecture",
+            "short_label": "FRBM",
+            "children": [
+              {
+                "title": "Original 2003 Act (3% Deficit Target)",
+                "short_label": "FRBM 2003"
+              },
+              {
+                "title": "N.K. Singh 2017: 60% Debt-to-GDP Anchor",
+                "short_label": "N.K. Singh"
+              },
+              {
+                "title": "Escape Clause (0.5% Emergency Buffer)",
+                "short_label": "Escape Clause"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Primary Deficit Zero Interpretation Trap (பூஜ்ஜிய முதன்மைப் பற்றாக்குறை விளக்கம்)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that a Primary Deficit of zero means the government has no borrowings or total debt.",
+            "CORRECT FACT: Primary Deficit = Fiscal Deficit - Interest Payments. A zero primary deficit means the government is borrowing solely to pay interest on past debt, but total borrowing (fiscal deficit) is still positive.",
+            "WHY CANDIDATES FAIL: Candidates confuse zero primary deficit with zero fiscal deficit."
+          ],
+          "ta": [
+            "பொறி: முதன்மைப் பற்றாக்குறை பூஜ்ஜியமாக இருந்தால் அரசுக்கு கடனே இல்லை என்று கருதுவது.",
+            "சரியான உண்மை: முதன்மைப் பற்றாக்குறை = நிதிப் பற்றாக்குறை - வட்டி கொடுப்பனவு. இது பூஜ்ஜியமாக இருந்தால், அரசு வாங்கும் மொத்தக் கடனும் கடந்த கால வட்டியைக் கட்டவே பயன்படுகிறது என்று பொருள்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: பூஜ்ஜிய முதன்மைப் பற்றாக்குறையையும் பூஜ்ஜிய நிதிப் பற்றாக்குறையையும் ஒன்றாக நினைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Fiscal Deficit vs Total Debt Trap (நிதிப் பற்றாக்குறை vs மொத்தப் பொதுக்கடன்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Fiscal Deficit is the total accumulated national debt of the country.",
+            "CORRECT FACT: Fiscal Deficit is a 'flow' variable representing the new borrowings added in a single year; Total Debt is a 'stock' variable representing all accumulated unpaid borrowings over history.",
+            "WHY CANDIDATES FAIL: Candidates conflate annual budget deficit flow with historical debt stock."
+          ],
+          "ta": [
+            "பொறி: நிதிப் பற்றாக்குறை என்பது நாட்டின் மொத்தக் குவிந்த கடன் என்று தவறாகப் புரிந்துகொள்வது.",
+            "சரியான உண்மை: நிதிப் பற்றாக்குறை என்பது ஒரு குறிப்பிட்ட ஆண்டில் மட்டும் அரசு வாங்கும் புதிய கடன் (Flow); மொத்தக் கடன் என்பது வரலாற்றில் இதுவரை திருப்பிச் செலுத்தப்படாத மொத்த கடன் இருப்பு (Stock).",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: ஆண்டுதோறும் ஏற்படும் பற்றாக்குறைக்கும் ஒட்டுமொத்த கடன் இருப்புக்கும் இடையேயான வேறுபாட்டை அறியாமை."
+          ]
+        }
+      },
+      {
+        "title": "N.K. Singh Committee Debt-to-GDP Ratio Allocation Trap (கடன்-ஜிடிபி விகிதப் பகிர்வு)",
+        "points": {
+          "en": [
+            "TRAP: Believing the 60% debt target was split equally as 30% for Centre and 30% for States.",
+            "CORRECT FACT: N.K. Singh Committee recommended a 60% combined target split as 40% for the Central Government and 20% for all State Governments combined.",
+            "WHY CANDIDATES FAIL: Intuitive guessing often favours a 50:50 equal division rather than the 40:20 constitutional split."
+          ],
+          "ta": [
+            "பொறி: என்.கே. சிங் குழு பரிந்துரைத்த 60% கடன் இலக்கு மத்திய அரசுக்கு 30% மற்றும் மாநிலங்களுக்கு 30% என சமமாகப் பிரிக்கப்பட்டது என நினைப்பது.",
+            "சரியான உண்மை: என்.கே. சிங் குழு 60% கடனில் மத்திய அரசுக்கு 40% மற்றும் அனைத்து மாநிலங்களுக்கும் சேர்த்து 20% என்றே பிரித்துப் பரிந்துரைத்தது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: சமமாக 30-30 என பிரிக்கப்பட்டிருக்கும் என்று தேர்வர்கள் யூகத்தில் தவறிழைப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Automatic Stabilizer Action Trap (தானியங்கி நிலைப்படுத்தி செயல்பாடு)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that introducing a new tax cut during a recession is an example of an automatic stabilizer.",
+            "CORRECT FACT: A new tax cut introduced via a Finance Act is a 'Discretionary Fiscal Policy'. Automatic stabilizers work automatically without new laws.",
+            "WHY CANDIDATES FAIL: Both policies stimulate the economy during a recession, obscuring the legislative vs non-legislative distinction."
+          ],
+          "ta": [
+            "பொறி: மந்தநிலையின் போது அரசு புதிய வரி குறைப்பை அறிவிப்பது தானியங்கி நிலைப்படுத்திக்கு உதாரணம் என நினைப்பது.",
+            "சரியான உண்மை: புதிய வரி குறைப்பு சட்டம் இயற்றி அறிவிக்கப்படுவது 'தன்னிச்சையான நிதிக் கொள்கை' (Discretionary Fiscal Policy). தானியங்கி நிலைப்படுத்திகள் புதிய சட்டமின்றி இயல்பாகவே செயல்படும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டும் மந்தநிலையை எதிர்த்து செயல்படுவதால் சட்டப்பூர்வ வேறுபாட்டை தவறவிடுவது."
+          ]
+        }
+      },
+      {
+        "title": "Effective Revenue Deficit Deletion Trap (பயனுள்ள வருவாய்ப் பற்றாக்குறை நீக்கம்)",
+        "points": {
+          "en": [
+            "TRAP: Assuming Effective Revenue Deficit (ERD) is still an active statutory target in the FRBM Act.",
+            "CORRECT FACT: The statutory target of ERD was formally removed through the Finance Act 2018 based on the N.K. Singh Committee recommendations.",
+            "WHY CANDIDATES FAIL: ERD is still taught in older study notes without noting its legislative repeal in 2018."
+          ],
+          "ta": [
+            "பொறி: பயனுள்ள வருவாய்ப் பற்றாக்குறை (ERD) இன்னமும் FRBM சட்டத்தின் கீழ் சட்டப்பூர்வ இலக்காக உள்ளது என விடையளிப்பது.",
+            "சரியான உண்மை: என்.கே. சிங் குழுவின் பரிந்துரைப்படி 2018 நிதிச் சட்டத் திருத்தம் மூலம் ERD சட்டப்பூர்வ இலக்கிலிருந்து முறையாக நீக்கப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 2018-ல் செய்யப்பட்ட சட்டத் திருத்தத்தை அறியாமல் பழைய குறிப்புகளைப் படிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "Currency Exposure of India's Sovereign Debt Trap (இந்திய பொதுக்கடன் அந்நியச் செலாவணி அபாயம்)",
+        "points": {
+          "en": [
+            "TRAP: Believing that India faces severe sovereign bankruptcy risk from US Dollar fluctuations because of heavy external debt.",
+            "CORRECT FACT: Around 95% of Government of India's public debt is internal, denominated in INR; external debt accounts for only ~5%.",
+            "WHY CANDIDATES FAIL: Candidates confuse India's overall total external commercial debt (corporate + sovereign) with sovereign central government debt."
+          ],
+          "ta": [
+            "பொறி: இந்தியா அதிக வெளிநாட்டுக் கடன் வாங்கியுள்ளதால் டாலர் மதிப்பு உயரும்போது மத்திய அரசு திவாலாகும் அபாயம் உள்ளது என நினைப்பது.",
+            "சரியான உண்மை: இந்திய மத்திய அரசின் பொதுக்கடனில் சுமார் 95% உள்நாட்டிலேயே இந்திய ரூபாயில் பெறப்பட்டது; வெளிநாட்டுக் கடன் 5% மட்டுமே.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: தனியார் நிறுவனங்களின் வெளிநாட்டுக் கடனையும் மத்திய அரசின் இறையாண்மை பொதுக்கடனையும் ஒன்றாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The Fiscal Responsibility and Budget Management (FRBM) Act was passed by Parliament in 2003 and came into force on July 5, 2004.",
+        "Fiscal Deficit represents the total net borrowing requirement of the Union Government during a financial year.",
+        "Primary Deficit is calculated by subtracting interest payments from the Fiscal Deficit (PD = FD - Interest Payments).",
+        "Effective Revenue Deficit was introduced in Budget 2011-12 on the recommendation of the 13th Finance Commission (headed by Vijay Kelkar).",
+        "The Finance Act 2018 amended the FRBM Act to discontinue Effective Revenue Deficit and establish Debt-to-GDP as the key anchor.",
+        "The N.K. Singh Committee (2017) recommended a combined Debt-to-GDP ratio of 60% by 2022-23 (40% Centre, 20% States).",
+        "The N.K. Singh Committee recommended an escape clause permitting a deviation of up to 0.5% in the fiscal deficit target under defined shocks.",
+        "In 2020-21, due to COVID-19 relief expenditures and revenue shrinkage, India's fiscal deficit spiked to 9.2% of GDP.",
+        "The Union Budget 2021-22 set a fiscal consolidation glide path to reach a fiscal deficit below 4.5% of GDP by FY 2025-26.",
+        "Over 94% of the Central Government's total public debt is internal debt denominated in Indian Rupees, immunizing it from foreign exchange shocks.",
+        "State Governments' borrowing limits are regulated by the Central Government under Article 293(3) of the Constitution.",
+        "Under the 15th Finance Commission recommendations, states were permitted an additional 0.5% borrowing window tied to power sector reforms."
+      ],
+      "ta": [
+        "நிதிப் பொறுப்பு மற்றும் பட்ஜெட் மேலாண்மை (FRBM) சட்டம் 2003-ல் நாடாளுமன்றத்தால் நிறைவேற்றப்பட்டு, ஜூலை 5, 2004 முதல் நடைமுறைக்கு வந்தது.",
+        "நிதிப் பற்றாக்குறை என்பது ஒரு நிதி ஆண்டில் மத்திய அரசு அனைத்து வழிகளிலும் பெற வேண்டிய மொத்த நிகரக் கடன் தேவையைக் குறிக்கிறது.",
+        "நிதிப் பற்றாக்குறையிலிருந்து வட்டி கொடுப்பனவுகளைக் கழிப்பதன் மூலம் முதன்மைப் பற்றாக்குறை கணக்கிடப்படுகிறது (PD = FD - வட்டி).",
+        "பயனுள்ள வருவாய்ப் பற்றாக்குறை (ERD) 13வது நிதி ஆணையத்தின் (விஜய் கேல்கர் தலைவர்) பரிந்துரையின்படி 2011-12 பட்ஜெட்டில் அறிமுகப்படுத்தப்பட்டது.",
+        "2018 நிதிச் சட்டம் FRBM சட்டத்தைத் திருத்தி, பயனுள்ள வருவாய்ப் பற்றாக்குறை இலக்கை நீக்கி, கடன்-ஜிடிபி விகிதத்தை முதன்மை நங்கூரமாக்கியது.",
+        "என்.கே. சிங் குழு (2017) ஒருங்கிணைந்த பொதுக்கடன்-ஜிடிபி விகிதத்தை 2022-23-க்குள் 60% ஆகக் குறைக்கப் பரிந்துரைத்தது (மத்திய அரசு 40%, மாநிலங்கள் 20%).",
+        "என்.கே. சிங் குழு கடுமையான பேரிடர்களின் போது நிதிப் பற்றாக்குறை இலக்கிலிருந்து 0.5% வரை தப்பிக்கும் விதியை (Escape Clause) பரிந்துரைத்தது.",
+        "2020-21-ல் கோவிட் நிவாரணச் செலவுகள் மற்றும் வருவாய் வீழ்ச்சியால் இந்தியாவின் நிதிப் பற்றாக்குறை GDP-யில் 9.2% ஆக உயர்ந்தது.",
+        "2021-22 மத்திய பட்ஜெட் 2025-26 நிதி ஆண்டிற்குள் நிதிப் பற்றாக்குறையை 4.5%-க்குக் கீழ் கொண்டுவருவதற்கான நிதி ஒருங்கிணைப்புப் பாதையை வகுத்தது.",
+        "மத்திய அரசின் மொத்தப் பொதுக்கடனில் 94%-க்கும் அதிகமானவை உள்நாட்டுக் கடனாக இந்திய ரூபாயிலேயே பெறப்பட்டு, அந்நியச் செலாவணி அபாயத்திலிருந்து பாதுகாக்கிறது.",
+        "மாநில அரசுகளின் கடன் வாங்கும் உச்சவரம்பு இந்திய அரசியலமைப்பு சரத்து 293(3)-ன் கீழ் மத்திய அரசால் கட்டுப்படுத்தப்படுகிறது.",
+        "15வது நிதி ஆணையப் பரிந்துரையின்படி, மின்சாரத் துறை சீர்திருத்தங்களை நிறைவேற்றும் மாநிலங்களுக்கு கூடுதல் 0.5% கடன் வாங்கும் தளர்வு அளிக்கப்பட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Fiscal Deficit: Total Expenditure - (Revenue Receipts + Non-debt Capital Receipts); equals total government borrowing requirement.",
+        "Revenue Deficit: Revenue Expenditure - Revenue Receipts; measures government dissaving for daily running operations.",
+        "Primary Deficit: Fiscal Deficit - Interest Payments; measures borrowing required for current operations excluding past debt servicing.",
+        "Expansionary Policy: High spending + lower taxes; deployed in recessions to revive aggregate demand.",
+        "Contractionary Policy: Cut spending + higher taxes; deployed to cool overheating and demand-pull inflation.",
+        "Automatic Stabilizers: Built-in fiscal mechanisms (progressive tax brackets, unemployment aid) that self-adjust without legislation.",
+        "FRBM Act 2003: Landmark legislation enacted under Vajpayee government to institutionalize fiscal discipline.",
+        "N.K. Singh Targets: 60% combined Debt-to-GDP (40% Centre, 20% States) and 3% fiscal deficit target.",
+        "Escape Clause: 0.5% GDP flexibility in fiscal deficit for war, severe natural calamities, or far-reaching structural reforms.",
+        "Domestic Debt Dominance: Over 94% of Indian central government debt is internal, insulating against external sovereign shocks."
+      ],
+      "ta": [
+        "நிதிப் பற்றாக்குறை: மொத்த செலவு - (வருவாய் வரவுகள் + கடனல்லா மூலதன வரவுகள்); அரசின் மொத்தக் கடன் தேவையைக் குறிக்கும்.",
+        "வருவாய்ப் பற்றாக்குறை: வருவாய் செலவு - வருவாய் வரவுகள்; அன்றாட செயல்பாட்டிற்கு அரசு வாங்கும் கடனைக் காட்டுகிறது.",
+        "முதன்மைப் பற்றாக்குறை: நிதிப் பற்றாக்குறை - வட்டி கொடுப்பனவுகள்; கடந்த கால வட்டி நீங்கலாக நடப்பு தேவைக்கான கடன்.",
+        "விரிவாக்கக் கொள்கை: அதிக செலவினம் + குறைந்த வரிகள்; மந்தநிலையை விரட்டி தேவையைத் தூண்ட பயன்படுகிறது.",
+        "சுருக்கக் கொள்கை: குறைந்த செலவினம் + அதிக வரிகள்; அதீத பணவீக்கத்தைத் தணித்து பொருளாதாரத்தை சமன்படுத்த பயன்படுகிறது.",
+        "தானியங்கி நிலைப்படுத்திகள்: புதிய சட்டமின்றி இயல்பாகவே அதிர்ச்சிகளைத் தாங்கும் வரி மற்றும் நல அமைப்புகள்.",
+        "FRBM சட்டம் 2003: வாஜ்பாய் ஆட்சியில் நிதி ஒழுக்கத்தை உறுதிசெய்ய இயற்றப்பட்ட வரலாற்றுச் சிறப்புமிக்க சட்டம்.",
+        "என்.கே. சிங் இலக்குகள்: 60% கடன்-ஜிடிபி (மத்திய அரசு 40%, மாநிலங்கள் 20%) மற்றும் 3% நிதிப் பற்றாக்குறை.",
+        "தப்பிக்கும் விதி: போர், தேசிய பேரிடர்களின் போது நிதிப் பற்றாக்குறை இலக்கிலிருந்து 0.5% GDP வரை தளர்வு.",
+        "உள்நாட்டுக் கடன் ஆதிக்கம்: மத்திய அரசின் கடனில் 94%-க்கும் அதிகமானவை இந்திய ரூபாயில் உள்நாட்டிலேயே பெறப்பட்டவை."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_fp_201",
+        "front_en": "What is the mathematical formula for Fiscal Deficit?",
+        "front_ta": "நிதிப் பற்றாக்குறைக்கான கணித சூத்திரம் என்ன?",
+        "back_en": "Fiscal Deficit = Total Expenditure - (Revenue Receipts + Non-debt Capital Receipts).",
+        "back_ta": "நிதிப் பற்றாக்குறை = மொத்த செலவினம் - (வருவாய் வரவுகள் + கடனல்லா மூலதன வரவுகள்)."
+      },
+      {
+        "id": "rc_fp_202",
+        "front_en": "How is Primary Deficit calculated?",
+        "front_ta": "முதன்மைப் பற்றாக்குறை எவ்வாறு கணக்கிடப்படுகிறது?",
+        "back_en": "Primary Deficit = Fiscal Deficit - Net Interest Payments.",
+        "back_ta": "முதன்மைப் பற்றாக்குறை = நிதிப் பற்றாக்குறை - நிகர வட்டி கொடுப்பனவுகள்."
+      },
+      {
+        "id": "rc_fp_203",
+        "front_en": "In which year was the FRBM Act originally enacted by Parliament?",
+        "front_ta": "நாடாளுமன்றத்தால் FRBM சட்டம் முதலில் எந்த ஆண்டில் இயற்றப்பட்டது?",
+        "back_en": "2003 (came into force on July 5, 2004).",
+        "back_ta": "2003 (ஜூலை 5, 2004 முதல் நடைமுறைக்கு வந்தது)."
+      },
+      {
+        "id": "rc_fp_204",
+        "front_en": "What was the combined Debt-to-GDP ratio recommended by the N.K. Singh Committee (2017)?",
+        "front_ta": "என்.கே. சிங் குழு (2017) பரிந்துரைத்த ஒருங்கிணைந்த கடன்-ஜிடிபி விகிதம் என்ன?",
+        "back_en": "60% of GDP (40% for the Central Government and 20% for State Governments).",
+        "back_ta": "GDP-யில் 60% (மத்திய அரசுக்கு 40% மற்றும் மாநில அரசுகளுக்கு 20%)."
+      },
+      {
+        "id": "rc_fp_205",
+        "front_en": "What is the maximum allowed fiscal deficit deviation under the FRBM 'Escape Clause'?",
+        "front_ta": "FRBM 'தப்பிக்கும் விதியின்' கீழ் அனுமதிக்கப்பட்ட அதிகபட்ச நிதிப் பற்றாக்குறை விலகல் எவ்வளவு?",
+        "back_en": "Up to 0.5% of GDP for defined emergency conditions (war, national calamity, structural reforms).",
+        "back_ta": "போர், தேசிய பேரிடர் மற்றும் கட்டமைப்பு சீர்திருத்தங்களின் போது GDP-யில் 0.5% வரை."
+      },
+      {
+        "id": "rc_fp_206",
+        "front_en": "Which Finance Commission recommended the introduction of 'Effective Revenue Deficit'?",
+        "front_ta": "'பயனுள்ள வருவாய்ப் பற்றாக்குறை' என்ற கருத்தை அறிமுகப்படுத்தப் பரிந்துரைத்த நிதி ஆணையம் எது?",
+        "back_en": "13th Finance Commission (chaired by Dr. Vijay Kelkar; introduced in Budget 2011-12).",
+        "back_ta": "13வது நிதி ஆணையம் (டாக்டர் விஜய் கேல்கர் தலைவர்; 2011-12 பட்ஜெட்டில் அறிமுகம்)."
+      },
+      {
+        "id": "rc_fp_207",
+        "front_en": "Under which constitutional article can the Central Government regulate borrowing by State Governments?",
+        "front_ta": "மாநில அரசுகளின் கடன் வாங்குதலை மத்திய அரசு எந்த அரசியலமைப்பு சரத்தின் கீழ் கட்டுப்படுத்துகிறது?",
+        "back_en": "Article 293(3) of the Constitution.",
+        "back_ta": "அரசியலமைப்புச் சரத்து 293(3)."
+      },
+      {
+        "id": "rc_fp_208",
+        "front_en": "What fiscal stance is characterized by increasing public spending and cutting taxes during a recession?",
+        "front_ta": "மந்தநிலையின் போது பொதுச் செலவை அதிகரித்து வரிகளைக் குறைக்கும் நிதிக் கொள்கை நிலை எது?",
+        "back_en": "Expansionary Fiscal Policy.",
+        "back_ta": "விரிவாக்க நிதிக் கொள்கை (Expansionary Fiscal Policy)."
+      },
+      {
+        "id": "rc_fp_209",
+        "front_en": "What does a zero Primary Deficit indicate about a government's current borrowings?",
+        "front_ta": "பூஜ்ஜிய முதன்மைப் பற்றாக்குறை என்பது அரசாங்கத்தின் தற்போதைய கடனைப் பற்றி என்ன உணர்த்துகிறது?",
+        "back_en": "It indicates that all current borrowings are used solely to service interest on past debt.",
+        "back_ta": "தற்போது வாங்கப்படும் கடன்கள் அனைத்தும் கடந்த கால வட்டியைக் கட்ட மட்டுமே பயன்படுகின்றன என்பதைக் குறிக்கிறது."
+      },
+      {
+        "id": "rc_fp_210",
+        "front_en": "Approximately what percentage of the Indian Central Government's public debt is internal debt?",
+        "front_ta": "இந்திய மத்திய அரசின் பொதுக்கடனில் தோராயமாக எத்தனை சதவீதம் உள்நாட்டுக் கடனாகும்?",
+        "back_en": "Over 94% (denominated in Indian Rupees).",
+        "back_ta": "94%-க்கும் மேல் (இந்திய ரூபாயில் பெறப்பட்டது)."
+      },
+      {
+        "id": "rc_fp_211",
+        "front_en": "Which amendment act formally repealed the statutory target of Effective Revenue Deficit?",
+        "front_ta": "பயனுள்ள வருவாய்ப் பற்றாக்குறை சட்டப்பூர்வ இலக்கை முறையாக நீக்கிய திருத்தச் சட்டம் எது?",
+        "back_en": "The Finance Act 2018.",
+        "back_ta": "2018-ஆம் ஆண்டின் நிதிச் சட்டம்."
+      },
+      {
+        "id": "rc_fp_212",
+        "front_en": "What reform was linked to the 0.5% additional borrowing window granted to states by the 15th FC?",
+        "front_ta": "15வது நிதி ஆணையத்தால் மாநிலங்களுக்கு வழங்கப்பட்ட 0.5% கூடுதல் கடன் தளர்வுக்கு இணைக்கப்பட்ட சீர்திருத்தம் எது?",
+        "back_en": "Power sector reforms (operational and financial restructuring of DISCOMs).",
+        "back_ta": "மின்சாரத் துறை சீர்திருத்தங்கள் (மின் பகிர்மான நிறுவனங்களின் செயல்பாட்டு மறுசீரமைப்பு)."
+      }
+    ]
+  }
+}

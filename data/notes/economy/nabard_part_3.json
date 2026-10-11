@@ -1,0 +1,827 @@
+{
+  "meta": {
+    "topic_id": "economy_nabard_part_3",
+    "repository_id": "economy_nabard",
+    "display_title": "NABARD – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "NABARD",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "mastery",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [
+    "SHG-Bank Linkage Programme",
+    "S K Kalia Committee",
+    "Kisan Credit Card KCC",
+    "R V Gupta Committee",
+    "Project E-Shakti",
+    "Tribal Development Fund Wadi",
+    "Watershed Development Fund WDF",
+    "PRODUCE Fund FPOs",
+    "NABARD vs SIDBI",
+    "Joint Liability Group JLG"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the genesis and scaling of the SHG-Bank Linkage Programme (1992).",
+        "Comprehend the architecture and revolving credit nature of the Kisan Credit Card (1998)."
+      ],
+      "ta": [
+        "சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டத்தின் (1992) தோற்றம் மற்றும் விரிவாக்கத்தைப் புரிந்து கொள்ளுதல்.",
+        "கிசான் கடன் அட்டைத் திட்டத்தின் (1998) கட்டமைப்பு மற்றும் சுழலும் கடன் தன்மையை அறிதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Memorize the key committees: S.K. Kalia (SHG-BLP) and R.V. Gupta (KCC).",
+        "Recall that KCC was expanded to fisheries and animal husbandry in Budget 2018-19."
+      ],
+      "ta": [
+        "முக்கியக் குழுக்களை நினைவில் நிறுத்துதல்: எஸ்.கே. காலியா (SHG-BLP) மற்றும் ஆர்.வி. குப்தா (KCC).",
+        "2018-19 பட்ஜெட்டில் கால்நடை மற்றும் மீன்வளத்துறைக்கு KCC விரிவுபடுத்தப்பட்டதை நினைவுகூருதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze how SHG peer pressure eliminated collateral constraints and kept NPAs below 5%.",
+        "Compare NABARD with specialized DFIs like SIDBI and NHB across domains and headquarters."
+      ],
+      "ta": [
+        "சுயஉதவிக் குழுக்களின் பரஸ்பர நம்பிக்கை எவ்வாறு பிணையற்ற கடன்களை சாத்தியமாக்கி வாராக்கடனை 5%-க்கும் கீழ் வைத்தது என்பதை ஆய்வு செய்தல்.",
+        "நபார்டை SIDBI மற்றும் NHB போன்ற பிற வளர்ச்சி நிறுவனங்களுடன் அவற்றின் துறை மற்றும் தலைமையகம் சார்ந்து ஒப்பிடுதல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply concepts to identify high-yield exam traps regarding KCC vs NABARD committees and SIDBI headquarters.",
+        "Distinguish between Self Help Groups (savings first) and Joint Liability Groups (credit for tenant farmers)."
+      ],
+      "ta": [
+        "KCC vs நபார்டு குழுக்கள் மற்றும் SIDBI தலைமையகம் குறித்த தேர்வுப் பொறிகளைக் கண்டறிய அறிவைப் பயன்படுத்துதல்.",
+        "சுயஉதவிக் குழுக்கள் (சேமிப்பு முதலில்) மற்றும் கூட்டுப் பொறுப்புக் குழுக்களுக்கு (குத்தகைதாரர் கடன்) இடையேயான வேறுபாட்டைப் பிரித்தறிதல்."
+      ]
+    }
+  },
+  "subject": "Economy",
+  "topic": "NABARD – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_shg_bank_linkage",
+      "title_en": "SHG-Bank Linkage Programme (SHG-BLP - 1992)",
+      "title_ta": "சுயஉதவிக் குழு - வங்கி இணைப்புத் திட்டம் (SHG-BLP - 1992)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_kisan_credit_card",
+      "title_en": "Kisan Credit Card (KCC - 1998) Architecture",
+      "title_ta": "கிசான் கடன் அட்டை (KCC - 1998) கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_digital_and_environmental",
+      "title_en": "E-Shakti, Watershed & Tribal Development (Wadi)",
+      "title_ta": "இ-சக்தி, நீர்ப்பிடிப்பு மற்றும் பழங்குடியினர் மேம்பாடு (வாடி)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_comparative_dfis",
+      "title_en": "Comparative DFI Framework: NABARD vs SIDBI vs NHB",
+      "title_ta": "வளர்ச்சி நிதி நிறுவனங்களின் ஒப்பீட்டுக் கட்டமைப்பு: நபார்டு vs SIDBI vs NHB",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "NABARD's high-yield developmental dimension encompasses transformative grassroots initiatives—such as the world's largest microfinance movement (SHG-Bank Linkage Programme) and the revolutionary Kisan Credit Card (KCC)—that integrate marginalized rural populations into formal banking and foster resilient rural livelihoods.",
+      "ta": "நபார்டின் உயர்மதிப்பு மேம்பாட்டுப் பரிமாணம் என்பது அடித்தள மட்டத்திலான புரட்சிகர முயற்சிகளை உள்ளடக்கியதாகும். உலகின் மிகப்பெரிய நுண்கடன் இயக்கமான சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டம் (SHG-BLP) மற்றும் புரட்சிகர கிசான் கடன் அட்டை (KCC) போன்றவை விளிம்புநிலை ஊரக மக்களை முறையான வங்கி முறைக்குள் இணைத்து நிலையான ஊரக வாழ்வாதாரங்களை உருவாக்குகின்றன."
+    },
+    "introduction": {
+      "en": "Beyond formal bank refinance and rural infrastructure funds, NABARD has engineered two of the most consequential social banking innovations in developing world history: the Self Help Group - Bank Linkage Programme (SHG-BLP) launched in 1992, which empowered tens of millions of poor rural women, and the Kisan Credit Card (KCC) scheme launched in 1998, which liberated farmers from rigid seasonal loan procedures. Together with agro-ecological interventions like the Watershed Development Fund, the Wadi model of tribal orchard development, and digital transformation via E-Shakti and Farmer Producer Organizations (FPOs), NABARD exemplifies a catalytic developmental bank. A rigorous synthesis of these operational programs and institutional nuances is indispensable for TNPSC Group 1 aspirants.",
+      "ta": "வங்கிகளுக்கான மறுநிதி மற்றும் ஊரக உள்கட்டமைப்பு நிதியைத் தாண்டி, வளரும் நாடுகளின் வரலாற்றில் மிகச் சிறந்த இரு சமூக வங்கிப் புதுமைகளை நபார்டு உருவாக்கியுள்ளது: 1992-இல் தொடங்கப்பட்டு கோடிக்கணக்கான ஏழை ஊரகப் பெண்களுக்கு அதிகாரமளித்த சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டம் (SHG-BLP), மற்றும் 1998-இல் தொடங்கப்பட்டு விவசாயிகளை நெகிழ்வற்ற கடன் நடைமுறைகளிலிருந்து விடுவித்த கிசான் கடன் அட்டை (KCC) திட்டம். அவற்றுடன் நீர்ப்பிடிப்பு மேம்பாட்டு நிதி, பழத்தோட்டங்களை உருவாக்கும் வாடி (Wadi) பழங்குடியினர் மாதிரி, இ-சக்தி (E-Shakti) டிஜிட்டல் திட்டம் மற்றும் உழவர் உற்பத்தியாளர் அமைப்புகள் (FPO) மூலம் நபார்டு ஒரு மாற்றத்தை உருவாக்கும் வளர்ச்சி வங்கியாகத் திகழ்கிறது. TNPSC குரூப் 1 தேர்வுக்கு இத்திட்டங்கள் மற்றும் நிறுவன ஒப்பீடுகள் மிகவும் இன்றியமையாதவை."
+    },
+    "sec_shg_bank_linkage": [
+      {
+        "title": "Genesis & S.K. Kalia Working Group",
+        "title_ta": "தோற்றம் மற்றும் எஸ்.கே. காலியா செயற்குழு",
+        "points": {
+          "en": [
+            "Conceptualized by NABARD based on a pilot project supported by MYRADA (NGO) and recommendations of the S.K. Kalia Working Group, SHG-BLP was officially launched in 1992 with RBI approval.",
+            "Core Concept: Enables informal groups of 10-20 poor individuals (predominantly rural women) to pool savings and secure collateral-free bank credit based on group trust and mutual guarantee.",
+            "Disproved the traditional banking dogma that the rural poor were 'unbankable', maintaining loan recovery rates consistently above 95%."
+          ],
+          "ta": [
+            "MYRADA தன்னார்வ தொண்டு நிறுவனத்தின் முன்னோடித் திட்டம் மற்றும் எஸ்.கே. காலியா செயற்குழுவின் பரிந்துரைகளின் அடிப்படையில் நபார்டால் வடிவமைக்கப்பட்டு, ரிசர்வ் வங்கியின் ஒப்புதலுடன் 1992-இல் SHG-BLP தொடங்கப்பட்டது.",
+            "முதன்மை வழிமுறை: 10 முதல் 20 ஏழை நபர்கள் (குறிப்பாக ஊரகப் பெண்கள்) ஒன்று சேர்ந்து சிறு சேமிப்புகளைத் திரட்டவும், குழுவின் பரஸ்பர உத்தரவாதத்தின் அடிப்படையில் பிணையற்ற வங்கிக் கடன்களைப் பெறவும் இது வழிசெய்கிறது.",
+            "கிராமப்புற ஏழைகளுக்குக் கடன் திரும்பச் செலுத்தும் திறன் இல்லை என்ற பாரம்பரிய வங்கி அனுமானத்தைப் பொய்யாக்கி, 95%-க்கும் அதிகமான அபார கடன் வசூல் விகிதத்தை இது நிலைநிறுத்தியுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Scale & Global Stature of SHG-BLP",
+        "title_ta": "SHG-BLP-ன் அளவு மற்றும் உலகளாவிய மதிப்பு",
+        "points": {
+          "en": [
+            "SHG-BLP has grown into the world's largest microfinance project, linking over 1.4 crore SHGs and channeling institutional credit to more than 16 crore rural households.",
+            "Operates on three models: Model I (SHGs formed and financed directly by banks); Model II (SHGs formed by NGOs/government agencies and financed by banks - dominant model); Model III (Banks finance NGOs as financial intermediaries)."
+          ],
+          "ta": [
+            "இது 1.4 கோடிக்கும் மேற்பட்ட சுயஉதவிக் குழுக்களை வங்கிகளுடன் இணைத்து, 16 கோடிக்கும் மேற்பட்ட ஊரகக் குடும்பங்களுக்குக் கடன் வழங்கி உலகின் மிகப்பெரிய நுண்கடன் திட்டமாக வளர்ந்துள்ளது.",
+            "மூன்று மாதிரிகளில் இயங்குகிறது: மாதிரி I (வங்கிகளால் நேரடியாக உருவாக்கப்பட்டு கடன்பெறும் குழுக்கள்); மாதிரி II (தன்னார்வ நிறுவனங்கள்/அரசால் உருவாக்கப்பட்டு வங்கிகளால் கடன்பெறும் குழுக்கள் - முதன்மை மாதிரி); மாதிரி III (தன்னார்வ நிறுவனங்களை இடைத்தரகர்களாகக் கொண்டு வங்கிகள் கடன் வழங்குதல்)."
+          ]
+        }
+      }
+    ],
+    "sec_kisan_credit_card": [
+      {
+        "title": "Genesis & R.V. Gupta Committee",
+        "title_ta": "தோற்றம் மற்றும் ஆர்.வி. குப்தா குழு",
+        "points": {
+          "en": [
+            "Formulated by NABARD on the recommendations of the R.V. Gupta Committee on agricultural credit, announced in the Union Budget 1998-99 by Finance Minister Yashwant Sinha.",
+            "Revolving Cash Credit: Operates as a revolving cash credit facility; farmers can make withdrawals and repayments multiple times within an overall sanctioned limit without fresh paperwork each season.",
+            "Validity & Limits: Sanctioned for 5 years with annual limit escalations (usually 10% per annum) to absorb input price inflation.",
+            "RuPay Smart Cards: Evolved from paper passbooks into smart RuPay KCC cards enabling ATM cash withdrawals and point-of-sale transactions at seed/fertilizer outlets."
+          ],
+          "ta": [
+            "வேளாண் கடன் தொடர்பான ஆர்.வி. குப்தா குழுவின் பரிந்துரைகளின்படி நபார்டால் உருவாக்கப்பட்டு, 1998-99 மத்திய பட்ஜெட்டில் அப்போதைய நிதி அமைச்சர் யஷ்வந்த் சின்ஹாவால் அறிவிக்கப்பட்டது.",
+            "சுழலும் ரொக்கக் கடன்: இது சுழலும் ரொக்கக் கடன் வசதியாக இயங்குகிறது; அங்கீகரிக்கப்பட்ட வரம்பிற்குள் ஒவ்வொரு பருவத்திற்கும் மீண்டும் விண்ணப்பிக்காமல் பலமுறை கடன் பெறவும் திருப்பிச் செலுத்தவும் விவசாயிகளை அனுமதிக்கிறது.",
+            "செல்லுபடியாகும் காலம்: 5 ஆண்டுகளுக்கு வழங்கப்படுகிறது; இடுபொருள் பணவீக்கத்தைக் கருத்தில் கொண்டு ஆண்டுதோறும் (சுமார் 10%) வரம்பு தானாக உயர்த்தப்படுகிறது.",
+            "ரூபே ஸ்மார்ட் கார்டுகள்: காகிதப் புத்தகங்களிலிருந்து ஏடிஎம் மூலம் பணம் எடுக்கவும், உரம்/விதை கடைகளில் PoS இயந்திரங்களில் பரிவர்த்தனை செய்யவும் வழிவகுக்கும் RuPay KCC கார்டுகளாக மாற்றப்பட்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title": "Expansion to Fisheries & Animal Husbandry (2018)",
+        "title_ta": "மீன்வளம் மற்றும் கால்நடைத்துறைக்கு விரிவுபடுத்தல் (2018)",
+        "points": {
+          "en": [
+            "In the 2018-19 Union Budget, the Government formally expanded the KCC facility to cover working capital requirements of dairy, poultry, and fisheries farmers.",
+            "Crop farmers receive interest subvention up to ₹3 lakh; allied sector farmers receive subvention for loans up to ₹2 lakh."
+          ],
+          "ta": [
+            "2018-19 மத்திய பட்ஜெட்டில், பால்பண்ணை, கோழிப்பண்ணை மற்றும் மீன்வளர்ப்பு விவசாயிகளின் நடைமுறை மூலதனத் தேவைகளுக்கும் KCC திட்டம் முறைப்படி விரிவுபடுத்தப்பட்டது.",
+            "பயிர் விவசாயிகளுக்கு ₹3 லட்சம் வரை வட்டி மானியம் கிடைக்கிறது; சார்புத் துறை விவசாயிகளுக்கு ₹2 லட்சம் வரை வட்டி மானியம் கிடைக்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_digital_and_environmental": [
+      {
+        "title": "Project E-Shakti (SHG Digitization)",
+        "title_ta": "இ-சக்தி திட்டம் (சுயஉதவிக் குழு டிஜிட்டல் மயமாக்கல்)",
+        "points": {
+          "en": [
+            "A flagship digitization project launched by NABARD to bring all Self-Help Groups onto an electronic platform.",
+            "Captures real-time financial book-keeping, member demographics, and financial grading, enabling commercial banks to evaluate creditworthiness and sanction loans instantly without physical documentation."
+          ],
+          "ta": [
+            "அனைத்து சுயஉதவிக் குழுக்களையும் டிஜிட்டல் தளத்தில் கொண்டு வர நபார்டால் தொடங்கப்பட்ட முதன்மை டிஜிட்டல் திட்டமாகும்.",
+            "நிகழ்நேரக் கணக்குப்பதிவு, உறுப்பினர்களின் விவரங்கள் மற்றும் தரவரிசையை இணையத்தில் பதிவு செய்து, வங்கிகள் நேரில் செல்லாமல் உடனடி கடன் அனுமதி வழங்க வழிசெய்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Watershed (WDF) & Tribal Development (Wadi Model)",
+        "title_ta": "நீர்ப்பிடிப்பு நிதி (WDF) மற்றும் பழங்குடியினர் வாடி மாதிரி",
+        "points": {
+          "en": [
+            "Watershed Development Fund (WDF): Instituted in 1999-2000 to regenerate degraded micro-watersheds through ridge-to-valley soil and water conservation.",
+            "Tribal Development Fund (TDF - Wadi Model): Promotes 'Wadi' (orchard) models where tribal families convert 1-2 acres of wasteland into fruit orchards (mango, cashew) alongside boundary timber trees to guarantee perpetual livelihood security.",
+            "PRODUCE Fund (₹200 crore): Established by NABARD to build and promote Farmer Producer Organizations (FPOs) to enhance small farmers' market bargaining power."
+          ],
+          "ta": [
+            "நீர்ப்பிடிப்பு மேம்பாட்டு நிதி (WDF): சீரழிந்த சிறு நீர்ப்பிடிப்புப் பகுதிகளை வரப்பிலிருந்து பள்ளத்தாக்கு வரை மண் மற்றும் நீர் பாதுகாப்பு மூலம் மீட்டெடுக்க 1999-2000-இல் உருவாக்கப்பட்டது.",
+            "பழங்குடியினர் மேம்பாட்டு நிதி (TDF - வாடி மாதிரி): பழங்குடியின குடும்பங்கள் தங்களின் 1-2 ஏக்கர் நிலங்களை மா, முந்திரி போன்ற பழத்தோட்டங்களாகவும் (வாடி) மரங்களாகவும் மாற்றி நிலையான வாழ்வாதாரத்தைப் பெற உதவுகிறது.",
+            "PRODUCE நிதி (₹200 கோடி): சிறு மற்றும் குறு விவசாயிகளை உழவர் உற்பத்தியாளர் நிறுவனங்களாக (FPO) ஒருங்கிணைத்து அவர்களின் பேரம் பேசும் சக்தியை உயர்த்த உருவாக்கப்பட்டது."
+          ]
+        }
+      }
+    ],
+    "sec_comparative_dfis": [
+      {
+        "title": "Institutional Specialization",
+        "title_ta": "நிறுவனச் சிறப்புப் பணிகள்",
+        "points": {
+          "en": [
+            "NABARD (1982, Mumbai): Apex DFI exclusively dedicated to agriculture, rural development, and cottage industries.",
+            "SIDBI (1990, Lucknow): Apex DFI dedicated to Micro, Small, and Medium Enterprises (MSMEs) industry and services.",
+            "NHB (1988, New Delhi): Apex institution for housing finance (regulatory powers shifted to RBI in 2019).",
+            "EXIM Bank (1982, Mumbai): Apex institution dedicated to export-import finance and cross-border trade."
+          ],
+          "ta": [
+            "நபார்டு (1982, மும்பை): வேளாண்மை, ஊரக வளர்ச்சி மற்றும் குடிசைத் தொழில்களுக்கு மட்டுமே அர்ப்பணிக்கப்பட்ட உச்ச வளர்ச்சி நிதி நிறுவனம்.",
+            "SIDBI (1990, லக்னோ): குறு, சிறு மற்றும் நடுத்தரத் தொழில் (MSME) நிறுவனங்களுக்கான உச்ச DFI.",
+            "NHB (1988, புது தில்லி): வீட்டுவசதி நிதி நிறுவனங்களுக்கான உச்ச அமைப்பு (ஒழுங்குமுறை அதிகாரம் 2019-இல் ரிசர்வ் வங்கிக்கு மாற்றப்பட்டது).",
+            "EXIM வங்கி (1982, மும்பை): ஏற்றுமதி-இறக்குமதி நிதி மற்றும் சர்வதேச வர்த்தகத்திற்கு அர்ப்பணிக்கப்பட்ட உச்ச அமைப்பு."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_nabard_vs_sidbi_p3",
+        "title_en": "Table 1: Apex DFI Comparison: NABARD vs SIDBI",
+        "title_ta": "அட்டவணை 1: உச்ச வளர்ச்சி நிதி நிறுவனங்கள் ஒப்பீடு: நபார்டு vs SIDBI",
+        "headers_en": [
+          "Feature",
+          "NABARD",
+          "SIDBI"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "நபார்டு",
+          "SIDBI"
+        ],
+        "rows_en": [
+          [
+            "Full Name",
+            "National Bank for Agriculture and Rural Development",
+            "Small Industries Development Bank of India"
+          ],
+          [
+            "Establishment Year",
+            "1982 (July 12)",
+            "1990 (April 2)"
+          ],
+          [
+            "Mandated Sector",
+            "Agriculture, Rural Infrastructure, Cottage/Village Crafts",
+            "Micro, Small and Medium Enterprises (MSMEs)"
+          ],
+          [
+            "Headquarters",
+            "Mumbai, Maharashtra",
+            "Lucknow, Uttar Pradesh"
+          ],
+          [
+            "Predecessor Entity",
+            "ARDC and ACD/RPCC of RBI",
+            "Wholly owned subsidiary of IDBI"
+          ],
+          [
+            "Ownership",
+            "100% Government of India",
+            "Public Financial Institutions, Banks & GoI"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முழுப் பெயர்",
+            "தேசிய வேளாண்மை மற்றும் ஊரக வளர்ச்சி வங்கி",
+            "இந்திய சிறுதொழில் வளர்ச்சி வங்கி"
+          ],
+          [
+            "நிறுவப்பட்ட ஆண்டு",
+            "1982 (ஜூலை 12)",
+            "1990 (ஏப்ரல் 2)"
+          ],
+          [
+            "இலக்குத் துறை",
+            "வேளாண்மை, ஊரகக் கட்டமைப்பு, குடிசை மற்றும் கிராமத் தொழில்கள்",
+            "குறு, சிறு மற்றும் நடுத்தரத் தொழில்கள் (MSME)"
+          ],
+          [
+            "தலைமையகம்",
+            "மும்பை, மகாராஷ்டிரா",
+            "லக்னோ, உத்திரப் பிரதேசம்"
+          ],
+          [
+            "முந்தைய அமைப்பு",
+            "ARDC மற்றும் ரிசர்வ் வங்கியின் ACD / RPCC",
+            "IDBI வங்கியின் முழு துணை நிறுவனம்"
+          ],
+          [
+            "உரிமை",
+            "100% மத்திய அரசு",
+            "பொது நிதி நிறுவனங்கள், வங்கிகள் மற்றும் மத்திய அரசு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_kcc_vs_traditional_crop_loan_p3",
+        "title_en": "Table 2: Operational Contrast: Kisan Credit Card (KCC) vs Traditional Crop Loan",
+        "title_ta": "அட்டவணை 2: செயல்பாட்டு வேறுபாடு: கிசான் கடன் அட்டை (KCC) vs பாரம்பரிய பயிர்க்கடன்",
+        "headers_en": [
+          "Dimension",
+          "Kisan Credit Card (KCC)",
+          "Traditional Crop Loan"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "கிசான் கடன் அட்டை (KCC)",
+          "பாரம்பரிய பயிர்க்கடன்"
+        ],
+        "rows_en": [
+          [
+            "Documentation Cycle",
+            "One-time documentation valid for 5 years",
+            "Fresh documentation and land record verification every season"
+          ],
+          [
+            "Disbursement Flexibility",
+            "Revolving cash credit; draw and repay anytime",
+            "Single lump-sum disbursement with rigid repayment date"
+          ],
+          [
+            "Interest Cost Impact",
+            "Interest charged only on actual drawn balance and days",
+            "Interest charged on full sanctioned loan from day one"
+          ],
+          [
+            "Withdrawal Channel",
+            "RuPay Debit Card usable at ATMs and PoS machines",
+            "Physical cash withdrawal at bank branch counters"
+          ],
+          [
+            "Coverage Scope",
+            "Covers crops, allied activities, fisheries, and dairy",
+            "Historically confined to specified field crops only"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஆவண நடைமுறை",
+            "5 ஆண்டுகளுக்கு ஒருமுறை மட்டுமே செய்யப்படும் எளிய ஆவணங்கள்",
+            "ஒவ்வொரு பருவத்திலும் புதிய ஆவணங்கள் மற்றும் நிலப் பதிவேடு சரிபார்ப்பு"
+          ],
+          [
+            "நெகிழ்வுத்தன்மை",
+            "சுழலும் ரொக்கக் கடன்; எப்போது வேண்டுமானாலும் எடுத்து கட்டலாம்",
+            "ஒரே தவணையில் முழுத் தொகையும் பெறப்பட்டு குறிப்பிட்ட நாளில் கட்ட வேண்டும்"
+          ],
+          [
+            "வட்டிச் செலவுத் தாக்கம்",
+            "பயன்படுத்திய தொகைக்கும் நாட்களுக்கும் மட்டுமே வட்டி கணக்கிடப்படுகிறது",
+            "அனுமதிக்கப்பட்ட முழுத் தொகைக்கும் முதல் நாளிலிருந்தே வட்டி"
+          ],
+          [
+            "பணம் எடுக்கும் வழி",
+            "ஏடிஎம் மற்றும் PoS இயந்திரங்களில் பயன்படுத்தக்கூடிய RuPay கார்டு",
+            "வங்கி கிளையின் கவுண்டரில் மட்டுமே நேரில் சென்று ரொக்கம் பெற முடியும்"
+          ],
+          [
+            "வரம்பு எல்லை",
+            "பயிர்கள், சார்புப் பணிகள், மீன்வளம், கால்நடை அனைத்தையும் உள்ளடக்கியது",
+            "பாரம்பரியமாக குறிப்பிட்ட பயிர்களுக்கு மட்டுமே வழங்கப்பட்டது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_shg_vs_jlg_p3",
+        "title_en": "Table 3: Institutional Comparison: Self Help Groups (SHGs) vs Joint Liability Groups (JLGs)",
+        "title_ta": "அட்டவணை 3: நிறுவன ஒப்பீடு: சுயஉதவிக் குழுக்கள் (SHG) vs கூட்டுப் பொறுப்புக் குழுக்கள் (JLG)",
+        "headers_en": [
+          "Feature",
+          "Self Help Group (SHG)",
+          "Joint Liability Group (JLG)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "சுயஉதவிக் குழு (SHG)",
+          "கூட்டுப் பொறுப்புக் குழு (JLG)"
+        ],
+        "rows_en": [
+          [
+            "Primary Focus",
+            "Savings first, followed by internal lending and bank credit",
+            "Credit delivery for agricultural production and micro-enterprise"
+          ],
+          [
+            "Typical Group Size",
+            "10 to 20 members (predominantly women)",
+            "4 to 10 individuals (tenant farmers / sharecroppers)"
+          ],
+          [
+            "Savings Mandate",
+            "Mandatory regular group thrift before credit linkage",
+            "No mandatory savings requirement prior to loan disbursement"
+          ],
+          [
+            "Target Demographic",
+            "Vulnerable rural poor, women empowerment",
+            "Tenant farmers, oral lessees, small cultivators without land titles"
+          ],
+          [
+            "Liability Principle",
+            "Group peer pressure and collective thrift",
+            "Mutual joint and several legal liability for the entire loan"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "முதலில் சேமிப்பு, பின்னர் உள்சுழற்சி கடன் மற்றும் வங்கிக் கடன் இணைப்பு",
+            "வேளாண் உற்பத்தி மற்றும் சிறு தொழில்களுக்கான நேரடிக் கடன்"
+          ],
+          [
+            "குழு உறுப்பினர் எண்ணிக்கை",
+            "10 முதல் 20 உறுப்பினர்கள் (பெரும்பாலும் பெண்கள்)",
+            "4 முதல் 10 உறுப்பினர்கள் (குத்தகை விவசாயிகள் / நிலமற்றோர்)"
+          ],
+          [
+            "சேமிப்பு நிபந்தனை",
+            "கடன் பெறுவதற்கு முன் கட்டாயத் தொடர் சேமிப்பு தேவை",
+            "கடன் பெறுவதற்கு முன் கட்டாயச் சேமிப்பு அவசியமில்லை"
+          ],
+          [
+            "இலக்கு மக்கள்",
+            "விளிம்புநிலை ஏழைகள், பெண்கள் సాధிகாரமளித்தல்",
+            "பட்டா நிலம் இல்லாத குத்தகை விவசாயிகள், சிறு விவசாயிகள்"
+          ],
+          [
+            "பொறுப்புக் கோட்பாடு",
+            "குழுவின் பரஸ்பர நம்பிக்கை மற்றும் கூட்டுச் சேமிப்பு",
+            "கடன் தொகை முழுமைக்கும் உறுப்பினர்களின் கூட்டு மற்றும் தனிப் பொறுப்பு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_dedicated_social_funds_p3",
+        "title_en": "Table 4: Dedicated Developmental and Agro-Ecological Funds of NABARD",
+        "title_ta": "அட்டவணை 4: நபார்டின் பிரத்யேக மேம்பாட்டு மற்றும் சூழலியல் நிதிகள்",
+        "headers_en": [
+          "Fund Name",
+          "Target Domain",
+          "Primary Operational Mechanism",
+          "Key Developmental Impact"
+        ],
+        "headers_ta": [
+          "நிதியின் பெயர்",
+          "இலக்குத் துறை",
+          "முதன்மைச் செயல்பாட்டு வழிமுறை",
+          "முக்கிய மேம்பாட்டுத் தாக்கம்"
+        ],
+        "rows_en": [
+          [
+            "Watershed Development Fund (WDF)",
+            "Rainfed drylands",
+            "Ridge-to-valley participatory soil & water works",
+            "Recharged groundwater tables and enabled double cropping"
+          ],
+          [
+            "Tribal Development Fund (TDF)",
+            "Tribal tracts",
+            "Wadi orchard model (fruit & timber agro-forestry)",
+            "Arrested distress tribal migration via permanent orchard income"
+          ],
+          [
+            "PRODUCE Fund",
+            "Small farmers",
+            "Farmer Producer Organizations (FPOs)",
+            "Direct market aggregation and elimination of middlemen"
+          ],
+          [
+            "Financial Inclusion Fund (FIF)",
+            "Unbanked areas",
+            "Subsidizing micro-ATMs, BC tech, and financial literacy",
+            "Deepened rural branchless digital banking access"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நீர்ப்பிடிப்பு மேம்பாட்டு நிதி (WDF)",
+            "மானாவாரி வறண்ட நிலங்கள்",
+            "வரப்பிலிருந்து பள்ளத்தாக்கு வரை மக்கள் பங்களிப்பு மண்-நீர் பணிகள்",
+            "நிலத்தடி நீர்மட்டம் உயர்வு மற்றும் இருபோக சாகுபடி சாத்தியமானது"
+          ],
+          [
+            "பழங்குடியினர் மேம்பாட்டு நிதி (TDF)",
+            "பழங்குடியினர் பகுதிகள்",
+            "வாடி பழத்தோட்ட மாதிரி (பழமரங்கள் & மரப்பயிர்கள்)",
+            "நிலையான வருமானம் மூலம் பழங்குடியினரின் கட்டாய இடப்பெயர்வு தடுத்தல்"
+          ],
+          [
+            "PRODUCE நிதி",
+            "சிறு விவசாயிகள்",
+            "உழவர் உற்பத்தியாளர் நிறுவனங்கள் (FPOs)",
+            "விவசாயிகள் ஒன்றுபட்டு சந்தையில் பேரம் பேசும் சக்தி, இடைத்தரகர் ஒழிப்பு"
+          ],
+          [
+            "நிதி உள்ளடக்க நிதி (FIF)",
+            "வங்கிச் சேவை இல்லா பகுதிகள்",
+            "மைக்ரோ-ஏடிஎம், BC தொழில்நுட்பம், நிதி விழிப்புணர்வு",
+            "கிளைகளற்ற டிஜிட்டல் வங்கிச் சேவையை கிராமங்களில் பரப்புதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "NABARD Part 3: High-Yield Application & Exam Mastery",
+        "short_label": "NABARD Mastery",
+        "children": [
+          {
+            "title": "Social Innovations",
+            "short_label": "Social Banking",
+            "children": [
+              {
+                "title": "SHG-BLP (1992, S.K. Kalia Group)",
+                "short_label": "SHG-BLP 1992"
+              },
+              {
+                "title": "1.4+ Crore SHGs Linked",
+                "short_label": "1.4 Cr SHGs"
+              },
+              {
+                "title": "KCC Scheme (1998, R.V. Gupta Model)",
+                "short_label": "KCC 1998"
+              },
+              {
+                "title": "Fisheries/Dairy KCC (2018)",
+                "short_label": "KCC Allied"
+              }
+            ]
+          },
+          {
+            "title": "Digital Transformation",
+            "short_label": "Digital Rails",
+            "children": [
+              {
+                "title": "Project E-Shakti for SHGs",
+                "short_label": "E-Shakti"
+              },
+              {
+                "title": "RuPay KCC Smart Cards",
+                "short_label": "RuPay KCC"
+              },
+              {
+                "title": "Financial Inclusion Fund (FIF)",
+                "short_label": "FIF Fund"
+              }
+            ]
+          },
+          {
+            "title": "Agro-Ecological Funds",
+            "short_label": "Ecological Funds",
+            "children": [
+              {
+                "title": "Watershed Dev Fund (WDF 1999)",
+                "short_label": "WDF 1999"
+              },
+              {
+                "title": "Tribal Dev Fund (TDF - Wadi Model)",
+                "short_label": "Wadi Model"
+              },
+              {
+                "title": "PRODUCE Fund for FPOs",
+                "short_label": "PRODUCE FPO"
+              }
+            ]
+          },
+          {
+            "title": "Comparative Institutions",
+            "short_label": "DFI Contrasts",
+            "children": [
+              {
+                "title": "NABARD (Mumbai, Agriculture DFI)",
+                "short_label": "NABARD Mumbai"
+              },
+              {
+                "title": "SIDBI (Lucknow, MSME DFI)",
+                "short_label": "SIDBI Lucknow"
+              },
+              {
+                "title": "JLG: 4-10 Tenant Farmers",
+                "short_label": "JLG Model"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "KCC Committee vs NABARD Committee Trap (KCC குழு vs நபார்டு குழு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Confusing the committee that recommended NABARD with the committee that recommended the Kisan Credit Card (KCC).",
+            "CORRECT FACT: NABARD was recommended by the B. Sivaraman Committee (1979). The Kisan Credit Card (KCC) scheme was formulated on the recommendations of the R.V. Gupta Committee (1998).",
+            "WHY CANDIDATES FAIL: Both are prominent banking committees directly associated with NABARD's milestones."
+          ],
+          "ta": [
+            "பொறி: நபார்டை உருவாக்கப் பரிந்துரைத்த குழுவையும் கிசான் கடன் அட்டையை (KCC) பரிந்துரைத்த குழுவையும் ஒன்றெனக் குழப்புவது.",
+            "சரியான உண்மை: நபார்டு வங்கி பி. சிவராமன் குழுவின் (1979) பரிந்துரையால் அமைக்கப்பட்டது. ஆனால் கிசான் கடன் அட்டைத் திட்டம் (KCC) ஆர்.வி. குப்தா குழுவின் (1998) பரிந்துரையின்படி நபார்டால் உருவாக்கப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டுமே நபார்டுடன் தொடர்புடைய புகழ்பெற்ற குழுக்கள் என்பதால் குழுப் பெயர்களை மாற்றி விடையளிப்பது."
+          ]
+        }
+      },
+      {
+        "title": "SHG-BLP Launch Year Trap (SHG-BLP தொடங்கப்பட்ட ஆண்டு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that SHG-Bank Linkage Programme started simultaneously with the establishment of NABARD in 1982.",
+            "CORRECT FACT: NABARD was established in 1982, but the SHG-Bank Linkage Programme was launched a decade later in 1992 following pilot research with MYRADA.",
+            "WHY CANDIDATES FAIL: Both 1982 and 1992 end in '2', and both are major NABARD achievements, creating easy chronological confusion."
+          ],
+          "ta": [
+            "பொறி: நபார்டு வங்கி 1982-இல் தொடங்கப்பட்ட போதே சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டமும் (SHG-BLP) தொடங்கப்பட்டுவிட்டது என நினைப்பது.",
+            "சரியான உண்மை: நபார்டு 1982-இல் தொடங்கப்பட்டது; ஆனால் சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டம் (SHG-BLP) ஒரு பத்தாண்டு கழித்து 1992-இல்தான் தொடங்கப்பட்டது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இரண்டுமே '2' இல் முடியும் ஆண்டுகள் மற்றும் நபார்டின் மைல்கற்கள் என்பதால் காலவரிசையில் ஏற்படும் குழப்பம்."
+          ]
+        }
+      },
+      {
+        "title": "KCC Non-Crop Applicability Trap (KCC பயிர் அல்லாத துறைகள் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Kisan Credit Card is restricted purely to field crop farming and cannot be issued for animal husbandry or fisheries.",
+            "CORRECT FACT: Although originally designed for crops, the Government of India expanded the KCC facility in the 2018-19 Budget to cover working capital requirements of animal husbandry, dairy, and fisheries farmers.",
+            "WHY CANDIDATES FAIL: The word 'Kisan' (farmer) is traditionally associated only with land crop cultivation."
+          ],
+          "ta": [
+            "பொறி: கிசான் கடன் அட்டை என்பது பயிர்களுக்கு மட்டுமே வழங்கப்படுகிறது, கால்நடை அல்லது மீன்பிடித் தொழிலுக்குப் பொருந்தாது என நம்புவது.",
+            "சரியான உண்மை: ஆரம்பத்தில் பயிர்களுக்கு மட்டுமே இருந்தாலும், 2018-19 பட்ஜெட்டில் கால்நடை வளர்ப்பு, பால்பண்ணை மற்றும் மீன்வளர்ப்பு விவசாயிகளுக்கும் நடைமுறை மூலதனத்திற்காக KCC விரிவுபடுத்தப்பட்டது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: 'கிசான்' என்ற சொல் பாரம்பரியமாக நிலத்தில் பயிர் செய்யும் விவசாயிகளை மட்டுமே குறிப்பதாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "SIDBI Headquarters Location Trap (SIDBI தலைமையக இருப்பிடப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming both NABARD and SIDBI are headquartered in Mumbai.",
+            "CORRECT FACT: NABARD headquarters is in Mumbai, Maharashtra. SIDBI headquarters is located in Lucknow, Uttar Pradesh.",
+            "WHY CANDIDATES FAIL: Most financial institutions (RBI, SEBI, SBI, NABARD) are in Mumbai, leading candidates to guess Mumbai for SIDBI as well."
+          ],
+          "ta": [
+            "பொறி: நபார்டு மற்றும் SIDBI ஆகிய இரண்டு அமைப்புகளுமே மும்பையில்தான் தலைமையகத்தைக் கொண்டுள்ளன என நினைப்பது.",
+            "சரியான உண்மை: நபார்டின் தலைமையகம் மும்பையில் உள்ளது. ஆனால் SIDBI-யின் தலைமையகம் உத்திரப் பிரதேசத்தின் லக்னோவில் அமைந்துள்ளது!",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: இந்தியாவில் பெரும்பாலான நிதி நிறுவனங்கள் (RBI, SEBI, SBI, NABARD) மும்பையில் இருப்பதால், SIDBI-க்கும் மும்பை எனத் தவறாகக் கருதுவது."
+          ]
+        }
+      },
+      {
+        "title": "E-Shakti Functional Nature Trap (இ-சக்தி செயல்பாட்டுத் தன்மை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Mistaking Project E-Shakti for a direct cash transfer DBT scheme or an online consumer loan app.",
+            "CORRECT FACT: E-Shakti is a digitization initiative by NABARD to bring all SHG financial records, demographic profiles, and credit grading onto a unified digital portal to help banks evaluate creditworthiness seamlessly.",
+            "WHY CANDIDATES FAIL: The name sounds similar to government direct benefit transfer (DBT) welfare schemes."
+          ],
+          "ta": [
+            "பொறி: இ-சக்தி (E-Shakti) என்பது ஏழைப் பெண்களுக்கு நேரடியாகப் பணம் வழங்கும் உதவித் திட்டம் அல்லது இணைய கடன் செயலி என நினைப்பது.",
+            "சரியான உண்மை: இ-சக்தி என்பது நபார்டால் தொடங்கப்பட்ட சுயஉதவிக் குழுக்களின் டிஜிட்டல் திட்டமாகும். இது சுயஉதவிக் குழுக்களின் கணக்குப் புத்தகங்கள், உறுப்பினர்களின் விவரங்களை இணையத்தில் பதிவு செய்து, வங்கிகள் எளிதில் கடன் வழங்க உதவுகிறது.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: அரசு நலத்திட்டங்களின் பெயர்களைப் போல இருப்பதால் இது ஒரு நேரடி பண உதவித் திட்டம் எனத் தவறாக எண்ணுவது."
+          ]
+        }
+      },
+      {
+        "title": "Wadi Model Semantic Trap (வாடி மாதிரி பொருள் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Confusing 'Wadi' in the Tribal Development Fund with water dams or irrigation reservoirs.",
+            "CORRECT FACT: Under the Tribal Development Fund (TDF), 'Wadi' is a Gujarati/Sanskrit term meaning a small tree orchard (typically 1 acre combining fruit trees like mango/cashew and boundary timber trees), not a water reservoir.",
+            "WHY CANDIDATES FAIL: Because NABARD runs the Watershed Development Fund, candidates frequently confuse 'Wadi' with water bodies or irrigation check dams."
+          ],
+          "ta": [
+            "பொறி: பழங்குடியினர் மேம்பாட்டு நிதியின் 'வாடி' (Wadi) மாதிரியைத் தடுப்பணை அல்லது நீர்ப்பாசனக் குளம் என்று தவறாகப் புரிந்துகொள்வது.",
+            "சரியான உண்மை: 'வாடி' என்பது குஜராத்தி/சமஸ்கிருதத்தில் 'பழத்தோட்டம்' என்று பொருள்படும். பழங்குடியினரின் 1 ஏக்கர் நிலத்தில் மா, முந்திரி போன்ற பழமரங்களையும் காட்டு மரங்களையும் வளர்த்து வாழ்வாதாரத்தை உருவாக்கும் வேளாண் மாதிரி இதுவாகும்.",
+            "தேர்வர்கள் தவறிழைக்கக் காரணம்: நபார்டு நீர்ப்பிடிப்புப் பணிகளையும் செய்வதால், வாடி என்பதையும் ஏதோ ஒரு நீர்நிலைத் திட்டம் எனத் தவறாகக் கருதுவது."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "The SHG-Bank Linkage Programme (SHG-BLP) was launched by NABARD in 1992.",
+        "The Kisan Credit Card (KCC) scheme was introduced in August 1998 based on the R.V. Gupta Committee recommendations.",
+        "In 1992, the S.K. Kalia Working Group set up by NABARD laid the operational foundation for linking SHGs with banks.",
+        "KCC credit facility was extended to animal husbandry and fisheries in the Union Budget 2018-19.",
+        "Project E-Shakti is NABARD's initiative for the digital empowerment and book-keeping of Self-Help Groups.",
+        "The Tribal Development Fund (TDF) implements the 'Wadi' (orchard) model to secure permanent tribal livelihoods.",
+        "The Small Industries Development Bank of India (SIDBI) was established in 1990 with its headquarters in Lucknow.",
+        "NABARD instituted the PRODUCE Fund with a corpus of ₹200 crore to promote 2,000 Farmer Producer Organizations (FPOs).",
+        "The Watershed Development Fund (WDF) was established in NABARD in 1999-2000.",
+        "A Joint Liability Group (JLG) is an informal group of 4-10 tenant farmers securing collateral-free credit through mutual guarantee.",
+        "RuPay Kisan Credit Cards were rolled out to replace traditional passbooks with ATM/PoS-enabled smart cards.",
+        "SHG loans maintain exceptionally high repayment rates exceeding 95% across India."
+      ],
+      "ta": [
+        "சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டம் (SHG-BLP) 1992-இல் நபார்டால் தொடங்கப்பட்டது.",
+        "கிசான் கடன் அட்டை (KCC) திட்டம் ஆர்.வி. குப்தா குழுவின் பரிந்துரையின் பேரில் ஆகஸ்ட் 1998-இல் அறிமுகப்படுத்தப்பட்டது.",
+        "1992-இல் நபார்டால் அமைக்கப்பட்ட எஸ்.கே. காலியா செயற்குழு சுயஉதவிக் குழுக்களை வங்கிகளுடன் இணைப்பதற்கான அடித்தளத்தை அமைத்தது.",
+        "2018-19 மத்திய பட்ஜெட்டில் கால்நடை வளர்ப்பு மற்றும் மீன்வளத்துறைக்கும் KCC கடன் வசதி விரிவுபடுத்தப்பட்டது.",
+        "இ-சக்தி திட்டம் (Project E-Shakti) என்பது சுயஉதவிக் குழுக்களின் கணக்குகளை டிஜிட்டல் மயமாக்கும் நபார்டின் திட்டமாகும்.",
+        "பழங்குடியினர் மேம்பாட்டு நிதி (TDF) பழங்குடியினருக்கு நிலையான வாழ்வாதாரத்தை வழங்க 'வாடி' (பழத்தோட்டம்) மாதிரியைச் செயல்படுத்துகிறது.",
+        "இந்திய சிறுதொழில் வளர்ச்சி வங்கி (SIDBI) 1990-இல் லக்னோவைத் தலைமையகமாகக் கொண்டு தொடங்கப்பட்டது.",
+        "2,000 உழவர் உற்பத்தியாளர் நிறுவனங்களை (FPOs) உருவாக்க ₹200 கோடி மூலதனத்துடன் PRODUCE நிதியை நபார்டு அமைத்தது.",
+        "நீர்ப்பிடிப்பு மேம்பாட்டு நிதி (WDF) 1999-2000-இல் நபார்டில் நிறுவப்பட்டது.",
+        "கூட்டுப் பொறுப்புக் குழு (JLG) என்பது பரஸ்பர உத்தரவாதத்தின் மூலம் பிணையற்ற கடன் பெறும் 4-10 குத்தகை விவசாயிகளைக் கொண்ட குழுவாகும்.",
+        "பாரம்பரிய காகிதப் புத்தகங்களுக்குப் பதிலாக ஏடிஎம் மற்றும் PoS-இல் பயன்படும் ஸ்மார்ட் அட்டைகளாக RuPay கிசான் கிரெடிட் கார்டுகள் அறிமுகப்படுத்தப்பட்டன.",
+        "இந்தியா முழுவதும் சுயஉதவிக் குழு கடன்கள் 95%-க்கும் அதிகமான சிறப்பான கடன் வசூல் விகிதத்தைக் கொண்டுள்ளன."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "SHG-BLP Launch Year: 1992 (Formulated by NABARD & S.K. Kalia Group).",
+        "KCC Launch Year: 1998 (R.V. Gupta Committee model).",
+        "KCC Scope Expansion: Extended to Animal Husbandry & Fisheries in 2018-19.",
+        "E-Shakti: Digital transformation of SHG records and grading.",
+        "Wadi Model: Tribal 1-acre orchard development under TDF.",
+        "FPO Fund: PRODUCE Fund (₹200 crore) for farmer aggregation.",
+        "SIDBI Head Office: Lucknow, Uttar Pradesh (Established 1990).",
+        "NABARD Head Office: Mumbai, Maharashtra (Established 1982).",
+        "Joint Liability Group (JLG): 4-10 tenant farmers / landless cultivators.",
+        "SHG Scale: World's largest microfinance movement with 1.4+ crore groups."
+      ],
+      "ta": [
+        "SHG-BLP தொடங்கப்பட்ட ஆண்டு: 1992 (நபார்டு மற்றும் எஸ்.கே. காலியா குழு).",
+        "KCC தொடங்கப்பட்ட ஆண்டு: 1998 (ஆர்.வி. குப்தா குழு மாதிரி).",
+        "KCC விரிவாக்கம்: 2018-19-இல் கால்நடை மற்றும் மீன்வளத்திற்கு விரிவுபடுத்தப்பட்டது.",
+        "இ-சக்தி: சுயஉதவிக் குழு ஆவணங்களை டிஜிட்டல் மயமாக்குதல்.",
+        "வாடி மாதிரி: TDF நிதியின் கீழ் பழங்குடியினருக்கு 1 ஏக்கர் பழத்தோட்டம் அமைத்தல்.",
+        "FPO நிதி: விவசாயிகளை ஒருங்கிணைக்க ₹200 கோடி PRODUCE நிதி.",
+        "SIDBI தலைமையகம்: லக்னோ, உத்திரப் பிரதேசம் (1990-இல் நிறுவப்பட்டது).",
+        "நபார்டு தலைமையகம்: மும்பை, மகாராஷ்டிரா (1982-இல் நிறுவப்பட்டது).",
+        "கூட்டுப் பொறுப்புக் குழு (JLG): 4-10 குத்தகை விவசாயிகள் / நிலமற்றோர்.",
+        "SHG சாதனை: 1.4 கோடிக்கும் அதிகமான குழுக்களுடன் உலகின் மிகப்பெரிய நுண்கடன் இயக்கம்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "rc_nab_301",
+        "front_en": "In which year was the SHG-Bank Linkage Programme launched by NABARD?",
+        "front_ta": "நபார்டால் சுயஉதவிக் குழு வங்கி இணைப்புத் திட்டம் (SHG-BLP) எந்த ஆண்டு தொடங்கப்பட்டது?",
+        "back_en": "1992, following pilot initiatives with MYRADA and S.K. Kalia committee recommendations.",
+        "back_ta": "1992-இல், MYRADA முன்னோடி முயற்சி மற்றும் எஸ்.கே. காலியா குழு பரிந்துரையைத் தொடர்ந்து தொடங்கப்பட்டது."
+      },
+      {
+        "id": "rc_nab_302",
+        "front_en": "Which committee's recommendations led to the creation of the Kisan Credit Card (KCC) scheme?",
+        "front_ta": "எந்தக் குழுவின் பரிந்துரைகள் கிசான் கடன் அட்டை (KCC) திட்டம் உருவாகக் காரணமானது?",
+        "back_en": "R.V. Gupta Committee on agricultural credit (announced in Budget 1998-99).",
+        "back_ta": "வேளாண் கடன் தொடர்பான ஆர்.வி. குப்தா குழு (1998-99 பட்ஜெட்டில் அறிவிக்கப்பட்டது)."
+      },
+      {
+        "id": "rc_nab_303",
+        "front_en": "When was the KCC scheme expanded to cover animal husbandry and fisheries?",
+        "front_ta": "கால்நடை வளர்ப்பு மற்றும் மீன்வளத்துறைக்கு KCC திட்டம் எப்போது விரிவுபடுத்தப்பட்டது?",
+        "back_en": "Union Budget 2018-19.",
+        "back_ta": "2018-19 மத்திய பட்ஜெட்டில் விரிவுபடுத்தப்பட்டது."
+      },
+      {
+        "id": "rc_nab_304",
+        "front_en": "What is the primary objective of NABARD's Project E-Shakti?",
+        "front_ta": "நபார்டின் இ-சக்தி (E-Shakti) திட்டத்தின் முதன்மை நோக்கம் என்ன?",
+        "back_en": "Digitization of all Self-Help Group accounts and records to ensure financial transparency and ease bank credit delivery.",
+        "back_ta": "அனைத்து சுயஉதவிக் குழுக்களின் கணக்குகளையும் டிஜிட்டல் மயமாக்கி வெளிப்படைத்தன்மையையும் வங்கிக் கடன் விநியோகத்தையும் எளிதாக்குதல்."
+      },
+      {
+        "id": "rc_nab_305",
+        "front_en": "What does the 'Wadi' model under the Tribal Development Fund represent?",
+        "front_ta": "பழங்குடியினர் மேம்பாட்டு நிதியின் கீழ் உள்ள 'வாடி' மாதிரி எதைக் குறிக்கிறது?",
+        "back_en": "An orchard agro-forestry model developing 1-2 acres of wasteland into fruit-bearing tree plots for tribal families.",
+        "back_ta": "பழங்குடியின குடும்பங்களுக்கு 1-2 ஏக்கர் நிலத்தில் பழமரத் தோட்டம் (வாடி) அமைத்துத் தரும் வேளாண் மாதிரி."
+      },
+      {
+        "id": "rc_nab_306",
+        "front_en": "Who are the primary target beneficiaries of Joint Liability Groups (JLGs)?",
+        "front_ta": "கூட்டுப் பொறுப்புக் குழுக்களின் (JLG) முதன்மை இலக்கு பயனாளிகள் யார்?",
+        "back_en": "Tenant farmers, sharecroppers, and oral lessees who lack land title deeds to offer as collateral.",
+        "back_ta": "நிலப் பட்டா இல்லாத குத்தகை விவசாயிகள், பகிர்வு சாகுபடியாளர்கள் மற்றும் நிலமற்ற தொழிலாளர்கள்."
+      },
+      {
+        "id": "rc_nab_307",
+        "front_en": "Where is the headquarters of SIDBI situated?",
+        "front_ta": "SIDBI-யின் தலைமையகம் எங்கு அமைந்துள்ளது?",
+        "back_en": "Lucknow, Uttar Pradesh (Established in 1990 for MSMEs).",
+        "back_ta": "லக்னோ, உத்திரப் பிரதேசம் (MSME-களுக்காக 1990-இல் நிறுவப்பட்டது)."
+      },
+      {
+        "id": "rc_nab_308",
+        "front_en": "What dedicated fund was created by NABARD to support Farmer Producer Organizations?",
+        "front_ta": "உழவர் உற்பத்தியாளர் நிறுவனங்களை ஆதரிக்க நபார்டு உருவாக்கிய பிரத்யேக நிதி எது?",
+        "back_en": "PRODUCE Fund (Producers Organization Development and Upliftment Corpus) with ₹200 crore.",
+        "back_ta": "₹200 கோடி மூலதனத்துடன் கூடிய PRODUCE நிதி."
+      },
+      {
+        "id": "rc_nab_309",
+        "front_en": "What is the typical validity period of a Kisan Credit Card account?",
+        "front_ta": "ஒரு கிசான் கடன் அட்டை கணக்கின் வழக்கமான செல்லுபடியாகும் காலம் என்ன?",
+        "back_en": "5 years, subject to annual review and limit escalations.",
+        "back_ta": "5 ஆண்டுகள்; ஆண்டுதோறும் மறுஆய்வு செய்யப்பட்டு வரம்பு உயர்த்தப்படும்."
+      },
+      {
+        "id": "rc_nab_310",
+        "front_en": "In which year was the Watershed Development Fund (WDF) established in NABARD?",
+        "front_ta": "நபார்டில் நீர்ப்பிடிப்பு மேம்பாட்டு நிதி (WDF) எந்த ஆண்டு அமைக்கப்பட்டது?",
+        "back_en": "1999-2000, to regenerate degraded drylands through community participation.",
+        "back_ta": "1999-2000-இல், மக்கள் பங்களிப்புடன் வறண்ட நிலங்களை மீட்டெடுக்க அமைக்கப்பட்டது."
+      }
+    ]
+  }
+}

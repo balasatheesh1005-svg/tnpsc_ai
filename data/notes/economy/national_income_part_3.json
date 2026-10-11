@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "topic_id": "economy_national_income_part_3",
+    "repository_id": "economy_national_income",
+    "display_title": "National Income – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "economy",
+    "chapter": "National Income",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "version": "2.0",
+    "status": "approved",
+    "review_status": "gold_standard",
+    "difficulty": "advanced",
+    "estimated_study_time": {
+      "reading": "35 min",
+      "revision": "15 min",
+      "total": "50 min"
+    }
+  },
+  "keywords": [],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [],
+      "ta": []
+    },
+    "Remember": {
+      "en": [],
+      "ta": []
+    },
+    "Analyze": {
+      "en": [],
+      "ta": []
+    },
+    "Apply": {
+      "en": [],
+      "ta": []
+    }
+  },
+  "subject": "Economy",
+  "topic": "National Income – Part 3",
+  "language": "bilingual",
+  "ui_type": "economy",
+  "sections": [
+    {
+      "id": "sec_gdp_and_economic_welfare",
+      "title_en": "1. National Income and Economic Welfare: The Welfare Paradox",
+      "title_ta": "1. தேசிய வருமானம் மற்றும் பொருளாதார நல்வாழ்வு: சமூக நல முரண்பாடுகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_green_gdp_environmental_accounting",
+      "title_en": "2. Green GDP and Environmental Accounting",
+      "title_ta": "2. பசுமை GDP மற்றும் சுற்றுச்சூழல் கணக்கியல்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_income_inequality_metrics",
+      "title_en": "3. Income Inequality: Lorenz Curve and Gini Coefficient",
+      "title_ta": "3. வருமான ஏற்றத்தாழ்வு: லாரன்ஸ் வளைகோடு மற்றும் கினி குணகம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_base_year_revisions_and_nso",
+      "title_en": "4. Base Year Revisions & NSO Institutional Architecture",
+      "title_ta": "4. அடிப்படை ஆண்டு திருத்தங்கள் & NSO நிறுவனக் கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_personal_and_disposable_income",
+      "title_en": "5. Personal Income and Personal Disposable Income Formulas",
+      "title_ta": "5. தனிநபர் வருமானம் மற்றும் செலவிடக்கூடிய வருமான சமன்பாடுகள்",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The analytical application of National Income explores the relationship between aggregate economic output and genuine human welfare, per capita metrics, environmental sustainability, and income distribution. It evaluates the limitations of GDP as a welfare measure, modern green accounting frameworks, and high-yield TNPSC exam paradigms.",
+      "ta": "தேசிய வருமானத்தின் பகுப்பாய்வுப் பயன்பாடு என்பது மொத்த பொருளாதார உற்பத்திக்கும் உண்மையான மனித நல்வாழ்வு, தலா வருமான அளவீடுகள், சுற்றுச்சூழல் நிலைத்தன்மை மற்றும் வருமானப் பகிர்வு ஆகியவற்றிற்கும் இடையேயான தொடர்பை ஆராய்கிறது. இது ஒரு சமூக நல அளவீடாக GDP-யின் வரம்புகள், நவீன பசுமை கணக்கியல் கட்டமைப்புகள் மற்றும் டிஎன்பிஎஸ்சி தேர்வுக்கான முக்கிய பகுதிகளை மதிப்பீடு செய்கிறது."
+    },
+    "introduction": {
+      "en": "In the TNPSC examination landscape, National Income is evaluated not merely as mathematical identities, but as an indicator of equitable economic development and social justice. While Gross Domestic Product measures quantitative expansion, it fails to capture income inequality, environmental degradation, unpaid domestic care, or the leisure time of citizens. Consequently, economists have introduced refined metrics such as Green GDP (SEEA framework), Per Capita Income (Nominal vs PPP), and distribution indices (Gini Coefficient and Lorenz Curve). Part 3 provides an exam-mastery framework synthesizing base year revisions, NSO institutional reorganizations, welfare paradoxes, and tricky statement-based question traps.",
+      "ta": "டிஎன்பிஎஸ்சி தேர்வுத் தளத்தில், தேசிய வருமானம் என்பது வெறும் கணித சூத்திரங்களாக மட்டுமின்றி, சமத்துவமான பொருளாதார மேம்பாடு மற்றும் சமூக நீதியின் சுட்டிக்காட்டியாக மதிப்பிடப்படுகிறது. மொத்த உள்நாட்டு உற்பத்தி அளவுசார் வளர்ச்சியை அளவிட்டாலும், அது வருமான ஏற்றத்தாழ்வு, சுற்றுச்சூழல் சீரழிவு, ஊதியமில்லா வீட்டுப் பணிகள் அல்லது மக்களின் ஓய்வு நேரத்தை கணக்கில் கொள்வதில்லை. எனவே, பொருளாதார வல்லுநர்கள் பசுமை GDP (SEEA கட்டமைப்பு), தலா வருமானம் (பெயரளவு vs பிபிபி) மற்றும் பகிர்வு குறியீடுகள் (கினி குணகம் மற்றும் லாரன்ஸ் வளைகோடு) போன்ற மேம்பட்ட அளவீடுகளை அறிமுகப்படுத்தியுள்ளனர். பகுதி 3 அடிப்படை ஆண்டு மாற்றங்கள், NSO நிறுவன சீரமைப்புகள், சமூக நல முரண்பாடுகள் மற்றும் கூற்று வினாக்களுக்கான தேர்வு கட்டமைப்பை வழங்குகிறது."
+    },
+    "sec_gdp_and_economic_welfare": [
+      {
+        "title": "Why GDP is Not an Adequate Measure of Welfare",
+        "title_ta": "GDP ஏன் முழுமையான சமூக நல அளவீடு அல்ல?",
+        "points": {
+          "en": [
+            "Exclusion of Income Distribution: A nation may exhibit skyrocketing GDP while wealth concentrates among the top 1%, leaving the majority in poverty.",
+            "Negative Externalities Ignored: Pollution, environmental degradation, industrial accidents, and deforestation are not deducted; cleaning up pollution actually perversely increases GDP.",
+            "Non-Market Productive Transactions Excluded: Household labor, eldercare, community volunteering, and barter services that enhance quality of life are omitted.",
+            "Composition of Output: High expenditure on military arms, tobacco, or reconstruction after wars increases GDP without improving human living standards."
+          ],
+          "ta": [
+            "வருமானப் பகிர்வு புறக்கணிக்கப்படுதல்: ஒரு நாட்டின் GDP உயர்ந்தாலும், செல்வக் குவிப்பு முதல் 1% மக்களிடம் மட்டுமே இருந்து பெரும்பான்மையினர் வறுமையில் வாடக்கூடும்.",
+            "எதிர்மறை வெளிப்புற விளைவுகள் விடுபடுதல்: காற்று/நீர் மாசுபாடு, காடழிப்பு போன்ற சுற்றுச்சூழல் இழப்புகள் கழிக்கப்படுவதில்லை; மாறாக மாசுபாட்டை சரிசெய்யும் செலவுகள் GDP-யை கூட்டுகின்றன.",
+            "சந்தை சாரா உற்பத்தி விடுபடுதல்: இல்லத்தரசிகளின் உழைப்பு, முதியோர் பராமரிப்பு, சமூகத் தொண்டு போன்ற வாழ்க்கைத் தரத்தை உயர்த்தும் சேவைகள் சேர்க்கப்படுவதில்லை.",
+            "உற்பத்தியின் கட்டமைப்பு: ராணுவ ஆயுதங்கள், புகையிலை அல்லது போர் அழிவுக்குப் பிந்தைய மறுகட்டமைப்புக்கான செலவுகள் GDP-யை உயர்த்தினாலும் மனித வாழ்க்கைத் தரத்தை உயர்த்துவதில்லை."
+          ]
+        }
+      },
+      {
+        "title": "Per Capita Income (PCI) & Standard of Living",
+        "title_ta": "தலா வருமானம் (PCI) & வாழ்க்கைத் தரம்",
+        "points": {
+          "en": [
+            "Formula: Per Capita Income = National Income / Total Population (PCI = NNP_FC / Population). Reflects average output per citizen.",
+            "Distorting Effect of Population Growth: If National Income grows at 5% but population expands at 2%, the real growth in per capita income is only 3%.",
+            "Nominal vs PPP Comparison: India ranks as the 5th largest economy by nominal GDP (~$3.75T), but ranks 3rd globally in Purchasing Power Parity (PPP GDP) after China and the USA due to lower domestic price levels."
+          ],
+          "ta": [
+            "சூத்திரம்: தலா வருமானம் = தேசிய வருமானம் / மொத்த மக்கள் தொகை (PCI = NNP_FC / மக்கள் தொகை). இது ஒரு குடிமகனின் சராசரி வருவாயைக் காட்டுகிறது.",
+            "மக்கள் தொகை வளர்ச்சியின் தாக்கம்: தேசிய வருமானம் 5% வளர்ந்து மக்கள் தொகை 2% உயர்ந்தால், உண்மையான தலா வருமான வளர்ச்சி 3% மட்டுமே இருக்கும்.",
+            "பெயரளவு vs PPP ஒப்பீடு: பெயரளவு GDP-யில் இந்தியா உலகின் 5-வது பெரிய நாடாக இருந்தாலும் (~$3.75 டிரில்லியன்), குறைந்த உள்நாட்டு விலைகள் காரணமாக வாங்கும் திறன் சமநிலையில் (PPP GDP) சீனா, அமெரிக்காவுக்கு அடுத்தபடியாக 3-வது இடத்தில் உள்ளது."
+          ]
+        }
+      }
+    ],
+    "sec_green_gdp_environmental_accounting": [
+      {
+        "title": "Concept of Green GDP",
+        "title_ta": "பசுமை GDP (Green GDP) தத்துவம்",
+        "points": {
+          "en": [
+            "Definition: Green GDP is conventional GDP adjusted for the economic costs of environmental degradation and depletion of natural resource capital.",
+            "Formula: Green GDP = Traditional GDP - Net Natural Capital Depletion - Environmental Degradation Costs.",
+            "SEEA Framework: System of Environmental-Economic Accounting (SEEA) developed by the United Nations to integrate environmental and physical resource assets into standard national accounts."
+          ],
+          "ta": [
+            "வரையறை: பசுமை GDP என்பது வழக்கமான GDP-யிலிருந்து சுற்றுச்சூழல் சீரழிவு மற்றும் இயற்கை மூலதன இழப்பீட்டுக்கான பொருளாதார செலவுகளைக் கழித்து கணக்கிடப்படுவதாகும்.",
+            "சூத்திரம்: பசுமை GDP = வழக்கமான GDP - இயற்கை மூலதனக் குறைவு - சுற்றுச்சூழல் சீரழிவுச் செலவுகள்.",
+            "SEEA கட்டமைப்பு: ஐக்கிய நாடுகள் சபையால் உருவாக்கப்பட்ட சுற்றுச்சூழல்-பொருளாதாரக் கணக்கியல் அமைப்பு (SEEA); இது இயற்கை வளங்களை வழக்கமான தேசிய கணக்குகளுடன் இணைக்கிறது."
+          ]
+        }
+      },
+      {
+        "title": "Partha Dasgupta & Pronab Sen Committees",
+        "title_ta": "பார்த்தா தாஸ்குப்தா & பிரணாப் சென் குழுக்கள்",
+        "points": {
+          "en": [
+            "Sir Partha Dasgupta Review: Global benchmark demonstrating that inclusive wealth accounting must encompass Produced Capital, Human Capital, and Natural Capital.",
+            "Pronab Sen Committee (2013): Set up by MoSPI to develop a framework for Green National Accounts in India; recommended incorporating timber, forest carbon, and groundwater depletion into satellite accounts."
+          ],
+          "ta": [
+            "சர் பார்த்தா தாஸ்குப்தா ஆய்வு: பொருளாதார அளவீடுகளில் உற்பத்தி செய்யப்பட்ட மூலதனம், மனித மூலதனம் மற்றும் இயற்கை மூலதனம் ஆகிய மூன்றும் இணைக்கப்பட வேண்டும் என நிரூபித்த உலகளாவிய அறிக்கை.",
+            "பிரணாப் சென் குழு (2013): இந்தியாவில் பசுமை தேசிய கணக்குகளுக்கான கட்டமைப்பை உருவாக்க MoSPI-யால் அமைக்கப்பட்டது; மரங்கள், காடுகளின் கார்பன் மற்றும் நிலத்தடி நீர் குறைவை துணை கணக்குகளில் சேர்க்க பரிந்துரைத்தது."
+          ]
+        }
+      }
+    ],
+    "sec_income_inequality_metrics": [
+      {
+        "title": "Lorenz Curve Mechanics",
+        "title_ta": "லாரன்ஸ் வளைகோட்டின் இயங்குமுறை",
+        "points": {
+          "en": [
+            "Concept: Graphical representation of income distribution developed by Max O. Lorenz in 1905.",
+            "Line of Absolute Equality: A 45-degree diagonal line where every cumulative percentage of population receives the identical percentage of national income (e.g., bottom 20% earns 20% income).",
+            "Degree of Inequality: The further the actual Lorenz Curve bends away from the 45-degree diagonal line, the greater the degree of income inequality."
+          ],
+          "ta": [
+            "கருத்து: 1905-ல் மேக்ஸ் ஓ. லாரன்ஸ் என்பவரால் உருவாக்கப்பட்ட வருமானப் பகிர்வின் வரைபட விளக்கக் குறியீடு.",
+            "முழுமையான சமத்துவக் கோடு: 45-பாகை மூலைவிட்டக் கோடு; இதில் மக்கள் தொகையின் ஒவ்வொரு சதவீதத்தினரும் அதே சதவீத வருமானத்தைப் பெறுவர் (எ.கா: கீழ்மட்ட 20% மக்கள் 20% வருமானம் பெறுவர்).",
+            "ஏற்றத்தாழ்வின் அளவு: உண்மையான லாரன்ஸ் வளைகோடு இந்த 45-பாகை சமத்துவக் கோட்டிலிருந்து எவ்வளவு விலகி வளைகிறதோ, அந்தளவுக்கு வருமான ஏற்றத்தாழ்வு அதிகமாக இருக்கும்."
+          ]
+        }
+      },
+      {
+        "title": "Gini Coefficient Mechanics",
+        "title_ta": "கினி குணகத்தின் (Gini Coefficient) இயங்குமுறை",
+        "points": {
+          "en": [
+            "Mathematical Basis: Developed by Corrado Gini in 1912; measures the area between the 45-degree Line of Equality and the Lorenz Curve divided by the total area under the Line of Equality.",
+            "Scale Range: Values range from 0 to 1 (or 0% to 100%). Gini = 0 represents Perfect Income Equality; Gini = 1 represents Perfect Income Inequality (one person holds all national income).",
+            "Interpretation: A higher Gini value signifies worsening wealth and income concentration."
+          ],
+          "ta": [
+            "கணித அடிப்படை: 1912-ல் கொராடோ கினி என்பவரால் உருவாக்கப்பட்டது; சமத்துவக் கோட்டிற்கும் லாரன்ஸ் வளைகோட்டிற்கும் இடைப்பட்ட பரப்பை, சமத்துவக் கோட்டின் கீழ் உள்ள மொத்த பரப்பால் வகுத்துப் பெறப்படுகிறது.",
+            "அளவீட்டு வரம்பு: 0 முதல் 1 வரை (அல்லது 0% முதல் 100% வரை). கினி = 0 என்பது முழுமையான வருமானச் சமத்துவம்; கினி = 1 என்பது முழுமையான சமத்துவமின்மை (ஒருவரே அனைத்து வருமானத்தையும் வைத்திருப்பது).",
+            "விளக்கம்: கினி குணகத்தின் மதிப்பு உயர உயர, வருமானம் மற்றும் செல்வக் குவிப்பு மோசமடைவதைக் குறிக்கும்."
+          ]
+        }
+      }
+    ],
+    "sec_base_year_revisions_and_nso": [
+      {
+        "title": "Chronology of Base Year Revisions in India",
+        "title_ta": "இந்தியாவில் அடிப்படை ஆண்டு திருத்தங்களின் காலவரிசை",
+        "points": {
+          "en": [
+            "Evolutionary Series: 1948-49 -> 1960-61 -> 1970-71 -> 1980-81 -> 1993-94 -> 1999-2000 -> 2004-05 -> 2011-12.",
+            "Purpose of Periodic Revisions: Captures structural changes in the economy, new industries (IT, e-commerce), updated consumption baskets, and relative price shifts.",
+            "2015 Landmark Methodological Shift: Transitioned from GDP at Factor Cost to GVA at Basic Prices; incorporated MCA-21 database (Ministry of Corporate Affairs) for corporate sector coverage."
+          ],
+          "ta": [
+            "பரிணாமத் தொடர்: 1948-49 -> 1960-61 -> 1970-71 -> 1980-81 -> 1993-94 -> 1999-2000 -> 2004-05 -> 2011-12.",
+            "காலமுறை திருத்தத்தின் நோக்கம்: பொருளாதாரத்தில் ஏற்படும் கட்டமைப்பு மாற்றங்கள், புதிய தொழில்கள் (தகவல் தொழில்நுட்பம், இ-காமர்ஸ்), புதிய நுகர்வு முறைகள் மற்றும் விலை மாற்றங்களை உள்வாங்குவது.",
+            "2015 திருப்புமுனை மாற்றம்: காரணி விலையிலான GDP-யிலிருந்து அடிப்படை விலையிலான GVA-க்கு மாறியது; கார்ப்பரேட் துறையை விரிவாகக் கணக்கிட MCA-21 கார்ப்பரேட் தரவுத்தளத்தை இணைத்தது."
+          ]
+        }
+      },
+      {
+        "title": "National Statistical Office (NSO) Governance",
+        "title_ta": "தேசிய புள்ளியியல் அலுவலகம் (NSO) நிர்வாகக் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "NSO Merger (23 May 2019): Government merged the Central Statistics Office (CSO) and National Sample Survey Office (NSSO) into a unified National Statistical Office.",
+            "Administrative Oversight: Headed by the Secretary (Statistics and Programme Implementation) who acts as the Chief Statistician of India (CSI).",
+            "National Statistical Commission (NSC): Set up in 2005 based on C. Rangarajan Commission recommendations to serve as an autonomous watchdog over Indian official statistics."
+          ],
+          "ta": [
+            "NSO இணைப்பு (23 மே 2019): மத்திய புள்ளியியல் அலுவலகம் (CSO) மற்றும் தேசிய மாதிரி கணக்கெடுப்பு அலுவலகம் (NSSO) ஆகியவற்றை இணைத்து ஒருங்கிணைந்த NSO-வை அரசு உருவாக்கியது.",
+            "நிர்வாகத் தலைமை: இந்திய தலைமைப் புள்ளியியலாளராக (CSI) செயல்படும் புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் செயலாளர் தலைமை வகிக்கிறார்.",
+            "தேசிய புள்ளியியல் ஆணையம் (NSC): இந்திய அதிகாரப்பூர்வ புள்ளிவிவரங்களின் தன்னாட்சி கண்காணிப்பு அமைப்பாக சி. ரங்கராஜன் குழுவின் பரிந்துரையின்படி 2005-ல் அமைக்கப்பட்டது."
+          ]
+        }
+      }
+    ],
+    "sec_personal_and_disposable_income": [
+      {
+        "title": "Deriving Personal Income (PI) from National Income",
+        "title_ta": "தேசிய வருமானத்திலிருந்து தனிநபர் வருமானத்தை (PI) கணக்கிடுதல்",
+        "points": {
+          "en": [
+            "Concept: Personal Income is the aggregate income actually received by individuals and households from all sources before paying personal direct taxes.",
+            "Formula: Personal Income = Private Income - Undistributed Corporate Profits - Corporate Profit Tax; OR Personal Income = National Income - Undistributed Profits - Net Interest paid by households - Corporate Tax + Transfer Payments.",
+            "Key Difference: National income measures earnings created; Personal income measures income actually received (including transfer payments like pensions)."
+          ],
+          "ta": [
+            "கருத்து: தனிநபர் வருமானம் (PI) என்பது தனிநபர்கள் மற்றும் குடும்பங்கள் நேரடி வரிகளை செலுத்துவதற்கு முன்பு அனைத்து வழிகளிலும் உண்மையில் பெற்ற மொத்த வருமானமாகும்.",
+            "சூத்திரம்: தனிநபர் வருமானம் = தேசிய வருமானம் - பகிரப்படாத நிறுவன லாபம் - நிறுவன வரி - சமூக பாதுகாப்பு பங்களிப்பு + மாற்றுச் செலுத்துதல்கள் (அரசு ஓய்வூதியம், உதவித்தொகை).",
+            "முக்கிய வேறுபாடு: தேசிய வருமானம் என்பது உருவாக்கப்பட்ட உற்பத்தி வருவாயை அளவிடுகிறது; தனிநபர் வருமானம் என்பது உண்மையில் கைக்கு வந்த வருவாயை (மாற்றுச் செலுத்துதல்கள் உட்பட) அளவிடுகிறது."
+          ]
+        }
+      },
+      {
+        "title": "Personal Disposable Income (PDI)",
+        "title_ta": "தனிநபர் செலவிடத்தக்க வருமானம் (Personal Disposable Income)",
+        "points": {
+          "en": [
+            "Concept: The portion of Personal Income left over after paying personal direct income taxes and non-tax fines/fees to the government.",
+            "Formula: Personal Disposable Income = Personal Income - Direct Personal Taxes (Income Tax) - Miscellaneous Fines/Fees.",
+            "Usage Division: PDI is split entirely between Consumption (C) and Saving (S) [PDI = Consumption + Saving]."
+          ],
+          "ta": [
+            "கருத்து: தனிநபர் வருமானத்திலிருந்து அரசுக்கு செலுத்த வேண்டிய நேரடி வரிகள் (வருமான வரி) மற்றும் அபராதங்களைக் கழித்த பிறகு செலவு செய்ய மிஞ்சும் தொகை.",
+            "சூத்திரம்: தனிநபர் செலவிடத்தக்க வருமானம் = தனிநபர் வருமானம் - தனிநபர் நேரடி வரிகள் - நிர்வாக அபராதங்கள்/கட்டணங்கள்.",
+            "பயன்பாட்டுப் பிரிவு: செலவிடத்தக்க வருமானம் முழுமையாக நுகர்வு (C) மற்றும் சேமிப்பு (S) என இரண்டாகப் பிரிகிறது [PDI = நுகர்வு + சேமிப்பு]."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "comp_traditional_vs_green_gdp",
+        "title_en": "Traditional GDP vs Green GDP Comparison",
+        "title_ta": "பாரம்பரிய GDP vs பசுமை GDP ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Traditional GDP",
+          "Green GDP"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "பாரம்பரிய GDP",
+          "பசுமை GDP (Green GDP)"
+        ],
+        "rows_en": [
+          [
+            "Focus of Measurement",
+            "Quantitative monetary output of goods and services",
+            "Sustainable output adjusted for environmental and resource depletion"
+          ],
+          [
+            "Natural Capital Depletion",
+            "Completely ignored; depleting natural resources inflates GDP",
+            "Deducted as environmental depreciation costs"
+          ],
+          [
+            "Pollution Costs",
+            "Treats pollution cleanup expenditure as an addition to GDP",
+            "Deducts environmental degradation as an economic welfare loss"
+          ],
+          [
+            "Guiding International System",
+            "UN System of National Accounts (SNA)",
+            "UN System of Environmental-Economic Accounting (SEEA)"
+          ],
+          [
+            "Policy Objective",
+            "Maximizing gross economic production",
+            "Promoting long-term intergenerational sustainable development"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அளவீட்டின் மையம்",
+            "பொருட்கள் மற்றும் பணிகளின் அளவுசார் பண மதிப்பு",
+            "சுற்றுச்சூழல் மற்றும் வள இழப்பீட்டிற்கு சரிசெய்யப்பட்ட நிலையான உற்பத்தி"
+          ],
+          [
+            "இயற்கை மூலதன இழப்பு",
+            "முழுமையாக புறக்கணிக்கப்படுகிறது; வளங்களை அழிப்பது GDP-யை கூட்டுகிறது",
+            "சுற்றுச்சூழல் தேய்மானச் செலவாகக் கழிக்கப்படுகிறது"
+          ],
+          [
+            "மாசுபாட்டுச் செலவுகள்",
+            "மாசுபாட்டை சரிசெய்யும் செலவை GDP-யில் கூடுதலாக சேர்க்கிறது",
+            "சுற்றுச்சூழல் சீரழிவை பொருளாதார சமூக நல இழப்பாகக் கழிக்கிறது"
+          ],
+          [
+            "சர்வதேச கட்டமைப்பு",
+            "ஐக்கிய நாடுகள் தேசிய கணக்கியல் அமைப்பு (SNA)",
+            "சுற்றுச்சூழல்-பொருளாதாரக் கணக்கியல் அமைப்பு (SEEA)"
+          ],
+          [
+            "கொள்கை நோக்கம்",
+            "மொத்த பொருளாதார உற்பத்தியை அதிகப்படுத்துவது",
+            "நீண்டகால தலைமுறை கடந்த நிலையான வளர்ச்சியை அடைவது"
+          ]
+        ]
+      },
+      {
+        "id": "comp_lorenz_vs_gini",
+        "title_en": "Lorenz Curve vs Gini Coefficient Comparison",
+        "title_ta": "லாரன்ஸ் வளைகோடு vs கினி குணகம் ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Lorenz Curve",
+          "Gini Coefficient"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "லாரன்ஸ் வளைகோடு (Lorenz Curve)",
+          "கினி குணகம் (Gini Coefficient)"
+        ],
+        "rows_en": [
+          [
+            "Representation Format",
+            "Graphical two-dimensional curve (Cumulative Population vs Income)",
+            "Single mathematical numerical scalar index (0 to 1)"
+          ],
+          [
+            "Pioneering Economist",
+            "Max O. Lorenz (1905)",
+            "Corrado Gini (1912)"
+          ],
+          [
+            "Baseline Benchmark",
+            "45-degree diagonal Line of Absolute Equality",
+            "Numerical value 0 (Perfect Equality)"
+          ],
+          [
+            "Extreme Inequality",
+            "L-shaped curve running along bottom and right axes",
+            "Numerical value 1 (or 100%)"
+          ],
+          [
+            "Primary Advantage",
+            "Visually depicts income distribution patterns across population deciles",
+            "Provides a concise single figure for cross-country ranking"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "விளக்க வடிவம்",
+            "இருபரிமாண வரைபட வளைகோடு (மக்கள் தொகை சதவீதம் vs வருமான சதவீதம்)",
+            "ஒற்றை கணித எண் அளவீட்டு குறியீடு (0 முதல் 1 வரை)"
+          ],
+          [
+            "உருவாக்கிய வல்லுநர்",
+            "மேக்ஸ் ஓ. லாரன்ஸ் (1905)",
+            "கொராடோ கினி (1912)"
+          ],
+          [
+            "அடிப்படை ஒப்பீட்டுக் கோடு",
+            "45-பாகை மூலைவிட்ட முழுமையான சமத்துவக் கோடு",
+            "எண் மதிப்பு 0 (முழுமையான சமத்துவம்)"
+          ],
+          [
+            "தீவிர சமத்துவமின்மை",
+            "கீழ் மற்றும் வலது அச்சுகளில் இயங்கும் L-வடிவ வளைகோடு",
+            "எண் மதிப்பு 1 (அல்லது 100%)"
+          ],
+          [
+            "முதன்மையான நன்மை",
+            "மக்கள்தொகை பிரிவுகளிடையே வருமானப் பகிர்வை காட்சிப்படுத்துகிறது",
+            "நாடுகளுக்கிடையேயான ஒப்பீட்டுக்கு சுருக்கமான ஒற்றை எண்ணைத் தருகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "comp_national_vs_personal_disposable",
+        "title_en": "National Income vs Personal Income vs Personal Disposable Income",
+        "title_ta": "தேசிய வருமானம் vs தனிநபர் வருமானம் vs செலவிடத்தக்க வருமானம்",
+        "headers_en": [
+          "Attribute",
+          "National Income (NI / NNP_FC)",
+          "Personal Income (PI)",
+          "Personal Disposable Income (PDI)"
+        ],
+        "headers_ta": [
+          "பண்பு",
+          "தேசிய வருமானம் (NNP_FC)",
+          "தனிநபர் வருமானம் (PI)",
+          "செலவிடத்தக்க வருமானம் (PDI)"
+        ],
+        "rows_en": [
+          [
+            "Conceptual Scope",
+            "Net factor income earned by normal residents",
+            "Income actually received by individuals/households",
+            "Income left for spending after paying direct taxes"
+          ],
+          [
+            "Transfer Payments",
+            "Strictly EXCLUDED",
+            "INCLUDED (pensions, relief, scholarships)",
+            "INCLUDED in base, then taxes deducted"
+          ],
+          [
+            "Corporate Taxes & Undistributed Profits",
+            "INCLUDED as earned factor income",
+            "DEDUCTED (not distributed to households)",
+            "DEDUCTED"
+          ],
+          [
+            "Direct Personal Taxes",
+            "Not deducted (pre-tax measure)",
+            "Not deducted (pre-tax measure)",
+            "DEDUCTED (Income tax subtracted)"
+          ],
+          [
+            "Ultimate Division",
+            "Divided across factors (rent, wages, interest, profit)",
+            "Received by domestic households",
+            "Divided entirely between Consumption + Savings"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கோட்பாட்டு எல்லை",
+            "குடிமக்களால் ஈட்டப்பட்ட நிகர காரணி வருமானம்",
+            "குடும்பங்களால் உண்மையில் பெறப்பட்ட மொத்த வருமானம்",
+            "வரிகள் செலுத்திய பின் செலவிட குடும்பங்களிடம் எஞ்சிய தொகை"
+          ],
+          [
+            "மாற்றுச் செலுத்துதல்கள்",
+            "முற்றிலும் நீக்கப்படுகிறது",
+            "சேர்க்கப்படுகிறது (ஓய்வூதியம், உதவித்தொகை)",
+            "அடிப்படை வருமானத்தில் சேர்க்கப்பட்டு பின்னர் வரி கழிக்கப்படுகிறது"
+          ],
+          [
+            "நிறுவன வரிகள் & பகிரப்படாத லாபம்",
+            "ஈட்டப்பட்ட வருவாயாக சேர்க்கப்படுகிறது",
+            "கழிக்கப்படுகிறது (குடும்பங்களுக்கு வராததால்)",
+            "கழிக்கப்படுகிறது"
+          ],
+          [
+            "தனிநபர் நேரடி வரிகள்",
+            "கழிக்கப்படுவதில்லை",
+            "கழிக்கப்படுவதில்லை",
+            "கழிக்கப்படுகிறது (வருமான வரி கழிக்கப்படுகிறது)"
+          ],
+          [
+            "இறுதிப் பகிர்வு",
+            "உற்பத்தி காரணிகளுக்குப் பகிரப்படுகிறது",
+            "நாட்டின் குடும்பங்களால் பெறப்படுகிறது",
+            "முழுமையாக நுகர்வு + சேமிப்பு எனப் பிரிகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "comp_nominal_vs_ppp_pci",
+        "title_en": "Nominal Per Capita Income vs PPP Per Capita Income",
+        "title_ta": "பெயரளவு தலா வருமானம் vs வாங்கும் திறன் தலா வருமானம் (PPP)",
+        "headers_en": [
+          "Parameter",
+          "Nominal Per Capita Income",
+          "PPP Per Capita Income"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "பெயரளவு தலா வருமானம் (Nominal)",
+          "வாங்கும் திறன் தலா வருமானம் (PPP)"
+        ],
+        "rows_en": [
+          [
+            "Conversion Basis",
+            "Converted into US Dollars at market foreign exchange rates",
+            "Converted using Purchasing Power Parity exchange rates"
+          ],
+          [
+            "Price Level Adjustment",
+            "Does not account for difference in domestic price levels across countries",
+            "Eliminates price differences; reflects basket of goods a dollar can buy"
+          ],
+          [
+            "India's Relative Rank",
+            "Ranked lower (~140th globally) due to currency valuation",
+            "Ranked considerably higher due to lower living costs in India"
+          ],
+          [
+            "Usage Context",
+            "Measures global financial clout, debt-servicing, international purchasing",
+            "Measures actual material standard of living and domestic well-being"
+          ],
+          [
+            "Data Source",
+            "World Bank, IMF, UN National Accounts",
+            "World Bank International Comparison Program (ICP)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "நாணய மாற்று அடிப்படை",
+            "சந்தை வெளிநாட்டு நாணய மாற்று விகிதத்தில் டாலராக மாற்றப்படுகிறது",
+            "வாங்கும் திறன் சமநிலை (PPP) மாற்று விகிதத்தில் கணக்கிடப்படுகிறது"
+          ],
+          [
+            "விலை மட்ட சரிசெய்தல்",
+            "நாடுகளுக்கிடையேயான உள்ளூர் விலை வேறுபாடுகளை சரிசெய்வதில்லை",
+            "விலை வேறுபாடுகளை நீக்கி, ஒரு டாலருக்கு வாங்கக்கூடிய பொருட்களை காட்டுகிறது"
+          ],
+          [
+            "இந்தியாவின் உலகத் தரம்",
+            "நாணய மாற்று மதிப்பு காரணமாக பின்தங்கியுள்ளது (~140-வது இடம்)",
+            "இந்தியாவில் குறைந்த விலைவாசி நிலவுவதால் கணிசமான உயர் தரத்தில் உள்ளது"
+          ],
+          [
+            "பயன்பாட்டு சூழல்",
+            "சர்வதேச நிதி வலிமை, கடன் திருப்பிச் செலுத்தும் திறனை அளவிடுகிறது",
+            "குடிமக்களின் உண்மையான வாழ்க்கைத் தரம் மற்றும் நல்வாழ்வை அளவிடுகிறது"
+          ],
+          [
+            "தரவு வெளியீடு",
+            "உலக வங்கி, சர்வதேச நாணய நிதியம் (IMF)",
+            "உலக வங்கியின் சர்வதேச ஒப்பீட்டுத் திட்டம் (ICP)"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "National Income Application & Mastery (Part 3)",
+        "short_label": "NI Application",
+        "children": [
+          {
+            "title": "Welfare & Per Capita Income",
+            "short_label": "Welfare/PCI",
+            "children": [
+              {
+                "title": "GDP Limitations (Inequality, Externalities)",
+                "short_label": "Limitations"
+              },
+              {
+                "title": "PCI = NNP_FC / Total Population",
+                "short_label": "PCI"
+              },
+              {
+                "title": "Nominal GDP (5th) vs PPP GDP (3rd)",
+                "short_label": "Nominal/PPP"
+              }
+            ]
+          },
+          {
+            "title": "Green National Accounting",
+            "short_label": "Green GDP",
+            "children": [
+              {
+                "title": "Green GDP = GDP - Natural Depletion - Degradation",
+                "short_label": "Green GDP"
+              },
+              {
+                "title": "UN SEEA Accounting Framework",
+                "short_label": "SEEA"
+              },
+              {
+                "title": "Pronab Sen Committee on Green Accounts (2013)",
+                "short_label": "Pronab Sen"
+              }
+            ]
+          },
+          {
+            "title": "Income Distribution & Inequality",
+            "short_label": "Inequality",
+            "children": [
+              {
+                "title": "Lorenz Curve (Cumulative Population vs Income)",
+                "short_label": "Lorenz Curve"
+              },
+              {
+                "title": "Gini Coefficient (0 = Equality, 1 = Inequality)",
+                "short_label": "Gini Coeff"
+              }
+            ]
+          },
+          {
+            "title": "Institutional Reorganization & Metrics",
+            "short_label": "Reorganization",
+            "children": [
+              {
+                "title": "Base Year 2011-12 & MCA-21 Database",
+                "short_label": "Base 2011-12"
+              },
+              {
+                "title": "NSO Merger (CSO + NSSO, May 2019 under MoSPI)",
+                "short_label": "NSO Merger"
+              },
+              {
+                "title": "Personal Income (PI) & Disposable Income (PDI)",
+                "short_label": "PI & PDI"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "Gini Coefficient Scale Value Trap (0 vs 1)",
+        "points": {
+          "en": [
+            "Trap: Confusing whether Gini = 0 represents perfect equality or perfect inequality.",
+            "Correct Understanding: Gini Coefficient = 0 signifies PERFECT EQUALITY (everyone has identical income); Gini Coefficient = 1 signifies PERFECT INEQUALITY (one single person captures all national income).",
+            "Exam Tip: Lower Gini is better for social equity; higher Gini indicates severe wealth concentration."
+          ],
+          "ta": [
+            "பொறி: கினி குணகம் 0 என்பது முழுமையான சமத்துவமா அல்லது சமத்துவமின்மையா என்பதில் ஏற்படும் குழப்பம்.",
+            "சரியான புரிதல்: கினி குணகம் = 0 என்பது முழுமையான சமத்துவம் (அனைவருக்கும் சமமான வருமானம்); கினி குணகம் = 1 என்பது முழுமையான சமத்துவமின்மை (ஒருவரே அனைத்து செல்வத்தையும் வைத்திருப்பது).",
+            "தேர்வு குறிப்பு: குறைந்த கினி மதிப்பு சமூக சமத்துவத்தைக் குறிக்கும்; அதிக கினி மதிப்பு தீவிர செல்வக் குவிப்பைக் குறிக்கும்."
+          ]
+        }
+      },
+      {
+        "title": "India's Global GDP Ranking Trap (Nominal vs PPP)",
+        "points": {
+          "en": [
+            "Trap: Mixing up India's ranking as 5th vs 3rd largest economy.",
+            "Correct Understanding: By Nominal GDP (evaluated at market exchange rates), India is the 5th largest economy (behind US, China, Germany, Japan); by Purchasing Power Parity (PPP), India is the 3rd largest economy (behind China and the USA).",
+            "Exam Tip: Watch the question carefully for the phrase 'Nominal' (5th) versus 'Purchasing Power Parity / PPP' (3rd)."
+          ],
+          "ta": [
+            "பொறி: இந்தியா உலகின் 5-வது பெரிய பொருளாதாரமா அல்லது 3-வது பெரிய பொருளாதாரமா என்ற குழப்பம்.",
+            "சரியான புரிதல்: பெயரளவு GDP அடிப்படையில் (சந்தை நாணய மாற்று விகிதம்) இந்தியா 5-வது பெரிய நாடு (அமெரிக்கா, சீனா, ஜெர்மனி, ஜப்பானுக்கு அடுத்து); வாங்கும் திறன் சமநிலை (PPP) அடிப்படையில் இந்தியா 3-வது பெரிய நாடு (சீனா மற்றும் அமெரிக்காவுக்கு அடுத்து).",
+            "தேர்வு குறிப்பு: கேள்வியில் 'பெயரளவு' (Nominal) என்றால் 5-வது இடம்; 'வாங்கும் திறன் சமநிலை' (PPP) என்றால் 3-வது இடம்."
+          ]
+        }
+      },
+      {
+        "title": "Personal Income vs National Income Transfer Payment Trap",
+        "points": {
+          "en": [
+            "Trap: Believing Personal Income is always smaller than National Income.",
+            "Correct Understanding: Personal Income CAN be larger than National Income during times of massive government welfare transfers, because Personal Income INCLUDES government transfer payments (subsidies, relief, pensions), which are excluded from National Income.",
+            "Exam Tip: National Income = Earned factor income; Personal Income = National Income - Undistributed Profits - Corporate Tax + Transfer Payments."
+          ],
+          "ta": [
+            "பொறி: தனிநபர் வருமானம் எப்போதும் தேசிய வருமானத்தை விட குறைவாகவே இருக்கும் என நம்புவது.",
+            "சரியான புரிதல்: அரசு மிகப்பெரிய சமூக நல உதவித்தொகைகளை வழங்கும் காலங்களில் தனிநபர் வருமானம் தேசிய வருமானத்தை விட அதிகமாக இருக்கக்கூடும்; ஏனெனில் தனிநபர் வருமானம் மாற்றுச் செலுத்துதல்களை (ஓய்வூதியம், உதவித்தொகை) உள்ளடக்கியது, ஆனால் தேசிய வருமானம் அதை சேர்க்காது.",
+            "தேர்வு குறிப்பு: தேசிய வருமானம் = ஈட்டிய காரணி ஊதியம்; தனிநபர் வருமானம் = தேசிய வருமானம் - பகிரப்படாத லாபம் - நிறுவன வரி + மாற்றுச் செலுத்துதல்கள்."
+          ]
+        }
+      },
+      {
+        "title": "National Statistical Office (NSO) Composition Trap",
+        "points": {
+          "en": [
+            "Trap: Thinking CSO was abolished or replaced by an outside private body.",
+            "Correct Understanding: The Central Statistics Office (CSO) and National Sample Survey Office (NSSO) were merged on 23 May 2019 to form the unified National Statistical Office (NSO) under the Ministry of Statistics and Programme Implementation (MoSPI).",
+            "Exam Tip: The compiling agency for National Accounts in India today is NSO (National Statistical Office)."
+          ],
+          "ta": [
+            "பொறி: சிஎஸ்ஓ அமைப்பு கலைக்கப்பட்டு விட்டது அல்லது தனியார் அமைப்பால் மாற்றப்பட்டது என நினைப்பது.",
+            "சரியான புரிதல்: மத்திய புள்ளியியல் அலுவலகம் (CSO) மற்றும் தேசிய மாதிரி கணக்கெடுப்பு அலுவலகம் (NSSO) ஆகிய இரண்டு அரசு அமைப்புகளும் 23 மே 2019 அன்று இணைக்கப்பட்டு MoSPI அமைச்சகத்தின் கீழ் ஒருங்கிணைந்த தேசிய புள்ளியியல் அலுவலகமாக (NSO) செயல்படுகின்றன.",
+            "தேர்வு குறிப்பு: தற்போதைய இந்திய தேசிய கணக்குகளை வெளியிடும் அதிகாரப்பூர்வ அமைப்பு NSO ஆகும்."
+          ]
+        }
+      },
+      {
+        "title": "Personal Disposable Income Usage Division Trap",
+        "points": {
+          "en": [
+            "Trap: Assuming disposable income includes money paid in personal income tax.",
+            "Correct Understanding: Personal Disposable Income is strictly post-tax income (Personal Income minus Direct Personal Taxes). It can only be allocated into two macroeconomic avenues: Consumption (C) and Saving (S).",
+            "Exam Tip: PDI = Consumption + Saving; Income Tax is already deducted."
+          ],
+          "ta": [
+            "பொறி: செலவிடத்தக்க வருமானத்தில் நாம் செலுத்தும் வருமான வரியும் அடங்கும் என தவறாக எண்ணுவது.",
+            "சரியான புரிதல்: தனிநபர் செலவிடத்தக்க வருமானம் (PDI) என்பது வரிகளை செலுத்திய பின் எஞ்சிய நிகரத் தொகையாகும் (தனிநபர் வருமானம் - நேரடி வரிகள்). இது முழுமையாக நுகர்வு (C) மற்றும் சேமிப்பு (S) என இரண்டாக மட்டுமே பிரியும்.",
+            "தேர்வு குறிப்பு: PDI = நுகர்வு + சேமிப்பு; இதில் வருமான வரி ஏற்கனவே கழிக்கப்பட்டுவிட்டது."
+          ]
+        }
+      },
+      {
+        "title": "Green GDP Accounting Authority & Pronab Sen Committee Trap",
+        "points": {
+          "en": [
+            "Trap: Confusing who headed the committee on Green National Accounts in India.",
+            "Correct Understanding: In 2013, the Ministry of Statistics and Programme Implementation (MoSPI) constituted the committee on Green National Accounts in India chaired by Dr. Pronab Sen (former Chief Statistician of India).",
+            "Exam Tip: Dr. Pronab Sen Committee = Green National Accounts in India (2013); Sir Partha Dasgupta = Global Economics of Biodiversity (2021)."
+          ],
+          "ta": [
+            "பொறி: இந்தியாவில் பசுமை தேசிய கணக்குகளுக்கான குழுவின் தலைவரை தவறாகக் குறிப்பிடுவது.",
+            "சரியான புரிதல்: 2013-ல் புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தால் (MoSPI) அமைக்கப்பட்ட பசுமை தேசிய கணக்குகள் குழுவின் தலைவர் டாக்டர் பிரணாப் சென் (இந்தியாவின் முன்னாள் தலைமைப் புள்ளியியலாளர்) ஆவார்.",
+            "தேர்வு குறிப்பு: டாக்டர் பிரணாப் சென் குழு = பசுமை தேசிய கணக்குகள் (2013); சர் பார்த்தா தாஸ்குப்தா = பல்லுயிர் பொருளாதார உலகளாவிய ஆய்வு (2021)."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Personal Income = National Income - Undistributed Corporate Profits - Corporate Tax - Social Security Contributions + Transfer Payments.",
+        "Personal Disposable Income (PDI) = Personal Income - Direct Personal Taxes - Fines/Fees.",
+        "Personal Disposable Income is completely exhausted by Consumption and Savings (PDI = C + S).",
+        "Green GDP = GDP - Depreciation of Natural Capital - Environmental Degradation Costs.",
+        "System of Environmental-Economic Accounting (SEEA) is the UN international standard for environmental accounts.",
+        "The Pronab Sen Committee (2013) designed the roadmap for Green National Accounting in India.",
+        "Lorenz Curve was developed by Max O. Lorenz in 1905 to visually map income inequality.",
+        "Gini Coefficient was formulated by Corrado Gini in 1912; scales from 0 (perfect equality) to 1 (perfect inequality).",
+        "India is the 5th largest economy by Nominal GDP and 3rd largest by Purchasing Power Parity (PPP GDP).",
+        "On 23 May 2019, CSO and NSSO were formally merged to create the National Statistical Office (NSO).",
+        "National Statistical Commission (NSC) was constituted in 2005 on the recommendation of C. Rangarajan Commission.",
+        "The 2015 base revision incorporated the MCA-21 database of the Ministry of Corporate Affairs."
+      ],
+      "ta": [
+        "தனிநபர் வருமானம் = தேசிய வருமானம் - பகிரப்படாத நிறுவன லாபம் - நிறுவன வரி - சமூக பாதுகாப்பு பங்களிப்பு + மாற்றுச் செலுத்துதல்கள்.",
+        "தனிநபர் செலவிடத்தக்க வருமானம் (PDI) = தனிநபர் வருமானம் - தனிநபர் நேரடி வரிகள் - அபராதங்கள்.",
+        "செலவிடத்தக்க வருமானம் முழுமையாக நுகர்வு மற்றும் சேமிப்பு என இரண்டாக மட்டுமே பிரிகிறது (PDI = C + S).",
+        "பசுமை GDP = GDP - இயற்கை மூலதன தேய்மானம் - சுற்றுச்சூழல் சீரழிவுச் செலவுகள்.",
+        "சுற்றுச்சூழல்-பொருளாதாரக் கணக்கியல் அமைப்பு (SEEA) என்பது சுற்றுச்சூழல் கணக்குகளுக்கான ஐநா சர்வதேச தரநிலையாகும்.",
+        "இந்தியாவில் பசுமை கணக்கியலுக்கான வழிகாட்டியை டாக்டர் பிரணாப் சென் குழு (2013) உருவாக்கியது.",
+        "வருமான ஏற்றத்தாழ்வை வரைபடமாக விளக்க 1905-ல் மேக்ஸ் ஓ. லாரன்ஸ் என்பவரால் லாரன்ஸ் வளைகோடு உருவாக்கப்பட்டது.",
+        "கினி குணகம் 1912-ல் கொராடோ கினி என்பவரால் உருவாக்கப்பட்டது; இதன் அளவு 0 (முழு சமத்துவம்) முதல் 1 (முழு சமத்துவமின்மை) வரை இருக்கும்.",
+        "இந்தியா பெயரளவு GDP-யில் 5-வது இடத்திலும், வாங்கும் திறன் சமநிலையில் (PPP) 3-வது இடத்திலும் உள்ளது.",
+        "மே 23, 2019 அன்று சிஎஸ்ஓ மற்றும் என்எஸ்எஸ்ஓ ஆகியவற்றை இணைத்து தேசிய புள்ளியியல் அலுவலகம் (NSO) உருவாக்கப்பட்டது.",
+        "சி. ரங்கராஜன் குழு பரிந்துரையின்படி 2005-ல் தேசிய புள்ளியியல் ஆணையம் (NSC) அமைக்கப்பட்டது.",
+        "2015 அடிப்படை ஆண்டு திருத்தத்தில் கார்ப்பரேட் விவகாரங்கள் அமைச்சகத்தின் MCA-21 தரவுத்தளம் இணைக்கப்பட்டது."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "GDP measures economic output volume, but does not capture income distribution or human welfare.",
+        "Negative externalities like pollution and deforestation are omitted from traditional GDP.",
+        "Per Capita Income (PCI = NNP_FC / Total Population) reflects average income per citizen.",
+        "India ranks 5th globally in Nominal GDP and 3rd in Purchasing Power Parity (PPP GDP).",
+        "Green GDP deducts natural capital depletion and environmental degradation from traditional GDP.",
+        "UN SEEA framework guides environmental-economic accounting globally.",
+        "Lorenz Curve plots cumulative percentage of population against cumulative percentage of income.",
+        "Gini Coefficient ranges from 0 (perfect equality) to 1 (perfect inequality).",
+        "Personal Income includes transfer payments, whereas National Income excludes them.",
+        "Personal Disposable Income equals Consumption plus Saving after paying income taxes."
+      ],
+      "ta": [
+        "GDP என்பது பொருளாதார உற்பத்தியின் அளவை அளவிடுகிறது, ஆனால் வருமானப் பகிர்வு அல்லது மனித நல்வாழ்வை அளவிடுவதில்லை.",
+        "மாசுபாடு மற்றும் காடழிப்பு போன்ற எதிர்மறை வெளிப்புற விளைவுகள் பாரம்பரிய GDP-யில் தவிர்க்கப்படுகின்றன.",
+        "தலா வருமானம் (PCI = NNP_FC / மொத்த மக்கள் தொகை) ஒரு குடிமகனின் சராசரி வருவாயைக் காட்டுகிறது.",
+        "இந்தியா பெயரளவு GDP-யில் உலக அளவில் 5-வது இடத்திலும், வாங்கும் திறன் சமநிலையில் (PPP) 3-வது இடத்திலும் உள்ளது.",
+        "பசுமை GDP பாரம்பரிய GDP-யிலிருந்து இயற்கை மூலதன இழப்பு மற்றும் சுற்றுச்சூழல் சீரழிவைக் கழிக்கிறது.",
+        "ஐநா SEEA கட்டமைப்பு உலகளவில் சுற்றுச்சூழல்-பொருளாதாரக் கணக்கியலுக்கு வழிகாட்டுகிறது.",
+        "லாரன்ஸ் வளைகோடு மக்கள்தொகை சதவீதத்தையும் அவர்கள் பெறும் வருமான சதவீதத்தையும் வரைபடமாகக் காட்டுகிறது.",
+        "கினி குணகம் 0 (முழுமையான சமத்துவம்) முதல் 1 (முழுமையான சமத்துவமின்மை) வரை அளவிடப்படுகிறது.",
+        "தனிநபர் வருமானம் மாற்றுச் செலுத்துதல்களை உள்ளடக்கியது; ஆனால் தேசிய வருமானம் அதை விலக்குகிறது.",
+        "செலவிடத்தக்க வருமானம் என்பது வருமான வரி செலுத்திய பிறகு நுகர்வு மற்றும் சேமிப்பின் கூட்டுத்தொகையாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "card_ni3_1",
+        "front_en": "What is the formula for Per Capita Income (PCI)?",
+        "front_ta": "தலா வருமானத்தை (PCI) கணக்கிடுவதற்கான சூத்திரம் என்ன?",
+        "back_en": "Per Capita Income = National Income (NNP_FC) / Total Population.",
+        "back_ta": "தலா வருமானம் = தேசிய வருமானம் (NNP_FC) / மொத்த மக்கள் தொகை."
+      },
+      {
+        "id": "card_ni3_2",
+        "front_en": "What is India's global rank in Nominal GDP versus PPP GDP?",
+        "front_ta": "பெயரளவு GDP மற்றும் PPP GDP-யில் இந்தியாவின் உலகளாவிய தரவரிசை என்ன?",
+        "back_en": "5th largest in Nominal GDP; 3rd largest in Purchasing Power Parity (PPP) GDP.",
+        "back_ta": "பெயரளவு GDP-யில் 5-வது பெரிய நாடு; வாங்கும் திறன் சமநிலையில் (PPP) 3-வது பெரிய நாடு."
+      },
+      {
+        "id": "card_ni3_3",
+        "front_en": "What is Green GDP?",
+        "front_ta": "பசுமை GDP (Green GDP) என்றால் என்ன?",
+        "back_en": "Traditional GDP adjusted for natural resource depletion and environmental degradation costs.",
+        "back_ta": "பாரம்பரிய GDP-யிலிருந்து இயற்கை வள இழப்பு மற்றும் சுற்றுச்சூழல் சீரழிவுச் செலவுகளைக் கழித்துப் பெறப்படும் மதிப்பு."
+      },
+      {
+        "id": "card_ni3_4",
+        "front_en": "Who chaired the 2013 MoSPI Committee on Green National Accounts in India?",
+        "front_ta": "2013-ல் இந்தியாவில் பசுமை தேசிய கணக்குகள் குறித்து அமைக்கப்பட்ட MoSPI குழுவின் தலைவர் யார்?",
+        "back_en": "Dr. Pronab Sen (former Chief Statistician of India).",
+        "back_ta": "டாக்டர் பிரணாப் சென் (இந்தியாவின் முன்னாள் தலைமைப் புள்ளியியலாளர்)."
+      },
+      {
+        "id": "card_ni3_5",
+        "front_en": "Who developed the Lorenz Curve and in which year?",
+        "front_ta": "லாரன்ஸ் வளைகோட்டை உருவாக்கியவர் யார், எந்த ஆண்டு?",
+        "back_en": "Max O. Lorenz in 1905 to visually represent income inequality.",
+        "back_ta": "1905-ல் மேக்ஸ் ஓ. லாரன்ஸ் என்பவரால் வருமான ஏற்றத்தாழ்வை விளக்க உருவாக்கப்பட்டது."
+      },
+      {
+        "id": "card_ni3_6",
+        "front_en": "What does a Gini Coefficient of 0 signify?",
+        "front_ta": "கினி குணகம் 0 என்பது எதனைக் குறிக்கிறது?",
+        "back_en": "Perfect income equality (every citizen has identical income).",
+        "back_ta": "முழுமையான வருமானச் சமத்துவம் (அனைத்து குடிமக்களும் சம வருமானம் பெற்றுள்ளனர்)."
+      },
+      {
+        "id": "card_ni3_7",
+        "front_en": "What does a Gini Coefficient of 1 signify?",
+        "front_ta": "கினி குணகம் 1 என்பது எதனைக் குறிக்கிறது?",
+        "back_en": "Perfect income inequality (one individual captures all the national income).",
+        "back_ta": "முழுமையான சமத்துவமின்மை (ஒருவரே நாட்டின் மொத்த வருமானத்தையும் பெற்றுள்ளார்)."
+      },
+      {
+        "id": "card_ni3_8",
+        "front_en": "How is Personal Income (PI) derived from National Income?",
+        "front_ta": "தேசிய வருமானத்திலிருந்து தனிநபர் வருமானம் (PI) எவ்வாறு பெறப்படுகிறது?",
+        "back_en": "PI = National Income - Undistributed Corporate Profits - Corporate Tax - Social Security Contributions + Transfer Payments.",
+        "back_ta": "PI = தேசிய வருமானம் - பகிரப்படாத நிறுவன லாபம் - நிறுவன வரி - சமூகப் பாதுகாப்பு பங்களிப்பு + மாற்றுச் செலுத்துதல்கள்."
+      },
+      {
+        "id": "card_ni3_9",
+        "front_en": "What is Personal Disposable Income (PDI)?",
+        "front_ta": "தனிநபர் செலவிடத்தக்க வருமானம் (PDI) என்றால் என்ன?",
+        "back_en": "PDI = Personal Income - Direct Personal Taxes (Income Tax) - Miscellaneous Administrative Fines.",
+        "back_ta": "PDI = தனிநபர் வருமானம் - தனிநபர் நேரடி வரிகள் (வருமான வரி) - அபராதங்கள்."
+      },
+      {
+        "id": "card_ni3_10",
+        "front_en": "What are the two uses of Personal Disposable Income (PDI)?",
+        "front_ta": "தனிநபர் செலவிடத்தக்க வருமானம் (PDI) எந்த இரு வழிகளில் பயன்படுத்தப்படுகிறது?",
+        "back_en": "Consumption (C) and Saving (S) [PDI = C + S].",
+        "back_ta": "நுகர்வு (C) மற்றும் சேமிப்பு (S) [PDI = C + S]."
+      },
+      {
+        "id": "card_ni3_11",
+        "front_en": "When were the CSO and NSSO merged into the National Statistical Office (NSO)?",
+        "front_ta": "CSO மற்றும் NSSO ஆகிய அமைப்புகள் எந்த நாளில் NSO ஆக இணைக்கப்பட்டன?",
+        "back_en": "23 May 2019 under the Ministry of Statistics and Programme Implementation (MoSPI).",
+        "back_ta": "மே 23, 2019 அன்று புள்ளியியல் மற்றும் திட்ட அமலாக்க அமைச்சகத்தின் (MoSPI) கீழ் இணைக்கப்பட்டன."
+      },
+      {
+        "id": "card_ni3_12",
+        "front_en": "Which major database was incorporated during the 2015 national accounts base revision to 2011-12?",
+        "front_ta": "2015-ல் அடிப்படை ஆண்டு 2011-12 ஆக மாற்றப்பட்ட போது இணைக்கப்பட்ட முக்கிய கார்ப்பரேட் தரவுத்தளம் எது?",
+        "back_en": "MCA-21 database of the Ministry of Corporate Affairs.",
+        "back_ta": "கார்ப்பரேட் விவகாரங்கள் அமைச்சகத்தின் MCA-21 தரவுத்தளம்."
+      }
+    ]
+  }
+}
