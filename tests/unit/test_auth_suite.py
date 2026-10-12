@@ -425,7 +425,86 @@ class TestAuthSuite(unittest.TestCase):
         mock_supabase.auth.sign_out.assert_called_once()
         mock_clear_session.assert_called_once()
 
+    # 38. regression: recovery redirect -> callback processing -> auth_page=="reset_password" -> reset UI reachable
+    @patch("core.auth.supabase")
+    def test_recovery_redirect_callback_to_reset_page_flow(self, mock_supabase):
+        import streamlit as st
+        from ui.reset_password import render_reset_password_page
+
+        mock_session = MagicMock()
+        mock_response = MagicMock(session=mock_session, user=MagicMock())
+        mock_supabase.auth.set_session.return_value = mock_response
+        mock_supabase.auth.get_session.return_value = mock_session
+        mock_supabase.auth.update_user.return_value = MagicMock()
+
+        class MockQueryParams(dict):
+            def clear(self):
+                super().clear()
+
+        synthetic_params = MockQueryParams({
+            "access_token": "SYNTHETIC_REDACTED_ACCESS_TOKEN",
+            "refresh_token": "SYNTHETIC_REDACTED_REFRESH_TOKEN",
+            "type": "recovery",
+        })
+        session_store = {}
+
+        with patch("streamlit.query_params", synthetic_params), \
+             patch("streamlit.session_state", session_store):
+            # Step 1: Callback processing
+            handled = handle_recovery_callback()
+            self.assertTrue(handled)
+            self.assertTrue(session_store.get("recovery_session_active"))
+            self.assertEqual(session_store.get("auth_page"), "reset_password")
+            self.assertIn("recovery_tokens", session_store)
+            self.assertEqual(len(synthetic_params), 0)
+
+            # Step 2: Verify reset UI is reached and form is rendered
+            mock_form = MagicMock()
+            mock_form.__enter__ = MagicMock(return_value=mock_form)
+            mock_form.__exit__ = MagicMock(return_value=None)
+            with patch("streamlit.form", return_value=mock_form), \
+                 patch("streamlit.text_input") as mock_input, \
+                 patch("streamlit.form_submit_button", return_value=False), \
+                 patch("streamlit.button", return_value=False):
+                render_reset_password_page()
+                mock_input.assert_any_call("New Password", type="password", placeholder="At least 8 characters")
+                mock_input.assert_any_call("Confirm New Password", type="password", placeholder="Re-enter new password")
+
+            # Step 3: Verify update password succeeds and cleans recovery tokens
+            success, msg = update_password("NewValidPassword123", "NewValidPassword123")
+            self.assertTrue(success)
+            self.assertNotIn("recovery_tokens", session_store)
+
+    # 39. regression: recovery redirect with error fragment -> auth_page=="reset_password" with friendly error
+    def test_recovery_redirect_error_callback_flow(self):
+        import streamlit as st
+        from ui.reset_password import render_reset_password_page
+
+        class MockQueryParams(dict):
+            def clear(self):
+                super().clear()
+
+        synthetic_error_params = MockQueryParams({
+            "error": "access_denied",
+            "error_code": "otp_expired",
+            "error_description": "Email link is invalid or has expired",
+        })
+        session_store = {}
+
+        with patch("streamlit.query_params", synthetic_error_params), \
+             patch("streamlit.session_state", session_store):
+            handled = handle_recovery_callback()
+            self.assertTrue(handled)
+            self.assertEqual(session_store.get("auth_page"), "reset_password")
+            self.assertIn("invalid or has expired", session_store.get("recovery_error", ""))
+
+            with patch("streamlit.error") as mock_error, \
+                 patch("streamlit.button", return_value=False):
+                render_reset_password_page()
+                mock_error.assert_called_with("This password reset link is invalid or has expired. Please request a new reset link.")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 

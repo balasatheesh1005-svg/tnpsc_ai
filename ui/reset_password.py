@@ -14,6 +14,7 @@ def render_reset_password_page():
         if st.button("Back to Login", type="primary", use_container_width=True):
             logout()
             st.session_state.pop("recovery_error", None)
+            st.session_state.pop("recovery_tokens", None)
             st.session_state.pop("recovery_session_active", None)
             st.session_state["auth_page"] = "login"
             st.rerun()
@@ -26,6 +27,7 @@ def render_reset_password_page():
         if st.button("Proceed to Login", type="primary", use_container_width=True):
             logout()
             st.session_state.pop("password_reset_success", None)
+            st.session_state.pop("recovery_tokens", None)
             st.session_state.pop("recovery_session_active", None)
             st.session_state.pop("recovery_error", None)
             st.session_state["auth_page"] = "login"
@@ -39,6 +41,7 @@ def render_reset_password_page():
             logout()
             st.session_state.pop("recovery_error", None)
             st.session_state.pop("password_reset_success", None)
+            st.session_state.pop("recovery_tokens", None)
             st.session_state.pop("recovery_session_active", None)
             st.session_state["auth_page"] = "login"
             st.rerun()
@@ -78,6 +81,7 @@ def render_reset_password_page():
 
     if st.button("Back to Login", type="tertiary", use_container_width=True):
         logout()
+        st.session_state.pop("recovery_tokens", None)
         st.session_state.pop("recovery_session_active", None)
         st.session_state.pop("recovery_error", None)
         st.session_state["auth_page"] = "login"

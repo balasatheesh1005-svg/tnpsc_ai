@@ -302,6 +302,16 @@ def update_password(new_password, confirm_password=None):
     except Exception:
         session = None
     if not session:
+        try:
+            import streamlit as st
+
+            tokens = st.session_state.get("recovery_tokens")
+            if tokens and tokens.get("access_token") and tokens.get("refresh_token"):
+                response = supabase.auth.set_session(tokens["access_token"], tokens["refresh_token"])
+                session = _auth_session(response)
+        except Exception:
+            session = None
+    if not session:
         return False, "This password reset link is invalid or has expired. Please request a new reset link."
 
     try:
@@ -311,6 +321,12 @@ def update_password(new_password, confirm_password=None):
 
     try:
         supabase.auth.sign_out()
+    except Exception:
+        pass
+    try:
+        import streamlit as st
+
+        st.session_state.pop("recovery_tokens", None)
     except Exception:
         pass
     clear_auth_session()
@@ -402,6 +418,10 @@ def handle_recovery_callback():
             session = _auth_session(response)
             if session or getattr(response, "user", None):
                 st.session_state["recovery_session_active"] = True
+                st.session_state["recovery_tokens"] = {
+                    "access_token": access_token,
+                    "refresh_token": refresh_token,
+                }
                 st.session_state["auth_page"] = "reset_password"
                 return True
             st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
@@ -422,6 +442,14 @@ def handle_recovery_callback():
 
 
 def logout():
+    try:
+        import streamlit as st
+
+        st.session_state.pop("recovery_tokens", None)
+        st.session_state.pop("recovery_session_active", None)
+        st.session_state.pop("recovery_error", None)
+    except Exception:
+        pass
     try:
         supabase.auth.sign_out()
     except Exception:

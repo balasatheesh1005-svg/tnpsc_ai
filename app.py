@@ -128,6 +128,33 @@ restore_auth_session()
 
 
 if not is_authenticated():
+    st.html(
+        """
+        <script>
+        (function() {
+            var hash = window.location.hash;
+            if (!hash) return;
+            var clean = hash.startsWith('#') ? hash.substring(1) : hash;
+            if (!clean) return;
+            var params = new URLSearchParams(clean);
+            var isRecovery = params.get('type') === 'recovery' ||
+                             (params.has('access_token') && params.get('type') === 'recovery') ||
+                             params.has('otp_expired') ||
+                             params.get('error_code') === 'otp_expired' ||
+                             (params.has('error') && (params.get('type') === 'recovery' || clean.indexOf('recovery') !== -1 || clean.indexOf('otp') !== -1 || params.has('error_description')));
+            if (isRecovery) {
+                var search = new URLSearchParams(window.location.search);
+                params.forEach(function(val, key) {
+                    search.set(key, val);
+                });
+                var newUrl = window.location.pathname + '?' + search.toString();
+                window.location.replace(newUrl);
+            }
+        })();
+        </script>
+        """,
+        unsafe_allow_javascript=True,
+    )
     st.markdown(
         """
         <style>
@@ -273,11 +300,6 @@ if not is_authenticated():
         st.markdown(
             """
             <div class="login-container">
-            <script>
-            if (window.location.hash && (window.location.hash.includes('type=recovery') || window.location.hash.includes('otp_expired') || (window.location.hash.includes('error=') && window.location.hash.includes('recovery')))) {
-                window.location.replace(window.location.pathname + '?' + window.location.hash.substring(1));
-            }
-            </script>
             """,
             unsafe_allow_html=True,
         )
