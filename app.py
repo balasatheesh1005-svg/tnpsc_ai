@@ -11,12 +11,13 @@ from ui.components.cards import (
     render_card_styles,
 )
 from ui.theme import render_theme_css
-from core.auth import logout, restore_auth_session
+from core.auth import handle_recovery_callback, logout, restore_auth_session
 from core.session import is_authenticated, reset_app_state_for_logout
 from core.supabase_client import get_recent_error_message
 from core.performance import reset_metrics, start_timer, end_timer, record_render, print_summary, track_session, DEV_MODE
 from ui.login import render_login_page
 from ui.signup import render_signup_page
+from ui.reset_password import render_reset_password_page
 
 
 
@@ -121,6 +122,7 @@ from ui.navigation_v2.topic_hub import render_topic_hub
 from core.user_context import UserContext
 
 # ---------------- AUTHENTICATION ----------------
+handle_recovery_callback()
 restore_auth_session()
 
 
@@ -268,7 +270,17 @@ if not is_authenticated():
     )
 
     with st.container():
-        st.markdown('<div class="login-container">', unsafe_allow_html=True)
+        st.markdown(
+            """
+            <div class="login-container">
+            <script>
+            if (window.location.hash && (window.location.hash.includes('type=recovery') || window.location.hash.includes('otp_expired') || (window.location.hash.includes('error=') && window.location.hash.includes('recovery')))) {
+                window.location.replace(window.location.pathname + '?' + window.location.hash.substring(1));
+            }
+            </script>
+            """,
+            unsafe_allow_html=True,
+        )
 
         # SECTION 1 – LOGO & BRANDING
         col1, col2, col3 = st.columns([1, 2, 1])
@@ -312,28 +324,31 @@ if not is_authenticated():
         if "auth_page" not in st.session_state:
             st.session_state["auth_page"] = "login"
 
-        login_tab, signup_tab = st.columns(2)
-        with login_tab:
-            if st.button(
-                "Login",
-                use_container_width=True,
-                disabled=st.session_state["auth_page"] == "login",
-            ):
-                st.session_state["auth_page"] = "login"
-                st.rerun()
-        with signup_tab:
-            if st.button(
-                "Sign Up",
-                use_container_width=True,
-                disabled=st.session_state["auth_page"] == "signup",
-            ):
-                st.session_state["auth_page"] = "signup"
-                st.rerun()
-
-        if st.session_state["auth_page"] == "signup":
-            render_signup_page()
+        if st.session_state["auth_page"] == "reset_password":
+            render_reset_password_page()
         else:
-            render_login_page()
+            login_tab, signup_tab = st.columns(2)
+            with login_tab:
+                if st.button(
+                    "Login",
+                    use_container_width=True,
+                    disabled=st.session_state["auth_page"] == "login",
+                ):
+                    st.session_state["auth_page"] = "login"
+                    st.rerun()
+            with signup_tab:
+                if st.button(
+                    "Sign Up",
+                    use_container_width=True,
+                    disabled=st.session_state["auth_page"] == "signup",
+                ):
+                    st.session_state["auth_page"] = "signup"
+                    st.rerun()
+
+            if st.session_state["auth_page"] == "signup":
+                render_signup_page()
+            else:
+                render_login_page()
 
         st.markdown("</div>", unsafe_allow_html=True)
 

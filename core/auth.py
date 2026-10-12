@@ -281,6 +281,146 @@ def send_password_reset(email):
     return True, "Password reset link has been sent to your email."
 
 
+def validate_password_reset(password, confirm_password):
+    if not password or len(password) < 8:
+        return False, "Password must contain at least 8 characters."
+    if password != confirm_password:
+        return False, "Passwords do not match."
+    return True, None
+
+
+def update_password(new_password, confirm_password=None):
+    if confirm_password is not None:
+        valid, msg = validate_password_reset(new_password, confirm_password)
+        if not valid:
+            return False, msg
+    elif not new_password or len(new_password) < 8:
+        return False, "Password must contain at least 8 characters."
+
+    try:
+        session = supabase.auth.get_session()
+    except Exception:
+        session = None
+    if not session:
+        return False, "This password reset link is invalid or has expired. Please request a new reset link."
+
+    try:
+        response = supabase.auth.update_user({"password": new_password})
+    except Exception as error:
+        return False, _friendly_auth_error(error, context="update_password")
+
+    try:
+        supabase.auth.sign_out()
+    except Exception:
+        pass
+    clear_auth_session()
+
+    return True, "Password has been updated successfully. Please log in with your new password."
+
+
+def handle_recovery_callback():
+    """Detects and processes Supabase password recovery tokens from Streamlit URL query parameters."""
+    try:
+        import streamlit as st
+    except ImportError:
+        return False
+
+    if not hasattr(st, "query_params"):
+        return False
+
+    query_params = dict(st.query_params)
+    if not query_params:
+        return False
+
+    error = query_params.get("error")
+    error_desc = query_params.get("error_description") or query_params.get("error_code")
+    if error or error_desc:
+        st.query_params.clear()
+        st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+        st.session_state["auth_page"] = "reset_password"
+        return True
+
+    token_hash = query_params.get("token_hash")
+    recovery_type = query_params.get("type")
+    code = query_params.get("code")
+    access_token = query_params.get("access_token")
+    refresh_token = query_params.get("refresh_token")
+
+    # Non-recovery auth callbacks (e.g. type="signup", type="invite") must never enter recovery
+    if recovery_type and recovery_type != "recovery":
+        return False
+
+    if token_hash:
+        if recovery_type != "recovery":
+            return False
+        st.query_params.clear()
+        clear_auth_session()
+        try:
+            response = supabase.auth.verify_otp({"token_hash": token_hash, "type": "recovery"})
+            session = _auth_session(response)
+            if session or getattr(response, "user", None):
+                st.session_state["recovery_session_active"] = True
+                st.session_state["auth_page"] = "reset_password"
+                return True
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+        except Exception:
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+
+    if code:
+        st.query_params.clear()
+        clear_auth_session()
+        try:
+            response = supabase.auth.exchange_code_for_session({"auth_code": code})
+            session = _auth_session(response)
+            if session:
+                st.session_state["recovery_session_active"] = True
+                st.session_state["auth_page"] = "reset_password"
+                return True
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+        except Exception:
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+
+    if access_token or refresh_token:
+        if recovery_type != "recovery" or not access_token or not refresh_token:
+            if recovery_type == "recovery":
+                st.query_params.clear()
+                st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+                st.session_state["auth_page"] = "reset_password"
+            return False
+        st.query_params.clear()
+        clear_auth_session()
+        try:
+            response = supabase.auth.set_session(access_token, refresh_token)
+            session = _auth_session(response)
+            if session or getattr(response, "user", None):
+                st.session_state["recovery_session_active"] = True
+                st.session_state["auth_page"] = "reset_password"
+                return True
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+        except Exception:
+            st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+            st.session_state["auth_page"] = "reset_password"
+            return False
+
+    if recovery_type == "recovery":
+        st.query_params.clear()
+        st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
+        st.session_state["auth_page"] = "reset_password"
+        return False
+
+    return False
+
+
 def logout():
     try:
         supabase.auth.sign_out()
@@ -340,6 +480,14 @@ def _friendly_auth_error(error, context=None):
         return "Enter a valid email address."
     if "email" in lower and "confirm" in lower:
         return "Please confirm your email before logging in."
+    if context in ("reset", "recovery", "update_password") and (
+        "token" in lower
+        or "expired" in lower
+        or "invalid" in lower
+        or "otp" in lower
+        or "session" in lower
+    ):
+        return "This password reset link is invalid or has expired. Please request a new reset link."
     if context == "reset" and ("invalid" in lower or "email" in lower):
         return "Enter a valid email address."
     return "Something went wrong. Please try again."
