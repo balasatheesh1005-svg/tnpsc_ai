@@ -3,7 +3,7 @@ import os
 from typing import List, Dict, Any, Optional
 import streamlit as st
 
-from core.topics_loader import get_topic_metadata_by_id
+from core.topics_loader import get_topic_metadata_by_id, normalize_repo_basename
 
 
 @st.cache_data
@@ -39,6 +39,12 @@ def load_questions(
         if arg1.startswith("gt_") or arg1.startswith("general_tamil_"):
             subject = "general_tamil"
             repo_id = arg1
+        elif arg1.startswith("tna_") or arg1.startswith("tn_administration_"):
+            subject = "tn_administration"
+            repo_id = arg1
+        elif arg1.startswith("ts_") or arg1.startswith("tamil_society_"):
+            subject = "tamil_society"
+            repo_id = arg1
         elif "_" in arg1:
             subject = arg1.split("_", 1)[0].lower()
             if subject in ["gt", "gt_"]:
@@ -48,11 +54,11 @@ def load_questions(
             subject = "polity"
             repo_id = f"{subject}_{arg1}"
 
-    repo_basename = repo_id
-    if repo_basename.startswith(f"{subject}_"):
-        repo_basename = repo_basename[len(subject) + 1:]
+    repo_basename = normalize_repo_basename(subject, repo_id)
 
     repo_basenames = [repo_basename]
+    if repo_id != repo_basename and repo_id not in repo_basenames:
+        repo_basenames.append(repo_id)
     alias_map = {
         "finance_commission": ["finance_commission", "fc"],
         "fc": ["fc", "finance_commission"],

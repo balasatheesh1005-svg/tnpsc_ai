@@ -53,6 +53,44 @@ def validate_topic_registration(topic_meta: dict) -> bool:
     return True
 
 
+def normalize_repo_basename(subject: str, raw_repo_id: str) -> str:
+    """
+    Normalizes a repository identifier or topic string to the physical question-file basename.
+    - For 'tn_administration': strips 'tna_' (and 'tn_administration_tna_' / 'tn_administration_').
+    - For 'tamil_society': strips 'ts_' (and 'tamil_society_ts_' / 'tamil_society_').
+    - For other subjects: strips '{subject}_' prefix if present.
+    """
+    subj = subject.lower().strip() if subject else ""
+    if subj in ["gt", "gt_"]:
+        subj = "general_tamil"
+    clean = raw_repo_id.strip() if raw_repo_id else ""
+    if clean.endswith(".json"):
+        clean = clean[:-5]
+
+    if subj == "tn_administration":
+        if clean.startswith("tn_administration_tna_"):
+            return clean[len("tn_administration_tna_"):]
+        if clean.startswith("tn_administration_"):
+            clean = clean[len("tn_administration_"):]
+        if clean.startswith("tna_"):
+            return clean[4:]
+        return clean
+
+    if subj == "tamil_society":
+        if clean.startswith("tamil_society_ts_"):
+            return clean[len("tamil_society_ts_"):]
+        if clean.startswith("tamil_society_"):
+            clean = clean[len("tamil_society_"):]
+        if clean.startswith("ts_"):
+            return clean[3:]
+        return clean
+
+    if subj and clean.startswith(f"{subj}_"):
+        return clean[len(subj) + 1:]
+
+    return clean
+
+
 def normalize_base_topic_id(subject: str, raw_id_or_filename: str) -> str:
     subj = subject.lower().strip()
     if subj in ["gt", "gt_"]:
@@ -290,6 +328,12 @@ def get_topic_metadata_by_id(subject: str, topic_id_or_title: str) -> Dict[str, 
         meta_id_clean = re.sub(r"[^a-z0-9]", "", meta["topic_id"].lower())
         meta_title_clean = re.sub(r"[^a-z0-9]", "", meta["display_title"].lower())
         if query_clean == meta_id_clean or query_clean == meta_title_clean:
+            return meta
+
+    # 5. Normalized repository basename match (resolves bare topic name to registered topic)
+    clean_query = normalize_repo_basename(subj, query)
+    for meta in meta_list:
+        if normalize_repo_basename(subj, meta.get("repository_id", "")) == clean_query:
             return meta
 
     # Fallback auto-constructed metadata

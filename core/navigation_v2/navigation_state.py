@@ -9,6 +9,7 @@ from core.topics_loader import (
     get_topic_metadata_by_id,
     get_topic_metadata_list,
     get_topics,
+    normalize_repo_basename,
 )
 
 DEFAULT_SUBJECT = "polity"
@@ -283,11 +284,11 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
         if note_basename.startswith(f"{subj}_"):
             note_basename = note_basename[len(subj) + 1 :]
 
-        repo_basename = repository_id
-        if repo_basename.startswith(f"{subj}_"):
-            repo_basename = repo_basename[len(subj) + 1 :]
+        repo_basename = normalize_repo_basename(subj, repository_id)
 
         repo_basenames = [repo_basename]
+        if repository_id != repo_basename and repository_id not in repo_basenames:
+            repo_basenames.append(repository_id)
         alias_map = {
             "finance_commission": ["finance_commission", "fc"],
             "fc": ["fc", "finance_commission"],
