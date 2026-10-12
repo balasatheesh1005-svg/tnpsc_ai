@@ -214,8 +214,9 @@ class UniversalQuestionAdapter:
         result = []
         opt_imgs = option_images or {}
         opt_alts = option_images_alt or {}
+        opts_ta = row.get("options_ta") or row.get("options_tamil")
 
-        # Case 1: options is a list of dicts [{"id": "A", "en": "...", "ta": "..."}]
+        # Case 1: options is a list of dicts [{"id": "A", "en": "...", "ta": "..."}] or strings
         raw_options = row.get("options")
         if isinstance(raw_options, list):
             for idx, item in enumerate(raw_options):
@@ -224,13 +225,24 @@ class UniversalQuestionAdapter:
                     opt_id = str(item.get("id") or opt_key).upper()
                     o_en = str(item.get("en") or item.get("text") or item.get("english") or "")
                     o_ta = str(item.get("ta") or item.get("tamil") or "")
+                    if not o_ta and opts_ta:
+                        if isinstance(opts_ta, list) and idx < len(opts_ta):
+                            o_ta = str(opts_ta[idx] or "")
+                        elif isinstance(opts_ta, dict):
+                            o_ta = str(opts_ta.get(opt_id) or opts_ta.get(opt_id.lower()) or "")
                     img = opt_imgs.get(opt_id)
                     alt = opt_alts.get(opt_id)
                     result.append(OptionItem(id=opt_id, en=o_en, ta=o_ta, image=img, image_alt=alt))
                 elif isinstance(item, str):
+                    o_ta = ""
+                    if opts_ta:
+                        if isinstance(opts_ta, list) and idx < len(opts_ta):
+                            o_ta = str(opts_ta[idx] or "")
+                        elif isinstance(opts_ta, dict):
+                            o_ta = str(opts_ta.get(opt_key) or opts_ta.get(opt_key.lower()) or "")
                     img = opt_imgs.get(opt_key)
                     alt = opt_alts.get(opt_key)
-                    result.append(OptionItem(id=opt_key, en=item, ta="", image=img, image_alt=alt))
+                    result.append(OptionItem(id=opt_key, en=item, ta=o_ta, image=img, image_alt=alt))
             return result
 
         # Case 2: options is a dict {"A": "Text", "B": "Text"} or {"A": {"en": "..", "ta": ".."}}
@@ -243,21 +255,33 @@ class UniversalQuestionAdapter:
                     if isinstance(val, dict):
                         o_en = str(val.get("en") or val.get("english") or "")
                         o_ta = str(val.get("ta") or val.get("tamil") or "")
+                        if not o_ta and opts_ta:
+                            if isinstance(opts_ta, dict):
+                                o_ta = str(opts_ta.get(k) or opts_ta.get(k.lower()) or "")
+                            elif isinstance(opts_ta, list) and keys.index(k) < len(opts_ta):
+                                o_ta = str(opts_ta[keys.index(k)] or "")
                         result.append(OptionItem(id=k, en=o_en, ta=o_ta, image=img, image_alt=alt))
                     else:
-                        result.append(OptionItem(id=k, en=str(val), ta="", image=img, image_alt=alt))
+                        o_ta = ""
+                        if opts_ta:
+                            if isinstance(opts_ta, dict):
+                                o_ta = str(opts_ta.get(k) or opts_ta.get(k.lower()) or "")
+                            elif isinstance(opts_ta, list) and keys.index(k) < len(opts_ta):
+                                o_ta = str(opts_ta[keys.index(k)] or "")
+                        result.append(OptionItem(id=k, en=str(val), ta=o_ta, image=img, image_alt=alt))
             if result:
                 return result
 
         # Case 3: Parallel lists options_en and options_ta
         opts_en = row.get("options_en")
-        opts_ta = row.get("options_ta")
         if isinstance(opts_en, list):
             for idx, val in enumerate(opts_en):
                 opt_key = keys[idx] if idx < len(keys) else str(idx + 1)
                 t_val = ""
                 if isinstance(opts_ta, list) and idx < len(opts_ta):
-                    t_val = str(opts_ta[idx])
+                    t_val = str(opts_ta[idx] or "")
+                elif isinstance(opts_ta, dict):
+                    t_val = str(opts_ta.get(opt_key) or opts_ta.get(opt_key.lower()) or "")
                 img = opt_imgs.get(opt_key)
                 alt = opt_alts.get(opt_key)
                 result.append(OptionItem(id=opt_key, en=str(val), ta=t_val, image=img, image_alt=alt))
