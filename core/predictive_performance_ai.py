@@ -33,9 +33,11 @@ def _classify_trend(current_val: float, delta: float) -> str:
         return "Needs Attention"
 
 
-def _format_range(current_val: float, low_delta: float, high_delta: float) -> str:
+def _format_range(current_val: Optional[float], low_delta: float, high_delta: float) -> str:
     """Format projected metric range strictly as a string range (e.g., '75–79%')."""
-    low_bound = max(10, min(97, int(round(current_val + low_delta))))
+    if current_val is None:
+        return "Not assessed"
+    low_bound = min(97, int(round(current_val + low_delta)))
     high_bound = max(low_bound + 2, min(99, int(round(current_val + high_delta))))
     return f"{low_bound}–{high_bound}%"
 
@@ -81,78 +83,58 @@ def get_predictive_performance(
     study_plan = get_personal_study_plan(user, context=ctx)
     recommendation = get_ai_recommendation(user, context=ctx)
     revision_analytics = get_revision_analytics_v2(user, context=ctx)
-    progress_rows = get_progress(user, context=ctx)
-    weakness_data = get_weakness(user, context=ctx)
-    streak = get_streak(user, context=ctx)
-    xp_data = get_user_xp(user, context=ctx)
+    progress_rows = get_progress(user, context=ctx) or []
+    weakness_data = get_weakness(user, context=ctx) or {}
+    streak = get_streak(user, context=ctx) or 0
+    xp_data = get_user_xp(user, context=ctx) or {}
 
-    # 2. Extract Baseline Metrics
+    # 2. Extract Baseline Metrics with Strict Evidence Verification
+    sample_size = len(progress_rows)
+    observed_subjects = list(set(
+        format_subject_name(r.get("subject", "")).strip()
+        for r in progress_rows
+        if r.get("subject")
+    ))
+    subjects_count = len(observed_subjects)
+
+    # Mock attempts check
+    mock_rows = [
+        r for r in progress_rows
+        if "grand_test" in str(r.get("topic", "")).lower() or "mock" in str(r.get("topic", "")).lower()
+    ]
+    mock_count = len(mock_rows)
+    has_mock_data = mock_count > 0
+
+    if has_mock_data:
+        raw_mock_acc = mock_data.get("overall_accuracy")
+        curr_mock_acc = int(round(raw_mock_acc)) if raw_mock_acc is not None else None
+    else:
+        curr_mock_acc = None
+
     raw_readiness = readiness_data.get("overall_score") or readiness_data.get("overall_readiness_score")
-    curr_readiness = int(round(raw_readiness)) if raw_readiness is not None else 0
+    curr_readiness = int(round(raw_readiness)) if raw_readiness is not None else None
 
-    raw_mock_acc = mock_data.get("overall_accuracy")
-    curr_mock_acc = int(round(raw_mock_acc)) if raw_mock_acc is not None else 0
+    all_accs = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
+    curr_mastery = int(round(sum(all_accs) / len(all_accs))) if all_accs else None
 
-    raw_mastery = intelligence_data.get("current_mastery")
-    curr_mastery = int(round(raw_mastery)) if raw_mastery is not None else 0
+    has_rev_data = bool(revision_analytics.get("total", 0) > 0 or revision_analytics.get("progress", {}).get("completed", 0) > 0)
+    if has_rev_data:
+        rev_prog = revision_analytics.get("progress", {})
+        curr_rev_health = int(round(float(rev_prog.get("percentage", 75.0))))
+    else:
+        curr_rev_health = None
 
-    rev_prog = revision_analytics.get("progress", {})
-    curr_rev_health = int(round(float(rev_prog.get("percentage", 75.0))))
+    if streak > 0:
+        curr_consistency = min(100, int(round((streak * 8.0) + 40.0)))
+    else:
+        curr_consistency = None
 
-    # Consistency metric derived from streak and learning momentum
-    streak_score = min(100, int(round((streak * 8.0) + 40.0)))
-    curr_consistency = max(20, min(100, streak_score))
+    readiness_dims = readiness_data.get("readiness_dimensions", {})
+    raw_repo = readiness_dims.get("repository_completion")
+    curr_repo = int(round(float(raw_repo))) if raw_repo is not None else None
 
-    # Repository completion metric from readiness dimensions
-    readiness_dims = readiness_data.get("dimensions", {})
-    repo_dim = readiness_dims.get("Repository Completion", {})
-    curr_repo = int(round(float(repo_dim.get("score", 65.0))))
-
-    # 3. Deterministic Trend & Range Projection Logic
-    # Momentum multipliers based on active streak and revision health
-    momentum_factor = 1.2 if streak >= 5 else (1.0 if streak >= 2 else 0.8)
-    rev_factor = 1.1 if curr_rev_health >= 70 else 0.85
-
-    # Dimension 1: Readiness Range Projection
-    r_low_delta = max(1.0, 2.5 * momentum_factor * rev_factor)
-    r_high_delta = max(r_low_delta + 2.0, 5.5 * momentum_factor * rev_factor)
-
-    est_readiness = _format_range(curr_readiness, r_low_delta, r_high_delta)
-    readiness_trend = _classify_trend(curr_readiness, r_low_delta)
-
-    # Dimension 2: Mock Accuracy Range Projection
-    m_low_delta = max(1.0, 2.0 * momentum_factor)
-    m_high_delta = max(m_low_delta + 2.0, 5.0 * momentum_factor)
-    est_mock_acc = _format_range(curr_mock_acc, m_low_delta, m_high_delta)
-    mock_trend = _classify_trend(curr_mock_acc, m_low_delta)
-
-    # Dimension 3: Topic Mastery Range Projection
-    t_low_delta = max(1.5, 3.0 * momentum_factor)
-    t_high_delta = max(t_low_delta + 2.0, 6.0 * momentum_factor)
-    est_mastery = _format_range(curr_mastery, t_low_delta, t_high_delta)
-    mastery_trend = _classify_trend(curr_mastery, t_low_delta)
-
-    # Dimension 4: Revision Health Range Projection
-    rev_low_delta = max(1.0, 3.0 * rev_factor)
-    rev_high_delta = max(rev_low_delta + 2.0, 7.0 * rev_factor)
-    est_rev_health = _format_range(curr_rev_health, rev_low_delta, rev_high_delta)
-    revision_trend = _classify_trend(curr_rev_health, rev_low_delta)
-
-    # Dimension 5: Consistency Range Projection
-    c_low_delta = max(1.0, 2.0 * momentum_factor)
-    c_high_delta = max(c_low_delta + 1.5, 4.5 * momentum_factor)
-    est_consistency = _format_range(curr_consistency, c_low_delta, c_high_delta)
-    consistency_trend = _classify_trend(curr_consistency, c_low_delta)
-
-    # Dimension 6: Repository Completion Range Projection
-    repo_low_delta = max(1.0, 2.5 * momentum_factor)
-    repo_high_delta = max(repo_low_delta + 2.0, 5.5 * momentum_factor)
-    est_repo = _format_range(curr_repo, repo_low_delta, repo_high_delta)
-    repo_trend = _classify_trend(curr_repo, repo_low_delta)
-
-    # 4. Confidence Calculation Logic (0-100%)
-    sample_size = len(progress_rows) if progress_rows else 0
-    is_eligible = (sample_size >= 5)
+    # Evidence Eligibility Gate: requires >= 5 tests AND >= 2 subjects
+    is_eligible = (sample_size >= 5 and subjects_count >= 2)
 
     if sample_size == 0:
         est_readiness = "Unavailable"
@@ -171,51 +153,129 @@ def get_predictive_performance(
         conf_reason = "No learning history available yet. Complete daily practice tests to generate performance projections."
         expl_bullets = [
             "Complete initial practice sessions to begin tracking performance trajectory.",
-            "Prediction confidence requires at least 5 completed practice sessions.",
+            "Prediction confidence requires at least 5 completed practice sessions across multiple subjects.",
         ]
         pred_reason = "Performance trajectory projections unlock after completing initial practice tests."
         mentor_proj = "Begin with daily practice tests to establish your performance baseline."
-    else:
-        if sample_size < 5:
-            confidence = max(20, min(60, 25 + (sample_size * 8)))
-            conf_reason = f"Preliminary baseline trajectory based on {sample_size} completed test(s). 5+ tests required for mature projection."
-        else:
-            base_confidence = 70
-            if sample_size >= 15:
-                base_confidence += 12
-            elif sample_size >= 5:
-                base_confidence += 6
+    elif not is_eligible:
+        # Early User / Low Data: Honest locked states, no fake predictions
+        est_readiness = "More practice data required"
+        readiness_trend = "Early Signal"
+        est_mastery = "More practice data required"
+        mastery_trend = "Early Signal"
 
-            if streak >= 5:
-                base_confidence += 8
-            elif streak >= 2:
-                base_confidence += 4
+        est_mock_acc = "Need Mock Data" if not has_mock_data else "More practice data required"
+        mock_trend = "Not assessed" if not has_mock_data else "Early Signal"
 
-            if curr_rev_health >= 70:
-                base_confidence += 6
+        est_rev_health = "Not assessed" if curr_rev_health is None else "More practice data required"
+        revision_trend = "Not assessed" if curr_rev_health is None else "Early Signal"
 
-            confidence = max(50, min(96, base_confidence))
+        est_consistency = "Not assessed" if curr_consistency is None else "More practice data required"
+        consistency_trend = "Not assessed" if curr_consistency is None else "Early Signal"
 
-            if confidence >= 88:
-                conf_reason = "Rich learning history, consistent study streak, and sufficient performance data across tests."
-            elif confidence >= 75:
-                conf_reason = "Moderate learning history and steady revision activity. Projections are well-supported."
-            else:
-                conf_reason = "Sparse activity history or developing study streak. Complete more daily practice tests to refine accuracy."
+        est_repo = "Not assessed" if curr_repo is None else "More practice data required"
+        repo_trend = "Not assessed" if curr_repo is None else "Early Signal"
 
-        # 5. Prediction Explanation Rules
+        confidence = min(35, 10 + (sample_size * 8))
+        conf_reason = (
+            f"More practice data required for reliable prediction. "
+            f"Currently observed: {subjects_count} subject(s) across {sample_size} test(s). "
+            f"5+ tests across at least 2 subjects required for mature trajectory projections."
+        )
         expl_bullets = [
-            f"Consistent revision health ({curr_rev_health}%) indicates stable memory retention.",
-            f"Active learning streak ({streak} days) supports continued gradual performance gains.",
-            f"Observed mock exam accuracy ({curr_mock_acc}%) provides a reliable baseline for next test performance.",
-            f"Topic mastery baseline ({curr_mastery}%) across target syllabus subjects shows positive trajectory.",
+            "TNPSC-wide performance projections require broader subject evidence.",
+            f"Observed preliminary signal: {sample_size} test(s) in {', '.join(observed_subjects) if observed_subjects else 'History'}.",
+            "Complete full-length or sectional mock exams to establish mock accuracy projection baseline.",
         ]
+        pred_reason = "Performance trajectory projections unlock after completing practice tests across multiple subjects."
+        mentor_proj = "Focus on completing initial practice across multiple subjects before relying on predictive trajectories."
+    else:
+        # Sufficient Evidence: Compute projected ranges
+        momentum_factor = 1.2 if streak >= 5 else (1.0 if streak >= 2 else 0.8)
+        rev_factor = 1.1 if (curr_rev_health is not None and curr_rev_health >= 70) else 0.85
+
+        r_low_delta = max(1.0, 2.5 * momentum_factor * rev_factor)
+        r_high_delta = max(r_low_delta + 2.0, 5.5 * momentum_factor * rev_factor)
+        est_readiness = _format_range(curr_readiness, r_low_delta, r_high_delta)
+        readiness_trend = _classify_trend(curr_readiness or 50, r_low_delta)
+
+        if has_mock_data and curr_mock_acc is not None:
+            m_low_delta = max(1.0, 2.0 * momentum_factor)
+            m_high_delta = max(m_low_delta + 2.0, 5.0 * momentum_factor)
+            est_mock_acc = _format_range(curr_mock_acc, m_low_delta, m_high_delta)
+            mock_trend = _classify_trend(curr_mock_acc, m_low_delta)
+        else:
+            est_mock_acc = "Need Mock Data"
+            mock_trend = "Not assessed"
+
+        t_low_delta = max(1.5, 3.0 * momentum_factor)
+        t_high_delta = max(t_low_delta + 2.0, 6.0 * momentum_factor)
+        est_mastery = _format_range(curr_mastery, t_low_delta, t_high_delta)
+        mastery_trend = _classify_trend(curr_mastery or 50, t_low_delta)
+
+        if curr_rev_health is not None:
+            rev_low_delta = max(1.0, 3.0 * rev_factor)
+            rev_high_delta = max(rev_low_delta + 2.0, 7.0 * rev_factor)
+            est_rev_health = _format_range(curr_rev_health, rev_low_delta, rev_high_delta)
+            revision_trend = _classify_trend(curr_rev_health, rev_low_delta)
+        else:
+            est_rev_health = "Not assessed"
+            revision_trend = "Not assessed"
+
+        if curr_consistency is not None:
+            c_low_delta = max(1.0, 2.0 * momentum_factor)
+            c_high_delta = max(c_low_delta + 1.5, 4.5 * momentum_factor)
+            est_consistency = _format_range(curr_consistency, c_low_delta, c_high_delta)
+            consistency_trend = _classify_trend(curr_consistency, c_low_delta)
+        else:
+            est_consistency = "Not assessed"
+            consistency_trend = "Not assessed"
+
+        if curr_repo is not None:
+            repo_low_delta = max(1.0, 2.5 * momentum_factor)
+            repo_high_delta = max(repo_low_delta + 2.0, 5.5 * momentum_factor)
+            est_repo = _format_range(curr_repo, repo_low_delta, repo_high_delta)
+            repo_trend = _classify_trend(curr_repo, repo_low_delta)
+        else:
+            est_repo = "Not assessed"
+            repo_trend = "Not assessed"
+
+        base_confidence = 70
+        if sample_size >= 15:
+            base_confidence += 12
+        elif sample_size >= 5:
+            base_confidence += 6
+
+        if streak >= 5:
+            base_confidence += 8
+        elif streak >= 2:
+            base_confidence += 4
+
+        if curr_rev_health is not None and curr_rev_health >= 70:
+            base_confidence += 6
+
+        confidence = max(50, min(96, base_confidence))
+
+        if confidence >= 88:
+            conf_reason = "Rich learning history, consistent study streak, and sufficient performance data across tests."
+        elif confidence >= 75:
+            conf_reason = "Moderate learning history and steady revision activity. Projections are well-supported."
+        else:
+            conf_reason = "Sparse activity history or developing study streak. Complete more daily practice tests to refine accuracy."
+
+        expl_bullets = [
+            f"Observed topic mastery ({curr_mastery}%) provides a reliable baseline for next test performance." if curr_mastery is not None else "Developing topic mastery.",
+            f"Active learning streak ({streak} days) supports continued gradual performance gains." if streak > 0 else "Establishing daily study habit.",
+        ]
+        if has_mock_data and curr_mock_acc is not None:
+            expl_bullets.append(f"Observed mock exam accuracy ({curr_mock_acc}%) anchors full-length test trajectory.")
+        else:
+            expl_bullets.append("Attempt full-length mock exams to anchor exam-day test trajectory.")
 
         pred_reason = (
-            f"Based on consistent revision ({curr_rev_health}%), improving mock analytics ({curr_mock_acc}%), "
-            f"and a stable study streak ({streak} days), current learning trend indicates continued gradual improvement."
+            f"Based on observed learning signals and a study streak ({streak} days), "
+            f"current trajectory indicates steady progress across practiced areas."
         )
-
         mentor_proj = (
             "If current study consistency and spaced revision continue, readiness and mock accuracy "
             "are projected to improve steadily within the estimated target ranges."

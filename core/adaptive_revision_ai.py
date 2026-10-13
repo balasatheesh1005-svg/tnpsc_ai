@@ -149,7 +149,14 @@ def get_adaptive_final_revision(
     # Extract mock accuracy per subject
     mock_sections = mock_data.get("subject_breakdown", {})
     
-    # Calculate subject priority metric
+    # Observed subjects from actual progress
+    observed_subjects = list(set(
+        format_subject_name(r.get("subject", "")).strip()
+        for r in (progress_rows or [])
+        if r.get("subject")
+    ))
+
+    # Calculate subject priority metric based on genuine evidence
     all_subjects = list(
         set(
             list(STANDARD_SUBJECT_WEIGHTAGES.keys())
@@ -176,39 +183,54 @@ def get_adaptive_final_revision(
     # Rank subjects by priority urgency
     priority_subjects = sorted(subject_scores.keys(), key=lambda s: subject_scores[s], reverse=True)
 
-    # Top priority subjects (top 3-4)
-    top_priority_subjects = priority_subjects[:3] if len(priority_subjects) >= 3 else priority_subjects
+    # If user has observed subjects, prioritize observed practice topics and label coverage needs
+    if observed_subjects:
+        # Put observed subjects first if they have practice or need reinforcement
+        top_priority_subjects = [s for s in observed_subjects if s in priority_subjects] + [s for s in priority_subjects if s not in observed_subjects]
+        top_priority_subjects = top_priority_subjects[:3]
+    else:
+        top_priority_subjects = priority_subjects[:3] if len(priority_subjects) >= 3 else priority_subjects
 
-    # 4. Priority Topics Identification
+    # 4. Priority Topics Identification (Evidence-driven)
     priority_topics = []
-    # Pull from weakness, recommendation, and top subjects
+    # Pull from genuine recorded weakness
     if isinstance(weakness_data, dict) and weakness_data:
         for key in sorted(weakness_data.keys(), key=lambda k: weakness_data[k], reverse=True)[:3]:
             if "-" in key:
                 parts = key.split("-")
                 priority_topics.append(f"{format_subject_name(parts[0])}: {format_topic_name(parts[1])}")
 
-    # Ensure fallback topics if weakness data is sparse
+    # If no recorded weakness, pull from genuine observed progress topics
+    if not priority_topics and progress_rows:
+        seen_topics = set()
+        for r in reversed(progress_rows):
+            s = format_subject_name(r.get("subject", "")).strip()
+            t = format_topic_name(r.get("topic", "")).strip()
+            if s and t and (s, t) not in seen_topics:
+                seen_topics.add((s, t))
+                priority_topics.append(f"{s}: {t}")
+                if len(priority_topics) >= 3:
+                    break
+
+    # If still no topics (zero data user), explicitly label as Coverage recommendations
     if not priority_topics:
         priority_topics = [
-            "Polity: Constitution of India",
-            "History: Freedom Struggle",
-            "Economy: Fiscal Policy",
+            "Coverage Recommendation: Polity (Constitution of India)",
+            "Coverage Recommendation: History (Early India)",
+            "Coverage Recommendation: Economy (Fiscal Policy)",
         ]
     else:
-        # Normalize display format
         priority_topics = [t.replace("_", " ").title() for t in priority_topics[:3]]
 
     # 5. Revision Order Generation
-    # Systematic sequence covering urgent priorities first, then foundational subjects
-    revision_order = [subj for subj in priority_subjects if subj in STANDARD_SUBJECT_WEIGHTAGES][:4]
+    revision_order = [subj for subj in top_priority_subjects if subj in STANDARD_SUBJECT_WEIGHTAGES][:4]
     if not revision_order:
-        revision_order = ["Economy", "Geography", "Science", "History"]
+        revision_order = ["History", "Polity", "Economy", "Geography"]
 
     # 6. Daily Target & 4-Cycle Revision
     raw_readiness = readiness.get("overall_readiness_score")
-    overall_readiness_score = int(raw_readiness) if raw_readiness is not None else 0
-    daily_target = _generate_daily_target(revision_phase, overall_readiness_score)
+    overall_readiness_score = int(raw_readiness) if raw_readiness is not None else None
+    daily_target = _generate_daily_target(revision_phase, overall_readiness_score or 50)
 
     revision_cycles = [
         "Concept Reinforcement",
@@ -217,48 +239,75 @@ def get_adaptive_final_revision(
         "Rapid Recall",
     ]
 
-    # 7. Actionable Risk Analysis (Non-Fear Language)
+    # 7. Actionable Risk Analysis (Evidence-Based, No Synthetic Numbers)
     risk_analysis = []
     
-    # Subject readiness risks
-    lowest_subj = priority_subjects[0] if priority_subjects else "Geography"
-    risk_analysis.append(f"Low {lowest_subj} readiness — prioritize concept reinforcement in Cycle 1.")
+    # Subject readiness risks: Only flag subjects that were genuinely assessed and scored < 70%
+    assessed_subjs = [s for s in readiness.get("subjects", []) if s.get("score") is not None]
+    low_scoring_subjs = [s for s in assessed_subjs if s["score"] < 70]
+    if low_scoring_subjs:
+        low_subj = low_scoring_subjs[0]
+        risk_analysis.append(f"Low {low_subj['subject']} readiness ({low_subj['score']}%) — prioritize concept reinforcement in Cycle 1.")
+    elif assessed_subjs:
+        high_subj = assessed_subjs[0]
+        risk_analysis.append(f"{high_subj['subject']} observed readiness is {high_subj['score']}% — expand syllabus coverage into other core subjects.")
+    else:
+        risk_analysis.append("Unassessed subjects — begin practice tests to identify strengths and weaknesses.")
     
     # Mock behavior risk
     mistakes = mock_data.get("mistake_breakdown", {})
     assert_wrong = mistakes.get("Assertion & Reason", 0) if isinstance(mistakes, dict) else 0
     if assert_wrong > 0:
         risk_analysis.append("Weak Assertion & Reason performance — incorporate focused 15-question daily drills.")
-    else:
+    elif mock_data.get("overall_accuracy") is not None:
         risk_analysis.append("Statement & Reason question speed — allocate dedicated PYQ timed drills.")
+    else:
+        risk_analysis.append("No mock exams attempted — attempt full-length mock tests to evaluate exam-day timing.")
 
-    # Revision health risk
-    rev_progress = revision_analytics.get("progress", {}) if isinstance(revision_analytics, dict) else {}
-    raw_rev_pct = rev_progress.get("percentage") if isinstance(rev_progress, dict) else None
-    rev_pct = int(raw_rev_pct) if raw_rev_pct is not None else 70
-    if rev_pct < 75:
-        risk_analysis.append(f"Revision coverage at {rev_pct}% — increase spaced review frequency for overdue topics.")
+    # Revision health risk (Strict Key Check)
+    has_rev_records = bool(revision_analytics.get("total", 0) > 0 or revision_analytics.get("progress", {}).get("completed", 0) > 0)
+    if has_rev_records:
+        rev_progress = revision_analytics.get("progress", {}) if isinstance(revision_analytics, dict) else {}
+        raw_rev_pct = rev_progress.get("percentage") if isinstance(rev_progress, dict) else None
+        rev_pct = int(raw_rev_pct) if raw_rev_pct is not None else 70
+        if rev_pct < 75:
+            risk_analysis.append(f"Revision coverage at {rev_pct}% — increase spaced review frequency for overdue topics.")
+    else:
+        risk_analysis.append("No active spaced revisions scheduled — complete practice tests to populate revision schedule.")
 
-    # Incomplete repository risk
-    dim_breakdown = readiness.get("dimension_breakdown", {}) if isinstance(readiness, dict) else {}
+    # Incomplete repository risk (Fixed Key Lookup)
+    dim_breakdown = readiness.get("readiness_dimensions", {}) if isinstance(readiness, dict) else {}
     raw_repo_comp = dim_breakdown.get("repository_completion") if isinstance(dim_breakdown, dict) else None
-    repo_comp = int(raw_repo_comp) if raw_repo_comp is not None else 65
-    if repo_comp < 70:
-        risk_analysis.append(f"Hard topic repository completion at {repo_comp}% — complete targeted hard sets before exam week.")
+    if raw_repo_comp is not None:
+        repo_comp = int(raw_repo_comp)
+        if repo_comp < 70:
+            risk_analysis.append(f"Hard topic repository completion at {repo_comp}% — complete targeted hard sets before exam week.")
+    else:
+        risk_analysis.append("Hard repository questions not yet attempted — attempt challenging questions to establish depth.")
 
     # 8. Actionable Mentor Revision Advice
-    top_subj1 = top_priority_subjects[0] if len(top_priority_subjects) > 0 else "Geography"
-    top_subj2 = top_priority_subjects[1] if len(top_priority_subjects) > 1 else "Economy"
+    top_subj1 = top_priority_subjects[0] if len(top_priority_subjects) > 0 else "History"
+    top_subj2 = top_priority_subjects[1] if len(top_priority_subjects) > 1 else "Polity"
     
-    mentor_advice = (
-        f"Focus on {top_subj1} and {top_subj2} first. "
-        "Continue spaced revision and complete PYQ practice before moving to rapid recall."
-    )
+    if len(observed_subjects) < 2:
+        mentor_advice = (
+            f"Reinforce {top_subj1} and expand practice to at least 2 subjects "
+            "to establish multi-subject readiness."
+        )
+    else:
+        mentor_advice = (
+            f"Focus on {top_subj1} and {top_subj2} first. "
+            "Continue spaced revision and complete PYQ practice before moving to rapid recall."
+        )
 
-    # 9. Estimated Revision Completion
-    target_comp_pct = min(98, max(75, overall_readiness_score + 15))
-    est_days = max(1, int(round(days_remaining * 0.8)))
-    estimated_completion = f"{target_comp_pct}% estimated revision completion in {est_days} days"
+    # 9. Estimated Revision Completion (Gated behind genuine readiness)
+    if overall_readiness_score is not None and readiness.get("is_eligible"):
+        target_comp_pct = min(98, max(75, overall_readiness_score + 15))
+        est_days = max(1, int(round(days_remaining * 0.8)))
+        estimated_completion = f"{target_comp_pct}% estimated revision completion in {est_days} days"
+    else:
+        target_comp_pct = None
+        estimated_completion = "Projected revision completion unlocks after completing multi-subject practice baseline."
 
     # 10. Dashboard Sections Payload
     dashboard_sections = {
@@ -287,6 +336,7 @@ def get_adaptive_final_revision(
         "risk_analysis": risk_analysis,
         "mentor_advice": mentor_advice,
         "estimated_completion": estimated_completion,
+        "completion_percentage": target_comp_pct,
         "dashboard_sections": dashboard_sections,
     }
 

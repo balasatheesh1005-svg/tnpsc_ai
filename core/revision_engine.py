@@ -108,28 +108,35 @@ def _analyze_5_level_target(subject: str, topic: str, progress_rows: List[Dict[s
             if accs:
                 type_accuracies[q_type] = sum(accs) / len(accs)
 
-    # Default logic if no specific type breakdown
-    if "assertion_reason" in type_accuracies and type_accuracies["assertion_reason"] < 60:
-        target_qtype = "assertion_reason"
-    elif "statement_based" in type_accuracies and type_accuracies["statement_based"] < 60:
-        target_qtype = "statement_based"
-    elif "pyq" in type_accuracies and type_accuracies["pyq"] < 65:
-        target_qtype = "pyq"
-    elif type_accuracies:
-        target_qtype = min(type_accuracies, key=type_accuracies.get)
-    else:
-        # Check weakness entries for topic key hints
-        weak_matches = [k for k in weakness_data.keys() if topic_clean in k.lower()]
-        if any("assertion" in k for k in weak_matches):
+    acc_val = None
+    if type_accuracies:
+        if "assertion_reason" in type_accuracies and type_accuracies["assertion_reason"] < 60:
             target_qtype = "assertion_reason"
-        elif any("statement" in k for k in weak_matches):
+        elif "statement_based" in type_accuracies and type_accuracies["statement_based"] < 60:
             target_qtype = "statement_based"
-        elif any("pyq" in k for k in weak_matches):
+        elif "pyq" in type_accuracies and type_accuracies["pyq"] < 65:
             target_qtype = "pyq"
         else:
+            target_qtype = min(type_accuracies, key=type_accuracies.get)
+        acc_val = round(type_accuracies[target_qtype], 1)
+    else:
+        # Check if matching_progress has general observed accuracy for this topic
+        topic_accs = [float(r.get("accuracy", 0)) for r in matching_progress if r.get("accuracy") is not None]
+        if topic_accs:
+            acc_val = round(sum(topic_accs) / len(topic_accs), 1)
             target_qtype = "medium"
-
-    acc_val = round(type_accuracies.get(target_qtype, 55.0), 1)
+        else:
+            # No genuine learner attempts exist for this topic
+            acc_val = None
+            weak_matches = [k for k in weakness_data.keys() if topic_clean in k.lower()]
+            if any("assertion" in k for k in weak_matches):
+                target_qtype = "assertion_reason"
+            elif any("statement" in k for k in weak_matches):
+                target_qtype = "statement_based"
+            elif any("pyq" in k for k in weak_matches):
+                target_qtype = "pyq"
+            else:
+                target_qtype = "medium"
 
     return {
         "level1_subject": format_subject_name(subj_clean),
@@ -186,10 +193,21 @@ def get_intelligent_revision_plan(user: str = None, context: Optional[Any] = Non
         target["spacing_level"] = 1
         return target
 
-    # Default fallback
+    # Check observed progress rows for genuine learner activity before generic fallback
+    if progress_rows:
+        last_row = progress_rows[-1]
+        subj = str(last_row.get("subject", "history")).lower()
+        top = str(last_row.get("topic", "indus_valley_civilization")).lower()
+        target = _analyze_5_level_target(subj, top, progress_rows, weakness_data)
+        target["status"] = "Recommended Focus"
+        target["spacing_level"] = 1
+        return target
+
+    # Generic fallback for zero data user
     target = _analyze_5_level_target("polity", "fundamental_rights", progress_rows, weakness_data)
-    target["status"] = "Recommended Focus"
+    target["status"] = "Coverage Recommendation"
     target["spacing_level"] = 1
+    target["accuracy"] = None
     return target
 
 

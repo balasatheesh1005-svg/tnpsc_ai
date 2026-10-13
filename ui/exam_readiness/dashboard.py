@@ -79,21 +79,26 @@ def render_exam_readiness_dashboard(user: str = None):
     d_cols = st.columns(5)
 
     dim_items = [
-        ("📖 Topic Mastery", dimensions.get("topic_mastery", 70), "30% Weight"),
-        ("📦 Repo Completion", dimensions.get("repository_completion", 65), "20% Weight"),
-        ("🔄 Revision Health", dimensions.get("revision_health", 75), "20% Weight"),
-        ("🔥 Consistency", dimensions.get("consistency", 80), "15% Weight"),
-        ("📝 PYQ Practice", dimensions.get("pyq_readiness", 60), "15% Weight"),
+        ("📖 Topic Mastery", dimensions.get("topic_mastery"), "30% Weight"),
+        ("📦 Repo Completion", dimensions.get("repository_completion"), "20% Weight"),
+        ("🔄 Revision Health", dimensions.get("revision_health"), "20% Weight"),
+        ("🔥 Consistency", dimensions.get("consistency"), "15% Weight"),
+        ("📝 PYQ Practice", dimensions.get("pyq_readiness"), "15% Weight"),
     ]
 
     for col, (label, score_val, w_label) in zip(d_cols, dim_items):
         with col:
-            color_hex = "#10B981" if score_val >= 80 else ("#2563EB" if score_val >= 65 else ("#F97316" if score_val >= 50 else "#EF4444"))
+            if score_val is None:
+                color_hex = "#64748B"
+                val_disp = "Not assessed"
+            else:
+                color_hex = "#10B981" if score_val >= 80 else ("#2563EB" if score_val >= 65 else ("#F97316" if score_val >= 50 else "#EF4444"))
+                val_disp = f"{score_val}%"
             st.markdown(
                 f"""
                 <div class="nova-glass-card" style="padding: 14px; text-align: center;">
                     <div style="color: #64748B; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">{label}</div>
-                    <div style="color: {color_hex}; font-size: 1.6rem; font-weight: 950; margin-top: 2px;">{score_val}%</div>
+                    <div style="color: {color_hex}; font-size: {'1.1rem' if score_val is None else '1.6rem'}; font-weight: 950; margin-top: 2px;">{val_disp}</div>
                     <div style="color: #64748B; font-size: 0.72rem; font-weight: 800; margin-top: 2px;">{w_label}</div>
                 </div>
                 """,

@@ -77,9 +77,10 @@ def render_predictive_performance_dashboard(user: str = None):
 
     with t_readiness:
         d_read = dims.get("readiness", {})
-        curr_val = d_read.get("current", pred_data.get("current_readiness", 72))
-        est_range = d_read.get("estimated_range", pred_data.get("estimated_readiness", "75–79%"))
-        trend = d_read.get("trend", pred_data.get("readiness_trend", "Improving"))
+        curr_val = d_read.get("current")
+        curr_disp = f"{curr_val}%" if curr_val is not None else "--"
+        est_range = d_read.get("estimated_range", pred_data.get("estimated_readiness", "Unavailable"))
+        trend = d_read.get("trend", pred_data.get("readiness_trend", "Stable"))
         desc = d_read.get("description", "Overall preparation metric trajectory.")
 
         st.markdown(
@@ -95,7 +96,7 @@ def render_predictive_performance_dashboard(user: str = None):
                 <div style="display: flex; gap: 20px; align-items: center;">
                     <div style="background: #F8FAFC; padding: 12px 20px; border-radius: 12px; border: 1px solid #E2E8F0;">
                         <span style="color: #64748B; font-size: 0.75rem; font-weight: 800;">CURRENT READINESS</span>
-                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_val}%</div>
+                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_disp}</div>
                     </div>
                     <div style="font-size: 1.5rem; font-weight: 900; color: #2563EB;">➔</div>
                     <div style="background: #EFF6FF; padding: 12px 20px; border-radius: 12px; border: 1px solid #BFDBFE;">
@@ -110,9 +111,10 @@ def render_predictive_performance_dashboard(user: str = None):
 
     with t_mock:
         d_mock = dims.get("mock_accuracy", {})
-        curr_val = d_mock.get("current", pred_data.get("current_mock_accuracy", 74))
-        est_range = d_mock.get("estimated_range", pred_data.get("estimated_mock_accuracy", "76–80%"))
-        trend = d_mock.get("trend", pred_data.get("mock_accuracy_trend", "Improving"))
+        curr_val = d_mock.get("current")
+        curr_disp = f"{curr_val}%" if curr_val is not None else "--"
+        est_range = d_mock.get("estimated_range", pred_data.get("estimated_mock_accuracy", "Need Mock Data"))
+        trend = d_mock.get("trend", pred_data.get("mock_accuracy_trend", "Not assessed"))
         desc = d_mock.get("description", "Expected next mock exam accuracy.")
 
         st.markdown(
@@ -128,7 +130,7 @@ def render_predictive_performance_dashboard(user: str = None):
                 <div style="display: flex; gap: 20px; align-items: center;">
                     <div style="background: #F8FAFC; padding: 12px 20px; border-radius: 12px; border: 1px solid #E2E8F0;">
                         <span style="color: #64748B; font-size: 0.75rem; font-weight: 800;">CURRENT MOCK ACCURACY</span>
-                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_val}%</div>
+                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_disp}</div>
                     </div>
                     <div style="font-size: 1.5rem; font-weight: 900; color: #2563EB;">➔</div>
                     <div style="background: #EFF6FF; padding: 12px 20px; border-radius: 12px; border: 1px solid #BFDBFE;">
@@ -143,8 +145,9 @@ def render_predictive_performance_dashboard(user: str = None):
 
     with t_revision:
         d_rev = dims.get("revision_health", {})
-        curr_val = d_rev.get("current", pred_data.get("current_revision_health", 75))
-        est_range = d_rev.get("estimated_range", pred_data.get("estimated_revision_health", "78–82%"))
+        curr_val = d_rev.get("current")
+        curr_disp = f"{curr_val}%" if curr_val is not None else "--"
+        est_range = d_rev.get("estimated_range", pred_data.get("estimated_revision_health", "Unavailable"))
         trend = d_rev.get("trend", pred_data.get("revision_trend", "Stable"))
         desc = d_rev.get("description", "Spaced repetition review completion rate.")
 
@@ -161,7 +164,7 @@ def render_predictive_performance_dashboard(user: str = None):
                 <div style="display: flex; gap: 20px; align-items: center;">
                     <div style="background: #F8FAFC; padding: 12px 20px; border-radius: 12px; border: 1px solid #E2E8F0;">
                         <span style="color: #64748B; font-size: 0.75rem; font-weight: 800;">CURRENT REVISION HEALTH</span>
-                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_val}%</div>
+                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_disp}</div>
                     </div>
                     <div style="font-size: 1.5rem; font-weight: 900; color: #2563EB;">➔</div>
                     <div style="background: #EFF6FF; padding: 12px 20px; border-radius: 12px; border: 1px solid #BFDBFE;">
@@ -176,8 +179,9 @@ def render_predictive_performance_dashboard(user: str = None):
 
     with t_consistency:
         d_con = dims.get("consistency", {})
-        curr_val = d_con.get("current", pred_data.get("current_consistency", 80))
-        est_range = d_con.get("estimated_range", pred_data.get("estimated_consistency", "82–86%"))
+        curr_val = d_con.get("current")
+        curr_disp = f"{curr_val}%" if curr_val is not None else "--"
+        est_range = d_con.get("estimated_range", pred_data.get("estimated_consistency", "Unavailable"))
         trend = d_con.get("trend", pred_data.get("consistency_trend", "Improving"))
         desc = d_con.get("description", "Daily learning streak sustainability.")
 
@@ -194,7 +198,7 @@ def render_predictive_performance_dashboard(user: str = None):
                 <div style="display: flex; gap: 20px; align-items: center;">
                     <div style="background: #F8FAFC; padding: 12px 20px; border-radius: 12px; border: 1px solid #E2E8F0;">
                         <span style="color: #64748B; font-size: 0.75rem; font-weight: 800;">CURRENT CONSISTENCY</span>
-                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_val}%</div>
+                        <div style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_disp}</div>
                     </div>
                     <div style="font-size: 1.5rem; font-weight: 900; color: #2563EB;">➔</div>
                     <div style="background: #EFF6FF; padding: 12px 20px; border-radius: 12px; border: 1px solid #BFDBFE;">

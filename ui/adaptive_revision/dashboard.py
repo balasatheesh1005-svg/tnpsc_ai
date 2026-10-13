@@ -94,7 +94,15 @@ def render_adaptive_revision_dashboard(user: str = None):
     # 9. Section 9 - ✅ Estimated Revision Completion Meter
     est_comp = html.escape(str(revision_data.get("estimated_completion", "85% estimated revision completion in 24 days")))
     sections = revision_data.get("dashboard_sections", {})
-    comp_pct = int(sections.get("completion_percentage", 85))
+    raw_comp = sections.get("completion_percentage") if "completion_percentage" in sections else revision_data.get("completion_percentage")
+
+    if raw_comp is None:
+        comp_badge = """<span style="background: rgba(100, 116, 139, 0.15); color: #64748B; font-weight: 850; font-size: 0.9rem; padding: 4px 14px; border-radius: 999px;">Not assessed</span>"""
+        meter_bar = """<div style="background: #CBD5E1; width: 0%; height: 100%; border-radius: 999px;"></div>"""
+    else:
+        comp_pct = max(0, min(100, int(raw_comp)))
+        comp_badge = f"""<span style="background: rgba(16, 185, 129, 0.15); color: #10B981; font-weight: 950; font-size: 0.9rem; padding: 4px 14px; border-radius: 999px;">{comp_pct}% Projected</span>"""
+        meter_bar = f"""<div style="background: linear-gradient(90deg, #2563EB, #10B981); width: {comp_pct}%; height: 100%; border-radius: 999px; transition: width 0.5s ease;"></div>"""
 
     st.markdown(
         f"""
@@ -103,12 +111,10 @@ def render_adaptive_revision_dashboard(user: str = None):
                 <div style="font-size: 1.05rem; font-weight: 900; color: #0F172A;">
                     ✅ Estimated Revision Completion
                 </div>
-                <span style="background: rgba(16, 185, 129, 0.15); color: #10B981; font-weight: 950; font-size: 0.9rem; padding: 4px 14px; border-radius: 999px;">
-                    {comp_pct}% Projected
-                </span>
+                {comp_badge}
             </div>
             <div style="background: #F1F5F9; border-radius: 999px; height: 12px; overflow: hidden; margin-bottom: 10px;">
-                <div style="background: linear-gradient(90deg, #2563EB, #10B981); width: {comp_pct}%; height: 100%; border-radius: 999px; transition: width 0.5s ease;"></div>
+                {meter_bar}
             </div>
             <div style="color: #475569; font-size: 0.88rem; font-weight: 700; text-align: center;">
                 🎯 {est_comp}

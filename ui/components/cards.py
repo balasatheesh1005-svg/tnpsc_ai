@@ -1046,7 +1046,13 @@ def revision_5level_target_card(target: dict) -> HtmlFragment:
     q = html.escape(str(target.get("level4_question_type", "Assertion & Reason")))
     est = html.escape(str(target.get("estimated_time_mins", 12)))
     status = html.escape(str(target.get("status", "Due Today")))
-    acc = target.get("accuracy", 50)
+    acc = target.get("accuracy")
+    if acc is not None:
+        acc_disp = f"{acc}%"
+        acc_color = "#0F172A"
+    else:
+        acc_disp = "Not assessed"
+        acc_color = "#64748B"
 
     return _fragment(f"""
     <div class="nova-glass-card" style="border-left: 5px solid #2563EB; background: linear-gradient(135deg, rgba(239, 246, 255, 0.95) 0%, rgba(255, 255, 255, 0.88) 100%); padding: 20px;">
@@ -1068,7 +1074,7 @@ def revision_5level_target_card(target: dict) -> HtmlFragment:
             <span style="background: #2563EB; color: white; padding: 2px 10px; border-radius: 8px;">{q}</span>
         </div>
         <div style="color: #64748B; font-size: 0.88rem; font-weight: 750;">
-            📊 Current Sub-Repository Accuracy: <strong style="color: #0F172A;">{acc}%</strong>
+            📊 Current Sub-Repository Accuracy: <strong style="color: {acc_color};">{acc_disp}</strong>
         </div>
     </div>
     """)
@@ -1420,25 +1426,31 @@ def recommendation_risk_alert_html(rec_data: dict) -> HtmlFragment:
 def readiness_hero_card_html(readiness_data: dict) -> HtmlFragment:
     """Render Hero Card with Circular Readiness Ring and Classification Level."""
     raw_score = readiness_data.get("overall_readiness")
-    score = int(raw_score) if raw_score is not None else 0
     level = html.escape(str(readiness_data.get("level", "Exam Ready")))
     reason = html.escape(str(readiness_data.get("readiness_reason", "")))
 
-    if score >= 90:
-        ring_color = "#10B981"
-        badge_bg = "#10B981"
-    elif score >= 76:
-        ring_color = "#2563EB"
-        badge_bg = "#2563EB"
-    elif score >= 51:
-        ring_color = "#0284C7"
+    if raw_score is None:
+        score_disp = "--"
+        ring_color = "#64748B"
         badge_bg = "#0284C7"
-    elif score >= 26:
-        ring_color = "#F97316"
-        badge_bg = "#F97316"
     else:
-        ring_color = "#EF4444"
-        badge_bg = "#EF4444"
+        score = int(raw_score)
+        score_disp = f"{score}%"
+        if score >= 90:
+            ring_color = "#10B981"
+            badge_bg = "#10B981"
+        elif score >= 76:
+            ring_color = "#2563EB"
+            badge_bg = "#2563EB"
+        elif score >= 51:
+            ring_color = "#0284C7"
+            badge_bg = "#0284C7"
+        elif score >= 26:
+            ring_color = "#F97316"
+            badge_bg = "#F97316"
+        else:
+            ring_color = "#EF4444"
+            badge_bg = "#EF4444"
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 24px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 249, 255, 0.95)); border: 1px solid rgba(2, 132, 199, 0.3);">
@@ -1462,7 +1474,7 @@ def readiness_hero_card_html(readiness_data: dict) -> HtmlFragment:
 
             <div style="text-align: center; background: rgba(255, 255, 255, 0.9); padding: 18px 24px; border-radius: 20px; border: 2px solid {ring_color}; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); min-width: 140px;">
                 <div style="color: {ring_color}; font-size: 3.2rem; font-weight: 950; line-height: 1;">
-                    {score}%
+                    {score_disp}
                 </div>
                 <div style="color: #64748B; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; margin-top: 4px;">
                     Readiness Score
@@ -1478,11 +1490,24 @@ def subject_readiness_grid_html(subjects_list: list) -> HtmlFragment:
     cards_html = ""
     for item in subjects_list:
         subj = html.escape(str(item.get("subject", "Subject")))
-        score = int(item.get("score", 50))
+        raw_score = item.get("score")
 
-        bar_color = "#10B981" if score >= 80 else ("#2563EB" if score >= 65 else ("#F97316" if score >= 50 else "#EF4444"))
-
-        cards_html += f"""
+        if raw_score is None:
+            cards_html += f"""
+        <div style="background: rgba(255, 255, 255, 0.85); border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <span style="color: #0F172A; font-weight: 900; font-size: 0.95rem;">{subj}</span>
+                <span style="color: #64748B; font-weight: 850; font-size: 0.82rem; background: #F1F5F9; padding: 2px 8px; border-radius: 6px;">Not assessed</span>
+            </div>
+            <div style="background: #E2E8F0; border-radius: 999px; height: 8px; overflow: hidden;">
+                <div style="background: #CBD5E1; width: 0%; height: 100%; border-radius: 999px;"></div>
+            </div>
+        </div>
+        """
+        else:
+            score = int(raw_score)
+            bar_color = "#10B981" if score >= 80 else ("#2563EB" if score >= 65 else ("#F97316" if score >= 50 else "#EF4444"))
+            cards_html += f"""
         <div style="background: rgba(255, 255, 255, 0.85); border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; margin-bottom: 10px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
                 <span style="color: #0F172A; font-weight: 900; font-size: 0.95rem;">{subj}</span>
@@ -1710,12 +1735,14 @@ def predictive_hero_card_html(pred_data: dict) -> HtmlFragment:
     """Render Master Hero Card for Predictive Performance V2."""
     readiness_range = html.escape(str(pred_data.get("estimated_readiness", "Unavailable")))
     mock_range = html.escape(str(pred_data.get("estimated_mock_accuracy", "Unavailable")))
-    curr_readiness = int(pred_data.get("current_readiness") or 0)
-    curr_mock = int(pred_data.get("current_mock_accuracy") or 0)
+    raw_read = pred_data.get("current_readiness")
+    curr_read_disp = f"{int(raw_read)}%" if raw_read is not None else "--"
+    raw_mock = pred_data.get("current_mock_accuracy")
+    curr_mock_disp = f"{int(raw_mock)}%" if raw_mock is not None else "--"
     confidence = int(pred_data.get("prediction_confidence") or 0)
     trend = html.escape(str(pred_data.get("readiness_trend", "Stable")))
 
-    conf_bg = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else "#F97316")
+    conf_bg = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else ("#64748B" if confidence < 50 else "#F97316"))
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 24px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.95)); border: 1px solid rgba(147, 197, 253, 0.3); color: white;">
@@ -1743,7 +1770,7 @@ def predictive_hero_card_html(pred_data: dict) -> HtmlFragment:
                         Current Readiness
                     </div>
                     <div style="color: white; font-size: 1.8rem; font-weight: 950; line-height: 1;">
-                        {curr_readiness}%
+                        {curr_read_disp}
                     </div>
                     <div style="color: #34D399; font-size: 0.85rem; font-weight: 900; margin-top: 6px;">
                         ➔ {readiness_range}
@@ -1755,7 +1782,7 @@ def predictive_hero_card_html(pred_data: dict) -> HtmlFragment:
                         Next Mock Acc.
                     </div>
                     <div style="color: white; font-size: 1.8rem; font-weight: 950; line-height: 1;">
-                        {curr_mock}%
+                        {curr_mock_disp}
                     </div>
                     <div style="color: #60A5FA; font-size: 0.85rem; font-weight: 900; margin-top: 6px;">
                         ➔ {mock_range}
@@ -1783,12 +1810,14 @@ def predictive_comparison_cards_html(pred_data: dict) -> HtmlFragment:
 
     for key, d in dims.items():
         name = html.escape(str(d.get("name", key)))
-        curr = int(d.get("current", 70))
-        est_range = html.escape(str(d.get("estimated_range", "72-76%")))
+        raw_curr = d.get("current")
+        curr_disp = f"{int(raw_curr)}%" if raw_curr is not None else "--"
+        bar_w = int(raw_curr) if raw_curr is not None else 0
+        est_range = html.escape(str(d.get("estimated_range", "Unavailable")))
         trend = html.escape(str(d.get("trend", "Improving")))
         icon = icons.get(key, "📊")
 
-        t_color = "#10B981" if trend == "Improving" else ("#2563EB" if trend == "Stable" else "#F97316")
+        t_color = "#10B981" if trend == "Improving" else ("#2563EB" if trend in ["Stable", "Early Signal"] else ("#64748B" if trend in ["Not assessed", "No Data"] else "#F97316"))
 
         cards_markup += f"""
         <div class="nova-glass-card" style="padding: 16px; border-radius: 16px;">
@@ -1801,7 +1830,7 @@ def predictive_comparison_cards_html(pred_data: dict) -> HtmlFragment:
             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 10px;">
                 <div>
                     <div style="font-size: 0.72rem; color: #64748B; font-weight: 800; text-transform: uppercase;">Current</div>
-                    <div style="font-size: 1.4rem; font-weight: 950; color: #0F172A;">{curr}%</div>
+                    <div style="font-size: 1.4rem; font-weight: 950; color: #0F172A;">{curr_disp}</div>
                 </div>
                 <div style="text-align: right;">
                     <div style="font-size: 0.72rem; color: #2563EB; font-weight: 850; text-transform: uppercase;">Projected</div>
@@ -1809,7 +1838,7 @@ def predictive_comparison_cards_html(pred_data: dict) -> HtmlFragment:
                 </div>
             </div>
             <div style="background: #E2E8F0; border-radius: 999px; height: 6px; margin-top: 10px; overflow: hidden;">
-                <div style="background: linear-gradient(90deg, #2563EB, #10B981); width: {curr}%; height: 100%; border-radius: 999px;"></div>
+                <div style="background: linear-gradient(90deg, #2563EB, #10B981); width: {bar_w}%; height: 100%; border-radius: 999px;"></div>
             </div>
         </div>
         """
@@ -2098,6 +2127,12 @@ def exam_strategy_hero_card_html(strat: dict) -> HtmlFragment:
     raw_conf = strat.get("strategy_confidence")
     confidence = int(raw_conf) if raw_conf is not None else 70
     reason = html.escape(str(strat.get("confidence_reason", "Consistent mock history & stable readiness.")))
+    is_pers = strat.get("is_personalized", True)
+
+    badge_label = "🎯 Personalized Exam Strategy" if is_pers else "🏛️ GENERAL TNPSC STRATEGY"
+    badge_bg = "rgba(59, 130, 246, 0.25)" if is_pers else "rgba(100, 116, 139, 0.3)"
+    badge_color = "#93C5FD" if is_pers else "#CBD5E1"
+    badge_border = "rgba(147, 197, 253, 0.4)" if is_pers else "rgba(148, 163, 184, 0.4)"
 
     conf_color = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else "#F97316")
 
@@ -2106,8 +2141,8 @@ def exam_strategy_hero_card_html(strat: dict) -> HtmlFragment:
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
             <div style="flex: 1; min-width: 260px;">
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-                    <span style="background: rgba(59, 130, 246, 0.25); color: #93C5FD; border: 1px solid rgba(147, 197, 253, 0.4); font-size: 0.78rem; font-weight: 900; padding: 4px 12px; border-radius: 999px; text-transform: uppercase;">
-                        🎯 Exam Execution Strategy V2
+                    <span style="background: {badge_bg}; color: {badge_color}; border: 1px solid {badge_border}; font-size: 0.78rem; font-weight: 900; padding: 4px 12px; border-radius: 999px; text-transform: uppercase;">
+                        {badge_label}
                     </span>
                     <span style="background: {conf_color}; color: white; font-size: 0.78rem; font-weight: 900; padding: 4px 12px; border-radius: 999px;">
                         🎯 {confidence}% Confidence
@@ -2117,7 +2152,7 @@ def exam_strategy_hero_card_html(strat: dict) -> HtmlFragment:
                     {overall}
                 </div>
                 <p style="color: #CBD5E1; font-size: 0.88rem; margin: 0; font-weight: 600;">
-                    Single pre-exam strategy authority for TNPSC Nova AI • Personalized subject order, time allocation & skip framework.
+                    Single pre-exam strategy authority for TNPSC Nova AI • Attempt sequence, time management & skip framework.
                 </p>
             </div>
 
@@ -2139,6 +2174,8 @@ def exam_strategy_hero_card_html(strat: dict) -> HtmlFragment:
 def exam_strategy_subject_flow_html(strat: dict) -> HtmlFragment:
     """Render Subject Attempt Order Flow View."""
     order = strat.get("subject_order", ["History", "Polity", "Science", "Economy", "Current Affairs"])
+    is_pers = strat.get("is_personalized", True)
+    title_label = "📚 Subject Attempt Order (Strength-First Sequence)" if is_pers else "📚 Subject Attempt Order (General Benchmark Blueprint)"
 
     flow_items = ""
     for idx, subj in enumerate(order, 1):
@@ -2158,7 +2195,7 @@ def exam_strategy_subject_flow_html(strat: dict) -> HtmlFragment:
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 20px; margin-bottom: 20px;">
         <div style="font-size: 1.05rem; font-weight: 900; color: #0F172A; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-            📚 Subject Attempt Order (Strength-First Sequence)
+            {title_label}
         </div>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
             {flow_items}

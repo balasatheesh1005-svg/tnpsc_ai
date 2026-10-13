@@ -81,19 +81,20 @@ def get_exam_readiness(
     streak = get_streak(user, context=ctx)
     xp_data = get_user_xp(user, context=ctx)
 
+    standard_subjects = ["History", "Polity", "Geography", "Economy", "Science", "Current Affairs"]
     # 2. Evaluate 5 Core Dimensions (0-100 each)
     if not progress_rows:
         is_eligible = False
-        overall_readiness = 0
+        overall_readiness = None
         readiness_level = "No Test History"
         readiness_dimensions = {
-            "topic_mastery": 0,
-            "repository_completion": 0,
-            "revision_health": 0,
-            "consistency": 0,
-            "pyq_readiness": 0,
+            "topic_mastery": None,
+            "repository_completion": None,
+            "revision_health": None,
+            "consistency": None,
+            "pyq_readiness": None,
         }
-        subject_scores = []
+        subject_scores = [{"subject": s, "score": None, "status": "Not assessed"} for s in standard_subjects]
         strengths = ["Ready to start practice"]
         improvements = ["Complete your first practice test to unlock readiness evaluation."]
         readiness_reason = "No test records found. Complete practice sessions to evaluate exam readiness."
@@ -102,115 +103,174 @@ def get_exam_readiness(
         weakest_subj = "None"
     else:
         all_accuracies = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
-        avg_topic_mastery = round(sum(all_accuracies) / len(all_accuracies), 1) if all_accuracies else intel_mastery
-        d1_mastery = max(10.0, min(100.0, avg_topic_mastery))
+        avg_topic_mastery = round(sum(all_accuracies) / len(all_accuracies), 1) if all_accuracies else None
+        d1_mastery = avg_topic_mastery
 
         # Dimension 2: Repository Completion Dimension (20%)
         hard_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "hard" in str(r.get("topic", "")).lower()]
         stmt_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "statement" in str(r.get("topic", "")).lower()]
         assert_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "assertion" in str(r.get("topic", "")).lower()]
-
-        avg_hard = sum(hard_accs) / len(hard_accs) if hard_accs else (d1_mastery * 0.85)
-        avg_stmt = sum(stmt_accs) / len(stmt_accs) if stmt_accs else (d1_mastery * 0.9)
-        avg_assert = sum(assert_accs) / len(assert_accs) if assert_accs else (d1_mastery * 0.8)
-
-        d2_repo_completion = max(10.0, min(100.0, (avg_hard + avg_stmt + avg_assert) / 3.0))
+        has_repo_data = bool(hard_accs or stmt_accs or assert_accs)
+        if has_repo_data:
+            avg_hard = sum(hard_accs) / len(hard_accs) if hard_accs else (d1_mastery or 50.0)
+            avg_stmt = sum(stmt_accs) / len(stmt_accs) if stmt_accs else (d1_mastery or 50.0)
+            avg_assert = sum(assert_accs) / len(assert_accs) if assert_accs else (d1_mastery or 50.0)
+            d2_repo_completion = max(10.0, min(100.0, (avg_hard + avg_stmt + avg_assert) / 3.0))
+        else:
+            d2_repo_completion = None
 
         # Dimension 3: Revision Health Dimension (20%)
         rev_prog = revision_analytics.get("progress", {})
-        rev_pct = float(rev_prog.get("percentage", 75.0))
-        d3_revision_health = max(10.0, min(100.0, rev_pct))
+        has_rev_data = bool(revision_analytics.get("total", 0) > 0 or rev_prog.get("completed", 0) > 0)
+        if has_rev_data:
+            rev_pct = float(rev_prog.get("percentage", 75.0))
+            d3_revision_health = max(10.0, min(100.0, rev_pct))
+        else:
+            d3_revision_health = None
 
         # Dimension 4: Learning Consistency Dimension (15%)
-        d4_consistency = max(10.0, min(100.0, (streak * 12.0) + 40.0))
+        if streak > 0:
+            d4_consistency = max(10.0, min(100.0, (streak * 12.0) + 40.0))
+        else:
+            d4_consistency = None
 
         # Dimension 5: PYQ & Exam Readiness Dimension (15%)
         pyq_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "pyq" in str(r.get("topic", "")).lower()]
-        avg_pyq = sum(pyq_accs) / len(pyq_accs) if pyq_accs else (d1_mastery * 0.9)
-        d5_pyq = max(10.0, min(100.0, avg_pyq))
-
-        if len(progress_rows) < 5:
-            is_eligible = False
-            overall_readiness = int(round(sum(all_accuracies) / len(all_accuracies))) if all_accuracies else 0
-            readiness_level = "Early Assessment"
+        if pyq_accs:
+            avg_pyq = sum(pyq_accs) / len(pyq_accs)
+            d5_pyq = max(10.0, min(100.0, avg_pyq))
         else:
-            is_eligible = True
-            weighted_score = (
-                (0.30 * d1_mastery) +
-                (0.20 * d2_repo_completion) +
-                (0.20 * d3_revision_health) +
-                (0.15 * d4_consistency) +
-                (0.15 * d5_pyq)
-            )
-            overall_readiness = max(10, min(100, int(round(weighted_score))))
-            readiness_level = _classify_readiness_level(overall_readiness)
+            d5_pyq = None
 
-        readiness_dimensions = {
-            "topic_mastery": int(round(d1_mastery)),
-            "repository_completion": int(round(d2_repo_completion)),
-            "revision_health": int(round(d3_revision_health)),
-            "consistency": int(round(d4_consistency)),
-            "pyq_readiness": int(round(d5_pyq)),
-        }
+        # 4. Subject-wise Readiness Analysis (Strict Evidence Gate)
+        subj_acc_map = {}
+        for r in progress_rows:
+            raw_s = r.get("subject", "")
+            s_name = format_subject_name(raw_s).strip()
+            acc = r.get("accuracy")
+            if s_name and acc is not None:
+                norm_key = s_name.lower().replace("_", " ").replace("-", " ")
+                if norm_key not in subj_acc_map:
+                    subj_acc_map[norm_key] = {"display": s_name, "scores": []}
+                try:
+                    subj_acc_map[norm_key]["scores"].append(float(acc))
+                except (ValueError, TypeError):
+                    pass
 
-        # 4. Subject-wise Readiness Analysis
         standard_subjects = ["History", "Polity", "Geography", "Economy", "Science", "Current Affairs"]
         subject_scores = []
 
-        subj_acc_map = {}
-        for r in progress_rows:
-            s_name = format_subject_name(r.get("subject", "")).strip()
-            acc = float(r.get("accuracy", 0))
-            if s_name:
-                if s_name not in subj_acc_map:
-                    subj_acc_map[s_name] = []
-                subj_acc_map[s_name].append(acc)
-
         for subj_item in standard_subjects:
-            if subj_item in subj_acc_map and subj_acc_map[subj_item]:
-                s_score = int(round(sum(subj_acc_map[subj_item]) / len(subj_acc_map[subj_item])))
-            elif subj_item == format_subject_name(intel_subject):
-                s_score = int(round(intel_mastery))
+            norm_item = subj_item.lower().replace("_", " ").replace("-", " ")
+            if norm_item in subj_acc_map and subj_acc_map[norm_item]["scores"]:
+                scores = subj_acc_map[norm_item]["scores"]
+                s_score = int(round(sum(scores) / len(scores)))
+                subject_scores.append({
+                    "subject": subj_item,
+                    "score": s_score,
+                    "status": "Assessed",
+                })
             else:
-                mod_offset = (len(subj_item) * 3) % 15 - 7
-                s_score = max(35, min(95, overall_readiness + mod_offset))
+                subject_scores.append({
+                    "subject": subj_item,
+                    "score": None,
+                    "status": "Not assessed",
+                })
 
-            subject_scores.append({
-                "subject": subj_item,
-                "score": s_score,
-            })
+        assessed_subjects = [s for s in subject_scores if s["score"] is not None]
+        assessed_count = len(assessed_subjects)
 
-        sorted_subjects = sorted(subject_scores, key=lambda x: x["score"], reverse=True)
-        strongest_subj = sorted_subjects[0]["subject"]
-        strongest_score = sorted_subjects[0]["score"]
-        weakest_subj = sorted_subjects[-1]["subject"]
-        weakest_score = sorted_subjects[-1]["score"]
+        if assessed_subjects:
+            sorted_assessed = sorted(assessed_subjects, key=lambda x: x["score"], reverse=True)
+            strongest_subj = sorted_assessed[0]["subject"]
+            strongest_score = sorted_assessed[0]["score"]
+            weakest_subj = sorted_assessed[-1]["subject"]
+            weakest_score = sorted_assessed[-1]["score"]
+        else:
+            strongest_subj = "None"
+            strongest_score = 0
+            weakest_subj = "None"
+            weakest_score = 0
 
-        # 5. Strength Analysis Logic
+        # Eligibility Gate: requires >= 5 tests and >= 2 assessed subjects for overall readiness
+        if len(progress_rows) < 5 or assessed_count < 2:
+            is_eligible = False
+            overall_readiness = None
+            readiness_level = "Early Assessment"
+            readiness_reason = (
+                f"More subject coverage needed for overall exam readiness. "
+                f"Currently observed: {assessed_count} subject(s) across {len(progress_rows)} test(s). "
+                f"Complete practice across at least 2 subjects to unlock full readiness evaluation."
+            )
+            mentor_insight = (
+                f"Observed early signal in {strongest_subj} ({strongest_score}%). "
+                f"Expand practice to other subjects to establish your full exam readiness profile."
+                if strongest_subj != "None"
+                else "Welcome! Complete practice tests across subjects to establish your readiness baseline."
+            )
+        else:
+            is_eligible = True
+            dim_weights = [
+                (0.30, d1_mastery),
+                (0.20, d2_repo_completion),
+                (0.20, d3_revision_health),
+                (0.15, d4_consistency),
+                (0.15, d5_pyq),
+            ]
+            valid_dims = [(w, val) for w, val in dim_weights if val is not None]
+            if valid_dims:
+                total_w = sum(w for w, _ in valid_dims)
+                weighted_score = sum(w * val for w, val in valid_dims) / total_w
+            else:
+                weighted_score = 50.0
+            overall_readiness = max(10, min(100, int(round(weighted_score))))
+            readiness_level = _classify_readiness_level(overall_readiness)
+            readiness_reason = (
+                f"Overall preparation level is currently {overall_readiness}% ({readiness_level}). "
+                f"Strong performance in {strongest_subj} ({strongest_score}%) and daily consistency drive your readiness. "
+                f"Increasing revision coverage in {weakest_subj} ({weakest_score}%) and hard repository completion "
+                f"remains the primary path to elevating readiness."
+            )
+            mentor_insight = (
+                f"Your preparation in {strongest_subj} is driving your readiness score. "
+                f"Focusing on {weakest_subj} will balance your portfolio and push your score higher."
+            )
+
+        readiness_dimensions = {
+            "topic_mastery": int(round(d1_mastery)) if d1_mastery is not None else None,
+            "repository_completion": int(round(d2_repo_completion)) if d2_repo_completion is not None else None,
+            "revision_health": int(round(d3_revision_health)) if d3_revision_health is not None else None,
+            "consistency": int(round(d4_consistency)) if d4_consistency is not None else None,
+            "pyq_readiness": int(round(d5_pyq)) if d5_pyq is not None else None,
+        }
+
+        # 5. Strength Analysis Logic (Strict Evidence)
         strengths = []
-        if d4_consistency >= 70 or streak >= 3:
+        if streak >= 3:
             strengths.append("Consistent Daily Study Habit")
-        if d3_revision_health >= 70:
+        if d3_revision_health is not None and d3_revision_health >= 70:
             strengths.append("Excellent Spaced Revision Discipline")
-        if strongest_score >= 70:
+        if strongest_subj != "None" and strongest_score >= 70:
             strengths.append(f"Strong {strongest_subj} Topic Mastery ({strongest_score}%)")
-        if d1_mastery >= 70:
+        if d1_mastery is not None and d1_mastery >= 70:
             strengths.append("Solid Foundational Accuracy")
-        if d5_pyq >= 65:
+        if d5_pyq is not None and d5_pyq >= 65:
             strengths.append("High Official PYQ Accuracy")
 
         if not strengths:
-            strengths.append("Active Daily Platform Engagement")
+            strengths.append("Early Diagnostic Practice Underway")
 
-        # 6. Improvement Analysis Logic
+        # 6. Improvement Analysis Logic (Evidence-Based)
         improvements = []
-        if d3_revision_health < 75 or len(revision_analytics.get("overdue", [])) > 0:
+        if assessed_count < 2:
+            improvements.append("Expand practice to at least 2 subjects to establish full readiness")
+        if d3_revision_health is not None and d3_revision_health < 75:
             improvements.append("Clear Overdue Spaced Revisions")
-        if d2_repo_completion < 70 or avg_hard < 60:
+        if d2_repo_completion is not None and d2_repo_completion < 70:
             improvements.append("Complete Hard Repository Questions")
-        if weakest_score < 70:
+        if assessed_count >= 2 and weakest_subj != "None" and weakest_score < 70:
             improvements.append(f"Increase {weakest_subj} Revision Coverage ({weakest_score}%)")
-        if d5_pyq < 70:
+        if d5_pyq is not None and d5_pyq < 70:
             improvements.append("Attempt More Official PYQ Practice Sets")
         if streak < 3:
             improvements.append("Maintain 5-Day Study Streak")
@@ -219,12 +279,21 @@ def get_exam_readiness(
             improvements.append("Take Full Length Grand Test")
 
         # 7. Readiness Explanation Rationale
-        readiness_reason = (
-            f"Overall preparation level is currently {overall_readiness}% ({readiness_level}). "
-            f"Strong performance in {strongest_subj} ({strongest_score}%) and daily consistency drive your readiness. "
-            f"Increasing revision coverage in {weakest_subj} ({weakest_score}%) and hard repository completion "
-            f"remains the primary path to elevating readiness."
-        )
+        if overall_readiness is None:
+            readiness_reason = (
+                f"Overall exam readiness is not assessed yet. "
+                f"Observed early signal in {strongest_subj} ({strongest_score}%). "
+                f"Complete practice across more subjects to unlock a reliable overall readiness score."
+                if strongest_subj != "None"
+                else "Overall exam readiness is not assessed yet. Complete practice across more subjects to unlock a reliable overall readiness score."
+            )
+        else:
+            readiness_reason = (
+                f"Overall preparation level is currently {overall_readiness}% ({readiness_level}). "
+                f"Strong performance in {strongest_subj} ({strongest_score}%) and daily consistency drive your readiness. "
+                f"Increasing revision coverage in {weakest_subj} ({weakest_score}%) and hard repository completion "
+                f"remains the primary path to elevating readiness."
+            )
 
         # 8. AI Mentor Insight
         mentor_insight = (
@@ -236,7 +305,7 @@ def get_exam_readiness(
     result = {
         "is_eligible": is_eligible,
         "overall_readiness": overall_readiness,
-        "overall_readiness_score": overall_readiness,
+        "overall_readiness_score": 0 if not progress_rows else overall_readiness,
         "overall_score": overall_readiness,
         "level": readiness_level,
         "readiness_level": readiness_level,

@@ -108,18 +108,38 @@ def get_exam_strategy(
     recommendation = get_ai_recommendation(user, context=ctx)
     intelligence = get_learning_intelligence(user, context=ctx)
     study_plan = get_personal_study_plan(user, available_time=45, context=ctx)
-    weakness_data = get_weakness(user, context=ctx)
-    progress_rows = get_progress(user, context=ctx)
-    streak = get_streak(user, context=ctx)
+    weakness_data = get_weakness(user, context=ctx) or {}
+    progress_rows = get_progress(user, context=ctx) or []
+    streak = get_streak(user, context=ctx) or 0
+
+    sample_size = len(progress_rows)
+    observed_subjects = list(set(
+        format_subject_name(r.get("subject", "")).strip()
+        for r in progress_rows
+        if r.get("subject")
+    ))
+    mock_rows = [
+        r for r in progress_rows
+        if "grand_test" in str(r.get("topic", "")).lower() or "mock" in str(r.get("topic", "")).lower()
+    ]
+    has_mock = len(mock_rows) > 0
 
     raw_readiness = readiness.get("overall_readiness_score")
     readiness_score = int(raw_readiness) if raw_readiness is not None else None
 
     raw_mock_acc = mock_data.get("overall_accuracy")
-    mock_accuracy = int(raw_mock_acc) if raw_mock_acc is not None else None
+    mock_accuracy = int(raw_mock_acc) if (has_mock and raw_mock_acc is not None) else None
     has_mock_accuracy = mock_accuracy is not None
 
-    overall_strategy = _determine_overall_strategy(readiness_score, mock_accuracy)
+    # Evidence Gate: Personalized strategy requires >= 5 tests, >= 2 subjects, and >= 1 mock
+    is_personalized = bool(sample_size >= 5 and len(observed_subjects) >= 2 and has_mock)
+
+    if is_personalized:
+        overall_strategy = _determine_overall_strategy(readiness_score, mock_accuracy)
+        strategy_label = "PERSONALIZED EXAM STRATEGY"
+    else:
+        overall_strategy = "General TNPSC Strategy (Standard Syllabus Architecture)"
+        strategy_label = "GENERAL TNPSC STRATEGY"
 
     # Rank subjects by strength, accuracy, and speed to build early exam momentum
     mock_sections = mock_data.get("subject_breakdown", {})
@@ -147,11 +167,11 @@ def get_exam_strategy(
         weak_count = weak_subject_counts.get(subj, 0)
         base_weight = TNPSC_SUBJECT_QUESTION_WEIGHTS.get(subj, 15)
         
-        if mock_acc_val is not None:
+        if is_personalized and mock_acc_val is not None:
             mock_acc = float(mock_acc_val)
             strength_score = (mock_acc * 1.5) - (weak_count * 10.0) + (base_weight * 0.2)
         else:
-            # Baseline syllabus-weight priority when mock accuracy is unavailable
+            # Baseline syllabus-weight priority for benchmark or when mock accuracy is unavailable
             strength_score = (base_weight * 1.5) - (weak_count * 10.0)
         subject_strength_scores[subj] = round(strength_score, 2)
 
@@ -180,9 +200,7 @@ def get_exam_strategy(
     allocated_sum = 0
     for idx, subj in enumerate(selected_subjects):
         weight = TNPSC_SUBJECT_QUESTION_WEIGHTS.get(subj, 20)
-        # Calculate raw proportional minutes
         if idx == len(selected_subjects) - 1:
-            # Last subject gets exact remainder of available_subject_minutes
             mins = available_subject_minutes - allocated_sum
         else:
             mins = int(round((weight / total_weights) * available_subject_minutes))
@@ -207,7 +225,7 @@ def get_exam_strategy(
 
     # 6. Skip & Return Strategy (Prevent Time-Traps)
     skip_strategy = [
-        "If any single Economy calculation takes > 75 seconds, skip immediately and mark for Pass 2.",
+        "If any single calculation takes > 75 seconds, skip immediately and mark for Pass 2.",
         "Do not spend > 90 seconds on complex multi-statement matching questions during Pass 1.",
         "Maintain a steady pace of 45-50 seconds per question on standard direct MCQs.",
     ]
@@ -223,64 +241,47 @@ def get_exam_strategy(
 
     # 8. Risk Awareness (Constructive & Actionable Guidance, Non-Fear Wording)
     risk_alerts = []
-    
-    # Overthinking Risk
     risk_alerts.append("Overthinking Risk: Avoid changing initial answers on direct factual questions unless clear evidence is found.")
-    
-    # Time Pressure Risk
-    if review_buffer_minutes < 15:
-        risk_alerts.append("Time Pressure Risk: Strictly enforce the section time limits to preserve a 15-minute final review buffer.")
-    else:
-        risk_alerts.append("Time Pressure Risk: Monitor elapsed time at the 60-minute mark to ensure pace matches targets.")
-
-    # Weak Subject Risk
-    if weak_subject_counts:
+    risk_alerts.append("Time Pressure Risk: Monitor elapsed time at the 60-minute mark to ensure pace matches targets.")
+    if is_personalized and weak_subject_counts:
         risk_alerts.append(f"Weak Subject Risk: Avoid spending excessive time on {lowest_subj} early in the exam.")
     else:
         risk_alerts.append("Pacing Risk: Avoid lingering on unfamiliar questions early in the exam; mark and proceed.")
-
-    # Guessing / Fatigue Risk
     risk_alerts.append("Fatigue & Guessing Risk: Take a 5-second mental reset between section transitions to maintain accuracy.")
 
     # 9. Strategy Confidence Calculation
-    # Deterministic confidence based on mock history consistency, readiness, and streak
     streak_val = float(streak) if isinstance(streak, (int, float)) else 0.0
 
-    if has_mock_accuracy and readiness_score is not None and readiness.get("is_eligible", False):
+    if is_personalized and has_mock_accuracy and readiness_score is not None:
         raw_confidence = (readiness_score * 0.45) + (mock_accuracy * 0.45) + min(10.0, streak_val * 0.8)
         strategy_confidence = max(65, min(98, int(round(raw_confidence))))
         confidence_reason = (
-            "The strategy is supported by consistent mock history, "
-            "stable readiness evaluation, and deterministic performance trends."
-        )
-    elif readiness_score is not None and readiness_score > 0:
-        raw_confidence = (readiness_score * 0.6) + min(15.0, streak_val * 1.5)
-        strategy_confidence = max(55, min(85, int(round(raw_confidence))))
-        confidence_reason = (
-            "Strategy calibrated from verified practice accuracy and syllabus weightages. "
-            "Complete mock examinations to unlock full mock-pace calibration."
+            "The strategy is personalized based on consistent mock history, "
+            "stable multi-subject readiness evaluation, and verified performance trends."
         )
     else:
-        strategy_confidence = 70
+        strategy_confidence = 65
         confidence_reason = (
-            "Standard exam blueprint strategy based on official TNPSC subject weightages. "
-            "Complete practice tests to unlock personalized strategy calibration."
+            "General benchmark strategy based on official TNPSC subject weightages. "
+            "Complete practice across at least 2 subjects and 1 mock test to unlock personalized strategy calibration."
         )
 
     # 10. Mentor Strategy Advice
-    if has_mock_accuracy:
+    if is_personalized:
         mentor_strategy = (
             f"Begin with {top_subj} to build early momentum and confidence. "
             f"Stick strictly to time allocations and reserve the final {review_buffer_minutes} minutes for systematic review."
         )
     else:
         mentor_strategy = (
-            f"Begin with high-weightage sections ({top_subj} & Polity) to build early momentum. "
-            f"Stick strictly to section time allocations and reserve {review_buffer_minutes} minutes for systematic review."
+            f"Standard syllabus sequence: Begin with high-weightage sections ({top_subj} & Polity). "
+            f"Complete practice across at least 2 subjects to calibrate personalized section allocations."
         )
 
     # 11. Dashboard Sections Payload
     dashboard_sections = {
+        "is_personalized": is_personalized,
+        "strategy_label": strategy_label,
         "overall_strategy": overall_strategy,
         "subject_order": top_subject_order,
         "time_plan": time_plan,
@@ -296,6 +297,8 @@ def get_exam_strategy(
     }
 
     result = {
+        "is_personalized": is_personalized,
+        "strategy_label": strategy_label,
         "overall_strategy": overall_strategy,
         "subject_order": top_subject_order,
         "time_plan": time_plan,
