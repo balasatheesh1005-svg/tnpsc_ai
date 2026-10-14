@@ -24,12 +24,13 @@ def save_progress(user=None, subject="", topic="", accuracy=0, topic_id=None, re
 
     r_id = meta.get("repository_id", lookup)
 
-    # Determine display username for audit/logging column only
-    display_username = ""
+    # Determine display username for audit/logging column only (privacy-safe)
+    from core.user_identity import get_safe_public_identity
+
     if isinstance(user, str) and not (len(user) == 36 and user.count("-") == 4):
-        display_username = user
+        display_username = get_safe_public_identity(user, seed=user_id)
     else:
-        display_username = current_username() or ""
+        display_username = get_safe_public_identity(current_username(), seed=user_id)
 
     data = {
         "user_id": user_id,

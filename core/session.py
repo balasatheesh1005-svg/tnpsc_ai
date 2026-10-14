@@ -70,12 +70,21 @@ def save_auth_session(session, user, profile):
     if isinstance(user, dict) and not email:
         email = user.get("email")
 
-    username = profile_dict.get("username") or email or ""
+    raw_username = profile_dict.get("username")
+    raw_full_name = profile_dict.get("full_name")
+
+    from core.user_identity import get_safe_public_identity
+
+    username = get_safe_public_identity(
+        raw_identifier=raw_username,
+        full_name=raw_full_name,
+        seed=str(user_id) if user_id else (email or "learner"),
+    )
 
     st.session_state["user_id"] = str(user_id) if user_id else None
     st.session_state["username"] = username
     st.session_state["email"] = email
-    st.session_state["full_name"] = profile_dict.get("full_name") or ""
+    st.session_state["full_name"] = raw_full_name or ""
 
 
 def is_authenticated():

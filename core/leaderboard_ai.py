@@ -24,13 +24,18 @@ def get_top_users():
 
     leaderboard = []
 
+    from core.user_identity import get_safe_public_identity
+
     for row in rows or []:
         if not isinstance(row, dict):
             continue
 
-        username = row.get("username")
+        raw_username = row.get("username")
+        row_seed = row.get("user_id") or raw_username
 
-        if not username:
+        # Sanitize legacy rows from database (in case old rows contain raw email or null)
+        safe_username = get_safe_public_identity(raw_username, seed=row_seed)
+        if not safe_username:
             continue
 
         try:
@@ -38,7 +43,7 @@ def get_top_users():
         except (TypeError, ValueError):
             continue
 
-        leaderboard.append((username, round(accuracy, 2)))
+        leaderboard.append((safe_username, round(accuracy, 2)))
 
     leaderboard.sort(key=lambda x: x[1], reverse=True)
     top_10 = leaderboard[:10]
