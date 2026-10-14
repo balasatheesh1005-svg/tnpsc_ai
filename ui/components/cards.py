@@ -1575,18 +1575,50 @@ def strengths_improvements_card_html(strengths: list, improvements: list) -> Htm
 def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
     """Render Mock Hero Card with Accuracy Ring and Attempt Ratio Bar."""
     raw_acc = mock_data.get("overall_accuracy")
-    has_acc = raw_acc is not None
-    acc = int(raw_acc) if has_acc else 0
-    acc_disp = f"{acc}%" if has_acc else "--"
-    level = html.escape(str(mock_data.get("mock_level", "Good")))
-    ratio = mock_data.get("correct_vs_wrong", {})
-    c_pct = int(ratio.get("correct", acc)) if has_acc else 0
-    w_pct = int(ratio.get("wrong", 0)) if has_acc else 0
-    s_pct = int(ratio.get("skipped", 0)) if has_acc else 100
-    raw_rate = mock_data.get("attempt_rate")
-    att_rate = int(raw_rate) if raw_rate is not None else 0
+    has_mock_history = bool(mock_data.get("has_mock_history", False)) and raw_acc is not None
 
-    ring_color = "#94A3B8" if not has_acc else ("#10B981" if acc >= 85 else ("#2563EB" if acc >= 75 else ("#F97316" if acc >= 60 else "#EF4444")))
+    if not has_mock_history:
+        ring_color = "#94A3B8"
+        level = "Not assessed"
+        att_rate_disp = "Not assessed"
+        acc_disp = "--"
+        acc_label = "Mock Accuracy (Not assessed)"
+        ratio_html = """
+        <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 850; margin-bottom: 6px;">
+            <span style="color: #64748B;">✓ Correct: --</span>
+            <span style="color: #64748B;">✗ Wrong: --</span>
+            <span style="color: #64748B;">⊘ Skipped: --</span>
+        </div>
+        <div style="display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: #E2E8F0;">
+            <div style="background: #CBD5E1; width: 100%;"></div>
+        </div>
+        """
+        subtitle = "No mock tests attempted yet. Complete your first mock test to unlock mock intelligence."
+    else:
+        acc = int(raw_acc)
+        acc_disp = f"{acc}%"
+        acc_label = "Mock Accuracy"
+        level = html.escape(str(mock_data.get("mock_level", "Good")))
+        raw_rate = mock_data.get("attempt_rate")
+        att_rate_disp = f"{int(raw_rate)}% Attempt Rate" if raw_rate is not None else "Not assessed"
+        ratio = mock_data.get("correct_vs_wrong") or {}
+        c_pct = int(ratio.get("correct", acc))
+        w_pct = int(ratio.get("wrong", 0))
+        s_pct = int(ratio.get("skipped", max(0, 100 - c_pct - w_pct)))
+        ring_color = "#10B981" if acc >= 85 else ("#2563EB" if acc >= 75 else ("#F97316" if acc >= 60 else "#EF4444"))
+        ratio_html = f"""
+        <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 850; margin-bottom: 6px;">
+            <span style="color: #16A34A;">✓ Correct: {c_pct}%</span>
+            <span style="color: #DC2626;">✗ Wrong: {w_pct}%</span>
+            <span style="color: #64748B;">⊘ Skipped: {s_pct}%</span>
+        </div>
+        <div style="display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: #E2E8F0;">
+            <div style="background: #16A34A; width: {c_pct}%;"></div>
+            <div style="background: #DC2626; width: {w_pct}%;"></div>
+            <div style="background: #94A3B8; width: {s_pct}%;"></div>
+        </div>
+        """
+        subtitle = "Observed Mock Exam Performance"
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 24px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(243, 244, 246, 0.95)); border: 1px solid rgba(107, 114, 128, 0.3);">
@@ -1597,24 +1629,18 @@ def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
                         🎯 Mock Performance: {level}
                     </span>
                     <span style="color: #64748B; font-size: 0.78rem; font-weight: 800;">
-                        {att_rate}% Attempt Rate
+                        {att_rate_disp}
                     </span>
                 </div>
-                <div style="color: #0F172A; font-size: 1.5rem; font-weight: 950; line-height: 1.3; margin-bottom: 12px;">
+                <div style="color: #0F172A; font-size: 1.5rem; font-weight: 950; line-height: 1.3; margin-bottom: 4px;">
                     Observed Mock Exam Performance
+                </div>
+                <div style="color: #64748B; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">
+                    {subtitle}
                 </div>
 
                 <div style="background: rgba(248, 250, 252, 0.9); padding: 12px; border-radius: 12px; border: 1px solid #E2E8F0;">
-                    <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 850; margin-bottom: 6px;">
-                        <span style="color: #16A34A;">✓ Correct: {c_pct}%</span>
-                        <span style="color: #DC2626;">✗ Wrong: {w_pct}%</span>
-                        <span style="color: #64748B;">⊘ Skipped: {s_pct}%</span>
-                    </div>
-                    <div style="display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: #E2E8F0;">
-                        <div style="background: #16A34A; width: {c_pct}%;"></div>
-                        <div style="background: #DC2626; width: {w_pct}%;"></div>
-                        <div style="background: #94A3B8; width: {s_pct}%;"></div>
-                    </div>
+                    {ratio_html}
                 </div>
             </div>
 
@@ -1623,7 +1649,7 @@ def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
                     {acc_disp}
                 </div>
                 <div style="color: #64748B; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; margin-top: 4px;">
-                    Mock Accuracy
+                    {acc_label}
                 </div>
             </div>
         </div>
@@ -1633,10 +1659,44 @@ def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
 
 def mock_time_analysis_card_html(mock_data: dict) -> HtmlFragment:
     """Render Time Management Analysis Card."""
+    has_history = bool(mock_data.get("has_mock_history", False))
     raw_time = mock_data.get("time_per_question")
-    avg_time_disp = f"Avg {int(raw_time)} sec / Question" if raw_time is not None else "No timing data recorded"
-    analysis = html.escape(str(mock_data.get("time_analysis", "")))
-    slowest = html.escape(str(mock_data.get("slowest_section", "N/A")))
+
+    if has_history and raw_time is not None:
+        avg_time_disp = f"Avg {int(raw_time)} sec / Question"
+    else:
+        avg_time_disp = "Not assessed"
+
+    raw_analysis = mock_data.get("time_analysis")
+    if isinstance(raw_analysis, dict):
+        rec = str(raw_analysis.get("recommendation") or "").strip()
+        fast_sec = raw_analysis.get("fastest_section")
+        fast_time = raw_analysis.get("fastest_time")
+        slow_sec = raw_analysis.get("slowest_section")
+        slow_time = raw_analysis.get("slowest_time")
+        if not has_history or fast_sec in ("N/A", None):
+            analysis_text = "No mock tests attempted yet. Complete your first mock test to unlock timing & pace intelligence."
+        else:
+            parts = []
+            if fast_sec and fast_sec != "N/A" and fast_time and fast_time != "N/A":
+                parts.append(f"Fastest: {fast_sec} ({fast_time})")
+            if slow_sec and slow_sec != "N/A" and slow_time and slow_time != "N/A":
+                parts.append(f"Slowest: {slow_sec} ({slow_time})")
+            if rec:
+                parts.append(rec)
+            analysis_text = " • ".join(parts) if parts else "Pacing analyzed across completed mock tests."
+    elif isinstance(raw_analysis, str) and raw_analysis.strip():
+        s = raw_analysis.strip()
+        if s.startswith("{") and s.endswith("}"):
+            analysis_text = "No mock tests attempted yet. Complete your first mock test to unlock timing & pace intelligence."
+        else:
+            analysis_text = s
+    elif not has_history:
+        analysis_text = "No mock tests attempted yet. Complete your first mock test to unlock timing & pace intelligence."
+    else:
+        analysis_text = "Not assessed"
+
+    analysis = html.escape(analysis_text)
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 20px; background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(255, 251, 235, 0.95)); border: 1px solid rgba(245, 158, 11, 0.3);">
@@ -1657,21 +1717,55 @@ def mock_time_analysis_card_html(mock_data: dict) -> HtmlFragment:
 
 def mock_qtype_performance_html(qtypes_list: list) -> HtmlFragment:
     """Render Question Type Performance Cards Grid."""
-    cards_html = ""
-    for item in qtypes_list:
-        q_label = html.escape(str(item.get("type", "Question Type")))
-        score = int(item.get("accuracy", 60))
-
-        bar_color = "#10B981" if score >= 75 else ("#2563EB" if score >= 65 else ("#F97316" if score >= 55 else "#EF4444"))
-
-        cards_html += f"""
-        <div style="background: rgba(255, 255, 255, 0.85); border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                <span style="color: #0F172A; font-weight: 850; font-size: 0.9rem;">{q_label}</span>
-                <span style="color: {bar_color}; font-weight: 950; font-size: 0.95rem;">{score}%</span>
+    if not qtypes_list:
+        content_html = """
+        <div style="background: rgba(248, 250, 252, 0.9); border: 1px dashed #CBD5E1; border-radius: 12px; padding: 20px; text-align: center;">
+            <div style="color: #64748B; font-size: 0.9rem; font-weight: 750; margin-bottom: 4px;">
+                📝 Question Type Performance: Not assessed
             </div>
-            <div style="background: #E2E8F0; border-radius: 999px; height: 6px; overflow: hidden;">
-                <div style="background: {bar_color}; width: {score}%; height: 100%; border-radius: 999px;"></div>
+            <div style="color: #94A3B8; font-size: 0.8rem; font-weight: 600;">
+                No question type behavioral data recorded yet. Complete mock tests to evaluate question format performance.
+            </div>
+        </div>
+        """
+    else:
+        cards_parts = []
+        for item in qtypes_list:
+            if isinstance(item, dict):
+                q_label = html.escape(str(item.get("type") or item.get("name") or "Question Type"))
+                raw_score = item.get("accuracy")
+                if raw_score is not None:
+                    score = int(raw_score)
+                    score_disp = f"{score}%"
+                    bar_w = min(100, max(0, score))
+                    bar_color = "#10B981" if score >= 75 else ("#2563EB" if score >= 65 else ("#F97316" if score >= 55 else "#EF4444"))
+                else:
+                    score_disp = "Not assessed"
+                    bar_w = 0
+                    bar_color = "#94A3B8"
+            elif isinstance(item, str):
+                q_label = html.escape(item)
+                score_disp = "Not assessed"
+                bar_w = 0
+                bar_color = "#94A3B8"
+            else:
+                continue
+
+            cards_parts.append(f"""
+            <div style="background: rgba(255, 255, 255, 0.85); border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <span style="color: #0F172A; font-weight: 850; font-size: 0.9rem;">{q_label}</span>
+                    <span style="color: {bar_color}; font-weight: 950; font-size: 0.95rem;">{score_disp}</span>
+                </div>
+                <div style="background: #E2E8F0; border-radius: 999px; height: 6px; overflow: hidden;">
+                    <div style="background: {bar_color}; width: {bar_w}%; height: 100%; border-radius: 999px;"></div>
+                </div>
+            </div>
+            """)
+        content_html = "".join(cards_parts) if cards_parts else """
+        <div style="background: rgba(248, 250, 252, 0.9); border: 1px dashed #CBD5E1; border-radius: 12px; padding: 20px; text-align: center;">
+            <div style="color: #64748B; font-size: 0.9rem; font-weight: 750;">
+                No question type data recorded
             </div>
         </div>
         """
@@ -1682,7 +1776,7 @@ def mock_qtype_performance_html(qtypes_list: list) -> HtmlFragment:
             📝 Question Type Behavioral Performance
         </div>
         <div>
-            {cards_html}
+            {content_html}
         </div>
     </div>
     """)
@@ -1690,21 +1784,53 @@ def mock_qtype_performance_html(qtypes_list: list) -> HtmlFragment:
 
 def mock_mistakes_strengths_html(mistakes: list, strengths: list) -> HtmlFragment:
     """Render Dual Badge Card for Mistake Patterns vs Strengths."""
-    m_markup = ""
-    for m in mistakes:
-        m_markup += f"""
-        <div style="display: flex; align-items: center; gap: 8px; background: rgba(239, 68, 68, 0.08); color: #B91C1C; border: 1px solid rgba(239, 68, 68, 0.2); padding: 8px 12px; border-radius: 10px; font-weight: 850; font-size: 0.85rem; margin-bottom: 6px;">
-            <span>⚠</span> {html.escape(m)}
+    if not mistakes:
+        m_markup = """
+        <div style="background: rgba(248, 250, 252, 0.9); border: 1px dashed #CBD5E1; border-radius: 10px; padding: 14px; text-align: center; color: #64748B; font-size: 0.82rem; font-weight: 700;">
+            No mistake patterns detected yet. Complete mock tests to assess exam habits.
         </div>
         """
+    else:
+        m_parts = []
+        for m in mistakes:
+            if isinstance(m, dict):
+                pat = m.get("pattern") or m.get("text") or "Pattern"
+                impact = m.get("impact") or m.get("frequency") or ""
+                text = f"{pat} ({impact})" if impact else pat
+            elif isinstance(m, (list, tuple)):
+                text = ", ".join(str(x) for x in m)
+            else:
+                text = str(m)
+            m_parts.append(f"""
+            <div style="display: flex; align-items: center; gap: 8px; background: rgba(239, 68, 68, 0.08); color: #B91C1C; border: 1px solid rgba(239, 68, 68, 0.2); padding: 8px 12px; border-radius: 10px; font-weight: 850; font-size: 0.85rem; margin-bottom: 6px;">
+                <span>⚠</span> {html.escape(text)}
+            </div>
+            """)
+        m_markup = "".join(m_parts)
 
-    s_markup = ""
-    for s in strengths:
-        s_markup += f"""
-        <div style="display: flex; align-items: center; gap: 8px; background: rgba(34, 197, 94, 0.08); color: #166534; border: 1px solid rgba(34, 197, 94, 0.2); padding: 8px 12px; border-radius: 10px; font-weight: 850; font-size: 0.85rem; margin-bottom: 6px;">
-            <span>💪</span> {html.escape(s)}
+    if not strengths:
+        s_markup = """
+        <div style="background: rgba(248, 250, 252, 0.9); border: 1px dashed #CBD5E1; border-radius: 10px; padding: 14px; text-align: center; color: #64748B; font-size: 0.82rem; font-weight: 700;">
+            No observed exam strengths yet. Complete mock tests to identify competitive advantages.
         </div>
         """
+    else:
+        s_parts = []
+        for s in strengths:
+            if isinstance(s, dict):
+                beh = s.get("behavior") or s.get("text") or "Strength"
+                adv = s.get("advantage") or ""
+                text = f"{beh} ({adv})" if adv else beh
+            elif isinstance(s, (list, tuple)):
+                text = ", ".join(str(x) for x in s)
+            else:
+                text = str(s)
+            s_parts.append(f"""
+            <div style="display: flex; align-items: center; gap: 8px; background: rgba(34, 197, 94, 0.08); color: #166534; border: 1px solid rgba(34, 197, 94, 0.2); padding: 8px 12px; border-radius: 10px; font-weight: 850; font-size: 0.85rem; margin-bottom: 6px;">
+                <span>💪</span> {html.escape(text)}
+            </div>
+            """)
+        s_markup = "".join(s_parts)
 
     return _fragment(f"""
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
