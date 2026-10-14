@@ -171,9 +171,9 @@ def render_study_planner_dashboard(user: str = None):
         st.markdown(
             f"""
             <div class="nova-glass-card" style="padding: 16px; text-align: center;">
-                <div style="color: #64748B; font-size: 0.78rem; font-weight: 800; text-transform: uppercase;">📈 Expected Mastery</div>
-                <div style="color: #16A34A; font-size: 1.6rem; font-weight: 950; margin-top: 4px;">{mastery_gain}</div>
-                <div style="color: #16A34A; font-size: 0.78rem; font-weight: 800; margin-top: 4px;">Topic Progression</div>
+                <div style="color: #64748B; font-size: 0.78rem; font-weight: 800; text-transform: uppercase;">🎯 Planned Outcome</div>
+                <div style="color: #16A34A; font-size: 1.3rem; font-weight: 950; margin-top: 4px;">{html.escape(str(mastery_gain))}</div>
+                <div style="color: #16A34A; font-size: 0.78rem; font-weight: 800; margin-top: 4px;">Targeted Focus</div>
             </div>
             """,
             unsafe_allow_html=True,
@@ -198,10 +198,14 @@ def render_study_planner_dashboard(user: str = None):
     with right_col:
         st.markdown("<h3 style='color: #0F172A; font-weight: 900;'>📈 Expected Outcome & Progress</h3>", unsafe_allow_html=True)
 
-        curr_m = outcome.get("current_mastery", "45%")
-        exp_m = outcome.get("expected_mastery", "80%")
-        curr_c = outcome.get("current_confidence", "Low")
-        exp_c = outcome.get("expected_confidence", "Medium")
+        curr_m = outcome.get("observed_accuracy_str") or outcome.get("current_mastery", "No Data")
+        exp_m = outcome.get("expected_mastery", "Strengthen Retention")
+        curr_c = outcome.get("current_confidence", "No Data")
+        exp_c = outcome.get("expected_confidence", "Structured Practice")
+        focus_msg = outcome.get(
+            "learning_focus_msg",
+            "Completing today's plan builds strong conceptual linking and supports consistent preparation."
+        )
 
         st.markdown(
             f"""
@@ -209,21 +213,24 @@ def render_study_planner_dashboard(user: str = None):
                 <div style="font-size: 1.05rem; font-weight: 900; color: #0F172A; margin-bottom: 14px;">
                     📊 Expected Learning Outcome
                 </div>
-                <div style="display: flex; justify-content: space-around; align-items: center; background: rgba(248, 250, 252, 0.9); padding: 16px; border-radius: 14px; border: 1px solid #E2E8F0; margin-bottom: 14px;">
-                    <div style="text-align: center;">
-                        <span style="color: #64748B; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Current Mastery</span>
-                        <span style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{curr_m}</span>
-                        <span style="background: rgba(239, 68, 68, 0.1); color: #DC2626; font-size: 0.75rem; font-weight: 850; padding: 2px 8px; border-radius: 999px; display: inline-block; margin-top: 4px;">{curr_c} Confidence</span>
+                <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 12px; background: rgba(248, 250, 252, 0.9); padding: 16px; border-radius: 14px; border: 1px solid #E2E8F0; margin-bottom: 14px;">
+                    <div style="text-align: center; min-width: 110px;">
+                        <span style="color: #64748B; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Observed Accuracy</span>
+                        <span style="color: #0F172A; font-size: 1.8rem; font-weight: 950;">{html.escape(str(curr_m))}</span>
+                        <span style="background: rgba(59, 130, 246, 0.1); color: #2563EB; font-size: 0.75rem; font-weight: 850; padding: 2px 8px; border-radius: 999px; display: inline-block; margin-top: 4px;">{html.escape(str(curr_c))}</span>
                     </div>
                     <div style="font-size: 1.8rem; color: #2563EB; font-weight: 900;">➜</div>
-                    <div style="text-align: center;">
-                        <span style="color: #166534; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Expected Mastery</span>
-                        <span style="color: #16A34A; font-size: 1.8rem; font-weight: 950;">{exp_m}</span>
-                        <span style="background: rgba(34, 197, 94, 0.1); color: #16A34A; font-size: 0.75rem; font-weight: 850; padding: 2px 8px; border-radius: 999px; display: inline-block; margin-top: 4px;">{exp_c} Confidence</span>
+                    <div style="text-align: center; min-width: 110px;">
+                        <span style="color: #166534; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Planned Goal</span>
+                        <span style="color: #16A34A; font-size: 1.25rem; font-weight: 950; display: block; margin-top: 4px;">{html.escape(str(exp_m))}</span>
+                        <span style="background: rgba(34, 197, 94, 0.1); color: #16A34A; font-size: 0.75rem; font-weight: 850; padding: 2px 8px; border-radius: 999px; display: inline-block; margin-top: 4px;">{html.escape(str(exp_c))}</span>
                     </div>
                 </div>
                 <div style="color: #475569; font-size: 0.85rem; font-weight: 750; background: rgba(37, 99, 235, 0.06); padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(37, 99, 235, 0.2);">
-                    💡 <strong>Learning Progression:</strong> Completing today's plan builds strong conceptual linking and elevates Topic Mastery by <strong>{mastery_gain}</strong>.
+                    💡 <strong>Learning Focus:</strong> {html.escape(str(focus_msg))}
+                </div>
+                <div style="color: #64748B; font-size: 0.78rem; font-weight: 700; margin-top: 10px; padding: 2px 4px;">
+                    ℹ️ Performance projections unlock with mature test history across subjects. Precise future outcomes are not promised.
                 </div>
             </div>
             """,
@@ -241,7 +248,7 @@ def render_study_planner_dashboard(user: str = None):
                     {html.escape(next_action)}
                 </div>
                 <div style="color: #64748B; font-size: 0.85rem; font-weight: 750;">
-                    Determined automatically based on post-session mastery trajectory.
+                    Determined automatically based on priority revision and syllabus coverage.
                 </div>
             </div>
             """,
