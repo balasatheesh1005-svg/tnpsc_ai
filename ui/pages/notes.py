@@ -245,9 +245,8 @@ def render_notes_page(section):
     file_mtime = os.path.getmtime(selected_file_path) if os.path.exists(selected_file_path) else 0
     data = load_note(selected_file_path, mtime=file_mtime)
 
-    # Source Identity Debug Output (Console + UI)
+    # Source Identity Diagnostic Logging (Console only)
     print(f"[NOTES_LOADER] CURRENT TOPIC: {note_basename} | CURRENT PART: {selected_part_num} | LOADED FILE: {selected_file_path}")
-    st.caption(f"📌 **CURRENT TOPIC**: `{note_basename}` | **CURRENT PART**: `{selected_part_num} of {len(part_numbers)}` | **LOADED FILE**: `{selected_file_path}`")
 
     if data is None:
         st.error(f"❌ Error loading notes payload for Part {selected_part_num}.")
