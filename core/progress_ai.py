@@ -69,3 +69,68 @@ def get_progress(user=None, context=None):
 
     return rows
 
+
+def aggregate_topic_progress(progress_data):
+    """
+    Pure deterministic aggregation helper for TNPSC Nova AI user progress records.
+    Groups raw test attempts into unique logical topic entries by:
+        (Subject, Repository, Note Part)
+    Computes mean attempt accuracy (rounded to 1 decimal place) and attempt counts.
+    Safely ignores invalid, non-numeric, or missing accuracy rows without throwing errors.
+    """
+    import pandas as pd
+
+    empty_cols = ["Subject", "Repository", "Note Part", "Accuracy (%)", "Attempts"]
+    if progress_data is None:
+        return pd.DataFrame(columns=empty_cols)
+
+    if isinstance(progress_data, pd.DataFrame):
+        df = progress_data.copy()
+    elif isinstance(progress_data, list):
+        if not progress_data:
+            return pd.DataFrame(columns=empty_cols)
+        df = pd.DataFrame(progress_data)
+    else:
+        return pd.DataFrame(columns=empty_cols)
+
+    if df.empty or "accuracy" not in df.columns:
+        return pd.DataFrame(columns=empty_cols)
+
+    # Safe numeric coercion for accuracy (drops None, nan, non-numeric strings)
+    df["accuracy"] = pd.to_numeric(df["accuracy"], errors="coerce")
+    df = df.dropna(subset=["accuracy"])
+    if df.empty:
+        return pd.DataFrame(columns=empty_cols)
+
+    # Normalize subject and topic metadata if not already normalized
+    if "repo_display" not in df.columns or "part_display" not in df.columns or "subject" not in df.columns:
+        subjects = []
+        repo_titles = []
+        part_titles = []
+        for _, row in df.iterrows():
+            raw_subj = row.get("subject")
+            subj = str(raw_subj if raw_subj is not None else "polity").lower().strip()
+            if not subj:
+                subj = "polity"
+            subjects.append(subj)
+
+            lookup = str(row.get("topic_id") or row.get("repository_id") or row.get("topic") or "").strip()
+            meta = get_topic_metadata_by_id(subj, lookup)
+
+            repo_basename = meta.get("repository_id") or lookup or "Topic"
+            if repo_basename.startswith(f"{subj}_"):
+                repo_basename = repo_basename[len(subj) + 1:]
+
+            repo_titles.append(repo_basename.replace("_", " ").title())
+            part_titles.append(meta.get("display_title") or repo_basename.replace("_", " ").title())
+
+        df["subject"] = subjects
+        df["repo_display"] = repo_titles
+        df["part_display"] = part_titles
+
+    part_avg = df.groupby(["subject", "repo_display", "part_display"])["accuracy"].agg(["mean", "count"]).reset_index()
+    part_avg.columns = empty_cols
+    part_avg["Accuracy (%)"] = part_avg["Accuracy (%)"].round(1)
+
+    return part_avg
+
