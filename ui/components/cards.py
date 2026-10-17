@@ -1332,7 +1332,7 @@ def recommendation_hero_card_html(rec_data: dict) -> HtmlFragment:
     topic = html.escape(str(rec_data.get("topic", "General")))
     repo = html.escape(str(rec_data.get("repository", "Hard Repository")))
     qtype = html.escape(str(rec_data.get("question_type", "Assertion & Reason")))
-    confidence = int(rec_data.get("confidence", 94))
+    evidence_label = html.escape(str(rec_data.get("evidence_label") or ("No Data" if not rec_data.get("is_eligible") else "Early Signal")))
     conf_reason = html.escape(str(rec_data.get("confidence_reason", "Engine calculation aligned")))
 
     priority_bg = "#EF4444" if priority == "Critical" else ("#F97316" if priority == "High" else "#2563EB")
@@ -1346,7 +1346,7 @@ def recommendation_hero_card_html(rec_data: dict) -> HtmlFragment:
                 </span>
             </div>
             <div style="background: rgba(37, 99, 235, 0.1); color: #2563EB; font-size: 0.88rem; font-weight: 900; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(37, 99, 235, 0.2);">
-                🎯 {confidence}% AI Confidence
+                🎯 Evidence: {evidence_label}
             </div>
         </div>
 
@@ -1366,7 +1366,7 @@ def recommendation_hero_card_html(rec_data: dict) -> HtmlFragment:
         </div>
 
         <div style="color: #64748B; font-size: 0.82rem; font-weight: 750;">
-            ℹ️ <strong>Confidence Detail:</strong> {conf_reason}
+            ℹ️ <strong>Evidence Detail:</strong> {conf_reason}
         </div>
     </div>
     """)

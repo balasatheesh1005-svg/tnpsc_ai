@@ -54,12 +54,12 @@ class TestRecommendationEngineV2(unittest.TestCase):
         self.assertIsInstance(rec["risk_description"], str)
 
     def test_confidence_score_range(self):
-        """Verify recommendation confidence score is an integer bounded between 70% and 98%."""
+        """Verify recommendation numeric confidence is removed in favor of evidence-based tier."""
         rec = get_ai_recommendation("test_user")
-        conf = rec["confidence"]
-        self.assertIsInstance(conf, int)
-        self.assertGreaterEqual(conf, 70)
-        self.assertLessEqual(conf, 98)
+        self.assertIsNone(rec["confidence"])
+        self.assertIn("evidence_label", rec)
+        self.assertIn(rec["evidence_label"], ["No Data", "Early Signal", "Developing", "Reliable"])
+        self.assertIn(rec["evidence_tier"], ["TIER_0_NO_DATA", "TIER_1_EARLY_SIGNAL", "TIER_2_DEVELOPING", "TIER_3_RELIABLE"])
 
     def test_estimated_benefit_structure(self):
         """Verify estimated benefit contains required fields."""

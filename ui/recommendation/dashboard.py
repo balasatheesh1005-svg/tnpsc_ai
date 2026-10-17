@@ -84,20 +84,20 @@ def render_recommendation_dashboard(user: str = None):
             f"""
             <div class="nova-glass-card" style="padding: 20px;">
                 <div style="font-size: 1.02rem; font-weight: 900; color: #0F172A; margin-bottom: 12px;">
-                    📈 Estimated Learning Benefit
+                    📈 Learning Focus & Target
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
                     <div style="background: rgba(34, 197, 94, 0.08); padding: 10px; border-radius: 10px; border: 1px solid rgba(34, 197, 94, 0.2); text-align: center;">
-                        <span style="color: #166534; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Mastery Gain</span>
-                        <span style="color: #16A34A; font-size: 1.5rem; font-weight: 950;">{html.escape(str(benefit.get('mastery', '+10%')))}</span>
+                        <span style="color: #166534; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Learning Focus</span>
+                        <span style="color: #16A34A; font-size: 1.15rem; font-weight: 950; display: block; margin-top: 4px;">{html.escape(str(benefit.get('focus') or benefit.get('mastery', 'Concept Reinforcement')))}</span>
                     </div>
                     <div style="background: rgba(245, 158, 11, 0.08); padding: 10px; border-radius: 10px; border: 1px solid rgba(245, 158, 11, 0.2); text-align: center;">
-                        <span style="color: #B45309; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">XP Reward</span>
-                        <span style="color: #D97706; font-size: 1.5rem; font-weight: 950;">{html.escape(str(benefit.get('xp', '+40 XP')))}</span>
+                        <span style="color: #B45309; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; display: block;">Reward Model</span>
+                        <span style="color: #D97706; font-size: 1.15rem; font-weight: 950; display: block; margin-top: 4px;">{html.escape(str(benefit.get('xp', 'Rule-based XP')))}</span>
                     </div>
                 </div>
                 <div style="margin-top: 10px; color: #475569; font-size: 0.84rem; font-weight: 750; background: rgba(248, 250, 252, 0.9); padding: 8px 12px; border-radius: 8px; border: 1px solid #E2E8F0;">
-                    🛡️ <strong>Confidence Indicator:</strong> {html.escape(str(benefit.get('confidence', 'High Confidence')))}
+                    🛡️ <strong>Evidence Basis:</strong> {html.escape(str(benefit.get('confidence') or f"Evidence: {rec.get('evidence_label', 'No Data')}"))}
                 </div>
             </div>
             """,

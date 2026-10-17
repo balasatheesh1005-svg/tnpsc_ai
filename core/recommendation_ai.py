@@ -52,27 +52,41 @@ def get_ai_recommendation(
     ctx = context or UserContext.get_or_create(user)
 
     # 1. Fetch Master Engine Outputs (Zero duplicate logic)
-    intelligence = get_learning_intelligence(user, context=ctx)
-    study_plan = get_personal_study_plan(user, available_time=45, context=ctx)
-    revision_plan = get_intelligent_revision_plan(user, context=ctx)
-    revision_analytics = get_revision_analytics_v2(user, context=ctx)
-    progress_rows = get_progress(user, context=ctx)
-    weakness_data = get_weakness(user, context=ctx)
-    streak = get_streak(user, context=ctx)
-    xp_data = get_user_xp(user, context=ctx)
-    mission = get_today_mission(user, context=ctx)
-    memory = get_memory(user, context=ctx)
+    intelligence = get_learning_intelligence(user, context=ctx) or {}
+    study_plan = get_personal_study_plan(user, available_time=45, context=ctx) or {}
+    revision_plan = get_intelligent_revision_plan(user, context=ctx) or {}
+    revision_analytics = get_revision_analytics_v2(user, context=ctx) or {}
+    progress_rows = get_progress(user, context=ctx) or []
+    weakness_data = get_weakness(user, context=ctx) or {}
+    streak = get_streak(user, context=ctx) or 0
+    xp_data = get_user_xp(user, context=ctx) or {}
+    mission = get_today_mission(user, context=ctx) or {}
+    memory = get_memory(user, context=ctx) or {}
 
     # Key Data Extracted
-    subj = intelligence.get("subject", "History")
-    topic = intelligence.get("topic", "Modern India")
-    repo = intelligence.get("repository", "Hard Repository")
-    qtype = intelligence.get("question_type", "Assertion & Reason")
-    current_mastery = float(intelligence.get("current_mastery", 45.0))
-    target_mastery = float(intelligence.get("mastery_probability", 80.0))
-    root_cause = intelligence.get("root_cause", "Concept Application")
-    rec_plan = intelligence.get("recovery_plan", [])
-    rec_step = rec_plan[0] if rec_plan else f"Revise {qtype} notes"
+    has_history = len(progress_rows) > 0 or bool(weakness_data)
+    if not has_history:
+        subj = "Indian Polity"
+        topic = "Fundamental Rights"
+        repo = "Easy Repository"
+        qtype = "Standard MCQ"
+        current_mastery = 0.0
+        target_mastery = 80.0
+        root_cause = "No Test History"
+        rec_plan = []
+        rec_step = "Attempt first practice set"
+    else:
+        subj = intelligence.get("subject") or "History"
+        topic = intelligence.get("topic") or "General"
+        repo = intelligence.get("repository") or "Medium Repository"
+        qtype = intelligence.get("question_type") or "Standard MCQ"
+        raw_mastery = intelligence.get("current_mastery")
+        current_mastery = float(raw_mastery) if raw_mastery is not None else 50.0
+        raw_target = intelligence.get("mastery_probability")
+        target_mastery = float(raw_target) if raw_target is not None else 80.0
+        root_cause = intelligence.get("root_cause") or "Concept Application"
+        rec_plan = intelligence.get("recovery_plan", [])
+        rec_step = rec_plan[0] if rec_plan else f"Revise {qtype} notes"
 
     overdue_items = revision_analytics.get("overdue", [])
     due_today_items = revision_analytics.get("due_today", [])
@@ -88,7 +102,25 @@ def get_ai_recommendation(
     pyq_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "pyq" in str(r.get("topic", "")).lower()]
     avg_pyq = sum(pyq_accs) / len(pyq_accs) if pyq_accs else 60.0
 
-    # 2. Risk Detection System
+    # Coach Maturity / Evidence Tier integration
+    try:
+        from core.coach_maturity_ai import get_coach_maturity
+        maturity = get_coach_maturity(user, context=ctx)
+        tier_label = maturity.get("tier_label", "No Data")
+        tier_key = maturity.get("tier", "TIER_0_NO_DATA")
+    except Exception as e:
+        logger.warning(f"Error fetching coach maturity in recommendation_ai: {e}")
+        if not progress_rows and not weakness_data:
+            tier_label = "No Data"
+            tier_key = "TIER_0_NO_DATA"
+        elif len(progress_rows) < 5:
+            tier_label = "Early Signal"
+            tier_key = "TIER_1_EARLY_SIGNAL"
+        else:
+            tier_label = "Developing"
+            tier_key = "TIER_2_DEVELOPING"
+
+    # 2. Risk Detection System (Strictly grounded in observed evidence)
     if not progress_rows and not weakness_data:
         risk_name = "No Diagnostic Baseline"
         risk_level = "Low"
@@ -96,23 +128,34 @@ def get_ai_recommendation(
     elif overdue_count > 0 or has_overdue:
         risk_name = "Overdue Revision Risk"
         risk_level = "Critical" if overdue_count >= 3 else "High"
-        risk_desc = f"You have {max(1, overdue_count)} overdue revision item(s) suffering memory decay."
-    elif rev_pct < 50:
-        risk_name = "Low Revision Habit"
+        risk_desc = f"You have {max(1, overdue_count)} overdue revision item(s) requiring review."
+    elif weakness_data:
+        risk_name = "Concept Weakness Identified"
         risk_level = "High"
-        risk_desc = "Spaced revision frequency is below target threshold. High risk of forgetting previously studied concepts."
+        top_weak = sorted(weakness_data.items(), key=lambda x: x[1], reverse=True)[0][0]
+        weak_display = top_weak.split("-", 1)[1].replace("_", " ").title() if "-" in top_weak else top_weak.replace("_", " ").title()
+        risk_desc = f"Identified recurring errors in {weak_display}. Targeted practice recommended."
     elif avg_hard < 50 and hard_accs:
         risk_name = "Weak Hard Repository Accuracy"
         risk_level = "High"
-        risk_desc = f"Hard repository accuracy ({round(avg_hard, 1)}%) is preventing topic mastery in {format_subject_name(subj)}."
+        risk_desc = f"Hard repository accuracy ({round(avg_hard, 1)}%) indicates higher-order questions need practice in {format_subject_name(subj)}."
     elif avg_pyq < 55 and pyq_accs:
         risk_name = "Low PYQ Exam Performance"
         risk_level = "Medium"
         risk_desc = f"Previous Year Question accuracy ({round(avg_pyq, 1)}%) requires targeted practice before full mock test."
-    elif streak == 0 and len(progress_rows) > 0:
-        risk_name = "Broken Study Streak"
+    elif len(progress_rows) >= 5 and rev_pct < 50 and (len(overdue_items) > 0 or len(due_today_items) > 0):
+        risk_name = "Revision Schedule Behind"
         risk_level = "Medium"
-        risk_desc = "Daily study streak has reset. Complete today's mission to rebuild learning momentum."
+        risk_desc = "Spaced revision completion is below target threshold for scheduled topics."
+    elif len(progress_rows) < 5:
+        # Early learner with low data: do NOT infer a habit!
+        risk_name = "Early Learning Baseline"
+        risk_level = "Low"
+        risk_desc = f"Early baseline established ({len(progress_rows)} test(s)). Continue consistent practice to build reliable performance trends."
+    elif streak == 0 and len(progress_rows) >= 5:
+        risk_name = "Study Streak Reset"
+        risk_level = "Medium"
+        risk_desc = "Daily study streak has reset. Complete today's practice set to rebuild learning momentum."
     else:
         risk_name = "Optimal Progress"
         risk_level = "Low"
@@ -126,6 +169,7 @@ def get_ai_recommendation(
         current_action = "Start First Practice Test"
         next_action = "Review Diagnostic Accuracy"
         explanation = "Start with Fundamental Rights to begin building your baseline learning profile."
+        learning_focus = "Diagnostic Baseline"
     elif has_overdue:
         priority = "Critical"
         recommendation_type = "Revise Today"
@@ -136,6 +180,7 @@ def get_ai_recommendation(
             f"Overdue revisions detected in {format_subject_name(subj)}. "
             f"Clearing these spaced recall items will prevent memory decay before starting new topics."
         )
+        learning_focus = "Spaced Retention"
     elif weakness_data:
         priority = "High"
         recommendation_type = "Continue Recovery"
@@ -147,6 +192,7 @@ def get_ai_recommendation(
             f"Weakness detected in {weak_topic_display}. "
             f"Executing a focused practice set will help eliminate errors and raise your score."
         )
+        learning_focus = "Concept Reinforcement"
     elif current_mastery < 60.0 and len(progress_rows) >= 5:
         priority = "High"
         recommendation_type = "Continue Recovery"
@@ -155,8 +201,9 @@ def get_ai_recommendation(
         next_action = f"Attempt {format_subject_name(subj)} PYQ Repository"
         explanation = (
             f"Your current accuracy in {format_topic_name(topic)} ({current_mastery}%) is identified as a learning bottleneck. "
-            f"Executing this focused recovery set will elevate topic mastery to projected {target_mastery}%."
+            f"Executing this focused recovery set will help address concept gaps."
         )
+        learning_focus = "Concept Reinforcement"
     elif len(rec_plan) > 0 and len(progress_rows) >= 5:
         priority = "Medium-High"
         recommendation_type = "Complete Hard Repository"
@@ -167,6 +214,7 @@ def get_ai_recommendation(
             f"You are currently executing the 4-step recovery plan for {format_topic_name(topic)}. "
             f"Completing this step directly addresses {root_cause}."
         )
+        learning_focus = "Advanced Application"
     elif current_mastery < 75.0 and len(progress_rows) > 0:
         priority = "Medium"
         recommendation_type = "Maintain Streak"
@@ -176,8 +224,9 @@ def get_ai_recommendation(
         next_action = "Review Updated Topic Mastery Scores"
         explanation = (
             f"Today's plan is tailored to build steady topic progress in {format_subject_name(subj)}. "
-            f"Completing all {today_tasks_count} tasks will maintain your study streak and earn bonus XP."
+            f"Completing today's tasks will maintain your study consistency."
         )
+        learning_focus = "Study Consistency"
     elif current_mastery >= 85.0 and len(progress_rows) >= 5:
         priority = "Standard"
         recommendation_type = "Start Next Topic"
@@ -188,6 +237,7 @@ def get_ai_recommendation(
             f"You have achieved high topic mastery ({current_mastery}%) in {format_topic_name(topic)}. "
             f"You are ready to advance to the next topic in the TNPSC syllabus."
         )
+        learning_focus = "Syllabus Progression"
     else:
         priority = "Standard"
         recommendation_type = "Practice Path"
@@ -195,37 +245,37 @@ def get_ai_recommendation(
         current_action = "Attempt Practice Questions"
         next_action = "Review Performance"
         explanation = f"Continue consistent daily practice in {format_subject_name(subj)} to build topic mastery."
+        learning_focus = "Concept Reinforcement"
 
-    # 4. Estimated Benefit Calculation
+    # 4. Estimated Benefit Calculation (Qualitative evidence-backed focus; no synthetic mastery or fixed XP claims)
     if not progress_rows and not weakness_data:
         estimated_benefit = {
-            "mastery": "N/A",
-            "xp": "+50 XP",
-            "confidence": "Unlocks After Test",
+            "focus": "Diagnostic Baseline",
+            "impact": "Baseline Calibration",
+            "mastery": "Diagnostic Baseline",
+            "xp": "Rule-based XP",
+            "confidence": f"Evidence: {tier_label}",
             "completion_progress": "Diagnostic Start",
         }
     else:
-        estimated_mastery_gain = min(20.0, max(5.0, round((100.0 - current_mastery) * 0.25, 1)))
         estimated_benefit = {
-            "mastery": f"+{estimated_mastery_gain:.0f}%",
-            "xp": "+50 XP" if priority == "Critical" else "+40 XP",
-            "confidence": "High Confidence" if risk_level in ["Low", "Medium"] else "Medium Confidence",
-            "completion_progress": "+15% Topic Progress",
+            "focus": learning_focus,
+            "impact": learning_focus,
+            "mastery": learning_focus,
+            "xp": "Rule-based XP",
+            "confidence": f"Evidence: {tier_label}",
+            "completion_progress": "Topic Progression",
         }
 
-    # 5. Recommendation Confidence Score (0% or 70% - 98%)
-    if len(progress_rows) == 0:
-        confidence_score = 0
-        confidence_reason = "No test history available. Confidence scoring unlocks after your first practice test."
-    elif len(progress_rows) >= 10:
-        confidence_score = 92
-        confidence_reason = "High confidence based on rich historical attempt data across multiple repositories."
-    elif len(progress_rows) >= 3:
-        confidence_score = 85
-        confidence_reason = "Solid confidence based on recent test performance trends and learning intelligence alignment."
+    # 5. Recommendation Evidence & Confidence Grounding
+    if tier_key == "TIER_0_NO_DATA":
+        confidence_reason = "No test history available. Complete your first practice test to establish baseline performance."
+    elif tier_key == "TIER_1_EARLY_SIGNAL":
+        confidence_reason = f"Early signal based on {len(progress_rows)} test attempt(s). Complete more practice sets to establish reliable patterns."
+    elif tier_key == "TIER_2_DEVELOPING":
+        confidence_reason = f"Developing profile based on {len(progress_rows)} attempts. Continue across more subjects and mock tests to establish reliable trends."
     else:
-        confidence_score = 75
-        confidence_reason = "Moderate confidence due to limited recent test activity. Complete more sets to refine precision."
+        confidence_reason = f"Reliable profile supported by {len(progress_rows)} attempts across multiple subjects and mock tests."
 
     # 6. Mentor Message
     mentor_message = intelligence.get(
@@ -248,8 +298,10 @@ def get_ai_recommendation(
         "risk_level": risk_level,
         "risk_description": risk_desc,
         "estimated_benefit": estimated_benefit,
-        "confidence": confidence_score,
+        "confidence": None,
         "confidence_reason": confidence_reason,
+        "evidence_tier": tier_key,
+        "evidence_label": tier_label,
         "explanation": explanation,
         "mentor_message": mentor_message,
         "learning_bottleneck": intelligence.get("learning_bottleneck", "No critical bottleneck detected"),
