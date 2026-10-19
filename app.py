@@ -124,7 +124,11 @@ from core.user_context import UserContext
 # ---------------- AUTHENTICATION ----------------
 handle_recovery_callback()
 restore_auth_session()
-
+# ---------------- PUBLIC CAMPAIGN FUNNEL ROUTING ----------------
+if st.query_params.get("campaign") == "group4":
+    from ui.campaign.group4_mock import render_group4_campaign
+    render_group4_campaign()
+    st.stop()
 
 
 if not is_authenticated():
