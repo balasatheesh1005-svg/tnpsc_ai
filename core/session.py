@@ -23,34 +23,29 @@ def _session_value(session, key):
     return getattr(session, key, None)
 
 
-def _query_value(key):
-    value = st.query_params.get(key)
-    if isinstance(value, list):
-        return value[0] if value else None
-    return value
-
-
 def persist_auth_session(session):
-    access_token = _session_value(session, "access_token")
-    refresh_token = _session_value(session, "refresh_token")
-    if not access_token or not refresh_token:
-        return
-
-    st.query_params[PERSISTED_SESSION_KEYS["access_token"]] = access_token
-    st.query_params[PERSISTED_SESSION_KEYS["refresh_token"]] = refresh_token
+    clear_legacy_url_tokens()
+    from core.remember_me import remember_session
+    remember_session(session, enabled=st.session_state.get("_remember_enabled", st.session_state.get("remember_me", False)))
 
 
 def get_persisted_auth_tokens():
-    return {
-        "access_token": _query_value(PERSISTED_SESSION_KEYS["access_token"]),
-        "refresh_token": _query_value(PERSISTED_SESSION_KEYS["refresh_token"]),
-    }
+    # Legacy URL credentials are untrusted and must never establish identity.
+    clear_legacy_url_tokens()
+    from core.remember_me import recalled_tokens
+    return recalled_tokens()
 
 
-def clear_persisted_auth_session():
+def clear_legacy_url_tokens():
     for key in PERSISTED_SESSION_KEYS.values():
         if key in st.query_params:
             del st.query_params[key]
+
+
+def clear_persisted_auth_session():
+    clear_legacy_url_tokens()
+    from core.remember_me import forget_session
+    forget_session()
 
 
 def save_auth_session(session, user, profile):
@@ -115,16 +110,15 @@ def get_session_identity():
     }
 
 
-def clear_auth_session():
+def clear_auth_session(discard_client=True):
     for key in AUTH_KEYS:
         st.session_state.pop(key, None)
     clear_persisted_auth_session()
+    if discard_client:
+        st.session_state.pop("_nova_supabase_client", None)
 
 
 def reset_app_state_for_logout():
-    preserved = set(AUTH_KEYS)
-    for key in list(st.session_state.keys()):
-        if key not in preserved:
-            st.session_state.pop(key, None)
     clear_auth_session()
-
+    for key in list(st.session_state.keys()):
+        st.session_state.pop(key, None)

@@ -2,7 +2,9 @@ import time
 import traceback
 from types import SimpleNamespace
 
+import streamlit as st
 from supabase import create_client
+from supabase.lib.client_options import ClientOptions
 
 SUPABASE_URL = "https://bexgmzfoxfpfysgpzbzc.supabase.co/"
 
@@ -113,5 +115,21 @@ class _SafeSupabaseClient:
         return getattr(self._client, name)
 
 
-supabase = _SafeSupabaseClient(create_client(SUPABASE_URL, SUPABASE_KEY))
+def get_supabase_client():
+    # Never cache an authenticated SDK client across Streamlit sessions.
+    key = "_nova_supabase_client"
+    if key not in st.session_state:
+        st.session_state[key] = _SafeSupabaseClient(create_client(
+            SUPABASE_URL, SUPABASE_KEY,
+            options=ClientOptions(auto_refresh_token=False, persist_session=False),
+        ))
+    return st.session_state[key]
+
+
+class _SessionClientProxy:
+    def __getattr__(self, name):
+        return getattr(get_supabase_client(), name)
+
+
+supabase = _SessionClientProxy()
 

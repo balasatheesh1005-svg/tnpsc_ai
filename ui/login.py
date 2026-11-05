@@ -11,6 +11,7 @@ def render_login_page():
             placeholder="you@example.com or username",
         )
         password = st.text_input("Password", type="password")
+        st.checkbox("Remember Me", key="remember_me")
         submitted = st.form_submit_button(
             "Login",
             type="primary",
@@ -18,6 +19,7 @@ def render_login_page():
         )
 
     if submitted:
+        st.session_state["_remember_enabled"] = st.session_state.get("remember_me", False)
         with st.spinner("Signing in..."):
             success, message = login(identifier, password)
         if success:
