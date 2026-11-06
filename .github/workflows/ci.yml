@@ -30,6 +30,11 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
+      - name: Verify Supabase SDK dependencies
+        run: |
+          python -m pip check
+          python -m pip show supabase supabase-auth supabase-functions postgrest storage3 realtime httpx
+
       - name: Run unit tests
         env:
           PYTHONPATH: ${{ github.workspace }}

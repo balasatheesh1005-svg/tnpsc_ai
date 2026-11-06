@@ -1,7 +1,10 @@
 import re
+import time
+import streamlit as st
 
 from core.session import (
     clear_auth_session,
+    clear_legacy_url_tokens,
     get_persisted_auth_tokens,
     is_authenticated,
     save_auth_session,
@@ -122,8 +125,21 @@ def email_exists(email):
 
 
 def restore_auth_session():
+    clear_legacy_url_tokens()
     if is_authenticated():
-        return True
+        session = st.session_state.get("auth_session")
+        expires = session.get("expires_at") if isinstance(session, dict) else getattr(session, "expires_at", None)
+        if not isinstance(expires, (int, float)) or expires > time.time() + 60:
+            return True
+        try:
+            response = supabase.auth.refresh_session()
+            if not _auth_session(response) or not _auth_user(response):
+                raise ValueError("Missing refreshed session")
+            save_auth_session(_auth_session(response), _auth_user(response), st.session_state.get("auth_profile", {}))
+            return True
+        except Exception:
+            clear_auth_session()
+            return False
 
     tokens = get_persisted_auth_tokens()
     access_token = tokens.get("access_token")
@@ -327,6 +343,7 @@ def update_password(new_password, confirm_password=None):
         import streamlit as st
 
         st.session_state.pop("recovery_tokens", None)
+        st.session_state.pop("recovery_session_active", None)
     except Exception:
         pass
     clear_auth_session()
@@ -345,6 +362,11 @@ def handle_recovery_callback():
         return False
 
     query_params = dict(st.query_params)
+    # A new callback must not inherit a previous recovery authorization.
+    if any(key in query_params for key in ("error", "token_hash", "code", "access_token", "refresh_token", "type")):
+        st.session_state.pop("recovery_tokens", None)
+        st.session_state.pop("recovery_session_active", None)
+        st.session_state.pop("recovery_error", None)
     if not query_params:
         return False
 
@@ -388,7 +410,8 @@ def handle_recovery_callback():
 
     if code:
         st.query_params.clear()
-        clear_auth_session()
+        # Preserve this session's PKCE verifier until the exchange finishes.
+        clear_auth_session(discard_client=False)
         try:
             response = supabase.auth.exchange_code_for_session({"auth_code": code})
             session = _auth_session(response)
@@ -396,10 +419,12 @@ def handle_recovery_callback():
                 st.session_state["recovery_session_active"] = True
                 st.session_state["auth_page"] = "reset_password"
                 return True
+            clear_auth_session()
             st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
             st.session_state["auth_page"] = "reset_password"
             return False
         except Exception:
+            clear_auth_session()
             st.session_state["recovery_error"] = "This password reset link is invalid or has expired. Please request a new reset link."
             st.session_state["auth_page"] = "reset_password"
             return False

@@ -122,6 +122,8 @@ from ui.navigation_v2.topic_hub import render_topic_hub
 from core.user_context import UserContext
 
 # ---------------- AUTHENTICATION ----------------
+from core.remember_me import init_remember_me
+init_remember_me()
 handle_recovery_callback()
 restore_auth_session()
 # ---------------- PUBLIC CAMPAIGN FUNNEL ROUTING ----------------
