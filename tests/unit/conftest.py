@@ -1,10 +1,17 @@
 """Unit tests must never reach production services."""
 import socket
 import pytest
+import streamlit as st
 
 
 @pytest.fixture(autouse=True)
 def block_network(monkeypatch):
+    monkeypatch.setattr(st, "secrets", {
+        "staging": {"mode": "staging", "expected_project_ref": "t" * 20,
+                    "app_url": "https://nova-staging-test.streamlit.app"},
+        "supabase": {"url": "https://" + "t" * 20 + ".supabase.co",
+                     "publishable_key": "sb_publishable_" + "synthetic" * 4},
+    })
     # Tests cannot use host proxies; constructors must work without proxy extras.
     for key in ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "http_proxy", "https_proxy", "all_proxy"):
         monkeypatch.delenv(key, raising=False)

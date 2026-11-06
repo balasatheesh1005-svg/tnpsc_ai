@@ -10,6 +10,7 @@ from core.session import (
     save_auth_session,
 )
 from core.supabase_client import supabase
+from core.staging_config import get_staging_config, StagingConfigurationError
 
 
 USERNAME_PATTERN = re.compile(r"^[a-zA-Z0-9_]{3,30}$")
@@ -198,6 +199,7 @@ def sign_up(full_name, username, email, mobile_number, password, confirm_passwor
                 "email": email,
                 "password": password,
                 "options": {
+                    "email_redirect_to": get_staging_config().app_url,
                     "data": {
                         "full_name": full_name,
                         "username": username,
@@ -285,12 +287,10 @@ def send_password_reset(email):
         return False, "Enter a valid email address."
 
     try:
-        supabase.auth.reset_password_for_email(email)
-    except AttributeError:
-        try:
-            supabase.auth.reset_password_email(email)
-        except Exception as error:
-            return False, _friendly_auth_error(error, context="reset")
+        config = get_staging_config()
+        supabase.auth.reset_password_for_email(email, options={"redirect_to": config.app_url})
+    except StagingConfigurationError:
+        return False, "Staging password reset is unavailable until Secrets are configured."
     except Exception as error:
         return False, _friendly_auth_error(error, context="reset")
 

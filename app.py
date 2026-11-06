@@ -69,6 +69,14 @@ def default_dashboard_stats():
 st.set_page_config(
     page_title="TNPSC Nova AI", page_icon="assets/app_icon.png", layout="wide"
 )
+from core.staging_config import get_staging_config, StagingConfigurationError
+try:
+    get_staging_config()
+except StagingConfigurationError:
+    st.error("சோதனைச் சூழலுக்கான Secrets சரியாக அமைக்கப்படவில்லை. App நிறுத்தப்பட்டுள்ளது.")
+    st.stop()
+st.warning("சோதனைச் சூழல் — சோதனைத் தரவுகளை மட்டும் பயன்படுத்தவும்.")
+
 # ---------------- STYLE ----------------
 render_theme_css()
 

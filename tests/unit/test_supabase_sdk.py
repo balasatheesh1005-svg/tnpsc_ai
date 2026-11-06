@@ -10,6 +10,7 @@ import streamlit as st
 from supabase import Client
 
 from core import auth, remember_me, session, supabase_client as clients
+from core.staging_config import StagingConfig
 
 
 USERS = {
@@ -40,8 +41,9 @@ def token_data(name):
 @pytest.fixture(autouse=True)
 def sdk_environment(monkeypatch):
     # Test the application's real create_client call, with no production config.
-    monkeypatch.setattr(clients, 'SUPABASE_URL', 'https://unit-test.invalid')
-    monkeypatch.setattr(clients, 'SUPABASE_KEY', 'synthetic-sdk-test-key')
+    monkeypatch.setattr(clients, 'get_staging_config', lambda: StagingConfig(
+        'https://unit-test.invalid', 'synthetic-sdk-test-key',
+        'https://nova-staging-test.streamlit.app', 't' * 20))
     # Host proxy settings are unrelated to SDK initialization and may require extras.
     for key in ('HTTP_PROXY', 'HTTPS_PROXY', 'ALL_PROXY', 'http_proxy', 'https_proxy', 'all_proxy'):
         monkeypatch.delenv(key, raising=False)
@@ -184,4 +186,5 @@ def test_real_sdk_password_reset_callback_update_and_cleanup(synthetic_http):
 
 def test_proxy_introspection_does_not_initialize_a_client():
     assert not hasattr(clients.supabase, '__func__')
+    assert not hasattr(clients.supabase, '_is_coroutine_marker')
     assert '_nova_supabase_client' not in st.session_state

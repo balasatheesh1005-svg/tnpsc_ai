@@ -177,7 +177,7 @@ class TestAuthSuite(unittest.TestCase):
         success, msg = send_password_reset("user@example.com")
         self.assertTrue(success)
         self.assertIn("Password reset link has been sent", msg)
-        mock_supabase.auth.reset_password_for_email.assert_called_once_with("user@example.com")
+        mock_supabase.auth.reset_password_for_email.assert_called_once_with("user@example.com", options={"redirect_to": "https://nova-staging-test.streamlit.app"})
 
     # 22. validate_password_reset
     def test_validate_password_reset_rules(self):

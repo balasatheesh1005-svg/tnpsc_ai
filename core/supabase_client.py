@@ -5,9 +5,7 @@ from types import SimpleNamespace
 import streamlit as st
 from supabase import ClientOptions, create_client
 
-SUPABASE_URL = "https://bexgmzfoxfpfysgpzbzc.supabase.co/"
-
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJleGdtemZveGZwZnlzZ3B6YnpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3MTA3MzUsImV4cCI6MjA5NTI4NjczNX0.-JFxsi353miLLteYNN8-oFjOQRoWnz2WOXfTlXR42zA"
+from core.staging_config import get_staging_config
 
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 0.35
@@ -116,10 +114,11 @@ class _SafeSupabaseClient:
 
 def get_supabase_client():
     # Never cache an authenticated SDK client across Streamlit sessions.
+    config = get_staging_config()
     key = "_nova_supabase_client"
     if key not in st.session_state:
         st.session_state[key] = _SafeSupabaseClient(create_client(
-            SUPABASE_URL, SUPABASE_KEY,
+            config.supabase_url, config.supabase_key,
             # Public ClientOptions is SyncClientOptions, including per-client memory storage.
             options=ClientOptions(auto_refresh_token=False, persist_session=False),
         ))
@@ -129,7 +128,7 @@ def get_supabase_client():
 class _SessionClientProxy:
     def __getattr__(self, name):
         # Introspection must not allocate an authenticated client as a side effect.
-        if name.startswith("__"):
+        if name.startswith("_"):
             raise AttributeError(name)
         return getattr(get_supabase_client(), name)
 

@@ -2,7 +2,7 @@ name: TNPSC Nova AI CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, "staging/p0-supabase-test"]
   pull_request:
     branches: [main]
 
