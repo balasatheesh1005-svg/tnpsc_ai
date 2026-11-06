@@ -3,8 +3,7 @@ import traceback
 from types import SimpleNamespace
 
 import streamlit as st
-from supabase import create_client
-from supabase.lib.client_options import ClientOptions
+from supabase import ClientOptions, create_client
 
 SUPABASE_URL = "https://bexgmzfoxfpfysgpzbzc.supabase.co/"
 
@@ -121,6 +120,7 @@ def get_supabase_client():
     if key not in st.session_state:
         st.session_state[key] = _SafeSupabaseClient(create_client(
             SUPABASE_URL, SUPABASE_KEY,
+            # Public ClientOptions is SyncClientOptions, including per-client memory storage.
             options=ClientOptions(auto_refresh_token=False, persist_session=False),
         ))
     return st.session_state[key]
@@ -128,6 +128,9 @@ def get_supabase_client():
 
 class _SessionClientProxy:
     def __getattr__(self, name):
+        # Introspection must not allocate an authenticated client as a side effect.
+        if name.startswith("__"):
+            raise AttributeError(name)
         return getattr(get_supabase_client(), name)
 
 

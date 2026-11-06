@@ -35,3 +35,29 @@ Mock சோதனைகள் நேரடி Supabase பாதுகாப்�
 2. இரண்டு தனி உலாவிகளில் Login, Remember Me உடன்/இல்லாமல் reload, logout, token refresh சோதனை.
 3. உண்மையான மின்னஞ்சல் recovery இணைப்பு, காலாவதியான இணைப்பு, OTP/PKCE verifier மற்றும் password update சோதனை.
 4. Hosted browser-ல் cookie component செயல்பாடு மற்றும் HTTPS cookie சேமிப்பு சரிபார்ப்பு. இவை முடிந்ததாகக் கருதக்கூடாது.
+
+
+## SDK initialization திருத்தம் — 2026-11-06
+
+முந்தைய import `supabase.lib.client_options.ClientOptions` அடிப்படை options வகையைத் தேர்ந்தெடுத்தது. Synchronous SDK-க்கு அவசியமான `storage` இதில் இல்லை. பொதுவான `from supabase import ClientOptions` import, சரியான `SyncClientOptions` வகையை வழங்குகிறது. ஒவ்வொரு பயனர் அமர்வுக்கும் புதிதாக options மற்றும் memory storage உருவாகின்றன; `auto_refresh_token=False`, `persist_session=False` அமைப்புகள் தொடர்கின்றன.
+
+`requirements.txt`-ல் `supabase==2.34.0` உறுதிப்படுத்தப்பட்டுள்ளது. இந்த SDK தன் துணைப் பொதிகளையும் அதே பதிப்பில் கோருகிறது. தனியான Work சோதனைச் சூழலில் Python 3.12.14 பயன்படுத்தப்பட்டது; பயனரின் Windows கணினியில் நிறுவப்பட்ட பதிப்புகளை நேரடியாகப் பெறவில்லை.
+
+| நிறுவப்பட்ட பொதி | சரிபார்த்த பதிப்பு |
+|---|---|
+| supabase | 2.34.0 |
+| supabase-auth | 2.34.0 |
+| supabase-functions | 2.34.0 |
+| postgrest | 2.34.0 |
+| storage3 | 2.34.0 |
+| realtime | 2.34.0 |
+| httpx | 0.28.1 |
+
+- `python -m pip check` வெற்றி. CI-யிலும் dependency பொருத்தமும் SDK பதிப்புகளும் பதிவு செய்யப்படுகின்றன.
+- புதிய `test_supabase_sdk.py` உண்மையான SDK constructor, auth state, தனித்த storage, Login, Remember Me மீட்பு, Logout மற்றும் password recovery/update வழிகளைச் சோதிக்கிறது. SDK factory mock செய்யப்படுவதில்லை; HTTP பதில்கள் மட்டும் செயற்கையாக வழங்கப்படுகின்றன. Production URL/key பயன்படுத்தப்படுவதில்லை; unit சோதனைகளில் socket இணைப்புகள் தடுக்கப்படுகின்றன.
+- பழைய import-ஐச் சோதனையில் மட்டும் மீண்டும் செலுத்தியபோது புதிய initialization சோதனை அதே `AttributeError: 'ClientOptions' object has no attribute 'storage'` பிழையுடன் தோல்வியடைந்தது. சரியான import-உடன் அது வெற்றியடைந்தது.
+- SDK proxy-ஐ ஆய்வு செய்யும் `__func__` போன்ற metadata கோரிக்கைகள் இனி client உருவாக்கத்தைத் தூண்டுவதில்லை.
+- SDK-இன் `timeout`/`verify` deprecation warnings உள்ளன; அவை இந்த initialization பிழையல்ல.
+- இவை நேரடி Supabase அல்லது browser சோதனைகள் அல்ல. RLS, உண்மையான recovery மின்னஞ்சல், hosted browser cookie ஆகியவற்றின் நிலுவைச் சரிபார்ப்புகள் மேலே உள்ளபடியே தொடர்கின்றன.
+
+இறுதி unit சரிபார்ப்பு: `python -m pytest tests/unit -q --tb=short --durations=5` — **220 சோதனைகள் வெற்றி**. இதில் authentication/SDK தொடர்பான 59 சோதனைகள் அடங்கும். `git diff --check` மற்றும் `python -m pip check` வெற்றி. இது Work சோதனைச் சூழலின் முடிவு; Windows localhost அல்லது நேரடி சேவையின் முடிவல்ல.
