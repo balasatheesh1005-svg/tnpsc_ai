@@ -2,7 +2,7 @@ name: TNPSC Nova AI CI
 
 on:
   push:
-    branches: [main, "staging/p0-supabase-test"]
+    branches: [main, "staging/p0-supabase-test", "feature/firebase-google-auth-staging"]
   pull_request:
     branches: [main]
 
