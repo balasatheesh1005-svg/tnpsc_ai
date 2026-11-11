@@ -1,5 +1,7 @@
 # Firebase Google Login — Staging பாதுகாப்பு வடிவமைப்பு
 
+
+இந்த ஆவணம் ஆரம்ப வடிவமைப்பைப் பதிவு செய்கிறது. தற்போதைய நிலைக்கு [STATUS_TA.md](STATUS_TA.md) பார்க்கவும்.
 ## தற்போதைய நிலை
 
 இது `feature/firebase-google-auth-staging` branch-க்கான வடிவமைப்பும் token-validation அடித்தளமும் மட்டுமே. Firebase project உருவாக்கப்படவில்லை; Console இணைப்பு/அனுமதி நிலுவை. Google Login button, browser callback, Supabase trust integration, UUID mapping மற்றும் புதிய RLS helper இன்னும் செயல்படுத்தப்படவில்லை. எந்த schema/RLS மாற்றமும் இயக்கப்படவில்லை. தற்போதைய Supabase Login/Remember Me/Logout மாற்றப்படவில்லை. இந்த branch-ஐ Google Login தயாராகிவிட்டதாக deploy செய்யக்கூடாது.
