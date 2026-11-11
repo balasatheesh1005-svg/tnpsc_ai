@@ -48,11 +48,12 @@ def clear_persisted_auth_session():
     forget_session()
 
 
-def save_auth_session(session, user, profile):
+def save_auth_session(session, user, profile, *, persist=True):
     st.session_state["auth_session"] = session
     st.session_state["auth_user"] = user
     st.session_state["auth_profile"] = profile or {}
-    persist_auth_session(session)
+    if persist:
+        persist_auth_session(session)
 
     profile_dict = profile or {}
 
@@ -113,6 +114,7 @@ def get_session_identity():
 def clear_auth_session(discard_client=True):
     for key in AUTH_KEYS:
         st.session_state.pop(key, None)
+    st.session_state.pop("_nova_firebase_challenge", None)
     clear_persisted_auth_session()
     if discard_client:
         st.session_state.pop("_nova_supabase_client", None)

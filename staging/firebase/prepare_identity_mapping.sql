@@ -7,7 +7,10 @@ REVOKE ALL ON SCHEMA nova_firebase_private FROM PUBLIC, anon, authenticated;
 -- Provision only after independently verifying both accounts. No app/API writes.
 CREATE TABLE nova_firebase_private.identity_links (
     firebase_subject text PRIMARY KEY CHECK (length(firebase_subject) BETWEEN 1 AND 128),
-    profile_id uuid NOT NULL UNIQUE REFERENCES public.profiles(id) ON DELETE CASCADE
+    profile_id uuid NOT NULL UNIQUE REFERENCES public.profiles(id) ON DELETE CASCADE,
+    firebase_ownership_verified_at timestamptz NOT NULL,
+    supabase_ownership_verified_at timestamptz NOT NULL,
+    verification_reference text NOT NULL CHECK (length(btrim(verification_reference)) > 0)
 );
 ALTER TABLE nova_firebase_private.identity_links ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON nova_firebase_private.identity_links FROM PUBLIC, anon, authenticated;

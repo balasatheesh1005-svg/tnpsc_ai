@@ -385,6 +385,9 @@ if not is_authenticated():
                 render_signup_page()
             else:
                 render_login_page()
+                from ui.firebase_login import render_firebase_login
+
+                render_firebase_login()
 
         st.markdown("</div>", unsafe_allow_html=True)
 

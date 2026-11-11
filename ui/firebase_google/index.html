@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ta">
+<meta charset="utf-8">
+<button id="google" type="button" disabled>Google மூலம் உள்நுழைக</button>
+<p id="status" role="status"></p>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import {
+    browserPopupRedirectResolver, GoogleAuthProvider, initializeAuth,
+    inMemoryPersistence, signInWithPopup, signOut
+  } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+  const parentOrigin = location.origin;
+  const button = document.getElementById("google");
+  const status = document.getElementById("status");
+  const send = (type, fields = {}) =>
+    window.parent.postMessage({ isStreamlitMessage: true, type, ...fields }, parentOrigin);
+  let auth, nonce, busy = false;
+  const resize = () => send("streamlit:setFrameHeight", { height: document.body.scrollHeight + 16 });
+
+  window.addEventListener("message", (event) => {
+    if (event.origin !== parentOrigin || event.source !== window.parent ||
+        event.data?.type !== "streamlit:render") return;
+    const { config, challenge } = event.data.args;
+    if (!auth) {
+      auth = initializeAuth(initializeApp(config), {
+        persistence: inMemoryPersistence,
+        popupRedirectResolver: browserPopupRedirectResolver
+      });
+    }
+    nonce = challenge;
+    button.disabled = busy;
+    resize();
+  });
+
+  button.addEventListener("click", async () => {
+    if (!auth || !nonce || busy) return;
+    const attempt = nonce;
+    busy = true;
+    button.disabled = true;
+    status.textContent = "";
+    try {
+      const provider = new GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      const result = await signInWithPopup(auth, provider);
+      const token = await result.user.getIdToken();
+      await signOut(auth);
+      if (nonce === attempt) {
+        send("streamlit:setComponentValue", { value: { nonce: attempt, token }, dataType: "json" });
+      }
+    } catch {
+      try { await signOut(auth); } catch { /* The iframe holds only memory state. */ }
+      status.textContent = "Google உள்நுழைவு முடியவில்லை. மீண்டும் முயலவும்.";
+    } finally {
+      busy = false;
+      button.disabled = false;
+      resize();
+    }
+  });
+  send("streamlit:componentReady", { apiVersion: 1 });
+  resize();
+</script>
+</html>

@@ -127,6 +127,15 @@ def email_exists(email):
 
 def restore_auth_session():
     clear_legacy_url_tokens()
+    from core.firebase_session import firebase_session_valid, is_firebase_session
+
+    if is_firebase_session(st.session_state):
+        if firebase_session_valid(st.session_state):
+            return True
+        from core.session import reset_app_state_for_logout
+
+        reset_app_state_for_logout()
+        return False
     if is_authenticated():
         session = st.session_state.get("auth_session")
         expires = session.get("expires_at") if isinstance(session, dict) else getattr(session, "expires_at", None)
@@ -410,8 +419,10 @@ def handle_recovery_callback():
 
     if code:
         st.query_params.clear()
-        # Preserve this session's PKCE verifier until the exchange finishes.
-        clear_auth_session(discard_client=False)
+        # A Firebase PostgREST bearer must never survive into Supabase Auth recovery.
+        from core.firebase_session import is_firebase_session
+
+        clear_auth_session(discard_client=is_firebase_session(st.session_state))
         try:
             response = supabase.auth.exchange_code_for_session({"auth_code": code})
             session = _auth_session(response)
@@ -467,9 +478,12 @@ def handle_recovery_callback():
 
 
 def logout():
-    try:
-        import streamlit as st
+    from core.firebase_session import is_firebase_session
 
+    if is_firebase_session(st.session_state):
+        clear_auth_session()
+        return
+    try:
         st.session_state.pop("recovery_tokens", None)
         st.session_state.pop("recovery_session_active", None)
         st.session_state.pop("recovery_error", None)
